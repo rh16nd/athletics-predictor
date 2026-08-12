@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: worldathletics
+Version: 1.2.4
+Summary: Python Wrapper for World Athletics' GraphQL API
+Author-email: Kai Chang <kaijchang@gmail.com>
+Project-URL: Homepage, https://github.com/kajchang/worldathletics
+Keywords: worldathletics,api-wrapper,graphql
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pydantic==2.8.2
+Requires-Dist: httpx
+Requires-Dist: websockets
+Provides-Extra: development
+Requires-Dist: ariadne-codegen==0.14.0.dev1; extra == "development"
+Requires-Dist: gql[all]; extra == "development"
+Dynamic: license-file
+
+# World Athletics API
+
+[![PyPI version](https://badge.fury.io/py/worldathletics.svg)](https://badge.fury.io/py/worldathletics)
+
+This is an auto-generated Python wrapper for World Athletics' hidden GraphQL API.
+
+`pip install worldathletics`
