@@ -1,0 +1,8 @@
+venv/
+data/raw/
+data/standings.json
+outputs/predictions_latest.csv
+outputs/dashboard_2026.html
+__pycache__/
+*.pyc
+.env
