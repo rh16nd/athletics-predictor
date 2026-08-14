@@ -213,6 +213,35 @@ for key, label in DISCIPLINES_2026.items():
     X = scaler.transform(df_qual[feat_cols])
     df_qual["win_probability"] = model.predict_proba(X)[:, 1]
 
+    # Load h2h data and compute win rates
+    h2h_path = os.path.join("data", "h2h", "h2h_rates.csv")
+    if os.path.exists(h2h_path):
+        h2h_df = pd.read_csv(h2h_path)
+        disc_h2h = h2h_df[h2h_df["discipline"] == key]
+        opponents = df_qual["athlete_name"].tolist()
+        
+        def get_h2h_rate(athlete):
+            rates = []
+            for opp in opponents:
+                if opp == athlete:
+                    continue
+                row = disc_h2h[
+                    (disc_h2h["athlete_a"] == athlete) & 
+                    (disc_h2h["athlete_b"] == opp) &
+                    (disc_h2h["meetings"] >= 2)
+                ]
+                if not row.empty:
+                    rates.append(row.iloc[0]["win_rate"])
+            return sum(rates) / len(rates) if rates else 0.5
+        
+        df_qual["h2h_win_rate"] = df_qual["athlete_name"].apply(get_h2h_rate)
+        
+        # Blend h2h with model probability (60% model, 40% h2h)
+        df_qual["win_probability"] = (
+            df_qual["win_probability"] * 0.6 + 
+            df_qual["h2h_win_rate"] * 0.4
+        )
+        
     is_field = key in FIELD_EVENTS
     df_qual = df_qual.sort_values("season_best", ascending=not is_field)
 
