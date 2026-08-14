@@ -176,8 +176,49 @@ def build_2026_features(key):
         feat["season_rank"]       = feat["season_best"].rank(ascending=False)
         feat["season_percentile"] = feat["season_best"].rank(ascending=True) / len(feat)
 
+    # Recent form features
+    raw_df = pd.read_csv(path)
+    raw_df = raw_df.rename(columns={"Competitor": "athlete_name", "Mark": "mark_str", "Date": "date_str"})
+    raw_df["Mark"] = raw_df["mark_str"].apply(parse_mark)
+    raw_df = raw_df.dropna(subset=["Mark"])
+    
+    try:
+        raw_df["date"] = pd.to_datetime(raw_df["date_str"], dayfirst=True, errors="coerce")
+        today = pd.Timestamp(date.today())
+        
+        recent_trends = []
+        days_since = []
+        
+        for athlete in feat["athlete_name"]:
+            ath_df = raw_df[raw_df["athlete_name"] == athlete].sort_values("date", ascending=False)
+            if ath_df.empty or ath_df["date"].isna().all():
+                recent_trends.append(0.0)
+                days_since.append(999)
+                continue
+            
+            last_date = ath_df["date"].dropna().iloc[0]
+            days_since.append((today - last_date).days)
+            
+            recent = ath_df.head(3)["Mark"].tolist()
+            if len(recent) >= 2:
+                is_field = key in FIELD_EVENTS
+                if is_field:
+                    trend = recent[0] - recent[-1]  # positive = improving
+                else:
+                    trend = recent[-1] - recent[0]  # positive = improving (lower is better)
+                recent_trends.append(trend)
+            else:
+                recent_trends.append(0.0)
+        
+        feat["recent_trend"]      = recent_trends
+        feat["days_since_last"]   = days_since
+    except Exception as e:
+        feat["recent_trend"]    = 0.0
+        feat["days_since_last"] = 999
+
     return feat
 
+    
 features_2026 = {}
 for key in DISCIPLINES_2026:
     features_2026[key] = build_2026_features(key)
@@ -236,12 +277,32 @@ for key, label in DISCIPLINES_2026.items():
         
         df_qual["h2h_win_rate"] = df_qual["athlete_name"].apply(get_h2h_rate)
         
-        # Blend h2h with model probability (60% model, 40% h2h)
+# Blend h2h with model probability (60% model, 40% h2h)
         df_qual["win_probability"] = (
             df_qual["win_probability"] * 0.6 + 
             df_qual["h2h_win_rate"] * 0.4
         )
-        
+
+        # Apply recent form adjustment
+        if "recent_trend" in df_qual.columns and "days_since_last" in df_qual.columns:
+            # Normalize trend to a small adjustment (-0.05 to +0.05)
+            trend_std = df_qual["recent_trend"].std()
+            if trend_std > 0:
+                df_qual["trend_adj"] = (df_qual["recent_trend"] / trend_std).clip(-1, 1) * 0.05
+            else:
+                df_qual["trend_adj"] = 0.0
+
+            # Penalize athletes inactive for more than 30 days
+            df_qual["inactivity_penalty"] = df_qual["days_since_last"].apply(
+                lambda d: -0.05 if d > 30 else (-0.03 if d > 20 else 0.0)
+            )
+
+            df_qual["win_probability"] = (
+                df_qual["win_probability"] + 
+                df_qual["trend_adj"] + 
+                df_qual["inactivity_penalty"]
+            ).clip(0, 1) 
+
     is_field = key in FIELD_EVENTS
     df_qual = df_qual.sort_values("season_best", ascending=not is_field)
 
