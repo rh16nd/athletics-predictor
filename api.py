@@ -196,13 +196,13 @@ def predictions():
         "fieldDisciplines": field,
         "topWinners":    build_top_winners(track, field),
         "confidence":    build_confidence(track, field),
+        "modelAccuracy": 46.2,
     })
 
 
 @app.route("/api/health")
 def health():
     return jsonify({"status": "ok", "date": str(date.today())})
-
 
 if __name__ == "__main__":
     print("Starting DL Predictor API on http://localhost:5000")
