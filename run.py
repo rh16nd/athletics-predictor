@@ -350,6 +350,12 @@ for key, label in DISCIPLINES_2026.items():
                 df_qual["trend_adj"] + 
                 df_qual["inactivity_penalty"]
             ).clip(0, 1) 
+        
+# Final normalization — scale to top-3 probability
+        total = df_qual["win_probability"].sum()
+        if total > 0:
+            df_qual["win_probability"] = (df_qual["win_probability"] / total) * 3
+        df_qual["win_probability"] = df_qual["win_probability"].clip(0.01, 0.95)
 
     is_field = key in FIELD_EVENTS
     df_qual = df_qual.sort_values("season_best", ascending=not is_field)

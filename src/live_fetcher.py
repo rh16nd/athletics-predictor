@@ -69,6 +69,18 @@ WOMEN_TABLE_ORDER = [
 
 OUR_DISCIPLINES = set(DISCIPLINE_URLS.keys())
 
+FIELD_KEYS = {"men_PV", "women_PV", "men_LJ", "women_LJ", "men_TJ", "women_TJ",
+              "men_HJ", "women_HJ", "men_SP", "women_SP", "men_DT", "women_DT", "men_JT", "women_JT"}
+LONG_DISTANCE_KEYS = {"men_1500m", "women_1500m", "men_5000m", "women_5000m", "men_3000sc", "women_3000sc"}
+
+
+def get_qual_limit(discipline_key):
+    if discipline_key in FIELD_KEYS:
+        return 6
+    elif discipline_key in LONG_DISTANCE_KEYS:
+        return 10
+    return 8
+
 
 def create_driver(headless=True):
     options = Options()
@@ -137,6 +149,7 @@ def scrape_dl_standings(driver, year=2026, wait_seconds=8):
             discipline_key = table_order[i]
             if discipline_key not in OUR_DISCIPLINES:
                 continue
+
             athletes = []
             for row in table.find_all("tr")[1:]:
                 cells = row.find_all(["td", "th"])
@@ -144,8 +157,10 @@ def scrape_dl_standings(driver, year=2026, wait_seconds=8):
                     name = cells[1].get_text(strip=True)
                     if name and name != "Athlete":
                         athletes.append(name)
-            qualified[discipline_key] = athletes
-            print(f"  {discipline_key}: {len(athletes)} athletes")
+
+            limit = get_qual_limit(discipline_key)
+            qualified[discipline_key] = athletes[:limit]
+            print(f"  {discipline_key}: {len(athletes[:limit])} qualified athletes")
 
     standings_path = os.path.join(RAW_DIR, "..", "standings.json")
     with open(standings_path, "w", encoding="utf-8") as f:
