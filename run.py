@@ -146,7 +146,65 @@ def build_2026_features(key):
     meets = df.groupby("athlete_name")["Mark"].count()
     age   = df.groupby("athlete_name")["age"].first()
 
-    feat = pd.DataFrame({"season_best": sb, "meets_count": meets, "age": age}).reset_index()
+    # Competition level weighting
+    DL_VENUES = [
+        "doha", "shanghai", "suzhou", "shaoxing", "rabat", "florence", "paris",
+        "oslo", "lausanne", "stockholm", "silesia", "monaco", "london",
+        "zurich", "brussels", "eugene", "birmingham", "rome", "xiamen"
+    ]
+    MAJOR_KEYWORDS = ["olympic", "world championship", "world athletics", "european championship"]
+
+    def competition_weight(venue):
+        if not isinstance(venue, str):
+            return 1.0
+        venue_lower = venue.lower()
+        if any(k in venue_lower for k in MAJOR_KEYWORDS):
+            return 1.3
+        if any(dl in venue_lower for dl in DL_VENUES):
+            return 1.2
+        return 1.0
+
+    weighted_sb = None
+    if "Venue" in df.columns:
+        df["comp_weight"] = df["Venue"].apply(competition_weight)
+        df["weighted_mark"] = df["Mark"] * df["comp_weight"]
+        if is_track:
+            weighted_sb = df.groupby("athlete_name")["weighted_mark"].min().rename("weighted_season_best")
+        else:
+            weighted_sb = df.groupby("athlete_name")["weighted_mark"].max().rename("weighted_season_best")
+
+    # Wind adjustment for sprint/hurdle events
+    WIND_EVENTS = {"men_100m", "women_100m", "men_200m", "women_200m", "men_110h", "women_100h"}
+    wind_sb = None
+    if key in WIND_EVENTS and "WIND" in df.columns:
+        def wind_adjusted_mark(row):
+            try:
+                wind = float(str(row["WIND"]).replace("+", "").strip())
+                mark = row["Mark"]
+                if pd.isna(mark) or pd.isna(wind):
+                    return mark
+                if wind > 1.0:
+                    penalty = (wind - 1.0) * 0.01
+                    return mark + penalty
+                return mark
+            except:
+                return row["Mark"]
+        df["wind_adj_mark"] = df.apply(wind_adjusted_mark, axis=1)
+        wind_sb = df.groupby("athlete_name")["wind_adj_mark"].min().rename("wind_adj_season_best")
+
+    # Build features DataFrame
+    feat_dict = {"season_best": sb, "meets_count": meets, "age": age}
+    if weighted_sb is not None:
+        feat_dict["weighted_season_best"] = weighted_sb
+    if wind_sb is not None:
+        feat_dict["wind_adj_season_best"] = wind_sb
+
+    feat = pd.DataFrame(feat_dict).reset_index()
+    if "weighted_season_best" not in feat.columns:
+        feat["weighted_season_best"] = feat["season_best"]
+    if "wind_adj_season_best" not in feat.columns:
+        feat["wind_adj_season_best"] = feat["season_best"]
+
     feat["discipline"] = key
     feat["year"]       = 2026
 
@@ -177,42 +235,32 @@ def build_2026_features(key):
         feat["season_percentile"] = feat["season_best"].rank(ascending=True) / len(feat)
 
     # Recent form features
-    raw_df = pd.read_csv(path)
-    raw_df = raw_df.rename(columns={"Competitor": "athlete_name", "Mark": "mark_str", "Date": "date_str"})
-    raw_df["Mark"] = raw_df["mark_str"].apply(parse_mark)
-    raw_df = raw_df.dropna(subset=["Mark"])
-    
     try:
-        raw_df["date"] = pd.to_datetime(raw_df["date_str"], dayfirst=True, errors="coerce")
-        today = pd.Timestamp(date.today())
-        
-        recent_trends = []
-        days_since = []
-        
-        for athlete in feat["athlete_name"]:
-            ath_df = raw_df[raw_df["athlete_name"] == athlete].sort_values("date", ascending=False)
-            if ath_df.empty or ath_df["date"].isna().all():
-                recent_trends.append(0.0)
-                days_since.append(999)
-                continue
-            
-            last_date = ath_df["date"].dropna().iloc[0]
-            days_since.append((today - last_date).days)
-            
-            recent = ath_df.head(3)["Mark"].tolist()
-            if len(recent) >= 2:
-                is_field = key in FIELD_EVENTS
-                if is_field:
-                    trend = recent[0] - recent[-1]  # positive = improving
+        raw_df = df.copy()
+        if "Date" in raw_df.columns:
+            raw_df["date"] = pd.to_datetime(raw_df["Date"], dayfirst=True, errors="coerce")
+            recent_trends = []
+            days_since = []
+            for athlete in feat["athlete_name"]:
+                ath_df = raw_df[raw_df["athlete_name"] == athlete].sort_values("date", ascending=False)
+                if ath_df.empty or ath_df["date"].isna().all():
+                    recent_trends.append(0.0)
+                    days_since.append(999)
+                    continue
+                last_date = ath_df["date"].dropna().iloc[0]
+                days_since.append((today - last_date).days)
+                recent = ath_df.head(3)["Mark"].tolist()
+                if len(recent) >= 2:
+                    trend = recent[-1] - recent[0] if not is_track else recent[0] - recent[-1]
+                    recent_trends.append(trend)
                 else:
-                    trend = recent[-1] - recent[0]  # positive = improving (lower is better)
-                recent_trends.append(trend)
-            else:
-                recent_trends.append(0.0)
-        
-        feat["recent_trend"]      = recent_trends
-        feat["days_since_last"]   = days_since
-    except Exception as e:
+                    recent_trends.append(0.0)
+            feat["recent_trend"]    = recent_trends
+            feat["days_since_last"] = days_since
+        else:
+            feat["recent_trend"]    = 0.0
+            feat["days_since_last"] = 999
+    except:
         feat["recent_trend"]    = 0.0
         feat["days_since_last"] = 999
 
