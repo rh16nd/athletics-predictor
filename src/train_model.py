@@ -20,6 +20,7 @@ import os
 import pickle
 import sys
 import io
+import unicodedata
 
 import numpy as np
 import pandas as pd
@@ -46,8 +47,47 @@ TRAIN_DISCIPLINES = {
     "women_1500m": "Women 1500m",
     "women_PV":    "Women Pole Vault",
     "men_LJ":      "Men Long Jump",
+    # Added to extend training beyond the original 13 disciplines (HANDOFF.md
+    # Next Steps #1) -- historical data rebuilt via
+    # `python src/historical_scraper.py --new-only`.
+    "men_400m":     "Men 400m",
+    "women_400m":   "Women 400m",
+    "men_110h":     "Men 110m Hurdles",
+    "women_100h":   "Women 100m Hurdles",
+    "men_5000m":    "Men 5000m",
+    "women_5000m":  "Women 5000m",
+    "men_3000sc":   "Men 3000m Steeplechase",
+    "women_3000sc": "Women 3000m Steeplechase",
+    "men_HJ":       "Men High Jump",
+    "women_HJ":     "Women High Jump",
+    "men_TJ":       "Men Triple Jump",
+    "women_TJ":     "Women Triple Jump",
+    "men_SP":       "Men Shot Put",
+    "women_SP":     "Women Shot Put",
+    "men_DT":       "Men Discus Throw",
+    "women_DT":     "Women Discus Throw",
+    "men_JT":       "Men Javelin Throw",
+    "women_JT":     "Women Javelin Throw",
+    "women_LJ":     "Women Long Jump",
 }
-FIELD_EVENTS = {"men_PV", "women_PV", "men_LJ"}
+FIELD_EVENTS = {
+    "men_PV", "women_PV", "men_LJ", "women_LJ",
+    "men_HJ", "women_HJ", "men_TJ", "women_TJ",
+    "men_SP", "women_SP", "men_DT", "women_DT", "men_JT", "women_JT",
+}
+
+# Diamond League Finals not held at these venues/dates were not always
+# contested in their standard track form -- verified via World Athletics
+# results pages + Wikipedia + trackalerts.com/world-track.org cross-checks
+# (see conversation history 2026-08-22). Excluding these (discipline, year)
+# combos entirely from the labeled dataset (not just from DL_RESULTS) so
+# they don't inject spurious all-zero "nobody medaled" training/test rows
+# for an event that literally didn't run that year.
+NOT_CONTESTED = {
+    ("men_5000m", 2022),   # Zurich Final ran a men's 5km road race instead
+    ("men_5000m", 2023),   # Eugene Final had no 5000m -- Bowerman Mile + separate 3000m instead
+    ("women_5000m", 2022), # Zurich Final ran a women's 5km road race instead
+}
 WIND_EVENTS = {"men_100m", "women_100m", "men_200m", "women_200m"}
 DL_VENUES = [
     "doha", "shanghai", "suzhou", "shaoxing", "rabat", "florence", "paris",
@@ -175,11 +215,199 @@ DL_RESULTS = [
     {"discipline": "men_LJ", "year": 2023, "athlete_name": "Miltiadis TENTOGLOU", "dl_rank": 1},
     {"discipline": "men_LJ", "year": 2023, "athlete_name": "Mattia FURLANI", "dl_rank": 2},
     {"discipline": "men_LJ", "year": 2023, "athlete_name": "Carey McLeod", "dl_rank": 3},
+
+    # ================================================================
+    # 19 new disciplines added 2026-08-22 -- researched and cross-verified
+    # against World Athletics results pages / Wikipedia / trackalerts.com /
+    # world-track.org / letsrun.com (2 independent background research
+    # passes, one per gender). men_5000m 2022/2023 and women_5000m 2022 are
+    # deliberately excluded (see NOT_CONTESTED) -- those Finals ran a road
+    # race / different program instead of the standard track 5000m.
+    # ================================================================
+    # --- 2021 Zurich (Weltklasse Zürich, Sept 8-9, 2021) ---
+    {"discipline": "men_400m", "year": 2021, "athlete_name": "Michael CHERRY", "dl_rank": 1},
+    {"discipline": "men_400m", "year": 2021, "athlete_name": "Kirani JAMES", "dl_rank": 2},
+    {"discipline": "men_400m", "year": 2021, "athlete_name": "Deon LENDORE", "dl_rank": 3},
+    {"discipline": "men_110h", "year": 2021, "athlete_name": "Devon ALLEN", "dl_rank": 1},
+    {"discipline": "men_110h", "year": 2021, "athlete_name": "Ronald LEVY", "dl_rank": 2},
+    {"discipline": "men_110h", "year": 2021, "athlete_name": "Hansle PARCHMENT", "dl_rank": 3},
+    {"discipline": "men_5000m", "year": 2021, "athlete_name": "Berihu AREGAWI", "dl_rank": 1},
+    {"discipline": "men_5000m", "year": 2021, "athlete_name": "Birhanu BALEW", "dl_rank": 2},
+    {"discipline": "men_5000m", "year": 2021, "athlete_name": "Jacob KROP", "dl_rank": 3},
+    {"discipline": "men_3000sc", "year": 2021, "athlete_name": "Benjamin KIGEN", "dl_rank": 1},
+    {"discipline": "men_3000sc", "year": 2021, "athlete_name": "Soufiane EL BAKKALI", "dl_rank": 2},
+    {"discipline": "men_3000sc", "year": 2021, "athlete_name": "Abraham KIBIWOT", "dl_rank": 3},
+    {"discipline": "men_HJ", "year": 2021, "athlete_name": "Gianmarco TAMBERI", "dl_rank": 1},
+    {"discipline": "men_HJ", "year": 2021, "athlete_name": "Andriy PROTSENKO", "dl_rank": 2},
+    {"discipline": "men_HJ", "year": 2021, "athlete_name": "Ilya IVANYUK", "dl_rank": 3},
+    {"discipline": "men_TJ", "year": 2021, "athlete_name": "Pedro PICHARDO", "dl_rank": 1},
+    {"discipline": "men_TJ", "year": 2021, "athlete_name": "Hugues Fabrice ZANGO", "dl_rank": 2},
+    {"discipline": "men_TJ", "year": 2021, "athlete_name": "Yasser TRIKI", "dl_rank": 3},
+    {"discipline": "men_SP", "year": 2021, "athlete_name": "Ryan CROUSER", "dl_rank": 1},
+    {"discipline": "men_SP", "year": 2021, "athlete_name": "Joe KOVACS", "dl_rank": 2},
+    {"discipline": "men_SP", "year": 2021, "athlete_name": "Armin SINANCEVIC", "dl_rank": 3},
+    {"discipline": "men_DT", "year": 2021, "athlete_name": "Daniel STAHL", "dl_rank": 1},
+    {"discipline": "men_DT", "year": 2021, "athlete_name": "Kristjan CEH", "dl_rank": 2},
+    {"discipline": "men_DT", "year": 2021, "athlete_name": "Fedrick DACRES", "dl_rank": 3},
+    {"discipline": "men_JT", "year": 2021, "athlete_name": "Johannes VETTER", "dl_rank": 1},
+    {"discipline": "men_JT", "year": 2021, "athlete_name": "Julian WEBER", "dl_rank": 2},
+    {"discipline": "men_JT", "year": 2021, "athlete_name": "Jakub VADLEJCH", "dl_rank": 3},
+    {"discipline": "women_400m", "year": 2021, "athlete_name": "Quanera HAYES", "dl_rank": 1},
+    {"discipline": "women_400m", "year": 2021, "athlete_name": "Marileidy PAULINO", "dl_rank": 2},
+    {"discipline": "women_400m", "year": 2021, "athlete_name": "Sada WILLIAMS", "dl_rank": 3},
+    {"discipline": "women_100h", "year": 2021, "athlete_name": "Tobi AMUSAN", "dl_rank": 1},
+    {"discipline": "women_100h", "year": 2021, "athlete_name": "Nadine VISSER", "dl_rank": 2},
+    {"discipline": "women_100h", "year": 2021, "athlete_name": "Megan TAPPER", "dl_rank": 3},
+    {"discipline": "women_5000m", "year": 2021, "athlete_name": "Francine NIYONSABA", "dl_rank": 1},
+    {"discipline": "women_5000m", "year": 2021, "athlete_name": "Hellen OBIRI", "dl_rank": 2},
+    {"discipline": "women_5000m", "year": 2021, "athlete_name": "Ejgayehu TAYE", "dl_rank": 3},
+    {"discipline": "women_3000sc", "year": 2021, "athlete_name": "Norah JERUTO", "dl_rank": 1},
+    {"discipline": "women_3000sc", "year": 2021, "athlete_name": "Hyvin KIYENG", "dl_rank": 2},
+    {"discipline": "women_3000sc", "year": 2021, "athlete_name": "Courtney FRERICHS", "dl_rank": 3},
+    {"discipline": "women_HJ", "year": 2021, "athlete_name": "Mariya LASITSKENE", "dl_rank": 1},
+    {"discipline": "women_HJ", "year": 2021, "athlete_name": "Yaroslava MAHUCHIKH", "dl_rank": 2},
+    {"discipline": "women_HJ", "year": 2021, "athlete_name": "Nicola MCDERMOTT", "dl_rank": 3},
+    {"discipline": "women_TJ", "year": 2021, "athlete_name": "Yulimar ROJAS", "dl_rank": 1},
+    {"discipline": "women_TJ", "year": 2021, "athlete_name": "Shanieka RICKETTS", "dl_rank": 2},
+    {"discipline": "women_TJ", "year": 2021, "athlete_name": "Kimberly WILLIAMS", "dl_rank": 3},
+    {"discipline": "women_SP", "year": 2021, "athlete_name": "Maggie EWEN", "dl_rank": 1},
+    {"discipline": "women_SP", "year": 2021, "athlete_name": "Auriol DONGMO", "dl_rank": 2},
+    {"discipline": "women_SP", "year": 2021, "athlete_name": "Fanny ROOS", "dl_rank": 3},
+    {"discipline": "women_DT", "year": 2021, "athlete_name": "Valarie ALLMAN", "dl_rank": 1},
+    {"discipline": "women_DT", "year": 2021, "athlete_name": "Sandra PERKOVIC", "dl_rank": 2},
+    {"discipline": "women_DT", "year": 2021, "athlete_name": "Yaime PEREZ", "dl_rank": 3},
+    {"discipline": "women_JT", "year": 2021, "athlete_name": "Christin HUSSONG", "dl_rank": 1},
+    {"discipline": "women_JT", "year": 2021, "athlete_name": "Kelsey-Lee BARBER", "dl_rank": 2},
+    {"discipline": "women_JT", "year": 2021, "athlete_name": "Nikola OGRODNIKOVA", "dl_rank": 3},
+    {"discipline": "women_LJ", "year": 2021, "athlete_name": "Ivana SPANOVIC", "dl_rank": 1},
+    {"discipline": "women_LJ", "year": 2021, "athlete_name": "Khaddi SAGNIA", "dl_rank": 2},
+    {"discipline": "women_LJ", "year": 2021, "athlete_name": "Maryna BEKH-ROMANCHUK", "dl_rank": 3},
+
+    # --- 2022 Zurich (Weltklasse Zürich, Sept 7-8, 2022) ---
+    {"discipline": "men_400m", "year": 2022, "athlete_name": "Kirani JAMES", "dl_rank": 1},
+    {"discipline": "men_400m", "year": 2022, "athlete_name": "Bryce DEADMON", "dl_rank": 2},
+    {"discipline": "men_400m", "year": 2022, "athlete_name": "Vernon NORWOOD", "dl_rank": 3},
+    {"discipline": "men_110h", "year": 2022, "athlete_name": "Grant HOLLOWAY", "dl_rank": 1},
+    {"discipline": "men_110h", "year": 2022, "athlete_name": "Rasheed BROADBELL", "dl_rank": 2},
+    {"discipline": "men_110h", "year": 2022, "athlete_name": "Hansle PARCHMENT", "dl_rank": 3},
+    {"discipline": "men_3000sc", "year": 2022, "athlete_name": "Soufiane EL BAKKALI", "dl_rank": 1},
+    {"discipline": "men_3000sc", "year": 2022, "athlete_name": "Getnet WALE", "dl_rank": 2},
+    {"discipline": "men_3000sc", "year": 2022, "athlete_name": "Abraham KIBIWOT", "dl_rank": 3},
+    {"discipline": "men_HJ", "year": 2022, "athlete_name": "Gianmarco TAMBERI", "dl_rank": 1},
+    {"discipline": "men_HJ", "year": 2022, "athlete_name": "JuVaughn HARRISON", "dl_rank": 2},
+    {"discipline": "men_HJ", "year": 2022, "athlete_name": "Django LOVETT", "dl_rank": 3},
+    {"discipline": "men_TJ", "year": 2022, "athlete_name": "Andy DIAZ", "dl_rank": 1},
+    {"discipline": "men_TJ", "year": 2022, "athlete_name": "Pedro PICHARDO", "dl_rank": 2},
+    {"discipline": "men_TJ", "year": 2022, "athlete_name": "Jordan DIAZ", "dl_rank": 3},
+    {"discipline": "men_SP", "year": 2022, "athlete_name": "Joe KOVACS", "dl_rank": 1},
+    {"discipline": "men_SP", "year": 2022, "athlete_name": "Ryan CROUSER", "dl_rank": 2},
+    {"discipline": "men_SP", "year": 2022, "athlete_name": "Tom WALSH", "dl_rank": 3},
+    {"discipline": "men_DT", "year": 2022, "athlete_name": "Kristjan CEH", "dl_rank": 1},
+    {"discipline": "men_DT", "year": 2022, "athlete_name": "Lukas WEISSHAIDINGER", "dl_rank": 2},
+    {"discipline": "men_DT", "year": 2022, "athlete_name": "Andrius GUDZIUS", "dl_rank": 3},
+    {"discipline": "men_JT", "year": 2022, "athlete_name": "Neeraj CHOPRA", "dl_rank": 1},
+    {"discipline": "men_JT", "year": 2022, "athlete_name": "Jakub VADLEJCH", "dl_rank": 2},
+    {"discipline": "men_JT", "year": 2022, "athlete_name": "Julian WEBER", "dl_rank": 3},
+    {"discipline": "women_400m", "year": 2022, "athlete_name": "Marileidy PAULINO", "dl_rank": 1},
+    {"discipline": "women_400m", "year": 2022, "athlete_name": "Fiordaliza COFIL", "dl_rank": 2},
+    {"discipline": "women_400m", "year": 2022, "athlete_name": "Sada WILLIAMS", "dl_rank": 3},
+    {"discipline": "women_100h", "year": 2022, "athlete_name": "Tobi AMUSAN", "dl_rank": 1},
+    {"discipline": "women_100h", "year": 2022, "athlete_name": "Tia JONES", "dl_rank": 2},
+    {"discipline": "women_100h", "year": 2022, "athlete_name": "Britany ANDERSON", "dl_rank": 3},
+    {"discipline": "women_3000sc", "year": 2022, "athlete_name": "Werkuha GETACHEW", "dl_rank": 1},
+    {"discipline": "women_3000sc", "year": 2022, "athlete_name": "Winfred YAVI", "dl_rank": 2},
+    {"discipline": "women_3000sc", "year": 2022, "athlete_name": "Faith CHEROTICH", "dl_rank": 3},
+    {"discipline": "women_HJ", "year": 2022, "athlete_name": "Yaroslava MAHUCHIKH", "dl_rank": 1},
+    {"discipline": "women_HJ", "year": 2022, "athlete_name": "Iryna GERASHCHENKO", "dl_rank": 2},
+    {"discipline": "women_HJ", "year": 2022, "athlete_name": "Nicola OLYSLAGERS", "dl_rank": 3},
+    {"discipline": "women_TJ", "year": 2022, "athlete_name": "Yulimar ROJAS", "dl_rank": 1},
+    {"discipline": "women_TJ", "year": 2022, "athlete_name": "Maryna BEKH-ROMANCHUK", "dl_rank": 2},
+    {"discipline": "women_TJ", "year": 2022, "athlete_name": "Shanieka RICKETTS", "dl_rank": 3},
+    {"discipline": "women_SP", "year": 2022, "athlete_name": "Chase EALEY", "dl_rank": 1},
+    {"discipline": "women_SP", "year": 2022, "athlete_name": "Sarah MITTON", "dl_rank": 2},
+    {"discipline": "women_SP", "year": 2022, "athlete_name": "Auriol DONGMO", "dl_rank": 3},
+    {"discipline": "women_DT", "year": 2022, "athlete_name": "Valarie ALLMAN", "dl_rank": 1},
+    {"discipline": "women_DT", "year": 2022, "athlete_name": "Sandra PERKOVIC", "dl_rank": 2},
+    {"discipline": "women_DT", "year": 2022, "athlete_name": "Liliana CA", "dl_rank": 3},
+    {"discipline": "women_JT", "year": 2022, "athlete_name": "Kara WINGER", "dl_rank": 1},
+    {"discipline": "women_JT", "year": 2022, "athlete_name": "Kelsey-Lee BARBER", "dl_rank": 2},
+    {"discipline": "women_JT", "year": 2022, "athlete_name": "Haruka KITAGUCHI", "dl_rank": 3},
+    {"discipline": "women_LJ", "year": 2022, "athlete_name": "Ivana VULETA", "dl_rank": 1},
+    {"discipline": "women_LJ", "year": 2022, "athlete_name": "Khaddi SAGNIA", "dl_rank": 2},
+    {"discipline": "women_LJ", "year": 2022, "athlete_name": "Quanesha BURKS", "dl_rank": 3},
+
+    # --- 2023 Eugene (Prefontaine Classic / Hayward Field, Sept 16-17, 2023) ---
+    {"discipline": "men_400m", "year": 2023, "athlete_name": "Kirani JAMES", "dl_rank": 1},
+    {"discipline": "men_400m", "year": 2023, "athlete_name": "Quincy HALL", "dl_rank": 2},
+    {"discipline": "men_400m", "year": 2023, "athlete_name": "Vernon NORWOOD", "dl_rank": 3},
+    {"discipline": "men_110h", "year": 2023, "athlete_name": "Hansle PARCHMENT", "dl_rank": 1},
+    {"discipline": "men_110h", "year": 2023, "athlete_name": "Grant HOLLOWAY", "dl_rank": 2},
+    {"discipline": "men_110h", "year": 2023, "athlete_name": "Daniel ROBERTS", "dl_rank": 3},
+    {"discipline": "men_3000sc", "year": 2023, "athlete_name": "Simon Kiprop KOECH", "dl_rank": 1},
+    {"discipline": "men_3000sc", "year": 2023, "athlete_name": "Samuel FIREWU", "dl_rank": 2},
+    {"discipline": "men_3000sc", "year": 2023, "athlete_name": "Geordie BEAMISH", "dl_rank": 3},
+    {"discipline": "men_HJ", "year": 2023, "athlete_name": "Sanghyeok WOO", "dl_rank": 1},
+    {"discipline": "men_HJ", "year": 2023, "athlete_name": "Norbert KOBIELSKI", "dl_rank": 2},
+    {"discipline": "men_HJ", "year": 2023, "athlete_name": "JuVaughn HARRISON", "dl_rank": 3},
+    {"discipline": "men_TJ", "year": 2023, "athlete_name": "Andy DIAZ", "dl_rank": 1},
+    {"discipline": "men_TJ", "year": 2023, "athlete_name": "Hugues Fabrice ZANGO", "dl_rank": 2},
+    {"discipline": "men_TJ", "year": 2023, "athlete_name": "Donald SCOTT", "dl_rank": 3},
+    {"discipline": "men_SP", "year": 2023, "athlete_name": "Joe KOVACS", "dl_rank": 1},
+    {"discipline": "men_SP", "year": 2023, "athlete_name": "Ryan CROUSER", "dl_rank": 2},
+    {"discipline": "men_SP", "year": 2023, "athlete_name": "Tom WALSH", "dl_rank": 3},
+    {"discipline": "men_DT", "year": 2023, "athlete_name": "Matthew DENNY", "dl_rank": 1},
+    {"discipline": "men_DT", "year": 2023, "athlete_name": "Kristjan CEH", "dl_rank": 2},
+    {"discipline": "men_DT", "year": 2023, "athlete_name": "Daniel STAHL", "dl_rank": 3},
+    {"discipline": "men_JT", "year": 2023, "athlete_name": "Jakub VADLEJCH", "dl_rank": 1},
+    {"discipline": "men_JT", "year": 2023, "athlete_name": "Neeraj CHOPRA", "dl_rank": 2},
+    {"discipline": "men_JT", "year": 2023, "athlete_name": "Oliver HELANDER", "dl_rank": 3},
+    {"discipline": "women_400m", "year": 2023, "athlete_name": "Marileidy PAULINO", "dl_rank": 1},
+    {"discipline": "women_400m", "year": 2023, "athlete_name": "Natalia KACZMAREK", "dl_rank": 2},
+    {"discipline": "women_400m", "year": 2023, "athlete_name": "Lieke KLAVER", "dl_rank": 3},
+    {"discipline": "women_100h", "year": 2023, "athlete_name": "Tobi AMUSAN", "dl_rank": 1},
+    {"discipline": "women_100h", "year": 2023, "athlete_name": "Jasmine CAMACHO-QUINN", "dl_rank": 2},
+    {"discipline": "women_100h", "year": 2023, "athlete_name": "Kendra HARRISON", "dl_rank": 3},
+    {"discipline": "women_5000m", "year": 2023, "athlete_name": "Gudaf TSEGAY", "dl_rank": 1},
+    {"discipline": "women_5000m", "year": 2023, "athlete_name": "Beatrice CHEBET", "dl_rank": 2},
+    {"discipline": "women_5000m", "year": 2023, "athlete_name": "Ejgayehu TAYE", "dl_rank": 3},
+    {"discipline": "women_3000sc", "year": 2023, "athlete_name": "Winfred YAVI", "dl_rank": 1},
+    {"discipline": "women_3000sc", "year": 2023, "athlete_name": "Beatrice CHEPKOECH", "dl_rank": 2},
+    {"discipline": "women_3000sc", "year": 2023, "athlete_name": "Faith CHEROTICH", "dl_rank": 3},
+    {"discipline": "women_HJ", "year": 2023, "athlete_name": "Yaroslava MAHUCHIKH", "dl_rank": 1},
+    {"discipline": "women_HJ", "year": 2023, "athlete_name": "Nicola OLYSLAGERS", "dl_rank": 2},
+    {"discipline": "women_HJ", "year": 2023, "athlete_name": "Angelina TOPIC", "dl_rank": 3},
+    {"discipline": "women_TJ", "year": 2023, "athlete_name": "Yulimar ROJAS", "dl_rank": 1},
+    {"discipline": "women_TJ", "year": 2023, "athlete_name": "Shanieka RICKETTS", "dl_rank": 2},
+    {"discipline": "women_TJ", "year": 2023, "athlete_name": "Kimberly WILLIAMS", "dl_rank": 3},
+    {"discipline": "women_SP", "year": 2023, "athlete_name": "Chase EALEY", "dl_rank": 1},
+    {"discipline": "women_SP", "year": 2023, "athlete_name": "Sarah MITTON", "dl_rank": 2},
+    {"discipline": "women_SP", "year": 2023, "athlete_name": "Auriol DONGMO", "dl_rank": 3},
+    {"discipline": "women_DT", "year": 2023, "athlete_name": "Valarie ALLMAN", "dl_rank": 1},
+    {"discipline": "women_DT", "year": 2023, "athlete_name": "Laulauga TAUSAGA", "dl_rank": 2},
+    {"discipline": "women_DT", "year": 2023, "athlete_name": "Sandra PERKOVIC", "dl_rank": 3},
+    {"discipline": "women_JT", "year": 2023, "athlete_name": "Haruka KITAGUCHI", "dl_rank": 1},
+    {"discipline": "women_JT", "year": 2023, "athlete_name": "Tori PEETERS", "dl_rank": 2},
+    {"discipline": "women_JT", "year": 2023, "athlete_name": "Mackenzie LITTLE", "dl_rank": 3},
+    {"discipline": "women_LJ", "year": 2023, "athlete_name": "Ivana VULETA", "dl_rank": 1},
+    {"discipline": "women_LJ", "year": 2023, "athlete_name": "Ese BRUME", "dl_rank": 2},
+    {"discipline": "women_LJ", "year": 2023, "athlete_name": "Quanesha BURKS", "dl_rank": 3},
 ]
 NAME_FIXES = {
     "Marcell JACOBS": "Lamont Marcell JACOBS",
     "Kenny BEDNAREK": "Kenneth BEDNAREK",
     "Mondo DUPLANTIS": "Armand DUPLANTIS",
+    # Jordan Alejandro Diaz Fortun's WA toplist entry uses his full name +
+    # double surname; the DL Final results credit him under a shortened form.
+    "Jordan DIAZ": "Jordan A. Diaz Fortun",
+    # Found via the unmatched-DL_RESULTS check added 2026-08-22 -- these
+    # silently failed the old exact-string merge (no warning existed before):
+    "Andy DIAZ": "Andy Diaz Hernandez",       # WA toplist uses his full surname
+    "Chase EALEY": "Chase Ealy",              # WA toplist itself misspells her surname
+    "Faith Chepngetich KIPYEGON": "Faith Kipyegon",  # WA toplist omits her middle name
+    "Andriy PROTSENKO": "Andrii Protsenko",   # WA's Ukrainian transliteration variant
+    "Yasser TRIKI": "Yasser Mohammed Triki",   # WA toplist includes his middle name
+    "Simon Kiprop KOECH": "Simon Koech",       # WA toplist omits his middle name
+    "Katerina STEFANIDI": "Aikaterini Stefanidi",  # WA toplist uses her full Greek first name
 }
 
 
@@ -229,6 +457,8 @@ def build_features(df, discipline_key):
         if ath.empty:
             continue
         for year in [2021, 2022, 2023]:
+            if (discipline_key, year) in NOT_CONTESTED:
+                continue
             season = ath[ath["year"] == year]
             prev = ath[ath["year"] < year]
             # career_best must only see marks up to and including this label's
@@ -264,10 +494,15 @@ def build_features(df, discipline_key):
 
 
 def add_season_rank(df):
+    """discipline in FIELD_EVENTS -- not just "men_PV" -- must rank descending
+    (higher mark = better = rank 1). Using a hardcoded "men_PV" string here
+    previously left women_PV and men_LJ ranked backwards (lowest jump/vault
+    getting rank 1) for the entire time they've been trained disciplines --
+    caught while adding 10 more field events that would have hit the same bug."""
     all_groups = []
     for (discipline, year), group in df.groupby(["discipline", "year"]):
         group = group.copy()
-        if discipline == "men_PV":
+        if discipline in FIELD_EVENTS:
             group["season_rank"] = group["season_best"].rank(ascending=False)
             group["season_percentile"] = group["season_best"].rank(ascending=True) / len(group)
         else:
@@ -352,6 +587,20 @@ def add_new_features(df):
     return pd.concat(all_groups, ignore_index=True)
 
 
+def normalize_name(name):
+    """Case- and diacritic-insensitive key for matching hand/agent-researched
+    DL_RESULTS athlete names against WA toplist Competitor names. Added
+    alongside the 19-discipline expansion after finding several accented
+    names (Cá, Perkovic/Perković, Ceh/Čeh, Spanovic/Španović...) typed
+    without diacritics -- the exact h2h_win_rate failure mode from earlier
+    this session (silent join misses defaulting everyone to a neutral/zero
+    label) would otherwise repeat here across ~30 more athletes."""
+    if not isinstance(name, str):
+        return name
+    nfkd = unicodedata.normalize("NFKD", name)
+    return "".join(c for c in nfkd if not unicodedata.combining(c)).upper().strip()
+
+
 def build_labeled_dataset():
     dfs = {}
     for key in TRAIN_DISCIPLINES:
@@ -361,20 +610,38 @@ def build_labeled_dataset():
 
     all_features = {key: build_features(dfs[key], key) for key in TRAIN_DISCIPLINES}
     master = pd.concat(all_features.values(), ignore_index=True)
+    master["_name_key"] = master["athlete_name"].apply(normalize_name)
 
     dl_df = pd.DataFrame(DL_RESULTS)
     dl_df["athlete_name"] = dl_df["athlete_name"].replace(NAME_FIXES)
     dl_df["dl_winner"] = (dl_df["dl_rank"] == 1).astype(int)
     dl_df["dl_top3"] = (dl_df["dl_rank"] <= 3).astype(int)
+    dl_df["_name_key"] = dl_df["athlete_name"].apply(normalize_name)
 
     labeled = master.merge(
-        dl_df[["discipline", "year", "athlete_name", "dl_winner", "dl_top3", "dl_rank"]],
-        on=["discipline", "year", "athlete_name"], how="left",
+        dl_df[["discipline", "year", "_name_key", "dl_winner", "dl_top3", "dl_rank"]],
+        on=["discipline", "year", "_name_key"], how="left",
     )
     labeled["dl_winner"] = labeled["dl_winner"].fillna(0).astype(int)
     labeled["dl_top3"] = labeled["dl_top3"].fillna(0).astype(int)
     labeled["dl_rank"] = labeled["dl_rank"].fillna(0).astype(int)
-    return labeled
+
+    matched_keys = set(
+        labeled.loc[labeled["dl_top3"] == 1, ["discipline", "year", "_name_key"]]
+        .apply(tuple, axis=1)
+    )
+    unmatched = [
+        (r["discipline"], r["year"], r["athlete_name"])
+        for _, r in dl_df.iterrows()
+        if (r["discipline"], r["year"], r["_name_key"]) not in matched_keys
+    ]
+    if unmatched:
+        print(f"\n  WARNING: {len(unmatched)} DL_RESULTS entries found NO matching "
+              f"training row (name mismatch or missing from raw toplist data):")
+        for discipline, year, name in unmatched:
+            print(f"    {discipline} {year}: {name!r}")
+
+    return labeled.drop(columns=["_name_key"])
 
 
 def add_h2h_features(df):

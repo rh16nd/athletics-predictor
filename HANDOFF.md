@@ -1,6 +1,6 @@
 # 2026 Diamond League Predictor — Handoff
 
-_Last updated: 2026-08-22_
+_Last updated: 2026-08-22 (evening session)_
 
 ## Goal
 
@@ -41,15 +41,19 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 **Model**: RandomForestClassifier (200 trees, balanced class weights), 14 features:
 `season_best, career_best, pb_gap, meets_count, consistency, yoy_improvement, age, season_rank, season_percentile, weighted_season_best, wind_adj_season_best, recent_trend, days_since_last, h2h_win_rate`
 
-**Backtest accuracy: 59.0%** (2023 holdout, train on 2021-2022). Honest progression this session: 46.2% (fake, bug-inflated) → 43.6% (real baseline after fixing the bug) → 53.8% (historical data rework) → **59.0%** (h2h fix). Every step was isolated and verified before deploying — see Failed Attempts below for what *didn't* move the number.
+**Backtest accuracy: 58.1%** (54/93, 2023 holdout, train on 2021-2022, 31 of 32 disciplines). Honest progression: 46.2% (fake, bug-inflated) → 43.6% (real baseline) → 53.8% (historical data rework) → 59.0% (h2h fix, 13 disciplines) → **58.1%** (31 disciplines — see below for why this isn't a regression). Every step isolated and verified before deploying.
 
-**Trained on 13 of 32 live-predicted disciplines**: men/women 100m, 200m, men_400h, women_400h, men/women 800m, men/women 1500m, men/women PV, men_LJ. The other 19 (5000m, 3000m steeplechase, most hurdles, all throws, HJ, TJ, women_LJ) get predictions from the model but have never been backtested against real labeled outcomes for their own event type — **this is the in-progress next step, see below.**
+**Trained on 31 of 32 live-predicted disciplines** (up from 13, this session's evening work). Extended by researching World Athletics DL Final top-3 results for 2021-2023 for the 19 previously-untrained disciplines (two independent background research passes, cross-verified against WA results pages, Wikipedia, trackalerts.com, world-track.org, letsrun.com), then rebuilding `data/raw/{discipline}.csv` for all of them via `python src/historical_scraper.py --new-only`. `men_5000m` is the only discipline still untested against its own event type: 2022's Zurich Final ran a 5km road race and 2023's Eugene Final had no 5000m at all (Bowerman Mile + separate 3000m instead), so there's no valid 2023 test-year label for it — it's excluded from the backtest (see `NOT_CONTESTED` in `src/train_model.py`) but still gets live predictions like before.
+
+**Isolating what moved the number** (same discipline as every other change this session): found and fixed a real bug in `add_season_rank()` — it only special-cased `"men_PV"` for descending rank direction, leaving `women_PV` and `men_LJ` (both already-trained field events) ranked *backwards* (lowest jump/vault getting rank 1) since they were first added. Fixed by checking `FIELD_EVENTS` membership instead of a hardcoded string. Isolated test: this bugfix alone, on the original 13 disciplines, took accuracy from 59.0% → **64.1%** (real improvement — the bug had been suppressing it). Adding the 18 new disciplines then brought the pooled average to 58.1%, because the newly-added field/distance events are inherently harder to predict (smaller fields, more tactical racing) — not a data-quality regression.
+
+**Name-matching found a second latent bug class, same shape as the h2h case-mismatch bug from earlier this session**: the exact-string merge between hand-researched `DL_RESULTS` and WA's scraped athlete names was silently dropping labels on any accent/spelling difference, with no warning. Added `normalize_name()` (case + diacritic insensitive matching) plus a verification print that lists any `DL_RESULTS` entry that still finds zero match after normalizing. Caught and fixed 11 real mismatches (e.g. "Faith Chepngetich KIPYEGON" vs WA's "Faith KIPYEGON", "Chase EALEY" vs WA's own misspelling "Chase EALY", several transliteration variants) — 4 of which were in the *original* 13-discipline dataset and had been silently degrading backtest honesty since before this session. **9 entries remain genuinely unmatched** — confirmed absent from the scraped top-100 seasonal toplist even with substring search, despite being elite/famous athletes (Sydney McLaughlin 400mH 2023, Dafne Schippers 200m 2022, Emmanuel Korir 800m 2023, Yomif Kejelcha 1500m 2023, Angelica Bengtsson/Katie Nageotte PV 2022/2023, Juan Miguel Echevarria LJ 2022, Berihu Aregawi/Jacob Krop 5000m 2021). Not chased further this session — see Known Limitations.
 
 **Injury/withdrawal detection**: scrapes LetsRun/Athletics Weekly/World Athletics news for narrative injury mentions, cross-checks meet-results recaps for bare "DNF" entries, and estimates recovery time per injury type (hamstring/achilles/calf/etc.) to decide whether an athlete should be dropped from predictions vs. just flagged. Deliberately ignores DNS (too many non-injury causes) and DQ (rules violation, unrelated to health).
 
 **Dashboard**: shows live last-updated date and dynamically-computed meet status (done/next/upcoming) on every page, real World Athletics profile links on athlete names, honest labeling on the (still-synthetic) Projections trajectory chart.
 
-**Both repos are pushed and up to date with origin/main** as of this writing, except for the h2h fix + normalization fix from this session's final stretch, which are made locally but **not yet committed/pushed**.
+**Both repos were clean and pushed as of the start of this evening's session** (the h2h fix + normalization fix mentioned as "local-only" earlier in this doc had already landed in commit `f150779d` — that line was stale, corrected here). The 31-discipline extension (`train_model.py`, `historical_scraper.py`, `HANDOFF.md`, retrained `outputs/`) is made locally and **not yet committed/pushed** as of this writing.
 
 ## Files Changed This Session
 
@@ -76,6 +80,10 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 **Model artifacts** (`outputs/model_rf.pkl`, `scaler.pkl`, `feature_cols.pkl`, `model_accuracy.txt`) retrained and overwritten multiple times as fixes landed — always via `src/train_model.py`, never hand-edited.
 
+**Modified again this evening (extending to 31 disciplines):**
+- `src/historical_scraper.py` — `TRAIN_DISCIPLINES` extended from 13 to 32 keys; added a `--new-only` flag (`NEWLY_ADDED` list) so the 19 new disciplines could be scraped without re-scraping the 13 already-good ones
+- `src/train_model.py` — `TRAIN_DISCIPLINES`/`FIELD_EVENTS` extended to all 32 disciplines; added `NOT_CONTESTED` set to exclude `men_5000m` 2022/2023 and `women_5000m` 2022 (DL Final ran a road race or different program those years, so there's no valid label); fixed `add_season_rank()`'s hardcoded `"men_PV"` check to use `FIELD_EVENTS` membership (was ranking `women_PV`/`men_LJ` backwards); added `normalize_name()` (case + diacritic insensitive) for the `DL_RESULTS` merge plus an unmatched-entry warning print, catching 11 real name mismatches (4 in the original 13 disciplines); 162 new verified `DL_RESULTS` entries added (research methodology + sources in git history / this session's transcript)
+
 ### track-insights-main
 
 **Modified:**
@@ -100,18 +108,18 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 ## Known Limitations (real, understood, not bugs to re-chase)
 
 - `meets_count`, `consistency`, and `recent_trend` are **structurally constant** (zero variance) across the entire training set — the World Athletics toplist source is one-mark-per-athlete-per-season everywhere, training included now. Only `days_since_last` survives with real signal (needs just one date, not multiple marks). Fixing this for real needs a different scrape entirely (full per-athlete meet-by-meet results, not a toplist).
+- `men_5000m` is trained on 2021 data only and excluded from the backtest entirely (see `NOT_CONTESTED`) — 2022/2023 DL Finals didn't run the standard track event those years. It still gets live predictions like the other 31 disciplines, just never backtested for its own event type.
+- **9 DL_RESULTS entries are genuinely absent from the scraped seasonal toplists**, confirmed via substring search (not a spelling issue): Sydney McLaughlin (women_400h, 2023 test year), Dafne Schippers (women_200m, 2022), Emmanuel Korir (men_800m, 2023 test year), Yomif Kejelcha (men_1500m, 2023 test year), Angelica Bengtsson (women_PV, 2022), Katie Nageotte (women_PV, 2023 test year), Juan Miguel Echevarria (men_LJ, 2022), Berihu Aregawi + Jacob Krop (men_5000m, 2021). For elite/famous athletes like these, absence from a top-100 seasonal toplist is surprising — most likely a real gap in what `historical_scraper.py`'s single-page scrape captures for that specific discipline+year, not that they genuinely ranked outside the top 100. Not investigated further this session (would need re-scraping with deeper pagination or a different WA endpoint) — flagging honestly rather than silently accepting it, since 5 of these are 2023 test-year labels that put an artificial ceiling on that discipline's backtest score.
 - Two specific qualified athletes (Agnes Jebet Ngetich, women's 5000m; Yemisi Mabry, women's shot put) are genuinely absent from World Athletics toplists even at top-500 depth — likely qualified via season points/placings rather than a fast raw mark. Not fixable via more pagination.
-- `data/raw/men_5000m.csv` / `women_5000m.csv` (historical multi-year files) don't exist — neither the dead `scraper.py` nor `historical_scraper.py` ever covered these two disciplines.
 - Women's Shot Put / Women's 5000m predictions are consistently short by 1-2 athletes (missing from the top-100/500 world list, or missing precise DOB data).
 - Projections page's per-meet trajectory chart is still fabricated interpolation, relabeled honestly but not rebuilt — flagged by the user as something to revisit later, deliberately deprioritized.
 - Minor, low-priority, not acted on: `api.py` hardcodes `"qualified": true` for every athlete (harmless no-op today); `lovable-error-reporting.ts` does nothing outside the Lovable editor; React Query is wired into the dashboard but `usePredictions.ts` still does manual `fetch`/`useState` instead of using it.
 
 ## Next Steps
 
-1. **In progress — extend training beyond 13 disciplines.** Blocked on doing this *reliably*: Wikipedia + AI-summarized extraction hit two real problems — (a) the Diamond League Final's event program isn't fixed year to year (2022's Zurich Final ran a 5km road race instead of the track 5000m for both genders), and (b) Wikipedia's coverage has real gaps for several women's field events and hurdles/steeplechase in 2021/2022, with no way to tell yet whether that's a missing-page issue or the event genuinely wasn't contested. **Planned fix**: switch to scraping World Athletics' own official competition results pages directly (same reliable Selenium approach already used elsewhere in this codebase) instead of trusting Wikipedia + AI summarization, to get authoritative confirmation of what was actually contested each year before writing any new labels.
-2. Once disciplines are extended: retrain via `src/train_model.py`, compare backtest honestly (same isolate-before-deploy discipline used all session).
-3. Commit and push the h2h fix + normalization fix (currently local-only).
-4. Lower priority, explicitly saved for last per the user: landing/welcome page, README files for both repos, real per-meet Projections chart (needs the bigger multi-meet-results scrape), React Query refactor, mobile layout.
+1. **Commit and push this evening's work** (31-discipline extension + season_rank bugfix + name-matching fixes) — currently local-only.
+2. Consider investigating the 9 genuinely-absent-athlete data gaps above (particularly the 5 in the 2023 test year) if the honest backtest number needs to be tightened further — would need to inspect why `historical_scraper.py`'s scrape misses them (deeper pagination? different WA endpoint?) rather than assuming top-100 is always enough.
+3. Lower priority, explicitly saved for last per the user: landing/welcome page, README files for both repos, real per-meet Projections chart (needs the bigger multi-meet-results scrape), React Query refactor, mobile layout.
 
 ## Key Files to Know
 

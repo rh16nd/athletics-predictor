@@ -34,6 +34,14 @@ TRAIN_DISCIPLINES = [
     "men_100m", "women_100m", "men_200m", "men_400h", "women_400h", "men_PV",
     "women_200m", "men_800m", "women_800m", "men_1500m", "women_1500m",
     "women_PV", "men_LJ",
+    # Added to extend training beyond the original 13 disciplines (see HANDOFF.md
+    # Next Steps #1) -- URLs for these already exist in live_fetcher.DISCIPLINE_URLS
+    # since they're used for 2026 live predictions, just never had historical data.
+    "men_400m", "women_400m", "men_110h", "women_100h",
+    "men_5000m", "women_5000m", "men_3000sc", "women_3000sc",
+    "men_HJ", "women_HJ", "men_TJ", "women_TJ",
+    "men_SP", "women_SP", "men_DT", "women_DT", "men_JT", "women_JT",
+    "women_LJ",
 ]
 YEARS = range(2018, 2026)  # 2018-2025 inclusive
 
@@ -81,9 +89,18 @@ def scrape_discipline_history(key):
     return combined
 
 
+NEWLY_ADDED = [
+    "men_400m", "women_400m", "men_110h", "women_100h",
+    "men_5000m", "women_5000m", "men_3000sc", "women_3000sc",
+    "men_HJ", "women_HJ", "men_TJ", "women_TJ",
+    "men_SP", "women_SP", "men_DT", "women_DT", "men_JT", "women_JT",
+    "women_LJ",
+]
+
 if __name__ == "__main__":
+    targets = NEWLY_ADDED if "--new-only" in sys.argv else TRAIN_DISCIPLINES
     print("=== Rebuilding historical data/raw/{discipline}.csv from World Athletics ===")
-    for key in TRAIN_DISCIPLINES:
+    for key in targets:
         print(f"\n{key}:")
         combined = scrape_discipline_history(key)
         if combined.empty:
