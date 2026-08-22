@@ -9,7 +9,7 @@ from flask_cors import CORS
 import pandas as pd
 import json
 import os
-from datetime import date
+from datetime import date, datetime
 
 app = Flask(__name__)
 CORS(app)  # allows React dev server to call this API
@@ -17,23 +17,57 @@ CORS(app)  # allows React dev server to call this API
 OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), "outputs")
 RAW_DIR     = os.path.join(os.path.dirname(__file__), "data", "raw")
 
+MEETS_YEAR = 2026
+
+# "status" here is just the meet's calendar position, not literal — done/next/upcoming
+# are recomputed against today's date on every request (see compute_meet_statuses),
+# so this never needs manual updating as the season progresses. Only the last entry's
+# "final" label is authoritative (it marks the championship meet, not a point in time).
 MEETS = [
-    {"n": 1,  "date": "08 May", "city": "Doha",            "status": "done"},
-    {"n": 2,  "date": "16 May", "city": "Shanghai",        "status": "done"},
-    {"n": 3,  "date": "23 May", "city": "Xiamen",          "status": "done"},
-    {"n": 4,  "date": "31 May", "city": "Rabat",           "status": "done"},
-    {"n": 5,  "date": "04 Jun", "city": "Rome",            "status": "done"},
-    {"n": 6,  "date": "07 Jun", "city": "Stockholm",       "status": "done"},
-    {"n": 7,  "date": "10 Jun", "city": "Oslo",            "status": "done"},
-    {"n": 8,  "date": "26 Jun", "city": "Paris",           "status": "done"},
-    {"n": 9,  "date": "04 Jul", "city": "Eugene",          "status": "done"},
-    {"n": 10, "date": "10 Jul", "city": "Monaco",          "status": "done"},
-    {"n": 11, "date": "18 Jul", "city": "London",          "status": "done"},
-    {"n": 12, "date": "21 Aug", "city": "Lausanne",        "status": "next"},
-    {"n": 13, "date": "23 Aug", "city": "Silesia",         "status": "upcoming"},
-    {"n": 14, "date": "27 Aug", "city": "Zürich",          "status": "upcoming"},
-    {"n": 15, "date": "04 Sep", "city": "Brussels — Final","status": "final"},
+    {"n": 1,  "date": "08 May", "city": "Doha"},
+    {"n": 2,  "date": "16 May", "city": "Shanghai"},
+    {"n": 3,  "date": "23 May", "city": "Xiamen"},
+    {"n": 4,  "date": "31 May", "city": "Rabat"},
+    {"n": 5,  "date": "04 Jun", "city": "Rome"},
+    {"n": 6,  "date": "07 Jun", "city": "Stockholm"},
+    {"n": 7,  "date": "10 Jun", "city": "Oslo"},
+    {"n": 8,  "date": "26 Jun", "city": "Paris"},
+    {"n": 9,  "date": "04 Jul", "city": "Eugene"},
+    {"n": 10, "date": "10 Jul", "city": "Monaco"},
+    {"n": 11, "date": "18 Jul", "city": "London"},
+    {"n": 12, "date": "21 Aug", "city": "Lausanne"},
+    {"n": 13, "date": "23 Aug", "city": "Silesia"},
+    {"n": 14, "date": "27 Aug", "city": "Zürich"},
+    {"n": 15, "date": "04 Sep", "city": "Brussels — Final"},
 ]
+
+
+def compute_meet_statuses(meets, today=None):
+    today = today or date.today()
+    result = []
+    next_assigned = False
+    last_index = len(meets) - 1
+
+    for i, meet in enumerate(meets):
+        if i == last_index:
+            result.append({**meet, "status": "final"})
+            continue
+        try:
+            meet_date = datetime.strptime(f"{meet['date']} {MEETS_YEAR}", "%d %b %Y").date()
+        except ValueError:
+            result.append({**meet, "status": "upcoming"})
+            continue
+
+        if meet_date < today:
+            status = "done"
+        elif not next_assigned:
+            status = "next"
+            next_assigned = True
+        else:
+            status = "upcoming"
+        result.append({**meet, "status": status})
+
+    return result
 
 FIELD_EVENTS = {
     "men_PV", "women_PV", "men_LJ", "women_LJ",
@@ -204,7 +238,7 @@ def predictions():
     return jsonify({
         "lastUpdated":   str(date.today().strftime("%d %b %Y")),
         "daysToFinal":   (date(2026, 9, 4) - date.today()).days,
-        "meets":         MEETS,
+        "meets":         compute_meet_statuses(MEETS),
         "trackDisciplines": track,
         "fieldDisciplines": field,
         "topWinners":    build_top_winners(track, field),

@@ -12,10 +12,10 @@
   "men_200m": [
     "Sinesipho DAMBILE",
     "Letsile TEBOGO",
-    "Kenneth BEDNAREK",
-    "Reynier MENA",
     "Makanakaishe CHARAMBA",
+    "Kenneth BEDNAREK",
     "Courtney LINDSEY",
+    "Reynier MENA",
     "Tate TAYLOR",
     "Cheickna TRAORE"
   ],
@@ -33,11 +33,11 @@
     "Emmanuel WANYONYI",
     "Marco AROP",
     "Ben PATTISON",
+    "Brandon MILLER",
+    "Gabriel TUAL",
     "Cooper LUTKENHAUS",
     "Mark ENGLISH",
-    "Brandon MILLER",
-    "Max BURGIN",
-    "Gabriel TUAL"
+    "Max BURGIN"
   ],
   "men_1500m": [
     "Yared NUGUSE",
@@ -50,6 +50,18 @@
     "Ethan STRAND",
     "Azeddine HABZ",
     "Isaac NADER"
+  ],
+  "men_5000m": [
+    "Birhanu BALEW",
+    "Andreas ALMGREN",
+    "Graham BLANKS",
+    "Addisu YIHUNE",
+    "Mohamed ABDILAAHI",
+    "Cornelius KEMBOI",
+    "Jacob KROP",
+    "Parker WOLFE",
+    "Grant FISHER",
+    "Dominic Lokinyomo LOBALU"
   ],
   "men_110h": [
     "Jamal BRITT",
@@ -92,28 +104,28 @@
     "Kimani JACK"
   ],
   "men_PV": [
-    "Kurtis MARSCHALL",
     "Armand DUPLANTIS",
-    "Sam KENDRICKS",
+    "Kurtis MARSCHALL",
     "Emmanouil KARALIS",
+    "Sam KENDRICKS",
     "Sondre GUTTORMSEN",
     "Baptiste THIERY"
   ],
   "men_LJ": [
     "Miltiadis TENTOGLOU",
     "Bozhidar SARÂBOYUKOV",
-    "Tajay GAYLE",
-    "Wayne PINNOCK",
     "Jorge A. HODELÍN",
-    "Gerson BALDÉ"
+    "Wayne PINNOCK",
+    "Tajay GAYLE",
+    "Simon EHAMMER"
   ],
   "men_TJ": [
     "Jordan SCOTT",
     "Yasser Mohammed TRIKI",
     "Andy DÍAZ HERNÁNDEZ",
+    "Pedro PICHARDO",
     "Lázaro MARTÍNEZ",
-    "Jaydon HIBBERT",
-    "Pedro PICHARDO"
+    "Jaydon HIBBERT"
   ],
   "men_SP": [
     "Jordan GEIST",
@@ -136,8 +148,8 @@
     "Anderson PETERS",
     "Curtis THOMPSON",
     "Keshorn WALCOTT",
-    "Thomas RÖHLER",
-    "Julius YEGO"
+    "Neeraj CHOPRA",
+    "Thomas RÖHLER"
   ],
   "women_100m": [
     "Patrizia VAN DER WEKEN",
@@ -150,14 +162,14 @@
     "Kemba NELSON"
   ],
   "women_200m": [
+    "Anavia BATTLE",
     "Shaunae MILLER-UIBO",
     "Julien ALFRED",
-    "Anavia BATTLE",
-    "Shericka JACKSON",
     "Amy HUNT",
+    "Kayla WHITE",
+    "Shericka JACKSON",
     "Gabrielle THOMAS",
-    "Cambrea STURGIS",
-    "Kayla WHITE"
+    "Cambrea STURGIS"
   ],
   "women_400m": [
     "Marileidy PAULINO",
@@ -172,11 +184,11 @@
   "women_800m": [
     "Audrey WERRO",
     "Keely HODGKINSON",
-    "Tsige DUGUMA",
-    "Prudence SEKGODISO",
-    "Anaïs BOURGOIN",
-    "Addison WILEY",
     "Femke BROEDERS-BOL",
+    "Prudence SEKGODISO",
+    "Tsige DUGUMA",
+    "Addison WILEY",
+    "Anaïs BOURGOIN",
     "Lilian ODIRA"
   ],
   "women_1500m": [
@@ -191,15 +203,27 @@
     "Emily MACKAY",
     "Saron BERHE"
   ],
+  "women_5000m": [
+    "Likina AMEBAW",
+    "Aleshign BAWEKE",
+    "Freweyni HAILU",
+    "Senayet GETACHEW",
+    "Medina EISA",
+    "Marta ALEMAYO",
+    "Hirut MESHESHA",
+    "Hawi ABERA",
+    "Agnes Jebet NGETICH",
+    "Jessica HULL"
+  ],
   "women_100h": [
     "Masai RUSSELL",
     "Tobi AMUSAN",
-    "Devynne CHARLTON",
-    "Megan SIMMONDS",
     "Nadine VISSER",
+    "Devynne CHARLTON",
     "Alaysha JOHNSON",
-    "Grace STARK",
-    "Pia SKRZYSZOWSKA"
+    "Megan SIMMONDS",
+    "Pia SKRZYSZOWSKA",
+    "Grace STARK"
   ],
   "women_400h": [
     "Emma ZAPLETALOVÁ",
@@ -209,19 +233,19 @@
     "Amalie IUEL",
     "Jasmine JONES",
     "Kemi ADEKOYA",
-    "Dalilah MUHAMMAD"
+    "Paulien COUCKUYT"
   ],
   "women_3000sc": [
     "Marwa BOUZAYANI",
     "Faith CHEROTICH",
-    "Peruth CHEMUTAI",
     "Winfred YAVI",
+    "Peruth CHEMUTAI",
     "Kena TUFA",
-    "Alemnat WALLE",
+    "Doris LEMNGOLE",
+    "Lexy HALLADAY",
     "Elise THORNER",
-    "Lea MEYER",
-    "Norah JERUTO",
-    "Gabrielle JENNINGS"
+    "Gabrielle JENNINGS",
+    "Alemnat WALLE"
   ],
   "women_HJ": [
     "Eleanor PATTERSON",
@@ -232,12 +256,12 @@
     "Angelina TOPIĆ"
   ],
   "women_PV": [
-    "Nina KENNEDY",
     "Angelica MOSER",
+    "Nina KENNEDY",
     "Tina ŠUTEJ",
+    "Katie MOON",
     "Emily GROVE",
-    "Molly CAUDERY",
-    "Katie MOON"
+    "Imogen AYRIS"
   ],
   "women_LJ": [
     "Larissa IAPICHINO",
@@ -274,9 +298,9 @@
   "women_JT": [
     "Ziyi YAN",
     "Adriana VILAGOŠ",
-    "Sigrid BORGE",
     "Flor Denis RUIZ HURTADO",
-    "Anete SIETIŅA",
-    "Haruka KITAGUCHI"
+    "Sigrid BORGE",
+    "Haruka KITAGUCHI",
+    "Anete SIETIŅA"
   ]
 }

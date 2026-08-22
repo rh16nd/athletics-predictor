@@ -55,14 +55,14 @@ DISCIPLINE_URLS = {
 
 MEN_TABLE_ORDER = [
     "men_100m", "men_200m", "men_400m", "men_800m",
-    "men_1500m", "men_3000m", "men_110h", "men_400h",
+    "men_1500m", "men_5000m", "men_110h", "men_400h",
     "men_3000sc", "men_HJ", "men_PV", "men_LJ",
     "men_TJ", "men_SP", "men_DT", "men_JT"
 ]
 
 WOMEN_TABLE_ORDER = [
     "women_100m", "women_200m", "women_400m", "women_800m",
-    "women_1500m", "women_3000m", "women_100h", "women_400h",
+    "women_1500m", "women_5000m", "women_100h", "women_400h",
     "women_3000sc", "women_HJ", "women_PV", "women_LJ",
     "women_TJ", "women_SP", "women_DT", "women_JT"
 ]
@@ -96,32 +96,60 @@ def create_driver(headless=True):
     )
 
 
-def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8):
-    driver.get(url)
-    try:
-        WebDriverWait(driver, wait_seconds).until(
-            EC.presence_of_element_located((By.TAG_NAME, "table"))
-        )
-    except:
-        driver.execute_script("window.scrollTo(0, 500)")
-        time.sleep(3)
+def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8, required_athletes=None, max_pages=5):
+    """Scrapes the top-100 page, then keeps paging (?page=2, 3, ...) only if
+    required_athletes (DL-qualified names for this discipline) aren't all in
+    yet — most disciplines stop after page 1. Caps at max_pages (top ~500)
+    since a qualifier who placed on points rather than raw mark may not have
+    a top-500 time/mark at all, and isn't worth an unbounded search for."""
+    required_athletes = set(required_athletes or [])
+    all_rows = []
+    headers = None
+    found = set()
 
-    soup = BeautifulSoup(driver.page_source, "html.parser")
-    table = soup.find("table")
-    if not table:
+    for page in range(1, max_pages + 1):
+        page_url = url if page == 1 else f"{url}?page={page}"
+        driver.get(page_url)
+        try:
+            WebDriverWait(driver, wait_seconds).until(
+                EC.presence_of_element_located((By.TAG_NAME, "table"))
+            )
+        except Exception:
+            driver.execute_script("window.scrollTo(0, 500)")
+            time.sleep(3)
+
+        soup = BeautifulSoup(driver.page_source, "html.parser")
+        table = soup.find("table")
+        if not table:
+            break
+
+        if headers is None:
+            headers = [th.get_text(strip=True) for th in table.find_all("th")]
+
+        rows = [
+            [td.get_text(strip=True) for td in tr.find_all("td")]
+            for tr in table.find_all("tr")[1:]
+        ]
+        rows = [r for r in rows if r]
+        if not rows:
+            break
+
+        all_rows.extend(rows)
+
+        if headers and "Competitor" in headers:
+            comp_idx = headers.index("Competitor")
+            found.update(r[comp_idx] for r in rows if comp_idx < len(r))
+
+        missing = required_athletes - found
+        if not missing:
+            break
+        if page > 1:
+            print(f"    page {page}: still missing {sorted(missing)}")
+
+    if not all_rows:
         return pd.DataFrame()
 
-    headers = [th.get_text(strip=True) for th in table.find_all("th")]
-    rows = []
-    for tr in table.find_all("tr")[1:]:
-        cells = [td.get_text(strip=True) for td in tr.find_all("td")]
-        if cells:
-            rows.append(cells)
-
-    if not rows:
-        return pd.DataFrame()
-
-    df = pd.DataFrame(rows, columns=headers[:len(rows[0])])
+    df = pd.DataFrame(all_rows, columns=headers[:len(all_rows[0])])
     df["discipline"] = discipline
     df["year"] = year
     return df
@@ -187,7 +215,7 @@ if __name__ == "__main__":
         use_headless = key not in MIDDLE_DISTANCE
         driver = create_driver(headless=use_headless)
         wait = 15 if key in MIDDLE_DISTANCE else 8
-        df = scrape_toplist(driver, url, key, wait_seconds=wait)
+        df = scrape_toplist(driver, url, key, wait_seconds=wait, required_athletes=standings.get(key, []))
         driver.quit()
 
         if not df.empty:
