@@ -2,6 +2,7 @@ venv/
 data/raw/
 data/standings.json
 data/injury_flags.json
+data/dl_final_results.csv
 outputs/predictions_latest.csv
 outputs/dashboard_2026.html
 __pycache__/
