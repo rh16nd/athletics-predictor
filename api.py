@@ -104,8 +104,15 @@ def load_predictions():
     """Load predictions_latest.csv and build discipline data."""
     path = os.path.join(OUTPUTS_DIR, "predictions_latest.csv")
     if not os.path.exists(path):
-        return None, None
-
+            return None, None
+    
+    def get_model_accuracy():
+        acc_path = os.path.join(OUTPUTS_DIR, "model_accuracy.txt")
+        try:
+            return float(open(acc_path).read().strip())
+        except:
+            return 44.0
+        
     df = pd.read_csv(path)
     track = []
     field = []
@@ -181,7 +188,13 @@ def build_confidence(track, field):
         for d in sorted(all_discs, key=lambda x: -(x["athletes"][0]["prob"] if x["athletes"] else 0))
     ]
 
-
+def get_model_accuracy():
+    acc_path = os.path.join(OUTPUTS_DIR, "model_accuracy.txt")
+    try:
+        return float(open(acc_path).read().strip())
+    except:
+        return 44.0
+    
 @app.route("/api/predictions")
 def predictions():
     track, field = load_predictions()
@@ -196,7 +209,7 @@ def predictions():
         "fieldDisciplines": field,
         "topWinners":    build_top_winners(track, field),
         "confidence":    build_confidence(track, field),
-        "modelAccuracy": 46.2,
+        "modelAccuracy": get_model_accuracy(),
     })
 
 
