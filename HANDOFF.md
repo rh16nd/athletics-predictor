@@ -53,7 +53,7 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 **Dashboard**: shows live last-updated date and dynamically-computed meet status (done/next/upcoming) on every page, real World Athletics profile links on athlete names, honest labeling on the (still-synthetic) Projections trajectory chart.
 
-**Both repos were clean and pushed as of the start of this evening's session** (the h2h fix + normalization fix mentioned as "local-only" earlier in this doc had already landed in commit `f150779d` — that line was stale, corrected here). The 31-discipline extension (`train_model.py`, `historical_scraper.py`, `HANDOFF.md`, retrained `outputs/`) is made locally and **not yet committed/pushed** as of this writing.
+**Both repos are pushed and up to date with origin/main** as of this writing. The 31-discipline extension (`train_model.py`, `historical_scraper.py`, retrained `outputs/`) is committed and pushed as `0e53ea24`.
 
 ## Files Changed This Session
 
@@ -117,9 +117,8 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 ## Next Steps
 
-1. **Commit and push this evening's work** (31-discipline extension + season_rank bugfix + name-matching fixes) — currently local-only.
-2. Consider investigating the 9 genuinely-absent-athlete data gaps above (particularly the 5 in the 2023 test year) if the honest backtest number needs to be tightened further — would need to inspect why `historical_scraper.py`'s scrape misses them (deeper pagination? different WA endpoint?) rather than assuming top-100 is always enough.
-3. Lower priority, explicitly saved for last per the user: landing/welcome page, README files for both repos, real per-meet Projections chart (needs the bigger multi-meet-results scrape), React Query refactor, mobile layout.
+1. Consider investigating the 9 genuinely-absent-athlete data gaps above (particularly the 5 in the 2023 test year) if the honest backtest number needs to be tightened further — would need to inspect why `historical_scraper.py`'s scrape misses them (deeper pagination? different WA endpoint?) rather than assuming top-100 is always enough.
+2. Lower priority, explicitly saved for last per the user: landing/welcome page, README files for both repos, real per-meet Projections chart (needs the bigger multi-meet-results scrape), React Query refactor, mobile layout.
 
 ## Key Files to Know
 
