@@ -7,3 +7,4 @@ outputs/dashboard_2026.html
 __pycache__/
 *.pyc
 .env
+.ipynb_checkpoints/
