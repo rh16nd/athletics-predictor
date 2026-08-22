@@ -100,3 +100,26 @@ def test_train_disciplines_and_field_events_are_consistent():
     typo'd key here would silently never match anything in add_season_rank/
     build_features's is_track branch."""
     assert tm.FIELD_EVENTS.issubset(set(tm.TRAIN_DISCIPLINES.keys()))
+
+
+def test_apply_wind_adjustment_no_penalty_within_legal_limit():
+    assert tm.apply_wind_adjustment(9.90, wind=0.9, is_field=False) == 9.90
+    assert tm.apply_wind_adjustment(8.20, wind=1.0, is_field=True) == 8.20
+
+
+def test_apply_wind_adjustment_track_event_penalty_increases_mark():
+    # A following wind makes a time look artificially fast -- the fair
+    # (adjusted) mark must be pushed UP (slower), not down.
+    adjusted = tm.apply_wind_adjustment(9.90, wind=2.0, is_field=False)
+    assert adjusted > 9.90
+
+
+def test_apply_wind_adjustment_field_event_penalty_decreases_mark():
+    """Regression test: this used to always ADD the penalty regardless of
+    event type, which is backwards for a higher-is-better field-event mark
+    -- a wind-aided jump would have looked artificially BETTER instead of
+    worse. Never actually live before this fix since field events weren't
+    in WIND_EVENTS yet, but the bug was real and would have hit the moment
+    they were added without this fix alongside it."""
+    adjusted = tm.apply_wind_adjustment(8.20, wind=2.0, is_field=True)
+    assert adjusted < 8.20

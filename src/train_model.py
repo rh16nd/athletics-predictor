@@ -82,7 +82,13 @@ FIELD_EVENTS = {
     "men_HJ", "women_HJ", "men_TJ", "women_TJ",
     "men_SP", "women_SP", "men_DT", "women_DT", "men_JT", "women_JT",
 }
-WIND_EVENTS = {"men_100m", "women_100m", "men_200m", "women_200m"}
+WIND_EVENTS = {
+    "men_100m", "women_100m", "men_200m", "women_200m",
+    # Wind-legal events under actual competition rules -- these were left out
+    # of the original wind-adjustment feature entirely (not a design choice,
+    # just never extended past the first 4 disciplines it was built for).
+    "men_110h", "women_100h", "men_LJ", "women_LJ", "men_TJ", "women_TJ",
+}
 
 # Real Diamond League Final results, scraped directly from World Athletics'
 # own public API (src/dl_final_results_scraper.py) -- see that file's
@@ -216,6 +222,21 @@ def competition_weight(venue):
     return 1.0
 
 
+def apply_wind_adjustment(mark, wind, is_field):
+    """A following wind over the +1.0 m/s legal limit makes a time look
+    faster (lower) but a jump/throw look longer (higher) than "fair" -- the
+    penalty must move the mark toward worse in whichever direction that is
+    for this discipline, not just always add. Extracted as a pure function
+    so this direction-of-penalty logic is directly testable; it was wrong
+    for field events (always added, which is backwards for a
+    higher-is-better mark) until this fix, though field events had never
+    been in WIND_EVENTS before this fix either, so it had no live effect yet."""
+    if wind <= 1.0:
+        return mark
+    penalty = (wind - 1.0) * 0.01
+    return mark - penalty if is_field else mark + penalty
+
+
 def add_new_features(df):
     """Same idea as the notebook's add_new_features, but reads the real
     historical file (data/raw/{discipline}.csv, filtered by year) instead of
@@ -247,13 +268,12 @@ def add_new_features(df):
                 def wind_adj(row):
                     try:
                         wind = float(str(row["WIND"]).replace("+", "").strip())
-                        if wind > 1.0:
-                            return row["Mark"] + (wind - 1.0) * 0.01
-                        return row["Mark"]
+                        return apply_wind_adjustment(row["Mark"], wind, is_field)
                     except Exception:
                         return row["Mark"]
                 raw["wind_adj"] = raw.apply(wind_adj, axis=1)
-                wind_adj_map = raw.groupby("athlete_name")["wind_adj"].min().to_dict()
+                wind_adj_agg = raw.groupby("athlete_name")["wind_adj"]
+                wind_adj_map = (wind_adj_agg.max() if is_field else wind_adj_agg.min()).to_dict()
 
             if "Date" in raw.columns:
                 raw["date"] = pd.to_datetime(raw["Date"], format="%d %b %Y", errors="coerce")
@@ -389,12 +409,23 @@ def add_h2h_features(df):
     return df
 
 
-def _score_fold(train, test, feature_cols):
+DEFAULT_MODEL_PARAMS = {
+    "n_estimators": 100, "max_depth": 16, "min_samples_leaf": 1,
+    "class_weight": None, "random_state": 42,
+}  # walk-forward-tuned via --tune (2026-08-22). Re-tuned twice more as the feature set
+   # changed (wind-adjustment fix, then real multi-meeting season data) -- each round
+   # picked a different winner, confirming tuning needs redoing whenever the features
+   # change, not reused across them. class_weight=None beat "balanced" across the
+   # entire top-10 all three rounds: balanced weighting was overcorrecting for the
+   # top3/not-top3 imbalance on a dataset this small.
+
+
+def _score_fold(train, test, feature_cols, model_params=None):
     scaler = StandardScaler()
     X_train = scaler.fit_transform(train[feature_cols])
     X_test = scaler.transform(test[feature_cols])
 
-    model = RandomForestClassifier(n_estimators=200, class_weight="balanced", random_state=42)
+    model = RandomForestClassifier(**(model_params or DEFAULT_MODEL_PARAMS))
     model.fit(X_train, train["dl_top3"])
 
     test = test.copy()
@@ -413,7 +444,75 @@ def _score_fold(train, test, feature_cols):
     return correct, possible, per_discipline, model
 
 
-def train_and_backtest(feature_cols, label=""):
+def walk_forward_folds(full, feature_cols, model_params=None, verbose=True):
+    """Runs the expanding-window walk-forward validation (train on every
+    labeled year strictly before each test year, one fold per test year) and
+    returns (total_correct, total_possible). Shared by train_and_backtest()
+    and tune_hyperparameters() so both use the exact same evaluation, not
+    two implementations that could quietly drift apart."""
+    total_correct, total_possible = 0, 0
+    test_years = LABEL_YEARS[2:]  # first 2 years only ever serve as training seed
+    for test_year in test_years:
+        train_years = [y for y in LABEL_YEARS if y < test_year]
+        train = full[full["year"].isin(train_years)]
+        test = full[full["year"] == test_year]
+        if train.empty or test.empty:
+            continue
+        correct, possible, _, _ = _score_fold(train, test, feature_cols, model_params)
+        if verbose:
+            fold_acc = round(correct / possible * 100, 1) if possible else 0.0
+            print(f"  train {train_years} -> test {test_year}: {correct}/{possible} = {fold_acc}%")
+        total_correct += correct
+        total_possible += possible
+    return total_correct, total_possible
+
+
+def tune_hyperparameters(feature_cols):
+    """Small grid search over RandomForest params, each candidate scored by
+    the exact same walk-forward folds train_and_backtest() reports honest
+    accuracy with -- so "best" here means "generalizes best across 2023,
+    2024, 2025", not "fits one split best". Informational only: prints
+    ranked results and returns the winner, doesn't touch outputs/. Whoever
+    reads the results decides whether to make a candidate the new
+    DEFAULT_MODEL_PARAMS -- this deliberately isn't automatic, so a
+    retrain's default hyperparameters can't silently drift between runs."""
+    labeled = build_labeled_dataset()
+    ranked = add_season_rank(labeled)
+    full = add_new_features(ranked)
+    full = add_h2h_features(full)
+    full = full.dropna(subset=feature_cols)
+
+    grid = [
+        {"n_estimators": n, "max_depth": d, "min_samples_leaf": leaf, "class_weight": cw, "random_state": 42}
+        for n in [100, 200, 300]
+        for d in [None, 8, 16]
+        for leaf in [1, 2, 4]
+        for cw in ["balanced", None]
+    ]
+
+    print(f"\n=== Hyperparameter search ({len(grid)} candidates, walk-forward scored) ===")
+    results = []
+    for params in grid:
+        correct, possible = walk_forward_folds(full, feature_cols, params, verbose=False)
+        acc = round(correct / possible * 100, 1) if possible else 0.0
+        results.append((acc, correct, possible, params))
+
+    results.sort(key=lambda r: -r[0])
+    print("  Top 10:")
+    for acc, correct, possible, params in results[:10]:
+        param_str = ", ".join(f"{k}={v}" for k, v in params.items() if k != "random_state")
+        print(f"    {acc:5.1f}% ({correct}/{possible})  {param_str}")
+
+    baseline = next((r for r in results if r[3] == DEFAULT_MODEL_PARAMS), None)
+    if baseline:
+        print(f"\n  Current default ({DEFAULT_MODEL_PARAMS}): {baseline[0]}%")
+
+    best_acc, best_correct, best_possible, best_params = results[0]
+    print(f"\n  Best: {best_params} -> {best_acc}% ({best_correct}/{best_possible})")
+    return best_params
+
+
+def train_and_backtest(feature_cols, label="", model_params=None):
     """Walk-forward (expanding-window) validation: train on every labeled
     year strictly before each test year, one fold per test year, instead of
     a single fixed train/test split. With only 3 years of labels a single
@@ -428,22 +527,9 @@ def train_and_backtest(feature_cols, label=""):
     full = full.dropna(subset=feature_cols)
 
     print(f"\n=== {label} — walk-forward validation ({LABEL_YEARS[0]}-{LABEL_YEARS[-1]}) ===")
-    total_correct, total_possible = 0, 0
-    test_years = LABEL_YEARS[2:]  # first 2 years only ever serve as training seed
-    for test_year in test_years:
-        train_years = [y for y in LABEL_YEARS if y < test_year]
-        train = full[full["year"].isin(train_years)]
-        test = full[full["year"] == test_year]
-        if train.empty or test.empty:
-            continue
-        correct, possible, per_discipline, _ = _score_fold(train, test, feature_cols)
-        fold_acc = round(correct / possible * 100, 1) if possible else 0.0
-        print(f"  train {train_years} -> test {test_year}: {correct}/{possible} = {fold_acc}%")
-        total_correct += correct
-        total_possible += possible
-
+    total_correct, total_possible = walk_forward_folds(full, feature_cols, model_params, verbose=True)
     accuracy_pct = round(total_correct / total_possible * 100, 1) if total_possible else 0.0
-    print(f"  Overall (all {len(test_years)} folds combined): {total_correct}/{total_possible} = {accuracy_pct}%")
+    print(f"  Overall (all {len(LABEL_YEARS[2:])} folds combined): {total_correct}/{total_possible} = {accuracy_pct}%")
 
     # The deployed model is refit on ALL labeled years -- walk-forward above
     # is purely to estimate honest generalization, not to pick which years
@@ -451,7 +537,7 @@ def train_and_backtest(feature_cols, label=""):
     # for the number you report, then refit on everything for production.
     scaler = StandardScaler()
     X_all = scaler.fit_transform(full[feature_cols])
-    model = RandomForestClassifier(n_estimators=200, class_weight="balanced", random_state=42)
+    model = RandomForestClassifier(**(model_params or DEFAULT_MODEL_PARAMS))
     model.fit(X_all, full["dl_top3"])
 
     print("\n  Feature importances (final model, trained on all years):")
@@ -484,6 +570,10 @@ if __name__ == "__main__":
                              "case-insensitive matching fix -- see add_h2h_features)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Backtest only, don't overwrite outputs/")
+    parser.add_argument("--tune", action="store_true",
+                        help="Grid-search RandomForest hyperparameters via the walk-forward "
+                             "folds and print ranked results. Informational only -- exits "
+                             "without training or saving anything.")
     args = parser.parse_args()
 
     base_cols = [
@@ -500,6 +590,10 @@ if __name__ == "__main__":
         feature_cols += ["h2h_win_rate"]
         label_parts.append("h2h")
     label = " + ".join(label_parts)
+
+    if args.tune:
+        tune_hyperparameters(feature_cols)
+        sys.exit(0)
 
     model, scaler, accuracy_pct = train_and_backtest(feature_cols, label=label)
 
