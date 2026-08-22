@@ -104,6 +104,7 @@ def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8, required_
     a top-500 time/mark at all, and isn't worth an unbounded search for."""
     required_athletes = set(required_athletes or [])
     all_rows = []
+    all_profile_urls = []
     headers = None
     found = set()
 
@@ -126,13 +127,20 @@ def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8, required_
         if headers is None:
             headers = [th.get_text(strip=True) for th in table.find_all("th")]
 
-        rows = [
-            [td.get_text(strip=True) for td in tr.find_all("td")]
-            for tr in table.find_all("tr")[1:]
-        ]
-        rows = [r for r in rows if r]
+        trs = [tr for tr in table.find_all("tr")[1:] if tr.find_all("td")]
+        rows = [[td.get_text(strip=True) for td in tr.find_all("td")] for tr in trs]
         if not rows:
             break
+
+        # The competitor-name cell links straight to their WA profile
+        # (/athletes/athlete={id}), which resolves directly to the real
+        # profile page -- no need to construct the "pretty" slug URL.
+        for tr in trs:
+            link = tr.find("a", href=True)
+            all_profile_urls.append(
+                "https://worldathletics.org" + link["href"] if link and link["href"].startswith("/")
+                else (link["href"] if link else None)
+            )
 
         all_rows.extend(rows)
 
@@ -152,6 +160,7 @@ def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8, required_
     df = pd.DataFrame(all_rows, columns=headers[:len(all_rows[0])])
     df["discipline"] = discipline
     df["year"] = year
+    df["ProfileURL"] = all_profile_urls
     return df
 
 

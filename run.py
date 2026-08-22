@@ -430,6 +430,7 @@ for key, label in DISCIPLINES_2026.items():
     print(f"\n-- {label} --")
 
     nat_map = {}
+    profile_map = {}
     raw_path = os.path.join(RAW_DIR, f"{key}_2026.csv")
     if os.path.exists(raw_path):
         raw_df = pd.read_csv(raw_path)
@@ -438,6 +439,8 @@ for key, label in DISCIPLINES_2026.items():
         nat_col = cols[dob_idx + 1] if dob_idx >= 0 and dob_idx + 1 < len(cols) else None
         if nat_col is not None:
             nat_map = dict(zip(raw_df["Competitor"], raw_df[nat_col]))
+        if "ProfileURL" in raw_df.columns:
+            profile_map = dict(zip(raw_df["Competitor"], raw_df["ProfileURL"]))
 
     for i, (_, row) in enumerate(df_qual.head(get_qual_limit(key)).iterrows()):
         medal = ["1", "2", "3"][i] if i < 3 else "  "
@@ -448,6 +451,14 @@ for key, label in DISCIPLINES_2026.items():
         watch_marker = " [INJURY WATCH]" if is_watch else ""
         if i < 3:
             print(f"  {medal} {row['athlete_name']}{watch_marker}  {sb}  ({prob:.0%})")
+
+        # Real WA profile link scraped from the toplist page; only falls
+        # back to a search query if we somehow never captured it (older
+        # cached data, or an athlete row with no linked cell).
+        profile_url = profile_map.get(row["athlete_name"])
+        if not isinstance(profile_url, str) or not profile_url:
+            profile_url = f"https://www.worldathletics.org/search/?q={row['athlete_name'].replace(' ', '+')}"
+
         all_predictions.append({
             "discipline":      label,
             "predicted_rank":  i + 1,
@@ -456,6 +467,7 @@ for key, label in DISCIPLINES_2026.items():
             "season_best":     sb,
             "win_probability": f"{prob:.0%}",
             "injury_watch":    is_watch,
+            "profile_url":     profile_url,
             "date":            str(date.today()),
         })
 

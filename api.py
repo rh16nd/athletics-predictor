@@ -171,7 +171,9 @@ def load_predictions():
             else:
                 prob = int(float(prob) * 100) if float(prob) <= 1 else int(prob)
 
-            wa_url = f"https://www.worldathletics.org/search/?q={row['athlete_name'].replace(' ', '+')}"
+            wa_url = row.get("profile_url")
+            if not isinstance(wa_url, str) or not wa_url or wa_url == "nan":
+                wa_url = f"https://www.worldathletics.org/search/?q={row['athlete_name'].replace(' ', '+')}"
 
             athletes.append({
                 "rank":      int(row.get("predicted_rank", len(athletes) + 1)),
