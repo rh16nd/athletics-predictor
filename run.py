@@ -380,6 +380,36 @@ for key, label in DISCIPLINES_2026.items():
     if df_qual.empty:
         continue
 
+    # h2h_win_rate as a model input feature (see src/train_model.py's
+    # add_h2h_features for why this must be case-insensitive: h2h_rates.csv
+    # uses normal-case names ("Trayvon Bromell") while every other source
+    # here uses WA's ALL-CAPS-surname format ("Trayvon BROMELL"). An exact
+    # match finds zero rows, which silently made this feature a constant
+    # neutral 0.5 in the old manual 60/40 blend for every prediction ever
+    # made. Now trained-in instead of blended after the fact.
+    h2h_path = os.path.join("data", "h2h", "h2h_rates.csv")
+    if os.path.exists(h2h_path):
+        h2h_df = pd.read_csv(h2h_path)
+        disc_h2h = h2h_df[(h2h_df["discipline"] == key) & (h2h_df["meetings"] >= 2)].copy()
+        disc_h2h["a_lower"] = disc_h2h["athlete_a"].str.lower()
+        disc_h2h["b_lower"] = disc_h2h["athlete_b"].str.lower()
+        lookup = {}
+        for _, r in disc_h2h.iterrows():
+            lookup.setdefault(r["a_lower"], {})[r["b_lower"]] = r["win_rate"]
+
+        names_lower = df_qual["athlete_name"].str.lower().tolist()
+
+        def get_h2h_rate(name_lower):
+            opp_rates = [
+                lookup[name_lower][opp] for opp in names_lower
+                if opp != name_lower and name_lower in lookup and opp in lookup[name_lower]
+            ]
+            return sum(opp_rates) / len(opp_rates) if opp_rates else 0.5
+
+        df_qual["h2h_win_rate"] = [get_h2h_rate(n) for n in names_lower]
+    else:
+        df_qual["h2h_win_rate"] = 0.5
+
     df_qual = df_qual.dropna(subset=feat_cols)
     if df_qual.empty:
         continue
@@ -387,42 +417,15 @@ for key, label in DISCIPLINES_2026.items():
     X = scaler.transform(df_qual[feat_cols])
     df_qual["win_probability"] = model.predict_proba(X)[:, 1]
 
-    # Load h2h data and compute win rates
-    h2h_path = os.path.join("data", "h2h", "h2h_rates.csv")
-    if os.path.exists(h2h_path):
-        h2h_df = pd.read_csv(h2h_path)
-        disc_h2h = h2h_df[h2h_df["discipline"] == key]
-        opponents = df_qual["athlete_name"].tolist()
-        
-        def get_h2h_rate(athlete):
-            rates = []
-            for opp in opponents:
-                if opp == athlete:
-                    continue
-                row = disc_h2h[
-                    (disc_h2h["athlete_a"] == athlete) & 
-                    (disc_h2h["athlete_b"] == opp) &
-                    (disc_h2h["meetings"] >= 2)
-                ]
-                if not row.empty:
-                    rates.append(row.iloc[0]["win_rate"])
-            return sum(rates) / len(rates) if rates else 0.5
-        
-        df_qual["h2h_win_rate"] = df_qual["athlete_name"].apply(get_h2h_rate)
-        
-# Blend h2h with model probability (60% model, 40% h2h)
-        df_qual["win_probability"] = (
-            df_qual["win_probability"] * 0.6 + 
-            df_qual["h2h_win_rate"] * 0.4
-        )
-
-        df_qual["win_probability"] = df_qual["win_probability"].clip(0, 1)
-
-# Final normalization — scale to top-3 probability
-        total = df_qual["win_probability"].sum()
-        if total > 0:
-            df_qual["win_probability"] = (df_qual["win_probability"] / total) * 3
-        df_qual["win_probability"] = df_qual["win_probability"].clip(0.01, 0.95)
+    # Display bound only -- no artificial rescaling. predict_proba is
+    # already a real, differentiated probability estimate (balanced-class
+    # RandomForest); the old "(prob/total)*3, clip to 0.95" scheme assumed
+    # probabilities should sum to ~3 (one per medal), but once h2h_win_rate
+    # became a real feature, combined raw scores routinely exceed 1.0 before
+    # the clip -- e.g. two different favorites both landing on the exact
+    # 0.95 ceiling and becoming indistinguishable, sometimes several per
+    # discipline. Clipping only to avoid a literal 0%/100% display.
+    df_qual["win_probability"] = df_qual["win_probability"].clip(0.01, 0.99)
 
     is_field = key in FIELD_EVENTS
     df_qual = df_qual.sort_values("season_best", ascending=not is_field)

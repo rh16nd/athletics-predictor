@@ -377,10 +377,49 @@ def build_labeled_dataset():
     return labeled
 
 
+def add_h2h_features(df):
+    """Adds h2h_win_rate per (athlete, discipline, year) row: average win
+    rate against the other athletes in that discipline-year's training pool
+    (>=2 meetings required, matching run.py's inference-time threshold).
+
+    data/h2h/h2h_rates.csv uses normal-case names ("Trayvon Bromell") while
+    every other data source in this pipeline uses WA's ALL-CAPS-surname
+    format ("Trayvon BROMELL") -- an exact-string match between the two
+    finds ZERO matches. This silently made h2h_win_rate default to a neutral
+    0.5 for every athlete in every prediction ever made by run.py's blend,
+    despite 156k real matchup rows sitting unused. Matching case-insensitive
+    here (and in run.py) is the actual fix -- confirmed live: 0/8 exact
+    matches vs 7/8 case-insensitive matches for a sample discipline.
+    """
+    h2h_path = os.path.join(os.path.dirname(__file__), "..", "data", "h2h", "h2h_rates.csv")
+    h2h_df = pd.read_csv(h2h_path)
+    h2h_df["a_lower"] = h2h_df["athlete_a"].str.lower()
+    h2h_df["b_lower"] = h2h_df["athlete_b"].str.lower()
+    h2h_df = h2h_df[h2h_df["meetings"] >= 2]
+
+    df = df.copy()
+    rates = []
+    for (discipline, year), group in df.groupby(["discipline", "year"]):
+        sub = h2h_df[h2h_df["discipline"] == discipline]
+        lookup = {}
+        for _, r in sub.iterrows():
+            lookup.setdefault(r["a_lower"], {})[r["b_lower"]] = r["win_rate"]
+        names_lower = [n.lower() for n in group["athlete_name"]]
+        for name_lower in names_lower:
+            opp_rates = [
+                lookup[name_lower][opp] for opp in names_lower
+                if opp != name_lower and name_lower in lookup and opp in lookup[name_lower]
+            ]
+            rates.append(sum(opp_rates) / len(opp_rates) if opp_rates else 0.5)
+    df["h2h_win_rate"] = rates
+    return df
+
+
 def train_and_backtest(feature_cols, label=""):
     labeled = build_labeled_dataset()
     ranked = add_season_rank(labeled)
     full = add_new_features(ranked)
+    full = add_h2h_features(full)
 
     train = full[full["year"].isin([2021, 2022])].dropna(subset=feature_cols)
     test = full[full["year"] == 2023].dropna(subset=feature_cols)
@@ -437,6 +476,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--with-recency", action="store_true",
                         help="Add recent_trend/days_since_last to the trained feature set")
+    parser.add_argument("--with-h2h", action="store_true",
+                        help="Add h2h_win_rate to the trained feature set (requires the "
+                             "case-insensitive matching fix -- see add_h2h_features)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Backtest only, don't overwrite outputs/")
     args = parser.parse_args()
@@ -446,8 +488,15 @@ if __name__ == "__main__":
         "yoy_improvement", "age", "season_rank", "season_percentile",
         "weighted_season_best", "wind_adj_season_best",
     ]
-    feature_cols = base_cols + (["recent_trend", "days_since_last"] if args.with_recency else [])
-    label = "V4 (recency features)" if args.with_recency else "V3-fixed (real weighted/wind features)"
+    feature_cols = base_cols.copy()
+    label_parts = ["V3-fixed"]
+    if args.with_recency:
+        feature_cols += ["recent_trend", "days_since_last"]
+        label_parts.append("recency")
+    if args.with_h2h:
+        feature_cols += ["h2h_win_rate"]
+        label_parts.append("h2h")
+    label = " + ".join(label_parts)
 
     model, scaler, accuracy_pct = train_and_backtest(feature_cols, label=label)
 
