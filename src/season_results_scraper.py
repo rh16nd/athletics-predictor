@@ -34,6 +34,14 @@ than replacing. A little duplication (a meeting mark that happens to match
 the toplist's season-best) is a real value counted twice among several,
 not a correctness bug, at the scale a handful of per-season race counts.
 
+Rows are also filtered to athletes ever present in that discipline's own
+toplist (any year, not just the meeting's year -- see
+dl_final_results_scraper.load_recognized_names) -- a DL meeting's final can
+include a field-filler who made the final of a weaker discipline that day
+but was never actually competitive in it; keeping their marks would add
+noise (near-zero meets_count/consistency signal) without adding real
+information about the athletes DL Final prediction actually cares about.
+
 Usage:
     python src/season_results_scraper.py
 """
@@ -161,6 +169,16 @@ if __name__ == "__main__":
     for key, rows in sorted(by_discipline.items()):
         new_df = pd.DataFrame(rows).drop(columns=["discipline"])
         new_df["source"] = "dl_meeting"
+
+        # Only keep rows for athletes ever toplisted in this discipline --
+        # drops field-fillers/journeymen who made a DL meeting's final but
+        # were never actually competitive in the event, without needing a
+        # per-athlete profile API (see dl_final_results_scraper.load_recognized_names).
+        recognized = dlr.load_recognized_names(key, RAW_DIR)
+        before = len(new_df)
+        new_df = new_df[new_df["Competitor"].isin(recognized)]
+        dropped = before - len(new_df)
+
         path = os.path.join(RAW_DIR, f"{key}.csv")
         if os.path.exists(path):
             existing = pd.read_csv(path)
@@ -176,6 +194,6 @@ if __name__ == "__main__":
         else:
             combined = new_df
         combined.to_csv(path, index=False)
-        print(f"  {key}: +{len(new_df)} meeting rows -> {path} ({len(combined)} total rows)")
+        print(f"  {key}: +{len(new_df)} meeting rows (dropped {dropped} unrecognized) -> {path} ({len(combined)} total rows)")
 
     print("\nDone.")

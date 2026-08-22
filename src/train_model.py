@@ -412,16 +412,16 @@ def add_h2h_features(df):
 
 
 DEFAULT_MODEL_PARAMS = {
-    "n_estimators": 100, "max_depth": 16, "min_samples_leaf": 4,
-    "class_weight": "balanced", "random_state": 42,
-}  # walk-forward-tuned via --tune (2026-08-22, re-tuned 2026-08-23 after extending
-   # LABEL_YEARS to 2018-2025). Re-tuned four times total as the feature set or
-   # training-set size changed -- each round picked a different winner, confirming
-   # tuning needs redoing whenever either changes, not reused across them.
-   # class_weight=None had beaten "balanced" every round on the smaller
-   # (2021-2025, 279-sample) dataset; with 2018/2019 added (459 samples), balanced
-   # now wins outright -- more data made the top3/not-top3 imbalance correction
-   # useful instead of an overcorrection.
+    "n_estimators": 200, "max_depth": 16, "min_samples_leaf": 1,
+    "class_weight": None, "random_state": 42,
+}  # walk-forward-tuned via --tune (2026-08-22, re-tuned 2026-08-23 twice more: once
+   # after extending LABEL_YEARS to 2018-2025, again after adding major_meets_scraper.py
+   # + the recognized-names noise filter). Re-tuned five times total as the feature set,
+   # training-set size, or data-quality filtering changed -- each round picked a
+   # different winner (including flipping class_weight None<->balanced twice), a sign
+   # that hyperparameter search on a dataset this size (459 rows) is itself fairly
+   # noisy -- don't read too much into which single config "won" a given round, but
+   # do still re-tune whenever the data changes rather than reusing an old winner.
 
 
 def _score_fold(train, test, feature_cols, model_params=None):

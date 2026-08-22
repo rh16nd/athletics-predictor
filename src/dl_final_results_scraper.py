@@ -53,6 +53,7 @@ import os
 import sys
 import time
 
+import pandas as pd
 import requests
 
 GRAPHQL_URL = "https://graphql-prod-4881.edge.aws.worldathletics.org/graphql"
@@ -139,6 +140,25 @@ def strip_gender_prefix(event_name):
 
 def resolve_discipline_key(gender, event_name):
     return WA_EVENT_TO_KEY.get((gender, strip_gender_prefix(event_name)))
+
+
+def load_recognized_names(discipline_key, raw_dir):
+    """Returns the set of athlete names that appear in a discipline's
+    historical_scraper.py TOPLIST rows, across every scraped year (not just
+    one) -- used by season_results_scraper.py/major_meets_scraper.py to
+    filter out field-fillers/journeymen who show up in one Final's results
+    but were never actually competitive in this event. Checking "ever
+    toplisted", not "toplisted that exact year", is deliberate: toplist
+    scraping has occasional single-year gaps (see HANDOFF.md's Known
+    Limitations for two confirmed cases) that shouldn't get compounded into
+    also dropping that athlete's real per-meeting marks."""
+    path = os.path.join(raw_dir, f"{discipline_key}.csv")
+    if not os.path.exists(path):
+        return set()
+    df = pd.read_csv(path)
+    if "source" in df.columns:
+        df = df[df["source"].isna() | (df["source"] == "toplist")]
+    return set(df["Competitor"].dropna())
 
 
 def graphql(operation_name, variables, query):

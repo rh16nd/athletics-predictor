@@ -36,6 +36,9 @@ python src/dl_final_results_scraper.py
 # Enrich training data with real per-meeting season history (~few min)
 python src/season_results_scraper.py
 
+# Add real results from Olympics/Worlds/Continental Tour Gold/Euro Champs (~few min)
+python src/major_meets_scraper.py
+
 # Retrain the model (fast, seconds — uses already-scraped data/raw/*.csv)
 python src/train_model.py --with-recency --with-h2h
 
@@ -50,14 +53,18 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 ## Current State
 
-**Model**: RandomForestClassifier, `n_estimators=100, max_depth=16, min_samples_leaf=4, class_weight="balanced"` (`DEFAULT_MODEL_PARAMS` in `train_model.py` — walk-forward tuned via `--tune`, re-tune whenever the feature set OR training-set size changes since the winning config shifts each time — `class_weight=None` had won on the smaller 2021-2025 dataset, `"balanced"` won outright once 2018/2019 were added). 14 features, **all carrying real signal**:
+**Model**: RandomForestClassifier, `n_estimators=200, max_depth=16, min_samples_leaf=1, class_weight=None` (`DEFAULT_MODEL_PARAMS` in `train_model.py` — walk-forward tuned via `--tune`, re-tune whenever the feature set, training-set size, OR data-quality filtering changes, since the winning config shifts each time — it's flipped `class_weight` None↔"balanced" twice across five re-tunes so far; hyperparameter search on a dataset this size (~459 rows) is itself somewhat noisy, so don't read too much into which single config "won" a given round). 14 features, **all carrying real signal**:
 `season_best, career_best, pb_gap, meets_count, consistency, yoy_improvement, age, season_rank, season_percentile, weighted_season_best, wind_adj_season_best, recent_trend, days_since_last, h2h_win_rate`
 
-**Backtest accuracy: 60.3%** (277/459) — walk-forward validated: trained on every year strictly before each test year, scored independently on 2021, 2022, 2023, 2024, and 2025 (5 folds, not one fixed holdout). The deployed model is refit on all 7 label years after validation. Trained on all 32 live-predicted disciplines (`men_5000m` has thin signal — see Known Limitations).
+**Backtest accuracy: 60.1%** (276/459) — walk-forward validated: trained on every year strictly before each test year, scored independently on 2021, 2022, 2023, 2024, and 2025 (5 folds, not one fixed holdout). The deployed model is refit on all 7 label years after validation. Trained on all 32 live-predicted disciplines (`men_5000m` has thin signal — see Known Limitations). This is essentially flat vs. the same-day earlier number (60.3%) despite two real additions since (major meets beyond the DL circuit, and a noise filter) — see the Failed Attempts / project memory for why that's an expected outcome of this dataset's size, not a wasted afternoon.
 
 **Ground truth is real, not hand-typed.** `src/dl_final_results_scraper.py` pulls actual Diamond League Final results (2018-2025, excluding 2020) directly from World Athletics' own public GraphQL API — the same API the site's own frontend uses (`x-api-key` is a public key shipped in every page load, not a secret). It finds each year's Final by filtering `rankingCategory == "DF"` and reads which disciplines were contested (and under what name — e.g. "Mile" some years instead of "1500 Metres") directly from what's present in the response, rather than a hand-maintained list. **2018/2019 were initially assumed to need a different scoring format** (the Final was split across two meetings, Zurich + Brussels) and skipped — checking the actual per-meeting data (2026-08-23) showed each of the 32 disciplines' DF group appears at exactly one of the two meetings, never both, so it's a two-city Final, not a split score. The scraper now aggregates across however many DF meetings a year has instead of assuming exactly one. 2020 (COVID-era "Inspiration Games" exhibition) is still deliberately excluded.
 
 **Training features go beyond a season-best toplist.** `src/season_results_scraper.py` pulls every *regular-season* Diamond League meeting's results (not just the Final — that would leak the label) for 2018-2025 (excluding 2020), giving real multiple-marks-per-athlete-per-season data. This is what makes `meets_count`/`consistency`/`recent_trend` real features instead of structural zeros.
+
+**Beyond the DL circuit: `src/major_meets_scraper.py`** (added 2026-08-23, user-requested "meets with the big athletes") adds real per-meeting results from the Olympic Games, the senior outdoor World Athletics Championships, World Athletics Continental Tour **Gold tier only** (`rankingCategory == "A"`, filtered out of a much larger Silver/Bronze/Challenger pool), and the European Athletics Championships (the other five Area Championships — African/Asian/American/Oceania/NACAC — were deliberately left out per the user, quality varies too much by continent). These groups were found via `getCalendarEvents`'s own `options.competitionGroups`/`rankingCategories` introspection, not guessed.
+
+**Both per-meeting scrapers filter to "recognized" athletes only** (`dl_final_results_scraper.load_recognized_names`): a row is kept only if that athlete appears somewhere in the discipline's own toplist (any year, not just that exact year — deliberately lenient about single-year toplist gaps). This exists because a big meeting can still have a weak field in a discipline that isn't its main draw (e.g. a field-filler making a Continental Tour Gold meeting's javelin final) — keeping those marks would add noise (thin, one-off meets_count/consistency signal) rather than real information about the athletes DL Final prediction cares about. Drop rates are meaningful (e.g. women_800m dropped 98 of 254 candidate major-meet rows) — this is doing real work, not a no-op filter.
 
 **Injury/withdrawal detection is fully wired end-to-end.** `src/injury_checker.py` scrapes news + meet-results recaps for injury/DNF signals, estimates recovery time, and either flags ("watch") or drops ("remove") an athlete from predictions. Both outcomes are visible on the dashboard: a "Watch" badge (linking to the real evidence) on flagged athletes, and a "Removed from predictions" panel (shown only when non-empty) for dropped ones.
 
@@ -72,6 +79,7 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 - `src/train_model.py` — retraining entry point. `--with-recency --with-h2h` for the full feature set; `--dry-run` to backtest without overwriting `outputs/`; `--tune` to grid-search hyperparameters
 - `src/dl_final_results_scraper.py` — real DL Final ground-truth labels (`data/dl_final_results.csv`), scraped from WA's GraphQL API
 - `src/season_results_scraper.py` — real per-meeting season history, enriches `data/raw/{discipline}.csv`
+- `src/major_meets_scraper.py` — real per-meeting results from Olympics/Worlds/Continental Tour Gold/Euro Champs, also enriches `data/raw/{discipline}.csv`
 - `src/historical_scraper.py` — season-best toplists 2018-2025 (`data/raw/{discipline}.csv` base layer)
 - `src/live_fetcher.py` — scrapes current-season (2026) standings/toplists for live predictions
 - `src/injury_checker.py` — injury/withdrawal detection + severity estimation (`data/injury_flags.json`)
@@ -100,7 +108,7 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 ## Next Steps
 
-1. **If pushing accuracy further**: both HANDOFF-listed levers here are now exhausted or applied — real per-athlete profile scraping turned out to be blocked by a dead API resolver (see Failed Attempts), and 2018/2019 are already added (this session, 2026-08-23). Remaining honest levers: scraping every meeting worldwide (not just DL) via the general calendar for true full-season per-athlete history (big undertaking, real rate-limit concerns), or finding additional predictive features beyond the current 14.
+1. **If pushing accuracy further**: the easy levers are now applied — 2018/2019 label years, real per-athlete profile scraping (dead end, see Failed Attempts), and major non-DL meets (Olympics/Worlds/Continental Tour Gold/Euro Champs, plus a recognized-athlete noise filter) are all done (2026-08-23). None of it moved the headline number much (59.1%→60.3%→60.1%), which at this dataset size (~459 rows) may just be close to this feature set's ceiling. Remaining honest levers: scraping every meeting worldwide for true full-season per-athlete history (big undertaking, real rate-limit concerns), the other five Area Championships if the European-only scoping turns out too narrow, or finding genuinely new predictive features beyond the current 14.
 2. **If expanding test coverage**: `build_labeled_dataset()`/`train_and_backtest()`/`load_predictions()` need small fixture files under `tests/fixtures/` to test without hitting real scraped data.
 3. **Explicitly deprioritized polish, saved for last per the user**: landing/welcome page, READMEs for both repos, a real per-meet Projections chart, React Query refactor, mobile layout.
 4. **Otherwise**: the system is in good shape 12 days out from the Final. Rerun `run.py` after Zurich (Aug 27) and again closer to Sep 4-5 to pick up final-season data — nothing else is currently broken or blocking.
