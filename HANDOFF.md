@@ -63,7 +63,7 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 **Test suite**: `tests/` — pure-function unit tests for `train_model.py`, `api.py`, `dl_final_results_scraper.py` (`python -m pytest`, no network/Selenium/Flask/real-files needed). Includes regression tests for the specific bugs described below.
 
-**Both repos are pushed and up to date** — track-insights-main `868f002`, athletics-predictor `2930f618`.
+**Both repos are pushed and up to date** — track-insights-main `868f002`, athletics-predictor `5efce26f`.
 
 ## Architecture / Key Files
 
