@@ -12,3 +12,4 @@ selenium
 webdriver-manager
 flask
 flask-cors
+pytest

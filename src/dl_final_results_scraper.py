@@ -125,6 +125,17 @@ WA_EVENT_TO_KEY = {
 }
 
 
+def strip_gender_prefix(event_name):
+    """WA's event field is the full display name ("Men's 100 Metres"), but
+    the leading "Men's "/"Women's " is redundant with the separate `gender`
+    field -- WA_EVENT_TO_KEY only spells out the discipline part once."""
+    return event_name.split("'s ", 1)[-1]
+
+
+def resolve_discipline_key(gender, event_name):
+    return WA_EVENT_TO_KEY.get((gender, strip_gender_prefix(event_name)))
+
+
 def graphql(operation_name, variables, query):
     payload = {"operationName": operation_name, "variables": variables, "query": query}
     r = requests.post(GRAPHQL_URL, json=payload, headers=HEADERS, timeout=20)
@@ -180,12 +191,7 @@ def scrape_year(year):
             if group["rankingCategory"] != "DF":
                 continue
             for event in group["events"]:
-                # WA's event field is the full display name ("Men's 100 Metres"),
-                # but the leading "Men's "/"Women's " is redundant with the
-                # separate `gender` field -- strip it so WA_EVENT_TO_KEY only
-                # needs to spell out the discipline part once.
-                event_name = event["event"].split("'s ", 1)[-1]
-                key = WA_EVENT_TO_KEY.get((event["gender"], event_name))
+                key = resolve_discipline_key(event["gender"], event["event"])
                 if key is None:
                     continue  # not one of our 32 disciplines (e.g. relays, a non-standard extra race)
                 if key in seen_events:

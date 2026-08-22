@@ -35,6 +35,9 @@ python src/dl_final_results_scraper.py
 
 # Retrain the model (fast, seconds — uses already-scraped data/raw/*.csv)
 python src/train_model.py --with-recency --with-h2h
+
+# Run the test suite (pytest.ini sets -s so it works with no flags)
+python -m pytest
 ```
 
 Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re-read data files fresh on every request — no restart needed after `run.py` or a retrain.
@@ -60,7 +63,9 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 **Dashboard**: shows live last-updated date and dynamically-computed meet status (done/next/upcoming) on every page, real World Athletics profile links on athlete names, honest labeling on the (still-synthetic) Projections trajectory chart, injury/DNF watch badges (new this session).
 
-**Repo state as of this writing**: `track-insights-main` is pushed and up to date (`844203d`, `63ac85f`). `athletics-predictor` has the real-data scraper work (`src/dl_final_results_scraper.py`, the `train_model.py` rewrite, retrained `outputs/`, `data/dl_final_results.csv`, and the two dashboard files' "walk-forward" label updates) made locally and **not yet committed/pushed** — everything before that (through `6a95cefb`) is pushed.
+**Basic test suite added** (`tests/`, run via `python -m pytest` from the repo root — `pytest.ini` sets `-s` so it works with no flags; needed because `train_model.py`/`api.py` reassign `sys.stdout` at import time for Windows console UTF-8 safety, which otherwise conflicts with pytest's own output capturing). 30 unit tests across `test_train_model.py`, `test_api.py`, `test_dl_final_results_scraper.py` — deliberately scoped to pure, deterministic functions only (no Selenium, no live network, no Flask server, no real files on disk). Two are regression tests for real bugs found and fixed this session: `add_season_rank()` ranking field events backwards, and `build_features()` leaking a later year's improvement into an earlier year's `career_best`. Extracted `strip_gender_prefix()`/`resolve_discipline_key()` out of `dl_final_results_scraper.py`'s `scrape_year()` specifically to make its WA-event-name-to-discipline-key mapping testable (this is the exact kind of lookup that silently broke once already this session — see the "Files Changed" entry for that scraper).
+
+**Repo state as of this writing**: both repos are pushed and up to date — athletics-predictor through `c565cca2`, track-insights-main through `868f002`. The test suite (`tests/`, `pytest.ini`, `requirements.txt` pytest addition, the `dl_final_results_scraper.py` refactor) is made locally and **not yet committed/pushed**.
 
 ## Files Changed This Session
 
@@ -130,9 +135,10 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 ## Next Steps
 
-1. Commit and push the real-data scraper work (see "Repo state" above).
+1. Commit and push the test suite (see "Repo state" above).
 2. If more training years are wanted: handle 2018/2019's split two-meeting Final format separately (different scoring logic, not just a wider year range) and decide whether 2020's COVID-era exhibition is usable at all.
-3. Lower priority, explicitly saved for last per the user: landing/welcome page, README files for both repos, real per-meet Projections chart (needs the bigger multi-meet-results scrape), React Query refactor, mobile layout.
+3. If expanding the test suite further: `build_labeled_dataset()`/`train_and_backtest()`/`load_predictions()` aren't covered yet since they need real files on disk (data/raw/*.csv, data/dl_final_results.csv, outputs/predictions_latest.csv) — would need small fixture files under `tests/fixtures/` to test properly rather than hitting the real (large, live-scraped) data.
+4. Lower priority, explicitly saved for last per the user: landing/welcome page, README files for both repos, real per-meet Projections chart (needs the bigger multi-meet-results scrape), React Query refactor, mobile layout.
 
 ## Key Files to Know
 
@@ -140,6 +146,7 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 - `src/train_model.py` — retraining entry point; `--with-recency --with-h2h --dry-run` to test without overwriting `outputs/`
 - `src/dl_final_results_scraper.py` — rebuilds `data/dl_final_results.csv`, the real DL Final ground-truth labels `train_model.py` trains against
 - `src/historical_scraper.py` — rebuilds historical training data (season bests, not DL Final results) from World Athletics
+- `tests/` — unit tests for the pure functions in `train_model.py`/`api.py`/`dl_final_results_scraper.py`; run via `python -m pytest`
 - `src/injury_checker.py` — injury/withdrawal detection + severity estimation
 - `api.py` — Flask bridge between predictions and the dashboard
 - `src/components/dl/shell.tsx`, `src/lib/dl-data.ts` — dashboard shell + API data contract
