@@ -72,7 +72,7 @@ Combined, isolated impact: 51.3% (real data alone) → 52.0% (wind fix alone) �
 
 **Basic test suite added** (`tests/`, run via `python -m pytest` from the repo root — `pytest.ini` sets `-s` so it works with no flags; needed because `train_model.py`/`api.py` reassign `sys.stdout` at import time for Windows console UTF-8 safety, which otherwise conflicts with pytest's own output capturing). 30 unit tests across `test_train_model.py`, `test_api.py`, `test_dl_final_results_scraper.py` — deliberately scoped to pure, deterministic functions only (no Selenium, no live network, no Flask server, no real files on disk). Two are regression tests for real bugs found and fixed this session: `add_season_rank()` ranking field events backwards, and `build_features()` leaking a later year's improvement into an earlier year's `career_best`. Extracted `strip_gender_prefix()`/`resolve_discipline_key()` out of `dl_final_results_scraper.py`'s `scrape_year()` specifically to make its WA-event-name-to-discipline-key mapping testable (this is the exact kind of lookup that silently broke once already this session — see the "Files Changed" entry for that scraper).
 
-**Repo state as of this writing**: track-insights-main is pushed and up to date (`868f002`). athletics-predictor is pushed through `ffb1d402` (the test suite); the three retrain improvements above (`src/season_results_scraper.py`, the tuning/wind/leak fixes in `train_model.py`, retrained `outputs/`, the 3 new wind-adjustment tests) are made locally and **not yet committed/pushed**.
+**Repo state as of this writing**: both repos are pushed and up to date — track-insights-main through `868f002`, athletics-predictor through `52f5f313` (the three retrain improvements above).
 
 ## Files Changed This Session
 
