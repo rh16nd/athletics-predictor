@@ -176,13 +176,14 @@ def load_predictions():
                 wa_url = f"https://www.worldathletics.org/search/?q={row['athlete_name'].replace(' ', '+')}"
 
             athletes.append({
-                "rank":      int(row.get("predicted_rank", len(athletes) + 1)),
-                "name":      row["athlete_name"],
-                "nat":       str(row.get("nationality", "—")),
-                "qualified": True,
-                "mark":      mark_display,
-                "prob":      prob,
-                "waUrl":     wa_url,
+                "rank":        int(row.get("predicted_rank", len(athletes) + 1)),
+                "name":        row["athlete_name"],
+                "nat":         str(row.get("nationality", "—")),
+                "qualified":   True,
+                "mark":        mark_display,
+                "prob":        prob,
+                "waUrl":       wa_url,
+                "injuryWatch": bool(row.get("injury_watch", False)),
             })
 
         disc_obj = {
@@ -207,12 +208,13 @@ def build_top_winners(track, field):
         if disc["athletes"]:
             a = disc["athletes"][0]
             winners.append({
-                "medal": medals[len(winners)] if len(winners) < len(medals) else "🏅",
-                "name":  a["name"],
-                "disc":  disc["label"],
-                "mark":  a["mark"],
-                "prob":  a["prob"],
-                "waUrl": a["waUrl"],
+                "medal":       medals[len(winners)] if len(winners) < len(medals) else "🏅",
+                "name":        a["name"],
+                "disc":        disc["label"],
+                "mark":        a["mark"],
+                "prob":        a["prob"],
+                "waUrl":       a["waUrl"],
+                "injuryWatch": a["injuryWatch"],
             })
     return sorted(winners, key=lambda x: -x["prob"])[:6]
 
