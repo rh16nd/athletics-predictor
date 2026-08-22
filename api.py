@@ -16,8 +16,42 @@ CORS(app)  # allows React dev server to call this API
 
 OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), "outputs")
 RAW_DIR     = os.path.join(os.path.dirname(__file__), "data", "raw")
+INJURY_FLAGS_PATH = os.path.join(os.path.dirname(__file__), "data", "injury_flags.json")
 
 MEETS_YEAR = 2026
+
+
+def load_injury_flags():
+    """Returns {normalized athlete name -> {status, disciplines, matches}}, or {}."""
+    if not os.path.exists(INJURY_FLAGS_PATH):
+        return {}
+    try:
+        with open(INJURY_FLAGS_PATH, encoding="utf-8") as f:
+            return json.load(f).get("athletes", {})
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def normalize_athlete_name(name):
+    """Matches run.py's/injury_checker.py's normalization so predictions_latest.csv's
+    ALL-CAPS-surname names ('Shericka JACKSON') can be looked up against
+    injury_flags.json's Title-case keys ('Shericka Jackson')."""
+    return " ".join(str(name).split()).title()
+
+
+def injury_evidence(entry):
+    """Pulls a short, human-readable reason + source link from an injury_flags.json
+    entry's most recent match -- without this, the dashboard only ever showed a
+    generic 'flagged for review' tooltip even though the real headline/URL was
+    sitting right there in the file the whole time."""
+    matches = (entry or {}).get("matches") or []
+    if not matches:
+        return None, None
+    m = matches[-1]
+    headline = m.get("headline")
+    source = (m.get("source") or "").replace("_results", "")
+    reason = f'"{headline}" ({source})' if headline else None
+    return reason, m.get("url")
 
 # "status" here is just the meet's calendar position, not literal — done/next/upcoming
 # are recomputed against today's date on every request (see compute_meet_statuses),
@@ -148,6 +182,7 @@ def load_predictions():
             return 44.0
         
     df = pd.read_csv(path)
+    injury_flags = load_injury_flags()
     track = []
     field = []
 
@@ -175,15 +210,23 @@ def load_predictions():
             if not isinstance(wa_url, str) or not wa_url or wa_url == "nan":
                 wa_url = f"https://www.worldathletics.org/search/?q={row['athlete_name'].replace(' ', '+')}"
 
+            injury_watch = bool(row.get("injury_watch", False))
+            reason, evidence_url = (
+                injury_evidence(injury_flags.get(normalize_athlete_name(row["athlete_name"])))
+                if injury_watch else (None, None)
+            )
+
             athletes.append({
-                "rank":        int(row.get("predicted_rank", len(athletes) + 1)),
-                "name":        row["athlete_name"],
-                "nat":         str(row.get("nationality", "—")),
-                "qualified":   True,
-                "mark":        mark_display,
-                "prob":        prob,
-                "waUrl":       wa_url,
-                "injuryWatch": bool(row.get("injury_watch", False)),
+                "rank":         int(row.get("predicted_rank", len(athletes) + 1)),
+                "name":         row["athlete_name"],
+                "nat":          str(row.get("nationality", "—")),
+                "qualified":    True,
+                "mark":         mark_display,
+                "prob":         prob,
+                "waUrl":        wa_url,
+                "injuryWatch":  injury_watch,
+                "injuryReason": reason,
+                "injuryUrl":    evidence_url,
             })
 
         disc_obj = {
@@ -208,15 +251,36 @@ def build_top_winners(track, field):
         if disc["athletes"]:
             a = disc["athletes"][0]
             winners.append({
-                "medal":       medals[len(winners)] if len(winners) < len(medals) else "🏅",
-                "name":        a["name"],
-                "disc":        disc["label"],
-                "mark":        a["mark"],
-                "prob":        a["prob"],
-                "waUrl":       a["waUrl"],
-                "injuryWatch": a["injuryWatch"],
+                "medal":        medals[len(winners)] if len(winners) < len(medals) else "🏅",
+                "name":         a["name"],
+                "disc":         disc["label"],
+                "mark":         a["mark"],
+                "prob":         a["prob"],
+                "waUrl":        a["waUrl"],
+                "injuryWatch":  a["injuryWatch"],
+                "injuryReason": a["injuryReason"],
+                "injuryUrl":    a["injuryUrl"],
             })
     return sorted(winners, key=lambda x: -x["prob"])[:6]
+
+
+def build_removed_athletes(injury_flags):
+    """Athletes filtered out of predictions entirely by run.py's injury check
+    (status == 'remove') never appear anywhere in predictions_latest.csv, so
+    without this they'd just silently vanish from the dashboard with zero
+    explanation -- indistinguishable from a scraping gap."""
+    removed = []
+    for name, entry in injury_flags.items():
+        if entry.get("status") != "remove":
+            continue
+        reason, url = injury_evidence(entry)
+        removed.append({
+            "name":        name,
+            "disciplines": [DISC_LABELS.get(k, k) for k in entry.get("disciplines", [])],
+            "reason":      reason,
+            "url":         url,
+        })
+    return removed
 
 
 def build_confidence(track, field):
@@ -246,6 +310,7 @@ def predictions():
         "trackDisciplines": track,
         "fieldDisciplines": field,
         "topWinners":    build_top_winners(track, field),
+        "removedAthletes": build_removed_athletes(load_injury_flags()),
         "confidence":    build_confidence(track, field),
         "modelAccuracy": get_model_accuracy(),
     })
