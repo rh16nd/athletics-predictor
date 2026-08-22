@@ -209,9 +209,14 @@ def clean_discipline(df):
     df["date"] = pd.to_datetime(df["date"], format="%d %b %Y", errors="coerce")
     df["dob"] = pd.to_datetime(df["dob"], format="%d %b %Y", errors="coerce")
     df["age"] = ((df["date"] - df["dob"]).dt.days / 365.25).round(1)
-    df_recent = df[df["year"].between(2021, 2023)].copy()
-    df_recent = df_recent.dropna(subset=["Mark"])
-    return df_recent
+    # Deliberately NOT truncating to the labeled years (2021-2023) here --
+    # build_features() needs earlier history (2018-2020) to compute a real
+    # career_best/yoy_improvement for those years instead of silently
+    # defaulting yoy to 0.0 for every 2021 row (there's no "before" left to
+    # compare against once truncated). Future years (2024+) are still safe:
+    # build_features() only loops over [2021, 2022, 2023] as label years, and
+    # career_best/yoy per row are separately bounded to that row's own year.
+    return df.dropna(subset=["Mark"]).copy()
 
 
 def build_features(df, discipline_key):
@@ -226,14 +231,18 @@ def build_features(df, discipline_key):
         for year in [2021, 2022, 2023]:
             season = ath[ath["year"] == year]
             prev = ath[ath["year"] < year]
+            # career_best must only see marks up to and including this label's
+            # year -- using the full athlete history here would leak future
+            # seasons (e.g. 2024/2025) into a 2021/2022 labeled row's features.
+            up_to_year = ath[ath["year"] <= year]
             if season.empty:
                 continue
             if is_track:
                 season_best = season["Mark_num"].min()
-                career_best = ath["Mark_num"].min()
+                career_best = up_to_year["Mark_num"].min()
             else:
                 season_best = season["Mark_num"].max()
-                career_best = ath["Mark_num"].max()
+                career_best = up_to_year["Mark_num"].max()
             pb_gap = abs(season_best - career_best)
             meets_count = len(season)
             consistency = season["Mark_num"].std() if len(season) > 1 else 0.0
