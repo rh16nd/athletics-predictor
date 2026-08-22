@@ -31,12 +31,18 @@ Two queries, no hardcoded competition IDs or results:
      response. No NOT_CONTESTED list to hand-maintain: absence from this
      scrape *is* the signal.
 
-Scope: only years using the single-meeting Final format are included.
-2018 and 2019 split the Final's scoring across two separate meetings
-(Zurich + Brussels) -- a top-3-at-one-meeting label doesn't apply
-cleanly there. 2020's "Inspiration Games" was a COVID-era exhibition
-event, not a real qualifying Final. Both are skipped rather than forced
-into a format they don't fit -- see SPLIT_FORMAT_YEARS/SKIP_YEARS below.
+Scope: 2018-2025, excluding 2020. 2018 and 2019 hosted the Final across
+two separate meetings (Zurich + Brussels) instead of one -- initially
+assumed to be a different *scoring* format and skipped entirely, but
+checking the actual per-meeting results (both years) shows each of the
+32 disciplines' "DF" (Diamond Discipline) group appears at exactly one
+of the two meetings, never both -- it's a two-city Final, not a split
+score. The existing per-event scrape/dedup logic below already handles
+this correctly once a year is allowed to have more than one DF meeting;
+find_final_competition_ids returning >1 result is treated as "aggregate
+across all of them" rather than "skip". 2020's "Inspiration Games" was
+a COVID-era exhibition event, not a real qualifying Final, and stays
+skipped -- see SKIP_YEARS below.
 
 Usage:
     python src/dl_final_results_scraper.py
@@ -55,8 +61,7 @@ HEADERS = {"Content-Type": "application/json", "x-api-key": API_KEY}
 
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "dl_final_results.csv")
 
-YEARS = range(2021, 2026)  # 2021-2025 inclusive -- see module docstring for why not earlier
-SPLIT_FORMAT_YEARS = {2018, 2019}  # two-meeting Final, different scoring model
+YEARS = range(2018, 2026)  # see module docstring for why 2020 alone is skipped
 SKIP_YEARS = {2020}  # COVID-era "Inspiration Games", not a real qualifying Final
 
 CALENDAR_QUERY = """query getMinisiteCalendarEvents($competitionGroupId: Int, $competitionSubgroupId: Int, $season: String) {
@@ -148,9 +153,9 @@ def graphql(operation_name, variables, query):
 
 def find_final_competition_ids(year):
     """Returns the list of competition IDs with rankingCategory == 'DF' for
-    a season. Normally exactly one (the single-meeting Final format) --
-    callers should treat >1 or 0 as a signal to check SPLIT_FORMAT_YEARS/
-    SKIP_YEARS rather than silently guessing which one is "the" Final."""
+    a season. Usually one (single-meeting Final); 2018/2019 return two
+    (the Zurich+Brussels two-city Final) -- scrape_year aggregates across
+    however many are returned rather than assuming a specific count."""
     data = graphql(
         "getMinisiteCalendarEvents",
         {"season": str(year), "competitionGroupId": 627, "competitionSubgroupId": 0},
@@ -162,57 +167,62 @@ def find_final_competition_ids(year):
 
 def scrape_year(year):
     """Returns a list of {discipline, athlete_name, place, mark, nationality}
-    dicts for every Diamond Discipline event contested at that year's Final."""
+    dicts for every Diamond Discipline event contested at that year's Final(s).
+    Usually one meeting; 2018/2019 have two (Zurich + Brussels) -- each
+    discipline's DF group appears at exactly one of them (verified: no
+    discipline appears in both), so aggregating is safe. seen_events is
+    still tracked across meetings as a defensive dedup, not because
+    duplicates are expected."""
     finals = find_final_competition_ids(year)
-    if len(finals) != 1:
-        print(f"  {year}: {len(finals)} DF meeting(s) found ({[f['name'] for f in finals]}) -- skipping (not single-meeting format)")
+    if not finals:
+        print(f"  {year}: no DF meeting found -- skipping")
         return []
-
-    comp = finals[0]
-    print(f"  {year}: {comp['name']} ({comp['venue']}), competition id {comp['id']}")
-
-    day_data = graphql(
-        "getCalendarCompetitionResults",
-        {"competitionId": comp["id"], "day": None, "eventId": None},
-        RESULTS_QUERY,
-    )["getCalendarCompetitionResults"]
-    days = [d["day"] for d in day_data["options"]["days"]] or [None]
 
     rows = []
     seen_events = set()
-    for day in days:
-        data = graphql(
+    for comp in finals:
+        print(f"  {year}: {comp['name']} ({comp['venue']}), competition id {comp['id']}")
+
+        day_data = graphql(
             "getCalendarCompetitionResults",
-            {"competitionId": comp["id"], "day": day, "eventId": None},
+            {"competitionId": comp["id"], "day": None, "eventId": None},
             RESULTS_QUERY,
         )["getCalendarCompetitionResults"]
+        days = [d["day"] for d in day_data["options"]["days"]] or [None]
 
-        for group in data["eventTitles"]:
-            if group["rankingCategory"] != "DF":
-                continue
-            for event in group["events"]:
-                key = resolve_discipline_key(event["gender"], event["event"])
-                if key is None:
-                    continue  # not one of our 32 disciplines (e.g. relays, a non-standard extra race)
-                if key in seen_events:
-                    continue  # Mile/1500m substitution etc. shouldn't double-count across days
-                final_races = [r for r in event["races"] if r["race"] == "Final"]
-                if not final_races:
+        for day in days:
+            data = graphql(
+                "getCalendarCompetitionResults",
+                {"competitionId": comp["id"], "day": day, "eventId": None},
+                RESULTS_QUERY,
+            )["getCalendarCompetitionResults"]
+
+            for group in data["eventTitles"]:
+                if group["rankingCategory"] != "DF":
                     continue
-                for result in final_races[0]["results"]:
-                    name = (result.get("competitor") or {}).get("name")
-                    if not name:
+                for event in group["events"]:
+                    key = resolve_discipline_key(event["gender"], event["event"])
+                    if key is None:
+                        continue  # not one of our 32 disciplines (e.g. relays, a non-standard extra race)
+                    if key in seen_events:
+                        continue  # Mile/1500m substitution etc. shouldn't double-count across days/meetings
+                    final_races = [r for r in event["races"] if r["race"] == "Final"]
+                    if not final_races:
                         continue
-                    rows.append({
-                        "discipline": key,
-                        "year": year,
-                        "athlete_name": name,
-                        "place": result.get("place", "").rstrip("."),
-                        "mark": result.get("mark"),
-                        "nationality": result.get("nationality"),
-                    })
-                seen_events.add(key)
-        time.sleep(0.5)  # be a reasonable citizen of a public API, even a permissive one
+                    for result in final_races[0]["results"]:
+                        name = (result.get("competitor") or {}).get("name")
+                        if not name:
+                            continue
+                        rows.append({
+                            "discipline": key,
+                            "year": year,
+                            "athlete_name": name,
+                            "place": result.get("place", "").rstrip("."),
+                            "mark": result.get("mark"),
+                            "nationality": result.get("nationality"),
+                        })
+                    seen_events.add(key)
+            time.sleep(0.5)  # be a reasonable citizen of a public API, even a permissive one
 
     return rows
 
@@ -221,8 +231,8 @@ if __name__ == "__main__":
     print("=== Scraping real Diamond League Final results from World Athletics ===")
     all_rows = []
     for year in YEARS:
-        if year in SPLIT_FORMAT_YEARS or year in SKIP_YEARS:
-            print(f"  {year}: skipped (see SPLIT_FORMAT_YEARS/SKIP_YEARS in this file)")
+        if year in SKIP_YEARS:
+            print(f"  {year}: skipped (see SKIP_YEARS in this file)")
             continue
         try:
             all_rows.extend(scrape_year(year))

@@ -19,7 +19,8 @@ duplicating them.
 
 Scope: real Diamond League circuit meetings only (rankingCategory "GW" or
 "DF" -- excludes each meeting's "F National Events"/"F U20 Events" side
-competitions, which aren't the senior international circuit), 2021-2025.
+competitions, which aren't the senior international circuit), 2018-2025
+excluding 2020 (matches train_model.LABEL_YEARS).
 This is NOT every race an athlete ran worldwide that season (that would need
 per-athlete profile scraping -- a much bigger undertaking) -- but DL
 qualifiers overwhelmingly race multiple DL meetings before the Final, so
@@ -46,7 +47,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse graphql()/resolve_discipline_key()
 
 RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
-YEARS = range(2021, 2026)  # matches train_model.LABEL_YEARS -- see that module for why not earlier
+YEARS = [y for y in range(2018, 2026) if y != 2020]  # matches train_model.LABEL_YEARS
 
 # "DF" (Diamond Discipline / Final) deliberately excluded: "DF" only appears
 # at a season's actual DL Final meeting -- including it here would mean a

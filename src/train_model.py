@@ -1,7 +1,9 @@
 """
-train_model.py — rebuilds the historical training set (2021-2025) and retrains
-the RandomForest used by run.py, using walk-forward validation across three
-independent test years (2023, 2024, 2025) instead of one fixed holdout.
+train_model.py — rebuilds the historical training set (2018-2025, excluding
+2020) and retrains the RandomForest used by run.py, using walk-forward
+validation: the first 2 label years always seed training only, every year
+after that is an independent test year (LABEL_YEARS[2:]) instead of one
+fixed holdout.
 
 Ground-truth DL Final results come from data/dl_final_results.csv, scraped
 directly from World Athletics' own API (src/dl_final_results_scraper.py) --
@@ -99,12 +101,12 @@ WIND_EVENTS = {
 # mistyping a name or misremembering a finishing order.
 DL_RESULTS_PATH = os.path.join(BASE_DIR, "data", "dl_final_results.csv")
 
-# 2021-2025: every year using the single-meeting Final format the scraper
-# covers (see that file's SPLIT_FORMAT_YEARS/SKIP_YEARS for why 2018-2020
-# aren't included). Whether any given discipline was actually contested in
+# 2018-2025, excluding 2020 (see dl_final_results_scraper.py's SKIP_YEARS --
+# 2020's "Inspiration Games" was a COVID-era exhibition, not a real
+# qualifying Final). Whether any given discipline was actually contested in
 # a given year is read from the scraped file itself (see build_labeled_dataset) --
 # not hand-flagged here.
-LABEL_YEARS = list(range(2021, 2026))
+LABEL_YEARS = [y for y in range(2018, 2026) if y != 2020]
 DL_VENUES = [
     "doha", "shanghai", "suzhou", "shaoxing", "rabat", "florence", "paris",
     "oslo", "lausanne", "stockholm", "silesia", "monaco", "london",
@@ -410,14 +412,16 @@ def add_h2h_features(df):
 
 
 DEFAULT_MODEL_PARAMS = {
-    "n_estimators": 100, "max_depth": 16, "min_samples_leaf": 1,
-    "class_weight": None, "random_state": 42,
-}  # walk-forward-tuned via --tune (2026-08-22). Re-tuned twice more as the feature set
-   # changed (wind-adjustment fix, then real multi-meeting season data) -- each round
-   # picked a different winner, confirming tuning needs redoing whenever the features
-   # change, not reused across them. class_weight=None beat "balanced" across the
-   # entire top-10 all three rounds: balanced weighting was overcorrecting for the
-   # top3/not-top3 imbalance on a dataset this small.
+    "n_estimators": 100, "max_depth": 16, "min_samples_leaf": 4,
+    "class_weight": "balanced", "random_state": 42,
+}  # walk-forward-tuned via --tune (2026-08-22, re-tuned 2026-08-23 after extending
+   # LABEL_YEARS to 2018-2025). Re-tuned four times total as the feature set or
+   # training-set size changed -- each round picked a different winner, confirming
+   # tuning needs redoing whenever either changes, not reused across them.
+   # class_weight=None had beaten "balanced" every round on the smaller
+   # (2021-2025, 279-sample) dataset; with 2018/2019 added (459 samples), balanced
+   # now wins outright -- more data made the top3/not-top3 imbalance correction
+   # useful instead of an overcorrection.
 
 
 def _score_fold(train, test, feature_cols, model_params=None):
