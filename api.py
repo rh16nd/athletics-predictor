@@ -26,6 +26,7 @@ OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), "outputs")
 RAW_DIR     = os.path.join(os.path.dirname(__file__), "data", "raw")
 INJURY_FLAGS_PATH = os.path.join(os.path.dirname(__file__), "data", "injury_flags.json")
 H2H_PATH    = os.path.join(os.path.dirname(__file__), "data", "h2h", "h2h_rates.csv")
+DL_FINAL_RESULTS_PATH = os.path.join(os.path.dirname(__file__), "data", "dl_final_results.csv")
 MODELS_DIR  = os.path.join(os.path.dirname(__file__), "data", "models")
 FOCUS_CACHE_PATH = os.path.join(os.path.dirname(__file__), "data", "photo_focus_cache.json")
 
@@ -688,7 +689,156 @@ def get_model_accuracy():
         return float(open(acc_path).read().strip())
     except:
         return 44.0
-    
+
+
+def build_discipline_trajectories(disc_key, athletes, limit=4):
+    """Real per-meet season form for a discipline's top contenders, reusing
+    the exact same real data + logic as the athlete profile page's chart
+    (load_athlete_history) -- this is what replaces the Projections page's
+    old fabricated single-line 'illustrative trend' curve. Each athlete's
+    own real points only, current season if they have it, their own most
+    recent completed season otherwise (see load_athlete_history's
+    docstring) -- never synthesized between real points."""
+    trajectories = []
+    for a in athletes[:limit]:
+        history, history_year = load_athlete_history(disc_key, a["name"])
+        if not history:
+            continue
+        trajectories.append({
+            "name":        a["name"],
+            "rank":        a["rank"],
+            "prob":        a["prob"],
+            "historyYear": history_year,
+            "history":     history,
+        })
+    return trajectories
+
+
+def _dl_final_history(disc_key):
+    """Real DL Final results (2018-2025) for one discipline, or an empty
+    DataFrame if the ground-truth file isn't present. Cached per-call is
+    unnecessary here -- storyline building happens once per lazy page
+    view, same cost class as the rest of build_athlete_profile()."""
+    if not os.path.exists(DL_FINAL_RESULTS_PATH):
+        return pd.DataFrame()
+    df = pd.read_csv(DL_FINAL_RESULTS_PATH)
+    return df[df["discipline"] == disc_key]
+
+
+def build_storylines(disc_key, disc_label, athletes):
+    """Real, computed narrative angles for a discipline -- replaces the
+    Projections page's old static, identical-on-every-discipline 'how this
+    page works' text with athlete-specific storylines, each backed by a
+    real number pulled live, not written by hand. Every generator either
+    returns a real storyline or nothing; only non-empty ones are shown, so
+    a discipline with a thin storyline crop (e.g. no debutants) just shows
+    fewer cards rather than a fabricated one to fill space."""
+    stories = []
+    top = athletes[:8]
+    is_track = disc_key not in FIELD_EVENTS
+
+    # Photo finish: real gap between the top two predicted WIN PROBABILITIES
+    # -- deliberately re-sorted by prob, not by `athletes`' own rank order
+    # (predicted_rank is sorted by real season-best mark, not by the
+    # model's probability, so rank #1 isn't always the higher-probability
+    # pick; comparing top[0]/top[1] by rank alone produced a real negative
+    # "gap" once, confirmed live before this fix).
+    by_prob = sorted(top, key=lambda a: -a["prob"])
+    if len(by_prob) >= 2:
+        gap = by_prob[0]["prob"] - by_prob[1]["prob"]
+        if gap <= 6:
+            stories.append({
+                "type":  "photo_finish",
+                "title": "Photo finish",
+                "text":  f"{by_prob[0]['name']} ({by_prob[0]['prob']}%) and {by_prob[1]['name']} "
+                         f"({by_prob[1]['prob']}%) are separated by just {gap} points in the model "
+                         f"— the closest projected race in {disc_label}.",
+            })
+
+    # Injury watch: any real flagged contender still in the predicted field.
+    watched = [a for a in top if a["injuryWatch"]]
+    if watched:
+        w = watched[0]
+        stories.append({
+            "type":  "injury_watch",
+            "title": "One to watch",
+            "text":  f"{w['name']} is flagged for a possible injury or recent DNF "
+                     f"({w['injuryReason'] or 'see evidence link'}) but remains projected "
+                     f"at rank #{w['rank']} — {w['prob']}% win probability if fit.",
+        })
+
+    # Debutant / returning champion: real prior-Final participation.
+    finals = _dl_final_history(disc_key)
+    if not finals.empty:
+        names_lower = {n.lower() for n in finals["athlete_name"].dropna()}
+        champions = {
+            r["athlete_name"]: int(r["year"])
+            for _, r in finals[finals["place"] == 1].sort_values("year").iterrows()
+        }
+        champs_lower = {n.lower(): (n, y) for n, y in champions.items()}
+        for a in top[:5]:
+            name_lower = a["name"].lower()
+            if name_lower in champs_lower:
+                champ_name, champ_year = champs_lower[name_lower]
+                stories.append({
+                    "type":  "returning_champion",
+                    "title": "Returning champion",
+                    "text":  f"{a['name']} won the {champ_year} Diamond League Final in "
+                             f"{disc_label} and is projected rank #{a['rank']} to defend it.",
+                })
+                break
+        for a in top[:3]:
+            if a["name"].lower() not in names_lower:
+                stories.append({
+                    "type":  "debutant",
+                    "title": "First Final appearance",
+                    "text":  f"{a['name']} has never made a Diamond League Final in "
+                             f"{disc_label} before (no appearance 2018-2025) but is "
+                             f"projected rank #{a['rank']} this year.",
+                })
+                break
+
+    # Rivalry renewed: real head-to-head record between the top two.
+    if len(top) >= 2:
+        rivals = load_h2h_vs_rivals(disc_key, top[0]["name"], [top[1]["name"]])
+        if rivals:
+            r = rivals[0]
+            stories.append({
+                "type":  "rivalry",
+                "title": "Rivalry renewed",
+                "text":  f"{top[0]['name']} leads {top[1]['name']} {r['wins']}-{r['losses']} "
+                         f"across {r['meetings']} real career meetings.",
+            })
+
+    # Hot streak: real season-long improvement across an athlete's own
+    # actual 2026 meetings (not the internal recent_trend model feature,
+    # which isn't exposed -- this recomputes the same idea transparently
+    # from the real per-meet marks so the number in the card is directly
+    # checkable against the trajectory chart above it).
+    best_gain, best_athlete = None, None
+    for a in top:
+        history, history_year = load_athlete_history(disc_key, a["name"])
+        if history_year != MEETS_YEAR or len(history) < 2:
+            continue
+        values = [h["markValue"] for h in history if h["markValue"] is not None]
+        if len(values) < 2:
+            continue
+        gain = (values[0] - values[-1]) if is_track else (values[-1] - values[0])
+        if gain > 0 and (best_gain is None or gain > best_gain):
+            best_gain, best_athlete = gain, (a, history)
+    if best_athlete:
+        a, history = best_athlete
+        stories.append({
+            "type":  "hot_streak",
+            "title": "Trending up",
+            "text":  f"{a['name']} has improved from {history[0]['mark']} to "
+                     f"{history[-1]['mark']} across {len(history)} real meetings this season "
+                     f"— the biggest real in-season gain among the top contenders.",
+        })
+
+    return stories[:4]
+
+
 @app.route("/api/predictions")
 def predictions():
     track, field = load_predictions()
@@ -714,6 +864,25 @@ def athlete_profile(disc_key, athlete_name):
     if profile is None:
         return jsonify({"error": "athlete not found"}), 404
     return jsonify(profile)
+
+
+@app.route("/api/projections/<disc_key>")
+def projections_detail(disc_key):
+    """Real per-discipline detail for the Projections page: the top
+    contenders' actual season trajectories (replacing the old fabricated
+    illustrative curve) plus real, computed storylines -- both lazy, same
+    pattern as /api/athlete/<discKey>/<name>, not embedded in the bulk
+    /api/predictions payload."""
+    track, field = load_predictions()
+    if track is None:
+        return jsonify({"error": "predictions_latest.csv not found — run python run.py first"}), 404
+    disc = next((d for d in track + field if d["id"] == disc_key), None)
+    if disc is None:
+        return jsonify({"error": "discipline not found"}), 404
+    return jsonify({
+        "trajectories": build_discipline_trajectories(disc_key, disc["athletes"]),
+        "storylines":   build_storylines(disc_key, disc["label"], disc["athletes"]),
+    })
 
 
 @app.route("/api/health")
