@@ -304,9 +304,26 @@ def build_2026_features(key):
         feat["season_rank"]       = feat["season_best"].rank(ascending=False)
         feat["season_percentile"] = feat["season_best"].rank(ascending=True) / len(feat)
 
-    # Recent form features
+    # Recent form features -- prefer the real current-season per-meeting file
+    # (current_season_scraper.py) when it exists over the live toplist
+    # snapshot (df) this function otherwise reads: the toplist has exactly
+    # ONE row per athlete (their season's single best mark, per its own
+    # comment above), so computing "days since last"/"recent trend" from it
+    # actually measured "days since their BEST mark", not their most recent
+    # race -- silently wrong whenever an athlete's best mark wasn't also
+    # their latest one (e.g. they peaked mid-season, then raced again more
+    # recently without beating it -- confirmed live, 2026-08-24: Rai
+    # Benjamin's toplist row was dated 18 Jul, but he'd actually raced again
+    # on 23 Aug). The meetings file has one real row per real race, so these
+    # features reflect an athlete's actual last competition instead.
     try:
-        raw_df = df.copy()
+        meetings_path = os.path.join(RAW_DIR, f"{key}_2026_meetings.csv")
+        if os.path.exists(meetings_path):
+            raw_df = pd.read_csv(meetings_path).rename(columns={"Competitor": "athlete_name"})
+            raw_df["Mark"] = raw_df["Mark"].apply(parse_mark)
+            raw_df = raw_df.dropna(subset=["Mark"])
+        else:
+            raw_df = df.copy()
         if "Date" in raw_df.columns:
             raw_df["date"] = pd.to_datetime(raw_df["Date"], dayfirst=True, errors="coerce")
             recent_trends = []
