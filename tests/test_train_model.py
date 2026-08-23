@@ -1,7 +1,8 @@
 """Unit tests for src/train_model.py's pure data-transformation functions.
 
-Deliberately doesn't test build_labeled_dataset()/train_and_backtest() end to
-end -- those need real data/raw/*.csv and data/dl_final_results.csv on disk.
+build_labeled_dataset()/train_and_backtest() are covered separately in
+test_fixtures_integration.py, against small monkeypatched fixture files
+rather than real data/raw/*.csv and data/dl_final_results.csv on disk.
 The two regression tests below (add_season_rank, build_features career_best)
 encode real bugs found and fixed in this project: without them, either bug
 could silently come back and nothing would catch it.

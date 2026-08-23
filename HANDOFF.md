@@ -68,7 +68,7 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 **Injury/withdrawal detection is fully wired end-to-end.** `src/injury_checker.py` scrapes news + meet-results recaps for injury/DNF signals, estimates recovery time, and either flags ("watch") or drops ("remove") an athlete from predictions. Both outcomes are visible on the dashboard: a "Watch" badge (linking to the real evidence) on flagged athletes, and a "Removed from predictions" panel (shown only when non-empty) for dropped ones.
 
-**Test suite**: `tests/` — pure-function unit tests for `train_model.py`, `api.py`, `dl_final_results_scraper.py` (`python -m pytest`, no network/Selenium/Flask/real-files needed). Includes regression tests for the specific bugs described below.
+**Test suite**: `tests/` — pure-function unit tests for `train_model.py`, `api.py`, `dl_final_results_scraper.py` (`python -m pytest`, no network/Selenium/Flask/real-files needed), plus `test_fixtures_integration.py` covering `build_labeled_dataset()`/`train_and_backtest()`/`load_predictions()` end to end against small checked-in fixtures (`tests/fixtures/`) instead of real scraped data. 37 tests total. Includes regression tests for the specific bugs described below.
 
 **Both repos are pushed and up to date** — track-insights-main `868f002`, athletics-predictor `32d96a9f`.
 
@@ -109,6 +109,6 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 ## Next Steps
 
 1. **If pushing accuracy further**: the easy levers are now applied — 2018/2019 label years, real per-athlete profile scraping (dead end, see Failed Attempts), and major non-DL meets (Olympics/Worlds/Continental Tour Gold/Euro Champs, plus a recognized-athlete noise filter) are all done (2026-08-23). None of it moved the headline number much (59.1%→60.3%→60.1%), which at this dataset size (~459 rows) may just be close to this feature set's ceiling. Remaining honest levers: scraping every meeting worldwide for true full-season per-athlete history (big undertaking, real rate-limit concerns), the other five Area Championships if the European-only scoping turns out too narrow, or finding genuinely new predictive features beyond the current 14.
-2. **If expanding test coverage**: `build_labeled_dataset()`/`train_and_backtest()`/`load_predictions()` need small fixture files under `tests/fixtures/` to test without hitting real scraped data.
+2. **Test coverage**: done (2026-08-23) — `build_labeled_dataset()`/`train_and_backtest()`/`load_predictions()` are now covered end to end via `tests/fixtures/` + `tests/test_fixtures_integration.py`. If further expanding: `run.py`'s `build_2026_features()` and the injury-checker's scraping logic are still untested (both need Selenium/live network, harder to fixture).
 3. **Explicitly deprioritized polish, saved for last per the user**: landing/welcome page, READMEs for both repos, a real per-meet Projections chart, React Query refactor, mobile layout.
 4. **Otherwise**: the system is in good shape 12 days out from the Final. Rerun `run.py` after Zurich (Aug 27) and again closer to Sep 4-5 to pick up final-season data — nothing else is currently broken or blocking.

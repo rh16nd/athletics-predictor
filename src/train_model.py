@@ -100,6 +100,7 @@ WIND_EVENTS = {
 # scraped data doesn't have the failure mode of a human (or an agent)
 # mistyping a name or misremembering a finishing order.
 DL_RESULTS_PATH = os.path.join(BASE_DIR, "data", "dl_final_results.csv")
+H2H_PATH = os.path.join(BASE_DIR, "data", "h2h", "h2h_rates.csv")
 
 # 2018-2025, excluding 2020 (see dl_final_results_scraper.py's SKIP_YEARS --
 # 2020's "Inspiration Games" was a COVID-era exhibition, not a real
@@ -387,8 +388,7 @@ def add_h2h_features(df):
     here (and in run.py) is the actual fix -- confirmed live: 0/8 exact
     matches vs 7/8 case-insensitive matches for a sample discipline.
     """
-    h2h_path = os.path.join(os.path.dirname(__file__), "..", "data", "h2h", "h2h_rates.csv")
-    h2h_df = pd.read_csv(h2h_path)
+    h2h_df = pd.read_csv(H2H_PATH)
     h2h_df["a_lower"] = h2h_df["athlete_a"].str.lower()
     h2h_df["b_lower"] = h2h_df["athlete_b"].str.lower()
     h2h_df = h2h_df[h2h_df["meetings"] >= 2]

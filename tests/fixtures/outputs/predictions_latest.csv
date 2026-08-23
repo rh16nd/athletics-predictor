@@ -1,0 +1,7 @@
+discipline,predicted_rank,athlete_name,nationality,season_best,win_probability,injury_watch,profile_url,date
+Men's 100m,1,Alpha SPEEDY,USA,9.85,45%,False,https://worldathletics.org/athletes/athlete=10000001,2026-08-23
+Men's 100m,2,Beta MIDPACK,GBR,10.00,25%,False,https://worldathletics.org/athletes/athlete=10000002,2026-08-23
+Men's 100m,3,Gamma MEDIUM,JAM,10.15,10%,True,https://worldathletics.org/athletes/athlete=10000003,2026-08-23
+Women's Long Jump,1,Xena JUMPER,KEN,7.05,50%,False,https://worldathletics.org/athletes/athlete=10000004,2026-08-23
+Women's Long Jump,2,Yara HOPPER,NGR,6.82,20%,False,https://worldathletics.org/athletes/athlete=10000005,2026-08-23
+Women's Long Jump,3,Zoe LEAPER,BRA,6.58,8%,False,https://worldathletics.org/athletes/athlete=10000006,2026-08-23
