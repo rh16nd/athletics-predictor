@@ -180,6 +180,13 @@ def scrape_meeting(meeting, year):
                         "Venue": meeting.get("name"),
                         "Date": date_str,
                         "year": year,
+                        # WA's own response already carries `place` -- this
+                        # scraper only ever reads the "Final" race (see the
+                        # final_races filter above), so it's always a real
+                        # final-round placement, never a heat/semi. Was
+                        # fetched but silently dropped until 2026-08-23; see
+                        # train_model.py's parse_pos() for what consumes this.
+                        "Pos": result.get("place"),
                     })
                 seen_events.add(event_key)
         time.sleep(0.3)
