@@ -472,6 +472,15 @@ for key, label in DISCIPLINES_2026.items():
             "injury_watch":    is_watch,
             "profile_url":     profile_url,
             "date":            str(date.today()),
+            # Real, already-computed model features that were being thrown
+            # away at export time -- api.py's athlete profile page surfaces
+            # these directly instead of only using them as invisible model
+            # inputs.
+            "career_best":      seconds_to_time(row["career_best"], key) if pd.notna(row.get("career_best")) else None,
+            "pb_gap":           round(float(row["pb_gap"]), 3) if pd.notna(row.get("pb_gap")) else None,
+            "age":              round(float(row["age"]), 1) if pd.notna(row.get("age")) else None,
+            "meets_count":      int(row["meets_count"]) if pd.notna(row.get("meets_count")) else None,
+            "days_since_last":  int(row["days_since_last"]) if pd.notna(row.get("days_since_last")) and row["days_since_last"] < 999 else None,
         })
 
 out_path = os.path.join(OUTPUTS_DIR, "predictions_latest.csv")
