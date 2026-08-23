@@ -244,14 +244,16 @@ def load_predictions():
 
 
 def build_top_winners(track, field):
+    """Returns a list of {rank, name, disc, ...} dicts, sorted by probability,
+    capped at 6. `rank` is the list POSITION (1-6) for the frontend to render
+    as a podium-style badge -- not the athlete's own predicted_rank within
+    their discipline (every entry here is already a #1 pick)."""
     all_discs = (track or []) + (field or [])
     winners = []
-    medals = ["🥇", "🥈", "🥉", "🏅", "🏅", "🏅"]
     for disc in all_discs:
         if disc["athletes"]:
             a = disc["athletes"][0]
             winners.append({
-                "medal":        medals[len(winners)] if len(winners) < len(medals) else "🏅",
                 "name":         a["name"],
                 "disc":         disc["label"],
                 "mark":         a["mark"],
@@ -261,7 +263,10 @@ def build_top_winners(track, field):
                 "injuryReason": a["injuryReason"],
                 "injuryUrl":    a["injuryUrl"],
             })
-    return sorted(winners, key=lambda x: -x["prob"])[:6]
+    top6 = sorted(winners, key=lambda x: -x["prob"])[:6]
+    for i, w in enumerate(top6):
+        w["rank"] = i + 1
+    return top6
 
 
 def build_removed_athletes(injury_flags):
