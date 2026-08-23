@@ -279,10 +279,16 @@ def load_athlete_photo(profile_url):
     not something hotlinked against their wishes. Returns None (not a fake
     placeholder) if the competitor id can't be parsed from profile_url or
     the athlete has no photo on file -- the frontend shows an initials
-    badge in that case, same principle as everywhere else in this project."""
+    badge in that case, same principle as everywhere else in this project.
+
+    profile_url comes in two real WA formats depending on the athlete:
+    '.../athletes/athlete=<id>' (most common) and '.../athletes/<country>/
+    <slug>-<id>' (~8% of rows, seen for newer/lower-profile athletes). Both
+    are matched here -- an athlete landing in the second format isn't a
+    'no photo on file' case, it was just never actually queried."""
     if not isinstance(profile_url, str):
         return None
-    m = re.search(r"athlete=(\d+)", profile_url)
+    m = re.search(r"athlete=(\d+)", profile_url) or re.search(r"-(\d+)/?$", profile_url)
     if not m:
         return None
     competitor_id = int(m.group(1))
