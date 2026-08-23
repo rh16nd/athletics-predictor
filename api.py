@@ -179,51 +179,23 @@ def format_mark(val, disc):
     return f"{val:.2f}"
 
 
-def load_athlete_history(disc_key, athlete_name):
-    """Real per-meet marks from the athlete's own most recent *completed*
-    season with real data on record -- never 2026 (the live 2026 toplist has
-    exactly one row per athlete, a season-best snapshot, not a results log,
-    see build_2026_features()'s own comment on this in run.py, so there's no
-    real in-season trend to show for the current year yet; data/raw/*.csv
-    only ever holds 2018-2025 anyway, 2026 lives in a separate file this
-    function doesn't read). Showing last season's actual meet-by-meet marks
-    is honest (real dates/venues, clearly a prior season) where synthesizing
-    a 2026 trend from a single point would repeat exactly the
-    fabricated-interpolation mistake already flagged on the Projections
-    page.
-
-    'Most recent' is picked per-athlete, not as one fixed year for
-    everyone: this dataset only covers the Diamond League circuit + major
-    meets (see Known Limitations), so an athlete who was hurt, skipped the
-    circuit, or focused elsewhere in 2025 can have zero rows that year while
-    genuinely having a real, fuller season on record from an earlier year --
-    e.g. Rai Benjamin, Shaunae Miller-Uibo, and Mutaz Barshim all have no
-    2025 rows here but real 2023/2024 (or earlier) seasons. Using the
-    dataset's global max year for every athlete showed those as having 'no
-    history on record' even though they do -- this uses each athlete's own
-    max year instead. Returns [] only if the athlete truly has no historical
-    rows at all (some newer athletes won't)."""
-    path = os.path.join(RAW_DIR, f"{disc_key}.csv")
-    if not os.path.exists(path):
-        return [], None
-    df = pd.read_csv(path)
-    if df.empty:
-        return [], None
-    mine = df[df["Competitor"].str.lower() == athlete_name.lower()]
-    if mine.empty:
-        return [], None
-    last_year = int(mine["year"].max())
-    season = mine[mine["year"] == last_year]
+def _season_rows_to_history(season, disc_key):
+    """Shared row->dict conversion for load_athlete_history()'s two sources
+    (the current-season meetings file and the historical toplist file) --
+    same real-race dedup logic either way: the same race can appear twice
+    (once from a toplist scrape, once from a per-meeting scraper under a
+    differently-formatted venue name), which is an accepted duplication for
+    aggregate training features but reads as a display bug in a per-athlete
+    list. Keeps one row per (date, mark), preferring whichever copy has a
+    Results Score."""
     season = season.copy()
+    if "Results Score" not in season.columns:
+        # current_season_scraper.py's output has no Results Score column at
+        # all (that field only ever came from the historical toplist scrape)
+        # -- dedup below still works fine on (Date, Mark) alone.
+        season["Results Score"] = pd.NA
     season["_date"] = pd.to_datetime(season["Date"], format="%d %b %Y", errors="coerce")
     season = season.sort_values("_date")
-    # The same real race often exists twice (once from the toplist scrape,
-    # once from season_results_scraper.py/major_meets_scraper.py under a
-    # differently-formatted venue name) -- an accepted duplication for the
-    # aggregate training features (see season_results_scraper.py's
-    # docstring), but showing literally the same race twice in a per-athlete
-    # list reads as a display bug, not real data. Keep one row per
-    # (date, mark), preferring whichever copy has a Results Score.
     season = season.sort_values("Results Score", na_position="last")
     season = season.drop_duplicates(subset=["Date", "Mark"], keep="first")
     season = season.sort_values("_date")
@@ -243,7 +215,57 @@ def load_athlete_history(disc_key, athlete_name):
             "venue": r.get("Venue"),
             "resultsScore": None if pd.isna(score) else int(score),
         })
-    return history, last_year
+    return history
+
+
+def load_athlete_history(disc_key, athlete_name):
+    """Real per-meet marks for an athlete -- the current, in-progress
+    season if src/current_season_scraper.py has real meeting data for them
+    (data/raw/{disc_key}_{MEETS_YEAR}_meetings.csv), falling back to their
+    own most recent *completed* season on record otherwise. Both are real
+    scraped results, never fabricated interpolation (see the Projections
+    page's known-fabricated trajectory chart for the mistake this
+    deliberately avoids).
+
+    The current-season file is a separate, small, dedicated scrape
+    (per-meeting DL circuit results for MEETS_YEAR only) -- kept apart from
+    both data/raw/{disc_key}.csv (the historical 2018-2025 training file,
+    which must never gain current-season rows: the model's LABEL_YEARS
+    logic assumes only completed seasons with a real Final result to
+    label) and data/raw/{disc_key}_2026.csv (the live worldwide toplist
+    snapshot live_fetcher.py overwrites on every run.py run, one row per
+    athlete). See current_season_scraper.py's own docstring for the full
+    reasoning.
+
+    Falling back to a prior season is picked per-athlete, not as one fixed
+    year for everyone: this dataset only covers the Diamond League circuit
+    + major meets (see Known Limitations), so an athlete who was hurt,
+    skipped the circuit, or focused elsewhere in a given year can have zero
+    rows that year while genuinely having a real, fuller season on record
+    from an earlier one -- e.g. Shaunae Miller-Uibo has no 2025 rows here
+    but a real 2022 season. Returns [] only if the athlete truly has no
+    real data on record anywhere, current or historical (some newer
+    athletes won't)."""
+    current_path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}_meetings.csv")
+    if os.path.exists(current_path):
+        current_df = pd.read_csv(current_path)
+        if not current_df.empty:
+            mine = current_df[current_df["Competitor"].str.lower() == athlete_name.lower()]
+            if not mine.empty:
+                return _season_rows_to_history(mine, disc_key), MEETS_YEAR
+
+    path = os.path.join(RAW_DIR, f"{disc_key}.csv")
+    if not os.path.exists(path):
+        return [], None
+    df = pd.read_csv(path)
+    if df.empty:
+        return [], None
+    mine = df[df["Competitor"].str.lower() == athlete_name.lower()]
+    if mine.empty:
+        return [], None
+    last_year = int(mine["year"].max())
+    season = mine[mine["year"] == last_year]
+    return _season_rows_to_history(season, disc_key), last_year
 
 
 def load_h2h_vs_rivals(disc_key, athlete_name, rival_names):
