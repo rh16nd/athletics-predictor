@@ -13,3 +13,4 @@ webdriver-manager
 flask
 flask-cors
 pytest
+opencv-python-headless==4.10.0.84

@@ -7,6 +7,9 @@ Serves at: http://localhost:5000
 from flask import Flask, jsonify
 from flask_cors import CORS
 import pandas as pd
+import numpy as np
+import cv2
+import requests
 import json
 import os
 import re
@@ -23,6 +26,8 @@ OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), "outputs")
 RAW_DIR     = os.path.join(os.path.dirname(__file__), "data", "raw")
 INJURY_FLAGS_PATH = os.path.join(os.path.dirname(__file__), "data", "injury_flags.json")
 H2H_PATH    = os.path.join(os.path.dirname(__file__), "data", "h2h", "h2h_rates.csv")
+MODELS_DIR  = os.path.join(os.path.dirname(__file__), "data", "models")
+FOCUS_CACHE_PATH = os.path.join(os.path.dirname(__file__), "data", "photo_focus_cache.json")
 
 MEETS_YEAR = 2026
 
@@ -302,6 +307,126 @@ def load_athlete_photo(profile_url):
     return f"https://assets.aws.worldathletics.org/{results[0]['primaryMediaId']}"
 
 
+# OpenCV's classic res10 SSD face detector -- not bundled with the
+# opencv-python-headless wheel, so it's fetched once (same on-demand-download
+# pattern webdriver-manager already uses elsewhere in this project) from
+# OpenCV's own canonical model URLs and cached to disk under data/models/.
+# Chosen over a plain Haar cascade after testing both on real WA photos:
+# Haar produced a real false-positive (locked onto a shirt/bib pattern, not
+# a face) on a shot put photo the SSD model got right; the SSD model was
+# also the only one of the two that correctly disambiguated two real faces
+# in one photo (Noah Lyles mid-celebration next to a competitor) by area.
+FACE_PROTOTXT_URL = "https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/deploy.prototxt"
+FACE_CAFFEMODEL_URL = "https://raw.githubusercontent.com/opencv/opencv_3rdparty/dnn_samples_face_detector_20170830/res10_300x300_ssd_iter_140000.caffemodel"
+FACE_PROTOTXT_PATH = os.path.join(MODELS_DIR, "face_deploy.prototxt")
+FACE_CAFFEMODEL_PATH = os.path.join(MODELS_DIR, "face_res10_300x300_ssd.caffemodel")
+
+_face_net = None
+
+
+def _get_face_net():
+    """Lazily download (once) and load the face-detector model. Returns None
+    if the download fails (e.g. no network) -- callers fall back to the
+    fixed 15%-from-top crop default, same as when no face is found."""
+    global _face_net
+    if _face_net is not None:
+        return _face_net
+    try:
+        os.makedirs(MODELS_DIR, exist_ok=True)
+        if not os.path.exists(FACE_PROTOTXT_PATH):
+            r = requests.get(FACE_PROTOTXT_URL, timeout=20)
+            r.raise_for_status()
+            with open(FACE_PROTOTXT_PATH, "wb") as f:
+                f.write(r.content)
+        if not os.path.exists(FACE_CAFFEMODEL_PATH):
+            r = requests.get(FACE_CAFFEMODEL_URL, timeout=60)
+            r.raise_for_status()
+            with open(FACE_CAFFEMODEL_PATH, "wb") as f:
+                f.write(r.content)
+        _face_net = cv2.dnn.readNetFromCaffe(FACE_PROTOTXT_PATH, FACE_CAFFEMODEL_PATH)
+    except Exception:
+        return None
+    return _face_net
+
+
+def detect_face_focus(image_bytes):
+    """Real face detection on the real downloaded photo -- returns the
+    detected face's own center as {x, y} percentages of the image, meant to
+    be fed straight into CSS background-position so the crop follows
+    wherever the face actually is instead of a fixed guess. Picks the
+    LARGEST detected face (by box area) when more than one appears (e.g. a
+    competitor in the background) -- the photographed athlete is reliably
+    the closer/more prominent figure in these action shots, which is a more
+    reliable signal than raw detector confidence (a calmer bystander's face
+    can score higher confidence than the actual subject mid-celebration).
+    Returns None if no face is found or the model can't be loaded."""
+    net = _get_face_net()
+    if net is None:
+        return None
+    arr = np.frombuffer(image_bytes, dtype=np.uint8)
+    img = cv2.imdecode(arr, cv2.IMREAD_COLOR)
+    if img is None:
+        return None
+    h, w = img.shape[:2]
+    blob = cv2.dnn.blobFromImage(cv2.resize(img, (300, 300)), 1.0, (300, 300), (104.0, 177.0, 123.0))
+    net.setInput(blob)
+    detections = net.forward()
+    best_box, best_area = None, 0.0
+    for i in range(detections.shape[2]):
+        confidence = float(detections[0, 0, i, 2])
+        if confidence < 0.5:
+            continue
+        x1, y1, x2, y2 = detections[0, 0, i, 3:7] * [w, h, w, h]
+        area = max(x2 - x1, 0) * max(y2 - y1, 0)
+        if area > best_area:
+            best_area, best_box = area, (x1, y1, x2, y2)
+    if best_box is None:
+        return None
+    x1, y1, x2, y2 = best_box
+    return {
+        "x": round(float((x1 + x2) / 2 / w * 100), 1),
+        "y": round(float((y1 + y2) / 2 / h * 100), 1),
+    }
+
+
+def _load_focus_cache():
+    if not os.path.exists(FOCUS_CACHE_PATH):
+        return {}
+    try:
+        with open(FOCUS_CACHE_PATH, "r") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def _save_focus_cache(cache):
+    os.makedirs(os.path.dirname(FOCUS_CACHE_PATH), exist_ok=True)
+    with open(FOCUS_CACHE_PATH, "w") as f:
+        json.dump(cache, f, indent=2, sort_keys=True)
+
+
+def get_photo_focus(photo_url):
+    """Real per-photo face position, cached to disk by photo URL so the
+    same athlete's photo isn't re-downloaded and re-detected on every
+    profile-page view. A cached `null` means detection genuinely ran and
+    found no face (not 'not computed yet') -- the frontend falls back to a
+    fixed top-biased crop in that case, same as when photo_url is None."""
+    if not photo_url:
+        return None
+    cache = _load_focus_cache()
+    if photo_url in cache:
+        return cache[photo_url]
+    try:
+        r = requests.get(photo_url, timeout=15)
+        r.raise_for_status()
+        focus = detect_face_focus(r.content)
+    except Exception:
+        focus = None
+    cache[photo_url] = focus
+    _save_focus_cache(cache)
+    return focus
+
+
 def load_predictions():
     """Load predictions_latest.csv and build discipline data."""
     path = os.path.join(OUTPUTS_DIR, "predictions_latest.csv")
@@ -427,6 +552,7 @@ def build_athlete_profile(disc_key, athlete_name):
         return val.item() if hasattr(val, "item") else val
 
     history, history_year = load_athlete_history(disc_key, athlete_name)
+    photo_url = load_athlete_photo(wa_url)
 
     return {
         "name":            row["athlete_name"],
@@ -442,7 +568,8 @@ def build_athlete_profile(disc_key, athlete_name):
         "daysSinceLast":   clean(row.get("days_since_last")),
         "prob":            prob,
         "waUrl":           wa_url,
-        "photoUrl":        load_athlete_photo(wa_url),
+        "photoUrl":        photo_url,
+        "photoFocus":      get_photo_focus(photo_url),
         "injuryWatch":     injury_watch,
         "injuryReason":    reason,
         "injuryUrl":       evidence_url,
