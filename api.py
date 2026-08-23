@@ -180,26 +180,40 @@ def format_mark(val, disc):
 
 
 def load_athlete_history(disc_key, athlete_name):
-    """Real per-meet marks from the athlete's most recent *completed* season
-    (2025, not 2026) -- the live 2026 toplist has exactly one row per athlete
-    (a season-best snapshot, not a results log, see build_2026_features()'s
-    own comment on this in run.py), so there's no real in-season trend to
-    show for the current year yet. Showing last season's actual meet-by-meet
-    marks is honest (real dates/venues, clearly a prior season) where
-    synthesizing a 2026 trend from a single point would repeat exactly the
+    """Real per-meet marks from the athlete's own most recent *completed*
+    season with real data on record -- never 2026 (the live 2026 toplist has
+    exactly one row per athlete, a season-best snapshot, not a results log,
+    see build_2026_features()'s own comment on this in run.py, so there's no
+    real in-season trend to show for the current year yet; data/raw/*.csv
+    only ever holds 2018-2025 anyway, 2026 lives in a separate file this
+    function doesn't read). Showing last season's actual meet-by-meet marks
+    is honest (real dates/venues, clearly a prior season) where synthesizing
+    a 2026 trend from a single point would repeat exactly the
     fabricated-interpolation mistake already flagged on the Projections
-    page. Returns [] if the athlete has no historical rows (some newer
-    athletes won't)."""
+    page.
+
+    'Most recent' is picked per-athlete, not as one fixed year for
+    everyone: this dataset only covers the Diamond League circuit + major
+    meets (see Known Limitations), so an athlete who was hurt, skipped the
+    circuit, or focused elsewhere in 2025 can have zero rows that year while
+    genuinely having a real, fuller season on record from an earlier year --
+    e.g. Rai Benjamin, Shaunae Miller-Uibo, and Mutaz Barshim all have no
+    2025 rows here but real 2023/2024 (or earlier) seasons. Using the
+    dataset's global max year for every athlete showed those as having 'no
+    history on record' even though they do -- this uses each athlete's own
+    max year instead. Returns [] only if the athlete truly has no historical
+    rows at all (some newer athletes won't)."""
     path = os.path.join(RAW_DIR, f"{disc_key}.csv")
     if not os.path.exists(path):
         return [], None
     df = pd.read_csv(path)
     if df.empty:
         return [], None
-    last_year = int(df["year"].max())
-    season = df[(df["year"] == last_year) & (df["Competitor"].str.lower() == athlete_name.lower())]
-    if season.empty:
-        return [], last_year
+    mine = df[df["Competitor"].str.lower() == athlete_name.lower()]
+    if mine.empty:
+        return [], None
+    last_year = int(mine["year"].max())
+    season = mine[mine["year"] == last_year]
     season = season.copy()
     season["_date"] = pd.to_datetime(season["Date"], format="%d %b %Y", errors="coerce")
     season = season.sort_values("_date")
