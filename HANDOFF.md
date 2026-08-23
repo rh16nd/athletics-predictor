@@ -70,7 +70,7 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 **Test suite**: `tests/` — pure-function unit tests for `train_model.py`, `api.py`, `dl_final_results_scraper.py` (`python -m pytest`, no network/Selenium/Flask/real-files needed), plus `test_fixtures_integration.py` covering `build_labeled_dataset()`/`train_and_backtest()`/`load_predictions()` end to end against small checked-in fixtures (`tests/fixtures/`) instead of real scraped data. 37 tests total. Includes regression tests for the specific bugs described below.
 
-**Both repos are pushed and up to date** — track-insights-main `868f002`, athletics-predictor `32d96a9f`.
+**Both repos are pushed and up to date** — track-insights-main `868f002`, athletics-predictor `045a3413`.
 
 ## Architecture / Key Files
 
