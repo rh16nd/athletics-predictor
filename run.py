@@ -178,16 +178,25 @@ def build_2026_features(key):
     # per athlete (their season-best mark), not a results log. Prefer the
     # real per-meeting current-season file (current_season_scraper.py's
     # output, one real row per real race) when it exists, same fix as
-    # days_since_last/recent_trend below. Falls back to the toplist's
-    # always-1 count only for athletes with no current-season meeting rows
-    # on file (e.g. genuinely new athletes not yet in that scrape).
+    # days_since_last/recent_trend below.
+    #
+    # A recognized athlete with ZERO rows in that file has a real, verified
+    # answer -- zero confirmed DL-circuit meetings so far this season, not
+    # the toplist's structural "1" every athlete gets regardless of their
+    # real meeting count (confirmed live, 2026-08-24: Jessica Hull showed
+    # "1 meet this season" while days_since_last/the Season Form chart both
+    # honestly showed no 2026 data at all for her -- a real contradiction
+    # on the same stat panel). So once the meetings file exists, it fully
+    # replaces the toplist count (fill_value=0), not just fills gaps in it.
+    # The toplist's always-1 count is used only as a last resort when the
+    # meetings file doesn't exist yet at all for this discipline.
     meets = df.groupby("athlete_name")["Mark"].count()
     meetings_path = os.path.join(RAW_DIR, f"{key}_2026_meetings.csv")
     if os.path.exists(meetings_path):
         meetings_df = pd.read_csv(meetings_path)
         real_meets = meetings_df.groupby("Competitor")["Mark"].count()
         real_meets.index.name = "athlete_name"
-        meets = real_meets.reindex(meets.index).fillna(meets)
+        meets = real_meets.reindex(meets.index, fill_value=0)
 
     age   = df.groupby("athlete_name")["age"].first()
     # Real per-athlete variability across this season's marks (was a flat 0.05 for everyone).

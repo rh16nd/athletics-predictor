@@ -46,12 +46,16 @@ from api import DISC_LABELS, MEETS_YEAR, RAW_DIR, OUTPUTS_DIR  # noqa: E402
 
 
 def real_current_season_rows(disc_key, athlete_name):
+    """Returns the athlete's real current-season rows -- possibly an empty
+    DataFrame, which is a real, verified answer (zero confirmed DL-circuit
+    meetings so far this season), not the same as having no data source at
+    all. Only returns None when the meetings file itself doesn't exist yet
+    for this discipline."""
     path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}_meetings.csv")
     if not os.path.exists(path):
         return None
     df = pd.read_csv(path)
-    mine = df[df["Competitor"].str.lower() == athlete_name.lower()]
-    return mine if not mine.empty else None
+    return df[df["Competitor"].str.lower() == athlete_name.lower()]
 
 
 if __name__ == "__main__":
@@ -70,17 +74,21 @@ if __name__ == "__main__":
         if mine is None:
             continue
 
-        dates = pd.to_datetime(mine["Date"], format="%d %b %Y", errors="coerce").dropna()
-        if not dates.empty:
-            days = (today - dates.max()).days
-            if days != row.get("days_since_last"):
-                df.at[idx, "days_since_last"] = days
-                days_updated += 1
-
+        # A real, verified meeting count (possibly 0) replaces whatever was
+        # there before -- including the old toplist-based "always 1", which
+        # was never a real measurement to begin with.
         real_meets = len(mine)
         if real_meets != row.get("meets_count"):
             df.at[idx, "meets_count"] = real_meets
             meets_updated += 1
+
+        if not mine.empty:
+            dates = pd.to_datetime(mine["Date"], format="%d %b %Y", errors="coerce").dropna()
+            if not dates.empty:
+                days = (today - dates.max()).days
+                if days != row.get("days_since_last"):
+                    df.at[idx, "days_since_last"] = days
+                    days_updated += 1
 
     df.to_csv(path, index=False)
     print(f"Updated days_since_last for {days_updated} athletes, meets_count for {meets_updated} -> {path}")
