@@ -732,7 +732,16 @@ def build_storylines(disc_key, disc_label, athletes):
     real number pulled live, not written by hand. Every generator either
     returns a real storyline or nothing; only non-empty ones are shown, so
     a discipline with a thin storyline crop (e.g. no debutants) just shows
-    fewer cards rather than a fabricated one to fill space."""
+    fewer cards rather than a fabricated one to fill space.
+
+    Each storyline carries a `stat` (a short, real headline value -- e.g.
+    '8pt gap', '12-0') separate from `text` (the supporting sentence) and
+    `athletes` (real names, for the frontend to link to their profile).
+    Added so the UI can put the real number itself forward as the visual
+    anchor instead of burying it inside a paragraph -- the first version
+    of this UI put icon+heading+paragraph in same-size boxes, which read
+    as generic filler; the fix is structural (a real number to design
+    around), not just a restyle."""
     stories = []
     top = athletes[:8]
     is_track = disc_key not in FIELD_EVENTS
@@ -748,11 +757,12 @@ def build_storylines(disc_key, disc_label, athletes):
         gap = by_prob[0]["prob"] - by_prob[1]["prob"]
         if gap <= 6:
             stories.append({
-                "type":  "photo_finish",
-                "title": "Photo finish",
-                "text":  f"{by_prob[0]['name']} ({by_prob[0]['prob']}%) and {by_prob[1]['name']} "
-                         f"({by_prob[1]['prob']}%) are separated by just {gap} points in the model "
-                         f"— the closest projected race in {disc_label}.",
+                "type":     "photo_finish",
+                "title":    "Photo finish",
+                "stat":     f"{gap}pt gap",
+                "text":     f"{by_prob[0]['prob']}% to {by_prob[1]['prob']}% — the closest "
+                            f"projected race in {disc_label}.",
+                "athletes": [by_prob[0]["name"], by_prob[1]["name"]],
             })
 
     # Injury watch: any real flagged contender still in the predicted field.
@@ -760,11 +770,13 @@ def build_storylines(disc_key, disc_label, athletes):
     if watched:
         w = watched[0]
         stories.append({
-            "type":  "injury_watch",
-            "title": "One to watch",
-            "text":  f"{w['name']} is flagged for a possible injury or recent DNF "
-                     f"({w['injuryReason'] or 'see evidence link'}) but remains projected "
-                     f"at rank #{w['rank']} — {w['prob']}% win probability if fit.",
+            "type":     "injury_watch",
+            "title":    "One to watch",
+            "stat":     f"#{w['rank']}",
+            "text":     f"Flagged for a possible injury or recent DNF "
+                        f"({w['injuryReason'] or 'see evidence link'}) but remains projected "
+                        f"at rank #{w['rank']} — {w['prob']}% win probability if fit.",
+            "athletes": [w["name"]],
         })
 
     # Debutant / returning champion: real prior-Final participation.
@@ -781,20 +793,23 @@ def build_storylines(disc_key, disc_label, athletes):
             if name_lower in champs_lower:
                 champ_name, champ_year = champs_lower[name_lower]
                 stories.append({
-                    "type":  "returning_champion",
-                    "title": "Returning champion",
-                    "text":  f"{a['name']} won the {champ_year} Diamond League Final in "
-                             f"{disc_label} and is projected rank #{a['rank']} to defend it.",
+                    "type":     "returning_champion",
+                    "title":    "Returning champion",
+                    "stat":     str(champ_year),
+                    "text":     f"Won the {champ_year} Diamond League Final in "
+                                f"{disc_label} and is projected rank #{a['rank']} to defend it.",
+                    "athletes": [a["name"]],
                 })
                 break
         for a in top[:3]:
             if a["name"].lower() not in names_lower:
                 stories.append({
-                    "type":  "debutant",
-                    "title": "First Final appearance",
-                    "text":  f"{a['name']} has never made a Diamond League Final in "
-                             f"{disc_label} before (no appearance 2018-2025) but is "
-                             f"projected rank #{a['rank']} this year.",
+                    "type":     "debutant",
+                    "title":    "First Final appearance",
+                    "stat":     f"#{a['rank']}",
+                    "text":     f"Never made a Diamond League Final in "
+                                f"{disc_label} before (no appearance 2018-2025).",
+                    "athletes": [a["name"]],
                 })
                 break
 
@@ -804,10 +819,11 @@ def build_storylines(disc_key, disc_label, athletes):
         if rivals:
             r = rivals[0]
             stories.append({
-                "type":  "rivalry",
-                "title": "Rivalry renewed",
-                "text":  f"{top[0]['name']} leads {top[1]['name']} {r['wins']}-{r['losses']} "
-                         f"across {r['meetings']} real career meetings.",
+                "type":     "rivalry",
+                "title":    "Rivalry renewed",
+                "stat":     f"{r['wins']}-{r['losses']}",
+                "text":     f"{top[0]['name']} leads across {r['meetings']} real career meetings.",
+                "athletes": [top[0]["name"], top[1]["name"]],
             })
 
     # Hot streak: real season-long improvement across an athlete's own
@@ -828,12 +844,15 @@ def build_storylines(disc_key, disc_label, athletes):
             best_gain, best_athlete = gain, (a, history)
     if best_athlete:
         a, history = best_athlete
+        stat = f"-{best_gain:.2f}s" if is_track else f"+{best_gain:.2f}m"
         stories.append({
-            "type":  "hot_streak",
-            "title": "Trending up",
-            "text":  f"{a['name']} has improved from {history[0]['mark']} to "
-                     f"{history[-1]['mark']} across {len(history)} real meetings this season "
-                     f"— the biggest real in-season gain among the top contenders.",
+            "type":     "hot_streak",
+            "title":    "Trending up",
+            "stat":     stat,
+            "text":     f"{history[0]['mark']} → {history[-1]['mark']} across "
+                        f"{len(history)} real meetings this season — the biggest real "
+                        f"in-season gain among the top contenders.",
+            "athletes": [a["name"]],
         })
 
     return stories[:4]
