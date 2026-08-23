@@ -1,17 +1,17 @@
-# 2026 Diamond League Predictor — Handoff
+# PodiumCall (2026 Diamond League Predictor) — Handoff
 
-_Last updated: 2026-08-23 (later session, same day)_
+_Last updated: 2026-08-23 (third session, same day)_
 
 ## Goal
 
-A fully automated ML prediction system for the 2026 Diamond League Final (Brussels, Sep 4-5). It scrapes live World Athletics data, checks for injuries/withdrawals, runs a trained model, and serves win-probability predictions to a dashboard. Two repos:
+A fully automated ML prediction system for the 2026 Diamond League Final (Brussels, Sep 4-5), branded **PodiumCall**. It scrapes live World Athletics data, checks for injuries/withdrawals, runs a trained model, and serves win-probability predictions to a dashboard. Two repos:
 
 ```
 C:\Users\rayen\athletics-predictor\   ← Python ML pipeline
-C:\Users\rayen\track-insights-main\  ← React dashboard (TanStack Router + Vite)
+C:\Users\rayen\track-insights-main\  ← React dashboard (TanStack Router + Vite), "PodiumCall" front end
 ```
 
-**Priority order, per the user**: model accuracy and data honesty first; visual/UX polish (landing page, styling) deliberately saved for last. When in doubt about what to work on next, prefer real data over hardcoded/hand-typed data, and always isolate a change's effect before trusting a number that moved.
+**Priority order, per the user**: model accuracy and data honesty first; visual/UX polish was deliberately saved for last, then explicitly picked back up 2026-08-23 (see track-insights-main's Current State below — landing page, branding, and a design critique pass are now done). When in doubt about what to work on next, prefer real data over hardcoded/hand-typed data, and always isolate a change's effect before trusting a number that moved.
 
 ## How to Run
 
@@ -70,7 +70,9 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 **Test suite**: `tests/` — pure-function unit tests for `train_model.py`, `api.py`, `dl_final_results_scraper.py` (`python -m pytest`, no network/Selenium/Flask/real-files needed), plus `test_fixtures_integration.py` covering `build_labeled_dataset()`/`train_and_backtest()`/`load_predictions()` end to end against small checked-in fixtures (`tests/fixtures/`) instead of real scraped data. 37 tests total. Includes regression tests for the specific bugs described below.
 
-**Both repos are pushed and up to date** — track-insights-main `868f002`, athletics-predictor `045a3413`.
+**Both repos are pushed and up to date** — track-insights-main `7fd0958`, athletics-predictor `00bdc0ed`.
+
+**track-insights-main (dashboard/frontend), 2026-08-23:** the project was branded **PodiumCall** (domain-checked, `podiumcall.com`/`.io` both appeared unregistered) and a real landing page was built at `/`, with the former dashboard moved to `/dashboard` (sidebar nav updated). The landing page deliberately uses a dark theme structurally inspired by personaai.live (dark bg, gradient CTA, glass-bordered cards, a scrolling live-confidence ticker) but recolored to the dashboard's existing terracotta/gold/track-surface identity, per the user's "keep the track & field feel" direction — see `PRODUCT.md` (new, in that repo) for full product context, and `src/routes/index.tsx`/`src/styles.css`'s `.landing`-scoped tokens for the implementation. Installed several third-party Claude Code skills (`impeccable`, `design-taste-frontend`, Emil Kowalski's animation/design-eng set) via `npx skills add`/`npx impeccable install` — these land in `.agents/`/`.claude/skills/`, gitignored like the rest of the project's agent tooling. Ran `impeccable`'s dual-agent design critique against the new landing page and fixed everything it found: real page metadata (was shipping unedited "Lovable App" scaffold `<title>`/OG tags), a WCAG AA contrast failure on the accent colors against the dark background, zero `:focus-visible` styling anywhere in the project, and a non-technical fallback message for the hero stats when live data isn't reachable. Also designed a free hand-drawn SVG logo mark (`src/components/dl/logo.tsx` — a 2-1-3 podium on a track-lane arc, with a `light` variant for the sidebar's textured background) instead of paying for AI logo generation, wired in as the real favicon (`public/favicon.svg`).
 
 ## Architecture / Key Files
 
@@ -86,6 +88,8 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 - `src/h2h_calculator.py` / `data/h2h/h2h_rates.csv` — head-to-head win rates, a trained feature
 - `tests/` — unit tests, `python -m pytest`
 - `src/components/dl/shell.tsx`, `src/lib/dl-data.ts` (track-insights-main) — dashboard shell + API data contract
+- `src/routes/index.tsx` (track-insights-main) — the "/" landing page; `src/routes/dashboard.tsx` — the actual dashboard, moved here from "/"
+- `src/components/dl/logo.tsx`, `PRODUCT.md` (track-insights-main) — PodiumCall's logo mark + durable product context for the `impeccable` skill
 
 ## Failed Attempts (tried, verified, did not help — don't redo without new evidence)
 
@@ -110,5 +114,5 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 1. **If pushing accuracy further**: the easy levers are now applied — 2018/2019 label years, real per-athlete profile scraping (dead end, see Failed Attempts), and major non-DL meets (Olympics/Worlds/Continental Tour Gold/Euro Champs, plus a recognized-athlete noise filter) are all done (2026-08-23). None of it moved the headline number much (59.1%→60.3%→60.1%), which at this dataset size (~459 rows) may just be close to this feature set's ceiling. Remaining honest levers: scraping every meeting worldwide for true full-season per-athlete history (big undertaking, real rate-limit concerns), the other five Area Championships if the European-only scoping turns out too narrow, or finding genuinely new predictive features beyond the current 14.
 2. **Test coverage**: done (2026-08-23) — `build_labeled_dataset()`/`train_and_backtest()`/`load_predictions()` are now covered end to end via `tests/fixtures/` + `tests/test_fixtures_integration.py`. If further expanding: `run.py`'s `build_2026_features()` and the injury-checker's scraping logic are still untested (both need Selenium/live network, harder to fixture).
-3. **Explicitly deprioritized polish, saved for last per the user**: landing/welcome page, READMEs for both repos, a real per-meet Projections chart, React Query refactor, mobile layout.
+3. **Polish, picked back up 2026-08-23**: landing/welcome page is done (see track-insights-main's Current State above — branded PodiumCall, dark hero, critique-fixed). Still deprioritized: READMEs for both repos, a real per-meet Projections chart, React Query refactor, mobile layout pass on the rest of the dashboard (the new landing page itself is responsive-checked at 375px/desktop, but `/track`, `/field`, `/schedule`, `/projections` haven't been).
 4. **Otherwise**: the system is in good shape 12 days out from the Final. Rerun `run.py` after Zurich (Aug 27) and again closer to Sep 4-5 to pick up final-season data — nothing else is currently broken or blocking.
