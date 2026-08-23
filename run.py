@@ -357,7 +357,17 @@ for key, label in DISCIPLINES_2026.items():
         continue
 
     qualified = standings.get(key, [])
+    dl_qualified_disc = bool(qualified)
     if not qualified:
+        # Real DL standings weren't available for this discipline (scrape
+        # gap, or too early in the season for a standings page to exist
+        # yet) -- falls back to ranking by worldwide season-best time/mark
+        # so the discipline still gets predictions instead of silently
+        # disappearing, but these athletes are NOT verified Diamond League
+        # participants, just fast times run anywhere. Flagged per-row below
+        # (dl_qualified) so this is never silently presented as equivalent
+        # to a real standings-based list.
+        print(f"  [{label}] WARNING: no official DL standings found -- falling back to worldwide season-best ranking (not restricted to real Diamond League participants)")
         is_field_fallback = key in FIELD_EVENTS
         df_qual = df.sort_values("season_best", ascending=not is_field_fallback).head(get_qual_limit(key)).copy()
     else:
@@ -481,6 +491,14 @@ for key, label in DISCIPLINES_2026.items():
             "age":              round(float(row["age"]), 1) if pd.notna(row.get("age")) else None,
             "meets_count":      int(row["meets_count"]) if pd.notna(row.get("meets_count")) else None,
             "days_since_last":  int(row["days_since_last"]) if pd.notna(row.get("days_since_last")) and row["days_since_last"] < 999 else None,
+            # Real per-discipline flag: True when this athlete's inclusion
+            # came from actually being in WA's own scraped 2026 Diamond
+            # League standings for this discipline (scrape_dl_standings),
+            # False when standings data wasn't available and this row is a
+            # worldwide season-best-ranking fallback instead (see the
+            # WARNING print above) -- so "real Diamond League participant"
+            # is a fact this can actually assert, not an assumption.
+            "dl_qualified":     dl_qualified_disc,
         })
 
 out_path = os.path.join(OUTPUTS_DIR, "predictions_latest.csv")

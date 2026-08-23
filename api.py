@@ -489,11 +489,21 @@ def load_predictions():
                 if injury_watch else (None, None)
             )
 
+            # True when run.py actually found this athlete in WA's own
+            # scraped 2026 Diamond League standings for this discipline;
+            # False on the rare worldwide-season-best-ranking fallback (see
+            # run.py's WARNING print for when that triggers). Defaults True
+            # for CSVs written before this column existed -- verified live
+            # (2026-08-23) that every discipline was standings-based then,
+            # so that default reflects real historical fact, not a guess.
+            dl_qualified = row.get("dl_qualified")
+            qualified = True if pd.isna(dl_qualified) else bool(dl_qualified)
+
             athletes.append({
                 "rank":         int(row.get("predicted_rank", len(athletes) + 1)),
                 "name":         row["athlete_name"],
                 "nat":          str(row.get("nationality", "—")),
-                "qualified":    True,
+                "qualified":    qualified,
                 "mark":         mark_display,
                 "prob":         prob,
                 "waUrl":        wa_url,
