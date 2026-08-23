@@ -173,7 +173,22 @@ def build_2026_features(key):
     else:
         sb = df.groupby("athlete_name")["Mark"].max()
 
+    # meets_count from df (the toplist snapshot) would always be 1 for
+    # every single athlete -- that file structurally has exactly one row
+    # per athlete (their season-best mark), not a results log. Prefer the
+    # real per-meeting current-season file (current_season_scraper.py's
+    # output, one real row per real race) when it exists, same fix as
+    # days_since_last/recent_trend below. Falls back to the toplist's
+    # always-1 count only for athletes with no current-season meeting rows
+    # on file (e.g. genuinely new athletes not yet in that scrape).
     meets = df.groupby("athlete_name")["Mark"].count()
+    meetings_path = os.path.join(RAW_DIR, f"{key}_2026_meetings.csv")
+    if os.path.exists(meetings_path):
+        meetings_df = pd.read_csv(meetings_path)
+        real_meets = meetings_df.groupby("Competitor")["Mark"].count()
+        real_meets.index.name = "athlete_name"
+        meets = real_meets.reindex(meets.index).fillna(meets)
+
     age   = df.groupby("athlete_name")["age"].first()
     # Real per-athlete variability across this season's marks (was a flat 0.05 for everyone).
     consistency = df.groupby("athlete_name")["Mark"].std().fillna(0.0)
