@@ -214,3 +214,59 @@ def test_ranking_still_caps_the_list_but_promotes_before_it_truncates():
     assert ranked[0]["type"] == "rivalry"
     # The unsurprising #3 debutant is the one that falls off the end.
     assert "debutant" not in [s["type"] for s in ranked]
+
+
+# --- The model's pick vs. the best mark (2026-08-24) ----------------------
+# `athletes` is ordered by real season-best mark, which disagrees with win
+# probability in 15 of 32 real disciplines. Reading athletes[0] as "the
+# favourite" has been a bug in four separate places in this project; these
+# pin the shared helper that replaced the last two.
+
+def _disc_two(label, first, second):
+    """A discipline whose best MARK and best PROBABILITY are different people,
+    in the real list order (mark-sorted, so the weaker pick comes first)."""
+    def athlete(name, prob):
+        return {
+            "name": name, "mark": "10.00", "prob": prob, "waUrl": "https://x",
+            "injuryWatch": False, "injuryReason": None, "injuryUrl": None,
+        }
+    return {"id": label, "label": label, "athletes": [athlete(*first), athlete(*second)]}
+
+
+def test_discipline_favourite_picks_highest_probability_not_best_mark():
+    disc = _disc_two("Men's 100m", ("Noah LYLES", 16), ("Oblique SEVILLE", 27))
+    assert api.discipline_favourite(disc)["name"] == "Oblique SEVILLE"
+
+
+def test_discipline_favourite_breaks_ties_on_season_best_mark():
+    disc = _disc_two("Men's 100m", ("Best Mark", 20), ("Slower Mark", 20))
+    assert api.discipline_favourite(disc)["name"] == "Best Mark"
+
+
+def test_discipline_favourite_returns_none_for_an_empty_field():
+    assert api.discipline_favourite({"label": "Empty", "athletes": []}) is None
+
+
+def test_top_winners_names_the_model_pick_not_the_fastest_athlete():
+    discs = [_disc_two("Men's 100m", ("Noah LYLES", 16), ("Oblique SEVILLE", 27))]
+    winners = api.build_top_winners(discs, [])
+    assert [w["name"] for w in winners] == ["Oblique SEVILLE"]
+    assert winners[0]["prob"] == 27
+
+
+def test_top_winners_no_longer_drops_a_discipline_by_under_reporting_it():
+    """The real regression: Winfred Yavi at 52% was missing from the dashboard
+    entirely because her discipline was scored on its best mark (31%)."""
+    discs = [
+        _disc_two("Women's 3000m SC", ("Peruth CHEMUTAI", 31), ("Winfred YAVI", 52)),
+        _discipline("Filler A", prob=45),
+        _discipline("Filler B", prob=40),
+    ]
+    winners = api.build_top_winners(discs, [])
+    assert winners[0]["name"] == "Winfred YAVI"
+    assert winners[0]["prob"] == 52
+
+
+def test_confidence_scores_a_discipline_on_its_top_pick_not_its_top_mark():
+    discs = [_disc_two("Women's 3000m SC", ("Peruth CHEMUTAI", 31), ("Winfred YAVI", 52))]
+    assert api.build_confidence(discs, []) == [{"disc": "Women's 3000m SC", "value": 52}]

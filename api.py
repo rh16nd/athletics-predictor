@@ -626,6 +626,28 @@ def build_athlete_profile(disc_key, athlete_name):
     }
 
 
+def discipline_favourite(disc):
+    """The model's actual #1 pick for a discipline: highest WIN PROBABILITY.
+
+    NOT `athletes[0]`. That list is ordered by real season-best mark (see
+    load_predictions), and the two orderings genuinely disagree across about
+    half the field -- measured 2026-08-24: **15 of 32 disciplines**, e.g. the
+    Men's 100m's best mark is Noah Lyles at 16% while the model's pick is
+    Oblique Seville at 27%, and the Women's 3000m Steeplechase's best mark is
+    Peruth Chemutai at 31% while the model picks Winfred Yavi at 52%.
+
+    Reading `athletes[0]` as "the favourite" is a mistake this project has now
+    made in four separate places (the Projections hero, the rivalry storyline,
+    and both callers below). Route every "who does the model pick" question
+    through this function rather than indexing the list again.
+
+    Ties resolve to the best season mark, because `max` keeps the first
+    maximum and the list is already mark-ordered."""
+    if not disc["athletes"]:
+        return None
+    return max(disc["athletes"], key=lambda a: a["prob"])
+
+
 def build_top_winners(track, field):
     """Returns a list of {rank, name, disc, ...} dicts, sorted by probability,
     capped at 6. `rank` is the list POSITION (1-6) for the frontend to render
@@ -638,8 +660,8 @@ def build_top_winners(track, field):
     all_discs = (track or []) + (field or [])
     winners = []
     for disc in all_discs:
-        if disc["athletes"]:
-            a = disc["athletes"][0]
+        a = discipline_favourite(disc)
+        if a:
             winners.append({
                 "name":         a["name"],
                 "disc":         disc["label"],
@@ -677,11 +699,18 @@ def build_removed_athletes(injury_flags):
 
 
 def build_confidence(track, field):
+    """How confident the model is in each discipline, i.e. the probability of
+    its own top pick -- so it reads through discipline_favourite() for the
+    same reason build_top_winners() does. This previously used
+    `athletes[0]["prob"]` (best mark), which under-reported confidence for
+    every discipline where mark and probability disagree: the Women's 3000m
+    Steeplechase showed 31% instead of its real 52%."""
     all_discs = (track or []) + (field or [])
-    return [
-        {"disc": d["label"], "value": d["athletes"][0]["prob"] if d["athletes"] else 0}
-        for d in sorted(all_discs, key=lambda x: -(x["athletes"][0]["prob"] if x["athletes"] else 0))
-    ]
+    scored = []
+    for d in all_discs:
+        fav = discipline_favourite(d)
+        scored.append({"disc": d["label"], "value": fav["prob"] if fav else 0})
+    return sorted(scored, key=lambda x: -x["value"])
 
 def get_model_accuracy():
     acc_path = os.path.join(OUTPUTS_DIR, "model_accuracy.txt")
