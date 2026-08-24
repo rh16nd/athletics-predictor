@@ -125,3 +125,92 @@ def test_build_confidence_sorted_descending_by_top_athlete_probability():
     confidence = api.build_confidence(discs, [])
     assert confidence[0]["disc"] == "High"
     assert confidence[0]["value"] == 90
+
+
+# --- Storyline ordering (2026-08-24) -------------------------------------
+# The Projections page features exactly one storyline at large scale. It used
+# to be whichever generator ran first, so a routine "#2 First Final
+# appearance" outranked "12-0, the head-to-head leader is NOT the model's
+# pick". These cover the computed rule that replaced that fixed order.
+
+def _story(kind, stat, *athletes):
+    return {"type": kind, "title": kind, "stat": stat, "text": "", "athletes": list(athletes)}
+
+
+def test_rivalry_whose_h2h_leader_is_not_the_model_pick_outranks_a_debutant():
+    stories = [
+        _story("debutant", "#2", "Debutant"),
+        _story("rivalry", "12-0", "Lyles", "Seville"),
+    ]
+    ranked = api.rank_storylines(stories, prob_leader="Seville", prob_top3=["Seville", "Lyles"])
+    assert ranked[0]["type"] == "rivalry"
+
+
+def test_rivalry_led_by_the_model_pick_is_not_treated_as_surprising():
+    story = _story("rivalry", "12-0", "Seville", "Lyles")
+    assert api.storyline_surprise(story, "Seville", ["Seville"]) == api.SURPRISE_NOTABLE
+
+
+def test_level_head_to_head_record_has_no_leader_to_contradict_the_model():
+    story = _story("rivalry", "5-5", "Lyles", "Seville")
+    assert api.storyline_surprise(story, "Seville", ["Seville"]) == api.SURPRISE_NOTABLE
+
+
+def test_injury_flagged_favourite_outranks_an_injury_flagged_also_ran():
+    favourite = _story("injury_watch", "#1", "Duplantis")
+    also_ran = _story("injury_watch", "#7", "Somebody")
+    assert api.storyline_surprise(favourite, "Duplantis", ["Duplantis"]) > api.storyline_surprise(
+        also_ran, "Duplantis", ["Duplantis"]
+    )
+
+
+def test_debutant_projected_to_win_outranks_a_debutant_further_down():
+    winning = _story("debutant", "#1", "Newcomer")
+    third = _story("debutant", "#3", "Newcomer")
+    assert api.storyline_surprise(winning, "Newcomer", ["Newcomer"]) == api.SURPRISE_DEFIES_PRIOR
+    assert api.storyline_surprise(third, "Favourite", ["Favourite"]) == api.SURPRISE_CONTEXT
+
+
+def test_head_to_head_counter_evidence_outranks_the_same_athletes_debut():
+    """The real Men's 100m case: Seville is the model's pick AND a first-time
+    finalist AND 0-12 against Lyles. A debut is an absence of prior finals,
+    not evidence against the pick, so the head-to-head has to win the
+    featured slot -- these used to tie and lose on generator order."""
+    stories = [
+        _story("debutant", "#2", "Oblique SEVILLE"),
+        _story("rivalry", "12-0", "Noah LYLES", "Oblique SEVILLE"),
+    ]
+    ranked = api.rank_storylines(
+        stories, prob_leader="Oblique SEVILLE", prob_top3=["Oblique SEVILLE", "Noah LYLES"]
+    )
+    assert [s["type"] for s in ranked] == ["rivalry", "debutant"]
+
+
+def test_tight_photo_finish_outranks_a_looser_one():
+    tight = _story("photo_finish", "1pt gap", "A", "B")
+    loose = _story("photo_finish", "5pt gap", "A", "B")
+    assert api.storyline_surprise(tight, "A", ["A"]) > api.storyline_surprise(loose, "A", ["A"])
+
+
+def test_equally_surprising_storylines_keep_the_generators_original_order():
+    stories = [
+        _story("returning_champion", "2024", "Champ"),
+        _story("hot_streak", "-0.20s", "Riser"),
+    ]
+    ranked = api.rank_storylines(stories, "Champ", ["Champ"])
+    assert [s["type"] for s in ranked] == ["returning_champion", "hot_streak"]
+
+
+def test_ranking_still_caps_the_list_but_promotes_before_it_truncates():
+    stories = [
+        _story("debutant", "#3", "Third"),
+        _story("returning_champion", "2024", "Champ"),
+        _story("hot_streak", "-0.20s", "Riser"),
+        _story("photo_finish", "4pt gap", "Fav", "Second"),
+        _story("rivalry", "9-1", "Challenger", "Fav"),
+    ]
+    ranked = api.rank_storylines(stories, prob_leader="Fav", prob_top3=["Fav", "Challenger"])
+    assert len(ranked) == 4
+    assert ranked[0]["type"] == "rivalry"
+    # The unsurprising #3 debutant is the one that falls off the end.
+    assert "debutant" not in [s["type"] for s in ranked]

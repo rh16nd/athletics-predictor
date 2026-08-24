@@ -725,6 +725,88 @@ def _dl_final_history(disc_key):
     return df[df["discipline"] == disc_key]
 
 
+# How strongly a storyline's real number pulls against the model's own pick.
+# The Projections page features exactly ONE storyline at large scale, and
+# picking it by the generators' fixed type order meant a routine "#2 First
+# Final appearance" got the big treatment while the far more striking real
+# fact -- "12-0, Lyles leads the head-to-head, yet the model picks Seville"
+# -- was buried in the small list underneath. Every level below is a check
+# against real data, so which card gets featured stays computed rather than
+# editorial.
+#
+# The top two tiers are deliberately distinct, and the Men's 100m is exactly
+# why: Oblique Seville is simultaneously the model's 27% favourite AND a
+# first-time finalist AND the man Noah Lyles has beaten in all 12 of their
+# real career meetings. Scoring "debutant favourite" and "the head-to-head
+# says otherwise" the same made the debut card win on generator order and
+# put the weaker fact in the featured slot. A debut is an ABSENCE of prior
+# finals -- it defies an expectation but is not evidence against the pick.
+# A 12-0 losing record is measured counter-evidence. They are not the same
+# claim and don't get the same weight.
+SURPRISE_CONTRADICTS  = 3  # measured evidence points at a different athlete
+SURPRISE_DEFIES_PRIOR = 2  # cuts against an expectation, but isn't counter-evidence
+SURPRISE_NOTABLE      = 1  # real and worth saying, but agrees with the model
+SURPRISE_CONTEXT      = 0  # background colour
+
+
+def storyline_surprise(story, prob_leader, prob_top3):
+    """Score one storyline against the model's own call.
+
+    Relies on a contract every generator in build_storylines() honours: a
+    storyline's `athletes[0]` is its protagonist -- the head-to-head leader
+    for a rivalry, the flagged athlete for an injury watch, the debutant for
+    a debut, and so on. (This project has had real bugs from assuming
+    `athletes[0]` meant "the favourite"; here it deliberately does not, which
+    is exactly what makes the comparison against `prob_leader` meaningful.)
+    """
+    kind = story["type"]
+    hero = (story["athletes"][0] if story["athletes"] else "").lower()
+    leader = (prob_leader or "").lower()
+    top3 = {n.lower() for n in prob_top3}
+
+    if kind == "rivalry":
+        wins, _, losses = story["stat"].partition("-")
+        if wins == losses:
+            return SURPRISE_NOTABLE  # level record -- nobody for the model to disagree with
+        return SURPRISE_CONTRADICTS if hero and leader and hero != leader else SURPRISE_NOTABLE
+
+    if kind == "injury_watch":
+        # A flagged athlete the model still makes favourite is a real tension;
+        # one flagged further down the field is a caveat, not a headline.
+        if hero and hero == leader:
+            return SURPRISE_CONTRADICTS
+        return SURPRISE_DEFIES_PRIOR if hero in top3 else SURPRISE_NOTABLE
+
+    if kind == "debutant":
+        # A first-timer the model picks to WIN cuts against the obvious prior.
+        # A first-timer projected third does not -- that's just a fact.
+        return SURPRISE_DEFIES_PRIOR if hero and hero == leader else SURPRISE_CONTEXT
+
+    if kind == "photo_finish":
+        # Already gated at <=6pt upstream. Inside ~2pt the model is
+        # effectively declining to call it, which is a statement in itself.
+        m = re.match(r"(\d+)", story["stat"])
+        return SURPRISE_DEFIES_PRIOR if m and int(m.group(1)) <= 2 else SURPRISE_NOTABLE
+
+    if kind in ("returning_champion", "hot_streak"):
+        return SURPRISE_NOTABLE
+
+    return SURPRISE_CONTEXT
+
+
+def rank_storylines(stories, prob_leader, prob_top3, limit=4):
+    """Order storylines most-surprising-first and keep the top `limit`.
+
+    Python's sort is stable, so equally-surprising storylines keep the
+    generators' original order -- nothing gets shuffled arbitrarily, only
+    genuinely contradicting facts move up. Sorting before truncating is
+    deliberate: a striking storyline that used to fall outside the cut now
+    survives it."""
+    return sorted(
+        stories, key=lambda s: -storyline_surprise(s, prob_leader, prob_top3)
+    )[:limit]
+
+
 def build_storylines(disc_key, disc_label, athletes):
     """Real, computed narrative angles for a discipline -- replaces the
     Projections page's old static, identical-on-every-discipline 'how this
@@ -741,7 +823,11 @@ def build_storylines(disc_key, disc_label, athletes):
     anchor instead of burying it inside a paragraph -- the first version
     of this UI put icon+heading+paragraph in same-size boxes, which read
     as generic filler; the fix is structural (a real number to design
-    around), not just a restyle."""
+    around), not just a restyle.
+
+    Every generator sets `athletes[0]` to that storyline's protagonist --
+    see storyline_surprise(), which relies on it to decide which card the
+    page features. The returned order is by surprise, not by generator."""
     stories = []
     top = athletes[:8]
     is_track = disc_key not in FIELD_EVENTS
@@ -753,6 +839,8 @@ def build_storylines(disc_key, disc_label, athletes):
     # pick; comparing top[0]/top[1] by rank alone produced a real negative
     # "gap" once, confirmed live before this fix).
     by_prob = sorted(top, key=lambda a: -a["prob"])
+    prob_leader = by_prob[0]["name"] if by_prob else None
+    prob_top3 = [a["name"] for a in by_prob[:3]]
     if len(by_prob) >= 2:
         gap = by_prob[0]["prob"] - by_prob[1]["prob"]
         if gap <= 6:
@@ -818,12 +906,39 @@ def build_storylines(disc_key, disc_label, athletes):
         rivals = load_h2h_vs_rivals(disc_key, top[0]["name"], [top[1]["name"]])
         if rivals:
             r = rivals[0]
+            # `wins`/`losses` come back from top[0]'s point of view, and top[0]
+            # is only the best season MARK -- which does not make them the
+            # better head-to-head athlete. The old text asserted "top[0] leads"
+            # unconditionally, so a 2-5 record rendered as a lead. Name whoever
+            # actually leads, and put them first in `athletes`: the card reads
+            # "A vs. B", and storyline_surprise() treats athletes[0] as the
+            # protagonist.
+            # The card renders as "A vs. B — {text}", so `text` deliberately
+            # does NOT re-name the leader: "A vs. B — A leads across..." said
+            # it twice in a row, which is loud now that this card can take the
+            # featured slot. First-named is the leader, and that's enough.
+            if r["wins"] == r["losses"]:
+                stat = f"{r['wins']}-{r['losses']}"
+                names = [top[0]["name"], top[1]["name"]]
+                text = f"Level across {r['meetings']} real career meetings."
+            else:
+                lead, trail = (top[0], top[1]) if r["wins"] > r["losses"] else (top[1], top[0])
+                won = max(r["wins"], r["losses"])
+                stat = f"{won}-{min(r['wins'], r['losses'])}"
+                names = [lead["name"], trail["name"]]
+                text = f"{won} wins from {r['meetings']} real career meetings"
+                # The whole point of letting this card be featured: the career
+                # record and the model can point at different athletes.
+                if prob_leader and prob_leader != lead["name"]:
+                    text += (f", yet the model makes {prob_leader} the "
+                             f"{by_prob[0]['prob']}% pick for the Final")
+                text += "."
             stories.append({
                 "type":     "rivalry",
                 "title":    "Rivalry renewed",
-                "stat":     f"{r['wins']}-{r['losses']}",
-                "text":     f"{top[0]['name']} leads across {r['meetings']} real career meetings.",
-                "athletes": [top[0]["name"], top[1]["name"]],
+                "stat":     stat,
+                "text":     text,
+                "athletes": names,
             })
 
     # Hot streak: real season-long improvement across an athlete's own
@@ -855,7 +970,7 @@ def build_storylines(disc_key, disc_label, athletes):
             "athletes": [a["name"]],
         })
 
-    return stories[:4]
+    return rank_storylines(stories, prob_leader, prob_top3)
 
 
 @app.route("/api/predictions")
