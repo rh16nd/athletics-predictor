@@ -119,6 +119,9 @@ def scrape_meeting(meeting, year):
             if group["rankingCategory"] not in ELIGIBLE_CATEGORIES:
                 continue
             for event in group["events"]:
+                # No mile_as_1500 here, deliberately: these rows become a
+                # per-meeting time series, where a Mile is not a 1500m.
+                # See dlr.MILE_AS_1500_KEY.
                 key = dlr.resolve_discipline_key(event["gender"], event["event"])
                 if key is None:
                     continue

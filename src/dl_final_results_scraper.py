@@ -99,7 +99,6 @@ WA_EVENT_TO_KEY = {
     ("M", "400 Metres"): "men_400m",
     ("M", "800 Metres"): "men_800m",
     ("M", "1500 Metres"): "men_1500m",
-    ("M", "Mile"): "men_1500m",  # some years' Final substitutes the Mile for the 1500m
     ("M", "5000 Metres"): "men_5000m",
     ("M", "110 Metres Hurdles"): "men_110h",
     ("M", "400 Metres Hurdles"): "men_400h",
@@ -116,7 +115,6 @@ WA_EVENT_TO_KEY = {
     ("W", "400 Metres"): "women_400m",
     ("W", "800 Metres"): "women_800m",
     ("W", "1500 Metres"): "women_1500m",
-    ("W", "Mile"): "women_1500m",
     ("W", "5000 Metres"): "women_5000m",
     ("W", "100 Metres Hurdles"): "women_100h",
     ("W", "400 Metres Hurdles"): "women_400h",
@@ -138,8 +136,38 @@ def strip_gender_prefix(event_name):
     return event_name.split("'s ", 1)[-1]
 
 
-def resolve_discipline_key(gender, event_name):
-    return WA_EVENT_TO_KEY.get((gender, strip_gender_prefix(event_name)))
+# The Mile is deliberately NOT in WA_EVENT_TO_KEY, because whether it counts
+# as the 1500m depends entirely on what the caller is doing with the result.
+#
+# Labelling a DL Final: YES. Some years' Final substitutes the Mile for the
+# 1500m, and for "who won this discipline's Final that year" they're the same
+# contest -- dropping it would lose real ground-truth labels.
+#
+# Building a per-meeting TIME SERIES: NO. A Mile is ~16-17s slower than a
+# 1500m, so mixing the two silently corrupts season bests, trends and every
+# chart built on them. Real case found 2026-08-24: Ethan Strand's 2026
+# "men_1500m" history read 3:46.97 (Prefontaine -- the Bowerman *Mile*),
+# 3:49.13 (London -- the Emsley Carr *Mile*), then 3:30.77 (Silesia, a real
+# 1500m), which surfaced on the Projections page as a fabricated "-16.20s
+# biggest in-season gain". The scraped CSVs carry no event column, so this
+# cannot be filtered downstream -- it has to be right at scrape time.
+MILE_AS_1500_KEY = {
+    ("M", "Mile"): "men_1500m",
+    ("W", "Mile"): "women_1500m",
+}
+
+
+def resolve_discipline_key(gender, event_name, mile_as_1500=False):
+    """Map WA's (gender, event) pair to this project's discipline key.
+
+    `mile_as_1500` defaults to False so that the many per-meeting callers get
+    the safe behaviour without having to know about this at all; only the DL
+    Final labelling path opts in. See MILE_AS_1500_KEY above for why the two
+    answers genuinely differ."""
+    pair = (gender, strip_gender_prefix(event_name))
+    if mile_as_1500 and pair in MILE_AS_1500_KEY:
+        return MILE_AS_1500_KEY[pair]
+    return WA_EVENT_TO_KEY.get(pair)
 
 
 def load_recognized_names(discipline_key, raw_dir):
@@ -221,7 +249,11 @@ def scrape_year(year):
                 if group["rankingCategory"] != "DF":
                     continue
                 for event in group["events"]:
-                    key = resolve_discipline_key(event["gender"], event["event"])
+                    # The Final is the one place the Mile really is the 1500m
+                    # -- see MILE_AS_1500_KEY.
+                    key = resolve_discipline_key(
+                        event["gender"], event["event"], mile_as_1500=True
+                    )
                     if key is None:
                         continue  # not one of our 32 disciplines (e.g. relays, a non-standard extra race)
                     if key in seen_events:
