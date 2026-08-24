@@ -41,6 +41,28 @@ from season_results_scraper import find_season_meetings, scrape_meeting  # noqa:
 RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 
 
+def get_recognized_names(key, year, raw_dir):
+    """Union of the historical-toplist "recognized" set (dl_final_results_scraper's
+    load_recognized_names) with this season's own live toplist snapshot
+    (data/raw/{key}_{year}.csv, owned by live_fetcher.py). Split out from
+    scrape_current_season() (2026-08-24) so this real bug fix is unit-testable
+    without needing a live scrape: the historical-only version silently
+    dropped real, currently-ranked athletes with no multi-year history in
+    this discipline -- confirmed live for Femke Bol, who switched from 400H
+    to the 800m for 2026 and is genuinely ranked #3 in predictions_latest.csv,
+    but has zero historical presence in women_800m.csv, so every one of her
+    real 2026 races was being filtered out as "unrecognized." Being in this
+    season's own live toplist is itself direct proof of current relevance,
+    independent of history -- an athlete switching events, returning from a
+    long layoff, or breaking out for the first time this year all hit the
+    same gap the historical-only check missed."""
+    recognized = dlr.load_recognized_names(key, raw_dir)
+    current_toplist_path = os.path.join(raw_dir, f"{key}_{year}.csv")
+    if os.path.exists(current_toplist_path):
+        recognized = recognized | set(pd.read_csv(current_toplist_path)["Competitor"].dropna())
+    return recognized
+
+
 def scrape_current_season(year):
     meetings = find_season_meetings(year)
     print(f"  {year}: {len(meetings)} meetings with API results")
@@ -59,11 +81,7 @@ def scrape_current_season(year):
         new_df = pd.DataFrame(rows).drop(columns=["discipline"])
         new_df["source"] = "dl_meeting"
 
-        # Same recognized-athlete filter season_results_scraper.py uses --
-        # checked against the historical toplist file (data/raw/{key}.csv),
-        # which is the right source even for the current season: a real
-        # contender almost always has a toplisted history from prior years.
-        recognized = dlr.load_recognized_names(key, RAW_DIR)
+        recognized = get_recognized_names(key, year, RAW_DIR)
         before = len(new_df)
         new_df = new_df[new_df["Competitor"].isin(recognized)]
         dropped = before - len(new_df)

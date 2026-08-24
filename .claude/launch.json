@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "track-insights-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "C:\\Users\\rayen\\track-insights-main", "run", "dev"],
+      "port": 8080
+    }
+  ]
+}
