@@ -264,11 +264,13 @@ def build_2026_features(key):
             raw_df["date"] = pd.to_datetime(raw_df["Date"], dayfirst=True, errors="coerce")
             recent_trends = []
             days_since = []
+            gap_vars = []
             for athlete in feat["athlete_name"]:
                 ath_df = raw_df[raw_df["athlete_name"] == athlete].sort_values("date", ascending=False)
                 if ath_df.empty or ath_df["date"].isna().all():
                     recent_trends.append(0.0)
                     days_since.append(999)
+                    gap_vars.append(0.0)
                     continue
                 last_date = ath_df["date"].dropna().iloc[0]
                 days_since.append((today - last_date).days)
@@ -278,13 +280,23 @@ def build_2026_features(key):
                     recent_trends.append(trend)
                 else:
                     recent_trends.append(0.0)
+                # Must mirror train_model.add_new_features' gap_variability
+                # EXACTLY: run.py feeds these columns straight into a model
+                # trained on that definition, and it selects df[feat_cols] by
+                # name, so a mismatch here is silent -- the column would be
+                # present and simply mean something else.
+                dts = ath_df["date"].dropna().sort_values()
+                gap_vars.append(float(dts.diff().dropna().dt.days.std()) if len(dts) > 2 else 0.0)
             feat["recent_trend"]    = recent_trends
             feat["days_since_last"] = days_since
+            feat["gap_variability"] = gap_vars
         else:
             feat["recent_trend"]    = 0.0
             feat["days_since_last"] = 999
+            feat["gap_variability"] = 0.0
     except:
         feat["recent_trend"]    = 0.0
         feat["days_since_last"] = 999
+        feat["gap_variability"] = 0.0
 
     return feat

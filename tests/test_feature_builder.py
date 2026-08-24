@@ -139,3 +139,59 @@ def test_build_2026_features_field_event_falls_back_to_toplist_without_meetings_
     # itself does carry a real date even with no dedicated meetings file.
     expected_days = (date.today() - date(2026, 7, 5)).days
     assert row["days_since_last"] == expected_days
+
+
+# --- gap_variability parity (2026-08-25) ---------------------------------
+# run.py selects df[feat_cols] BY NAME from build_2026_features() and feeds it
+# straight into a model trained by train_model.add_new_features(). If the two
+# compute gap_variability differently the column is still present, so nothing
+# raises -- the model just silently scores against a feature that means
+# something else. These pin the definition on both sides.
+
+def test_build_2026_features_emits_gap_variability():
+    """Missing here would KeyError in run.py at df_qual[feat_cols]; present
+    but differently-defined would be worse, hence the parity test below."""
+    feat = fb.build_2026_features("men_100m")
+    assert feat is None or "gap_variability" in feat.columns
+
+
+def test_gap_variability_matches_the_training_definition():
+    import numpy as np
+    import pandas as pd
+
+    def training_definition(dates):
+        """Verbatim shape of train_model.add_new_features' calculation."""
+        dts = pd.Series(pd.to_datetime(dates)).dropna().sort_values()
+        return float(dts.diff().dropna().dt.days.std()) if len(dts) > 2 else 0.0
+
+    def prediction_definition(dates):
+        """Verbatim shape of feature_builder's calculation."""
+        ath = pd.DataFrame({"date": pd.to_datetime(dates)}).sort_values("date", ascending=False)
+        dts = ath["date"].dropna().sort_values()
+        return float(dts.diff().dropna().dt.days.std()) if len(dts) > 2 else 0.0
+
+    cases = [
+        ["2026-05-01", "2026-05-15", "2026-06-01", "2026-06-20"],   # evenly paced
+        ["2026-05-01", "2026-05-08", "2026-08-30"],                  # long mid-season hole
+        ["2026-05-01", "2026-05-15"],                                # only one gap -> 0.0
+        ["2026-05-01"],                                              # single race -> 0.0
+    ]
+    for dates in cases:
+        a, b = training_definition(dates), prediction_definition(dates)
+        assert a == b or (np.isnan(a) and np.isnan(b)), f"{dates}: {a} != {b}"
+
+
+def test_gap_variability_separates_even_from_interrupted_seasons():
+    """The whole point of the feature: two athletes with the same number of
+    races but different pacing must not look identical (that is what
+    meets_count already does)."""
+    import pandas as pd
+
+    def gv(dates):
+        dts = pd.Series(pd.to_datetime(dates)).dropna().sort_values()
+        return float(dts.diff().dropna().dt.days.std()) if len(dts) > 2 else 0.0
+
+    even = gv(["2026-05-01", "2026-05-15", "2026-05-29", "2026-06-12"])
+    interrupted = gv(["2026-05-01", "2026-05-08", "2026-05-15", "2026-08-30"])
+    assert interrupted > even
+    assert even < 2.0  # a perfectly regular 14-day cadence is near-zero

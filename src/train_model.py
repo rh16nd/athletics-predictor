@@ -101,6 +101,35 @@ WIND_EVENTS = {
 # mistyping a name or misremembering a finishing order.
 DL_RESULTS_PATH = os.path.join(BASE_DIR, "data", "dl_final_results.csv")
 H2H_PATH = os.path.join(BASE_DIR, "data", "h2h", "h2h_rates.csv")
+VENUE_GEO_PATH = os.path.join(BASE_DIR, "data", "venues_geo.csv")
+
+_VENUE_ELEV = None
+
+
+def venue_elevations():
+    """venue string -> metres above sea level, from src/venue_geo.py's cache.
+
+    NOT currently a model feature, deliberately. Altitude was built and
+    MEASURED OUT on 2026-08-25 (see HANDOFF Failed Attempts): only 2.2% of
+    labeled rows have a season best set above 1000m, and coarse buckets that
+    isolate the actual physics scored -0.20 pts (4/10 seeds) -- the same as a
+    SHUFFLED control column. Only the raw 212-distinct-value version showed
+    anything (+0.46, 6/10), which is the forest fingerprinting venues, not
+    thin air. Kept because it is real, correct, cached data that
+    src/venue_weather.py depends on.
+
+    Missing venues are simply absent from the dict rather than defaulted to
+    0: a roving venue like "European Athletics Championships" has no single
+    elevation, and calling it sea level would be a confident wrong number in
+    exactly the events (distance) where altitude matters most."""
+    global _VENUE_ELEV
+    if _VENUE_ELEV is None:
+        if os.path.exists(VENUE_GEO_PATH):
+            g = pd.read_csv(VENUE_GEO_PATH).dropna(subset=["elevation_m"])
+            _VENUE_ELEV = dict(zip(g["venue"].astype(str), g["elevation_m"].astype(float)))
+        else:
+            _VENUE_ELEV = {}
+    return _VENUE_ELEV
 
 # 2018-2025, excluding 2020 (see dl_final_results_scraper.py's SKIP_YEARS --
 # 2020's "Inspiration Games" was a COVID-era exhibition, not a real
@@ -251,6 +280,7 @@ def add_new_features(df):
         group = group.copy()
         is_field = discipline in FIELD_EVENTS
         weighted_sb_map, wind_adj_map, trend_map, days_map = {}, {}, {}, {}
+        gap_var_map = {}
 
         raw_path = os.path.join(RAW_DIR, f"{discipline}.csv")
         if os.path.exists(raw_path):
@@ -295,10 +325,34 @@ def add_new_features(df):
                     else:
                         trend_map[athlete] = 0.0
 
+                    # How EVENLY the season was paced -- deliberately not
+                    # another way of saying meets_count (already the 3rd-most
+                    # important feature; a collinear restatement of it on a
+                    # 459-prediction backtest is how you overfit, not how you
+                    # add signal). Two athletes with six races each look
+                    # identical to meets_count but different here: six spread
+                    # regularly is a managed campaign, six with one 90-day
+                    # hole in the middle is usually an injury nobody logged.
+                    #
+                    # A companion mean_gap_days was built and MEASURED OUT:
+                    # -0.13 pts over 10 seeds (5/10 wins, i.e. a coin flip)
+                    # and it actively diluted this one when both were in
+                    # (-0.17). Don't re-add it without new evidence. This
+                    # feature alone measured +0.68 pts, 8/10 seeds.
+                    dates = ath["date"].dropna().sort_values()
+                    if len(dates) > 2:
+                        gaps = dates.diff().dropna().dt.days
+                        gap_var_map[athlete] = float(gaps.std())
+                    else:
+                        # Fewer than 3 races gives at most one gap, and a
+                        # single gap has no variability to measure.
+                        gap_var_map[athlete] = 0.0
+
         group["weighted_season_best"] = group["athlete_name"].map(weighted_sb_map).fillna(group["season_best"])
         group["wind_adj_season_best"] = group["athlete_name"].map(wind_adj_map).fillna(group["season_best"])
         group["recent_trend"] = group["athlete_name"].map(trend_map).fillna(0.0)
         group["days_since_last"] = group["athlete_name"].map(days_map).fillna(999)
+        group["gap_variability"] = group["athlete_name"].map(gap_var_map).fillna(0.0)
         all_groups.append(group)
     return pd.concat(all_groups, ignore_index=True)
 
@@ -572,6 +626,10 @@ if __name__ == "__main__":
     parser.add_argument("--with-h2h", action="store_true",
                         help="Add h2h_win_rate to the trained feature set (requires the "
                              "case-insensitive matching fix -- see add_h2h_features)")
+    parser.add_argument("--with-schedule", action="store_true",
+                        help="Add gap_variability -- how EVENLY an athlete's season was paced, "
+                             "as opposed to meets_count, which only counts it. Measured at "
+                             "+0.68 pts mean over 10 seeds (8/10 wins).")
     parser.add_argument("--dry-run", action="store_true",
                         help="Backtest only, don't overwrite outputs/")
     parser.add_argument("--tune", action="store_true",
@@ -593,6 +651,9 @@ if __name__ == "__main__":
     if args.with_h2h:
         feature_cols += ["h2h_win_rate"]
         label_parts.append("h2h")
+    if args.with_schedule:
+        feature_cols += ["gap_variability"]
+        label_parts.append("schedule")
     label = " + ".join(label_parts)
 
     if args.tune:
