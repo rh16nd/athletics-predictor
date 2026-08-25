@@ -372,3 +372,30 @@ def test_confidence_ignores_near_miss_athletes():
 def test_discipline_favourite_ignores_near_miss_athletes():
     fav = api.discipline_favourite(_disc_with_near_miss())
     assert fav["name"] == "Qualified One"
+
+
+def test_a_removal_with_no_headline_still_appears_in_the_news(monkeypatch):
+    """The news feed is now the only place withdrawn athletes are listed --
+    the dashboard's separate "Removed from predictions" panel was pure
+    duplication and was deleted. So a removal must never be droppable just
+    because its match carries no usable headline."""
+    monkeypatch.setattr(api, "load_injury_flags", lambda: {
+        "Ghost Athlete": {
+            "status": "remove",
+            "disciplines": ["men_1500m"],
+            "matches": [{"url": "https://x", "keywords": ["withdraws"]}],  # no headline
+        }
+    })
+    items = api.build_news()
+    assert [i["athlete"] for i in items] == ["Ghost Athlete"]
+    assert items[0]["status"] == "remove"
+    assert items[0]["keywords"] == ["withdraws"]
+
+
+def test_news_still_dedupes_one_article_across_several_athletes(monkeypatch):
+    shared = {"headline": "Two athletes out", "url": "https://same", "source": "letsrun"}
+    monkeypatch.setattr(api, "load_injury_flags", lambda: {
+        "A": {"status": "watch", "disciplines": [], "matches": [dict(shared)]},
+        "B": {"status": "watch", "disciplines": [], "matches": [dict(shared)]},
+    })
+    assert len(api.build_news()) == 1

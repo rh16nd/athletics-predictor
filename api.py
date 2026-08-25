@@ -704,7 +704,26 @@ def build_news(limit=20):
     seen, items = set(), []
     for name, entry in flags.items():
         status = entry.get("status")
-        for m in entry.get("matches") or []:
+        matches = entry.get("matches") or []
+
+        # A removal must never be invisible. This feed is now the ONLY place
+        # withdrawn athletes are listed (the dashboard's separate "Removed
+        # from predictions" panel was pure duplication and was deleted), so
+        # a "remove" entry whose matches carry no usable headline still gets
+        # a row rather than silently disappearing from the site.
+        if status == "remove" and not any(m.get("headline") for m in matches):
+            items.append({
+                "headline":    "Flagged for removal by the automatic injury check.",
+                "url":         next((m.get("url") for m in matches if m.get("url")), None),
+                "source":      "injury check",
+                "athlete":     name,
+                "status":      status,
+                "disciplines": [DISC_LABELS.get(d, d) for d in entry.get("disciplines", [])],
+                "keywords":    sorted({k for m in matches for k in (m.get("keywords") or [])}),
+            })
+            continue
+
+        for m in matches:
             url = m.get("url")
             headline = m.get("headline")
             if not headline:
