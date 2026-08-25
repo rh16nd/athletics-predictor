@@ -136,3 +136,29 @@ def test_load_athlete_photo_network_error_returns_none(monkeypatch):
         raise RuntimeError("network down")
     monkeypatch.setattr(dlr, "graphql", raise_error)
     assert api.load_athlete_photo("https://worldathletics.org/athletes/athlete=1") is None
+
+
+# --- Near-miss athletes must not get a finalist profile (2026-08-25) ------
+# run.py now writes near-miss athletes into predictions_latest.csv with
+# dl_qualified = False and predicted_rank = None. build_athlete_profile used
+# to reach them and raise "cannot convert float NaN to integer" on the rank,
+# so the endpoint 500'd -- and the frontend only falls back to
+# /api/athlete-status on 404, which made every near-miss profile an error
+# page. It must return None so that fallback fires.
+
+def test_near_miss_athlete_gets_no_finalist_profile(monkeypatch, tmp_path):
+    import pandas as pd
+    csv = tmp_path / "predictions_latest.csv"
+    pd.DataFrame([
+        {"discipline": "Men's 100m", "athlete_name": "Qualified Guy", "predicted_rank": 1,
+         "season_best": "9.80", "win_probability": "30%", "dl_qualified": True,
+         "nationality": "USA", "injury_watch": False, "profile_url": "https://x"},
+        {"discipline": "Men's 100m", "athlete_name": "Noah LYLES", "predicted_rank": None,
+         "season_best": "9.79", "win_probability": "8%", "dl_qualified": False,
+         "nationality": "USA", "injury_watch": False, "profile_url": "https://x"},
+    ]).to_csv(csv, index=False)
+    monkeypatch.setattr(api, "OUTPUTS_DIR", str(tmp_path))
+
+    assert api.build_athlete_profile("men_100m", "Noah LYLES") is None
+    # the real field is unaffected
+    assert api.build_athlete_profile("men_100m", "Qualified Guy") is not None

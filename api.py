@@ -804,7 +804,27 @@ def build_athlete_profile(disc_key, athlete_name):
         return None
     row = match.iloc[0]
 
-    rivals_df = disc_df[disc_df["athlete_name"].str.lower() != athlete_name.lower()]
+    # Near-miss athletes now live in predictions_latest.csv too (run.py scores
+    # them with dl_qualified = False and predicted_rank = None). They are NOT
+    # finalists, so they must not get a finalist profile -- returning None
+    # sends the route to /api/athlete-status, which explains why they are out
+    # and still gives them a photo, season best and form chart.
+    #
+    # Returning None rather than defending each field individually is
+    # deliberate: this function builds rank, podium chance and a head-to-head
+    # against the rest of the field, none of which mean anything for someone
+    # outside it. Before this guard it raised
+    # "cannot convert float NaN to integer" on predicted_rank and the endpoint
+    # 500'd -- and the frontend only falls back on 404, so every near-miss
+    # athlete's profile was an error page.
+    if not bool(row.get("dl_qualified", True)) or pd.isna(row.get("predicted_rank")):
+        return None
+
+    # Rivals are the real field only -- a near-miss athlete is not a rival.
+    rivals_df = disc_df[
+        (disc_df["athlete_name"].str.lower() != athlete_name.lower())
+        & disc_df["predicted_rank"].notna()
+    ]
     rivals_df = rivals_df.sort_values("predicted_rank").head(6)
     rival_names = rivals_df["athlete_name"].tolist()
 
