@@ -4,7 +4,7 @@ Run with: python api.py
 Serves at: http://localhost:5000
 """
 
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import pandas as pd
 import numpy as np
@@ -18,6 +18,7 @@ from datetime import date, datetime
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse the same graphql()/HEADERS every other scraper does
+from feature_builder import get_qual_limit  # noqa: E402 -- one definition of the field size, shared with run.py
 
 app = Flask(__name__)
 CORS(app)  # allows React dev server to call this API
@@ -549,6 +550,154 @@ def load_predictions():
     return track, field
 
 
+STANDINGS_PATH = os.path.join(os.path.dirname(__file__), "data", "standings.json")
+
+
+def load_standings():
+    """WA's own Diamond League standings per discipline -- the list run.py
+    actually restricts the projected field to."""
+    try:
+        with open(STANDINGS_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def toplist_entry(disc_key, athlete_name):
+    """An athlete's row in this season's worldwide toplist, whether or not
+    they are in the projected field. Returns (mark, world_rank, wa_url)."""
+    path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}.csv")
+    if not os.path.exists(path):
+        return None, None, None
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        return None, None, None
+    hit = df[df["Competitor"].astype(str).str.lower() == athlete_name.lower()]
+    if hit.empty:
+        return None, None, None
+    r = hit.iloc[0]
+    rank = r.get("Rank")
+    url = r.get("ProfileURL")
+    return (
+        str(r.get("Mark")) if pd.notna(r.get("Mark")) else None,
+        int(rank) if pd.notna(rank) else None,
+        url if isinstance(url, str) and url and url != "nan" else None,
+    )
+
+
+def athlete_field_status(disc_key, athlete_name):
+    """Why is (or isn't) this athlete in the projected field?
+
+    Mirrors run.py's actual selection order, so the answer is the real
+    mechanism rather than a guess:
+      1. restrict to WA's official DL standings for the discipline
+      2. drop anyone the injury checker marked "remove"
+      3. drop anyone missing model features
+      4. keep the top N by season best (8 track / 6 field / 10 long distance)
+
+    Returns a dict the frontend can render verbatim. `reason` is None when
+    the athlete IS in the field."""
+    label = DISC_LABELS.get(disc_key)
+    mark, world_rank, wa_url = toplist_entry(disc_key, athlete_name)
+    out = {
+        "discKey": disc_key,
+        "disc": label,
+        "name": athlete_name,
+        "seasonBest": mark,
+        "worldRank": world_rank,
+        "waUrl": wa_url,
+        "inField": False,
+        "reason": None,
+        "reasonCode": None,
+    }
+
+    track, field = load_predictions()
+    disciplines = (track or []) + (field or [])
+    disc = next((d for d in disciplines if d["id"] == disc_key), None)
+    if disc:
+        hit = next((a for a in disc["athletes"]
+                    if a["name"].lower() == athlete_name.lower()), None)
+        if hit:
+            out.update({"inField": True, "name": hit["name"], "seasonBest": hit["mark"]})
+            return out
+
+    # Real per-meet season form, exactly the same source the in-field
+    # profile chart uses -- being outside the projected eight doesn't make
+    # an athlete's actual races any less real, and "here is his season" is
+    # most of what someone came to the page for.
+    history, history_year = load_athlete_history(disc_key, athlete_name)
+    out["history"] = history
+    out["historyYear"] = history_year
+
+    standings = load_standings().get(disc_key, [])
+    in_standings = any(n.lower() == athlete_name.lower() for n in standings)
+    if standings and not in_standings:
+        out["reasonCode"] = "not_in_standings"
+        out["reason"] = (
+            f"Not in World Athletics' official Diamond League standings for "
+            f"{label}. Only athletes who have scored Diamond League points in "
+            f"this discipline are eligible for the Final, regardless of how "
+            f"fast they have run elsewhere."
+        )
+        return out
+
+    flags = load_injury_flags()
+    entry = flags.get(normalize_athlete_name(athlete_name))
+    if entry and entry.get("status") == "remove":
+        why, url = injury_evidence(entry)
+        out["reasonCode"] = "injury_removed"
+        out["reason"] = "Removed from the projected field by the injury check."
+        out["injuryReason"] = why
+        out["injuryUrl"] = url
+        return out
+
+    if mark is not None:
+        out["reasonCode"] = "outside_cut"
+        out["reason"] = (
+            f"In the Diamond League standings but outside the projected "
+            f"top {get_qual_limit(disc_key)} on season best for {label}."
+        )
+        return out
+
+    out["reasonCode"] = "no_data"
+    out["reason"] = f"No {MEETS_YEAR} season mark on record for {label}."
+    return out
+
+
+def search_athletes(query, limit=25):
+    """Every athlete in this season's worldwide toplists, not just the ~230
+    in the projected field -- so "why isn't Lyles in the 100m?" is an
+    answerable question rather than a silent absence."""
+    q = (query or "").strip().lower()
+    if len(q) < 2:
+        return []
+    results = []
+    for disc_key, label in DISC_LABELS.items():
+        path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}.csv")
+        if not os.path.exists(path):
+            continue
+        try:
+            df = pd.read_csv(path, usecols=["Competitor", "Mark", "Rank"])
+        except Exception:
+            continue
+        names = df["Competitor"].astype(str)
+        hits = df[names.str.lower().str.contains(q, regex=False, na=False)]
+        for _, r in hits.iterrows():
+            rank = r.get("Rank")
+            results.append({
+                "name": str(r["Competitor"]),
+                "disc": label,
+                "discKey": disc_key,
+                "mark": str(r["Mark"]) if pd.notna(r.get("Mark")) else None,
+                "worldRank": int(rank) if pd.notna(rank) else None,
+            })
+    # Best world rank first: the athlete someone is looking for is usually
+    # the highest-ranked match, and a name can appear in several disciplines.
+    results.sort(key=lambda x: (x["worldRank"] is None, x["worldRank"] or 9999))
+    return results[:limit]
+
+
 def build_athlete_profile(disc_key, athlete_name):
     """Full detail for one athlete's profile page: their own real stats
     (season/career best, PB gap, age, activity), real per-meet history from
@@ -1046,6 +1195,18 @@ def projections_detail(disc_key):
         "trajectories": build_discipline_trajectories(disc_key, disc["athletes"]),
         "storylines":   build_storylines(disc_key, disc["label"], disc["athletes"]),
     })
+
+
+@app.route("/api/search")
+def search():
+    return jsonify({"results": search_athletes(request.args.get("q", ""))})
+
+
+@app.route("/api/athlete-status/<disc_key>/<path:athlete_name>")
+def athlete_status(disc_key, athlete_name):
+    if disc_key not in DISC_LABELS:
+        return jsonify({"error": "unknown discipline"}), 404
+    return jsonify(athlete_field_status(disc_key, athlete_name))
 
 
 @app.route("/api/health")

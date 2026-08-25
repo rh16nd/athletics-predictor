@@ -135,7 +135,12 @@ def build_2026_features(key):
     weighted_sb = None
     if "Venue" in df.columns:
         df["comp_weight"] = df["Venue"].apply(competition_weight)
-        df["weighted_mark"] = df["Mark"] * df["comp_weight"]
+        # Must match train_model.add_new_features EXACTLY -- see the long note
+        # there. For a time, better is smaller, so a big-meet mark is scaled
+        # DOWN; multiplying made it look slower and min() then preferred the
+        # weakest meet. Field events multiply, as they always did.
+        df["weighted_mark"] = (df["Mark"] / df["comp_weight"] if is_track
+                               else df["Mark"] * df["comp_weight"])
         if is_track:
             weighted_sb = df.groupby("athlete_name")["weighted_mark"].min().rename("weighted_season_best")
         else:

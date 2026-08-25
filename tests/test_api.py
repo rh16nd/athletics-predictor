@@ -270,3 +270,68 @@ def test_top_winners_no_longer_drops_a_discipline_by_under_reporting_it():
 def test_confidence_scores_a_discipline_on_its_top_pick_not_its_top_mark():
     discs = [_disc_two("Women's 3000m SC", ("Peruth CHEMUTAI", 31), ("Winfred YAVI", 52))]
     assert api.build_confidence(discs, []) == [{"disc": "Women's 3000m SC", "value": 52}]
+
+
+# --- Athlete search + "why not in the field" (2026-08-25) -----------------
+# predictions_latest.csv holds ~230 projected finalists out of ~3,700 ranked
+# athletes, so before this an athlete outside the field simply had no page.
+# The question that exposed it: "why isn't Lyles in the 100m?" -- he is world
+# #1 at 9.79 and genuinely ineligible (no Diamond League points in the
+# event). These pin the honest-reason logic, which mirrors run.py's real
+# selection order rather than guessing.
+
+def _status_env(monkeypatch, *, in_field=False, standings=None, injury=None, toplist=("9.79", 1)):
+    monkeypatch.setattr(api, "load_standings", lambda: standings or {})
+    monkeypatch.setattr(api, "load_injury_flags", lambda: injury or {})
+    monkeypatch.setattr(api, "toplist_entry", lambda k, n: (*toplist, "https://wa/x"))
+    monkeypatch.setattr(api, "load_athlete_history", lambda k, n: ([], None))
+    if in_field:
+        disc = {"id": "men_100m", "label": "Men's 100m",
+                "athletes": [{"name": "Noah LYLES", "mark": "9.79"}]}
+        monkeypatch.setattr(api, "load_predictions", lambda: ([disc], []))
+    else:
+        monkeypatch.setattr(api, "load_predictions", lambda: ([], []))
+
+
+def test_athlete_in_the_field_reports_no_exclusion_reason(monkeypatch):
+    _status_env(monkeypatch, in_field=True)
+    out = api.athlete_field_status("men_100m", "Noah LYLES")
+    assert out["inField"] is True
+    assert out["reason"] is None
+
+
+def test_not_in_dl_standings_is_reported_as_the_reason(monkeypatch):
+    """The real Lyles case: fastest in the world, no DL points in the event."""
+    _status_env(monkeypatch, standings={"men_100m": ["Oblique SEVILLE"]})
+    out = api.athlete_field_status("men_100m", "Noah LYLES")
+    assert out["inField"] is False
+    assert out["reasonCode"] == "not_in_standings"
+    assert out["worldRank"] == 1
+
+
+def test_injury_removal_is_reported_with_its_evidence(monkeypatch):
+    """The real Hocker case -- and the page shows the headline, so a bad
+    flag is visible to the reader instead of silently deleting an athlete."""
+    injury = {"Cole Hocker": {"status": "remove", "matches": [
+        {"headline": "Some headline", "url": "https://x", "source": "letsrun"}]}}
+    _status_env(monkeypatch, standings={"men_1500m": ["Cole HOCKER"]}, injury=injury)
+    out = api.athlete_field_status("men_1500m", "Cole HOCKER")
+    assert out["reasonCode"] == "injury_removed"
+    assert "Some headline" in (out["injuryReason"] or "")
+
+
+def test_in_standings_but_outside_the_cut(monkeypatch):
+    _status_env(monkeypatch, standings={"men_100m": ["Noah LYLES"]})
+    out = api.athlete_field_status("men_100m", "Noah LYLES")
+    assert out["reasonCode"] == "outside_cut"
+
+
+def test_no_season_mark_is_its_own_reason(monkeypatch):
+    _status_env(monkeypatch, standings={"men_100m": ["Noah LYLES"]}, toplist=(None, None))
+    out = api.athlete_field_status("men_100m", "Noah LYLES")
+    assert out["reasonCode"] == "no_data"
+
+
+def test_search_needs_at_least_two_characters():
+    assert api.search_athletes("") == []
+    assert api.search_athletes("a") == []

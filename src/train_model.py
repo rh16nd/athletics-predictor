@@ -325,7 +325,17 @@ def add_new_features(df):
 
             if "Venue" in raw.columns:
                 raw["comp_weight"] = raw["Venue"].apply(competition_weight)
-                raw["weighted_mark"] = raw["Mark"] * raw["comp_weight"]
+                # Direction matters and used to be wrong for TRACK. The intent
+                # is "a mark set at a bigger meet counts for more". For a TIME,
+                # better means SMALLER, so a big-meet time has to be scaled
+                # DOWN to look better -- multiplying it by 1.2 made it look
+                # 20% slower, and the min() below then systematically picked
+                # whichever mark came from the WEAKEST meet. Measured live
+                # 2026-08-25: Bromell's weighted_season_best read 11.892 for a
+                # 9.91 sprinter. Field events were always fine, because there
+                # bigger is better and max() agrees with the multiply.
+                raw["weighted_mark"] = (raw["Mark"] * raw["comp_weight"] if is_field
+                                        else raw["Mark"] / raw["comp_weight"])
                 wsb = (raw.groupby("athlete_name")["weighted_mark"].max() if is_field
                        else raw.groupby("athlete_name")["weighted_mark"].min())
                 weighted_sb_map = wsb.to_dict()
