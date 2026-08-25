@@ -335,3 +335,40 @@ def test_no_season_mark_is_its_own_reason(monkeypatch):
 def test_search_needs_at_least_two_characters():
     assert api.search_athletes("") == []
     assert api.search_athletes("a") == []
+
+
+# --- Near-miss athletes must never contaminate the predictions ------------
+# run.py now exports athletes beyond the confirmed DL field with
+# dl_qualified = False so the site can show "who'd be a threat if they got
+# in". Every model-derived figure (top winners, confidence, storylines, the
+# favourite) reads disc["athletes"], so a near-miss athlete leaking into
+# that list would be presented as a projected finalist.
+
+def _disc_with_near_miss():
+    def a(name, prob, rank):
+        return {"name": name, "mark": "9.80", "prob": prob, "waUrl": "https://x",
+                "rank": rank, "injuryWatch": False, "injuryReason": None, "injuryUrl": None}
+    return {
+        "id": "men_100m", "label": "Men's 100m",
+        "athletes": [a("Qualified One", 30, 1), a("Qualified Two", 20, 2)],
+        "nearMiss": [a("Noah LYLES", 95, 1)],  # deliberately the highest prob
+    }
+
+
+def test_top_winners_ignores_near_miss_athletes():
+    """A near-miss athlete with a huge probability must not become the
+    'model's #1 pick' -- he is not in the Final."""
+    winners = api.build_top_winners([_disc_with_near_miss()], [])
+    names = [w["name"] for w in winners]
+    assert "Noah LYLES" not in names
+    assert names == ["Qualified One"]
+
+
+def test_confidence_ignores_near_miss_athletes():
+    conf = api.build_confidence([_disc_with_near_miss()], [])
+    assert conf == [{"disc": "Men's 100m", "value": 30}]
+
+
+def test_discipline_favourite_ignores_near_miss_athletes():
+    fav = api.discipline_favourite(_disc_with_near_miss())
+    assert fav["name"] == "Qualified One"

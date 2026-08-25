@@ -25,20 +25,29 @@ print("   ATHLETICS PREDICTOR — 2026 DL PREDICTIONS")
 print(f"   Running: {date.today().strftime('%B %d, %Y')}")
 print("=" * 60)
 
-print("\n[1/5] Fetching live data from World Athletics + DL standings...")
-result = subprocess.run(
-    [sys.executable, "-u", "src/live_fetcher.py"],
-    capture_output=True, text=True, encoding='utf-8'
-)
+# --no-scrape re-runs only the modelling half against whatever is already in
+# data/raw. The full pipeline is a ~1hr live scrape, which makes any change to
+# the prediction logic effectively unverifiable while developing it. Live data
+# is untouched either way -- this only skips re-fetching it.
+SKIP_SCRAPE = "--no-scrape" in sys.argv
 
-if result.returncode != 0:
-    print("  ERROR in live fetcher:")
-    print(result.stderr[-500:])
-    sys.exit(1)
+if SKIP_SCRAPE:
+    print("\n[1/5] --no-scrape: reusing the existing data/raw snapshot.")
+else:
+    print("\n[1/5] Fetching live data from World Athletics + DL standings...")
+    result = subprocess.run(
+        [sys.executable, "-u", "src/live_fetcher.py"],
+        capture_output=True, text=True, encoding='utf-8'
+    )
 
-for line in result.stdout.split('\n'):
-    if any(k in line for k in ["Saved", "athletes", "ERROR", "Done"]):
-        print(f"  {line.strip()}")
+    if result.returncode != 0:
+        print("  ERROR in live fetcher:")
+        print(result.stderr[-500:])
+        sys.exit(1)
+
+    for line in result.stdout.split('\n'):
+        if any(k in line for k in ["Saved", "athletes", "ERROR", "Done"]):
+            print(f"  {line.strip()}")
 
 standings_path = os.path.join("data", "standings.json")
 if os.path.exists(standings_path):
@@ -49,17 +58,20 @@ else:
 
 print("  Done.")
 
-print("\n[2/5] Checking for injuries / withdrawals...")
-injury_result = subprocess.run(
-    [sys.executable, "-u", "src/injury_checker.py"],
-    capture_output=True, text=True, encoding='utf-8'
-)
-for line in injury_result.stdout.split('\n'):
-    if any(k in line for k in ["Scraping", "flagged", "WARNING", "REMOVE", "WATCH", "No injury", "meet results"]):
-        print(f"  {line.strip()}")
-if injury_result.returncode != 0:
-    print("  WARNING: injury checker failed, continuing without injury data.")
-    print(injury_result.stderr[-500:])
+if SKIP_SCRAPE:
+    print("\n[2/5] --no-scrape: reusing the existing injury flags.")
+else:
+    print("\n[2/5] Checking for injuries / withdrawals...")
+    injury_result = subprocess.run(
+        [sys.executable, "-u", "src/injury_checker.py"],
+        capture_output=True, text=True, encoding='utf-8'
+    )
+    for line in injury_result.stdout.split('\n'):
+        if any(k in line for k in ["Scraping", "flagged", "WARNING", "REMOVE", "WATCH", "No injury", "meet results"]):
+            print(f"  {line.strip()}")
+    if injury_result.returncode != 0:
+        print("  WARNING: injury checker failed, continuing without injury data.")
+        print(injury_result.stderr[-500:])
 
 injury_flags_path = os.path.join("data", "injury_flags.json")
 injury_flags = {}
@@ -83,6 +95,11 @@ with open(FEATURES_PATH, "rb") as f: feat_cols = pickle.load(f)
 print(f"  Model loaded. Features: {feat_cols}")
 
 print("\n[4/5] Building features from 2026 data...")
+
+# How many athletes beyond the confirmed Diamond League field to score and
+# export per discipline. Small on purpose: these are "who would be a threat
+# if they got in", not a second leaderboard.
+NEAR_MISS_COUNT = 4
 
 DISCIPLINES_2026 = {
     "men_100m":    "Men's 100m",
@@ -139,7 +156,6 @@ for key, label in DISCIPLINES_2026.items():
         continue
 
     qualified = standings.get(key, [])
-    dl_qualified_disc = bool(qualified)
     if not qualified:
         # Real DL standings weren't available for this discipline (scrape
         # gap, or too early in the season for a standings page to exist
@@ -152,8 +168,28 @@ for key, label in DISCIPLINES_2026.items():
         print(f"  [{label}] WARNING: no official DL standings found -- falling back to worldwide season-best ranking (not restricted to real Diamond League participants)")
         is_field_fallback = key in FIELD_EVENTS
         df_qual = df.sort_values("season_best", ascending=not is_field_fallback).head(get_qual_limit(key)).copy()
+        df_qual["dl_qualified"] = False
     else:
         df_qual = df[df["athlete_name"].isin(qualified)].copy()
+        df_qual["dl_qualified"] = True
+
+        # Near-miss athletes: the next fastest who are NOT in the official
+        # standings. They are scored by the same model and exported with
+        # dl_qualified = False so the frontend can show "who would be a
+        # threat if they got in" without ever presenting them as finalists.
+        #
+        # dl_qualified used to be per-DISCIPLINE (just "did we have standings
+        # for this event"), which meant every athlete in every discipline
+        # carried the same value and the Q badge conveyed nothing. It is now
+        # genuinely per-athlete.
+        is_field_disc = key in FIELD_EVENTS
+        near = (df[~df["athlete_name"].isin(qualified)]
+                .sort_values("season_best", ascending=not is_field_disc)
+                .head(NEAR_MISS_COUNT)
+                .copy())
+        if not near.empty:
+            near["dl_qualified"] = False
+            df_qual = pd.concat([df_qual, near], ignore_index=True)
 
     if df_qual.empty:
         continue
@@ -237,14 +273,24 @@ for key, label in DISCIPLINES_2026.items():
         if "ProfileURL" in raw_df.columns:
             profile_map = dict(zip(raw_df["Competitor"], raw_df["ProfileURL"]))
 
-    for i, (_, row) in enumerate(df_qual.head(get_qual_limit(key)).iterrows()):
-        medal = ["1", "2", "3"][i] if i < 3 else "  "
+    # Qualified athletes keep the real ranking and the podium summary.
+    # Near-miss athletes are appended after them, scored by the same model
+    # but deliberately given predicted_rank = None: they are not finalists,
+    # and numbering them alongside the real field is exactly the kind of
+    # implied claim this project keeps having to walk back.
+    qual_rows = df_qual[df_qual["dl_qualified"]].head(get_qual_limit(key))
+    near_rows = df_qual[~df_qual["dl_qualified"]]
+    ordered = list(qual_rows.iterrows()) + list(near_rows.iterrows())
+
+    for i, (_, row) in enumerate(ordered):
+        row_qualified = bool(row["dl_qualified"])
+        medal = ["1", "2", "3"][i] if (row_qualified and i < 3) else "  "
         sb    = seconds_to_time(row["season_best"], key)
         prob  = row["win_probability"]
         nat   = nat_map.get(row["athlete_name"], "--")
         is_watch = row.get("injury_status") == "watch"
         watch_marker = " [INJURY WATCH]" if is_watch else ""
-        if i < 3:
+        if row_qualified and i < 3:
             print(f"  {medal} {row['athlete_name']}{watch_marker}  {sb}  ({prob:.0%})")
 
         # Real WA profile link scraped from the toplist page; only falls
@@ -256,7 +302,7 @@ for key, label in DISCIPLINES_2026.items():
 
         all_predictions.append({
             "discipline":      label,
-            "predicted_rank":  i + 1,
+            "predicted_rank":  (i + 1) if row_qualified else None,
             "athlete_name":    row["athlete_name"],
             "nationality":     nat,
             "season_best":     sb,
@@ -280,7 +326,7 @@ for key, label in DISCIPLINES_2026.items():
             # worldwide season-best-ranking fallback instead (see the
             # WARNING print above) -- so "real Diamond League participant"
             # is a fact this can actually assert, not an assumption.
-            "dl_qualified":     dl_qualified_disc,
+            "dl_qualified":     row_qualified,
         })
 
 out_path = os.path.join(OUTPUTS_DIR, "predictions_latest.csv")

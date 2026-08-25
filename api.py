@@ -489,6 +489,7 @@ def load_predictions():
             continue
 
         athletes = []
+        near_miss = []
         for _, row in disc_df.iterrows():
             mark_str = str(row.get("season_best", ""))
             try:
@@ -523,8 +524,13 @@ def load_predictions():
             dl_qualified = row.get("dl_qualified")
             qualified = True if pd.isna(dl_qualified) else bool(dl_qualified)
 
-            athletes.append({
-                "rank":         int(row.get("predicted_rank", len(athletes) + 1)),
+            # predicted_rank is NULL for near-miss athletes -- run.py
+            # deliberately refuses to number them as if they were finalists.
+            raw_rank = row.get("predicted_rank")
+            rank = int(raw_rank) if pd.notna(raw_rank) else 0
+
+            (athletes if qualified else near_miss).append({
+                "rank":         rank,
                 "name":         row["athlete_name"],
                 "nat":          str(row.get("nationality", "—")),
                 "qualified":    qualified,
@@ -536,10 +542,20 @@ def load_predictions():
                 "injuryUrl":    evidence_url,
             })
 
+        # `athletes` stays the CONFIRMED Diamond League field and nothing
+        # else. Every model-derived aggregate downstream -- top winners,
+        # confidence, storylines, discipline_favourite -- reads this list, and
+        # a near-miss athlete leaking into it would be presented as a
+        # projected finalist. They travel separately.
         disc_obj = {
             "id":       disc_key,
             "label":    label,
             "athletes": sorted(athletes, key=lambda x: x["rank"]),
+            # Ranked within their own group by season best (run.py writes
+            # them in that order), purely so the frontend's shared sort can
+            # order them the same way it orders the real field. The UI never
+            # shows these numbers -- a near-miss athlete has no rank.
+            "nearMiss": [{**a, "rank": i + 1} for i, a in enumerate(near_miss)],
         }
 
         if disc_key in FIELD_EVENTS:
