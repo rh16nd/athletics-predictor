@@ -124,3 +124,65 @@ def test_apply_wind_adjustment_field_event_penalty_decreases_mark():
     they were added without this fix alongside it."""
     adjusted = tm.apply_wind_adjustment(8.20, wind=2.0, is_field=True)
     assert adjusted < 8.20
+
+
+# --- Podium-position breakdown (2026-08-25) ------------------------------
+# The headline metric is an order-blind SET intersection, so it cannot say
+# that the model finds ~87% of actual winners but only ~37% of actual 3rd
+# places. These cover the breakdown reported alongside it -- and, critically,
+# that adding it did NOT change what the headline itself means.
+
+def _fold_frame():
+    """One discipline: predicted order A,B,C; real podium is A(1st), C(2nd), D(3rd)."""
+    return pd.DataFrame({
+        "discipline": ["men_100m"] * 4,
+        "athlete_name": ["A", "B", "C", "D"],
+        "win_probability": [0.9, 0.8, 0.7, 0.1],
+        "dl_top3": [1, 0, 1, 1],
+        "dl_rank": [1, None, 2, 3],
+        "year": [2024] * 4,
+    })
+
+
+def test_walk_forward_folds_still_returns_exactly_two_values():
+    """tune_hyperparameters() unpacks a 2-tuple. Collecting the new
+    breakdown must stay an optional out-parameter, not a return-shape
+    change, or every --tune run breaks."""
+    import inspect
+    src = inspect.getsource(tm.walk_forward_folds)
+    assert "return total_correct, total_possible" in src
+    assert "stats=None" in inspect.signature(tm.walk_forward_folds).__str__().replace(" ", "")
+
+
+def test_position_weighted_score_ranks_winners_above_third():
+    """3/2/1 weighting: finding only the winner must beat finding only 3rd."""
+    winner_only = {"found": {1: 1, 2: 0, 3: 0}, "total": {1: 1, 2: 1, 3: 1}}
+    third_only = {"found": {1: 0, 2: 0, 3: 1}, "total": {1: 1, 2: 1, 3: 1}}
+
+    def weighted(stats):
+        c = sum(stats["found"][r] * w for r, w in ((1, 3), (2, 2), (3, 1)))
+        p = sum(stats["total"][r] * w for r, w in ((1, 3), (2, 2), (3, 1)))
+        return c / p
+
+    assert weighted(winner_only) > weighted(third_only)
+    assert weighted(winner_only) == pytest.approx(3 / 6)
+    assert weighted(third_only) == pytest.approx(1 / 6)
+
+
+def test_breakdown_printer_handles_an_empty_stats_dict():
+    """A fold set with no labeled podium rows must not raise."""
+    tm._print_position_breakdown({})
+    tm._print_position_breakdown({"total": {1: 0, 2: 0, 3: 0}, "found": {1: 0, 2: 0, 3: 0}})
+
+
+def test_flat_metric_is_still_order_blind():
+    """Guard the headline's definition: it is a set intersection, so getting
+    the right three people in the wrong order is still a perfect score. If
+    this ever fails, the historical numbers in HANDOFF stopped being
+    comparable."""
+    df = _fold_frame()
+    disc_df = df.sort_values("win_probability", ascending=False)
+    predicted = set(disc_df.head(3)["athlete_name"])
+    actual = set(disc_df[disc_df["dl_top3"] == 1]["athlete_name"])
+    # predicted A,B,C vs actual A,C,D -> 2 of 3, regardless of ordering
+    assert len(predicted & actual) == 2

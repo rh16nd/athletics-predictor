@@ -491,23 +491,51 @@ def _score_fold(train, test, feature_cols, model_params=None):
 
     correct, possible = 0, 0
     per_discipline = []
+    # The headline metric is a SET intersection, so it is blind to finishing
+    # position: correctly having the eventual winner in your three counts
+    # exactly the same as correctly having the eventual 3rd, and naming the
+    # right podium in the wrong order still scores 3/3. That is fine as a
+    # headline, but it averages away something real -- measured 2026-08-25,
+    # the model finds 85% of actual winners and only 36% of actual 3rd
+    # places. `pos` carries the breakdown so train_and_backtest() can report
+    # it alongside, without changing what the headline number means.
+    pos = {"found": {1: 0, 2: 0, 3: 0}, "total": {1: 0, 2: 0, 3: 0},
+           "winner_is_top_pick": 0, "winner_count": 0}
     for discipline in test["discipline"].unique():
         disc_df = test[test["discipline"] == discipline].sort_values("win_probability", ascending=False)
         top3_predicted = disc_df.head(3)["athlete_name"].tolist()
-        top3_actual = disc_df[disc_df["dl_top3"] == 1]["athlete_name"].tolist()
+        actual_rows = disc_df[disc_df["dl_top3"] == 1]
+        top3_actual = actual_rows["athlete_name"].tolist()
         hits = len(set(top3_predicted) & set(top3_actual))
         correct += hits
         possible += 3
         per_discipline.append((discipline, hits))
-    return correct, possible, per_discipline, model
+
+        predicted_set = set(top3_predicted)
+        top_pick = top3_predicted[0] if top3_predicted else None
+        for _, row in actual_rows.iterrows():
+            rank = int(row["dl_rank"]) if pd.notna(row.get("dl_rank")) else None
+            if rank in pos["total"]:
+                pos["total"][rank] += 1
+                if row["athlete_name"] in predicted_set:
+                    pos["found"][rank] += 1
+            if rank == 1:
+                pos["winner_count"] += 1
+                if row["athlete_name"] == top_pick:
+                    pos["winner_is_top_pick"] += 1
+    return correct, possible, per_discipline, model, pos
 
 
-def walk_forward_folds(full, feature_cols, model_params=None, verbose=True):
+def walk_forward_folds(full, feature_cols, model_params=None, verbose=True, stats=None):
     """Runs the expanding-window walk-forward validation (train on every
     labeled year strictly before each test year, one fold per test year) and
     returns (total_correct, total_possible). Shared by train_and_backtest()
     and tune_hyperparameters() so both use the exact same evaluation, not
-    two implementations that could quietly drift apart."""
+    two implementations that could quietly drift apart.
+
+    Pass a dict as `stats` to also collect the per-finishing-position
+    breakdown (see _score_fold). Kept as an optional out-parameter so the
+    return signature stays a 2-tuple for tune_hyperparameters()."""
     total_correct, total_possible = 0, 0
     test_years = LABEL_YEARS[2:]  # first 2 years only ever serve as training seed
     for test_year in test_years:
@@ -516,7 +544,15 @@ def walk_forward_folds(full, feature_cols, model_params=None, verbose=True):
         test = full[full["year"] == test_year]
         if train.empty or test.empty:
             continue
-        correct, possible, _, _ = _score_fold(train, test, feature_cols, model_params)
+        correct, possible, _, _, pos = _score_fold(train, test, feature_cols, model_params)
+        if stats is not None:
+            for rank in (1, 2, 3):
+                stats.setdefault("found", {}).setdefault(rank, 0)
+                stats.setdefault("total", {}).setdefault(rank, 0)
+                stats["found"][rank] += pos["found"][rank]
+                stats["total"][rank] += pos["total"][rank]
+            stats["winner_is_top_pick"] = stats.get("winner_is_top_pick", 0) + pos["winner_is_top_pick"]
+            stats["winner_count"] = stats.get("winner_count", 0) + pos["winner_count"]
         if verbose:
             fold_acc = round(correct / possible * 100, 1) if possible else 0.0
             print(f"  train {train_years} -> test {test_year}: {correct}/{possible} = {fold_acc}%")
@@ -570,6 +606,47 @@ def tune_hyperparameters(feature_cols):
     return best_params
 
 
+def _print_position_breakdown(stats):
+    """Report how the headline number is distributed across the podium.
+
+    The headline is deliberately left alone -- it stays the flat, order-blind
+    top-3 hit rate that every number in HANDOFF.md was measured with, and
+    model_accuracy.txt still holds exactly that. This is a diagnostic printed
+    beside it, because one averaged figure genuinely hides the shape of the
+    result: the model is far better at identifying who WINS than who rounds
+    out the podium, and a single percentage cannot say that.
+
+    A position-weighted score (3/2/1) is also shown. It reads much higher --
+    ~66% where the flat metric reads ~58% -- purely because the model's hits
+    concentrate on the high-value finishers. It is a different ruler, NOT an
+    improvement, and must never be quoted as one or compared against the
+    historical flat numbers."""
+    total = stats.get("total", {})
+    if not any(total.values()):
+        return
+    found = stats.get("found", {})
+    print("")
+    print("  Where the top-3 hits actually fall (same predictions, broken out):")
+    labels = {1: "actual winners", 2: "actual 2nd place", 3: "actual 3rd place"}
+    for rank in (1, 2, 3):
+        t = total.get(rank, 0)
+        if not t:
+            continue
+        pct = 100.0 * found.get(rank, 0) / t
+        print(f"    {labels[rank]:20} found in our top 3: {found.get(rank, 0):>4}/{t:<4} = {pct:5.1f}%")
+    wc = stats.get("winner_count", 0)
+    if wc:
+        wp = 100.0 * stats.get("winner_is_top_pick", 0) / wc
+        print(f"    winner called as our OWN #1 pick: "
+              f"{stats.get('winner_is_top_pick', 0)}/{wc} = {wp:.1f}%")
+    weighted_correct = sum(found.get(r, 0) * w for r, w in ((1, 3), (2, 2), (3, 1)))
+    weighted_possible = sum(total.get(r, 0) * w for r, w in ((1, 3), (2, 2), (3, 1)))
+    if weighted_possible:
+        print(f"    position-weighted (3/2/1): "
+              f"{100.0 * weighted_correct / weighted_possible:.1f}% "
+              f"-- a DIFFERENT ruler, not an improvement; headline stays the flat number")
+
+
 def train_and_backtest(feature_cols, label="", model_params=None):
     """Walk-forward (expanding-window) validation: train on every labeled
     year strictly before each test year, one fold per test year, instead of
@@ -585,9 +662,12 @@ def train_and_backtest(feature_cols, label="", model_params=None):
     full = full.dropna(subset=feature_cols)
 
     print(f"\n=== {label} — walk-forward validation ({LABEL_YEARS[0]}-{LABEL_YEARS[-1]}) ===")
-    total_correct, total_possible = walk_forward_folds(full, feature_cols, model_params, verbose=True)
+    pos_stats = {}
+    total_correct, total_possible = walk_forward_folds(
+        full, feature_cols, model_params, verbose=True, stats=pos_stats)
     accuracy_pct = round(total_correct / total_possible * 100, 1) if total_possible else 0.0
     print(f"  Overall (all {len(LABEL_YEARS[2:])} folds combined): {total_correct}/{total_possible} = {accuracy_pct}%")
+    _print_position_breakdown(pos_stats)
 
     # The deployed model is refit on ALL labeled years -- walk-forward above
     # is purely to estimate honest generalization, not to pick which years
