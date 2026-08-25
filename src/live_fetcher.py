@@ -13,6 +13,7 @@ import re
 import json
 import sys
 import io
+from datetime import datetime, timezone
 # Guarded: several modules in src/ do this, and each wraps the SAME
 # sys.stdout.buffer. With two of them imported into one process the first
 # wrapper to be garbage-collected closes the buffer under the second, and
@@ -171,6 +172,94 @@ def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8, required_
     return df
 
 
+STANDINGS_HEADER_WORDS = ("METRES", "JUMP", "VAULT", "PUT", "THROW",
+                          "HURDLES", "STEEPLECHASE", "MILE")
+
+
+def _as_number(text):
+    """Points/events cells as numbers, or None. Kept tolerant on purpose:
+    a blank or a dash in one cell must not drop the whole row."""
+    text = (text or "").strip().replace(",", "")
+    if not text:
+        return None
+    try:
+        value = float(text)
+    except ValueError:
+        return None
+    return int(value) if value.is_integer() else value
+
+
+def parse_standings_table(table):
+    """Every row of one WA Diamond League standings table, in full.
+
+    The columns are [rank, athlete, country, events, points]. This scraper
+    used to keep only the name and truncate at the qualification cut, which
+    threw away the two things needed to answer "who can still qualify?" --
+    the points, and every row below the line.
+
+    Header rows are dropped by requiring a numeric rank rather than by
+    matching the header's text: that text renders uppercase via CSS, so what
+    BeautifulSoup sees is a styling detail, not a stable contract."""
+    rows = []
+    for tr in table.find_all("tr"):
+        cells = [c.get_text(strip=True) for c in tr.find_all(["td", "th"])]
+        if len(cells) < 5:
+            continue
+        rank, name, country, events, points = cells[:5]
+        if not rank.isdigit() or not name:
+            continue
+        rows.append({
+            "rank": int(rank),
+            "name": name,
+            "country": country or None,
+            "events": _as_number(events),
+            "points": _as_number(points),
+        })
+    return rows
+
+
+def standings_table_label(table):
+    """The discipline heading WA prints above a standings table ("100
+    METRES"). Only used to sanity-check that the Nth table really is the Nth
+    discipline in our own table order -- reading tables positionally has
+    silently mismatched a discipline before, and a warning is cheap."""
+    text = table.find_previous(string=re.compile("|".join(STANDINGS_HEADER_WORDS), re.I))
+    return " ".join(str(text).split()) if text else None
+
+
+KEY_LABEL_TOKENS = {
+    "100m": "100 METRES", "200m": "200 METRES", "400m": "400 METRES",
+    "800m": "800 METRES", "1500m": "1500 METRES", "5000m": "5000 METRES",
+    "110h": "110 METRES HURDLES", "100h": "100 METRES HURDLES",
+    "400h": "400 METRES HURDLES", "3000sc": "3000 METRES STEEPLECHASE",
+    "HJ": "HIGH JUMP", "PV": "POLE VAULT", "LJ": "LONG JUMP",
+    "TJ": "TRIPLE JUMP", "SP": "SHOT PUT", "DT": "DISCUS THROW",
+    "JT": "JAVELIN THROW",
+}
+
+
+def label_matches_key(label, discipline_key):
+    """Is WA's own heading above the Nth table the Nth discipline we expect?
+
+    The standings tables are read positionally against MEN_TABLE_ORDER /
+    WOMEN_TABLE_ORDER, and a positional read has silently mismatched a
+    discipline in this project before. This only warns -- skipping a table on
+    a failed match would lose a whole discipline over a wording change."""
+    if not label:
+        return True
+    expected = KEY_LABEL_TOKENS.get(discipline_key.split("_", 1)[-1])
+    if not expected:
+        return True
+    label = " ".join(label.upper().split())
+    if expected not in label:
+        return False
+    # "400 METRES" is a substring of "400 METRES HURDLES", so containment
+    # alone would read the hurdles table as the flat 400. Anything left over
+    # must be numeric -- WA lists the 5000m as "3000/5000 METRES".
+    leftover = label.replace(expected, " ").replace("/", " ").split()
+    return all(word.isdigit() for word in leftover)
+
+
 def scrape_dl_standings(driver, year=2026, wait_seconds=8):
     STANDINGS_URLS = {
         "men":   (f"https://worldathletics.org/competitions/diamond-league/standings/{year}/men", MEN_TABLE_ORDER),
@@ -178,6 +267,7 @@ def scrape_dl_standings(driver, year=2026, wait_seconds=8):
     }
 
     qualified = {}
+    detail = {}
 
     for gender_key, (url, table_order) in STANDINGS_URLS.items():
         print(f"Loading DL standings ({gender_key})...")
@@ -194,21 +284,45 @@ def scrape_dl_standings(driver, year=2026, wait_seconds=8):
             if discipline_key not in OUR_DISCIPLINES:
                 continue
 
-            athletes = []
-            for row in table.find_all("tr")[1:]:
-                cells = row.find_all(["td", "th"])
-                if len(cells) >= 2:
-                    name = cells[1].get_text(strip=True)
-                    if name and name != "Athlete":
-                        athletes.append(name)
+            # Sorted by WA's own rank column, NOT by the order the rows
+            # happen to render in. Those two disagree inside a group tied on
+            # points -- WA ranks the tie, but lays the rows out some other
+            # way -- and truncating at the qualification cut by row order
+            # therefore kept the wrong athletes. Live on 2026-08-25 in the
+            # men's 1500m: three athletes tied on 8 points rendered as Kerr
+            # (rank 10), Farken (11), Habz (9), so `athletes[:10]` qualified
+            # Farken and dropped Habz, who is genuinely 9th.
+            rows = sorted(parse_standings_table(table), key=lambda r: r["rank"])
+            athletes = [r["name"] for r in rows]
+            label = standings_table_label(table)
+            if not label_matches_key(label, discipline_key):
+                print(f"  WARNING: table {i} reads as {discipline_key} but WA "
+                      f"heads it \"{label}\" -- check the table order")
 
             limit = get_qual_limit(discipline_key)
             qualified[discipline_key] = athletes[:limit]
-            print(f"  {discipline_key}: {len(athletes[:limit])} qualified athletes")
+            detail[discipline_key] = {
+                "qualLimit": limit,
+                "waLabel": label,
+                "standings": rows,
+            }
+            print(f"  {discipline_key}: {len(athletes[:limit])} qualified athletes"
+                  f" ({len(rows)} in the standings)")
 
     standings_path = os.path.join(RAW_DIR, "..", "standings.json")
     with open(standings_path, "w", encoding="utf-8") as f:
         json.dump(qualified, f, ensure_ascii=False, indent=2)
+
+    # Written alongside standings.json rather than replacing it: run.py and
+    # api.py both read that file's list-of-names shape, and the qualification
+    # race is a separate question from "who is in the field".
+    detail_path = os.path.join(RAW_DIR, "..", "standings_detail.json")
+    with open(detail_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "year": year,
+            "scrapedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "disciplines": detail,
+        }, f, ensure_ascii=False, indent=2)
 
     return qualified
 

@@ -70,10 +70,18 @@ def test_build_labeled_dataset_merges_real_labels_onto_features(fixture_train_mo
 
 def test_train_and_backtest_runs_end_to_end_on_fixture_data(fixture_train_model):
     """Doesn't assert on save_artifacts()/outputs/ -- train_and_backtest()
-    itself never writes to disk, only returns (model, scaler, accuracy_pct)."""
-    model, scaler, accuracy_pct = fixture_train_model.train_and_backtest(FEATURE_COLS, label="fixture test")
+    itself never writes to disk, only returns
+    (model, scaler, accuracy_pct, field_pct).
+
+    `field_pct` is the same predictions scored against the athletes who
+    actually contested the Final, rather than the whole toplist -- the task
+    run.py performs (2026-08-25). It is None only when the fixture has no
+    Final field to restrict to."""
+    model, scaler, accuracy_pct, field_pct = fixture_train_model.train_and_backtest(
+        FEATURE_COLS, label="fixture test")
 
     assert 0.0 <= accuracy_pct <= 100.0
+    assert field_pct is None or 0.0 <= field_pct <= 100.0
     assert hasattr(model, "predict_proba")
     assert hasattr(scaler, "transform")
 

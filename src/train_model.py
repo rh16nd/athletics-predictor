@@ -26,6 +26,7 @@ Usage:
 """
 import argparse
 import os
+import json
 import pickle
 import sys
 import io
@@ -509,6 +510,30 @@ def add_h2h_features(df):
     return df
 
 
+def mark_final_field(df):
+    """Flags the rows the model is actually DEPLOYED on.
+
+    run.py only ever scores athletes in WA's Diamond League standings -- the
+    ~8-10 who contest a Final -- but this backtest pools ~101 toplist
+    athletes per discipline-year, so the headline number answers "find the
+    podium among 101 names", which is nobody's question. build_labeled_dataset
+    merges only `dl_rank <= 3`, so the frame cannot tell a 7th-place finalist
+    from someone who never turned up; this reads the full field back out of
+    dl_final_results.csv.
+
+    Adds `in_final_field`, used to report a second metric alongside the
+    original one. It changes no training and no features."""
+    results = pd.read_csv(DL_RESULTS_PATH)
+    results["_k"] = results["athlete_name"].apply(normalize_name)
+    field = set(zip(results["discipline"], results["year"], results["_k"]))
+    keys = df["athlete_name"].apply(normalize_name)
+    df = df.copy()
+    df["in_final_field"] = [
+        (d, y, k) in field for d, y, k in zip(df["discipline"], df["year"], keys)
+    ]
+    return df
+
+
 DEFAULT_MODEL_PARAMS = {
     "n_estimators": 200, "max_depth": 16, "min_samples_leaf": 1,
     "class_weight": None, "random_state": 42,
@@ -534,6 +559,11 @@ def _score_fold(train, test, feature_cols, model_params=None):
     test["win_probability"] = model.predict_proba(X_test)[:, 1]
 
     correct, possible = 0, 0
+    # Second scoring pass over the same predictions, restricted to the
+    # athletes who actually contested that Final -- the population run.py
+    # applies the model to. Same model, same probabilities, different
+    # candidate pool.
+    field_correct, field_possible = 0, 0
     per_discipline = []
     # The headline metric is a SET intersection, so it is blind to finishing
     # position: correctly having the eventual winner in your three counts
@@ -544,7 +574,9 @@ def _score_fold(train, test, feature_cols, model_params=None):
     # places. `pos` carries the breakdown so train_and_backtest() can report
     # it alongside, without changing what the headline number means.
     pos = {"found": {1: 0, 2: 0, 3: 0}, "total": {1: 0, 2: 0, 3: 0},
-           "winner_is_top_pick": 0, "winner_count": 0}
+           "winner_is_top_pick": 0, "winner_count": 0,
+           "field_found": {1: 0, 2: 0, 3: 0}, "field_total": {1: 0, 2: 0, 3: 0},
+           "field_correct": 0, "field_possible": 0}
     for discipline in test["discipline"].unique():
         disc_df = test[test["discipline"] == discipline].sort_values("win_probability", ascending=False)
         top3_predicted = disc_df.head(3)["athlete_name"].tolist()
@@ -567,6 +599,23 @@ def _score_fold(train, test, feature_cols, model_params=None):
                 pos["winner_count"] += 1
                 if row["athlete_name"] == top_pick:
                     pos["winner_is_top_pick"] += 1
+
+        if "in_final_field" in disc_df.columns:
+            fd = disc_df[disc_df["in_final_field"]]
+            if not fd.empty:
+                field_picked = set(fd.head(3)["athlete_name"])
+                field_actual = fd[fd["dl_top3"] == 1]
+                field_correct += len(field_picked & set(field_actual["athlete_name"]))
+                field_possible += 3
+                for _, row in field_actual.iterrows():
+                    rank = int(row["dl_rank"]) if pd.notna(row.get("dl_rank")) else None
+                    if rank in pos["field_total"]:
+                        pos["field_total"][rank] += 1
+                        if row["athlete_name"] in field_picked:
+                            pos["field_found"][rank] += 1
+
+    pos["field_correct"] = field_correct
+    pos["field_possible"] = field_possible
     return correct, possible, per_discipline, model, pos
 
 
@@ -597,6 +646,13 @@ def walk_forward_folds(full, feature_cols, model_params=None, verbose=True, stat
                 stats["total"][rank] += pos["total"][rank]
             stats["winner_is_top_pick"] = stats.get("winner_is_top_pick", 0) + pos["winner_is_top_pick"]
             stats["winner_count"] = stats.get("winner_count", 0) + pos["winner_count"]
+            for rank in (1, 2, 3):
+                stats.setdefault("field_found", {}).setdefault(rank, 0)
+                stats.setdefault("field_total", {}).setdefault(rank, 0)
+                stats["field_found"][rank] += pos["field_found"][rank]
+                stats["field_total"][rank] += pos["field_total"][rank]
+            stats["field_correct"] = stats.get("field_correct", 0) + pos["field_correct"]
+            stats["field_possible"] = stats.get("field_possible", 0) + pos["field_possible"]
         if verbose:
             fold_acc = round(correct / possible * 100, 1) if possible else 0.0
             print(f"  train {train_years} -> test {test_year}: {correct}/{possible} = {fold_acc}%")
@@ -691,6 +747,42 @@ def _print_position_breakdown(stats):
               f"-- a DIFFERENT ruler, not an improvement; headline stays the flat number")
 
 
+def _print_both_metrics(stats, toplist_pct):
+    """Print the metric the SITE's task actually corresponds to, beside the
+    historical one.
+
+    The number above it picks 3 from every athlete in a discipline-year's
+    toplist (~101 names). run.py picks 3 from the ~8-10 athletes in WA's
+    Diamond League standings. Those are different questions and they get
+    different scores -- measured 2026-08-25, 59.7% and 72.3% off the exact
+    same predictions.
+
+    Neither is wrong. The toplist figure is the one every number in
+    HANDOFF.md was measured with and stays the comparison baseline; the
+    field figure is the one the site should quote about itself. Returns the
+    field figure so save_artifacts can record both."""
+    possible = stats.get("field_possible", 0)
+    if not possible:
+        return None
+    correct = stats.get("field_correct", 0)
+    field_pct = round(100.0 * correct / possible, 1)
+    print("")
+    print("  Two candidate pools, same predictions -- these answer different questions:")
+    print(f"    among the full ~101-athlete toplist : {toplist_pct}%   "
+          f"(the historical baseline; every HANDOFF number is this one)")
+    print(f"    among the real Final field only     : {field_pct}%   "
+          f"({correct}/{possible}) -- the task run.py actually performs")
+
+    found, total = stats.get("field_found", {}), stats.get("field_total", {})
+    if any(total.values()):
+        parts = " ".join(
+            f"{label} {100.0 * found.get(r, 0) / total[r]:.0f}%"
+            for r, label in ((1, "1st"), (2, "2nd"), (3, "3rd")) if total.get(r)
+        )
+        print(f"    per position, real field            : {parts}")
+    return field_pct
+
+
 def train_and_backtest(feature_cols, label="", model_params=None):
     """Walk-forward (expanding-window) validation: train on every labeled
     year strictly before each test year, one fold per test year, instead of
@@ -704,6 +796,7 @@ def train_and_backtest(feature_cols, label="", model_params=None):
     full = add_new_features(ranked)
     full = add_h2h_features(full)
     full = full.dropna(subset=feature_cols)
+    full = mark_final_field(full)
 
     print(f"\n=== {label} — walk-forward validation ({LABEL_YEARS[0]}-{LABEL_YEARS[-1]}) ===")
     pos_stats = {}
@@ -711,6 +804,7 @@ def train_and_backtest(feature_cols, label="", model_params=None):
         full, feature_cols, model_params, verbose=True, stats=pos_stats)
     accuracy_pct = round(total_correct / total_possible * 100, 1) if total_possible else 0.0
     print(f"  Overall (all {len(LABEL_YEARS[2:])} folds combined): {total_correct}/{total_possible} = {accuracy_pct}%")
+    field_pct = _print_both_metrics(pos_stats, accuracy_pct)
     _print_position_breakdown(pos_stats)
 
     # The deployed model is refit on ALL labeled years -- walk-forward above
@@ -727,10 +821,10 @@ def train_and_backtest(feature_cols, label="", model_params=None):
     for feat, imp in importances.items():
         print(f"    {feat:24s} {imp:.4f}")
 
-    return model, scaler, accuracy_pct
+    return model, scaler, accuracy_pct, field_pct
 
 
-def save_artifacts(model, scaler, feature_cols, accuracy_pct):
+def save_artifacts(model, scaler, feature_cols, accuracy_pct, field_pct=None):
     os.makedirs(OUTPUTS_DIR, exist_ok=True)
     with open(os.path.join(OUTPUTS_DIR, "model_rf.pkl"), "wb") as f:
         pickle.dump(model, f)
@@ -738,9 +832,23 @@ def save_artifacts(model, scaler, feature_cols, accuracy_pct):
         pickle.dump(scaler, f)
     with open(os.path.join(OUTPUTS_DIR, "feature_cols.pkl"), "wb") as f:
         pickle.dump(feature_cols, f)
+    # Unchanged meaning on purpose: this file has always held the
+    # ~101-athlete-toplist number and other code reads it.
     with open(os.path.join(OUTPUTS_DIR, "model_accuracy.txt"), "w") as f:
         f.write(str(accuracy_pct))
-    print(f"\nSaved model_rf.pkl, scaler.pkl, feature_cols.pkl, model_accuracy.txt ({accuracy_pct}%)")
+    # Both metrics, labelled, so the site can quote the one that matches
+    # what it actually does instead of the historical baseline.
+    with open(os.path.join(OUTPUTS_DIR, "model_metrics.json"), "w") as f:
+        json.dump({
+            "toplist_pool_pct": accuracy_pct,
+            "final_field_pct": field_pct,
+            "note": ("toplist_pool_pct picks 3 from every athlete in a "
+                     "discipline-year's toplist (~101); final_field_pct picks 3 "
+                     "from the ~8-10 who actually contested the Final, which is "
+                     "what run.py does."),
+        }, f, indent=2)
+    print(f"\nSaved model_rf.pkl, scaler.pkl, feature_cols.pkl, model_accuracy.txt "
+          f"({accuracy_pct}%), model_metrics.json (field {field_pct}%)")
 
 
 if __name__ == "__main__":
@@ -784,9 +892,9 @@ if __name__ == "__main__":
         tune_hyperparameters(feature_cols)
         sys.exit(0)
 
-    model, scaler, accuracy_pct = train_and_backtest(feature_cols, label=label)
+    model, scaler, accuracy_pct, field_pct = train_and_backtest(feature_cols, label=label)
 
     if not args.dry_run:
-        save_artifacts(model, scaler, feature_cols, accuracy_pct)
+        save_artifacts(model, scaler, feature_cols, accuracy_pct, field_pct)
     else:
         print("\n[dry run — outputs/ not modified]")

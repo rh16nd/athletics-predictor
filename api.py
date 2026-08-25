@@ -471,13 +471,6 @@ def load_predictions():
     if not os.path.exists(path):
             return None, None
     
-    def get_model_accuracy():
-        acc_path = os.path.join(OUTPUTS_DIR, "model_accuracy.txt")
-        try:
-            return float(open(acc_path).read().strip())
-        except:
-            return 44.0
-        
     df = pd.read_csv(path)
     injury_flags = load_injury_flags()
     track = []
@@ -550,6 +543,11 @@ def load_predictions():
         disc_obj = {
             "id":       disc_key,
             "label":    label,
+            # How many places this discipline actually has at the Final
+            # (6 field / 10 long distance / 8 otherwise). The field itself
+            # can be SHORTER than this -- an injury removal leaves a gap --
+            # so the UI can't infer the number from len(athletes).
+            "qualLimit": get_qual_limit(disc_key),
             "athletes": sorted(athletes, key=lambda x: x["rank"]),
             # Ranked within their own group by season best (run.py writes
             # them in that order), purely so the frontend's shared sort can
@@ -600,6 +598,75 @@ def toplist_entry(disc_key, athlete_name):
         int(rank) if pd.notna(rank) else None,
         url if isinstance(url, str) and url and url != "nan" else None,
     )
+
+
+def toplist_bio(disc_key, athlete_name):
+    """Nationality and age straight from the season toplist row.
+
+    The 128 near-miss athletes run.py scores carry these already, but anyone
+    further down the toplist (Jakob Ingebrigtsen, 14th in the 1500m
+    standings, is the live example) has no prediction row at all -- and
+    there is no reason their page should be blank on two facts the scrape
+    already collected."""
+    path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}.csv")
+    if not os.path.exists(path):
+        return {}
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        return {}
+    hit = df[df["Competitor"].astype(str).str.lower() == athlete_name.lower()]
+    if hit.empty:
+        return {}
+    row = hit.iloc[0]
+
+    out = {}
+    # WA's toplist export leaves the nationality column unnamed.
+    for col in ("Unnamed: 5", "Nat", "Country"):
+        val = row.get(col)
+        if isinstance(val, str) and val.strip() and val.strip().lower() != "nan":
+            out["nat"] = val.strip()
+            break
+
+    dob = row.get("DOB")
+    if isinstance(dob, str) and dob.strip():
+        try:
+            born = datetime.strptime(dob.strip(), "%d %b %Y").date()
+            out["age"] = round((date.today() - born).days / 365.25, 1)
+        except ValueError:
+            pass
+    return out
+
+
+def scored_prediction_row(disc_key, athlete_name):
+    """This athlete's row in predictions_latest.csv, if run.py scored them.
+
+    True for the near-miss athletes (dl_qualified = False, no rank) and for
+    nobody else outside the field -- so it is the difference between a page
+    that can show real season stats and a model probability, and one that
+    can only show a season best."""
+    label = DISC_LABELS.get(disc_key)
+    path = os.path.join(OUTPUTS_DIR, "predictions_latest.csv")
+    if label is None or not os.path.exists(path):
+        return None
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        return None
+    hit = df[(df["discipline"] == label)
+             & (df["athlete_name"].astype(str).str.lower() == athlete_name.lower())]
+    return None if hit.empty else hit.iloc[0]
+
+
+def projected_field_names(disc_key, limit=6):
+    """The confirmed finalists, best-ranked first -- the opponents a
+    head-to-head record for a non-qualified athlete is actually about
+    ("how does he do against the ones who got in?")."""
+    track, field = load_predictions()
+    disc = next((d for d in (track or []) + (field or []) if d["id"] == disc_key), None)
+    if not disc:
+        return []
+    return [a["name"] for a in sorted(disc["athletes"], key=lambda a: a["rank"])[:limit]]
 
 
 def athlete_field_status(disc_key, athlete_name):
@@ -654,16 +721,77 @@ def athlete_field_status(disc_key, athlete_name):
     out["photoUrl"] = photo_url
     out["photoFocus"] = get_photo_focus(photo_url) if photo_url else None
 
+    # Everything below is the same real data the in-field profile shows,
+    # for the same reason the photo is: none of it stops being true because
+    # the athlete missed the cut. What is deliberately NOT carried over is
+    # the finalist-only material -- a predicted rank, and a podium chance
+    # presented as a forecast -- since neither means anything here.
+    bio = toplist_bio(disc_key, athlete_name)
+    row = scored_prediction_row(disc_key, athlete_name)
+
+    def clean(val):
+        if val is None or pd.isna(val):
+            return None
+        return val.item() if hasattr(val, "item") else val
+
+    if row is not None:
+        prob = row.get("win_probability")
+        out.update({
+            "name":          row["athlete_name"],
+            "nat":           str(row.get("nationality")) if pd.notna(row.get("nationality")) else bio.get("nat"),
+            "careerBest":    clean(row.get("career_best")),
+            "pbGap":         clean(row.get("pb_gap")),
+            "age":           clean(row.get("age")),
+            "meetsCount":    clean(row.get("meets_count")),
+            "daysSinceLast": clean(row.get("days_since_last")),
+            # The model DID score this athlete -- run.py scores the near-miss
+            # group with the same features and the same forest. It is a real
+            # number, but a conditional one, so the frontend has to label it
+            # "if they qualified" rather than as a prediction about the Final.
+            "hypotheticalProb": int(str(prob).replace("%", "")) if isinstance(prob, str)
+                                else (None if pd.isna(prob) else int(float(prob) * 100)),
+        })
+    else:
+        # Not scored by run.py at all. Age and nationality still come from
+        # the toplist scrape rather than being left blank.
+        out.update({
+            "nat":              bio.get("nat"),
+            "age":              bio.get("age"),
+            "careerBest":       None,
+            "pbGap":            None,
+            "meetsCount":       None,
+            "daysSinceLast":    None,
+            "hypotheticalProb": None,
+        })
+
+    # Head-to-head against the athletes who DID qualify. Same function and
+    # same >=2-meetings threshold the in-field profile uses -- only the
+    # opponent list differs, and here it is the whole point of the panel.
+    out["h2h"] = load_h2h_vs_rivals(disc_key, athlete_name,
+                                    projected_field_names(disc_key))
+
     standings = load_standings().get(disc_key, [])
     in_standings = any(n.lower() == athlete_name.lower() for n in standings)
+
+    # Their real position in the FULL standings table, which runs well below
+    # the qualifying places that standings.json keeps. Attached whether or
+    # not it is the reason they're out, since "9th on 15 points" is the fact
+    # a reader came here for either way.
+    dl = standings_position(disc_key, athlete_name)
+    out["dl"] = dl
+
     if standings and not in_standings:
-        out["reasonCode"] = "not_in_standings"
-        out["reason"] = (
-            f"Not in World Athletics' official Diamond League standings for "
-            f"{label}. Only athletes who have scored Diamond League points in "
-            f"this discipline are eligible for the Final, regardless of how "
-            f"fast they have run elsewhere."
-        )
+        if dl:
+            out["reasonCode"] = "outside_points_cut"
+            out["reason"] = points_cut_reason(label, dl)
+        else:
+            out["reasonCode"] = "not_in_standings"
+            out["reason"] = (
+                f"Not in World Athletics' official Diamond League standings for "
+                f"{label} — no Diamond League points scored in this discipline "
+                f"this season. Points are what earns a place at the Final, "
+                f"regardless of how fast they have run elsewhere."
+            )
         return out
 
     flags = load_injury_flags()
@@ -687,6 +815,130 @@ def athlete_field_status(disc_key, athlete_name):
     out["reasonCode"] = "no_data"
     out["reason"] = f"No {MEETS_YEAR} season mark on record for {label}."
     return out
+
+
+STANDINGS_DETAIL_PATH = os.path.join(os.path.dirname(__file__), "data", "standings_detail.json")
+
+# A Diamond League meeting scores 8-7-6-5-4-3-2-1 for the first eight
+# places, so a win is worth 8. Checked against the scraped standings rather
+# than taken on trust: across all 32 disciplines the highest total held by
+# anyone with a single meeting to their name is exactly 8, and nobody
+# anywhere averages more than 8 points per meeting.
+MAX_POINTS_PER_MEETING = 8
+
+
+def load_standings_detail():
+    """WA's full Diamond League standings tables -- every athlete with their
+    points, rather than just the names above the qualification cut that
+    standings.json keeps. Written by scrape_dl_standings(); absent until the
+    standings scraper has run at least once since 2026-08-25."""
+    try:
+        with open(STANDINGS_DETAIL_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def meetings_remaining(meets=None, today=None):
+    """Scoring meetings still to come. The Final is excluded on purpose: it
+    is the thing being qualified for, so its result cannot change who was
+    invited to it."""
+    statuses = compute_meet_statuses(meets or MEETS, today=today)
+    return sum(1 for m in statuses if m["status"] in ("next", "upcoming"))
+
+
+def qualification_race(rows, qual_limit, meetings_left,
+                       max_points=MAX_POINTS_PER_MEETING):
+    """Who is in, who is still alive, and who is arithmetically out.
+
+    Deliberately arithmetic rather than a model. Points never go down and
+    the most anyone can still gain is `meetings_left * max_points`, which
+    this late in the season settles most of the table outright -- a
+    probability here would be a worse answer dressed as a better one.
+
+    Each verdict is only stated when it is certain:
+      * "out"  -- at least `qual_limit` athletes ALREADY hold more points
+                  than this athlete can reach at absolute maximum.
+      * "safe" -- fewer than `qual_limit` athletes can reach this athlete's
+                  current total even at maximum, so nobody can displace
+                  them even if they never score again.
+    A tie counts against the athlete in both tests, since World Athletics'
+    tie-break rules are not in this data.
+
+    Everyone else is "in" (above the cut line as it stands) or "chasing"
+    (below it and still mathematically alive).
+
+    Note that this assumes the discipline is actually on the programme of
+    the remaining meeting(s). If it isn't, its standings are already final
+    -- which only ever makes "out" more true, never less."""
+    gain = max(meetings_left, 0) * max_points
+    scored = [r for r in rows if r.get("points") is not None]
+    cut_points = scored[qual_limit - 1]["points"] if len(scored) >= qual_limit else None
+
+    out = []
+    for row in rows:
+        points = row.get("points")
+        if points is None:
+            out.append({**row, "gap": None, "maxPoints": None, "status": "unknown"})
+            continue
+        ceiling = points + gain
+        certainly_ahead = sum(1 for o in scored if o is not row and o["points"] > ceiling)
+        could_finish_ahead = sum(1 for o in scored if o is not row and o["points"] + gain >= points)
+
+        if certainly_ahead >= qual_limit:
+            status = "out"
+        elif could_finish_ahead < qual_limit:
+            status = "safe"
+        elif row.get("rank") is not None and row["rank"] <= qual_limit:
+            status = "in"
+        else:
+            status = "chasing"
+
+        out.append({
+            **row,
+            # Positive = points behind the cut line; 0 or negative = on or
+            # above it. The line itself moves at the last meeting, so this
+            # is where the race stands today, not a prediction.
+            "gap": None if cut_points is None else round(cut_points - points, 2),
+            "maxPoints": ceiling,
+            "status": status,
+        })
+    return {"cutPoints": cut_points, "rows": out}
+
+
+def build_qualification():
+    """The race for the Final, per discipline: real WA points, the real cut
+    line, and the gap to it (HANDOFF item 0l). Everything here comes from
+    WA's own standings table -- nothing is modelled."""
+    detail = load_standings_detail()
+    disciplines = detail.get("disciplines") or {}
+    left = meetings_remaining()
+    statuses = compute_meet_statuses(MEETS)
+    next_meet = next((m for m in statuses if m["status"] == "next"), None)
+
+    out = []
+    for key, label in DISC_LABELS.items():
+        entry = disciplines.get(key)
+        if not entry:
+            continue
+        limit = entry.get("qualLimit") or get_qual_limit(key)
+        race = qualification_race(entry.get("standings") or [], limit, left)
+        out.append({
+            "discKey":    key,
+            "disc":       label,
+            "isField":    key in FIELD_EVENTS,
+            "qualLimit":  limit,
+            "cutPoints":  race["cutPoints"],
+            "standings":  race["rows"],
+        })
+
+    return {
+        "scrapedAt":     detail.get("scrapedAt"),
+        "meetingsLeft":  left,
+        "nextMeet":      next_meet,
+        "pointsForAWin": MAX_POINTS_PER_MEETING,
+        "disciplines":   out,
+    }
 
 
 def build_news(limit=20):
@@ -963,12 +1215,49 @@ def build_confidence(track, field):
         scored.append({"disc": d["label"], "value": fav["prob"] if fav else 0})
     return sorted(scored, key=lambda x: -x["value"])
 
-def get_model_accuracy():
-    acc_path = os.path.join(OUTPUTS_DIR, "model_accuracy.txt")
+MODEL_METRICS_PATH = os.path.join(OUTPUTS_DIR, "model_metrics.json")
+
+
+def load_model_metrics():
+    """Both backtest numbers train_model.py records, or {} before it has
+    been re-run since 2026-08-25."""
     try:
-        return float(open(acc_path).read().strip())
-    except:
+        with open(MODEL_METRICS_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def get_model_accuracy():
+    """The accuracy the SITE should quote about itself.
+
+    Two different numbers come off the same predictions. The historical one
+    in model_accuracy.txt picks 3 from every athlete in a discipline-year's
+    toplist (~101 names). This site never does that -- run.py ranks the
+    ~8-10 athletes in WA's Diamond League standings, and scored on that task
+    the same model reads about 12 points higher (measured 2026-08-25:
+    59.7% vs 72.3%).
+
+    Quoting the toplist figure understated the product while describing a
+    question nobody asked, so the field figure is preferred when present.
+    Falls back to the old file, and finally to a conservative constant, so
+    an un-retrained checkout still renders."""
+    metrics = load_model_metrics()
+    field_pct = metrics.get("final_field_pct")
+    if isinstance(field_pct, (int, float)):
+        return float(field_pct)
+    try:
+        return float(open(os.path.join(OUTPUTS_DIR, "model_accuracy.txt")).read().strip())
+    except Exception:
         return 44.0
+
+
+def get_model_accuracy_basis():
+    """One line saying what the quoted number measures, so the UI caption is
+    a fact rather than a vague reassurance."""
+    if isinstance(load_model_metrics().get("final_field_pct"), (int, float)):
+        return "top-3 hit rate among the real Final field, walk-forward '23-'25"
+    return "walk-forward '23-'25"
 
 
 def build_discipline_trajectories(disc_key, athletes, limit=4):
@@ -1269,6 +1558,10 @@ def predictions():
         "removedAthletes": build_removed_athletes(load_injury_flags()),
         "confidence":    build_confidence(track, field),
         "modelAccuracy": get_model_accuracy(),
+        "modelAccuracyBasis": get_model_accuracy_basis(),
+        # The historical ~101-athlete-toplist figure, kept visible rather
+        # than quietly replaced -- every number in HANDOFF.md is this one.
+        "modelAccuracyToplist": load_model_metrics().get("toplist_pool_pct"),
     })
 
 
@@ -1297,6 +1590,59 @@ def projections_detail(disc_key):
         "trajectories": build_discipline_trajectories(disc_key, disc["athletes"]),
         "storylines":   build_storylines(disc_key, disc["label"], disc["athletes"]),
     })
+
+
+def ordinal(n):
+    return f"{n}{'th' if 11 <= n % 100 <= 13 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+
+
+def standings_position(disc_key, athlete_name):
+    """Where an athlete actually sits in WA's FULL Diamond League standings
+    for a discipline -- points, rank, and the gap to the cut. None when they
+    genuinely have no Diamond League points in it.
+
+    standings.json is truncated to the qualifying places, so on its own it
+    cannot tell "has never scored here" apart from "has scored but is 9th".
+    The site asserted the former for both, which made it tell readers that
+    Noah Lyles had no Diamond League points in the 100m when he was 9th on
+    15, two short of the cut."""
+    entry = (load_standings_detail().get("disciplines") or {}).get(disc_key)
+    if not entry:
+        return None
+    limit = entry.get("qualLimit") or get_qual_limit(disc_key)
+    race = qualification_race(entry.get("standings") or [], limit, meetings_remaining())
+    row = next((r for r in race["rows"]
+                if str(r.get("name", "")).lower() == athlete_name.lower()), None)
+    if row is None:
+        return None
+    return {**row, "qualLimit": limit, "cutPoints": race["cutPoints"]}
+
+
+def points_cut_reason(label, dl):
+    """Why an athlete with real Diamond League points still isn't in the
+    field -- stated as the arithmetic it is, not as a guess."""
+    reason = (f"{ordinal(dl['rank'])} in the {label} Diamond League standings on "
+              f"{dl['points']} points, outside the top {dl['qualLimit']} who qualify "
+              f"for the Final.")
+    if dl["status"] == "out":
+        return reason + " Too far back to be caught up now."
+    gap = dl["gap"]
+    if gap is None:
+        return reason
+    if gap > 0:
+        return reason + f" {gap} point{'' if gap == 1 else 's'} short of the cut."
+    return reason + " Level on points with the cut, behind on World Athletics' tie-break."
+
+
+@app.route("/api/qualification")
+def qualification():
+    """Standings points and the gap to the qualification cut. Returns 404
+    with a runnable fix rather than an empty page when the standings
+    scraper hasn't produced data/standings_detail.json yet."""
+    payload = build_qualification()
+    if not payload["disciplines"]:
+        return jsonify({"error": "standings_detail.json not found — run python src/live_fetcher.py first"}), 404
+    return jsonify(payload)
 
 
 @app.route("/api/news")

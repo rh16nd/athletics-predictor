@@ -19,29 +19,53 @@ H2H_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "h2h")
 INPUT = os.path.join(H2H_DIR, "meet_results.csv")
 OUTPUT = os.path.join(H2H_DIR, "h2h_rates.csv")
 
+def one_row_per_athlete(meet_df):
+    """One result per athlete per meet: their BEST (lowest) place.
+
+    A meet page carries heats, semis and the final as separate rows, and the
+    scraper does not record which round a row came from (see
+    h2h_scraper.parse_results_table). Before this, `dict(zip(...))` silently
+    kept whichever row happened to be LAST, so an athlete's heat number
+    could stand in for their final placing -- at the 2023 World
+    Championships Jakob Ingebrigtsen's rows are [1, 13] and Yared Nuguse's
+    are [4, 1, 5], and the comparison actually made was 13 against 5, handing
+    Nuguse a championship Ingebrigtsen won.
+
+    Best-place is the right collapse while the round is unknown: for a
+    progression-based meet it is the furthest round the athlete reached and
+    their standing in it, which is what "who beat whom at this meeting"
+    means. Capturing the round properly in the scraper would be better still
+    and needs a re-scrape."""
+    return meet_df.sort_values("place").drop_duplicates(subset=["athlete"], keep="first")
+
+
 def calculate_h2h(df):
     records = []
     for disc in df["discipline"].unique():
         disc_df = df[df["discipline"] == disc].copy()
         disc_df = disc_df.dropna(subset=["place"])
-        meets = disc_df["meet"].unique()
 
-        for meet in meets:
-            meet_df = disc_df[disc_df["meet"] == meet].copy()
-            athletes = meet_df["athlete"].tolist()
-            places = dict(zip(meet_df["athlete"], meet_df["place"]))
+        for meet in disc_df["meet"].unique():
+            meet_df = one_row_per_athlete(disc_df[disc_df["meet"] == meet])
+            # Iterating this de-duplicated frame is also what stops one
+            # meeting being counted many times: the old loop walked the ROW
+            # list, so a 2-row athlete against a 3-row athlete produced up
+            # to 6 "meetings" -- the same comparison repeated, which is why
+            # 64% of all pairs with >=5 meetings came out as perfect sweeps.
+            rows = list(zip(meet_df["athlete"], meet_df["place"]))
 
-            for i, a in enumerate(athletes):
-                for b in athletes[i+1:]:
-                    if a == b:
-                        continue
-                    place_a = places.get(a)
-                    place_b = places.get(b)
-                    if place_a is None or place_b is None:
+            for i, (a, place_a) in enumerate(rows):
+                for b, place_b in rows[i + 1:]:
+                    if a == b or place_a == place_b:
+                        # Equal places can only mean the two never actually
+                        # met (same position in different heats). Counting
+                        # it either way would invent a result.
                         continue
                     a_wins = 1 if place_a < place_b else 0
-                    records.append({"discipline": disc, "athlete_a": a, "athlete_b": b, "a_wins": a_wins, "total": 1})
-                    records.append({"discipline": disc, "athlete_a": b, "athlete_b": a, "a_wins": 1 - a_wins, "total": 1})
+                    records.append({"discipline": disc, "athlete_a": a, "athlete_b": b,
+                                    "a_wins": a_wins, "total": 1})
+                    records.append({"discipline": disc, "athlete_a": b, "athlete_b": a,
+                                    "a_wins": 1 - a_wins, "total": 1})
 
     if not records:
         return pd.DataFrame()

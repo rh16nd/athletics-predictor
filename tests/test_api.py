@@ -280,8 +280,22 @@ def test_confidence_scores_a_discipline_on_its_top_pick_not_its_top_mark():
 # event). These pin the honest-reason logic, which mirrors run.py's real
 # selection order rather than guessing.
 
-def _status_env(monkeypatch, *, in_field=False, standings=None, injury=None, toplist=("9.79", 1)):
+def _status_env(monkeypatch, *, in_field=False, standings=None, injury=None,
+                toplist=("9.79", 1), detail=None, bio=None, scored=None,
+                field_names=None, h2h=None):
     monkeypatch.setattr(api, "load_standings", lambda: standings or {})
+    # The FULL standings table, which knows the difference between "has no
+    # Diamond League points" and "has points but is below the cut". Stubbed
+    # empty by default so each test states its own case rather than
+    # depending on whatever the last scrape happened to put on disk.
+    monkeypatch.setattr(api, "load_standings_detail", lambda: detail or {})
+    # The profile-enrichment lookups read real files (data/raw/*.csv,
+    # outputs/predictions_latest.csv) -- stubbed so these tests describe
+    # their own case instead of quietly depending on the last scrape.
+    monkeypatch.setattr(api, "toplist_bio", lambda k, n: bio or {})
+    monkeypatch.setattr(api, "scored_prediction_row", lambda k, n: scored)
+    monkeypatch.setattr(api, "projected_field_names", lambda k, limit=6: field_names or [])
+    monkeypatch.setattr(api, "load_h2h_vs_rivals", lambda k, n, rivals: h2h or [])
     monkeypatch.setattr(api, "load_injury_flags", lambda: injury or {})
     monkeypatch.setattr(api, "toplist_entry", lambda k, n: (*toplist, "https://wa/x"))
     monkeypatch.setattr(api, "load_athlete_history", lambda k, n: ([], None))
@@ -300,13 +314,44 @@ def test_athlete_in_the_field_reports_no_exclusion_reason(monkeypatch):
     assert out["reason"] is None
 
 
-def test_not_in_dl_standings_is_reported_as_the_reason(monkeypatch):
-    """The real Lyles case: fastest in the world, no DL points in the event."""
-    _status_env(monkeypatch, standings={"men_100m": ["Oblique SEVILLE"]})
+def _detail(*rows, limit=8):
+    """A men's 100m standings table, [(rank, name, points), ...]."""
+    return {"disciplines": {"men_100m": {
+        "qualLimit": limit,
+        "standings": [{"rank": r, "name": n, "country": "USA", "events": 2, "points": p}
+                      for r, n, p in rows],
+    }}}
+
+
+def test_an_athlete_with_no_dl_points_at_all_is_told_exactly_that(monkeypatch):
+    """Fastest in the world, never scored in the event -- genuinely absent
+    from WA's standings table, not merely below the cut."""
+    _status_env(monkeypatch, standings={"men_100m": ["Oblique SEVILLE"]},
+                detail=_detail((1, "Oblique SEVILLE", 23)))
     out = api.athlete_field_status("men_100m", "Noah LYLES")
     assert out["inField"] is False
     assert out["reasonCode"] == "not_in_standings"
+    assert out["dl"] is None
     assert out["worldRank"] == 1
+
+
+def test_an_athlete_below_the_cut_is_not_told_they_have_no_points(monkeypatch):
+    """The real 2026-08-25 bug. standings.json is truncated to the
+    qualifying places, so being absent from it was read as "never scored" --
+    and the site told readers Noah Lyles had no Diamond League points in the
+    100m while he sat 9th on 15, two short of the cut."""
+    _status_env(
+        monkeypatch,
+        standings={"men_100m": ["Oblique SEVILLE"]},
+        detail=_detail(*[(i + 1, f"A{i + 1}", 30 - i) for i in range(8)],
+                       (9, "Noah LYLES", 15), limit=8),
+    )
+    out = api.athlete_field_status("men_100m", "Noah LYLES")
+    assert out["reasonCode"] == "outside_points_cut"
+    assert out["dl"]["points"] == 15
+    assert out["dl"]["rank"] == 9
+    assert "15 points" in out["reason"]
+    assert "no Diamond League points" not in out["reason"]
 
 
 def test_injury_removal_is_reported_with_its_evidence(monkeypatch):
@@ -399,3 +444,73 @@ def test_news_still_dedupes_one_article_across_several_athletes(monkeypatch):
         "B": {"status": "watch", "disciplines": [], "matches": [dict(shared)]},
     })
     assert len(api.build_news()) == 1
+
+
+# ---- non-qualified athlete profiles (HANDOFF 0k) ----
+# These pages used to be a stub: a reason, a season best and a chart. The
+# same real stats the in-field profile shows are available for most of these
+# athletes and are now carried over. What is NOT carried over is the
+# finalist-only material -- a predicted rank, and a probability presented as
+# a forecast about a Final they are not in.
+
+def test_a_scored_near_miss_athlete_gets_the_full_season_stats(monkeypatch):
+    import pandas as pd
+    row = pd.Series({
+        "athlete_name": "Noah LYLES", "nationality": "USA", "season_best": "9.79",
+        "win_probability": "7%", "career_best": 9.79, "pb_gap": 0.0, "age": 29.1,
+        "meets_count": 2, "days_since_last": 58.0,
+    })
+    _status_env(monkeypatch, standings={"men_100m": ["Oblique SEVILLE"]}, scored=row)
+    out = api.athlete_field_status("men_100m", "Noah LYLES")
+    assert out["careerBest"] == 9.79
+    assert out["age"] == 29.1
+    assert out["meetsCount"] == 2
+    assert out["nat"] == "USA"
+
+
+def test_a_scored_near_miss_athletes_probability_is_marked_hypothetical(monkeypatch):
+    """run.py really does score this athlete with the same forest, so the
+    number is real -- but it is a conditional one. It travels under a name
+    the finalist payload doesn't use, so it cannot be rendered as `prob`
+    and read as a forecast about the Final."""
+    import pandas as pd
+    row = pd.Series({"athlete_name": "Noah LYLES", "nationality": "USA",
+                     "win_probability": "7%", "career_best": 9.79, "pb_gap": 0.0,
+                     "age": 29.1, "meets_count": 2, "days_since_last": 58.0})
+    _status_env(monkeypatch, standings={"men_100m": ["Oblique SEVILLE"]}, scored=row)
+    out = api.athlete_field_status("men_100m", "Noah LYLES")
+    assert out["hypotheticalProb"] == 7
+    assert "prob" not in out
+    assert "rank" not in out
+
+
+def test_an_unscored_athlete_still_gets_name_and_age_from_the_toplist(monkeypatch):
+    """Anyone below the near-miss group has no prediction row at all
+    (Ingebrigtsen, 14th in the 1500m standings, is the live case). Two facts
+    the scrape already collected shouldn't be blank because of that."""
+    _status_env(monkeypatch, standings={"men_1500m": ["Yared NUGUSE"]},
+                bio={"nat": "NOR", "age": 25.9})
+    out = api.athlete_field_status("men_1500m", "Jakob INGEBRIGTSEN")
+    assert out["nat"] == "NOR"
+    assert out["age"] == 25.9
+    assert out["careerBest"] is None
+    assert out["hypotheticalProb"] is None
+
+
+def test_head_to_head_is_measured_against_the_athletes_who_qualified(monkeypatch):
+    """The opponents are the projected field, not the near-miss group -- the
+    question this panel answers is "how do they do against the ones who got
+    in?"."""
+    captured = {}
+
+    def fake_h2h(disc_key, name, rivals):
+        captured["rivals"] = rivals
+        return [{"opponent": rivals[0], "wins": 12, "losses": 0, "meetings": 12}]
+
+    monkeypatch.setattr(api, "load_h2h_vs_rivals", fake_h2h)
+    _status_env(monkeypatch, standings={"men_100m": ["Oblique SEVILLE"]},
+                field_names=["Oblique SEVILLE", "Akani SIMBINE"])
+    monkeypatch.setattr(api, "load_h2h_vs_rivals", fake_h2h)
+    out = api.athlete_field_status("men_100m", "Noah LYLES")
+    assert captured["rivals"] == ["Oblique SEVILLE", "Akani SIMBINE"]
+    assert out["h2h"][0]["opponent"] == "Oblique SEVILLE"
