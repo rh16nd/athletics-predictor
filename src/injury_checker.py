@@ -23,7 +23,27 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+def _force_utf8_stdout():
+    """Windows consoles default to cp1252 and choke on athlete names.
+
+    Deliberately NOT done at import time. Several modules in src/ do this,
+    and each one wraps `sys.stdout.buffer` -- so when two of them are
+    imported into the same process (which happens as soon as two test
+    modules import two of them) both wrappers own the same underlying
+    buffer, the first to be garbage-collected closes it, and every
+    subsequent write dies with "I/O operation on closed file". pytest.ini
+    keeps `-s` for the same family of reasons; this stays a __main__-only
+    concern so the module is safely importable."""
+    if sys.stdout.encoding and sys.stdout.encoding.lower().startswith("utf"):
+        return
+    # Guarded: several modules in src/ do this, and each wraps the SAME
+# sys.stdout.buffer. With two of them imported into one process the first
+# wrapper to be garbage-collected closes the buffer under the second, and
+# every later write dies with "I/O operation on closed file" -- which took
+# down the whole pytest run on 2026-08-25. After the first wrap the
+# encoding is already utf-8, so this becomes a no-op.
+if not (sys.stdout.encoding or "").lower().startswith("utf"):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 STANDINGS_PATH = os.path.join(DATA_DIR, "standings.json")
@@ -429,6 +449,7 @@ def load_injury_flags():
 
 
 if __name__ == "__main__":
+    _force_utf8_stdout()
     print("=== Checking for athlete injuries / withdrawals ===")
     outcome = check_injuries()
     flagged = outcome["athletes"]

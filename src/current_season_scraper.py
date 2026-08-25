@@ -33,7 +33,14 @@ from datetime import date
 
 import pandas as pd
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+# Guarded: several modules in src/ do this, and each wraps the SAME
+# sys.stdout.buffer. With two of them imported into one process the first
+# wrapper to be garbage-collected closes the buffer under the second, and
+# every later write dies with "I/O operation on closed file" -- which took
+# down the whole pytest run on 2026-08-25. After the first wrap the
+# encoding is already utf-8, so this becomes a no-op.
+if not (sys.stdout.encoding or "").lower().startswith("utf"):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 sys.path.insert(0, os.path.dirname(__file__))
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse graphql()/load_recognized_names()
 from season_results_scraper import find_season_meetings, scrape_meeting  # noqa: E402
