@@ -630,6 +630,14 @@ def athlete_field_status(disc_key, athlete_name):
     out["history"] = history
     out["historyYear"] = history_year
 
+    # Same real World Athletics headshot the in-field profiles get -- there
+    # is no reason an athlete outside the projected eight should get a
+    # visibly lesser page. Returns None (never a stock image) if WA has no
+    # photo, and the frontend falls back to the initials monogram.
+    photo_url = load_athlete_photo(wa_url) if wa_url else None
+    out["photoUrl"] = photo_url
+    out["photoFocus"] = get_photo_focus(photo_url) if photo_url else None
+
     standings = load_standings().get(disc_key, [])
     in_standings = any(n.lower() == athlete_name.lower() for n in standings)
     if standings and not in_standings:
@@ -663,6 +671,45 @@ def athlete_field_status(disc_key, athlete_name):
     out["reasonCode"] = "no_data"
     out["reason"] = f"No {MEETS_YEAR} season mark on record for {label}."
     return out
+
+
+def build_news(limit=20):
+    """Every real news item the injury checker matched, as a feed.
+
+    The evidence was already being scraped and stored -- it just only ever
+    surfaced as a tooltip on whichever athlete it flagged, so a reader had
+    to already suspect someone to find it. Showing it as a list also makes
+    bad matches visible: the item that removed Cole Hocker is a headline
+    about Jakob Ingebrigtsen, which is obvious the moment you read it in a
+    feed and invisible when it is buried behind a badge.
+
+    Deduped by URL -- the same article routinely matches several athletes."""
+    flags = load_injury_flags()
+    seen, items = set(), []
+    for name, entry in flags.items():
+        status = entry.get("status")
+        for m in entry.get("matches") or []:
+            url = m.get("url")
+            headline = m.get("headline")
+            if not headline:
+                continue
+            key = url or headline
+            if key in seen:
+                continue
+            seen.add(key)
+            items.append({
+                "headline":    headline,
+                "url":         url,
+                "source":      (m.get("source") or "").replace("_results", ""),
+                "athlete":     name,
+                "status":      status,
+                "disciplines": [DISC_LABELS.get(d, d) for d in entry.get("disciplines", [])],
+                "keywords":    m.get("keywords") or [],
+            })
+    # "remove" outranks "watch": a withdrawal changes the field, a watch
+    # only qualifies it.
+    items.sort(key=lambda x: (x["status"] != "remove", x["athlete"]))
+    return items[:limit]
 
 
 def search_athletes(query, limit=25):
@@ -1195,6 +1242,18 @@ def projections_detail(disc_key):
         "trajectories": build_discipline_trajectories(disc_key, disc["athletes"]),
         "storylines":   build_storylines(disc_key, disc["label"], disc["athletes"]),
     })
+
+
+@app.route("/api/news")
+def news():
+    flags_meta = {}
+    try:
+        with open(INJURY_FLAGS_PATH, encoding="utf-8") as f:
+            raw = json.load(f)
+        flags_meta = {"checkedAt": raw.get("checked_at"), "sources": raw.get("sources_ok", [])}
+    except Exception:
+        pass
+    return jsonify({"items": build_news(), **flags_meta})
 
 
 @app.route("/api/search")
