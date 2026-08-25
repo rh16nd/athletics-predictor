@@ -109,6 +109,32 @@ WIND_EVENTS = {
 DL_RESULTS_PATH = os.path.join(BASE_DIR, "data", "dl_final_results.csv")
 H2H_PATH = os.path.join(BASE_DIR, "data", "h2h", "h2h_rates.csv")
 VENUE_GEO_PATH = os.path.join(BASE_DIR, "data", "venues_geo.csv")
+VENUE_WEATHER_PATH = os.path.join(BASE_DIR, "data", "venue_weather.csv")
+
+_VENUE_WEATHER = None
+
+
+def venue_weather():
+    """(venue, 'YYYY-MM-DD') -> (temp_mean_c, humidity_pct) from
+    src/venue_weather.py's cache. Real ERA5 reanalysis, ~67% of rows.
+
+    NOT currently a model feature, deliberately. Weather was built and
+    MEASURED OUT on 2026-08-25 (see HANDOFF Failed Attempts): temp_at_sb,
+    mean_race_temp and mean_humidity all scored NEGATIVE across 10 seeds,
+    and each real column landed within noise of a SHUFFLED permutation of
+    itself. Kept because the data is real, validated and cached, and because
+    one framing is still untried -- see that HANDOFF entry."""
+    global _VENUE_WEATHER
+    if _VENUE_WEATHER is None:
+        if os.path.exists(VENUE_WEATHER_PATH):
+            w = pd.read_csv(VENUE_WEATHER_PATH).dropna(subset=["temp_mean_c"])
+            _VENUE_WEATHER = {
+                (str(r.venue), str(r.date)): (float(r.temp_mean_c), float(r.humidity_pct))
+                for r in w.itertuples()
+            }
+        else:
+            _VENUE_WEATHER = {}
+    return _VENUE_WEATHER
 
 _VENUE_ELEV = None
 
@@ -318,6 +344,7 @@ def add_new_features(df):
             if "Date" in raw.columns:
                 raw["date"] = pd.to_datetime(raw["Date"], format="%d %b %Y", errors="coerce")
                 ref_date = pd.Timestamp(f"{year}-09-01")
+
                 for athlete in group["athlete_name"]:
                     ath = raw[raw["athlete_name"] == athlete].sort_values("date", ascending=False)
                     if ath.empty or ath["date"].isna().all():
