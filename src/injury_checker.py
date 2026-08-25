@@ -74,8 +74,21 @@ INJURY_RECOVERY_WEEKS = {
     "ankle":           (1, 6),
     "foot":            (4, 10),
     "stress fracture": (6, 12),
-    "back":            (2, 8),
     "hip":             (2, 8),
+    # "back" is NOT here as a bare word, deliberately. In athletics writing it
+    # almost always means returning -- "is back", "back-to-back", "bounce
+    # back", "back in the field" -- and matching it as a body part caused a
+    # real, live false positive on 2026-08-25: the headline "Jakob
+    # Ingebrigtsen Is Back. His First Big 1500m Test: Cole Hocker" flagged a
+    # 2-8 week recovery and REMOVED Cole Hocker from the men's 1500m
+    # predictions entirely. Only unambiguous body-part phrasings count.
+    "back injury":     (2, 8),
+    "back problem":    (2, 8),
+    "back issue":      (2, 8),
+    "back strain":     (2, 8),
+    "back spasm":      (2, 8),
+    "back pain":       (2, 8),
+    "lower back":      (2, 8),
 }
 WATCH_KEYWORDS = GENERIC_WATCH_KEYWORDS + list(INJURY_RECOVERY_WEEKS.keys())
 
@@ -170,6 +183,35 @@ def match_keywords(headline_lower):
         if _KEYWORD_RE[kw].search(headline_lower):
             matched["watch"].append(kw)
     return matched
+
+
+def keyword_is_about(headline_lower, target_lower, other_names_lower, keyword):
+    """Is `keyword` plausibly describing `target_lower`, or someone else?
+
+    Matching used to require only that the athlete's name and an injury word
+    both appeared somewhere in the same headline. That flagged everyone
+    mentioned, including the person the article is contrasting the injured
+    athlete AGAINST. The real case that exposed it: "Jakob Ingebrigtsen Is
+    Back. His First Big 1500m Test: Cole Hocker" removed Hocker.
+
+    Attribute the keyword to whichever known athlete is named closest to it.
+    Ties and single-name headlines resolve to the target, so this only ever
+    rejects when some OTHER athlete is genuinely nearer."""
+    kw_match = _KEYWORD_RE[keyword].search(headline_lower) if keyword in _KEYWORD_RE else None
+    if kw_match is None:
+        return True
+    kw_pos = kw_match.start()
+    target_pos = headline_lower.find(target_lower)
+    if target_pos < 0:
+        return False
+    target_dist = abs(kw_pos - target_pos)
+    for other in other_names_lower:
+        if other == target_lower:
+            continue
+        pos = headline_lower.find(other)
+        if pos >= 0 and abs(kw_pos - pos) < target_dist:
+            return False
+    return True
 
 
 def estimate_recovery_weeks(text_lower):
@@ -286,6 +328,7 @@ def check_injuries():
     days_to_final = (FINAL_DATE - date.today()).days
 
     flags = {}
+    all_names_lower = [n.lower() for n in athletes]
     for name, discipline_keys in athletes.items():
         name_lower = name.lower()
         for item in all_headlines:
@@ -293,6 +336,16 @@ def check_injuries():
             if name_lower not in headline_lower:
                 continue
             matched = match_keywords(headline_lower)
+            # A headline naming two athletes must not flag both. Keep only the
+            # keywords this athlete is actually the nearest named subject of
+            # -- see keyword_is_about() for the real case that motivated it.
+            named_here = [n for n in all_names_lower if n in headline_lower]
+            if len(named_here) > 1:
+                matched = {
+                    bucket: [kw for kw in kws
+                             if keyword_is_about(headline_lower, name_lower, named_here, kw)]
+                    for bucket, kws in matched.items()
+                }
             if not matched["remove"] and not matched["watch"]:
                 continue
             status = "remove" if matched["remove"] else "watch"
