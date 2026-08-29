@@ -434,3 +434,121 @@ def build_analytics(disc_key, athlete_name, is_field, opponents=None, year=MEETS
             "withPlace": int(rows["place"].notna().sum()),
         },
     }
+
+
+# ---------------------------------------------------------------------------
+# Field-level comparison: how a discipline's contenders differ from EACH
+# OTHER, rather than one athlete's record in isolation.
+#
+# This is possible because the pairs actually exist. Measured across all 32
+# 2026 fields: the median discipline has raced 100% of its possible pairings,
+# the worst is 82%, and the median pair has met 3-11 times. A head-to-head
+# matrix is normally the first thing an athletics analyst builds and the
+# first thing a results database cannot give them, because it needs every
+# athlete's full race log at once rather than one profile at a time.
+# ---------------------------------------------------------------------------
+
+def field_head_to_head(log, names):
+    """A complete W-L grid for one field, plus each athlete's record against
+    THIS field specifically.
+
+    The within-field record is the interesting column and is not the same
+    number as a career win rate: an athlete can win 40% of everything they
+    enter and still be 1-11 against the people who will line up beside them
+    in the Final. Cells are None where two athletes have genuinely never
+    met, which is a fact worth showing rather than a zero worth inventing."""
+    if log.empty or not names:
+        return None
+
+    records = {n: {h["name"]: h for h in head_to_head(log, n, opponents=names)}
+               for n in names}
+
+    rows = []
+    for a in names:
+        cells = []
+        for b in names:
+            if a == b:
+                cells.append(None)
+                continue
+            rec = records.get(a, {}).get(b)
+            cells.append(None if not rec else {
+                "wins":     rec["wins"],
+                "losses":   rec["losses"],
+                "meetings": rec["meetings"],
+                "lastMet":  rec["lastMet"],
+            })
+        wins = sum(c["wins"] for c in cells if c)
+        losses = sum(c["losses"] for c in cells if c)
+        met = wins + losses
+        rows.append({
+            "name":     a,
+            "cells":    cells,
+            "wins":     wins,
+            "losses":   losses,
+            "meetings": met,
+            # None rather than 0 when they have never met anyone here -- a
+            # 0% that means "no data" is the same lie as a fabricated stat.
+            "winRate":  round(100 * wins / met, 1) if met else None,
+        })
+
+    pairs = sum(1 for r in rows for c in r["cells"] if c) // 2
+    possible = len(names) * (len(names) - 1) // 2
+    return {
+        "names": names,
+        "rows": rows,
+        "pairsMet": pairs,
+        "pairsPossible": possible,
+        "coverage": round(100 * pairs / possible, 1) if possible else None,
+    }
+
+
+def field_comparison(disc_key, names, is_field, year=MEETS_YEAR):
+    """One analyst row per contender, on the axes that separate them.
+
+    Deliberately not a re-ranking. Every column is a measured quantity and
+    the page shows them side by side so the reader can see WHY two athletes
+    with near-identical season bests are not the same bet -- one holds the
+    level across six races, the other touched it once in May."""
+    log = load_race_log(disc_key)
+    if log.empty or not names:
+        return []
+
+    out = []
+    for name in names:
+        rows = athlete_rows(log, name)
+        if rows.empty:
+            out.append({"name": name, "races": 0, "top3Average": None,
+                        "consistency": None, "winRate": None, "podiumRate": None,
+                        "avgFinish": None, "bestMonth": None, "seasonRaces": 0})
+            continue
+        record = competition_record(rows)
+        season = [f for f in form_by_season(rows, is_field) if f["year"] == year]
+        shape = season_shape(rows, year, is_field)
+        current = season[0] if season else None
+        out.append({
+            "name":        name,
+            "races":       int(len(rows)),
+            "seasonRaces": current["marks"] if current else 0,
+            "top3Average": current["top3Average"] if current else None,
+            "consistency": current["consistency"] if current else None,
+            "winRate":     record["winRate"] if record else None,
+            "podiumRate":  record["podiumRate"] if record else None,
+            "avgFinish":   record["avgFinish"] if record else None,
+            "bestMonth":   shape["bestMonth"] if shape else None,
+        })
+    return out
+
+
+def build_field_analysis(disc_key, names, is_field, year=MEETS_YEAR):
+    """Everything the Projections page needs to compare a field."""
+    log = load_race_log(disc_key)
+    if log.empty or len(names) < 2:
+        return None
+    matrix = field_head_to_head(log, names)
+    if not matrix:
+        return None
+    return {
+        "matrix":     matrix,
+        "comparison": field_comparison(disc_key, names, is_field, year),
+        "season":     year,
+    }

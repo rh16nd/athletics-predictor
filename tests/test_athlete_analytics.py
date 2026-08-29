@@ -241,3 +241,90 @@ def test_missing_discipline_gives_an_empty_log_not_an_error():
 
 def test_build_analytics_returns_none_for_an_unknown_athlete():
     assert aa.build_analytics("men_100m", "Nobody At All", False) is None
+
+
+# ---- field-level comparison ----
+
+def test_field_matrix_is_square_and_diagonal_is_empty():
+    m = aa.field_head_to_head(RACES, ["A", "B", "C"])
+    assert m["names"] == ["A", "B", "C"]
+    assert len(m["rows"]) == 3
+    for i, row in enumerate(m["rows"]):
+        assert len(row["cells"]) == 3
+        assert row["cells"][i] is None, "an athlete has no record against themselves"
+
+
+def test_field_matrix_is_symmetric_across_the_diagonal():
+    """Cell [i][j] must mirror cell [j][i]. This is the invariant that makes
+    the grid trustworthy: the same pairing is rendered twice, once from each
+    athlete's side, and a reader will notice immediately if they disagree."""
+    names = ["A", "B", "C"]
+    m = aa.field_head_to_head(RACES, names)
+    for i in range(len(names)):
+        for j in range(len(names)):
+            left = m["rows"][i]["cells"][j]
+            right = m["rows"][j]["cells"][i]
+            if left is None or right is None:
+                assert left is None and right is None, "a pairing must be absent from both sides"
+                continue
+            assert left["wins"] == right["losses"]
+            assert left["losses"] == right["wins"]
+            assert left["meetings"] == right["meetings"]
+
+
+def test_field_matrix_row_totals_match_its_own_cells():
+    m = aa.field_head_to_head(RACES, ["A", "B", "C"])
+    for row in m["rows"]:
+        assert row["wins"] == sum(c["wins"] for c in row["cells"] if c)
+        assert row["losses"] == sum(c["losses"] for c in row["cells"] if c)
+
+
+def test_field_matrix_reports_pair_coverage():
+    m = aa.field_head_to_head(RACES, ["A", "B", "C"])
+    assert m["pairsPossible"] == 3          # A-B, A-C, B-C
+    assert m["pairsMet"] == 3
+    assert m["coverage"] == 100.0
+
+
+def test_a_pairing_that_never_happened_is_none_not_zero():
+    """A 0-0 would read as "they met and drew". Absence has to stay absent."""
+    log = _log([
+        ("A", "22.00m", 1, "2026-05-01", "M1", "DL", 2026),
+        ("B", "21.50m", 2, "2026-05-01", "M1", "DL", 2026),
+        ("C", "21.00m", 1, "2026-06-01", "M2", "DL", 2026),
+    ])
+    m = aa.field_head_to_head(log, ["A", "B", "C"])
+    by = {r["name"]: r for r in m["rows"]}
+    assert by["A"]["cells"][2] is None
+    assert by["C"]["cells"][0] is None
+    assert m["pairsMet"] == 1 and m["pairsPossible"] == 3
+
+
+def test_win_rate_is_none_when_an_athlete_has_met_nobody_here():
+    log = _log([
+        ("A", "22.00m", 1, "2026-05-01", "M1", "DL", 2026),
+        ("Z", "21.00m", 1, "2026-06-01", "M2", "DL", 2026),
+    ])
+    m = aa.field_head_to_head(log, ["A", "Z"])
+    assert all(r["winRate"] is None for r in m["rows"])
+
+
+def test_within_field_record_differs_from_overall_record():
+    """The point of the column. An athlete can win most of what they enter
+    and still be behind against the specific people beside them."""
+    rec = aa.competition_record(aa.athlete_rows(RACES, "A"))
+    m = aa.field_head_to_head(RACES, ["A", "B", "C"])
+    a_row = next(r for r in m["rows"] if r["name"] == "A")
+    assert rec["winRate"] == pytest.approx(66.7, abs=0.1)   # 2 of 3 races won
+    assert a_row["winRate"] == pytest.approx(75.0, abs=0.1)  # 3-1 vs this field
+
+
+def test_field_comparison_returns_a_row_per_named_athlete():
+    rows = aa.field_comparison("men_100m", ["Nobody One", "Nobody Two"], False)
+    assert [r["name"] for r in rows] == ["Nobody One", "Nobody Two"]
+    assert all(r["races"] == 0 for r in rows)
+
+
+def test_build_field_analysis_needs_at_least_two_athletes():
+    assert aa.build_field_analysis("men_100m", ["Only One"], False) is None
+    assert aa.build_field_analysis("not_a_discipline", ["A", "B"], False) is None

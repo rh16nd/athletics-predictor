@@ -1809,9 +1809,18 @@ def projections_detail(disc_key):
     disc = next((d for d in track + field if d["id"] == disc_key), None)
     if disc is None:
         return jsonify({"error": "discipline not found"}), 404
+    names = [a["name"] for a in disc["athletes"]]
     return jsonify({
         "trajectories": build_discipline_trajectories(disc_key, disc["athletes"]),
         "storylines":   build_storylines(disc_key, disc["label"], disc["athletes"]),
+        # How this field's athletes compare to EACH OTHER, which is the
+        # question a ranked list with probabilities beside it cannot answer.
+        # Viable because the pairs genuinely exist: measured across all 32
+        # 2026 fields, the median discipline has raced 100% of its possible
+        # pairings and the worst is 82%.
+        "fieldAnalysis": athlete_analytics.build_field_analysis(
+            disc_key, names, disc_key in FIELD_EVENTS,
+        ),
     })
 
 
