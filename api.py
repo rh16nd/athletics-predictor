@@ -208,6 +208,17 @@ def parse_mark(m):
         return float(parts[0]) * 60 + float(parts[1])
     return float(m)
 
+def safe_parse_mark(m):
+    """parse_mark, but None instead of an exception for the non-marks that
+    real result sets are full of: "NM"/"NH" (no valid attempt), "DNS",
+    "DNF", "DQ". Those are outcomes, not bad data -- they just have no
+    number to plot."""
+    try:
+        return parse_mark(m)
+    except (ValueError, TypeError):
+        return None
+
+
 def format_mark(val, disc):
     if disc in FIELD_EVENTS:
         return f"{val:.2f}m"
@@ -255,6 +266,109 @@ def _season_rows_to_history(season, disc_key):
             "resultsScore": None if pd.isna(score) else int(score),
         })
     return history
+
+
+WORLDWIDE_DIR = os.path.join(os.path.dirname(__file__), "data", "worldwide")
+
+
+def load_worldwide_rows(disc_key, athlete_name):
+    """One athlete's races from src/worldwide_scraper.py, if it has run.
+
+    Optional by design and safe to call when the file is absent, partial, or
+    mid-scrape: the scraper writes newest season first and flushes every 20
+    meetings, so this returns whatever has landed rather than waiting for a
+    complete run. Nothing in the modelling path reads this directory -- see
+    that script's quarantine note before moving it."""
+    path = os.path.join(WORLDWIDE_DIR, f"{disc_key}.csv")
+    if not os.path.exists(path):
+        return pd.DataFrame()
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        return pd.DataFrame()
+    if df.empty or "Competitor" not in df.columns:
+        return pd.DataFrame()
+    return df[df["Competitor"].str.lower() == athlete_name.lower()]
+
+
+def load_career_progression(disc_key, athlete_name):
+    """Season-by-season best for one athlete, across every year on record.
+
+    The profile already charts the CURRENT season race by race; this is the
+    other axis, and the site had no view of it at all. Assembled from every
+    source that carries a dated mark -- the historical 2018-2025 file, this
+    season's toplist row and per-meeting results, and the worldwide race log
+    when it exists -- because no single one of them spans a career.
+
+    `best` is the season's best mark in the direction that discipline
+    actually means: lowest time for a track event, highest distance for a
+    field event. Getting that backwards is the same mistake that inverted
+    weighted_season_best (HANDOFF 0i2), so it is written once here.
+
+    Indoor marks are counted and reported per season rather than dropped or
+    silently mixed -- for the vertical jumps that is up to half the data,
+    and a progression line that hides it is a claim the data cannot make."""
+    is_field = disc_key in FIELD_EVENTS
+    frames = []
+
+    hist_path = os.path.join(RAW_DIR, f"{disc_key}.csv")
+    if os.path.exists(hist_path):
+        try:
+            hist = pd.read_csv(hist_path)
+            frames.append(hist[hist["Competitor"].str.lower() == athlete_name.lower()])
+        except Exception:
+            pass
+
+    for fname in (f"{disc_key}_{MEETS_YEAR}.csv", f"{disc_key}_{MEETS_YEAR}_meetings.csv"):
+        path = os.path.join(RAW_DIR, fname)
+        if not os.path.exists(path):
+            continue
+        try:
+            cur = pd.read_csv(path)
+            mine = cur[cur["Competitor"].str.lower() == athlete_name.lower()].copy()
+            if "year" not in mine.columns:
+                mine["year"] = MEETS_YEAR
+            frames.append(mine)
+        except Exception:
+            pass
+
+    wide = load_worldwide_rows(disc_key, athlete_name)
+    if not wide.empty:
+        frames.append(wide)
+
+    frames = [f for f in frames if not f.empty]
+    if not frames:
+        return []
+
+    df = pd.concat(frames, ignore_index=True)
+    # parse_mark raises on anything that isn't a mark, and real results are
+    # full of things that aren't: "NM" (no valid attempt), "NH", "DNS",
+    # "DNF", "DQ". Those are genuine outcomes, not corrupt rows, and they
+    # simply have no value to plot -- dropped here rather than allowed to
+    # take the whole profile down with a 500, which is what they did on the
+    # first run (Jessica Schilder, women's shot put).
+    df["_value"] = df["Mark"].map(safe_parse_mark)
+    df = df.dropna(subset=["_value", "year"])
+    if df.empty:
+        return []
+    df["_indoor"] = df.get("Venue", pd.Series(dtype=object)).map(is_indoor_venue)
+    # The same race reaches this frame from more than one scraper under
+    # differently-formatted venue names -- fine for aggregates, a double
+    # count here.
+    df = df.drop_duplicates(subset=["year", "Date", "Mark"])
+
+    seasons = []
+    for year, group in df.groupby("year"):
+        best = group["_value"].max() if is_field else group["_value"].min()
+        seasons.append({
+            "year":       int(year),
+            "best":       round(float(best), 3),
+            "bestMark":   format_mark(float(best), disc_key),
+            "marks":      int(len(group)),
+            "indoorMarks": int(group["_indoor"].sum()),
+        })
+    seasons.sort(key=lambda s: s["year"])
+    return seasons
 
 
 def load_athlete_history(disc_key, athlete_name):
@@ -1163,6 +1277,12 @@ def build_athlete_profile(disc_key, athlete_name):
         "history":         history,
         "historyYear":     history_year,
         "h2h":             load_h2h_vs_rivals(disc_key, athlete_name, rival_names),
+        # The two additions the "deep stats" pass brought in. `history` is
+        # this season race by race; `careerSeasons` is the other axis, which
+        # the site had no view of at all. `scoreContext` answers "is that
+        # mark actually good" in terms that hold across events.
+        "careerSeasons":   load_career_progression(disc_key, athlete_name),
+        "scoreContext":    athlete_score_context(disc_key, athlete_name),
     }
 
 
@@ -1703,18 +1823,32 @@ def is_indoor_venue(venue):
     return bool(INDOOR_VENUE.search(str(venue or "")))
 
 
+def _toplist_paths(year):
+    return [(k, os.path.join(RAW_DIR, f"{k}_{year}.csv")) for k in DISC_LABELS]
+
+
 def load_season_scores(year=None):
     """Every discipline's toplist for a season in one frame, with WA's
-    Results Score and an `indoor` flag. Cached per-year; the files only
-    change on a run.py refresh."""
+    Results Score and an `indoor` flag.
+
+    Cached on the FILES, not just the year: the key includes RAW_DIR and
+    every toplist's mtime. A plain per-year cache looked fine and was
+    wrong twice over -- it kept serving pre-refresh numbers after a run.py
+    rewrote the toplists (this app's stated contract is that both dev
+    servers re-read data fresh on every request), and it leaked fixture
+    data between tests that repoint RAW_DIR. Stat-ing 32 files costs
+    nothing next to re-reading them."""
     year = year or MEETS_YEAR
-    cached = _season_scores_cache.get(year)
+    paths = _toplist_paths(year)
+    key = (RAW_DIR, year, tuple(
+        os.path.getmtime(p) if os.path.exists(p) else None for _, p in paths
+    ))
+    cached = _season_scores_cache.get(key)
     if cached is not None:
         return cached
 
     frames = []
-    for disc_key in DISC_LABELS:
-        path = os.path.join(RAW_DIR, f"{disc_key}_{year}.csv")
+    for disc_key, path in paths:
         if not os.path.exists(path):
             continue
         try:
@@ -1734,7 +1868,10 @@ def load_season_scores(year=None):
         out = pd.concat(frames, ignore_index=True)
         out = out.dropna(subset=["Results Score", "Competitor"])
         out["indoor"] = out["Venue"].map(is_indoor_venue)
-    _season_scores_cache[year] = out
+    # One entry per distinct file-state; the dict would otherwise grow by one
+    # every refresh for the lifetime of the process.
+    _season_scores_cache.clear()
+    _season_scores_cache[key] = out
     return out
 
 
