@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse the same graphql()/HEADERS every other scraper does
 from feature_builder import get_qual_limit  # noqa: E402 -- one definition of the field size, shared with run.py
 import athlete_analytics  # noqa: E402 -- race-log statistics; reads data/worldwide, never feeds the model
+import athlete_career  # noqa: E402 -- honours/rankings/PBs as World Athletics states them; never feeds the model
 
 app = Flask(__name__)
 CORS(app)  # allows React dev server to call this API
@@ -1044,6 +1045,7 @@ def athlete_field_status(disc_key, athlete_name):
     # Here the "in field" marker means the opponents who DID qualify, which
     # is the more pointed reading of the same badge.
     out["rivalNames"] = field_names
+    out["career"] = athlete_career.build_career(athlete_name)
 
     standings = load_standings().get(disc_key, [])
     in_standings = any(n.lower() == athlete_name.lower() for n in standings)
@@ -1457,6 +1459,10 @@ def build_athlete_profile(disc_key, athlete_name):
         "analytics":       athlete_analytics.build_analytics(
             disc_key, athlete_name, disc_key in FIELD_EVENTS,
         ),
+        # What World Athletics says this athlete has already won, and where
+        # it ranks them. Read, not derived -- see athlete_career's docstring
+        # for why that is kept in a separate module from the race-log stats.
+        "career":          athlete_career.build_career(athlete_name),
     }
 
 

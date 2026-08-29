@@ -31,7 +31,13 @@ WHAT IS AND ISN'T AVAILABLE
 ---------------------------
 Available, verified live:
   * personalBests -- every discipline, with mark, venue and date
-  * honours       -- Olympic and World Championship medals, with marks
+  * honours       -- grouped and LABELLED by World Athletics itself via
+                     `categoryName`: "Olympic Games", "World Championships",
+                     "Diamond League Final", "World Indoor Championships",
+                     "World Athletics Relays". Without that label the groups
+                     are anonymous and a national title is indistinguishable
+                     from an Olympic one -- the first fetch omitted it and
+                     the honours were unusable for anything but a raw count.
   * worldRankings -- WA's own current ranking place per event group
   * resultsByYear -- the CURRENT season only; there is no year argument on
                      either `resultsByYear` or `getSingleCompetitor`
@@ -90,7 +96,7 @@ PROFILE_QUERY = """query GetSingleCompetitor($id: Int) {
   getSingleCompetitor(id: $id) {
     basicData { birthDate countryCode }
     personalBests { results { discipline mark venue date } }
-    honours { results { competition mark place } }
+    honours { categoryName results { competition mark place } }
     worldRankings { current { eventGroup place } }
     resultsByYear {
       activeYears
