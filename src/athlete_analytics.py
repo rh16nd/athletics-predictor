@@ -502,6 +502,29 @@ def field_head_to_head(log, names):
     }
 
 
+RECENT_FORM_RACES = 6
+
+
+def recent_form(rows, limit=RECENT_FORM_RACES):
+    """The last few finishing positions, oldest first.
+
+    The head-to-head grid is an all-time record and says nothing about right
+    now: an athlete can lead a rivalry 6-1 and have finished seventh, sixth
+    and fifth this month. A form guide is the standard way every other sport
+    puts those two facts side by side, and this data supports a real one --
+    a finishing POSITION per race, not a mark that has to be compared to
+    something to mean anything."""
+    placed = rows.dropna(subset=["place", "date"]).sort_values("date")
+    if placed.empty:
+        return []
+    tail = placed.tail(limit)
+    return [{
+        "place":   int(p),
+        "date":    d.strftime("%d %b %Y"),
+        "meeting": str(m) if m is not None else None,
+    } for p, d, m in zip(tail["place"], tail["date"], tail["Meeting"])]
+
+
 def field_comparison(disc_key, names, is_field, year=MEETS_YEAR):
     """One analyst row per contender, on the axes that separate them.
 
@@ -519,7 +542,8 @@ def field_comparison(disc_key, names, is_field, year=MEETS_YEAR):
         if rows.empty:
             out.append({"name": name, "races": 0, "top3Average": None,
                         "consistency": None, "winRate": None, "podiumRate": None,
-                        "avgFinish": None, "bestMonth": None, "seasonRaces": 0})
+                        "avgFinish": None, "bestMonth": None, "seasonRaces": 0,
+                        "recentForm": []})
             continue
         record = competition_record(rows)
         season = [f for f in form_by_season(rows, is_field) if f["year"] == year]
@@ -535,6 +559,7 @@ def field_comparison(disc_key, names, is_field, year=MEETS_YEAR):
             "podiumRate":  record["podiumRate"] if record else None,
             "avgFinish":   record["avgFinish"] if record else None,
             "bestMonth":   shape["bestMonth"] if shape else None,
+            "recentForm":  recent_form(rows),
         })
     return out
 
