@@ -847,6 +847,26 @@ def projected_field_names(disc_key, limit=6):
     return [a["name"] for a in sorted(disc["athletes"], key=lambda a: a["rank"])[:limit]]
 
 
+def dl_meetings_count(disc_key, athlete_name):
+    """How many Diamond League meetings this athlete contested this season.
+
+    Read from the same file refresh_current_season_stats derives the scored
+    athletes' meets_count from, so an unscored athlete's tile means exactly
+    what a scored one's does. Returns 0, not None, when the file exists and
+    simply has no rows for them -- for an athlete outside the field that
+    zero is the answer, and frequently the reason."""
+    path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}_meetings.csv")
+    if not os.path.exists(path):
+        return None
+    try:
+        df = pd.read_csv(path)
+    except Exception:
+        return None
+    if "Competitor" not in df.columns:
+        return None
+    return int((df["Competitor"].str.lower() == str(athlete_name).lower()).sum())
+
+
 def athlete_field_status(disc_key, athlete_name):
     """Why is (or isn't) this athlete in the projected field?
 
@@ -930,14 +950,37 @@ def athlete_field_status(disc_key, athlete_name):
                                 else (None if pd.isna(prob) else int(float(prob) * 100)),
         })
     else:
-        # Not scored by run.py at all. Age and nationality still come from
-        # the toplist scrape rather than being left blank.
+        # Not scored by run.py, so there is no predictions_latest.csv row to
+        # read career best, PB gap or meeting count off. They were left blank
+        # -- but only the SCORE needs the model. The underlying facts are all
+        # on disk, and the page was showing dashes over data it already had.
+        #
+        # Reported by the user for Dina Asher-Smith, who is not in the
+        # predictions file at all yet has 41 races on record, 8 seasons of
+        # history and a 10.83 career best in the 100m.
+        #
+        # Career best is the best mark across every season on record, in the
+        # direction the discipline actually means -- the same track/field
+        # flip that inverted weighted_season_best when it was written once
+        # (HANDOFF 0i2). PB gap matches feature_builder's definition exactly,
+        # `abs(season_best - career_best)`, so the number means the same
+        # thing here as on a scored athlete's page.
+        career = load_career_progression(disc_key, athlete_name)
+        career_best_val = None
+        if career:
+            values = [s["best"] for s in career]
+            career_best_val = max(values) if disc_key in FIELD_EVENTS else min(values)
+        season_val = safe_parse_mark(out.get("seasonBest"))
+
         out.update({
             "nat":              bio.get("nat"),
             "age":              bio.get("age"),
-            "careerBest":       None,
-            "pbGap":            None,
-            "meetsCount":       None,
+            "careerBest":       (format_mark(career_best_val, disc_key)
+                                 if career_best_val is not None else None),
+            "pbGap":            (round(abs(season_val - career_best_val), 3)
+                                 if season_val is not None and career_best_val is not None
+                                 else None),
+            "meetsCount":       dl_meetings_count(disc_key, athlete_name),
             "daysSinceLast":    None,
             "hypotheticalProb": None,
         })

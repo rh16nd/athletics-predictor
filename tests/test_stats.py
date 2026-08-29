@@ -140,3 +140,54 @@ def test_season_scores_carry_a_score_for_every_row():
         pytest.skip("no season toplists on disk")
     assert df["Results Score"].notna().all()
     assert pd.api.types.is_bool_dtype(df["indoor"])
+
+
+# ---- stats for athletes run.py never scored ----
+
+def test_unscored_athletes_get_a_career_best_and_pb_gap():
+    """Reported for Dina Asher-Smith, who is not in predictions_latest.csv
+    at all -- yet has 41 races on record, 8 seasons of history and a 10.83
+    career best. Only the SCORE needs the model; career best, PB gap and
+    meeting count are facts already on disk, and the page was showing
+    dashes over data it had."""
+    import pandas as pd
+    scored = set(pd.read_csv(
+        os.path.join(os.path.dirname(__file__), "..", "outputs", "predictions_latest.csv")
+    )["athlete_name"].dropna())
+    if "Dina ASHER-SMITH" in scored:
+        pytest.skip("she is scored in this snapshot; the branch under test is the unscored one")
+
+    out = api.athlete_field_status("women_100m", "Dina ASHER-SMITH")
+    assert out["careerBest"] is not None
+    assert out["pbGap"] is not None
+    assert out["meetsCount"] is not None
+
+
+def test_pb_gap_matches_feature_builders_definition():
+    """`abs(season_best - career_best)`. If this drifts, the same label means
+    two different things on a scored and an unscored athlete's page."""
+    out = api.athlete_field_status("women_100m", "Dina ASHER-SMITH")
+    if out["pbGap"] is None:
+        pytest.skip("no data on disk for this athlete")
+    season = api.safe_parse_mark(out["seasonBest"])
+    career = api.safe_parse_mark(out["careerBest"])
+    assert out["pbGap"] == pytest.approx(abs(season - career), abs=0.002)
+
+
+def test_career_best_is_the_best_mark_not_the_latest():
+    """Track means lowest. Asher-Smith's 2026 best is 11.10 and her career
+    best is 10.83 -- taking the most recent season would report the wrong
+    number, and taking max() would report the worst one."""
+    out = api.athlete_field_status("women_100m", "Dina ASHER-SMITH")
+    if out["careerBest"] is None:
+        pytest.skip("no data on disk for this athlete")
+    career = api.safe_parse_mark(out["careerBest"])
+    seasons = api.load_career_progression("women_100m", "Dina ASHER-SMITH")
+    assert career == pytest.approx(min(s["best"] for s in seasons), abs=0.002)
+
+
+def test_dl_meetings_count_is_zero_not_none_when_the_file_has_no_rows():
+    """For an athlete outside the field that zero is the answer, and often
+    the reason. None would render as "unknown", which is a different claim."""
+    assert api.dl_meetings_count("women_100m", "Nobody At All") == 0
+    assert api.dl_meetings_count("not_a_discipline", "Anyone") is None

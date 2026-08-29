@@ -486,14 +486,24 @@ def test_a_scored_near_miss_athletes_probability_is_marked_hypothetical(monkeypa
 
 def test_an_unscored_athlete_still_gets_name_and_age_from_the_toplist(monkeypatch):
     """Anyone below the near-miss group has no prediction row at all
-    (Ingebrigtsen, 14th in the 1500m standings, is the live case). Two facts
-    the scrape already collected shouldn't be blank because of that."""
+    (Ingebrigtsen, 14th in the 1500m standings, is the live case). Facts the
+    scrape already collected shouldn't be blank because of that.
+
+    This assertion used to read `careerBest is None`, which encoded the old
+    behaviour: no prediction row meant no career best. That was reported as
+    a bug against Dina Asher-Smith, who is not in predictions_latest.csv at
+    all yet has 41 races and eight seasons on record. Only the SCORE needs
+    the model, so `hypotheticalProb` stays None while career best is now
+    derived from the race log. Career best is asserted to be either a real
+    mark or None (the fixture here has no race log to read), never to be
+    absent by construction."""
     _status_env(monkeypatch, standings={"men_1500m": ["Yared NUGUSE"]},
                 bio={"nat": "NOR", "age": 25.9})
     out = api.athlete_field_status("men_1500m", "Jakob INGEBRIGTSEN")
     assert out["nat"] == "NOR"
     assert out["age"] == 25.9
-    assert out["careerBest"] is None
+    assert out["careerBest"] is None or isinstance(out["careerBest"], str)
+    # The one thing that genuinely cannot exist without a prediction row.
     assert out["hypotheticalProb"] is None
 
 
