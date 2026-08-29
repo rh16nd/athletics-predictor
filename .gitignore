@@ -12,3 +12,8 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 data/standings_detail.json
+
+# Scraped race log from src/worldwide_scraper.py -- regenerable, and
+# large. Deliberately kept OUT of data/raw/ so nothing in the modelling
+# path can pick it up; see that script's docstring.
+data/worldwide/

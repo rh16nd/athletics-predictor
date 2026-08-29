@@ -1671,6 +1671,170 @@ def points_cut_reason(label, dl):
     return reason + " Level on points with the cut, behind on World Athletics' tie-break."
 
 
+# ---------------------------------------------------------------------------
+# Cross-discipline performance stats.
+#
+# Built on `Results Score`, World Athletics' own scoring-table points, which
+# is present on 100% of toplist rows and was read by nothing until now. It is
+# the only number in this dataset that compares a shot putter to a 1500m
+# runner, so it is what makes "best performance of the season, any event"
+# answerable at all. Measured 2026: it ranges 880-1353 with per-discipline
+# medians spanning 939 (women's SP) to 1207 (men's 1500m), so it is broadly
+# comparable but NOT perfectly flat -- the API reports each discipline's own
+# median alongside so a reader can see the baseline rather than assume one.
+# ---------------------------------------------------------------------------
+
+# World Athletics writes indoor marks into its outdoor toplists, tagged only
+# by a "(i)" suffix on the venue (or an obviously indoor venue name). This is
+# not cosmetic: 13.0% of 2026 toplist rows are indoor, and in the vertical
+# jumps it is nearly half (men's HJ 47%, women's HJ 44%, women's PV 41%,
+# men's PV 39%). Duplantis's 2026 season best, the highest-scoring
+# performance in the whole dataset, was set indoors in Uppsala. Those marks
+# are legitimate performances and are NOT filtered out -- for a vault or a
+# shot put, indoors is arguably the truer measure of ability. They are
+# LABELLED instead, so the site never presents one as an outdoor mark
+# without saying so.
+INDOOR_VENUE = re.compile(r"\(i\)\s*$|\bindoor\b", re.I)
+
+_season_scores_cache = {}
+
+
+def is_indoor_venue(venue):
+    return bool(INDOOR_VENUE.search(str(venue or "")))
+
+
+def load_season_scores(year=None):
+    """Every discipline's toplist for a season in one frame, with WA's
+    Results Score and an `indoor` flag. Cached per-year; the files only
+    change on a run.py refresh."""
+    year = year or MEETS_YEAR
+    cached = _season_scores_cache.get(year)
+    if cached is not None:
+        return cached
+
+    frames = []
+    for disc_key in DISC_LABELS:
+        path = os.path.join(RAW_DIR, f"{disc_key}_{year}.csv")
+        if not os.path.exists(path):
+            continue
+        try:
+            df = pd.read_csv(path)
+        except Exception:
+            continue
+        if "Results Score" not in df.columns:
+            continue
+        df = df[["Competitor", "Mark", "Results Score", "Venue", "Date"]].copy()
+        df["discKey"] = disc_key
+        frames.append(df)
+
+    if not frames:
+        out = pd.DataFrame(columns=["Competitor", "Mark", "Results Score",
+                                    "Venue", "Date", "discKey", "indoor"])
+    else:
+        out = pd.concat(frames, ignore_index=True)
+        out = out.dropna(subset=["Results Score", "Competitor"])
+        out["indoor"] = out["Venue"].map(is_indoor_venue)
+    _season_scores_cache[year] = out
+    return out
+
+
+def _performance_row(row):
+    disc_key = row["discKey"]
+    value = parse_mark(row["Mark"])
+    return {
+        "athlete":  row["Competitor"],
+        "discKey":  disc_key,
+        "disc":     DISC_LABELS.get(disc_key, disc_key),
+        "isField":  disc_key in FIELD_EVENTS,
+        # Fall back to WA's raw string rather than dropping the row: a mark
+        # that won't parse is still a real performance with a real score.
+        "mark":     format_mark(value, disc_key) if value is not None else str(row["Mark"]),
+        "score":    int(row["Results Score"]),
+        "venue":    row["Venue"],
+        "date":     row["Date"],
+        "indoor":   bool(row["indoor"]),
+    }
+
+
+def build_stats(top_n=40):
+    """The season ranked by WA score rather than by event.
+
+    Deliberately reports each discipline's own median next to the headline
+    list: a 1300 in the men's discus and a 1300 in the women's shot put are
+    the same number against very different baselines, and a leaderboard that
+    hides that is a ranking pretending to be a fact."""
+    df = load_season_scores()
+    if df.empty:
+        return {"topPerformances": [], "disciplineDepth": [], "scoreScale": None, "indoor": None}
+
+    scores = df["Results Score"]
+    depth = []
+    for disc_key, group in df.groupby("discKey"):
+        depth.append({
+            "discKey":      disc_key,
+            "disc":         DISC_LABELS.get(disc_key, disc_key),
+            "isField":      disc_key in FIELD_EVENTS,
+            "athletes":     int(len(group)),
+            "medianScore":  int(group["Results Score"].median()),
+            "topScore":     int(group["Results Score"].max()),
+            # How much of this discipline's toplist was set indoors. Worth
+            # showing per discipline rather than as one site-wide number --
+            # it is 0% for most track events and ~47% for the high jump.
+            "indoorShare":  round(float(100 * group["indoor"].mean()), 1),
+        })
+    depth.sort(key=lambda d: -d["medianScore"])
+
+    top = df.nlargest(top_n, "Results Score")
+    return {
+        "topPerformances": [_performance_row(r) for _, r in top.iterrows()],
+        "disciplineDepth": depth,
+        "scoreScale": {
+            "min":    int(scores.min()),
+            "max":    int(scores.max()),
+            "median": int(scores.median()),
+            "rows":   int(len(df)),
+        },
+        "indoor": {
+            "rows":  int(df["indoor"].sum()),
+            "total": int(len(df)),
+            "share": round(float(100 * df["indoor"].mean()), 1),
+        },
+        "season": MEETS_YEAR,
+    }
+
+
+def athlete_score_context(disc_key, athlete_name):
+    """One athlete's WA score, and where it sits against everyone the site
+    tracks. `percentile` is across ALL disciplines -- that is the whole
+    point of using WA's score -- while `discPercentile` keeps the
+    within-event reading that a discipline table already implies."""
+    df = load_season_scores()
+    if df.empty:
+        return None
+    mine = df[(df["discKey"] == disc_key) & (df["Competitor"] == athlete_name)]
+    if mine.empty:
+        return None
+    row = mine.nlargest(1, "Results Score").iloc[0]
+    score = float(row["Results Score"])
+    same = df[df["discKey"] == disc_key]["Results Score"]
+    return {
+        "score":          int(score),
+        "percentile":     round(float(100 * (df["Results Score"] <= score).mean()), 1),
+        "discPercentile": round(float(100 * (same <= score).mean()), 1),
+        "discMedian":     int(same.median()),
+        "indoor":         bool(row["indoor"]),
+        "venue":          row["Venue"],
+    }
+
+
+@app.route("/api/stats")
+def stats():
+    payload = build_stats()
+    if not payload["topPerformances"]:
+        return jsonify({"error": f"no {MEETS_YEAR} toplists found — run python run.py first"}), 404
+    return jsonify(payload)
+
+
 @app.route("/api/qualification")
 def qualification():
     """Standings points and the gap to the qualification cut. Returns 404
