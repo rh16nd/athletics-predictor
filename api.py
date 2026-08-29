@@ -948,6 +948,44 @@ def athlete_field_status(disc_key, athlete_name):
     field_names = projected_field_names(disc_key)
     out["h2h"] = load_h2h_vs_rivals(disc_key, athlete_name, field_names)
 
+    # A near-miss athlete very often has ZERO Diamond League meetings -- that
+    # is frequently the whole reason they are not qualified -- so the
+    # DL-derived meets_count and days_since_last run.py writes come back 0
+    # and blank, and the season-stats panel read as broken rather than as
+    # "raced, but not here". Measured across the 127 non-qualified athletes:
+    # 85 were already complete, 23 had real races the race log knew about
+    # and the panel was not using, and 19 genuinely have no individual race
+    # result on record anywhere.
+    #
+    # `daysSinceLast` is filled from the race log, which spans every
+    # competition rather than the DL circuit alone. `racesThisSeason` is
+    # reported SEPARATELY from meetsCount rather than overwriting it,
+    # because the two count different things and the tiles label them that
+    # way -- collapsing them would recreate exactly the scope clash that had
+    # Lyles reading 2 in one place and 4 in another.
+    log_rows = athlete_analytics.athlete_rows(
+        athlete_analytics.load_race_log(disc_key), athlete_name,
+    )
+    season_rows = log_rows[log_rows["year"] == MEETS_YEAR] if not log_rows.empty else log_rows
+    out["racesThisSeason"] = int(len(season_rows))
+    out["racesOnRecord"] = int(len(log_rows))
+
+    if not season_rows.empty and season_rows["date"].notna().any():
+        last_race = season_rows["date"].max()
+        days = int((pd.Timestamp(date.today()) - last_race).days)
+        # The race log WINS here, it does not merely fill a blank. The tile
+        # says "Last competed" with no qualifier, and run.py's figure counts
+        # only Diamond League meetings: Noah Lyles read "62d ago" (his last
+        # DL race, Paris on 28 Jun) while he had actually raced 36 days
+        # earlier than that reading, on 24 Jul, at a non-DL meeting. An
+        # unqualified claim has to be the true one.
+        existing = out.get("daysSinceLast")
+        if existing is None or days < existing:
+            out["daysSinceLast"] = days
+        out["lastRaceDate"] = last_race.strftime("%d %b %Y")
+    else:
+        out["lastRaceDate"] = None
+
     # The same analyst material an in-field profile gets. None of it depends
     # on being selected for the Final: a win rate, a season shape and a
     # head-to-head are facts about races already run. Withholding them here
@@ -1298,6 +1336,31 @@ def build_athlete_profile(disc_key, athlete_name):
     history, history_year = load_athlete_history(disc_key, athlete_name)
     photo_url = load_athlete_photo(wa_url)
 
+    # "Last competed" carries no qualifier, so it has to mean the last time
+    # they competed -- anywhere. run.py's days_since_last is derived from the
+    # Diamond League meetings file alone, and for 30 of the 237 in-field
+    # athletes that overstated the gap: Patrizia Van Der Weken read "71d ago"
+    # having actually raced 19 days earlier at a non-DL meeting. The race log
+    # spans every competition, so it corrects the claim wherever it knows of
+    # a more recent race.
+    #
+    # DISPLAY ONLY. predictions_latest.csv's column is untouched and
+    # days_since_last remains a trained model feature computed the way it
+    # always was -- redefining a feature is an accuracy change with its own
+    # backtest, not a copy fix.
+    days_since_last = clean(row.get("days_since_last"))
+    last_race_date = None
+    log_rows = athlete_analytics.athlete_rows(
+        athlete_analytics.load_race_log(disc_key), athlete_name,
+    )
+    season_rows = log_rows[log_rows["year"] == MEETS_YEAR] if not log_rows.empty else log_rows
+    if not season_rows.empty and season_rows["date"].notna().any():
+        last_race = season_rows["date"].max()
+        days = int((pd.Timestamp(date.today()) - last_race).days)
+        if days_since_last is None or days < days_since_last:
+            days_since_last = days
+        last_race_date = last_race.strftime("%d %b %Y")
+
     return {
         "name":            row["athlete_name"],
         "discKey":         disc_key,
@@ -1309,7 +1372,9 @@ def build_athlete_profile(disc_key, athlete_name):
         "pbGap":           clean(row.get("pb_gap")),
         "age":             clean(row.get("age")),
         "meetsCount":      clean(row.get("meets_count")),
-        "daysSinceLast":   clean(row.get("days_since_last")),
+        "daysSinceLast":   days_since_last,
+        "lastRaceDate":    last_race_date,
+        "racesThisSeason": int(len(season_rows)),
         "prob":            prob,
         "waUrl":           wa_url,
         "photoUrl":        photo_url,
