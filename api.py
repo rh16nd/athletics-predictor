@@ -1754,8 +1754,13 @@ def build_storylines(disc_key, disc_label, athletes):
                 "type":     "photo_finish",
                 "title":    "Photo finish",
                 "stat":     f"{gap}pt gap",
+                # "race" is wrong for the 12 field disciplines -- a shot
+                # putter does not race. Same fix as the frontend's
+                # startNoun(), applied here because this string is
+                # server-generated.
                 "text":     f"{by_prob[0]['prob']}% to {by_prob[1]['prob']}% — the closest "
-                            f"projected race in {disc_label}.",
+                            f"projected {'contest' if disc_key in FIELD_EVENTS else 'race'} "
+                            f"in {disc_label}.",
                 "athletes": [by_prob[0]["name"], by_prob[1]["name"]],
             })
 
