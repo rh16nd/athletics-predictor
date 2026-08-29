@@ -1304,6 +1304,14 @@ def build_athlete_profile(disc_key, athlete_name):
         "history":         history,
         "historyYear":     history_year,
         "h2h":             load_h2h_vs_rivals(disc_key, athlete_name, rival_names),
+        # The model's rival shortlist by name. The profile used to render a
+        # second head-to-head panel scoped to these; that panel was removed
+        # once both drew the same derived numbers and it became a duplicate.
+        # The names still matter -- the merged panel marks which opponents
+        # an athlete will actually meet at the Final -- so they travel on
+        # their own rather than being inferred from `h2h`, which drops any
+        # rival they have met fewer than twice.
+        "rivalNames":      rival_names,
         # The two additions the "deep stats" pass brought in. `history` is
         # this season race by race; `careerSeasons` is the other axis, which
         # the site had no view of at all. `scoreContext` answers "is that

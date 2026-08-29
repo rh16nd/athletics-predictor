@@ -17,3 +17,8 @@ data/standings_detail.json
 # large. Deliberately kept OUT of data/raw/ so nothing in the modelling
 # path can pick it up; see that script's docstring.
 data/worldwide/
+
+# Per-athlete career data from src/athlete_profile_scraper.py.
+# Regenerable, and quarantined from data/raw/ for the same reason
+# data/worldwide/ is -- nothing in the modelling path may glob it up.
+data/athlete_profiles/
