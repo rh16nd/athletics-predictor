@@ -19,6 +19,7 @@ from datetime import date, datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse the same graphql()/HEADERS every other scraper does
 from feature_builder import get_qual_limit  # noqa: E402 -- one definition of the field size, shared with run.py
+import athlete_analytics  # noqa: E402 -- race-log statistics; reads data/worldwide, never feeds the model
 
 app = Flask(__name__)
 CORS(app)  # allows React dev server to call this API
@@ -422,14 +423,40 @@ def load_athlete_history(disc_key, athlete_name):
 
 
 def load_h2h_vs_rivals(disc_key, athlete_name, rival_names):
-    """Real head-to-head record vs. this discipline's other top predicted
-    contenders -- data/h2h/h2h_rates.csv already has 156k+ real matchup rows
-    scraped from World Athletics, but until now it was only ever consumed as
-    one blended win-rate number fed into the model (see train_model.py's
-    add_h2h_features) -- never shown to a user. Both directions of a pair
-    are stored as separate rows (verified live), so a direct athlete_a match
-    is enough, no need to also check the reverse."""
-    if not os.path.exists(H2H_PATH) or not rival_names:
+    """Head-to-head record vs. this discipline's other top predicted
+    contenders.
+
+    Derived from the race log when there is one: two athletes met if they
+    appear in the same meeting on the same date, and the lower finishing
+    position won. That is exact, and it is a much deeper sample than the
+    alternative -- Joe Kovacs vs Ryan Crouser reads 5-23 over 28 shared
+    races from the log against 1-2 over 3 from h2h_rates.csv.
+
+    **This had to change because the two disagreed on the same page.** Once
+    the analytics block started showing derived records, the old numbers sat
+    directly beneath them contradicting every pair. h2h_rates.csv is not
+    wrong so much as thin: HANDOFF 0o put its coverage at 63.1% after the
+    fabricated sweeps in it were corrected.
+
+    It is still the fallback, and it still feeds the MODEL unchanged via
+    train_model.add_h2h_features -- swapping the model's h2h source is an
+    accuracy change with its own backtest, not a display fix."""
+    if not rival_names:
+        return []
+
+    derived = athlete_analytics.head_to_head(
+        athlete_analytics.load_race_log(disc_key), athlete_name,
+        opponents=rival_names, min_meetings=2,
+    )
+    if derived:
+        return [{
+            "opponent":  d["name"],
+            "wins":      d["wins"],
+            "losses":    d["losses"],
+            "meetings":  d["meetings"],
+        } for d in derived]
+
+    if not os.path.exists(H2H_PATH):
         return []
     h2h = pd.read_csv(H2H_PATH)
     sub = h2h[
@@ -1283,6 +1310,13 @@ def build_athlete_profile(disc_key, athlete_name):
         # mark actually good" in terms that hold across events.
         "careerSeasons":   load_career_progression(disc_key, athlete_name),
         "scoreContext":    athlete_score_context(disc_key, athlete_name),
+        # Race-log statistics: win/podium record, form, season shape, and a
+        # head-to-head derived from actually sharing a race rather than
+        # from the separate h2h scrape. None until worldwide_scraper.py has
+        # run -- the profile falls back to what it always showed.
+        "analytics":       athlete_analytics.build_analytics(
+            disc_key, athlete_name, disc_key in FIELD_EVENTS,
+        ),
     }
 
 
