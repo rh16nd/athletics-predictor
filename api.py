@@ -945,8 +945,24 @@ def athlete_field_status(disc_key, athlete_name):
     # Head-to-head against the athletes who DID qualify. Same function and
     # same >=2-meetings threshold the in-field profile uses -- only the
     # opponent list differs, and here it is the whole point of the panel.
-    out["h2h"] = load_h2h_vs_rivals(disc_key, athlete_name,
-                                    projected_field_names(disc_key))
+    field_names = projected_field_names(disc_key)
+    out["h2h"] = load_h2h_vs_rivals(disc_key, athlete_name, field_names)
+
+    # The same analyst material an in-field profile gets. None of it depends
+    # on being selected for the Final: a win rate, a season shape and a
+    # head-to-head are facts about races already run. Withholding them here
+    # made the near-miss page look like a stub of the real one, when for a
+    # reader asking "should this athlete have qualified?" the record is
+    # exactly the evidence they came for -- Noah Lyles is the case this
+    # page exists for, and he is a world champion sitting 9th on points.
+    out["careerSeasons"] = load_career_progression(disc_key, athlete_name)
+    out["scoreContext"]  = athlete_score_context(disc_key, athlete_name)
+    out["analytics"]     = athlete_analytics.build_analytics(
+        disc_key, athlete_name, disc_key in FIELD_EVENTS,
+    )
+    # Here the "in field" marker means the opponents who DID qualify, which
+    # is the more pointed reading of the same badge.
+    out["rivalNames"] = field_names
 
     standings = load_standings().get(disc_key, [])
     in_standings = any(n.lower() == athlete_name.lower() for n in standings)
@@ -1322,6 +1338,14 @@ def build_athlete_profile(disc_key, athlete_name):
         # head-to-head derived from actually sharing a race rather than
         # from the separate h2h scrape. None until worldwide_scraper.py has
         # run -- the profile falls back to what it always showed.
+        #
+        # NOTE the scope difference this creates on the page: `meetsCount`
+        # above counts DIAMOND LEAGUE meetings (refresh_current_season_stats
+        # derives it from {disc}_2026_meetings.csv) while these race totals
+        # count every scraped final, so Lyles reads 2 there and 4 here. Both
+        # are right; the UI labels each one's scope rather than picking a
+        # winner, because meets_count is also a trained model feature and
+        # changing what it means is an accuracy decision, not a display fix.
         "analytics":       athlete_analytics.build_analytics(
             disc_key, athlete_name, disc_key in FIELD_EVENTS,
         ),
