@@ -70,38 +70,75 @@ def injury_evidence(entry):
 # are recomputed against today's date on every request (see compute_meet_statuses),
 # so this never needs manual updating as the season progresses. Only the last entry's
 # "final" label is authoritative (it marks the championship meet, not a point in time).
+# Reconciled against World Athletics' own 2026 Diamond League calendar on
+# 2026-08-29 (getMinisiteCalendarEvents, competitionGroupId 627 -- the same
+# query season_results_scraper.py uses), because a hand-typed version of it
+# had drifted: it opened the season with "08 May Doha", a meeting that does
+# not exist. Doha actually ran 19 Jun, the opener was 16 May in
+# Shaoxing/Keqiao (listed as "Shanghai"), and Paris/Eugene were each a day
+# or two out. Those five rows were rendering on the Schedule page as fact.
+# `dateEnd` is set for the three genuinely two-day meetings rather than
+# picking one of their days arbitrarily -- the old list showed day 2 for
+# Lausanne/Silesia/Zürich and day 1 for everything else.
+# `tests/test_dl_calendar.py` pins this list to a committed snapshot of WA's
+# calendar (tests/fixtures/wa_dl_calendar_2026.json, regenerate with
+# `python src/dl_calendar.py --snapshot`) so it cannot drift again silently.
 MEETS = [
-    {"n": 1,  "date": "08 May", "city": "Doha"},
-    {"n": 2,  "date": "16 May", "city": "Shanghai"},
-    {"n": 3,  "date": "23 May", "city": "Xiamen"},
-    {"n": 4,  "date": "31 May", "city": "Rabat"},
-    {"n": 5,  "date": "04 Jun", "city": "Rome"},
-    {"n": 6,  "date": "07 Jun", "city": "Stockholm"},
-    {"n": 7,  "date": "10 Jun", "city": "Oslo"},
-    {"n": 8,  "date": "26 Jun", "city": "Paris"},
-    {"n": 9,  "date": "04 Jul", "city": "Eugene"},
+    {"n": 1,  "date": "16 May", "city": "Shaoxing/Keqiao"},
+    {"n": 2,  "date": "23 May", "city": "Xiamen"},
+    {"n": 3,  "date": "31 May", "city": "Rabat"},
+    {"n": 4,  "date": "04 Jun", "city": "Rome"},
+    {"n": 5,  "date": "07 Jun", "city": "Stockholm"},
+    {"n": 6,  "date": "10 Jun", "city": "Oslo"},
+    {"n": 7,  "date": "19 Jun", "city": "Doha"},
+    {"n": 8,  "date": "28 Jun", "city": "Paris"},
+    {"n": 9,  "date": "03 Jul", "dateEnd": "04 Jul", "city": "Eugene"},
     {"n": 10, "date": "10 Jul", "city": "Monaco"},
     {"n": 11, "date": "18 Jul", "city": "London"},
-    {"n": 12, "date": "21 Aug", "city": "Lausanne"},
-    {"n": 13, "date": "23 Aug", "city": "Silesia"},
-    {"n": 14, "date": "27 Aug", "city": "Zürich"},
-    {"n": 15, "date": "04 Sep", "city": "Brussels — Final"},
+    {"n": 12, "date": "20 Aug", "dateEnd": "21 Aug", "city": "Lausanne"},
+    {"n": 13, "date": "22 Aug", "dateEnd": "23 Aug", "city": "Silesia"},
+    {"n": 14, "date": "26 Aug", "dateEnd": "27 Aug", "city": "Zürich"},
+    # `final` is explicit rather than "whichever entry is last". The Diamond
+    # League Final is not always one meeting: in 2018 and 2019 it was SPLIT
+    # across Zürich and Brussels, two separate meetings both carrying
+    # World Athletics' "DF" ranking category (dl_final_results_scraper.py
+    # already aggregates them, which is why its find_final_competition_ids
+    # returns a list). Under the old last-index rule, the first leg of a
+    # split Final would have been scored as a qualifying meeting -- so
+    # meetings_remaining() would have claimed points were still winnable at
+    # a Final. 2026 is a single Final (verified against WA: Zürich 26-27 Aug
+    # is "GW", every one of its event groups included; only Brussels is
+    # "DF"), but the flag costs nothing and removes the trap.
+    {"n": 15, "date": "04 Sep", "city": "Brussels — Final", "final": True},
 ]
+
+
+def _meet_date(value):
+    """A "%d %b" string in MEETS_YEAR, or None if it isn't one."""
+    try:
+        return datetime.strptime(f"{value} {MEETS_YEAR}", "%d %b %Y").date()
+    except (ValueError, TypeError):
+        return None
 
 
 def compute_meet_statuses(meets, today=None):
     today = today or date.today()
     result = []
     next_assigned = False
+    # Fall back to "the last entry is the Final" only when nothing declares
+    # itself -- that is what the shape used to mean, and callers (including
+    # tests) still pass bare lists.
+    flagged = any(m.get("final") for m in meets)
     last_index = len(meets) - 1
 
     for i, meet in enumerate(meets):
-        if i == last_index:
+        if meet.get("final") if flagged else i == last_index:
             result.append({**meet, "status": "final"})
             continue
-        try:
-            meet_date = datetime.strptime(f"{meet['date']} {MEETS_YEAR}", "%d %b %Y").date()
-        except ValueError:
+        # A two-day meeting is not over on its first morning, so "done" is
+        # judged on the last day it is actually contested.
+        meet_date = _meet_date(meet.get("dateEnd")) or _meet_date(meet.get("date"))
+        if meet_date is None:
             result.append({**meet, "status": "upcoming"})
             continue
 

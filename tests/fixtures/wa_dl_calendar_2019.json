@@ -1,0 +1,164 @@
+{
+  "season": 2019,
+  "meetings": [
+    {
+      "id": 7130086,
+      "name": "IAAF Diamond League",
+      "venue": "Khalifa International Stadium, Doha (QAT)",
+      "city": "Doha",
+      "startDate": "2019-05-03",
+      "rankingCategory": "GW",
+      "days": [
+        "03 MAY 2019"
+      ]
+    },
+    {
+      "id": 7130737,
+      "name": "IAAF Diamond League",
+      "venue": "Shanghai Stadium, Shanghai (CHN)",
+      "city": "Shanghai",
+      "startDate": "2019-05-18",
+      "rankingCategory": "GW",
+      "days": [
+        "18 MAY 2019"
+      ]
+    },
+    {
+      "id": 7131206,
+      "name": "BAUHAUS-galan",
+      "venue": "Olympiastadion, Stockholm (SWE)",
+      "city": "Stockholm",
+      "startDate": "2019-05-30",
+      "rankingCategory": "GW",
+      "days": [
+        "30 MAY 2019"
+      ]
+    },
+    {
+      "id": 7131688,
+      "name": "Golden Gala - Pietro Mennea",
+      "venue": "Stadio Olimpico, Roma (ITA)",
+      "city": "Roma",
+      "startDate": "2019-06-06",
+      "rankingCategory": "GW",
+      "days": [
+        "06 JUN 2019"
+      ]
+    },
+    {
+      "id": 7131692,
+      "name": "Oslo Bislett Games",
+      "venue": "Bislett Stadion, Oslo (NOR)",
+      "city": "Oslo",
+      "startDate": "2019-06-13",
+      "rankingCategory": "GW",
+      "days": [
+        "13 JUN 2019"
+      ]
+    },
+    {
+      "id": 7131693,
+      "name": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "venue": "Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",
+      "city": "Rabat",
+      "startDate": "2019-06-16",
+      "rankingCategory": "GW",
+      "days": [
+        "16 JUN 2019"
+      ]
+    },
+    {
+      "id": 7131696,
+      "name": "Prefontaine Classic",
+      "venue": "Cobb Track and Angell Field, Palo Alto, CA (USA)",
+      "city": "Palo Alto",
+      "startDate": "2019-06-30",
+      "rankingCategory": "GW",
+      "days": [
+        "30 JUN 2019"
+      ]
+    },
+    {
+      "id": 7131697,
+      "name": "Athletissima Lausanne",
+      "venue": "Stade Olympique de la Pontaise, Lausanne (SUI)",
+      "city": "Lausanne",
+      "startDate": "2019-07-04",
+      "rankingCategory": "GW",
+      "days": [
+        "04 JUL 2019",
+        "05 JUL 2019"
+      ]
+    },
+    {
+      "id": 7133277,
+      "name": "Herculis",
+      "venue": "Stade Louis II, Monaco (MON)",
+      "city": "Monaco",
+      "startDate": "2019-07-11",
+      "rankingCategory": "GW",
+      "days": [
+        "11 JUL 2019",
+        "12 JUL 2019"
+      ]
+    },
+    {
+      "id": 7133569,
+      "name": "Müller Anniversary Games",
+      "venue": "Olympic Stadium, London (GBR)",
+      "city": "London",
+      "startDate": "2019-07-20",
+      "rankingCategory": "GW",
+      "days": [
+        "20 JUL 2019",
+        "21 JUL 2019"
+      ]
+    },
+    {
+      "id": 7134519,
+      "name": "Müller Grand Prix",
+      "venue": "Alexander Stadium, Birmingham (GBR)",
+      "city": "Birmingham",
+      "startDate": "2019-08-18",
+      "rankingCategory": "GW",
+      "days": [
+        "18 AUG 2019"
+      ]
+    },
+    {
+      "id": 7134796,
+      "name": "Meeting de Paris",
+      "venue": "Stade Charléty, Paris (FRA)",
+      "city": "Paris",
+      "startDate": "2019-08-24",
+      "rankingCategory": "GW",
+      "days": [
+        "24 AUG 2019"
+      ]
+    },
+    {
+      "id": 7135079,
+      "name": "Weltklasse Zürich",
+      "venue": "Letzigrund, Zürich (SUI)",
+      "city": "Zürich",
+      "startDate": "2019-08-28",
+      "rankingCategory": "DF",
+      "days": [
+        "28 AUG 2019",
+        "29 AUG 2019"
+      ]
+    },
+    {
+      "id": 7135126,
+      "name": "AG Memorial Van Damme",
+      "venue": "Boudewijnstadion, Bruxelles (BEL)",
+      "city": "Bruxelles",
+      "startDate": "2019-09-05",
+      "rankingCategory": "DF",
+      "days": [
+        "05 SEP 2019",
+        "06 SEP 2019"
+      ]
+    }
+  ]
+}

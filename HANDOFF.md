@@ -51,6 +51,13 @@ python run.py
 # Rebuild real DL Final ground-truth labels (~1 min, hits a public WA API)
 python src/dl_final_results_scraper.py
 
+# Check api.py's hand-typed MEETS list against World Athletics' real DL
+# calendar -- dates, meeting count, two-day spans, and which meeting(s) WA
+# tags "DF" (the Final). Run this whenever the schedule is touched; it found
+# five wrong rows that were live on the Schedule page (see Next Steps 11).
+python src/dl_calendar.py
+python src/dl_calendar.py --year 2019 --snapshot   # refresh a test fixture
+
 # Enrich training data with real per-meeting season history (~few min)
 python src/season_results_scraper.py
 
@@ -344,6 +351,8 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 > | 4 | **Only the 2019 World Championships are in the pipeline** (355 rows) — 2022/2023/2025 are missing despite `major_meets_scraper.py` covering the World Athletics Series. Matters directly for Phase 2, since Worlds finals are prime label material | — |
 > | 5 | Deprioritized polish: READMEs, React Query refactor, injury-extraction quality | item 7 |
 >
+> **Before trusting any hand-typed real-world fact in this repo, check it against World Athletics.** `api.py`'s `MEETS` schedule had drifted into five wrong rows — including a season opener that never happened — and was rendering on the Schedule page as fact until 2026-08-29. `python src/dl_calendar.py` now diffs it against WA's calendar; item **11** has the story and the split-Final trap it uncovered.
+>
 > **Three standing rules, each learned the hard way:**
 > - **Don't resume accuracy work without asking the user first.** The ceiling is real and well-evidenced across four sessions; item **0p** adds three more clean negatives, including one that failed its own shuffled control.
 > - **Quote the right accuracy number.** **71.9%** is the task the site performs (top-3 among the real Final field) and is what the UI shows; **57.7%** is the historical ruler every other number in this document uses. Both are in `outputs/model_metrics.json`.
@@ -560,3 +569,19 @@ User asked to work on the Projections page specifically, wanting it "unique and 
     - **Frequency.** Worlds biennial, Olympics quadrennial — the back-history is fine but new labels accrue far more slowly than a DL season provides.
 
     **FIRST STEP when this does start, and it needs no new scraping:** train on DL Finals, test on championship finals. That validates or kills the transfer assumption for the cost of one backtest, before any work on selection logic or rounds.
+
+11. **"Is the Final split between Zürich and Brussels?" — asked 2026-08-29 by the user, who had watched Zürich. Answered against World Athletics' own data, and the check found a real error nobody had noticed.**
+
+    **The answer: not this year.** WA's calendar (`getMinisiteCalendarEvents`, competitionGroup 627) tags Weltklasse Zürich (26–27 Aug) `rankingCategory: "GW"` — a regular scoring meeting — and every one of its event groups is GW too, with no "DF" group anywhere in it. Exactly one 2026 meeting is DF: **Allianz Memorial van Damme, Brussels, 4 Sep**, and it has `hasApiResults: false` because it has not happened. So no discipline's Final has been contested; all 32 are still to come.
+
+    **But the instinct was well-founded, and the format is real.** `find_final_competition_ids` per season: **2018 and 2019 were genuinely split Finals** — Zürich *and* Brussels, two meetings both tagged DF (2019: Zürich 28 Aug + Brussels 5 Sep). 2021, 2022 and **2025** had the Final AT Zürich, which is almost certainly where the impression came from: the same stadium, in 2025 on the same late-August weekend, was the Final. In 2026 the Final moved to Brussels and Zürich reverted to a scoring meeting. `dl_final_results_scraper.py` already aggregates multiple DF meetings correctly (which is why 2018/2019 carry 320/327 label rows against 223–251 for single-venue years) — that half was never broken.
+
+    **What WAS broken: `api.py`'s `MEETS` list had drifted from the real calendar, and the Schedule page was rendering it to readers as fact.** Five wrong rows: it opened the season with **"08 May Doha", a meeting that does not exist** (the opener was 16 May in **Shaoxing/Keqiao**, which the list called "Shanghai"); **Doha's real date, 19 Jun, was missing entirely**; Paris was 26 Jun not 28 Jun; Eugene 04 Jul not 03–04 Jul. Nothing caught it because MEETS only feeds display and `meetings_remaining()`, and by late season every past date answers that arithmetic identically — **the errors became invisible exactly when they stopped changing a number.** Now corrected and verified 0 disagreements against WA.
+
+    **Three structural fixes, not just corrected values:**
+    - **`src/dl_calendar.py`** fetches WA's calendar for any season and diffs it against `MEETS` (`python src/dl_calendar.py`). It also reports how many meetings are DF and warns explicitly when a season has more than one.
+    - **`tests/test_dl_calendar.py`** (8 tests) pins `MEETS` to committed snapshots — `tests/fixtures/wa_dl_calendar_2026.json` and **`wa_dl_calendar_2019.json`, kept specifically because 2019 is the real split-Final counterexample**. Offline, no network.
+    - **The Final is now an explicit `"final": True` flag, not "the last entry in the list".** Under the old rule a split Final's *first leg* would be scored as a qualifying meeting, so `meetings_remaining()` would have claimed DL points were still winnable **at a Final**. There is a test for exactly that, built from the real 2019 calendar. `compute_meet_statuses` falls back to last-index when nothing is flagged, so the older bare-list tests still mean what they meant.
+    - Two-day meetings now carry `dateEnd` (Lausanne, Silesia, Zürich, Eugene) and are judged "done" on their **last** day, not their first — the old list picked day 2 for three of them and day 1 for the fourth, with no rule. The Schedule page renders "26–27 Aug".
+
+    **Carry this into Phase 2 (item 10):** a competition's structure must come from **WA's own `rankingCategory`**, never from position in a list or a hand-typed schedule. Championships have rounds, multi-day finals and split legs; the assumption that "the last thing in the calendar is the final" is already false for two seasons of the Diamond League's own history.

@@ -1,0 +1,172 @@
+{
+  "season": 2026,
+  "meetings": [
+    {
+      "id": 7214016,
+      "name": "Wanda Diamond League",
+      "venue": "China Textile City Sports Centre, Shaoxing/Keqiao (CHN)",
+      "city": "Shaoxing/Keqiao",
+      "startDate": "2026-05-16",
+      "rankingCategory": "GW",
+      "days": [
+        "16 MAY 2026"
+      ]
+    },
+    {
+      "id": 7214017,
+      "name": "Wanda Diamond League Xiamen",
+      "venue": "Egret Stadium, Xiamen (CHN)",
+      "city": "Xiamen",
+      "startDate": "2026-05-23",
+      "rankingCategory": "GW",
+      "days": [
+        "23 MAY 2026"
+      ]
+    },
+    {
+      "id": 7214018,
+      "name": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "venue": "Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",
+      "city": "Rabat",
+      "startDate": "2026-05-31",
+      "rankingCategory": "GW",
+      "days": [
+        "31 MAY 2026"
+      ]
+    },
+    {
+      "id": 7214019,
+      "name": "Golden Gala Pietro Mennea",
+      "venue": "Stadio Olimpico, Roma (ITA)",
+      "city": "Roma",
+      "startDate": "2026-06-04",
+      "rankingCategory": "GW",
+      "days": [
+        "04 JUN 2026"
+      ]
+    },
+    {
+      "id": 7214021,
+      "name": "BAUHAUS-Galan",
+      "venue": "Olympiastadion, Stockholm (SWE)",
+      "city": "Stockholm",
+      "startDate": "2026-06-07",
+      "rankingCategory": "GW",
+      "days": [
+        "07 JUN 2026"
+      ]
+    },
+    {
+      "id": 7214020,
+      "name": "Oslo Bislett Games",
+      "venue": "Bislett Stadion, Oslo (NOR)",
+      "city": "Oslo",
+      "startDate": "2026-06-10",
+      "rankingCategory": "GW",
+      "days": [
+        "10 JUN 2026"
+      ]
+    },
+    {
+      "id": 7214015,
+      "name": "Doha Meeting",
+      "venue": "Suhaim bin Hamad Stadium, Doha (QAT)",
+      "city": "Doha",
+      "startDate": "2026-06-19",
+      "rankingCategory": "GW",
+      "days": [
+        "19 JUN 2026"
+      ]
+    },
+    {
+      "id": 7214022,
+      "name": "Meeting de Paris",
+      "venue": "Stade Charléty, Paris (FRA)",
+      "city": "Paris",
+      "startDate": "2026-06-28",
+      "rankingCategory": "GW",
+      "days": [
+        "28 JUN 2026"
+      ]
+    },
+    {
+      "id": 7214024,
+      "name": "Prefontaine Classic",
+      "venue": "Hayward Field, Eugene, OR (USA)",
+      "city": "Eugene",
+      "startDate": "2026-07-03",
+      "rankingCategory": "GW",
+      "days": [
+        "03 JUL 2026",
+        "04 JUL 2026"
+      ]
+    },
+    {
+      "id": 7214023,
+      "name": "Meeting International d’Athlétisme Herculis EBS",
+      "venue": "Stade Louis II, Monaco (MON)",
+      "city": "Monaco",
+      "startDate": "2026-07-10",
+      "rankingCategory": "GW",
+      "days": [
+        "10 JUL 2026"
+      ]
+    },
+    {
+      "id": 7214025,
+      "name": "Novuna London Athletics Meet",
+      "venue": "Olympic Stadium, London (GBR)",
+      "city": "London",
+      "startDate": "2026-07-18",
+      "rankingCategory": "GW",
+      "days": [
+        "18 JUL 2026"
+      ]
+    },
+    {
+      "id": 7214027,
+      "name": "Athletissima Lausanne",
+      "venue": "Stade Olympique de la Pontaise, Lausanne (SUI)",
+      "city": "Lausanne",
+      "startDate": "2026-08-20",
+      "rankingCategory": "GW",
+      "days": [
+        "20 AUG 2026",
+        "21 AUG 2026"
+      ]
+    },
+    {
+      "id": 7214026,
+      "name": "Silesia Kamila Skolimowska Memorial",
+      "venue": "Stadion Śląski, Chorzów (POL)",
+      "city": "Chorzów",
+      "startDate": "2026-08-22",
+      "rankingCategory": "GW",
+      "days": [
+        "22 AUG 2026",
+        "23 AUG 2026"
+      ]
+    },
+    {
+      "id": 7214028,
+      "name": "Weltklasse Zürich",
+      "venue": "Letzigrund, Zürich (SUI)",
+      "city": "Zürich",
+      "startDate": "2026-08-26",
+      "rankingCategory": "GW",
+      "days": [
+        "26 AUG 2026",
+        "27 AUG 2026"
+      ]
+    },
+    {
+      "id": 7214029,
+      "name": "Allianz Memorial van Damme",
+      "venue": "Boudewijnstadion, Bruxelles (BEL)",
+      "city": "Bruxelles",
+      "startDate": "2026-09-04",
+      "rankingCategory": "DF",
+      "days": null
+    }
+  ]
+}
