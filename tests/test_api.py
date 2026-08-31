@@ -269,7 +269,24 @@ def test_top_winners_no_longer_drops_a_discipline_by_under_reporting_it():
 
 def test_confidence_scores_a_discipline_on_its_top_pick_not_its_top_mark():
     discs = [_disc_two("Women's 3000m SC", ("Peruth CHEMUTAI", 31), ("Winfred YAVI", 52))]
-    assert api.build_confidence(discs, []) == [{"disc": "Women's 3000m SC", "value": 52}]
+    assert api.build_confidence(discs, []) == [
+        {"disc": "Women's 3000m SC", "discKey": "Women's 3000m SC", "value": 52}
+    ]
+
+
+def test_confidence_carries_the_discipline_key_for_linking():
+    """The dashboard links its least-sure rows straight to the discipline
+    page, so the key has to travel with the label rather than the caller
+    matching on a display string."""
+    discs = [_disc_two("men_100m", ("Noah LYLES", 16), ("Oblique SEVILLE", 27))]
+    assert api.build_confidence(discs, [])[0]["discKey"] == "men_100m"
+
+
+def test_confidence_survives_a_discipline_with_no_id():
+    """Costs the link, not the whole /api/predictions payload."""
+    row = api.build_confidence([_discipline("No id here", prob=40)], [])[0]
+    assert row["discKey"] is None
+    assert row["value"] == 40
 
 
 # --- Athlete search + "why not in the field" (2026-08-25) -----------------
@@ -411,7 +428,7 @@ def test_top_winners_ignores_near_miss_athletes():
 
 def test_confidence_ignores_near_miss_athletes():
     conf = api.build_confidence([_disc_with_near_miss()], [])
-    assert conf == [{"disc": "Men's 100m", "value": 30}]
+    assert conf == [{"disc": "Men's 100m", "discKey": "men_100m", "value": 30}]
 
 
 def test_discipline_favourite_ignores_near_miss_athletes():
