@@ -1,5 +1,7 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+_Last updated: 2026-08-31 (**seventeenth session**) — **the v0 redesign is fully ported, both repos are merged to `main` and pushed, and the data is refreshed for the Final.** Start at Next Steps 17. The site now has all three levels the user asked for (**discipline → field → athlete**), the last of which did not exist before this session. `/projections` is gone as a page and is now a redirect: it and the discipline page had become the same thing. **The Final is 4–5 September — three days out at time of writing.**_
+
 _Last updated: 2026-08-29 (**fifteenth session**) — two new data pipelines (`data/worldwide/`, `data/athlete_profiles/`), an analytics layer, a Performance Index page and a field head-to-head matrix. **`run.py` alone is no longer a refresh — see How to Run.** **Start at Next Steps 15 (THE TRAJECTORY)**, then 16 if `track-insights-main/design/v0/` has files in it — a full-site redesign is in flight and v0's code must not be pasted into the app. Then the 2026-08-29 block above the open-items table; the older session note below is kept for its design-workflow history._
 
 _Last updated: 2026-08-24 (**tenth session**, same day as the eighth/ninth) — a full design pass done **in Figma first, then ported into the real app**, which is the workflow the user explicitly asked for ("finish them on Figma, then make them on the actual app with the function and stuff we have"). **Figma access is no longer blocked** (this supersedes the ninth session's pending account-linking step): the MCP connection now authenticates as the university account `mohamedrayen.hamed@st.uskudar.edu.tr`, which owns a **"podiumcall" team**. Important and non-obvious: `whoami` reports `seat: "View"` for that team, but **that label does not mean read-only** — creating files and writing nodes both work fine; it was only the OLD mockup file (owned by `rayenhamed65@gmail.com`) that stayed inaccessible. Don't re-diagnose a "View seat" as the blocker; test with a real `create_new_file`/`use_figma` call instead. Built a new file from scratch — **"PodiumCall — Full Site Redesign", `fileKey OQw8nZgHHFItNvamI3fAKB`** — containing all six pages (Dashboard, Track, Field, Projections, Schedule, Athlete Profile), every one populated with **real data pulled live from the running Flask API**, not lorem. Design tokens were converted from the app's real `oklch` values to sRGB via a small local script (`scratchpad/oklch2rgb.js`) so Figma matches the shipped palette exactly rather than by eye; fonts are the real Barlow/Space Grotesk plus JetBrains Mono for timing figures; the athlete profile carries **Oblique Seville's actual World Athletics photo**, uploaded into Figma via `upload_assets` (the Plugin API cannot fetch external URLs, but `upload_assets` can POST local bytes — that is the way to get a real image in). Real per-node **motion** was authored too (`applyManualKeyframeTrack`): a Live-badge radar ping, staggered row reveals, and — the good one — `PATH_TRIM_END` line-draw on the Projections form curves so the season visibly replays. **Design direction went through a real feedback loop** and the endpoint is what shipped: first port was faithful but bland → added the track-curve motif and brand graphics → tried a full dark "night meet under floodlights" palette (looked genuinely good, but the user asked to go back lighter) → landed on a **lighter warm terracotta canvas + de-boxed panels**. Don't re-propose the dark theme; it was explored deliberately and set aside. **Everything was then ported into the real React app and pushed** — five commits on `main`, `87d0fbf..93a7c54`. **Ten real bugs were found and fixed while verifying that port, most of which were invisible to normal review** — see the dedicated section further down; the two most valuable were a Tailwind token that was never registered (silently breaking `text-terracotta-strong` in 19 places across 9 files) and both line charts plotting improvement upside-down. **Measurement methodology matters here and is written up below** — a naive contrast scanner produced 121/121 false failures because `getComputedStyle` returns `oklch()` strings; resolve colors through a canvas instead. Also confirmed again: **21st.dev / Magic MCP is NOT available in this environment** (tool search and MCP-registry search both empty) — the user has asked about it twice, so it needs installing on their side before it can be used._
@@ -18,7 +20,9 @@ _Eighth session, earlier the same day — rebuilt the Projections page around re
 
 **Where this is going (the end goal, stated by the user 2026-08-25):** a prediction system for **any major athletics competition**, not just the Diamond League. The DL Final is the first target and the proving ground, not the destination — see Next Steps **10** for the plan, the groundwork already checked, and the explicit instruction **not to start it before the Final on 4 Sep 2026**.
 
-**Phase 1 (current, essentially complete):** a fully automated ML prediction system for the 2026 Diamond League Final (Brussels, Sep 4-5), branded **PodiumCall**. It scrapes live World Athletics data, checks for injuries/withdrawals, runs a trained model, and serves **podium probabilities** to a dashboard (the model's target is `dl_top3` — top-three membership, NOT the winner; the UI was corrected on 2026-08-25 to stop saying "winners" over a top-3 number) — with the explicit standing principle that everything shown is real, sourced data (scraped marks, real ground-truth results, honest walk-forward accuracy), never fabricated, hand-typed, or placeholder content standing in for something real. Two repos:
+**Phase 1 is DONE as of 2026-08-31** — the site is built, redesigned, refreshed and merged to `main`, and the Final it was built for is 4–5 September. Phase 2 (item 10) is the next real body of work and its gate lifts the moment the Final is run.
+
+**Phase 1 (complete):** a fully automated ML prediction system for the 2026 Diamond League Final (Brussels, Sep 4-5), branded **PodiumCall**. It scrapes live World Athletics data, checks for injuries/withdrawals, runs a trained model, and serves **podium probabilities** to a dashboard (the model's target is `dl_top3` — top-three membership, NOT the winner; the UI was corrected on 2026-08-25 to stop saying "winners" over a top-3 number) — with the explicit standing principle that everything shown is real, sourced data (scraped marks, real ground-truth results, honest walk-forward accuracy), never fabricated, hand-typed, or placeholder content standing in for something real. Two repos:
 
 ```
 C:\Users\rayen\athletics-predictor\   ← Python ML pipeline
@@ -124,6 +128,21 @@ python -m pytest
 Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re-read data files fresh on every request — no restart needed after `run.py` or a retrain.
 
 ## Current State
+
+**The site's routes, as of 2026-08-31** (React app, `track-insights-main`). Every app page opens with one shared head band from `Shell`; the landing has its own layout.
+
+| Route | What it is |
+|---|---|
+| `/` | Landing. Projected podium, alternating cream/terracotta bands, its own running-track hero (`.lanes-track`) |
+| `/dashboard` | The surest calls as cards, plus **"Where the model is least sure"** — the confidence board read from the weak end |
+| `/track`, `/field` | Discipline pickers → the projected field table (`DisciplineTable`) |
+| `/discipline/$discKey` | **The third level.** Depth verdict + rank among 32, the field by score vs podium %, real season form, storylines, head-to-head matrix |
+| `/athlete/$discKey/$name` | The dossier. Brick head band, real face-detected photo, career/analytics/honours. Handles both in-field and not-in-field athletes |
+| `/qualification` | Standings, the points cut, and a generated "How to read it" |
+| `/stats` | Performance Index — the **depth ladder** across all 32, plus the season's best marks |
+| `/schedule` | The season as a timeline, Final haloed in gold |
+| `/projections` | **Redirect only.** Merged into `/discipline/$discKey` — see item 17 |
+
 
 **Model**: RandomForestClassifier, `n_estimators=200, max_depth=16, min_samples_leaf=1, class_weight=None` (`DEFAULT_MODEL_PARAMS` in `train_model.py` — walk-forward tuned via `--tune`, re-tune whenever the feature set, training-set size, OR data-quality filtering changes, since the winning config shifts each time — it's flipped `class_weight` None↔"balanced" twice across five re-tunes so far; hyperparameter search on a dataset this size (~459 rows) is itself somewhat noisy, so don't read too much into which single config "won" a given round). 14 features, **all carrying real signal**:
 `season_best, career_best, pb_gap, meets_count, consistency, yoy_improvement, age, season_rank, season_percentile, weighted_season_best, wind_adj_season_best, recent_trend, days_since_last, h2h_win_rate, gap_variability` (**15**, requires `--with-recency --with-h2h --with-schedule`)
@@ -353,11 +372,32 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 
 ## Next Steps
 
-> ### READ THIS FIRST — where things actually stand (2026-08-25)
+> ### READ THIS FIRST — where things actually stand (2026-08-31)
 >
-> **Nothing is broken or blocking.** Both repos are clean and pushed: athletics-predictor `423d9349`, track-insights-main `085f8b8`. **158 tests** green. The numbered entries `0`–`0p` below are the *historical record* — most are RESOLVED and are kept because they say what not to redo. Start here instead.
+> **Nothing is broken and nothing is half-finished.** Both repos are on `main`, merged and pushed: athletics-predictor `1ebb5cac` (**303 tests** green), track-insights `e1095cb` (`npm run lint` clean, `tsc` clean). Working trees clean. The numbered entries `0`–`16` below are the *historical record* — most are RESOLVED and are kept because they say what not to redo.
 >
-> **The end goal is bigger than the Diamond League.** Phase 1 (the 2026 DL Final) is essentially complete. Phase 2 — predicting **any major athletics competition** — is planned and written up in item **10**, and the user's explicit instruction is **not to start it until after the Final on 4 Sep 2026**.
+> **The data is refreshed and verified for the Final** (31 Aug: toplists, standings, predictions, per-meeting results, worldwide race log, athlete profiles — all five commands, see How to Run). Verified against a pre-run backup rather than an exit code, and the predictions genuinely moved: Wanyonyi and Fabbri displaced Hull and El Bakkali in the top three surest calls.
+>
+> **THE FINAL IS 4–5 SEPTEMBER.** If you refresh again before it, run all five commands, and **verify against the data, not the exit code** — see item 17b for the trap that cost time here.
+>
+> **What is genuinely open, in priority order:**
+>
+> | # | Item | Where |
+> |---|---|---|
+> | 1 | **Phase 2: generalise beyond the DL.** The gate was "not before 4 Sep" and it lifts on its own | item 10 |
+> | 2 | **Three SEO pieces blocked on one thing: a real domain.** sitemap.xml, canonical tags, absolute og:image. `scripts/make-sitemap.py` is written and refuses to run without `PODIUMCALL_BASE_URL` | item 17c |
+> | 3 | Legal/analytics bundle — privacy policy, cookie consent, analytics. Only meaningful **together**, and only once you actually collect data. None exist today, and none are needed today | item 17c |
+> | 4 | `h2h_scraper.py` doesn't record which ROUND a result came from — recovers h2h coverage that fell 70.6% → 63.1%. Needs a re-scrape | item 0o |
+> | 5 | Only the 2019 World Championships are in the pipeline (355 rows); 2022/2023/2025 missing. Matters directly for Phase 2 | — |
+>
+> **Deliberately NOT doing, decided this session:** a FAQ page. The site already answers those questions inline, where they are asked — "chance of finishing top three, not of winning" on the dashboard panel, the indoor-marks note on the Performance Index, "Why they're not in the projected field" on the athlete page, "How to read it" on Qualifying, and the accuracy tile carrying its own basis line. A separate page would restate what is already said in better places.
+>
+> **Three standing rules, each learned the hard way:**
+> - **Don't resume accuracy work without asking the user first.** The ceiling is real and well-evidenced across four sessions; item **0p** adds three more clean negatives.
+> - **Quote the right accuracy number.** **71.9%** is the task the site performs (top-3 among the real Final field) and is what the UI shows; **57.7%** is the historical ruler this document uses. Both are in `outputs/model_metrics.json`.
+> - **The model predicts PODIUM membership, not the winner.** Target is `dl_top3`. v0's output reintroduced "who wins" and "% win probability" on four separate pages; all were corrected at port time. Don't let it back in.
+>
+> **Recurring bug family, now at *seven* occurrences** (items 0b/0d/0n, plus three found this session): *a hardcoded number or a list's order is not the thing it claims to be.* "Projected top 8" on a six-man shot put final; "the same eight athletes"; "Eight lanes"; v0's "Fourteen finals" for fourteen *meetings*. The Final seats **6** in field events, **10** over long distances, **8** otherwise — read it from `qualLimit`, never write it down.
 >
 > ### 2026-08-29 CHANGED THE SHAPE OF THIS PROJECT — READ THIS BEFORE THE TABLE BELOW
 >
@@ -667,17 +707,17 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 
     **Right now, and it is date-bound: the Final is 4–5 September 2026.** The one unmissable task is the pre-Final refresh, and it is **five commands, not one** — see the block at the top of How to Run. `run.py` alone leaves the race log, the athlete profiles and the per-meeting file stale, which now silently degrades the field matrix, the form guides, the competition records and every profile. Nothing warns you. That is the single most likely way to break this site before the Final.
 
-    **In flight right now: a full-site visual redesign via v0** — item 16. The user is generating it as of 2026-08-29 and the output lands in `track-insights-main/design/v0/`. **If that folder has files in it, porting them is the live task.** Do not paste v0's code into the app; read item 16 first.
+    **DONE as of 2026-08-31: the v0 redesign is fully ported** — all eight pages, both repos merged to `main`. See item 17. Item 16 below is kept for the porting rules, which still apply to any future design source.
 
     **Immediately after the Final (from 5 Sep):** phase 2, item 10 — generalise beyond the Diamond League. The user's instruction was to keep focus on the DL until the Final is run, and that gate lifts on its own. The groundwork in item 10 still stands, and item 12's worldwide race log makes it materially easier than when item 10 was written: 89,623 rows across 2,221 meetings and 8 seasons, with championship labels already scraped.
 
     **THE FINAL DESTINATION, stated by the user across two sessions.** Phase 1 was "predict the 2026 DL Final". That is essentially done. The end state is **a prediction and analysis system for any major athletics competition** (item 10) whose front end is **an analyst's tool rather than a dashboard** — somewhere a person who loves projections goes to argue with the model, drills from a discipline into a field into an individual athlete, and finds real evidence at every level. Everything built on 2026-08-29 was in service of that, and the three levels are: **discipline → field → athlete.**
 
-    **The product direction the user set, in their words:** *"make it a deeper analytic, not just about the athlete, but the difference between each athlete and the discipline"*, and *"I don't want it to look like a dashboard"*. Two of the three levels exist — the athlete (profile analytics, career, honours) and the field (pairing matrix, what-separates-them, form guide). **The third does not: discipline vs discipline.** Which events are genuinely deep and which are one athlete and a gap. `/api/stats` already computes the per-discipline medians for it and currently renders them as a flat 32-row table on the longest page on the site. That is the next feature, and it doubles as the fix for `/stats` being 5.3 screens.
+    **The product direction the user set, in their words:** *"make it a deeper analytic, not just about the athlete, but the difference between each athlete and the discipline"*, and *"I don't want it to look like a dashboard"*. **All three levels now exist** (2026-08-31): the athlete (dossier, profile analytics, career, honours), the field (pairing matrix, what-separates-them, form guide) and — new in the seventeenth session — **discipline vs discipline**, as the Performance Index's depth ladder plus a page per event. The flat 32-row table it replaced is gone.
 
     **Standing rules that did not change today:** accuracy is ceilinged and well-evidenced — do not chase features, prefer data work, and **ask before resuming accuracy work at all**. Everything built on 2026-08-29 is quarantined from the model on purpose; adding any of it as a training feature is a separate decision with its own backtest and a paired 10-seed measurement, not a hunch.
 
-16. **The v0 design integration — the live task if `design/v0/` has files in it.**
+16. **RESOLVED 2026-08-31 — the v0 design integration. Kept for the porting rules, which apply to any future design source.**
 
     **What this is.** On 2026-08-29 the user took the whole site out to **v0** (Vercel's UI generator) for a full visual redesign, then brings the result back here to be ported. This is the same shape as the established Figma workflow in item 1 — *design there, port by hand here* — and for the same reason.
 
@@ -696,3 +736,25 @@ User asked to work on the Projections page specifically, wanting it "unique and 
     5. Verify each ported page at **1440 and 375** before committing, and re-run `node .claude/skills/impeccable/scripts/detect.mjs`.
 
     **Known trap when measuring after a port:** the browser pane in this environment intermittently reports `clientWidth: 0`, which makes every element look like it overflows and every contrast pair look like it fails. Set an explicit viewport with `resize_window` and re-measure before believing any of it — this produced a false "the page scrolls horizontally" reading twice on 2026-08-29, and a scan claiming 47 contrast failures that were all artefacts (the nav measures 8.64:1).
+17. **THE SEVENTEENTH SESSION (2026-08-31) — the v0 redesign landed, and the third level of the site now exists.**
+
+    **All eight pages ported.** Landing (Direction A: the projected podium, the display headline, alternating cream/terracotta bands), dashboard, Performance Index (v0's depth ladder), the new per-discipline page (Direction B), athlete dossier, Qualifying, Schedule. One shared **head band** in `Shell` now opens every app page and replaced three different older treatments — a bordered title card on some pages, the dashboard's textured `track-surface` hero box on another. That inconsistency was the single biggest reason the app read as several designs stitched together.
+
+    **`/projections` is now a redirect, not a page.** It and the discipline page had become the same thing — both rendered the same head-to-head matrix and the same ranked field — and **v0's own design has one page per event**: its `projections.html` IS a per-discipline page. The two blocks unique to Projections (the real season-form trajectories and the computed storylines) moved to `/discipline/$discKey`. The route is kept as a redirect so old `?disc=` links still land correctly.
+
+    **The third level, which did not exist before: discipline vs discipline.** `build_depth_index()`, `/api/depth`, `/api/discipline/<key>`, and the Performance Index's depth ladder. **Measured on World Athletics' Results Score and never on the model's probabilities** — see 17a, this is the load-bearing decision.
+
+    **17a. The model's probabilities are NOT comparable across disciplines.** The target is top-three membership scored per athlete, so a field's probabilities sum to no fixed total: measured across the 32 real 2026 fields they run from **31** (men's 1500m) to **320** (women's 5000m), median 171. Ranking events by "how many athletes clear 40%" would rank the model's per-event *confidence*, not the depth of the field. They order athletes correctly WITHIN a discipline, and that is the only place the site uses them. `tests/test_depth.py` pins the 31–320 spread so this fails loudly if it ever stops holding.
+
+    **17b. Two toplists are scraped 500 rows deep, not 100 — and it was live on the site.** `scrape_toplist()` pages past the top 100 while a DL-qualified athlete hasn't appeared (one who qualified on points can rank outside it). Correct for predictions, wrong to reuse for a comparison BETWEEN disciplines: `/api/stats` was reading a top-500 median against everyone else's top-100 and rendering it as "how deep each event is". **Women's 5000m read 29th of 32; at uniform depth it is 15th.** Women's shot put's median read 939 against a real 1067 — a figure `api.py`'s own docstring had written up as a fact about the sport. Fixed with `TOPLIST_DEPTH` / `to_uniform_depth()`, applied **where disciplines are compared, never in the loader** — those extra rows are the whole reason the deeper scrape happens, and dropping them at load time erases a real finalist's score from their own profile page. Site totals moved with it: 4,000 marks → **3,200**, indoor 13.0% → **11.7%**, floor 880 → **1007**.
+
+    **17c. Shipped alongside:** per-page titles and descriptions across ~270 pages that previously shared one (`src/lib/seo.ts`; discipline labels are *derived* from the URL key and verified to reproduce all 32 of the API's own labels, so there is no second list to drift); a real `og:image` (`scripts/make-og.py`, reproducible, drawn from the app's own tokens); accessibility fixes (skip link, five table captions, footer landmark); and the CRLF fix — a fresh clone failed `npm run lint` with **6,482 errors** before anyone touched code, now 0.
+    **Blocked on one thing:** `scripts/make-sitemap.py` reads all 276 URLs from the live API but **requires `PODIUMCALL_BASE_URL` and exits loudly without it.** No domain is registered (`PRODUCT.md` records `podiumcall.com`/`.io` only as "appeared unregistered"), and a sitemap is 276 absolute URLs — guessing a host would put a fabricated fact in front of every crawler. Canonical tags and an absolute `og:image` wait on the same origin.
+
+    **17d. A correction worth keeping, because it wasted time.** I reported that `run.py` "exits 0 when the live fetch fails" and wrote it into memory. **That was wrong — `run.py` correctly `sys.exit(1)`s**, confirmed by reproducing the failure. What fooled me: a **background-task completion notification reports the exit status of the whole shell command, not the program inside it.** `python run.py > log 2>&1; echo "exit=$?"` ends in `echo`, which always succeeds. To read a program's real exit code, run it as the last command with nothing chained after it.
+    **The real recurring problem is a stale webdriver lock:** an empty `~/.wdm/.wdm-lock-chromedriver-win64` left by a run that died mid-scrape blocks the whole refresh. Confirm no live chromedriver/chrome process holds it, delete it, re-run. **Always back up `data/raw/` + `outputs/` first** (`data/_backup/<stamp>/`, gitignored) and verify a refresh by diffing that backup and checking mtimes — never by the exit code.
+
+    **17e. Working method the user set explicitly, and it applies to any future design source.** *"My whole thing with v0 is not just to integrate some stuff, it's to actually use the clean versions. If there is anything I prefer in the old version, I would ask you to keep it."* **Default to replacing wholesale, including structure**; say plainly what you removed so they can ask for it back. Only keep the old thing when it is REAL and v0 has no equivalent — accepted examples: the face-detected athlete photo, the hand-drawn stat icons (explicitly asked for back), the "Level at the cut line" tie-break panel.
+    Second rule from the same session: **a landing-page request stays on the landing page.** The lane texture was one shared `.lanes` class, so rebuilding it for the landing silently changed all nine pages. It is now split — `.lanes` (v0's drifting version) for every app page, `.lanes-track` (a real running track: still lanes, moving light) for the landing hero alone.
+
+
