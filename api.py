@@ -1549,7 +1549,15 @@ def build_confidence(track, field):
     scored = []
     for d in all_discs:
         fav = discipline_favourite(d)
-        scored.append({"disc": d["label"], "value": fav["prob"] if fav else 0})
+        # discKey travels with the label so a caller can link to the
+        # discipline without matching on a display string. `.get` rather than
+        # `[...]`: a discipline dict without an id should cost a link, not a
+        # 500 on the whole predictions payload.
+        scored.append({
+            "disc":    d["label"],
+            "discKey": d.get("id"),
+            "value":   fav["prob"] if fav else 0,
+        })
     return sorted(scored, key=lambda x: -x["value"])
 
 MODEL_METRICS_PATH = os.path.join(OUTPUTS_DIR, "model_metrics.json")
@@ -1992,8 +2000,11 @@ def points_cut_reason(label, dl):
 # is present on 100% of toplist rows and was read by nothing until now. It is
 # the only number in this dataset that compares a shot putter to a 1500m
 # runner, so it is what makes "best performance of the season, any event"
-# answerable at all. Measured 2026: it ranges 880-1353 with per-discipline
-# medians spanning 939 (women's SP) to 1207 (men's 1500m), so it is broadly
+# answerable at all. Measured 2026 across a uniform top 100 per discipline
+# (see TOPLIST_DEPTH -- an earlier reading of "939 (women's SP)" here was an
+# artefact of two events being scraped 500 deep): it ranges 1007-1353 with
+# per-discipline medians spanning 1053 (women's JT) to 1206 (men's 1500m,
+# level with men's 100m), so it is broadly
 # comparable but NOT perfectly flat -- the API reports each discipline's own
 # median alongside so a reader can see the baseline rather than assume one.
 # ---------------------------------------------------------------------------
@@ -2015,6 +2026,41 @@ _season_scores_cache = {}
 
 def is_indoor_venue(venue):
     return bool(INDOOR_VENUE.search(str(venue or "")))
+
+
+# Every cross-discipline number on the Performance Index is a comparison
+# between disciplines, so all 32 have to be sampled to the SAME depth or the
+# comparison is measuring the scrape, not the sport.
+#
+# They are not all the same depth on disk. `scrape_toplist()` pages past the
+# top 100 when a DL-qualified athlete hasn't appeared yet -- an athlete who
+# qualified on Diamond League points rather than raw mark may sit outside the
+# world top 100 -- so it walks up to page 5. That is correct for predictions
+# and wrong to reuse here unfiltered: it left women's SP and women's 5000m
+# with 500 rows against everyone else's 100.
+#
+# Untruncated, that put women's 5000m 29th of 32 by median score and women's
+# SP dead last on a median of 939, which the site rendered as "how deep each
+# event is". Both were artefacts of ranks 101-500 being included for those
+# two events alone. Capped, women's 5000m is 15th (median 1175, +14 places)
+# and women's SP's median is 1067, not 939.
+#
+# The cap is applied where disciplines are COMPARED, not in the loader. Those
+# extra rows are the whole reason the deeper pages exist: the athlete they
+# were fetched for is a real finalist who qualified on Diamond League points
+# from outside the world top 100, and dropping them at load time would erase
+# that athlete's score from their own profile page.
+TOPLIST_DEPTH = 100
+
+
+def to_uniform_depth(df, depth=TOPLIST_DEPTH):
+    """The same number of ranked athletes from every discipline, so a
+    cross-discipline figure measures the sport rather than the scrape."""
+    if df.empty:
+        return df
+    if "Rank" in df.columns:
+        df = df.sort_values("Rank", kind="stable")
+    return df.groupby("discKey", group_keys=False, sort=False).head(depth)
 
 
 def _toplist_paths(year):
@@ -2051,7 +2097,11 @@ def load_season_scores(year=None):
             continue
         if "Results Score" not in df.columns:
             continue
-        df = df[["Competitor", "Mark", "Results Score", "Venue", "Date"]].copy()
+        cols = ["Competitor", "Mark", "Results Score", "Venue", "Date"]
+        # Keep WA's own rank where the scrape preserved it: the depth cap
+        # below has to mean "the world top 100", not "the first 100 rows this
+        # file happens to hold".
+        df = df[cols + (["Rank"] if "Rank" in df.columns else [])].copy()
         df["discKey"] = disc_key
         frames.append(df)
 
@@ -2094,7 +2144,9 @@ def build_stats(top_n=40):
     list: a 1300 in the men's discus and a 1300 in the women's shot put are
     the same number against very different baselines, and a leaderboard that
     hides that is a ranking pretending to be a fact."""
-    df = load_season_scores()
+    # Every figure on this page compares disciplines, so all 32 are read to
+    # the same depth -- see TOPLIST_DEPTH.
+    df = to_uniform_depth(load_season_scores())
     if df.empty:
         return {"topPerformances": [], "disciplineDepth": [], "scoreScale": None, "indoor": None}
 
@@ -2138,16 +2190,26 @@ def athlete_score_context(disc_key, athlete_name):
     """One athlete's WA score, and where it sits against everyone the site
     tracks. `percentile` is across ALL disciplines -- that is the whole
     point of using WA's score -- while `discPercentile` keeps the
-    within-event reading that a discipline table already implies."""
-    df = load_season_scores()
-    if df.empty:
+    within-event reading that a discipline table already implies.
+
+    The athlete is looked up in the FULL toplist so nobody loses their score
+    for ranking outside the world top 100, but both percentiles and the
+    median are measured against the uniform top 100 -- otherwise the same
+    "99th percentile" would mean 99th of 100 on one page and 99th of 500 on
+    another, and the profile's discMedian would contradict the Performance
+    Index's median for the same event."""
+    full = load_season_scores()
+    if full.empty:
         return None
-    mine = df[(df["discKey"] == disc_key) & (df["Competitor"] == athlete_name)]
+    mine = full[(full["discKey"] == disc_key) & (full["Competitor"] == athlete_name)]
     if mine.empty:
         return None
     row = mine.nlargest(1, "Results Score").iloc[0]
     score = float(row["Results Score"])
+    df = to_uniform_depth(full)
     same = df[df["discKey"] == disc_key]["Results Score"]
+    if same.empty:
+        return None
     return {
         "score":          int(score),
         "percentile":     round(float(100 * (df["Results Score"] <= score).mean()), 1),
@@ -2155,7 +2217,128 @@ def athlete_score_context(disc_key, athlete_name):
         "discMedian":     int(same.median()),
         "indoor":         bool(row["indoor"]),
         "venue":          row["Venue"],
+        # True for an athlete who qualified for the Final on Diamond League
+        # points from outside WA's top 100 -- the reason those two toplists
+        # were scraped 500 deep. Their percentiles are floored at 0 by
+        # construction, so the UI needs to be able to say why.
+        "outsideTopList": bool(score < same.min()),
     }
+
+
+# ---------------------------------------------------------------------------
+# Discipline vs discipline.
+#
+# The third level of the site (discipline -> field -> athlete) and the one
+# that did not exist: which events are genuinely deep and which are one
+# athlete and a gap.
+#
+# Measured on World Athletics' Results Score and NOTHING ELSE, for a reason
+# worth stating. The obvious measure is the model's own probabilities -- a
+# field where nobody clears 40% looks wide open. They cannot be used for a
+# comparison BETWEEN disciplines: the target is top-three membership and each
+# athlete is scored independently, so a field's probabilities do not sum to
+# any fixed total. Measured across the 32 real 2026 fields they sum to
+# anywhere from 31 (men's 1500m) to 320 (women's 5000m), median 171. Ranking
+# disciplines by "how many athletes clear 25%" would therefore rank the
+# model's per-event confidence, not the depth of the field. The probabilities
+# order athletes correctly WITHIN a discipline, and that is where the site
+# uses them.
+#
+# WA's score has neither problem: it is scraped, it is on every toplist row,
+# and it is the one number in this data that compares a shot putter to a
+# 1500m runner. Sampled to a uniform depth (TOPLIST_DEPTH) it is comparable
+# across all 32.
+
+
+def _field_scores(scores_df, disc_key, athletes):
+    """Each finalist's best WA score this season, highest first.
+
+    Looked up in the full toplist rather than the uniform top 100: a finalist
+    who qualified on Diamond League points can rank outside it, and reporting
+    a field's spread having silently dropped its weakest member would make a
+    top-heavy field look level."""
+    same = scores_df[scores_df["discKey"] == disc_key]
+    out = []
+    for a in athletes:
+        mine = same[same["Competitor"] == a["name"]]["Results Score"]
+        if len(mine):
+            out.append({"name": a["name"], "score": int(mine.max()), "prob": a["prob"]})
+    return sorted(out, key=lambda r: -r["score"])
+
+
+def build_depth_index(year=None):
+    """All 32 finals on one scale, tightest field first.
+
+    `spread` is the WA-score distance from the best finalist to the weakest
+    one. A small spread means the field is level on measured ability; a large
+    one means the entry list has a top and a tail."""
+    track, field = load_predictions()
+    if track is None:
+        return []
+    full = load_season_scores(year)
+    if full.empty:
+        return []
+    uniform = to_uniform_depth(full)
+
+    rows = []
+    for disc in track + field:
+        athletes = disc["athletes"]
+        scored = _field_scores(full, disc["id"], athletes)
+        if len(scored) < 2:
+            continue
+        same = uniform[uniform["discKey"] == disc["id"]]["Results Score"]
+        probs = sorted((a["prob"] for a in athletes), reverse=True)
+        rows.append({
+            "discKey":     disc["id"],
+            "disc":        disc["label"],
+            "isField":     disc["id"] in FIELD_EVENTS,
+            "fieldSize":   len(athletes),
+            # How many of the field carried a score at all. Shown rather than
+            # assumed: a spread computed over 5 of 8 athletes is a different
+            # claim from one computed over all 8.
+            "scored":      len(scored),
+            "spread":      scored[0]["score"] - scored[-1]["score"],
+            "bestScore":   scored[0]["score"],
+            "bestAthlete": scored[0]["name"],
+            "worstScore":  scored[-1]["score"],
+            # The world top-100 median for this event, so the field can be
+            # placed against the discipline it is drawn from.
+            "toplistMedian": int(same.median()) if len(same) else None,
+            # Within-discipline only -- see the note above on why these are
+            # never ranked across disciplines.
+            "favouriteProb": probs[0],
+            "probGap":       probs[0] - probs[1] if len(probs) > 1 else None,
+        })
+
+    rows.sort(key=lambda r: r["spread"])
+    for i, r in enumerate(rows, start=1):
+        r["spreadRank"] = i
+    return rows
+
+
+# A field is called level or top-heavy by where its spread falls among all
+# 32, not against a number picked by hand -- the same "state the arithmetic"
+# rule the Qualifying page follows. Terciles of the real 2026 spreads fall at
+# 55 and 85 WA points.
+DEPTH_VERDICTS = {
+    "level":     ("LEVEL FIELD",  "one of the tightest thirds of the 32 finals"),
+    "mixed":     ("A TOP AND A TAIL", "the middle third of the 32 finals"),
+    "topHeavy":  ("ONE AND A GAP", "one of the widest thirds of the 32 finals"),
+}
+
+
+def depth_verdict(rank, total):
+    """Tercile of the spread ranking. Stated as the arithmetic it is."""
+    if total < 3:
+        return None
+    if rank <= total / 3:
+        key = "level"
+    elif rank > 2 * total / 3:
+        key = "topHeavy"
+    else:
+        key = "mixed"
+    label, basis = DEPTH_VERDICTS[key]
+    return {"key": key, "label": label, "basis": basis}
 
 
 @app.route("/api/stats")
@@ -2164,6 +2347,64 @@ def stats():
     if not payload["topPerformances"]:
         return jsonify({"error": f"no {MEETS_YEAR} toplists found — run python run.py first"}), 404
     return jsonify(payload)
+
+
+@app.route("/api/depth")
+def depth_index():
+    """All 32 finals ranked by how level they are. The comparison the
+    Performance Index's flat 32-row table could not make."""
+    rows = build_depth_index()
+    if not rows:
+        return jsonify({"error": "no predictions or toplists yet — run python run.py first"}), 404
+    for r in rows:
+        r["verdict"] = depth_verdict(r["spreadRank"], len(rows))
+    return jsonify({"disciplines": rows, "total": len(rows), "season": MEETS_YEAR,
+                    "toplistDepth": TOPLIST_DEPTH})
+
+
+@app.route("/api/discipline/<disc_key>")
+def discipline_report(disc_key):
+    """One discipline read as a field: how level it is against the other 31,
+    who is in it, and who has actually raced whom.
+
+    Composed from the existing pieces rather than recomputed -- the matrix
+    and the per-athlete comparison are the same ones the Projections page
+    uses, so the two pages cannot drift apart."""
+    track, field = load_predictions()
+    if track is None:
+        return jsonify({"error": "predictions_latest.csv not found — run python run.py first"}), 404
+    disc = next((d for d in track + field if d["id"] == disc_key), None)
+    if disc is None:
+        return jsonify({"error": "discipline not found"}), 404
+
+    index = build_depth_index()
+    mine = next((r for r in index if r["discKey"] == disc_key), None)
+    if mine is not None:
+        mine = {**mine, "verdict": depth_verdict(mine["spreadRank"], len(index)),
+                "of": len(index)}
+
+    names = [a["name"] for a in disc["athletes"]]
+    return jsonify({
+        "discKey": disc_key,
+        "disc":    disc["label"],
+        "isField": disc_key in FIELD_EVENTS,
+        "season":  MEETS_YEAR,
+        "athletes": disc["athletes"],
+        "depth":    mine,
+        # Each finalist's own WA score, so the spread above is inspectable
+        # rather than asserted.
+        "scores":   _field_scores(load_season_scores(), disc_key, disc["athletes"]),
+        # Absorbed from /api/projections/<key> when the two pages merged:
+        # Projections and this page were both "everything about one event",
+        # and rendered the same matrix and the same ranked field. These two
+        # blocks were the only things unique to Projections, so they moved
+        # here rather than being lost with the route.
+        "trajectories": build_discipline_trajectories(disc_key, disc["athletes"]),
+        "storylines":   build_storylines(disc_key, disc["label"], disc["athletes"]),
+        "fieldAnalysis": athlete_analytics.build_field_analysis(
+            disc_key, names, disc_key in FIELD_EVENTS,
+        ),
+    })
 
 
 @app.route("/api/qualification")

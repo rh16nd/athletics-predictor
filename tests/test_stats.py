@@ -191,3 +191,92 @@ def test_dl_meetings_count_is_zero_not_none_when_the_file_has_no_rows():
     the reason. None would render as "unknown", which is a different claim."""
     assert api.dl_meetings_count("women_100m", "Nobody At All") == 0
     assert api.dl_meetings_count("not_a_discipline", "Anyone") is None
+
+
+# ---- uniform toplist depth ----
+#
+# The scraper pages past the top 100 when a DL qualifier hasn't shown up yet
+# (they may have qualified on Diamond League points rather than raw mark), so
+# a couple of files legitimately hold 500 rows while the other 30 hold 100.
+# Every cross-discipline number here is a comparison BETWEEN disciplines, so
+# an uneven sample measures the scrape rather than the sport: on the real
+# 2026 data it put women's 5000m 29th of 32 by median score when a uniform
+# top 100 puts it 15th, and gave women's SP a median of 939 against a real
+# 1067. These pin the cap that fixes it.
+
+def _write_toplist(directory, disc_key, n, base_score, year=2026):
+    """A toplist n rows deep whose scores fall away steadily with rank, so
+    truncating at a different depth necessarily moves the median."""
+    rows = [{
+        "Rank": i + 1,
+        "Competitor": f"Athlete {i + 1}",
+        "Mark": f"{10 + i / 100:.2f}",
+        "Results Score": base_score - i,
+        "Venue": "Somewhere (NED)",
+        "Date": "01 JUL 2026",
+    } for i in range(n)]
+    path = os.path.join(directory, f"{disc_key}_{year}.csv")
+    pd.DataFrame(rows).to_csv(path, index=False)
+
+
+@pytest.fixture
+def uneven_toplists(tmp_path, monkeypatch):
+    """Two disciplines, identically shaped, scraped to different depths --
+    the exact situation on disk."""
+    monkeypatch.setattr(api, "RAW_DIR", str(tmp_path))
+    _write_toplist(tmp_path, "men_100m", 100, 1300)
+    _write_toplist(tmp_path, "women_SP", 500, 1300)
+    return tmp_path
+
+
+def test_a_deeper_scrape_does_not_make_a_discipline_look_shallower(uneven_toplists):
+    """The two fixtures are the same discipline shape at different depths, so
+    a correct depth comparison has to score them identically. Uncapped,
+    women_SP reads 200 points weaker purely for having been scraped further."""
+    depth = {d["discKey"]: d for d in api.build_stats()["disciplineDepth"]}
+    assert depth["women_SP"]["medianScore"] == depth["men_100m"]["medianScore"]
+    assert depth["women_SP"]["athletes"] == depth["men_100m"]["athletes"] == api.TOPLIST_DEPTH
+
+
+def test_the_cap_keeps_the_best_ranks_not_an_arbitrary_slice(uneven_toplists):
+    """Truncation has to keep rank 1-100, not the tail -- otherwise it would
+    fix the comparison by discarding the actual best athletes."""
+    kept = api.to_uniform_depth(api.load_season_scores())
+    scores = kept[kept["discKey"] == "women_SP"]["Results Score"]
+    assert scores.max() == 1300                       # rank 1 survives
+    assert scores.min() == 1300 - (api.TOPLIST_DEPTH - 1)
+
+
+def test_the_loader_itself_keeps_every_scraped_row(uneven_toplists):
+    """The cap belongs where disciplines are compared, NOT in the loader.
+    Those rows past 100 are the reason the deeper scrape happens at all --
+    a finalist who qualified on Diamond League points can rank outside the
+    world top 100, and dropping them at load time erases their score from
+    their own profile page."""
+    full = api.load_season_scores()
+    assert len(full[full["discKey"] == "women_SP"]) == 500
+
+
+def test_an_athlete_outside_the_top_100_keeps_a_real_score(uneven_toplists):
+    """The regression the cap could easily have introduced: rank 150 still
+    resolves, is measured against the uniform top 100, and is flagged as
+    sitting outside it rather than silently reported at the 0th percentile."""
+    ctx = api.athlete_score_context("women_SP", "Athlete 150")
+    assert ctx is not None
+    assert ctx["score"] == 1300 - 149
+    assert ctx["outsideTopList"] is True
+    # Measured against the top 100, so it agrees with the Performance Index
+    # rather than contradicting it on the same event.
+    depth = {d["discKey"]: d for d in api.build_stats()["disciplineDepth"]}
+    assert ctx["discMedian"] == depth["women_SP"]["medianScore"]
+
+
+def test_every_discipline_is_sampled_to_the_same_depth_on_real_data():
+    df = api.to_uniform_depth(api.load_season_scores())
+    if df.empty:
+        pytest.skip("no season toplists on disk")
+    per_discipline = df.groupby("discKey").size()
+    assert per_discipline.max() <= api.TOPLIST_DEPTH
+    # And the headline row count is the honest product of that cap, not a
+    # figure inflated by the two events that were scraped 500 deep.
+    assert len(df) == int(per_discipline.sum())

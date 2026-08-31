@@ -22,3 +22,4 @@ data/worldwide/
 # Regenerable, and quarantined from data/raw/ for the same reason
 # data/worldwide/ is -- nothing in the modelling path may glob it up.
 data/athlete_profiles/
+data/_backup/
