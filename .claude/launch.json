@@ -2,10 +2,25 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "predictor-api",
+      "runtimeExecutable": "C:\\Users\\rayen\\athletics-predictor\\venv\\Scripts\\python.exe",
+      "runtimeArgs": [
+        "C:\\Users\\rayen\\athletics-predictor\\api.py"
+      ],
+      "port": 5000,
+      "autoPort": false
+    },
+    {
       "name": "track-insights-dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "C:\\Users\\rayen\\track-insights-main", "run", "dev"],
-      "port": 8080
+      "runtimeArgs": [
+        "--prefix",
+        "C:\\Users\\rayen\\track-insights-main",
+        "run",
+        "dev"
+      ],
+      "port": 8080,
+      "autoPort": true
     }
   ]
 }
