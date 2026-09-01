@@ -2139,6 +2139,71 @@ def _performance_row(row):
     }
 
 
+_corpus_cache = {}
+
+
+def _corpus_paths():
+    """The historical training files -- `{disc}.csv`, not the `_{year}` ones,
+    which are this season's toplists rather than the corpus."""
+    return [os.path.join(RAW_DIR, f"{k}.csv") for k in DISC_LABELS]
+
+
+def build_training_corpus():
+    """What the model was actually trained on, counted rather than claimed.
+
+    This exists because the landing page carried "+ dozens more meetings,
+    7 seasons" beside a six-row sample of real meeting names, and both
+    halves were wrong: it is thousands of competitions, not dozens, across
+    eight seasons, not seven. Neither number was read from anything -- they
+    were typed next to real data, which is the shape of mistake this
+    project keeps finding in its plumbing rather than its model.
+
+    `competitions` counts distinct (venue, date) pairs. That is the honest
+    unit available here: the raw rows carry where and when, not a meeting
+    id, so a two-day meeting counts as two and a venue hosting several
+    meetings a year counts each. It is a count of competition days, and
+    `venues` is reported beside it so neither has to stand alone.
+
+    Cached on the files' mtimes, matching load_season_scores -- the same
+    reason applies: this app re-reads data on every request, and a plain
+    cache would serve pre-refresh figures after a run.py."""
+    paths = _corpus_paths()
+    key = (RAW_DIR, tuple(
+        os.path.getmtime(p) if os.path.exists(p) else None for p in paths
+    ))
+    cached = _corpus_cache.get(key)
+    if cached is not None:
+        return cached
+
+    marks = 0
+    seasons, venues, competitions = set(), set(), set()
+    for path in paths:
+        if not os.path.exists(path):
+            continue
+        try:
+            df = pd.read_csv(path)
+        except Exception:
+            continue
+        marks += len(df)
+        if "year" in df.columns:
+            seasons |= {int(y) for y in df["year"].dropna()}
+        if {"Venue", "Date"} <= set(df.columns):
+            pairs = df[["Venue", "Date"]].dropna().astype(str)
+            venues |= set(pairs["Venue"])
+            competitions |= set(map(tuple, pairs.values))
+
+    result = None if not marks else {
+        "marks":        marks,
+        "seasons":      len(seasons),
+        "firstSeason":  min(seasons) if seasons else None,
+        "lastSeason":   max(seasons) if seasons else None,
+        "venues":       len(venues),
+        "competitions": len(competitions),
+    }
+    _corpus_cache[key] = result
+    return result
+
+
 def build_stats(top_n=40):
     """The season ranked by WA score rather than by event.
 
@@ -2150,7 +2215,8 @@ def build_stats(top_n=40):
     # the same depth -- see TOPLIST_DEPTH.
     df = to_uniform_depth(load_season_scores())
     if df.empty:
-        return {"topPerformances": [], "disciplineDepth": [], "scoreScale": None, "indoor": None}
+        return {"topPerformances": [], "disciplineDepth": [], "scoreScale": None,
+                "indoor": None, "corpus": build_training_corpus()}
 
     scores = df["Results Score"]
     depth = []
@@ -2184,6 +2250,8 @@ def build_stats(top_n=40):
             "total": int(len(df)),
             "share": round(float(100 * df["indoor"].mean()), 1),
         },
+        # What the model learned from, counted rather than typed.
+        "corpus": build_training_corpus(),
         "season": MEETS_YEAR,
     }
 
