@@ -23,7 +23,32 @@ import athlete_analytics  # noqa: E402 -- race-log statistics; reads data/worldw
 import athlete_career  # noqa: E402 -- honours/rankings/PBs as World Athletics states them; never feeds the model
 
 app = Flask(__name__)
-CORS(app)  # allows React dev server to call this API
+
+# CORS is pinned to the site's own origin(s). PODIUMCALL_CORS_ORIGINS (a comma-
+# separated list) overrides the default for production -- set it to your
+# deployed frontend origin, e.g. "https://podiumcall.com". The default keeps the
+# local dev servers (Vite on 8080/8081/5173) working out of the box. This API
+# serves only public, read-only GET data and sets no cookies, so a wildcard was
+# low-risk -- but pinning the origin is free, and it matters the moment any
+# auth or cookie is ever added.
+_DEFAULT_CORS = [
+    "http://localhost:8080", "http://localhost:8081", "http://localhost:5173",
+    "http://127.0.0.1:8080", "http://127.0.0.1:8081", "http://127.0.0.1:5173",
+]
+_cors_env = os.environ.get("PODIUMCALL_CORS_ORIGINS", "").strip()
+_cors_origins = [o.strip() for o in _cors_env.split(",") if o.strip()] or _DEFAULT_CORS
+CORS(app, origins=_cors_origins)
+
+
+@app.after_request
+def _security_headers(resp):
+    # Cheap, correct hardening for a JSON API on its own origin. nosniff stops
+    # content-type guessing; the others are harmless here (this endpoint renders
+    # no HTML). The FRONTEND's headers live in track-insights' public/_headers.
+    resp.headers.setdefault("X-Content-Type-Options", "nosniff")
+    resp.headers.setdefault("Referrer-Policy", "no-referrer")
+    resp.headers.setdefault("X-Frame-Options", "DENY")
+    return resp
 
 OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), "outputs")
 RAW_DIR     = os.path.join(os.path.dirname(__file__), "data", "raw")
@@ -1898,7 +1923,7 @@ def build_storylines(disc_key, disc_label, athletes):
 def predictions():
     track, field = load_predictions()
     if track is None:
-        return jsonify({"error": "predictions_latest.csv not found — run python run.py first"}), 404
+        return jsonify({"error": "Predictions are not available yet."}), 404
 
     return jsonify({
         "lastUpdated":   str(date.today().strftime("%d %b %Y")),
@@ -1919,6 +1944,14 @@ def predictions():
 
 @app.route("/api/athlete/<disc_key>/<athlete_name>")
 def athlete_profile(disc_key, athlete_name):
+    # Validate against the known 32 disciplines BEFORE disc_key reaches any
+    # os.path.join/read_csv inside build_athlete_profile. The URL router
+    # already blocks '/', so real traversal was mostly stopped and every read
+    # appends '.csv' -- but an unknown key otherwise just throws deep in pandas,
+    # and a guard here is the clean defense-in-depth (the sibling
+    # athlete-status route already does exactly this).
+    if disc_key not in DISC_LABELS:
+        return jsonify({"error": "unknown discipline"}), 404
     profile = build_athlete_profile(disc_key, athlete_name)
     if profile is None:
         return jsonify({"error": "athlete not found"}), 404
@@ -1934,7 +1967,7 @@ def projections_detail(disc_key):
     /api/predictions payload."""
     track, field = load_predictions()
     if track is None:
-        return jsonify({"error": "predictions_latest.csv not found — run python run.py first"}), 404
+        return jsonify({"error": "Predictions are not available yet."}), 404
     disc = next((d for d in track + field if d["id"] == disc_key), None)
     if disc is None:
         return jsonify({"error": "discipline not found"}), 404
@@ -2442,7 +2475,7 @@ def discipline_report(disc_key):
     uses, so the two pages cannot drift apart."""
     track, field = load_predictions()
     if track is None:
-        return jsonify({"error": "predictions_latest.csv not found — run python run.py first"}), 404
+        return jsonify({"error": "Predictions are not available yet."}), 404
     disc = next((d for d in track + field if d["id"] == disc_key), None)
     if disc is None:
         return jsonify({"error": "discipline not found"}), 404
@@ -2517,6 +2550,25 @@ def health():
     return jsonify({"status": "ok", "date": str(date.today())})
 
 if __name__ == "__main__":
-    print("Starting DL Predictor API on http://localhost:5000")
+    # Secure by default. `python api.py` runs a real WSGI server (waitress) with
+    # the debugger OFF, so it is safe to expose. Developers who want Flask's
+    # auto-reload + interactive debugger opt in explicitly with PODIUMCALL_DEBUG=1
+    # -- NEVER set that on a public host: debug=True exposes the Werkzeug console,
+    # which executes arbitrary code on any unhandled error. Host/port are env-
+    # configurable for deployment.
+    host = os.environ.get("PODIUMCALL_HOST", "127.0.0.1")
+    port = int(os.environ.get("PODIUMCALL_PORT", "5000"))
+    debug = os.environ.get("PODIUMCALL_DEBUG", "").lower() in ("1", "true", "yes", "on")
     print("Make sure you've run: python run.py")
-    app.run(debug=True, port=5000)
+    if debug:
+        print(f"Starting DL Predictor API (DEBUG — do not expose) on http://{host}:{port}")
+        app.run(debug=True, host=host, port=port)
+    else:
+        try:
+            from waitress import serve
+            print(f"Starting DL Predictor API on http://{host}:{port}")
+            serve(app, host=host, port=port)
+        except ImportError:
+            print("waitress not installed; using Flask's server with debug OFF.")
+            print("For production install it:  pip install waitress")
+            app.run(debug=False, host=host, port=port)
