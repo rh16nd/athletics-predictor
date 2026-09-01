@@ -429,15 +429,17 @@ def load_h2h_vs_rivals(disc_key, athlete_name, rival_names):
 
     Derived from the race log when there is one: two athletes met if they
     appear in the same meeting on the same date, and the lower finishing
-    position won. That is exact, and it is a much deeper sample than the
+    position won. That is exact, and it is a deeper sample than the
     alternative -- Joe Kovacs vs Ryan Crouser reads 5-23 over 28 shared
-    races from the log against 1-2 over 3 from h2h_rates.csv.
+    races from the log against 4-9 over 13 from h2h_rates.csv.
 
     **This had to change because the two disagreed on the same page.** Once
     the analytics block started showing derived records, the old numbers sat
-    directly beneath them contradicting every pair. h2h_rates.csv is not
-    wrong so much as thin: HANDOFF 0o put its coverage at 63.1% after the
-    fabricated sweeps in it were corrected.
+    directly beneath them contradicting every pair. h2h_rates.csv was thin
+    as well as wrong -- 63.1% coverage after HANDOFF 0o corrected the
+    fabricated sweeps in it. Recording the round closed most of that gap
+    (0o's open half, now done): coverage is 77.1% and the file no longer
+    reports a Kovacs-Crouser record three races deep.
 
     It is still the fallback, and it still feeds the MODEL unchanged via
     train_model.add_h2h_features -- swapping the model's h2h source is an
@@ -2137,6 +2139,71 @@ def _performance_row(row):
     }
 
 
+_corpus_cache = {}
+
+
+def _corpus_paths():
+    """The historical training files -- `{disc}.csv`, not the `_{year}` ones,
+    which are this season's toplists rather than the corpus."""
+    return [os.path.join(RAW_DIR, f"{k}.csv") for k in DISC_LABELS]
+
+
+def build_training_corpus():
+    """What the model was actually trained on, counted rather than claimed.
+
+    This exists because the landing page carried "+ dozens more meetings,
+    7 seasons" beside a six-row sample of real meeting names, and both
+    halves were wrong: it is thousands of competitions, not dozens, across
+    eight seasons, not seven. Neither number was read from anything -- they
+    were typed next to real data, which is the shape of mistake this
+    project keeps finding in its plumbing rather than its model.
+
+    `competitions` counts distinct (venue, date) pairs. That is the honest
+    unit available here: the raw rows carry where and when, not a meeting
+    id, so a two-day meeting counts as two and a venue hosting several
+    meetings a year counts each. It is a count of competition days, and
+    `venues` is reported beside it so neither has to stand alone.
+
+    Cached on the files' mtimes, matching load_season_scores -- the same
+    reason applies: this app re-reads data on every request, and a plain
+    cache would serve pre-refresh figures after a run.py."""
+    paths = _corpus_paths()
+    key = (RAW_DIR, tuple(
+        os.path.getmtime(p) if os.path.exists(p) else None for p in paths
+    ))
+    cached = _corpus_cache.get(key)
+    if cached is not None:
+        return cached
+
+    marks = 0
+    seasons, venues, competitions = set(), set(), set()
+    for path in paths:
+        if not os.path.exists(path):
+            continue
+        try:
+            df = pd.read_csv(path)
+        except Exception:
+            continue
+        marks += len(df)
+        if "year" in df.columns:
+            seasons |= {int(y) for y in df["year"].dropna()}
+        if {"Venue", "Date"} <= set(df.columns):
+            pairs = df[["Venue", "Date"]].dropna().astype(str)
+            venues |= set(pairs["Venue"])
+            competitions |= set(map(tuple, pairs.values))
+
+    result = None if not marks else {
+        "marks":        marks,
+        "seasons":      len(seasons),
+        "firstSeason":  min(seasons) if seasons else None,
+        "lastSeason":   max(seasons) if seasons else None,
+        "venues":       len(venues),
+        "competitions": len(competitions),
+    }
+    _corpus_cache[key] = result
+    return result
+
+
 def build_stats(top_n=40):
     """The season ranked by WA score rather than by event.
 
@@ -2148,7 +2215,8 @@ def build_stats(top_n=40):
     # the same depth -- see TOPLIST_DEPTH.
     df = to_uniform_depth(load_season_scores())
     if df.empty:
-        return {"topPerformances": [], "disciplineDepth": [], "scoreScale": None, "indoor": None}
+        return {"topPerformances": [], "disciplineDepth": [], "scoreScale": None,
+                "indoor": None, "corpus": build_training_corpus()}
 
     scores = df["Results Score"]
     depth = []
@@ -2182,6 +2250,8 @@ def build_stats(top_n=40):
             "total": int(len(df)),
             "share": round(float(100 * df["indoor"].mean()), 1),
         },
+        # What the model learned from, counted rather than typed.
+        "corpus": build_training_corpus(),
         "season": MEETS_YEAR,
     }
 

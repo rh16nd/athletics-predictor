@@ -280,3 +280,35 @@ def test_every_discipline_is_sampled_to_the_same_depth_on_real_data():
     # And the headline row count is the honest product of that cap, not a
     # figure inflated by the two events that were scraped 500 deep.
     assert len(df) == int(per_discipline.sum())
+
+
+# ---- the training corpus, counted rather than claimed ----
+
+def test_corpus_counts_the_training_files_not_the_season_toplists():
+    """The landing page said "+ dozens more meetings, 7 seasons" beside six
+    real meeting names. Both halves were hand-typed and both were wrong --
+    it is thousands of competitions across eight seasons. These numbers now
+    come from here, so the page cannot drift from the data again."""
+    corpus = api.build_training_corpus()
+    assert corpus is not None
+    assert corpus["marks"] > 0
+    assert corpus["seasons"] == len(range(corpus["firstSeason"], corpus["lastSeason"] + 1))
+    # A competition is a (venue, date) pair, so there is at least one per
+    # venue and never more than one per mark.
+    assert corpus["venues"] <= corpus["competitions"] <= corpus["marks"]
+
+
+def test_corpus_is_none_when_there_are_no_training_files(tmp_path, monkeypatch):
+    """The season toplists are `{disc}_{year}.csv` and are NOT the corpus.
+    Pointing RAW_DIR somewhere with only those must report nothing rather
+    than counting them."""
+    (tmp_path / "men_100m_2026.csv").write_text(
+        "Mark,Venue,Date,year" + chr(10) + "9.9,X,1 JAN 2026,2026" + chr(10)
+    )
+    monkeypatch.setattr(api, "RAW_DIR", str(tmp_path))
+    monkeypatch.setattr(api, "_corpus_cache", {})
+    assert api.build_training_corpus() is None
+
+
+def test_stats_payload_carries_the_corpus(stats):
+    assert "corpus" in stats
