@@ -790,3 +790,15 @@ User asked to work on the Projections page specifically, wanting it "unique and 
     **Tests 303 → 330**, including a new `tests/test_h2h_scraper.py` built on trimmed copies of the real page shapes (no network), which is where `scrape_soup()` was split out of `scrape_meet()` for.
 
     **The recurring bug family gains an eighth and ninth occurrence, in a new place:** *a matching rule is not the thing it claims to match.* "hurdle" is not "110m hurdles"; "100mH" is not a flat 100m; a caption with no gender in it is not "no event". Every one of these was invisible in the code and obvious in the data — the fix each time was to print the real strings the function is fed.
+
+19. **Same session — the landing hero got v0's motion, which the port had left behind.** The 17th session took v0's layout and copy for the hero but not its movement, so the hero was the **only band on the page with no entrance at all** — everything below it already had one via `.stagger-item`/`useInView`. Ported from `design/v0/index.html` + `system.css` + `reveal.js`: a staggered 20px rise on v0's own delays (.05/.14/.24/.36/.5 — deliberately uneven, it accelerates away from the badge and lands the stat ribbon last), a pulsing gold dot on the badge, a 6s gold drift through "gun.", and count-ups on the four ribbon figures staggered behind the row itself.
+
+    Composition matched too: three hard-broken headline lines rather than two balanced ones, **only "gun." in gold** (not "the gun."), v0's lede at a 56ch measure, and v0's two buttons — a cream "View live predictions" with an arrow, and "Browse all 32 events" leading to `/stats`.
+
+    **One word of v0's lede is deliberately not ported.** It writes *"name who wins in Brussels"*. The target is `dl_top3` and that wording has been corrected off this site once already — it now says "call the podium". This is the third time v0's output has tried to reintroduce winner-wording; see 17e.
+
+    **The hit rate now reads 71.9%, not 72%.** `Math.round` was claiming a tenth of a point the model has not earned, and v0's ribbon renders the unit as a separate smaller gold span regardless.
+
+    **`design/` is now eslint-ignored**, and this is a correction to the 17th session's claim that `npm run lint` is clean: `design/v0/reveal.js` had been failing it with **15 errors since the day it landed**. It is the spec the app is ported FROM, so reformatting it to this project's prettier rules would edit the reference. Lint is now genuinely 0 errors.
+
+    **Verified by measuring, not by looking** — the screenshot path in this environment is still unreliable (it renders the page into a corner of a large canvas). What was actually checked in the live browser: the five reveal rows carry v0's exact delays; the h1 is 3 lines at 96px desktop / 44px at 375px with no horizontal overflow at either; both CTAs clear 44px touch targets on mobile; the reduced-motion overrides are present in the served CSS; and the counters were caught mid-flight twice (65.5% / 2,101 and 68.8 / 1,230 en route to 71.9% / 3,200), which is the only real proof they animate rather than snap.
