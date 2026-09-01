@@ -429,15 +429,17 @@ def load_h2h_vs_rivals(disc_key, athlete_name, rival_names):
 
     Derived from the race log when there is one: two athletes met if they
     appear in the same meeting on the same date, and the lower finishing
-    position won. That is exact, and it is a much deeper sample than the
+    position won. That is exact, and it is a deeper sample than the
     alternative -- Joe Kovacs vs Ryan Crouser reads 5-23 over 28 shared
-    races from the log against 1-2 over 3 from h2h_rates.csv.
+    races from the log against 4-9 over 13 from h2h_rates.csv.
 
     **This had to change because the two disagreed on the same page.** Once
     the analytics block started showing derived records, the old numbers sat
-    directly beneath them contradicting every pair. h2h_rates.csv is not
-    wrong so much as thin: HANDOFF 0o put its coverage at 63.1% after the
-    fabricated sweeps in it were corrected.
+    directly beneath them contradicting every pair. h2h_rates.csv was thin
+    as well as wrong -- 63.1% coverage after HANDOFF 0o corrected the
+    fabricated sweeps in it. Recording the round closed most of that gap
+    (0o's open half, now done): coverage is 77.1% and the file no longer
+    reports a Kovacs-Crouser record three races deep.
 
     It is still the fallback, and it still feeds the MODEL unchanged via
     train_model.add_h2h_features -- swapping the model's h2h source is an

@@ -19,47 +19,78 @@ H2H_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "h2h")
 INPUT = os.path.join(H2H_DIR, "meet_results.csv")
 OUTPUT = os.path.join(H2H_DIR, "h2h_rates.csv")
 
-def one_row_per_athlete(meet_df):
-    """One result per athlete per meet: their BEST (lowest) place.
+# The columns h2h_scraper.py writes to say WHICH RACE a row came from.
+# Their absence is meaningful, not an error: a CSV scraped before they
+# existed gets the older, deliberately conservative collapse below.
+RACE_COLUMNS = ["race", "heat"]
 
-    A meet page carries heats, semis and the final as separate rows, and the
-    scraper does not record which round a row came from (see
-    h2h_scraper.parse_results_table). Before this, `dict(zip(...))` silently
-    kept whichever row happened to be LAST, so an athlete's heat number
-    could stand in for their final placing -- at the 2023 World
+
+def one_row_per_athlete(race_df):
+    """One result per athlete per race: their BEST (lowest) place.
+
+    With `race`/`heat` present this is only a guard against an athlete being
+    listed twice in one table. Without them it is load-bearing, and it is
+    why it still exists: a meet page carries heats, semis and the final as
+    separate rows, and before the round was recorded `dict(zip(...))`
+    silently kept whichever row happened to be LAST, so an athlete's heat
+    number could stand in for their final placing -- at the 2023 World
     Championships Jakob Ingebrigtsen's rows are [1, 13] and Yared Nuguse's
-    are [4, 1, 5], and the comparison actually made was 13 against 5, handing
-    Nuguse a championship Ingebrigtsen won.
+    are [4, 1, 5], and the comparison actually made was 13 against 5,
+    handing Nuguse a championship Ingebrigtsen won.
 
     Best-place is the right collapse while the round is unknown: for a
     progression-based meet it is the furthest round the athlete reached and
     their standing in it, which is what "who beat whom at this meeting"
-    means. Capturing the round properly in the scraper would be better still
-    and needs a re-scrape."""
-    return meet_df.sort_values("place").drop_duplicates(subset=["athlete"], keep="first")
+    means."""
+    return race_df.sort_values("place").drop_duplicates(subset=["athlete"], keep="first")
 
 
 def calculate_h2h(df):
+    """Head-to-head records, counted one race at a time.
+
+    A race -- not a meeting -- is the unit, because a meeting is not a
+    contest. Two athletes are only compared when they were on the same
+    start list, which needs three things from the scraper: the race label
+    (a heat and the final are different races), the heat number within it
+    (a championship heats table ranks ALL heats together by time, so rank 1
+    in heat 1 "beating" rank 4 in heat 4 is a time comparison, not a
+    head-to-head), and the podium places that Wikipedia renders as medal
+    icons with no text.
+
+    A pair that met in both a heat and the final counts twice. They did race
+    each other twice, and the alternative -- keeping only the deepest round
+    -- discards real results to no end.
+
+    When those columns are absent the whole meeting is treated as one group
+    and collapsed to each athlete's best place, which is the older, lossier
+    behaviour; see `one_row_per_athlete`."""
+    rounds_known = all(c in df.columns for c in RACE_COLUMNS)
+    group_cols = ["meet"] + (RACE_COLUMNS if rounds_known else [])
+
     records = []
     for disc in df["discipline"].unique():
         disc_df = df[df["discipline"] == disc].copy()
         disc_df = disc_df.dropna(subset=["place"])
+        for col in group_cols:
+            disc_df[col] = disc_df[col].fillna("")
 
-        for meet in disc_df["meet"].unique():
-            meet_df = one_row_per_athlete(disc_df[disc_df["meet"] == meet])
-            # Iterating this de-duplicated frame is also what stops one
-            # meeting being counted many times: the old loop walked the ROW
-            # list, so a 2-row athlete against a 3-row athlete produced up
-            # to 6 "meetings" -- the same comparison repeated, which is why
-            # 64% of all pairs with >=5 meetings came out as perfect sweeps.
-            rows = list(zip(meet_df["athlete"], meet_df["place"]))
+        for _, race_df in disc_df.groupby(group_cols, sort=False):
+            race_df = one_row_per_athlete(race_df)
+            # Iterating this de-duplicated frame is also what stops one race
+            # being counted many times: the old loop walked the ROW list, so
+            # a 2-row athlete against a 3-row athlete produced up to 6
+            # "meetings" -- the same comparison repeated, which is why 64% of
+            # all pairs with >=5 meetings came out as perfect sweeps.
+            rows = list(zip(race_df["athlete"], race_df["place"]))
 
             for i, (a, place_a) in enumerate(rows):
                 for b, place_b in rows[i + 1:]:
                     if a == b or place_a == place_b:
-                        # Equal places can only mean the two never actually
-                        # met (same position in different heats). Counting
-                        # it either way would invent a result.
+                        # Within one race, equal places are a dead heat with
+                        # no winner. Across an unlabelled meeting they can
+                        # only mean the two never actually met (the same
+                        # position in different heats). Scoring either would
+                        # invent a result.
                         continue
                     a_wins = 1 if place_a < place_b else 0
                     records.append({"discipline": disc, "athlete_a": a, "athlete_b": b,
