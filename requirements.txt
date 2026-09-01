@@ -12,5 +12,6 @@ selenium
 webdriver-manager
 flask
 flask-cors
+waitress  # production WSGI server for api.py (see the __main__ block)
 pytest
 opencv-python-headless==4.10.0.84
