@@ -81,9 +81,34 @@ AREA_CHAMPIONSHIPS = 3660
 
 # World Athletics Series also contains U20/indoor/cross-country/road-running/
 # relay/combined-events championships in the same season -- keep only the
-# senior outdoor "World Athletics Championships" / "World Championships in
-# Athletics" meeting itself.
-SERIES_NAME_EXCLUDE = ["U20", "Indoor", "Cross Country", "Race Walking", "Road Running", "Relays", "Combined Events"]
+# senior outdoor World Championships itself.
+#
+# This used to be a name-exclusion list ("U20", "Indoor", "Cross Country",
+# "Race Walking", "Road Running", "Relays", "Combined Events") and it leaked,
+# in the way keyword lists always leak here: a name is not the thing it
+# claims to identify. 2018 has no senior outdoor World Championships at all
+# -- they are odd years plus 2022 -- yet the list admitted TWO meetings that
+# year, because neither name contains any of its words:
+#   - "IAAF World Half Marathon Championships", a road championship whose
+#     own excluding keyword would have had to be "Half Marathon";
+#   - "IAAF Continental Cup", a continental TEAM competition, which is not a
+#     World Championships under any reading and put 220 rows into the
+#     training data under a docstring that says otherwise.
+#
+# WA tags the senior outdoor Worlds "OW" in its own rankingCategory field,
+# and that field is already in the query. Checked against every year in
+# YEARS: OW appears in exactly 2019 (Doha), 2022 (Oregon), 2023 (Budapest)
+# and 2025 (Tokyo), and in none of 2018/2021/2024, which are precisely the
+# years with no senior outdoor Worlds. Everything the old list meant to
+# exclude is GW, C or F. This is the same move the Continental Tour filter
+# already makes with "A" -- read WA's own classification instead of guessing
+# from the name. See tests/test_major_meets_scraper.py.
+#
+# Removing those 220 rows was measured, not assumed: +0.48 pts on 7/10
+# paired seeds, against a same-size random-removal control that scored
+# +0.33 on 6/10. The gap is noise, so this is a correctness fix with no
+# accuracy claim attached.
+SERIES_RANKING_CATEGORY = "OW"
 
 CALENDAR_QUERY = """query getCalendarEvents($startDate: String, $endDate: String, $competitionGroupId: Int) {
   getCalendarEvents(startDate: $startDate, endDate: $endDate, competitionGroupId: $competitionGroupId, limit: 100) {
@@ -127,7 +152,7 @@ def find_year_meetings(year):
         meetings.append((m, "Olympics"))
 
     for m in find_meetings(year, WORLD_ATHLETICS_SERIES):
-        if any(kw.lower() in m["name"].lower() for kw in SERIES_NAME_EXCLUDE):
+        if m.get("rankingCategory") != SERIES_RANKING_CATEGORY:
             continue
         meetings.append((m, "World Champs"))
 
