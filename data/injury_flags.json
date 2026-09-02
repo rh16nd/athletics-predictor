@@ -1,34 +1,10 @@
 {
-  "checked_at": "2026-08-31T10:25:40.483999+00:00",
+  "checked_at": "2026-09-02T03:06:12.832098+00:00",
   "sources_ok": [
     "letsrun",
+    "athleticsweekly",
     "worldathletics"
   ],
-  "days_to_final": 4,
-  "athletes": {
-    "Shericka Jackson": {
-      "status": "watch",
-      "disciplines": [
-        "women_200m"
-      ],
-      "matches": [
-        {
-          "headline": "Schedule, entries, & results for 2026 Athletissima -- Lausanne Diamond League",
-          "url": "https://www.letsrun.com/news/2026/08/schedule-entries-results-for-2026-athletissima-lausanne-diamond-league/",
-          "source": "letsrun_results",
-          "keywords": [
-            "dnf"
-          ]
-        },
-        {
-          "headline": "Full Lausanne Diamond League Results - 2026 Athletissima Results",
-          "url": "https://www.letsrun.com/news/2026/08/full-lausanne-diamond-league-results-2026-athletissima-results/",
-          "source": "letsrun_results",
-          "keywords": [
-            "dnf"
-          ]
-        }
-      ]
-    }
-  }
+  "days_to_final": 2,
+  "athletes": {}
 }
