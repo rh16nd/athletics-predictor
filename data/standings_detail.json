@@ -1,0 +1,4748 @@
+{
+  "year": 2026,
+  "scrapedAt": "2026-09-02T03:00:33+00:00",
+  "disciplines": {
+    "men_100m": {
+      "qualLimit": 8,
+      "waLabel": "100 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Oblique SEVILLE",
+          "country": "JAM",
+          "events": 3,
+          "points": 23
+        },
+        {
+          "rank": 2,
+          "name": "Gift LEOTLELA",
+          "country": "RSA",
+          "events": 4,
+          "points": 23
+        },
+        {
+          "rank": 3,
+          "name": "Trayvon BROMELL",
+          "country": "USA",
+          "events": 3,
+          "points": 19
+        },
+        {
+          "rank": 4,
+          "name": "Jordan ANTHONY",
+          "country": "USA",
+          "events": 4,
+          "points": 19
+        },
+        {
+          "rank": 5,
+          "name": "Ferdinand OMANYALA",
+          "country": "KEN",
+          "events": 4,
+          "points": 19
+        },
+        {
+          "rank": 6,
+          "name": "Kenneth BEDNAREK",
+          "country": "USA",
+          "events": 3,
+          "points": 18
+        },
+        {
+          "rank": 7,
+          "name": "Emmanuel ESEME",
+          "country": "CMR",
+          "events": 3,
+          "points": 18
+        },
+        {
+          "rank": 8,
+          "name": "Akani SIMBINE",
+          "country": "RSA",
+          "events": 5,
+          "points": 17
+        },
+        {
+          "rank": 9,
+          "name": "Noah LYLES",
+          "country": "USA",
+          "events": 2,
+          "points": 15
+        },
+        {
+          "rank": 10,
+          "name": "Kayinsola AJAYI",
+          "country": "NGR",
+          "events": 2,
+          "points": 13
+        },
+        {
+          "rank": 11,
+          "name": "Letsile TEBOGO",
+          "country": "BOT",
+          "events": 4,
+          "points": 13
+        },
+        {
+          "rank": 12,
+          "name": "Lamont Marcell JACOBS",
+          "country": "ITA",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 13,
+          "name": "Christian COLEMAN",
+          "country": "USA",
+          "events": 3,
+          "points": 9
+        },
+        {
+          "rank": 14,
+          "name": "Lachlan KENNEDY",
+          "country": "AUS",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 15,
+          "name": "Romell GLAVE",
+          "country": "GBR",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 16,
+          "name": "Andre DE GRASSE",
+          "country": "CAN",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 17,
+          "name": "Owen ANSAH",
+          "country": "GER",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 18,
+          "name": "Ronal LONGA",
+          "country": "COL",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 19,
+          "name": "Zharnel HUGHES",
+          "country": "GBR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 20,
+          "name": "Ackeem BLAKE",
+          "country": "JAM",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 20,
+          "name": "Sam BLASKOWSKI",
+          "country": "USA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 22,
+          "name": "Jeremiah AZU",
+          "country": "GBR",
+          "events": 2,
+          "points": 2
+        },
+        {
+          "rank": 23,
+          "name": "Ronnie BAKER",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 24,
+          "name": "Bradley NKOANA",
+          "country": "RSA",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_200m": {
+      "qualLimit": 8,
+      "waLabel": "200 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Sinesipho DAMBILE",
+          "country": "RSA",
+          "events": 6,
+          "points": 42
+        },
+        {
+          "rank": 2,
+          "name": "Letsile TEBOGO",
+          "country": "BOT",
+          "events": 4,
+          "points": 30
+        },
+        {
+          "rank": 3,
+          "name": "Kenneth BEDNAREK",
+          "country": "USA",
+          "events": 3,
+          "points": 24
+        },
+        {
+          "rank": 4,
+          "name": "Makanakaishe CHARAMBA",
+          "country": "ZIM",
+          "events": 4,
+          "points": 24
+        },
+        {
+          "rank": 5,
+          "name": "Reynier MENA",
+          "country": "CUB",
+          "events": 4,
+          "points": 15
+        },
+        {
+          "rank": 6,
+          "name": "Courtney LINDSEY",
+          "country": "USA",
+          "events": 4,
+          "points": 15
+        },
+        {
+          "rank": 7,
+          "name": "Andre DE GRASSE",
+          "country": "CAN",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 8,
+          "name": "José FIGUEROA",
+          "country": "PUR",
+          "events": 3,
+          "points": 10
+        },
+        {
+          "rank": 9,
+          "name": "Timothé MUMENTHALER",
+          "country": "SUI",
+          "events": 3,
+          "points": 9
+        },
+        {
+          "rank": 10,
+          "name": "Tate TAYLOR",
+          "country": "USA",
+          "events": 1,
+          "points": 8
+        },
+        {
+          "rank": 11,
+          "name": "Cheickna TRAORE",
+          "country": "CIV",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 12,
+          "name": "Bryan LEVELL",
+          "country": "JAM",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 13,
+          "name": "Zharnel HUGHES",
+          "country": "GBR",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 14,
+          "name": "Alexander OGANDO",
+          "country": "DOM",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 15,
+          "name": "Jereem RICHARDS",
+          "country": "TTO",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 16,
+          "name": "Prince Phaezel SELEPE",
+          "country": "BOT",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 17,
+          "name": "Mthi MTHIMKULU",
+          "country": "RSA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 18,
+          "name": "Yassine HSSINE",
+          "country": "MAR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 19,
+          "name": "Kyree KING",
+          "country": "USA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 20,
+          "name": "Gout GOUT",
+          "country": "AUS",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 21,
+          "name": "Linus PIHL",
+          "country": "SWE",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 22,
+          "name": "Sam BLASKOWSKI",
+          "country": "USA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 23,
+          "name": "Andreas Ofstad KULSENG",
+          "country": "NOR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 24,
+          "name": "Aaron BROWN",
+          "country": "CAN",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 25,
+          "name": "Robin GANTER",
+          "country": "GER",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 26,
+          "name": "Brandon HICKLIN",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 27,
+          "name": "Xavi MO-AJOK",
+          "country": "NED",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_400m": {
+      "qualLimit": 8,
+      "waLabel": "400 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Busang Collen KEBINATSHIPI",
+          "country": "BOT",
+          "events": 5,
+          "points": 40
+        },
+        {
+          "rank": 2,
+          "name": "Jacory PATTERSON",
+          "country": "USA",
+          "events": 6,
+          "points": 38
+        },
+        {
+          "rank": 3,
+          "name": "Zakithi NENE",
+          "country": "RSA",
+          "events": 6,
+          "points": 36
+        },
+        {
+          "rank": 4,
+          "name": "Rai BENJAMIN",
+          "country": "USA",
+          "events": 4,
+          "points": 28
+        },
+        {
+          "rank": 5,
+          "name": "Matthew HUDSON-SMITH",
+          "country": "GBR",
+          "events": 4,
+          "points": 24
+        },
+        {
+          "rank": 6,
+          "name": "Jereem RICHARDS",
+          "country": "TTO",
+          "events": 5,
+          "points": 20
+        },
+        {
+          "rank": 7,
+          "name": "Chris BAILEY",
+          "country": "USA",
+          "events": 4,
+          "points": 19
+        },
+        {
+          "rank": 8,
+          "name": "Khaleb MCRAE",
+          "country": "USA",
+          "events": 4,
+          "points": 17
+        },
+        {
+          "rank": 9,
+          "name": "Muzala SAMUKONGA",
+          "country": "ZAM",
+          "events": 3,
+          "points": 13
+        },
+        {
+          "rank": 10,
+          "name": "Attila MOLNÁR",
+          "country": "HUN",
+          "events": 4,
+          "points": 11
+        },
+        {
+          "rank": 11,
+          "name": "Bayapo NDORI",
+          "country": "BOT",
+          "events": 3,
+          "points": 9
+        },
+        {
+          "rank": 12,
+          "name": "Vernon NORWOOD",
+          "country": "USA",
+          "events": 3,
+          "points": 5
+        },
+        {
+          "rank": 13,
+          "name": "Lee EPPIE",
+          "country": "BOT",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 14,
+          "name": "Chris ROBINSON",
+          "country": "USA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 15,
+          "name": "Charles DOBSON",
+          "country": "GBR",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 16,
+          "name": "Muhammad Abdallah KOUNTA",
+          "country": "FRA",
+          "events": 2,
+          "points": 3
+        },
+        {
+          "rank": 17,
+          "name": "Christopher MORALES WILLIAMS",
+          "country": "CAN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 18,
+          "name": "Carl BENGTSTRÖM",
+          "country": "SWE",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 19,
+          "name": "Mohamed Yassine ZERHOUMI",
+          "country": "MAR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 20,
+          "name": "Ben JEFFERIES",
+          "country": "GBR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 21,
+          "name": "Ezekiel NATHANIEL",
+          "country": "NGR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 22,
+          "name": "Quincy HALL",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_800m": {
+      "qualLimit": 8,
+      "waLabel": "800 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Emmanuel WANYONYI",
+          "country": "KEN",
+          "events": 5,
+          "points": 35
+        },
+        {
+          "rank": 2,
+          "name": "Marco AROP",
+          "country": "CAN",
+          "events": 4,
+          "points": 26
+        },
+        {
+          "rank": 3,
+          "name": "Ben PATTISON",
+          "country": "GBR",
+          "events": 5,
+          "points": 21
+        },
+        {
+          "rank": 4,
+          "name": "Brandon MILLER",
+          "country": "USA",
+          "events": 3,
+          "points": 20
+        },
+        {
+          "rank": 5,
+          "name": "Gabriel TUAL",
+          "country": "FRA",
+          "events": 6,
+          "points": 18
+        },
+        {
+          "rank": 6,
+          "name": "Cooper LUTKENHAUS",
+          "country": "USA",
+          "events": 2,
+          "points": 16
+        },
+        {
+          "rank": 7,
+          "name": "Mark ENGLISH",
+          "country": "IRL",
+          "events": 2,
+          "points": 15
+        },
+        {
+          "rank": 8,
+          "name": "Max BURGIN",
+          "country": "GBR",
+          "events": 2,
+          "points": 14
+        },
+        {
+          "rank": 9,
+          "name": "Djamel SEDJATI",
+          "country": "ALG",
+          "events": 2,
+          "points": 13
+        },
+        {
+          "rank": 10,
+          "name": "Slimane MOULA",
+          "country": "ALG",
+          "events": 2,
+          "points": 12
+        },
+        {
+          "rank": 11,
+          "name": "Tobias GRØNSTAD",
+          "country": "NOR",
+          "events": 3,
+          "points": 12
+        },
+        {
+          "rank": 12,
+          "name": "Peter BOL",
+          "country": "AUS",
+          "events": 3,
+          "points": 11
+        },
+        {
+          "rank": 13,
+          "name": "Eliott CRESTAN",
+          "country": "BEL",
+          "events": 3,
+          "points": 10
+        },
+        {
+          "rank": 14,
+          "name": "Kethobogile HAINGURA",
+          "country": "BOT",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 15,
+          "name": "Jake WIGHTMAN",
+          "country": "GBR",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 16,
+          "name": "Niels LAROS",
+          "country": "NED",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 17,
+          "name": "Yanis MEZIANE",
+          "country": "FRA",
+          "events": 3,
+          "points": 7
+        },
+        {
+          "rank": 18,
+          "name": "Luke BOYES",
+          "country": "AUS",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 19,
+          "name": "Azeddine HABZ",
+          "country": "FRA",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 20,
+          "name": "Donavan BRAZIER",
+          "country": "USA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 21,
+          "name": "Marino BLOUDEK",
+          "country": "CRO",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 22,
+          "name": "Louey OUERRAT",
+          "country": "FRA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 23,
+          "name": "Cian MCPHILLIPS",
+          "country": "IRL",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 24,
+          "name": "Adrián BEN",
+          "country": "ESP",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 25,
+          "name": "David BARROSO",
+          "country": "ESP",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 26,
+          "name": "Bryce HOPPEL",
+          "country": "USA",
+          "events": 2,
+          "points": 2
+        },
+        {
+          "rank": 27,
+          "name": "Ko OCHIAI",
+          "country": "JPN",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 28,
+          "name": "Wyclife KINYAMAL",
+          "country": "KEN",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 29,
+          "name": "Francesco PERNICI",
+          "country": "ITA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 30,
+          "name": "Mohamed ATTAOUI",
+          "country": "ESP",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_1500m": {
+      "qualLimit": 10,
+      "waLabel": "1500 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Yared NUGUSE",
+          "country": "USA",
+          "events": 6,
+          "points": 43
+        },
+        {
+          "rank": 2,
+          "name": "Cameron MYERS",
+          "country": "AUS",
+          "events": 3,
+          "points": 21
+        },
+        {
+          "rank": 3,
+          "name": "Timothy CHERUIYOT",
+          "country": "KEN",
+          "events": 3,
+          "points": 18
+        },
+        {
+          "rank": 4,
+          "name": "Cole HOCKER",
+          "country": "USA",
+          "events": 3,
+          "points": 17
+        },
+        {
+          "rank": 5,
+          "name": "Ethan STRAND",
+          "country": "USA",
+          "events": 3,
+          "points": 16
+        },
+        {
+          "rank": 6,
+          "name": "Hobbs KESSLER",
+          "country": "USA",
+          "events": 4,
+          "points": 16
+        },
+        {
+          "rank": 7,
+          "name": "Vincent CIATTEI",
+          "country": "USA",
+          "events": 5,
+          "points": 15
+        },
+        {
+          "rank": 8,
+          "name": "Phanuel Kipkosgei KOECH",
+          "country": "KEN",
+          "events": 2,
+          "points": 14
+        },
+        {
+          "rank": 9,
+          "name": "Jakob INGEBRIGTSEN",
+          "country": "NOR",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 10,
+          "name": "Jake HEYWARD",
+          "country": "GBR",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 11,
+          "name": "Robert FARKEN",
+          "country": "GER",
+          "events": 4,
+          "points": 9
+        },
+        {
+          "rank": 12,
+          "name": "Azeddine HABZ",
+          "country": "FRA",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 13,
+          "name": "Josh KERR",
+          "country": "GBR",
+          "events": 1,
+          "points": 8
+        },
+        {
+          "rank": 14,
+          "name": "Isaac NADER",
+          "country": "POR",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 15,
+          "name": "Anass ESSAYI",
+          "country": "MAR",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 16,
+          "name": "Samuel PIHLSTRÖM",
+          "country": "SWE",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 17,
+          "name": "Tshepo TSHITE",
+          "country": "RSA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 18,
+          "name": "Andrew COSCORAN",
+          "country": "IRL",
+          "events": 2,
+          "points": 4
+        },
+        {
+          "rank": 19,
+          "name": "Narve Gilje NORDÅS",
+          "country": "NOR",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 20,
+          "name": "Nathan GREEN",
+          "country": "USA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 21,
+          "name": "Jake WIGHTMAN",
+          "country": "GBR",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 22,
+          "name": "Arlo LUDEWICK",
+          "country": "GBR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 23,
+          "name": "Festus LAGAT",
+          "country": "KEN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 24,
+          "name": "Reynold CHERUIYOT",
+          "country": "KEN",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 25,
+          "name": "Ruben VERHEYDEN",
+          "country": "BEL",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 26,
+          "name": "Fouad MESSAOUDI",
+          "country": "MAR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 27,
+          "name": "Thomas KEEN",
+          "country": "GBR",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_5000m": {
+      "qualLimit": 10,
+      "waLabel": "3000/5000 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Birhanu BALEW",
+          "country": "BRN",
+          "events": 5,
+          "points": 27
+        },
+        {
+          "rank": 2,
+          "name": "Graham BLANKS",
+          "country": "USA",
+          "events": 5,
+          "points": 25
+        },
+        {
+          "rank": 3,
+          "name": "Parker WOLFE",
+          "country": "USA",
+          "events": 3,
+          "points": 20
+        },
+        {
+          "rank": 4,
+          "name": "Andreas ALMGREN",
+          "country": "SWE",
+          "events": 3,
+          "points": 18
+        },
+        {
+          "rank": 5,
+          "name": "Addisu YIHUNE",
+          "country": "ETH",
+          "events": 2,
+          "points": 16
+        },
+        {
+          "rank": 6,
+          "name": "Mohamed ABDILAAHI",
+          "country": "GER",
+          "events": 2,
+          "points": 15
+        },
+        {
+          "rank": 7,
+          "name": "Cornelius KEMBOI",
+          "country": "KEN",
+          "events": 5,
+          "points": 14
+        },
+        {
+          "rank": 8,
+          "name": "Grant FISHER",
+          "country": "USA",
+          "events": 3,
+          "points": 14
+        },
+        {
+          "rank": 9,
+          "name": "Biniam MEHARY",
+          "country": "ETH",
+          "events": 3,
+          "points": 13
+        },
+        {
+          "rank": 10,
+          "name": "Jacob KROP",
+          "country": "KEN",
+          "events": 3,
+          "points": 13
+        },
+        {
+          "rank": 11,
+          "name": "Egide NTAKARUTIMANA",
+          "country": "BDI",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 12,
+          "name": "Dominic Lokinyomo LOBALU",
+          "country": "SUI",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 13,
+          "name": "Reynold CHERUIYOT",
+          "country": "KEN",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 14,
+          "name": "Eduardo HERRERA",
+          "country": "MEX",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 15,
+          "name": "Nico YOUNG",
+          "country": "USA",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 16,
+          "name": "Cameron MYERS",
+          "country": "AUS",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 17,
+          "name": "Timothy CHERUIYOT",
+          "country": "KEN",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 18,
+          "name": "Mezgebu SIME",
+          "country": "ETH",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 19,
+          "name": "Ky ROBINSON",
+          "country": "AUS",
+          "events": 2,
+          "points": 4
+        },
+        {
+          "rank": 20,
+          "name": "Edwin KURGAT",
+          "country": "KEN",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 21,
+          "name": "Khairi BEJIGA",
+          "country": "ETH",
+          "events": 2,
+          "points": 4
+        },
+        {
+          "rank": 22,
+          "name": "Mathew Kipchumba KIPSANG",
+          "country": "KEN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 23,
+          "name": "Jimmy GRESSIER",
+          "country": "FRA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 24,
+          "name": "Kuma GIRMA",
+          "country": "ETH",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 25,
+          "name": "Etienne DAGUINOS",
+          "country": "FRA",
+          "events": 1,
+          "points": 2
+        }
+      ]
+    },
+    "men_110h": {
+      "qualLimit": 8,
+      "waLabel": "110 Metres Hurdles",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Jamal BRITT",
+          "country": "USA",
+          "events": 7,
+          "points": 44
+        },
+        {
+          "rank": 2,
+          "name": "Cordell TINCH",
+          "country": "USA",
+          "events": 6,
+          "points": 33
+        },
+        {
+          "rank": 3,
+          "name": "Orlando BENNETT",
+          "country": "JAM",
+          "events": 6,
+          "points": 29
+        },
+        {
+          "rank": 4,
+          "name": "Trey CUNNINGHAM",
+          "country": "USA",
+          "events": 4,
+          "points": 27
+        },
+        {
+          "rank": 5,
+          "name": "Rachid MURATAKE",
+          "country": "JPN",
+          "events": 5,
+          "points": 24
+        },
+        {
+          "rank": 6,
+          "name": "Ja'Kobe THARP",
+          "country": "USA",
+          "events": 3,
+          "points": 23
+        },
+        {
+          "rank": 7,
+          "name": "Kendry L. MENÉNDEZ",
+          "country": "CUB",
+          "events": 3,
+          "points": 14
+        },
+        {
+          "rank": 8,
+          "name": "Enrique LLOPIS",
+          "country": "ESP",
+          "events": 4,
+          "points": 14
+        },
+        {
+          "rank": 9,
+          "name": "Thomas WILKES",
+          "country": "FRA",
+          "events": 3,
+          "points": 12
+        },
+        {
+          "rank": 10,
+          "name": "Jason JOSEPH",
+          "country": "SUI",
+          "events": 3,
+          "points": 9
+        },
+        {
+          "rank": 11,
+          "name": "Demario PRINCE",
+          "country": "JAM",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 12,
+          "name": "Shunsuke IZUMIYA",
+          "country": "JPN",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 13,
+          "name": "Asier MARTÍNEZ",
+          "country": "ESP",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 14,
+          "name": "Junxi LIU",
+          "country": "CHN",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 15,
+          "name": "Zhuoyi XU",
+          "country": "CHN",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 16,
+          "name": "Michael OBASUYI",
+          "country": "BEL",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 17,
+          "name": "Jakub SZYMAŃSKI",
+          "country": "POL",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 18,
+          "name": "Just KWAOU-MATHEY",
+          "country": "FRA",
+          "events": 3,
+          "points": 4
+        },
+        {
+          "rank": 19,
+          "name": "Jamar MARSHALL",
+          "country": "USA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 20,
+          "name": "Romain LECOEUR",
+          "country": "FRA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 21,
+          "name": "Braxton BRANN",
+          "country": "USA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 22,
+          "name": "Eric EDWARDS",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 23,
+          "name": "Kendrick SMALLWOOD",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 24,
+          "name": "Samuel BENNETT",
+          "country": "GBR",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_400h": {
+      "qualLimit": 8,
+      "waLabel": "400 Metres Hurdles",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Karsten WARHOLM",
+          "country": "NOR",
+          "events": 5,
+          "points": 36
+        },
+        {
+          "rank": 2,
+          "name": "Alison DOS SANTOS",
+          "country": "BRA",
+          "events": 4,
+          "points": 32
+        },
+        {
+          "rank": 3,
+          "name": "Matheus LIMA",
+          "country": "BRA",
+          "events": 5,
+          "points": 23
+        },
+        {
+          "rank": 4,
+          "name": "Abderrahman SAMBA",
+          "country": "QAT",
+          "events": 5,
+          "points": 19
+        },
+        {
+          "rank": 5,
+          "name": "Ezekiel NATHANIEL",
+          "country": "NGR",
+          "events": 3,
+          "points": 16
+        },
+        {
+          "rank": 6,
+          "name": "Caleb DEAN",
+          "country": "USA",
+          "events": 3,
+          "points": 14
+        },
+        {
+          "rank": 7,
+          "name": "Emil AGYEKUM",
+          "country": "GER",
+          "events": 2,
+          "points": 11
+        },
+        {
+          "rank": 8,
+          "name": "Trevor BASSITT",
+          "country": "USA",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 9,
+          "name": "Matic Ian GUČEK",
+          "country": "SLO",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 10,
+          "name": "Oskar EDLUND",
+          "country": "SWE",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 11,
+          "name": "İsmail NEZIR",
+          "country": "TUR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 12,
+          "name": "Alastair CHALMERS",
+          "country": "GBR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 13,
+          "name": "Dany BRAND",
+          "country": "SUI",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 14,
+          "name": "CJ ALLEN",
+          "country": "USA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 15,
+          "name": "Debin GONG",
+          "country": "CHN",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 16,
+          "name": "Chris ROBINSON",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_3000sc": {
+      "qualLimit": 10,
+      "waLabel": "3000 Metres Steeplechase",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Soufiane EL BAKKALI",
+          "country": "MAR",
+          "events": 4,
+          "points": 31
+        },
+        {
+          "rank": 2,
+          "name": "Edmund SEREM",
+          "country": "KEN",
+          "events": 5,
+          "points": 27
+        },
+        {
+          "rank": 3,
+          "name": "Simon KOECH",
+          "country": "KEN",
+          "events": 3,
+          "points": 17
+        },
+        {
+          "rank": 4,
+          "name": "Samuel FIREWU",
+          "country": "ETH",
+          "events": 3,
+          "points": 16
+        },
+        {
+          "rank": 5,
+          "name": "Gemechu GODANA",
+          "country": "ETH",
+          "events": 2,
+          "points": 15
+        },
+        {
+          "rank": 6,
+          "name": "Salah Eddine BEN YAZIDE",
+          "country": "MAR",
+          "events": 3,
+          "points": 14
+        },
+        {
+          "rank": 7,
+          "name": "Matthew WILKINSON",
+          "country": "USA",
+          "events": 4,
+          "points": 13
+        },
+        {
+          "rank": 8,
+          "name": "Karl BEBENDORF",
+          "country": "GER",
+          "events": 3,
+          "points": 12
+        },
+        {
+          "rank": 9,
+          "name": "Ryuji MIURA",
+          "country": "JPN",
+          "events": 2,
+          "points": 11
+        },
+        {
+          "rank": 10,
+          "name": "Abraham KIBIWOT",
+          "country": "KEN",
+          "events": 2,
+          "points": 11
+        },
+        {
+          "rank": 11,
+          "name": "Ruben QUERINJEAN",
+          "country": "LUX",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 12,
+          "name": "Daniel ARCE",
+          "country": "ESP",
+          "events": 3,
+          "points": 8
+        },
+        {
+          "rank": 13,
+          "name": "Frederik RUPPERT",
+          "country": "GER",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 14,
+          "name": "Abrham SIME",
+          "country": "ETH",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 15,
+          "name": "Geordie BEAMISH",
+          "country": "NZL",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 16,
+          "name": "Leonard Kipkemoi BETT",
+          "country": "KEN",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 17,
+          "name": "Niklas BUCHHOLZ",
+          "country": "GER",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 18,
+          "name": "Mohamed TINDOUFT",
+          "country": "MAR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 19,
+          "name": "Carson WILLIAMS",
+          "country": "USA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 20,
+          "name": "Hailemariyam AMARE",
+          "country": "ETH",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 21,
+          "name": "Nicolas-Marie DARU",
+          "country": "FRA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 22,
+          "name": "Ahmed JAZIRI",
+          "country": "TUN",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_HJ": {
+      "qualLimit": 6,
+      "waLabel": "High Jump",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Matteo SIOLI",
+          "country": "ITA",
+          "events": 3,
+          "points": 19
+        },
+        {
+          "rank": 2,
+          "name": "Oleh DOROSHCHUK",
+          "country": "UKR",
+          "events": 3,
+          "points": 18
+        },
+        {
+          "rank": 3,
+          "name": "Romaine BECKFORD",
+          "country": "JAM",
+          "events": 3,
+          "points": 18
+        },
+        {
+          "rank": 4,
+          "name": "Mateusz KOŁODZIEJSKI",
+          "country": "POL",
+          "events": 3,
+          "points": 12
+        },
+        {
+          "rank": 5,
+          "name": "Erick PORTILLO",
+          "country": "MEX",
+          "events": 4,
+          "points": 12
+        },
+        {
+          "rank": 6,
+          "name": "Gianmarco TAMBERI",
+          "country": "ITA",
+          "events": 2,
+          "points": 11
+        },
+        {
+          "rank": 7,
+          "name": "JuVaughn HARRISON",
+          "country": "USA",
+          "events": 2,
+          "points": 11
+        },
+        {
+          "rank": 8,
+          "name": "Mutaz Essa BARSHIM",
+          "country": "QAT",
+          "events": 3,
+          "points": 10
+        },
+        {
+          "rank": 9,
+          "name": "Tyus WILSON",
+          "country": "USA",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 10,
+          "name": "Kimani JACK",
+          "country": "GBR",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 11,
+          "name": "Raymond RICHARDS",
+          "country": "JAM",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 12,
+          "name": "Sarvesh Anil KUSHARE",
+          "country": "IND",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 13,
+          "name": "Tomohiro SHINNO",
+          "country": "JPN",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 14,
+          "name": "Jan ŠTEFELA",
+          "country": "CZE",
+          "events": 3,
+          "points": 4
+        },
+        {
+          "rank": 15,
+          "name": "Yual REATH",
+          "country": "AUS",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 16,
+          "name": "Joel CLARKE-KHAN",
+          "country": "GBR",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_PV": {
+      "qualLimit": 6,
+      "waLabel": "Pole Vault",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Armand DUPLANTIS",
+          "country": "SWE",
+          "events": 5,
+          "points": 38
+        },
+        {
+          "rank": 2,
+          "name": "Kurtis MARSCHALL",
+          "country": "AUS",
+          "events": 6,
+          "points": 37
+        },
+        {
+          "rank": 3,
+          "name": "Emmanouil KARALIS",
+          "country": "GRE",
+          "events": 6,
+          "points": 31
+        },
+        {
+          "rank": 4,
+          "name": "Sam KENDRICKS",
+          "country": "USA",
+          "events": 7,
+          "points": 29
+        },
+        {
+          "rank": 5,
+          "name": "Sondre GUTTORMSEN",
+          "country": "NOR",
+          "events": 6,
+          "points": 29
+        },
+        {
+          "rank": 6,
+          "name": "Baptiste THIERY",
+          "country": "FRA",
+          "events": 3,
+          "points": 17
+        },
+        {
+          "rank": 7,
+          "name": "Menno VLOON",
+          "country": "NED",
+          "events": 5,
+          "points": 17
+        },
+        {
+          "rank": 8,
+          "name": "Christopher NILSEN",
+          "country": "USA",
+          "events": 3,
+          "points": 16
+        },
+        {
+          "rank": 9,
+          "name": "Zachery BRADFORD",
+          "country": "USA",
+          "events": 5,
+          "points": 15
+        },
+        {
+          "rank": 10,
+          "name": "Thibaut COLLET",
+          "country": "FRA",
+          "events": 3,
+          "points": 9
+        },
+        {
+          "rank": 11,
+          "name": "Renaud LAVILLENIE",
+          "country": "FRA",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 12,
+          "name": "KC LIGHTFOOT",
+          "country": "USA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 13,
+          "name": "Ernest John OBIENA",
+          "country": "PHI",
+          "events": 2,
+          "points": 4
+        },
+        {
+          "rank": 14,
+          "name": "Seifeldin ABDELSALAM",
+          "country": "QAT",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 15,
+          "name": "Bokai HUANG",
+          "country": "CHN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 16,
+          "name": "Chenyang LI",
+          "country": "CHN",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 17,
+          "name": "Owen HEARD",
+          "country": "GBR",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_LJ": {
+      "qualLimit": 6,
+      "waLabel": "Long Jump",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Miltiadis TENTOGLOU",
+          "country": "GRE",
+          "events": 5,
+          "points": 39
+        },
+        {
+          "rank": 2,
+          "name": "Bozhidar SARÂBOYUKOV",
+          "country": "BUL",
+          "events": 5,
+          "points": 24
+        },
+        {
+          "rank": 3,
+          "name": "Jorge A. HODELÍN",
+          "country": "CUB",
+          "events": 4,
+          "points": 22
+        },
+        {
+          "rank": 4,
+          "name": "Tajay GAYLE",
+          "country": "JAM",
+          "events": 4,
+          "points": 21
+        },
+        {
+          "rank": 5,
+          "name": "Wayne PINNOCK",
+          "country": "JAM",
+          "events": 5,
+          "points": 21
+        },
+        {
+          "rank": 6,
+          "name": "Simon EHAMMER",
+          "country": "SUI",
+          "events": 3,
+          "points": 14
+        },
+        {
+          "rank": 7,
+          "name": "Gerson BALDÉ",
+          "country": "POR",
+          "events": 3,
+          "points": 11
+        },
+        {
+          "rank": 8,
+          "name": "Luka BOŠKOVIĆ",
+          "country": "SRB",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 9,
+          "name": "Mattia FURLANI",
+          "country": "ITA",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 10,
+          "name": "Anvar ANVAROV",
+          "country": "UZB",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 11,
+          "name": "Thobias MONTLER",
+          "country": "SWE",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 12,
+          "name": "Heng SHU",
+          "country": "CHN",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 13,
+          "name": "Liam ADCOCK",
+          "country": "AUS",
+          "events": 2,
+          "points": 2
+        },
+        {
+          "rank": 14,
+          "name": "Lester LESCAY",
+          "country": "ESP",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_TJ": {
+      "qualLimit": 6,
+      "waLabel": "Triple Jump",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Jordan SCOTT",
+          "country": "JAM",
+          "events": 4,
+          "points": 26
+        },
+        {
+          "rank": 2,
+          "name": "Yasser Mohammed TRIKI",
+          "country": "ALG",
+          "events": 4,
+          "points": 23
+        },
+        {
+          "rank": 3,
+          "name": "Andy DÍAZ HERNÁNDEZ",
+          "country": "ITA",
+          "events": 3,
+          "points": 21
+        },
+        {
+          "rank": 4,
+          "name": "Pedro PICHARDO",
+          "country": "POR",
+          "events": 2,
+          "points": 16
+        },
+        {
+          "rank": 5,
+          "name": "Lázaro MARTÍNEZ",
+          "country": "CUB",
+          "events": 4,
+          "points": 14
+        },
+        {
+          "rank": 6,
+          "name": "Jaydon HIBBERT",
+          "country": "JAM",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 7,
+          "name": "Almir DOS SANTOS",
+          "country": "BRA",
+          "events": 4,
+          "points": 9
+        },
+        {
+          "rank": 8,
+          "name": "Russell ROBINSON",
+          "country": "USA",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 9,
+          "name": "Andrea DALLAVALLE",
+          "country": "ITA",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 10,
+          "name": "Dawoud JOK",
+          "country": "SSD",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 11,
+          "name": "Melvin RAFFIN",
+          "country": "FRA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 12,
+          "name": "Nikolaos ANDRIKOPOULOS",
+          "country": "GRE",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 13,
+          "name": "Endiorass KINGLEY",
+          "country": "AUT",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_SP": {
+      "qualLimit": 6,
+      "waLabel": "Shot Put",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Jordan GEIST",
+          "country": "USA",
+          "events": 5,
+          "points": 30
+        },
+        {
+          "rank": 2,
+          "name": "Rajindra CAMPBELL",
+          "country": "JAM",
+          "events": 5,
+          "points": 28
+        },
+        {
+          "rank": 3,
+          "name": "Leonardo FABBRI",
+          "country": "ITA",
+          "events": 4,
+          "points": 26
+        },
+        {
+          "rank": 4,
+          "name": "Joe KOVACS",
+          "country": "USA",
+          "events": 4,
+          "points": 21
+        },
+        {
+          "rank": 5,
+          "name": "Ryan CROUSER",
+          "country": "USA",
+          "events": 3,
+          "points": 19
+        },
+        {
+          "rank": 6,
+          "name": "Roger STEEN",
+          "country": "USA",
+          "events": 5,
+          "points": 19
+        },
+        {
+          "rank": 7,
+          "name": "Tom WALSH",
+          "country": "NZL",
+          "events": 5,
+          "points": 16
+        },
+        {
+          "rank": 8,
+          "name": "Adrian PIPERI",
+          "country": "USA",
+          "events": 4,
+          "points": 10
+        },
+        {
+          "rank": 9,
+          "name": "Chukwuebuka ENEKWECHI",
+          "country": "NGR",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 10,
+          "name": "Zane WEIR",
+          "country": "ITA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 11,
+          "name": "Payton OTTERDAHL",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 12,
+          "name": "Uziel MUÑOZ",
+          "country": "MEX",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_DT": {
+      "qualLimit": 6,
+      "waLabel": "Discus Throw",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Kristjan ČEH",
+          "country": "SLO",
+          "events": 4,
+          "points": 28
+        },
+        {
+          "rank": 2,
+          "name": "Daniel STÅHL",
+          "country": "SWE",
+          "events": 4,
+          "points": 23
+        },
+        {
+          "rank": 3,
+          "name": "Matthew DENNY",
+          "country": "AUS",
+          "events": 4,
+          "points": 20
+        },
+        {
+          "rank": 4,
+          "name": "Roje STONA",
+          "country": "JAM",
+          "events": 4,
+          "points": 17
+        },
+        {
+          "rank": 5,
+          "name": "Mykolas ALEKNA",
+          "country": "LTU",
+          "events": 2,
+          "points": 16
+        },
+        {
+          "rank": 6,
+          "name": "Henrik JANSSEN",
+          "country": "GER",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 7,
+          "name": "Steven RICHTER",
+          "country": "GER",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 8,
+          "name": "Lawrence OKOYE",
+          "country": "GBR",
+          "events": 3,
+          "points": 8
+        },
+        {
+          "rank": 9,
+          "name": "Sam MATTIS",
+          "country": "USA",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 10,
+          "name": "Alex ROSE",
+          "country": "SAM",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 11,
+          "name": "Ralford MULLINGS",
+          "country": "JAM",
+          "events": 2,
+          "points": 3
+        },
+        {
+          "rank": 12,
+          "name": "Lukas WEIßHAIDINGER",
+          "country": "AUT",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "men_JT": {
+      "qualLimit": 6,
+      "waLabel": "Javelin Throw",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Rumesh Tharanga PATHIRAGE",
+          "country": "SRI",
+          "events": 5,
+          "points": 39
+        },
+        {
+          "rank": 2,
+          "name": "Anderson PETERS",
+          "country": "GRN",
+          "events": 5,
+          "points": 35
+        },
+        {
+          "rank": 3,
+          "name": "Keshorn WALCOTT",
+          "country": "TTO",
+          "events": 5,
+          "points": 23
+        },
+        {
+          "rank": 4,
+          "name": "Curtis THOMPSON",
+          "country": "USA",
+          "events": 5,
+          "points": 20
+        },
+        {
+          "rank": 5,
+          "name": "Julius YEGO",
+          "country": "KEN",
+          "events": 4,
+          "points": 13
+        },
+        {
+          "rank": 6,
+          "name": "Neeraj CHOPRA",
+          "country": "IND",
+          "events": 2,
+          "points": 12
+        },
+        {
+          "rank": 7,
+          "name": "Dawid WEGNER",
+          "country": "POL",
+          "events": 3,
+          "points": 10
+        },
+        {
+          "rank": 8,
+          "name": "Thomas RÖHLER",
+          "country": "GER",
+          "events": 3,
+          "points": 10
+        },
+        {
+          "rank": 9,
+          "name": "Marc Anthony MINICHELLO",
+          "country": "USA",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 10,
+          "name": "Artur FELFNER",
+          "country": "UKR",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 11,
+          "name": "Jakub VADLEJCH",
+          "country": "CZE",
+          "events": 3,
+          "points": 5
+        },
+        {
+          "rank": 12,
+          "name": "Sachin YADAV",
+          "country": "IND",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_100m": {
+      "qualLimit": 8,
+      "waLabel": "100 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Melissa JEFFERSON-WOODEN",
+          "country": "USA",
+          "events": 4,
+          "points": 31
+        },
+        {
+          "rank": 2,
+          "name": "Julien ALFRED",
+          "country": "LCA",
+          "events": 3,
+          "points": 23
+        },
+        {
+          "rank": 3,
+          "name": "Tina CLAYTON",
+          "country": "JAM",
+          "events": 4,
+          "points": 20
+        },
+        {
+          "rank": 4,
+          "name": "Patrizia VAN DER WEKEN",
+          "country": "LUX",
+          "events": 4,
+          "points": 20
+        },
+        {
+          "rank": 5,
+          "name": "Sha'Carri RICHARDSON",
+          "country": "USA",
+          "events": 3,
+          "points": 19
+        },
+        {
+          "rank": 6,
+          "name": "Amy HUNT",
+          "country": "GBR",
+          "events": 3,
+          "points": 18
+        },
+        {
+          "rank": 7,
+          "name": "Jonielle SMITH",
+          "country": "JAM",
+          "events": 3,
+          "points": 13
+        },
+        {
+          "rank": 8,
+          "name": "Zaynab DOSSO",
+          "country": "ITA",
+          "events": 3,
+          "points": 13
+        },
+        {
+          "rank": 9,
+          "name": "Minke BISSCHOPS",
+          "country": "NED",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 10,
+          "name": "Zoe HOBBS",
+          "country": "NZL",
+          "events": 3,
+          "points": 9
+        },
+        {
+          "rank": 11,
+          "name": "Brianna LYSTON",
+          "country": "JAM",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 12,
+          "name": "Kemba NELSON",
+          "country": "JAM",
+          "events": 1,
+          "points": 8
+        },
+        {
+          "rank": 13,
+          "name": "Lavanya WILLIAMS",
+          "country": "JAM",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 14,
+          "name": "Adaejah HODGE",
+          "country": "IVB",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 15,
+          "name": "Jaël BESTUÉ",
+          "country": "ESP",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 16,
+          "name": "Ewa SWOBODA",
+          "country": "POL",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 17,
+          "name": "Mckenzie LONG",
+          "country": "USA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 18,
+          "name": "Boglárka TAKÁCS",
+          "country": "HUN",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 18,
+          "name": "Anavia BATTLE",
+          "country": "USA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 20,
+          "name": "Shericka JACKSON",
+          "country": "JAM",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 21,
+          "name": "Torrie LEWIS",
+          "country": "AUS",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 22,
+          "name": "Dina ASHER-SMITH",
+          "country": "GBR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 23,
+          "name": "Julia HENRIKSSON",
+          "country": "SWE",
+          "events": 2,
+          "points": 3
+        },
+        {
+          "rank": 24,
+          "name": "Maria Isabel PÉREZ",
+          "country": "ESP",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 25,
+          "name": "Shawnti JACKSON",
+          "country": "USA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 26,
+          "name": "Sade MCCREATH",
+          "country": "CAN",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 27,
+          "name": "Destiny SMITH-BARNETT",
+          "country": "LBR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 28,
+          "name": "Favour OFILI",
+          "country": "NGR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 29,
+          "name": "Kayla WHITE",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 30,
+          "name": "Delphine NKANSA",
+          "country": "BEL",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 31,
+          "name": "Helene RØNNINGEN",
+          "country": "NOR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 31,
+          "name": "Dana Noor SALEM",
+          "country": "QAT",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_200m": {
+      "qualLimit": 8,
+      "waLabel": "200 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Anavia BATTLE",
+          "country": "USA",
+          "events": 6,
+          "points": 28
+        },
+        {
+          "rank": 2,
+          "name": "Shaunae MILLER-UIBO",
+          "country": "BAH",
+          "events": 4,
+          "points": 25
+        },
+        {
+          "rank": 3,
+          "name": "Julien ALFRED",
+          "country": "LCA",
+          "events": 3,
+          "points": 24
+        },
+        {
+          "rank": 4,
+          "name": "Amy HUNT",
+          "country": "GBR",
+          "events": 5,
+          "points": 22
+        },
+        {
+          "rank": 5,
+          "name": "Kayla WHITE",
+          "country": "USA",
+          "events": 3,
+          "points": 20
+        },
+        {
+          "rank": 6,
+          "name": "Shericka JACKSON",
+          "country": "JAM",
+          "events": 2,
+          "points": 16
+        },
+        {
+          "rank": 7,
+          "name": "Gabrielle THOMAS",
+          "country": "USA",
+          "events": 2,
+          "points": 13
+        },
+        {
+          "rank": 8,
+          "name": "Cambrea STURGIS",
+          "country": "USA",
+          "events": 3,
+          "points": 13
+        },
+        {
+          "rank": 9,
+          "name": "Sha'Carri RICHARDSON",
+          "country": "USA",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 10,
+          "name": "Dina ASHER-SMITH",
+          "country": "GBR",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 11,
+          "name": "Mckenzie LONG",
+          "country": "USA",
+          "events": 3,
+          "points": 8
+        },
+        {
+          "rank": 12,
+          "name": "Adaejah HODGE",
+          "country": "IVB",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 13,
+          "name": "Melissa JEFFERSON-WOODEN",
+          "country": "USA",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 14,
+          "name": "Jenna PRANDINI",
+          "country": "USA",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 15,
+          "name": "Favour OFILI",
+          "country": "NGR",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 16,
+          "name": "Audrey LEDUC",
+          "country": "CAN",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 17,
+          "name": "Fabienne HOENKE",
+          "country": "SUI",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 18,
+          "name": "Léonie POINTET",
+          "country": "SUI",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 19,
+          "name": "Success EDUAN",
+          "country": "GBR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 20,
+          "name": "Torrie LEWIS",
+          "country": "AUS",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 21,
+          "name": "Yujie CHEN",
+          "country": "CHN",
+          "events": 2,
+          "points": 3
+        },
+        {
+          "rank": 22,
+          "name": "Jaël BESTUÉ",
+          "country": "ESP",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 23,
+          "name": "Maboundou KONÉ",
+          "country": "CIV",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 24,
+          "name": "Elisa VALENSIN",
+          "country": "ITA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 25,
+          "name": "Ajla DEL PONTE",
+          "country": "SUI",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_400m": {
+      "qualLimit": 8,
+      "waLabel": "400 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Marileidy PAULINO",
+          "country": "DOM",
+          "events": 5,
+          "points": 40
+        },
+        {
+          "rank": 2,
+          "name": "Nickisha PRYCE",
+          "country": "JAM",
+          "events": 6,
+          "points": 35
+        },
+        {
+          "rank": 3,
+          "name": "Lurdes Gloria MANUEL",
+          "country": "CZE",
+          "events": 4,
+          "points": 27
+        },
+        {
+          "rank": 4,
+          "name": "Henriette JÆGER",
+          "country": "NOR",
+          "events": 4,
+          "points": 25
+        },
+        {
+          "rank": 5,
+          "name": "Natalia BUKOWIECKA",
+          "country": "POL",
+          "events": 5,
+          "points": 24
+        },
+        {
+          "rank": 6,
+          "name": "Roxana GÓMEZ",
+          "country": "CUB",
+          "events": 5,
+          "points": 21
+        },
+        {
+          "rank": 7,
+          "name": "Aaliyah BUTLER",
+          "country": "USA",
+          "events": 4,
+          "points": 20
+        },
+        {
+          "rank": 8,
+          "name": "Stacey Ann WILLIAMS",
+          "country": "JAM",
+          "events": 4,
+          "points": 20
+        },
+        {
+          "rank": 9,
+          "name": "Lieke KLAVER",
+          "country": "NED",
+          "events": 5,
+          "points": 19
+        },
+        {
+          "rank": 10,
+          "name": "Amber ANNING",
+          "country": "GBR",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 11,
+          "name": "Salwa Eid NASER",
+          "country": "BRN",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 12,
+          "name": "Bassant HEMIDA",
+          "country": "EGY",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 13,
+          "name": "Martina WEIL",
+          "country": "CHI",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 14,
+          "name": "Sharlene MAWDSLEY",
+          "country": "IRL",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 15,
+          "name": "Sada WILLIAMS",
+          "country": "BAR",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 16,
+          "name": "Paris PEOPLES",
+          "country": "USA",
+          "events": 2,
+          "points": 4
+        },
+        {
+          "rank": 17,
+          "name": "Yemi Mary JOHN",
+          "country": "GBR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 18,
+          "name": "Keely HODGKINSON",
+          "country": "GBR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 19,
+          "name": "Skadi SCHIER",
+          "country": "GER",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 20,
+          "name": "Josefine Tomine Eriksen AKS",
+          "country": "NOR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 21,
+          "name": "Charlotte HENRICH",
+          "country": "GBR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 22,
+          "name": "Jasmine JONES",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 23,
+          "name": "Isabelle BLACK",
+          "country": "FRA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 24,
+          "name": "Anna POLINARI",
+          "country": "ITA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 25,
+          "name": "Obakeng KAMBERUKA",
+          "country": "BOT",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 26,
+          "name": "Astri ERTZGAARD",
+          "country": "NOR",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_800m": {
+      "qualLimit": 8,
+      "waLabel": "800 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Audrey WERRO",
+          "country": "SUI",
+          "events": 5,
+          "points": 40
+        },
+        {
+          "rank": 2,
+          "name": "Femke BROEDERS-BOL",
+          "country": "NED",
+          "events": 4,
+          "points": 28
+        },
+        {
+          "rank": 3,
+          "name": "Keely HODGKINSON",
+          "country": "GBR",
+          "events": 3,
+          "points": 22
+        },
+        {
+          "rank": 4,
+          "name": "Prudence SEKGODISO",
+          "country": "RSA",
+          "events": 6,
+          "points": 20
+        },
+        {
+          "rank": 5,
+          "name": "Tsige DUGUMA",
+          "country": "ETH",
+          "events": 3,
+          "points": 20
+        },
+        {
+          "rank": 6,
+          "name": "Addison WILEY",
+          "country": "USA",
+          "events": 4,
+          "points": 19
+        },
+        {
+          "rank": 7,
+          "name": "Anaïs BOURGOIN",
+          "country": "FRA",
+          "events": 4,
+          "points": 18
+        },
+        {
+          "rank": 8,
+          "name": "Lilian ODIRA",
+          "country": "KEN",
+          "events": 3,
+          "points": 16
+        },
+        {
+          "rank": 9,
+          "name": "Saida TSEHAYE",
+          "country": "ETH",
+          "events": 2,
+          "points": 11
+        },
+        {
+          "rank": 10,
+          "name": "Oratile NOWE",
+          "country": "BOT",
+          "events": 3,
+          "points": 11
+        },
+        {
+          "rank": 11,
+          "name": "Sarah BILLINGS",
+          "country": "AUS",
+          "events": 3,
+          "points": 10
+        },
+        {
+          "rank": 12,
+          "name": "Veronica VANCARDO",
+          "country": "SUI",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 13,
+          "name": "Halimah NAKAAYI",
+          "country": "UGA",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 14,
+          "name": "Georgia HUNTER BELL",
+          "country": "GBR",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 15,
+          "name": "Rénelle LAMOTE",
+          "country": "FRA",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 16,
+          "name": "Roisin WILLIS",
+          "country": "USA",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 17,
+          "name": "Raevyn ROGERS",
+          "country": "USA",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 18,
+          "name": "Sanu JALLOW",
+          "country": "GAM",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 19,
+          "name": "Valentina ROSAMILIA",
+          "country": "SUI",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 20,
+          "name": "Jessica HULL",
+          "country": "AUS",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 21,
+          "name": "Jemma REEKIE",
+          "country": "GBR",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 22,
+          "name": "Anna WIELGOSZ",
+          "country": "POL",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 23,
+          "name": "Isabelle BOFFEY",
+          "country": "GBR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 24,
+          "name": "Nigist GETACHEW",
+          "country": "ETH",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 25,
+          "name": "Sage HURTA-KLECKER",
+          "country": "USA",
+          "events": 2,
+          "points": 2
+        },
+        {
+          "rank": 26,
+          "name": "Eloisa COIRO",
+          "country": "ITA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 27,
+          "name": "Clara LIBERMAN",
+          "country": "FRA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 28,
+          "name": "Shafiqua MALONEY",
+          "country": "VIN",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_1500m": {
+      "qualLimit": 10,
+      "waLabel": "1500 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Birke HAYLOM",
+          "country": "ETH",
+          "events": 4,
+          "points": 24
+        },
+        {
+          "rank": 2,
+          "name": "Jessica HULL",
+          "country": "AUS",
+          "events": 5,
+          "points": 23
+        },
+        {
+          "rank": 3,
+          "name": "Dorcus EWOI",
+          "country": "KEN",
+          "events": 4,
+          "points": 22
+        },
+        {
+          "rank": 4,
+          "name": "Abbey CALDWELL",
+          "country": "AUS",
+          "events": 4,
+          "points": 20
+        },
+        {
+          "rank": 5,
+          "name": "Klaudia KAZIMIERSKA",
+          "country": "POL",
+          "events": 3,
+          "points": 17
+        },
+        {
+          "rank": 6,
+          "name": "Georgia HUNTER BELL",
+          "country": "GBR",
+          "events": 3,
+          "points": 17
+        },
+        {
+          "rank": 7,
+          "name": "Tsige DUGUMA",
+          "country": "ETH",
+          "events": 2,
+          "points": 15
+        },
+        {
+          "rank": 8,
+          "name": "Emily MACKAY",
+          "country": "USA",
+          "events": 4,
+          "points": 15
+        },
+        {
+          "rank": 9,
+          "name": "Agathe GUILLEMOT",
+          "country": "FRA",
+          "events": 3,
+          "points": 14
+        },
+        {
+          "rank": 10,
+          "name": "Nikki HILTZ",
+          "country": "USA",
+          "events": 2,
+          "points": 14
+        },
+        {
+          "rank": 11,
+          "name": "Saron BERHE",
+          "country": "ETH",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 12,
+          "name": "Freweyni HAILU",
+          "country": "ETH",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 13,
+          "name": "Patricia SILVA",
+          "country": "POR",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 14,
+          "name": "Haregeweyni KALAYU",
+          "country": "ETH",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 15,
+          "name": "Faith KIPYEGON",
+          "country": "KEN",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 16,
+          "name": "Worknesh MESELE",
+          "country": "ETH",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 17,
+          "name": "Gesa Felicitas KRAUSE",
+          "country": "GER",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 18,
+          "name": "Águeda MARQUÉS",
+          "country": "ESP",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 19,
+          "name": "Sarah BILLINGS",
+          "country": "AUS",
+          "events": 2,
+          "points": 3
+        },
+        {
+          "rank": 20,
+          "name": "Nelly JEPKOSGEI",
+          "country": "BRN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 21,
+          "name": "Ludovica CAVALLI",
+          "country": "ITA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 22,
+          "name": "Gaia SABBATINI",
+          "country": "ITA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 23,
+          "name": "Linden HALL",
+          "country": "AUS",
+          "events": 2,
+          "points": 2
+        },
+        {
+          "rank": 24,
+          "name": "Gabija GALVYDYTĖ",
+          "country": "LTU",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 25,
+          "name": "Marta ZENONI",
+          "country": "ITA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 26,
+          "name": "Sarah HEALY",
+          "country": "IRL",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 27,
+          "name": "Salomé AFONSO",
+          "country": "POR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 28,
+          "name": "Aster ARERI",
+          "country": "ETH",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_5000m": {
+      "qualLimit": 10,
+      "waLabel": "3000/5000 Metres",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Aleshign BAWEKE",
+          "country": "ETH",
+          "events": 4,
+          "points": 26
+        },
+        {
+          "rank": 2,
+          "name": "Freweyni HAILU",
+          "country": "ETH",
+          "events": 4,
+          "points": 25
+        },
+        {
+          "rank": 3,
+          "name": "Likina AMEBAW",
+          "country": "ETH",
+          "events": 4,
+          "points": 23
+        },
+        {
+          "rank": 4,
+          "name": "Senayet GETACHEW",
+          "country": "ETH",
+          "events": 4,
+          "points": 20
+        },
+        {
+          "rank": 5,
+          "name": "Marta ALEMAYO",
+          "country": "ETH",
+          "events": 3,
+          "points": 16
+        },
+        {
+          "rank": 6,
+          "name": "Rose DAVIES",
+          "country": "AUS",
+          "events": 3,
+          "points": 14
+        },
+        {
+          "rank": 7,
+          "name": "Medina EISA",
+          "country": "ETH",
+          "events": 3,
+          "points": 13
+        },
+        {
+          "rank": 8,
+          "name": "Hirut MESHESHA",
+          "country": "ETH",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 9,
+          "name": "Hawi ABERA",
+          "country": "ETH",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 10,
+          "name": "Agnes Jebet NGETICH",
+          "country": "KEN",
+          "events": 1,
+          "points": 8
+        },
+        {
+          "rank": 11,
+          "name": "Jessica HULL",
+          "country": "AUS",
+          "events": 1,
+          "points": 8
+        },
+        {
+          "rank": 12,
+          "name": "Fantaye BELAYNEH",
+          "country": "ETH",
+          "events": 3,
+          "points": 8
+        },
+        {
+          "rank": 13,
+          "name": "Nadia BATTOCLETTI",
+          "country": "ITA",
+          "events": 1,
+          "points": 8
+        },
+        {
+          "rank": 14,
+          "name": "Sarah HEALY",
+          "country": "IRL",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 15,
+          "name": "Linden HALL",
+          "country": "AUS",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 16,
+          "name": "Shelby HOULIHAN",
+          "country": "USA",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 17,
+          "name": "Faith KIPYEGON",
+          "country": "KEN",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 18,
+          "name": "Hannah NUTTALL",
+          "country": "GBR",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 19,
+          "name": "Bernesh DESSIE",
+          "country": "ETH",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 20,
+          "name": "Maureen KOSTER",
+          "country": "NED",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 21,
+          "name": "Margot APPLETON",
+          "country": "USA",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 22,
+          "name": "Aynadis MEBRATU",
+          "country": "ETH",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 23,
+          "name": "Karissa SCHWEIZER",
+          "country": "USA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 24,
+          "name": "Nelvin JEPKEMBOI",
+          "country": "KEN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 25,
+          "name": "Georgia GRIFFITH",
+          "country": "AUS",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 26,
+          "name": "Mizan ALEM",
+          "country": "ETH",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 27,
+          "name": "Megan KEITH",
+          "country": "GBR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 28,
+          "name": "Yenawa NBRET",
+          "country": "ETH",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 29,
+          "name": "Melknat WUDU",
+          "country": "ETH",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 30,
+          "name": "Cassandre BEAUGRAND",
+          "country": "FRA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 31,
+          "name": "Asayech AYICHEW",
+          "country": "ETH",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 32,
+          "name": "Winfred YAVI",
+          "country": "BRN",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 33,
+          "name": "Cynthia CHEPKIRUI",
+          "country": "KEN",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_100h": {
+      "qualLimit": 8,
+      "waLabel": "100 Metres Hurdles",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Masai RUSSELL",
+          "country": "USA",
+          "events": 6,
+          "points": 48
+        },
+        {
+          "rank": 2,
+          "name": "Tobi AMUSAN",
+          "country": "NGR",
+          "events": 5,
+          "points": 35
+        },
+        {
+          "rank": 3,
+          "name": "Nadine VISSER",
+          "country": "NED",
+          "events": 5,
+          "points": 30
+        },
+        {
+          "rank": 4,
+          "name": "Devynne CHARLTON",
+          "country": "BAH",
+          "events": 3,
+          "points": 19
+        },
+        {
+          "rank": 5,
+          "name": "Alaysha JOHNSON",
+          "country": "USA",
+          "events": 3,
+          "points": 19
+        },
+        {
+          "rank": 6,
+          "name": "Pia SKRZYSZOWSKA",
+          "country": "POL",
+          "events": 5,
+          "points": 19
+        },
+        {
+          "rank": 7,
+          "name": "Megan SIMMONDS",
+          "country": "JAM",
+          "events": 4,
+          "points": 19
+        },
+        {
+          "rank": 8,
+          "name": "Danielle WILLIAMS",
+          "country": "JAM",
+          "events": 4,
+          "points": 15
+        },
+        {
+          "rank": 9,
+          "name": "Grace STARK",
+          "country": "USA",
+          "events": 2,
+          "points": 13
+        },
+        {
+          "rank": 10,
+          "name": "Ditaji KAMBUNDJI",
+          "country": "SUI",
+          "events": 4,
+          "points": 13
+        },
+        {
+          "rank": 11,
+          "name": "Ackera NUGENT",
+          "country": "JAM",
+          "events": 4,
+          "points": 13
+        },
+        {
+          "rank": 12,
+          "name": "Rayniah JONES",
+          "country": "USA",
+          "events": 3,
+          "points": 12
+        },
+        {
+          "rank": 13,
+          "name": "Kendra HARRISON",
+          "country": "USA",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 14,
+          "name": "Demisha ROSWELL",
+          "country": "JAM",
+          "events": 3,
+          "points": 7
+        },
+        {
+          "rank": 15,
+          "name": "Marione FOURIE",
+          "country": "RSA",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 16,
+          "name": "Tonea MARSHALL",
+          "country": "USA",
+          "events": 2,
+          "points": 4
+        },
+        {
+          "rank": 17,
+          "name": "Yanni WU",
+          "country": "CHN",
+          "events": 2,
+          "points": 3
+        },
+        {
+          "rank": 18,
+          "name": "Sacha ALESSANDRINI",
+          "country": "FRA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 19,
+          "name": "Annik KÄLIN",
+          "country": "SUI",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 20,
+          "name": "Giada CARMASSI",
+          "country": "ITA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 21,
+          "name": "Aaliyah MCCORMICK",
+          "country": "USA",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_400h": {
+      "qualLimit": 8,
+      "waLabel": "400 Metres Hurdles",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Emma ZAPLETALOVÁ",
+          "country": "SVK",
+          "events": 6,
+          "points": 43
+        },
+        {
+          "rank": 2,
+          "name": "Rushell CLAYTON",
+          "country": "JAM",
+          "events": 6,
+          "points": 37
+        },
+        {
+          "rank": 3,
+          "name": "Anna COCKRELL",
+          "country": "USA",
+          "events": 4,
+          "points": 29
+        },
+        {
+          "rank": 4,
+          "name": "Gianna WOODRUFF",
+          "country": "PAN",
+          "events": 6,
+          "points": 27
+        },
+        {
+          "rank": 5,
+          "name": "Amalie IUEL",
+          "country": "NOR",
+          "events": 5,
+          "points": 16
+        },
+        {
+          "rank": 6,
+          "name": "Dalilah MUHAMMAD",
+          "country": "USA",
+          "events": 2,
+          "points": 12
+        },
+        {
+          "rank": 7,
+          "name": "Jasmine JONES",
+          "country": "USA",
+          "events": 3,
+          "points": 12
+        },
+        {
+          "rank": 8,
+          "name": "Fatoumata Binta DIALLO",
+          "country": "POR",
+          "events": 3,
+          "points": 10
+        },
+        {
+          "rank": 9,
+          "name": "Kemi ADEKOYA",
+          "country": "BRN",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 10,
+          "name": "Paulien COUCKUYT",
+          "country": "BEL",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 11,
+          "name": "Ayomide FOLORUNSO",
+          "country": "ITA",
+          "events": 2,
+          "points": 4
+        },
+        {
+          "rank": 12,
+          "name": "Ashley MILLER",
+          "country": "ZIM",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 13,
+          "name": "Savannah SUTHERLAND",
+          "country": "CAN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 14,
+          "name": "Elisabeth SLETTUM",
+          "country": "NOR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 15,
+          "name": "Emily NEWNHAM",
+          "country": "GBR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 16,
+          "name": "Eileen DEMES",
+          "country": "GER",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 17,
+          "name": "Andrenette KNIGHT",
+          "country": "JAM",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 18,
+          "name": "Alice MURARO",
+          "country": "ITA",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 19,
+          "name": "Andrea ROOTH",
+          "country": "NOR",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_3000sc": {
+      "qualLimit": 10,
+      "waLabel": "3000 Metres Steeplechase",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Faith CHEROTICH",
+          "country": "KEN",
+          "events": 5,
+          "points": 36
+        },
+        {
+          "rank": 2,
+          "name": "Marwa BOUZAYANI",
+          "country": "TUN",
+          "events": 5,
+          "points": 31
+        },
+        {
+          "rank": 3,
+          "name": "Peruth CHEMUTAI",
+          "country": "UGA",
+          "events": 4,
+          "points": 26
+        },
+        {
+          "rank": 4,
+          "name": "Winfred YAVI",
+          "country": "BRN",
+          "events": 3,
+          "points": 22
+        },
+        {
+          "rank": 5,
+          "name": "Doris LEMNGOLE",
+          "country": "KEN",
+          "events": 3,
+          "points": 17
+        },
+        {
+          "rank": 6,
+          "name": "Kena TUFA",
+          "country": "ETH",
+          "events": 4,
+          "points": 17
+        },
+        {
+          "rank": 7,
+          "name": "Lexy HALLADAY",
+          "country": "USA",
+          "events": 6,
+          "points": 14
+        },
+        {
+          "rank": 8,
+          "name": "Elise THORNER",
+          "country": "GBR",
+          "events": 3,
+          "points": 12
+        },
+        {
+          "rank": 9,
+          "name": "Lea MEYER",
+          "country": "GER",
+          "events": 3,
+          "points": 8
+        },
+        {
+          "rank": 10,
+          "name": "Gabrielle JENNINGS",
+          "country": "USA",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 11,
+          "name": "Alemnat WALLE",
+          "country": "ETH",
+          "events": 3,
+          "points": 7
+        },
+        {
+          "rank": 12,
+          "name": "Gesa Felicitas KRAUSE",
+          "country": "GER",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 13,
+          "name": "Norah JERUTO",
+          "country": "KAZ",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 14,
+          "name": "Ilona MONONEN",
+          "country": "FIN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 15,
+          "name": "Parul CHAUDHARY",
+          "country": "IND",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 16,
+          "name": "Olivia GÜRTH",
+          "country": "GER",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_HJ": {
+      "qualLimit": 6,
+      "waLabel": "High Jump",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Yaroslava MAHUCHIKH",
+          "country": "UKR",
+          "events": 4,
+          "points": 28
+        },
+        {
+          "rank": 2,
+          "name": "Eleanor PATTERSON",
+          "country": "AUS",
+          "events": 5,
+          "points": 26
+        },
+        {
+          "rank": 3,
+          "name": "Nicola OLYSLAGERS",
+          "country": "AUS",
+          "events": 3,
+          "points": 21
+        },
+        {
+          "rank": 4,
+          "name": "Iryna GERASHCHENKO",
+          "country": "UKR",
+          "events": 3,
+          "points": 21
+        },
+        {
+          "rank": 5,
+          "name": "Lamara DISTIN",
+          "country": "JAM",
+          "events": 4,
+          "points": 18
+        },
+        {
+          "rank": 6,
+          "name": "Angelina TOPIĆ",
+          "country": "SRB",
+          "events": 4,
+          "points": 16
+        },
+        {
+          "rank": 7,
+          "name": "Yuliia LEVCHENKO",
+          "country": "UKR",
+          "events": 2,
+          "points": 13
+        },
+        {
+          "rank": 8,
+          "name": "Maria ŻODZIK",
+          "country": "POL",
+          "events": 5,
+          "points": 13
+        },
+        {
+          "rank": 9,
+          "name": "Marija VUKOVIĆ",
+          "country": "MNE",
+          "events": 3,
+          "points": 11
+        },
+        {
+          "rank": 10,
+          "name": "Charity HUFNAGEL",
+          "country": "USA",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 11,
+          "name": "Louise EKMAN",
+          "country": "SWE",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 12,
+          "name": "Morgan LAKE",
+          "country": "GBR",
+          "events": 2,
+          "points": 2
+        },
+        {
+          "rank": 12,
+          "name": "Jiawen LU",
+          "country": "CHN",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 14,
+          "name": "Elena KULICHENKO",
+          "country": "CYP",
+          "events": 1,
+          "points": 2
+        }
+      ]
+    },
+    "women_PV": {
+      "qualLimit": 6,
+      "waLabel": "Pole Vault",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Angelica MOSER",
+          "country": "SUI",
+          "events": 6,
+          "points": 40
+        },
+        {
+          "rank": 2,
+          "name": "Nina KENNEDY",
+          "country": "AUS",
+          "events": 4,
+          "points": 29
+        },
+        {
+          "rank": 3,
+          "name": "Tina ŠUTEJ",
+          "country": "SLO",
+          "events": 6,
+          "points": 22
+        },
+        {
+          "rank": 3,
+          "name": "Katie MOON",
+          "country": "USA",
+          "events": 4,
+          "points": 22
+        },
+        {
+          "rank": 5,
+          "name": "Hana MOLL",
+          "country": "USA",
+          "events": 3,
+          "points": 18
+        },
+        {
+          "rank": 6,
+          "name": "Imogen AYRIS",
+          "country": "NZL",
+          "events": 5,
+          "points": 17
+        },
+        {
+          "rank": 7,
+          "name": "Emily GROVE",
+          "country": "USA",
+          "events": 4,
+          "points": 17
+        },
+        {
+          "rank": 8,
+          "name": "Sandi MORRIS",
+          "country": "USA",
+          "events": 3,
+          "points": 15
+        },
+        {
+          "rank": 9,
+          "name": "Eliza MCCARTNEY",
+          "country": "NZL",
+          "events": 4,
+          "points": 12
+        },
+        {
+          "rank": 10,
+          "name": "Molly CAUDERY",
+          "country": "GBR",
+          "events": 2,
+          "points": 10
+        },
+        {
+          "rank": 11,
+          "name": "Amanda MOLL",
+          "country": "USA",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 12,
+          "name": "Olivia MCTAGGART",
+          "country": "NZL",
+          "events": 3,
+          "points": 6
+        },
+        {
+          "rank": 13,
+          "name": "Gabriela LEON",
+          "country": "USA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 14,
+          "name": "Amálie ŠVÁBÍKOVÁ",
+          "country": "CZE",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 15,
+          "name": "Elisa MOLINAROLO",
+          "country": "ITA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 16,
+          "name": "Wilma HELTELÄ",
+          "country": "FIN",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 17,
+          "name": "Berenice PETIT",
+          "country": "FRA",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_LJ": {
+      "qualLimit": 6,
+      "waLabel": "Long Jump",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Monae' NICHOLS",
+          "country": "USA",
+          "events": 4,
+          "points": 25
+        },
+        {
+          "rank": 2,
+          "name": "Larissa IAPICHINO",
+          "country": "ITA",
+          "events": 4,
+          "points": 24
+        },
+        {
+          "rank": 3,
+          "name": "Malaika MIHAMBO",
+          "country": "GER",
+          "events": 4,
+          "points": 17
+        },
+        {
+          "rank": 4,
+          "name": "Agate DE SOUSA",
+          "country": "POR",
+          "events": 3,
+          "points": 15
+        },
+        {
+          "rank": 5,
+          "name": "Claire BRYANT",
+          "country": "USA",
+          "events": 4,
+          "points": 15
+        },
+        {
+          "rank": 6,
+          "name": "Hilary KPATCHA",
+          "country": "FRA",
+          "events": 3,
+          "points": 15
+        },
+        {
+          "rank": 7,
+          "name": "Alyssa JONES",
+          "country": "USA",
+          "events": 2,
+          "points": 13
+        },
+        {
+          "rank": 8,
+          "name": "Tara DAVIS-WOODHALL",
+          "country": "USA",
+          "events": 1,
+          "points": 8
+        },
+        {
+          "rank": 9,
+          "name": "Maja ÅSKAG",
+          "country": "SWE",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 10,
+          "name": "Natalia LINARES",
+          "country": "COL",
+          "events": 1,
+          "points": 7
+        },
+        {
+          "rank": 11,
+          "name": "Alexis BROWN",
+          "country": "USA",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 12,
+          "name": "Jazmin SAWYERS",
+          "country": "GBR",
+          "events": 2,
+          "points": 6
+        },
+        {
+          "rank": 13,
+          "name": "Nia ROBINSON",
+          "country": "JAM",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 14,
+          "name": "Shiqi XIONG",
+          "country": "CHN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 15,
+          "name": "Marthe KOALA",
+          "country": "BUR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 15,
+          "name": "Lucy HADAWAY",
+          "country": "GBR",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 17,
+          "name": "Pauline HONDEMA",
+          "country": "NED",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 18,
+          "name": "Ramona Elena VERMAN",
+          "country": "ROU",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 19,
+          "name": "Mengyi TAN",
+          "country": "CHN",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 20,
+          "name": "Ayla HALLBERG HOSSAIN",
+          "country": "SWE",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_TJ": {
+      "qualLimit": 6,
+      "waLabel": "Triple Jump",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Saly SARR",
+          "country": "SEN",
+          "events": 4,
+          "points": 28
+        },
+        {
+          "rank": 2,
+          "name": "Leyanis PÉREZ HERNÁNDEZ",
+          "country": "CUB",
+          "events": 4,
+          "points": 28
+        },
+        {
+          "rank": 3,
+          "name": "Davisleydi VELAZCO",
+          "country": "CUB",
+          "events": 4,
+          "points": 27
+        },
+        {
+          "rank": 4,
+          "name": "Thea LAFOND",
+          "country": "DMA",
+          "events": 4,
+          "points": 19
+        },
+        {
+          "rank": 5,
+          "name": "Liadagmis POVEA",
+          "country": "CUB",
+          "events": 4,
+          "points": 15
+        },
+        {
+          "rank": 6,
+          "name": "Ackelia SMITH",
+          "country": "JAM",
+          "events": 3,
+          "points": 7
+        },
+        {
+          "rank": 7,
+          "name": "Dariya DERKACH",
+          "country": "ITA",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 8,
+          "name": "Ilionis GUILLAUME",
+          "country": "FRA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 9,
+          "name": "Aleksandra NACHEVA",
+          "country": "BUL",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 10,
+          "name": "Neja FILIPIČ",
+          "country": "SLO",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 11,
+          "name": "Elena Andreea TALOȘ",
+          "country": "ROU",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 12,
+          "name": "Maja ÅSKAG",
+          "country": "SWE",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 13,
+          "name": "Tuğba DANIŞMAZ",
+          "country": "TUR",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_SP": {
+      "qualLimit": 6,
+      "waLabel": "Shot Put",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Jessica SCHILDER",
+          "country": "NED",
+          "events": 5,
+          "points": 36
+        },
+        {
+          "rank": 2,
+          "name": "Sarah MITTON",
+          "country": "CAN",
+          "events": 5,
+          "points": 31
+        },
+        {
+          "rank": 3,
+          "name": "Chase JACKSON",
+          "country": "USA",
+          "events": 4,
+          "points": 30
+        },
+        {
+          "rank": 4,
+          "name": "Fanny ROOS",
+          "country": "SWE",
+          "events": 5,
+          "points": 22
+        },
+        {
+          "rank": 5,
+          "name": "Yemisi MABRY",
+          "country": "GER",
+          "events": 5,
+          "points": 21
+        },
+        {
+          "rank": 6,
+          "name": "Danniel THOMAS-DODD",
+          "country": "JAM",
+          "events": 4,
+          "points": 13
+        },
+        {
+          "rank": 7,
+          "name": "Jaida ROSS",
+          "country": "USA",
+          "events": 4,
+          "points": 8
+        },
+        {
+          "rank": 8,
+          "name": "Axelina JOHANSSON",
+          "country": "SWE",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 9,
+          "name": "Abria SMITH",
+          "country": "USA",
+          "events": 2,
+          "points": 4
+        },
+        {
+          "rank": 10,
+          "name": "Jorinde VAN KLINKEN",
+          "country": "NED",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 11,
+          "name": "Jiayuan SONG",
+          "country": "CHN",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 12,
+          "name": "Maggie EWEN",
+          "country": "USA",
+          "events": 2,
+          "points": 2
+        }
+      ]
+    },
+    "women_DT": {
+      "qualLimit": 6,
+      "waLabel": "Discus Throw",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Valarie SION",
+          "country": "USA",
+          "events": 4,
+          "points": 31
+        },
+        {
+          "rank": 2,
+          "name": "Jorinde VAN KLINKEN",
+          "country": "NED",
+          "events": 4,
+          "points": 26
+        },
+        {
+          "rank": 3,
+          "name": "Laulauga TAUSAGA",
+          "country": "USA",
+          "events": 4,
+          "points": 16
+        },
+        {
+          "rank": 4,
+          "name": "Bin FENG",
+          "country": "CHN",
+          "events": 3,
+          "points": 16
+        },
+        {
+          "rank": 5,
+          "name": "Cierra JACKSON",
+          "country": "USA",
+          "events": 3,
+          "points": 15
+        },
+        {
+          "rank": 6,
+          "name": "Vanessa KAMGA",
+          "country": "SWE",
+          "events": 3,
+          "points": 12
+        },
+        {
+          "rank": 7,
+          "name": "Shanice CRAFT",
+          "country": "GER",
+          "events": 4,
+          "points": 9
+        },
+        {
+          "rank": 8,
+          "name": "Erika BEISTLE",
+          "country": "USA",
+          "events": 1,
+          "points": 5
+        },
+        {
+          "rank": 9,
+          "name": "Alida VAN DAALEN",
+          "country": "NED",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 10,
+          "name": "Marike STEINACKER",
+          "country": "GER",
+          "events": 1,
+          "points": 4
+        },
+        {
+          "rank": 11,
+          "name": "Jayden ULRICH",
+          "country": "USA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 12,
+          "name": "Liliana CÁ",
+          "country": "POR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 13,
+          "name": "Zara OBAMAKINWA",
+          "country": "GBR",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 14,
+          "name": "Silinda MORÁLES",
+          "country": "CUB",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    },
+    "women_JT": {
+      "qualLimit": 6,
+      "waLabel": "Javelin Throw",
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Ziyi YAN",
+          "country": "CHN",
+          "events": 4,
+          "points": 32
+        },
+        {
+          "rank": 2,
+          "name": "Adriana VILAGOŠ",
+          "country": "SRB",
+          "events": 5,
+          "points": 32
+        },
+        {
+          "rank": 3,
+          "name": "Flor Denis RUIZ HURTADO",
+          "country": "COL",
+          "events": 4,
+          "points": 20
+        },
+        {
+          "rank": 4,
+          "name": "Sigrid BORGE",
+          "country": "NOR",
+          "events": 4,
+          "points": 16
+        },
+        {
+          "rank": 5,
+          "name": "Haruka KITAGUCHI",
+          "country": "JPN",
+          "events": 3,
+          "points": 16
+        },
+        {
+          "rank": 6,
+          "name": "Anete SIETIŅA",
+          "country": "LAT",
+          "events": 3,
+          "points": 11
+        },
+        {
+          "rank": 7,
+          "name": "Mackenzie LITTLE",
+          "country": "AUS",
+          "events": 2,
+          "points": 9
+        },
+        {
+          "rank": 8,
+          "name": "Alizée MINARD",
+          "country": "FRA",
+          "events": 2,
+          "points": 8
+        },
+        {
+          "rank": 9,
+          "name": "Maria ANDREJCZYK",
+          "country": "POL",
+          "events": 2,
+          "points": 7
+        },
+        {
+          "rank": 10,
+          "name": "Elina TZENGKO",
+          "country": "GRE",
+          "events": 1,
+          "points": 6
+        },
+        {
+          "rank": 11,
+          "name": "Sara KOLAK",
+          "country": "CRO",
+          "events": 2,
+          "points": 5
+        },
+        {
+          "rank": 12,
+          "name": "Tori MOORBY",
+          "country": "NZL",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 13,
+          "name": "Jade MARAVAL",
+          "country": "FRA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 14,
+          "name": "Madison WILTROUT",
+          "country": "USA",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 15,
+          "name": "Juleisy ANGULO",
+          "country": "ECU",
+          "events": 1,
+          "points": 3
+        },
+        {
+          "rank": 16,
+          "name": "Jo-Ane DU PLESSIS",
+          "country": "RSA",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 17,
+          "name": "Marie-Therese OBST",
+          "country": "NOR",
+          "events": 1,
+          "points": 2
+        },
+        {
+          "rank": 18,
+          "name": "Qianqian DAI",
+          "country": "CHN",
+          "events": 1,
+          "points": 1
+        },
+        {
+          "rank": 19,
+          "name": "Nikola OGRODNÍKOVÁ",
+          "country": "CZE",
+          "events": 1,
+          "points": 1
+        }
+      ]
+    }
+  }
+}
