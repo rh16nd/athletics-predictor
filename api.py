@@ -551,6 +551,164 @@ def load_athlete_photo(profile_url):
     return f"https://assets.aws.worldathletics.org/{results[0]['primaryMediaId']}"
 
 
+# --- Wikimedia Commons photo fallback ------------------------------------
+#
+# World Athletics has no photo for ~37% of athletes. For those, a freely-
+# licensed photo from Wikimedia Commons is the one legitimate open source
+# (measured 2026-09-03: ~57% of the WA-missing athletes have one). It is a
+# FALLBACK ONLY: WA's own asset stays primary, because it is uniform and
+# unambiguously theirs. The match is EXACT -- Wikidata stores each athlete's
+# World Athletics id as property P1146, so we look photos up by id, never by
+# name, and never attach the wrong person's face. Commons only hosts free
+# media, but the licence and author are still read so the required credit can
+# be shown; nothing is used without a named licence.
+WIKIMEDIA_CACHE_PATH = os.path.join(os.path.dirname(__file__), "data", "wikimedia_photo_cache.json")
+# Wikimedia asks all API clients for a descriptive User-Agent; a generic one
+# gets a 403.
+WM_HEADERS = {"User-Agent": "PodiumCall/1.0 (Diamond League predictor; athlete photo fallback)"}
+
+
+def _wa_id_from_url(profile_url):
+    """The numeric World Athletics athlete id from either real profile-url
+    format, or None -- the same parse load_athlete_photo uses."""
+    if not isinstance(profile_url, str):
+        return None
+    m = re.search(r"athlete=(\d+)", profile_url) or re.search(r"-(\d+)/?$", profile_url)
+    return m.group(1) if m else None
+
+
+def _load_json_cache(path):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def _save_json_cache(path, obj):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, indent=2, sort_keys=True, ensure_ascii=False)
+
+
+def _wikidata_image_title(wa_id):
+    """The Commons `File:` title of the athlete's Wikidata image (P18), matched
+    by World Athletics id (P1146). None if the athlete isn't on Wikidata or has
+    no image."""
+    query = (
+        'SELECT ?image WHERE { ?item wdt:P1146 "%s". '
+        "OPTIONAL { ?item wdt:P18 ?image. } } LIMIT 1" % wa_id
+    )
+    try:
+        r = requests.get(
+            "https://query.wikidata.org/sparql",
+            params={"format": "json", "query": query},
+            headers=WM_HEADERS,
+            timeout=20,
+        )
+        r.raise_for_status()
+        bindings = r.json()["results"]["bindings"]
+    except Exception:
+        return None
+    if not bindings or "image" not in bindings[0]:
+        return None
+    # P18 comes back as .../Special:FilePath/<url-encoded filename>.
+    import urllib.parse
+
+    filename = urllib.parse.unquote(bindings[0]["image"]["value"].rsplit("/", 1)[-1])
+    return "File:" + filename
+
+
+def _commons_photo(title):
+    """{url, credit} for a Commons `File:` title -- a 640px thumbnail plus the
+    author and licence its credit needs. None if the file has no usable image
+    or names no licence (Commons is free-media-only, so the licence check is a
+    safety net, not the main gate)."""
+    try:
+        r = requests.get(
+            "https://commons.wikimedia.org/w/api.php",
+            params={
+                "action": "query",
+                "titles": title,
+                "prop": "imageinfo",
+                "iiprop": "url|extmetadata",
+                # 1280, not 640: the photo is a full-bleed hero backdrop, so a
+                # small thumbnail stretched across it looked soft. Commons only
+                # downsizes, never upscales, so a smaller original just returns
+                # itself.
+                "iiurlwidth": 1280,
+                "format": "json",
+            },
+            headers=WM_HEADERS,
+            timeout=20,
+        )
+        r.raise_for_status()
+        pages = r.json()["query"]["pages"]
+    except Exception:
+        return None
+    info = (next(iter(pages.values()), {}).get("imageinfo") or [{}])[0]
+    url = info.get("thumburl") or info.get("url")
+    if not url:
+        return None
+    meta = info.get("extmetadata") or {}
+
+    def field(key):
+        return (meta.get(key) or {}).get("value") or ""
+
+    import html as _html
+    import urllib.parse
+
+    # Artist comes as HTML (often a link); reduce it to a plain name.
+    author = _html.unescape(re.sub(r"<[^>]+>", "", field("Artist"))).strip()
+    license_name = field("LicenseShortName").strip()
+    if not license_name:
+        return None
+    return {
+        "url": url,
+        "credit": {
+            "author": author or "Unknown author",
+            "license": license_name,
+            "licenseUrl": field("LicenseUrl").strip() or None,
+            "sourceUrl": "https://commons.wikimedia.org/wiki/"
+            + urllib.parse.quote(title.replace(" ", "_")),
+            "source": "Wikimedia Commons",
+        },
+    }
+
+
+def load_wikimedia_photo(profile_url):
+    """{url, credit} from Wikimedia Commons for an athlete, or None. Cached by
+    World Athletics id (negatives included, so a miss isn't re-queried)."""
+    wa_id = _wa_id_from_url(profile_url)
+    if not wa_id:
+        return None
+    cache = _load_json_cache(WIKIMEDIA_CACHE_PATH)
+    if wa_id in cache:
+        return cache[wa_id]
+    result = None
+    title = _wikidata_image_title(wa_id)
+    if title:
+        result = _commons_photo(title)
+    cache[wa_id] = result
+    _save_json_cache(WIKIMEDIA_CACHE_PATH, cache)
+    return result
+
+
+def resolve_athlete_photo(profile_url):
+    """(url, credit) for an athlete's photo. World Athletics' own asset first
+    (no credit needed -- it is theirs and the site already uses it), a freely-
+    licensed Wikimedia Commons photo as a fallback, carrying the credit its
+    licence requires. (None, None) when neither has one; the frontend then
+    shows the initials monogram."""
+    wa = load_athlete_photo(profile_url)
+    if wa:
+        return wa, None
+    wm = load_wikimedia_photo(profile_url)
+    if wm:
+        return wm["url"], wm["credit"]
+    return None, None
+
+
 # OpenCV's classic res10 SSD face detector -- not bundled with the
 # opencv-python-headless wheel, so it's fetched once (same on-demand-download
 # pattern webdriver-manager already uses elsewhere in this project) from
@@ -943,9 +1101,10 @@ def athlete_field_status(disc_key, athlete_name):
     # is no reason an athlete outside the projected eight should get a
     # visibly lesser page. Returns None (never a stock image) if WA has no
     # photo, and the frontend falls back to the initials monogram.
-    photo_url = load_athlete_photo(wa_url) if wa_url else None
+    photo_url, photo_credit = resolve_athlete_photo(wa_url) if wa_url else (None, None)
     out["photoUrl"] = photo_url
     out["photoFocus"] = get_photo_focus(photo_url) if photo_url else None
+    out["photoCredit"] = photo_credit
 
     # Everything below is the same real data the in-field profile shows,
     # for the same reason the photo is: none of it stops being true because
@@ -1406,7 +1565,7 @@ def build_athlete_profile(disc_key, athlete_name):
         return val.item() if hasattr(val, "item") else val
 
     history, history_year = load_athlete_history(disc_key, athlete_name)
-    photo_url = load_athlete_photo(wa_url)
+    photo_url, photo_credit = resolve_athlete_photo(wa_url)
 
     # "Last competed" carries no qualifier, so it has to mean the last time
     # they competed -- anywhere. run.py's days_since_last is derived from the
@@ -1451,6 +1610,7 @@ def build_athlete_profile(disc_key, athlete_name):
         "waUrl":           wa_url,
         "photoUrl":        photo_url,
         "photoFocus":      get_photo_focus(photo_url),
+        "photoCredit":     photo_credit,
         "injuryWatch":     injury_watch,
         "injuryReason":    reason,
         "injuryUrl":       evidence_url,
