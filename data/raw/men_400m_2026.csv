@@ -31,14 +31,14 @@ Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,Pro
 30,44.54,,Boniface Ontuga MWERESA,13 NOV 1993,KEN,1,,"Ulinzi Sports Complex, Langata, Nairobi (KEN)",12 JUN 2026,1212,men_400m,2026,https://worldathletics.org/athletes/athlete=14479183
 30,44.54,,Demarius SMITH,25 DEC 1998,USA,3,,"Icahn Stadium, New York, NY (USA)",25 JUL 2026,1212,men_400m,2026,https://worldathletics.org/athletes/athlete=14802020
 32,44.58,,Vernon NORWOOD,10 APR 1992,USA,2f3,,"Hilmer Lodge Stadium, Walnut, CA (USA)",18 APR 2026,1209,men_400m,2026,https://worldathletics.org/athletes/athlete=14490237
-33,44.61,,Justice ORATILE,21 MAY 2006,BOT,1f2,,"McArthur Stadium, Potchefstroom (RSA)",08 APR 2026,1207,men_400m,2026,https://worldathletics.org/athletes/botswana/justice-oratile-15070167
-34,44.62,,Bayapo NDORI,20 JUN 1999,BOT,1,,"National Stadium, Gaborone (BOT)",04 APR 2026,1206,men_400m,2026,https://worldathletics.org/athletes/athlete=14847443
-34,44.62,,Quincy WILSON,08 JAN 2008,USA,2,,"Hayward Field, Eugene, OR (USA)",07 AUG 2026,1206,men_400m,2026,https://worldathletics.org/athletes/united-states/quincy-wilson-15025343
-34,44.62,,Yuki Joseph NAKAJIMA,30 MAR 2002,JPN,1,,"Letzigrund, Zürich (SUI)",27 AUG 2026,1206,men_400m,2026,https://worldathletics.org/athletes/athlete=14915400
-37,44.63,,Reece HOLDER,20 AUG 2002,AUS,3,,"Centro Gabre Gabric, Brescia (ITA)",30 AUG 2026,1206,men_400m,2026,https://worldathletics.org/athletes/athlete=14820122
-38,44.64,,Thandazani NDHLOVU,23 NOV 2004,ZIM,4,,"Nemzeti Atlétikai Központ, Budapest (HUN)",14 JUL 2026,1205,men_400m,2026,https://worldathletics.org/athletes/zimbabwe/thandazani-ndhlovu-15187153
-39,44.66,,Javier GÓMEZ,22 MAY 2001,VEN,1f2,,"Estadio Monumental de Puerto La Cruz José Antonio Anzoátegui, Puerto la Cruz (VEN)",21 MAY 2026,1203,men_400m,2026,https://worldathletics.org/athletes/athlete=14927732
-39,44.66,,Ben JEFFERIES,10 SEP 1999,GBR,2f1,,"Alexander Stadium, Birmingham (GBR)",21 JUN 2026,1203,men_400m,2026,https://worldathletics.org/athletes/athlete=14932145
+32,44.58,,Javier GÓMEZ,22 MAY 2001,VEN,1,,"Atletski stadion, Smederevo (SRB)",02 SEP 2026,1209,men_400m,2026,https://worldathletics.org/athletes/athlete=14927732
+34,44.61,,Justice ORATILE,21 MAY 2006,BOT,1f2,,"McArthur Stadium, Potchefstroom (RSA)",08 APR 2026,1207,men_400m,2026,https://worldathletics.org/athletes/botswana/justice-oratile-15070167
+35,44.62,,Bayapo NDORI,20 JUN 1999,BOT,1,,"National Stadium, Gaborone (BOT)",04 APR 2026,1206,men_400m,2026,https://worldathletics.org/athletes/athlete=14847443
+35,44.62,,Quincy WILSON,08 JAN 2008,USA,2,,"Hayward Field, Eugene, OR (USA)",07 AUG 2026,1206,men_400m,2026,https://worldathletics.org/athletes/united-states/quincy-wilson-15025343
+35,44.62,,Yuki Joseph NAKAJIMA,30 MAR 2002,JPN,1,,"Letzigrund, Zürich (SUI)",27 AUG 2026,1206,men_400m,2026,https://worldathletics.org/athletes/athlete=14915400
+38,44.63,,Reece HOLDER,20 AUG 2002,AUS,3,,"Centro Gabre Gabric, Brescia (ITA)",30 AUG 2026,1206,men_400m,2026,https://worldathletics.org/athletes/athlete=14820122
+39,44.64,,Thandazani NDHLOVU,23 NOV 2004,ZIM,4,,"Nemzeti Atlétikai Központ, Budapest (HUN)",14 JUL 2026,1205,men_400m,2026,https://worldathletics.org/athletes/zimbabwe/thandazani-ndhlovu-15187153
+40,44.66,,Ben JEFFERIES,10 SEP 1999,GBR,2f1,,"Alexander Stadium, Birmingham (GBR)",21 JUN 2026,1203,men_400m,2026,https://worldathletics.org/athletes/athlete=14932145
 41,44.67,,Gabriel MORONTA,19 OCT 2002,DOM,1,,"Alfonso Galvis Duque Stadium, Medellín (COL)",28 JUN 2026,1203,men_400m,2026,https://worldathletics.org/athletes/athlete=14882806
 42,44.69,,Thomas REYNOLDS,05 SEP 2004,AUS,2,,"Arafura Stadium, Darwin (AUS)",19 MAY 2026,1201,men_400m,2026,https://worldathletics.org/athletes/australia/thomas-reynolds-14964282
 42,44.69,,Aleksey DANILOV,27 AUG 2006,RUS,1f2,,"Luzhniki Stadion, Moskva (RUS)",05 JUN 2026,1201,men_400m,2026,https://worldathletics.org/athletes/russia/aleksey-danilov-15043554
@@ -68,34 +68,34 @@ Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,Pro
 67,44.91,,Leeford ZUZE,02 APR 2001,ZIM,2f1,,"University of Botswana Stadium, Gaborone (BOT)",11 APR 2026,1186,men_400m,2026,https://worldathletics.org/athletes/zimbabwe/leeford-zuze-14953160
 67,44.91,,Edidiong UDO,31 JAN 1999,NGR,1h5,,"Ed Weir Outdoor Track, Lincoln, NE (USA)",15 MAY 2026,1186,men_400m,2026,https://worldathletics.org/athletes/athlete=14807263
 69,44.92,,Yann SPILLMANN,15 JUL 2002,FRA,3,,"Stadium Municipal, Albi (FRA)",26 JUL 2026,1185,men_400m,2026,https://worldathletics.org/athletes/athlete=14910752
-70,44.94,,Alexander OGANDO,03 MAY 2000,DOM,1f4,,"Estadio Luguelín Santos, Bayaguana (DOM)",28 MAR 2026,1184,men_400m,2026,https://worldathletics.org/athletes/athlete=14912251
-70,44.94,,Alexander RHODES,28 JUN 2005,USA,3f3,,"Hilmer Lodge Stadium, Walnut, CA (USA)",18 APR 2026,1184,men_400m,2026,https://worldathletics.org/athletes/united-states/alexander-rhodes-15133797
-70,44.94,,Michael NORMAN,03 DEC 1997,USA,1,,"Drake Stadium, Los Angeles, CA (USA)",23 MAY 2026,1184,men_400m,2026,https://worldathletics.org/athletes/athlete=14588244
-70,44.94,,Maksymilian SZWED,06 AUG 2004,POL,1,,"Miejski Stadion, Opole (POL)",27 JUN 2026,1184,men_400m,2026,https://worldathletics.org/athletes/athlete=14945080
-74,44.95,,William Owadie OPARE,02 AUG 2000,GHA,1f1,,"Emporia St. Francis G. Welch Stadium, Emporia, KS (USA)",23 MAY 2026,1183,men_400m,2026,https://worldathletics.org/athletes/ghana/william-owadie-opare-15035621
-75,44.96,,William JONES,03 OCT 2003,USA,4f3,,"Hilmer Lodge Stadium, Walnut, CA (USA)",18 APR 2026,1183,men_400m,2026,https://worldathletics.org/athletes/united-states/william-jones-15025360
-76,44.98,,Vishal THENNARASU KAYALVIZHI,17 DEC 2003,IND,1,,"Birsa Munda Foot Ball Stadium, Morabadi, Ranchi (IND)",23 MAY 2026,1181,men_400m,2026,https://worldathletics.org/athletes/india/vishal-thennarasu-kayalvizhi-15010693
-76,44.98,,Shinya HAYASHI,15 APR 2004,JPN,1h1,,"Municipal Mizuho Stadium, Nagoya (JPN)",13 JUN 2026,1181,men_400m,2026,https://worldathletics.org/athletes/japan/shinya-hayashi-14957327
-78,45.00,,Elija GODWIN,01 JUL 1999,USA,3,,"Cushing Stadium, College Station, TX (USA)",06 JUN 2026,1180,men_400m,2026,https://worldathletics.org/athletes/athlete=14690211
-78,45.00,,Mohamed Yassine ZERHOUMI,21 APR 1999,MAR,1f1,,"Stade Paul Rebeilleau, Poitiers (FRA)",13 JUN 2026,1180,men_400m,2026,https://worldathletics.org/athletes/morocco/mohamed-yassine-zerhoumi-15018756
-80,45.01,,Amal GLASGOW,07 NOV 2004,VIN,2h2,,"Un. of Kentucky Outdoor Track Facility, Lexington, KY (USA)",29 MAY 2026,1179,men_400m,2026,https://worldathletics.org/athletes/athlete=14935710
-80,45.01,,Cheikh Tidiane DIOUF,23 MAR 1995,SEN,2f1,,"Stade Paul Rebeilleau, Poitiers (FRA)",13 JUN 2026,1179,men_400m,2026,https://worldathletics.org/athletes/athlete=14910932
-82,45.02,,Nicholas SPIKES,,USA,5h3,,"Un. of Kentucky Outdoor Track Facility, Lexington, KY (USA)",29 MAY 2026,1178,men_400m,2026,https://worldathletics.org/athletes/united-states/nicholas-spikes-15139749
-83,45.03,,Luke VAN RATINGEN,12 OCT 2001,AUS,2,,"Lakeside Stadium, Melbourne (AUS)",28 MAR 2026,1178,men_400m,2026,https://worldathletics.org/athletes/athlete=14859184
-83,45.03,,Jonathan SACOOR,01 SEP 1999,BEL,3,,"Stade Jean Delbert, Montreuil (FRA)",17 JUN 2026,1178,men_400m,2026,https://worldathletics.org/athletes/athlete=14676801
-83,45.03,,Eugene OMALLA,05 OCT 2000,NED,3,,"FBK Stadium, Hengelo (NED)",21 JUN 2026,1178,men_400m,2026,https://worldathletics.org/athletes/athlete=14833321
-83,45.03,,Semi Thiel Deng THIEL,02 FEB 2003,SSD,1f2,,"Wieslaw Maniak Municipal Athletic Stadium, Szczecin (POL)",26 AUG 2026,1178,men_400m,2026,https://worldathletics.org/athletes/athlete=14916124
-87,45.05,,David AKHALU,21 MAR 2007,NGR,1f1,,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",02 MAY 2026,1176,men_400m,2026,https://worldathletics.org/athletes/nigeria/david-akhalu-15066294
-88,45.06,,Paul DEDEWO,05 JUN 1991,USA,1,,"Estádio José Vieira de Carvalho, Maia (POR)",04 JUL 2026,1176,men_400m,2026,https://worldathletics.org/athletes/athlete=14406755
-88,45.06,,Luis AVILÉS,03 MAR 2002,MEX,2,,"Estadio Olimpico Juan Pablo Duarte, Santo Domingo (DOM)",05 AUG 2026,1176,men_400m,2026,https://worldathletics.org/athletes/athlete=14782944
-90,45.07,,Haron ADOLI,08 OCT 1994,UGA,1,,"Ulinzi Sports Complex, Langata, Nairobi (KEN)",11 APR 2026,1175,men_400m,2026,https://worldathletics.org/athletes/athlete=14913720
-91,45.08,,Joey GANT,11 AUG 2003,USA,1h1,,"Weaver Stadium, Princeton, NJ (USA)",16 MAY 2026,1174,men_400m,2026,https://worldathletics.org/athletes/athlete=14937793
-91,45.08,,Thorben FINKE,14 DEC 2004,GER,2,,"Lohrheidestadion, Wattenscheid, Bochum (GER)",26 JUL 2026,1174,men_400m,2026,https://worldathletics.org/athletes/germany/thorben-finke-14947357
-93,45.10,,Mohamed SOUDASSI,22 NOV 2006,ITA,1,,"Stadio M.S. Cozzoli, Molfetta (ITA)",11 JUL 2026,1173,men_400m,2026,https://worldathletics.org/athletes/italy/mohamed-soudassi-15101513
-94,45.11,,TJ TOMLYANOVICH,16 APR 2003,USA,1h3,,"John McDonnell Field, Fayetteville, AR (USA)",29 MAY 2026,1172,men_400m,2026,https://worldathletics.org/athletes/united-states/tj-tomlyanovich-14979356
-94,45.11,,Delano KENNEDY,03 FEB 2004,JAM,2,,"National Stadium, Kingston (JAM)",21 JUN 2026,1172,men_400m,2026,https://worldathletics.org/athletes/athlete=14934489
-96,45.12,,Lawson JACOBS,,USA,2f1,,"LSU Bernie Moore Stadium, Baton Rouge, LA (USA)",04 APR 2026,1171,men_400m,2026,https://worldathletics.org/athletes/united-states/lawson-jacobs-15093765
-97,45.13,,Zandrion BARNES,17 AUG 2001,JAM,1h4,,"Scotstoun Stadium, Glasgow (GBR)",28 JUL 2026,1171,men_400m,2026,https://worldathletics.org/athletes/athlete=14875542
-98,45.15,,Cameron TUCKER,29 DEC 2007,USA,3,,"Hayward Field, Eugene, OR (USA)",19 JUN 2026,1169,men_400m,2026,https://worldathletics.org/athletes/united-states/cameron-tucker-15214676
-99,45.16,,Sam LUNT,23 OCT 2005,GBR,1f3,,"Boudewijnstadion, Bruxelles (BEL)",23 MAY 2026,1169,men_400m,2026,https://worldathletics.org/athletes/great-britain-ni/sam-lunt-15016290
-100,45.17,,Jhonatan Julio HOYOS,08 OCT 1998,COL,1h3,,"Alfonso Galvis Duque Stadium, Medellín (COL)",26 JUN 2026,1168,men_400m,2026,https://worldathletics.org/athletes/colombia/jhonatan-julio-hoyos-15169746
+69,44.92,,Omar ELKHATIB,19 OCT 2001,POR,1,,"Stadio Giuseppe Valente, Taranto (ITA)",01 SEP 2026,1185,men_400m,2026,https://worldathletics.org/athletes/athlete=14845126
+71,44.94,,Alexander OGANDO,03 MAY 2000,DOM,1f4,,"Estadio Luguelín Santos, Bayaguana (DOM)",28 MAR 2026,1184,men_400m,2026,https://worldathletics.org/athletes/athlete=14912251
+71,44.94,,Alexander RHODES,28 JUN 2005,USA,3f3,,"Hilmer Lodge Stadium, Walnut, CA (USA)",18 APR 2026,1184,men_400m,2026,https://worldathletics.org/athletes/united-states/alexander-rhodes-15133797
+71,44.94,,Michael NORMAN,03 DEC 1997,USA,1,,"Drake Stadium, Los Angeles, CA (USA)",23 MAY 2026,1184,men_400m,2026,https://worldathletics.org/athletes/athlete=14588244
+71,44.94,,Maksymilian SZWED,06 AUG 2004,POL,1,,"Miejski Stadion, Opole (POL)",27 JUN 2026,1184,men_400m,2026,https://worldathletics.org/athletes/athlete=14945080
+75,44.95,,William Owadie OPARE,02 AUG 2000,GHA,1f1,,"Emporia St. Francis G. Welch Stadium, Emporia, KS (USA)",23 MAY 2026,1183,men_400m,2026,https://worldathletics.org/athletes/ghana/william-owadie-opare-15035621
+76,44.96,,William JONES,03 OCT 2003,USA,4f3,,"Hilmer Lodge Stadium, Walnut, CA (USA)",18 APR 2026,1183,men_400m,2026,https://worldathletics.org/athletes/united-states/william-jones-15025360
+77,44.98,,Vishal THENNARASU KAYALVIZHI,17 DEC 2003,IND,1,,"Birsa Munda Foot Ball Stadium, Morabadi, Ranchi (IND)",23 MAY 2026,1181,men_400m,2026,https://worldathletics.org/athletes/india/vishal-thennarasu-kayalvizhi-15010693
+77,44.98,,Shinya HAYASHI,15 APR 2004,JPN,1h1,,"Municipal Mizuho Stadium, Nagoya (JPN)",13 JUN 2026,1181,men_400m,2026,https://worldathletics.org/athletes/japan/shinya-hayashi-14957327
+79,45.00,,Elija GODWIN,01 JUL 1999,USA,3,,"Cushing Stadium, College Station, TX (USA)",06 JUN 2026,1180,men_400m,2026,https://worldathletics.org/athletes/athlete=14690211
+79,45.00,,Mohamed Yassine ZERHOUMI,21 APR 1999,MAR,1f1,,"Stade Paul Rebeilleau, Poitiers (FRA)",13 JUN 2026,1180,men_400m,2026,https://worldathletics.org/athletes/morocco/mohamed-yassine-zerhoumi-15018756
+81,45.01,,Amal GLASGOW,07 NOV 2004,VIN,2h2,,"Un. of Kentucky Outdoor Track Facility, Lexington, KY (USA)",29 MAY 2026,1179,men_400m,2026,https://worldathletics.org/athletes/athlete=14935710
+81,45.01,,Cheikh Tidiane DIOUF,23 MAR 1995,SEN,2f1,,"Stade Paul Rebeilleau, Poitiers (FRA)",13 JUN 2026,1179,men_400m,2026,https://worldathletics.org/athletes/athlete=14910932
+83,45.02,,Nicholas SPIKES,,USA,5h3,,"Un. of Kentucky Outdoor Track Facility, Lexington, KY (USA)",29 MAY 2026,1178,men_400m,2026,https://worldathletics.org/athletes/united-states/nicholas-spikes-15139749
+84,45.03,,Luke VAN RATINGEN,12 OCT 2001,AUS,2,,"Lakeside Stadium, Melbourne (AUS)",28 MAR 2026,1178,men_400m,2026,https://worldathletics.org/athletes/athlete=14859184
+84,45.03,,Jonathan SACOOR,01 SEP 1999,BEL,3,,"Stade Jean Delbert, Montreuil (FRA)",17 JUN 2026,1178,men_400m,2026,https://worldathletics.org/athletes/athlete=14676801
+84,45.03,,Eugene OMALLA,05 OCT 2000,NED,3,,"FBK Stadium, Hengelo (NED)",21 JUN 2026,1178,men_400m,2026,https://worldathletics.org/athletes/athlete=14833321
+84,45.03,,Semi Thiel Deng THIEL,02 FEB 2003,SSD,1f2,,"Wieslaw Maniak Municipal Athletic Stadium, Szczecin (POL)",26 AUG 2026,1178,men_400m,2026,https://worldathletics.org/athletes/athlete=14916124
+88,45.05,,David AKHALU,21 MAR 2007,NGR,1f1,,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",02 MAY 2026,1176,men_400m,2026,https://worldathletics.org/athletes/nigeria/david-akhalu-15066294
+89,45.06,,Paul DEDEWO,05 JUN 1991,USA,1,,"Estádio José Vieira de Carvalho, Maia (POR)",04 JUL 2026,1176,men_400m,2026,https://worldathletics.org/athletes/athlete=14406755
+89,45.06,,Luis AVILÉS,03 MAR 2002,MEX,2,,"Estadio Olimpico Juan Pablo Duarte, Santo Domingo (DOM)",05 AUG 2026,1176,men_400m,2026,https://worldathletics.org/athletes/athlete=14782944
+91,45.07,,Haron ADOLI,08 OCT 1994,UGA,1,,"Ulinzi Sports Complex, Langata, Nairobi (KEN)",11 APR 2026,1175,men_400m,2026,https://worldathletics.org/athletes/athlete=14913720
+92,45.08,,Joey GANT,11 AUG 2003,USA,1h1,,"Weaver Stadium, Princeton, NJ (USA)",16 MAY 2026,1174,men_400m,2026,https://worldathletics.org/athletes/athlete=14937793
+92,45.08,,Thorben FINKE,14 DEC 2004,GER,2,,"Lohrheidestadion, Wattenscheid, Bochum (GER)",26 JUL 2026,1174,men_400m,2026,https://worldathletics.org/athletes/germany/thorben-finke-14947357
+94,45.10,,Mohamed SOUDASSI,22 NOV 2006,ITA,1,,"Stadio M.S. Cozzoli, Molfetta (ITA)",11 JUL 2026,1173,men_400m,2026,https://worldathletics.org/athletes/italy/mohamed-soudassi-15101513
+95,45.11,,TJ TOMLYANOVICH,16 APR 2003,USA,1h3,,"John McDonnell Field, Fayetteville, AR (USA)",29 MAY 2026,1172,men_400m,2026,https://worldathletics.org/athletes/united-states/tj-tomlyanovich-14979356
+95,45.11,,Delano KENNEDY,03 FEB 2004,JAM,2,,"National Stadium, Kingston (JAM)",21 JUN 2026,1172,men_400m,2026,https://worldathletics.org/athletes/athlete=14934489
+97,45.12,,Lawson JACOBS,,USA,2f1,,"LSU Bernie Moore Stadium, Baton Rouge, LA (USA)",04 APR 2026,1171,men_400m,2026,https://worldathletics.org/athletes/united-states/lawson-jacobs-15093765
+98,45.13,,Zandrion BARNES,17 AUG 2001,JAM,1h4,,"Scotstoun Stadium, Glasgow (GBR)",28 JUL 2026,1171,men_400m,2026,https://worldathletics.org/athletes/athlete=14875542
+99,45.15,,Cameron TUCKER,29 DEC 2007,USA,3,,"Hayward Field, Eugene, OR (USA)",19 JUN 2026,1169,men_400m,2026,https://worldathletics.org/athletes/united-states/cameron-tucker-15214676
+100,45.16,,Sam LUNT,23 OCT 2005,GBR,1f3,,"Boudewijnstadion, Bruxelles (BEL)",23 MAY 2026,1169,men_400m,2026,https://worldathletics.org/athletes/great-britain-ni/sam-lunt-15016290
