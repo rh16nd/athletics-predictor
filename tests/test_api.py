@@ -541,3 +541,153 @@ def test_head_to_head_is_measured_against_the_athletes_who_qualified(monkeypatch
     out = api.athlete_field_status("men_100m", "Noah LYLES")
     assert captured["rivals"] == ["Oblique SEVILLE", "Akani SIMBINE"]
     assert out["h2h"][0]["opponent"] == "Oblique SEVILLE"
+
+
+# --- Result vs projection (build_result_comparisons) -------------------------
+# The comparison is a pure function over injected data (finishers by discipline
+# + the frozen pre-final index), so it is tested without touching disk.
+
+def _prefinal(entries):
+    """{normalized name -> {rank, prob, name, waUrl}} for one discipline."""
+    return {
+        api.normalize_athlete_name(e["name"]): {
+            "rank": e.get("rank"),
+            "prob": e.get("prob", 0),
+            "name": e["name"],
+            "waUrl": e.get("waUrl"),
+        }
+        for e in entries
+    }
+
+
+def _sample_comparison(toplist_lookup=None):
+    # Default: nobody is in the toplist, so an "unseen" finisher falls back to
+    # a WA search link. Individual tests inject a lookup to exercise the
+    # internal-profile path.
+    if toplist_lookup is None:
+        toplist_lookup = lambda disc, name: (None, None, None)
+    results = {
+        "men_100m": [
+            {"place": "1", "name": "Alpha ONE", "nat": "USA", "mark": "9.90"},
+            {"place": "2", "name": "Bravo TWO", "nat": "JAM", "mark": "9.95"},
+            {"place": "3", "name": "Charlie THREE", "nat": "GBR", "mark": "9.99"},
+            {"place": "4", "name": "Delta FOUR", "nat": "CAN", "mark": "10.01"},
+            {"place": "", "name": "Echo FIVE", "nat": "KEN", "mark": "DNF"},
+        ],
+        "men_LJ": [
+            {"place": "1", "name": "Foxtrot SIX", "nat": "CUB", "mark": "8.40"},
+        ],
+    }
+    prefinal = {
+        "men_100m": _prefinal([
+            {"name": "Alpha ONE", "rank": 1, "prob": 30, "waUrl": "http://a"},
+            {"name": "Bravo TWO", "rank": 3, "prob": 12},
+            {"name": "Charlie THREE", "rank": None, "prob": 5},   # near-miss
+            {"name": "Echo FIVE", "rank": 6, "prob": 1},
+            # Delta FOUR absent on purpose -> "unseen"
+        ]),
+        "men_LJ": _prefinal([{"name": "Foxtrot SIX", "rank": 2, "prob": 20}]),
+    }
+    return api.build_result_comparisons(
+        results=results, prefinal=prefinal, toplist_lookup=toplist_lookup
+    )
+
+
+def test_result_comparison_exact_hit_has_zero_delta():
+    rows = {r["name"]: r for r in _sample_comparison()["men_100m"]["rows"]}
+    assert rows["Alpha ONE"]["modelState"] == "field"
+    assert rows["Alpha ONE"]["predictedRank"] == 1
+    assert rows["Alpha ONE"]["delta"] == 0
+    assert rows["Alpha ONE"]["hasPage"] is True
+
+
+def test_result_comparison_delta_signed_by_places_gained():
+    # predicted 3rd, finished 2nd -> one place better than projected
+    bravo = {r["name"]: r for r in _sample_comparison()["men_100m"]["rows"]}["Bravo TWO"]
+    assert bravo["delta"] == 1
+
+
+def test_result_comparison_near_miss_reaching_podium_is_flagged():
+    charlie = {r["name"]: r for r in _sample_comparison()["men_100m"]["rows"]}["Charlie THREE"]
+    assert charlie["modelState"] == "nearMiss"
+    assert charlie["predictedRank"] is None
+    assert charlie["place"] == 3  # the upset the UI headlines
+
+
+def test_result_comparison_unseen_athlete_with_no_data_falls_back_to_search():
+    # No toplist row anywhere -> nothing to build a page from, so a WA search.
+    delta = {r["name"]: r for r in _sample_comparison()["men_100m"]["rows"]}["Delta FOUR"]
+    assert delta["modelState"] == "unseen"
+    assert delta["hasPage"] is False
+    assert "worldathletics.org/search" in delta["waUrl"]
+
+
+def test_result_comparison_unseen_athlete_in_toplist_links_to_its_page():
+    """A finisher outside the projection but present in the toplist still gets
+    a real PodiumCall page (via the /api/athlete-status fallback), so it links
+    internally and carries the athlete's real WA profile URL, not a search."""
+    def lookup(disc, name):
+        if api.normalize_athlete_name(name) == api.normalize_athlete_name("Delta FOUR"):
+            return ("10.01", 40, "https://worldathletics.org/athletes/athlete=123")
+        return (None, None, None)
+
+    delta = {
+        r["name"]: r
+        for r in _sample_comparison(toplist_lookup=lookup)["men_100m"]["rows"]
+    }["Delta FOUR"]
+    assert delta["modelState"] == "unseen"
+    assert delta["hasPage"] is True
+    assert delta["waUrl"] == "https://worldathletics.org/athletes/athlete=123"
+
+
+def test_result_comparison_dnf_has_no_place_and_sinks_last():
+    rows = _sample_comparison()["men_100m"]["rows"]
+    assert rows[-1]["name"] == "Echo FIVE"
+    echo = rows[-1]
+    assert echo["place"] is None
+    assert echo["status"] == "dnf"
+    assert echo["mark"] == ""
+    assert echo["placeLabel"] == "DNF"
+
+
+def test_result_comparison_podium_hit_count():
+    men100 = _sample_comparison()["men_100m"]
+    # actual podium = Alpha, Bravo, Charlie (3); model's projected top-3 held
+    # Alpha (1st) and Bravo (3rd) -> 2 of 3.
+    assert men100["podiumSize"] == 3
+    assert men100["podiumHits"] == 2
+
+
+def test_result_comparison_field_event_mark_gets_metre_unit():
+    lj = _sample_comparison()["men_LJ"]["rows"][0]
+    assert lj["mark"] == "8.40m"
+    assert lj["delta"] == 1
+
+
+# --- Photo face-focus fetch (2026-09-05) -------------------------------------
+# Wikimedia's image hosts 403 a request with no descriptive User-Agent, which
+# silently made get_photo_focus return null for EVERY fallback photo and forced
+# the frontend's top-biased "forehead" crop. The download must carry a UA.
+
+def test_get_photo_focus_sends_a_user_agent(monkeypatch):
+    captured = {}
+
+    class FakeResp:
+        content = b"not-a-real-image"
+
+        def raise_for_status(self):
+            pass
+
+    def fake_get(url, headers=None, timeout=None):
+        captured["headers"] = headers
+        return FakeResp()
+
+    monkeypatch.setattr(api, "_load_focus_cache", lambda: {})
+    monkeypatch.setattr(api, "_save_focus_cache", lambda c: None)
+    monkeypatch.setattr(api.requests, "get", fake_get)
+    monkeypatch.setattr(api, "detect_face_focus", lambda content: {"x": 50.0, "y": 40.0})
+
+    out = api.get_photo_focus("https://upload.wikimedia.org/some/photo.jpg")
+    assert out == {"x": 50.0, "y": 40.0}
+    assert captured["headers"] is api.WM_HEADERS
+    assert "User-Agent" in captured["headers"]

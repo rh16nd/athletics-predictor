@@ -55,6 +55,12 @@ RAW_DIR     = os.path.join(os.path.dirname(__file__), "data", "raw")
 INJURY_FLAGS_PATH = os.path.join(os.path.dirname(__file__), "data", "injury_flags.json")
 H2H_PATH    = os.path.join(os.path.dirname(__file__), "data", "h2h", "h2h_rates.csv")
 DL_FINAL_RESULTS_PATH = os.path.join(os.path.dirname(__file__), "data", "dl_final_results.csv")
+# Frozen pre-final projection, the "predicted" side of the result-vs-prediction
+# comparison. It is a SNAPSHOT taken before the Final ran, so once Brussels
+# marks flow into the live predictions the comparison still measures the model
+# against what it actually called beforehand -- not against a projection that
+# has since seen the answer. Never regenerate it from a post-Final refresh.
+PREFINAL_PREDICTIONS_PATH = os.path.join(os.path.dirname(__file__), "outputs", "predictions_prefinal.csv")
 MODELS_DIR  = os.path.join(os.path.dirname(__file__), "data", "models")
 FOCUS_CACHE_PATH = os.path.join(os.path.dirname(__file__), "data", "photo_focus_cache.json")
 
@@ -819,7 +825,13 @@ def get_photo_focus(photo_url):
     if photo_url in cache:
         return cache[photo_url]
     try:
-        r = requests.get(photo_url, timeout=15)
+        # Wikimedia's image hosts 403 any request without a descriptive
+        # User-Agent (their UA policy). Without one, the download here failed
+        # for EVERY Wikimedia fallback photo, focus came back null, and the
+        # frontend used its fixed top-biased crop -- the "forehead" framing the
+        # face detector exists to avoid. Send the same UA the Commons metadata
+        # calls already use; it is harmless for World Athletics' own image host.
+        r = requests.get(photo_url, headers=WM_HEADERS, timeout=15)
         r.raise_for_status()
         focus = detect_face_focus(r.content)
     except Exception:
@@ -827,6 +839,197 @@ def get_photo_focus(photo_url):
     cache[photo_url] = focus
     _save_focus_cache(cache)
     return focus
+
+
+def _wa_search_url(name):
+    """A World Athletics search link for an athlete we have no profile URL for
+    -- the same fallback the projected table uses, factored out so the result
+    comparison can reuse it for finishers who were never in the projection."""
+    return f"https://www.worldathletics.org/search/?q={str(name).replace(' ', '+')}"
+
+
+def _is_number(s):
+    try:
+        float(s)
+        return True
+    except (TypeError, ValueError):
+        return False
+
+
+def _final_results_path(year):
+    return os.path.join(os.path.dirname(__file__), "data", f"dl_final_{year}_results.csv")
+
+
+def load_final_results(year):
+    """Actual DL Final finishing results for `year`, keyed by our discipline
+    key -> a list of {place, name, nat, mark} in file order. {} when the file
+    is absent, which is the normal state until the Final is scraped, and the
+    per-discipline signal too: a discipline with no rows has not been contested
+    yet (src/refresh_final_results.py, absence == not run)."""
+    path = _final_results_path(year)
+    if not os.path.exists(path):
+        return {}
+    df = pd.read_csv(path, dtype=str).fillna("")
+    out = {}
+    for _, r in df.iterrows():
+        out.setdefault(r["discipline"], []).append({
+            "place": r.get("place", ""),
+            "name": r.get("athlete_name", ""),
+            "nat": r.get("nationality", ""),
+            "mark": r.get("mark", ""),
+        })
+    return out
+
+
+def _load_prefinal_index():
+    """Per-discipline {normalized name -> {rank, prob, qualified, name, waUrl}}
+    from the FROZEN pre-final projection. Falls back to the live predictions
+    only if the snapshot is missing, so the comparison still renders (without
+    the freeze guarantee -- see PREFINAL_PREDICTIONS_PATH)."""
+    path = PREFINAL_PREDICTIONS_PATH
+    if not os.path.exists(path):
+        path = os.path.join(OUTPUTS_DIR, "predictions_latest.csv")
+        if not os.path.exists(path):
+            return {}
+    df = pd.read_csv(path)
+    label2key = {v: k for k, v in DISC_LABELS.items()}
+    idx = {}
+    for _, row in df.iterrows():
+        key = label2key.get(row.get("discipline"))
+        if not key:
+            continue
+        raw_rank = row.get("predicted_rank")
+        rank = int(raw_rank) if pd.notna(raw_rank) else None
+
+        prob = row.get("win_probability", 0)
+        if isinstance(prob, str):
+            prob = int(prob.replace("%", "") or 0)
+        else:
+            prob = int(float(prob) * 100) if float(prob) <= 1 else int(prob)
+
+        wa = row.get("profile_url")
+        wa = wa if isinstance(wa, str) and wa and wa != "nan" else None
+
+        idx.setdefault(key, {})[normalize_athlete_name(row["athlete_name"])] = {
+            "rank": rank,
+            "prob": prob,
+            "name": row["athlete_name"],
+            "waUrl": wa,
+        }
+    return idx
+
+
+def build_result_comparisons(year=MEETS_YEAR, results=None, prefinal=None, toplist_lookup=None):
+    """For every discipline whose Final has been contested, a result-vs-model
+    payload: the actual finishing order, each finisher tagged with what the
+    model projected (before the meet) and where the two diverged, plus a podium
+    hit count. {} when no Final results exist yet.
+
+    Three model states per finisher, because "the difference" is exactly the
+    part worth showing:
+      field    -- the model had them in the projected field (predictedRank set)
+      nearMiss -- the model scored them but left them outside the field
+      unseen   -- the model never listed them at all (a genuine wildcard)
+
+    `results`, `prefinal` and `toplist_lookup` default to the on-disk sources
+    but can be injected (the comparison itself is pure, so it is unit-tested
+    that way)."""
+    if results is None:
+        results = load_final_results(year)
+    if not results:
+        return {}
+    if prefinal is None:
+        prefinal = _load_prefinal_index()
+    if toplist_lookup is None:
+        toplist_lookup = toplist_entry
+
+    comps = {}
+    for key, finishers in results.items():
+        pmap = prefinal.get(key, {})
+        predicted_top3 = {
+            n for n, p in pmap.items() if p["rank"] and 1 <= p["rank"] <= 3
+        }
+
+        rows = []
+        actual_podium = set()
+        for f in finishers:
+            place_str = str(f["place"]).strip()
+            place = int(place_str) if place_str.isdigit() else None
+
+            mark = f["mark"]
+            status = "finished"
+            if place is None:
+                # An empty place means the athlete has no finishing position:
+                # the mark field carries why (DNF/DQ/DNS/NM). Keep that label,
+                # drop it out of the ranked order, show no delta.
+                status = (str(mark).strip().lower() or "dnf")
+                place_label = str(f["mark"]).strip() or "—"
+                mark = ""
+            else:
+                place_label = place_str
+                if place <= 3:
+                    actual_podium.add(normalize_athlete_name(f["name"]))
+
+            p = pmap.get(normalize_athlete_name(f["name"]))
+            if p:
+                model_state = "field" if p["rank"] else "nearMiss"
+                predicted_rank = p["rank"]
+                predicted_prob = p["prob"]
+                name = p["name"]
+                wa_url = p["waUrl"] or _wa_search_url(f["name"])
+                has_page = True
+            else:
+                model_state = "unseen"
+                predicted_rank = None
+                predicted_prob = None
+                name = f["name"]
+                # Outside the projection, but a finisher with real season data
+                # still gets a full PodiumCall page: the athlete route falls
+                # back to /api/athlete-status, which builds a profile (photo,
+                # history, head-to-head) for anyone in the toplist or race log.
+                # So link internally whenever we can resolve them; only a
+                # finisher with nothing on record falls back to a WA search.
+                _mark, _rank, tl_url = toplist_lookup(key, f["name"])
+                if tl_url:
+                    wa_url = tl_url
+                    has_page = True
+                else:
+                    wa_url = _wa_search_url(f["name"])
+                    has_page = False
+
+            # Field-event marks arrive from WA as a bare number ("2.28"); the
+            # rest of the site writes the metre unit, so match it. Times carry
+            # their own ":"/"." and sprints are seconds, so only field events
+            # and only real numbers get the suffix.
+            if status == "finished" and key in FIELD_EVENTS and _is_number(mark):
+                mark = f"{mark}m"
+
+            delta = (predicted_rank - place) if (predicted_rank and place) else None
+
+            rows.append({
+                "place": place,
+                "placeLabel": place_label,
+                "status": status,
+                "name": name,
+                "nat": f["nat"] or "—",
+                "mark": mark,
+                "waUrl": wa_url,
+                "hasPage": has_page,
+                "modelState": model_state,
+                "predictedRank": predicted_rank,
+                "predictedProb": predicted_prob,
+                "delta": delta,
+            })
+
+        # Finished athletes in finishing order; DNF/DQ (place None) sink last.
+        rows.sort(key=lambda r: (r["place"] is None, r["place"] or 0))
+
+        comps[key] = {
+            "rows": rows,
+            "podiumSize": len(actual_podium),
+            "podiumHits": len(actual_podium & predicted_top3),
+        }
+    return comps
 
 
 def load_predictions():
@@ -837,6 +1040,10 @@ def load_predictions():
     
     df = pd.read_csv(path)
     injury_flags = load_injury_flags()
+    # Attached per discipline below; None for any event whose Final has not
+    # been run yet, so the frontend keeps showing that event's projection
+    # untouched until there is a real result to compare against.
+    result_comparisons = build_result_comparisons(MEETS_YEAR)
     track = []
     field = []
 
@@ -918,6 +1125,9 @@ def load_predictions():
             # order them the same way it orders the real field. The UI never
             # shows these numbers -- a near-miss athlete has no rank.
             "nearMiss": [{**a, "rank": i + 1} for i, a in enumerate(near_miss)],
+            # The actual Final result next to the pre-final projection, or None
+            # until this event has been contested. See build_result_comparisons.
+            "result": result_comparisons.get(disc_key),
         }
 
         if disc_key in FIELD_EVENTS:
