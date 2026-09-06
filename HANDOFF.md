@@ -80,6 +80,24 @@ python src/refresh_current_season_stats.py # days_since_last / meets_count
 python src/worldwide_scraper.py            # worldwide race log (resumable)
 python src/athlete_profile_scraper.py      # PBs, honours, world rankings
 
+# ============================================================
+# AFTER ANY REFRESH: REBUILD THE STATIC API SNAPSHOT.
+# ============================================================
+# Added 2026-09-06. The site no longer fetches its main pages from Render at
+# all -- it reads precomputed JSON served from Vercel's CDN (see build_static_api.py
+# under Architecture). That removed a measured 32.7s cold start, and it moved the
+# data the site displays into the FRONTEND repo.
+#
+# So a refresh is no longer done when athletics-predictor is pushed. If you
+# skip this step the API is fresh and the SITE IS STALE, with nothing broken
+# to notice -- no error, no empty page, just yesterday's numbers.
+#
+# Run it with api.py's data in place (it calls the app directly, no server):
+python src/build_static_api.py
+# then commit BOTH repos:
+#   athletics-predictor   -- the data + model outputs (git add -f, as always)
+#   track-insights-main   -- public/data/*.json (38 files, ~860 KB)
+
 # Rebuild real DL Final ground-truth labels (~1 min, hits a public WA API)
 python src/dl_final_results_scraper.py
 
@@ -290,6 +308,7 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 - `src/injury_checker.py`, injury/withdrawal detection + severity estimation (`data/injury_flags.json`)
 - `src/h2h_calculator.py` / `data/h2h/h2h_rates.csv`, head-to-head win rates, a trained feature
 - `tests/`, unit tests, `python -m pytest`
+- `src/build_static_api.py`, writes every snapshot-able API response to `track-insights-main/public/data/*.json` (38 files, ~860 KB) via Flask's test client, so the files are byte-identical to what the live API would return. **Re-run after every data refresh** or the deployed site serves stale numbers with nothing visibly broken. Paired with `track-insights-main/src/lib/api.ts`, which tries the CDN copy first and falls back to the live API
 - `src/components/dl/shell.tsx`, `src/lib/dl-data.ts` (track-insights-main), dashboard shell (page wrapper + `Panel`/`RankBadge`/`ProbabilityBar`/`WatchBadge` primitives, ambient background layer) + API data contract
 - `src/components/dl/topnav.tsx` (track-insights-main), the top navigation bar (centered links), replaced `sidebar.tsx` (deleted)
 - `src/routes/index.tsx` (track-insights-main), the "/" landing page; `src/routes/dashboard.tsx`, the actual dashboard (has its own hero banner), moved here from "/"
