@@ -1,4 +1,8 @@
 {
+  "https://assets.aws.worldathletics.org/01a7d258-8554-429d-ac96-6891f402c078.jpg": {
+    "x": 50.3,
+    "y": 28.1
+  },
   "https://assets.aws.worldathletics.org/0279c27f-c1e3-45ac-8c07-b07979bfb2f5.jpg": {
     "x": 82.5,
     "y": 28.4
@@ -706,6 +710,11 @@
     "x": 52.3,
     "y": 29.6
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/2022-02-27_Leichtathletik%2C_Deutsche_Hallenmeisterschaften_1DX_5079_by_Stepro.jpg/1280px-2022-02-27_Leichtathletik%2C_Deutsche_Hallenmeisterschaften_1DX_5079_by_Stepro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/2022-08-18_European_Championships_2022_%E2%80%93_Men%27s_400_Metres_Hurdles_by_Sandro_Halank%E2%80%93005.jpg/1280px-2022-08-18_European_Championships_2022_%E2%80%93_Men%27s_400_Metres_Hurdles_by_Sandro_Halank%E2%80%93005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 48.9,
+    "y": 18.6
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/2022-08-18_European_Championships_2022_%E2%80%93_Women%27s_Long_Jump_by_Sandro_Halank%E2%80%93061.jpg/1280px-2022-08-18_European_Championships_2022_%E2%80%93_Women%27s_Long_Jump_by_Sandro_Halank%E2%80%93061.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 43.7,
     "y": 12.9
@@ -714,29 +723,99 @@
     "x": 54.7,
     "y": 18.9
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Fatoumata_Balley_aux_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_03.jpg/1280px-Fatoumata_Balley_aux_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 42.8,
+    "y": 31.5
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Isaac_Nader_2023_%28cropped%29.jpg/1280px-Isaac_Nader_2023_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 56.3,
+    "y": 13.4
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nnamdi_Chinecherem_%C3%A0_la_finale_du_javelot_Douala_2024.jpg/1280px-Nnamdi_Chinecherem_%C3%A0_la_finale_du_javelot_Douala_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 49.2,
+    "y": 33.0
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Samuel_Chapple_-_NK_indoor_2024.jpg/1280px-Samuel_Chapple_-_NK_indoor_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 38.4,
+    "y": 17.1
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Nico_Young_at_the_2026_Wanda_Diamond_League%E2%80%99s_Weltklasse_Z%C3%BCrich_athletics_competition.jpg/1280px-Nico_Young_at_the_2026_Wanda_Diamond_League%E2%80%99s_Weltklasse_Z%C3%BCrich_athletics_competition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 57.1,
+    "y": 17.7
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Addy_Wiley_2021_IHSAA_State_Finals.jpg/1280px-Addy_Wiley_2021_IHSAA_State_Finals.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Alanah_Yukich.jpg/1280px-Alanah_Yukich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 62.4,
+    "y": 15.3
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Nick_Palmer.jpg/1280px-Nick_Palmer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 57.1,
+    "y": 32.2
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Antonio_Alkana_at_the_2020_Triveneto_Meeting_in_Trieste.jpg/1280px-Antonio_Alkana_at_the_2020_Triveneto_Meeting_in_Trieste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 45.5,
+    "y": 18.4
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Paris_Olympics_-_Athletics_%2853913379497%29.jpg/1280px-Paris_Olympics_-_Athletics_%2853913379497%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Paris_Olympics_-_Athletics_%2853913379497%29.jpg/960px-Paris_Olympics_-_Athletics_%2853913379497%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Sacha_Alessandrini.jpg/1280px-Sacha_Alessandrini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 50.1,
+    "y": 44.2
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Yual_Reath_-_2025_Diamond_League_in_Rabat_%281%29.jpg/1280px-Yual_Reath_-_2025_Diamond_League_in_Rabat_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2018-10-14_Heat_3_%28Girls_100_metre_hurdles_Stage_2%29_at_2018_Summer_Youth_Olympics_by_Sandro_Halank%E2%80%93026.jpg/1280px-2018-10-14_Heat_3_%28Girls_100_metre_hurdles_Stage_2%29_at_2018_Summer_Youth_Olympics_by_Sandro_Halank%E2%80%93026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 41.0,
     "y": 17.6
   },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/800m_femme_JO_03.08.2024.jpg/1280px-800m_femme_JO_03.08.2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/2019-09-01_ISTAF_2019_Javelin_throw_%28Martin_Rulsch%29_060.jpg/1280px-2019-09-01_ISTAF_2019_Javelin_throw_%28Martin_Rulsch%29_060.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 55.2,
+    "y": 27.5
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Rumesh_Tharanga_Pathirage_at_a_press_conference_during_the_Wanda_Diamond_League_Athletissima_athletics_competition._01.jpg/1280px-Rumesh_Tharanga_Pathirage_at_a_press_conference_during_the_Wanda_Diamond_League_Athletissima_athletics_competition._01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 46.3,
     "y": 31.7
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Thomas_Wilkes_at_the_2026_Wanda_Diamond_League%E2%80%99s_Weltklasse_Z%C3%BCrich_athletics_competition.jpg/1280px-Thomas_Wilkes_at_the_2026_Wanda_Diamond_League%E2%80%99s_Weltklasse_Z%C3%BCrich_athletics_competition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 59.2,
+    "y": 18.8
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Muhammad_Kounta_2.jpg/1280px-Muhammad_Kounta_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 43.7,
+    "y": 47.2
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Abdelrahman_Mahmoud_2022_%28cropped%29.jpg/1280px-Abdelrahman_Mahmoud_2022_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 36.7,
+    "y": 12.6
   },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Vanessa_Kamga_in_2023.jpg/1280px-Vanessa_Kamga_in_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 55.1,
     "y": 27.5
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Gracie_Hyde_at_the_2025_Portland_Track_Festival_01_%28cropped%29.jpg/1280px-Gracie_Hyde_at_the_2025_Portland_Track_Festival_01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 55.0,
+    "y": 40.8
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Gout_Gout_-_2025_Herculis_Diamond_League_Meeting.jpg/1280px-Gout_Gout_-_2025_Herculis_Diamond_League_Meeting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 52.6,
     "y": 25.1
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Podium_triple_saut_Limoges_2026.jpg/1280px-Podium_triple_saut_Limoges_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/African_Senior_Athletics_Championship_Accra_2026_61.jpg/1280px-African_Senior_Athletics_Championship_Accra_2026_61.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 47.5,
     "y": 38.5
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Men%27s_Pole_Vault_Stage_2_2018_YOG_%28112%29.JPG/1280px-Men%27s_Pole_Vault_Stage_2_2018_YOG_%28112%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 49.3,
+    "y": 23.0
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Texas_Tanner_2024_%28cropped%29.jpg/1280px-Texas_Tanner_2024_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 48.3,
+    "y": 35.6
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Ryan_Clarke.jpg/1280px-Ryan_Clarke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 52.3,
+    "y": 16.4
   },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Andreas_Almgren_in_2023.jpg/1280px-Andreas_Almgren_in_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 52.1,
@@ -746,10 +825,16 @@
     "x": 46.0,
     "y": 28.4
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Thomas_Carmoy_2m19.jpg/1280px-Thomas_Carmoy_2m19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/African_Senior_Athletics_Championship_Accra_2026_63.jpg/1280px-African_Senior_Athletics_Championship_Accra_2026_63.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 46.2,
     "y": 31.6
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/2017_European_Athletics_U23_Championships%2C_high_jump_men_final12_15-07-2017.jpg/1280px-2017_European_Athletics_U23_Championships%2C_high_jump_men_final12_15-07-2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 59.6,
+    "y": 27.4
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Athletissima_2022_8398.jpg/1280px-Athletissima_2022_8398.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2022-02-26_Leichtathletik%2C_Deutsche_Hallenmeisterschaften_1DX_4866_by_Stepro.jpg/1280px-2022-02-26_Leichtathletik%2C_Deutsche_Hallenmeisterschaften_1DX_4866_by_Stepro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 52.8,
     "y": 24.1
@@ -758,10 +843,22 @@
     "x": 43.6,
     "y": 21.3
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/2024_United_States_Olympic_trials_%28track_and_field%29_%2853814131979%29.jpg/1280px-2024_United_States_Olympic_trials_%28track_and_field%29_%2853814131979%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 45.8,
+    "y": 20.8
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Bislett_Games_2026_-_Fatoumata_Binta_Diallo_%282%29.jpg/1280px-Bislett_Games_2026_-_Fatoumata_Binta_Diallo_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Anthony_Ommundsen_Johnsen_0258.jpg/1280px-Anthony_Ommundsen_Johnsen_0258.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 58.0,
+    "y": 53.5
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/African_Senior_Athletics_Championship_Accra_2026_47.jpg/1280px-African_Senior_Athletics_Championship_Accra_2026_47.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 54.6,
     "y": 18.5
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Athletes_de_l%27_Ethiopie_au_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_a_Douala_09.jpg/1280px-Athletes_de_l%27_Ethiopie_au_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_a_Douala_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 46.9,
+    "y": 20.6
   },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Zach_Bradford_at_the_2026_Wanda_Diamond_League_Athletissima_athletics_competition._06.jpg/1280px-Zach_Bradford_at_the_2026_Wanda_Diamond_League_Athletissima_athletics_competition._06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 46.4,
@@ -771,6 +868,9 @@
     "x": 45.1,
     "y": 22.1
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Athletics_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_shot_put_final_-_02.jpg/1280px-Athletics_at_the_2024_Summer_Olympics_%E2%80%93_Women%27s_shot_put_final_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Athletissima_2022_8363.jpg/1280px-Athletissima_2022_8363.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Bislett_Games_2026_-_Ishmael_Kipkurui.jpg/1280px-Bislett_Games_2026_-_Ishmael_Kipkurui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Tobias_Gr%C3%B8nstad_8569.jpg/1280px-Tobias_Gr%C3%B8nstad_8569.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 55.9,
     "y": 19.7
@@ -787,6 +887,18 @@
     "x": 49.0,
     "y": 15.4
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Federico_Riva.jpg/1280px-Federico_Riva.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 57.9,
+    "y": 15.2
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Eliza_McCartney_%28NZL%29_2017.jpg/1280px-Eliza_McCartney_%28NZL%29_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 47.2,
+    "y": 28.1
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Patricia_Silva_2026.jpg/1280px-Patricia_Silva_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 48.1,
+    "y": 20.9
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Lilian_Odira_%28cropped%29.jpg/1280px-Lilian_Odira_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 50.6,
     "y": 21.4
@@ -795,21 +907,105 @@
     "x": 43.6,
     "y": 19.3
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Ashley_Tinash%C3%A9_Miller_Kamangirira%2C_Athletics_at_Africa_Games_23_424.jpg/1280px-Ashley_Tinash%C3%A9_Miller_Kamangirira%2C_Athletics_at_Africa_Games_23_424.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 40.7,
+    "y": 23.3
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Bislett_Games_2026_-_5000m_menn_%288%29.jpg/1280px-Bislett_Games_2026_-_5000m_menn_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Hanga_Klekner_2.jpg/1280px-Hanga_Klekner_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 49.4,
+    "y": 45.6
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/2022-08-18_European_Championships_2022_%E2%80%93_Women%27s_Long_Jump_by_Sandro_Halank%E2%80%93028.jpg/1280px-2022-08-18_European_Championships_2022_%E2%80%93_Women%27s_Long_Jump_by_Sandro_Halank%E2%80%93028.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 47.4,
+    "y": 32.5
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/2018-10-16_Stage_2_%28Boys%27_triple_jump%29_at_2018_Summer_Youth_Olympics_by_Sandro_Halank%E2%80%93091.jpg/1280px-2018-10-16_Stage_2_%28Boys%27_triple_jump%29_at_2018_Summer_Youth_Olympics_by_Sandro_Halank%E2%80%93091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Alobwede_Eseme_Emmanuel_%28cropped%29.jpg/1280px-Alobwede_Eseme_Emmanuel_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 40.4,
     "y": 20.4
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/2022-08-18_European_Championships_2022_%E2%80%93_Men%27s_400_Metres_Hurdles_by_Sandro_Halank%E2%80%93047.jpg/1280px-2022-08-18_European_Championships_2022_%E2%80%93_Men%27s_400_Metres_Hurdles_by_Sandro_Halank%E2%80%93047.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 57.2,
+    "y": 21.5
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Day_8_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_26.jpg/1280px-Day_8_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_26.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Zan_Rudolf.jpg/1280px-Zan_Rudolf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 51.1,
+    "y": 29.6
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/WKBO4458_5000m_W_final_Kipyegon_Hassan_%2853173531305%29.jpg/1280px-WKBO4458_5000m_W_final_Kipyegon_Hassan_%2853173531305%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 57.9,
     "y": 26.4
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Simone_Biasutti.jpg/1280px-Simone_Biasutti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 51.9,
+    "y": 25.6
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Faith_Cherotich_2023_%28cropped%29.jpg/1280px-Faith_Cherotich_2023_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Kenneth_Bednarek_sets_a_record_in_the_200_meter_race_at_the_Wanda_Diamond_League%E2%80%99s_Weltklasse_Z%C3%BCrich_athletics_competition_01.jpg/1280px-Kenneth_Bednarek_sets_a_record_in_the_200_meter_race_at_the_Wanda_Diamond_League%E2%80%99s_Weltklasse_Z%C3%BCrich_athletics_competition_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Marthe_Koala_Athletes_Bukinab%C3%A9s_au_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_au_stade_de_Japoma_39.jpg/1280px-Marthe_Koala_Athletes_Bukinab%C3%A9s_au_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_au_stade_de_Japoma_39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 38.2,
+    "y": 20.1
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Diamond_League_2026_-_Addisu_Yihune_%282%29.jpg/1280px-Diamond_League_2026_-_Addisu_Yihune_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/2023_Avrupa_Salon_Atletizm_%C5%9Eampiyonas%C4%B1_Photo_by_Evren_Kal%C4%B1nbacak_%282%29.jpg/1280px-2023_Avrupa_Salon_Atletizm_%C5%9Eampiyonas%C4%B1_Photo_by_Evren_Kal%C4%B1nbacak_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 46.8,
+    "y": 33.5
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Enzo_Diessl_at_the_2026_Wanda_Diamond_League%E2%80%99s_Weltklasse_Z%C3%BCrich_athletics_competition.jpg/1280px-Enzo_Diessl_at_the_2026_Wanda_Diamond_League%E2%80%99s_Weltklasse_Z%C3%BCrich_athletics_competition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 48.9,
+    "y": 23.3
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Jucilene_de_Lima%2C_2019_%28cropped%29.jpg/1280px-Jucilene_de_Lima%2C_2019_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 42.1,
+    "y": 37.2
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Aidan_Murphy_in_2024.jpg/1280px-Aidan_Murphy_in_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Atrletes_Botswanais_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_%C3%A0_Douala_16.jpg/1280px-Atrletes_Botswanais_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_%C3%A0_Douala_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 47.4,
+    "y": 18.9
+  },
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/2025_World_Athletics_Indoor_Championships_%E2%80%93_Men%27s_shot_put_03.jpg/1280px-2025_World_Athletics_Indoor_Championships_%E2%80%93_Men%27s_shot_put_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Women%E2%80%99s_800_m_at_Weltklasse_Z%C3%BCrich_DSC00732.jpg/1280px-Women%E2%80%99s_800_m_at_Weltklasse_Z%C3%BCrich_DSC00732.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/2024_African_Championships_in_Athletics_46.jpg/1280px-2024_African_Championships_in_Athletics_46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 50.2,
+    "y": 27.2
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Day_9_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_122.jpg/1280px-Day_9_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_122.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Bislett_Games_2026_-_Juleisy_Angulo_%282%29.jpg/1280px-Bislett_Games_2026_-_Juleisy_Angulo_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
   "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Athlete_Nigerian_aux_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_05.jpg/1280px-Athlete_Nigerian_aux_Championnats_d%27Afrique_d%27athl%C3%A9tisme_2024_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
     "x": 48.1,
     "y": 31.1
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/HockerNur_HuskyInvite2020.jpg/1280px-HockerNur_HuskyInvite2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 71.5,
+    "y": 14.6
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/29._Internationales_Hofer_Sparkassen_Stabhochsprung_Meeting_20250628_HOF7069_RAW-Export_1.jpg/1280px-29._Internationales_Hofer_Sparkassen_Stabhochsprung_Meeting_20250628_HOF7069_RAW-Export_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 58.8,
+    "y": 59.5
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/2025_World_Athletics_Indoor_Championships_%E2%80%93_Men%27s_1500_metres_01.jpg/1280px-2025_World_Athletics_Indoor_Championships_%E2%80%93_Men%27s_1500_metres_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": null,
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/2022-08-18_European_Championships_2022_%E2%80%93_Men%27s_400_Metres_Hurdles_by_Sandro_Halank%E2%80%93042.jpg/1280px-2022-08-18_European_Championships_2022_%E2%80%93_Men%27s_400_Metres_Hurdles_by_Sandro_Halank%E2%80%93042.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 59.0,
+    "y": 17.9
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Leia_Braunagel_Nairobi.jpg/1280px-Leia_Braunagel_Nairobi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail": {
+    "x": 51.6,
+    "y": 25.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0b/20260811_120219_Veronica_Vancardo_2026_European_Athletics_Championships.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 40.6,
+    "y": 33.8
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0e/Athletics_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_110_metres_hurdles_podium_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 53.7,
+    "y": 30.1
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0f/Francesco_Pernici_%28Madrid_2025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 55.0,
+    "y": 36.3
   },
   "https://upload.wikimedia.org/wikipedia/commons/1/14/Day_7_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_25_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 59.5,
@@ -823,6 +1019,10 @@
     "x": 49.8,
     "y": 30.2
   },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1b/Aiden_Smith_%28born_2004%29_at_the_Rhine-Ruhr_2025_FISU_World_University_Games.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 51.8,
+    "y": 49.1
+  },
   "https://upload.wikimedia.org/wikipedia/commons/1/1c/2023_African_Games_long_jump_050505_39_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 65.5,
     "y": 26.3
@@ -831,9 +1031,29 @@
     "x": 48.3,
     "y": 11.8
   },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/Wilma_Nielsen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 43.9,
+    "y": 21.7
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/26/Kemi_Adekoya_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 54.7,
+    "y": 43.1
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/27/Niels_Laros_2023_Gouden_Spike.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 48.2,
+    "y": 49.1
+  },
   "https://upload.wikimedia.org/wikipedia/commons/2/28/Nadia_Battocletti_at_Turin_2022_%28head_shot%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 47.8,
     "y": 44.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2a/Day_10_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_51_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 58.1,
+    "y": 25.4
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2b/Abria_Deonna_Celene_Smith_%28born_2002%29_at_the_Rhine-Ruhr_2025_FISU_World_University_Games.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 54.2,
+    "y": 27.5
   },
   "https://upload.wikimedia.org/wikipedia/commons/2/2b/Bislett_Games_2026_-_400m_hekk_kvinner_%28Woodruff%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 49.6,
@@ -843,6 +1063,10 @@
     "x": 46.4,
     "y": 24.7
   },
+  "https://upload.wikimedia.org/wikipedia/commons/3/37/Shafiqua_Maloney_Paris_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 47.0,
+    "y": 33.4
+  },
   "https://upload.wikimedia.org/wikipedia/commons/4/43/Ja%27Kobe_Tharp_at_the_2025_NCAA_Division_1_Outdoor_Championships_03_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 54.1,
     "y": 38.0
@@ -850,6 +1074,11 @@
   "https://upload.wikimedia.org/wikipedia/commons/4/43/Lurdes_Gloria_Manuel_-_2025_European_Athletics_Indoor_Championships_%E2%80%93_Women%27s_400_metres_final.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 52.4,
     "y": 51.6
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/49/Alemnet_Wale_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": null,
+  "https://upload.wikimedia.org/wikipedia/commons/4/4a/20260811_110945_Roman_Petruk_2026_European_Athletics_Championships.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 50.9,
+    "y": 35.2
   },
   "https://upload.wikimedia.org/wikipedia/commons/4/4f/Cooper_Lutkenhaus_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 26.0,
@@ -863,17 +1092,49 @@
     "x": 60.4,
     "y": 23.8
   },
+  "https://upload.wikimedia.org/wikipedia/commons/5/51/Nikol_Taba%C4%8Dkov%C3%A1%2C_2016_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 47.5,
+    "y": 17.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/55/2022-08-18_European_Championships_2022_%E2%80%93_Women%27s_800_Metres_by_Sandro_Halank%E2%80%93012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 51.7,
+    "y": 16.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/58/20260811_113018_Shaquille_Emanuelson_2026_European_Athletics_Championships.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 42.3,
+    "y": 14.8
+  },
   "https://upload.wikimedia.org/wikipedia/commons/5/59/Day_10_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_164_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 37.2,
     "y": 27.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5d/Erika_Saraceni.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 57.5,
+    "y": 15.8
   },
   "https://upload.wikimedia.org/wikipedia/commons/5/5f/Adriana_Vilago%C5%A1_%282022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 52.2,
     "y": 43.4
   },
+  "https://upload.wikimedia.org/wikipedia/commons/6/60/2024_European_Athletics_Championships_women%27s_400_metres_hurdles_Louise_Maraval_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 56.5,
+    "y": 40.3
+  },
   "https://upload.wikimedia.org/wikipedia/commons/6/61/2025_UK_Athletics_Championships_20250802_184358_Elise_Thorner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 43.2,
     "y": 25.7
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/62/Wanya_McCoy_Paris_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 44.8,
+    "y": 44.6
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/64/20260811_105510_Mateu%C5%A1as_Kold%C5%BEiejskis_2026_European_Athletics_Championships.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 39.7,
+    "y": 23.7
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/64/Amath_Faye_5._Islamic_Solidarity_Games_2021_Konya_Athletics_Men_Triple_jump_Medal_Ceremony_20220810_1_%28cropped2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 38.6,
+    "y": 12.9
   },
   "https://upload.wikimedia.org/wikipedia/commons/6/66/Dariya_Derkach_%28ITA%29_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 43.8,
@@ -887,9 +1148,22 @@
     "x": 51.3,
     "y": 26.2
   },
+  "https://upload.wikimedia.org/wikipedia/commons/6/69/Caroline_Nyaga_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": null,
   "https://upload.wikimedia.org/wikipedia/commons/6/69/Nikki_Hiltz_Glasgow_2024_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 63.2,
     "y": 46.6
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6d/Vernon_Norwood_Portland_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 52.8,
+    "y": 40.3
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6f/Mik%C3%A1_Sosna_%28born_2003%29_at_the_Rhine-Ruhr_2025_FISU_World_University_Games.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 56.1,
+    "y": 29.8
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/75/Day_7_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_147_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 55.9,
+    "y": 25.4
   },
   "https://upload.wikimedia.org/wikipedia/commons/7/75/Nickisha_Pryce_2023_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 66.9,
@@ -899,13 +1173,41 @@
     "x": 66.4,
     "y": 15.7
   },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Reynold_Cheruiyot_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 57.9,
+    "y": 15.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7b/Athletics_at_the_2024_Summer_Olympics_%E2%80%93_Men%27s_800_metres_semi-final_2_-_Mohamed_Ali_Gouaned.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 48.3,
+    "y": 41.0
+  },
   "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bislett_Games_2026_-_3000m_kvinner_%28Amebaw%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 72.4,
     "y": 27.0
   },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7d/%D0%90%D1%80%D1%82%D1%83%D1%80_%D0%A4%D0%B5%D0%BB%D1%8C%D1%84%D0%BD%D0%B5%D1%80%2C_2024%2C_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 57.3,
+    "y": 34.7
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7d/Fleur_Jong_with_Gouden_Spike_award_June_2021.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 43.2,
+    "y": 22.3
+  },
   "https://upload.wikimedia.org/wikipedia/commons/8/86/Axelina_Elin_Signe_Johansson_%28born_2000%29_at_the_Rhine-Ruhr_2025_FISU_World_University_Games.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 62.4,
     "y": 32.5
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/89/Anvar_Anvarov_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 50.9,
+    "y": 35.8
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8d/Souad_El_Haddad_African_Senior_Athletics_Championship_Accra_2026_14_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 63.0,
+    "y": 40.0
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8f/BUCS-2023-804312423.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 39.0,
+    "y": 12.9
   },
   "https://upload.wikimedia.org/wikipedia/commons/8/8f/Steven_Richter_%28born_2003%29_at_the_Rhine-Ruhr_2025_FISU_World_University_Games.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 47.1,
@@ -915,10 +1217,15 @@
     "x": 55.7,
     "y": 30.4
   },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Alice_Muraro.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 50.4,
+    "y": 30.3
+  },
   "https://upload.wikimedia.org/wikipedia/commons/a/a6/Enrique_Llopis_2024_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 62.2,
     "y": 16.9
   },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a7/Ilona_Mononen_in_Turku_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": null,
   "https://upload.wikimedia.org/wikipedia/commons/a/a7/Ruben_Querinjean_%28born_2001%29_at_the_Rhine-Ruhr_2025_FISU_World_University_Games.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 75.2,
     "y": 15.5
@@ -927,23 +1234,44 @@
     "x": 56.2,
     "y": 35.2
   },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/2023_African_Games_Race_05_Waberi_Igueh_Houssein_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 65.2,
+    "y": 20.6
+  },
   "https://upload.wikimedia.org/wikipedia/commons/a/ae/Djamel_Sedjati_Budapest_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 50.4,
     "y": 33.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/Alexandra_Emilianov_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 45.4,
+    "y": 30.4
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bd/Eloisa_Coiro_%28born_2000%29_at_the_Rhine-Ruhr_2025_FISU_World_University_Games.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 47.8,
+    "y": 34.2
   },
   "https://upload.wikimedia.org/wikipedia/commons/c/c8/Anete_Koci%C5%86a_2017_European_Athletics_U23_Championships_16-07-2017_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 60.0,
     "y": 44.7
   },
   "https://upload.wikimedia.org/wikipedia/commons/c/ca/Gabbi_Jennings.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": null,
+  "https://upload.wikimedia.org/wikipedia/commons/c/cd/Matteo_Sioli_%28Bergen_2025_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 46.5,
+    "y": 17.3
+  },
   "https://upload.wikimedia.org/wikipedia/commons/c/cd/Rajindra_Campbell_-_Paris_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 44.3,
     "y": 40.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d0/Rhema_Otabor_Paris2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 47.3,
+    "y": 37.1
   },
   "https://upload.wikimedia.org/wikipedia/commons/d/d2/20260811_104535%280%29_Emily_Newnham_2026_European_Athletics_Championships.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 54.0,
     "y": 26.1
   },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d2/Pieter_Sisk-1547751950.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": null,
   "https://upload.wikimedia.org/wikipedia/commons/d/d4/Curtis_Thompson_%28javelin_thrower%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 55.3,
     "y": 14.0
@@ -952,7 +1280,13 @@
     "x": 85.7,
     "y": 6.2
   },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d6/1500m_men_Final_Budapest_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": null,
+  "https://upload.wikimedia.org/wikipedia/commons/d/d9/Second_heat_of_the_women%27s_mile_at_the_2026_Commonwealth_Games_-_Claudia_Hollingsworth_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 68.8,
+    "y": 14.2
+  },
   "https://upload.wikimedia.org/wikipedia/commons/d/db/First_heat_of_the_women%27s_mile_at_the_2026_Commonwealth_Games_-_Abbey_Caldwell_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": null,
+  "https://upload.wikimedia.org/wikipedia/commons/d/dc/Bislett_Games_2026_-_3000m_kvinner_%28Getachew%2C_Abera%2C_Meshesha%2C_Davies%2C_Cherop%2C_Davies%2C_Shimeket%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": null,
   "https://upload.wikimedia.org/wikipedia/commons/e/e0/Parul_Chaudhary_in_January_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 57.1,
     "y": 35.8
@@ -969,9 +1303,29 @@
     "x": 51.7,
     "y": 34.2
   },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e6/Abdulla_Aboobacker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 51.3,
+    "y": 33.9
+  },
   "https://upload.wikimedia.org/wikipedia/commons/e/e6/Ruben_rolvink-1647695152.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 44.0,
     "y": 28.9
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e9/Day_7_at_the_2024_United_States_Olympic_Trials_%28track_and_field%29_25_%28Jayden_Ulrich_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 39.9,
+    "y": 29.5
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/eb/Geordie_Beamish_Glasgow_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 36.7,
+    "y": 28.7
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ec/2025_UK_Athletics_Championships_20250802_142407_Isabelle_Boffey.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 43.7,
+    "y": 13.1
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ed/131208-024_-_Isaac_Kimeli_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
+    "x": 58.6,
+    "y": 24.4
   },
   "https://upload.wikimedia.org/wikipedia/commons/e/ed/Cole_Hocker_%28USA%29_2020.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled": {
     "x": 48.9,

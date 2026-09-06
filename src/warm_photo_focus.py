@@ -29,7 +29,13 @@ import api  # noqa: E402 -- reuse the exact detector + cache the server uses
 WM_CACHE = os.path.join(os.path.dirname(__file__), "..", "data", "wikimedia_photo_cache.json")
 
 DELAY = 1.5          # seconds between requests -- be a polite Wikimedia citizen
-RETRY_WAITS = [5, 15, 30]  # backoff on 429/503 rather than giving up on a face
+# Backoff on 429/503. It runs past 60s deliberately: Wikimedia answers a
+# throttled image request with `Retry-After: 60`, so a ladder that stopped at
+# 30s gave up in the window it was being asked to wait through. That cost 35
+# of 187 photos their face crop on the 2026-09-06 run -- they were not broken
+# URLs, just impatience.
+RETRY_WAITS = [5, 15, 30, 60, 120]
+MAX_RETRY_AFTER = 300  # honour the server's own number, but never sleep forever
 
 
 def wikimedia_photo_urls():
@@ -50,7 +56,14 @@ def fetch(url):
         try:
             r = requests.get(url, headers=api.WM_HEADERS, timeout=25)
             if r.status_code in (429, 503) and attempt < len(RETRY_WAITS):
-                time.sleep(RETRY_WAITS[attempt])
+                # Prefer the server's own Retry-After over our guess: it is
+                # the only number that actually knows when the limit lifts.
+                wait = RETRY_WAITS[attempt]
+                try:
+                    wait = max(wait, min(int(r.headers['Retry-After']), MAX_RETRY_AFTER))
+                except (KeyError, ValueError, TypeError):
+                    pass
+                time.sleep(wait)
                 continue
             r.raise_for_status()
             return r.content

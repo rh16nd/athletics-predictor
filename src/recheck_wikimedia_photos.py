@@ -24,6 +24,7 @@ Usage:
 Then run:  python src/warm_photo_focus.py   (to face-focus any new photos)
 """
 import csv
+import json
 import os
 import re
 import sys
@@ -67,6 +68,21 @@ def displayed_athletes():
             c = competitor_id(wa)
             if c and c not in out:
                 out[c] = (row["athlete_name"], wa)
+    # The Track/Field pages now show the world top-20 per discipline
+    # (src/world_rankings.py), which is a far bigger cast than the projected
+    # Diamond League field -- and most of it had never been checked for a
+    # Commons photo. Include it, or the re-check misses the athletes the site
+    # actually renders now.
+    wr_path = os.path.join(DATA, "world_rankings.json")
+    if os.path.exists(wr_path):
+        with open(wr_path, encoding="utf-8") as f:
+            wr = json.load(f)
+        for disc in wr.values():
+            for lst in ("model", "points"):
+                for r in disc.get(lst, []):
+                    c = competitor_id(r.get("profileUrl"))
+                    if c and c not in out:
+                        out[c] = (r.get("name"), r.get("profileUrl"))
     return out
 
 
