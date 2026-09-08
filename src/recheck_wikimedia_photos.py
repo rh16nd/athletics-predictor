@@ -33,6 +33,18 @@ import time
 import pandas as pd
 import requests
 
+# This script prints athlete names, and athlete names are full of characters
+# Windows' cp1252 console cannot encode. It crashed at 147 of 248 on a name
+# containing "Ě" -- AFTER writing the cache entry in memory and BEFORE saving
+# it, so that athlete's result was lost and the remaining hundred were never
+# looked at. Same defect build_static_api.py had, fixed the same way:
+# reconfigure() rather than the `sys.stdout = TextIOWrapper(...)` idiom the
+# scrapers use, because that one detaches the stream and takes the pytest
+# session down with it.
+for _stream in (sys.stdout, sys.stderr):
+    if not (_stream.encoding or "").lower().startswith("utf"):
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+
 sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
