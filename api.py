@@ -89,14 +89,22 @@ def injury_evidence(entry):
     """Pulls a short, human-readable reason + source link from an injury_flags.json
     entry's most recent match -- without this, the dashboard only ever showed a
     generic 'flagged for review' tooltip even though the real headline/URL was
-    sitting right there in the file the whole time."""
+    sitting right there in the file the whole time.
+
+    The DATE is in there because "is this current?" is the first question a
+    withdrawal raises, and the widened news search made it a fair one to ask:
+    a search has no sense of season, so the reader is shown when the story ran
+    rather than being asked to assume it is recent."""
     matches = (entry or {}).get("matches") or []
     if not matches:
         return None, None
     m = matches[-1]
     headline = m.get("headline")
     source = (m.get("source") or "").replace("_results", "")
-    reason = f'"{headline}" ({source})' if headline else None
+    when = m.get("published")
+    if not headline:
+        return None, m.get("url")
+    reason = f'"{headline}" ({source}, {when})' if when else f'"{headline}" ({source})'
     return reason, m.get("url")
 
 # "status" here is just the meet's calendar position, not literal — done/next/upcoming
@@ -404,7 +412,120 @@ def load_career_progression(disc_key, athlete_name):
     return seasons
 
 
-def load_athlete_history(disc_key, athlete_name):
+ATHLETE_PROFILES_DIR = os.path.join(os.path.dirname(__file__), "data", "athlete_profiles")
+
+# Above this many races, the chart stops being a season and becomes a smear.
+# Past it we show each month's best instead, which is still every month the
+# athlete competed in -- just one point per month rather than five.
+FULL_SEASON_MAX = 14
+
+
+def _profile_event_matches(event_name, disc_key):
+    """WA names the event without a gender ("Shot Put"); our labels carry one
+    ("Men's Shot Put"). Compare on the part that is actually the event."""
+    label = DISC_LABELS.get(disc_key, "")
+    bare = re.sub(r"^(Men's|Women's)\s+", "", label, flags=re.I).strip().lower()
+    ev = (event_name or "").strip().lower()
+    if not ev or not bare:
+        return False
+    # "100m" vs WA's "100 Metres", "3000m Steeplechase" vs "3000 Metres
+    # Steeplechase" -- normalise both to digits + words.
+    def norm(x):
+        x = x.replace("metres", "m").replace("meters", "m")
+        return re.sub(r"[^a-z0-9]", "", x)
+    return norm(ev) == norm(bare)
+
+
+def load_full_season_history(disc_key, athlete_name, profile_url=None):
+    """EVERY meeting this athlete contested in this discipline this season --
+    indoors, national championships, continental tour, the lot -- not only the
+    Diamond League circuit.
+
+    The chart used to read {disc}_{MEETS_YEAR}_meetings.csv, which is a DL-only
+    scrape, so an athlete's season looked like three or four races when they had
+    run a dozen. Joe Kovacs, for one, opened 2026 with an indoor campaign that
+    simply was not on the page. This reads World Athletics' own per-athlete
+    results instead (data/athlete_profiles/<id>.json, from
+    src/athlete_profile_scraper.py), which is the same season the athlete's own
+    WA page shows.
+
+    Returns (history, year, condensed, total). `condensed` is True when the
+    season was long enough that only each month's best is shown, so the page
+    can say so rather than quietly dropping races."""
+    wa_id = _wa_id_from_url(profile_url) if profile_url else None
+    if not wa_id:
+        _mark, _rank, url = toplist_entry(disc_key, athlete_name)
+        wa_id = _wa_id_from_url(url)
+    if not wa_id:
+        return [], None, False, 0
+    path = os.path.join(ATHLETE_PROFILES_DIR, f"{wa_id}.json")
+    if not os.path.exists(path):
+        return [], None, False, 0
+    try:
+        with open(path, encoding="utf-8") as f:
+            blob = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return [], None, False, 0
+
+    by_event = (((blob.get("profile") or {}).get("resultsByYear") or {})
+                .get("resultsByEvent")) or []
+    rows = []
+    for ev in by_event:
+        if not _profile_event_matches(ev.get("discipline"), disc_key):
+            continue
+        for r in ev.get("results") or []:
+            when = pd.to_datetime(r.get("date"), format="%d %b %Y", errors="coerce")
+            if pd.isna(when):
+                continue
+            try:
+                value = parse_mark(str(r.get("mark", "")))
+            except Exception:
+                continue          # DNF/DQ/NM carry no mark to plot
+            rows.append({
+                "_when": when,
+                "date": r.get("date"),
+                "mark": format_mark(value, disc_key),
+                "markValue": value,
+                "venue": r.get("venue") or r.get("competition"),
+                "resultsScore": None,
+            })
+    if not rows:
+        return [], None, False, 0
+
+    rows.sort(key=lambda x: x["_when"])
+    year = int(rows[-1]["_when"].year)
+    # One season only: an athlete's WA page can carry a stray earlier date.
+    rows = [r for r in rows if int(r["_when"].year) == year]
+    # The same race can appear twice under differently-formatted venues.
+    seen, unique = set(), []
+    for r in rows:
+        key = (r["date"], r["mark"])
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(r)
+    total = len(unique)
+
+    condensed = total > FULL_SEASON_MAX
+    if condensed:
+        higher_is_better = disc_key in FIELD_EVENTS
+        best_by_month = {}
+        for r in unique:
+            key = (r["_when"].year, r["_when"].month)
+            held = best_by_month.get(key)
+            if held is None or (
+                r["markValue"] > held["markValue"] if higher_is_better
+                else r["markValue"] < held["markValue"]
+            ):
+                best_by_month[key] = r
+        unique = sorted(best_by_month.values(), key=lambda x: x["_when"])
+
+    for r in unique:
+        r.pop("_when", None)
+    return unique, year, condensed, total
+
+
+def load_athlete_history(disc_key, athlete_name, profile_url=None):
     """Real per-meet marks for an athlete -- the current, in-progress
     season if src/current_season_scraper.py has real meeting data for them
     (data/raw/{disc_key}_{MEETS_YEAR}_meetings.csv), falling back to their
@@ -432,26 +553,37 @@ def load_athlete_history(disc_key, athlete_name):
     but a real 2022 season. Returns [] only if the athlete truly has no
     real data on record anywhere, current or historical (some newer
     athletes won't)."""
+    # WA's own per-athlete results first: every meeting of the season, not
+    # just the Diamond League circuit the meetings file covers. See
+    # load_full_season_history for why that mattered.
+    full, full_year, condensed, total = load_full_season_history(
+        disc_key, athlete_name, profile_url,
+    )
+    if full:
+        return full, full_year, condensed, total
+
     current_path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}_meetings.csv")
     if os.path.exists(current_path):
         current_df = pd.read_csv(current_path)
         if not current_df.empty:
             mine = current_df[current_df["Competitor"].str.lower() == athlete_name.lower()]
             if not mine.empty:
-                return _season_rows_to_history(mine, disc_key), MEETS_YEAR
+                rows = _season_rows_to_history(mine, disc_key)
+                return rows, MEETS_YEAR, False, len(rows)
 
     path = os.path.join(RAW_DIR, f"{disc_key}.csv")
     if not os.path.exists(path):
-        return [], None
+        return [], None, False, 0
     df = pd.read_csv(path)
     if df.empty:
-        return [], None
+        return [], None, False, 0
     mine = df[df["Competitor"].str.lower() == athlete_name.lower()]
     if mine.empty:
-        return [], None
+        return [], None, False, 0
     last_year = int(mine["year"].max())
     season = mine[mine["year"] == last_year]
-    return _season_rows_to_history(season, disc_key), last_year
+    rows = _season_rows_to_history(season, disc_key)
+    return rows, last_year, False, len(rows)
 
 
 def load_h2h_vs_rivals(disc_key, athlete_name, rival_names):
@@ -1303,9 +1435,13 @@ def athlete_field_status(disc_key, athlete_name):
     # profile chart uses -- being outside the projected eight doesn't make
     # an athlete's actual races any less real, and "here is his season" is
     # most of what someone came to the page for.
-    history, history_year = load_athlete_history(disc_key, athlete_name)
+    history, history_year, history_condensed, history_races = load_athlete_history(
+        disc_key, athlete_name, wa_url,
+    )
     out["history"] = history
     out["historyYear"] = history_year
+    out["historyCondensed"] = history_condensed
+    out["historyRaces"] = history_races
 
     # Same real World Athletics headshot the in-field profiles get -- there
     # is no reason an athlete outside the projected eight should get a
@@ -1614,61 +1750,77 @@ def build_qualification():
     }
 
 
+def _date_rank(iso):
+    """ISO date as a sortable integer; undated sorts oldest."""
+    return int((iso or "0000-00-00").replace("-", ""))
+
+
 def build_news(limit=20):
-    """Every real news item the injury checker matched, as a feed.
+    """Every athlete the injury check has flagged, with the reporting behind
+    each one.
 
-    The evidence was already being scraped and stored -- it just only ever
-    surfaced as a tooltip on whichever athlete it flagged, so a reader had
-    to already suspect someone to find it. Showing it as a list also makes
-    bad matches visible: the item that removed Cole Hocker is a headline
-    about Jakob Ingebrigtsen, which is obvious the moment you read it in a
-    feed and invisible when it is buried behind a badge.
+    ONE ROW PER ATHLETE, not per article. It used to be per article, which read
+    as a stack of near-duplicates the moment a story got picked up: Keely
+    Hodgkinson withdrawing took the top three rows on 2026-09-08, same event,
+    three outlets. The reader's question is who is in doubt; the articles are
+    the evidence for it, and they belong one click away rather than in the way.
 
-    Deduped by URL -- the same article routinely matches several athletes."""
+    Grouping this way also removed the need for the per-article athlete merge
+    that preceded it -- a results recap naming three DNFs now appears once
+    under each of the three, which is what it always meant.
+
+    Articles are deduped by URL and sorted newest first, so the row leads with
+    the most recent thing known."""
     flags = load_injury_flags()
-    seen, items = set(), []
+    items = []
+
     for name, entry in flags.items():
         status = entry.get("status")
         matches = entry.get("matches") or []
 
-        # A removal must never be invisible. This feed is now the ONLY place
-        # withdrawn athletes are listed (the dashboard's separate "Removed
-        # from predictions" panel was pure duplication and was deleted), so
-        # a "remove" entry whose matches carry no usable headline still gets
-        # a row rather than silently disappearing from the site.
-        if status == "remove" and not any(m.get("headline") for m in matches):
-            items.append({
-                "headline":    "Flagged for removal by the automatic injury check.",
-                "url":         next((m.get("url") for m in matches if m.get("url")), None),
-                "source":      "injury check",
-                "athlete":     name,
-                "status":      status,
-                "disciplines": [DISC_LABELS.get(d, d) for d in entry.get("disciplines", [])],
-                "keywords":    sorted({k for m in matches for k in (m.get("keywords") or [])}),
-            })
-            continue
-
+        articles, seen = [], set()
         for m in matches:
-            url = m.get("url")
-            headline = m.get("headline")
-            if not headline:
-                continue
+            url, headline = m.get("url"), m.get("headline")
             key = url or headline
-            if key in seen:
+            if not key or key in seen:
                 continue
             seen.add(key)
-            items.append({
-                "headline":    headline,
-                "url":         url,
-                "source":      (m.get("source") or "").replace("_results", ""),
-                "athlete":     name,
-                "status":      status,
-                "disciplines": [DISC_LABELS.get(d, d) for d in entry.get("disciplines", [])],
-                "keywords":    m.get("keywords") or [],
+            articles.append({
+                "headline": headline or "Flagged by the automatic injury check.",
+                "url": url,
+                "source": (m.get("source") or "").replace("_results", ""),
+                "published": m.get("published"),
             })
-    # "remove" outranks "watch": a withdrawal changes the field, a watch
-    # only qualifies it.
-    items.sort(key=lambda x: (x["status"] != "remove", x["athlete"]))
+        # Newest first; an article with no date sorts last rather than winning
+        # the row by accident.
+        articles.sort(key=lambda a: a["published"] or "", reverse=True)
+
+        # A flagged athlete must never be invisible, even when every match came
+        # through without a usable headline.
+        if not articles:
+            articles = [{
+                "headline": "Flagged by the automatic injury check.",
+                "url": None, "source": "injury check", "published": None,
+            }]
+
+        items.append({
+            "athlete":     name,
+            "status":      status,
+            "disciplines": [DISC_LABELS.get(d, d) for d in entry.get("disciplines", [])],
+            # The KEYS as well as the English labels, so the frontend can name
+            # the discipline in the reader's language the way every other list
+            # does (discName in dl-data.ts translates on the key).
+            "discKeys":    list(entry.get("disciplines", [])),
+            "keywords":    sorted({k for m in matches for k in (m.get("keywords") or [])}),
+            "articles":    articles,
+            "latest":      articles[0]["published"],
+        })
+
+    # "remove" outranks "watch": a withdrawal changes the field, a watch only
+    # qualifies it. Then most recent first, so the newest news leads.
+    items.sort(key=lambda x: (x["status"] != "remove", x["latest"] or "", x["athlete"]),
+               reverse=False)
+    items.sort(key=lambda x: (x["status"] != "remove", -_date_rank(x["latest"]), x["athlete"]))
     return items[:limit]
 
 
@@ -1703,6 +1855,41 @@ def search_athletes(query, limit=25):
     # the highest-ranked match, and a name can appear in several disciplines.
     results.sort(key=lambda x: (x["worldRank"] is None, x["worldRank"] or 9999))
     return results[:limit]
+
+
+def search_countries(query, limit=5):
+    """Countries matching a search, so typing "Jamaica" finds a nation rather
+    than silently finding nothing.
+
+    Before this, search only looked at athlete names, so a country name matched
+    nobody -- the single most-requested thing missing from it. An exact code
+    ("JAM") or a name that starts with the query ranks above a mid-word match,
+    because someone typing three letters usually means the code."""
+    q = (query or "").strip().lower()
+    if len(q) < 2:
+        return []
+    data = load_countries() or {}
+    hits = []
+    for c in data.values():
+        name = (c.get("name") or "").lower()
+        code = (c.get("code") or "").lower()
+        if code == q:
+            rank = 0
+        elif name.startswith(q):
+            rank = 1
+        elif q in name or q in code:
+            rank = 2
+        else:
+            continue
+        hits.append((rank, -(c.get("topScore") or 0), {
+            "code": c["code"],
+            "name": c["name"],
+            "area": c.get("area"),
+            "athleteCount": c["athleteCount"],
+            "disciplineCount": c["disciplineCount"],
+        }))
+    hits.sort(key=lambda h: (h[0], h[1]))
+    return [h[2] for h in hits[:limit]]
 
 
 def build_athlete_profile(disc_key, athlete_name):
@@ -1774,7 +1961,9 @@ def build_athlete_profile(disc_key, athlete_name):
             return None
         return val.item() if hasattr(val, "item") else val
 
-    history, history_year = load_athlete_history(disc_key, athlete_name)
+    history, history_year, history_condensed, history_races = load_athlete_history(
+        disc_key, athlete_name, wa_url,
+    )
     photo_url, photo_credit = resolve_athlete_photo(wa_url)
 
     # "Last competed" carries no qualifier, so it has to mean the last time
@@ -1826,6 +2015,10 @@ def build_athlete_profile(disc_key, athlete_name):
         "injuryUrl":       evidence_url,
         "history":         history,
         "historyYear":     history_year,
+        # True when the season was long enough to show one point per month
+        # instead of every race, so the page can say which it is showing.
+        "historyCondensed": history_condensed,
+        "historyRaces":     history_races,
         "h2h":             load_h2h_vs_rivals(disc_key, athlete_name, rival_names),
         # The model's rival shortlist by name. The profile used to render a
         # second head-to-head panel scoped to these; that panel was removed
@@ -2012,7 +2205,7 @@ def build_discipline_trajectories(disc_key, athletes, limit=4):
     docstring) -- never synthesized between real points."""
     trajectories = []
     for a in athletes[:limit]:
-        history, history_year = load_athlete_history(disc_key, a["name"])
+        history, history_year, _cond, _races = load_athlete_history(disc_key, a["name"])
         if not history:
             continue
         trajectories.append({
@@ -2264,7 +2457,7 @@ def build_storylines(disc_key, disc_label, athletes):
     # checkable against the trajectory chart above it).
     best_gain, best_athlete = None, None
     for a in top:
-        history, history_year = load_athlete_history(disc_key, a["name"])
+        history, history_year, _cond, _races = load_athlete_history(disc_key, a["name"])
         if history_year != MEETS_YEAR or len(history) < 2:
             continue
         values = [h["markValue"] for h in history if h["markValue"] is not None]
@@ -2891,6 +3084,222 @@ def qualification():
     return jsonify(payload)
 
 
+ULTIMATE_PATH = os.path.join(os.path.dirname(__file__), "data", "ultimate", "event.json")
+
+
+def load_ultimate():
+    """The World Athletics Ultimate Championship payload (src/ultimate_scraper.py):
+    the verified event facts, the direct qualifiers we already have (the 2026 DL
+    Final winners), and the timetable/field/results once WA publishes them.
+    `fieldPublished` is False until the official start lists go up."""
+    try:
+        with open(ULTIMATE_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+ULTIMATE_PREDICTIONS_PATH = os.path.join(
+    os.path.dirname(__file__), "data", "ultimate", "predictions.json")
+
+
+def load_ultimate_predictions():
+    """The model's projected podium per Ultimate event
+    (src/ultimate_predictions.py). None until it has been built."""
+    try:
+        with open(ULTIMATE_PREDICTIONS_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def attach_ultimate_injuries(projections):
+    """Adds injuryWatch / injuryStatus / injuryReason / injuryUrl to every
+    projected athlete, from the same injury_flags.json the Diamond League
+    pages read.
+
+    Attached HERE rather than baked into data/ultimate/predictions.json by
+    ultimate_predictions.py, for the same reason the Diamond League rows get
+    theirs at serve time: an injury is news, not a model output. Doing it this
+    way means a fresh injury check needs `build_static_api.py` and nothing
+    else — re-projecting 25 events through the model to record that someone
+    pulled a hamstring would be the wrong dependency.
+
+    Flagged athletes are NOT dropped. run.py removes them from the Diamond
+    League field because that field is ours to compute; this one is World
+    Athletics' published qualification list, and the page says so in as many
+    words ("The field is World Athletics' own: everyone here has qualified").
+    Deleting a row would make that sentence false. The reader gets the badge
+    and the headline behind it, and decides."""
+    flags = load_injury_flags()
+    if not flags:
+        return projections
+
+    out = []
+    for event in projections:
+        athletes = []
+        for athlete in event.get("athletes") or []:
+            entry = flags.get(normalize_athlete_name(athlete.get("name")))
+            if not entry:
+                athletes.append(athlete)
+                continue
+            reason, url = injury_evidence(entry)
+            athletes.append({
+                **athlete,
+                "injuryWatch": True,
+                "injuryStatus": entry.get("status") or "watch",
+                "injuryReason": reason,
+                "injuryUrl": url,
+            })
+        out.append({**event, "athletes": athletes})
+    return out
+
+
+@app.route("/api/ultimate")
+def ultimate():
+    data = load_ultimate()
+    if data is None:
+        return jsonify({"error": "ultimate event data not found — run python src/ultimate_scraper.py"}), 404
+    # Projections ride along on the same payload rather than getting their own
+    # endpoint: the page shows the field and the call together, and two
+    # requests would let one arrive without the other.
+    preds = load_ultimate_predictions()
+    data = dict(data)
+    data["projections"] = attach_ultimate_injuries((preds or {}).get("projections") or [])
+    return jsonify(data)
+
+
+CARD_PHOTO_CACHE_PATH = os.path.join(os.path.dirname(__file__), "data", "card_photo_cache.json")
+_CARD_PHOTOS = None
+
+
+def card_photos():
+    """{profileUrl: {url, credit}} for the athletes shown on card views, warmed
+    ahead of time by src/warm_card_photos.py.
+
+    Read from disk once. The alternative -- resolving each card's photo the way
+    a profile page does -- is a World Athletics GraphQL call plus a Wikidata and
+    Commons lookup PER CARD, which on a country page is three and on the
+    dashboard is thirty, every single load. An absent entry simply means no
+    photo is attached and the card falls back to a monogram."""
+    global _CARD_PHOTOS
+    if _CARD_PHOTOS is None:
+        try:
+            with open(CARD_PHOTO_CACHE_PATH, encoding="utf-8") as f:
+                _CARD_PHOTOS = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            _CARD_PHOTOS = {}
+    return _CARD_PHOTOS
+
+
+def attach_card_photo(row, url_key="profileUrl"):
+    """Adds photoUrl/photoCredit/photoFocus to one row, in place, when we have
+    them.
+
+    The focus matters more on a card than on a profile. World Athletics' asset
+    is an ACTION picture, not a headshot -- an athlete mid-vault, mid-race, arms
+    up at a line -- so a fixed crop puts the face wherever the photographer
+    happened to leave it. The face position is already computed and cached for
+    the profile pages (photo_focus_cache.json), so it costs a dictionary lookup
+    to use it here as well. A null means detection ran and found no face, and
+    the card falls back to a top-biased crop, same as the profile does."""
+    hit = card_photos().get(str(row.get(url_key) or ""))
+    if hit and hit.get("url"):
+        row["photoUrl"] = hit["url"]
+        row["photoCredit"] = hit.get("credit")
+        focus = _load_focus_cache().get(hit["url"])
+        if focus:
+            row["photoFocus"] = focus
+    return row
+
+
+# PODIUMCALL_RANKINGS_PATH lets a local run serve rankings built by an
+# experimental model, so it can be seen on the real pages before anything
+# is deployed. Unset in production, which is the committed file.
+WORLD_RANKINGS_PATH = os.environ.get(
+    "PODIUMCALL_RANKINGS_PATH",
+    os.path.join(os.path.dirname(__file__), "data", "world_rankings.json"))
+COUNTRIES_PATH = os.path.join(os.path.dirname(__file__), "data", "countries.json")
+
+
+def load_world_rankings():
+    """Per-discipline top-20 lists in two orderings -- World Athletics points
+    and the model's rating (src/world_rankings.py). Powers the Track/Field
+    pages now the Diamond League is over. None until the file is built."""
+    try:
+        with open(WORLD_RANKINGS_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+@app.route("/api/world-rankings")
+def world_rankings():
+    data = load_world_rankings()
+    if data is None:
+        return jsonify({"error": "world rankings not found — run python src/world_rankings.py"}), 404
+    # Photos for the top-rated athlete in each discipline, which is what the
+    # dashboard's card row shows. Only those are warmed, so the rest of the
+    # table is untouched.
+    for disc in data.values():
+        for row in (disc.get("model") or [])[:1]:
+            attach_card_photo(row)
+    return jsonify(data)
+
+
+def load_countries():
+    """The country view of the season (src/country_index.py): every ranked
+    athlete grouped by nationality, plus that nation's Ultimate qualifiers and
+    mixed relay teams. None until the file is built."""
+    try:
+        with open(COUNTRIES_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+@app.route("/api/countries")
+def countries():
+    """The directory: one light row per nation, no athlete lists. Ordered by
+    the nation's best Results Score so the list opens on the countries a
+    reader is most likely to want, rather than alphabetically from Albania."""
+    data = load_countries()
+    if data is None:
+        return jsonify({"error": "country index not found — run python src/country_index.py"}), 404
+    rows = [
+        {
+            "code": c["code"],
+            "name": c["name"],
+            "area": c.get("area"),
+            "athleteCount": c["athleteCount"],
+            "disciplineCount": c["disciplineCount"],
+            "topScore": c.get("topScore") or 0,
+            "ultimateQualifiers": len(c.get("ultimateQualifiers") or []),
+            "relays": len(c.get("relays") or []),
+        }
+        for c in data.values()
+    ]
+    rows.sort(key=lambda r: (-r["topScore"], r["name"]))
+    return jsonify({"countries": rows})
+
+
+@app.route("/api/country/<code>")
+def country(code):
+    data = load_countries()
+    if data is None:
+        return jsonify({"error": "country index not found — run python src/country_index.py"}), 404
+    row = data.get((code or "").upper())
+    if row is None:
+        return jsonify({"error": "unknown country"}), 404
+    row = dict(row)
+    # The three the page leads with, which are the three that were warmed.
+    row["athletes"] = [
+        attach_card_photo(dict(a)) if i < 3 else a
+        for i, a in enumerate(row.get("athletes") or [])
+    ]
+    return jsonify(row)
+
+
 @app.route("/api/news")
 def news():
     flags_meta = {}
@@ -2905,7 +3314,10 @@ def news():
 
 @app.route("/api/search")
 def search():
-    return jsonify({"results": search_athletes(request.args.get("q", ""))})
+    q = request.args.get("q", "")
+    # Countries come back alongside rather than mixed in: they are a different
+    # kind of result, and the UI shows them as their own row above the athletes.
+    return jsonify({"results": search_athletes(q), "countries": search_countries(q)})
 
 
 @app.route("/api/athlete-status/<disc_key>/<path:athlete_name>")

@@ -1,0 +1,2475 @@
+{
+  "competitionId": 7212925,
+  "name": "World Athletics Ultimate Championship",
+  "shortName": "Budapest 26",
+  "venue": "National Athletics Centre",
+  "city": "Budapest",
+  "country": "HUN",
+  "startDate": "2026-09-11",
+  "endDate": "2026-09-13",
+  "timezone": "Europe/Budapest",
+  "eventCount": 28,
+  "prizeUSD": 10000000,
+  "trackFieldSize": 16,
+  "fieldFieldSize": 8,
+  "sessions": 3,
+  "fieldPublished": false,
+  "resultsAvailable": false,
+  "dlFinalQualifiers": [
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Oblique SEVILLE",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "men_400m",
+      "athlete_name": "Busang Collen KEBINATSHIPI",
+      "nationality": "BOT"
+    },
+    {
+      "discipline": "men_800m",
+      "athlete_name": "Emmanuel WANYONYI",
+      "nationality": "KEN"
+    },
+    {
+      "discipline": "men_1500m",
+      "athlete_name": "Cameron MYERS",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Ja'Kobe THARP",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_HJ",
+      "athlete_name": "Mateusz KOŁODZIEJSKI",
+      "nationality": "POL"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Emmanouil KARALIS",
+      "nationality": "GRE"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Tajay GAYLE",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "men_DT",
+      "athlete_name": "Kristjan ČEH",
+      "nationality": "SLO"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Julien ALFRED",
+      "nationality": "LCA"
+    },
+    {
+      "discipline": "women_5000m",
+      "athlete_name": "Freweyni HAILU",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "women_400h",
+      "athlete_name": "Anna COCKRELL",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_3000sc",
+      "athlete_name": "Faith CHEROTICH",
+      "nationality": "KEN"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Saly SARR",
+      "nationality": "SEN"
+    },
+    {
+      "discipline": "women_SP",
+      "athlete_name": "Chase JACKSON",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_DT",
+      "athlete_name": "Bin FENG",
+      "nationality": "CHN"
+    },
+    {
+      "discipline": "men_200m",
+      "athlete_name": "Kenneth BEDNAREK",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Birhanu BALEW",
+      "nationality": "BRN"
+    },
+    {
+      "discipline": "men_400h",
+      "athlete_name": "Alison DOS SANTOS",
+      "nationality": "BRA"
+    },
+    {
+      "discipline": "men_3000sc",
+      "athlete_name": "Gemechu GODANA",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "men_TJ",
+      "athlete_name": "Andy DÍAZ HERNÁNDEZ",
+      "nationality": "ITA"
+    },
+    {
+      "discipline": "men_SP",
+      "athlete_name": "Rajindra CAMPBELL",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "men_JT",
+      "athlete_name": "Rumesh Tharanga PATHIRAGE",
+      "nationality": "SRI"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Tina CLAYTON",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_400m",
+      "athlete_name": "Marileidy PAULINO",
+      "nationality": "DOM"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Audrey WERRO",
+      "nationality": "SUI"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Klaudia KAZIMIERSKA",
+      "nationality": "POL"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Masai RUSSELL",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Eleanor PATTERSON",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Hana MOLL",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Monae' NICHOLS",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Ziyi YAN",
+      "nationality": "CHN"
+    }
+  ],
+  "namedQualifiers": [
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "MONDO DUPLANTIS",
+      "disciplineLabel": "POLE VAULT",
+      "nationality": "SWE",
+      "profileUrl": "https://worldathletics.org/athletes/sweden/armand-duplantis-14679502",
+      "waId": 14679502,
+      "discKey": "men_PV",
+      "linkName": "Armand DUPLANTIS"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "TARA DAVIS-WOODHALL",
+      "disciplineLabel": "LONG JUMP",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/tara-davis-woodhall-14596561",
+      "waId": 14596561,
+      "discKey": "women_LJ",
+      "linkName": "Tara DAVIS-WOODHALL"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "GRANT HOLLOWAY",
+      "disciplineLabel": "110M HURDLES",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/grant-holloway-14516985",
+      "waId": 14516985,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "YAROSLAVA MAHUCHIKH",
+      "disciplineLabel": "HIGH JUMP",
+      "nationality": "UKR",
+      "profileUrl": "https://worldathletics.org/athletes/ukraine/yaroslava-mahuchikh-14739628",
+      "waId": 14739628,
+      "discKey": "women_HJ",
+      "linkName": "Yaroslava MAHUCHIKH"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "JAKOB INGEBRIGTSEN",
+      "disciplineLabel": "5000M",
+      "nationality": "NOR",
+      "profileUrl": "https://worldathletics.org/athletes/norway/jakob-ingebrigtsen-14653717",
+      "waId": 14653717,
+      "discKey": "men_5000m",
+      "linkName": "Jakob INGEBRIGTSEN"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "MASAI RUSSELL",
+      "disciplineLabel": "100M HURDLES",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/masai-russell-14659011",
+      "waId": 14659011,
+      "discKey": "women_100h",
+      "linkName": "Masai RUSSELL"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "ETHAN KATZBERG",
+      "disciplineLabel": "HAMMER THROW",
+      "nationality": "CAN",
+      "profileUrl": "https://worldathletics.org/athletes/canada/ethan-katzberg-14809348",
+      "waId": 14809348,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "JULIEN ALFRED",
+      "disciplineLabel": "100M",
+      "nationality": "LCA",
+      "profileUrl": "https://worldathletics.org/athletes/saint-lucia/julien-alfred-14646562",
+      "waId": 14646562,
+      "discKey": "women_100m",
+      "linkName": "Julien ALFRED"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "MILTIADIS TENTOGLOU",
+      "disciplineLabel": "LONG JUMP",
+      "nationality": "GRE",
+      "profileUrl": "https://worldathletics.org/athletes/greece/miltiadis-tentoglou-14669734",
+      "waId": 14669734,
+      "discKey": "men_LJ",
+      "linkName": "Miltiadis TENTOGLOU"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "KEELY HODGKINSON",
+      "disciplineLabel": "800M",
+      "nationality": "GBR",
+      "profileUrl": "https://worldathletics.org/athletes/great-britain-ni/keely-hodgkinson-14642894",
+      "waId": 14642894,
+      "discKey": "women_800m",
+      "linkName": "Keely HODGKINSON"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "RAI BENJAMIN",
+      "disciplineLabel": "400M HURDLES",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/rai-benjamin-14574865",
+      "waId": 14574865,
+      "discKey": "men_400h",
+      "linkName": "Rai BENJAMIN"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "NINA KENNEDY",
+      "disciplineLabel": "POLE VAULT",
+      "nationality": "AUS",
+      "profileUrl": "https://worldathletics.org/athletes/australia/nina-kennedy-14407592",
+      "waId": 14407592,
+      "discKey": "women_PV",
+      "linkName": "Nina KENNEDY"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "NOAH LYLES",
+      "disciplineLabel": "100M",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/noah-lyles-14536762",
+      "waId": 14536762,
+      "discKey": "men_100m",
+      "linkName": "Noah LYLES"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "FAITH KIPYEGON",
+      "disciplineLabel": "1500M",
+      "nationality": "KEN",
+      "profileUrl": "https://worldathletics.org/athletes/kenya/faith-kipyegon-14413305",
+      "waId": 14413305,
+      "discKey": "women_1500m",
+      "linkName": "Faith KIPYEGON"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "HARUKA KITAGUCHI",
+      "disciplineLabel": "JAVELIN THROW",
+      "nationality": "JPN",
+      "profileUrl": "https://worldathletics.org/athletes/japan/haruka-kitaguchi-14649131",
+      "waId": 14649131,
+      "discKey": "women_JT",
+      "linkName": "Haruka KITAGUCHI"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "THEA LAFOND",
+      "disciplineLabel": "TRIPLE JUMP",
+      "nationality": "DMA",
+      "profileUrl": "https://worldathletics.org/athletes/commonwealth-of-dominica/thea-lafond-14416826",
+      "waId": 14416826,
+      "discKey": "women_TJ",
+      "linkName": "Thea LAFOND"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "HAMISH KERR",
+      "disciplineLabel": "HIGH JUMP",
+      "nationality": "NZL",
+      "profileUrl": "https://worldathletics.org/athletes/new-zealand/hamish-kerr-14633982",
+      "waId": 14633982,
+      "discKey": "men_HJ",
+      "linkName": "Hamish KERR"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "LETSILE TEBOGO",
+      "disciplineLabel": "200M",
+      "nationality": "BOT",
+      "profileUrl": "https://worldathletics.org/athletes/botswana/letsile-tebogo-14883897",
+      "waId": 14883897,
+      "discKey": "men_200m",
+      "linkName": "Letsile TEBOGO"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "MARILEIDY PAULINO",
+      "disciplineLabel": "400M",
+      "nationality": "DOM",
+      "profileUrl": "https://worldathletics.org/athletes/dominican-republic/marileidy-paulino-14749613",
+      "waId": 14749613,
+      "discKey": "women_400m",
+      "linkName": "Marileidy PAULINO"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "COLE HOCKER",
+      "disciplineLabel": "1500M",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/cole-hocker-14905834",
+      "waId": 14905834,
+      "discKey": "men_1500m",
+      "linkName": "Cole HOCKER"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "GABRIELLE THOMAS",
+      "disciplineLabel": "200M",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/gabrielle-thomas-14733520",
+      "waId": 14733520,
+      "discKey": "women_200m",
+      "linkName": "Gabrielle THOMAS"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "EMMANUEL WANYONYI",
+      "disciplineLabel": "800M",
+      "nationality": "KEN",
+      "profileUrl": "https://worldathletics.org/athletes/kenya/emmanuel-wanyonyi-14974928",
+      "waId": 14974928,
+      "discKey": "men_800m",
+      "linkName": "Emmanuel WANYONYI"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "BEATRICE CHEBET",
+      "disciplineLabel": "5000M",
+      "nationality": "KEN",
+      "profileUrl": "https://worldathletics.org/athletes/kenya/beatrice-chebet-14749924",
+      "waId": 14749924,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "ARSHAD NADEEM",
+      "disciplineLabel": "JAVELIN THROW",
+      "nationality": "PAK",
+      "profileUrl": "https://worldathletics.org/athletes/pakistan/arshad-nadeem-14698105",
+      "waId": 14698105,
+      "discKey": "men_JT",
+      "linkName": "Arshad NADEEM"
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "QUINCY HALL",
+      "disciplineLabel": "400M",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/quincy-hall-14597236",
+      "waId": 14597236,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "olympic",
+      "routeNote": "Qualified by winning in Paris",
+      "name": "SYDNEY MCLAUGHLIN-LEVRONE",
+      "disciplineLabel": "400M HURDLES",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/sydney-mclaughlin-levrone-14624749",
+      "waId": 14624749,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "LILIAN ODIRA",
+      "disciplineLabel": "800M",
+      "nationality": "KEN",
+      "profileUrl": "https://worldathletics.org/athletes/kenya/lilian-odira-14758184",
+      "waId": 14758184,
+      "discKey": "women_800m",
+      "linkName": "Lilian ODIRA"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "MATTIA FURLANI",
+      "disciplineLabel": "LONG JUMP",
+      "nationality": "ITA",
+      "profileUrl": "https://worldathletics.org/athletes/italy/mattia-furlani-14905216",
+      "waId": 14905216,
+      "discKey": "men_LJ",
+      "linkName": "Mattia FURLANI"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "DITAJI KAMBUNDJI",
+      "disciplineLabel": "100M HURDLES",
+      "nationality": "SUI",
+      "profileUrl": "https://worldathletics.org/athletes/switzerland/ditaji-kambundji-14739461",
+      "waId": 14739461,
+      "discKey": "women_100h",
+      "linkName": "Ditaji KAMBUNDJI"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "NOAH LYLES",
+      "disciplineLabel": "200M",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/noah-lyles-14536762",
+      "waId": 14536762,
+      "discKey": "men_200m",
+      "linkName": "Noah LYLES"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "COLLEN KEBINATSHIPI",
+      "disciplineLabel": "400M",
+      "nationality": "BOT",
+      "profileUrl": "https://worldathletics.org/athletes/botswana/busang-collen-kebinatshipi-14935809",
+      "waId": 14935809,
+      "discKey": "men_400m",
+      "linkName": "Busang Collen KEBINATSHIPI"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "NICOLA OLYSLAGERS",
+      "disciplineLabel": "HIGH JUMP",
+      "nationality": "AUS",
+      "profileUrl": "https://worldathletics.org/athletes/australia/nicola-olyslagers-14455361",
+      "waId": 14455361,
+      "discKey": "women_HJ",
+      "linkName": "Nicola OLYSLAGERS"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "OBLIQUE SEVILLE",
+      "disciplineLabel": "100M",
+      "nationality": "JAM",
+      "profileUrl": "https://worldathletics.org/athletes/jamaica/oblique-seville-14737998",
+      "waId": 14737998,
+      "discKey": "men_100m",
+      "linkName": "Oblique SEVILLE"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "MELISSA JEFFERSON-WOODEN",
+      "disciplineLabel": "100M & 200M",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/melissa-jefferson-wooden-14756997",
+      "waId": 14756997,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "COLE HOCKER",
+      "disciplineLabel": "5000M",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/cole-hocker-14905834",
+      "waId": 14905834,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "KATIE MOON",
+      "disciplineLabel": "POLE VAULT",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/katie-moon-14373744",
+      "waId": 14373744,
+      "discKey": "women_PV",
+      "linkName": "Katie MOON"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "ISAAC NADER",
+      "disciplineLabel": "1500M",
+      "nationality": "POR",
+      "profileUrl": "https://worldathletics.org/athletes/portugal/isaac-nader-14756630",
+      "waId": 14756630,
+      "discKey": "men_1500m",
+      "linkName": "Isaac NADER"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "FEMKE BOL",
+      "disciplineLabel": "400M HURDLES",
+      "nationality": "NED",
+      "profileUrl": "https://worldathletics.org/athletes/netherlands/femke-bol-14707010",
+      "waId": 14707010,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "CORDELL TINCH",
+      "disciplineLabel": "110M HURDLES",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/cordell-tinch-14719972",
+      "waId": 14719972,
+      "discKey": "men_110h",
+      "linkName": "Cordell TINCH"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "LEYANIS PEREZ HERNANDEZ",
+      "disciplineLabel": "TRIPLE JUMP",
+      "nationality": "CUB",
+      "profileUrl": "https://worldathletics.org/athletes/cuba/leyanis-perez-hernandez-14828679",
+      "waId": 14828679,
+      "discKey": "women_TJ",
+      "linkName": "Leyanis PÉREZ HERNÁNDEZ"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "KESHORN WALCOTT",
+      "disciplineLabel": "JAVELIN THROW",
+      "nationality": "TTO",
+      "profileUrl": "https://worldathletics.org/athletes/trinidad-and-tobago/keshorn-walcott-14376122",
+      "waId": 14376122,
+      "discKey": "men_JT",
+      "linkName": "Keshorn WALCOTT"
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "JULEISY ANGULO",
+      "disciplineLabel": "JAVELIN THROW",
+      "nationality": "ECU",
+      "profileUrl": "https://worldathletics.org/athletes/ecuador/juleisy-angulo-14718123",
+      "waId": 14718123,
+      "discKey": null,
+      "linkName": null
+    },
+    {
+      "route": "world",
+      "routeNote": "Qualified by winning in Tokyo",
+      "name": "SYDNEY MCLAUGHLIN-LEVRONE",
+      "disciplineLabel": "400M",
+      "nationality": "USA",
+      "profileUrl": "https://worldathletics.org/athletes/united-states/sydney-mclaughlin-levrone-14624749",
+      "waId": 14624749,
+      "discKey": null,
+      "linkName": null
+    }
+  ],
+  "relays": [
+    {
+      "event": "Mixed 4x100 Metres Relay",
+      "teams": [
+        {
+          "nationality": "JAM",
+          "country": "Jamaica",
+          "place": 1,
+          "mark": "39.62",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Ackeem BLAKE",
+              "waId": 14638971,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Tina CLAYTON",
+              "waId": 14776879,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Kadrian GOLDSON",
+              "waId": 14738031,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Tia CLAYTON",
+              "waId": 14787678,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "CAN",
+          "country": "Canada",
+          "place": 2,
+          "mark": "40.23",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Eliezer ADJIBI",
+              "waId": 14806353,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Marie-Éloise LECLAIR",
+              "waId": 14860197,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Duan ASEMOTA",
+              "waId": 14551202,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Audrey LEDUC",
+              "waId": 14579721,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "USA",
+          "country": "United States",
+          "place": 3,
+          "mark": "40.33",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Courtney LINDSEY",
+              "waId": 14845926,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Jada MOWATT",
+              "waId": 14596937,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Kyree KING",
+              "waId": 14476000,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "E'Lexis HOLLIS",
+              "waId": 14987467,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "GER",
+          "country": "Germany",
+          "place": 4,
+          "mark": "40.52",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Yannick WOLF",
+              "waId": 14717484,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Heiko GUSSMANN",
+              "waId": 14909220,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Sina KAMMERSCHMITT",
+              "waId": 14779467,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Sophia JUNK",
+              "waId": 14593203,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Chelsea KADIRI",
+              "waId": 14875674,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "ESP",
+          "country": "Spain",
+          "place": 5,
+          "mark": "41.05",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Guillem CRESPI",
+              "waId": 14909189,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Andoni CALBANO",
+              "waId": 14806099,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Maria Isabel PÉREZ",
+              "waId": 14260762,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Esther NAVERO",
+              "waId": 14708007,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Jaël BESTUÉ",
+              "waId": 14648428,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Aitana RODRIGO",
+              "waId": 14785099,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "NGR",
+          "country": "Nigeria",
+          "place": 6,
+          "mark": "42.03",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Favour Oghene Tejiri ASHE",
+              "waId": 14888403,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Obi Jennifer CHUKWUKA",
+              "waId": 14976300,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Chidera EZEAKOR",
+              "waId": 14933416,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Maria THOMPSON OMOKWE",
+              "waId": 14770718,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "GBR",
+          "country": "Great Britain & NI",
+          "place": null,
+          "mark": "DNF",
+          "qualified": false,
+          "squad": [
+            {
+              "name": "Alyson BELL",
+              "waId": 14769357,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Jeriel QUAINOO",
+              "waId": 14840370,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Jona EFOLOKO",
+              "waId": 14595067,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Elliot JONES",
+              "waId": 14741536,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Kissiwaa MENSAH",
+              "waId": 14863352,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Desiree HENRY",
+              "waId": 14360349,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "NED",
+          "country": "Netherlands",
+          "place": null,
+          "mark": "DNF",
+          "qualified": false,
+          "squad": [
+            {
+              "name": "Nsikak EKPO",
+              "waId": 14812104,
+              "rounds": 2,
+              "legs": [
+                1,
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Minke BISSCHOPS",
+              "waId": 14773921,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Jaimie OMALLA",
+              "waId": 14833322,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Xavi MO-AJOK",
+              "waId": 14868549,
+              "rounds": 1,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Isabel VAN DEN BERG",
+              "waId": 14823767,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Britt DE BLAAUW",
+              "waId": 14804824,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        }
+      ],
+      "wildcards": [
+        "HUN"
+      ],
+      "qualifier": {
+        "name": "World Athletics Relays",
+        "city": "Gaborone",
+        "country": "BOT",
+        "date": "2026-05-02"
+      },
+      "qualifyPlaces": 6
+    },
+    {
+      "event": "Mixed 4x400 Metres Relay",
+      "teams": [
+        {
+          "nationality": "USA",
+          "country": "United States",
+          "place": 1,
+          "mark": "3:07.47",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Bryce DEADMON",
+              "waId": 14596460,
+              "rounds": 4,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Jenoah MCKIVER",
+              "waId": 14906810,
+              "rounds": 3,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Paris PEOPLES",
+              "waId": 14596391,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Lynna IRBY-JACKSON",
+              "waId": 14486888,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Bailey LEAR",
+              "waId": 14659662,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Alexis HOLMES",
+              "waId": 14761424,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Brian FAUST",
+              "waId": 14694659,
+              "rounds": 1,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "JAM",
+          "country": "Jamaica",
+          "place": 2,
+          "mark": "3:08.24",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Deandre WATKIN",
+              "waId": 14875562,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Shana Kaye ANDERSON",
+              "waId": 14827628,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Antonio WATSON",
+              "waId": 14737996,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Rushell CLAYTON",
+              "waId": 14425208,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Jevaughn POWELL",
+              "waId": 14738008,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Dejanea OAKLEY",
+              "waId": 14836164,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Zandrion BARNES",
+              "waId": 14875542,
+              "rounds": 1,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Leah ANDERSON",
+              "waId": 14690093,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2025
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "GBR",
+          "country": "Great Britain & NI",
+          "place": 3,
+          "mark": "3:09.84",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Yemi Mary JOHN",
+              "waId": 14928278,
+              "rounds": 3,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Alex HAYDOCK-WILSON",
+              "waId": 14735578,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Lewis DAVEY",
+              "waId": 14770049,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Lina NIELSEN",
+              "waId": 14594317,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Nicole YEARGIN",
+              "waId": 14745764,
+              "rounds": 2,
+              "legs": [
+                2,
+                4
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Jake MINSHULL",
+              "waId": 14897447,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Toby HARRIES",
+              "waId": 14655247,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Emily NEWNHAM",
+              "waId": 14899734,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2025
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "KEN",
+          "country": "Kenya",
+          "place": 4,
+          "mark": "3:09.93",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Mercy Adongo OKETCH",
+              "waId": 14894311,
+              "rounds": 3,
+              "legs": [
+                2,
+                4
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "George MUTINDA",
+              "waId": 15129458,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Kelvin Kiprotich TONUI",
+              "waId": 14748363,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Mercy CHEBET",
+              "waId": 14894319,
+              "rounds": 2,
+              "legs": [
+                4,
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Brian Onyari TINEGA",
+              "waId": 14892131,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Allan KIPYEGO",
+              "waId": 14891984,
+              "rounds": 1,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Mary MORAA",
+              "waId": 14798209,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2025
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "ITA",
+          "country": "Italy",
+          "place": 5,
+          "mark": "3:10.52",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Anna POLINARI",
+              "waId": 14699307,
+              "rounds": 4,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Vladimir ACETI",
+              "waId": 14627075,
+              "rounds": 4,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Lorenzo BENATI",
+              "waId": 14778196,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Eloisa COIRO",
+              "waId": 14699224,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Alice MANGIONE",
+              "waId": 14594823,
+              "rounds": 2,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Edoardo SCOTTI",
+              "waId": 14741773,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Luca SITO",
+              "waId": 14953777,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2025
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "ESP",
+          "country": "Spain",
+          "place": 6,
+          "mark": "3:13.05",
+          "qualified": true,
+          "squad": [
+            {
+              "name": "Julio ARENAS",
+              "waId": 14427309,
+              "rounds": 3,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Paula SEVILLA",
+              "waId": 14595639,
+              "rounds": 2,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "David GARCÍA",
+              "waId": 14926445,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Bernat ERTA",
+              "waId": 14800408,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Eva SANTIDRIÁN",
+              "waId": 14645110,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Blanca HERVÁS",
+              "waId": 14758919,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Carmen AVILÉS",
+              "waId": 14798734,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Blanca HERVAS",
+              "waId": 14758919,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2025
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "AUS",
+          "country": "Australia",
+          "place": 7,
+          "mark": "3:13.07",
+          "qualified": false,
+          "squad": [
+            {
+              "name": "Mia GROSS",
+              "waId": 14671065,
+              "rounds": 3,
+              "legs": [
+                4,
+                2
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Thomas REYNOLDS",
+              "waId": 14964282,
+              "rounds": 2,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Cooper SHERMAN",
+              "waId": 14920488,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Luke VAN RATINGEN",
+              "waId": 14859184,
+              "rounds": 1,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Ellie BEER",
+              "waId": 14768392,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Matthew HUNT",
+              "waId": 15018618,
+              "rounds": 1,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Alexia LOIZOU",
+              "waId": 14550752,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Carla BULL",
+              "waId": 14731620,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2025
+              ]
+            }
+          ]
+        },
+        {
+          "nationality": "POL",
+          "country": "Poland",
+          "place": null,
+          "mark": "DNF",
+          "qualified": false,
+          "squad": [
+            {
+              "name": "Kajetan DUSZYŃSKI",
+              "waId": 14526253,
+              "rounds": 4,
+              "legs": [
+                3
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Justyna ŚWIĘTY-ERSETIC",
+              "waId": 14361154,
+              "rounds": 3,
+              "legs": [
+                2,
+                4
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Natalia BUKOWIECKA",
+              "waId": 14642563,
+              "rounds": 2,
+              "legs": [
+                4,
+                2
+              ],
+              "meets": [
+                2026,
+                2025
+              ]
+            },
+            {
+              "name": "Marcin KAROLEWSKI",
+              "waId": 14902954,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Maksymilian SZWED",
+              "waId": 14945080,
+              "rounds": 2,
+              "legs": [
+                1
+              ],
+              "meets": [
+                2025
+              ]
+            },
+            {
+              "name": "Alicja WRONA-KUTRZEPA",
+              "waId": 14486748,
+              "rounds": 1,
+              "legs": [
+                2
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Karolina ŁOZOWSKA",
+              "waId": 14646162,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2026
+              ]
+            },
+            {
+              "name": "Anna GRYC",
+              "waId": 14762003,
+              "rounds": 1,
+              "legs": [
+                4
+              ],
+              "meets": [
+                2025
+              ]
+            }
+          ]
+        }
+      ],
+      "wildcards": [
+        "HUN"
+      ],
+      "qualifier": {
+        "name": "World Athletics Relays",
+        "city": "Gaborone",
+        "country": "BOT",
+        "date": "2026-05-02"
+      },
+      "qualifyPlaces": 6
+    }
+  ],
+  "timetable": [
+    {
+      "phaseName": "Final",
+      "sexName": "Mixed",
+      "phaseDateAndTime": "2026-09-11T19:08:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "4x100 Metres Relay",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-11T19:13:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "High Jump",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-11T19:19:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "400 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-11T19:23:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "Hammer Throw",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-11T19:38:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "400 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-11T20:04:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "100 Metres Hurdles",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-11T20:08:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "Pole Vault",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-11T20:21:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "110 Metres Hurdles",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-11T20:36:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "5000 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-11T20:53:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "Long Jump",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-11T20:57:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "800 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-11T21:20:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "100 Metres Hurdles",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-11T21:49:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "110 Metres Hurdles",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-12T18:08:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "400 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-12T18:13:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "Javelin Throw",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-12T18:18:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "400 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-12T18:26:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "800 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-12T18:43:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "Pole Vault",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-12T18:46:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "400 Metres Hurdles",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-12T19:04:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "100 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-12T19:21:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "100 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-12T19:36:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "1500 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-12T19:44:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "Long Jump",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-12T19:57:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "400 Metres Hurdles",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-12T20:18:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "800 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-12T20:38:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "100 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-12T20:49:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "100 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-13T18:08:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "400 Metres Hurdles",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-13T18:13:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "Javelin Throw",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-13T18:18:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "200 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-13T18:36:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "400 Metres Hurdles",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Semi-Finals",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-13T18:44:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "200 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-13T19:04:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "High Jump",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-13T19:10:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "5000 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-13T19:34:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "Triple Jump",
+        "isTrack": false,
+        "isField": true
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-13T19:41:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "800 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Mixed",
+      "phaseDateAndTime": "2026-09-13T19:53:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "4x400 Metres Relay",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-13T20:10:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "1500 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Men",
+      "phaseDateAndTime": "2026-09-13T20:38:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "200 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    },
+    {
+      "phaseName": "Final",
+      "sexName": "Women",
+      "phaseDateAndTime": "2026-09-13T20:49:00.000Z",
+      "phaseSessionName": "Evening Session",
+      "isStartlistPublished": false,
+      "isResultPublished": false,
+      "discipline": {
+        "name": "200 Metres",
+        "isTrack": true,
+        "isField": false
+      }
+    }
+  ],
+  "startlists": [],
+  "results": []
+}

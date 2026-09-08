@@ -108,6 +108,11 @@ WIND_EVENTS = {
 # scraped data doesn't have the failure mode of a human (or an agent)
 # mistyping a name or misremembering a finishing order.
 DL_RESULTS_PATH = os.path.join(BASE_DIR, "data", "dl_final_results.csv")
+# Every final we have a podium for, not just the Diamond League ones
+# (src/final_labels.py). Used by --pooled.
+FINALS_LABELS_PATH = os.path.join(BASE_DIR, "data", "labels", "finals.csv")
+# Who actually contested each of those finals, for the "real field" metric.
+FINALS_FIELDS_PATH = os.path.join(BASE_DIR, "data", "labels", "final_fields.csv")
 H2H_PATH = os.path.join(BASE_DIR, "data", "h2h", "h2h_rates.csv")
 VENUE_GEO_PATH = os.path.join(BASE_DIR, "data", "venues_geo.csv")
 VENUE_WEATHER_PATH = os.path.join(BASE_DIR, "data", "venue_weather.csv")
@@ -214,22 +219,41 @@ def clean_discipline(df):
     return df.dropna(subset=["Mark"]).copy()
 
 
-def build_features(df, discipline_key):
+def build_features(df, discipline_key, finals=None):
+    """One feature row per athlete per FINAL.
+
+    `finals` is (year, competition, cutoff date) triples -- every final this
+    discipline has a label for. Passing None keeps the original behaviour of
+    one row per athlete-year, cut at nothing, which is what the
+    Diamond-League-only model was trained on and is preserved so that path can
+    still be reproduced exactly.
+
+    THE CUT-OFF IS THE POINT. With one September final a year you can get away
+    with letting a row see the athlete's whole season. Pool in a World
+    Championships final held in July and that same shortcut is reading the
+    answer out of the future: the season best it scores the athlete on may have
+    been set in August, weeks after the race being predicted. Every aggregate
+    below is therefore taken over marks set strictly BEFORE the final's date."""
     records = []
     is_track = discipline_key not in FIELD_EVENTS
+    groups = (
+        [(y, None, None) for y in LABEL_YEARS] if finals is None
+        else [(int(y), c, pd.Timestamp(d)) for y, c, d in finals]
+    )
     for athlete in df["athlete_name"].unique():
         ath = df[df["athlete_name"] == athlete].copy()
         ath["Mark_num"] = ath["Mark"].apply(convert_mark_to_seconds)
         ath = ath.dropna(subset=["Mark_num"])
         if ath.empty:
             continue
-        for year in LABEL_YEARS:
-            season = ath[ath["year"] == year]
-            prev = ath[ath["year"] < year]
+        for year, competition, cutoff in groups:
+            before = ath if cutoff is None else ath[ath["date"] < cutoff]
+            season = before[before["year"] == year]
+            prev = before[before["year"] < year]
             # career_best must only see marks up to and including this label's
             # year -- using the full athlete history here would leak future
             # seasons (e.g. 2024/2025) into a 2021/2022 labeled row's features.
-            up_to_year = ath[ath["year"] <= year]
+            up_to_year = before[before["year"] <= year]
             if season.empty:
                 continue
             if is_track:
@@ -248,14 +272,28 @@ def build_features(df, discipline_key):
                 yoy = 0.0
             age = ath["age"].dropna().median()
             country = ath["country"].iloc[0]
-            records.append({
+            record = {
                 "athlete_name": athlete, "country": country, "discipline": discipline_key,
                 "year": year, "season_best": round(season_best, 4), "career_best": round(career_best, 4),
                 "pb_gap": round(pb_gap, 4), "meets_count": meets_count,
                 "consistency": round(consistency, 4), "yoy_improvement": round(yoy, 4),
                 "age": round(age, 1) if not np.isnan(age) else np.nan,
-            })
+            }
+            if competition is not None:
+                record["competition"] = competition
+                record["cutoff"] = cutoff
+            records.append(record)
     return pd.DataFrame(records)
+
+
+def group_keys(df):
+    """What identifies one field of athletes being scored together.
+
+    A Diamond-League-only run has one final per discipline-year, so the year is
+    enough. Pooled, a discipline-year holds several finals with different
+    fields and different cut-off dates, and ranking an athlete against the
+    wrong one is how a season rank stops meaning anything."""
+    return ["discipline", "year", "competition"] if "competition" in df.columns else ["discipline", "year"]
 
 
 def add_season_rank(df):
@@ -265,7 +303,8 @@ def add_season_rank(df):
     getting rank 1) for the entire time they've been trained disciplines --
     caught while adding 10 more field events that would have hit the same bug."""
     all_groups = []
-    for (discipline, year), group in df.groupby(["discipline", "year"]):
+    for keys, group in df.groupby(group_keys(df)):
+        discipline = keys[0]
         group = group.copy()
         if discipline in FIELD_EVENTS:
             group["season_rank"] = group["season_best"].rank(ascending=False)
@@ -310,11 +349,18 @@ def add_new_features(df):
     wind_adj_season_best were silent duplicates of season_best, and why
     recent_trend/days_since_last were always 0.0/999 for every training row."""
     all_groups = []
-    for (discipline, year), group in df.groupby(["discipline", "year"]):
+    keys_used = group_keys(df)
+    for keys, group in df.groupby(keys_used):
+        discipline, year = keys[0], keys[1]
         group = group.copy()
         is_field = discipline in FIELD_EVENTS
         weighted_sb_map, wind_adj_map, trend_map, days_map = {}, {}, {}, {}
         gap_var_map = {}
+        # The final's own date when there is one, so nothing after the race
+        # can reach a feature that claims to predict it. Without a cut-off
+        # (the Diamond-League-only path) this stays the 1 September the model
+        # was always built on.
+        cutoff = group["cutoff"].iloc[0] if "cutoff" in group.columns else None
 
         raw_path = os.path.join(RAW_DIR, f"{discipline}.csv")
         if os.path.exists(raw_path):
@@ -323,6 +369,9 @@ def add_new_features(df):
             raw = raw.rename(columns={"Competitor": "athlete_name", "Mark": "mark_str"})
             raw["Mark"] = raw["mark_str"].apply(convert_mark_to_seconds)
             raw = raw.dropna(subset=["Mark"])
+            if cutoff is not None and "Date" in raw.columns:
+                run_on = pd.to_datetime(raw["Date"], format="%d %b %Y", errors="coerce")
+                raw = raw[run_on < pd.Timestamp(cutoff)]
 
             if "Venue" in raw.columns:
                 raw["comp_weight"] = raw["Venue"].apply(competition_weight)
@@ -354,7 +403,7 @@ def add_new_features(df):
 
             if "Date" in raw.columns:
                 raw["date"] = pd.to_datetime(raw["Date"], format="%d %b %Y", errors="coerce")
-                ref_date = pd.Timestamp(f"{year}-09-01")
+                ref_date = pd.Timestamp(cutoff) if cutoff is not None else pd.Timestamp(f"{year}-09-01")
 
                 for athlete in group["athlete_name"]:
                     ath = raw[raw["athlete_name"] == athlete].sort_values("date", ascending=False)
@@ -414,6 +463,72 @@ def normalize_name(name):
         return name
     nfkd = unicodedata.normalize("NFKD", name)
     return "".join(c for c in nfkd if not unicodedata.combining(c)).upper().strip()
+
+
+def build_pooled_dataset(tiers=None):
+    """The same features, but labelled against EVERY final we have a podium
+    for -- Diamond League Finals, Olympics, World and European Championships,
+    Continental Cup and the Continental Tour meetings -- instead of Diamond
+    League Finals alone.
+
+    980 finals against 215, which is the point: a model whose every label is a
+    Diamond League Final learns "raced the Diamond League" as a shortcut to
+    "podiums", because within that label set it is one. It cannot learn that
+    from a pool where more than half the podiums were won at meetings the
+    circuit's regulars did not enter.
+
+    Each row is one athlete at one final, with features cut at that final's own
+    date (see build_features). `tier` rides along so accuracy can be read per
+    kind of competition rather than as a single average that hides which kind
+    got worse."""
+    labels = pd.read_csv(FINALS_LABELS_PATH, parse_dates=["date"])
+    labels = labels[labels["year"].isin(LABEL_YEARS)]
+    if tiers:
+        labels = labels[labels["tier"].isin(tiers)]
+
+    frames = []
+    for key in TRAIN_DISCIPLINES:
+        path = os.path.join(RAW_DIR, f"{key}.csv")
+        if not os.path.exists(path):
+            continue
+        disc_labels = labels[labels["discipline"] == key]
+        if disc_labels.empty:
+            continue
+        finals = (
+            disc_labels[["year", "competition", "date"]]
+            .drop_duplicates()
+            .itertuples(index=False, name=None)
+        )
+        frames.append(build_features(clean_discipline(pd.read_csv(path)), key, list(finals)))
+
+    master = pd.concat(frames, ignore_index=True)
+    master = add_season_rank(master)
+    master = add_new_features(master)
+    master["_name_key"] = master["athlete_name"].apply(normalize_name)
+
+    podium = labels.copy()
+    podium["dl_rank"] = podium["place"]
+    podium["dl_winner"] = (podium["place"] == 1).astype(int)
+    podium["dl_top3"] = 1
+    podium["_name_key"] = podium["name_key"]
+
+    labeled = master.merge(
+        podium[["discipline", "year", "competition", "_name_key",
+                "dl_winner", "dl_top3", "dl_rank", "tier"]],
+        on=["discipline", "year", "competition", "_name_key"], how="left",
+    )
+    # A row that matched no podium is a real negative: that athlete had a mark
+    # in this discipline before this final and did not medal in it.
+    labeled["dl_winner"] = labeled["dl_winner"].fillna(0).astype(int)
+    labeled["dl_top3"] = labeled["dl_top3"].fillna(0).astype(int)
+    labeled["dl_rank"] = labeled["dl_rank"].fillna(0).astype(int)
+    tiers = labels.drop_duplicates(["discipline", "year", "competition"]).set_index(
+        ["discipline", "year", "competition"])["tier"]
+    labeled["tier"] = [
+        tiers.get((d, y, c), "tour")
+        for d, y, c in zip(labeled["discipline"], labeled["year"], labeled["competition"])
+    ]
+    return labeled.drop(columns=["_name_key"])
 
 
 def build_labeled_dataset():
@@ -522,12 +637,28 @@ def mark_final_field(df):
     dl_final_results.csv.
 
     Adds `in_final_field`, used to report a second metric alongside the
-    original one. It changes no training and no features."""
+    original one. It changes no training and no features.
+
+    Pooled runs read the real start list of EACH final from
+    data/labels/final_fields.csv instead. Reusing the Diamond League field
+    there would ask "did the model find the World Championships podium among
+    the athletes who contested the Diamond League Final?", which is a question
+    about two different meetings and would quietly report a number for it."""
+    df = df.copy()
+    keys = df["athlete_name"].apply(normalize_name)
+    if "competition" in df.columns and os.path.exists(FINALS_FIELDS_PATH):
+        fields = pd.read_csv(FINALS_FIELDS_PATH)
+        field = set(zip(fields["discipline"], fields["year"],
+                        fields["competition"], fields["name_key"]))
+        df["in_final_field"] = [
+            (d, y, c, k) in field
+            for d, y, c, k in zip(df["discipline"], df["year"], df["competition"], keys)
+        ]
+        return df
+
     results = pd.read_csv(DL_RESULTS_PATH)
     results["_k"] = results["athlete_name"].apply(normalize_name)
     field = set(zip(results["discipline"], results["year"], results["_k"]))
-    keys = df["athlete_name"].apply(normalize_name)
-    df = df.copy()
     df["in_final_field"] = [
         (d, y, k) in field for d, y, k in zip(df["discipline"], df["year"], keys)
     ]
@@ -576,9 +707,30 @@ def _score_fold(train, test, feature_cols, model_params=None):
     pos = {"found": {1: 0, 2: 0, 3: 0}, "total": {1: 0, 2: 0, 3: 0},
            "winner_is_top_pick": 0, "winner_count": 0,
            "field_found": {1: 0, 2: 0, 3: 0}, "field_total": {1: 0, 2: 0, 3: 0},
-           "field_correct": 0, "field_possible": 0}
-    for discipline in test["discipline"].unique():
-        disc_df = test[test["discipline"] == discipline].sort_values("win_probability", ascending=False)
+           "field_correct": 0, "field_possible": 0,
+           # Pooled runs only: hits and chances per KIND of competition. The
+           # whole risk of pooling this widely is that "podium in a final"
+           # stops meaning one thing, and a single average is exactly what
+           # would hide it happening.
+           "tier_correct": {}, "tier_possible": {},
+           # ...and the same per tier among the athletes who were ACTUALLY
+           # THERE, which for pooled data is the only coherent version. The
+           # toplist metric ranks the whole world's season list, and a
+           # European final can only be won by Europeans: measured on the 2024
+           # men's 1500m, the world top three were Ingebrigtsen, Hocker and
+           # Kerr, while the European podium was Ingebrigtsen, Vermeulen and
+           # Arese -- Hocker was never eligible to enter. Marking the model
+           # wrong for naming him scores it against a rule it was never told.
+           # The same holds, less starkly, for an invitational meeting most of
+           # the toplist simply did not attend.
+           "tier_field_correct": {}, "tier_field_possible": {}}
+    # One scored contest per final. Grouping by discipline alone was right
+    # while a discipline-year held exactly one final; pooled it would mash
+    # every final that discipline ran that season into one ranking.
+    contest_keys = ["discipline", "competition"] if "competition" in test.columns else ["discipline"]
+    for keys, disc_df in test.groupby(contest_keys):
+        discipline = keys[0] if isinstance(keys, tuple) else keys
+        disc_df = disc_df.sort_values("win_probability", ascending=False)
         top3_predicted = disc_df.head(3)["athlete_name"].tolist()
         actual_rows = disc_df[disc_df["dl_top3"] == 1]
         top3_actual = actual_rows["athlete_name"].tolist()
@@ -586,6 +738,10 @@ def _score_fold(train, test, feature_cols, model_params=None):
         correct += hits
         possible += 3
         per_discipline.append((discipline, hits))
+        if "tier" in disc_df.columns:
+            tier = disc_df["tier"].iloc[0]
+            pos["tier_correct"][tier] = pos["tier_correct"].get(tier, 0) + hits
+            pos["tier_possible"][tier] = pos["tier_possible"].get(tier, 0) + 3
 
         predicted_set = set(top3_predicted)
         top_pick = top3_predicted[0] if top3_predicted else None
@@ -613,6 +769,11 @@ def _score_fold(train, test, feature_cols, model_params=None):
                         pos["field_total"][rank] += 1
                         if row["athlete_name"] in field_picked:
                             pos["field_found"][rank] += 1
+                if "tier" in disc_df.columns:
+                    tier = disc_df["tier"].iloc[0]
+                    hits_here = len(field_picked & set(field_actual["athlete_name"]))
+                    pos["tier_field_correct"][tier] = pos["tier_field_correct"].get(tier, 0) + hits_here
+                    pos["tier_field_possible"][tier] = pos["tier_field_possible"].get(tier, 0) + 3
 
     pos["field_correct"] = field_correct
     pos["field_possible"] = field_possible
@@ -653,6 +814,11 @@ def walk_forward_folds(full, feature_cols, model_params=None, verbose=True, stat
                 stats["field_total"][rank] += pos["field_total"][rank]
             stats["field_correct"] = stats.get("field_correct", 0) + pos["field_correct"]
             stats["field_possible"] = stats.get("field_possible", 0) + pos["field_possible"]
+            for bucket in ("tier_correct", "tier_possible",
+                           "tier_field_correct", "tier_field_possible"):
+                target = stats.setdefault(bucket, {})
+                for tier, n in pos[bucket].items():
+                    target[tier] = target.get(tier, 0) + n
         if verbose:
             fold_acc = round(correct / possible * 100, 1) if possible else 0.0
             print(f"  train {train_years} -> test {test_year}: {correct}/{possible} = {fold_acc}%")
@@ -783,7 +949,30 @@ def _print_both_metrics(stats, toplist_pct):
     return field_pct
 
 
-def train_and_backtest(feature_cols, label="", model_params=None):
+def _print_tier_breakdown(stats):
+    """Accuracy per kind of competition, for pooled runs.
+
+    This is the number that decides whether pooling worked. An overall average
+    can rise while the Diamond League Finals -- the thing the site currently
+    predicts -- get worse, and that trade has to be visible before anyone
+    accepts it."""
+    correct, possible = stats.get("tier_correct", {}), stats.get("tier_possible", {})
+    fc, fp = stats.get("tier_field_correct", {}), stats.get("tier_field_possible", {})
+    if not possible:
+        return
+    print("\n  By kind of competition (the pooling risk, made visible):")
+    print("                 among the world toplist |   among who was actually there")
+    for tier in sorted(possible, key=lambda t: -possible[t]):
+        pct = 100.0 * correct.get(tier, 0) / possible[tier]
+        line = f"    {tier:<12} {correct.get(tier, 0):>5}/{possible[tier]:<5} = {pct:>5.1f}%"
+        if fp.get(tier):
+            line += f"   |   {fc.get(tier, 0):>5}/{fp[tier]:<5} = {100.0 * fc.get(tier, 0) / fp[tier]:>5.1f}%"
+        print(line)
+    print("    The right-hand column is the one to read: the left ranks the whole world's")
+    print("    season list, which includes athletes who were not eligible to enter.")
+
+
+def train_and_backtest(feature_cols, label="", model_params=None, pooled=False, tiers=None):
     """Walk-forward (expanding-window) validation: train on every labeled
     year strictly before each test year, one fold per test year, instead of
     a single fixed train/test split. With only 3 years of labels a single
@@ -791,9 +980,14 @@ def train_and_backtest(feature_cols, label="", model_params=None):
     2021-2025, testing on 3 independent years (2023, 2024, 2025) instead of
     just one gives a far more honest read on whether the model generalizes,
     not just whether it fit one particular season."""
-    labeled = build_labeled_dataset()
-    ranked = add_season_rank(labeled)
-    full = add_new_features(ranked)
+    if pooled:
+        # build_pooled_dataset already ranks and adds the recency features,
+        # because both of those have to happen per FINAL rather than per year.
+        full = build_pooled_dataset(tiers)
+    else:
+        labeled = build_labeled_dataset()
+        ranked = add_season_rank(labeled)
+        full = add_new_features(ranked)
     full = add_h2h_features(full)
     full = full.dropna(subset=feature_cols)
     full = mark_final_field(full)
@@ -806,6 +1000,7 @@ def train_and_backtest(feature_cols, label="", model_params=None):
     print(f"  Overall (all {len(LABEL_YEARS[2:])} folds combined): {total_correct}/{total_possible} = {accuracy_pct}%")
     field_pct = _print_both_metrics(pos_stats, accuracy_pct)
     _print_position_breakdown(pos_stats)
+    _print_tier_breakdown(pos_stats)
 
     # The deployed model is refit on ALL labeled years -- walk-forward above
     # is purely to estimate honest generalization, not to pick which years
@@ -824,21 +1019,28 @@ def train_and_backtest(feature_cols, label="", model_params=None):
     return model, scaler, accuracy_pct, field_pct
 
 
-def save_artifacts(model, scaler, feature_cols, accuracy_pct, field_pct=None):
-    os.makedirs(OUTPUTS_DIR, exist_ok=True)
-    with open(os.path.join(OUTPUTS_DIR, "model_rf.pkl"), "wb") as f:
+def save_artifacts(model, scaler, feature_cols, accuracy_pct, field_pct=None, out_dir=None):
+    """Writes the trained model where run.py and world_rankings.py look for it.
+
+    `out_dir` exists so an experimental model can be trained and driven through
+    the whole site WITHOUT displacing the one that is deployed. A pooled model
+    saved over outputs/ would silently become the live model on the next
+    refresh, which is not a thing to find out afterwards."""
+    out_dir = out_dir or OUTPUTS_DIR
+    os.makedirs(out_dir, exist_ok=True)
+    with open(os.path.join(out_dir, "model_rf.pkl"), "wb") as f:
         pickle.dump(model, f)
-    with open(os.path.join(OUTPUTS_DIR, "scaler.pkl"), "wb") as f:
+    with open(os.path.join(out_dir, "scaler.pkl"), "wb") as f:
         pickle.dump(scaler, f)
-    with open(os.path.join(OUTPUTS_DIR, "feature_cols.pkl"), "wb") as f:
+    with open(os.path.join(out_dir, "feature_cols.pkl"), "wb") as f:
         pickle.dump(feature_cols, f)
     # Unchanged meaning on purpose: this file has always held the
     # ~101-athlete-toplist number and other code reads it.
-    with open(os.path.join(OUTPUTS_DIR, "model_accuracy.txt"), "w") as f:
+    with open(os.path.join(out_dir, "model_accuracy.txt"), "w") as f:
         f.write(str(accuracy_pct))
     # Both metrics, labelled, so the site can quote the one that matches
     # what it actually does instead of the historical baseline.
-    with open(os.path.join(OUTPUTS_DIR, "model_metrics.json"), "w") as f:
+    with open(os.path.join(out_dir, "model_metrics.json"), "w") as f:
         json.dump({
             "toplist_pool_pct": accuracy_pct,
             "final_field_pct": field_pct,
@@ -862,6 +1064,20 @@ if __name__ == "__main__":
                         help="Add gap_variability -- how EVENLY an athlete's season was paced, "
                              "as opposed to meets_count, which only counts it. Measured at "
                              "+0.68 pts mean over 10 seeds (8/10 wins).")
+    parser.add_argument("--pooled", action="store_true",
+                        help="Train on EVERY final we have a podium for (data/labels/finals.csv: "
+                             "Diamond League Finals, Olympics, World and European Championships, "
+                             "Continental Cup and Continental Tour meetings -- 980 finals against "
+                             "215) instead of Diamond League Finals alone. Features are cut at "
+                             "each final's own date. Reports accuracy per kind of competition.")
+    parser.add_argument("--tiers", default=None,
+                        help="Comma-separated tiers to keep when --pooled: dl_final, global, "
+                             "continental, tour. Omit for all four. Exists because the widest pool "
+                             "is not automatically the best one and that has to be measurable.")
+    parser.add_argument("--out-dir", default=None,
+                        help="Where to save the trained model. Defaults to outputs/, which is "
+                             "what run.py and world_rankings.py read -- point it elsewhere to "
+                             "try a model without displacing the deployed one.")
     parser.add_argument("--dry-run", action="store_true",
                         help="Backtest only, don't overwrite outputs/")
     parser.add_argument("--tune", action="store_true",
@@ -892,9 +1108,15 @@ if __name__ == "__main__":
         tune_hyperparameters(feature_cols)
         sys.exit(0)
 
-    model, scaler, accuracy_pct, field_pct = train_and_backtest(feature_cols, label=label)
+    if args.pooled:
+        label += " + pooled finals"
+    tiers = [t.strip() for t in args.tiers.split(",")] if args.tiers else None
+    if tiers:
+        label += " [" + ",".join(tiers) + "]"
+    model, scaler, accuracy_pct, field_pct = train_and_backtest(
+        feature_cols, label=label, pooled=args.pooled, tiers=tiers)
 
     if not args.dry_run:
-        save_artifacts(model, scaler, feature_cols, accuracy_pct, field_pct)
+        save_artifacts(model, scaler, feature_cols, accuracy_pct, field_pct, args.out_dir)
     else:
         print("\n[dry run — outputs/ not modified]")

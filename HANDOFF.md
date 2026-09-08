@@ -80,6 +80,16 @@ python src/refresh_current_season_stats.py # days_since_last / meets_count
 python src/worldwide_scraper.py            # worldwide race log (resumable)
 python src/athlete_profile_scraper.py      # PBs, honours, world rankings
 
+# World Athletics Ultimate Championship: event facts, the named champion
+# qualifiers, and the mixed relay teams + squads. Safe to re-run any time;
+# it degrades to "not published yet" rather than inventing a field.
+python src/ultimate_scraper.py
+
+# Rebuild the country view (seconds). Reads the toplists plus
+# data/ultimate/event.json, so run it AFTER the scrapers and BEFORE the
+# snapshot below -- otherwise the country pages ship a refresh behind.
+python src/country_index.py
+
 # ============================================================
 # AFTER ANY REFRESH: REBUILD THE STATIC API SNAPSHOT.
 # ============================================================
@@ -96,7 +106,8 @@ python src/athlete_profile_scraper.py      # PBs, honours, world rankings
 python src/build_static_api.py
 # then commit BOTH repos:
 #   athletics-predictor   -- the data + model outputs (git add -f, as always)
-#   track-insights-main   -- public/data/*.json (38 files, ~860 KB)
+#   track-insights-main   -- public/data/*.json (~413 files, ~5.3 MB -- the
+#                            bulk is one file per athlete profile)
 
 # Rebuild real DL Final ground-truth labels (~1 min, hits a public WA API)
 python src/dl_final_results_scraper.py
@@ -308,7 +319,7 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 - `src/injury_checker.py`, injury/withdrawal detection + severity estimation (`data/injury_flags.json`)
 - `src/h2h_calculator.py` / `data/h2h/h2h_rates.csv`, head-to-head win rates, a trained feature
 - `tests/`, unit tests, `python -m pytest`
-- `src/build_static_api.py`, writes every snapshot-able API response to `track-insights-main/public/data/*.json` (38 files, ~860 KB) via Flask's test client, so the files are byte-identical to what the live API would return. **Re-run after every data refresh** or the deployed site serves stale numbers with nothing visibly broken. Paired with `track-insights-main/src/lib/api.ts`, which tries the CDN copy first and falls back to the live API
+- `src/build_static_api.py`, writes every snapshot-able API response to `track-insights-main/public/data/*.json` (~413 files, ~5.3 MB -- 7 payloads, 32 discipline reports, 137 country pages and ~237 athlete profiles) via Flask's test client, so the files are byte-identical to what the live API would return. **Re-run after every data refresh** or the deployed site serves stale numbers with nothing visibly broken. Paired with `track-insights-main/src/lib/api.ts`, which tries the CDN copy first and falls back to the live API
 - `src/components/dl/shell.tsx`, `src/lib/dl-data.ts` (track-insights-main), dashboard shell (page wrapper + `Panel`/`RankBadge`/`ProbabilityBar`/`WatchBadge` primitives, ambient background layer) + API data contract
 - `src/components/dl/topnav.tsx` (track-insights-main), the top navigation bar (centered links), replaced `sidebar.tsx` (deleted)
 - `src/routes/index.tsx` (track-insights-main), the "/" landing page; `src/routes/dashboard.tsx`, the actual dashboard (has its own hero banner), moved here from "/"
@@ -401,6 +412,285 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 
 ## Next Steps
 
+> ### READ THIS FIRST — updated 2026-09-08. There is a LARGE body of finished work that is deliberately NOT PUSHED.
+>
+> **Do not push it.** The user has asked repeatedly and explicitly that none of this reaches the live site
+> until they say so. It is finished and verified, it is simply being held. If you are picking this up cold,
+> the working trees are dirty *on purpose*.
+>
+> **What IS live** (pushed, in this order): `95d6fdd1` static API snapshot + the Finals data it needed,
+> `8328906e` the photo fixes. On the frontend, `a5f7da6`. Everything below that is local only.
+>
+> **What is held back, all verified:**
+>
+> | Area | What it is |
+> |---|---|
+> | Ultimate Championship | `/ultimate` tab replacing Qualifying, the immersive black/violet event theme, 43 named champion qualifiers (26 Olympic + 17 World) scraped from WA's minisite `__NEXT_DATA__`, 32 of them linked into our own pages |
+> | Mixed relays | Both mixed relays with their qualified nations, real World Relays times, host wildcards, and the **squads each nation actually ran** across the 2026 World Relays and the 2025 Worlds |
+> | Countries | A whole new entity: `/country/$code`, `/api/countries`, `/api/country/<code>`, country-aware search, 137 nations, 3,994 athletes — and each page now wears that nation's own colour, measured off its flag and clamped for contrast (see B below) |
+> | Track/Field | Rewritten to the world top-20 with a points ↔ model toggle, opening on points, with a "Meets" column (races we can actually see, not Diamond League appearances) and copy that says what the model's rating actually measures (see A below) |
+> | **The model itself** | Retrained on **531 championship finals** instead of 215 Diamond League Finals — Olympics, Worlds, Europeans, Continental Cup — with features cut at each final's own date. This is the change that lets it say anything about a championship. `outputs/` holds it; the old one is in git |
+> | **Budapest projections** | The Ultimate's REAL qualified field (344 athletes, from WA's own qualification API) scored by that model: 25 of 28 events on `/ultimate` |
+> | **Photo cards** | The dashboard's favourites and each country's best three, as World-Athletics-style photo cards, off a warmed photo cache |
+> | Dashboard, schedule, landing | Reframed off the finished Diamond League and onto the current event |
+> | Athlete profiles | Season form now covers EVERY meeting, not just the DL; nationality links to the country page; the "why they're not in the field" panel removed |
+> | Flags | 92 → **137 nations**, full coverage of the data |
+>
+> **Two things in the refresh procedure changed and will bite if missed** (both are in How to Run):
+> `python src/build_static_api.py` must run after every refresh or the SITE goes stale while the API is fresh,
+> and `python src/country_index.py` must run before it or the country pages are stale.
+>
+> **The French was then retranslated for meaning, and dates/month names and the browser-tab titles
+> localised with it — see the three dated sections further down. Frontend-only; the ship steps
+> below are unchanged.
+>
+> **State (2026-09-08):** 399 Python tests green, `tsc` clean, `npm run build` clean, eslint clean on every
+> file this work touched, EN/FR locales at parity (742 keys each).
+>
+> **TO SHIP IT, in this order** (the user will say when):
+> 1. `python src/build_static_api.py` — without this the site serves the OLD model's numbers while the API
+>    serves the new ones, and nothing looks broken.
+> 2. Commit **both** repos. `data/card_photo_cache.json` must go in or every card falls back to initials,
+>    and `data/labels/`, `data/ultimate/`, `data/world_rankings.json` and `outputs/` are all part of it.
+> 3. Push. Render redeploys the API; Vercel redeploys the frontend.
+>
+> Two scratch artifacts from building this were deleted rather than left to be committed by a
+> `git add -A`: `data/world_rankings_pooled.json` (byte-identical to `world_rankings.json`) and
+> `outputs/pooled/` (a 33 MB byte-identical copy of the model now in `outputs/`). They were the
+> side-by-side demo rig; the real thing is in place, so they were only ever going to confuse.
+>
+> **Still open and NOT done**, so nobody assumes otherwise: the site will advertise **62.4%** where it used
+> to say 72.8%. That is not a regression — it is the accuracy measured across every championship rather than
+> one meeting a year (Diamond League Finals alone are 70.6%). It needs a decision about how the Help page
+> states it before launch, and that decision is the user's.
+>
+> `npx eslint src` still reports 194 problems, and **none of them are in a file this work touched**: 171 are
+> in `discipline-table.tsx` alone, the rest spread one or two at a time across nine files. They are pure
+> prettier wrapping disagreements (the earlier "~7" in this note was measured on a smaller slice and was
+> wrong). Left alone deliberately -- `--fix` would rewrite whole files of untouched code and bury the real
+> diff. Lint the files you change, not the tree.
+
+
+### Added 2026-09-07 (user-requested). B is closed; A is relabelled, with its modelling option left open.
+
+#### A. The model's "favourites" are really "who raced the Diamond League" -- RELABELLED 2026-09-07, option 3 still open
+
+**Reported by the user:** athletes who have plainly been dominating their event -- fast,
+consistent, well clear of the field -- are not shown as the model's favourite. **Investigated,
+and they are right.** This is not a display bug; it is the model being asked a question it was
+not trained for.
+
+The model was trained to predict a **Diamond League Final podium**. Its features
+(`meets_count`, `days_since_last`, `recent_trend`, `h2h_win_rate`) are all computed from
+DL-circuit data. Track/Field now present its output as *"the model's rating of who is
+strongest in the world"* -- a different question -- so anyone who skipped the circuit is rated
+near zero however fast they are.
+
+Evidence, men's 800m (`data/world_rankings.json`, DL race counts from
+`data/raw/men_800m_2026_meetings.csv`):
+
+| Athlete | Season best | WA score | DL races | Model |
+|---|---|---|---|---|
+| Josh HOEY | 1:42.50 | **1311 (best in the event)** | **0** | #16, 1.5% |
+| Mark ENGLISH | 1:42.97 (slower) | 1236 | 4 | #5, **9.3%** |
+| Slimane MOULA | 1:43.41 (slower still) | 1222 | 4 | #3, **15.5%** |
+
+**The model prefers two slower athletes because they raced the circuit.** The same shape
+repeats across events: Garrett KAALUND (200m, score 1298, 0 DL races) is absent from the top
+20 entirely; Cole HOCKER (1500m, best score, 2 races) sits #13 at 1.5%; Adaejah HODGE (100m,
+best score, 1 race) #11 at 1.5%; Noah LYLES (100m, 2 races) #7 while Seville with 3 races is #1.
+**21 of 32 disciplines** have a model #1 that is not the points #1.
+
+It is NOT purely race count -- Josh KERR has 0 DL races and still rates #3 on a 3:27.62 -- so a
+very fast mark can carry an athlete. The defect is the systematic penalty on low DL exposure,
+not a total override.
+
+**Do not "fix" this by retraining and hoping** (see Failed Attempts, and the retrain memory).
+The honest options, in order of preference:
+1. **Relabel the UI.** Call it what it is -- a Diamond League Final projection -- and stop
+   implying it ranks the world. Cheapest, immediately honest, no model risk.
+2. **Show why.** Surface DL races next to the rating so a 1.5% next to "0 races" explains itself.
+3. **Re-scope the feature set** for a world-ranking view, so form features degrade to neutral
+   rather than damning when an athlete has no circuit data. Measure it with paired seeds and a
+   shuffled control (see the feedback memory) -- this is a real modelling change, not a tweak.
+
+**Done 2026-09-07: 1 and 2. Option 3 is untouched and stays open.** No model was retrained and
+no rating changed; what changed is what the site claims a rating means, and what it shows next
+to it.
+
+- `src/world_rankings.py` now ships `dlRaces` on every row, the athlete's real count of 2026
+  Diamond League meetings (from `data/raw/<disc>_2026_meetings.csv`, the same number the model's
+  `meets_count` feature reads). It is `null`, never a confident-looking 1, when a discipline has
+  no per-meeting log -- the toplist's own row count is structurally 1 for everybody.
+- The Track/Field table gained a **DL meetings** column between Points and Model rating, so the
+  Josh Hoey row now reads: best mark in the world, 1311 points, **0 meetings**, 1.5%. The
+  number stops looking like a verdict on him.
+- **The table now opens on the points ordering, not the model's.** The page promises "the
+  world's best", and points is the ranking that answers that. The model is one labelled tap
+  away. Easy to revert (`useState<View>` in `world-ranking-table.tsx`) if that reads as burying
+  the thing people came for.
+- Copy, EN and FR, everywhere the model's output was sold as a read on world strength: the
+  Track and Field page descriptions and `<meta>`, both table subtitles, the rating tooltip, the
+  dashboard description and its two panel subtitles, three landing strings and the welcome
+  modal. The rating is now described as what it is, the model's call on a Diamond League Final
+  podium, with the circuit bias stated rather than hedged around.
+- `tests/test_world_rankings.py` (4 tests, 366 total). One of them pins the bias itself: if the
+  model ever stops penalising low DL exposure it FAILS, which is correct, because at that point
+  the copy above is the thing that has become untrue.
+
+Measured on the shipped data 2026-09-07, across all 32 model top-20s: mean rating rises 1.2% at
+zero DL meetings to 28.8% at five, while the mean World Athletics score barely moves (1172 to
+1231). The rating tracks meetings contested (Spearman 0.75) more closely than it tracks the
+marks (0.65). In all 22 disciplines where the model's #1 is not the points #1, the points leader
+had raced the circuit **less** -- never more.
+
+**Also fixed on the way past:** `src/build_static_api.py` died with a `UnicodeEncodeError` the
+moment it tried to print a SKIP line for an athlete whose name is outside cp1252 (Yeral NUÑEZ).
+It had already written ~200 files by then, so a refresh would have left `public/data` half old
+and half new with nothing visibly wrong. stdout/stderr are now reconfigured to UTF-8 with
+`errors="replace"` at import, using `reconfigure()` rather than the
+`sys.stdout = TextIOWrapper(...)` idiom the scrapers use, because that one detaches the stream
+and takes the pytest session down with it.
+
+#### B. Country pages look bland -- DONE 2026-09-07
+
+`/country/$code` (`src/routes/country.$code.tsx`) works but is visually plain: the standard
+terracotta head band, three stat figures, a flag, and tables. The user wants it to feel like a
+page about a nation.
+
+The idea they raised is **using each nation's own colours**. Worth doing, with two cautions
+learned elsewhere in this project: contrast has to be measured, not eyeballed (several palettes
+-- Germany, Jamaica, Japan -- go straight to unreadable on the terracotta canvas), and a wrong
+or crude national palette reads worse than none. Derive colours from the flag SVGs already in
+`public/flags/` rather than hand-typing 137 palettes, clamp them for AA contrast, and fall back
+to the site theme when a nation's colours cannot be made to work.
+
+The Ultimate page (`theme="ultimate"` on `Shell`) is the precedent for scoping a look to one
+route without leaking it site-wide.
+
+**Built, then taken further the same day when the user asked for the WHOLE page rather than a
+band: "make it where the whole page turns to the colour and the theme of the country, like a
+symbolism thing... be like, this is the country's page profile."**
+
+Jamaica's page is green from the nav to the footer, Ethiopia's is green with its star on the
+band, Japan's is crimson, France's is blue, Botswana's is a deep version of its sky. Four pieces:
+
+- `scripts/flag-pixels.txt` -- every flag's colours by **area**, measured by drawing each SVG
+  into a 160x120 canvas and counting pixels. Reading the SVG's `fill` attributes instead would
+  have ranked Spain's coat of arms above its red field (134 tiny paths against two big ones) and
+  would have had no answer at all for the flags built from gradients. The file's header carries
+  the console snippet that regenerates it.
+- `scripts/make-flag-palette.py` -- picks and clamps, then writes `src/lib/flag-palette.ts`. It
+  picks the largest area of colour, **docked for how far it would have to be darkened** to be
+  usable (which is what stops Ukraine's page being gold and Botswana's being sky) and **topped
+  up for chroma** (which is what makes a black-red-green tricolour resolve to red or green
+  rather than always to black). Then it emits two colours from it:
+  - `ground`, the whole page's canvas. Built as that nation's hue at the SITE canvas's own
+    chroma and lightness, `oklch(0.52 0.105 h)`, then darkened until all three things the site
+    paints straight onto a canvas -- white/90 (footer), white/92 (the band's description) and
+    `--gold-on-canvas` (breadcrumb and eyebrow) -- clear 4.5:1. Starting from the site's own
+    numbers is the point: a country page should read as this site in another colour, not as a
+    different product.
+  - `accent`, the same colour left vivid and darkened only as far as being legible ON a panel
+    requires, so it can be both the rule down a card's edge and the mark printed inside it.
+- **The measurement composites in everything the page actually paints**, because measuring the
+  bare colour is how you ship a page that fails: the `ambient-grain` tile (calibrated against
+  the note in styles.css that records the old 0.54 canvas compositing to (163,94,70)), the head
+  band's own warm wash `oklch(0.8 0.11 68 / 0.18)`, and the two national blooms at their peak
+  alpha. **This caught a real miss in the first version**, which had clamped the band for white
+  text only: 44 of 136 nations were failing `--gold-on-canvas` at 4.37-4.49:1, every one of them
+  marginally, none of them visible to the eye.
+- The page wears it through `Shell`'s `theme` prop, which now takes a `PageGround` object
+  (`{ground, glow}`) as well as `"ultimate"` -- the same two fixed layers the championship uses,
+  so there is one way to re-dress a page rather than a growing list of named themes. On top of
+  the ground: the flag's own colours as a 5px hairline across the top of the band, **the flag
+  itself at 230px in the band's right margin** (opaque and out where no text goes -- a
+  translucent flag over the words would lift the ground by an amount that depends on which
+  nation it is, and the whole palette is built on knowing exactly what that ground is), and the
+  accent on the "best of the season" card rules and marks. Panels stay light: they hold marks
+  and scores, and tinting data is where a themed page stops being readable.
+
+**The head band IS the flag**, full bleed, the way an athlete's page wears their photo. The user
+asked for that in two passes: first "have the whole bar at the top be the flag, the same way we
+did the athlete profiles", then "let the flag go from the left side to the right side... it
+stretches among the whole thing".
+
+The first attempt could only reveal the flag past 70% of the band's width, behind a gradient,
+because the page ground sits at exactly 4.5:1 and has no headroom -- a flat veil weak enough to
+see a flag through measured as needing **1.00 opacity** on the USA, Japan, France and Kenya. The
+fix was not a cleverer gradient, it was to stop making the band the same colour as the page:
+
+- `band` is its own colour, the nation's hue at `oklch(0.18 ...)`, much darker than `ground`.
+  That is the site's own move -- the athlete page's `headTone="brick"` is "a darker, heavier band
+  that signals a different KIND of page" -- and it buys back the room the flag needs.
+- `flagAlpha` is then the MOST of the flag that fits, walked down in 1% steps from a 55% cap
+  until the band's white/90, white/92 and `--gold-on-canvas` all clear AA against **that flag's
+  single brightest pixel** (in `flag-pixels.txt` as `max:`), so a headline landing on the white
+  bar of a tricolour is as readable as one that does not. Across 136 nations that lands between
+  16% and 55%, median 31%.
+- The band lightness was chosen by measuring, not taste: the median flag share is 22% at L=0.30,
+  29% at 0.22 and 31% at 0.18, and at 0.30 twenty-one nations came out under 15%, which is a
+  smudge rather than a flag.
+
+No breakpoint gate any more, and no gradient reveal: the flag is full bleed at every width,
+because the ratio no longer depends on where the text ends.
+
+**And the band dissolves into the page instead of stopping against it** -- the user's words were
+"make it fade into the page... so it doesn't look like this is something or was something else".
+A dark band ending in a straight line against a lighter ground reads as a slab dropped on top of
+the page, which is exactly what it was. Two gradients fix it: the flag is masked out by 74% of
+the band's height, and from 62% down the band mixes into `ground`, so the bottom edge of the
+header IS the page. That is safe by construction rather than by luck -- the fade only ever moves
+the band towards `ground`, `ground` is itself measured at 4.5:1 for these same text tokens, and
+luminance moves monotonically between two colours, so the worst point in the fade is the ground
+itself. The flag's mask finishes before that mixing starts.
+
+**Each page is also RULED the way its flag is built.** The user wanted more than colour -- "make
+it feel like every country has its own thing... like the US eagle" -- and this is the honest
+version of that. `motif` is read off where the flag's edge energy points, measured with a
+gradient over the same raster that gave the colours and stored in `flag-pixels.txt` as
+`edges:h/v/d`:
+
+| motif | how it is recognised | who lands there |
+|---|---|---|
+| `horizontal` | horizontal edges dominate | Germany 1/0/0, the USA, Greece, Kenya — 71 nations |
+| `vertical` | vertical edges dominate | France 0/1/0, Italy, Nigeria, Canada, Mexico — 25 |
+| `diagonal` | diagonal energy ≥ 0.45 | Jamaica 0.06/0.00/0.94, Trinidad, Brazil's rhombus, South Africa — 28 |
+| `cross` | both directions strong, **no** diagonals | Norway 0.58/0.41/0.01 and the other Nordics, Switzerland, Georgia — 9 |
+| `emblem` | middle far from the outer ring, no strong direction | Japan (centre 337), Korea, Tunisia — 3 |
+
+The page then carries that as a faint ruling on its ground: Germany's is ruled horizontally,
+France's vertically, Jamaica's diagonally, Norway's as a grid, Japan's as rings out of a point.
+
+Two decisions worth keeping. **The motif is derived, never chosen** -- picking a "traditional"
+motif per nation would be a guess about someone else's culture, and a wrong one is worse than
+none, which is the same reason `flags.ts` refuses to guess a flag from a country code. This can
+only ever describe the flag already on the page. And **every ruling is BLACK at low alpha**, not
+white: a ground signed off at exactly 4.5:1 has nothing to give, so a lightening ruling would eat
+a ratio that is already spent. Darkening can only move contrast the safe way, which is why the
+motifs need no measurement of their own and cannot be broken by a later palette change.
+
+Two thresholds were tuned rather than assumed: the diagonal cut is 0.45 and not 0.42, which is
+what puts Ethiopia (0.434) back on its stripes and Portugal (0.431) back on its verticals; and
+`emblem` requires no strong direction as well as a distinct middle, because a tricolour's middle
+stripe is not its edges and France (centre 250) would otherwise have come out as an emblem.
+
+The theme is resolved from the **code in the URL**, not from the loaded response, so the page is
+already wearing the nation's colours while it loads instead of opening terracotta and flipping.
+
+136 of the 137 nations get a theme. The 137th is the Athlete Refugee Team, which has no flag and
+correctly falls back to the site's own ground -- the same graceful nothing `NatFlag` does.
+
+`countryPalette()` and `flagFile()` live in `src/lib/country-theme.ts`, NOT in `src/lib/flags.ts`.
+That is deliberate and worth keeping: `NatFlag` reads `IOC_TO_ISO2` and appears on nearly every
+page, so anything `flags.ts` imports rides along in the shared chunk. Wired the first way, 136
+nations of generated colour shipped in `shell-*.js` to every visitor; wired this way it sits in
+the country route's own chunk. Verified by grepping the built assets, not assumed.
+
+**The palette is NOT part of the data refresh.** It only needs regenerating when a flag file in
+`public/flags/` changes, which is close to never. Re-run
+`python scripts/make-flag-palette.py` from `track-insights-main` if that happens. Its output is
+already prettier-clean, so regenerating does not break `npm run lint`.
 > ### READ THIS FIRST, where things actually stand (2026-08-31)
 >
 > **Nothing is broken and nothing is half-finished.** Both repos are on `main`, merged and pushed: athletics-predictor `1ebb5cac` (**303 tests** green), track-insights `e1095cb` (`npm run lint` clean, `tsc` clean). Working trees clean. The numbered entries `0`–`16` below are the *historical record*, most are RESOLVED and are kept because they say what not to redo.
@@ -662,7 +952,605 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 
     **The Qualifying page after Zurich, the prediction in the note above was half wrong, and the site was left saying something false.** `meetings_remaining()` did drop to 0, but athletes did **not** all resolve to "through"/"out": **18 across 7 disciplines stayed "in"/"chasing"**. With zero points still winnable that is provable, not a fluke, `qualification_race`'s two tests ("fewer than `qual_limit` strictly ahead" and "at least `qual_limit` who could still finish ahead") can only both hold at zero gain through a **tie**, so every surviving in/chasing row is a tie-break case with `gap == 0`. The arithmetic was right; the *copy* was not, the page was still promising "still catchable" and "still mathematically able to reach it" about athletes with nothing left to race, e.g. Jessica Hull, level with Agnes Jebet Ngetich on 8 points in the women's 5000m. Fixed frontend-only (`03b936b`, branch `post-zurich-qualifying-copy`): both states render as **"Tie-break"** when `meetingsLeft === 0`, sharing one badge treatment (identical labels in two colours read as a bug) with per-side tooltips, and the panel title, page description and table footnote switch with them. Verified live on the men's 1500m, Ingebrigtsen, Heyward and Farken all Tie-break either side of the cut, badge contrast measured **6.16:1**. **The general lesson is the one this project keeps relearning: a data refresh can turn correct copy into false copy.** After the pre-Final `run.py`, re-read the pages whose wording depends on where the season is, not just the numbers.
 
-10. **PLANNED NEXT PHASE, deliberately NOT started: generalise beyond the Diamond League.** The user's stated direction 2026-08-25, *"after I finish with the Diamond League stuff... we can predict any other competition"*, and their explicit instruction was to **keep focus on the DL system until after the Final on 4 Sep**. Do not start this before then. Groundwork checked that day so nobody re-derives it:
+### The injury check was watching the wrong competition (2026-09-08)
+
+**Reported by the user: "there are some athletes that are injured, but still appear in the
+projection." They were right, and it was broken in three stacked ways** — each one alone
+enough to explain it.
+
+1. **Nothing was flagged at all.** `data/injury_flags.json` read `"athletes": {}`, last run
+   2026-09-05, and `predictions_latest.csv` had 0 of 364 rows with `injury_watch` set.
+2. **It watched the wrong people.** `load_qualified_athletes()` read `data/standings.json`
+   alone — 236 names from the Diamond League standings. Correct while the DL Final was the
+   next event; silently wrong the moment the site pivoted to Budapest. The Ultimate field is
+   306 athletes and **143 of them were never looked at**, because they qualified on world
+   rankings without racing the circuit.
+3. **A flag could not have shown anyway.** `ultimate_predictions.py` and `world_rankings.py`
+   had no injury handling, `ultimate.json` carried no injury field, and on the frontend
+   `WatchBadge` appeared only in the DL discipline table, the podium, the athlete page and the
+   landing page. The Ultimate table had nowhere to put one.
+
+**A fourth thing was found while fixing it, and it was the nastiest.** `FINAL_DATE` was
+hard-coded to the Brussels Final. That date is now in the past, so `days_to_final` was
+**negative** — and it drives the one decision that matters here, "a recovery estimate longer
+than the wait upgrades a watch to a remove". Against a past date every estimate is longer than
+the wait, so the next run would have quietly marked **every** athlete it found any injury
+mention for as REMOVED. `target_date()` now reads `data/ultimate/event.json`'s `startDate`
+and falls back to the old constant only if the file is missing.
+
+**What changed**
+
+- `src/injury_checker.py` watches both competitions: the DL standings and the Ultimate's
+  qualified field, including the athletes WA says are in but the model could not score. 236 →
+  **379 names**. Both sources optional; neither present means skip, not an all-clear.
+- `api.py`'s `attach_ultimate_injuries()` puts `injuryWatch` / `injuryStatus` / `injuryReason`
+  / `injuryUrl` on every projected athlete, at SERVE time from `injury_flags.json` — not baked
+  into `ultimate_predictions.py`'s output. An injury is news, not a model output, and this way
+  a fresh check needs `build_static_api.py` and nothing else. Re-projecting 25 events through
+  the model to record a hamstring would be the wrong dependency.
+- `ultimate-projections.tsx` drops flagged athletes into **their own group at the foot of the
+  discipline**, with an InfoTip explaining what the flag is and is not. Asked for explicitly:
+  *"not... removed from the whole record. I just want them to be flagged as injured and put on
+  the bottom of the list or on a separate injured list."*
+
+**Two decisions worth keeping.**
+
+**Flagged athletes are never dropped.** run.py removes them from the Diamond League field
+because that field is ours to compute. This one is World Athletics' published qualification
+list, and the page says so in as many words ("The field is World Athletics' own: everyone here
+has qualified") — deleting a row would make that sentence false. And an injury match can be
+wrong: this project has already shipped a false removal (the Cole Hocker headline, further
+down). The reader gets the athlete, the model's number and the headline behind the flag.
+
+**The podium styling follows the athlete's OWN rank, not their row position.** It was `i < 3`
+on the display index. Once a flagged athlete moves down, that would have promoted whoever was
+behind them into a gold RankBadge they did not earn — the women's 1500m would have shown
+Kazimierska as the model's #3 when the model says #4. Now `a.rank <= 3`, which was a no-op
+before the split and is the whole point after it.
+
+**Also fixed, found on the way past: the news feed was losing athletes.** It deduped by URL and
+kept whichever athlete came first in dictionary order. A results recap flags every DNF in it,
+so one Brussels article matching three athletes produced **one** row naming one of them, chosen
+arbitrarily. It is now one row per ARTICLE with everyone it flagged named on it, disciplines
+and keywords unioned, and a "remove" on a shared article outranking a "watch". `athlete` stays
+a display string so the feed component needed no change; `athletes` is the real list.
+
+**The re-run, 2026-09-08.** `days_to_final: 3` (Budapest, correct). **3 athletes flagged**, all
+DNFs at the Brussels Final: Salah Eddine Ben Yazide (men's 3000m SC), Tsige Duguma (women's
+800m) and **Birke Haylom, the model's #3 in the women's 1500m at 22.6%** — a projected
+medallist who did not finish her last race, showing a clean number until today.
+
+**Athletics Weekly now blocks us.** Two consecutive runs both failed it with a connection reset
+(`ConnectionResetError 10054`) even headful; LetsRun and World Athletics were fine. The result
+is honest about it — `sources_ok` records `["letsrun", "worldathletics"]` — but it means one of
+the two dedicated athletics-news sources is currently contributing nothing, and a real injury
+story that only AW carries would be missed. Worth a look before the next check.
+
+**Still true and worth knowing: a fresh injury check does NOT reach the Diamond League pages.**
+`api.py` reads `injury_watch` for those from `predictions_latest.csv`, which only `run.py`
+writes, so those rows stay as they were until a full refresh. The Ultimate page reads the flags
+file directly at serve time, which is the better design and the one to copy if the DL pages
+ever matter again.
+
+Tests: 398 → **412**. `tests/test_injury_checker.py` pins the widened field and the target date;
+`tests/test_api.py` pins the attach, the never-drop rule, the name normalisation, and both news
+feed merges.
+
+### Widening the injury search, and the four ways that went wrong first (2026-09-08)
+
+**Reported by the user: "there are some big athletes that you're missing here." They were
+right, and the reason was not the keywords.** "out for the season" was already in
+`REMOVE_KEYWORDS`. Measured instead of guessed: the three front-page sources returned **179
+headlines between them, exactly ONE of which mentioned an injury**, and Athletics Weekly had
+started refusing us outright. The check was reading a keyhole.
+
+**Google News RSS is the fix, and it is not blocked.** Plain XML over HTTPS, no browser,
+several searches per run, and it reaches Athletics Weekly's own reporting through Google's
+index even while their site turns us away. 179 → ~500 headlines. The first widened run found
+Noah Lyles ending his season, Duplantis withdrawing, Neeraj Chopra out, Tara Davis-Woodhall
+injured in a car wreck -- none of which had ever been in front of the checker.
+
+**Then four defects, in the order they were found.**
+
+**1. Names were matched as exact substrings.** World Athletics holds "Tara Davis-Woodhall";
+LetsRun wrote "Tara Davis Woodhall Injured In Car Wreck" and the Olympic long jump champion
+matched nothing. `normalize_for_match()` now folds accents and reads hyphens and apostrophes as
+spaces -- which is also what makes "Hernández" match a headline spelling "Hernandez".
+
+**2. Headlines print surnames, the field holds full names.** No headline says "Armand
+Duplantis withdraws", and the field does not even hold the name he is called by. `build_aliases()`
+adds a bare-surname alias, but **only where that surname belongs to exactly one watched
+athlete**, is not an ordinary English word, and is not a name particle. Ownership is counted
+over every token except the given name, not just the last one: keying on the last token left
+"davis" looking unique to Tamari Davis, because Tara registers as "woodhall" -- which would have
+pinned a headline about Tara onto Tamari. A surname match is also **capped at "watch", never
+"remove"**: one word is weaker evidence than a full name.
+
+**3. Precision collapsed: 44 flagged, most of them footballers.** Other sports use the same
+words, and enough surnames are shared. Three guards, in increasing order of how general they
+are. Google appends " - Publisher" to every title, and left on it becomes matchable text --
+"Charlton Athletic Football Club" flagged Devynne Charlton -- so the suffix is stripped before
+matching and kept for display. A **30-day window**, because a news search has no sense of season
+and was flagging Josh Kerr off a 2025 report. And the one that does the real work: **a bare
+surname only counts when the headline also reads like athletics.** That separates "Caudery out
+for the season" (European Athletics) from "Latics boss Caldwell provides positive Chapman injury
+update" without needing to know what Wigan Athletic is. **Club names are deliberately NOT
+blacklisted** -- there is always another club, and as substrings they are unsafe: "united" is
+inside "United States", "villa" inside "Villanueva". 44 → 12.
+
+**4. Comeback stories read as injuries.** "Wightman on injury bounce back" and "analysis of
+Jazmin Sawyers and her success since her achilles injury" both flagged, and the second was
+escalated all the way to a REMOVE, because "achilles" carries a 6-20 week estimate whether the
+athlete is entering that window or leaving it. `RETURNING_PHRASES` now suppress a flag, **but
+only when no explicit withdrawal word is present** -- so "Injured Omanyala pulls out of Diamond
+League final" still flags: it says both that he was hurt and that he is out.
+
+### A flag now expires when the athlete is reported back (2026-09-08)
+
+**Also reported by the user, and the sharpest catch of the session: an athlete was listed as out
+while more recent coverage said they were back.** Keely Hodgkinson withdrew from Zurich (24 Aug)
+and from another race (2 Sep); **"Keely Hodgkinson returns from injury scare" ran on 7 Sep** and
+the flag stood anyway. She was the model's #1 in the women's 800m, sitting in the flagged group
+on five-day-old news.
+
+Suppressing return stories stopped them RAISING a flag. It did nothing about one already raised.
+Two things were needed:
+
+- **A search for returns.** Every query looked for people going out, so a comeback never turned
+  up at all. Two return-focused queries were added; without them the supersession below can
+  never fire, which is exactly what happened on the first two attempts.
+- **Attribution by the return phrase, not the injury word.** In "Keely Hodgkinson returns from
+  injury scare for Werro and Broeders-Bol showdown" the word "injury" is nearest **Werro**, so
+  the existing nearest-name rule handed the keyword to her and Hodgkinson's row was discarded
+  before the return was ever considered. `returning_is_about()` anchors on the return phrase
+  instead, and the return is now recorded **before** the keyword test. Note its `other_names`
+  must exclude the target's own aliases, or her surname sits nearer the phrase than her full
+  name and every return she has is rejected.
+
+A flag is then cleared when a return is dated **strictly after** the newest dated flagging
+story. Undated flags cannot be overtaken, because there is no way to tell which came first. The
+cleared entries are written to `injury_flags.json` as `superseded` rather than vanishing: "why
+is X not flagged?" should have an answer in the file.
+
+### The feed is one row per athlete, not per article (2026-09-08)
+
+Asked for directly: *"if the athlete is reported on by one of the bigger articles... there's no
+need to have their names repeated. Maybe just have their name, and then you can press it and it
+shows you all the articles."* Right, and the widened search made it urgent -- Keely Hodgkinson
+took the top three rows on the first widened run, one event, three outlets, and Noah Lyles has
+**fourteen** articles behind him.
+
+`build_news()` groups by athlete, dedupes articles by URL and sorts them newest first; the row
+shows the badge, the name, the disciplines and a count, with the latest headline as a two-line
+preview and the rest behind a disclosure button. Eleven athletes fit in ~1000px where the
+article-per-row version needed a scroll for one of them.
+
+This **replaced** the per-article athlete merge added earlier the same day, and one test that
+asserted the old behaviour was rewritten rather than deleted -- it now pins the opposite, with
+the reason. Grouping by athlete solves the same problem more directly: a results recap naming
+three DNFs appears once under each of the three instead of once in total.
+
+**"Removed from field" was retired as a label.** Nothing is removed any more, so it was simply
+untrue; the badge says **"Reported out"** / "Out" (FR "Annoncé forfait" / "Forfait") for a
+withdrawal and "Watch" for a doubt, and `WatchBadge` takes a `status` to pick between them. The
+publication date is shown on every article, because "is this current?" is the first question a
+withdrawal raises and the widened search made it a fair one.
+
+**Where it landed.** 11 athletes flagged, all genuinely athletics, none older than three weeks:
+Lyles (the model's #1 in the 100m at 63.9%), Davis-Woodhall (#1 women's LJ), Duplantis (#1 PV),
+Chopra, Shericka Jackson, Omanyala, Hodelín, Yadav, and the three Brussels DNFs. Hodgkinson is
+correctly NOT among them.
+
+Tests: injury checker 10 → **32**, api.py 56 → **67**.
+
+### The French, retranslated for MEANING — DONE 2026-09-08. Brief kept below the record.
+
+**Done.** All 742 keys read against their English source and against the page they render on.
+The brief is kept below, because it is still the right instruction for Arabic.
+
+**Seven strings were not merely wooden, they were ungrammatical**, and every one of them on the
+20 track disciplines rather than the 12 field ones. `startNounKey` hands a sentence a feminine
+noun on track (`course`) and a masculine one in the field (`concours`), so every article and
+participle built around it was wrong half the time: "à partir des courses qu'ils ont réellement
+partagés", "en ne comptant que les courses auxquels". Worse, `startVerbKey` was feeding a
+reflexive past participle — `word.raced` was "couru contre", so the head-to-head grid printed
+"ne se sont jamais couru contre", which is not a sentence in French. All seven were reworded so
+nothing has to agree: the verb slot became a complement (`en course` / `en concours`) and the
+noun slot lost its article ("à partir de leurs courses en commun"). Verified live on a track
+and a field discipline.
+
+**Vocabulary that was translated rather than known.** A *field* is a **plateau**; `champ` is a
+field of crops, and four keys had it. A meet is a **meeting**, the word French athletics
+actually uses — the file already said `meeting` in two places and `réunion` in 46, so it was
+inconsistent as well as off. `courent` and `couru` appeared on pages that cover the throws.
+`performé` is an anglicism. `Leur meilleure performance` was English singular *their* about one
+athlete. `figure.about` was "À propos de {{label}}" and the labels are column names, so the
+info button announced "À propos de Éval. modèle" to a screen reader; it is now "En savoir plus
+sur", which cannot elide.
+
+**Typography.** French sets a non-breaking space before `: ; ? !` and `%` and inside `« »`. The
+file had six of those in 740 strings, and mixed `'` with `’` 234 to 7. Both fixed throughout.
+
+**A real English bug fell out of it.** `en.ts` carried mojibake: an em dash stored as the bytes
+`â\x80\x94`, live on the site in `ultimate.projection.chanceHint`. That is the same
+`unicode_escape` damage this file already warns about two sections down — it was caught in the
+French and missed in the English. **Grep both locale files for `Ã` and `â`, not just the one
+you are editing.**
+
+### Dates and month names were a separate problem, and a bigger one (2026-09-08)
+
+The 742 keys cannot reach this. Month names and dates are **data**, not copy: they arrive from
+`src/athlete_analytics.py` already spelled in English (`MONTHS`, and `strftime("%d %b")`). So
+the French athlete page read *"5 courses de 06 Jun à 23 Aug"* and *"est tombée en Jun"* —
+French sentences with English words dropped into them, which is exactly the complaint that
+started this work.
+
+Fixed in the frontend, in `src/lib/dates.ts`, **not in the API**. The month names are a closed,
+keyed set of twelve, which is the same reason `discName` translates a discipline on its key
+rather than on its English label. Changing the payload instead would have meant a re-scrape and
+regenerating all 413 static JSON files for a display concern. `Intl` does the naming, so there
+is no translation table to maintain and Arabic works the day its locale is added.
+
+Localised at the point of render in `athlete-analytics`, `season-trend-chart`,
+`trajectory-overlay-chart` (which also had `"en-GB"` hardcoded on its axis), `field-analysis`,
+the athlete route, `topnav` (the "MAJ" date, which is on every page) and `schedule`. The six
+bare `.toLocaleString()` calls now take the app's locale instead of the browser's, so a French
+reader on an English browser sees `3 200` rather than `3,200`.
+
+**The trap in this, hit twice:** two places compare an English month before displaying it —
+`athlete-analytics` decides which bar is the season best with `m.month === shape.bestMonth`, and
+`schedule`'s `meetDate` decides whether a two-day meeting spans one month. **Localise at render,
+compare on the raw value.** Translating first silently drops the gold bar and breaks every date
+range. Both are commented in place.
+
+English is byte-identical afterwards, on purpose: `localizeMonth` returns the API's own string
+for `en` rather than formatting it, because `Intl` says "Sept" where the payload says "Sep" and
+that would have quietly changed the English site while translating the French one.
+
+### The browser tab was still English on every page (2026-09-08)
+
+`head()` runs before the route's data loads and outside `I18nProvider`, so it cannot read the
+language — which is why all 12 routes hardcode an English title through `pageHead`. A French
+reader was reading a French page in a tab that said "Men's 100m · PodiumCall".
+
+`src/lib/use-page-title.ts` rewrites `document.title` from a client effect once the language is
+known. The SSR title is untouched, so crawlers and link unfurlers see exactly what they saw
+before. **Only `document.title` is touched, deliberately**: the meta description and the `og:`
+tags are read only by machines, and machines never run an effect, so rewriting them client-side
+would be dead code.
+
+Ten of the twelve routes reuse a key that already exists and already names that page
+(`nav.dashboard`, `track.title`, `stats.title`, and `discName` for the two dynamic ones). Only
+the landing page and the Ultimate needed a new key, so the tables went 740 → **742**. The
+athlete title shares `seo.ts`'s `titleName` with `head()` rather than re-deriving it — without
+that the English tab flipped from "Matthew Denny" to "Matthew DENNY" after hydration.
+
+One thing left English on purpose: the country page's tab reads its IOC code (`KEN`), which is
+the same in both languages.
+
+**Frontend-only.** No backend change, no re-scrape, and **no `build_static_api.py` re-run** —
+nothing about the data shape moved, so the held update's ship checklist is unchanged.
+
+#### The brief, kept for Arabic
+
+**The problem, in the user's own words:** when the French is translated word for word, "people don't
+understand, because the context is still in English context, but translated." The sentences are
+grammatically French and still read as English wearing a French coat. That is a real complaint about
+real copy, not a style preference — and it is the same complaint as
+`feedback_copy_clarity`, which was about the source copy being vague in both languages.
+
+**Scope: all 740 keys in `src/lib/locales/fr.ts`.** They are at parity with English and none are
+missing; the issue is quality, not coverage. The most recently added blocks are the most at risk,
+because they were written fastest: `ultimate.projection.*`, `rankings.*`, `howItWorks.s2/s6.*`,
+`country.*`, and everything touched in the model-relabel pass.
+
+**What "contextual" means here, concretely:**
+
+- **Translate the intent, then check it reads like French someone wrote.** "The model's call" is not
+  "L'appel du modèle" — a *call* in this sense is a prediction, and French would say "Le pronostic du
+  modèle". That one is already right; it is the model for the rest.
+- **Athletics has its own French vocabulary and it is not the dictionary's.** A *meet* is a
+  *meeting* (the English word, used in French), a *field* is a *plateau*, a *personal best* is a
+  *record personnel*, a *heat* is a *série*. Getting these wrong is the fastest way to sound like a
+  machine to the audience this site is actually for.
+- **Restructure the sentence when French wants a different shape.** English stacks clauses with
+  dashes and parentheticals; French tolerates that less. Splitting one English sentence into two
+  French ones is usually the right call, not a liberty.
+- **Numbers, units and typography follow French convention**: a non-breaking space before `:` `;`
+  `?` `!` and inside `« »`, and a comma as the decimal separator where a decimal is being written as
+  prose rather than shown as a mark.
+- **Do NOT translate**: athlete names, meeting names, "World Athletics", "Diamond League", discipline
+  names that the site shows as data, or anything inside `{{...}}`.
+
+**How to check it rather than hope:** read each French string on the page it appears on, at the width
+it appears at — several are in table headers and pills with very little room, and a translation that
+is correct but 40% longer breaks the layout. `npm run build` will not catch either problem.
+
+**One hard constraint:** EN and FR must stay at exactly the same key count (740 today). A test does
+not enforce this yet — `python -c` over both files with a regex is what has been used, and adding a
+real check would be a good side-benefit of this work.
+
+**And a trap that already bit, twice, in one session:** do not build locale strings with
+`.encode().decode("unicode_escape")` in a helper script. It mangles every accented character into
+mojibake — it turned `← All countries` into `â All countries` and the whole French
+`ultimate.projection.*` block into `athlÃ¨tes`, and **the build passed the entire time**. Write the
+characters directly, and grep for `Ã` before believing it worked.
+
+### Launch-prep round (2026-09-08)
+
+Four things the user asked for before shipping this update.
+
+**1. Flags that were not there.** Germany and Norway read as empty headers. Cause: the band colour
+was derived from the flag's DOMINANT colour and then the flag was laid over it, so the dominant
+colour cancelled itself out. Germany, Norway and Japan all resolved to the same band, `#330000`,
+because all three flags are dominantly red -- Germany then had black on near-black and red on dark
+red, losing two stripes of three. Two fixes: `BAND_C = 0.03` makes the band a near-neutral dark
+with only a hint of the nation's hue, and a SECOND flag layer at 0.85 opacity is masked to the
+right-hand side, clear of the text column. The second layer is additive and its mask is zero
+across the whole left side, so it cannot touch a measured contrast ratio; it is hidden below `sm`,
+where text wraps full-width and that guarantee would stop holding. Note `maskComposite: intersect`
+-- two mask layers are UNIONED by default, which would have put the flag back over the title.
+
+**2. A back button** on the country pages, as `src/components/dl/back-button.tsx` and a new `back`
+slot on `Shell`. History when there is history, a named destination when the page was opened cold
+from a shared link. Extracting it turned up that the athlete page's version had `← Back`
+**hardcoded in English in four places**, so every French athlete page said "Back". Now `nav.back`.
+
+**3. Info tips on the Ultimate projections**: what a wild card is versus a World Rankings place,
+and that the podium percentages are each athlete's own chance and deliberately do not sum to 100.
+
+**4. A "Searching by country" section on How it works**, because the search quietly grew a second
+thing it can find and nothing on the site said so.
+
+**A trap worth recording: do not build locale strings with `.encode().decode("unicode_escape")`.**
+It mangles every non-ASCII character into mojibake -- it produced `â All countries` for `← All
+countries` and corrupted the whole French `ultimate.projection.*` block into `athlÃ¨tes`. All of it
+was caught and rewritten, but only because someone grepped for `Ã`. Write the characters directly.
+
+### Photo cards for the model's favourites and each country's best (2026-09-08)
+
+The user pointed at World Athletics' own "Top Rankings" carousel -- headshot, event written across
+the foot of the photo, name, nation, an accent rule, one number, link out -- and asked for the same
+thing on the dashboard's model favourites AND on each country page's best athletes.
+
+`src/components/dl/athlete-card.tsx` is that card, shared by both so they cannot drift into two
+things that merely resemble each other. The differences between the two uses are a label and a
+number (`stat`/`statLabel`), plus a `sub` line carrying the mark -- World Athletics' card has no
+equivalent, but a mark is the first thing an athletics reader looks for and both views this
+replaced were already showing one. No photo renders the athlete's INITIALS, not a silhouette: a
+silhouette says "missing person", a monogram says "this person, no picture", and only the second
+is true.
+
+**The photo plumbing is the real work here.** api.py resolves a headshot live -- a World Athletics
+GraphQL call, then Wikidata plus Commons if WA has none. That is fine for a profile page, which is
+one athlete. On a country page it is three, on the dashboard thirty, and across 137 country pages
+it is hundreds of round-trips to two external APIs for a picture. So `src/warm_card_photos.py`
+resolves them ahead of time into `data/card_photo_cache.json` (342 athletes: the top-rated athlete
+in each of the 32 disciplines, plus each nation's top three), and api.py attaches from that cache
+with no network at all.
+
+**World Athletics' photo wins whenever they have one; Commons is only for athletes they have
+nothing for.** This was asked for explicitly after a version that preferred a Commons portrait
+whenever the WA shot had no detectable face in it (32 of the 342). The user's rule: WA's photo is
+theirs, it is uniform, and it is the right picture even when the athlete is mid-stride with their
+head turned. Same order as the profile pages use, so nobody appears with one photo on a card and a
+different one on their own page. Pinned by a test, because the temptation to "improve" it comes
+back every time someone notices a bad action crop.
+
+What face detection DOES still decide is the CROP. Where a face is found the card centres on it
+(`photoFocus`, from the existing `photo_focus_cache.json`); where none is found it falls back to a
+top-biased crop. It changes how the photo is framed, never which photo is used.
+
+Four things that must not regress, all pinned by `tests/test_card_photos.py`:
+- **An absence is cached as an absence.** WA has no photo for about a third of athletes and Commons
+  covers roughly half of those, so a `null` is a fact, and caching it is what stops every later run
+  re-asking two APIs for a picture that does not exist.
+- **A FAILURE is never cached as an absence.** A network error stored as `{"url": null}` would make
+  the next run skip that athlete forever, and their card would be blank for good with nothing
+  anywhere saying why. Failed lookups are simply not written.
+- **`attach_card_photo` never falls back to a live lookup.** A cache that quietly reached for the
+  network on a miss would reintroduce the exact problem it exists to remove.
+
+Re-run `python src/warm_card_photos.py` after a data refresh (it only fills gaps), and
+`--recheck` occasionally to retry the known misses, since Commons gains images over time.
+
+### Ultimate entry lists: announced but not in the API (checked 2026-09-07)
+
+The user reported the Ultimate's start lists were published. **They are, as editorial content
+only.** World Athletics' minisite front page reads "FINAL ENTRY LISTS PUBLISHED -- 381 athletes
+from 65 federations", and their competition API has none of it:
+
+- all 40 phases report `isStartlistPublished: false`, from both `getEventTimetable` and
+  `getEventPhases`
+- `getEventPhaseByDiscipline` accepts the arguments and returns a row of nulls
+- the phase `documents` field is null and `competitionDocument` errors for every TypeId tried
+- the press release that carries the list is behind CloudFront for automated requests, and
+  repeated browser hits got the whole minisite rate-limited -- back off rather than work around it
+
+So `ultimate_scraper.fetch_startlists()` is wired, schema-verified and returns `[]` today. It is
+NOT parsing the press release into a field: prose is not a start list, and inventing one is the
+thing this project does not do. The day WA populates the API, the entries appear with no
+rediscovery needed.
+
+**Two findings worth keeping:**
+
+1. **WA leaves GraphQL introspection ON** -- 176 queries, readable with the same public key the
+   scrapers already use. Future endpoint hunts do not need guesswork; ask the schema:
+   `{ __schema { queryType { fields { name args { name } } } } }`.
+2. **The start-list call's argument spellings**, which are not guessable and fail in misleading
+   ways: `disciplineCode` wants the discipline's **URL slug** ("100-metres"), not its id ("100",
+   which returns an unhandled Lambda error) and not its name ("100 Metres", which returns nulls
+   that look exactly like "not published yet"). `phaseCode` is **lower case** ("f", "sf"). The
+   start list rows are `competitorName / competitorCountryCode / personalBestMark /
+   seasonBestMark / worldRanking / bib`.
+
+Both states are pinned by tests in `tests/test_ultimate_scraper.py`.
+
+**THE FIELD TURNED OUT TO BE AVAILABLE AFTER ALL -- through a different endpoint.** The start
+lists are not in the API, but the QUALIFICATION LIST is:
+`getChampionshipQualifications(competitionId: 7212925)` returns, per event, who qualified, how
+(`Qualified by Wild Card` for the Olympic, world and Diamond League champions; `Qualified by World
+Rankings` for the rest) and the ranking score they got in on. **28 events, 344 qualified
+athletes.** Fetched by `ultimate_scraper.fetch_qualified_field()`.
+
+Two things about it that are easy to get wrong:
+- It returns everyone it CONSIDERED, not everyone who got in -- 57 rows for a 17-place event.
+  Only `qualified: true` rows are the field; the rest would treble it.
+- Call it once with `eventId: null` to get the event list (28 ids), then once per event. The
+  bare call answers for the women's 100m only, which looks like the whole thing if you do not
+  check the discipline name.
+
+`src/ultimate_predictions.py` then scores that field: 25 events projected, 316 athletes,
+2 qualified-but-unscoreable (Medina Eisa, Cole Hocker -- no 2026 mark in that event), 3 events not
+scoreable (the men's hammer, which we hold no data for, and the two mixed relays, which the model
+refuses on principle). Head-to-head is computed WITHIN the Ultimate field rather than against a
+Diamond League pool the entrants may never have met in. The page names the unscored rather than
+counting them: a missing favourite is the difference between a projection worth reading and one
+that is quietly wrong.
+
+Sanity check on the output, for anyone who wants to know whether to trust it: Wanyonyi 79.8% in
+the men's 800m, Lyles 63.9% and Seville 60.1% in the 100m, and Warholm 59.0% / Benjamin 55.7% /
+dos Santos 54.8% bunched in the 400m hurdles, which is exactly that event's character.
+
+**A scheduled check runs every 3 hours** (`ultimate-entry-lists`, in the app's Scheduled section)
+calling `src/check_ultimate_entries.py`. That script asks once and reports one of three states in
+its first line -- `ENTRIES PUBLISHED`, `NOT YET`, `CHECK FAILED` -- and rebuilds
+`data/ultimate/event.json` only in the first case. The three are kept distinct on purpose: a check
+that reported an API outage as "not published" would be the same quiet wrong answer the whole
+exercise is about. It writes nothing otherwise, and it never commits or pushes. When entries do
+land, the remaining steps are `build_static_api.py`, commit both repos, and push only when asked.
+
+10. **PHASE 2, STARTED 2026-09-07: generalise beyond the Diamond League.** The gate ("not before the
+    Final on 4 Sep") lifted and the user opened it themselves: *"having the project just be about the
+    Diamond League is not gonna help us in the long run with the other events and other championships...
+    it just doesn't make sense."* They chose the **widest** label pool of the three offered, and chose to
+    leave the site's copy alone meanwhile. What now exists:
+
+    **`src/final_labels.py` -> `data/labels/finals.csv`.** Every final on disk with a complete podium,
+    pooled: **980 finals, 2,940 podium rows**, 32 disciplines, 2018-2025, against the 215 finals the
+    model had. By tier: `dl_final` 215, `global` (Olympics + four Worlds) 190, `continental`
+    (Europeans + Continental Cup) 126, `tour` (Continental Tour Gold and the big invitationals) 449.
+    The old groundwork note below said "roughly doubles"; it was written when one Worlds edition was
+    scraped, and the real figure is **4.6x**. Also writes `data/labels/final_fields.csv`, 8,855 rows of
+    who actually CONTESTED each final, because the backtest's second metric ("find the podium among the
+    people who were there") otherwise falls back to the Diamond League field and silently reports a
+    number for the wrong meeting.
+
+    **The cut-off, which is the whole job.** `train_model.py` computed every athlete's features as of a
+    hard-coded `{year}-09-01`. That is harmless while every label is a September Diamond League Final
+    and it is lookahead leakage the moment it is not: a World Championships final in July scored against
+    a season best set in August is the answer read backwards out of the future. `build_features()` now
+    takes the finals it is building for and cuts every aggregate -- season best, career best, meets
+    count, consistency, rank, percentile, recency, gaps -- at that final's own date. Passing no finals
+    keeps the old behaviour exactly, which is how the deployed model stays reproducible.
+
+    **Run it:** `python src/final_labels.py` then
+    `python src/train_model.py --with-recency --with-h2h --with-schedule --pooled --dry-run`.
+
+    **Three traps, all of which bit during the build and none of which raised anything:**
+    - `final_labels.normalize_name` must stay byte-identical to `train_model.normalize_name`. The first
+      version lower-cased where the trainer upper-cases, and produced a training set with 2,940 podiums
+      in it and **zero positive labels**. Pinned by `tests/test_final_labels.py`.
+    - The `if pooled:` branch was written into `tune_hyperparameters` instead of `train_and_backtest`
+      (identical four lines, `str.replace` took the first match). `--pooled` ran the old path and
+      printed its numbers under a heading that said "pooled finals". Also pinned by a test.
+    - `_score_fold` grouped by discipline alone, which was right while a discipline-year held one final
+      and mashes every final of that season together once it holds several. It now scores one contest
+      per final and tracks hits per tier.
+
+    **RESULTS, 2026-09-07.** Four walk-forward runs, all `--dry-run`. The number to read is the
+    real-field one -- among the athletes who actually contested that final -- because the toplist
+    metric is incoherent for pooled data: it ranks the whole world's season list, and a European
+    final can only be won by Europeans. Measured on the 2024 men's 1500m, the world top three were
+    Ingebrigtsen, Hocker and Kerr while the European podium was Ingebrigtsen, Vermeulen and Arese --
+    Hocker was never eligible to enter. That artefact alone is the difference between "16%" and
+    "54%" on the continental tier.
+
+    | pool | DL Finals | Olympics + Worlds | Europeans + C.Cup |
+    |---|---|---|---|
+    | DL only, old 1-Sep cut-off (shipped model) | **72.8%** | — | — |
+    | DL only, honest per-final cut-off | **71.7%** | — | — |
+    | **DL + global + continental (531 finals)** | **70.6%** | **57.4%** | **55.2%** |
+    | all 980 finals, incl. Continental Tour | 68.2% | 56.3% | 53.6% |
+
+    Two things fall out of that, and both matter more than the headline:
+
+    **1. The shipped 72.8% is about a point optimistic.** 72.8 -> 71.7 is the same labels and the
+    same model with the leak removed, so roughly one point of the number the site quotes came from
+    features that could see marks set after the race. That correction is true regardless of what
+    happens to pooling. `outputs/model_metrics.json` and the site's Help page still say 72.8.
+
+    **2. The widest pool is worse on EVERY tier.** The user picked it over the recommendation, which
+    was the right call to test rather than assume -- and the measurement is unambiguous. Dropping the
+    449 Continental Tour finals improves all three remaining tiers at once (DL 68.2 -> 70.6, global
+    56.3 -> 57.4, continental 53.6 -> 55.2). An invitational meeting in Ostrava is a different kind
+    of event from an Olympic final, and 449 of them dilute the label rather than reinforcing it.
+
+    **ADOPTED 2026-09-07, on the user's "if we wanna go with your recommendation, do it".** The
+    championships model is now `outputs/` -- the model the site reads -- and `data/world_rankings.json`
+    was regenerated with it. The Diamond-League-only model it replaced is the committed one, so
+    `git checkout outputs/` reverts the whole thing. **Not pushed**, so the deployed site is
+    unchanged until someone does.
+
+    Two consequences that were handled with it, and a third that was not:
+    - **The advertised accuracy drops 72.8% -> 62.4%** in `outputs/model_metrics.json`. That is not
+      the model getting worse; it is the number now being measured across every championship rather
+      than one meeting a year. On Diamond League Finals alone it is 70.6%. The Help page needs to
+      say which, because a bare 62.4% under "podium hit rate" invites the wrong conclusion.
+    - **8 strings per language were rewritten**, because the site told readers the model learns from
+      Diamond League Final podiums and it no longer does. howItWorks.s2.p1 now names all five
+      competitions and states the cut-off rule; the Track/Field subtitles, the rating tooltip, both
+      dashboard panels and the welcome modal moved off the Diamond-League framing.
+    - **DONE 2026-09-07: Budapest is projected.** `src/ultimate_predictions.py` scores the Ultimate's
+      real field with this model -- 25 of 28 events, 316 qualified athletes, written to
+      `data/ultimate/predictions.json` and served on `/api/ultimate`. See the Ultimate entry below
+      for where the field came from. `run.py` itself is untouched and still projects the Diamond
+      League Final; teaching it a second way to choose a field, inside a script already five
+      commands deep in a refresh, was the wrong place for this.
+
+    **Recommendation as it stood: the 531-final championships pool.** It costs 1.1 points of Diamond League
+    accuracy against the honest baseline (71.7 -> 70.6) and buys Olympic and World Championship
+    finals at 57.4% and European Championships at 55.2%, on a task the model previously had no
+    training signal for at all. NOT deployed -- every run was `--dry-run`, `outputs/` still holds the
+    Diamond-League-only model, and `run.py` reads `feature_builder.py` rather than this trainer, so
+    the live site is insulated. Shipping it is a decision for the user.
+
+    **QUEUED EXPERIMENT: replace `meets_count` with meets-on-record.** Raised by the user seeing
+    Rai Benjamin ranked 3rd in the 400m hurdles. The investigation is worth keeping because the
+    first read of it was wrong:
+
+    - Benjamin HAS run the 2026 400mH -- once, 46.67 at Lausanne on 21 August, third in the world
+      on points (1301). He is not absent from the event; he is ranked on one race.
+    - His `dlRaces` of 0 is CORRECT, not a scrape gap. We hold all 14 Diamond League meetings of
+      2026, and Lausanne is in our data for 15 disciplines including the WOMEN'S 400mH. The men's
+      400mH simply was not on that meeting's Diamond League programme, so his race there was a
+      non-DL race at a DL meeting.
+    - The Diamond League contests each discipline at only a few of its meetings (the men's 400mH at
+      5 of 14), which is why **28% of the athletes across the 32 top-20s read 0**. "DL meetings" is
+      a true number that readers take for a different one.
+
+    So `src/season_activity.py` now counts distinct (date, venue) across the season toplist, the
+    per-meeting DL log and the worldwide race log, and the table shows that instead (`Meets`,
+    `racesOnRecord`), with counts of 1-2 set in the foreground weight so a thin record is
+    scannable. Warholm 7, dos Santos 6, Lima 9, **Benjamin 1**. Nine top-5 rows across the 32
+    disciplines rest on a single visible meet -- Kipyegon (twice), Ingebrigtsen, Kerr, Rojas, Hoey.
+    It is a FLOOR, not a census, and the tooltip says so.
+
+    The experiment still to run: `meets_count` is the model's 3rd-4th most important feature and
+    currently reads Diamond League participation rather than activity. Swapping it for this count
+    is a real change to what the model sees. Measure it the usual way -- paired seeds plus a
+    shuffled control (`feedback_measure_features_across_seeds`), not one seed -- and expect it to
+    matter more for the pooled model than the Diamond-League-only one, since the pooled model no
+    longer leans on circuit exposure.
+
+    **Per-tier accuracy is reported, not averaged.** The risk the user was warned about and accepted is
+    that pooling this widely makes "podium in a final" stop meaning one thing. A single overall number
+    would hide the Diamond League folds getting worse while the average rose, so the backtest prints
+    each tier separately.
+
+    Original groundwork, kept because it is still the reasoning:
+
+10. **(superseded by the entry above) PLANNED NEXT PHASE, deliberately NOT started: generalise beyond the Diamond League.** The user's stated direction 2026-08-25, *"after I finish with the Diamond League stuff... we can predict any other competition"*, and their explicit instruction was to **keep focus on the DL system until after the Final on 4 Sep**. Do not start this before then. Groundwork checked that day so nobody re-derives it:
 
     **The ground truth is already on disk.** `major_meets_scraper.py` has been pulling championship results for feature-building all along: **7,312 major-meet rows, 96% carrying a finishing position**, European Championships 1,072, Olympic Games 726, World Championships 355, Continental Cup 220. That is **669 podium rows** already scraped, cleaned and name-matched, against the 650 the DL Final labels currently provide. Pooling roughly **doubles the training signal**. Every `Pos` value in those rows is a plain final placing (no `h`/`sf` round suffixes), so the scraper is already returning finals only.
 

@@ -1,10 +1,451 @@
 {
-  "checked_at": "2026-09-05T03:06:51.407739+00:00",
+  "checked_at": "2026-09-08T07:00:10.626373+00:00",
   "sources_ok": [
     "letsrun",
-    "athleticsweekly",
-    "worldathletics"
+    "worldathletics",
+    "googlenews"
   ],
-  "days_to_final": -1,
-  "athletes": {}
+  "days_to_final": 3,
+  "athletes": {
+    "Ferdinand Omanyala": {
+      "status": "watch",
+      "disciplines": [
+        "men_100m"
+      ],
+      "matches": [
+        {
+          "headline": "Injured Omanyala pulls out of Diamond League final and World Ultimate Championships",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTFlScGVDWnpwXzZ5R1N3SU0xM2FxRHZwU3loQ1FKb1VVWUx0S25uU1lHU2ZxLWR5SEczOFFRTHdETHNJQk1lMGVSRVZRNkpWR2tNNUdXWjZqSVZ6emxlUEdEMXo4STdoOEpKM2VfcjZXc0drakZjd19tRUJtWi1ibHJTYkVsUEg2SldhVmt2cFlvUU1yV2x6c1FibzFwMXQ1ak9OWnBRWUNGT0FCNVlJR0E1OFM1M1JNSUJyejZtTE44WkoxVVQ5Wm1tdVJsS2V5SGc?oc=5",
+          "source": "Daily Nation",
+          "keywords": [
+            "pulls out",
+            "injured"
+          ],
+          "published": "2026-09-01"
+        },
+        {
+          "headline": "Heel injury ends Omanyala’s bid for Diamond League glory",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSHhkUUpuVWJNS202Y1dVbWVsR3RlMW50b05QNVVUWTMzNHdma2pBazN6aFJZZV9za25NRzFOQThYNlRJSEdURkpmUmdSSHZiSGpZd0dxLXNmQWdQb05OTjBXbnNCMkJsN3dDZGEtMm05NmJkeUp4b0RENi1VUW11REZNZnlvZm9pMFBmUU1GakxOTDg0U1A0V1ExMFQ?oc=5",
+          "source": "Livenow Africa",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-09-01"
+        },
+        {
+          "headline": "Heel Injury Forces Ferdinand Omanyala Out of 2026 Season",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcWNpSnN5NXE5N20yaHRPUWR3NXlWU1JjRnJ3WG9jUEVXd2Q1cDEtb0IzeDB3RFc3ZWJ4eENQZDVYanFCWV9MY2x6TWdyUXpkdHNaY1ZqUkN0d2ZHbElpOGY5aS1abU9JOHVheXptWW1rZTBIbG13TkNDZEdZb21tc3haZGF0SVFtYUgw?oc=5",
+          "source": "ghettoradio.co.ke",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-09-02"
+        }
+      ]
+    },
+    "Armand Duplantis": {
+      "status": "watch",
+      "disciplines": [
+        "men_PV"
+      ],
+      "matches": [
+        {
+          "headline": "Duplantis withdraws from Diamond League finals after thigh discomfort during warm-up",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOTXlya3VjeVVnY3pndmVKMm50c0g0dVhfN2pITmRTcjRFUG1sQjNGeXprODBsOW5JRTIzSG8zY1VHMFEwcXpVMzZkVFVrMjI3ejJvTFl0N21hMFhEeXdUQzJHWWxJQkZFTkxwRFNJUEJhd0hndW9iZGpub1ZTYjlBdEx6b3ROODc2SVJoYXljZkd3MmpXQ3dMeFVqVU93Mk9JRzNJSXljbC11V1FGRXhjUmZsampqR3R5dFpfZXlxaTg3WnV4UVB4SGxjcnE1UFdsakpWUGViSVM0bW1aQUZuRFAzYzZRd3lj0gHvAUFVX3lxTE9jOW5oOTZuWGM0WTdpeEdqX2VVRnBPRDlhWU5RSWRrOHRzQjI2RUhsdk41SXYxMkJZRHBERHpLUElNVEdVZWI5R2dXcUNkVTN1QjFwMjRuQ1BPckJTWDJ5U0NhUmxaaGZRM2xvMzNKdFFuWmdtU196STlCUE9VT3hfU1htaGpFTlhhUkhKWXlkNThZV3pib2poWW5LTmZJLUxPZ2lWSFhuZEVtSXlqaE5HZUhtUEdpMTZiRWp3LU8yb1JuYVgyZi1wckpIS0U5ckxHR0NNLUs4M3hQbTNYbHBGRk1ZbkFoYk1ubmE3RDJZ?oc=5",
+          "source": "Sportstar",
+          "keywords": [
+            "withdraws"
+          ],
+          "published": "2026-09-04"
+        },
+        {
+          "headline": "Seville, Alfred win at Diamond League finals, Duplantis hit with injury | Gulf Times",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNN05aNlE0bTI5UDBkbzR2dHlZVG55a045NDNQWk10RFlVejZXczBDRi1jcU1vRTNnM3NUa3dQWjktLXNrQzl0YVMwNE4yQTRkM0R2dzNJYjh5SVdVZkhQSlVCZEhXajNEd3R1LTV0LXYzWVdiRC1FcUpDRXBjaHJDYmdVZzI0azlnOXEzNnpEd2xyOXg2NFg2WllNV1RPLXl0MXZiT0Z6bHk1OXZXZFN2eEliQVNSaEpX0gG-AUFVX3lxTE1DUHdSamtZdXRneTBrMW9MU1l5NGJLeVVCMUhlejA0YVBPQkxGTTJTMlpEd25nNXFZQW1WZEJuck5nNTF6MmRnM3dheWt0Mk9udDBGSzVMa1c3X0hvNi15Tm9aVFNkYnRieWFxVTlVbDludUtDc1pFQ2NqS0ZPc1N0b2xOOGwwVWl6eXYwWmIzR3hEM3BVWnNZem5OTFM5QmlncVNCMHlMQVkxSlJzamtXQ0lWanMtRnA5ZnloREE?oc=5",
+          "source": "Gulf Times",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-09-03"
+        },
+        {
+          "headline": "Duplantis pulls out of Diamond League finals",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeTB1S0hqNHJjRDRxMElpRkdUaHJJZ3prc21OQzFTLUt0T2ZvT29kbXc1aXk4b21RS0NRQndSN0U3bmVtU2g0WFRIbkdweDl4c0NOVk1rMGpEUHVtSmNiZGRnbE5xWDVqQzYyT21ydFVLYWtNRzVadVJYNkxWUFo1ZzdOZXY2RmlEWW4yTW9GSGRwZzItRDdJ0gGeAUFVX3lxTE9lVEFlRjltWTdma3hmakR6TmhCaFFaSWk4bU1TZ0FzYUdSWUxPMVVhTFhLZU5ZSHdnWm9nbHJjZzEwZExSRWVuWjZCWURuV2FOTHRBZHpaSUpGM3QtLXRJWXl4YjVNdV9ESWpTX3lqUUM1TG1XOER4Um5jYjBkNGtRcTVEdnlBNC1naVNJLVNvZnFGRS1aUWt0em1kZUl3?oc=5",
+          "source": "Philstar.com",
+          "keywords": [
+            "pulls out"
+          ],
+          "published": "2026-09-05"
+        }
+      ]
+    },
+    "Jorge A. Hodelín": {
+      "status": "watch",
+      "disciplines": [
+        "men_LJ"
+      ],
+      "matches": [
+        {
+          "headline": "Injury holds back Cuban gem Jorge Hodelín: will not compete in the World Ultimate Championship",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOT3ZuQnpZUF9XeUZUVWZZX090R3ZtZ0VpS093NUFyYlRPX0NsOUFhZkV0dVhTSERnMnp6eEpSUUxKLVI0STZ2SDRCbXNfMGpqTXRNbDJ0VTdmSHRqWEZpZHE3dEFmX2tDV1ljZVZjdWxQWDlFMjVsZWtQNWtVVlh4aUZkOTdvY3ozY2ZRQ2w5TGpiOEJMYlRFa3RqeHFJeF9XV05YbXNSREZSejNlajMyZ29INU5GQ05mNWxleGJB?oc=5",
+          "source": "CiberCuba",
+          "keywords": [
+            "will not compete",
+            "injury"
+          ],
+          "published": "2026-09-06"
+        }
+      ]
+    },
+    "Neeraj Chopra": {
+      "status": "remove",
+      "disciplines": [
+        "men_JT"
+      ],
+      "matches": [
+        {
+          "headline": "Neeraj Chopra out of Asian Games after ankle injury ends 2026 athletics season",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa2pLWkd3QndVTjZoU2RDMmNtalJRa1RJRmhaVUVIbHlnVV9MS3J0NXdDM0NIQ1JBUjBlM2hOSllYZ1k3cExwaXNWUEtBQU55UWRXQmNwLTR1bEZkQngzSHltSnJXOFJ0X3FUaFRMZWNHSHVsR0NjRXZKZ1V3aEFUTDhFN0E4RWFDX0tJRGNtaXoxVFotUUh0TEM5YW9COEQ1WWpYRFJ2ZWRkWEFPYzFjbg?oc=5",
+          "source": "olympics.com",
+          "keywords": [
+            "injury",
+            "ankle"
+          ],
+          "published": "2026-08-29",
+          "estimated_recovery_weeks": [
+            1,
+            6
+          ],
+          "likely_out_for_final": true
+        },
+        {
+          "headline": "Neeraj Chopra ruled out of 2026 season! 🚨 The 2-time Olympic medallist suffers an ankle ligament tear in training, days after his SB throw of 88.05m in Lausanne. To miss 3 major events.",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNT2lrZUNURzcxZ09BV0E3OVhPRjk2WnNTRWFaVklSTk8ycjVXNndSV2paRE05bFE3aVVDbGZQcU1abjBuT3dOeC1vNWc4R0ZjWnVMVU9KRmtxRjc5T252OEpkU1VnWkZxM0dhdTVpYUZIQlFXQmxfTS1ZTm42dXhVMWRFWWUtTWRFVHVpdzg2QVQzQnhEeldhOHhfQzJuWDZJZWo5UllDUWh2WDZtZHJPNmt1bnZxSUZHYlpfZGV3dENzNFpCT0dxelRRY3J0Z0ozUXVv?oc=5",
+          "source": "facebook.com",
+          "keywords": [
+            "ruled out",
+            "ankle"
+          ],
+          "published": "2026-09-02",
+          "estimated_recovery_weeks": [
+            12,
+            26
+          ],
+          "likely_out_for_final": true
+        },
+        {
+          "headline": "List of competitions Neeraj Chopra will miss due to injury",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxON0RxVHB0UF9jNGZZMWRPenRvTUhYWDRIVjRuZW15cFQzcEQtcElqRVNsTGlOTjZDQ19kVVpYZWVHTV9pS0VTdmhTRUphMlh6cWpxWWI5c0xWeFVDT0UxYVVabzZWbnBMc0k2M29sTnFxbVZjYnRtdldmRHVpdEtzcEJR?oc=5",
+          "source": "Khel Now",
+          "keywords": [
+            "will miss",
+            "injury"
+          ],
+          "published": "2026-09-02"
+        },
+        {
+          "headline": "Athletics-Chopra ends season early after ligament tear",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZHdYM0FHRXRIeE1JZHBWMW04TWYwQWgxbWVpOE5uTU1jVTJvZ0h2endOeGRPVGlHU0k4M2pqR05XUlJjZUNiTXA2azhGMm5zdWMyY3JNYko0RW42Z0gyRzl5UWgySUNUVjh2YzZmRGRsZnE0U3p6RzVobG8yWXV2X1J6Q1ZGaU5kZWltdm8yX0xyN3hTNUhyX25CVmVEYjVlNkg1WFhpQnNhT092?oc=5",
+          "source": "The Star",
+          "keywords": [
+            "ends season"
+          ],
+          "published": "2026-08-29"
+        }
+      ]
+    },
+    "Shericka Jackson": {
+      "status": "remove",
+      "disciplines": [
+        "women_200m"
+      ],
+      "matches": [
+        {
+          "headline": "Shericka Jackson has to withdraw due to injury",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZjVOaUxhdGJlNTd6STV5Z1gwVDhPUTBaRHhfUTc4ckhaSFJrTDczOTNNWEVyWllXTjVKY2NkQk1hQXN3UkQ4a0NDU3pDQm5kd2pNRGtNODJZV0xMdW9sTWVNaDg3aXpqM2xBWERkbWJiYlpocWtocjVOVkFTUXllYlItM3JkMXV3R3JMOWx5TUQzYTQ?oc=5",
+          "source": "bluewin.ch",
+          "keywords": [
+            "withdraw",
+            "injury"
+          ],
+          "published": "2026-08-21"
+        }
+      ]
+    },
+    "Tara Davis-Woodhall": {
+      "status": "remove",
+      "disciplines": [
+        "women_LJ"
+      ],
+      "matches": [
+        {
+          "headline": "Tara Davis Woodhall Injured In Car Wreck - Questionable For Rest Of Year",
+          "url": "https://www.letsrun.com/forum/flat_read.php?thread=14349689",
+          "source": "letsrun",
+          "keywords": [
+            "injured"
+          ]
+        },
+        {
+          "headline": "Davis-Woodhall suffers car crash, doubtful for World Athletics Ultimate Championship",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQWxfdElCLUJUVFlFbHBjWE5GNXFNYVhZdm5Sd0NEcEdEeTZ6RTZaNGdHS2prbWNxS1gxdmZfVzNsOEtMdkl4LUNTa1podHB3Y21qWENaTExBcExFLXppd2xSbXBPUzFOVTg3dldnY0dMemhEazdxTXpESXlFd05SUTMyaHVqUWptZG9CdmtCQkNGQTVzZnJqRWRuZ3EybFltUjZNSGc1OERHS0ZyUGY1VHo4VGlYNkkyQVdQYnJTTVRYc0laYTl6VkNwQUxTaVFxSXpod2QwWVBjclN3a0RWRW9Xc9IB6gFBVV95cUxNQl85UlE5SEtReFFVM3BxaTM0Qi1YMkNEVTFYVGc4eEQ2cm1fVXBieWU3X2YtWUFyRDdDeDcxOGg1a2g3LVNidXRjdHhpNGdyLUttX3VpX0pmX1VnSXg4bkVfcDFRRHNmeEVBOEo3SjVBT3ZyMVhhWjZReUEwQlU0RzYySXZEUUFjWGZVRkZNeUNkcWZNVTZRRnZXRFhyUk9nRUtkVGRoanFjWnVuU0JwODhmV3pEajNwZ0FWLWtrSlVvSldmVGZ5U05hXzVSMUFwakUxWjV6WUNwMFdqWk1MMFlDZzBKMVhNdXc?oc=5",
+          "source": "Sportstar",
+          "keywords": [
+            "doubtful"
+          ],
+          "published": "2026-09-02"
+        },
+        {
+          "headline": "US Olympic champion Tara Davis-Woodhall ends season due to concussion",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNamNfZ25Pa0tvcmk5YThSbE90T3I5aHl3RWdmZFlQSDhNVUU5Z1ZEN2d4Y1lKOVp0WmlaTnB5Z1pvdHdrb0JyVENHb0tnVmF1NV9YZU55cFowRFVGN00zQ0g2akZkSVdaaXNHZTY3b19vREVyd2pQbG5pTHlHeVVVMTk2RGUtVUN3U0JWT2YzZnV5bDhBdTZwck0yZTF5djZYelVhMllfS1VmYU1xLXc?oc=5",
+          "source": "UA.NEWS",
+          "keywords": [
+            "ends season"
+          ],
+          "published": "2026-09-08"
+        },
+        {
+          "headline": "Athletics-Olympic long jump champion Davis-Woodhall ends season after concussion",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObnFYUzZ0dTE3OThVN1lBaXlueVRGRFVRRGtMaTBfcFFLMVZzQ2FtNloxRGdIQXFvRWlPN01rMDlReVdoX1NhbHhjY1ZRV3pqYTVpUDByS2ZEWkdpbFd3Qkx5QVJqWHUtVzBWQ0d0dlk2MkhpWTlWTF9tcmU4a3BZbEtvV1JWRGV3Vm40dTBlRGVZM1kwTi1MZGRtOVBjaVpBbHl2NFh3RUdhb0doRkpjSHNha1dxajR6bzFOeXZaTFBaTjhySTFReFh6MTlEdmc?oc=5",
+          "source": "The Star",
+          "keywords": [
+            "ends season"
+          ],
+          "published": "2026-09-08"
+        },
+        {
+          "headline": "‘I will be back’: Davis-Woodhall ends season after car crash, to miss World Athletics Ultimate Championships",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNNS1IbXByV1pjX0M4OS04SGNVbUZPcXpoR2NsckNFR2FtOTZnZ2loSURyVlFQVXZqUXJhM3UzWGVMNFpNUVRiSEM5U3A3dElBVF8wRXRndFgtQWFwZldaSGRZR2dRMS0yblBkWm0xTjhZV1BIZ19sMTNiQU1DMEk1NHV4QTJVbm15bVBGYWJhTkJoWGFKZHdLUXpyOUZ6SlNsc0tuX3ctaXV3RDdsT0xIdno0VFJ2SmRCTHZTcWw1aU1XYVAtY3NnNVBXNDRabDhZdkF3ZUxaRFh1UTZkSmJOR21ZaUtENjNqOS1mQtIB8wFBVV95cUxQWWt5VVZfam1mUmQ4UzIyeWY5UDZXRlR6QnJEdFRLZ0JtNmhWcWRIRExaYWpXYkREcGR2cVBUWThTbFdVcnJpTmVSWEFiS3RXb1UyVC02aU1qWDgyM19HcWViRDhLTzItakZwUjl5YUcxT3BZempndVJXV3g1VTNWMlkxU0dzNUw4TThuVTlkWmJ0UTBUYnNjWUxzQVlMa3V5aHF1YnMzUl83cXJPT1hFZGdib2s3SFlpRnFVdF9wNUZEUTZiYVpXcGNaWHhMalNRSXlIajVETmJubkdDT2ZDeEw5NlBrZGNBdGNVQ1pGemxUQk0?oc=5",
+          "source": "Sportstar",
+          "keywords": [
+            "ends season"
+          ],
+          "published": "2026-09-07"
+        }
+      ]
+    },
+    "Noah Lyles": {
+      "status": "remove",
+      "disciplines": [
+        "men_100m",
+        "men_200m"
+      ],
+      "matches": [
+        {
+          "headline": "Noah Lyles ends season due to prolonged injury, will not compete at World Athletics Ultimate Championships 2026",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1tc3RaTE1EQklzRHR0Sk14Y3pQdG02Y2ljSUhoSHZSZEZoa21paWJqaElMYXEyVGl2X3k4czlfZjNXLU5XQ01vWDV0NHdkbDNxUjhmbXd6b092d2Ywd2JVVGZxTXN5NndPb0JrdmtGcWxUTU1MSnRkVWM4M18?oc=5",
+          "source": "olympics.com",
+          "keywords": [
+            "will not compete",
+            "ends season",
+            "injury"
+          ],
+          "published": "2026-09-04"
+        },
+        {
+          "headline": "Noah Lyles shuts down season due to injury, will miss Ultimate Championship",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeFc3V0FiWlpFTjJDcVlabld3TW9vcVdOY0dTT0k2VmpYWEl2OUwwZXltMGNPTk16eERWVzRpT184dzdhaEdIUTZuWDhLb2ZLbjZPMVBPXzBSWDV0WWxOWWlUazZfNjBCNDFTNmZrYS1GcjA2ZmJXOEwwS1Q0a1lINUtrb0p2SURzNFlNQ1ZsaWF5NHdodUc4WS05bGdzT28?oc=5",
+          "source": "CBC",
+          "keywords": [
+            "will miss",
+            "shuts down season",
+            "injury"
+          ],
+          "published": "2026-09-07"
+        },
+        {
+          "headline": "Noah Lyles Gives Injury Update in New Video Ahead of World Athletics Ultimate Championship",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcnBXbk1xVE1BaWdfa1RTYXNfODJpYU1ka0R2T241eWEza0wzNTZZZWZjNmxhMldwbzRVNjlJSnBJWkNyLUdzU0tURjlRNzNsdmM5Q2NUb05DcFhxaHhEalFkaFoteWZ0Mk9nS3R1SEhDMGpodGdZR3h6ZmFrWlEtS2o4NFRHREhPZXMyQ2ZkMG5TTEwyMzFVSmxJbndZblJCZGtza0V6ZHJsVm81YUo5NXpPMmlsNmZCZnh5WEpkc2U5UVp3cGd4RA?oc=5",
+          "source": "Bleacher Report",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-09-04"
+        },
+        {
+          "headline": "Athletics-Injured Lyles shuts down season, will miss Ultimate Championships",
+          "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPTDM1bWFNaEJoUnhsOERHbVFvQmE3TU0yX092YWRucF9ZTmZ2NmtzUzZwWnB6dGptd3dOeDdSZF9yVnYyQXpCSWVucHJoVHRKMUpadGZCY0thTVRFZWFaYVBpLU1HeENMVFljcTV4dWxLVlVEWEowaWZtZ0V0UzBMWTBrQnRIWER6LWpsOWI5XzhrdXJ0TmJ2VjJwUFpzT3h4Y2FhQU1XOWozemZ2SHFEbFZLVlBCMGRhRmh1VnVhRVRSMm1ob2duU2lIa0VMY205VHpVbnd5SllfNDczcHdKSS1BYXJaTjA3UDRjb1c4akpaWW5kT3ZaV1RhX1dxckYxQ2c?oc=5",
+          "source": "The Lufkin Daily News",
+          "keywords": [
+            "will miss",
+            "shuts down season",
+            "injured"
+          ],
+          "published": "2026-09-04"
+        },
+        {
+          "headline": "Noah Lyles, Olympic 100-meter gold medalist, ends season early due to injury",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNG0xaFBXcl9pUERqZTZKYTRDVm9lOWtERXdpanp0NFRqeF8tbmZhVEg1X0VoWmZOUmNmYWZOOFdLOEdTbEFPTDhtNUJGYjFyQmx0aVJtcFZBWVZKSzEtcDJWMFYwQ0k1Vkd5ckplQjIyWGJQczNJNGVZUERlQTVPcFhDRnVBeDRpRnVxeEtUYlZrZ1N4Mk5iVW10dzJaTDVjR0RMOXg4SHJrSkF6bzZyZ3o0MGc?oc=5",
+          "source": "The New York Times",
+          "keywords": [
+            "ends season",
+            "injury"
+          ],
+          "published": "2026-09-04"
+        },
+        {
+          "headline": "Noah Lyles Ends 2026 Season Early Due To Injury",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTS1WcnByMGpWUDgtNDJGd0hMdlp6WGJUalBFSVFNVkxKUjRJZnNzWXAzU2dvT0ZIUWJEYnhMclNIdmYyeFJPSjZ4Q3U1NVVTRWx2cTRtaGZOTmlEejJfVElSdmFYRGNnMDJqOWE5TFBYQktha25hbGlWRzlfTm1nU0xuUjl4ZnZMdWluUHhWVzN3eTNV?oc=5",
+          "source": "FloTrack",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-09-04"
+        },
+        {
+          "headline": "Injury forces Lyles from Ultimate Championships",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcUotYTlqbERieTBzWkh2NnJ4YkM3NmQ5YmJVUGlFR1JVcVNWQ19LWGtCLWZ5RmlaallBR3pBSlJ5V2o5dlNWY2pHMXFRZUpjWEYyN3ppNi03UXYyWHVPd0M3bURkQ3ZCMG5WdjR3ZnlJRllXdHhBaWV1cU90MnVKV2k0aUV1enNwcFhXd0VSRHBsSjZRM0l0bg?oc=5",
+          "source": "Jamaica Gleaner",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-09-08"
+        },
+        {
+          "headline": "Alexandria’s Noah Lyles Ends 2026 Season Early Because of Injury",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOOVNtVE9uTzR3SUNiblFINWZtN0ZGdElwd01ySU9mVWpqQlg2UUZVdm5zVXZ4Rks0MzUyb2NoLS1JZ1hXOGpHaEgxY1Y5ZzlEOVd5V0o3MzFDSC1ranhzaXNWeGp1bGo1a3VPRDV1NDloRXgwTng0ckhUNEdyX0JyMVBCdi02R1ExUVZfY0dtQ1ZuVU55RnY0TjRHVDk?oc=5",
+          "source": "thezebra.org",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-09-05"
+        },
+        {
+          "headline": "Noah Lyles (hamstring) drops out of World Athletics Ultimate Championship",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOT2FUWGRsSHUzSVlwTVhjOVpHa2NCTV9OOVBpbkdBaWdWbVJ3TUtPSktFeHRfVjZYbHNHZ2F4TFZ0T2dMWFFMWExhd0xzekJWSnBMcFNzTGNmMGQ3ZVliY2d3UUs3T0VfbktuR0xUVDRONmpoZkhyV2lUQmZIMURnNThKWlNVY2l4QmgtbDhyYnpsaXdPN0U5dFVqVjQ5MTlTbDd6dklBeTIyMUU?oc=5",
+          "source": "KSLM Radio",
+          "keywords": [
+            "hamstring"
+          ],
+          "published": "2026-09-08",
+          "estimated_recovery_weeks": [
+            2,
+            10
+          ],
+          "likely_out_for_final": true
+        },
+        {
+          "headline": "Noah Lyles ends track season early due to injury flare-ups",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYUc4bXBWOTh2U0pHaW9zNTVpVDlFY3Uwcnk3enhqbFFWLURUNTJuR3VpOFdyczd2Y0xCLW5uUk56Q2I3bHJlLXhVeE9oLWl1dFRFZlF4cTBZSHdwNzBQbnJ6bWpwWWdqNjNoMnlmY2hCdWJmUnRkcFhtTlBfR3lnU1Rwaw?oc=5",
+          "source": "Yahoo Sports",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-09-04"
+        },
+        {
+          "headline": "Noah Lyles Confirms Season End Ahead of World Ultimate Championships Due to Injury Scare",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNUzBlbTRtb1NtV1MwRzh1bW9jbUMtYVloNFNDeDRWeXk2QmtxVDZTdjVlRzJhTlZRWlh2a0xIXzRXdWdkR3BHaENtal9yYWtjM0QwZkJJYkV2MTMteDJteVhVYkFZRjlFd0pLYTg4MDhWcjdnaVZZT1V4a3dHNUFaMG05ak9NYmhsUVFMaFE1c2E2ZnNzTU9Bc1JHY0FrbU1NT0I0clN1LTgzbVNTZG5kbXdrT3h5U1JWSG51dVl1dHlVd016blNIZGhRUG1UTjZhTmJ4THlfSWhGYnJkNndST2lrVnhFTF9RS3J2c2FRdw?oc=5",
+          "source": "EssentiallySports",
+          "keywords": [
+            "injury",
+            "injury scare"
+          ],
+          "published": "2026-09-04"
+        },
+        {
+          "headline": "Noah Lyles Ends 2026 Season Early Due to Injury, Will Miss Budapest Ultimate Championships",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONXJOel82X2FrbTdwdUh1WUlLWHNOQ0Q2X1A2Skc1eC12ZGtlN3IwOUVwc01TRXlFWnU0UmtSQzQ3eWkwRGhWNUhmQ3dmZVdwcHZWMFBUaXJmVTlzbnJKRVNTLVJ1bFA1V1Z2X21yMDJEejNqRFUtS3dic1Jqb1dRQQ?oc=5",
+          "source": "nigfooty.com",
+          "keywords": [
+            "will miss",
+            "injury"
+          ],
+          "published": "2026-09-05"
+        },
+        {
+          "headline": "Noah Lyles Provides Update on Injury That Led to Shocking Last Place Finish",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPakFKTUF0V2JzSEk0VEN2UWZTdDU1YUIzUTJvc0dkUVVxd20tY0tkckVZYlZkOGtHaTBxNXE2ZjU0eDBIM1c2WFh0YllnWUo1WHhzejBscUozYVEwS0lBZzFZWW9TeUl1SUJBZ2FxaDV4NjNfTE9LYnhvUC1jWDRVY1RDTU5qY1I3M3RjV3V4Z3A0TUxyWjY5ZUhxdmRVWGVFd1h3ZkR2Z1k2TGxkSnBkaTI1QWRCbTVXTDIyYlowaWJUWU5QMHFtUzFkUmZ5TUIyVzNRaVpkODdmYWI3Qnc?oc=5",
+          "source": "EssentiallySports",
+          "keywords": [
+            "injury"
+          ],
+          "published": "2026-08-17"
+        },
+        {
+          "headline": "Injured Lyles shuts down season, will miss Ultimate Championships",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTVlDWDUzRHd0VVNzLVJlQ0tGTmUxM1RzbUEzM2I2VUlzZFJCQVRiY2xNaDcxNlZ5dXNpOF9Wc1lrT2U2ek0wR3NDLUlldkt4bGVrZWVWbnRjVzh0UnhKUWxodGtOMTJ3cDZkWTNpN29wbFFIbDVDX0lYQ09lV1JrOW5ERE14T09nZ2JrZFZ5bTVRbXJXOGlGRGI5MDlKLVFycXJDeUowOA?oc=5",
+          "source": "FASTBREAK.com.ph",
+          "keywords": [
+            "will miss",
+            "shuts down season",
+            "injured"
+          ],
+          "published": "2026-09-05"
+        }
+      ]
+    },
+    "Sachin Yadav": {
+      "status": "watch",
+      "disciplines": [
+        "men_JT"
+      ],
+      "matches": [
+        {
+          "headline": "Sachin Yadav Undergoes Elbow Surgery, Misses World Athletics Ultimate Championships",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQS2dlNDJaQm8wZC1tcjBjQlhYYU1kVklJNmJBclduVk5qaUJSajRCOEdndkNWbG5JNFVZUmQ3VDVUNWIxeldITzlDdEZSdVpTNHM1VVR1TmNHb29laVl3dDZkb3JVT0Z6d0lRaVpkeTh6djhRZUNsUFFET19PZ2ktaU5aRzVlR0VkSkR3OWpWVXlLMXlIMUU0ZUFaNGZjalB2RGZsYzNwamVaU2hnRjhlV1dhemtlZThPejNVZlItSnfSAcMBQVVfeXFMTXlEcGZ4ODBEWXZXaklpUkwteVVsUllYcF9ieEFMYVZ6emlIdWVDc1ZOU2hyX0FPdWg2cWZvcGUtYlZKaU03Tm1BdGhDaGJjazRKaFNHQ1BWYmdJcVlUNnRCMEplRUtNQWZHcnpzTWh4NVNZcVBPWnVEeGNIM3FyWlpyM0FGV0JPTXRDNWlkaDJiY2hlM2l2R2tkLVltajZXMUV1MXRWMUdqb0hWWVdRb3hySW9WNTZmZlNrTmR2YUtBVWxr?oc=5",
+          "source": "Rediff",
+          "keywords": [
+            "surgery"
+          ],
+          "published": "2026-09-03"
+        }
+      ]
+    },
+    "Salah Eddine Ben Yazide": {
+      "status": "watch",
+      "disciplines": [
+        "men_3000sc"
+      ],
+      "matches": [
+        {
+          "headline": "Day 2 Brussels Diamond League Final Results",
+          "url": "https://www.letsrun.com/news/2026/09/day-2-brussels-diamond-league-final-results/",
+          "source": "letsrun_results",
+          "keywords": [
+            "dnf"
+          ]
+        }
+      ]
+    },
+    "Tsige Duguma": {
+      "status": "watch",
+      "disciplines": [
+        "women_1500m",
+        "women_800m"
+      ],
+      "matches": [
+        {
+          "headline": "Day 2 Brussels Diamond League Final Results",
+          "url": "https://www.letsrun.com/news/2026/09/day-2-brussels-diamond-league-final-results/",
+          "source": "letsrun_results",
+          "keywords": [
+            "dnf"
+          ]
+        }
+      ]
+    },
+    "Birke Haylom": {
+      "status": "watch",
+      "disciplines": [
+        "women_1500m"
+      ],
+      "matches": [
+        {
+          "headline": "Day 2 Brussels Diamond League Final Results",
+          "url": "https://www.letsrun.com/news/2026/09/day-2-brussels-diamond-league-final-results/",
+          "source": "letsrun_results",
+          "keywords": [
+            "dnf"
+          ]
+        }
+      ]
+    }
+  },
+  "superseded": [
+    {
+      "athlete": "Keely Hodgkinson",
+      "flagged_on": "2026-09-02",
+      "returned_on": "2026-09-07"
+    }
+  ]
 }

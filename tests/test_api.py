@@ -315,7 +315,10 @@ def _status_env(monkeypatch, *, in_field=False, standings=None, injury=None,
     monkeypatch.setattr(api, "load_h2h_vs_rivals", lambda k, n, rivals: h2h or [])
     monkeypatch.setattr(api, "load_injury_flags", lambda: injury or {})
     monkeypatch.setattr(api, "toplist_entry", lambda k, n: (*toplist, "https://wa/x"))
-    monkeypatch.setattr(api, "load_athlete_history", lambda k, n: ([], None))
+    # Signature note: load_athlete_history now takes an optional profile_url and
+    # returns (history, year, condensed, total) -- the season chart reads WA's
+    # full per-athlete results, not just the Diamond League meetings file.
+    monkeypatch.setattr(api, "load_athlete_history", lambda *a, **k: ([], None, False, 0))
     if in_field:
         disc = {"id": "men_100m", "label": "Men's 100m",
                 "athletes": [{"name": "Noah LYLES", "mark": "9.79"}]}
@@ -454,13 +457,21 @@ def test_a_removal_with_no_headline_still_appears_in_the_news(monkeypatch):
     assert items[0]["keywords"] == ["withdraws"]
 
 
-def test_news_still_dedupes_one_article_across_several_athletes(monkeypatch):
+def test_one_article_about_two_athletes_gives_each_of_them_a_row(monkeypatch):
+    """Replaces an earlier test that asserted the opposite, deliberately.
+
+    The feed used to dedupe by URL and emit ONE row for a shared article, which
+    meant the second athlete vanished -- and which athlete survived depended on
+    dictionary order. Grouping by athlete is the fix: the article appears under
+    both, once each, and neither is lost."""
     shared = {"headline": "Two athletes out", "url": "https://same", "source": "letsrun"}
     monkeypatch.setattr(api, "load_injury_flags", lambda: {
         "A": {"status": "watch", "disciplines": [], "matches": [dict(shared)]},
         "B": {"status": "watch", "disciplines": [], "matches": [dict(shared)]},
     })
-    assert len(api.build_news()) == 1
+    items = api.build_news()
+    assert [i["athlete"] for i in items] == ["A", "B"]
+    assert all(len(i["articles"]) == 1 for i in items)
 
 
 # ---- non-qualified athlete profiles (HANDOFF 0k) ----
@@ -691,3 +702,152 @@ def test_get_photo_focus_sends_a_user_agent(monkeypatch):
     assert out == {"x": 50.0, "y": 40.0}
     assert captured["headers"] is api.WM_HEADERS
     assert "User-Agent" in captured["headers"]
+
+
+# --- Injury flags on the Ultimate projections (added 2026-09-08) --------------
+#
+# The Ultimate page carried no injury information at all: injury_flags.json was
+# only ever read for the Diamond League rows, so an athlete flagged by the check
+# still showed a clean podium chance in Budapest. These pin the attach, and the
+# deliberate decision NOT to drop the row.
+
+_FLAGS = {
+    "Josh Hoey": {
+        "status": "watch",
+        "matches": [{"headline": "Hoey nursing a calf strain",
+                     "url": "https://letsrun.test/hoey", "source": "letsrun"}],
+    },
+    "Emmanuel Wanyonyi": {
+        "status": "remove",
+        "matches": [{"headline": "Wanyonyi withdraws from Budapest",
+                     "url": "https://aw.test/wanyonyi", "source": "athleticsweekly"}],
+    },
+}
+
+_PROJECTIONS = [{
+    "discKey": "men_800m",
+    "athletes": [
+        {"rank": 1, "name": "Emmanuel WANYONYI", "podiumChance": 61.0},
+        {"rank": 2, "name": "Josh HOEY", "podiumChance": 40.0},
+        {"rank": 3, "name": "Marco AROP", "podiumChance": 33.0},
+    ],
+}]
+
+
+def _attach(monkeypatch, flags=None):
+    monkeypatch.setattr(api, "load_injury_flags", lambda: _FLAGS if flags is None else flags)
+    return api.attach_ultimate_injuries(_PROJECTIONS)[0]["athletes"]
+
+
+def test_a_flagged_ultimate_athlete_carries_the_headline_and_its_source(monkeypatch):
+    hoey = next(a for a in _attach(monkeypatch) if a["name"] == "Josh HOEY")
+    assert hoey["injuryWatch"] is True
+    assert hoey["injuryStatus"] == "watch"
+    assert "calf strain" in hoey["injuryReason"]
+    assert hoey["injuryUrl"] == "https://letsrun.test/hoey"
+
+
+def test_a_confirmed_withdrawal_is_marked_but_still_listed(monkeypatch):
+    # World Athletics publishes this field and the page says so. Deleting the
+    # row would make that claim false, so the athlete is flagged, not dropped.
+    athletes = _attach(monkeypatch)
+    assert [a["name"] for a in athletes] == [
+        "Emmanuel WANYONYI", "Josh HOEY", "Marco AROP"]
+    wanyonyi = athletes[0]
+    assert wanyonyi["injuryStatus"] == "remove"
+    assert wanyonyi["podiumChance"] == 61.0
+
+
+def test_an_unflagged_athlete_gains_no_injury_keys(monkeypatch):
+    arop = next(a for a in _attach(monkeypatch) if a["name"] == "Marco AROP")
+    assert "injuryWatch" not in arop
+
+
+def test_no_flags_at_all_returns_the_projections_untouched(monkeypatch):
+    monkeypatch.setattr(api, "load_injury_flags", dict)
+    assert api.attach_ultimate_injuries(_PROJECTIONS) is _PROJECTIONS
+
+
+def test_the_match_is_on_the_normalized_name_not_the_all_caps_one(monkeypatch):
+    # predictions.json writes "Josh HOEY"; injury_flags.json keys on "Josh Hoey".
+    # Without normalize_athlete_name in between, nothing would ever match.
+    assert api.normalize_athlete_name("Josh HOEY") in _FLAGS
+
+
+def test_the_feed_lists_one_row_per_athlete_not_per_article(monkeypatch):
+    # It used to be one row per article, so a well-covered withdrawal stacked
+    # up near-duplicates: Hodgkinson took the top three rows on 2026-09-08,
+    # one event, three outlets. Now the athlete is the row and the reporting
+    # folds behind it.
+    monkeypatch.setattr(api, "load_injury_flags", lambda: {
+        "Keely Hodgkinson": {"status": "remove", "disciplines": ["women_800m"], "matches": [
+            {"headline": "Hodgkinson withdraws from Zurich", "url": "https://a.test/1",
+             "source": "bbc", "published": "2026-08-24", "keywords": ["withdraws"]},
+            {"headline": "Hodgkinson out of Zurich Diamond League", "url": "https://b.test/2",
+             "source": "thesun", "published": "2026-09-02", "keywords": ["withdraws"]},
+        ]},
+    })
+    items = api.build_news(limit=20)
+    assert len(items) == 1
+    assert items[0]["athlete"] == "Keely Hodgkinson"
+    assert len(items[0]["articles"]) == 2
+    # Newest first, so the collapsed row leads with the latest thing known.
+    assert items[0]["articles"][0]["published"] == "2026-09-02"
+    assert items[0]["latest"] == "2026-09-02"
+
+
+def test_one_article_naming_three_athletes_appears_under_each(monkeypatch):
+    # A results recap flags every DNF in it. Grouping by athlete is what makes
+    # all three visible; the per-article version showed one, chosen by dict order.
+    shared = {"headline": "Day 2 Brussels Diamond League Final Results",
+              "url": "https://letsrun.test/day2", "source": "letsrun_results",
+              "keywords": ["dnf"]}
+    monkeypatch.setattr(api, "load_injury_flags", lambda: {
+        "Salah Eddine Ben Yazide": {"status": "watch", "disciplines": ["men_3000sc"],
+                                    "matches": [dict(shared)]},
+        "Tsige Duguma":            {"status": "watch", "disciplines": ["women_800m"],
+                                    "matches": [dict(shared)]},
+        "Birke Haylom":            {"status": "watch", "disciplines": ["women_1500m"],
+                                    "matches": [dict(shared)]},
+    })
+    items = api.build_news(limit=20)
+    assert {i["athlete"] for i in items} == {
+        "Salah Eddine Ben Yazide", "Tsige Duguma", "Birke Haylom"}
+    assert all(len(i["articles"]) == 1 for i in items)
+
+
+def test_duplicate_coverage_of_one_story_is_collapsed(monkeypatch):
+    monkeypatch.setattr(api, "load_injury_flags", lambda: {
+        "Noah Lyles": {"status": "remove", "disciplines": ["men_100m"], "matches": [
+            {"headline": "Lyles ends season", "url": "https://x.test/1", "source": "cbc"},
+            {"headline": "Lyles ends season", "url": "https://x.test/1", "source": "cbc"},
+        ]},
+    })
+    assert len(api.build_news(limit=20)[0]["articles"]) == 1
+
+
+def test_a_flagged_athlete_with_no_usable_headline_still_gets_a_row(monkeypatch):
+    monkeypatch.setattr(api, "load_injury_flags", lambda: {
+        "Someone Flagged": {"status": "remove", "disciplines": ["men_100m"],
+                            "matches": [{"url": None, "headline": None}]},
+    })
+    items = api.build_news(limit=20)
+    assert len(items) == 1 and len(items[0]["articles"]) == 1
+
+
+def test_withdrawals_sort_above_watches(monkeypatch):
+    monkeypatch.setattr(api, "load_injury_flags", lambda: {
+        "A Watch":  {"status": "watch", "disciplines": [], "matches": [
+            {"headline": "h", "url": "u1", "source": "s", "published": "2026-09-07"}]},
+        "B Remove": {"status": "remove", "disciplines": [], "matches": [
+            {"headline": "h", "url": "u2", "source": "s", "published": "2026-08-01"}]},
+    })
+    assert [i["athlete"] for i in api.build_news(limit=20)] == ["B Remove", "A Watch"]
+
+
+def test_the_flags_file_records_why_a_flag_was_cleared(monkeypatch):
+    # "Why is X not flagged?" should have an answer in the file rather than
+    # being an absence. injury_checker writes `superseded`; nothing downstream
+    # should choke on it being there, or on it being missing.
+    monkeypatch.setattr(api, "load_injury_flags", lambda: {})
+    assert api.build_news(limit=20) == []
