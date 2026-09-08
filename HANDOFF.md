@@ -412,16 +412,28 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 
 ## Next Steps
 
-> ### READ THIS FIRST — updated 2026-09-08. There is a LARGE body of finished work that is deliberately NOT PUSHED.
+> ### READ THIS FIRST — SHIPPED 2026-09-08. The long-held update is live.
 >
-> **Do not push it.** The user has asked repeatedly and explicitly that none of this reaches the live site
-> until they say so. It is finished and verified, it is simply being held. If you are picking this up cold,
-> the working trees are dirty *on purpose*.
+> It was held back deliberately for a day and a half; the user gave the word on 2026-09-08
+> and it went out. **`8d059e2b`** on athletics-predictor, **`bc76592`** on
+> track-insights-main, both on `main`, both pushed. Render redeployed the API and Vercel
+> the frontend. Working trees are clean; there is nothing being withheld any more.
 >
-> **What IS live** (pushed, in this order): `95d6fdd1` static API snapshot + the Finals data it needed,
-> `8328906e` the photo fixes. On the frontend, `a5f7da6`. Everything below that is local only.
+> **The accuracy decision was settled by shipping.** The site now advertises **62.4%**
+> where it said 72.8%. That is not a regression — it is measured across every championship
+> rather than one meeting a year, and Diamond League Finals alone are 70.6%. Asked whether
+> to reword the Help page first or ship, the user chose to ship, so this is a decision on
+> the record rather than something that slipped through. A paragraph was added to How it
+> works at the same time: neither figure knows who will turn up, because both are scored
+> only on athletes who reached a start line, and three of the model's projected Budapest
+> winners are currently flagged as out or doubtful.
 >
-> **What is held back, all verified:**
+> **One thing a reader should know:** the predictions themselves come from the 2026-09-05
+> scrape. The toplists were three days old at the moment of shipping, going into an
+> 11 September championship. A full refresh is the five commands in How to Run, and the
+> injury check on top; it was not run because the ship checklist does not call for one.
+>
+> **What went out:**
 >
 > | Area | What it is |
 > |---|---|
@@ -444,10 +456,10 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 > localised with it — see the three dated sections further down. Frontend-only; the ship steps
 > below are unchanged.
 >
-> **State (2026-09-08):** 399 Python tests green, `tsc` clean, `npm run build` clean, eslint clean on every
-> file this work touched, EN/FR locales at parity (742 keys each).
+> **State at ship (2026-09-08):** **413** Python tests green, `tsc` clean, `npm run build` clean,
+> eslint clean on every file this work touched, EN/FR locales at parity (**748** keys each).
 >
-> **TO SHIP IT, in this order** (the user will say when):
+> **HOW IT WAS SHIPPED**, kept because it is the procedure for the next one too:
 > 1. `python src/build_static_api.py` — without this the site serves the OLD model's numbers while the API
 >    serves the new ones, and nothing looks broken.
 > 2. Commit **both** repos. `data/card_photo_cache.json` must go in or every card falls back to initials,
@@ -459,7 +471,7 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 > `outputs/pooled/` (a 33 MB byte-identical copy of the model now in `outputs/`). They were the
 > side-by-side demo rig; the real thing is in place, so they were only ever going to confuse.
 >
-> **Still open and NOT done**, so nobody assumes otherwise: the site will advertise **62.4%** where it used
+> **CLOSED 2026-09-08 by shipping** (kept for the reasoning): the site advertises **62.4%** where it used
 > to say 72.8%. That is not a regression — it is the accuracy measured across every championship rather than
 > one meeting a year (Diamond League Finals alone are 70.6%). It needs a decision about how the Help page
 > states it before launch, and that decision is the user's.
