@@ -157,3 +157,56 @@ def _stub():
         "year": [2024, 2024], "season_best": [9.9, 10.1], "dl_top3": [1, 0],
         "dl_rank": [1, 0],
     })
+
+
+# ---------------------------------------------------------------------------
+# Tier names across BOTH eras. The training set was extended back to 2009 on
+# 2026-09-08, and those seasons use the IAAF-era names: "IAAF World
+# Championships" rather than "World Athletics Championships", and "Barcelona
+# European Championships" rather than "European Athletics Championships".
+#
+# Neither matched the original patterns, so all five pre-2018 Worlds and three
+# of the four pre-2018 Euros would have been filed as `tour` -- and `tour` is
+# exactly what the shipped model's --tiers argument excludes. The labels would
+# have been scraped, written, and then silently dropped.
+#
+# Every string below is real, from WA's calendar for 2009-2025.
+# ---------------------------------------------------------------------------
+
+import pytest
+
+
+@pytest.mark.parametrize("competition", [
+    "IAAF World Championships",                    # 2009, 2011, 2013, 2015
+    "IAAF World Championships in Athletics",       # 2017, 2019
+    "World Athletics Championships, Oregon 2022",  # 2022
+    "The XXX Olympic Games",                       # 2012
+    "The XXXIII Olympic Games",                    # 2024
+])
+def test_every_era_of_a_global_final_is_global(competition):
+    assert fl.tier_of(competition) == "global"
+
+
+@pytest.mark.parametrize("competition", [
+    "Barcelona European Championships",   # 2010
+    "Helsinki European Championships",    # 2012
+    "Zürich European Championships",  # 2014
+    "European Athletics Championships",   # 2016 onwards
+    "IAAF Continental Cup",               # 2018
+])
+def test_every_era_of_a_continental_final_is_continental(competition):
+    assert fl.tier_of(competition) == "continental"
+
+
+@pytest.mark.parametrize("competition", [
+    "Paavo Nurmi Games",
+    "60th Ostrava Golden Spike",
+    "World Athletics Continental Tour - Beijing",
+    "USATF Golden Games",
+    "Gyulai István Memorial - Hungarian Athletics Grand Prix",
+])
+def test_an_invitational_is_still_only_tour(competition):
+    """The widened patterns must not start swallowing the tier they were
+    widened past. "World Athletics Continental Tour - Beijing" is the one that
+    comes closest, and it is not a World Championships."""
+    assert fl.tier_of(competition) == "tour"

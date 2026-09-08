@@ -126,17 +126,112 @@ def project_event(event, model, scaler, feature_cols):
         "scored": len(ranked),
         "unscored": [a["name"] for a in event["athletes"] if _key(a["name"]) not in scored],
         "athletes": ranked,
+        # Qualified for this event and NOT on the entry list. Named rather than
+        # silently dropped: several of them were this projection's own top
+        # picks yesterday, and a reader who remembers that deserves to be told
+        # where they went.
+        "notEntered": event.get("notEntered") or [],
+        "fieldSource": event.get("fieldSource") or "qualification",
     }
+
+
+EVENT_PATH = os.path.join(BASE_DIR, "data", "ultimate", "event.json")
+
+
+def double_entries(field):
+    """{athlete key: [other event labels]}, and which of those CANNOT both be
+    contested.
+
+    WA's qualification list says who is ELIGIBLE, not who is entered, and 11
+    athletes qualified in two events. Listing all of them in both projections
+    reads as a claim that they will run both. Most of them plausibly will: a
+    sprinter in the 100m and 200m on different evenings is an ordinary
+    championship double, and so is 1500m/5000m two days apart.
+
+    One is not. Rai Benjamin is qualified in the 400m and the 400m hurdles, and
+    WA's own timetable puts the 400m FINAL and the 400mH SEMI-FINAL in the same
+    session on 12 September, 99 minutes apart. Reported by the user, whose
+    information was that the previews have him in the flat 400m only.
+
+    The rule is that one: two events sharing a session. It is WA's own
+    scheduling, not a judgement about the athlete, and measured across the whole
+    field it flags exactly the one case and none of the legitimate doubles.
+    Which event he actually runs is NOT decided here -- entries are not
+    published (`isStartlistPublished` is false on all 40 phases), so the page
+    says what is known and lets the reader draw the conclusion."""
+    try:
+        with open(EVENT_PATH, encoding="utf-8") as f:
+            timetable = json.load(f).get("timetable") or []
+    except (OSError, json.JSONDecodeError):
+        timetable = []
+
+    sex_word = {"M": "Men", "W": "Women"}
+    sessions = {}
+    for phase in timetable:
+        name = (phase.get("discipline") or {}).get("name")
+        stamp = phase.get("phaseDateAndTime") or ""
+        if not name or not stamp:
+            continue
+        slot = (stamp[:10], phase.get("phaseSessionName"))
+        sessions.setdefault((phase.get("sexName"), name), set()).add(slot)
+
+    def slots(event):
+        label = event.get("disciplineLabel") or ""
+        discipline = label.split("'s ", 1)[-1] if "'s " in label else label
+        return sessions.get((sex_word.get(event.get("sex")), discipline), set())
+
+    entries = {}
+    for event in field:
+        for athlete in event.get("athletes") or []:
+            entries.setdefault(_key(athlete["name"]), []).append(event)
+
+    out = {}
+    for key, events in entries.items():
+        if len(events) < 2:
+            continue
+        out[key] = [
+            {"label": event.get("disciplineLabel"),
+             "discKey": event.get("discKey"),
+             # True when this event shares a session with another of theirs, so
+             # contesting both is not a hard double but an impossible one.
+             "clashes": any(slots(event) & slots(other)
+                            for other in events if other is not event)}
+            for event in events
+        ]
+    return out
 
 
 def build():
     model, scaler, feature_cols = load_model()
     field = us.fetch_qualified_field()
+
+    # WA's ENTRY list, when it exists, outranks their qualification list.
+    # Qualification says who is eligible; entries say who is running, and on
+    # 2026-09-08 they disagreed about 19 athletes each way -- including Tara
+    # Davis-Woodhall, who was this projection's number one in the women's long
+    # jump at 56.6% and is not entered. Falling back to qualification when the
+    # entry list is unavailable is right; preferring it when both exist is not.
+    entries = us.fetch_entry_lists()
+    if entries:
+        field = [us.apply_entry_list(e, entries[e["disciplineLabel"]])
+                 if e.get("disciplineLabel") in entries else e
+                 for e in field]
+        swapped = sum(1 for e in field if e.get("fieldSource") == "entries")
+        dropped = sum(len(e.get("notEntered") or []) for e in field)
+        print(f"  entry list applied to {swapped} events; "
+              f"{dropped} qualified athletes are not entered")
+
+    doubles = double_entries(field)
     projections = []
     skipped = []
     for event in field:
         out = project_event(event, model, scaler, feature_cols)
         if out:
+            for athlete in out["athletes"]:
+                others = [o for o in doubles.get(_key(athlete["name"]), [])
+                          if o.get("discKey") != out["discKey"]]
+                if others:
+                    athlete["alsoQualifiedIn"] = others
             projections.append(out)
         else:
             skipped.append(event.get("disciplineLabel"))

@@ -1244,11 +1244,1159 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,5.62,,Austin MILLER,01 JUN 1994,USA,7.,,Athletissima Lausanne,19 AUG 2025,,,2025,,dl_meeting
 ,5.42,,Sondre GUTTORMSEN,01 JUN 1999,NOR,9.,,Athletissima Lausanne,19 AUG 2025,,,2025,,dl_meeting
 ,NM,,Kurtis MARSCHALL,25 APR 1997,AUS,,,Athletissima Lausanne,19 AUG 2025,,,2025,,dl_meeting
-,5.85,,Sam KENDRICKS,07 SEP 1992,USA,1.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,5.80,,Renaud LAVILLENIE,18 SEP 1986,FRA,2.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,5.65,,Shawnacy BARBER,27 MAY 1994,CAN,3.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,5.65,,Timur MORGUNOV,12 OCT 1996,ANA,4.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,5.10,,Valco VAN WYK,26 JUL 2000,RSA,6.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
+1.0,6.04,,Brad WALKER,21 JUN 1981,USA,1,,"Eugene, OR (USA)",08 JUN 2008,1278.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14254050,toplist
+2.0,6.01,,Yevgeniy LUKYANENKO,23 JAN 1985,RUS,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",01 JUL 2008,1270.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14223061,toplist
+3.0,6.00,,Steven HOOKER,16 JUL 1982,AUS,1,,Perth (AUS),27 JAN 2008,1267.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14179504,toplist
+4.0,5.83,,Denys YURCHENKO,27 JAN 1978,UKR,1,,Kyiv (UKR),03 JUL 2008,1220.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14230804,toplist
+5.0,5.82,,Maksym MAZURYK,02 APR 1983,UKR,1,,Yalta (UKR),06 JUN 2008,1217.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14230283,toplist
+6.0,5.81,,Igor PAVLOV,18 JUL 1979,RUS,2,,"Schleyer Halle, Stuttgart (GER) (i)",02 FEB 2008,1214.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14223486,toplist
+6.0,5.81,,Tim LOBINGER,03 SEP 1972,GER,1,,Stockholm (SWE) (i),21 FEB 2008,1214.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14193205,toplist
+6.0,5.81,,Sergey KUCHERYANU,30 JUN 1985,RUS,1,,Dessau (GER),30 MAY 2008,1214.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14222889,toplist
+6.0,5.81,,Alexander STRAUB,14 OCT 1983,GER,1,,"Wattenscheid, Bochum (GER)",01 AUG 2008,1214.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14194400,toplist
+6.0,5.81,,Renaud LAVILLENIE,18 SEP 1986,FRA,1f1,,Aulnay-sous-Bois (FRA) (i),05 DEC 2008,1214.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14185853,toplist
+11.0,5.80,,Derek MILES,28 SEP 1972,USA,1,,"Reno, NV (USA) (i)",04 JAN 2008,1212.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14246081,toplist
+11.0,5.80,,Jérôme CLAVIER,03 MAY 1983,FRA,1,,Limoges (FRA) (i),02 FEB 2008,1212.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14183918,toplist
+11.0,5.80,,Daniel ECKER,21 JUL 1977,GER,2,,Sindelfingen (GER) (i),23 FEB 2008,1212.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14191946,toplist
+11.0,5.80,,Giovanni LANARO,27 SEP 1981,MEX,1,,"Modesto, CA (USA)",10 MAY 2008,1212.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14213017,toplist
+11.0,5.80,,Raphael HOLZDEPPE,28 SEP 1989,GER,2,,Biberach (GER),28 JUN 2008,1212.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14192581,toplist
+11.0,5.80,,Jake PAULI,15 JUN 1979,USA,1f1,,"Champaign, IL (USA) (i)",19 JUL 2008,1212.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14248094,toplist
+17.0,5.76,,Fabian SCHULZE,07 MAR 1984,GER,3,,"Schleyer Halle, Stuttgart (GER) (i)",02 FEB 2008,1201.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14194184,toplist
+17.0,5.76,,Malte MOHR,24 JUL 1986,GER,1,,Zary (POL),01 JUN 2008,1201.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14193417,toplist
+19.0,5.75,,Pavel GERASIMOV,29 MAY 1979,RUS,3,,Moskva (RUS) (i),27 JAN 2008,1198.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14222258,toplist
+19.0,5.75,,Tobias SCHERBARTH,17 AUG 1985,GER,2,,Chemnitz (GER) (i),29 FEB 2008,1198.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14194016,toplist
+19.0,5.75,,Mark HOLLIS,01 DEC 1984,USA,1,,"Champaign, IL (USA)",30 APR 2008,1198.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14240984,toplist
+19.0,5.75,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS,2,,Kazan (RUS),19 JUL 2008,1198.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14224142,toplist
+23.0,5.72,,Alhaji JENG,13 DEC 1981,SWE,1,,Karlskrona (SWE),16 JUN 2008,1190.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14227656,toplist
+24.0,5.71,,Leonid KIVALOV,01 APR 1988,RUS,3,,Stockholm (SWE) (i),21 FEB 2008,1187.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14222676,toplist
+24.0,5.71,,Jeremy SCOTT,01 MAY 1981,USA,1,,"Jonesboro, AR (USA) (i)",13 MAR 2008,1187.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14250826,toplist
+24.0,5.71,,Steve LEWIS,20 MAY 1986,GBR,1,,Tsaotun (TPE) (i),14 MAR 2008,1187.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14189911,toplist
+24.0,5.71,,Jeff HARTWIG,25 SEP 1967,USA,1,,"Jonesboro, AR (USA)",31 MAY 2008,1187.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14240154,toplist
+24.0,5.71,,Timothy MACK,15 SEP 1972,USA,1,,"Van Nuys, CA (USA)",01 JUN 2008,1187.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14244649,toplist
+24.0,5.71,,Romain MESNIL,13 JUN 1977,FRA,1,,Albi (FRA),26 JUL 2008,1187.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14186500,toplist
+30.0,5.70,,Toby STEVENSON,19 NOV 1976,USA,2,,"Reno, NV (USA) (i)",04 JAN 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14252242,toplist
+30.0,5.70,,Björn OTTO,16 OCT 1977,GER,2,,Dormagen (GER) (i),25 JAN 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14193604,toplist
+30.0,5.70,,Tommy SKIPPER,14 SEP 1984,USA,1,,"MSG, New York, NY (USA) (i)",01 FEB 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14251437,toplist
+30.0,5.70,,Richard SPIEGELBURG,12 AUG 1977,GER,1,,Köln (GER),18 MAY 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14194330,toplist
+30.0,5.70,,Oleksandr KORCHMID,22 JAN 1982,UKR,3,,Yalta (UKR),06 JUN 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14230103,toplist
+30.0,5.70,,Spas BUKHALOV,14 NOV 1980,BUL,1,,Sofia (BUL),14 JUN 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14175059,toplist
+30.0,5.70,,Lars BÖRGELING,16 APR 1979,GER,1,,Jerez de la Frontera (ESP),24 JUN 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14191652,toplist
+30.0,5.70,,Daichi SAWANO,16 SEP 1980,JPN,1,,Kawasaki (JPN),28 JUN 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14205675,toplist
+30.0,5.70,,Lázaro BORGES,19 JUN 1986,CUB,1,,La Habana (CUB),28 JUN 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14169675,toplist
+30.0,5.70,,Jan KUDLIČKA,29 APR 1988,CZE,1,,Praha (CZE),09 JUL 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14168624,toplist
+30.0,5.70,,Przemysław CZERWIŃSKI,28 JUL 1983,POL,1,,Szczecin (POL),30 JUL 2008,1184.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14216520,toplist
+41.0,5.65,,Rory QUILLER,17 APR 1984,USA,1,,"Boston, MA (USA) (i)",08 MAR 2008,1171.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14249000,toplist
+41.0,5.65,,Leonid ANDREYEV,06 OCT 1983,UZB,1,,Tashkent (UZB),23 MAY 2008,1171.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14255899,toplist
+41.0,5.65,,Damiel DOSSÉVI,03 FEB 1983,FRA,1,,Heusden-Zolder (BEL),20 JUL 2008,1171.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14184433,toplist
+41.0,5.65,,Giuseppe GIBILISCO,05 JAN 1979,ITA,6q2,,"National Stadium, Beijing (CHN)",20 AUG 2008,1171.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14200460,toplist
+45.0,5.63,,Brian MONDSCHEIN,09 JAN 1983,USA,2,,"Jonesboro, AR (USA)",31 MAY 2008,1165.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14246367,toplist
+45.0,5.63,,Mikko LATVALA,08 JUL 1980,FIN,1,,Lapua (FIN),08 JUN 2008,1165.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14182175,toplist
+45.0,5.63,,Jesper FRITZ,13 SEP 1985,SWE,1,,Sollentuna (SWE),08 JUL 2008,1165.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14227531,toplist
+48.0,5.62,,Feiliang LIU,27 MAR 1985,CHN,1,,Shanghai (CHN) (i),27 JAN 2008,1162.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14171950,toplist
+49.0,5.61,,Russ BULLER,10 SEP 1978,USA,1,,Windsor (CAN) (i),12 JAN 2008,1160.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14233759,toplist
+49.0,5.61,,Fábio GOMES DA SILVA,04 AUG 1983,BRA,7,,Donetsk (UKR) (i),16 FEB 2008,1160.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14175576,toplist
+49.0,5.61,,Graeme HOSTE,01 MAY 1986,USA,1,,"Seattle, WA (USA) (i)",01 MAR 2008,1160.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14241147,toplist
+49.0,5.61,,Hendrik GRUBER,28 SEP 1986,GER,2,,Zary (POL),01 JUN 2008,1160.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14192314,toplist
+49.0,5.61,,Paul BURGESS,14 AUG 1979,AUS,6,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",01 JUL 2008,1160.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14180019,toplist
+54.0,5.60,,Pavel PROKOPENKO,24 SEP 1987,RUS,2,,Moskva (RUS) (i),19 JAN 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14223648,toplist
+54.0,5.60,,Dmitriy KUPTSOV,09 NOV 1982,RUS,5,,Moskva (RUS) (i),09 FEB 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14222918,toplist
+54.0,5.60,,Adam PTÁČEK,08 OCT 1980,CZE,1,,Praha (CZE) (i),13 FEB 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14168383,toplist
+54.0,5.60,,Ray SCOTTEN,20 MAY 1983,USA,1,,"Fayetteville, AR (USA) (i)",16 FEB 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14250854,toplist
+54.0,5.60,,Kevin RANS,19 AUG 1982,BEL,2,,"FBK Stadium, Hengelo (NED)",24 MAY 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14177354,toplist
+54.0,5.60,,Viktor CHISTYAKOV,09 FEB 1975,RUS,2,,Torino (ITA),06 JUN 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14222009,toplist
+54.0,5.60,,Paul GENSIC,27 JUN 1982,USA,1,,"Chula Vista, CA (USA)",14 JUN 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14238635,toplist
+54.0,5.60,,Štěpán JANÁČEK,12 JUN 1977,CZE,2,,Plzeň (CZE),12 JUL 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14168798,toplist
+54.0,5.60,,Yoo-suk KIM,19 JAN 1982,KOR,1,,Leverkusen (GER),30 JUL 2008,1157.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14210324,toplist
+63.0,5.59,,Chris STEDDUM,21 MAY 1980,USA,3,,"Jonesboro, AR (USA)",31 MAY 2008,1154.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14252134,toplist
+64.0,5.56,,Mitch GREELEY,05 MAY 1986,USA,1f1,,Columbia (USA),03 MAY 2008,1146.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14239228,toplist
+65.0,5.55,,Jordan SCOTT,22 FEB 1988,USA,2,,"Fayetteville, AR (USA) (i)",16 FEB 2008,1143.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14250829,toplist
+65.0,5.55,,Jeff RYAN,08 DEC 1980,USA,2,,"Stockton, CA (USA)",16 FEB 2008,1143.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14250262,toplist
+65.0,5.55,,Jason COLWICK,25 JAN 1988,USA,1f2,,"Austin, TX (USA)",05 APR 2008,1143.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14235156,toplist
+65.0,5.55,,Takafumi SUZUKI,25 MAY 1987,JPN,1,,Numazu (JPN),19 APR 2008,1143.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14206007,toplist
+65.0,5.55,,Jure ROVAN,23 JAN 1975,SLO,2,,Dakar (SEN),17 MAY 2008,1143.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14225170,toplist
+65.0,5.55,,Aleksandr GRIPICH,21 SEP 1986,RUS,2,,Lapua (FIN),08 JUN 2008,1143.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14222376,toplist
+65.0,5.55,,Rens BLOM,01 MAR 1977,NED,3,,Leiria (POR),22 JUN 2008,1143.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14213690,toplist
+65.0,5.55,,Vesa RANTANEN,02 DEC 1975,FIN,1,,Kuortane (FIN),06 JUL 2008,1143.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14182449,toplist
+73.0,5.51,,Michal BALNER,12 SEP 1982,CZE,3,,Bad Oeynhausen (GER) (i),01 MAR 2008,1132.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14169131,toplist
+73.0,5.51,,Dustin DELEO,03 JAN 1986,USA,1,,"San Diego, CA (USA)",26 APR 2008,1132.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14236228,toplist
+73.0,5.51,,Justin NORBERG,18 JUL 1977,USA,1,,"San Diego, CA (USA)",26 APR 2008,1132.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14247300,toplist
+73.0,5.51,,Robert CALDWELL,31 JUL 1984,USA,1,,"Fort Worth, TX (USA)",16 MAY 2008,1132.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14234062,toplist
+73.0,5.51,,Adam PIERSON,30 JUN 1981,USA,1,,"New Braunfels, TX (USA)",30 MAY 2008,1132.0,men_PV,2008,https://worldathletics.org/athletes/united-states/adam-pierson-14248492,toplist
+73.0,5.51,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,4,,Zary (POL),01 JUN 2008,1132.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14217866,toplist
+73.0,5.51,,Łukasz MICHALSKI,02 AUG 1988,POL,2,,Hof (GER),20 JUN 2008,1132.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14217188,toplist
+73.0,5.51,,Wouter VAN WENGERDEN,16 FEB 1987,NED,4,,Hof (GER),20 JUN 2008,1132.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14214669,toplist
+81.0,5.50,,Artem KUPTSOV,22 APR 1984,RUS,1,,Chelyabinsk (RUS) (i),09 JAN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14222917,toplist
+81.0,5.50,,Fabrice FORTIN,02 FEB 1980,FRA,4,,Oyonnax (FRA) (i),12 JAN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14184830,toplist
+81.0,5.50,,Charles ANDUREU,13 FEB 1985,FRA,6,,Oyonnax (FRA) (i),12 JAN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14182894,toplist
+81.0,5.50,,Igor ALEKSEYEV,07 APR 1982,BLR,1,,Volgograd (RUS) (i),19 JAN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14177035,toplist
+81.0,5.50,,Adam KOLASA,02 AUG 1975,POL,5,,Dormagen (GER) (i),25 JAN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14216898,toplist
+81.0,5.50,,Joël SOLER,15 FEB 1982,FRA,5,,Limoges (FRA) (i),02 FEB 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14187686,toplist
+81.0,5.50,,Denis FEDAS,24 SEP 1985,UKR,6,,Eaubonne (FRA) (i),08 FEB 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14229895,toplist
+81.0,5.50,,Artem BURYA,11 APR 1986,RUS,8,,Moskva (RUS) (i),09 FEB 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14221937,toplist
+81.0,5.50,,Nicolas DURAND,23 JAN 1979,FRA,3,,Bordeaux (FRA) (i),17 FEB 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14184544,toplist
+81.0,5.50,,Andrej POLJANEC,10 NOV 1984,SLO,4,,Chemnitz (GER) (i),29 FEB 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14225156,toplist
+81.0,5.50,,Germán CHIARAVIGLIO,16 APR 1987,ARG,1,,Rosario (ARG),20 MAR 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14180477,toplist
+81.0,5.50,,Adam KEUL,27 JAN 1980,USA,1,,"Tallahassee, FL (USA)",21 MAR 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14242885,toplist
+81.0,5.50,,Brian DACUNHA,20 MAY 1980,USA,4,,"Stockton, CA (USA)",26 APR 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14235794,toplist
+81.0,5.50,,Derek MACKEL,18 NOV 1982,USA,1,,"Albuquerque, NM (USA)",03 MAY 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14244652,toplist
+81.0,5.50,,Maston WALLACE,02 JUL 1989,USA,1,,"Boulder, CO (USA)",18 MAY 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14254125,toplist
+81.0,5.50,,Vladimir LUKYANOV,1974,BLR,2,,Sochi (RUS),28 MAY 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/belarus/vladimir-lukyanov-14176740,toplist
+81.0,5.50,,Yevgeniy MIKHAYLICHENKO,13 FEB 1979,RUS,2,,Krasnodar (RUS),04 JUN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14223205,toplist
+81.0,5.50,,Darren NIEDERMEYER,02 APR 1982,USA,1,,"Jonesboro, AR (USA) (i)",08 JUN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14247218,toplist
+81.0,5.50,,Xavier TROMP,03 MAR 1984,FRA,1,,Pierre-Bénite (FRA),13 JUN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14187919,toplist
+81.0,5.50,,Paul LITCHFIELD,27 NOV 1980,USA,2q2,,"Eugene, OR (USA)",27 JUN 2008,1129.0,men_PV,2008,https://worldathletics.org/athletes/athlete=14244207,toplist
+1.0,6.06,,Steven HOOKER,16 JUL 1982,AUS,1f1,,"Boston, MA (USA) (i)",07 FEB 2009,1283.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14179504,toplist
+2.0,6.01,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,"Estádio Dr. Magalhães Pessoa, Leiria (POR)",21 JUN 2009,1270.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14185853,toplist
+3.0,5.85,,Romain MESNIL,13 JUN 1977,FRA,2,,"Olympiastadion, Berlin (GER)",22 AUG 2009,1225.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14186500,toplist
+4.0,5.82,,Yevgeniy LUKYANENKO,23 JAN 1985,RUS,2,,Donetsk (UKR) (i),15 FEB 2009,1217.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14223061,toplist
+4.0,5.82,,Jeremy SCOTT,01 MAY 1981,USA,1,,"Jonesboro, AR (USA) (i)",14 JUN 2009,1217.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14250826,toplist
+6.0,5.81,,Pavel GERASIMOV,29 MAY 1979,RUS,2,,Stockholm (SWE) (i),18 FEB 2009,1214.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14222258,toplist
+6.0,5.81,,Alhaji JENG,13 DEC 1981,SWE,3,,Stockholm (SWE) (i),18 FEB 2009,1214.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14227656,toplist
+6.0,5.81,,Alexander STRAUB,14 OCT 1983,GER,1,,Mannheim (GER),20 JUN 2009,1214.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14194400,toplist
+9.0,5.80,,Daniel ECKER,21 JUL 1977,GER,1,,Leipzig (GER) (i),21 FEB 2009,1212.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14191946,toplist
+9.0,5.80,,Malte MOHR,24 JUL 1986,GER,1,,Soest (GER),24 MAY 2009,1212.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14193417,toplist
+9.0,5.80,,Brad WALKER,21 JUN 1981,USA,2,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1212.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14254050,toplist
+9.0,5.80,,Maksym MAZURYK,02 APR 1983,UKR,4,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1212.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14230283,toplist
+13.0,5.76,,Tobias SCHERBARTH,17 AUG 1985,GER,1,,"Schleyer Halle, Stuttgart (GER) (i)",07 FEB 2009,1201.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14194016,toplist
+14.0,5.75,,Steve LEWIS,20 MAY 1986,GBR,1f1,,Manchester (GBR) (i),17 JAN 2009,1198.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14189911,toplist
+14.0,5.75,,Derek MILES,28 SEP 1972,USA,2,,"Eugene, OR (USA)",27 JUN 2009,1198.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14246081,toplist
+14.0,5.75,,Toby STEVENSON,19 NOV 1976,USA,4,,"Eugene, OR (USA)",27 JUN 2009,1198.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14252242,toplist
+14.0,5.75,,Aleksandr GRIPICH,21 SEP 1986,RUS,5,,"Olympiastadion, Berlin (GER)",22 AUG 2009,1198.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14222376,toplist
+14.0,5.75,,Damiel DOSSÉVI,03 FEB 1983,FRA,6,,"Olympiastadion, Berlin (GER)",22 AUG 2009,1198.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14184433,toplist
+14.0,5.75,,Björn OTTO,16 OCT 1977,GER,1,,Aachen (GER),02 SEP 2009,1198.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14193604,toplist
+20.0,5.72,,Jason COLWICK,25 JAN 1988,USA,1f1,,"Austin, TX (USA)",04 APR 2009,1190.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14235156,toplist
+21.0,5.71,,Giovanni LANARO,27 SEP 1981,MEX,4,,Stockholm (SWE) (i),18 FEB 2009,1187.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14213017,toplist
+21.0,5.71,,Łukasz MICHALSKI,02 AUG 1988,POL,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",10 JUN 2009,1187.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14217188,toplist
+23.0,5.70,,Paul BURGESS,14 AUG 1979,AUS,1f1,,Perth (AUS),11 JAN 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14180019,toplist
+23.0,5.70,,Oleksandr KORCHMID,22 JAN 1982,UKR,1f1,,Zaporozhye (UKR) (i),27 JAN 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14230103,toplist
+23.0,5.70,,Fabian SCHULZE,07 MAR 1984,GER,1f1,,Leipzig (GER) (i),01 FEB 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14194184,toplist
+23.0,5.70,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS,2,,Moskva (RUS) (i),13 FEB 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14224142,toplist
+23.0,5.70,,Tim LOBINGER,03 SEP 1972,GER,4,,Leipzig (GER) (i),21 FEB 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14193205,toplist
+23.0,5.70,,Viktor CHISTYAKOV,09 FEB 1975,RUS,1,,"Peace and Friendship Stadium, Piraeus (GRE) (i)",25 FEB 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14222009,toplist
+23.0,5.70,,Spas BUKHALOV,14 NOV 1980,BUL,5q,,"Oval Lingotto, Torino (ITA) (i)",07 MAR 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14175059,toplist
+23.0,5.70,,Daichi SAWANO,16 SEP 1980,JPN,1,,"Walnut, CA (USA)",18 APR 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14205675,toplist
+23.0,5.70,,Leonid ANDREYEV,06 OCT 1983,UZB,1,,Tashkent (UZB),21 MAY 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14255899,toplist
+23.0,5.70,,Sergey KUCHERYANU,30 JUN 1985,RUS,1,,Dessau (GER),02 JUN 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14222889,toplist
+23.0,5.70,,Timothy MACK,15 SEP 1972,USA,1,,"San Diego, CA (USA)",12 JUN 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14244649,toplist
+23.0,5.70,,Mark HOLLIS,01 DEC 1984,USA,5,,"Eugene, OR (USA)",27 JUN 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14240984,toplist
+23.0,5.70,,Feiliang LIU,27 MAR 1985,CHN,1,,Jinan (CHN),03 JUL 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14171950,toplist
+23.0,5.70,,Yansheng YANG,05 JAN 1988,CHN,2,,Jinan (CHN),03 JUL 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14170839,toplist
+23.0,5.70,,Darren NIEDERMEYER,02 APR 1982,USA,2f1,,"Champaign, IL (USA)",03 JUL 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14247218,toplist
+23.0,5.70,,Igor PAVLOV,18 JUL 1979,RUS,3,,Cheboksary (RUS),24 JUL 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14223486,toplist
+23.0,5.70,,Giuseppe GIBILISCO,05 JAN 1979,ITA,1,,Formia (ITA),24 JUL 2009,1184.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14200460,toplist
+40.0,5.66,,Michal BALNER,12 SEP 1982,CZE,1,,Praha (CZE) (i),21 FEB 2009,1173.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14169131,toplist
+40.0,5.66,,Kevin RANS,19 AUG 1982,BEL,1,,Heusden-Zolder (BEL),18 JUL 2009,1173.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14177354,toplist
+42.0,5.65,,Lázaro BORGES,19 JUN 1986,CUB,1,,La Habana (CUB),12 JUN 2009,1171.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14169675,toplist
+42.0,5.65,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,4,,"Estádio Dr. Magalhães Pessoa, Leiria (POR)",21 JUN 2009,1171.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14195089,toplist
+42.0,5.65,,Raphael HOLZDEPPE,28 SEP 1989,GER,1,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",19 JUL 2009,1171.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14192581,toplist
+45.0,5.62,,Luke CUTTS,13 FEB 1988,GBR,1f1,,Sheffield (GBR) (i),18 JAN 2009,1162.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14188965,toplist
+45.0,5.62,,Jérôme CLAVIER,03 MAY 1983,FRA,3f1,,Paris (FRA) (i),15 FEB 2009,1162.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14183918,toplist
+45.0,5.62,,Hendrik GRUBER,28 SEP 1986,GER,2,,Stellenbosch (RSA),14 APR 2009,1162.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14192314,toplist
+45.0,5.62,,Jeff RYAN,08 DEC 1980,USA,1,,"San Diego, CA (USA)",05 JUN 2009,1162.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14250262,toplist
+45.0,5.62,,Jan KUDLIČKA,29 APR 1988,CZE,1,,Praha (CZE),02 AUG 2009,1162.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14168624,toplist
+45.0,5.62,,Mateusz DIDENKOW,22 APR 1987,POL,1,,Otwock (POL),06 SEP 2009,1162.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14216550,toplist
+51.0,5.61,,Adam KOLASA,02 AUG 1975,POL,1f1,,Bad Oeynhausen (GER) (i),28 FEB 2009,1160.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14216898,toplist
+51.0,5.61,,Aleksandr AVERBUKH,01 OCT 1974,ISR,1,,Jerusalem (ISR),16 MAY 2009,1160.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14199210,toplist
+51.0,5.61,,Jesper FRITZ,13 SEP 1985,SWE,1,,Stockholm (SWE),31 JUL 2009,1160.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14227531,toplist
+51.0,5.61,,Denis GOOSSENS,12 DEC 1987,BEL,1,,Ninove (BEL),08 AUG 2009,1160.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14177531,toplist
+55.0,5.60,,Lars BÖRGELING,16 APR 1979,GER,5,,Leipzig (GER) (i),21 FEB 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14191652,toplist
+55.0,5.60,,Brian MONDSCHEIN,09 JAN 1983,USA,1,,"Blacksburg, VA (USA) (i)",07 MAR 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14246367,toplist
+55.0,5.60,,Scott ROTH,25 JUN 1988,USA,1,,"Eugene, OR (USA)",16 MAY 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14250090,toplist
+55.0,5.60,,Vesa RANTANEN,02 DEC 1975,FIN,1,,Virrat (FIN),02 JUL 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14182449,toplist
+55.0,5.60,,Jake PAULI,15 JUN 1979,USA,3f1,,"Champaign, IL (USA)",03 JUL 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14248094,toplist
+55.0,5.60,,Richard SPIEGELBURG,12 AUG 1977,GER,2,,Cuxhaven (GER),22 JUL 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14194330,toplist
+55.0,5.60,,Denis FEDAS,24 SEP 1985,UKR,2,,Yalta (UKR),22 JUL 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14229895,toplist
+55.0,5.60,,Eemeli SALOMÄKI,11 OCT 1987,FIN,1,,Espoo (FIN),01 AUG 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14182523,toplist
+55.0,5.60,,Nikolay LAVRINENKO,16 MAY 1984,RUS,1,,Tula (RUS),02 AUG 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14222981,toplist
+55.0,5.60,,Oscar JANSON,22 JUL 1975,SWE,1,,Göteborg (SWE),30 AUG 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14227649,toplist
+55.0,5.60,,Quan YANG,08 DEC 1986,CHN,2,,Jinan (CHN),22 OCT 2009,1157.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14170869,toplist
+66.0,5.56,,Maston WALLACE,02 JUL 1989,USA,2,,"Norman, OK (USA)",30 MAY 2009,1146.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14254125,toplist
+66.0,5.56,,Robbert-Jan JANSEN,22 JUL 1983,NED,3,,Heusden-Zolder (BEL),18 JUL 2009,1146.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14214030,toplist
+66.0,5.56,,Yevgeniy AGEYEV,12 FEB 1988,RUS,1,,Kose (EST),26 JUL 2009,1146.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14221599,toplist
+69.0,5.55,,Evgeniy OLKHOVSKIY,22 DEC 1983,ISR,2f1,,"Blacksburg, VA (USA) (i)",07 FEB 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14199338,toplist
+69.0,5.55,,Jordan SCOTT,22 FEB 1988,USA,1f1,,"College Station, TX (USA) (i)",27 FEB 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14250829,toplist
+69.0,5.55,,Blake LUCAS,12 MAY 1990,AUS,1,,Melbourne (AUS),28 MAR 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14179288,toplist
+69.0,5.55,,Takafumi SUZUKI,25 MAY 1987,JPN,1,,Shizuoka (JPN),03 MAY 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14206007,toplist
+69.0,5.55,,Hiroki OGITA,30 DEC 1987,JPN,4,,Osaka (JPN),09 MAY 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14205146,toplist
+69.0,5.55,,Fábio GOMES DA SILVA,04 AUG 1983,BRA,1,,Rio de Janeiro (BRA),05 JUN 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14175576,toplist
+69.0,5.55,,Giorgio PIANTELLA,06 JUL 1981,ITA,2,,Sofia (BUL),11 JUN 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14201148,toplist
+69.0,5.55,,Mitch GREELEY,05 MAY 1986,USA,3,,"Jonesboro, AR (USA) (i)",14 JUN 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14239228,toplist
+69.0,5.55,,Daniel RYLAND,06 AUG 1979,USA,8,,"Eugene, OR (USA)",27 JUN 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14250281,toplist
+69.0,5.55,,Jarno KIVIOJA,07 OCT 1982,FIN,1,,Lappeenranta (FIN),12 JUL 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14182061,toplist
+69.0,5.55,,Dimitrios PATSOUKAKIS,18 MAR 1987,GRE,3,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",19 JUL 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14195420,toplist
+69.0,5.55,,Jure ROVAN,23 JAN 1975,SLO,1,,Maribor (SLO),01 AUG 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14225170,toplist
+69.0,5.55,,Yoo-suk KIM,19 JAN 1982,KOR,11q1,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14210324,toplist
+69.0,5.55,,Wouter VAN WENGERDEN,16 FEB 1987,NED,3,,Aachen (GER),02 SEP 2009,1143.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14214669,toplist
+83.0,5.53,,Michel FRAUEN,19 JAN 1986,GER,6,,Karlsruhe (GER),15 JUL 2009,1138.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14192102,toplist
+84.0,5.51,,Nick FRAWLEY,21 JUN 1988,USA,1f2,,Air Force Academy (USA) (i),14 FEB 2009,1132.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14238150,toplist
+85.0,5.50,,Rory QUILLER,17 APR 1984,USA,2f1,,"Reno, NV (USA) (i)",02 JAN 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14249000,toplist
+85.0,5.50,,Pavel PROKOPENKO,24 SEP 1987,RUS,2f1,,Chelyabinsk (RUS) (i),09 JAN 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14223648,toplist
+85.0,5.50,,Oleksandr BUBKA,09 SEP 1986,UKR,1f1,,Donetsk (UKR) (i),16 JAN 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14229785,toplist
+85.0,5.50,,Jake WINDER,12 NOV 1987,USA,1f1,,"Kenosha, WI (USA) (i)",17 JAN 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14255297,toplist
+85.0,5.50,,Graeme HOSTE,01 MAY 1986,USA,1f1,,"Albuquerque, NM (USA) (i)",24 JAN 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14241147,toplist
+85.0,5.50,,Bryant WILSON,27 MAR 1987,USA,1,,"Hillsdale, MI (USA)",01 MAY 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14255210,toplist
+85.0,5.50,,Mikko LATVALA,08 JUL 1980,FIN,2,,"Chula Vista, CA (USA)",09 MAY 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14182175,toplist
+85.0,5.50,,Vincent FAVRETTO,05 APR 1984,FRA,1,,Vénissieux (FRA),17 MAY 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14184708,toplist
+85.0,5.50,,Robert MCLEAN,02 SEP 1979,USA,3,,"San Diego, CA (USA)",29 MAY 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14245727,toplist
+85.0,5.50,,Jason WURSTER,23 SEP 1984,CAN,3,,Rehlingen (GER),01 JUN 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14173268,toplist
+85.0,5.50,,Karsten DILLA,17 JUL 1989,GER,4,,Ingolstadt (GER),17 JUN 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14191884,toplist
+85.0,5.50,,Mark JOHNSON,24 NOV 1983,USA,1,,"San Diego, CA (USA)",10 JUL 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14242177,toplist
+85.0,5.50,,Hiroki SASASE,17 AUG 1989,JPN,1,,Taipei City (TPE),25 JUL 2009,1129.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14205589,toplist
+98.0,5.49,,Jack WHITT,12 APR 1990,USA,1f1,,"Austin, TX (USA)",03 APR 2009,1127.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14254820,toplist
+99.0,5.46,,Joao Gabriel SANTOS SOUSA,06 NOV 1984,BRA,1,,São Paulo (BRA),28 MAR 2009,1119.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14175261,toplist
+99.0,5.46,,Nick MOSSBERG,05 APR 1986,USA,2,,"Eugene, OR (USA)",30 MAY 2009,1119.0,men_PV,2009,https://worldathletics.org/athletes/athlete=14246720,toplist
+1.0,6.01,,Steven HOOKER,16 JUL 1982,AUS,1,,"Aspire Dome, Doha (QAT) (i)",13 MAR 2010,1270.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14179504,toplist
+2.0,5.94,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,Valence (FRA),10 JUL 2010,1250.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14185853,toplist
+3.0,5.90,,Malte MOHR,24 JUL 1986,GER,1,,Aachen (GER),01 SEP 2010,1239.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14193417,toplist
+4.0,5.82,,Przemysław CZERWIŃSKI,28 JUL 1983,POL,1,,Donetsk (UKR) (i),06 MAR 2010,1217.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14216520,toplist
+4.0,5.82,,Jeremy SCOTT,01 MAY 1981,USA,1,,"Jonesboro, AR (USA) (i)",18 MAY 2010,1217.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14250826,toplist
+6.0,5.81,,Derek MILES,28 SEP 1972,USA,1,,Jockgrim (GER),21 JUL 2010,1214.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14246081,toplist
+7.0,5.80,,Raphael HOLZDEPPE,28 SEP 1989,GER,1,,Rottach-Egern (GER),04 JUL 2010,1212.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14192581,toplist
+7.0,5.80,,Łukasz MICHALSKI,02 AUG 1988,POL,1,,Bielsko-Biala (POL),10 JUL 2010,1212.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14217188,toplist
+7.0,5.80,,Romain MESNIL,13 JUN 1977,FRA,1,,Castres (FRA),20 JUL 2010,1212.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14186500,toplist
+7.0,5.80,,Maksym MAZURYK,02 APR 1983,UKR,2,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1212.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14230283,toplist
+11.0,5.76,,Michal BALNER,12 SEP 1982,CZE,1,,Praha (CZE) (i),28 FEB 2010,1201.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14169131,toplist
+12.0,5.75,,Alexander STRAUB,14 OCT 1983,GER,1,,"Schleyer Halle, Stuttgart (GER) (i)",06 FEB 2010,1198.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14194400,toplist
+12.0,5.75,,Giovanni LANARO,27 SEP 1981,MEX,1,,"Walnut, CA (USA)",06 JUN 2010,1198.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14213017,toplist
+12.0,5.75,,Mark HOLLIS,01 DEC 1984,USA,2,,Rottach-Egern (GER),04 JUL 2010,1198.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14240984,toplist
+12.0,5.75,,Damiel DOSSÉVI,03 FEB 1983,FRA,2,,Valence (FRA),10 JUL 2010,1198.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14184433,toplist
+12.0,5.75,,Giuseppe GIBILISCO,05 JAN 1979,ITA,4,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1198.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14200460,toplist
+12.0,5.75,,Yansheng YANG,05 JAN 1988,CHN,1,,Jinan (CHN),06 AUG 2010,1198.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14170839,toplist
+18.0,5.72,,Viktor CHISTYAKOV,09 FEB 1975,RUS,1,,Athina (GRE) (i),17 FEB 2010,1190.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14222009,toplist
+18.0,5.72,,Scott ROTH,25 JUN 1988,USA,1,,"Seattle, WA (USA) (i)",26 FEB 2010,1190.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14250090,toplist
+18.0,5.72,,Steve LEWIS,20 MAY 1986,GBR,2,,Donetsk (UKR) (i),06 MAR 2010,1190.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14189911,toplist
+21.0,5.71,,Kevin RANS,19 AUG 1982,BEL,1,,Gent (BEL) (i),31 JAN 2010,1187.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14177354,toplist
+21.0,5.71,,Jérôme CLAVIER,03 MAY 1983,FRA,3f1,,Paris (FRA) (i),02 MAR 2010,1187.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14183918,toplist
+21.0,5.71,,Jason COLWICK,25 JAN 1988,USA,1f1,,"Austin, TX (USA)",03 APR 2010,1187.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14235156,toplist
+21.0,5.71,,Jordan SCOTT,22 FEB 1988,USA,2f1,,"Austin, TX (USA)",03 APR 2010,1187.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14250829,toplist
+21.0,5.71,,Tobias SCHERBARTH,17 AUG 1985,GER,1,,Engen (GER),22 MAY 2010,1187.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14194016,toplist
+26.0,5.70,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,1,,Manchester (GBR) (i),16 JAN 2010,1184.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14195089,toplist
+26.0,5.70,,Aleksandr GRIPICH,21 SEP 1986,RUS,1,,Cottbus (GER) (i),27 JAN 2010,1184.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14222376,toplist
+26.0,5.70,,Hendrik GRUBER,28 SEP 1986,GER,2,,Düsseldorf (GER) (i),03 FEB 2010,1184.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14192314,toplist
+26.0,5.70,,Timothy MACK,15 SEP 1972,USA,1,,"Albuquerque, NM (USA) (i)",27 FEB 2010,1184.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14244649,toplist
+26.0,5.70,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS,1,,Moskva (RUS) (i),28 FEB 2010,1184.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14224142,toplist
+26.0,5.70,,Daichi SAWANO,16 SEP 1980,JPN,1,,Hiroshima (JPN),29 APR 2010,1184.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14205675,toplist
+26.0,5.70,,Mateusz DIDENKOW,22 APR 1987,POL,2,,Hof (GER),19 JUN 2010,1184.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14216550,toplist
+26.0,5.70,,Fabian SCHULZE,07 MAR 1984,GER,3,,Rottach-Egern (GER),04 JUL 2010,1184.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14194184,toplist
+34.0,5.65,,Fábio GOMES DA SILVA,04 AUG 1983,BRA,1,,Fortaleza (BRA),16 MAY 2010,1171.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14175576,toplist
+34.0,5.65,,Jan KUDLIČKA,29 APR 1988,CZE,2q2,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1171.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14168624,toplist
+36.0,5.62,,Sergey KUCHERYANU,30 JUN 1985,RUS,5,,Donetsk (UKR) (i),06 MAR 2010,1162.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14222889,toplist
+37.0,5.61,,Richard SPIEGELBURG,12 AUG 1977,GER,2,,Engen (GER),22 MAY 2010,1160.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14194330,toplist
+37.0,5.61,,Brad WALKER,21 JUN 1981,USA,6,,"Olympiastadion, Berlin (GER)",22 AUG 2010,1160.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14254050,toplist
+39.0,5.60,,Björn OTTO,16 OCT 1977,GER,3,,Cottbus (GER) (i),27 JAN 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14193604,toplist
+39.0,5.60,,Robbert-Jan JANSEN,22 JUL 1983,NED,1,,Apeldoorn (NED) (i),07 FEB 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14214030,toplist
+39.0,5.60,,Tim LOBINGER,03 SEP 1972,GER,4,,Karlsruhe (GER) (i),27 FEB 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14193205,toplist
+39.0,5.60,,Karsten DILLA,17 JUL 1989,GER,5,,Karlsruhe (GER) (i),27 FEB 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14191884,toplist
+39.0,5.60,,Darren NIEDERMEYER,02 APR 1982,USA,3,,"Albuquerque, NM (USA) (i)",27 FEB 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14247218,toplist
+39.0,5.60,,Lázaro BORGES,19 JUN 1986,CUB,1,,San Fernando (ESP),05 JUN 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14169675,toplist
+39.0,5.60,,Giorgio PIANTELLA,06 JUL 1981,ITA,2,,Firenze (ITA),05 JUN 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14201148,toplist
+39.0,5.60,,Leonid KIVALOV,01 APR 1988,RUS,1,,Sotteville-lès-Rouen (FRA),12 JUN 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14222676,toplist
+39.0,5.60,,Oleksandr KORCHMID,22 JAN 1982,UKR,2,,Kyiv (UKR),19 JUN 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14230103,toplist
+39.0,5.60,,Eemeli SALOMÄKI,11 OCT 1987,FIN,1f1,,Somero (FIN),03 JUL 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14182523,toplist
+39.0,5.60,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,2,,Miedzyzdroje (POL),17 AUG 2010,1157.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14217866,toplist
+50.0,5.55,,Oscar JANSON,22 JUL 1975,SWE,4,,Göteborg (SWE) (i),02 FEB 2010,1143.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14227649,toplist
+50.0,5.55,,Ivan GERTLEYN,25 SEP 1987,RUS,2,,Yerino (RUS),11 JUN 2010,1143.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14222264,toplist
+50.0,5.55,,Edi MAIA,10 NOV 1987,POR,1,,Lisboa (POR),13 JUN 2010,1143.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14218336,toplist
+50.0,5.55,,Nicolas GUIGON,10 OCT 1980,FRA,3,,"Stade Raymond Petit, Tomblaine (FRA)",25 JUN 2010,1143.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14185200,toplist
+50.0,5.55,,Vincent FAVRETTO,05 APR 1984,FRA,5,,Valence (FRA),10 JUL 2010,1143.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14184708,toplist
+55.0,5.53,,Luke CUTTS,13 FEB 1988,GBR,3,,Manchester (GBR) (i),16 JAN 2010,1138.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14188965,toplist
+56.0,5.52,,Paul GENSIC,27 JUN 1982,USA,1,,Air Force Academy (USA) (i),12 FEB 2010,1135.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14238635,toplist
+57.0,5.51,,Mitch GREELEY,05 MAY 1986,USA,2,,"Jonesboro, AR (USA) (i)",17 FEB 2010,1132.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14239228,toplist
+57.0,5.51,,Jeff RYAN,08 DEC 1980,USA,3,,"Jonesboro, AR (USA) (i)",17 FEB 2010,1132.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14250262,toplist
+59.0,5.50,,Jack WHITT,12 APR 1990,USA,1,,"Wichita, KS (USA) (i)",15 JAN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14254820,toplist
+59.0,5.50,,Yoo-suk KIM,19 JAN 1982,KOR,1,,"Jonesboro, AR (USA) (i)",26 JAN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14210324,toplist
+59.0,5.50,,Brian MONDSCHEIN,09 JAN 1983,USA,1,,"University Park, PA (USA) (i)",29 JAN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14246367,toplist
+59.0,5.50,,Jeff COOVER,01 DEC 1987,USA,1,,"Bloomington, IN (USA) (i)",30 JAN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14235338,toplist
+59.0,5.50,,Jere BERGIUS,04 APR 1987,FIN,1,,Helsinki (FIN) (i),31 JAN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14181806,toplist
+59.0,5.50,,Jason WURSTER,23 SEP 1984,CAN,1,,Toronto (CAN) (i),06 FEB 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14173268,toplist
+59.0,5.50,,Michel FRAUEN,19 JAN 1986,GER,7,,Potsdam (GER) (i),13 FEB 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14192102,toplist
+59.0,5.50,,Daniel RYLAND,06 AUG 1979,USA,6,,"Albuquerque, NM (USA) (i)",27 FEB 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14250281,toplist
+59.0,5.50,,Artem BURYA,11 APR 1986,RUS,4,,Moskva (RUS) (i),28 FEB 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14221937,toplist
+59.0,5.50,,Nikolay LAVRINENKO,16 MAY 1984,RUS,7,,Moskva (RUS) (i),28 FEB 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14222981,toplist
+59.0,5.50,,Brandon ESTRADA,28 OCT 1987,USA,1,,"Seattle, WA (USA) (i)",06 MAR 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14237370,toplist
+59.0,5.50,,Jake PAULI,15 JUN 1979,USA,1,,"Des Moines, IA (USA)",10 APR 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14248094,toplist
+59.0,5.50,,Cheyne RAHME,23 JAN 1991,RSA,1,,Germiston (RSA),10 APR 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14221013,toplist
+59.0,5.50,,Evgeniy OLKHOVSKIY,22 DEC 1983,ISR,1,,"Clemson, SC (USA)",17 APR 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14199338,toplist
+59.0,5.50,,Xavier TROMP,03 MAR 1984,FRA,2,,"Clemson, SC (USA)",17 APR 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14187919,toplist
+59.0,5.50,,Hiroki SASASE,17 AUG 1989,JPN,3,,Hiroshima (JPN),29 APR 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14205589,toplist
+59.0,5.50,,Hiroki OGITA,30 DEC 1987,JPN,1,,Marugame (JPN),08 MAY 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14205146,toplist
+59.0,5.50,,Igor BYCHKOV,03 JUL 1987,ESP,1,,Leiria (POR),22 MAY 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14229809,toplist
+59.0,5.50,,Aleksey KOVALCHUK,22 JUL 1988,RUS,4,,Sochi (RUS),27 MAY 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14222815,toplist
+59.0,5.50,,Vladyslav REVENKO,15 NOV 1984,UKR,2,,Yalta (UKR),27 MAY 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14230473,toplist
+59.0,5.50,,Vesa RANTANEN,02 DEC 1975,FIN,1,,Lapua (FIN),03 JUN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14182449,toplist
+59.0,5.50,,Takafumi SUZUKI,25 MAY 1987,JPN,1,,Marugame (JPN),05 JUN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14206007,toplist
+59.0,5.50,,Rory QUILLER,17 APR 1984,USA,2,,"Walnut, CA (USA)",06 JUN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14249000,toplist
+59.0,5.50,,Oleksandr BUBKA,09 SEP 1986,UKR,4,,Kyiv (UKR),19 JUN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14229785,toplist
+59.0,5.50,,Matteo RUBBIANI,31 AUG 1978,ITA,2,,Grosseto (ITA),30 JUN 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14201350,toplist
+59.0,5.50,,Jure ROVAN,23 JAN 1975,SLO,5,,Ingolstadt (GER),03 JUL 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14225170,toplist
+59.0,5.50,,Anton IVAKIN,11 FEB 1991,RUS,1,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",22 JUL 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14222466,toplist
+59.0,5.50,,Rasmus WEINOLD JØRGENSEN,23 JAN 1989,DEN,11q2,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14167786,toplist
+59.0,5.50,,Yuya ARIAKE,27 JUN 1989,JPN,1,,Marugame (JPN),14 AUG 2010,1129.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14202527,toplist
+88.0,5.46,,Stevy DUME,08 APR 1988,FRA,1f2,,Paris (FRA) (i),02 MAR 2010,1119.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14184511,toplist
+89.0,5.45,,Blake LUCAS,12 MAY 1990,AUS,1,,Melbourne (AUS),20 FEB 2010,1116.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14179288,toplist
+89.0,5.45,,Štěpán JANÁČEK,12 JUN 1977,CZE,3,,Praha (CZE) (i),28 FEB 2010,1116.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14168798,toplist
+89.0,5.45,,Mark JOHNSON,24 NOV 1983,USA,1f1,,"Raleigh, NC (USA)",26 MAR 2010,1116.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14242177,toplist
+89.0,5.45,,Quan YANG,08 DEC 1986,CHN,2,,Chongqing (CHN),27 JUN 2010,1116.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14170869,toplist
+89.0,5.45,,Eelco SINTNICOLAAS,07 APR 1987,NED,1ce2,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1116.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14214371,toplist
+94.0,5.44,,Chris ROY,10 MAY 1989,USA,1,,"Denton, TX (USA)",09 MAY 2010,1113.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14250128,toplist
+95.0,5.43,,Paul WALKER,15 AUG 1985,GBR,3,,Wien (AUT) (i),02 FEB 2010,1110.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14191120,toplist
+96.0,5.42,,Flavien BASSON,15 MAY 1988,FRA,6f1,,Villeurbanne (FRA) (i),09 JAN 2010,1108.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14183113,toplist
+96.0,5.42,,Hunter HALL,03 NOV 1988,USA,2f1,,"Blacksburg, VA (USA) (i)",06 MAR 2010,1108.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14239692,toplist
+96.0,5.42,,Mike UHLE,25 APR 1989,USA,3f1,,"Blacksburg, VA (USA) (i)",06 MAR 2010,1108.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14326948,toplist
+96.0,5.42,,Fabrice FORTIN,02 FEB 1980,FRA,1f1,,Limoges (FRA) (i),20 MAR 2010,1108.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14184830,toplist
+96.0,5.42,,Wouter VAN WENGERDEN,16 FEB 1987,NED,1,,Kessel-Lo (BEL),14 AUG 2010,1108.0,men_PV,2010,https://worldathletics.org/athletes/athlete=14214669,toplist
+1.0,6.03,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,"Palais Omnisports de Paris-Bercy, Paris (FRA) (i)",05 MAR 2011,1275.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14185853,toplist
+2.0,5.91,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,1,,Szczecin (POL),15 AUG 2011,1242.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14217866,toplist
+3.0,5.90,,Lázaro BORGES,19 JUN 1986,CUB,2,,"DS, Daegu (KOR)",29 AUG 2011,1239.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14169675,toplist
+4.0,5.88,,Maksym MAZURYK,02 APR 1983,UKR,2,,Donetsk (UKR) (i),12 FEB 2011,1234.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14230283,toplist
+5.0,5.86,,Malte MOHR,24 JUL 1986,GER,1,,Potsdam (GER) (i),19 FEB 2011,1228.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14193417,toplist
+6.0,5.85,,Łukasz MICHALSKI,02 AUG 1988,POL,4,,"DS, Daegu (KOR)",29 AUG 2011,1225.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14217188,toplist
+7.0,5.84,,Brad WALKER,21 JUN 1981,USA,1,,"Chula Vista, CA (USA)",16 JUN 2011,1223.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14254050,toplist
+8.0,5.81,,Jérôme CLAVIER,03 MAY 1983,FRA,1f2,,Villeurbanne (FRA) (i),22 JAN 2011,1214.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14183918,toplist
+9.0,5.80,,Romain MESNIL,13 JUN 1977,FRA,2,,Aubière (FRA) (i),19 FEB 2011,1212.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14186500,toplist
+9.0,5.80,,Fábio GOMES DA SILVA,04 AUG 1983,BRA,1,,Sâo Caetano do Sul (BRA),26 FEB 2011,1212.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14175576,toplist
+9.0,5.80,,Björn OTTO,16 OCT 1977,GER,1,,Landau (GER),02 AUG 2011,1212.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14193604,toplist
+12.0,5.75,,Mateusz DIDENKOW,22 APR 1987,POL,2,,"National Stadium, Shenzhen (CHN)",20 AUG 2011,1198.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14216550,toplist
+12.0,5.75,,Aleksandr GRIPICH,21 SEP 1986,RUS,2,,"National Stadium, Shenzhen (CHN)",20 AUG 2011,1198.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14222376,toplist
+12.0,5.75,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,6,,"DS, Daegu (KOR)",29 AUG 2011,1198.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14195089,toplist
+15.0,5.72,,Scott ROTH,25 JUN 1988,USA,1,,"Walnut, CA (USA)",16 APR 2011,1190.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14250090,toplist
+15.0,5.72,,Aleksey KOVALCHUK,22 JUL 1988,RUS,1,,Kyiv (UKR),18 JUN 2011,1190.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14222815,toplist
+15.0,5.72,,Raphael HOLZDEPPE,28 SEP 1989,GER,1,,Bremen (GER),26 JUN 2011,1190.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14192581,toplist
+15.0,5.72,,Yevgeniy LUKYANENKO,23 JAN 1985,RUS,1,,"Moratalaz, Madrid (ESP)",09 JUL 2011,1190.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14223061,toplist
+15.0,5.72,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS,2,,Cheboksary (RUS),23 JUL 2011,1190.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14224142,toplist
+15.0,5.72,,Karsten DILLA,17 JUL 1989,GER,1f2,,Jockgrim (GER),27 JUL 2011,1190.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14191884,toplist
+15.0,5.72,,Jeremy SCOTT,01 MAY 1981,USA,3f2,,Jockgrim (GER),27 JUL 2011,1190.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14250826,toplist
+15.0,5.72,,Derek MILES,28 SEP 1972,USA,6f2,,Jockgrim (GER),27 JUL 2011,1190.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14246081,toplist
+23.0,5.70,,Fabian SCHULZE,07 MAR 1984,GER,,,Sindelfingen (GER) (i),23 JAN 2011,1184.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14194184,toplist
+23.0,5.70,,Igor PAVLOV,18 JUL 1979,RUS,1,,Moskva (RUS) (i),29 JAN 2011,1184.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14223486,toplist
+23.0,5.70,,Michal BALNER,12 SEP 1982,CZE,3,,Donetsk (UKR) (i),12 FEB 2011,1184.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14169131,toplist
+26.0,5.66,,Viktor KOZLITIN,12 JUN 1988,RUS,3,,Cheboksary (RUS),23 JUL 2011,1173.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14222829,toplist
+27.0,5.65,,Tim LOBINGER,03 SEP 1972,GER,1q,,"Palais Omnisports de Paris-Bercy, Paris (FRA) (i)",04 MAR 2011,1171.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14193205,toplist
+27.0,5.65,,Sergey KUCHERYANU,30 JUN 1985,RUS,1,,Tsaotun (TPE) (i),24 MAR 2011,1171.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14222889,toplist
+27.0,5.65,,Jack WHITT,12 APR 1990,USA,1,,"Oklahoma City, OK (USA)",18 JUN 2011,1171.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14254820,toplist
+27.0,5.65,,Jan KUDLIČKA,29 APR 1988,CZE,9,,"DS, Daegu (KOR)",29 AUG 2011,1171.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14168624,toplist
+27.0,5.65,,Steve LEWIS,20 MAY 1986,GBR,9,,"DS, Daegu (KOR)",29 AUG 2011,1171.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14189911,toplist
+27.0,5.65,,Daichi SAWANO,16 SEP 1980,JPN,14,,"DS, Daegu (KOR)",29 AUG 2011,1171.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14205675,toplist
+33.0,5.63,,Mark HOLLIS,01 DEC 1984,USA,1,,"South Bend, IN (USA) (i)",04 MAR 2011,1165.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14240984,toplist
+33.0,5.63,,Emile DENECKER,28 MAR 1992,FRA,1,,Dreux (FRA),17 JUL 2011,1165.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14403260,toplist
+35.0,5.62,,Giovanni LANARO,27 SEP 1981,MEX,2,,"Walnut, CA (USA)",16 APR 2011,1162.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14213017,toplist
+35.0,5.62,,Oleksandr KORCHMID,22 JAN 1982,UKR,2,,Kyiv (UKR),18 JUN 2011,1162.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14230103,toplist
+35.0,5.62,,Denys YURCHENKO,27 JAN 1978,UKR,3,,Kyiv (UKR),18 JUN 2011,1162.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14230804,toplist
+38.0,5.61,,Damiel DOSSÉVI,03 FEB 1983,FRA,1,,Mondeville (FRA) (i),05 FEB 2011,1160.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14184433,toplist
+38.0,5.61,,Max EAVES,31 MAY 1988,GBR,1,,Sheffield (GBR) (i),12 FEB 2011,1160.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14189122,toplist
+40.0,5.60,,Luke CUTTS,13 FEB 1988,GBR,2,,"National Indoor Arena, Birmingham (GBR) (i)",19 FEB 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14188965,toplist
+40.0,5.60,,Jere BERGIUS,04 APR 1987,FIN,1,,Espoo (FIN),05 JUN 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14181806,toplist
+40.0,5.60,,Vincent FAVRETTO,05 APR 1984,FRA,1,,Aix-les-Bains (FRA),19 JUN 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14184708,toplist
+40.0,5.60,,Eemeli SALOMÄKI,11 OCT 1987,FIN,1,,Somero (FIN),24 JUN 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14182523,toplist
+40.0,5.60,,Alexander STRAUB,14 OCT 1983,GER,2,,Rottach-Egern (GER),02 JUL 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14194400,toplist
+40.0,5.60,,Edi MAIA,10 NOV 1987,POR,3,,"Moratalaz, Madrid (ESP)",09 JUL 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14218336,toplist
+40.0,5.60,,Igor BYCHKOV,03 JUL 1987,ESP,1,,Zaragoza (ESP),20 JUL 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14229809,toplist
+40.0,5.60,,Steven HOOKER,16 JUL 1982,AUS,2,,Leverkusen (GER),30 JUL 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14179504,toplist
+40.0,5.60,,Alhaji JENG,13 DEC 1981,SWE,1,,Karlstad (SWE),02 AUG 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14227656,toplist
+40.0,5.60,,Giuseppe GIBILISCO,05 JAN 1979,ITA,4,,Landau (GER),02 AUG 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14200460,toplist
+40.0,5.60,,Yansheng YANG,05 JAN 1988,CHN,1,,Hefei (CHN),10 SEP 2011,1157.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14170839,toplist
+51.0,5.55,,Viktor CHISTYAKOV,09 FEB 1975,RUS,1,,Moskva (RUS) (i),09 JAN 2011,1143.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14222009,toplist
+51.0,5.55,,Giorgio PIANTELLA,06 JUL 1981,ITA,1,,Ancona (ITA) (i),19 FEB 2011,1143.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14201148,toplist
+51.0,5.55,,Nick MOSSBERG,05 APR 1986,USA,1,,"Phoenix, AZ (USA)",02 APR 2011,1143.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14246720,toplist
+51.0,5.55,,Vladyslav REVENKO,15 NOV 1984,UKR,1,,Kalamata (GRE),04 JUN 2011,1143.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14230473,toplist
+51.0,5.55,,Dmitriy ZHELYABIN,20 MAY 1990,RUS,3,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1143.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14224679,toplist
+51.0,5.55,,Claudio Michel STECCHI,23 NOV 1991,ITA,4,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1143.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14201526,toplist
+51.0,5.55,,Hendrik GRUBER,28 SEP 1986,GER,3,,Leverkusen (GER),30 JUL 2011,1143.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14192314,toplist
+58.0,5.53,,Robbert-Jan JANSEN,22 JUL 1983,NED,3,,"Stade Raymond Petit, Tomblaine (FRA)",24 JUN 2011,1138.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14214030,toplist
+58.0,5.53,,Michel FRAUEN,19 JAN 1986,GER,2,,Schlanders (ITA),12 AUG 2011,1138.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14192102,toplist
+58.0,5.53,,Matteo RUBBIANI,31 AUG 1978,ITA,2,,Schlanders (ITA),12 AUG 2011,1138.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14201350,toplist
+61.0,5.52,,Eelco SINTNICOLAAS,07 APR 1987,NED,2,,Apeldoorn (NED) (i),13 FEB 2011,1135.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14214371,toplist
+61.0,5.52,,Brandon ESTRADA,28 OCT 1987,PUR,4,,"Walnut, CA (USA)",16 APR 2011,1135.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14237370,toplist
+61.0,5.52,,Jake PAULI,15 JUN 1979,USA,5,,"Des Moines, IA (USA)",30 APR 2011,1135.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14248094,toplist
+61.0,5.52,,Anton IVAKIN,11 FEB 1991,RUS,1,,"Puskás Ferenc Stadion, Budapest (HUN)",30 JUL 2011,1135.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14222466,toplist
+61.0,5.52,,Daniel ECKER,21 JUL 1977,GER,3,,Mannheim (GER),13 AUG 2011,1135.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14191946,toplist
+66.0,5.51,,Jason COLWICK,25 JAN 1988,USA,1f2,,"Seattle, WA (USA) (i)",12 FEB 2011,1132.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14235156,toplist
+66.0,5.51,,Germán CHIARAVIGLIO,16 APR 1987,ARG,5,,"Stadio Guidobaldi, Rieti (ITA)",10 SEP 2011,1132.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14180477,toplist
+66.0,5.51,,Ivan HORVAT,17 AUG 1993,CRO,1,,Split (CRO),11 SEP 2011,1132.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14371460,toplist
+69.0,5.50,,Ivan GERTLEYN,25 SEP 1987,RUS,1,,Chelyabinsk (RUS) (i),09 JAN 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14222264,toplist
+69.0,5.50,,Anatoliy BEDNYUK,30 JAN 1989,RUS,2,,Chelyabinsk (RUS) (i),09 JAN 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14221791,toplist
+69.0,5.50,,Victor WEIRICH,25 OCT 1987,USA,1f3,,"Albuquerque, NM (USA) (i)",22 JAN 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14254517,toplist
+69.0,5.50,,Denis GOOSSENS,12 DEC 1987,BEL,3,,Cottbus (GER) (i),26 JAN 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14177531,toplist
+69.0,5.50,,Jordan SCOTT,22 FEB 1988,USA,3,,"Reno, NV (USA) (i)",28 JAN 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14250829,toplist
+69.0,5.50,,Leonid KIVALOV,01 APR 1988,RUS,3,,Bordeaux (FRA) (i),29 JAN 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14222676,toplist
+69.0,5.50,,Artem BURYA,11 APR 1986,RUS,2,,Krasnodar (RUS) (i),29 JAN 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14221937,toplist
+69.0,5.50,,Nikita FILIPPOV,07 OCT 1991,KAZ,1,,Karaganda (KAZ) (i),05 FEB 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14940978,toplist
+69.0,5.50,,Rory QUILLER,17 APR 1984,USA,1,,"Golden, CO (USA) (i)",18 FEB 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14249000,toplist
+69.0,5.50,,Carlo PAECH,18 DEC 1992,GER,1,,Hamburg (GER) (i),05 MAR 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14361419,toplist
+69.0,5.50,,Ben PETERSON,09 JAN 1988,USA,2,,"College Station, TX (USA) (i)",11 MAR 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14248325,toplist
+69.0,5.50,,Nicolas GUIGON,10 OCT 1980,FRA,1,,St-Etienne (FRA),08 MAY 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14185200,toplist
+69.0,5.50,,Yoo-suk KIM,19 JAN 1982,KOR,1,,"Chula Vista, CA (USA)",12 MAY 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14210324,toplist
+69.0,5.50,,Tyler WALLACE,31 JUL 1990,USA,1,,"Irvine, CA (USA)",14 MAY 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14458306,toplist
+69.0,5.50,,Albert VÉLEZ MARTIN,26 OCT 1988,ESP,1,,Zaragoza (ESP),25 JUN 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14164737,toplist
+69.0,5.50,,Daniel CLEMENS,28 APR 1992,GER,1,,Mannheim (GER),03 JUL 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14360688,toplist
+69.0,5.50,,Jeff COOVER,01 DEC 1987,USA,2,,Eindhoven (NED),10 JUL 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14235338,toplist
+69.0,5.50,,Kévin MÉNALDO,12 JUL 1992,FRA,2,,"Kadrioru staadion, Tallinn (EST)",24 JUL 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14362302,toplist
+69.0,5.50,,Mitch GREELEY,05 MAY 1986,USA,1,,Lausanne (SUI),13 AUG 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14239228,toplist
+69.0,5.50,,Mikael WESTÖ,03 APR 1982,FIN,2,,Helsinki (FIN),09 SEP 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14182745,toplist
+69.0,5.50,,Hiroki OGITA,30 DEC 1987,JPN,1,,Yamaguchi (JPN),09 OCT 2011,1129.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14205146,toplist
+90.0,5.47,,Evgeniy OLKHOVSKIY,22 DEC 1983,ISR,1f2,,"Blacksburg, VA (USA) (i)",19 FEB 2011,1121.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14199338,toplist
+91.0,5.46,,Pavel BURLACHENKO,07 APR 1976,RUS,2,,Praha (CZE),22 JUN 2011,1119.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14221932,toplist
+91.0,5.46,,Mareks ĀRENTS,06 AUG 1986,LAT,1,,Liepaja (LAT),30 JUL 2011,1119.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14210925,toplist
+93.0,5.45,,Melker SVÄRD JACOBSSON,08 JAN 1994,SWE,1,,Tampere (FIN) (i),05 FEB 2011,1116.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14377979,toplist
+93.0,5.45,,Adam PTÁČEK,08 OCT 1980,CZE,1,,Praha (CZE) (i),16 FEB 2011,1116.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14168383,toplist
+93.0,5.45,,Nate POLACEK,22 JUN 1990,USA,4,,"College Station, TX (USA) (i)",11 MAR 2011,1116.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14360882,toplist
+93.0,5.45,,Stephane DIAZ,24 DEC 1978,FRA,3,,Bonneuil-sur-Marne (FRA),02 JUN 2011,1116.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14184375,toplist
+93.0,5.45,,Wouter VAN WENGERDEN,16 FEB 1987,NED,1,,Bruxelles (BEL),10 JUL 2011,1116.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14214669,toplist
+98.0,5.43,,Luis MORO,12 APR 1987,ESP,3f2,,Villeurbanne (FRA) (i),22 JAN 2011,1110.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14165612,toplist
+98.0,5.43,,Cheyne RAHME,23 JAN 1991,RSA,1,,Germiston (RSA),26 MAR 2011,1110.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14221013,toplist
+98.0,5.43,,Sébastien HOMO,27 APR 1982,FRA,4,,"Stade Raymond Petit, Tomblaine (FRA)",24 JUN 2011,1110.0,men_PV,2011,https://worldathletics.org/athletes/athlete=14185382,toplist
+1.0,6.01,,Björn OTTO,16 OCT 1977,GER,1,,Aachen (GER),05 SEP 2012,1270.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14193604,toplist
+2.0,5.97,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,"Olympiastadion, Helsinki (FIN)",01 JUL 2012,1259.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14185853,toplist
+3.0,5.91,,Malte MOHR,24 JUL 1986,GER,1,,Ingolstadt (GER),22 JUN 2012,1242.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14193417,toplist
+3.0,5.91,,Raphael HOLZDEPPE,28 SEP 1989,GER,3,,"Olympic Stadium, London (GBR)",10 AUG 2012,1242.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14192581,toplist
+5.0,5.90,,Brad WALKER,21 JUN 1981,USA,1,,"Chula Vista, CA (USA)",12 JUL 2012,1239.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14254050,toplist
+6.0,5.82,,Steve LEWIS,20 MAY 1986,GBR,1,,Szczecin (POL),21 JUL 2012,1217.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14189911,toplist
+7.0,5.80,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS,1,,Chelyabinsk (RUS) (i),13 JAN 2012,1212.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14224142,toplist
+7.0,5.80,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,4,,"Stade Olympique de la Pontaise, Lausanne (SUI)",23 AUG 2012,1212.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14195089,toplist
+9.0,5.75,,Yevgeniy LUKYANENKO,23 JAN 1985,RUS,4,,"Olympic Stadium, London (GBR)",10 AUG 2012,1198.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14223061,toplist
+10.0,5.73,,Karsten DILLA,17 JUL 1989,GER,1,,Bad Oeynhausen (GER) (i),03 MAR 2012,1192.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14191884,toplist
+10.0,5.73,,Jan KUDLIČKA,29 APR 1988,CZE,1,,Kladno (CZE),30 MAY 2012,1192.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14168624,toplist
+12.0,5.72,,Łukasz MICHALSKI,02 AUG 1988,POL,1,,Bordeaux (FRA) (i),28 JAN 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14217188,toplist
+12.0,5.72,,Lázaro BORGES,19 JUN 1986,CUB,4,,Donetsk (UKR) (i),11 FEB 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14169675,toplist
+12.0,5.72,,Romain MESNIL,13 JUN 1977,FRA,2,,Liévin (FRA) (i),14 FEB 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14186500,toplist
+12.0,5.72,,Maksym MAZURYK,02 APR 1983,UKR,2,,Potsdam (GER) (i),18 FEB 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14230283,toplist
+12.0,5.72,,Daichi SAWANO,16 SEP 1980,JPN,2,,"Walnut, CA (USA)",21 APR 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14205675,toplist
+12.0,5.72,,Steven HOOKER,16 JUL 1982,AUS,1,,Perth (AUS) (i),11 MAY 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14179504,toplist
+12.0,5.72,,Andrew IRWIN,24 JAN 1993,USA,1,,"Baton Rouge, LA (USA)",13 MAY 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14411431,toplist
+12.0,5.72,,Jere BERGIUS,04 APR 1987,FIN,1f1,,Haapajarvi (FIN),26 MAY 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14181806,toplist
+12.0,5.72,,Jack WHITT,12 APR 1990,USA,1,,"Tulsa, OK (USA) (i)",02 JUN 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14254820,toplist
+12.0,5.72,,Denys YURCHENKO,27 JAN 1978,UKR,1,,Yalta (UKR),04 JUN 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14230804,toplist
+12.0,5.72,,Jordan SCOTT,22 FEB 1988,USA,1,,"Wichita, KS (USA)",09 JUN 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14250829,toplist
+12.0,5.72,,Sergey KUCHERYANU,30 JUN 1985,RUS,1,,Moskva (RUS),20 JUN 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14222889,toplist
+12.0,5.72,,Alhaji JENG,13 DEC 1981,SWE,1,,Heusden-Zolder (BEL),07 JUL 2012,1190.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14227656,toplist
+25.0,5.70,,Hendrik GRUBER,28 SEP 1986,GER,1,,Metz (FRA) (i),29 FEB 2012,1184.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14192314,toplist
+25.0,5.70,,Fábio GOMES DA SILVA,04 AUG 1983,BRA,1,,Fortaleza (BRA),09 MAY 2012,1184.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14175576,toplist
+25.0,5.70,,Vladyslav REVENKO,15 NOV 1984,UKR,1,,Kharkiv (UKR),18 JUL 2012,1184.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14230473,toplist
+25.0,5.70,,Yansheng YANG,05 JAN 1988,CHN,1,,Kunshan (CHN),24 SEP 2012,1184.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14170839,toplist
+29.0,5.66,,Michal BALNER,12 SEP 1982,CZE,2,,Praha (CZE),20 JUN 2012,1173.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14169131,toplist
+30.0,5.65,,Hiroki OGITA,30 DEC 1987,JPN,1,,Hiroshima (JPN),29 APR 2012,1171.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14205146,toplist
+30.0,5.65,,Dmitriy ZHELYABIN,20 MAY 1990,RUS,4,,Cheboksary (RUS),05 JUL 2012,1171.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14224679,toplist
+30.0,5.65,,Seito YAMAMOTO,11 MAR 1992,JPN,1,,Odawara (JPN),14 OCT 2012,1171.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14432907,toplist
+33.0,5.64,,Edi MAIA,10 NOV 1987,POR,1,,Pombal (POR) (i),26 FEB 2012,1168.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14218336,toplist
+34.0,5.63,,Mark HOLLIS,01 DEC 1984,USA,2f1,,"Chula Vista, CA (USA)",14 JUN 2012,1165.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14240984,toplist
+35.0,5.62,,Yoo-suk KIM,19 JAN 1982,KOR,1,,"San Diego, CA (USA)",28 APR 2012,1162.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14210324,toplist
+35.0,5.62,,Przemysław CZERWIŃSKI,28 JUL 1983,POL,5,,"Mestský Stadion, Ostrava (CZE)",25 MAY 2012,1162.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14216520,toplist
+35.0,5.62,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,3,,Bydgoszcz (POL),03 JUN 2012,1162.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14217866,toplist
+35.0,5.62,,Robbert-Jan JANSEN,22 JUL 1983,NED,1,,Thionville (FRA),06 JUN 2012,1162.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14214030,toplist
+35.0,5.62,,Vincent FAVRETTO,05 APR 1984,FRA,1,,Bron (FRA),05 JUL 2012,1162.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14184708,toplist
+40.0,5.61,,Tobias SCHERBARTH,17 AUG 1985,GER,2,,Leverkusen (GER),25 AUG 2012,1160.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14194016,toplist
+41.0,5.60,,Derek MILES,28 SEP 1972,USA,1,,"Vermillion, SD (USA) (i)",02 FEB 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14246081,toplist
+41.0,5.60,,Claudio Michel STECCHI,23 NOV 1991,ITA,1,,Ancona (ITA) (i),25 FEB 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14201526,toplist
+41.0,5.60,,Scott ROTH,25 JUN 1988,USA,2,,"Albuquerque, NM (USA) (i)",26 FEB 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14250090,toplist
+41.0,5.60,,Marco BONI,21 MAY 1984,ITA,1,,Fermo (ITA) (i),04 MAR 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14199686,toplist
+41.0,5.60,,Nikita FILIPPOV,07 OCT 1991,KAZ,,,Almaty (KAZ),14 MAY 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14940978,toplist
+41.0,5.60,,Eemeli SALOMÄKI,11 OCT 1987,FIN,2f1,,Haapajarvi (FIN),26 MAY 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14182523,toplist
+41.0,5.60,,Igor PAVLOV,18 JUL 1979,RUS,2,,München (GER),05 JUN 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14223486,toplist
+41.0,5.60,,Rory QUILLER,17 APR 1984,USA,1,,"Fort Collins, CO (USA)",09 JUN 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14249000,toplist
+41.0,5.60,,Stanislav TIVONCHIK,03 MAY 1985,BLR,1,,Minsk (BLR),12 JUN 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14176505,toplist
+41.0,5.60,,Chris SWANSON,06 JUN 1982,USA,1,,"Walnut, CA (USA)",12 JUN 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14252617,toplist
+41.0,5.60,,Ivan HORVAT,17 AUG 1993,CRO,1,,Varaždin (CRO),17 JUN 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14371460,toplist
+41.0,5.60,,Giorgio PIANTELLA,06 JUL 1981,ITA,1,,Nembro (ITA),20 JUN 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14201148,toplist
+41.0,5.60,,Mareks ĀRENTS,06 AUG 1986,LAT,1,,Valmiera (LAT),20 JUN 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14210925,toplist
+41.0,5.60,,Jeremy SCOTT,01 MAY 1981,USA,2,,"Hayward Field, Eugene, OR (USA)",28 JUN 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14250826,toplist
+41.0,5.60,,Artem BURYA,11 APR 1986,RUS,1,,Yerino (RUS),14 JUL 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14221937,toplist
+41.0,5.60,,Anton IVAKIN,11 FEB 1991,RUS,1,,Yerino (RUS),21 JUL 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14222466,toplist
+41.0,5.60,,Changrui XUE,31 MAY 1991,CHN,2,,Kunshan (CHN),24 SEP 2012,1157.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14462143,toplist
+58.0,5.57,,Shawnacy BARBER,27 MAY 1994,CAN,1,,"Humble, TX (USA)",04 AUG 2012,1149.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14457604,toplist
+59.0,5.56,,Igor BYCHKOV,03 JUL 1987,ESP,3f1,,Nevers (FRA) (i),18 FEB 2012,1146.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14229809,toplist
+59.0,5.56,,Tom KONRAD,30 MAR 1991,GER,1,,Leverkusen (GER),25 AUG 2012,1146.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14192932,toplist
+61.0,5.55,,Andrew SUTCLIFFE,10 JUL 1991,GBR,1,,Sheffield (GBR) (i),11 FEB 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14335801,toplist
+61.0,5.55,,Michael WOEPSE,29 MAY 1991,USA,1,,"Los Angeles, CA (USA)",24 MAR 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14361225,toplist
+61.0,5.55,,Matti MONONEN,25 NOV 1983,FIN,1,,Lappeenranta (FIN),19 MAY 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14182293,toplist
+61.0,5.55,,Ivan GERTLEYN,25 SEP 1987,RUS,3,,Sochi (RUS),26 MAY 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14222264,toplist
+61.0,5.55,,Jérôme CLAVIER,03 MAY 1983,FRA,1,,Aulnay-sous-Bois (FRA),02 JUN 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14183918,toplist
+61.0,5.55,,Ivan YERYOMIN,30 MAY 1989,UKR,2,,Yalta (UKR),14 JUN 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14229892,toplist
+61.0,5.55,,Didac SALAS,19 MAY 1993,ESP,1,,Barcelona (ESP),16 JUN 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14359962,toplist
+61.0,5.55,,Paul LITCHFIELD,27 NOV 1980,USA,1,,"Livermore, CA (USA)",16 JUN 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14244207,toplist
+61.0,5.55,,Alexandre FEGER,22 JAN 1990,FRA,3,,Angers (FRA),17 JUN 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14334104,toplist
+61.0,5.55,,Anatoliy BEDNYUK,30 JAN 1989,RUS,5,,Cheboksary (RUS),05 JUL 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14221791,toplist
+61.0,5.55,,Stanley JOSEPH,24 OCT 1991,FRA,1,,Castres (FRA),07 JUL 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14402297,toplist
+61.0,5.55,,Thiago BRAZ,16 DEC 1993,BRA,1,,"Estadio Olímpico, Barcelona (ESP)",12 JUL 2012,1143.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14377443,toplist
+73.0,5.54,,Damiel DOSSÉVI,03 FEB 1983,FRA,4f1,,Villeurbanne (FRA) (i),20 JAN 2012,1140.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14184433,toplist
+73.0,5.54,,Nikita KIRILLOV,05 JUN 1993,USA,1,,"Bloomington, IN (USA)",15 JUN 2012,1140.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14376045,toplist
+75.0,5.53,,Jason COLWICK,25 JAN 1988,USA,1,,"Seattle, WA (USA) (i)",11 FEB 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14235156,toplist
+75.0,5.53,,Tim LOBINGER,03 SEP 1972,GER,3,,Bad Oeynhausen (GER) (i),03 MAR 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14193205,toplist
+75.0,5.53,,Rasmus WEINOLD JØRGENSEN,23 JAN 1989,DEN,4,,Bad Oeynhausen (GER) (i),03 MAR 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14167786,toplist
+75.0,5.53,,Michel FRAUEN,19 JAN 1986,GER,4,,Bad Oeynhausen (GER) (i),03 MAR 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14192102,toplist
+75.0,5.53,,Cale SIMMONS,05 FEB 1991,USA,1,,Air Force Academy (USA),12 MAY 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14402577,toplist
+75.0,5.53,,Logan CUNNINGHAM,30 MAY 1991,USA,1,,"San Marcos, TX (USA)",13 MAY 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14366238,toplist
+75.0,5.53,,Mike ARNOLD,13 AUG 1990,USA,1,,"Pocatello, ID (USA)",01 JUN 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14364599,toplist
+75.0,5.53,,Nick FRAWLEY,21 JUN 1988,USA,2,,"Chula Vista, CA (USA)",07 JUN 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14238150,toplist
+75.0,5.53,,Maston WALLACE,02 JUL 1989,USA,5,,"Chula Vista, CA (USA)",07 JUN 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14254125,toplist
+75.0,5.53,,Dustin DELEO,03 JAN 1986,USA,3f1,,"Chula Vista, CA (USA)",14 JUN 2012,1138.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14236228,toplist
+85.0,5.52,,Fabian SCHULZE,07 MAR 1984,GER,2,,Linz (AUT) (i),02 FEB 2012,1135.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14194184,toplist
+85.0,5.52,,Giuseppe GIBILISCO,05 JAN 1979,ITA,7,,Liévin (FRA) (i),14 FEB 2012,1135.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14200460,toplist
+85.0,5.52,,Emile DENECKER,28 MAR 1992,FRA,1,,Besancon (FRA),29 MAY 2012,1135.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14403260,toplist
+85.0,5.52,,Valentin LAVILLENIE,16 JUL 1991,FRA,2,,Besancon (FRA),29 MAY 2012,1135.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14378885,toplist
+85.0,5.52,,Levi KELLER,30 JAN 1986,USA,1f2,,"Chula Vista, CA (USA)",31 MAY 2012,1135.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14242738,toplist
+85.0,5.52,,Marvin REITZE,24 SEP 1988,GER,7,,"Wattenscheid, Bochum (GER)",17 JUN 2012,1135.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14193817,toplist
+85.0,5.52,,Xavier TROMP,03 MAR 1984,FRA,1,,Bourgoin-Jallieu (FRA),27 JUN 2012,1135.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14187919,toplist
+92.0,5.51,,Jason WURSTER,23 SEP 1984,CAN,1,,London (CAN),19 MAY 2012,1132.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14173268,toplist
+92.0,5.51,,Minsub JIN,02 SEP 1992,KOR,1,,Taipei City (TPE),25 MAY 2012,1132.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14334595,toplist
+92.0,5.51,,Alexander STRAUB,14 OCT 1983,GER,4,,Landau (GER),16 AUG 2012,1132.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14194400,toplist
+92.0,5.51,,Oleksandr KORCHMID,22 JAN 1982,UKR,1,,Miedzyzdroje (POL),17 AUG 2012,1132.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14230103,toplist
+96.0,5.50,,Victor WEIRICH,25 OCT 1987,USA,1,,"Nampa, ID (USA) (i)",14 JAN 2012,1129.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14254517,toplist
+96.0,5.50,,Viktor CHISTYAKOV,09 FEB 1975,RUS,2,,Moskva (RUS) (i),18 FEB 2012,1129.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14222009,toplist
+96.0,5.50,,Matteo RUBBIANI,31 AUG 1978,ITA,2,,Ancona (ITA) (i),25 FEB 2012,1129.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14201350,toplist
+96.0,5.50,,Derick HINCH,02 FEB 1991,USA,1,,"Tempe, AZ (USA)",24 MAR 2012,1129.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14416436,toplist
+96.0,5.50,,Baptiste BOIRIE,26 DEC 1992,FRA,1,,Aix-les-Bains (FRA),06 MAY 2012,1129.0,men_PV,2012,https://worldathletics.org/athletes/athlete=14360266,toplist
+1.0,6.02,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,"Olympic Stadium, London (GBR)",27 JUL 2013,1272.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14185853,toplist
+2.0,5.91,,Raphael HOLZDEPPE,28 SEP 1989,GER,1,,"Stadio Olimpico, Roma (ITA)",06 JUN 2013,1242.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14192581,toplist
+3.0,5.90,,Björn OTTO,16 OCT 1977,GER,1,,Cottbus (GER) (i),30 JAN 2013,1239.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14193604,toplist
+4.0,5.86,,Malte MOHR,24 JUL 1986,GER,3,,"Stadio Olimpico, Roma (ITA)",06 JUN 2013,1228.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14193417,toplist
+5.0,5.83,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,1,,Linz (AUT) (i),31 JAN 2013,1220.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14195089,toplist
+5.0,5.83,,Brad WALKER,21 JUN 1981,USA,1,,"Phoenix, AZ (USA)",17 MAY 2013,1220.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14254050,toplist
+5.0,5.83,,Thiago BRAZ,16 DEC 1993,BRA,1,,Cartagena de Indias (COL),05 JUL 2013,1220.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14377443,toplist
+8.0,5.82,,Augusto DUTRA,16 JUL 1990,BRA,1,,Hof (GER),22 JUN 2013,1217.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14373227,toplist
+9.0,5.81,,Sam KENDRICKS,07 SEP 1992,USA,1f1,,"Austin, TX (USA)",29 MAR 2013,1214.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14440868,toplist
+10.0,5.80,,Yansheng YANG,05 JAN 1988,CHN,2,,Düsseldorf (GER) (i),08 FEB 2013,1212.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14170839,toplist
+11.0,5.77,,Jan KUDLIČKA,29 APR 1988,CZE,1,,Praha (CZE) (i),17 FEB 2013,1203.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14168624,toplist
+12.0,5.75,,Changrui XUE,31 MAY 1991,CHN,2,,Nevers (FRA) (i),23 FEB 2013,1198.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14462143,toplist
+12.0,5.75,,Hendrik GRUBER,28 SEP 1986,GER,3,,Dortmund (GER) (i),24 FEB 2013,1198.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14192314,toplist
+12.0,5.75,,Tobias SCHERBARTH,17 AUG 1985,GER,4,,Dortmund (GER) (i),24 FEB 2013,1198.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14194016,toplist
+12.0,5.75,,Seito YAMAMOTO,11 MAR 1992,JPN,1,,Hiratsuka (JPN),23 JUN 2013,1198.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14432907,toplist
+16.0,5.72,,Karsten DILLA,17 JUL 1989,GER,1,,Rottach-Egern (GER),13 JUL 2013,1190.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14191884,toplist
+17.0,5.71,,Steve LEWIS,20 MAY 1986,GBR,6,,"Scandinavium, Göteborg (SWE) (i)",03 MAR 2013,1187.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14189911,toplist
+17.0,5.71,,Robert SOBERA,19 JAN 1991,POL,6,,"Scandinavium, Göteborg (SWE) (i)",03 MAR 2013,1187.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14335149,toplist
+17.0,5.71,,Shawnacy BARBER,27 MAY 1994,CAN,2f1,,"Austin, TX (USA)",29 MAR 2013,1187.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14457604,toplist
+17.0,5.71,,Lázaro BORGES,19 JUN 1986,CUB,1,,"Moratalaz, Madrid (ESP)",13 JUL 2013,1187.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14169675,toplist
+17.0,5.71,,Sergey KUCHERYANU,30 JUN 1985,RUS,2,,"Moratalaz, Madrid (ESP)",13 JUL 2013,1187.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14222889,toplist
+17.0,5.71,,Luke CUTTS,13 FEB 1988,GBR,1f2,,Villeurbanne (FRA) (i),14 DEC 2013,1187.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14188965,toplist
+23.0,5.70,,Fábio GOMES DA SILVA,04 AUG 1983,BRA,1,,Sâo Caetano do Sul (BRA) (i),23 FEB 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14175576,toplist
+23.0,5.70,,Valentin LAVILLENIE,16 JUL 1991,FRA,3,,Metz (FRA) (i),24 FEB 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14378885,toplist
+23.0,5.70,,Andrew IRWIN,24 JAN 1993,USA,1,,"Fayetteville, AR (USA) (i)",08 MAR 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14411431,toplist
+23.0,5.70,,Hiroki OGITA,30 DEC 1987,JPN,1,,"Walnut, CA (USA)",20 APR 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14205146,toplist
+23.0,5.70,,Jack WHITT,12 APR 1990,USA,1,,"Tulsa, OK (USA)",18 MAY 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14254820,toplist
+23.0,5.70,,Edi MAIA,10 NOV 1987,POR,1,,Lisboa (POR),02 JUN 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14218336,toplist
+23.0,5.70,,Oleksandr KORCHMID,22 JAN 1982,UKR,1,,Kyiv (UKR),14 JUN 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14230103,toplist
+23.0,5.70,,Vladyslav REVENKO,15 NOV 1984,UKR,2,,Kyiv (UKR),14 JUN 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14230473,toplist
+23.0,5.70,,Giuseppe GIBILISCO,05 JAN 1979,ITA,1,,Mersin (TUR),28 JUN 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14200460,toplist
+23.0,5.70,,Mike ARNOLD,13 AUG 1990,USA,1,,"Grand Rapids, MI (USA)",10 JUL 2013,1184.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14364599,toplist
+33.0,5.68,,Michal BALNER,12 SEP 1982,CZE,2,,Dubnica nad Váhom (SVK),21 AUG 2013,1179.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14169131,toplist
+34.0,5.67,,John PRADER,10 FEB 1991,USA,1,,"San Luis Obispo, CA (USA)",27 APR 2013,1176.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14415159,toplist
+35.0,5.65,,Anton IVAKIN,11 FEB 1991,RUS,1,,Moskva (RUS) (i),14 FEB 2013,1171.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14222466,toplist
+35.0,5.65,,Jeremy SCOTT,01 MAY 1981,USA,2,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1171.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14250826,toplist
+35.0,5.65,,Rasmus WEINOLD JØRGENSEN,23 JAN 1989,DEN,1,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",23 JUN 2013,1171.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14167786,toplist
+35.0,5.65,,Igor BYCHKOV,03 JUL 1987,ESP,1,,Alcobendas (ESP),28 JUL 2013,1171.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14229809,toplist
+35.0,5.65,,Alhaji JENG,13 DEC 1981,SWE,9,,"Luzhniki Stadion, Moskva (RUS)",12 AUG 2013,1171.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14227656,toplist
+35.0,5.65,,Kévin MÉNALDO,12 JUL 1992,FRA,2f1,,Aulnay-sous-Bois (FRA) (i),21 DEC 2013,1171.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14362302,toplist
+41.0,5.64,,Minsub JIN,02 SEP 1992,KOR,1,,Taipei City (TPE),28 MAY 2013,1168.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14334595,toplist
+42.0,5.62,,Jérôme CLAVIER,03 MAY 1983,FRA,2f1,,Orléans (FRA) (i),12 JAN 2013,1162.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14183918,toplist
+42.0,5.62,,Emile DENECKER,28 MAR 1992,FRA,3f1,,Rouen (FRA) (i),26 JAN 2013,1162.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14403260,toplist
+42.0,5.62,,Wei ZHANG,22 MAR 1994,CHN,1,,Lyon (FRA) (i),07 FEB 2013,1162.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14430011,toplist
+42.0,5.62,,Stanley JOSEPH,24 OCT 1991,FRA,2f1,,Villeurbanne (FRA) (i),10 FEB 2013,1162.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14402297,toplist
+42.0,5.62,,Romain MESNIL,13 JUN 1977,FRA,3f1,,Villeurbanne (FRA) (i),10 FEB 2013,1162.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14186500,toplist
+42.0,5.62,,Robert RENNER,08 MAR 1994,SLO,4f1,,Villeurbanne (FRA) (i),10 FEB 2013,1162.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14379475,toplist
+42.0,5.62,,Ivan HORVAT,17 AUG 1993,CRO,1,,Koper (SLO),29 JUN 2013,1162.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14371460,toplist
+42.0,5.62,,Mareks ĀRENTS,06 AUG 1986,LAT,1,,Plzeň (CZE),04 SEP 2013,1162.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14210925,toplist
+50.0,5.61,,Cale SIMMONS,05 FEB 1991,USA,3f1,,"Austin, TX (USA)",29 MAR 2013,1160.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14402577,toplist
+50.0,5.61,,Jacob BLANKENSHIP,15 MAR 1994,USA,4f1,,"Austin, TX (USA)",29 MAR 2013,1160.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14436279,toplist
+50.0,5.61,,Jordan SCOTT,22 FEB 1988,USA,1,,"Louisville, KY (USA)",08 JUN 2013,1160.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14250829,toplist
+50.0,5.61,,Joao Gabriel SANTOS SOUSA,06 NOV 1984,BRA,1,,São Paulo (BRA),29 JUN 2013,1160.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14175261,toplist
+54.0,5.60,,Michael WOEPSE,29 MAY 1991,USA,1f1,,"Albuquerque, NM (USA) (i)",08 FEB 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14361225,toplist
+54.0,5.60,,Ivan YERYOMIN,30 MAY 1989,UKR,4q2,,"Scandinavium, Göteborg (SWE) (i)",02 MAR 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14229892,toplist
+54.0,5.60,,Jason WURSTER,23 SEP 1984,CAN,1f1,,"Blacksburg, VA (USA) (i)",02 MAR 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14173268,toplist
+54.0,5.60,,Yoo-suk KIM,19 JAN 1982,KOR,2,,"Walnut, CA (USA)",20 APR 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14210324,toplist
+54.0,5.60,,Daichi SAWANO,16 SEP 1980,JPN,3,,"Walnut, CA (USA)",20 APR 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14205675,toplist
+54.0,5.60,,Nick MOSSBERG,05 APR 1986,USA,1,,"Chula Vista, CA (USA)",02 MAY 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14246720,toplist
+54.0,5.60,,Aleksandr GRIPICH,21 SEP 1986,RUS,1,,Sochi (RUS),25 MAY 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14222376,toplist
+54.0,5.60,,Artem BURYA,11 APR 1986,RUS,2,,"Luzhniki Stadion, Moskva (RUS)",11 JUN 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14221937,toplist
+54.0,5.60,,Piotr LISEK,16 AUG 1992,POL,2,,Szczecin (POL),15 JUN 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14426447,toplist
+54.0,5.60,,Nikita FILIPPOV,07 OCT 1991,KAZ,1,,Almaty (KAZ),15 JUN 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14940978,toplist
+54.0,5.60,,Jeff COOVER,01 DEC 1987,USA,4,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14235338,toplist
+54.0,5.60,,Dustin DELEO,03 JAN 1986,USA,5,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14236228,toplist
+54.0,5.60,,Vincent FAVRETTO,05 APR 1984,FRA,1,,Vénissieux (FRA),23 JUN 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14184708,toplist
+54.0,5.60,,Claudio Michel STECCHI,23 NOV 1991,ITA,1,,Rieti (ITA),05 JUL 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14201526,toplist
+54.0,5.60,,Jere BERGIUS,04 APR 1987,FIN,1,,Lahti (FIN),15 JUL 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14181806,toplist
+54.0,5.60,,Łukasz MICHALSKI,02 AUG 1988,POL,1,,Toruń (POL),19 JUL 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14217188,toplist
+54.0,5.60,,Daniel CLEMENS,28 APR 1992,GER,2,,Valence (FRA),31 AUG 2013,1157.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14360688,toplist
+71.0,5.56,,Sean YOUNG,27 DEC 1985,USA,1,,"Clermont, FL (USA)",11 MAY 2013,1146.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14255754,toplist
+72.0,5.55,,Eemeli SALOMÄKI,11 OCT 1987,FIN,1,,Lempäälä (FIN) (i),26 JAN 2013,1143.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14182523,toplist
+72.0,5.55,,Jake WINDER,12 NOV 1987,USA,2,,"Albuquerque, NM (USA) (i)",03 MAR 2013,1143.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14255297,toplist
+72.0,5.55,,Victor WEIRICH,25 OCT 1987,USA,5,,"Eugene, OR (USA)",05 JUN 2013,1143.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14254517,toplist
+72.0,5.55,,Dmitriy ZHELYABIN,20 MAY 1990,RUS,1,,Hérouville (FRA),13 JUN 2013,1143.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14224679,toplist
+72.0,5.55,,Przemysław CZERWIŃSKI,28 JUL 1983,POL,4,,Plock (POL),19 JUN 2013,1143.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14216520,toplist
+72.0,5.55,,Michel FRAUEN,19 JAN 1986,GER,2,,Leverkusen (GER),26 JUN 2013,1143.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14192102,toplist
+72.0,5.55,,Damiel DOSSÉVI,03 FEB 1983,FRA,2,,Paris (FRA),14 JUL 2013,1143.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14184433,toplist
+79.0,5.53,,Carlo PAECH,18 DEC 1992,GER,6,,Potsdam (GER) (i),16 FEB 2013,1138.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14361419,toplist
+79.0,5.53,,Logan CUNNINGHAM,30 MAY 1991,USA,1,,"Albuquerque, NM (USA) (i)",23 FEB 2013,1138.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14366238,toplist
+81.0,5.51,,Shawn FRANCIS,16 DEC 1985,USA,1,,"Fargo, ND (USA) (i)",02 FEB 2013,1132.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14238081,toplist
+81.0,5.51,,Kyle WAIT,20 FEB 1992,USA,6f1,,"Austin, TX (USA)",29 MAR 2013,1132.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14448777,toplist
+81.0,5.51,,Colton ROSS,04 JUN 1992,USA,7f1,,"Austin, TX (USA)",29 MAR 2013,1132.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14413927,toplist
+81.0,5.51,,Joey UHLE,14 NOV 1992,USA,9f1,,"Austin, TX (USA)",29 MAR 2013,1132.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14425601,toplist
+81.0,5.51,,Sam PRIBYL,25 NOV 1985,USA,1,,"Jonesboro, AR (USA) (i)",10 MAY 2013,1132.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14248838,toplist
+81.0,5.51,,Rens BLOM,01 MAR 1977,NED,1,,Zweibrücken (GER),15 AUG 2013,1132.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14213690,toplist
+87.0,5.50,,Robbert-Jan JANSEN,22 JUL 1983,NED,1,,"Reno, NV (USA) (i)",19 JAN 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14214030,toplist
+87.0,5.50,,Chris SWANSON,06 JUN 1982,USA,1,,"Flagstaff, AZ (USA) (i)",02 FEB 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14252617,toplist
+87.0,5.50,,Derick HINCH,02 FEB 1991,USA,1,,"Flagstaff, AZ (USA) (i)",02 FEB 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14416436,toplist
+87.0,5.50,,Nick FRAWLEY,21 JUN 1988,USA,2f1,,"Albuquerque, NM (USA) (i)",08 FEB 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14238150,toplist
+87.0,5.50,,Giorgio PIANTELLA,06 JUL 1981,ITA,1,,Ancona (ITA) (i),16 FEB 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14201148,toplist
+87.0,5.50,,Melker SVÄRD JACOBSSON,08 JAN 1994,SWE,8q1,,"Scandinavium, Göteborg (SWE) (i)",02 MAR 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14377979,toplist
+87.0,5.50,,Mark HOLLIS,01 DEC 1984,USA,6,,"Albuquerque, NM (USA) (i)",03 MAR 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14240984,toplist
+87.0,5.50,,Jie YAO,21 SEP 1990,CHN,1,,Nanjing (CHN) (i),06 MAR 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14462142,toplist
+87.0,5.50,,Rob SIMMONS,05 FEB 1991,USA,2,,"Las Vegas, NV (USA)",11 MAY 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14366770,toplist
+87.0,5.50,,Viktor KOZLITIN,12 JUN 1988,RUS,2,,Sochi (RUS),25 MAY 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14222829,toplist
+87.0,5.50,,Yevgeniy LUKYANENKO,23 JAN 1985,RUS,3,,Sochi (RUS),25 MAY 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14223061,toplist
+87.0,5.50,,Jeremy KLAS,05 SEP 1989,USA,6,,"Eugene, OR (USA)",05 JUN 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14363983,toplist
+87.0,5.50,,Michael GUILLAUME,08 SEP 1989,FRA,2,,Pierre-Bénite (FRA),07 JUN 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14185207,toplist
+87.0,5.50,,Florian GAUL,21 SEP 1991,GER,3,,Ingolstadt (GER),21 JUN 2013,1129.0,men_PV,2013,https://worldathletics.org/athletes/athlete=14329119,toplist
+1.0,6.16,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,Donetsk (UKR) (i),15 FEB 2014,1311.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14185853,toplist
+2.0,5.90,,Malte MOHR,24 JUL 1986,GER,1,,Berlin (GER) (i),01 MAR 2014,1239.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14193417,toplist
+3.0,5.83,,Luke CUTTS,13 FEB 1988,GBR,2f1,,Rouen (FRA) (i),25 JAN 2014,1220.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14188965,toplist
+3.0,5.83,,Mark HOLLIS,01 DEC 1984,USA,1,,Landau (GER),19 AUG 2014,1220.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14240984,toplist
+5.0,5.82,,Piotr LISEK,16 AUG 1992,POL,1,,"Stadion Juliska, Praha (CZE)",09 JUN 2014,1217.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14426447,toplist
+6.0,5.80,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,1,,"Ergo Arena, Sopot (POL) (i)",08 MAR 2014,1212.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14195089,toplist
+6.0,5.80,,Jan KUDLIČKA,29 APR 1988,CZE,3,,"Ergo Arena, Sopot (POL) (i)",08 MAR 2014,1212.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14168624,toplist
+6.0,5.80,,Changrui XUE,31 MAY 1991,CHN,1,,Beijing (CHN),21 MAY 2014,1212.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14462143,toplist
+6.0,5.80,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,1,,"Olympiastadion, Berlin (GER)",31 AUG 2014,1212.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14217866,toplist
+6.0,5.80,,Robert SOBERA,19 JAN 1991,POL,1,,Chiari (ITA),02 SEP 2014,1212.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14335149,toplist
+11.0,5.76,,Jérôme CLAVIER,03 MAY 1983,FRA,2,,Nice (FRA) (i),08 FEB 2014,1201.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14183918,toplist
+11.0,5.76,,Thiago BRAZ,16 DEC 1993,BRA,3,,Donetsk (UKR) (i),15 FEB 2014,1201.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14377443,toplist
+13.0,5.75,,Kévin MÉNALDO,12 JUL 1992,FRA,2f1,,Aubière (FRA) (i),11 JAN 2014,1198.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14362302,toplist
+13.0,5.75,,Shawnacy BARBER,27 MAY 1994,CAN,1,,"Albuquerque, NM (USA) (i)",15 MAR 2014,1198.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14457604,toplist
+13.0,5.75,,Sam KENDRICKS,07 SEP 1992,USA,1,,"Sacramento, CA (USA)",29 JUN 2014,1198.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14440868,toplist
+13.0,5.75,,Michal BALNER,12 SEP 1982,CZE,2,,Chiari (ITA),02 SEP 2014,1198.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14169131,toplist
+17.0,5.73,,Tobias SCHERBARTH,17 AUG 1985,GER,1,,"Phoenix, AZ (USA)",24 MAY 2014,1192.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14194016,toplist
+18.0,5.71,,Alhaji JENG,13 DEC 1981,SWE,3,,Dessau (GER) (i),27 FEB 2014,1187.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14227656,toplist
+18.0,5.71,,Steve LEWIS,20 MAY 1986,GBR,2,,"Des Moines, IA (USA) (i)",23 APR 2014,1187.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14189911,toplist
+18.0,5.71,,Karsten DILLA,17 JUL 1989,GER,1,,Hof (GER),21 JUN 2014,1187.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14191884,toplist
+18.0,5.71,,Fábio GOMES DA SILVA,04 AUG 1983,BRA,1,,São Paulo (BRA),10 OCT 2014,1187.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14175576,toplist
+22.0,5.70,,Edi MAIA,10 NOV 1987,POR,3,,Orléans (FRA) (i),18 JAN 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14218336,toplist
+22.0,5.70,,Logan CUNNINGHAM,30 MAY 1991,USA,1,,"Austin, TX (USA)",29 MAR 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14366238,toplist
+22.0,5.70,,Daichi SAWANO,16 SEP 1980,JPN,1,,"Walnut, CA (USA)",19 APR 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14205675,toplist
+22.0,5.70,,Colton ROSS,04 JUN 1992,USA,1,,"Austin, TX (USA)",03 MAY 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14413927,toplist
+22.0,5.70,,Aleksandr GRIPICH,21 SEP 1986,RUS,1,,Sochi (RUS),29 MAY 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14222376,toplist
+22.0,5.70,,Augusto DUTRA,16 JUL 1990,BRA,2,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14373227,toplist
+22.0,5.70,,Jack WHITT,12 APR 1990,USA,2,,Rottach-Egern (GER),05 JUL 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14254820,toplist
+22.0,5.70,,Giuseppe GIBILISCO,05 JAN 1979,ITA,1,,Rieti (ITA),12 JUL 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14200460,toplist
+22.0,5.70,,Sergey KUCHERYANU,30 JUN 1985,RUS,1,,Kazan (RUS),25 JUL 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14222889,toplist
+22.0,5.70,,Ilya MUDROV,17 NOV 1991,RUS,1,,Kazan (RUS),25 JUL 2014,1184.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14406371,toplist
+32.0,5.67,,Diogo FERREIRA,30 JUL 1990,POR,1,,Lisboa (POR),26 JUL 2014,1176.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14364523,toplist
+33.0,5.66,,Yansheng YANG,05 JAN 1988,CHN,1f2,,Aubière (FRA) (i),11 JAN 2014,1173.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14170839,toplist
+33.0,5.66,,Valentin LAVILLENIE,16 JUL 1991,FRA,3,,Nice (FRA) (i),08 FEB 2014,1173.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14378885,toplist
+33.0,5.66,,Damiel DOSSÉVI,03 FEB 1983,FRA,4,,Nice (FRA) (i),08 FEB 2014,1173.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14184433,toplist
+36.0,5.65,,Melker SVÄRD JACOBSSON,08 JAN 1994,SWE,3,,Potsdam (GER) (i),15 FEB 2014,1171.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14377979,toplist
+36.0,5.65,,Minsub JIN,02 SEP 1992,KOR,1,,Busan (KOR),17 MAY 2014,1171.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14334595,toplist
+36.0,5.65,,Anton IVAKIN,11 FEB 1991,RUS,2,,Sochi (RUS),29 MAY 2014,1171.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14222466,toplist
+36.0,5.65,,Łukasz MICHALSKI,02 AUG 1988,POL,1,,Pila (POL),13 JUN 2014,1171.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14217188,toplist
+40.0,5.64,,Jacob BLANKENSHIP,15 MAR 1994,USA,2,,"Lexington, KY (USA)",18 MAY 2014,1168.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14436279,toplist
+41.0,5.62,,Michael WOEPSE,29 MAY 1991,USA,1,,"Los Angeles, CA (USA)",04 MAY 2014,1162.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14361225,toplist
+41.0,5.62,,Dimitrios PATSOUKAKIS,18 MAR 1987,GRE,1,,Athina (GRE),10 MAY 2014,1162.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14195420,toplist
+41.0,5.62,,Seito YAMAMOTO,11 MAR 1992,JPN,5,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2014,1162.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14432907,toplist
+41.0,5.62,,Brad WALKER,21 JUN 1981,USA,4,,"Stade Olympique de la Pontaise, Lausanne (SUI)",03 JUL 2014,1162.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14254050,toplist
+41.0,5.62,,Max EAVES,31 MAY 1988,GBR,1,,Loughborough (GBR),19 JUL 2014,1162.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14189122,toplist
+46.0,5.61,,Hiroki OGITA,30 DEC 1987,JPN,1,,Fukushima (JPN),17 MAY 2014,1160.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14205146,toplist
+46.0,5.61,,Jax THOIRS,07 APR 1993,GBR,1,,Grangemouth (GBR),02 JUL 2014,1160.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14374442,toplist
+46.0,5.61,,Artem BURYA,11 APR 1986,RUS,4,,Kazan (RUS),25 JUL 2014,1160.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14221937,toplist
+46.0,5.61,,Leonid KIVALOV,01 APR 1988,RUS,5,,Kazan (RUS),25 JUL 2014,1160.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14222676,toplist
+50.0,5.60,,Anatoliy BEDNYUK,30 JAN 1989,RUS,1,,Chelyabinsk (RUS) (i),16 JAN 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14221791,toplist
+50.0,5.60,,Mike ARNOLD,13 AUG 1990,USA,3,,"Reno, NV (USA) (i)",17 JAN 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14364599,toplist
+50.0,5.60,,Björn OTTO,16 OCT 1977,GER,1,,Cottbus (GER) (i),22 JAN 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14193604,toplist
+50.0,5.60,,Przemysław CZERWIŃSKI,28 JUL 1983,POL,5,,Bydgoszcz (POL) (i),31 JAN 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14216520,toplist
+50.0,5.60,,Andrew IRWIN,24 JAN 1993,USA,1,,"Fayetteville, AR (USA) (i)",15 FEB 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14411431,toplist
+50.0,5.60,,Igor BYCHKOV,03 JUL 1987,ESP,1,,Madrid (ESP) (i),01 MAR 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14229809,toplist
+50.0,5.60,,Wei ZHANG,22 MAR 1994,CHN,1,,Kunshan (CHN),30 MAY 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14430011,toplist
+50.0,5.60,,Didac SALAS,19 MAY 1993,ESP,1,,Palafrugell (ESP),31 MAY 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14359962,toplist
+50.0,5.60,,Victor WEIRICH,25 OCT 1987,USA,3,,"Sacramento, CA (USA)",29 JUN 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14254517,toplist
+50.0,5.60,,Jie YAO,21 SEP 1990,CHN,2,,Jinhua (CHN),06 JUL 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14462142,toplist
+50.0,5.60,,Alexandre FEGER,22 JAN 1990,FRA,1,,La Roche-sur-Yon (FRA),23 JUL 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14334104,toplist
+50.0,5.60,,Mareks ĀRENTS,06 AUG 1986,LAT,2,,Szczecin (POL),03 AUG 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14210925,toplist
+50.0,5.60,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS,6,,"Olympiastadion, Berlin (GER)",31 AUG 2014,1157.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14224142,toplist
+63.0,5.56,,Peter GERAGHTY,11 JUN 1991,USA,1,,"Charleston, IL (USA)",22 APR 2014,1146.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14403856,toplist
+63.0,5.56,,Chase WOLFLE,09 OCT 1992,USA,3,,"Lexington, KY (USA)",18 MAY 2014,1146.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14443046,toplist
+65.0,5.55,,Stanley JOSEPH,24 OCT 1991,FRA,7,,Orléans (FRA) (i),18 JAN 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14402297,toplist
+65.0,5.55,,Eemeli SALOMÄKI,11 OCT 1987,FIN,1,,Lempäälä (FIN) (i),25 JAN 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14182523,toplist
+65.0,5.55,,Japheth CATO,25 DEC 1990,USA,2,,"Fayetteville, AR (USA) (i)",15 FEB 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14400924,toplist
+65.0,5.55,,Shawn FRANCIS,16 DEC 1985,USA,2,,"Albuquerque, NM (USA) (i)",22 FEB 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14238081,toplist
+65.0,5.55,,Nick FRAWLEY,21 JUN 1988,USA,3,,"Albuquerque, NM (USA) (i)",22 FEB 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14238150,toplist
+65.0,5.55,,Theo CHAPELLE,28 MAY 1992,FRA,2,,Nantes (FRA) (i),16 MAR 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14361948,toplist
+65.0,5.55,,Giorgio PIANTELLA,06 JUL 1981,ITA,1f2,,Modena (ITA),21 JUN 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14201148,toplist
+65.0,5.55,,Alexandre MARCHAND,23 FEB 1990,FRA,3,,Reims (FRA),13 JUL 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14186288,toplist
+65.0,5.55,,Axel CHAPELLE,24 APR 1995,FRA,1,,"Hayward Field, Eugene, OR (USA)",26 JUL 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14461605,toplist
+65.0,5.55,,Arnaud ART,28 JAN 1993,BEL,3,,Castres (FRA),30 JUL 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14363868,toplist
+65.0,5.55,,Marquis RICHARDS,29 JUL 1991,SUI,1,,Arlesheim (SUI),24 AUG 2014,1143.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14362221,toplist
+76.0,5.54,,Pauls PUJATS,06 AUG 1991,LAT,1,,"Memphis, TN (USA)",29 MAR 2014,1140.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14329572,toplist
+77.0,5.53,,Dustin DELEO,03 JAN 1986,USA,2,,"Phoenix, AZ (USA)",24 MAY 2014,1138.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14236228,toplist
+77.0,5.53,,Nick MOSSBERG,05 APR 1986,USA,3,,"Phoenix, AZ (USA)",24 MAY 2014,1138.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14246720,toplist
+77.0,5.53,,Raphael HOLZDEPPE,28 SEP 1989,GER,4,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1138.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14192581,toplist
+77.0,5.53,,Marco BONI,21 MAY 1984,ITA,1,,Modena (ITA),30 AUG 2014,1138.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14199686,toplist
+81.0,5.52,,Nikandros STYLIANOU,22 AUG 1989,CYP,4,,Athina (GRE),10 MAY 2014,1135.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14169185,toplist
+81.0,5.52,,Rutger KOPPELAAR,01 MAY 1993,NED,1,,Sittard (NED),18 MAY 2014,1135.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14456364,toplist
+83.0,5.51,,Daniel CLEMENS,28 APR 1992,GER,3,,Zweibrücken (GER) (i),07 FEB 2014,1132.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14360688,toplist
+83.0,5.51,,Max BABITS,30 MAY 1992,USA,1,,"Hillsdale, MI (USA) (i)",22 FEB 2014,1132.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14376048,toplist
+83.0,5.51,,Reese WATSON,08 OCT 1993,USA,1,,"Austin, TX (USA)",12 APR 2014,1132.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14413936,toplist
+83.0,5.51,,Jake WINDER,12 NOV 1987,USA,1,,"Lawrence, KS (USA)",19 APR 2014,1132.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14255297,toplist
+83.0,5.51,,Zachary SIEGMEIER,08 JAN 1991,USA,1,,"Iowa City, IA (USA)",03 MAY 2014,1132.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14415957,toplist
+83.0,5.51,,Germán CHIARAVIGLIO,16 APR 1987,ARG,3,,Hof (GER),21 JUN 2014,1132.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14180477,toplist
+89.0,5.50,,Oleksandr KORCHMID,22 JAN 1982,UKR,1,,Kyiv (UKR) (i),10 JAN 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14230103,toplist
+89.0,5.50,,Dmitriy ZHELYABIN,20 MAY 1990,RUS,2,,Chelyabinsk (RUS) (i),16 JAN 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14224679,toplist
+89.0,5.50,,Braydon BRINGHURST,27 JUN 1988,USA,1,,"Albuquerque, NM (USA) (i)",18 JAN 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14418162,toplist
+89.0,5.50,,Vincent FAVRETTO,05 APR 1984,FRA,1,,Lyon (FRA) (i),18 JAN 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14184708,toplist
+89.0,5.50,,Dmitriy SOKOLOV,16 JAN 1993,RUS,1,,Chelyabinsk (RUS) (i),19 JAN 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14387700,toplist
+89.0,5.50,,Lázaro BORGES,19 JUN 1986,CUB,1,,La Habana (CUB),08 FEB 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14169675,toplist
+89.0,5.50,,Nicolas HOMO,24 NOV 1988,FRA,1,,Eaubonne (FRA) (i),08 FEB 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14185381,toplist
+89.0,5.50,,Jeff COOVER,01 DEC 1987,USA,3,,"New York, NY (USA) (i)",15 FEB 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14235338,toplist
+89.0,5.50,,Adam PAŠIAK,18 JUL 1990,CZE,2,,Praha (CZE) (i),16 FEB 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14168450,toplist
+89.0,5.50,,Florian GAUL,21 SEP 1991,GER,2,,Leipzig (GER) (i),23 FEB 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14329119,toplist
+89.0,5.50,,Casey BOWEN,11 JAN 1993,USA,1f1,,"Austin, TX (USA)",27 MAR 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14469582,toplist
+89.0,5.50,,Chris PILLOW,08 JUL 1993,USA,2f1,,"Austin, TX (USA)",27 MAR 2014,1129.0,men_PV,2014,https://worldathletics.org/athletes/athlete=14440871,toplist
+1.0,6.05,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1281.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14185853,toplist
+2.0,5.94,,Raphael HOLZDEPPE,28 SEP 1989,GER,1,,Nürnberg (GER),26 JUL 2015,1250.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14192581,toplist
+3.0,5.93,,Shawnacy BARBER,27 MAY 1994,CAN,2,,"Olympic Stadium, London (GBR)",25 JUL 2015,1247.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14457604,toplist
+4.0,5.92,,Thiago BRAZ,16 DEC 1993,BRA,2,,Baku (AZE),24 JUN 2015,1245.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14377443,toplist
+5.0,5.91,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,1,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1242.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14195089,toplist
+6.0,5.90,,Piotr LISEK,16 AUG 1992,POL,1,,Bad Oeynhausen (GER) (i),28 FEB 2015,1239.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14426447,toplist
+7.0,5.86,,Sam KENDRICKS,07 SEP 1992,USA,2f1,,"Reno, NV (USA) (i)",16 JAN 2015,1228.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14440868,toplist
+8.0,5.85,,Aleksandr GRIPICH,21 SEP 1986,RUS,2,,"O2 Arena, Praha (CZE) (i)",07 MAR 2015,1225.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14222376,toplist
+9.0,5.84,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",09 JUL 2015,1223.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14217866,toplist
+10.0,5.82,,Michal BALNER,12 SEP 1982,CZE,4,,Baku (AZE),24 JUN 2015,1217.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14169131,toplist
+11.0,5.81,,Robert SOBERA,19 JAN 1991,POL,2,,Berlin (GER) (i),14 FEB 2015,1214.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14335149,toplist
+11.0,5.81,,Kévin MÉNALDO,12 JUL 1992,FRA,4,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1214.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14362302,toplist
+11.0,5.81,,Augusto DUTRA,16 JUL 1990,BRA,3,,"Olympic Stadium, London (GBR)",25 JUL 2015,1214.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14373227,toplist
+14.0,5.80,,Valentin LAVILLENIE,16 JUL 1991,FRA,2f1,,Nevers (FRA) (i),07 FEB 2015,1212.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14378885,toplist
+14.0,5.80,,Jacob BLANKENSHIP,15 MAR 1994,USA,2,,"Fayetteville, AR (USA) (i)",13 MAR 2015,1212.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14436279,toplist
+14.0,5.80,,Carlo PAECH,18 DEC 1992,GER,1,,Zweibrücken (GER),14 JUN 2015,1212.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14361419,toplist
+17.0,5.78,,Ilya MUDROV,17 NOV 1991,RUS,3,,Malmö (SWE) (i),25 FEB 2015,1206.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14406371,toplist
+18.0,5.75,,Andrew IRWIN,24 JAN 1993,USA,2,,"Fayetteville, AR (USA) (i)",14 FEB 2015,1198.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14411431,toplist
+18.0,5.75,,Jan KUDLIČKA,29 APR 1988,CZE,2,,"Pankritio Stadium, Herakleion (GRE)",21 JUN 2015,1198.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14168624,toplist
+18.0,5.75,,Germán CHIARAVIGLIO,16 APR 1987,ARG,2,,"CIBC, Toronto (CAN)",21 JUL 2015,1198.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14180477,toplist
+21.0,5.72,,Brad WALKER,21 JUN 1981,USA,5,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1190.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14254050,toplist
+21.0,5.72,,Mike ARNOLD,13 AUG 1990,USA,1,,"Pueblo, CO (USA)",05 SEP 2015,1190.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14364599,toplist
+23.0,5.71,,Steve LEWIS,20 MAY 1986,GBR,1,,"Albuquerque, NM (USA) (i)",06 FEB 2015,1187.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14189911,toplist
+24.0,5.70,,Anton IVAKIN,11 FEB 1991,RUS,2,,Volgograd (RUS) (i),24 JAN 2015,1184.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14222466,toplist
+24.0,5.70,,Tobias SCHERBARTH,17 AUG 1985,GER,1,,Karlsruhe (GER) (i),22 FEB 2015,1184.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14194016,toplist
+24.0,5.70,,Jack WHITT,12 APR 1990,USA,1,,Ciudad de México (MEX),02 AUG 2015,1184.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14254820,toplist
+24.0,5.70,,Ivan GERTLEYN,25 SEP 1987,RUS,6q1,,"National Stadium, Beijing (CHN)",22 AUG 2015,1184.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14222264,toplist
+24.0,5.70,,Ivan HORVAT,17 AUG 1993,CRO,9q1,,"National Stadium, Beijing (CHN)",22 AUG 2015,1184.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14371460,toplist
+24.0,5.70,,Robert RENNER,08 MAR 1994,SLO,1q2,,"National Stadium, Beijing (CHN)",22 AUG 2015,1184.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14379475,toplist
+24.0,5.70,,Seito YAMAMOTO,11 MAR 1992,JPN,1,,Gifu (JPN),27 SEP 2015,1184.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14432907,toplist
+31.0,5.68,,Jeff COOVER,01 DEC 1987,USA,1,,"Cedar Falls, IA (USA) (i)",20 FEB 2015,1179.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14235338,toplist
+32.0,5.66,,Victor WEIRICH,25 OCT 1987,USA,2,,"Albuquerque, NM (USA) (i)",06 FEB 2015,1173.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14254517,toplist
+33.0,5.65,,Hiroki OGITA,30 DEC 1987,JPN,1f2,,Orléans (FRA) (i),17 JAN 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14205146,toplist
+33.0,5.65,,Jax THOIRS,07 APR 1993,GBR,1,,"Los Angeles, CA (USA)",16 MAY 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14374442,toplist
+33.0,5.65,,Adrian VALLES,16 MAR 1995,ESP,1,,"Storrs, CT (USA)",16 MAY 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14516180,toplist
+33.0,5.65,,Arnaud ART,28 JAN 1993,BEL,3,,"Pankritio Stadium, Herakleion (GRE)",21 JUN 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14363868,toplist
+33.0,5.65,,Wei ZHANG,22 MAR 1994,CHN,1,,Beijing (CHN),27 JUN 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14430011,toplist
+33.0,5.65,,Jie YAO,21 SEP 1990,CHN,2,,Beijing (CHN),27 JUN 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14462142,toplist
+33.0,5.65,,Mareks ĀRENTS,06 AUG 1986,LAT,3,,Praha (CZE),01 JUL 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14210925,toplist
+33.0,5.65,,Artem BURYA,11 APR 1986,RUS,2,,"Moratalaz, Madrid (ESP)",11 JUL 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14221937,toplist
+33.0,5.65,,Nikita FILIPPOV,07 OCT 1991,KAZ,,,Almaty (KAZ),18 JUL 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14940978,toplist
+33.0,5.65,,Vladyslav REVENKO,15 NOV 1984,UKR,1,,Kyiv (UKR),21 JUL 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14230473,toplist
+33.0,5.65,,Georgiy GOROKHOV,20 APR 1993,RUS,3,,Cheboksary (RUS),04 AUG 2015,1171.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14387322,toplist
+44.0,5.64,,Peter GERAGHTY,11 JUN 1991,USA,1,,"La Crosse, WI (USA)",04 JUL 2015,1168.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14403856,toplist
+45.0,5.62,,Scott HOUSTON,11 JUN 1990,USA,2,,"Louisville, KY (USA)",06 JUN 2015,1162.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14241173,toplist
+46.0,5.61,,Jérôme CLAVIER,03 MAY 1983,FRA,2,,Aulnay-sous-Bois (FRA) (i),18 DEC 2015,1160.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14183918,toplist
+47.0,5.60,,Damiel DOSSÉVI,03 FEB 1983,FRA,3f1,,Orléans (FRA) (i),17 JAN 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14184433,toplist
+47.0,5.60,,Edi MAIA,10 NOV 1987,POR,5f1,,Orléans (FRA) (i),17 JAN 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14218336,toplist
+47.0,5.60,,Diogo FERREIRA,30 JUL 1990,POR,4,,Potsdam (GER) (i),07 FEB 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14364523,toplist
+47.0,5.60,,Nicolas HOMO,24 NOV 1988,FRA,4f1,,Nevers (FRA) (i),07 FEB 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14185381,toplist
+47.0,5.60,,Chris PILLOW,08 JUL 1993,USA,2,,"Boston, MA (USA) (i)",28 FEB 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14440871,toplist
+47.0,5.60,,Didac SALAS,19 MAY 1993,ESP,10q,,"O2 Arena, Praha (CZE) (i)",06 MAR 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14359962,toplist
+47.0,5.60,,Luke CUTTS,13 FEB 1988,GBR,5,,"Austin, TX (USA)",28 MAR 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14188965,toplist
+47.0,5.60,,Adam HAGUE,29 AUG 1997,GBR,6,,"Austin, TX (USA)",28 MAR 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14526472,toplist
+47.0,5.60,,Reese WATSON,08 OCT 1993,USA,3,,"Austin, TX (USA)",02 MAY 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14413936,toplist
+47.0,5.60,,Karsten DILLA,17 JUL 1989,GER,4,,Zweibrücken (GER),14 JUN 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14191884,toplist
+47.0,5.60,,Jordan SCOTT,22 FEB 1988,USA,2,,Ciudad de México (MEX),02 AUG 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14250829,toplist
+47.0,5.60,,Mark HOLLIS,01 DEC 1984,USA,1,,Veracruz (MEX),08 AUG 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14240984,toplist
+47.0,5.60,,Cale SIMMONS,05 FEB 1991,USA,1,,"Colorado Springs, CO (USA) (i)",11 DEC 2015,1157.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14402577,toplist
+60.0,5.56,,Leonid KIVALOV,01 APR 1988,RUS,4,,Plock (POL),17 JUN 2015,1146.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14222676,toplist
+60.0,5.56,,Przemysław CZERWIŃSKI,28 JUL 1983,POL,5,,Plock (POL),17 JUN 2015,1146.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14216520,toplist
+62.0,5.55,,Daniel CLEMENS,28 APR 1992,GER,1,,Ludwigshafen (GER) (i),17 JAN 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14360688,toplist
+62.0,5.55,,Joey UHLE,14 NOV 1992,USA,3,,Air Force Academy (USA) (i),24 JAN 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14425601,toplist
+62.0,5.55,,Michael WOEPSE,29 MAY 1991,USA,1,,"Albuquerque, NM (USA) (i)",13 FEB 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14361225,toplist
+62.0,5.55,,Oleksandr KORCHMID,22 JAN 1982,UKR,5,,Łódź (POL) (i),17 FEB 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14230103,toplist
+62.0,5.55,,Menno VLOON,11 MAY 1994,NED,1f1,,Rotterdam (NED),07 JUN 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14482223,toplist
+62.0,5.55,,Pauls PUJATS,06 AUG 1991,LAT,2,,"Eugene, OR (USA)",10 JUN 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14329572,toplist
+62.0,5.55,,Hendrik GRUBER,28 SEP 1986,GER,5,,Landau (GER),25 JUN 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14192314,toplist
+62.0,5.55,,Igor BYCHKOV,03 JUL 1987,ESP,5,,"Moratalaz, Madrid (ESP)",11 JUL 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14229809,toplist
+62.0,5.55,,Leonid KOBELEV,24 JUN 1995,RUS,2,,"Kadrioru staadion, Tallinn (EST)",11 JUL 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14527130,toplist
+62.0,5.55,,Stanley JOSEPH,24 OCT 1991,FRA,3,,Villeneuve d'Ascq (FRA),12 JUL 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14402297,toplist
+62.0,5.55,,Claudio Michel STECCHI,23 NOV 1991,ITA,3,,Liège (BEL),15 JUL 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14201526,toplist
+62.0,5.55,,Axel CHAPELLE,24 APR 1995,FRA,1,,"Tomblaine, Nancy (FRA)",25 JUL 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14461605,toplist
+62.0,5.55,,Alexandre FEGER,22 JAN 1990,FRA,1,,Castres (FRA),29 JUL 2015,1143.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14334104,toplist
+75.0,5.53,,Dylan DUVIO,06 APR 1995,USA,1,,"Austin, TX (USA)",02 MAY 2015,1138.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14470832,toplist
+75.0,5.53,,Rasmus WEINOLD JØRGENSEN,23 JAN 1989,DEN,5,,Leverkusen (GER),07 AUG 2015,1138.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14167786,toplist
+75.0,5.53,,Marvin CASPARI,09 AUG 1991,GER,6,,Leverkusen (GER),07 AUG 2015,1138.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14335457,toplist
+75.0,5.53,,Florian GAUL,21 SEP 1991,GER,7,,Leverkusen (GER),07 AUG 2015,1138.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14329119,toplist
+75.0,5.53,,Minsub JIN,02 SEP 1992,KOR,8,,Leverkusen (GER),07 AUG 2015,1138.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14334595,toplist
+80.0,5.52,,Christopher UHLE,14 NOV 1992,USA,2,,"Blacksburg, VA (USA) (i)",24 JAN 2015,1135.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14425510,toplist
+81.0,5.51,,Oleg ZERNIKEL,16 APR 1995,GER,1,,Kaiserslautern (GER),05 JUL 2015,1132.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14401268,toplist
+81.0,5.51,,Hiroki SASASE,17 AUG 1989,JPN,1,,Shizuoka (JPN),12 JUL 2015,1132.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14205589,toplist
+81.0,5.51,,Duhyeon HAN,28 JUL 1994,KOR,1,,Gangneung (KOR),18 OCT 2015,1132.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14432116,toplist
+81.0,5.51,,Noel OST,15 NOV 1989,FRA,5,,Aulnay-sous-Bois (FRA) (i),18 DEC 2015,1132.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14186865,toplist
+85.0,5.50,,Josh DANGEL,21 JAN 1991,USA,4,,"Akron, OH (USA) (i)",10 JAN 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14451350,toplist
+85.0,5.50,,Max EAVES,31 MAY 1988,GBR,1,,Loughborough (GBR) (i),10 JAN 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14189122,toplist
+85.0,5.50,,Bokai HUANG,26 SEP 1996,CHN,3,,Düsseldorf (GER) (i),29 JAN 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14534938,toplist
+85.0,5.50,,Baptiste BOIRIE,26 DEC 1992,FRA,6f1,,Nevers (FRA) (i),07 FEB 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14360266,toplist
+85.0,5.50,,Derick HINCH,02 FEB 1991,USA,2,,"Albuquerque, NM (USA) (i)",13 FEB 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14416436,toplist
+85.0,5.50,,Mikhail GELMANOV,18 MAR 1990,RUS,5,,Moskva (RUS) (i),19 FEB 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14360068,toplist
+85.0,5.50,,Zachary SIEGMEIER,08 JAN 1991,USA,2,,"Flagstaff, AZ (USA) (i)",20 FEB 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14415957,toplist
+85.0,5.50,,Chase WOLFLE,09 OCT 1992,USA,3,,"Lexington, KY (USA) (i)",28 FEB 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14443046,toplist
+85.0,5.50,,Xiang XIA,28 MAR 1991,CHN,1,,Shanghai (CHN) (i),01 MAR 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14941109,toplist
+85.0,5.50,,Seth ARNOLD,29 JUL 1992,USA,1f1,,"Austin, TX (USA)",28 MAR 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14406091,toplist
+85.0,5.50,,Cody DOERFLEIN,11 JUN 1990,USA,1,,"Jonesboro, AR (USA)",25 APR 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14335356,toplist
+85.0,5.50,,Aaron UNTERBERGER,12 JUL 1989,USA,1,,"Athens, GA (USA)",09 MAY 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14370489,toplist
+85.0,5.50,,Nils MULDER,25 JUN 1987,NED,1,,Vught (NED),06 JUN 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14371731,toplist
+85.0,5.50,,Audie WYATT,30 APR 1996,USA,4,,"Eugene, OR (USA)",10 JUN 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14578984,toplist
+85.0,5.50,,Mitch GREELEY,05 MAY 1986,USA,6,,Zweibrücken (GER),14 JUN 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14239228,toplist
+85.0,5.50,,Hichem Kalil CHERABI,30 MAR 1993,ALG,8,,Zweibrücken (GER),14 JUN 2015,1129.0,men_PV,2015,https://worldathletics.org/athletes/athlete=14660652,toplist
+1.0,6.03,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,Jablonec nad Nisou (CZE) (i),05 MAR 2016,1275.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14185853,toplist
+1.0,6.03,,Thiago BRAZ,16 DEC 1993,BRA,1,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1275.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14377443,toplist
+3.0,6.00,,Shawnacy BARBER,27 MAY 1994,CAN,1f1,,"Reno, NV (USA) (i)",15 JAN 2016,1267.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14457604,toplist
+4.0,5.92,,Sam KENDRICKS,07 SEP 1992,USA,1,,"National Stadium, Beijing (CHN)",18 MAY 2016,1245.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14440868,toplist
+5.0,5.84,,Raphael HOLZDEPPE,28 SEP 1989,GER,1f1,,Rouen (FRA) (i),23 JAN 2016,1223.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14192581,toplist
+5.0,5.84,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,3,,Clermont-Ferrand (FRA) (i),21 FEB 2016,1223.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14195089,toplist
+5.0,5.84,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,5,,Clermont-Ferrand (FRA) (i),21 FEB 2016,1223.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14217866,toplist
+8.0,5.83,,Jan KUDLIČKA,29 APR 1988,CZE,1,,Praha (CZE),22 JUN 2016,1220.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14168624,toplist
+9.0,5.81,,Changrui XUE,31 MAY 1991,CHN,1f1,,Orléans (FRA) (i),16 JAN 2016,1214.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14462143,toplist
+10.0,5.80,,Timur MORGUNOV,12 OCT 1996,RUS,1,,Volgograd (RUS) (i),02 MAR 2016,1212.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14565215,toplist
+10.0,5.80,,Kévin MÉNALDO,12 JUL 1992,FRA,2,,Angers (FRA),26 JUN 2016,1212.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14362302,toplist
+10.0,5.80,,Ilya MUDROV,17 NOV 1991,RUS,1,,Moskva (RUS),18 JUL 2016,1212.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14406371,toplist
+13.0,5.77,,Seito YAMAMOTO,11 MAR 1992,JPN,2f1,,"Reno, NV (USA) (i)",15 JAN 2016,1203.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14432907,toplist
+13.0,5.77,,Carlo PAECH,18 DEC 1992,GER,1,,Potsdam (GER) (i),06 FEB 2016,1203.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14361419,toplist
+13.0,5.77,,Jérôme CLAVIER,03 MAY 1983,FRA,2,,Potsdam (GER) (i),06 FEB 2016,1203.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14183918,toplist
+13.0,5.77,,Robert SOBERA,19 JAN 1991,POL,1,,Toruń (POL) (i),12 FEB 2016,1203.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14335149,toplist
+13.0,5.77,,Piotr LISEK,16 AUG 1992,POL,2,,Toruń (POL) (i),12 FEB 2016,1203.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14426447,toplist
+13.0,5.77,,Mike ARNOLD,13 AUG 1990,USA,1,,"Flagstaff, AZ (USA) (i)",13 FEB 2016,1203.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14364599,toplist
+13.0,5.77,,Florian GAUL,21 SEP 1991,GER,2,,Rottach-Egern (GER),16 JUL 2016,1203.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14329119,toplist
+20.0,5.75,,Bokai HUANG,26 SEP 1996,CHN,1,,Doha (QAT) (i),20 FEB 2016,1198.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14534938,toplist
+20.0,5.75,,Tobias SCHERBARTH,17 AUG 1985,GER,3f1,,Leverkusen (GER),24 JUN 2016,1198.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14194016,toplist
+20.0,5.75,,Stanley JOSEPH,24 OCT 1991,FRA,3,,Angers (FRA),26 JUN 2016,1198.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14402297,toplist
+20.0,5.75,,Daichi SAWANO,16 SEP 1980,JPN,1,,Tokyo (JPN),03 JUL 2016,1198.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14205675,toplist
+24.0,5.72,,Jacob BLANKENSHIP,15 MAR 1994,USA,1,,"Blacksburg, VA (USA) (i)",06 FEB 2016,1190.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14436279,toplist
+24.0,5.72,,Joey UHLE,14 NOV 1992,USA,1,,"Chula Vista, CA (USA)",26 JUN 2016,1190.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14425601,toplist
+24.0,5.72,,Cale SIMMONS,05 FEB 1991,USA,1,,"Highlands Ranch, CO (USA)",26 JUN 2016,1190.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14402577,toplist
+27.0,5.71,,Valentin LAVILLENIE,16 JUL 1991,FRA,1,,St-Denis-Réunion (FRA),23 APR 2016,1187.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14378885,toplist
+27.0,5.71,,Logan CUNNINGHAM,30 MAY 1991,USA,1,,"Phoenix, AZ (USA)",21 MAY 2016,1187.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14366238,toplist
+27.0,5.71,,Mark HOLLIS,01 DEC 1984,USA,1,,Ciudad de México (MEX),29 MAY 2016,1187.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14240984,toplist
+30.0,5.70,,Michal BALNER,12 SEP 1982,CZE,3,,Cottbus (GER) (i),27 JAN 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14169131,toplist
+30.0,5.70,,Luke CUTTS,13 FEB 1988,GBR,1,,Cardiff (GBR) (i),07 FEB 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14188965,toplist
+30.0,5.70,,Georgiy GOROKHOV,20 APR 1993,RUS,1,,Moskva (RUS) (i),10 FEB 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14387322,toplist
+30.0,5.70,,Pauls PUJATS,06 AUG 1991,LAT,1,,"Black Springs, NV (USA) (i)",28 FEB 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14329572,toplist
+30.0,5.70,,Devin KING,13 MAR 1996,USA,1f4,,"Austin, TX (USA)",31 MAR 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14546029,toplist
+30.0,5.70,,Melker SVÄRD JACOBSSON,08 JAN 1994,SWE,2,,"Austin, TX (USA)",02 APR 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14377979,toplist
+30.0,5.70,,Hiroki OGITA,30 DEC 1987,JPN,3,,"Austin, TX (USA)",02 APR 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14205146,toplist
+30.0,5.70,,Jie YAO,21 SEP 1990,CHN,4,,"National Stadium, Beijing (CHN)",18 MAY 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14462142,toplist
+30.0,5.70,,Scott HOUSTON,11 JUN 1990,USA,1f1,,"Louisville, KY (USA)",04 JUN 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14241173,toplist
+30.0,5.70,,Mareks ĀRENTS,06 AUG 1986,LAT,1,,Jablonec nad Nisou (CZE),08 JUN 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14210925,toplist
+30.0,5.70,,Augusto DUTRA,16 JUL 1990,BRA,1,,"Arena Caixa, Sao Bernardo do Campo (BRA)",19 JUN 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14373227,toplist
+30.0,5.70,,Dylan BELL,21 JUL 1993,USA,1,,"Pueblo, CO (USA)",19 JUN 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14466964,toplist
+30.0,5.70,,Kurtis MARSCHALL,25 APR 1997,AUS,1,,Mannheim (GER),26 JUN 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14565327,toplist
+30.0,5.70,,Karsten DILLA,17 JUL 1989,GER,2f1,,Landau (GER),28 JUN 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14191884,toplist
+30.0,5.70,,Germán CHIARAVIGLIO,16 APR 1987,ARG,5q1,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14180477,toplist
+30.0,5.70,,Ivan HORVAT,17 AUG 1993,CRO,1,,"Sports Park Mladost, Zagreb (CRO)",06 SEP 2016,1184.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14371460,toplist
+46.0,5.67,,Jason COLWICK,25 JAN 1988,USA,1,,"Houston, TX (USA) (i)",12 FEB 2016,1176.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14235156,toplist
+47.0,5.66,,Eirik DOLVE,05 MAY 1995,NOR,2,,Praha (CZE),22 JUN 2016,1173.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14458717,toplist
+48.0,5.65,,Yevgeniy LUKYANENKO,23 JAN 1985,RUS,1,,Slavyansk-na-Kubani (RUS) (i),31 JAN 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14223061,toplist
+48.0,5.65,,Adam BRAGG,18 APR 1993,USA,1,,NY (USA) (i),12 FEB 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14423580,toplist
+48.0,5.65,,Audie WYATT,30 APR 1996,USA,2f4,,"Austin, TX (USA)",31 MAR 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14578984,toplist
+48.0,5.65,,John PRADER,10 FEB 1991,USA,1,,"Chula Vista, CA (USA)",21 APR 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14415159,toplist
+48.0,5.65,,Chase WOLFLE,09 OCT 1992,USA,1,,"Waco, TX (USA)",23 APR 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14443046,toplist
+48.0,5.65,,Axel CHAPELLE,24 APR 1995,FRA,1,,Pierre Bénite (FRA),10 JUN 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14461605,toplist
+48.0,5.65,,Michael WOEPSE,29 MAY 1991,USA,1,,"Phoenix, AZ (USA)",11 JUN 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14361225,toplist
+48.0,5.65,,Robert RENNER,08 MAR 1994,SLO,5,,"Olympic Stadium, London (GBR)",22 JUL 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14379475,toplist
+48.0,5.65,,Deakin VOLZ,06 MAY 1997,USA,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",23 JUL 2016,1171.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14537856,toplist
+57.0,5.64,,Max EAVES,31 MAY 1988,GBR,4,,Jablonec nad Nisou (CZE) (i),05 MAR 2016,1168.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14189122,toplist
+58.0,5.62,,Torben LAIDIG,13 MAR 1994,GER,2,,"Blacksburg, VA (USA) (i)",06 FEB 2016,1162.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14416509,toplist
+58.0,5.62,,Drew VOLZ,20 NOV 1992,USA,1,,"Blacksburg, VA (USA) (i)",20 FEB 2016,1162.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14510673,toplist
+58.0,5.62,,Jordan SCOTT,22 FEB 1988,USA,1,,"Lawrence, KS (USA)",25 JUN 2016,1162.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14250829,toplist
+58.0,5.62,,Sam PIERSON,07 APR 1988,USA,2,,"Highlands Ranch, CO (USA)",26 JUN 2016,1162.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14248495,toplist
+58.0,5.62,,Rasmus WEINOLD JØRGENSEN,23 JAN 1989,DEN,4,,Jockgrim (GER),19 JUL 2016,1162.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14167786,toplist
+63.0,5.61,,Hendrik GRUBER,28 SEP 1986,GER,1,,Leverkusen (GER),07 MAY 2016,1160.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14192314,toplist
+63.0,5.61,,Ben BROEDERS,21 JUN 1995,BEL,1,,Oordegem (BEL),21 MAY 2016,1160.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14474566,toplist
+63.0,5.61,,Levi KELLER,30 JAN 1986,USA,1,,"Seattle, WA (USA)",15 JUN 2016,1160.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14242738,toplist
+63.0,5.61,,Arnaud ART,28 JAN 1993,BEL,1f1,,Rennes (FRA) (i),17 DEC 2016,1160.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14363868,toplist
+67.0,5.60,,Dimitrios PATSOUKAKIS,18 MAR 1987,GRE,1,,Pireaus (GRE) (i),30 JAN 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14195420,toplist
+67.0,5.60,,Eben BEUKES,09 MAR 1990,RSA,1,,Pretoria (RSA),13 FEB 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14219706,toplist
+67.0,5.60,,Baptiste BOIRIE,26 DEC 1992,FRA,1f1,,Clermont-Ferrand (FRA) (i),20 FEB 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14360266,toplist
+67.0,5.60,,Steve LEWIS,20 MAY 1986,GBR,1,,"Phoenix, AZ (USA)",26 MAR 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14189911,toplist
+67.0,5.60,,Minsub JIN,02 SEP 1992,KOR,2,,"Walnut, CA (USA)",16 APR 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14334595,toplist
+67.0,5.60,,Christopher NILSEN,13 JAN 1998,USA,1,,"Kansas City, MO (USA)",22 MAY 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14709278,toplist
+67.0,5.60,,Ivan GERTLEYN,25 SEP 1987,RUS,1,,Zhukovskiy (RUS),05 JUN 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14222264,toplist
+67.0,5.60,,Alioune SENE,03 FEB 1996,FRA,2,,Pierre Bénite (FRA),10 JUN 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14565735,toplist
+67.0,5.60,,Rhys SEARLES,28 MAR 1991,GBR,1f1,,Bromley (GBR),02 JUL 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/great-britain-ni/rhys-searles-014335792,toplist
+67.0,5.60,,Olen Tray OATES,14 MAR 1995,USA,4,,"Hayward Field, Eugene, OR (USA)",04 JUL 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14519865,toplist
+67.0,5.60,,Dmitriy ZHELYABIN,20 MAY 1990,RUS,2,,Moskva (RUS),18 JUL 2016,1157.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14224679,toplist
+78.0,5.58,,Menno VLOON,11 MAY 1994,NED,1,,Kessel-Lo (BEL),30 JUL 2016,1151.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14482223,toplist
+79.0,5.57,,Jeff COOVER,01 DEC 1987,USA,1,,Dublin (IRL),22 JUL 2016,1149.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14235338,toplist
+80.0,5.56,,Peter GERAGHTY,11 JUN 1991,USA,2f1,,"Louisville, KY (USA)",04 JUN 2016,1146.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14403856,toplist
+80.0,5.56,,Chase BRANNON,08 FEB 1991,USA,1,,"Atlanta, GA (USA)",10 JUN 2016,1146.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14419152,toplist
+82.0,5.55,,Victor WEIRICH,25 OCT 1987,USA,5f1,,"Reno, NV (USA) (i)",15 JAN 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14254517,toplist
+82.0,5.55,,Anton IVAKIN,11 FEB 1991,RUS,2,,Slavyansk-na-Kubani (RUS) (i),31 JAN 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14222466,toplist
+82.0,5.55,,Ernest John OBIENA,17 NOV 1995,PHI,1,,Singapore (SGP),29 APR 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14522941,toplist
+82.0,5.55,,Joao Gabriel SANTOS SOUSA,06 NOV 1984,BRA,1,,Belo Horizonte (BRA),30 APR 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14175261,toplist
+82.0,5.55,,Diogo FERREIRA,30 JUL 1990,POR,1,,Fátima (POR),19 MAY 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14364523,toplist
+82.0,5.55,,Emmanouil KARALIS,20 OCT 1999,GRE,7,,"Mestský Stadion, Ostrava (CZE)",20 MAY 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14669731,toplist
+82.0,5.55,,Dominik ALBERTO,28 APR 1992,SUI,1f3,,Gräfelfing (GER),29 MAY 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14373257,toplist
+82.0,5.55,,Tyler WALLACE,31 JUL 1990,USA,1,,"Norwalk, CA (USA)",04 JUN 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14458306,toplist
+82.0,5.55,,Lukáš POSEKANÝ,30 DEC 1992,CZE,4,,Praha (CZE),22 JUN 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14407365,toplist
+82.0,5.55,,Kyrylo KIRU,06 MAY 1996,UKR,1,,Kyiv (UKR),24 JUN 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14566326,toplist
+82.0,5.55,,Vladislav MALYKHIN,15 JAN 1998,UKR,1,,Kirovograd (UKR),02 JUL 2016,1143.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14647487,toplist
+93.0,5.53,,Adam HAGUE,29 AUG 1997,GBR,2,,Cardiff (GBR) (i),07 FEB 2016,1138.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14526472,toplist
+93.0,5.53,,Igor BYCHKOV,03 JUL 1987,ESP,1,,Madrid (ESP) (i),26 FEB 2016,1138.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14229809,toplist
+93.0,5.53,,Pau TONNESEN,24 OCT 1992,ESP,1,,"Seattle, WA (USA) (i)",26 FEB 2016,1138.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14492618,toplist
+93.0,5.53,,Rutger KOPPELAAR,01 MAY 1993,NED,2,,Kessel-Lo (BEL),30 JUL 2016,1138.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14456364,toplist
+97.0,5.52,,Luke WINDER,02 AUG 1995,USA,1,,"Grinnell, IA (USA) (i)",11 MAR 2016,1135.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14528681,toplist
+97.0,5.52,,Alex BISHOP,17 MAY 1991,USA,2,,"Chula Vista, CA (USA)",26 JUN 2016,1135.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14425794,toplist
+99.0,5.51,,Daniel CLEMENS,28 APR 1992,GER,5,,Zweibrücken (GER) (i),31 JAN 2016,1132.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14360688,toplist
+99.0,5.51,,Tom KONRAD,30 MAR 1991,GER,5,,Bad Oeynhausen (GER) (i),05 MAR 2016,1132.0,men_PV,2016,https://worldathletics.org/athletes/athlete=14192932,toplist
+1.0,6.00,,Piotr LISEK,16 AUG 1992,POL,1,,Potsdam (GER) (i),04 FEB 2017,1267.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14426447,toplist
+1.0,6.00,,Sam KENDRICKS,07 SEP 1992,USA,1,,"Sacramento, CA (USA)",24 JUN 2017,1267.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14440868,toplist
+3.0,5.93,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1247.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14217866,toplist
+4.0,5.91,,Renaud LAVILLENIE,18 SEP 1986,FRA,1,,"Stadion PGE Narodowy, Warszawa (POL)",15 AUG 2017,1242.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14185853,toplist
+5.0,5.90,,Armand DUPLANTIS,10 NOV 1999,SWE,1,,"Austin, TX (USA)",01 APR 2017,1239.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14679502,toplist
+6.0,5.86,,Thiago BRAZ,16 DEC 1993,BRA,1f1,,Rouen (FRA) (i),28 JAN 2017,1228.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14377443,toplist
+7.0,5.85,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,2,,"Kombank Arena, Beograd (SRB) (i)",03 MAR 2017,1225.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14195089,toplist
+7.0,5.85,,Menno VLOON,11 MAY 1994,NED,1,,Zweibrücken (GER),10 JUN 2017,1225.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14482223,toplist
+9.0,5.83,,Shawnacy BARBER,27 MAY 1994,CAN,1,,Clermont-Ferrand (FRA) (i),05 FEB 2017,1220.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14457604,toplist
+9.0,5.83,,Kévin MÉNALDO,12 JUL 1992,FRA,1,,Forbach (FRA),28 MAY 2017,1220.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14362302,toplist
+11.0,5.82,,Changrui XUE,31 MAY 1991,CHN,4,,"Olympic Stadium, London (GBR)",08 AUG 2017,1217.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14462143,toplist
+12.0,5.80,,Timur MORGUNOV,12 OCT 1996,RUS,1,,Chelyabinsk (RUS) (i),11 JAN 2017,1212.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14565215,toplist
+12.0,5.80,,Jan KUDLIČKA,29 APR 1988,CZE,4,,"Kombank Arena, Beograd (SRB) (i)",03 MAR 2017,1212.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14168624,toplist
+12.0,5.80,,Raphael HOLZDEPPE,28 SEP 1989,GER,5,,"Kombank Arena, Beograd (SRB) (i)",03 MAR 2017,1212.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14192581,toplist
+12.0,5.80,,Axel CHAPELLE,24 APR 1995,FRA,6,,"Kombank Arena, Beograd (SRB) (i)",03 MAR 2017,1212.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14461605,toplist
+12.0,5.80,,Michal BALNER,12 SEP 1982,CZE,1f1,,Hof (GER),24 JUN 2017,1212.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14169131,toplist
+17.0,5.78,,Scott HOUSTON,11 JUN 1990,USA,1,,"Charlotte, NC (USA)",21 JUL 2017,1206.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14241173,toplist
+18.0,5.76,,Ivan HORVAT,17 AUG 1993,CRO,1,,Beograd (SRB) (i),25 FEB 2017,1201.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14371460,toplist
+19.0,5.75,,Logan CUNNINGHAM,30 MAY 1991,USA,1,,"Chula Vista, CA (USA)",17 JUN 2017,1198.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14366238,toplist
+19.0,5.75,,Andrew IRWIN,24 JAN 1993,USA,2,,"Sacramento, CA (USA)",24 JUN 2017,1198.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14411431,toplist
+19.0,5.75,,Christopher NILSEN,13 JAN 1998,USA,3,,"Sacramento, CA (USA)",24 JUN 2017,1198.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14709278,toplist
+22.0,5.73,,Kurtis MARSCHALL,25 APR 1997,AUS,4,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1192.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14565327,toplist
+23.0,5.72,,Seito YAMAMOTO,11 MAR 1992,JPN,1,,Ichihara (JPN),15 JUL 2017,1190.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14432907,toplist
+24.0,5.71,,Diogo FERREIRA,30 JUL 1990,POR,1,,Lisboa (POR),17 JUN 2017,1187.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14364523,toplist
+24.0,5.71,,Arnaud ART,28 JAN 1993,BEL,3f1,,Leverkusen (GER),27 JUL 2017,1187.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14363868,toplist
+26.0,5.70,,Georgiy GOROKHOV,20 APR 1993,RUS,2,,Chelyabinsk (RUS) (i),11 JAN 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14387322,toplist
+26.0,5.70,,Ilya MUDROV,17 NOV 1991,RUS,1,,Moskva (RUS) (i),18 JAN 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14406371,toplist
+26.0,5.70,,Victor WEIRICH,25 OCT 1987,USA,1,,"Colorado Springs, CO (USA) (i)",20 JAN 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14254517,toplist
+26.0,5.70,,Dmitriy ZHELYABIN,20 MAY 1990,RUS,1,,St. Petersburg (RUS) (i),14 FEB 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14224679,toplist
+26.0,5.70,,Emmanouil KARALIS,20 OCT 1999,GRE,2,,Athina (GRE) (i),19 FEB 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14669731,toplist
+26.0,5.70,,Torben LAIDIG,13 MAR 1994,GER,1,,"Austin, TX (USA)",01 APR 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14416509,toplist
+26.0,5.70,,Audie WYATT,30 APR 1996,USA,1,,"Tempe, AZ (USA)",08 APR 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14578984,toplist
+26.0,5.70,,Hiroki OGITA,30 DEC 1987,JPN,1,,Hiroshima (JPN),29 APR 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14205146,toplist
+26.0,5.70,,Matt LUDWIG,05 JUL 1996,USA,1,,"Akron, OH (USA)",06 MAY 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14596020,toplist
+26.0,5.70,,Bangchao DING,11 OCT 1996,CHN,1,,Jinan (CHN),18 MAY 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14637826,toplist
+26.0,5.70,,Vladislav MALYKHIN,15 JAN 1998,UKR,1,,Zary (POL),27 MAY 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14647487,toplist
+26.0,5.70,,Valentin LAVILLENIE,16 JUL 1991,FRA,2,,"Stadion Juliska, Praha (CZE)",05 JUN 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14378885,toplist
+26.0,5.70,,Jie YAO,21 SEP 1990,CHN,1,,Pierre-Bénite (FRA),09 JUN 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14462142,toplist
+26.0,5.70,,Devin KING,13 MAR 1996,USA,4,,"Sacramento, CA (USA)",24 JUN 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14546029,toplist
+26.0,5.70,,Adrian VALLES,16 MAR 1995,ESP,1f1,,Landau (GER),28 JUN 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14516180,toplist
+26.0,5.70,,Igor BYCHKOV,03 JUL 1987,ESP,1,,Liège (BEL),19 JUL 2017,1184.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14229809,toplist
+42.0,5.66,,Deakin VOLZ,06 MAY 1997,USA,1,,"Blacksburg, VA (USA) (i)",18 FEB 2017,1173.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14537856,toplist
+43.0,5.65,,Rutger KOPPELAAR,01 MAY 1993,NED,1,,Vught (NED) (i),22 JAN 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14456364,toplist
+43.0,5.65,,Stanley JOSEPH,24 OCT 1991,FRA,2f1,,Praha (CZE) (i),21 FEB 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14402297,toplist
+43.0,5.65,,Kyle PATER,24 DEC 1994,USA,1,,"Albuquerque, NM (USA) (i)",25 FEB 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14533191,toplist
+43.0,5.65,,Malte MOHR,24 JUL 1986,GER,3,,Zweibrücken (GER) (i),25 FEB 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14193417,toplist
+43.0,5.65,,Chris PILLOW,08 JUL 1993,USA,3,,"Albuquerque, NM (USA) (i)",04 MAR 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14440871,toplist
+43.0,5.65,,Sergey GRIGORYEV,24 JUN 1992,KAZ,1,,Busan (KOR),13 MAY 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14376042,toplist
+43.0,5.65,,Baptiste BOIRIE,26 DEC 1992,FRA,2,,Cergy-Pontoise (FRA),20 JUN 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14360266,toplist
+43.0,5.65,,Masaki EJIMA,06 MAR 1999,JPN,2,,Bhubaneshwar (IND),06 JUL 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14714512,toplist
+43.0,5.65,,Jeff COOVER,01 DEC 1987,USA,1,,"Louisville, KY (USA)",30 JUL 2017,1171.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14235338,toplist
+52.0,5.63,,Bokai HUANG,26 SEP 1996,CHN,1f1,,Nevers (FRA) (i),21 JAN 2017,1165.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14534938,toplist
+52.0,5.63,,Daniyil KOTOV,02 JUN 1995,RUS,1,,Moskva (RUS) (i),04 FEB 2017,1165.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14506237,toplist
+52.0,5.63,,Karsten DILLA,17 JUL 1989,GER,3,,Potsdam (GER) (i),04 FEB 2017,1165.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14191884,toplist
+55.0,5.61,,Nikandros STYLIANOU,22 AUG 1989,CYP,3,,Beograd (SRB) (i),25 FEB 2017,1160.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14169185,toplist
+55.0,5.61,,Ernest John OBIENA,17 NOV 1995,PHI,4f1,,Leverkusen (GER),27 JUL 2017,1160.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14522941,toplist
+55.0,5.61,,Bo Kanda LITA BAEHRE,29 APR 1999,GER,6f1,,Leverkusen (GER),27 JUL 2017,1160.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14649117,toplist
+58.0,5.60,,Florian GAUL,21 SEP 1991,GER,1,,Sindelfingen (GER) (i),21 JAN 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14329119,toplist
+58.0,5.60,,Ivan GERTLEYN,25 SEP 1987,RUS,2,,Moskva (RUS) (i),20 FEB 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14222264,toplist
+58.0,5.60,,Mareks ĀRENTS,06 AUG 1986,LAT,8,,"Kombank Arena, Beograd (SRB) (i)",03 MAR 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14210925,toplist
+58.0,5.60,,Germán CHIARAVIGLIO,16 APR 1987,ARG,1,,Santa Fé (ARG),25 MAR 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14180477,toplist
+58.0,5.60,,Jake ALBRIGHT,22 DEC 1993,USA,5,,"Austin, TX (USA)",01 APR 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14564216,toplist
+58.0,5.60,,Hussain Asim AL HIZAM,04 JAN 1998,KSA,2,,"Tempe, AZ (USA)",08 APR 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14523471,toplist
+58.0,5.60,,John PRADER,10 FEB 1991,USA,1,,"Austin, TX (USA)",29 APR 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14415159,toplist
+58.0,5.60,,Yevgeniy LUKYANENKO,23 JAN 1985,RUS,2,,Sochi (RUS),25 MAY 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14223061,toplist
+58.0,5.60,,Hendrik GRUBER,28 SEP 1986,GER,3,,Zary (POL),27 MAY 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14192314,toplist
+58.0,5.60,,Augusto DUTRA,16 JUL 1990,BRA,1,,"Arena Caixa, Sao Bernardo do Campo (BRA)",03 JUN 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14373227,toplist
+58.0,5.60,,Dimitrios PATSOUKAKIS,18 MAR 1987,GRE,2,,Patra (GRE),17 JUN 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14195420,toplist
+58.0,5.60,,Olen Tray OATES,14 MAR 1995,USA,8,,"Sacramento, CA (USA)",24 JUN 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14519865,toplist
+58.0,5.60,,Tobias SCHERBARTH,17 AUG 1985,GER,3f1,,Landau (GER),28 JUN 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14194016,toplist
+58.0,5.60,,Ben BROEDERS,21 JUN 1995,BEL,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",16 JUL 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14474566,toplist
+58.0,5.60,,Claudio Michel STECCHI,23 NOV 1991,ITA,2,,Liège (BEL),19 JUL 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14201526,toplist
+58.0,5.60,,Kota SUZUKI,18 DEC 1995,JPN,1,,Fukui (JPN),08 SEP 2017,1157.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14657398,toplist
+74.0,5.57,,Chase BRANNON,08 FEB 1991,USA,1,,"Rock Hill, SC (USA)",05 AUG 2017,1149.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14419152,toplist
+75.0,5.56,,Luke WINDER,02 AUG 1995,USA,1,,"Naperville, IL (USA)",17 MAY 2017,1146.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14528681,toplist
+75.0,5.56,,Rasmus WEINOLD JØRGENSEN,23 JAN 1989,DEN,3,,Athina (GRE),01 JUN 2017,1146.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14167786,toplist
+77.0,5.55,,Mike ARNOLD,13 AUG 1990,USA,1f1,,"Reno, NV (USA) (i)",13 JAN 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14364599,toplist
+77.0,5.55,,Eirik DOLVE,05 MAY 1995,NOR,1,,Tampere (FIN) (i),11 FEB 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14458717,toplist
+77.0,5.55,,Urho KUJANPÄÄ,18 MAY 1997,FIN,1,,Jyväskylä (FIN) (i),19 FEB 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14571674,toplist
+77.0,5.55,,Dominik ALBERTO,28 APR 1992,SUI,5,,Zweibrücken (GER) (i),25 FEB 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14373257,toplist
+77.0,5.55,,Max BABITS,30 MAY 1992,USA,6,,"Albuquerque, NM (USA) (i)",04 MAR 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14376048,toplist
+77.0,5.55,,Koki KURUMA,25 MAR 1996,JPN,1,,Yokohama (JPN),27 MAY 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14635037,toplist
+77.0,5.55,,Mathieu COLLET,15 MAR 1995,FRA,2,,Pierre-Bénite (FRA),09 JUN 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14565733,toplist
+77.0,5.55,,Lukáš POSEKANÝ,30 DEC 1992,CZE,2,,Kladno (CZE),15 JUL 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14407365,toplist
+77.0,5.55,,Aleksandr GRIPICH,21 SEP 1986,RUS,3,,Zhukovskiy (RUS),29 JUL 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14222376,toplist
+77.0,5.55,,Melker SVÄRD JACOBSSON,08 JAN 1994,SWE,1,,Stockholm (SWE),02 SEP 2017,1143.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14377979,toplist
+87.0,5.54,,Emile DENECKER,28 MAR 1992,FRA,1f2,,Orléans (FRA) (i),14 JAN 2017,1140.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14403260,toplist
+88.0,5.53,,Alexandre FEGER,22 JAN 1990,FRA,2,,Tignes (FRA) (i),06 JAN 2017,1138.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14334104,toplist
+88.0,5.53,,Alioune SENE,03 FEB 1996,FRA,3f1,,Nevers (FRA) (i),21 JAN 2017,1138.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14565735,toplist
+90.0,5.52,,Antonio RUIZ,04 NOV 1996,USA,1,,"Houston, TX (USA)",05 MAY 2017,1135.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14585982,toplist
+90.0,5.52,,Jax THOIRS,07 APR 1993,GBR,1,,Glasgow (GBR) (i),16 DEC 2017,1135.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14374442,toplist
+92.0,5.51,,Levi KELLER,30 JAN 1986,USA,2,,"Seattle, WA (USA) (i)",28 JAN 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14242738,toplist
+92.0,5.51,,Nikolaos NERANTZIS,13 MAR 1998,GRE,1,,Istanbul (TUR) (i),12 FEB 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14669733,toplist
+92.0,5.51,,Robert RENNER,08 MAR 1994,SLO,4,,Beograd (SRB) (i),25 FEB 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14379475,toplist
+92.0,5.51,,Nate RICHARTZ,02 NOV 1994,USA,1,,"Louisville, KY (USA)",15 APR 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14539067,toplist
+92.0,5.51,,Jeff RODRIGUEZ,10 MAR 1990,USA,1,,"Abilene, TX (USA)",03 MAY 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14326555,toplist
+92.0,5.51,,Drew MCMICHAEL,25 MAY 1996,USA,2,,"Lawrence, KS (USA)",14 MAY 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14619365,toplist
+92.0,5.51,,Noel OST,15 NOV 1989,FRA,1,,Bordeaux (FRA),01 JUL 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14186865,toplist
+92.0,5.51,,Joel Leon BENITEZ,31 AUG 1998,GBR,1,,Cardiff (GBR),12 JUL 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14623158,toplist
+92.0,5.51,,Tomas WECKSTEN,02 NOV 1996,FIN,7f1,,Leverkusen (GER),27 JUL 2017,1132.0,men_PV,2017,https://worldathletics.org/athletes/athlete=14538127,toplist
+,5.90,,Steven HOOKER,16 JUL 1982,AUS,1.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.85,,Romain MESNIL,13 JUN 1977,FRA,2.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.80,,Renaud LAVILLENIE,18 SEP 1986,FRA,3.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.75,,Maksym MAZURYK,02 APR 1983,UKR,4.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.75,,Aleksandr GRIPICH,21 SEP 1986,RUS,5.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.75,,Damiel DOSSÉVI,03 FEB 1983,FRA,6.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.65,,Steve LEWIS,20 MAY 1986,GBR,7.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.65,,Giuseppe GIBILISCO,05 JAN 1979,ITA,7.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.65,,Alexander STRAUB,14 OCT 1983,GER,7.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.50,,Viktor CHISTYAKOV,09 FEB 1975,RUS,10.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.50,,Daichi SAWANO,16 SEP 1980,JPN,10.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.50,,Alhaji JENG,13 DEC 1981,SWE,12.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.50,,Malte MOHR,24 JUL 1986,GER,13.,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.50,,Kevin RANS,19 AUG 1982,BEL,,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,NM,,Derek MILES,28 SEP 1972,USA,,,IAAF World Championships,22 AUG 2009,,,2009,,major_meet
+,5.85,,Renaud LAVILLENIE,18 SEP 1986,FRA,1.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.80,,Maksym MAZURYK,02 APR 1983,UKR,2.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.75,,Przemysław CZERWIŃSKI,28 JUL 1983,POL,3.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.75,,Giuseppe GIBILISCO,05 JAN 1979,ITA,4.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.70,,Damiel DOSSÉVI,03 FEB 1983,FRA,5.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.70,,Fabian SCHULZE,07 MAR 1984,GER,6.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.65,,Łukasz MICHALSKI,02 AUG 1988,POL,7.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.60,,Romain MESNIL,13 JUN 1977,FRA,8.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.60,,Raphael HOLZDEPPE,28 SEP 1989,GER,9.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.60,,Jan KUDLIČKA,29 APR 1988,CZE,10.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.50,,Mateusz DIDENKOW,22 APR 1987,POL,11.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,NM,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS,,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,5.90,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,1.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.90,,Lázaro BORGES,19 JUN 1986,CUB,2.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.85,,Renaud LAVILLENIE,18 SEP 1986,FRA,3.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.85,,Łukasz MICHALSKI,02 AUG 1988,POL,4.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.85,,Malte MOHR,24 JUL 1986,GER,5.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.75,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,6.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.75,,Mateusz DIDENKOW,22 APR 1987,POL,7.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.65,,Fábio GOMES DA SILVA,04 AUG 1983,BRA,8.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.65,,Jeremy SCOTT,01 MAY 1981,USA,9.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.65,,Steve LEWIS,20 MAY 1986,GBR,9.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.65,,Jan KUDLIČKA,29 APR 1988,CZE,9.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.65,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS,12.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.65,,Derek MILES,28 SEP 1972,USA,13.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.65,,Daichi SAWANO,16 SEP 1980,JPN,14.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,NM,,Igor BYCHKOV,03 JUL 1987,ESP,,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,NM,,Romain MESNIL,13 JUN 1977,FRA,,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,5.97,,Renaud LAVILLENIE,18 SEP 1986,FRA,1.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.91,,Björn OTTO,16 OCT 1977,GER,2.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.91,,Raphael HOLZDEPPE,28 SEP 1989,GER,3.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.75,,Yevgeniy LUKYANENKO,23 JAN 1985,RUS,4.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.75,,Steve LEWIS,20 MAY 1986,GBR,4.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.65,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,6.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.65,,Jan KUDLIČKA,29 APR 1988,CZE,7.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.50,,Romain MESNIL,13 JUN 1977,FRA,8.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.50,,Malte MOHR,24 JUL 1986,GER,8.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.50,,Łukasz MICHALSKI,02 AUG 1988,POL,10.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.50,,Igor BYCHKOV,03 JUL 1987,ESP,11.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,NM,,Steven HOOKER,16 JUL 1982,AUS,,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,NM,,Brad WALKER,21 JUN 1981,USA,,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,DQ,,Dmitriy STARODUBTSEV,03 JAN 1986,RUS, - ,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,5.97,,Renaud LAVILLENIE,18 SEP 1986,FRA,1.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.92,,Björn OTTO,16 OCT 1977,GER,2.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.77,,Raphael HOLZDEPPE,28 SEP 1989,GER,3.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.77,,Malte MOHR,24 JUL 1986,GER,4.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.72,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,5.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.60,,Jan KUDLIČKA,29 APR 1988,CZE,6.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.50,,Rasmus WEINOLD JØRGENSEN,23 JAN 1989,DEN,7.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.40,,Claudio Michel STECCHI,23 NOV 1991,ITA,8.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.40,,Maksym MAZURYK,02 APR 1983,UKR,8.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.40,,Jérôme CLAVIER,03 MAY 1983,FRA,10.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,NM,,Sergey KUCHERYANU,30 JUN 1985,RUS,,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,NM,,Stanislav TIVONCHIK,03 MAY 1985,BLR,,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,NM,,Igor BYCHKOV,03 JUL 1987,ESP,,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,5.89,,Raphael HOLZDEPPE,28 SEP 1989,GER,1.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.89,,Renaud LAVILLENIE,18 SEP 1986,FRA,2.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.82,,Björn OTTO,16 OCT 1977,GER,3.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.82,,Brad WALKER,21 JUN 1981,USA,4.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.82,,Malte MOHR,24 JUL 1986,GER,5.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.75,,Seito YAMAMOTO,11 MAR 1992,JPN,6.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.75,,Jan KUDLIČKA,29 APR 1988,CZE,7.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.65,,Sergey KUCHERYANU,30 JUN 1985,RUS,8.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.65,,Alhaji JENG,13 DEC 1981,SWE,9.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.65,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,10.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.65,,Augusto DUTRA,16 JUL 1990,BRA,11.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.50,,Changrui XUE,31 MAY 1991,CHN,12.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,NM,,Valentin LAVILLENIE,16 JUL 1991,FRA,,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,5.90,,Renaud LAVILLENIE,18 SEP 1986,FRA,1.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.70,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,2.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.70,,Jan KUDLIČKA,29 APR 1988,CZE,3.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.70,,Kévin MÉNALDO,12 JUL 1992,FRA,3.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.65,,Aleksandr GRIPICH,21 SEP 1986,RUS,5.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.65,,Piotr LISEK,16 AUG 1992,POL,6.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.60,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,7.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.60,,Edi MAIA,10 NOV 1987,POR,8.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.40,,Sergey KUCHERYANU,30 JUN 1985,RUS,9.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.40,,Karsten DILLA,17 JUL 1989,GER,9.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.40,,Steve LEWIS,20 MAY 1986,GBR,11.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,NM,,Diogo FERREIRA,30 JUL 1990,POR,,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,NM,,Robert SOBERA,19 JAN 1991,POL,,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,NM,,Ilya MUDROV,17 NOV 1991,RUS,,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,5.90,,Shawnacy BARBER,27 MAY 1994,CAN,1.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.90,,Raphael HOLZDEPPE,28 SEP 1989,GER,2.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.80,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,3.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.80,,Renaud LAVILLENIE,18 SEP 1986,FRA,3.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.80,,Piotr LISEK,16 AUG 1992,POL,3.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.80,,Kévin MÉNALDO,12 JUL 1992,FRA,6.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.65,,Tobias SCHERBARTH,17 AUG 1985,GER,7.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.65,,Michal BALNER,12 SEP 1982,CZE,7.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.65,,Ivan HORVAT,17 AUG 1993,CRO,9.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.65,,Augusto DUTRA,16 JUL 1990,BRA,9.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.65,,Sam KENDRICKS,07 SEP 1992,USA,9.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.65,,Germán CHIARAVIGLIO,16 APR 1987,ARG,9.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.50,,Robert RENNER,08 MAR 1994,SLO,13.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.50,,Jan KUDLIČKA,29 APR 1988,CZE,13.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,5.50,,Robert SOBERA,19 JAN 1991,POL,15.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,NM,,Ivan GERTLEYN,25 SEP 1987,RUS,,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,6.03,,Thiago BRAZ,16 DEC 1993,BRA,1.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.98,,Renaud LAVILLENIE,18 SEP 1986,FRA,2.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.85,,Sam KENDRICKS,07 SEP 1992,USA,3.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.75,,Jan KUDLIČKA,29 APR 1988,CZE,4.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.75,,Piotr LISEK,16 AUG 1992,POL,4.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.65,,Changrui XUE,31 MAY 1991,CHN,6.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.50,,Daichi SAWANO,16 SEP 1980,JPN,7.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.50,,Michal BALNER,12 SEP 1982,CZE,7.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.50,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,7.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.50,,Shawnacy BARBER,27 MAY 1994,CAN,10.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.50,,Germán CHIARAVIGLIO,16 APR 1987,ARG,11.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,NM,,Pauls PUJATS,06 AUG 1991,LAT,,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,5.60,,Robert SOBERA,19 JAN 1991,POL,1.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.60,,Jan KUDLIČKA,29 APR 1988,CZE,2.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.50,,Robert RENNER,08 MAR 1994,SLO,3.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.50,,Piotr LISEK,16 AUG 1992,POL,4.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.50,,Ben BROEDERS,21 JUN 1995,BEL,4.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.50,,Mareks ĀRENTS,06 AUG 1986,LAT,6.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.30,,Ivan HORVAT,17 AUG 1993,CRO,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.30,,Karsten DILLA,17 JUL 1989,GER,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.30,,Konstantinos FILIPPIDIS,26 NOV 1986,GRE,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.30,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.30,,Arnaud ART,28 JAN 1993,BEL,11.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.30,,Adrian VALLES,16 MAR 1995,ESP,11.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.30,,Stanley JOSEPH,24 OCT 1991,FRA,13.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,NM,,Kévin MÉNALDO,12 JUL 1992,FRA,,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,NM,,Renaud LAVILLENIE,18 SEP 1986,FRA,,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,DNS,,Melker SVÄRD JACOBSSON,08 JAN 1994,SWE,,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,5.95,,Sam KENDRICKS,07 SEP 1992,USA,1.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,5.89,,Piotr LISEK,16 AUG 1992,POL,2.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,5.89,,Renaud LAVILLENIE,18 SEP 1986,FRA,3.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,5.82,,Changrui XUE,31 MAY 1991,CHN,4.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,5.75,,Paweł WOJCIECHOWSKI,06 JUN 1989,POL,5.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,5.65,,Axel CHAPELLE,24 APR 1995,FRA,6.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,5.65,,Kurtis MARSCHALL,25 APR 1997,AUS,7.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,5.65,,Shawnacy BARBER,27 MAY 1994,CAN,8.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,5.50,,Armand DUPLANTIS,10 NOV 1999,SWE,9.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,NM,,Jie YAO,21 SEP 1990,CHN,,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,NM,,Raphael HOLZDEPPE,28 SEP 1989,GER,,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,NM,,Arnaud ART,28 JAN 1993,BEL,,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
 ,6.05,,Armand DUPLANTIS,10 NOV 1999,SWE,1.,,European Athletics Championships,12 AUG 2018,,,2018,,major_meet
 ,6.00,,Timur MORGUNOV,12 OCT 1996,ANA,2.,,European Athletics Championships,12 AUG 2018,,,2018,,major_meet
 ,5.95,,Renaud LAVILLENIE,18 SEP 1986,FRA,3.,,European Athletics Championships,12 AUG 2018,,,2018,,major_meet
@@ -1365,6 +2513,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,5.35,,Takuma ISHIKAWA,07 NOV 1997,JPN,5.,,"""READY STEADY TOKYO - Athletics""",09 MAY 2021,,,2021,,major_meet
 ,5.15,,Kazuki FURUSAWA,05 JUL 2002,JPN,6.,,"""READY STEADY TOKYO - Athletics""",09 MAY 2021,,,2021,,major_meet
 ,5.15,,Koki KURUMA,25 MAR 1996,JPN,7.,,"""READY STEADY TOKYO - Athletics""",09 MAY 2021,,,2021,,major_meet
+,5.15,,Hiroki SASASE,17 AUG 1989,JPN,7.,,"""READY STEADY TOKYO - Athletics""",09 MAY 2021,,,2021,,major_meet
 ,6.21,,Armand DUPLANTIS,10 NOV 1999,SWE,1.,,"World Athletics Championships, Oregon 2022",24 JUL 2022,,,2022,,major_meet
 ,5.94,,Christopher NILSEN,13 JAN 1998,USA,2.,,"World Athletics Championships, Oregon 2022",24 JUL 2022,,,2022,,major_meet
 ,5.94,,Ernest John OBIENA,17 NOV 1995,PHI,3.,,"World Athletics Championships, Oregon 2022",24 JUL 2022,,,2022,,major_meet

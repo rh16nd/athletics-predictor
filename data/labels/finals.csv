@@ -1,67 +1,1087 @@
 discipline,year,competition,date,athlete_name,place,mark,tier,name_key
+men_100m,2009,IAAF World Championships,2009-08-16,Usain BOLT,1,9.58,global,USAIN BOLT
+men_100m,2009,IAAF World Championships,2009-08-16,Tyson GAY,2,9.71,global,TYSON GAY
+men_100m,2009,IAAF World Championships,2009-08-16,Asafa POWELL,3,9.84,global,ASAFA POWELL
+men_110h,2009,IAAF World Championships,2009-08-20,Ryan BRATHWAITE,1,13.14,global,RYAN BRATHWAITE
+men_110h,2009,IAAF World Championships,2009-08-20,Terrence TRAMMELL,2,13.15,global,TERRENCE TRAMMELL
+men_110h,2009,IAAF World Championships,2009-08-20,David PAYNE,3,13.15,global,DAVID PAYNE
+men_1500m,2009,IAAF World Championships,2009-08-19,Yusuf Saad KAMEL,1,3:35.93,global,YUSUF SAAD KAMEL
+men_1500m,2009,IAAF World Championships,2009-08-19,Deresse MEKONNEN,2,3:36.01,global,DERESSE MEKONNEN
+men_1500m,2009,IAAF World Championships,2009-08-19,Bernard LAGAT,3,3:36.20,global,BERNARD LAGAT
+men_200m,2009,IAAF World Championships,2009-08-20,Usain BOLT,1,19.19,global,USAIN BOLT
+men_200m,2009,IAAF World Championships,2009-08-20,Alonso EDWARD,2,19.81,global,ALONSO EDWARD
+men_200m,2009,IAAF World Championships,2009-08-20,Wallace SPEARMON,3,19.85,global,WALLACE SPEARMON
+men_3000sc,2009,IAAF World Championships,2009-08-18,Ezekiel KEMBOI,1,8:00.43,global,EZEKIEL KEMBOI
+men_3000sc,2009,IAAF World Championships,2009-08-18,Richard Kipkemboi MATEELONG,2,8:00.89,global,RICHARD KIPKEMBOI MATEELONG
+men_3000sc,2009,IAAF World Championships,2009-08-18,Bouabdellah TAHRI,3,8:01.18,global,BOUABDELLAH TAHRI
+men_400h,2009,IAAF World Championships,2009-08-18,Kerron CLEMENT,1,47.91,global,KERRON CLEMENT
+men_400h,2009,IAAF World Championships,2009-08-18,Javier CULSON,2,48.09,global,JAVIER CULSON
+men_400h,2009,IAAF World Championships,2009-08-18,Bershawn JACKSON,3,48.23,global,BERSHAWN JACKSON
+men_400m,2009,IAAF World Championships,2009-08-21,LaShawn MERRITT,1,44.06,global,LASHAWN MERRITT
+men_400m,2009,IAAF World Championships,2009-08-21,Jeremy WARINER,2,44.60,global,JEREMY WARINER
+men_400m,2009,IAAF World Championships,2009-08-21,Renny QUOW,3,45.02,global,RENNY QUOW
+men_5000m,2009,IAAF World Championships,2009-08-23,Kenenisa BEKELE,1,13:17.09,global,KENENISA BEKELE
+men_5000m,2009,IAAF World Championships,2009-08-23,Bernard LAGAT,2,13:17.33,global,BERNARD LAGAT
+men_5000m,2009,IAAF World Championships,2009-08-23,James Kwalia C'KURUI,3,13:17.78,global,JAMES KWALIA C'KURUI
+men_800m,2009,IAAF World Championships,2009-08-23,Mbulaeni MULAUDZI,1,1:45.29,global,MBULAENI MULAUDZI
+men_800m,2009,IAAF World Championships,2009-08-23,Alfred Kirwa YEGO,2,1:45.35,global,ALFRED KIRWA YEGO
+men_800m,2009,IAAF World Championships,2009-08-23,Yusuf Saad KAMEL,3,1:45.35,global,YUSUF SAAD KAMEL
+men_DT,2009,IAAF World Championships,2009-08-19,Robert HARTING,1,69.43,global,ROBERT HARTING
+men_DT,2009,IAAF World Championships,2009-08-19,Piotr MAŁACHOWSKI,2,69.15,global,PIOTR MAŁACHOWSKI
+men_DT,2009,IAAF World Championships,2009-08-19,Gerd KANTER,3,66.88,global,GERD KANTER
+men_HJ,2009,IAAF World Championships,2009-08-21,Yaroslav RYBAKOV,1,2.32,global,YAROSLAV RYBAKOV
+men_HJ,2009,IAAF World Championships,2009-08-21,Kyriakos IOANNOU,2,2.32,global,KYRIAKOS IOANNOU
+men_HJ,2009,IAAF World Championships,2009-08-21,Raul SPANK,3,2.32,global,RAUL SPANK
+men_JT,2009,IAAF World Championships,2009-08-23,Andreas THORKILDSEN,1,89.59,global,ANDREAS THORKILDSEN
+men_JT,2009,IAAF World Championships,2009-08-23,Guillermo MARTÍNEZ,2,86.41,global,GUILLERMO MARTINEZ
+men_JT,2009,IAAF World Championships,2009-08-23,Yukifumi MURAKAMI,3,82.97,global,YUKIFUMI MURAKAMI
+men_LJ,2009,IAAF World Championships,2009-08-22,Dwight PHILLIPS,1,8.54,global,DWIGHT PHILLIPS
+men_LJ,2009,IAAF World Championships,2009-08-22,Godfrey Khotso MOKOENA,2,8.47,global,GODFREY KHOTSO MOKOENA
+men_LJ,2009,IAAF World Championships,2009-08-22,Mitchell WATT,3,8.37,global,MITCHELL WATT
+men_PV,2009,IAAF World Championships,2009-08-22,Steven HOOKER,1,5.90,global,STEVEN HOOKER
+men_PV,2009,IAAF World Championships,2009-08-22,Romain MESNIL,2,5.85,global,ROMAIN MESNIL
+men_PV,2009,IAAF World Championships,2009-08-22,Renaud LAVILLENIE,3,5.80,global,RENAUD LAVILLENIE
+men_SP,2009,IAAF World Championships,2009-08-15,Christian CANTWELL,1,22.03,global,CHRISTIAN CANTWELL
+men_SP,2009,IAAF World Championships,2009-08-15,Tomasz MAJEWSKI,2,21.91,global,TOMASZ MAJEWSKI
+men_SP,2009,IAAF World Championships,2009-08-15,Ralf BARTELS,3,21.37,global,RALF BARTELS
+men_TJ,2009,IAAF World Championships,2009-08-18,Phillips IDOWU,1,17.73,global,PHILLIPS IDOWU
+men_TJ,2009,IAAF World Championships,2009-08-18,Nelson ÉVORA,2,17.55,global,NELSON EVORA
+men_TJ,2009,IAAF World Championships,2009-08-18,Alexis COPELLO,3,17.36,global,ALEXIS COPELLO
+women_100h,2009,IAAF World Championships,2009-08-19,Brigitte Ann FOSTER-HYLTON,1,12.51,global,BRIGITTE ANN FOSTER-HYLTON
+women_100h,2009,IAAF World Championships,2009-08-19,Priscilla SCHLIEP,2,12.54,global,PRISCILLA SCHLIEP
+women_100h,2009,IAAF World Championships,2009-08-19,Delloreen ENNIS,3,12.55,global,DELLOREEN ENNIS
+women_100m,2009,IAAF World Championships,2009-08-17,Shelly-Ann FRASER-PRYCE,1,10.73,global,SHELLY-ANN FRASER-PRYCE
+women_100m,2009,IAAF World Championships,2009-08-17,Kerron STEWART,2,10.75,global,KERRON STEWART
+women_100m,2009,IAAF World Championships,2009-08-17,Carmelita JETER,3,10.90,global,CARMELITA JETER
+women_1500m,2009,IAAF World Championships,2009-08-23,Maryam Yusuf JAMAL,1,4:03.74,global,MARYAM YUSUF JAMAL
+women_1500m,2009,IAAF World Championships,2009-08-23,Lisa DOBRISKEY,2,4:03.75,global,LISA DOBRISKEY
+women_1500m,2009,IAAF World Championships,2009-08-23,Shannon ROWBURY,3,4:04.18,global,SHANNON ROWBURY
+women_200m,2009,IAAF World Championships,2009-08-21,Allyson FELIX,1,22.02,global,ALLYSON FELIX
+women_200m,2009,IAAF World Championships,2009-08-21,Veronica CAMPBELL-BROWN,2,22.35,global,VERONICA CAMPBELL-BROWN
+women_200m,2009,IAAF World Championships,2009-08-21,Debbie FERGUSON-MCKENZIE,3,22.41,global,DEBBIE FERGUSON-MCKENZIE
+women_3000sc,2009,IAAF World Championships,2009-08-17,Yuliya ZARIPOVA,1,9:08.39,global,YULIYA ZARIPOVA
+women_3000sc,2009,IAAF World Championships,2009-08-17,Milcah CHEMOS,2,9:08.57,global,MILCAH CHEMOS
+women_3000sc,2009,IAAF World Championships,2009-08-17,Gulnara SAMITOVA-GALKINA,3,9:11.09,global,GULNARA SAMITOVA-GALKINA
+women_400h,2009,IAAF World Championships,2009-08-20,Melaine WALKER,1,52.42,global,MELAINE WALKER
+women_400h,2009,IAAF World Championships,2009-08-20,Lashinda DEMUS,2,52.96,global,LASHINDA DEMUS
+women_400h,2009,IAAF World Championships,2009-08-20,Josanne LUCAS,3,53.20,global,JOSANNE LUCAS
+women_400m,2009,IAAF World Championships,2009-08-18,Sanya RICHARDS-ROSS,1,49.00,global,SANYA RICHARDS-ROSS
+women_400m,2009,IAAF World Championships,2009-08-18,Shericka WILLIAMS,2,49.32,global,SHERICKA WILLIAMS
+women_400m,2009,IAAF World Championships,2009-08-18,Antonina KRIVOSHAPKA,3,49.71,global,ANTONINA KRIVOSHAPKA
+women_5000m,2009,IAAF World Championships,2009-08-22,Vivian Jepkemei CHERUIYOT,1,14:57.97,global,VIVIAN JEPKEMEI CHERUIYOT
+women_5000m,2009,IAAF World Championships,2009-08-22,Sylvia Jebiwot KIBET,2,14:58.33,global,SYLVIA JEBIWOT KIBET
+women_5000m,2009,IAAF World Championships,2009-08-22,Meseret DEFAR,3,14:58.41,global,MESERET DEFAR
+women_800m,2009,IAAF World Championships,2009-08-19,Caster SEMENYA,1,1:55.45,global,CASTER SEMENYA
+women_800m,2009,IAAF World Championships,2009-08-19,Janeth JEPKOSGEI,2,1:57.90,global,JANETH JEPKOSGEI
+women_800m,2009,IAAF World Championships,2009-08-19,Jennifer MEADOWS,3,1:57.93,global,JENNIFER MEADOWS
+women_DT,2009,IAAF World Championships,2009-08-21,Dani STEVENS,1,65.44,global,DANI STEVENS
+women_DT,2009,IAAF World Championships,2009-08-21,Yarelis BARRIOS,2,65.31,global,YARELIS BARRIOS
+women_DT,2009,IAAF World Championships,2009-08-21,Nicoleta GRASU,3,65.20,global,NICOLETA GRASU
+women_HJ,2009,IAAF World Championships,2009-08-20,Blanka VLAŠIĆ,1,2.04,global,BLANKA VLASIC
+women_HJ,2009,IAAF World Championships,2009-08-20,Ariane FRIEDRICH,2,2.02,global,ARIANE FRIEDRICH
+women_HJ,2009,IAAF World Championships,2009-08-20,Antonietta DI MARTINO,3,1.99,global,ANTONIETTA DI MARTINO
+women_JT,2009,IAAF World Championships,2009-08-18,Steffi NERIUS,1,67.30,global,STEFFI NERIUS
+women_JT,2009,IAAF World Championships,2009-08-18,Barbora ŠPOTÁKOVÁ,2,66.42,global,BARBORA SPOTAKOVA
+women_JT,2009,IAAF World Championships,2009-08-18,Monica STOIAN,3,64.51,global,MONICA STOIAN
+women_LJ,2009,IAAF World Championships,2009-08-23,Brittney REESE,1,7.10,global,BRITTNEY REESE
+women_LJ,2009,IAAF World Championships,2009-08-23,Karin MEY MELIS,2,6.80,global,KARIN MEY MELIS
+women_LJ,2009,IAAF World Championships,2009-08-23,Naide GOMES,3,6.77,global,NAIDE GOMES
+women_SP,2009,IAAF World Championships,2009-08-16,Valerie ADAMS,1,20.44,global,VALERIE ADAMS
+women_SP,2009,IAAF World Championships,2009-08-16,Nadine KLEINERT,2,20.20,global,NADINE KLEINERT
+women_SP,2009,IAAF World Championships,2009-08-16,Lijiao GONG,3,19.89,global,LIJIAO GONG
+women_TJ,2009,IAAF World Championships,2009-08-17,Yargelis SAVIGNE,1,14.95,global,YARGELIS SAVIGNE
+women_TJ,2009,IAAF World Championships,2009-08-17,Mabel GAY,2,14.61,global,MABEL GAY
+women_TJ,2009,IAAF World Championships,2009-08-17,Anna PYATYKH,3,14.58,global,ANNA PYATYKH
+men_100m,2010,Barcelona European Championships,2010-07-28,Christophe LEMAITRE,1,10.11,continental,CHRISTOPHE LEMAITRE
+men_100m,2010,Barcelona European Championships,2010-07-28,Mark LEWIS-FRANCIS,2,10.18,continental,MARK LEWIS-FRANCIS
+men_100m,2010,Barcelona European Championships,2010-07-28,Martial MBANDJOCK,3,10.18,continental,MARTIAL MBANDJOCK
+men_110h,2010,Barcelona European Championships,2010-07-30,Andrew TURNER,1,13.28,continental,ANDREW TURNER
+men_110h,2010,Barcelona European Championships,2010-07-30,Garfield DARIEN,2,13.34,continental,GARFIELD DARIEN
+men_110h,2010,Barcelona European Championships,2010-07-30,Dániel KISS,3,13.39,continental,DANIEL KISS
+men_1500m,2010,Barcelona European Championships,2010-07-30,Arturo CASADO,1,3:42.74,continental,ARTURO CASADO
+men_1500m,2010,Barcelona European Championships,2010-07-30,Carsten SCHLANGEN,2,3:43.52,continental,CARSTEN SCHLANGEN
+men_1500m,2010,Barcelona European Championships,2010-07-30,Manuel OLMEDO,3,3:43.54,continental,MANUEL OLMEDO
+men_200m,2010,Barcelona European Championships,2010-07-30,Christophe LEMAITRE,1,20.37,continental,CHRISTOPHE LEMAITRE
+men_200m,2010,Barcelona European Championships,2010-07-30,Christian MALCOLM,2,20.38,continental,CHRISTIAN MALCOLM
+men_200m,2010,Barcelona European Championships,2010-07-30,Martial MBANDJOCK,3,20.42,continental,MARTIAL MBANDJOCK
+men_3000sc,2010,Barcelona European Championships,2010-08-01,Mahiedine MEKHISSI,1,8:07.87,continental,MAHIEDINE MEKHISSI
+men_3000sc,2010,Barcelona European Championships,2010-08-01,Bouabdellah TAHRI,2,8:09.28,continental,BOUABDELLAH TAHRI
+men_3000sc,2010,Barcelona European Championships,2010-08-01,Ivan LUKYANOV,3,8:19.64,continental,IVAN LUKYANOV
+men_400h,2010,Barcelona European Championships,2010-07-31,David GREENE,1,48.12,continental,DAVID GREENE
+men_400h,2010,Barcelona European Championships,2010-07-31,Rhys WILLIAMS,2,48.96,continental,RHYS WILLIAMS
+men_400h,2010,Barcelona European Championships,2010-07-31,Stanislav MELNIKOV,3,49.09,continental,STANISLAV MELNIKOV
+men_400m,2010,Barcelona European Championships,2010-07-30,Kévin BORLÉE,1,45.08,continental,KEVIN BORLEE
+men_400m,2010,Barcelona European Championships,2010-07-30,Michael BINGHAM,2,45.23,continental,MICHAEL BINGHAM
+men_400m,2010,Barcelona European Championships,2010-07-30,Martyn ROONEY,3,45.23,continental,MARTYN ROONEY
+men_5000m,2010,Barcelona European Championships,2010-07-31,Mo FARAH,1,13:31.18,continental,MO FARAH
+men_5000m,2010,Barcelona European Championships,2010-07-31,Jesús ESPAÑA,2,13:33.12,continental,JESUS ESPANA
+men_5000m,2010,Barcelona European Championships,2010-07-31,Hayle IBRAHIMOV,3,13:34.15,continental,HAYLE IBRAHIMOV
+men_800m,2010,Barcelona European Championships,2010-07-31,Marcin LEWANDOWSKI,1,1:47.07,continental,MARCIN LEWANDOWSKI
+men_800m,2010,Barcelona European Championships,2010-07-31,Michael RIMMER,2,1:47.17,continental,MICHAEL RIMMER
+men_800m,2010,Barcelona European Championships,2010-07-31,Adam KSZCZOT,3,1:47.22,continental,ADAM KSZCZOT
+men_DT,2010,Barcelona European Championships,2010-08-01,Piotr MAŁACHOWSKI,1,68.87,continental,PIOTR MAŁACHOWSKI
+men_DT,2010,Barcelona European Championships,2010-08-01,Robert HARTING,2,68.47,continental,ROBERT HARTING
+men_DT,2010,Barcelona European Championships,2010-08-01,Róbert FAZEKAS,3,66.43,continental,ROBERT FAZEKAS
+men_HJ,2010,Barcelona European Championships,2010-07-29,Aleksandr SHUSTOV,1,2.33,continental,ALEKSANDR SHUSTOV
+men_HJ,2010,Barcelona European Championships,2010-07-29,Ivan UKHOV,2,2.31,continental,IVAN UKHOV
+men_HJ,2010,Barcelona European Championships,2010-07-29,Martyn BERNARD,3,2.29,continental,MARTYN BERNARD
+men_JT,2010,Barcelona European Championships,2010-07-31,Andreas THORKILDSEN,1,88.37,continental,ANDREAS THORKILDSEN
+men_JT,2010,Barcelona European Championships,2010-07-31,Matthias DE ZORDO,2,87.81,continental,MATTHIAS DE ZORDO
+men_JT,2010,Barcelona European Championships,2010-07-31,Tero PITKÄMÄKI,3,86.67,continental,TERO PITKAMAKI
+men_LJ,2010,Barcelona European Championships,2010-08-01,Christian REIF,1,8.47,continental,CHRISTIAN REIF
+men_LJ,2010,Barcelona European Championships,2010-08-01,Kafétien GOMIS,2,8.24,continental,KAFETIEN GOMIS
+men_LJ,2010,Barcelona European Championships,2010-08-01,Chris TOMLINSON,3,8.23,continental,CHRIS TOMLINSON
+men_PV,2010,Barcelona European Championships,2010-07-31,Renaud LAVILLENIE,1,5.85,continental,RENAUD LAVILLENIE
+men_PV,2010,Barcelona European Championships,2010-07-31,Maksym MAZURYK,2,5.80,continental,MAKSYM MAZURYK
+men_PV,2010,Barcelona European Championships,2010-07-31,Przemysław CZERWIŃSKI,3,5.75,continental,PRZEMYSŁAW CZERWINSKI
+men_SP,2010,Barcelona European Championships,2010-07-31,Tomasz MAJEWSKI,1,21.00,continental,TOMASZ MAJEWSKI
+men_SP,2010,Barcelona European Championships,2010-07-31,Ralf BARTELS,2,20.93,continental,RALF BARTELS
+men_SP,2010,Barcelona European Championships,2010-07-31,Māris URTĀNS,3,20.72,continental,MARIS URTANS
+men_TJ,2010,Barcelona European Championships,2010-07-29,Phillips IDOWU,1,17.81,continental,PHILLIPS IDOWU
+men_TJ,2010,Barcelona European Championships,2010-07-29,Marian OPREA,2,17.51,continental,MARIAN OPREA
+men_TJ,2010,Barcelona European Championships,2010-07-29,Teddy TAMGHO,3,17.45,continental,TEDDY TAMGHO
+women_100h,2010,Barcelona European Championships,2010-07-31,Nevin YANIT,1,12.63,continental,NEVIN YANIT
+women_100h,2010,Barcelona European Championships,2010-07-31,Derval O'ROURKE,2,12.65,continental,DERVAL O'ROURKE
+women_100h,2010,Barcelona European Championships,2010-07-31,Carolin DIETRICH,3,12.68,continental,CAROLIN DIETRICH
+women_100m,2010,Barcelona European Championships,2010-07-29,Verena SAILER,1,11.10,continental,VERENA SAILER
+women_100m,2010,Barcelona European Championships,2010-07-29,Véronique MANG,2,11.11,continental,VERONIQUE MANG
+women_100m,2010,Barcelona European Championships,2010-07-29,Myriam SOUMARÉ,3,11.18,continental,MYRIAM SOUMARE
+women_1500m,2010,Barcelona European Championships,2010-08-01,Nuria FERNÁNDEZ,1,4:00.20,continental,NURIA FERNANDEZ
+women_1500m,2010,Barcelona European Championships,2010-08-01,Hind DEHIBA CHAHYD,2,4:01.17,continental,HIND DEHIBA CHAHYD
+women_1500m,2010,Barcelona European Championships,2010-08-01,Natalia RODRÍGUEZ,3,4:01.30,continental,NATALIA RODRIGUEZ
+women_200m,2010,Barcelona European Championships,2010-07-31,Myriam SOUMARÉ,1,22.32,continental,MYRIAM SOUMARE
+women_200m,2010,Barcelona European Championships,2010-07-31,Yelizaveta BRYZGINA,2,22.44,continental,YELIZAVETA BRYZGINA
+women_200m,2010,Barcelona European Championships,2010-07-31,Aleksandra FEDORIVA-SPAYER,3,22.44,continental,ALEKSANDRA FEDORIVA-SPAYER
+women_3000sc,2010,Barcelona European Championships,2010-07-30,Yuliya ZARIPOVA,1,9:17.57,continental,YULIYA ZARIPOVA
+women_3000sc,2010,Barcelona European Championships,2010-07-30,Hatti DEAN,2,9:30.19,continental,HATTI DEAN
+women_3000sc,2010,Barcelona European Championships,2010-07-30,Wioletta FRANKIEWICZ,3,9:34.13,continental,WIOLETTA FRANKIEWICZ
+women_400h,2010,Barcelona European Championships,2010-07-30,Natalya ANTYUKH,1,52.92,continental,NATALYA ANTYUKH
+women_400h,2010,Barcelona European Championships,2010-07-30,Vanya STAMBOLOVA,2,53.82,continental,VANYA STAMBOLOVA
+women_400h,2010,Barcelona European Championships,2010-07-30,Perri SHAKES-DRAYTON,3,54.18,continental,PERRI SHAKES-DRAYTON
+women_400m,2010,Barcelona European Championships,2010-07-30,Kseniya AKSYONOVA,1,49.92,continental,KSENIYA AKSYONOVA
+women_400m,2010,Barcelona European Championships,2010-07-30,Antonina KRIVOSHAPKA,2,50.10,continental,ANTONINA KRIVOSHAPKA
+women_400m,2010,Barcelona European Championships,2010-07-30,Libania GRENOT,3,50.43,continental,LIBANIA GRENOT
+women_5000m,2010,Barcelona European Championships,2010-08-01,Elvan ABEYLEGESSE,1,14:54.44,continental,ELVAN ABEYLEGESSE
+women_5000m,2010,Barcelona European Championships,2010-08-01,Sara MOREIRA,2,14:54.71,continental,SARA MOREIRA
+women_5000m,2010,Barcelona European Championships,2010-08-01,Jessica AUGUSTO,3,14:58.47,continental,JESSICA AUGUSTO
+women_800m,2010,Barcelona European Championships,2010-07-30,Yvonne HAK,1,1:58.85,continental,YVONNE HAK
+women_800m,2010,Barcelona European Championships,2010-07-30,Jennifer MEADOWS,2,1:59.39,continental,JENNIFER MEADOWS
+women_800m,2010,Barcelona European Championships,2010-07-30,Lucia KLOCOVÁ,3,1:59.48,continental,LUCIA KLOCOVA
+women_DT,2010,Barcelona European Championships,2010-07-28,Sandra PERKOVIĆ,1,64.67,continental,SANDRA PERKOVIC
+women_DT,2010,Barcelona European Championships,2010-07-28,Nicoleta GRASU,2,63.48,continental,NICOLETA GRASU
+women_DT,2010,Barcelona European Championships,2010-07-28,Joanna WIŚNIEWSKA,3,62.37,continental,JOANNA WISNIEWSKA
+women_HJ,2010,Barcelona European Championships,2010-08-01,Blanka VLAŠIĆ,1,2.03,continental,BLANKA VLASIC
+women_HJ,2010,Barcelona European Championships,2010-08-01,Emma GREEN,2,2.01,continental,EMMA GREEN
+women_HJ,2010,Barcelona European Championships,2010-08-01,Ariane FRIEDRICH,3,2.01,continental,ARIANE FRIEDRICH
+women_JT,2010,Barcelona European Championships,2010-07-29,Linda STAHL,1,66.81,continental,LINDA STAHL
+women_JT,2010,Barcelona European Championships,2010-07-29,Christina OBERGFÖLL,2,65.58,continental,CHRISTINA OBERGFOLL
+women_JT,2010,Barcelona European Championships,2010-07-29,Barbora ŠPOTÁKOVÁ,3,65.36,continental,BARBORA SPOTAKOVA
+women_LJ,2010,Barcelona European Championships,2010-07-28,Ineta RADEVIČA,1,6.92,continental,INETA RADEVICA
+women_LJ,2010,Barcelona European Championships,2010-07-28,Naide GOMES,2,6.92,continental,NAIDE GOMES
+women_LJ,2010,Barcelona European Championships,2010-07-28,Olga KUCHERENKO,3,6.84,continental,OLGA KUCHERENKO
+women_PV,2010,Barcelona European Championships,2010-07-30,Svetlana FEOFANOVA,1,4.75,continental,SVETLANA FEOFANOVA
+women_PV,2010,Barcelona European Championships,2010-07-30,Silke SPIEGELBURG,2,4.65,continental,SILKE SPIEGELBURG
+women_PV,2010,Barcelona European Championships,2010-07-30,Lisa RYZIH,3,4.65,continental,LISA RYZIH
+women_SP,2010,Barcelona European Championships,2010-07-27,Anna AVDEYEVA,1,19.39,continental,ANNA AVDEYEVA
+women_SP,2010,Barcelona European Championships,2010-07-27,Yanina KOROLCHIK-PROVALINSKAYA,2,19.29,continental,YANINA KOROLCHIK-PROVALINSKAYA
+women_SP,2010,Barcelona European Championships,2010-07-27,Olga IVANOVA,3,19.02,continental,OLGA IVANOVA
+women_TJ,2010,Barcelona European Championships,2010-07-31,Olha SALADUKHA,1,14.81,continental,OLHA SALADUKHA
+women_TJ,2010,Barcelona European Championships,2010-07-31,Simona LA MANTIA,2,14.56,continental,SIMONA LA MANTIA
+women_TJ,2010,Barcelona European Championships,2010-07-31,Svetlana BOLSHAKOVA,3,14.55,continental,SVETLANA BOLSHAKOVA
+men_100m,2011,IAAF World Championships,2011-08-28,Yohan BLAKE,1,9.92,global,YOHAN BLAKE
+men_100m,2011,IAAF World Championships,2011-08-28,Walter DIX,2,10.08,global,WALTER DIX
+men_100m,2011,IAAF World Championships,2011-08-28,Kim COLLINS,3,10.09,global,KIM COLLINS
+men_110h,2011,IAAF World Championships,2011-08-29,Jason RICHARDSON,1,13.16,global,JASON RICHARDSON
+men_110h,2011,IAAF World Championships,2011-08-29,Xiang LIU,2,13.27,global,XIANG LIU
+men_110h,2011,IAAF World Championships,2011-08-29,Andrew TURNER,3,13.44,global,ANDREW TURNER
+men_1500m,2011,IAAF World Championships,2011-09-03,Asbel KIPROP,1,3:35.69,global,ASBEL KIPROP
+men_1500m,2011,IAAF World Championships,2011-09-03,Silas KIPLAGAT,2,3:35.92,global,SILAS KIPLAGAT
+men_1500m,2011,IAAF World Championships,2011-09-03,Matthew CENTROWITZ,3,3:36.08,global,MATTHEW CENTROWITZ
+men_200m,2011,IAAF World Championships,2011-09-03,Usain BOLT,1,19.40,global,USAIN BOLT
+men_200m,2011,IAAF World Championships,2011-09-03,Walter DIX,2,19.70,global,WALTER DIX
+men_200m,2011,IAAF World Championships,2011-09-03,Christophe LEMAITRE,3,19.80,global,CHRISTOPHE LEMAITRE
+men_3000sc,2011,IAAF World Championships,2011-09-01,Ezekiel KEMBOI,1,8:14.85,global,EZEKIEL KEMBOI
+men_3000sc,2011,IAAF World Championships,2011-09-01,Brimin Kiprop KIPRUTO,2,8:16.05,global,BRIMIN KIPROP KIPRUTO
+men_3000sc,2011,IAAF World Championships,2011-09-01,Mahiedine MEKHISSI,3,8:16.09,global,MAHIEDINE MEKHISSI
+men_400h,2011,IAAF World Championships,2011-09-01,David GREENE,1,48.26,global,DAVID GREENE
+men_400h,2011,IAAF World Championships,2011-09-01,Javier CULSON,2,48.44,global,JAVIER CULSON
+men_400h,2011,IAAF World Championships,2011-09-01,LJ VAN ZYL,3,48.80,global,LJ VAN ZYL
+men_400m,2011,IAAF World Championships,2011-08-30,Kirani JAMES,1,44.60,global,KIRANI JAMES
+men_400m,2011,IAAF World Championships,2011-08-30,LaShawn MERRITT,2,44.63,global,LASHAWN MERRITT
+men_400m,2011,IAAF World Championships,2011-08-30,Kévin BORLÉE,3,44.90,global,KEVIN BORLEE
+men_5000m,2011,IAAF World Championships,2011-09-04,Mo FARAH,1,13:23.36,global,MO FARAH
+men_5000m,2011,IAAF World Championships,2011-09-04,Bernard LAGAT,2,13:23.64,global,BERNARD LAGAT
+men_5000m,2011,IAAF World Championships,2011-09-04,Dejen GEBREMESKEL,3,13:23.92,global,DEJEN GEBREMESKEL
+men_800m,2011,IAAF World Championships,2011-08-30,David RUDISHA,1,1:43.91,global,DAVID RUDISHA
+men_800m,2011,IAAF World Championships,2011-08-30,Abubaker KAKI,2,1:44.41,global,ABUBAKER KAKI
+men_800m,2011,IAAF World Championships,2011-08-30,Yuriy BORZAKOVSKIY,3,1:44.49,global,YURIY BORZAKOVSKIY
+men_DT,2011,IAAF World Championships,2011-08-30,Robert HARTING,1,68.97,global,ROBERT HARTING
+men_DT,2011,IAAF World Championships,2011-08-30,Gerd KANTER,2,66.95,global,GERD KANTER
+men_DT,2011,IAAF World Championships,2011-08-30,Ehsan HADADI,3,66.08,global,EHSAN HADADI
+men_HJ,2011,IAAF World Championships,2011-09-01,Jesse WILLIAMS,1,2.35,global,JESSE WILLIAMS
+men_HJ,2011,IAAF World Championships,2011-09-01,Aleksey DMITRIK,2,2.35,global,ALEKSEY DMITRIK
+men_HJ,2011,IAAF World Championships,2011-09-01,Trevor BARRY,3,2.32,global,TREVOR BARRY
+men_JT,2011,IAAF World Championships,2011-09-03,Matthias DE ZORDO,1,86.27,global,MATTHIAS DE ZORDO
+men_JT,2011,IAAF World Championships,2011-09-03,Andreas THORKILDSEN,2,84.78,global,ANDREAS THORKILDSEN
+men_JT,2011,IAAF World Championships,2011-09-03,Guillermo MARTÍNEZ,3,84.30,global,GUILLERMO MARTINEZ
+men_LJ,2011,IAAF World Championships,2011-09-02,Dwight PHILLIPS,1,8.45,global,DWIGHT PHILLIPS
+men_LJ,2011,IAAF World Championships,2011-09-02,Mitchell WATT,2,8.33,global,MITCHELL WATT
+men_LJ,2011,IAAF World Championships,2011-09-02,Ngonidzashe MAKUSHA,3,8.29,global,NGONIDZASHE MAKUSHA
+men_PV,2011,IAAF World Championships,2011-08-29,Paweł WOJCIECHOWSKI,1,5.90,global,PAWEŁ WOJCIECHOWSKI
+men_PV,2011,IAAF World Championships,2011-08-29,Lázaro BORGES,2,5.90,global,LAZARO BORGES
+men_PV,2011,IAAF World Championships,2011-08-29,Renaud LAVILLENIE,3,5.85,global,RENAUD LAVILLENIE
+men_SP,2011,IAAF World Championships,2011-09-02,David STORL,1,21.78,global,DAVID STORL
+men_SP,2011,IAAF World Championships,2011-09-02,Dylan ARMSTRONG,2,21.64,global,DYLAN ARMSTRONG
+men_SP,2011,IAAF World Championships,2011-09-02,Christian CANTWELL,3,21.36,global,CHRISTIAN CANTWELL
+men_TJ,2011,IAAF World Championships,2011-09-04,Christian TAYLOR,1,17.96,global,CHRISTIAN TAYLOR
+men_TJ,2011,IAAF World Championships,2011-09-04,Phillips IDOWU,2,17.77,global,PHILLIPS IDOWU
+men_TJ,2011,IAAF World Championships,2011-09-04,Will CLAYE,3,17.50,global,WILL CLAYE
+women_100h,2011,IAAF World Championships,2011-09-03,Sally PEARSON,1,12.28,global,SALLY PEARSON
+women_100h,2011,IAAF World Championships,2011-09-03,Danielle CARRUTHERS,2,12.47,global,DANIELLE CARRUTHERS
+women_100h,2011,IAAF World Championships,2011-09-03,Dawn HARPER-NELSON,3,12.47,global,DAWN HARPER-NELSON
+women_100m,2011,IAAF World Championships,2011-08-29,Carmelita JETER,1,10.90,global,CARMELITA JETER
+women_100m,2011,IAAF World Championships,2011-08-29,Veronica CAMPBELL-BROWN,2,10.97,global,VERONICA CAMPBELL-BROWN
+women_100m,2011,IAAF World Championships,2011-08-29,Kelly-Ann BAPTISTE,3,10.98,global,KELLY-ANN BAPTISTE
+women_1500m,2011,IAAF World Championships,2011-09-01,Jenny SIMPSON,1,4:05.40,global,JENNY SIMPSON
+women_1500m,2011,IAAF World Championships,2011-09-01,Hannah ENGLAND,2,4:05.68,global,HANNAH ENGLAND
+women_1500m,2011,IAAF World Championships,2011-09-01,Natalia RODRÍGUEZ,3,4:05.87,global,NATALIA RODRIGUEZ
+women_200m,2011,IAAF World Championships,2011-09-02,Veronica CAMPBELL-BROWN,1,22.22,global,VERONICA CAMPBELL-BROWN
+women_200m,2011,IAAF World Championships,2011-09-02,Carmelita JETER,2,22.37,global,CARMELITA JETER
+women_200m,2011,IAAF World Championships,2011-09-02,Allyson FELIX,3,22.42,global,ALLYSON FELIX
+women_3000sc,2011,IAAF World Championships,2011-08-30,Habiba GHRIBI,1,9:11.97,global,HABIBA GHRIBI
+women_3000sc,2011,IAAF World Championships,2011-08-30,Milcah CHEMOS,2,9:17.16,global,MILCAH CHEMOS
+women_3000sc,2011,IAAF World Championships,2011-08-30,Mercy Wanjiku NJOROGE,3,9:17.88,global,MERCY WANJIKU NJOROGE
+women_400h,2011,IAAF World Championships,2011-09-01,Lashinda DEMUS,1,52.47,global,LASHINDA DEMUS
+women_400h,2011,IAAF World Championships,2011-09-01,Melaine WALKER,2,52.73,global,MELAINE WALKER
+women_400h,2011,IAAF World Championships,2011-09-01,Natalya ANTYUKH,3,53.85,global,NATALYA ANTYUKH
+women_400m,2011,IAAF World Championships,2011-08-29,Amantle MONTSHO,1,49.56,global,AMANTLE MONTSHO
+women_400m,2011,IAAF World Championships,2011-08-29,Allyson FELIX,2,49.59,global,ALLYSON FELIX
+women_400m,2011,IAAF World Championships,2011-08-29,Francena MCCORORY,3,50.45,global,FRANCENA MCCORORY
+women_5000m,2011,IAAF World Championships,2011-09-02,Vivian Jepkemei CHERUIYOT,1,14:55.36,global,VIVIAN JEPKEMEI CHERUIYOT
+women_5000m,2011,IAAF World Championships,2011-09-02,Sylvia Jebiwot KIBET,2,14:56.21,global,SYLVIA JEBIWOT KIBET
+women_5000m,2011,IAAF World Championships,2011-09-02,Meseret DEFAR,3,14:56.94,global,MESERET DEFAR
+women_800m,2011,IAAF World Championships,2011-09-04,Caster SEMENYA,1,1:56.35,global,CASTER SEMENYA
+women_800m,2011,IAAF World Championships,2011-09-04,Janeth JEPKOSGEI,2,1:57.42,global,JANETH JEPKOSGEI
+women_800m,2011,IAAF World Championships,2011-09-04,Alysia MONTAÑO,3,1:57.48,global,ALYSIA MONTANO
+women_DT,2011,IAAF World Championships,2011-08-28,Yanfeng LI,1,66.52,global,YANFENG LI
+women_DT,2011,IAAF World Championships,2011-08-28,Nadine MÜLLER,2,65.97,global,NADINE MULLER
+women_DT,2011,IAAF World Championships,2011-08-28,Yarelis BARRIOS,3,65.73,global,YARELIS BARRIOS
+women_HJ,2011,IAAF World Championships,2011-09-03,Anna CHICHEROVA,1,2.03,global,ANNA CHICHEROVA
+women_HJ,2011,IAAF World Championships,2011-09-03,Blanka VLAŠIĆ,2,2.03,global,BLANKA VLASIC
+women_HJ,2011,IAAF World Championships,2011-09-03,Antonietta DI MARTINO,3,2.00,global,ANTONIETTA DI MARTINO
+women_JT,2011,IAAF World Championships,2011-09-02,Barbora ŠPOTÁKOVÁ,1,71.58,global,BARBORA SPOTAKOVA
+women_JT,2011,IAAF World Championships,2011-09-02,Sunette VILJOEN,2,68.38,global,SUNETTE VILJOEN
+women_JT,2011,IAAF World Championships,2011-09-02,Christina OBERGFÖLL,3,65.24,global,CHRISTINA OBERGFOLL
+women_LJ,2011,IAAF World Championships,2011-08-28,Brittney REESE,1,6.82,global,BRITTNEY REESE
+women_LJ,2011,IAAF World Championships,2011-08-28,Ineta RADEVIČA,2,6.76,global,INETA RADEVICA
+women_LJ,2011,IAAF World Championships,2011-08-28,Nastassia MIRONCHYK-IVANOVA,3,6.74,global,NASTASSIA MIRONCHYK-IVANOVA
+women_PV,2011,IAAF World Championships,2011-08-30,Fabiana MURER,1,4.85,global,FABIANA MURER
+women_PV,2011,IAAF World Championships,2011-08-30,Martina STRUTZ,2,4.80,global,MARTINA STRUTZ
+women_PV,2011,IAAF World Championships,2011-08-30,Svetlana FEOFANOVA,3,4.75,global,SVETLANA FEOFANOVA
+women_SP,2011,IAAF World Championships,2011-08-29,Valerie ADAMS,1,21.24,global,VALERIE ADAMS
+women_SP,2011,IAAF World Championships,2011-08-29,Jillian CAMARENA-WILLIAMS,2,20.02,global,JILLIAN CAMARENA-WILLIAMS
+women_SP,2011,IAAF World Championships,2011-08-29,Lijiao GONG,3,19.97,global,LIJIAO GONG
+women_TJ,2011,IAAF World Championships,2011-09-01,Olha SALADUKHA,1,14.94,global,OLHA SALADUKHA
+women_TJ,2011,IAAF World Championships,2011-09-01,Olga RYPAKOVA,2,14.89,global,OLGA RYPAKOVA
+women_TJ,2011,IAAF World Championships,2011-09-01,Caterine IBARGUEN,3,14.84,global,CATERINE IBARGUEN
+men_100m,2012,Helsinki European Championships,2012-06-28,Christophe LEMAITRE,1,10.09,continental,CHRISTOPHE LEMAITRE
+men_100m,2012,Helsinki European Championships,2012-06-28,Jimmy VICAUT,2,10.12,continental,JIMMY VICAUT
+men_100m,2012,Helsinki European Championships,2012-06-28,Jaysuma SAIDY NDURE,3,10.17,continental,JAYSUMA SAIDY NDURE
+men_100m,2012,The XXX Olympic Games,2012-08-05,Usain BOLT,1,9.63,global,USAIN BOLT
+men_100m,2012,The XXX Olympic Games,2012-08-05,Yohan BLAKE,2,9.75,global,YOHAN BLAKE
+men_100m,2012,The XXX Olympic Games,2012-08-05,Justin GATLIN,3,9.79,global,JUSTIN GATLIN
+men_110h,2012,Helsinki European Championships,2012-07-01,Sergey SHUBENKOV,1,13.16,continental,SERGEY SHUBENKOV
+men_110h,2012,Helsinki European Championships,2012-07-01,Garfield DARIEN,2,13.20,continental,GARFIELD DARIEN
+men_110h,2012,Helsinki European Championships,2012-07-01,Artur NOGA,3,13.27,continental,ARTUR NOGA
+men_110h,2012,The XXX Olympic Games,2012-08-08,Aries MERRITT,1,12.92,global,ARIES MERRITT
+men_110h,2012,The XXX Olympic Games,2012-08-08,Jason RICHARDSON,2,13.04,global,JASON RICHARDSON
+men_110h,2012,The XXX Olympic Games,2012-08-08,Hansle PARCHMENT,3,13.12,global,HANSLE PARCHMENT
+men_1500m,2012,Helsinki European Championships,2012-07-01,Henrik INGEBRIGTSEN,1,3:46.20,continental,HENRIK INGEBRIGTSEN
+men_1500m,2012,Helsinki European Championships,2012-07-01,Florian CARVALHO DE FONSESCO,2,3:46.33,continental,FLORIAN CARVALHO DE FONSESCO
+men_1500m,2012,Helsinki European Championships,2012-07-01,David BUSTOS,3,3:46.45,continental,DAVID BUSTOS
+men_1500m,2012,The XXX Olympic Games,2012-08-07,Taoufik MAKHLOUFI,1,3:34.08,global,TAOUFIK MAKHLOUFI
+men_1500m,2012,The XXX Olympic Games,2012-08-07,Leonel MANZANO,2,3:34.79,global,LEONEL MANZANO
+men_1500m,2012,The XXX Olympic Games,2012-08-07,Abdelaati IGUIDER,3,3:35.13,global,ABDELAATI IGUIDER
+men_200m,2012,Helsinki European Championships,2012-06-30,Churandy MARTINA,1,20.42,continental,CHURANDY MARTINA
+men_200m,2012,Helsinki European Championships,2012-06-30,Patrick VAN LUIJK,2,20.87,continental,PATRICK VAN LUIJK
+men_200m,2012,Helsinki European Championships,2012-06-30,Daniel TALBOT,3,20.95,continental,DANIEL TALBOT
+men_200m,2012,The XXX Olympic Games,2012-08-09,Usain BOLT,1,19.32,global,USAIN BOLT
+men_200m,2012,The XXX Olympic Games,2012-08-09,Yohan BLAKE,2,19.44,global,YOHAN BLAKE
+men_200m,2012,The XXX Olympic Games,2012-08-09,Warren WEIR,3,19.84,global,WARREN WEIR
+men_3000sc,2012,Helsinki European Championships,2012-06-29,Mahiedine MEKHISSI,1,8:33.23,continental,MAHIEDINE MEKHISSI
+men_3000sc,2012,Helsinki European Championships,2012-06-29,Tarik Langat AKDAG,2,8:35.24,continental,TARIK LANGAT AKDAG
+men_3000sc,2012,Helsinki European Championships,2012-06-29,Víctor GARCÍA,3,8:35.87,continental,VICTOR GARCIA
+men_3000sc,2012,The XXX Olympic Games,2012-08-05,Ezekiel KEMBOI,1,8:18.56,global,EZEKIEL KEMBOI
+men_3000sc,2012,The XXX Olympic Games,2012-08-05,Mahiedine MEKHISSI,2,8:19.08,global,MAHIEDINE MEKHISSI
+men_3000sc,2012,The XXX Olympic Games,2012-08-05,Abel Kiprop MUTAI,3,8:19.73,global,ABEL KIPROP MUTAI
+men_400h,2012,Helsinki European Championships,2012-06-29,Rhys WILLIAMS,1,49.33,continental,RHYS WILLIAMS
+men_400h,2012,Helsinki European Championships,2012-06-29,Emir BEKRIĆ,2,49.49,continental,EMIR BEKRIC
+men_400h,2012,Helsinki European Championships,2012-06-29,Stanislav MELNIKOV,3,49.69,continental,STANISLAV MELNIKOV
+men_400h,2012,The XXX Olympic Games,2012-08-06,Félix SÁNCHEZ,1,47.63,global,FELIX SANCHEZ
+men_400h,2012,The XXX Olympic Games,2012-08-06,Michael TINSLEY,2,47.91,global,MICHAEL TINSLEY
+men_400h,2012,The XXX Olympic Games,2012-08-06,Javier CULSON,3,48.10,global,JAVIER CULSON
+men_400m,2012,Helsinki European Championships,2012-06-29,Pavel MASLÁK,1,45.24,continental,PAVEL MASLAK
+men_400m,2012,Helsinki European Championships,2012-06-29,Marcell DEÁK NAGY,2,45.52,continental,MARCELL DEAK NAGY
+men_400m,2012,Helsinki European Championships,2012-06-29,Yannick FONSAT,3,45.82,continental,YANNICK FONSAT
+men_400m,2012,The XXX Olympic Games,2012-08-06,Kirani JAMES,1,43.94,global,KIRANI JAMES
+men_400m,2012,The XXX Olympic Games,2012-08-06,Luguelín SANTOS,2,44.46,global,LUGUELIN SANTOS
+men_400m,2012,The XXX Olympic Games,2012-08-06,Lalonde GORDON,3,44.52,global,LALONDE GORDON
+men_5000m,2012,Helsinki European Championships,2012-06-27,Mo FARAH,1,13:29.91,continental,MO FARAH
+men_5000m,2012,Helsinki European Championships,2012-06-27,Arne GABIUS,2,13:31.83,continental,ARNE GABIUS
+men_5000m,2012,Helsinki European Championships,2012-06-27,Polat Kemboi ARIKAN,3,13:32.63,continental,POLAT KEMBOI ARIKAN
+men_5000m,2012,The XXX Olympic Games,2012-08-11,Mo FARAH,1,13:41.66,global,MO FARAH
+men_5000m,2012,The XXX Olympic Games,2012-08-11,Dejen GEBREMESKEL,2,13:41.98,global,DEJEN GEBREMESKEL
+men_5000m,2012,The XXX Olympic Games,2012-08-11,Thomas Pkemei LONGOSIWA,3,13:42.36,global,THOMAS PKEMEI LONGOSIWA
+men_800m,2012,Helsinki European Championships,2012-06-29,Yuriy BORZAKOVSKIY,1,1:48.61,continental,YURIY BORZAKOVSKIY
+men_800m,2012,Helsinki European Championships,2012-06-29,Andreas BUBE,2,1:48.69,continental,ANDREAS BUBE
+men_800m,2012,Helsinki European Championships,2012-06-29,Pierre-Ambroise BOSSE,3,1:48.83,continental,PIERRE-AMBROISE BOSSE
+men_800m,2012,The XXX Olympic Games,2012-08-09,David RUDISHA,1,1:40.91,global,DAVID RUDISHA
+men_800m,2012,The XXX Olympic Games,2012-08-09,Nijel AMOS,2,1:41.73,global,NIJEL AMOS
+men_800m,2012,The XXX Olympic Games,2012-08-09,Timothy KITUM,3,1:42.53,global,TIMOTHY KITUM
+men_DT,2012,Helsinki European Championships,2012-06-30,Robert HARTING,1,68.30,continental,ROBERT HARTING
+men_DT,2012,Helsinki European Championships,2012-06-30,Gerd KANTER,2,66.53,continental,GERD KANTER
+men_DT,2012,Helsinki European Championships,2012-06-30,Rutger SMITH,3,64.02,continental,RUTGER SMITH
+men_DT,2012,The XXX Olympic Games,2012-08-07,Robert HARTING,1,68.27,global,ROBERT HARTING
+men_DT,2012,The XXX Olympic Games,2012-08-07,Ehsan HADADI,2,68.18,global,EHSAN HADADI
+men_DT,2012,The XXX Olympic Games,2012-08-07,Gerd KANTER,3,68.03,global,GERD KANTER
+men_HJ,2012,Helsinki European Championships,2012-06-29,Robbie GRABARZ,1,2.31,continental,ROBBIE GRABARZ
+men_HJ,2012,Helsinki European Championships,2012-06-29,Raivydas STANYS,2,2.31,continental,RAIVYDAS STANYS
+men_HJ,2012,Helsinki European Championships,2012-06-29,Mickaël HANANY,3,2.28,continental,MICKAEL HANANY
+men_JT,2012,Helsinki European Championships,2012-06-28,Vítězslav VESELÝ,1,83.72,continental,VITEZSLAV VESELY
+men_JT,2012,Helsinki European Championships,2012-06-28,Valeriy IORDAN,2,83.23,continental,VALERIY IORDAN
+men_JT,2012,Helsinki European Championships,2012-06-28,Ari MANNIO,3,82.63,continental,ARI MANNIO
+men_JT,2012,The XXX Olympic Games,2012-08-11,Keshorn WALCOTT,1,84.58,global,KESHORN WALCOTT
+men_JT,2012,The XXX Olympic Games,2012-08-11,Antti RUUSKANEN,2,84.12,global,ANTTI RUUSKANEN
+men_JT,2012,The XXX Olympic Games,2012-08-11,Vítězslav VESELÝ,3,83.34,global,VITEZSLAV VESELY
+men_LJ,2012,Helsinki European Championships,2012-07-01,Sebastian BAYER,1,8.34,continental,SEBASTIAN BAYER
+men_LJ,2012,Helsinki European Championships,2012-07-01,Luis Felipe MÉLIZ,2,8.21,continental,LUIS FELIPE MELIZ
+men_LJ,2012,Helsinki European Championships,2012-07-01,Michel TORNÉUS,3,8.17,continental,MICHEL TORNEUS
+men_LJ,2012,The XXX Olympic Games,2012-08-04,Greg RUTHERFORD,1,8.31,global,GREG RUTHERFORD
+men_LJ,2012,The XXX Olympic Games,2012-08-04,Mitchell WATT,2,8.16,global,MITCHELL WATT
+men_LJ,2012,The XXX Olympic Games,2012-08-04,Will CLAYE,3,8.12,global,WILL CLAYE
+men_PV,2012,Helsinki European Championships,2012-07-01,Renaud LAVILLENIE,1,5.97,continental,RENAUD LAVILLENIE
+men_PV,2012,Helsinki European Championships,2012-07-01,Björn OTTO,2,5.92,continental,BJORN OTTO
+men_PV,2012,Helsinki European Championships,2012-07-01,Raphael HOLZDEPPE,3,5.77,continental,RAPHAEL HOLZDEPPE
+men_PV,2012,The XXX Olympic Games,2012-08-10,Renaud LAVILLENIE,1,5.97,global,RENAUD LAVILLENIE
+men_PV,2012,The XXX Olympic Games,2012-08-10,Björn OTTO,2,5.91,global,BJORN OTTO
+men_PV,2012,The XXX Olympic Games,2012-08-10,Raphael HOLZDEPPE,3,5.91,global,RAPHAEL HOLZDEPPE
+men_SP,2012,Helsinki European Championships,2012-06-29,David STORL,1,21.58,continental,DAVID STORL
+men_SP,2012,Helsinki European Championships,2012-06-29,Rutger SMITH,2,20.55,continental,RUTGER SMITH
+men_SP,2012,Helsinki European Championships,2012-06-29,Asmir KOLAŠINAC,3,20.36,continental,ASMIR KOLASINAC
+men_SP,2012,The XXX Olympic Games,2012-08-03,Tomasz MAJEWSKI,1,21.89,global,TOMASZ MAJEWSKI
+men_SP,2012,The XXX Olympic Games,2012-08-03,David STORL,2,21.86,global,DAVID STORL
+men_SP,2012,The XXX Olympic Games,2012-08-03,Reese HOFFA,3,21.23,global,REESE HOFFA
+men_TJ,2012,Helsinki European Championships,2012-06-30,Fabrizio DONATO,1,17.63,continental,FABRIZIO DONATO
+men_TJ,2012,Helsinki European Championships,2012-06-30,Sheryf EL SHERYF,2,17.28,continental,SHERYF EL SHERYF
+men_TJ,2012,Helsinki European Championships,2012-06-30,Alieksei TSAPIK,3,16.97,continental,ALIEKSEI TSAPIK
+men_TJ,2012,The XXX Olympic Games,2012-08-09,Christian TAYLOR,1,17.81,global,CHRISTIAN TAYLOR
+men_TJ,2012,The XXX Olympic Games,2012-08-09,Will CLAYE,2,17.62,global,WILL CLAYE
+men_TJ,2012,The XXX Olympic Games,2012-08-09,Fabrizio DONATO,3,17.48,global,FABRIZIO DONATO
+women_100h,2012,Helsinki European Championships,2012-06-30,Alina TALAY,1,12.91,continental,ALINA TALAY
+women_100h,2012,Helsinki European Championships,2012-06-30,Katsiaryna PAPLAUSKAYA,2,12.97,continental,KATSIARYNA PAPLAUSKAYA
+women_100h,2012,Helsinki European Championships,2012-06-30,Beate SCHROTT,3,12.98,continental,BEATE SCHROTT
+women_100h,2012,The XXX Olympic Games,2012-08-07,Sally PEARSON,1,12.35,global,SALLY PEARSON
+women_100h,2012,The XXX Olympic Games,2012-08-07,Dawn HARPER-NELSON,2,12.37,global,DAWN HARPER-NELSON
+women_100h,2012,The XXX Olympic Games,2012-08-07,Kellie WELLS,3,12.48,global,KELLIE WELLS
+women_100m,2012,Helsinki European Championships,2012-06-28,Ivet LALOVA-COLLIO,1,11.28,continental,IVET LALOVA-COLLIO
+women_100m,2012,Helsinki European Championships,2012-06-28,Olesya POVH,2,11.32,continental,OLESYA POVH
+women_100m,2012,Helsinki European Championships,2012-06-28,Lina GRINČIKAITĖ SAMUOLĖ,3,11.32,continental,LINA GRINCIKAITE SAMUOLE
+women_100m,2012,The XXX Olympic Games,2012-08-04,Shelly-Ann FRASER-PRYCE,1,10.75,global,SHELLY-ANN FRASER-PRYCE
+women_100m,2012,The XXX Olympic Games,2012-08-04,Carmelita JETER,2,10.78,global,CARMELITA JETER
+women_100m,2012,The XXX Olympic Games,2012-08-04,Veronica CAMPBELL-BROWN,3,10.81,global,VERONICA CAMPBELL-BROWN
+women_1500m,2012,Helsinki European Championships,2012-07-01,Nuria FERNÁNDEZ,1,4:08.80,continental,NURIA FERNANDEZ
+women_1500m,2012,Helsinki European Championships,2012-07-01,Diana SUJEW,2,4:09.28,continental,DIANA SUJEW
+women_1500m,2012,Helsinki European Championships,2012-07-01,Tereza ČAPKOVÁ,3,4:10.17,continental,TEREZA CAPKOVA
+women_1500m,2012,The XXX Olympic Games,2012-08-10,Maryam Yusuf JAMAL,1,4:10.74,global,MARYAM YUSUF JAMAL
+women_1500m,2012,The XXX Olympic Games,2012-08-10,Abeba AREGAWI,2,4:11.03,global,ABEBA AREGAWI
+women_1500m,2012,The XXX Olympic Games,2012-08-10,Shannon ROWBURY,3,4:11.26,global,SHANNON ROWBURY
+women_200m,2012,Helsinki European Championships,2012-06-30,Mariya RYEMYEN,1,23.05,continental,MARIYA RYEMYEN
+women_200m,2012,Helsinki European Championships,2012-06-30,Hrystyna STUY,2,23.17,continental,HRYSTYNA STUY
+women_200m,2012,Helsinki European Championships,2012-06-30,Myriam SOUMARÉ,3,23.21,continental,MYRIAM SOUMARE
+women_200m,2012,The XXX Olympic Games,2012-08-08,Allyson FELIX,1,21.88,global,ALLYSON FELIX
+women_200m,2012,The XXX Olympic Games,2012-08-08,Shelly-Ann FRASER-PRYCE,2,22.09,global,SHELLY-ANN FRASER-PRYCE
+women_200m,2012,The XXX Olympic Games,2012-08-08,Carmelita JETER,3,22.14,global,CARMELITA JETER
+women_3000sc,2012,Helsinki European Championships,2012-06-30,Gülcan MINGIR,1,9:32.96,continental,GULCAN MINGIR
+women_3000sc,2012,Helsinki European Championships,2012-06-30,Antje MÖLDNER-SCHMIDT,2,9:36.37,continental,ANTJE MOLDNER-SCHMIDT
+women_3000sc,2012,Helsinki European Championships,2012-06-30,Gesa Felicitas KRAUSE,3,9:38.20,continental,GESA FELICITAS KRAUSE
+women_3000sc,2012,The XXX Olympic Games,2012-08-06,Habiba GHRIBI,1,9:08.37,global,HABIBA GHRIBI
+women_3000sc,2012,The XXX Olympic Games,2012-08-06,Sofia ASSEFA,2,9:09.84,global,SOFIA ASSEFA
+women_3000sc,2012,The XXX Olympic Games,2012-08-06,Milcah CHEMOS,3,9:09.88,global,MILCAH CHEMOS
+women_400h,2012,Helsinki European Championships,2012-06-29,Denisa ROSOLOVÁ,1,54.24,continental,DENISA ROSOLOVA
+women_400h,2012,Helsinki European Championships,2012-06-29,Anna RYZHYKOVA,2,54.35,continental,ANNA RYZHYKOVA
+women_400h,2012,Helsinki European Championships,2012-06-29,Zuzana HEJNOVÁ,3,54.49,continental,ZUZANA HEJNOVA
+women_400h,2012,The XXX Olympic Games,2012-08-08,Lashinda DEMUS,1,52.77,global,LASHINDA DEMUS
+women_400h,2012,The XXX Olympic Games,2012-08-08,Zuzana HEJNOVÁ,2,53.38,global,ZUZANA HEJNOVA
+women_400h,2012,The XXX Olympic Games,2012-08-08,Kaliese SPENCER,3,53.66,global,KALIESE SPENCER
+women_400m,2012,Helsinki European Championships,2012-06-29,Moa HJELMER,1,51.13,continental,MOA HJELMER
+women_400m,2012,Helsinki European Championships,2012-06-29,Kseniya ZADORINA,2,51.26,continental,KSENIYA ZADORINA
+women_400m,2012,Helsinki European Championships,2012-06-29,Ilona USOVICH,3,51.94,continental,ILONA USOVICH
+women_400m,2012,The XXX Olympic Games,2012-08-05,Sanya RICHARDS-ROSS,1,49.55,global,SANYA RICHARDS-ROSS
+women_400m,2012,The XXX Olympic Games,2012-08-05,Christine OHURUOGU,2,49.70,global,CHRISTINE OHURUOGU
+women_400m,2012,The XXX Olympic Games,2012-08-05,DeeDee TROTTER,3,49.72,global,DEEDEE TROTTER
+women_5000m,2012,Helsinki European Championships,2012-06-28,Olga KUNGINA,1,15:11.70,continental,OLGA KUNGINA
+women_5000m,2012,Helsinki European Championships,2012-06-28,Sara MOREIRA,2,15:12.05,continental,SARA MOREIRA
+women_5000m,2012,Helsinki European Championships,2012-06-28,Julia BLEASDALE,3,15:12.77,continental,JULIA BLEASDALE
+women_5000m,2012,The XXX Olympic Games,2012-08-10,Meseret DEFAR,1,15:04.25,global,MESERET DEFAR
+women_5000m,2012,The XXX Olympic Games,2012-08-10,Vivian Jepkemei CHERUIYOT,2,15:04.73,global,VIVIAN JEPKEMEI CHERUIYOT
+women_5000m,2012,The XXX Olympic Games,2012-08-10,Tirunesh DIBABA,3,15:05.15,global,TIRUNESH DIBABA
+women_800m,2012,Helsinki European Championships,2012-06-29,Lynsey SHARP,1,2:00.52,continental,LYNSEY SHARP
+women_800m,2012,Helsinki European Championships,2012-06-29,Marina ARZAMASOVA,2,2:01.02,continental,MARINA ARZAMASOVA
+women_800m,2012,Helsinki European Championships,2012-06-29,Liliya LOBANOVA,3,2:01.29,continental,LILIYA LOBANOVA
+women_800m,2012,The XXX Olympic Games,2012-08-11,Caster SEMENYA,1,1:57.23,global,CASTER SEMENYA
+women_800m,2012,The XXX Olympic Games,2012-08-11,Pamela JELIMO,2,1:57.59,global,PAMELA JELIMO
+women_800m,2012,The XXX Olympic Games,2012-08-11,Alysia MONTAÑO,3,1:57.93,global,ALYSIA MONTANO
+women_DT,2012,Helsinki European Championships,2012-07-01,Sandra PERKOVIĆ,1,67.62,continental,SANDRA PERKOVIC
+women_DT,2012,Helsinki European Championships,2012-07-01,Nadine MÜLLER,2,65.41,continental,NADINE MULLER
+women_DT,2012,Helsinki European Championships,2012-07-01,Nataliya SEMENOVA,3,62.91,continental,NATALIYA SEMENOVA
+women_DT,2012,The XXX Olympic Games,2012-08-04,Sandra PERKOVIĆ,1,69.11,global,SANDRA PERKOVIC
+women_DT,2012,The XXX Olympic Games,2012-08-04,Yanfeng LI,2,67.22,global,YANFENG LI
+women_DT,2012,The XXX Olympic Games,2012-08-04,Yarelis BARRIOS,3,66.38,global,YARELIS BARRIOS
+women_HJ,2012,Helsinki European Championships,2012-06-28,Ruth BEITIA,1,1.97,continental,RUTH BEITIA
+women_HJ,2012,Helsinki European Championships,2012-06-28,Tonje ANGELSEN,2,1.97,continental,TONJE ANGELSEN
+women_HJ,2012,Helsinki European Championships,2012-06-28,Olena HOLOSHA,3,1.92,continental,OLENA HOLOSHA
+women_HJ,2012,The XXX Olympic Games,2012-08-11,Anna CHICHEROVA,1,2.05,global,ANNA CHICHEROVA
+women_HJ,2012,The XXX Olympic Games,2012-08-11,Brigetta BARRETT,2,2.03,global,BRIGETTA BARRETT
+women_HJ,2012,The XXX Olympic Games,2012-08-11,Ruth BEITIA,3,2.00,global,RUTH BEITIA
+women_JT,2012,Helsinki European Championships,2012-06-29,Vera REBRIK,1,66.86,continental,VERA REBRIK
+women_JT,2012,Helsinki European Championships,2012-06-29,Christina OBERGFÖLL,2,65.12,continental,CHRISTINA OBERGFOLL
+women_JT,2012,Helsinki European Championships,2012-06-29,Linda STAHL,3,63.69,continental,LINDA STAHL
+women_JT,2012,The XXX Olympic Games,2012-08-09,Barbora ŠPOTÁKOVÁ,1,69.55,global,BARBORA SPOTAKOVA
+women_JT,2012,The XXX Olympic Games,2012-08-09,Christina OBERGFÖLL,2,65.16,global,CHRISTINA OBERGFOLL
+women_JT,2012,The XXX Olympic Games,2012-08-09,Linda STAHL,3,64.91,global,LINDA STAHL
+women_LJ,2012,Helsinki European Championships,2012-06-28,Éloyse LESUEUR-AYMONIN,1,6.81,continental,ELOYSE LESUEUR-AYMONIN
+women_LJ,2012,Helsinki European Championships,2012-06-28,Olga SUDARAVA,2,6.74,continental,OLGA SUDARAVA
+women_LJ,2012,Helsinki European Championships,2012-06-28,Margrethe RENSTRØM,3,6.67,continental,MARGRETHE RENSTRØM
+women_LJ,2012,The XXX Olympic Games,2012-08-08,Brittney REESE,1,7.12,global,BRITTNEY REESE
+women_LJ,2012,The XXX Olympic Games,2012-08-08,Yelena SOKOLOVA,2,7.07,global,YELENA SOKOLOVA
+women_LJ,2012,The XXX Olympic Games,2012-08-08,Janay DELOACH,3,6.89,global,JANAY DELOACH
+women_PV,2012,Helsinki European Championships,2012-06-30,Jiřina PTÁČNÍKOVÁ,1,4.60,continental,JIRINA PTACNIKOVA
+women_PV,2012,Helsinki European Championships,2012-06-30,Martina STRUTZ,2,4.60,continental,MARTINA STRUTZ
+women_PV,2012,Helsinki European Championships,2012-06-30,Nikoleta KYRIAKOPOULOU,3,4.60,continental,NIKOLETA KYRIAKOPOULOU
+women_PV,2012,The XXX Olympic Games,2012-08-06,Jennifer SUHR,1,4.75,global,JENNIFER SUHR
+women_PV,2012,The XXX Olympic Games,2012-08-06,Yarisley SILVA,2,4.75,global,YARISLEY SILVA
+women_PV,2012,The XXX Olympic Games,2012-08-06,Yelena ISINBAYEVA,3,4.70,global,YELENA ISINBAYEVA
+women_SP,2012,Helsinki European Championships,2012-06-29,Nadine KLEINERT,1,19.18,continental,NADINE KLEINERT
+women_SP,2012,Helsinki European Championships,2012-06-29,Irina TARASOVA,2,18.91,continental,IRINA TARASOVA
+women_SP,2012,Helsinki European Championships,2012-06-29,Chiara ROSA,3,18.47,continental,CHIARA ROSA
+women_SP,2012,The XXX Olympic Games,2012-08-06,Valerie ADAMS,1,20.70,global,VALERIE ADAMS
+women_SP,2012,The XXX Olympic Games,2012-08-06,Lijiao GONG,2,20.22,global,LIJIAO GONG
+women_SP,2012,The XXX Olympic Games,2012-08-06,Ling LI,3,19.63,global,LING LI
+women_TJ,2012,Helsinki European Championships,2012-06-29,Olha SALADUKHA,1,14.99,continental,OLHA SALADUKHA
+women_TJ,2012,Helsinki European Championships,2012-06-29,Patrícia MAMONA,2,14.52,continental,PATRICIA MAMONA
+women_TJ,2012,Helsinki European Championships,2012-06-29,Yana BORODINA,3,14.36,continental,YANA BORODINA
+women_TJ,2012,The XXX Olympic Games,2012-08-05,Olga RYPAKOVA,1,14.98,global,OLGA RYPAKOVA
+women_TJ,2012,The XXX Olympic Games,2012-08-05,Caterine IBARGUEN,2,14.80,global,CATERINE IBARGUEN
+women_TJ,2012,The XXX Olympic Games,2012-08-05,Olha SALADUKHA,3,14.79,global,OLHA SALADUKHA
+men_100m,2013,IAAF World Championships,2013-08-11,Usain BOLT,1,9.77,global,USAIN BOLT
+men_100m,2013,IAAF World Championships,2013-08-11,Justin GATLIN,2,9.85,global,JUSTIN GATLIN
+men_100m,2013,IAAF World Championships,2013-08-11,Nesta CARTER,3,9.95,global,NESTA CARTER
+men_110h,2013,IAAF World Championships,2013-08-12,David OLIVER,1,13.00,global,DAVID OLIVER
+men_110h,2013,IAAF World Championships,2013-08-12,Ryan WILSON,2,13.13,global,RYAN WILSON
+men_110h,2013,IAAF World Championships,2013-08-12,Sergey SHUBENKOV,3,13.24,global,SERGEY SHUBENKOV
+men_1500m,2013,IAAF World Championships,2013-08-18,Asbel KIPROP,1,3:36.28,global,ASBEL KIPROP
+men_1500m,2013,IAAF World Championships,2013-08-18,Matthew CENTROWITZ,2,3:36.78,global,MATTHEW CENTROWITZ
+men_1500m,2013,IAAF World Championships,2013-08-18,Johan CRONJE,3,3:36.83,global,JOHAN CRONJE
+men_200m,2013,IAAF World Championships,2013-08-17,Usain BOLT,1,19.66,global,USAIN BOLT
+men_200m,2013,IAAF World Championships,2013-08-17,Warren WEIR,2,19.79,global,WARREN WEIR
+men_200m,2013,IAAF World Championships,2013-08-17,Curtis MITCHELL,3,20.04,global,CURTIS MITCHELL
+men_3000sc,2013,IAAF World Championships,2013-08-15,Ezekiel KEMBOI,1,8:06.01,global,EZEKIEL KEMBOI
+men_3000sc,2013,IAAF World Championships,2013-08-15,Conseslus KIPRUTO,2,8:06.37,global,CONSESLUS KIPRUTO
+men_3000sc,2013,IAAF World Championships,2013-08-15,Mahiedine MEKHISSI,3,8:07.86,global,MAHIEDINE MEKHISSI
+men_400h,2013,IAAF World Championships,2013-08-15,Jehue GORDON,1,47.69,global,JEHUE GORDON
+men_400h,2013,IAAF World Championships,2013-08-15,Michael TINSLEY,2,47.70,global,MICHAEL TINSLEY
+men_400h,2013,IAAF World Championships,2013-08-15,Emir BEKRIĆ,3,48.05,global,EMIR BEKRIC
+men_400m,2013,IAAF World Championships,2013-08-13,LaShawn MERRITT,1,43.74,global,LASHAWN MERRITT
+men_400m,2013,IAAF World Championships,2013-08-13,Tony MCQUAY,2,44.40,global,TONY MCQUAY
+men_400m,2013,IAAF World Championships,2013-08-13,Luguelín SANTOS,3,44.52,global,LUGUELIN SANTOS
+men_5000m,2013,IAAF World Championships,2013-08-16,Mo FARAH,1,13:26.98,global,MO FARAH
+men_5000m,2013,IAAF World Championships,2013-08-16,Hagos GEBRHIWET,2,13:27.26,global,HAGOS GEBRHIWET
+men_5000m,2013,IAAF World Championships,2013-08-16,Isiah Kiplangat KOECH,3,13:27.26,global,ISIAH KIPLANGAT KOECH
+men_800m,2013,IAAF World Championships,2013-08-13,Mohammed AMAN,1,1:43.31,global,MOHAMMED AMAN
+men_800m,2013,IAAF World Championships,2013-08-13,Nick SYMMONDS,2,1:43.55,global,NICK SYMMONDS
+men_800m,2013,IAAF World Championships,2013-08-13,Ayanleh SOULEIMAN,3,1:43.76,global,AYANLEH SOULEIMAN
+men_DT,2013,IAAF World Championships,2013-08-13,Robert HARTING,1,69.11,global,ROBERT HARTING
+men_DT,2013,IAAF World Championships,2013-08-13,Piotr MAŁACHOWSKI,2,68.36,global,PIOTR MAŁACHOWSKI
+men_DT,2013,IAAF World Championships,2013-08-13,Gerd KANTER,3,65.19,global,GERD KANTER
+men_HJ,2013,IAAF World Championships,2013-08-15,Bohdan BONDARENKO,1,2.41,global,BOHDAN BONDARENKO
+men_HJ,2013,IAAF World Championships,2013-08-15,Mutaz Essa BARSHIM,2,2.38,global,MUTAZ ESSA BARSHIM
+men_HJ,2013,IAAF World Championships,2013-08-15,Derek DROUIN,3,2.38,global,DEREK DROUIN
+men_JT,2013,IAAF World Championships,2013-08-17,Vítězslav VESELÝ,1,87.17,global,VITEZSLAV VESELY
+men_JT,2013,IAAF World Championships,2013-08-17,Tero PITKÄMÄKI,2,87.07,global,TERO PITKAMAKI
+men_JT,2013,IAAF World Championships,2013-08-17,Dmitriy TARABIN,3,86.23,global,DMITRIY TARABIN
+men_LJ,2013,IAAF World Championships,2013-08-16,Aleksandr MENKOV,1,8.56,global,ALEKSANDR MENKOV
+men_LJ,2013,IAAF World Championships,2013-08-16,Ignisious GAISAH,2,8.29,global,IGNISIOUS GAISAH
+men_LJ,2013,IAAF World Championships,2013-08-16,Luis Alberto RIVERA MORALES,3,8.27,global,LUIS ALBERTO RIVERA MORALES
+men_PV,2013,IAAF World Championships,2013-08-12,Raphael HOLZDEPPE,1,5.89,global,RAPHAEL HOLZDEPPE
+men_PV,2013,IAAF World Championships,2013-08-12,Renaud LAVILLENIE,2,5.89,global,RENAUD LAVILLENIE
+men_PV,2013,IAAF World Championships,2013-08-12,Björn OTTO,3,5.82,global,BJORN OTTO
+men_SP,2013,IAAF World Championships,2013-08-16,David STORL,1,21.73,global,DAVID STORL
+men_SP,2013,IAAF World Championships,2013-08-16,Ryan WHITING,2,21.57,global,RYAN WHITING
+men_SP,2013,IAAF World Championships,2013-08-16,Dylan ARMSTRONG,3,21.34,global,DYLAN ARMSTRONG
+men_TJ,2013,IAAF World Championships,2013-08-18,Teddy TAMGHO,1,18.04,global,TEDDY TAMGHO
+men_TJ,2013,IAAF World Championships,2013-08-18,Pedro PICHARDO,2,17.68,global,PEDRO PICHARDO
+men_TJ,2013,IAAF World Championships,2013-08-18,Will CLAYE,3,17.52,global,WILL CLAYE
+women_100h,2013,IAAF World Championships,2013-08-17,Brianna ROLLINS,1,12.44,global,BRIANNA ROLLINS
+women_100h,2013,IAAF World Championships,2013-08-17,Sally PEARSON,2,12.50,global,SALLY PEARSON
+women_100h,2013,IAAF World Championships,2013-08-17,Tiffany PORTER,3,12.55,global,TIFFANY PORTER
+women_100m,2013,IAAF World Championships,2013-08-12,Shelly-Ann FRASER-PRYCE,1,10.71,global,SHELLY-ANN FRASER-PRYCE
+women_100m,2013,IAAF World Championships,2013-08-12,Murielle AHOURÉ,2,10.93,global,MURIELLE AHOURE
+women_100m,2013,IAAF World Championships,2013-08-12,Carmelita JETER,3,10.94,global,CARMELITA JETER
+women_1500m,2013,IAAF World Championships,2013-08-15,Abeba AREGAWI,1,4:02.67,global,ABEBA AREGAWI
+women_1500m,2013,IAAF World Championships,2013-08-15,Jenny SIMPSON,2,4:02.99,global,JENNY SIMPSON
+women_1500m,2013,IAAF World Championships,2013-08-15,Hellen OBIRI,3,4:03.86,global,HELLEN OBIRI
+women_200m,2013,IAAF World Championships,2013-08-16,Shelly-Ann FRASER-PRYCE,1,22.17,global,SHELLY-ANN FRASER-PRYCE
+women_200m,2013,IAAF World Championships,2013-08-16,Murielle AHOURÉ,2,22.32,global,MURIELLE AHOURE
+women_200m,2013,IAAF World Championships,2013-08-16,Blessing OKAGBARE,3,22.32,global,BLESSING OKAGBARE
+women_3000sc,2013,IAAF World Championships,2013-08-13,Milcah CHEMOS,1,9:11.65,global,MILCAH CHEMOS
+women_3000sc,2013,IAAF World Championships,2013-08-13,Lidya CHEPKURUI,2,9:12.55,global,LIDYA CHEPKURUI
+women_3000sc,2013,IAAF World Championships,2013-08-13,Sofia ASSEFA,3,9:12.84,global,SOFIA ASSEFA
+women_400h,2013,IAAF World Championships,2013-08-15,Zuzana HEJNOVÁ,1,52.83,global,ZUZANA HEJNOVA
+women_400h,2013,IAAF World Championships,2013-08-15,Dalilah MUHAMMAD,2,54.09,global,DALILAH MUHAMMAD
+women_400h,2013,IAAF World Championships,2013-08-15,Lashinda DEMUS,3,54.27,global,LASHINDA DEMUS
+women_400m,2013,IAAF World Championships,2013-08-12,Christine OHURUOGU,1,49.41,global,CHRISTINE OHURUOGU
+women_400m,2013,IAAF World Championships,2013-08-12,Amantle MONTSHO,2,49.41,global,AMANTLE MONTSHO
+women_400m,2013,IAAF World Championships,2013-08-12,Stephenie Ann MCPHERSON,3,49.99,global,STEPHENIE ANN MCPHERSON
+women_5000m,2013,IAAF World Championships,2013-08-17,Meseret DEFAR,1,14:50.19,global,MESERET DEFAR
+women_5000m,2013,IAAF World Championships,2013-08-17,Mercy CHERONO,2,14:51.22,global,MERCY CHERONO
+women_5000m,2013,IAAF World Championships,2013-08-17,Almaz AYANA,3,14:51.33,global,ALMAZ AYANA
+women_800m,2013,IAAF World Championships,2013-08-18,Eunice Jepkoech SUM,1,1:57.38,global,EUNICE JEPKOECH SUM
+women_800m,2013,IAAF World Championships,2013-08-18,Brenda MARTINEZ,2,1:57.91,global,BRENDA MARTINEZ
+women_800m,2013,IAAF World Championships,2013-08-18,Alysia MONTAÑO,3,1:57.95,global,ALYSIA MONTANO
+women_DT,2013,IAAF World Championships,2013-08-11,Sandra PERKOVIĆ,1,67.99,global,SANDRA PERKOVIC
+women_DT,2013,IAAF World Championships,2013-08-11,Melina ROBERT-MICHON,2,66.28,global,MELINA ROBERT-MICHON
+women_DT,2013,IAAF World Championships,2013-08-11,Yarelis BARRIOS,3,64.96,global,YARELIS BARRIOS
+women_JT,2013,IAAF World Championships,2013-08-18,Christina OBERGFÖLL,1,69.05,global,CHRISTINA OBERGFOLL
+women_JT,2013,IAAF World Championships,2013-08-18,Kimberley MICKLE,2,66.60,global,KIMBERLEY MICKLE
+women_JT,2013,IAAF World Championships,2013-08-18,Mariya ABAKUMOVA,3,65.09,global,MARIYA ABAKUMOVA
+women_LJ,2013,IAAF World Championships,2013-08-11,Brittney REESE,1,7.01,global,BRITTNEY REESE
+women_LJ,2013,IAAF World Championships,2013-08-11,Blessing OKAGBARE,2,6.99,global,BLESSING OKAGBARE
+women_LJ,2013,IAAF World Championships,2013-08-11,Ivana ŠPANOVIĆ,3,6.82,global,IVANA SPANOVIC
+women_PV,2013,IAAF World Championships,2013-08-13,Yelena ISINBAYEVA,1,4.89,global,YELENA ISINBAYEVA
+women_PV,2013,IAAF World Championships,2013-08-13,Jennifer SUHR,2,4.82,global,JENNIFER SUHR
+women_PV,2013,IAAF World Championships,2013-08-13,Yarisley SILVA,3,4.82,global,YARISLEY SILVA
+women_SP,2013,IAAF World Championships,2013-08-12,Valerie ADAMS,1,20.88,global,VALERIE ADAMS
+women_SP,2013,IAAF World Championships,2013-08-12,Christina SCHWANITZ,2,20.41,global,CHRISTINA SCHWANITZ
+women_SP,2013,IAAF World Championships,2013-08-12,Lijiao GONG,3,19.95,global,LIJIAO GONG
+women_TJ,2013,IAAF World Championships,2013-08-15,Caterine IBARGUEN,1,14.85,global,CATERINE IBARGUEN
+women_TJ,2013,IAAF World Championships,2013-08-15,Yekaterina KONEVA,2,14.81,global,YEKATERINA KONEVA
+women_TJ,2013,IAAF World Championships,2013-08-15,Olha SALADUKHA,3,14.65,global,OLHA SALADUKHA
+men_100m,2014,Zürich European Championships,2014-08-13,James DASAOLU,1,10.06,continental,JAMES DASAOLU
+men_100m,2014,Zürich European Championships,2014-08-13,Christophe LEMAITRE,2,10.13,continental,CHRISTOPHE LEMAITRE
+men_100m,2014,Zürich European Championships,2014-08-13,Harry AIKINES-ARYEETEY,3,10.22,continental,HARRY AIKINES-ARYEETEY
+men_110h,2014,Zürich European Championships,2014-08-14,Sergey SHUBENKOV,1,13.19,continental,SERGEY SHUBENKOV
+men_110h,2014,Zürich European Championships,2014-08-14,William SHARMAN,2,13.27,continental,WILLIAM SHARMAN
+men_110h,2014,Zürich European Championships,2014-08-14,Pascal MARTINOT-LAGARDE,3,13.29,continental,PASCAL MARTINOT-LAGARDE
+men_1500m,2014,Zürich European Championships,2014-08-17,Mahiedine MEKHISSI,1,3:45.60,continental,MAHIEDINE MEKHISSI
+men_1500m,2014,Zürich European Championships,2014-08-17,Henrik INGEBRIGTSEN,2,3:46.10,continental,HENRIK INGEBRIGTSEN
+men_1500m,2014,Zürich European Championships,2014-08-17,Chris O'HARE,3,3:46.18,continental,CHRIS O'HARE
+men_200m,2014,Zürich European Championships,2014-08-15,Adam GEMILI,1,19.98,continental,ADAM GEMILI
+men_200m,2014,Zürich European Championships,2014-08-15,Christophe LEMAITRE,2,20.15,continental,CHRISTOPHE LEMAITRE
+men_200m,2014,Zürich European Championships,2014-08-15,Serhiy SMELYK,3,20.30,continental,SERHIY SMELYK
+men_3000sc,2014,Zürich European Championships,2014-08-14,Yoann KOWAL,1,8:26.66,continental,YOANN KOWAL
+men_3000sc,2014,Zürich European Championships,2014-08-14,Krystian ZALEWSKI,2,8:27.11,continental,KRYSTIAN ZALEWSKI
+men_3000sc,2014,Zürich European Championships,2014-08-14,Ángel MULLERA,3,8:29.16,continental,ANGEL MULLERA
+men_400h,2014,Zürich European Championships,2014-08-15,Kariem HUSSEIN,1,48.96,continental,KARIEM HUSSEIN
+men_400h,2014,Zürich European Championships,2014-08-15,Rasmus MÄGI,2,49.06,continental,RASMUS MAGI
+men_400h,2014,Zürich European Championships,2014-08-15,Denis KUDRYAVTSEV,3,49.16,continental,DENIS KUDRYAVTSEV
+men_400m,2014,Zürich European Championships,2014-08-15,Martyn ROONEY,1,44.71,continental,MARTYN ROONEY
+men_400m,2014,Zürich European Championships,2014-08-15,Matthew HUDSON-SMITH,2,44.75,continental,MATTHEW HUDSON-SMITH
+men_400m,2014,Zürich European Championships,2014-08-15,Donald BLAIR-SANFORD,3,45.27,continental,DONALD BLAIR-SANFORD
+men_5000m,2014,Zürich European Championships,2014-08-17,Mo FARAH,1,14:05.82,continental,MO FARAH
+men_5000m,2014,Zürich European Championships,2014-08-17,Hayle IBRAHIMOV,2,14:08.32,continental,HAYLE IBRAHIMOV
+men_5000m,2014,Zürich European Championships,2014-08-17,Andy VERNON,3,14:09.48,continental,ANDY VERNON
+men_800m,2014,Zürich European Championships,2014-08-15,Adam KSZCZOT,1,1:44.15,continental,ADAM KSZCZOT
+men_800m,2014,Zürich European Championships,2014-08-15,Artur KUCIAPSKI,2,1:44.89,continental,ARTUR KUCIAPSKI
+men_800m,2014,Zürich European Championships,2014-08-15,Mark ENGLISH,3,1:45.03,continental,MARK ENGLISH
+men_DT,2014,Zürich European Championships,2014-08-13,Robert HARTING,1,66.07,continental,ROBERT HARTING
+men_DT,2014,Zürich European Championships,2014-08-13,Gerd KANTER,2,64.75,continental,GERD KANTER
+men_DT,2014,Zürich European Championships,2014-08-13,Robert URBANEK,3,63.81,continental,ROBERT URBANEK
+men_HJ,2014,Zürich European Championships,2014-08-15,Bohdan BONDARENKO,1,2.35,continental,BOHDAN BONDARENKO
+men_HJ,2014,Zürich European Championships,2014-08-15,Andrii PROTSENKO,2,2.33,continental,ANDRII PROTSENKO
+men_HJ,2014,Zürich European Championships,2014-08-15,Jaroslav BÁBA,3,2.30,continental,JAROSLAV BABA
+men_JT,2014,Zürich European Championships,2014-08-17,Antti RUUSKANEN,1,88.01,continental,ANTTI RUUSKANEN
+men_JT,2014,Zürich European Championships,2014-08-17,Vítězslav VESELÝ,2,84.79,continental,VITEZSLAV VESELY
+men_JT,2014,Zürich European Championships,2014-08-17,Tero PITKÄMÄKI,3,84.40,continental,TERO PITKAMAKI
+men_LJ,2014,Zürich European Championships,2014-08-17,Greg RUTHERFORD,1,8.29,continental,GREG RUTHERFORD
+men_LJ,2014,Zürich European Championships,2014-08-17,Louis TSATOUMAS,2,8.15,continental,LOUIS TSATOUMAS
+men_LJ,2014,Zürich European Championships,2014-08-17,Kafétien GOMIS,3,8.14,continental,KAFETIEN GOMIS
+men_PV,2014,Zürich European Championships,2014-08-16,Renaud LAVILLENIE,1,5.90,continental,RENAUD LAVILLENIE
+men_PV,2014,Zürich European Championships,2014-08-16,Paweł WOJCIECHOWSKI,2,5.70,continental,PAWEŁ WOJCIECHOWSKI
+men_PV,2014,Zürich European Championships,2014-08-16,Jan KUDLIČKA,3,5.70,continental,JAN KUDLICKA
+men_SP,2014,Zürich European Championships,2014-08-12,David STORL,1,21.41,continental,DAVID STORL
+men_SP,2014,Zürich European Championships,2014-08-12,Borja VIVAS,2,20.86,continental,BORJA VIVAS
+men_SP,2014,Zürich European Championships,2014-08-12,Tomasz MAJEWSKI,3,20.83,continental,TOMASZ MAJEWSKI
+men_TJ,2014,Zürich European Championships,2014-08-14,Benjamin COMPAORÉ,1,17.46,continental,BENJAMIN COMPAORE
+men_TJ,2014,Zürich European Championships,2014-08-14,Alexey FYODOROV,2,17.04,continental,ALEXEY FYODOROV
+men_TJ,2014,Zürich European Championships,2014-08-14,Yoann RAPINIER,3,17.01,continental,YOANN RAPINIER
+women_100h,2014,Zürich European Championships,2014-08-13,Tiffany PORTER,1,12.76,continental,TIFFANY PORTER
+women_100h,2014,Zürich European Championships,2014-08-13,Cindy BILLAUD,2,12.79,continental,CINDY BILLAUD
+women_100h,2014,Zürich European Championships,2014-08-13,Cindy ROLEDER,3,12.82,continental,CINDY ROLEDER
+women_100m,2014,Zürich European Championships,2014-08-13,Dafne SCHIPPERS,1,11.12,continental,DAFNE SCHIPPERS
+women_100m,2014,Zürich European Championships,2014-08-13,Myriam SOUMARÉ,2,11.16,continental,MYRIAM SOUMARE
+women_100m,2014,Zürich European Championships,2014-08-13,Ashleigh NELSON,3,11.22,continental,ASHLEIGH NELSON
+women_1500m,2014,Zürich European Championships,2014-08-15,Sifan HASSAN,1,4:04.18,continental,SIFAN HASSAN
+women_1500m,2014,Zürich European Championships,2014-08-15,Abeba AREGAWI,2,4:05.08,continental,ABEBA AREGAWI
+women_1500m,2014,Zürich European Championships,2014-08-15,Laura WEIGHTMAN,3,4:06.32,continental,LAURA WEIGHTMAN
+women_200m,2014,Zürich European Championships,2014-08-15,Dafne SCHIPPERS,1,22.03,continental,DAFNE SCHIPPERS
+women_200m,2014,Zürich European Championships,2014-08-15,Jodie WILLIAMS,2,22.46,continental,JODIE WILLIAMS
+women_200m,2014,Zürich European Championships,2014-08-15,Myriam SOUMARÉ,3,22.58,continental,MYRIAM SOUMARE
+women_3000sc,2014,Zürich European Championships,2014-08-17,Antje MÖLDNER-SCHMIDT,1,9:29.43,continental,ANTJE MOLDNER-SCHMIDT
+women_3000sc,2014,Zürich European Championships,2014-08-17,Charlotta FOUGBERG,2,9:30.16,continental,CHARLOTTA FOUGBERG
+women_3000sc,2014,Zürich European Championships,2014-08-17,Diana MARTÍN,3,9:30.70,continental,DIANA MARTIN
+women_400h,2014,Zürich European Championships,2014-08-16,Eilidh DOYLE,1,54.48,continental,EILIDH DOYLE
+women_400h,2014,Zürich European Championships,2014-08-16,Hanna TITIMETS,2,54.56,continental,HANNA TITIMETS
+women_400h,2014,Zürich European Championships,2014-08-16,Denisa ROSOLOVÁ,3,54.70,continental,DENISA ROSOLOVA
+women_400m,2014,Zürich European Championships,2014-08-15,Libania GRENOT,1,51.10,continental,LIBANIA GRENOT
+women_400m,2014,Zürich European Championships,2014-08-15,Olha ZEMLYAK,2,51.36,continental,OLHA ZEMLYAK
+women_400m,2014,Zürich European Championships,2014-08-15,Indira TERRERO,3,51.38,continental,INDIRA TERRERO
+women_5000m,2014,Zürich European Championships,2014-08-16,Meraf BAHTA,1,15:31.39,continental,MERAF BAHTA
+women_5000m,2014,Zürich European Championships,2014-08-16,Sifan HASSAN,2,15:31.79,continental,SIFAN HASSAN
+women_5000m,2014,Zürich European Championships,2014-08-16,Susan KUIJKEN,3,15:32.82,continental,SUSAN KUIJKEN
+women_800m,2014,Zürich European Championships,2014-08-16,Marina ARZAMASOVA,1,1:58.15,continental,MARINA ARZAMASOVA
+women_800m,2014,Zürich European Championships,2014-08-16,Lynsey SHARP,2,1:58.80,continental,LYNSEY SHARP
+women_800m,2014,Zürich European Championships,2014-08-16,Joanna JÓŹWIK,3,1:59.63,continental,JOANNA JOZWIK
+women_DT,2014,Zürich European Championships,2014-08-16,Sandra PERKOVIĆ,1,71.08,continental,SANDRA PERKOVIC
+women_DT,2014,Zürich European Championships,2014-08-16,Melina ROBERT-MICHON,2,65.33,continental,MELINA ROBERT-MICHON
+women_DT,2014,Zürich European Championships,2014-08-16,Shanice CRAFT,3,64.33,continental,SHANICE CRAFT
+women_HJ,2014,Zürich European Championships,2014-08-17,Ruth BEITIA,1,2.01,continental,RUTH BEITIA
+women_HJ,2014,Zürich European Championships,2014-08-17,Mariya KUCHINA,2,1.99,continental,MARIYA KUCHINA
+women_HJ,2014,Zürich European Championships,2014-08-17,Ana ŠIMIĆ,3,1.99,continental,ANA SIMIC
+women_JT,2014,Zürich European Championships,2014-08-14,Barbora ŠPOTÁKOVÁ,1,64.41,continental,BARBORA SPOTAKOVA
+women_JT,2014,Zürich European Championships,2014-08-14,Tatjana JELAČA,2,64.21,continental,TATJANA JELACA
+women_JT,2014,Zürich European Championships,2014-08-14,Linda STAHL,3,63.91,continental,LINDA STAHL
+women_LJ,2014,Zürich European Championships,2014-08-13,Éloyse LESUEUR-AYMONIN,1,6.85,continental,ELOYSE LESUEUR-AYMONIN
+women_LJ,2014,Zürich European Championships,2014-08-13,Ivana ŠPANOVIĆ,2,6.81,continental,IVANA SPANOVIC
+women_LJ,2014,Zürich European Championships,2014-08-13,Darya KLISHINA,3,6.65,continental,DARYA KLISHINA
+women_PV,2014,Zürich European Championships,2014-08-14,Anzhelika SIDOROVA,1,4.65,continental,ANZHELIKA SIDOROVA
+women_PV,2014,Zürich European Championships,2014-08-14,Aikaterini STEFANIDI,2,4.60,continental,AIKATERINI STEFANIDI
+women_PV,2014,Zürich European Championships,2014-08-14,Angelina ZHUK-KRASNOVA,3,4.60,continental,ANGELINA ZHUK-KRASNOVA
+women_SP,2014,Zürich European Championships,2014-08-17,Christina SCHWANITZ,1,19.90,continental,CHRISTINA SCHWANITZ
+women_SP,2014,Zürich European Championships,2014-08-17,Anita MÁRTON,2,19.04,continental,ANITA MARTON
+women_SP,2014,Zürich European Championships,2014-08-17,Yuliya LEANTSIUK,3,18.68,continental,YULIYA LEANTSIUK
+women_TJ,2014,Zürich European Championships,2014-08-16,Olha SALADUKHA,1,14.73,continental,OLHA SALADUKHA
+women_TJ,2014,Zürich European Championships,2014-08-16,Yekaterina KONEVA,2,14.69,continental,YEKATERINA KONEVA
+women_TJ,2014,Zürich European Championships,2014-08-16,Irina GUMENYUK,3,14.46,continental,IRINA GUMENYUK
+men_100m,2015,IAAF World Championships,2015-08-23,Usain BOLT,1,9.79,global,USAIN BOLT
+men_100m,2015,IAAF World Championships,2015-08-23,Justin GATLIN,2,9.80,global,JUSTIN GATLIN
+men_100m,2015,IAAF World Championships,2015-08-23,Andre DE GRASSE,3,9.92,global,ANDRE DE GRASSE
+men_110h,2015,IAAF World Championships,2015-08-28,Sergey SHUBENKOV,1,12.98,global,SERGEY SHUBENKOV
+men_110h,2015,IAAF World Championships,2015-08-28,Hansle PARCHMENT,2,13.03,global,HANSLE PARCHMENT
+men_110h,2015,IAAF World Championships,2015-08-28,Aries MERRITT,3,13.04,global,ARIES MERRITT
+men_1500m,2015,IAAF World Championships,2015-08-30,Asbel KIPROP,1,3:34.40,global,ASBEL KIPROP
+men_1500m,2015,IAAF World Championships,2015-08-30,Elijah Motonei MANANGOI,2,3:34.63,global,ELIJAH MOTONEI MANANGOI
+men_1500m,2015,IAAF World Championships,2015-08-30,Abdelaati IGUIDER,3,3:34.67,global,ABDELAATI IGUIDER
+men_200m,2015,IAAF World Championships,2015-08-27,Usain BOLT,1,19.55,global,USAIN BOLT
+men_200m,2015,IAAF World Championships,2015-08-27,Justin GATLIN,2,19.74,global,JUSTIN GATLIN
+men_200m,2015,IAAF World Championships,2015-08-27,Anaso JOBODWANA,3,19.87,global,ANASO JOBODWANA
+men_3000sc,2015,IAAF World Championships,2015-08-24,Ezekiel KEMBOI,1,8:11.28,global,EZEKIEL KEMBOI
+men_3000sc,2015,IAAF World Championships,2015-08-24,Conseslus KIPRUTO,2,8:12.38,global,CONSESLUS KIPRUTO
+men_3000sc,2015,IAAF World Championships,2015-08-24,Brimin Kiprop KIPRUTO,3,8:12.54,global,BRIMIN KIPROP KIPRUTO
+men_400h,2015,IAAF World Championships,2015-08-25,Nicholas BETT,1,47.79,global,NICHOLAS BETT
+men_400h,2015,IAAF World Championships,2015-08-25,Denis KUDRYAVTSEV,2,48.05,global,DENIS KUDRYAVTSEV
+men_400h,2015,IAAF World Championships,2015-08-25,Jeffery GIBSON,3,48.17,global,JEFFERY GIBSON
+men_400m,2015,IAAF World Championships,2015-08-26,Wayde VAN NIEKERK,1,43.48,global,WAYDE VAN NIEKERK
+men_400m,2015,IAAF World Championships,2015-08-26,LaShawn MERRITT,2,43.65,global,LASHAWN MERRITT
+men_400m,2015,IAAF World Championships,2015-08-26,Kirani JAMES,3,43.78,global,KIRANI JAMES
+men_5000m,2015,IAAF World Championships,2015-08-29,Mo FARAH,1,13:50.38,global,MO FARAH
+men_5000m,2015,IAAF World Championships,2015-08-29,Caleb Mwangangi NDIKU,2,13:51.75,global,CALEB MWANGANGI NDIKU
+men_5000m,2015,IAAF World Championships,2015-08-29,Hagos GEBRHIWET,3,13:51.86,global,HAGOS GEBRHIWET
+men_800m,2015,IAAF World Championships,2015-08-25,David RUDISHA,1,1:45.84,global,DAVID RUDISHA
+men_800m,2015,IAAF World Championships,2015-08-25,Adam KSZCZOT,2,1:46.08,global,ADAM KSZCZOT
+men_800m,2015,IAAF World Championships,2015-08-25,Amel TUKA,3,1:46.30,global,AMEL TUKA
+men_DT,2015,IAAF World Championships,2015-08-29,Piotr MAŁACHOWSKI,1,67.40,global,PIOTR MAŁACHOWSKI
+men_DT,2015,IAAF World Championships,2015-08-29,Philip MILANOV,2,66.90,global,PHILIP MILANOV
+men_DT,2015,IAAF World Championships,2015-08-29,Robert URBANEK,3,65.18,global,ROBERT URBANEK
+men_JT,2015,IAAF World Championships,2015-08-26,Julius YEGO,1,92.72,global,JULIUS YEGO
+men_JT,2015,IAAF World Championships,2015-08-26,Ihab ABDELRAHMAN,2,88.99,global,IHAB ABDELRAHMAN
+men_JT,2015,IAAF World Championships,2015-08-26,Tero PITKÄMÄKI,3,87.64,global,TERO PITKAMAKI
+men_LJ,2015,IAAF World Championships,2015-08-25,Greg RUTHERFORD,1,8.41,global,GREG RUTHERFORD
+men_LJ,2015,IAAF World Championships,2015-08-25,Fabrice LAPIERRE,2,8.24,global,FABRICE LAPIERRE
+men_LJ,2015,IAAF World Championships,2015-08-25,Jianan WANG,3,8.18,global,JIANAN WANG
+men_PV,2015,IAAF World Championships,2015-08-24,Shawnacy BARBER,1,5.90,global,SHAWNACY BARBER
+men_PV,2015,IAAF World Championships,2015-08-24,Raphael HOLZDEPPE,2,5.90,global,RAPHAEL HOLZDEPPE
+men_PV,2015,IAAF World Championships,2015-08-24,Paweł WOJCIECHOWSKI,3,5.80,global,PAWEŁ WOJCIECHOWSKI
+men_SP,2015,IAAF World Championships,2015-08-23,Joe KOVACS,1,21.93,global,JOE KOVACS
+men_SP,2015,IAAF World Championships,2015-08-23,David STORL,2,21.74,global,DAVID STORL
+men_SP,2015,IAAF World Championships,2015-08-23,O'Dayne RICHARDS,3,21.69,global,O'DAYNE RICHARDS
+men_TJ,2015,IAAF World Championships,2015-08-27,Christian TAYLOR,1,18.21,global,CHRISTIAN TAYLOR
+men_TJ,2015,IAAF World Championships,2015-08-27,Pedro PICHARDO,2,17.73,global,PEDRO PICHARDO
+men_TJ,2015,IAAF World Championships,2015-08-27,Nelson ÉVORA,3,17.52,global,NELSON EVORA
+women_100h,2015,IAAF World Championships,2015-08-28,Danielle WILLIAMS,1,12.57,global,DANIELLE WILLIAMS
+women_100h,2015,IAAF World Championships,2015-08-28,Cindy ROLEDER,2,12.59,global,CINDY ROLEDER
+women_100h,2015,IAAF World Championships,2015-08-28,Alina TALAY,3,12.66,global,ALINA TALAY
+women_100m,2015,IAAF World Championships,2015-08-24,Shelly-Ann FRASER-PRYCE,1,10.76,global,SHELLY-ANN FRASER-PRYCE
+women_100m,2015,IAAF World Championships,2015-08-24,Dafne SCHIPPERS,2,10.81,global,DAFNE SCHIPPERS
+women_100m,2015,IAAF World Championships,2015-08-24,Tori BOWIE,3,10.86,global,TORI BOWIE
+women_1500m,2015,IAAF World Championships,2015-08-25,Genzebe DIBABA,1,4:08.09,global,GENZEBE DIBABA
+women_1500m,2015,IAAF World Championships,2015-08-25,Faith KIPYEGON,2,4:08.96,global,FAITH KIPYEGON
+women_1500m,2015,IAAF World Championships,2015-08-25,Sifan HASSAN,3,4:09.34,global,SIFAN HASSAN
+women_200m,2015,IAAF World Championships,2015-08-28,Dafne SCHIPPERS,1,21.63,global,DAFNE SCHIPPERS
+women_200m,2015,IAAF World Championships,2015-08-28,Elaine THOMPSON,2,21.66,global,ELAINE THOMPSON
+women_200m,2015,IAAF World Championships,2015-08-28,Veronica CAMPBELL-BROWN,3,21.97,global,VERONICA CAMPBELL-BROWN
+women_3000sc,2015,IAAF World Championships,2015-08-26,Hyvin KIYENG,1,9:19.11,global,HYVIN KIYENG
+women_3000sc,2015,IAAF World Championships,2015-08-26,Habiba GHRIBI,2,9:19.24,global,HABIBA GHRIBI
+women_3000sc,2015,IAAF World Championships,2015-08-26,Gesa Felicitas KRAUSE,3,9:19.25,global,GESA FELICITAS KRAUSE
+women_400h,2015,IAAF World Championships,2015-08-26,Zuzana HEJNOVÁ,1,53.50,global,ZUZANA HEJNOVA
+women_400h,2015,IAAF World Championships,2015-08-26,Shamier LITTLE,2,53.94,global,SHAMIER LITTLE
+women_400h,2015,IAAF World Championships,2015-08-26,Cassandra TATE,3,54.02,global,CASSANDRA TATE
+women_400m,2015,IAAF World Championships,2015-08-27,Allyson FELIX,1,49.26,global,ALLYSON FELIX
+women_400m,2015,IAAF World Championships,2015-08-27,Shaunae MILLER,2,49.67,global,SHAUNAE MILLER
+women_400m,2015,IAAF World Championships,2015-08-27,Shericka JACKSON,3,49.99,global,SHERICKA JACKSON
+women_5000m,2015,IAAF World Championships,2015-08-30,Almaz AYANA,1,14:26.83,global,ALMAZ AYANA
+women_5000m,2015,IAAF World Championships,2015-08-30,Senbere TEFERI,2,14:44.07,global,SENBERE TEFERI
+women_5000m,2015,IAAF World Championships,2015-08-30,Genzebe DIBABA,3,14:44.14,global,GENZEBE DIBABA
+women_800m,2015,IAAF World Championships,2015-08-29,Marina ARZAMASOVA,1,1:58.03,global,MARINA ARZAMASOVA
+women_800m,2015,IAAF World Championships,2015-08-29,Melissa BISHOP-NRIAGU,2,1:58.12,global,MELISSA BISHOP-NRIAGU
+women_800m,2015,IAAF World Championships,2015-08-29,Eunice Jepkoech SUM,3,1:58.18,global,EUNICE JEPKOECH SUM
+women_DT,2015,IAAF World Championships,2015-08-25,Denia CABALLERO,1,69.28,global,DENIA CABALLERO
+women_DT,2015,IAAF World Championships,2015-08-25,Sandra PERKOVIĆ,2,67.39,global,SANDRA PERKOVIC
+women_DT,2015,IAAF World Championships,2015-08-25,Nadine MÜLLER,3,65.53,global,NADINE MULLER
+women_HJ,2015,IAAF World Championships,2015-08-29,Mariya KUCHINA,1,2.01,global,MARIYA KUCHINA
+women_HJ,2015,IAAF World Championships,2015-08-29,Blanka VLAŠIĆ,2,2.01,global,BLANKA VLASIC
+women_HJ,2015,IAAF World Championships,2015-08-29,Anna CHICHEROVA,3,2.01,global,ANNA CHICHEROVA
+women_JT,2015,IAAF World Championships,2015-08-30,Katharina MOLITOR,1,67.69,global,KATHARINA MOLITOR
+women_JT,2015,IAAF World Championships,2015-08-30,Huihui LYU,2,66.13,global,HUIHUI LYU
+women_JT,2015,IAAF World Championships,2015-08-30,Sunette VILJOEN,3,65.79,global,SUNETTE VILJOEN
+women_LJ,2015,IAAF World Championships,2015-08-28,Tianna BARTOLETTA,1,7.14,global,TIANNA BARTOLETTA
+women_LJ,2015,IAAF World Championships,2015-08-28,Shara PROCTOR,2,7.07,global,SHARA PROCTOR
+women_LJ,2015,IAAF World Championships,2015-08-28,Ivana ŠPANOVIĆ,3,7.01,global,IVANA SPANOVIC
+women_PV,2015,IAAF World Championships,2015-08-26,Yarisley SILVA,1,4.90,global,YARISLEY SILVA
+women_PV,2015,IAAF World Championships,2015-08-26,Fabiana MURER,2,4.85,global,FABIANA MURER
+women_PV,2015,IAAF World Championships,2015-08-26,Nikoleta KYRIAKOPOULOU,3,4.80,global,NIKOLETA KYRIAKOPOULOU
+women_SP,2015,IAAF World Championships,2015-08-22,Christina SCHWANITZ,1,20.37,global,CHRISTINA SCHWANITZ
+women_SP,2015,IAAF World Championships,2015-08-22,Lijiao GONG,2,20.30,global,LIJIAO GONG
+women_SP,2015,IAAF World Championships,2015-08-22,Michelle CARTER,3,19.76,global,MICHELLE CARTER
+women_TJ,2015,IAAF World Championships,2015-08-24,Caterine IBARGUEN,1,14.90,global,CATERINE IBARGUEN
+women_TJ,2015,IAAF World Championships,2015-08-24,Hanna MINENKO,2,14.78,global,HANNA MINENKO
+women_TJ,2015,IAAF World Championships,2015-08-24,Olga RYPAKOVA,3,14.77,global,OLGA RYPAKOVA
+men_100m,2016,European Athletics Championships,2016-07-07,Churandy MARTINA,1,10.07,continental,CHURANDY MARTINA
+men_100m,2016,European Athletics Championships,2016-07-07,Jak Ali HARVEY,2,10.07,continental,JAK ALI HARVEY
+men_100m,2016,European Athletics Championships,2016-07-07,Jimmy VICAUT,3,10.08,continental,JIMMY VICAUT
+men_100m,2016,The XXXI Olympic Games,2016-08-14,Usain BOLT,1,9.81,global,USAIN BOLT
+men_100m,2016,The XXXI Olympic Games,2016-08-14,Justin GATLIN,2,9.89,global,JUSTIN GATLIN
+men_100m,2016,The XXXI Olympic Games,2016-08-14,Andre DE GRASSE,3,9.91,global,ANDRE DE GRASSE
+men_110h,2016,European Athletics Championships,2016-07-09,Dimitri BASCOU,1,13.25,continental,DIMITRI BASCOU
+men_110h,2016,European Athletics Championships,2016-07-09,Balázs BAJI,2,13.28,continental,BALAZS BAJI
+men_110h,2016,European Athletics Championships,2016-07-09,Wilhem BELOCIAN,3,13.33,continental,WILHEM BELOCIAN
+men_110h,2016,The XXXI Olympic Games,2016-08-16,Omar MCLEOD,1,13.05,global,OMAR MCLEOD
+men_110h,2016,The XXXI Olympic Games,2016-08-16,Orlando ORTEGA,2,13.17,global,ORLANDO ORTEGA
+men_110h,2016,The XXXI Olympic Games,2016-08-16,Dimitri BASCOU,3,13.24,global,DIMITRI BASCOU
+men_1500m,2016,European Athletics Championships,2016-07-09,Filip INGEBRIGTSEN,1,3:46.65,continental,FILIP INGEBRIGTSEN
+men_1500m,2016,European Athletics Championships,2016-07-09,David BUSTOS,2,3:46.90,continental,DAVID BUSTOS
+men_1500m,2016,European Athletics Championships,2016-07-09,Henrik INGEBRIGTSEN,3,3:47.18,continental,HENRIK INGEBRIGTSEN
+men_1500m,2016,The XXXI Olympic Games,2016-08-20,Matthew CENTROWITZ,1,3:50.00,global,MATTHEW CENTROWITZ
+men_1500m,2016,The XXXI Olympic Games,2016-08-20,Taoufik MAKHLOUFI,2,3:50.11,global,TAOUFIK MAKHLOUFI
+men_1500m,2016,The XXXI Olympic Games,2016-08-20,Nick WILLIS,3,3:50.24,global,NICK WILLIS
+men_200m,2016,European Athletics Championships,2016-07-08,Bruno HORTELANO,1,20.45,continental,BRUNO HORTELANO
+men_200m,2016,European Athletics Championships,2016-07-08,Ramil GULIYEV,2,20.51,continental,RAMIL GULIYEV
+men_200m,2016,European Athletics Championships,2016-07-08,Daniel TALBOT,3,20.56,continental,DANIEL TALBOT
+men_200m,2016,The XXXI Olympic Games,2016-08-18,Usain BOLT,1,19.78,global,USAIN BOLT
+men_200m,2016,The XXXI Olympic Games,2016-08-18,Andre DE GRASSE,2,20.02,global,ANDRE DE GRASSE
+men_200m,2016,The XXXI Olympic Games,2016-08-18,Christophe LEMAITRE,3,20.12,global,CHRISTOPHE LEMAITRE
+men_3000sc,2016,European Athletics Championships,2016-07-08,Mahiedine MEKHISSI,1,8:25.63,continental,MAHIEDINE MEKHISSI
+men_3000sc,2016,European Athletics Championships,2016-07-08,Aras KAYA,2,8:29.91,continental,ARAS KAYA
+men_3000sc,2016,European Athletics Championships,2016-07-08,Yoann KOWAL,3,8:30.79,continental,YOANN KOWAL
+men_3000sc,2016,The XXXI Olympic Games,2016-08-17,Conseslus KIPRUTO,1,8:03.28,global,CONSESLUS KIPRUTO
+men_3000sc,2016,The XXXI Olympic Games,2016-08-17,Evan JAGER,2,8:04.28,global,EVAN JAGER
+men_3000sc,2016,The XXXI Olympic Games,2016-08-17,Mahiedine MEKHISSI,3,8:11.52,global,MAHIEDINE MEKHISSI
+men_400h,2016,European Athletics Championships,2016-07-08,Yasmani COPELLO,1,48.98,continental,YASMANI COPELLO
+men_400h,2016,European Athletics Championships,2016-07-08,Sergio FERNÁNDEZ,2,49.06,continental,SERGIO FERNANDEZ
+men_400h,2016,European Athletics Championships,2016-07-08,Kariem HUSSEIN,3,49.10,continental,KARIEM HUSSEIN
+men_400h,2016,The XXXI Olympic Games,2016-08-18,Kerron CLEMENT,1,47.73,global,KERRON CLEMENT
+men_400h,2016,The XXXI Olympic Games,2016-08-18,Bonface MUCHERU,2,47.78,global,BONFACE MUCHERU
+men_400h,2016,The XXXI Olympic Games,2016-08-18,Yasmani COPELLO,3,47.92,global,YASMANI COPELLO
+men_400m,2016,European Athletics Championships,2016-07-08,Martyn ROONEY,1,45.29,continental,MARTYN ROONEY
+men_400m,2016,European Athletics Championships,2016-07-08,Pavel MASLÁK,2,45.36,continental,PAVEL MASLAK
+men_400m,2016,European Athletics Championships,2016-07-08,Liemarvin BONEVACIA,3,45.41,continental,LIEMARVIN BONEVACIA
+men_400m,2016,The XXXI Olympic Games,2016-08-14,Wayde VAN NIEKERK,1,43.03,global,WAYDE VAN NIEKERK
+men_400m,2016,The XXXI Olympic Games,2016-08-14,Kirani JAMES,2,43.76,global,KIRANI JAMES
+men_400m,2016,The XXXI Olympic Games,2016-08-14,LaShawn MERRITT,3,43.85,global,LASHAWN MERRITT
+men_5000m,2016,European Athletics Championships,2016-07-10,Ilias FIFA,1,13:40.85,continental,ILIAS FIFA
+men_5000m,2016,European Athletics Championships,2016-07-10,Adel MECHAAL,2,13:40.85,continental,ADEL MECHAAL
+men_5000m,2016,European Athletics Championships,2016-07-10,Richard RINGER,3,13:40.85,continental,RICHARD RINGER
+men_5000m,2016,The XXXI Olympic Games,2016-08-20,Mo FARAH,1,13:03.30,global,MO FARAH
+men_5000m,2016,The XXXI Olympic Games,2016-08-20,Paul CHELIMO,2,13:03.90,global,PAUL CHELIMO
+men_5000m,2016,The XXXI Olympic Games,2016-08-20,Hagos GEBRHIWET,3,13:04.35,global,HAGOS GEBRHIWET
+men_800m,2016,European Athletics Championships,2016-07-10,Adam KSZCZOT,1,1:45.18,continental,ADAM KSZCZOT
+men_800m,2016,European Athletics Championships,2016-07-10,Marcin LEWANDOWSKI,2,1:45.54,continental,MARCIN LEWANDOWSKI
+men_800m,2016,European Athletics Championships,2016-07-10,Elliot GILES,3,1:45.54,continental,ELLIOT GILES
+men_800m,2016,The XXXI Olympic Games,2016-08-15,David RUDISHA,1,1:42.15,global,DAVID RUDISHA
+men_800m,2016,The XXXI Olympic Games,2016-08-15,Taoufik MAKHLOUFI,2,1:42.61,global,TAOUFIK MAKHLOUFI
+men_800m,2016,The XXXI Olympic Games,2016-08-15,Clayton MURPHY,3,1:42.93,global,CLAYTON MURPHY
+men_DT,2016,European Athletics Championships,2016-07-09,Piotr MAŁACHOWSKI,1,67.06,continental,PIOTR MAŁACHOWSKI
+men_DT,2016,European Athletics Championships,2016-07-09,Philip MILANOV,2,65.71,continental,PHILIP MILANOV
+men_DT,2016,European Athletics Championships,2016-07-09,Gerd KANTER,3,65.27,continental,GERD KANTER
+men_DT,2016,The XXXI Olympic Games,2016-08-13,Christoph HARTING,1,68.37,global,CHRISTOPH HARTING
+men_DT,2016,The XXXI Olympic Games,2016-08-13,Piotr MAŁACHOWSKI,2,67.55,global,PIOTR MAŁACHOWSKI
+men_DT,2016,The XXXI Olympic Games,2016-08-13,Daniel JASINSKI,3,67.05,global,DANIEL JASINSKI
+men_HJ,2016,European Athletics Championships,2016-07-10,Gianmarco TAMBERI,1,2.32,continental,GIANMARCO TAMBERI
+men_HJ,2016,European Athletics Championships,2016-07-10,Robbie GRABARZ,2,2.29,continental,ROBBIE GRABARZ
+men_HJ,2016,European Athletics Championships,2016-07-10,Chris BAKER,3,2.29,continental,CHRIS BAKER
+men_HJ,2016,The XXXI Olympic Games,2016-08-16,Derek DROUIN,1,2.38,global,DEREK DROUIN
+men_HJ,2016,The XXXI Olympic Games,2016-08-16,Mutaz Essa BARSHIM,2,2.36,global,MUTAZ ESSA BARSHIM
+men_HJ,2016,The XXXI Olympic Games,2016-08-16,Bohdan BONDARENKO,3,2.33,global,BOHDAN BONDARENKO
+men_JT,2016,European Athletics Championships,2016-07-07,Zigismunds SIRMAIS,1,86.66,continental,ZIGISMUNDS SIRMAIS
+men_JT,2016,European Athletics Championships,2016-07-07,Vítězslav VESELÝ,2,83.59,continental,VITEZSLAV VESELY
+men_JT,2016,European Athletics Championships,2016-07-07,Antti RUUSKANEN,3,82.44,continental,ANTTI RUUSKANEN
+men_JT,2016,The XXXI Olympic Games,2016-08-20,Thomas RÖHLER,1,90.30,global,THOMAS ROHLER
+men_JT,2016,The XXXI Olympic Games,2016-08-20,Julius YEGO,2,88.24,global,JULIUS YEGO
+men_JT,2016,The XXXI Olympic Games,2016-08-20,Keshorn WALCOTT,3,85.38,global,KESHORN WALCOTT
+men_LJ,2016,European Athletics Championships,2016-07-07,Greg RUTHERFORD,1,8.25,continental,GREG RUTHERFORD
+men_LJ,2016,European Athletics Championships,2016-07-07,Michel TORNÉUS,2,8.21,continental,MICHEL TORNEUS
+men_LJ,2016,European Athletics Championships,2016-07-07,Ignisious GAISAH,3,7.93,continental,IGNISIOUS GAISAH
+men_LJ,2016,The XXXI Olympic Games,2016-08-13,Jeff HENDERSON,1,8.38,global,JEFF HENDERSON
+men_LJ,2016,The XXXI Olympic Games,2016-08-13,Luvo MANYONGA,2,8.37,global,LUVO MANYONGA
+men_LJ,2016,The XXXI Olympic Games,2016-08-13,Greg RUTHERFORD,3,8.29,global,GREG RUTHERFORD
+men_PV,2016,European Athletics Championships,2016-07-08,Robert SOBERA,1,5.60,continental,ROBERT SOBERA
+men_PV,2016,European Athletics Championships,2016-07-08,Jan KUDLIČKA,2,5.60,continental,JAN KUDLICKA
+men_PV,2016,European Athletics Championships,2016-07-08,Robert RENNER,3,5.50,continental,ROBERT RENNER
+men_PV,2016,The XXXI Olympic Games,2016-08-15,Thiago BRAZ,1,6.03,global,THIAGO BRAZ
+men_PV,2016,The XXXI Olympic Games,2016-08-15,Renaud LAVILLENIE,2,5.98,global,RENAUD LAVILLENIE
+men_PV,2016,The XXXI Olympic Games,2016-08-15,Sam KENDRICKS,3,5.85,global,SAM KENDRICKS
+men_SP,2016,European Athletics Championships,2016-07-10,David STORL,1,21.31,continental,DAVID STORL
+men_SP,2016,European Athletics Championships,2016-07-10,Michał HARATYK,2,21.19,continental,MICHAŁ HARATYK
+men_SP,2016,European Athletics Championships,2016-07-10,Tsanko ARNAUDOV,3,20.59,continental,TSANKO ARNAUDOV
+men_SP,2016,The XXXI Olympic Games,2016-08-18,Ryan CROUSER,1,22.52,global,RYAN CROUSER
+men_SP,2016,The XXXI Olympic Games,2016-08-18,Joe KOVACS,2,21.78,global,JOE KOVACS
+men_SP,2016,The XXXI Olympic Games,2016-08-18,Tom WALSH,3,21.36,global,TOM WALSH
+men_TJ,2016,European Athletics Championships,2016-07-09,Max HEß,1,17.20,continental,MAX HESS
+men_TJ,2016,European Athletics Championships,2016-07-09,Karol HOFFMANN,2,17.16,continental,KAROL HOFFMANN
+men_TJ,2016,European Athletics Championships,2016-07-09,Julian REID,3,16.76,continental,JULIAN REID
+men_TJ,2016,The XXXI Olympic Games,2016-08-16,Christian TAYLOR,1,17.86,global,CHRISTIAN TAYLOR
+men_TJ,2016,The XXXI Olympic Games,2016-08-16,Will CLAYE,2,17.76,global,WILL CLAYE
+men_TJ,2016,The XXXI Olympic Games,2016-08-16,Bin DONG,3,17.58,global,BIN DONG
+women_100h,2016,European Athletics Championships,2016-07-07,Cindy ROLEDER,1,12.62,continental,CINDY ROLEDER
+women_100h,2016,European Athletics Championships,2016-07-07,Alina TALAY,2,12.68,continental,ALINA TALAY
+women_100h,2016,European Athletics Championships,2016-07-07,Tiffany PORTER,3,12.76,continental,TIFFANY PORTER
+women_100h,2016,The XXXI Olympic Games,2016-08-17,Brianna ROLLINS,1,12.48,global,BRIANNA ROLLINS
+women_100h,2016,The XXXI Olympic Games,2016-08-17,Nia ALI,2,12.59,global,NIA ALI
+women_100h,2016,The XXXI Olympic Games,2016-08-17,Kristi CASTLIN,3,12.61,global,KRISTI CASTLIN
+women_100m,2016,European Athletics Championships,2016-07-08,Dafne SCHIPPERS,1,10.90,continental,DAFNE SCHIPPERS
+women_100m,2016,European Athletics Championships,2016-07-08,Ivet LALOVA-COLLIO,2,11.20,continental,IVET LALOVA-COLLIO
+women_100m,2016,European Athletics Championships,2016-07-08,Mujinga KAMBUNDJI,3,11.25,continental,MUJINGA KAMBUNDJI
+women_100m,2016,The XXXI Olympic Games,2016-08-13,Elaine THOMPSON,1,10.71,global,ELAINE THOMPSON
+women_100m,2016,The XXXI Olympic Games,2016-08-13,Tori BOWIE,2,10.83,global,TORI BOWIE
+women_100m,2016,The XXXI Olympic Games,2016-08-13,Shelly-Ann FRASER-PRYCE,3,10.86,global,SHELLY-ANN FRASER-PRYCE
+women_1500m,2016,European Athletics Championships,2016-07-10,Angelika CICHOCKA,1,4:33.00,continental,ANGELIKA CICHOCKA
+women_1500m,2016,European Athletics Championships,2016-07-10,Sifan HASSAN,2,4:33.76,continental,SIFAN HASSAN
+women_1500m,2016,European Athletics Championships,2016-07-10,Ciara MAGEEAN,3,4:33.78,continental,CIARA MAGEEAN
+women_1500m,2016,The XXXI Olympic Games,2016-08-16,Faith KIPYEGON,1,4:08.92,global,FAITH KIPYEGON
+women_1500m,2016,The XXXI Olympic Games,2016-08-16,Genzebe DIBABA,2,4:10.27,global,GENZEBE DIBABA
+women_1500m,2016,The XXXI Olympic Games,2016-08-16,Jenny SIMPSON,3,4:10.53,global,JENNY SIMPSON
+women_200m,2016,European Athletics Championships,2016-07-07,Dina ASHER-SMITH,1,22.37,continental,DINA ASHER-SMITH
+women_200m,2016,European Athletics Championships,2016-07-07,Ivet LALOVA-COLLIO,2,22.52,continental,IVET LALOVA-COLLIO
+women_200m,2016,European Athletics Championships,2016-07-07,Gina LÜCKENKEMPER,3,22.74,continental,GINA LUCKENKEMPER
+women_200m,2016,The XXXI Olympic Games,2016-08-17,Elaine THOMPSON,1,21.78,global,ELAINE THOMPSON
+women_200m,2016,The XXXI Olympic Games,2016-08-17,Dafne SCHIPPERS,2,21.88,global,DAFNE SCHIPPERS
+women_200m,2016,The XXXI Olympic Games,2016-08-17,Tori BOWIE,3,22.15,global,TORI BOWIE
+women_3000sc,2016,European Athletics Championships,2016-07-10,Gesa Felicitas KRAUSE,1,9:18.85,continental,GESA FELICITAS KRAUSE
+women_3000sc,2016,European Athletics Championships,2016-07-10,Luiza GEGA,2,9:28.52,continental,LUIZA GEGA
+women_3000sc,2016,European Athletics Championships,2016-07-10,Özlem KAYA ALICI,3,9:35.05,continental,OZLEM KAYA ALICI
+women_3000sc,2016,The XXXI Olympic Games,2016-08-15,Ruth JEBET,1,8:59.75,global,RUTH JEBET
+women_3000sc,2016,The XXXI Olympic Games,2016-08-15,Hyvin KIYENG,2,9:07.12,global,HYVIN KIYENG
+women_3000sc,2016,The XXXI Olympic Games,2016-08-15,Emma COBURN,3,9:07.63,global,EMMA COBURN
+women_400h,2016,European Athletics Championships,2016-07-10,Sara Slott PETERSEN,1,55.12,continental,SARA SLOTT PETERSEN
+women_400h,2016,European Athletics Championships,2016-07-10,Joanna LINKIEWICZ,2,55.33,continental,JOANNA LINKIEWICZ
+women_400h,2016,European Athletics Championships,2016-07-10,Lea SPRUNGER,3,55.41,continental,LEA SPRUNGER
+women_400h,2016,The XXXI Olympic Games,2016-08-18,Dalilah MUHAMMAD,1,53.13,global,DALILAH MUHAMMAD
+women_400h,2016,The XXXI Olympic Games,2016-08-18,Sara Slott PETERSEN,2,53.55,global,SARA SLOTT PETERSEN
+women_400h,2016,The XXXI Olympic Games,2016-08-18,Ashley SPENCER,3,53.72,global,ASHLEY SPENCER
+women_400m,2016,European Athletics Championships,2016-07-08,Libania GRENOT,1,50.73,continental,LIBANIA GRENOT
+women_400m,2016,European Athletics Championships,2016-07-08,Floria GUEI,2,51.21,continental,FLORIA GUEI
+women_400m,2016,European Athletics Championships,2016-07-08,Anyika ONUORA,3,51.47,continental,ANYIKA ONUORA
+women_400m,2016,The XXXI Olympic Games,2016-08-15,Shaunae MILLER,1,49.44,global,SHAUNAE MILLER
+women_400m,2016,The XXXI Olympic Games,2016-08-15,Allyson FELIX,2,49.51,global,ALLYSON FELIX
+women_400m,2016,The XXXI Olympic Games,2016-08-15,Shericka JACKSON,3,49.85,global,SHERICKA JACKSON
+women_5000m,2016,European Athletics Championships,2016-07-09,Yasemin CAN,1,15:18.15,continental,YASEMIN CAN
+women_5000m,2016,European Athletics Championships,2016-07-09,Meraf BAHTA,2,15:20.54,continental,MERAF BAHTA
+women_5000m,2016,European Athletics Championships,2016-07-09,Stephanie TWELL,3,15:20.70,continental,STEPHANIE TWELL
+women_5000m,2016,The XXXI Olympic Games,2016-08-19,Vivian Jepkemei CHERUIYOT,1,14:26.17,global,VIVIAN JEPKEMEI CHERUIYOT
+women_5000m,2016,The XXXI Olympic Games,2016-08-19,Hellen OBIRI,2,14:29.77,global,HELLEN OBIRI
+women_5000m,2016,The XXXI Olympic Games,2016-08-19,Almaz AYANA,3,14:33.59,global,ALMAZ AYANA
+women_800m,2016,European Athletics Championships,2016-07-09,Natalya PRYSHCHEPA,1,1:59.70,continental,NATALYA PRYSHCHEPA
+women_800m,2016,European Athletics Championships,2016-07-09,Rénelle LAMOTE,2,2:00.19,continental,RENELLE LAMOTE
+women_800m,2016,European Athletics Championships,2016-07-09,Lovisa LINDH,3,2:00.37,continental,LOVISA LINDH
+women_800m,2016,The XXXI Olympic Games,2016-08-20,Caster SEMENYA,1,1:55.28,global,CASTER SEMENYA
+women_800m,2016,The XXXI Olympic Games,2016-08-20,Francine NIYONSABA,2,1:56.49,global,FRANCINE NIYONSABA
+women_800m,2016,The XXXI Olympic Games,2016-08-20,Margaret Nyairera WAMBUI,3,1:56.89,global,MARGARET NYAIRERA WAMBUI
+women_DT,2016,European Athletics Championships,2016-07-08,Sandra PERKOVIĆ,1,69.97,continental,SANDRA PERKOVIC
+women_DT,2016,European Athletics Championships,2016-07-08,Julia HARTING,2,65.77,continental,JULIA HARTING
+women_DT,2016,European Athletics Championships,2016-07-08,Shanice CRAFT,3,63.89,continental,SHANICE CRAFT
+women_DT,2016,The XXXI Olympic Games,2016-08-16,Sandra PERKOVIĆ,1,69.21,global,SANDRA PERKOVIC
+women_DT,2016,The XXXI Olympic Games,2016-08-16,Melina ROBERT-MICHON,2,66.73,global,MELINA ROBERT-MICHON
+women_DT,2016,The XXXI Olympic Games,2016-08-16,Denia CABALLERO,3,65.34,global,DENIA CABALLERO
+women_HJ,2016,The XXXI Olympic Games,2016-08-20,Ruth BEITIA,1,1.97,global,RUTH BEITIA
+women_HJ,2016,The XXXI Olympic Games,2016-08-20,Mirela DEMIREVA,2,1.97,global,MIRELA DEMIREVA
+women_HJ,2016,The XXXI Olympic Games,2016-08-20,Blanka VLAŠIĆ,3,1.97,global,BLANKA VLASIC
+women_JT,2016,European Athletics Championships,2016-07-09,Tatsiana KHALADOVICH,1,66.34,continental,TATSIANA KHALADOVICH
+women_JT,2016,European Athletics Championships,2016-07-09,Linda STAHL,2,65.25,continental,LINDA STAHL
+women_JT,2016,European Athletics Championships,2016-07-09,Sara KOLAK,3,63.50,continental,SARA KOLAK
+women_JT,2016,The XXXI Olympic Games,2016-08-18,Sara KOLAK,1,66.18,global,SARA KOLAK
+women_JT,2016,The XXXI Olympic Games,2016-08-18,Sunette VILJOEN,2,64.92,global,SUNETTE VILJOEN
+women_JT,2016,The XXXI Olympic Games,2016-08-18,Barbora ŠPOTÁKOVÁ,3,64.80,global,BARBORA SPOTAKOVA
+women_LJ,2016,European Athletics Championships,2016-07-08,Ivana ŠPANOVIĆ,1,6.94,continental,IVANA SPANOVIC
+women_LJ,2016,European Athletics Championships,2016-07-08,Jazmin SAWYERS,2,6.86,continental,JAZMIN SAWYERS
+women_LJ,2016,European Athletics Championships,2016-07-08,Malaika MIHAMBO,3,6.65,continental,MALAIKA MIHAMBO
+women_LJ,2016,The XXXI Olympic Games,2016-08-17,Tianna BARTOLETTA,1,7.17,global,TIANNA BARTOLETTA
+women_LJ,2016,The XXXI Olympic Games,2016-08-17,Brittney REESE,2,7.15,global,BRITTNEY REESE
+women_LJ,2016,The XXXI Olympic Games,2016-08-17,Ivana ŠPANOVIĆ,3,7.08,global,IVANA SPANOVIC
+women_PV,2016,European Athletics Championships,2016-07-09,Aikaterini STEFANIDI,1,4.81,continental,AIKATERINI STEFANIDI
+women_PV,2016,European Athletics Championships,2016-07-09,Lisa RYZIH,2,4.70,continental,LISA RYZIH
+women_PV,2016,European Athletics Championships,2016-07-09,Angelica BENGTSSON,3,4.65,continental,ANGELICA BENGTSSON
+women_PV,2016,The XXXI Olympic Games,2016-08-19,Aikaterini STEFANIDI,1,4.85,global,AIKATERINI STEFANIDI
+women_PV,2016,The XXXI Olympic Games,2016-08-19,Sandi MORRIS,2,4.85,global,SANDI MORRIS
+women_PV,2016,The XXXI Olympic Games,2016-08-19,Eliza MCCARTNEY,3,4.80,global,ELIZA MCCARTNEY
+women_SP,2016,European Athletics Championships,2016-07-07,Christina SCHWANITZ,1,20.17,continental,CHRISTINA SCHWANITZ
+women_SP,2016,European Athletics Championships,2016-07-07,Anita MÁRTON,2,18.72,continental,ANITA MARTON
+women_SP,2016,European Athletics Championships,2016-07-07,Emel DERELI,3,18.22,continental,EMEL DERELI
+women_SP,2016,The XXXI Olympic Games,2016-08-12,Michelle CARTER,1,20.63,global,MICHELLE CARTER
+women_SP,2016,The XXXI Olympic Games,2016-08-12,Valerie ADAMS,2,20.42,global,VALERIE ADAMS
+women_SP,2016,The XXXI Olympic Games,2016-08-12,Anita MÁRTON,3,19.87,global,ANITA MARTON
+women_TJ,2016,European Athletics Championships,2016-07-10,Patrícia MAMONA,1,14.58,continental,PATRICIA MAMONA
+women_TJ,2016,European Athletics Championships,2016-07-10,Hanna MINENKO,2,14.51,continental,HANNA MINENKO
+women_TJ,2016,European Athletics Championships,2016-07-10,Paraskevi PAPACHRISTOU,3,14.47,continental,PARASKEVI PAPACHRISTOU
+women_TJ,2016,The XXXI Olympic Games,2016-08-14,Caterine IBARGUEN,1,15.17,global,CATERINE IBARGUEN
+women_TJ,2016,The XXXI Olympic Games,2016-08-14,Yulimar ROJAS,2,14.98,global,YULIMAR ROJAS
+women_TJ,2016,The XXXI Olympic Games,2016-08-14,Olga RYPAKOVA,3,14.74,global,OLGA RYPAKOVA
+men_100m,2017,IAAF World Championships in Athletics,2017-08-05,Justin GATLIN,1,9.92,global,JUSTIN GATLIN
+men_100m,2017,IAAF World Championships in Athletics,2017-08-05,Christian COLEMAN,2,9.94,global,CHRISTIAN COLEMAN
+men_100m,2017,IAAF World Championships in Athletics,2017-08-05,Usain BOLT,3,9.95,global,USAIN BOLT
+men_110h,2017,IAAF World Championships in Athletics,2017-08-07,Omar MCLEOD,1,13.04,global,OMAR MCLEOD
+men_110h,2017,IAAF World Championships in Athletics,2017-08-07,Sergey SHUBENKOV,2,13.14,global,SERGEY SHUBENKOV
+men_110h,2017,IAAF World Championships in Athletics,2017-08-07,Balázs BAJI,3,13.28,global,BALAZS BAJI
+men_1500m,2017,IAAF World Championships in Athletics,2017-08-13,Elijah Motonei MANANGOI,1,3:33.61,global,ELIJAH MOTONEI MANANGOI
+men_1500m,2017,IAAF World Championships in Athletics,2017-08-13,Timothy CHERUIYOT,2,3:33.99,global,TIMOTHY CHERUIYOT
+men_1500m,2017,IAAF World Championships in Athletics,2017-08-13,Filip INGEBRIGTSEN,3,3:34.53,global,FILIP INGEBRIGTSEN
+men_200m,2017,IAAF World Championships in Athletics,2017-08-10,Ramil GULIYEV,1,20.09,global,RAMIL GULIYEV
+men_200m,2017,IAAF World Championships in Athletics,2017-08-10,Wayde VAN NIEKERK,2,20.11,global,WAYDE VAN NIEKERK
+men_200m,2017,IAAF World Championships in Athletics,2017-08-10,Jereem RICHARDS,3,20.11,global,JEREEM RICHARDS
+men_3000sc,2017,IAAF World Championships in Athletics,2017-08-08,Conseslus KIPRUTO,1,8:14.12,global,CONSESLUS KIPRUTO
+men_3000sc,2017,IAAF World Championships in Athletics,2017-08-08,Soufiane EL BAKKALI,2,8:14.49,global,SOUFIANE EL BAKKALI
+men_3000sc,2017,IAAF World Championships in Athletics,2017-08-08,Evan JAGER,3,8:15.53,global,EVAN JAGER
+men_400h,2017,IAAF World Championships in Athletics,2017-08-09,Karsten WARHOLM,1,48.35,global,KARSTEN WARHOLM
+men_400h,2017,IAAF World Championships in Athletics,2017-08-09,Yasmani COPELLO,2,48.49,global,YASMANI COPELLO
+men_400h,2017,IAAF World Championships in Athletics,2017-08-09,Kerron CLEMENT,3,48.52,global,KERRON CLEMENT
+men_400m,2017,IAAF World Championships in Athletics,2017-08-08,Wayde VAN NIEKERK,1,43.98,global,WAYDE VAN NIEKERK
+men_400m,2017,IAAF World Championships in Athletics,2017-08-08,Steven GARDINER,2,44.41,global,STEVEN GARDINER
+men_400m,2017,IAAF World Championships in Athletics,2017-08-08,Abdalelah HAROUN,3,44.48,global,ABDALELAH HAROUN
+men_5000m,2017,IAAF World Championships in Athletics,2017-08-12,Muktar EDRIS,1,13:32.79,global,MUKTAR EDRIS
+men_5000m,2017,IAAF World Championships in Athletics,2017-08-12,Mo FARAH,2,13:33.22,global,MO FARAH
+men_5000m,2017,IAAF World Championships in Athletics,2017-08-12,Paul CHELIMO,3,13:33.30,global,PAUL CHELIMO
+men_800m,2017,IAAF World Championships in Athletics,2017-08-08,Pierre-Ambroise BOSSE,1,1:44.67,global,PIERRE-AMBROISE BOSSE
+men_800m,2017,IAAF World Championships in Athletics,2017-08-08,Adam KSZCZOT,2,1:44.95,global,ADAM KSZCZOT
+men_800m,2017,IAAF World Championships in Athletics,2017-08-08,Kipyegon BETT,3,1:45.21,global,KIPYEGON BETT
+men_DT,2017,IAAF World Championships in Athletics,2017-08-05,Andrius GUDŽIUS,1,69.21,global,ANDRIUS GUDZIUS
+men_DT,2017,IAAF World Championships in Athletics,2017-08-05,Daniel STÅHL,2,69.19,global,DANIEL STAHL
+men_DT,2017,IAAF World Championships in Athletics,2017-08-05,Mason FINLEY,3,68.03,global,MASON FINLEY
+men_HJ,2017,IAAF World Championships in Athletics,2017-08-13,Mutaz Essa BARSHIM,1,2.35,global,MUTAZ ESSA BARSHIM
+men_HJ,2017,IAAF World Championships in Athletics,2017-08-13,Danil LYSENKO,2,2.32,global,DANIL LYSENKO
+men_HJ,2017,IAAF World Championships in Athletics,2017-08-13,Majd Eddin GHAZAL,3,2.29,global,MAJD EDDIN GHAZAL
+men_JT,2017,IAAF World Championships in Athletics,2017-08-12,Johannes VETTER,1,89.89,global,JOHANNES VETTER
+men_JT,2017,IAAF World Championships in Athletics,2017-08-12,Jakub VADLEJCH,2,89.73,global,JAKUB VADLEJCH
+men_JT,2017,IAAF World Championships in Athletics,2017-08-12,Petr FRYDRYCH,3,88.32,global,PETR FRYDRYCH
+men_LJ,2017,IAAF World Championships in Athletics,2017-08-05,Luvo MANYONGA,1,8.48,global,LUVO MANYONGA
+men_LJ,2017,IAAF World Championships in Athletics,2017-08-05,Jarrion LAWSON,2,8.44,global,JARRION LAWSON
+men_LJ,2017,IAAF World Championships in Athletics,2017-08-05,Ruswahl SAMAAI,3,8.32,global,RUSWAHL SAMAAI
+men_PV,2017,IAAF World Championships in Athletics,2017-08-08,Sam KENDRICKS,1,5.95,global,SAM KENDRICKS
+men_PV,2017,IAAF World Championships in Athletics,2017-08-08,Piotr LISEK,2,5.89,global,PIOTR LISEK
+men_PV,2017,IAAF World Championships in Athletics,2017-08-08,Renaud LAVILLENIE,3,5.89,global,RENAUD LAVILLENIE
+men_SP,2017,IAAF World Championships in Athletics,2017-08-06,Tom WALSH,1,22.03,global,TOM WALSH
+men_SP,2017,IAAF World Championships in Athletics,2017-08-06,Joe KOVACS,2,21.66,global,JOE KOVACS
+men_SP,2017,IAAF World Championships in Athletics,2017-08-06,Stipe ŽUNIĆ,3,21.46,global,STIPE ZUNIC
+men_TJ,2017,IAAF World Championships in Athletics,2017-08-10,Christian TAYLOR,1,17.68,global,CHRISTIAN TAYLOR
+men_TJ,2017,IAAF World Championships in Athletics,2017-08-10,Will CLAYE,2,17.63,global,WILL CLAYE
+men_TJ,2017,IAAF World Championships in Athletics,2017-08-10,Nelson ÉVORA,3,17.19,global,NELSON EVORA
+women_100h,2017,IAAF World Championships in Athletics,2017-08-12,Sally PEARSON,1,12.59,global,SALLY PEARSON
+women_100h,2017,IAAF World Championships in Athletics,2017-08-12,Dawn HARPER-NELSON,2,12.63,global,DAWN HARPER-NELSON
+women_100h,2017,IAAF World Championships in Athletics,2017-08-12,Pamela DUTKIEWICZ,3,12.72,global,PAMELA DUTKIEWICZ
+women_100m,2017,IAAF World Championships in Athletics,2017-08-06,Tori BOWIE,1,10.85,global,TORI BOWIE
+women_100m,2017,IAAF World Championships in Athletics,2017-08-06,Marie-Josée TA LOU,2,10.86,global,MARIE-JOSEE TA LOU
+women_100m,2017,IAAF World Championships in Athletics,2017-08-06,Dafne SCHIPPERS,3,10.96,global,DAFNE SCHIPPERS
+women_1500m,2017,IAAF World Championships in Athletics,2017-08-07,Faith KIPYEGON,1,4:02.59,global,FAITH KIPYEGON
+women_1500m,2017,IAAF World Championships in Athletics,2017-08-07,Jenny SIMPSON,2,4:02.76,global,JENNY SIMPSON
+women_1500m,2017,IAAF World Championships in Athletics,2017-08-07,Caster SEMENYA,3,4:02.90,global,CASTER SEMENYA
+women_200m,2017,IAAF World Championships in Athletics,2017-08-11,Dafne SCHIPPERS,1,22.05,global,DAFNE SCHIPPERS
+women_200m,2017,IAAF World Championships in Athletics,2017-08-11,Marie-Josée TA LOU,2,22.08,global,MARIE-JOSEE TA LOU
+women_200m,2017,IAAF World Championships in Athletics,2017-08-11,Shaunae MILLER,3,22.15,global,SHAUNAE MILLER
+women_3000sc,2017,IAAF World Championships in Athletics,2017-08-11,Emma COBURN,1,9:02.58,global,EMMA COBURN
+women_3000sc,2017,IAAF World Championships in Athletics,2017-08-11,Courtney FRERICHS,2,9:03.77,global,COURTNEY FRERICHS
+women_3000sc,2017,IAAF World Championships in Athletics,2017-08-11,Hyvin KIYENG,3,9:04.03,global,HYVIN KIYENG
+women_400h,2017,IAAF World Championships in Athletics,2017-08-10,Kori CARTER,1,53.07,global,KORI CARTER
+women_400h,2017,IAAF World Championships in Athletics,2017-08-10,Dalilah MUHAMMAD,2,53.50,global,DALILAH MUHAMMAD
+women_400h,2017,IAAF World Championships in Athletics,2017-08-10,Ristananna TRACEY,3,53.74,global,RISTANANNA TRACEY
+women_400m,2017,IAAF World Championships in Athletics,2017-08-09,Phyllis FRANCIS,1,49.92,global,PHYLLIS FRANCIS
+women_400m,2017,IAAF World Championships in Athletics,2017-08-09,Salwa Eid NASER,2,50.06,global,SALWA EID NASER
+women_400m,2017,IAAF World Championships in Athletics,2017-08-09,Allyson FELIX,3,50.08,global,ALLYSON FELIX
+women_5000m,2017,IAAF World Championships in Athletics,2017-08-13,Hellen OBIRI,1,14:34.86,global,HELLEN OBIRI
+women_5000m,2017,IAAF World Championships in Athletics,2017-08-13,Almaz AYANA,2,14:40.35,global,ALMAZ AYANA
+women_5000m,2017,IAAF World Championships in Athletics,2017-08-13,Sifan HASSAN,3,14:42.73,global,SIFAN HASSAN
+women_800m,2017,IAAF World Championships in Athletics,2017-08-13,Caster SEMENYA,1,1:55.16,global,CASTER SEMENYA
+women_800m,2017,IAAF World Championships in Athletics,2017-08-13,Francine NIYONSABA,2,1:55.92,global,FRANCINE NIYONSABA
+women_800m,2017,IAAF World Championships in Athletics,2017-08-13,Ajee' WILSON,3,1:56.65,global,AJEE' WILSON
+women_DT,2017,IAAF World Championships in Athletics,2017-08-13,Sandra PERKOVIĆ,1,70.31,global,SANDRA PERKOVIC
+women_DT,2017,IAAF World Championships in Athletics,2017-08-13,Dani STEVENS,2,69.64,global,DANI STEVENS
+women_DT,2017,IAAF World Championships in Athletics,2017-08-13,Melina ROBERT-MICHON,3,66.21,global,MELINA ROBERT-MICHON
+women_HJ,2017,IAAF World Championships in Athletics,2017-08-12,Mariya LASITSKENE,1,2.03,global,MARIYA LASITSKENE
+women_HJ,2017,IAAF World Championships in Athletics,2017-08-12,Yuliia LEVCHENKO,2,2.01,global,YULIIA LEVCHENKO
+women_HJ,2017,IAAF World Championships in Athletics,2017-08-12,Kamila LIĆWINKO,3,1.99,global,KAMILA LICWINKO
+women_JT,2017,IAAF World Championships in Athletics,2017-08-08,Barbora ŠPOTÁKOVÁ,1,66.76,global,BARBORA SPOTAKOVA
+women_JT,2017,IAAF World Championships in Athletics,2017-08-08,Lingyu LI,2,66.25,global,LINGYU LI
+women_JT,2017,IAAF World Championships in Athletics,2017-08-08,Huihui LYU,3,65.26,global,HUIHUI LYU
+women_LJ,2017,IAAF World Championships in Athletics,2017-08-11,Brittney REESE,1,7.02,global,BRITTNEY REESE
+women_LJ,2017,IAAF World Championships in Athletics,2017-08-11,Darya KLISHINA,2,7.00,global,DARYA KLISHINA
+women_LJ,2017,IAAF World Championships in Athletics,2017-08-11,Tianna BARTOLETTA,3,6.97,global,TIANNA BARTOLETTA
+women_PV,2017,IAAF World Championships in Athletics,2017-08-06,Aikaterini STEFANIDI,1,4.91,global,AIKATERINI STEFANIDI
+women_PV,2017,IAAF World Championships in Athletics,2017-08-06,Sandi MORRIS,2,4.75,global,SANDI MORRIS
+women_PV,2017,IAAF World Championships in Athletics,2017-08-06,Yarisley SILVA,3,4.65,global,YARISLEY SILVA
+women_SP,2017,IAAF World Championships in Athletics,2017-08-09,Lijiao GONG,1,19.94,global,LIJIAO GONG
+women_SP,2017,IAAF World Championships in Athletics,2017-08-09,Anita MÁRTON,2,19.49,global,ANITA MARTON
+women_SP,2017,IAAF World Championships in Athletics,2017-08-09,Michelle CARTER,3,19.14,global,MICHELLE CARTER
+women_TJ,2017,IAAF World Championships in Athletics,2017-08-07,Yulimar ROJAS,1,14.91,global,YULIMAR ROJAS
+women_TJ,2017,IAAF World Championships in Athletics,2017-08-07,Caterine IBARGUEN,2,14.89,global,CATERINE IBARGUEN
+women_TJ,2017,IAAF World Championships in Athletics,2017-08-07,Olga RYPAKOVA,3,14.77,global,OLGA RYPAKOVA
 men_100m,2018,Diamond League Final,2018-08-18,Christian COLEMAN,1,9.79,dl_final,CHRISTIAN COLEMAN
 men_100m,2018,Diamond League Final,2018-08-18,Ronnie BAKER,2,9.93,dl_final,RONNIE BAKER
 men_100m,2018,Diamond League Final,2018-08-18,Yohan BLAKE,3,9.94,dl_final,YOHAN BLAKE
 men_100m,2018,European Athletics Championships,2018-08-07,Zharnel HUGHES,1,9.95,continental,ZHARNEL HUGHES
 men_100m,2018,European Athletics Championships,2018-08-07,Reece PRESCOD,2,9.96,continental,REECE PRESCOD
 men_100m,2018,European Athletics Championships,2018-08-07,Jak Ali HARVEY,3,10.01,continental,JAK ALI HARVEY
-men_100m,2018,IAAF Continental Cup,2018-09-09,Noah LYLES,1,10.01,continental,NOAH LYLES
-men_100m,2018,IAAF Continental Cup,2018-09-09,Bingtian SU,2,10.03,continental,BINGTIAN SU
-men_100m,2018,IAAF Continental Cup,2018-09-09,Akani SIMBINE,3,10.11,continental,AKANI SIMBINE
 men_110h,2018,Diamond League Final,2018-08-18,Sergey SHUBENKOV,1,12.97,dl_final,SERGEY SHUBENKOV
 men_110h,2018,Diamond League Final,2018-08-18,Orlando ORTEGA,2,13.10,dl_final,ORLANDO ORTEGA
 men_110h,2018,Diamond League Final,2018-08-18,Hansle PARCHMENT,3,13.35,dl_final,HANSLE PARCHMENT
 men_110h,2018,European Athletics Championships,2018-08-10,Pascal MARTINOT-LAGARDE,1,13.17,continental,PASCAL MARTINOT-LAGARDE
 men_110h,2018,European Athletics Championships,2018-08-10,Sergey SHUBENKOV,2,13.17,continental,SERGEY SHUBENKOV
 men_110h,2018,European Athletics Championships,2018-08-10,Orlando ORTEGA,3,13.34,continental,ORLANDO ORTEGA
-men_110h,2018,IAAF Continental Cup,2018-09-09,Sergey SHUBENKOV,1,13.03,continental,SERGEY SHUBENKOV
-men_110h,2018,IAAF Continental Cup,2018-09-09,Ronald LEVY,2,13.12,continental,RONALD LEVY
-men_110h,2018,IAAF Continental Cup,2018-09-09,Pascal MARTINOT-LAGARDE,3,13.31,continental,PASCAL MARTINOT-LAGARDE
 men_1500m,2018,Diamond League Final,2018-08-18,Timothy CHERUIYOT,1,3:30.27,dl_final,TIMOTHY CHERUIYOT
 men_1500m,2018,Diamond League Final,2018-08-18,Elijah Motonei MANANGOI,2,3:31.16,dl_final,ELIJAH MOTONEI MANANGOI
 men_1500m,2018,Diamond League Final,2018-08-18,Ayanleh SOULEIMAN,3,3:31.24,dl_final,AYANLEH SOULEIMAN
 men_1500m,2018,European Athletics Championships,2018-08-10,Jakob INGEBRIGTSEN,1,3:38.10,continental,JAKOB INGEBRIGTSEN
 men_1500m,2018,European Athletics Championships,2018-08-10,Marcin LEWANDOWSKI,2,3:38.14,continental,MARCIN LEWANDOWSKI
 men_1500m,2018,European Athletics Championships,2018-08-10,Jake WIGHTMAN,3,3:38.25,continental,JAKE WIGHTMAN
-men_1500m,2018,IAAF Continental Cup,2018-09-09,Elijah Motonei MANANGOI,1,3:40.00,continental,ELIJAH MOTONEI MANANGOI
-men_1500m,2018,IAAF Continental Cup,2018-09-09,Marcin LEWANDOWSKI,2,3:40.42,continental,MARCIN LEWANDOWSKI
-men_1500m,2018,IAAF Continental Cup,2018-09-09,Jakob INGEBRIGTSEN,3,3:40.80,continental,JAKOB INGEBRIGTSEN
 men_200m,2018,Diamond League Final,2018-08-18,Noah LYLES,1,19.67,dl_final,NOAH LYLES
 men_200m,2018,Diamond League Final,2018-08-18,Ramil GULIYEV,2,19.98,dl_final,RAMIL GULIYEV
 men_200m,2018,Diamond League Final,2018-08-18,Jereem RICHARDS,3,20.04,dl_final,JEREEM RICHARDS
 men_200m,2018,European Athletics Championships,2018-08-09,Ramil GULIYEV,1,19.76,continental,RAMIL GULIYEV
 men_200m,2018,European Athletics Championships,2018-08-09,Nethaneel MITCHELL-BLAKE,2,20.04,continental,NETHANEEL MITCHELL-BLAKE
 men_200m,2018,European Athletics Championships,2018-08-09,Alex WILSON,3,20.04,continental,ALEX WILSON
-men_200m,2018,IAAF Continental Cup,2018-09-08,Alonso EDWARD,1,20.19,continental,ALONSO EDWARD
-men_200m,2018,IAAF Continental Cup,2018-09-08,Ramil GULIYEV,2,20.28,continental,RAMIL GULIYEV
-men_200m,2018,IAAF Continental Cup,2018-09-08,Alex QUIÑÓNEZ,3,20.36,continental,ALEX QUINONEZ
 men_3000sc,2018,Diamond League Final,2018-08-18,Conseslus KIPRUTO,1,8:10.15,dl_final,CONSESLUS KIPRUTO
 men_3000sc,2018,Diamond League Final,2018-08-18,Soufiane EL BAKKALI,2,8:10.19,dl_final,SOUFIANE EL BAKKALI
 men_3000sc,2018,Diamond League Final,2018-08-18,Evan JAGER,3,8:13.22,dl_final,EVAN JAGER
 men_3000sc,2018,European Athletics Championships,2018-08-09,Mahiedine MEKHISSI,1,8:31.66,continental,MAHIEDINE MEKHISSI
 men_3000sc,2018,European Athletics Championships,2018-08-09,Fernando CARRO,2,8:34.16,continental,FERNANDO CARRO
 men_3000sc,2018,European Athletics Championships,2018-08-09,Yohanes CHIAPPINELLI,3,8:35.81,continental,YOHANES CHIAPPINELLI
-men_3000sc,2018,IAAF Continental Cup,2018-09-08,Conseslus KIPRUTO,1,8:22.55,continental,CONSESLUS KIPRUTO
-men_3000sc,2018,IAAF Continental Cup,2018-09-08,Matthew HUGHES,2,8:29.70,continental,MATTHEW HUGHES
-men_3000sc,2018,IAAF Continental Cup,2018-09-08,Yohanes CHIAPPINELLI,3,8:32.89,continental,YOHANES CHIAPPINELLI
 men_400h,2018,Diamond League Final,2018-08-18,Kyron MCMASTER,1,48.08,dl_final,KYRON MCMASTER
 men_400h,2018,Diamond League Final,2018-08-18,Karsten WARHOLM,2,48.10,dl_final,KARSTEN WARHOLM
 men_400h,2018,Diamond League Final,2018-08-18,Yasmani COPELLO,3,48.73,dl_final,YASMANI COPELLO
 men_400h,2018,European Athletics Championships,2018-08-09,Karsten WARHOLM,1,47.64,continental,KARSTEN WARHOLM
 men_400h,2018,European Athletics Championships,2018-08-09,Yasmani COPELLO,2,47.81,continental,YASMANI COPELLO
 men_400h,2018,European Athletics Championships,2018-08-09,Thomas BARR,3,48.31,continental,THOMAS BARR
-men_400h,2018,IAAF Continental Cup,2018-09-08,Abderrahman SAMBA,1,47.37,continental,ABDERRAHMAN SAMBA
-men_400h,2018,IAAF Continental Cup,2018-09-08,Annsert WHYTE,2,48.46,continental,ANNSERT WHYTE
-men_400h,2018,IAAF Continental Cup,2018-09-08,Karsten WARHOLM,3,48.56,continental,KARSTEN WARHOLM
 men_400m,2018,Diamond League Final,2018-08-18,Fred KERLEY,1,44.80,dl_final,FRED KERLEY
 men_400m,2018,Diamond League Final,2018-08-18,Nathan STROTHER,2,44.93,dl_final,NATHAN STROTHER
 men_400m,2018,Diamond League Final,2018-08-18,Matthew HUDSON-SMITH,3,44.95,dl_final,MATTHEW HUDSON-SMITH
 men_400m,2018,European Athletics Championships,2018-08-10,Matthew HUDSON-SMITH,1,44.78,continental,MATTHEW HUDSON-SMITH
 men_400m,2018,European Athletics Championships,2018-08-10,Kévin BORLÉE,2,45.13,continental,KEVIN BORLEE
 men_400m,2018,European Athletics Championships,2018-08-10,Jonathan BORLÉE,3,45.19,continental,JONATHAN BORLEE
-men_400m,2018,IAAF Continental Cup,2018-09-09,Abdalelah HAROUN,1,44.72,continental,ABDALELAH HAROUN
-men_400m,2018,IAAF Continental Cup,2018-09-09,Baboloki THEBE,2,45.10,continental,BABOLOKI THEBE
-men_400m,2018,IAAF Continental Cup,2018-09-09,Nathan STROTHER,3,45.28,continental,NATHAN STROTHER
 men_5000m,2018,Diamond League Final,2018-08-18,Selemon BAREGA,1,12:43.02,dl_final,SELEMON BAREGA
 men_5000m,2018,Diamond League Final,2018-08-18,Hagos GEBRHIWET,2,12:45.82,dl_final,HAGOS GEBRHIWET
 men_5000m,2018,Diamond League Final,2018-08-18,Yomif KEJELCHA,3,12:46.79,dl_final,YOMIF KEJELCHA
@@ -74,135 +1094,90 @@ men_800m,2018,Diamond League Final,2018-08-18,Ferguson Cheruiyot ROTICH,3,1:45.2
 men_800m,2018,European Athletics Championships,2018-08-11,Adam KSZCZOT,1,1:44.59,continental,ADAM KSZCZOT
 men_800m,2018,European Athletics Championships,2018-08-11,Andreas KRAMER,2,1:45.03,continental,ANDREAS KRAMER
 men_800m,2018,European Athletics Championships,2018-08-11,Pierre-Ambroise BOSSE,3,1:45.30,continental,PIERRE-AMBROISE BOSSE
-men_800m,2018,IAAF Continental Cup,2018-09-08,Emmanuel Kipkurui KORIR,1,1:46.50,continental,EMMANUEL KIPKURUI KORIR
-men_800m,2018,IAAF Continental Cup,2018-09-08,Clayton MURPHY,2,1:46.77,continental,CLAYTON MURPHY
-men_800m,2018,IAAF Continental Cup,2018-09-08,Nijel AMOS,3,1:46.77,continental,NIJEL AMOS
 men_DT,2018,Diamond League Final,2018-08-18,Fedrick DACRES,1,68.67,dl_final,FEDRICK DACRES
 men_DT,2018,Diamond League Final,2018-08-18,Andrius GUDŽIUS,2,67.56,dl_final,ANDRIUS GUDZIUS
 men_DT,2018,Diamond League Final,2018-08-18,Daniel STÅHL,3,66.74,dl_final,DANIEL STAHL
 men_DT,2018,European Athletics Championships,2018-08-08,Andrius GUDŽIUS,1,68.46,continental,ANDRIUS GUDZIUS
 men_DT,2018,European Athletics Championships,2018-08-08,Daniel STÅHL,2,68.23,continental,DANIEL STAHL
 men_DT,2018,European Athletics Championships,2018-08-08,Lukas WEIßHAIDINGER,3,65.14,continental,LUKAS WEISSHAIDINGER
-men_DT,2018,IAAF Continental Cup,2018-09-08,Fedrick DACRES,1,67.97,continental,FEDRICK DACRES
-men_DT,2018,IAAF Continental Cup,2018-09-08,Matthew DENNY,2,63.99,continental,MATTHEW DENNY
-men_DT,2018,IAAF Continental Cup,2018-09-08,Andrius GUDŽIUS,3,66.95,continental,ANDRIUS GUDZIUS
 men_HJ,2018,Diamond League Final,2018-08-18,Brandon STARC,1,2.33,dl_final,BRANDON STARC
 men_HJ,2018,Diamond League Final,2018-08-18,Mateusz PRZYBYLKO,2,2.33,dl_final,MATEUSZ PRZYBYLKO
 men_HJ,2018,Diamond League Final,2018-08-18,Gianmarco TAMBERI,3,2.31,dl_final,GIANMARCO TAMBERI
 men_HJ,2018,European Athletics Championships,2018-08-11,Mateusz PRZYBYLKO,1,2.35,continental,MATEUSZ PRZYBYLKO
 men_HJ,2018,European Athletics Championships,2018-08-11,Maksim NEDASEKAU,2,2.33,continental,MAKSIM NEDASEKAU
 men_HJ,2018,European Athletics Championships,2018-08-11,Ilya IVANYUK,3,2.31,continental,ILYA IVANYUK
-men_HJ,2018,IAAF Continental Cup,2018-09-08,Donald THOMAS,1,2.30,continental,DONALD THOMAS
-men_HJ,2018,IAAF Continental Cup,2018-09-08,Brandon STARC,2,2.30,continental,BRANDON STARC
-men_HJ,2018,IAAF Continental Cup,2018-09-08,Maksim NEDASEKAU,3,2.27,continental,MAKSIM NEDASEKAU
 men_JT,2018,Diamond League Final,2018-08-18,Andreas HOFMANN,1,91.44,dl_final,ANDREAS HOFMANN
 men_JT,2018,Diamond League Final,2018-08-18,Magnus KIRT,2,87.57,dl_final,MAGNUS KIRT
 men_JT,2018,Diamond League Final,2018-08-18,Thomas RÖHLER,3,85.76,dl_final,THOMAS ROHLER
 men_JT,2018,European Athletics Championships,2018-08-09,Thomas RÖHLER,1,89.47,continental,THOMAS ROHLER
 men_JT,2018,European Athletics Championships,2018-08-09,Andreas HOFMANN,2,87.60,continental,ANDREAS HOFMANN
 men_JT,2018,European Athletics Championships,2018-08-09,Magnus KIRT,3,85.96,continental,MAGNUS KIRT
-men_JT,2018,IAAF Continental Cup,2018-09-09,Thomas RÖHLER,1,87.07,continental,THOMAS ROHLER
-men_JT,2018,IAAF Continental Cup,2018-09-09,Chao-Tsun CHENG,2,83.28,continental,CHAO-TSUN CHENG
-men_JT,2018,IAAF Continental Cup,2018-09-09,Anderson PETERS,3,80.86,continental,ANDERSON PETERS
 men_LJ,2018,Diamond League Final,2018-08-18,Luvo MANYONGA,1,8.36,dl_final,LUVO MANYONGA
 men_LJ,2018,Diamond League Final,2018-08-18,Ruswahl SAMAAI,2,8.32,dl_final,RUSWAHL SAMAAI
 men_LJ,2018,Diamond League Final,2018-08-18,Henry FRAYNE,3,8.16,dl_final,HENRY FRAYNE
 men_LJ,2018,European Athletics Championships,2018-08-08,Miltiadis TENTOGLOU,1,8.25,continental,MILTIADIS TENTOGLOU
 men_LJ,2018,European Athletics Championships,2018-08-08,Fabian HEINLE,2,8.13,continental,FABIAN HEINLE
 men_LJ,2018,European Athletics Championships,2018-08-08,Serhiy NYKYFOROV,3,8.13,continental,SERHIY NYKYFOROV
-men_LJ,2018,IAAF Continental Cup,2018-09-08,Ruswahl SAMAAI,1,8.16,continental,RUSWAHL SAMAAI
-men_LJ,2018,IAAF Continental Cup,2018-09-08,Miltiadis TENTOGLOU,2,8.00,continental,MILTIADIS TENTOGLOU
-men_LJ,2018,IAAF Continental Cup,2018-09-08,Jeff HENDERSON,3,7.98,continental,JEFF HENDERSON
 men_PV,2018,Diamond League Final,2018-08-18,Timur MORGUNOV,1,5.93,dl_final,TIMUR MORGUNOV
 men_PV,2018,Diamond League Final,2018-08-18,Sam KENDRICKS,2,5.88,dl_final,SAM KENDRICKS
 men_PV,2018,Diamond League Final,2018-08-18,Shawnacy BARBER,3,5.83,dl_final,SHAWNACY BARBER
 men_PV,2018,European Athletics Championships,2018-08-12,Armand DUPLANTIS,1,6.05,continental,ARMAND DUPLANTIS
 men_PV,2018,European Athletics Championships,2018-08-12,Timur MORGUNOV,2,6.00,continental,TIMUR MORGUNOV
 men_PV,2018,European Athletics Championships,2018-08-12,Renaud LAVILLENIE,3,5.95,continental,RENAUD LAVILLENIE
-men_PV,2018,IAAF Continental Cup,2018-09-09,Sam KENDRICKS,1,5.85,continental,SAM KENDRICKS
-men_PV,2018,IAAF Continental Cup,2018-09-09,Renaud LAVILLENIE,2,5.80,continental,RENAUD LAVILLENIE
-men_PV,2018,IAAF Continental Cup,2018-09-09,Shawnacy BARBER,3,5.65,continental,SHAWNACY BARBER
 men_SP,2018,Diamond League Final,2018-08-18,Tom WALSH,1,22.60,dl_final,TOM WALSH
 men_SP,2018,Diamond League Final,2018-08-18,Darrell HILL,2,22.40,dl_final,DARRELL HILL
 men_SP,2018,Diamond League Final,2018-08-18,Ryan CROUSER,3,22.18,dl_final,RYAN CROUSER
 men_SP,2018,European Athletics Championships,2018-08-07,Michał HARATYK,1,21.72,continental,MICHAŁ HARATYK
 men_SP,2018,European Athletics Championships,2018-08-07,Konrad BUKOWIECKI,2,21.66,continental,KONRAD BUKOWIECKI
 men_SP,2018,European Athletics Championships,2018-08-07,David STORL,3,21.41,continental,DAVID STORL
-men_SP,2018,IAAF Continental Cup,2018-09-08,Darlan ROMANI,1,21.89,continental,DARLAN ROMANI
-men_SP,2018,IAAF Continental Cup,2018-09-08,Tom WALSH,2,21.43,continental,TOM WALSH
-men_SP,2018,IAAF Continental Cup,2018-09-08,Michał HARATYK,3,21.36,continental,MICHAŁ HARATYK
 men_TJ,2018,Diamond League Final,2018-08-18,Pedro PICHARDO,1,17.49,dl_final,PEDRO PICHARDO
 men_TJ,2018,Diamond League Final,2018-08-18,Christian TAYLOR,2,17.31,dl_final,CHRISTIAN TAYLOR
 men_TJ,2018,Diamond League Final,2018-08-18,Donald SCOTT,3,17.25,dl_final,DONALD SCOTT
 men_TJ,2018,European Athletics Championships,2018-08-12,Nelson ÉVORA,1,17.10,continental,NELSON EVORA
 men_TJ,2018,European Athletics Championships,2018-08-12,Alexis COPELLO,2,16.93,continental,ALEXIS COPELLO
 men_TJ,2018,European Athletics Championships,2018-08-12,Dimitrios TSIAMIS,3,16.78,continental,DIMITRIOS TSIAMIS
-men_TJ,2018,IAAF Continental Cup,2018-09-09,Christian TAYLOR,1,17.59,continental,CHRISTIAN TAYLOR
-men_TJ,2018,IAAF Continental Cup,2018-09-09,Hugues Fabrice ZANGO,2,17.02,continental,HUGUES FABRICE ZANGO
-men_TJ,2018,IAAF Continental Cup,2018-09-09,Arpinder SINGH,3,16.59,continental,ARPINDER SINGH
 women_100h,2018,Diamond League Final,2018-08-18,Brianna ROLLINS-MCNEAL,1,12.61,dl_final,BRIANNA ROLLINS-MCNEAL
 women_100h,2018,Diamond League Final,2018-08-18,Kendra HARRISON,2,12.63,dl_final,KENDRA HARRISON
 women_100h,2018,Diamond League Final,2018-08-18,Danielle WILLIAMS,3,12.64,dl_final,DANIELLE WILLIAMS
 women_100h,2018,European Athletics Championships,2018-08-09,Elvira HERMAN,1,12.67,continental,ELVIRA HERMAN
 women_100h,2018,European Athletics Championships,2018-08-09,Pamela DUTKIEWICZ,2,12.72,continental,PAMELA DUTKIEWICZ
 women_100h,2018,European Athletics Championships,2018-08-09,Cindy ROLEDER,3,12.77,continental,CINDY ROLEDER
-women_100h,2018,IAAF Continental Cup,2018-09-08,Danielle WILLIAMS,1,12.49,continental,DANIELLE WILLIAMS
-women_100h,2018,IAAF Continental Cup,2018-09-08,Kendra HARRISON,2,12.52,continental,KENDRA HARRISON
-women_100h,2018,IAAF Continental Cup,2018-09-08,Pamela DUTKIEWICZ,3,12.82,continental,PAMELA DUTKIEWICZ
 women_100m,2018,Diamond League Final,2018-08-18,Murielle AHOURÉ,1,11.01,dl_final,MURIELLE AHOURE
 women_100m,2018,Diamond League Final,2018-08-18,Dina ASHER-SMITH,2,11.08,dl_final,DINA ASHER-SMITH
 women_100m,2018,Diamond League Final,2018-08-18,Marie-Josée TA LOU,3,11.10,dl_final,MARIE-JOSEE TA LOU
 women_100m,2018,European Athletics Championships,2018-08-07,Dina ASHER-SMITH,1,10.85,continental,DINA ASHER-SMITH
 women_100m,2018,European Athletics Championships,2018-08-07,Gina LÜCKENKEMPER,2,10.98,continental,GINA LUCKENKEMPER
 women_100m,2018,European Athletics Championships,2018-08-07,Dafne SCHIPPERS,3,10.99,continental,DAFNE SCHIPPERS
-women_100m,2018,IAAF Continental Cup,2018-09-08,Marie-Josée TA LOU,1,11.14,continental,MARIE-JOSEE TA LOU
-women_100m,2018,IAAF Continental Cup,2018-09-08,Dina ASHER-SMITH,2,11.16,continental,DINA ASHER-SMITH
-women_100m,2018,IAAF Continental Cup,2018-09-08,Jenna PRANDINI,3,11.21,continental,JENNA PRANDINI
 women_1500m,2018,Diamond League Final,2018-08-18,Laura MUIR,1,3:58.49,dl_final,LAURA MUIR
 women_1500m,2018,Diamond League Final,2018-08-18,Shelby HOULIHAN,2,3:58.94,dl_final,SHELBY HOULIHAN
 women_1500m,2018,Diamond League Final,2018-08-18,Sifan HASSAN,3,3:59.41,dl_final,SIFAN HASSAN
 women_1500m,2018,European Athletics Championships,2018-08-12,Laura MUIR,1,4:02.32,continental,LAURA MUIR
 women_1500m,2018,European Athletics Championships,2018-08-12,Sofia ENNAOUI,2,4:03.08,continental,SOFIA ENNAOUI
 women_1500m,2018,European Athletics Championships,2018-08-12,Laura WEIGHTMAN,3,4:03.75,continental,LAURA WEIGHTMAN
-women_1500m,2018,IAAF Continental Cup,2018-09-08,Winny CHEBET,1,4:16.01,continental,WINNY CHEBET
-women_1500m,2018,IAAF Continental Cup,2018-09-08,Shelby HOULIHAN,2,4:16.36,continental,SHELBY HOULIHAN
-women_1500m,2018,IAAF Continental Cup,2018-09-08,Rababe ARAFI,3,4:17.19,continental,RABABE ARAFI
 women_200m,2018,Diamond League Final,2018-08-18,Shaunae MILLER-UIBO,1,22.12,dl_final,SHAUNAE MILLER-UIBO
 women_200m,2018,Diamond League Final,2018-08-18,Dafne SCHIPPERS,2,22.53,dl_final,DAFNE SCHIPPERS
 women_200m,2018,Diamond League Final,2018-08-18,Jamile SAMUEL,3,22.64,dl_final,JAMILE SAMUEL
 women_200m,2018,European Athletics Championships,2018-08-11,Dina ASHER-SMITH,1,21.89,continental,DINA ASHER-SMITH
 women_200m,2018,European Athletics Championships,2018-08-11,Dafne SCHIPPERS,2,22.14,continental,DAFNE SCHIPPERS
 women_200m,2018,European Athletics Championships,2018-08-11,Jamile SAMUEL,3,22.37,continental,JAMILE SAMUEL
-women_200m,2018,IAAF Continental Cup,2018-09-09,Shaunae MILLER-UIBO,1,22.16,continental,SHAUNAE MILLER-UIBO
-women_200m,2018,IAAF Continental Cup,2018-09-09,Dafne SCHIPPERS,2,22.28,continental,DAFNE SCHIPPERS
-women_200m,2018,IAAF Continental Cup,2018-09-09,Marie-Josée TA LOU,3,22.61,continental,MARIE-JOSEE TA LOU
 women_3000sc,2018,Diamond League Final,2018-08-18,Beatrice CHEPKOECH,1,8:55.10,dl_final,BEATRICE CHEPKOECH
 women_3000sc,2018,Diamond League Final,2018-08-18,Norah JERUTO,2,8:59.62,dl_final,NORAH JERUTO
 women_3000sc,2018,Diamond League Final,2018-08-18,Hyvin KIYENG,3,9:01.60,dl_final,HYVIN KIYENG
 women_3000sc,2018,European Athletics Championships,2018-08-12,Gesa Felicitas KRAUSE,1,9:19.80,continental,GESA FELICITAS KRAUSE
 women_3000sc,2018,European Athletics Championships,2018-08-12,Fabienne SCHLUMPF,2,9:22.29,continental,FABIENNE SCHLUMPF
 women_3000sc,2018,European Athletics Championships,2018-08-12,Karoline Bjerkeli GRØVDAL,3,9:24.46,continental,KAROLINE BJERKELI GRØVDAL
-women_3000sc,2018,IAAF Continental Cup,2018-09-09,Beatrice CHEPKOECH,1,9:07.92,continental,BEATRICE CHEPKOECH
-women_3000sc,2018,IAAF Continental Cup,2018-09-09,Courtney FRERICHS,2,9:15.22,continental,COURTNEY FRERICHS
-women_3000sc,2018,IAAF Continental Cup,2018-09-09,Winfred YAVI,3,9:17.86,continental,WINFRED YAVI
 women_400h,2018,Diamond League Final,2018-08-18,Dalilah MUHAMMAD,1,53.88,dl_final,DALILAH MUHAMMAD
 women_400h,2018,Diamond League Final,2018-08-18,Shamier LITTLE,2,54.21,dl_final,SHAMIER LITTLE
 women_400h,2018,Diamond League Final,2018-08-18,Janieve RUSSELL,3,54.38,dl_final,JANIEVE RUSSELL
 women_400h,2018,European Athletics Championships,2018-08-10,Lea SPRUNGER,1,54.33,continental,LEA SPRUNGER
 women_400h,2018,European Athletics Championships,2018-08-10,Anna RYZHYKOVA,2,54.51,continental,ANNA RYZHYKOVA
 women_400h,2018,European Athletics Championships,2018-08-10,Meghan BEESLEY,3,55.31,continental,MEGHAN BEESLEY
-women_400h,2018,IAAF Continental Cup,2018-09-09,Janieve RUSSELL,1,53.62,continental,JANIEVE RUSSELL
-women_400h,2018,IAAF Continental Cup,2018-09-09,Shamier LITTLE,2,53.86,continental,SHAMIER LITTLE
-women_400h,2018,IAAF Continental Cup,2018-09-09,Anna RYZHYKOVA,3,54.47,continental,ANNA RYZHYKOVA
 women_400m,2018,Diamond League Final,2018-08-18,Salwa Eid NASER,1,49.33,dl_final,SALWA EID NASER
 women_400m,2018,Diamond League Final,2018-08-18,Phyllis FRANCIS,2,50.51,dl_final,PHYLLIS FRANCIS
 women_400m,2018,Diamond League Final,2018-08-18,Shakima WIMBLEY,3,50.77,dl_final,SHAKIMA WIMBLEY
 women_400m,2018,European Athletics Championships,2018-08-11,Justyna ŚWIĘTY-ERSETIC,1,50.41,continental,JUSTYNA SWIETY-ERSETIC
 women_400m,2018,European Athletics Championships,2018-08-11,Maria BELIMPASAKI,2,50.45,continental,MARIA BELIMPASAKI
 women_400m,2018,European Athletics Championships,2018-08-11,Lisanne DE WITTE,3,50.77,continental,LISANNE DE WITTE
-women_400m,2018,IAAF Continental Cup,2018-09-08,Salwa Eid NASER,1,49.32,continental,SALWA EID NASER
-women_400m,2018,IAAF Continental Cup,2018-09-08,Caster SEMENYA,2,49.62,continental,CASTER SEMENYA
-women_400m,2018,IAAF Continental Cup,2018-09-08,Stephenie Ann MCPHERSON,3,50.82,continental,STEPHENIE ANN MCPHERSON
 women_5000m,2018,Diamond League Final,2018-08-18,Hellen OBIRI,1,14:38.39,dl_final,HELLEN OBIRI
 women_5000m,2018,Diamond League Final,2018-08-18,Sifan HASSAN,2,14:38.77,dl_final,SIFAN HASSAN
 women_5000m,2018,Diamond League Final,2018-08-18,Senbere TEFERI,3,14:40.97,dl_final,SENBERE TEFERI
@@ -215,72 +1190,48 @@ women_800m,2018,Diamond League Final,2018-08-18,Natoya GOULE,3,1:58.49,dl_final,
 women_800m,2018,European Athletics Championships,2018-08-10,Natalya PRYSHCHEPA,1,2:00.38,continental,NATALYA PRYSHCHEPA
 women_800m,2018,European Athletics Championships,2018-08-10,Rénelle LAMOTE,2,2:00.62,continental,RENELLE LAMOTE
 women_800m,2018,European Athletics Championships,2018-08-10,Olha LYAKHOVA,3,2:00.79,continental,OLHA LYAKHOVA
-women_800m,2018,IAAF Continental Cup,2018-09-09,Caster SEMENYA,1,1:54.77,continental,CASTER SEMENYA
-women_800m,2018,IAAF Continental Cup,2018-09-09,Ajee' WILSON,2,1:57.16,continental,AJEE' WILSON
-women_800m,2018,IAAF Continental Cup,2018-09-09,Natoya GOULE,3,1:57.36,continental,NATOYA GOULE
 women_DT,2018,Diamond League Final,2018-08-18,Yaimé PÉREZ,1,65.00,dl_final,YAIME PEREZ
 women_DT,2018,Diamond League Final,2018-08-18,Andressa DE MORAIS,2,64.65,dl_final,ANDRESSA DE MORAIS
 women_DT,2018,Diamond League Final,2018-08-18,Sandra PERKOVIĆ,3,64.31,dl_final,SANDRA PERKOVIC
 women_DT,2018,European Athletics Championships,2018-08-11,Sandra PERKOVIĆ,1,67.62,continental,SANDRA PERKOVIC
 women_DT,2018,European Athletics Championships,2018-08-11,Nadine MÜLLER,2,63.00,continental,NADINE MULLER
 women_DT,2018,European Athletics Championships,2018-08-11,Shanice CRAFT,3,62.46,continental,SHANICE CRAFT
-women_DT,2018,IAAF Continental Cup,2018-09-08,Yaimé PÉREZ,1,65.30,continental,YAIME PEREZ
-women_DT,2018,IAAF Continental Cup,2018-09-08,Sandra PERKOVIĆ,2,68.44,continental,SANDRA PERKOVIC
-women_DT,2018,IAAF Continental Cup,2018-09-08,Yang CHEN,3,63.34,continental,YANG CHEN
 women_HJ,2018,Diamond League Final,2018-08-18,Mariya LASITSKENE,1,1.97,dl_final,MARIYA LASITSKENE
 women_HJ,2018,Diamond League Final,2018-08-18,Yuliia LEVCHENKO,2,1.94,dl_final,YULIIA LEVCHENKO
 women_HJ,2018,Diamond League Final,2018-08-18,Marie-Laurence JUNGFLEISCH,3,1.90,dl_final,MARIE-LAURENCE JUNGFLEISCH
 women_HJ,2018,European Athletics Championships,2018-08-10,Mariya LASITSKENE,1,2.00,continental,MARIYA LASITSKENE
 women_HJ,2018,European Athletics Championships,2018-08-10,Mirela DEMIREVA,2,2.00,continental,MIRELA DEMIREVA
 women_HJ,2018,European Athletics Championships,2018-08-10,Marie-Laurence JUNGFLEISCH,3,1.96,continental,MARIE-LAURENCE JUNGFLEISCH
-women_HJ,2018,IAAF Continental Cup,2018-09-09,Mariya LASITSKENE,1,2.00,continental,MARIYA LASITSKENE
-women_HJ,2018,IAAF Continental Cup,2018-09-09,Svetlana RADZIVIL,2,1.95,continental,SVETLANA RADZIVIL
-women_HJ,2018,IAAF Continental Cup,2018-09-09,Levern SPENCER,3,1.93,continental,LEVERN SPENCER
 women_JT,2018,Diamond League Final,2018-08-18,Tatsiana KHALADOVICH,1,66.99,dl_final,TATSIANA KHALADOVICH
 women_JT,2018,Diamond League Final,2018-08-18,Shiying LIU,2,66.00,dl_final,SHIYING LIU
 women_JT,2018,Diamond League Final,2018-08-18,Kara WINGER,3,64.75,dl_final,KARA WINGER
 women_JT,2018,European Athletics Championships,2018-08-10,Christin HUSSONG,1,67.90,continental,CHRISTIN HUSSONG
 women_JT,2018,European Athletics Championships,2018-08-10,Nikola OGRODNÍKOVÁ,2,61.85,continental,NIKOLA OGRODNIKOVA
 women_JT,2018,European Athletics Championships,2018-08-10,Liveta JASIŪNAITĖ,3,61.59,continental,LIVETA JASIUNAITE
-women_JT,2018,IAAF Continental Cup,2018-09-09,Huihui LYU,1,63.88,continental,HUIHUI LYU
-women_JT,2018,IAAF Continental Cup,2018-09-09,Christin HUSSONG,2,62.96,continental,CHRISTIN HUSSONG
-women_JT,2018,IAAF Continental Cup,2018-09-09,Kara WINGER,3,60.38,continental,KARA WINGER
 women_LJ,2018,Diamond League Final,2018-08-18,Caterine IBARGUEN,1,6.80,dl_final,CATERINE IBARGUEN
 women_LJ,2018,Diamond League Final,2018-08-18,Shara PROCTOR,2,6.70,dl_final,SHARA PROCTOR
 women_LJ,2018,Diamond League Final,2018-08-18,Sha'keela SAUNDERS,3,6.68,dl_final,SHA'KEELA SAUNDERS
 women_LJ,2018,European Athletics Championships,2018-08-11,Malaika MIHAMBO,1,6.75,continental,MALAIKA MIHAMBO
 women_LJ,2018,European Athletics Championships,2018-08-11,Maryna BEKH-ROMANCHUK,2,6.73,continental,MARYNA BEKH-ROMANCHUK
 women_LJ,2018,European Athletics Championships,2018-08-11,Shara PROCTOR,3,6.70,continental,SHARA PROCTOR
-women_LJ,2018,IAAF Continental Cup,2018-09-09,Caterine IBARGUEN,1,6.93,continental,CATERINE IBARGUEN
-women_LJ,2018,IAAF Continental Cup,2018-09-09,Brooke STRATTON,2,6.71,continental,BROOKE STRATTON
-women_LJ,2018,IAAF Continental Cup,2018-09-09,Malaika MIHAMBO,3,6.86,continental,MALAIKA MIHAMBO
 women_PV,2018,Diamond League Final,2018-08-18,Aikaterini STEFANIDI,1,4.87,dl_final,AIKATERINI STEFANIDI
 women_PV,2018,Diamond League Final,2018-08-18,Sandi MORRIS,2,4.82,dl_final,SANDI MORRIS
 women_PV,2018,Diamond League Final,2018-08-18,Anzhelika SIDOROVA,3,4.82,dl_final,ANZHELIKA SIDOROVA
 women_PV,2018,European Athletics Championships,2018-08-09,Aikaterini STEFANIDI,1,4.85,continental,AIKATERINI STEFANIDI
 women_PV,2018,European Athletics Championships,2018-08-09,Nikoleta KYRIAKOPOULOU,2,4.80,continental,NIKOLETA KYRIAKOPOULOU
 women_PV,2018,European Athletics Championships,2018-08-09,Holly BRADSHAW,3,4.75,continental,HOLLY BRADSHAW
-women_PV,2018,IAAF Continental Cup,2018-09-08,Anzhelika SIDOROVA,1,4.85,continental,ANZHELIKA SIDOROVA
-women_PV,2018,IAAF Continental Cup,2018-09-08,Aikaterini STEFANIDI,2,4.85,continental,AIKATERINI STEFANIDI
-women_PV,2018,IAAF Continental Cup,2018-09-08,Sandi MORRIS,3,4.85,continental,SANDI MORRIS
 women_SP,2018,Diamond League Final,2018-08-18,Lijiao GONG,1,19.83,dl_final,LIJIAO GONG
 women_SP,2018,Diamond League Final,2018-08-18,Raven SAUNDERS,2,19.64,dl_final,RAVEN SAUNDERS
 women_SP,2018,Diamond League Final,2018-08-18,Christina SCHWANITZ,3,19.50,dl_final,CHRISTINA SCHWANITZ
 women_SP,2018,European Athletics Championships,2018-08-08,Paulina GUBA,1,19.33,continental,PAULINA GUBA
 women_SP,2018,European Athletics Championships,2018-08-08,Christina SCHWANITZ,2,19.19,continental,CHRISTINA SCHWANITZ
 women_SP,2018,European Athletics Championships,2018-08-08,Aliona DUBITSKAYA,3,18.81,continental,ALIONA DUBITSKAYA
-women_SP,2018,IAAF Continental Cup,2018-09-09,Lijiao GONG,1,19.63,continental,LIJIAO GONG
-women_SP,2018,IAAF Continental Cup,2018-09-09,Raven SAUNDERS,2,19.74,continental,RAVEN SAUNDERS
-women_SP,2018,IAAF Continental Cup,2018-09-09,Christina SCHWANITZ,3,19.73,continental,CHRISTINA SCHWANITZ
 women_TJ,2018,Diamond League Final,2018-08-18,Caterine IBARGUEN,1,14.56,dl_final,CATERINE IBARGUEN
 women_TJ,2018,Diamond League Final,2018-08-18,Shanieka RICKETTS,2,14.55,dl_final,SHANIEKA RICKETTS
 women_TJ,2018,Diamond League Final,2018-08-18,Kimberly WILLIAMS,3,14.47,dl_final,KIMBERLY WILLIAMS
 women_TJ,2018,European Athletics Championships,2018-08-10,Paraskevi PAPACHRISTOU,1,14.60,continental,PARASKEVI PAPACHRISTOU
 women_TJ,2018,European Athletics Championships,2018-08-10,Kristin GIERISCH,2,14.45,continental,KRISTIN GIERISCH
 women_TJ,2018,European Athletics Championships,2018-08-10,Ana PELETEIRO,3,14.44,continental,ANA PELETEIRO
-women_TJ,2018,IAAF Continental Cup,2018-09-08,Caterine IBARGUEN,1,14.76,continental,CATERINE IBARGUEN
-women_TJ,2018,IAAF Continental Cup,2018-09-08,Olga RYPAKOVA,2,14.26,continental,OLGA RYPAKOVA
-women_TJ,2018,IAAF Continental Cup,2018-09-08,Paraskevi PAPACHRISTOU,3,14.22,continental,PARASKEVI PAPACHRISTOU
 men_100m,2019,Diamond League Final,2019-08-24,Noah LYLES,1,9.98,dl_final,NOAH LYLES
 men_100m,2019,Diamond League Final,2019-08-24,Zhenye XIE,2,10.04,dl_final,ZHENYE XIE
 men_100m,2019,Diamond League Final,2019-08-24,Yohan BLAKE,3,10.07,dl_final,YOHAN BLAKE
@@ -974,7 +1925,7 @@ women_200m,2021,The XXXII Olympic Games,2021-08-03,Gabrielle THOMAS,3,21.87,glob
 women_200m,2021,USATF Golden Games,2021-05-09,Gabrielle THOMAS,1,22.12,tour,GABRIELLE THOMAS
 women_200m,2021,USATF Golden Games,2021-05-09,Allyson FELIX,2,22.26,tour,ALLYSON FELIX
 women_200m,2021,USATF Golden Games,2021-05-09,Lynna IRBY,3,22.27,tour,LYNNA IRBY
-women_3000sc,2021,"""READY STEADY TOKYO - Athletics""",2021-05-09,Joanne KIPKEMOI,1,9:39.29,tour,JOANNE KIPKEMOI
+women_3000sc,2021,"""READY STEADY TOKYO - Athletics""",2021-05-09,Joan KIPKEMOI,1,9:39.29,tour,JOAN KIPKEMOI
 women_3000sc,2021,"""READY STEADY TOKYO - Athletics""",2021-05-09,Yuno YAMANAKA,2,9:46.72,tour,YUNO YAMANAKA
 women_3000sc,2021,"""READY STEADY TOKYO - Athletics""",2021-05-09,Reimi YOSHIMURA,3,9:52.43,tour,REIMI YOSHIMURA
 women_3000sc,2021,Diamond League Final,2021-09-03,Norah JERUTO,1,9:07.33,dl_final,NORAH JERUTO

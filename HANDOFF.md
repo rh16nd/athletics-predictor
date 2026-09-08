@@ -154,11 +154,37 @@ python src/venue_weather.py
 # to prediction logic. It does NOT refresh data; run.py with no flag does.
 python run.py --no-scrape
 
-# Retrain the model (fast, seconds — uses already-scraped data/raw/*.csv)
-python src/train_model.py --with-recency --with-h2h --with-schedule
+# Retrain the model (fast, seconds — uses already-scraped data/raw/*.csv).
+# --pooled --tiers is what the DEPLOYED model is: 531 championship finals, not
+# 215 Diamond League ones. Running it without those flags trains a different
+# model and silently overwrites outputs/ with it.
+python src/train_model.py --with-recency --with-h2h --with-schedule --with-form --pooled --tiers dl_final,global,continental
+
+# When a head-to-head meeting is added to h2h_scraper.py's page list, give it a
+# date too, or it is dropped from every cut-off. Fetches only dates; leaves
+# meet_results.csv alone.
+python src/h2h_scraper.py --dates-only
+
+# Toplists for a season range other than the default, MERGED into the existing
+# files rather than overwriting them (data/raw/<key>.csv has three owners --
+# see merge_toplist_years). ~45 min for 32 disciplines x 10 seasons, Selenium.
+# --only takes a comma-separated list for re-running the ones that skipped.
+# RUN ONE AT A TIME: every discipline file is shared, and a second process
+# writing them concurrently is asking for a torn read.
+python src/historical_scraper.py --years 2008-2017
+python src/historical_scraper.py --years 2008-2017 --only men_110h,women_100h
+
+# Championship results 2009-2025. Re-run this after extending the toplists, not
+# before: it keeps only athletes who appear in that discipline's own toplist in
+# some season, so the pre-2018 fields are only recognised once the pre-2018
+# toplists exist.
+python src/major_meets_scraper.py
+
+# Rebuild the pooled label file from whatever is now on disk (seconds).
+python src/final_labels.py
 
 # Grid-search hyperparameters via walk-forward folds (informational, prints only)
-python src/train_model.py --with-recency --with-h2h --with-schedule --tune
+python src/train_model.py --with-recency --with-h2h --with-schedule --with-form --tune
 
 # Run the test suite
 python -m pytest
@@ -184,7 +210,9 @@ Both dev servers auto-reload on code changes (Flask debug mode, Vite HMR) and re
 
 
 **Model**: RandomForestClassifier, `n_estimators=200, max_depth=16, min_samples_leaf=1, class_weight=None` (`DEFAULT_MODEL_PARAMS` in `train_model.py`, walk-forward tuned via `--tune`, re-tune whenever the feature set, training-set size, OR data-quality filtering changes, since the winning config shifts each time, it's flipped `class_weight` None↔"balanced" twice across five re-tunes so far; hyperparameter search on a dataset this size (~459 rows) is itself somewhat noisy, so don't read too much into which single config "won" a given round). 14 features, **all carrying real signal**:
-`season_best, career_best, pb_gap, meets_count, consistency, yoy_improvement, age, season_rank, season_percentile, weighted_season_best, wind_adj_season_best, recent_trend, days_since_last, h2h_win_rate, gap_variability` (**15**, requires `--with-recency --with-h2h --with-schedule`)
+`season_best, career_best, pb_gap, meets_count, consistency, yoy_improvement, age, season_rank, season_percentile, weighted_season_best, wind_adj_season_best, recent_trend, days_since_last, h2h_win_rate, gap_variability, sb_age_days, recent_best_ratio, field_gap` (**18**, requires `--with-recency --with-h2h --with-schedule --with-form`)
+
+**The last three arrived 2026-09-08 and `field_gap` went straight in at third by importance (0.0995).** They are defined ONCE, in `src/feature_builder.py`, and imported by `train_model.py` — not written twice. `run.py` selects its feature columns by name, so a column computed one way in training and another at serve time is present, correctly named, and quietly means something else; this project has already paid for that with two `normalize_name` implementations that disagreed on case and produced a training set with 2,940 podiums and zero positive labels.
 
 **Read Next Steps 0p before drawing conclusions from the importance ranking.** Four of those columns are measured near-duplicates (`season_best` vs `career_best`/`wind_adj_season_best` correlate **+1.000**; `season_rank` vs `season_percentile` **-0.997**), the raw marks carry ~0 pooled signal across 32 disciplines, and **removing the duplicates costs a point**, the redundancy is load-bearing under `max_features` sampling. Do not tidy it away.
 
@@ -486,10 +514,425 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 > diff. Lint the files you change, not the tree.
 
 
+## THE HEAD-TO-HEAD FEATURE WAS READING THE RACE IT WAS PREDICTING (2026-09-08, later the same day)
+
+**Read this before quoting any accuracy figure.** It is the answer to NEXT STEPS 1 below, and the
+answer was not the one that was being looked for.
+
+**BUILT AND RETRAINED, NOT PUSHED.** Both working trees carry it, the local site serves it, and the
+user asked that it stay unpushed until they say. Deployed still shows 62.4%.
+
+### What was wrong
+
+`data/h2h/h2h_rates.csv` aggregates every meeting the scraper holds, 2021 through 2025, with **no
+time dimension at all**, and `train_model.add_h2h_features` read it whole for every label year. So a
+2022 final was predicted from a rivalry as it stood in 2025.
+
+That is ordinary lookahead. The sharp part is that the scraper's page list and the label file
+**overlap**: the Wikipedia page "2022 World Athletics Championships – Men's 100 metres" IS the
+men_100m 2022 Worlds label. **229 of the 531 finals in the pooled training set have their own
+meeting in that file** — 121 of 215 Diamond League Finals, 99 of 190 global, 9 of 126 continental.
+For 43% of labels the model was reading who won the race it was being asked to predict, out of the
+feature ranked second by importance.
+
+The site's own Help page says the model *"is only ever trained on seasons before the year it's
+scored on, so the accuracy below comes entirely from Finals it had never seen."* That sentence was
+not true. It is now.
+
+### What it was worth, measured
+
+Ten paired seeds each, both metrics, on the frame the trainer actually builds:
+
+| head-to-head variant | toplist | field |
+|---|---|---|
+| whole file, as shipped | 45.9 | 62.4 |
+| rates through the end of the final's own season | −0.44 | +0.14 |
+| **cut at the final's own date (what now ships)** | **−2.93** | **−2.46** |
+| cut at the start of the final's season | −2.50 | −2.00 |
+| feature dropped entirely | −3.29 | −2.50 |
+
+Two things fall out. **Cross-season leakage alone is worth nothing** — end-of-season rates score the
+same as the leaky ones — so the damage was all within-season, which is exactly where the same
+meeting sits. And **an honest head-to-head still earns its place**: dropping it costs another 0.8
+beyond the cut, so it is a real feature worth about a third of what it appeared to be. Its
+importance fell from 0.1339 (2nd) to 0.0647 (4th), which is the same fact from the other side.
+
+Grouping per contest rather than per discipline-year was measured separately and changed nothing
+(−0.08). It was adopted anyway, because with a real date cut each final now deserves its own value
+and `group_keys()` exists for precisely that.
+
+### What was built
+
+- **`src/h2h_scraper.py --dates-only`** fetches the same 161 Wikipedia pages and records each
+  meeting's date, into **`data/h2h/meet_dates.csv`**, leaving `meet_results.csv` untouched. All 161
+  dated on the first pass, zero year mismatches, every month between April and September. Writing to
+  its own file is deliberate: a full re-scrape would rewrite results that took the eighteenth
+  session four bug fixes to get right.
+- A meeting is dated on its **LAST** day, which on a championship event page is the final's own day,
+  so that championship's heats and semis are excluded along with the final. Conservative, and the
+  right kind — it matches what `run.py` can see when it projects a race that has not happened.
+- **`h2h_calculator.pairwise_records`** was split out of `calculate_h2h` so there is one definition
+  of "these two met and this one won". Verified byte-identical: same pairs, same wins, same
+  meetings, `win_rate` differing by 1.1e-16 (CSV float round-trip, not staleness).
+- **`tests/test_h2h_cutoff.py`**, 6 tests. One of them is the point: a meeting held on the final's
+  own day must be invisible to it. **Nothing else in the suite would notice this regressing, because
+  a leak makes every number go UP.**
+
+**The Diamond-League-only path is byte-identical and was verified, not assumed** — no `cutoff` and
+no `competition` column means `build_labeled_dataset` built the frame, and that path still reads
+`h2h_rates.csv` whole. `run.py` and `feature_builder.py` also still read it whole at serve time, and
+must keep doing so: predicting Budapest from every race already run is not lookahead, it is the job.
+
+### Three new features, +1.2 of the 2.4 won back
+
+Measured against the corrected baseline, so they are a real gain and not the leak in another shirt.
+`sb_age_days` (how old the season best is), `recent_best_ratio` (best mark in the last 45 days over
+the season best) and `field_gap` (distance to the field's leader in MARKS, where `season_rank` and
+`season_percentile` are only ordinal).
+
+| | toplist | field | wins |
+|---|---|---|---|
+| seeds 42-51 (chose them) | +0.78 | +0.96 | 7/10, 9/10 |
+| seeds 52-61 (held out) | +0.62 | +1.01 | 7/10, 9/10 |
+| three SHUFFLED pad columns | −0.14 | −0.03 | 4/10, 3/10 |
+
+**The same-width shuffled control is what makes this safe to believe.** Three columns of pure noise
+were worth +0.40 on the field metric in an earlier round, because widening a RandomForest's feature
+matrix changes how it searches. Any "all three together beat each one alone" claim has to clear that
+bar, and this one does. Raising `max_features` directly does not reproduce it (+0.02 at 4, negative
+at 5 and 6), so the gain is not free tuning either.
+
+Individually two of the three are nothing. `field_gap` alone is the only one that moves the field
+metric (+0.58, 9/10); `recent_best_ratio` alone is negative. The gain is the three together, which
+is the same shape as the near-duplicate columns already documented above.
+
+### Where the number landed
+
+| | toplist | field |
+|---|---|---|
+| as deployed (leaky) | 45.5% | **62.4%** |
+| leak removed, nothing added | 43.0% | 60.0% |
+| leak removed + the three features | 44.3% | 61.2% |
+| **+ the first re-tune ever run on this model (what is built)** | **44.6%** | **61.6%** |
+
+Per competition: Diamond League Finals **70.9%**, Olympics and Worlds **55.9%**, Europeans and
+Continental Cup **53.6%**. `outputs/model_metrics.json` carries 44.6 / 61.6 and the site reads it,
+so nothing quotes a literal.
+
+**On Diamond League Finals the corrected model is BETTER than the leaky one it replaces** — 70.9%
+against 70.6%. The headline fell because the pooled average includes championships the leak was
+flattering most, not because the model got worse at the thing it was originally built for.
+
+Side effect worth knowing: the model's #1 now matches the World Athletics points #1 in **16 of 32**
+disciplines, up from 11. The circuit bias documented in item A below is smaller, and
+`tests/test_world_rankings.py`'s pin on it still passes, so the copy about it stays true.
+
+### Two traps this session paid for, both cheap to repeat
+
+- **A cached experiment frame is not the pipeline.** The first `field_gap` measurement was computed
+  after `dropna`, where the trainer computes it before, and the values differed by up to 0.031. The
+  numbers above are all from a frame rebuilt through `build_pooled_dataset` itself. If a harness and
+  the trainer disagree at seed 42, the harness is measuring different code.
+- **The harness is worth rebuilding, not re-deriving.** Caching the pooled frame once takes a full
+  `train_model.py` run's 5m38 down to **5 seconds** per scored variant, which is the only reason ten
+  experiments fitted in an afternoon. Scripts are in the session scratchpad.
+
+### Measured and NOT shipped: meets_count → races on record
+
+The queued experiment from item 10 below was run and **did not survive**. `meets_count` genuinely
+double-counts (a de-duplicated count over the same file averages 1.53 where it averages 1.60) and
+genuinely measures circuit participation rather than activity (adding the quarantined worldwide race
+log takes the average to 3.10, correlating only 0.562 with it). On the leaky baseline the swap was
+worth **+0.71 to +0.88 toplist over 9-10 of 10 seeds** with a properly null shuffled control, and
+**nothing at all on the field metric**.
+
+Then the h2h fix changed the baseline and the gain went to **−0.12**. It is a fair correctness
+argument and not an accuracy win; do not re-run it expecting one. The worldwide log was read for
+DATES ONLY, never marks, so this never risked the data-dilution regression that reverted it as a
+training source.
+
+Also worth recording, because it will be rediscovered: **the field metric cannot resolve anything
+under about half a point.** Three shuffled columns moved it +0.29 in one round while two real
+candidates moved it +0.05 and +0.01. The toplist metric is the sharper instrument at this sample
+size even though the site quotes the other one.
+
+### "Why isn't the world record holder the model's number one?" — one bug fixed, two still open
+
+Asked by the user about the men's 400m hurdles, where Alison dos Santos leads the world on 45.80 (a
+world record) and the model rates Karsten Warholm above him. Three separate things came out of it.
+
+**1. FIXED: a career best could not see the current season.** `build_2026_features` read career
+bests from `data/raw/<key>.csv`, which stops at 2025 — the current season lives in
+`<key>_2026.csv`. So anyone running the fastest race of their life this year got a career best from
+a slower year. **885 of 3,993 athletes, 22.2%, in every one of the 32 disciplines.**
+
+It is not just untidy, it inverts a feature. In training, `build_features` takes `career_best` over
+marks up to AND INCLUDING the label year, so it can never be worse than the season best and `pb_gap`
+always means *how far off your best you are*, floored at 0. At serve time it was coming out as *how
+much you have improved* — the same number with the opposite meaning, read by a model trained on the
+other one. Dos Santos was scored 0.49s off his peak while setting a world record.
+`tests/test_career_best_includes_this_season.py`, 5 tests, including the field-event direction and a
+test proving the invariant belongs to the trainer rather than to the test.
+
+**2. OPEN, and it is the bigger one: `meets_count` and `days_since_last` are out of distribution at
+serve time.** Measured across the whole 2026 field against the 49,412-row training frame:
+
+| feature | training | serving |
+|---|---|---|
+| `meets_count` | min 1, median 1, **never 0** | min 0, median 0, **80.7% zeros** |
+| `days_since_last` | median 67, max 274 | median **999**, 90th pct 999 |
+
+Training counts rows in `data/raw/<disc>.csv`, which always contains the athlete's toplist row, so
+it is never 0. Serving counts `<key>_2026_meetings.csv` with `fill_value=0`, which was a deliberate
+DISPLAY fix (see item 12's Jessica Hull note) that silently changed a trained model feature. The
+model has never seen a 0 and four athletes in five now carry one. `days_since_last`'s 999 sentinel
+has the same shape.
+
+**This matters because `meets_count` is what decides the case the user asked about.** Attribution by
+substitution — give dos Santos Warholm's value for one feature at a time and re-score:
+
+| swap | dos Santos' score |
+|---|---|
+| baseline | 39.2% |
+| `meets_count` 4 → 5 | **49.4% (+10.2)** |
+| `age` 26.3 → 30.5 | 45.5% (+6.3) |
+| `yoy_improvement` +0.85 → −0.24 | 45.2% (+6.0) |
+| `pb_gap` 0.00 → 0.58 | 44.1% (+4.9) |
+| **`season_best` 45.80 → 46.52** | **39.3% (+0.0)** |
+
+**The mark itself is worth nothing.** Handing dos Santos a time 0.72s slower changes the model's
+answer by zero. That is not a bug — across 32 disciplines a raw "45.80" is meaningless without the
+event, so the ordinal features carry it, and dos Santos already maxes them (`season_rank` 1,
+`season_percentile` 1.000, `field_gap` 0.000). Those are simply outweighed by activity and age.
+
+Simulating the alignment (`meets_count + 1`, `days_since_last` falling back to the season-best date)
+lifts dos Santos 39.2% → 49.4% and leaves Warholm at 56.0%. **It closes most of the gap and does not
+flip it.** Not done unilaterally because `meetsCount` still feeds two athlete-page tiles, so this is
+a decision about display as well as modelling, and it needs its own paired-seed measurement.
+
+**3. The deeper answer is item A option 3, still open.** The user's argument — a world record and
+sub-47 consistency should outrank a rival's extra Diamond League start — is a request to re-scope
+the feature set so form features degrade to neutral rather than damning. That is a real modelling
+change, not a tweak.
+
+### Nine seasons of championships were reachable all along — and they DO NOT HELP (2026-09-08)
+
+Started on the user's "run it" against the ranked list of accuracy levers, of which this was
+number one: more labels at the same tier. It was reachable, it was scraped, and **it is worth
+nothing.** I ranked it first and I was wrong; the measurement is below and the prediction was the
+part that failed, not the execution.
+
+**THE VERDICT.** Three frames, identical scored population (34,741 rows, 373 finals, pinned by
+FIRST_TEST_YEAR), paired across two seed ranges with the second held out:
+
+| | toplist 42-51 | field 42-51 | toplist 52-61 | field 52-61 |
+|---|---|---|---|---|
+| shipped (531 finals) | 44.44 | 61.54 | 44.54 | 61.39 |
+| deep history, same labels | +0.25 (6/10) | −0.20 (3/10) | −0.00 (4/10) | +0.01 (4/10) |
+| **+ pre-2018 labels (848 finals)** | **+0.16 (7/10)** | **−0.33 (2/10)** | **+0.18 (7/10)** | **−0.10 (4/10)** |
+| labels ALONE (deep → backfill) | −0.09 (2/10) | −0.13 (3/10) | +0.18 (7/10) | −0.11 (3/10) |
+
+**A 60% bigger training set — 531 finals to 848, 46,553 rows to 76,172 — moves the number by
+nothing**, and the two seed ranges disagree on the sign. `LABEL_YEARS` was therefore left at
+2018-2025 and nothing needed reverting, because it was only ever parameterised in the experiment
+harness.
+
+**What this rules out, and it is worth more than the gain would have been: accuracy here is not
+limited by how many championship finals the model has seen.** The pooled-finals experiment already
+showed the widest pool was worse; this shows the *right-tier* pool being 60% bigger is neutral.
+Anyone reaching for "more data" as the next accuracy idea should read these two results together
+and reach for something else. The remaining untried levers are rounds (heats and semis, which the
+model has no concept of) and grouped per-event-family models.
+
+**Kept anyway, on correctness grounds, with no accuracy claim attached:**
+- **The pre-2018 data is on disk** (toplists to 2008, 11 championship meetings, 1,297 pooled finals
+  in `data/labels/finals.csv`). It costs nothing to keep and a future idea may want it.
+- **Career bests are honest now.** `build_2026_features` reads `data/raw/<key>.csv` for career
+  bests, and that file stopped at 2018, so a veteran's "career best" was really their best since
+  2018. This is the same defect as the current-season one fixed earlier today, at the other end.
+- **30 stale 2018 Continental Cup finals finally left the labels.** The filter excluding them landed
+  in an earlier session; the data had never been re-scraped since, so they were still being trained
+  on. Removing them was measured then at noise level.
+
+**The retrain was required regardless of the verdict** — `data/raw` changed, so serve-time career
+bests no longer matched what the deployed model learned. **44.8% toplist / 60.9% field**, from
+44.6 / 61.6. Diamond League Finals 69.8%, Olympics and Worlds 55.5%, Europeans 53.1%.
+
+**Infrastructure below is settled and worth keeping whatever happens to the labels.**
+
+**The blocker was a filter, not missing data.** WA tags every meeting held before 2018 with the
+literal `rankingCategory: "Pre 2018"`, and `major_meets_scraper` selects the senior Worlds by
+`rankingCategory == "OW"`. So nine seasons sitting in the API with results attached were being
+skipped in silence: the World Championships of **2009, 2011, 2013, 2015 and 2017**, the Olympic
+Games of **2012 and 2016**, and the European Championships of **2010, 2012, 2014 and 2016**.
+
+Eleven championship meetings, against the nine the model currently trains on.
+
+**The replacement is an INCLUSION test, and that direction is the point.** The list this project
+replaced in the sixteenth session was an exclusion list, so anything it had not thought of got in —
+which is how the Continental Cup put 220 rows into training under a docstring that said otherwise.
+`PRE_2018_WORLDS` was built by surveying all 38 meetings WA lists in that group for 2009-2017 and
+admits a name that is the World Championships and nothing else. 2010 is the case worth knowing: six
+meetings, every one of them a World *something* Championships, and not one of them the right one.
+Seven tests in `tests/test_major_meets_scraper.py`.
+
+**A second filter would have thrown the labels away after scraping them.** `final_labels.tier_of`
+matched `world athletics championships`, and the IAAF-era name is `IAAF World Championships`;
+it matched `european athletics championships`, and 2010/2012/2014 are `Barcelona`/`Helsinki`/
+`Zürich European Championships`. All five pre-2018 Worlds and three of the four Euros would have
+been filed as `tour` — the exact tier the shipped model's `--tiers` argument excludes. Scraped,
+written, silently dropped. Making "Athletics" optional in both patterns covers every real name
+across both eras; 15 tests pin it.
+
+**`FIRST_TEST_YEAR = 2021`, and this one is a trap worth reading.** `walk_forward_folds` derived
+its test years as `LABEL_YEARS[2:]` — "everything after the first two" — which is the same thing as
+2021-2025 only while the labels start at 2018. Adding history behind them would have moved the
+scored years to 2011-2025, changed the denominator from 1,119 predictions, and made every accuracy
+figure in this document incomparable to the next one. Worse, the added folds are the WEAKEST (a 2011
+fold trains on 2009-2010 alone), so **more and better training data would have shown up as a lower
+number** and looked like a failed experiment. Extra history feeds training; the scored population
+does not move. Verified a no-op on the current data: 61.57 before and after.
+
+**`historical_scraper.py` can now take `--years 2008-2017` and MERGES.** It has always overwritten
+`data/raw/<key>.csv`, which is safe only while it scrapes every year the file holds. That file has
+three owners — toplist rows here, `dl_meeting` from `season_results_scraper`, `major_meet` from
+`major_meets_scraper` — so a partial overwrite deletes two other scrapers' work. Same
+read-drop-your-own-rows-concatenate shape `major_meets_scraper` already used. An unreadable existing
+file now **refuses and skips that discipline** rather than silently overwriting it or ending the
+run; `--only` takes a comma-separated list so a partial re-run is one process.
+
+**Two process mistakes, both mine, both worth not repeating:**
+- A `nohup ... &` inside an already-backgrounded Bash call exits immediately and does nothing. It
+  reported success and scraped nothing. **Check the data, not the exit code.**
+- Relaunching left the first one alive, so **two scrapers wrote the same 32 files at once**. That is
+  what made a file read as empty mid-write and killed the run at 15 of 32 — not a corrupt file, a
+  race. Every file was afterwards validated against a pre-work backup and **nothing was lost**, but
+  the lesson is to check for a live process before relaunching, not after.
+
+All 32 disciplines now carry toplists back to 2008 (needed for `career_best`/`yoy_improvement` on a
+2009 label). Note this changes two things at once, so they have to be measured apart: deeper career
+history improves the FEATURES of the existing 2021-2025 rows, and the pre-2018 finals add LABELS.
+`build_frame_v2.py` in the session scratchpad builds either.
+
+### The official ENTRY list, and why qualification was never the field (2026-09-08)
+
+The user asked for the official start lists, saying they update hourly. `fetch_startlists()` asks
+WA's competition API and gets nothing — all 40 phases still report `isStartlistPublished` false
+three days out. **But the entry list exists**, as a PDF linked from a press release, revised
+hourly, last stamped *7 September 2026, 15:30 CEST*.
+
+**Qualification says who is ELIGIBLE. Entries say who is RUNNING. They disagreed about 19 athletes
+each way.** Worst of them: **Tara Davis-Woodhall was this projection's number one in the women's
+long jump at 56.6% and is not entered.** Also unflagged by the injury check and not entered:
+Marija Vuković (25.7%), Molly Caudery (20.5%), Wayne Pinnock (16.2%), Tsige Duguma (14.7%), Lilian
+Odira (14.0%), Slimane Moula (9.6%). And 19 entered athletes were missing from our field entirely,
+because a replacement gets no qualification route.
+
+`ultimate_scraper.fetch_entry_lists()` follows the press release to the current PDF (never a
+hard-coded document id — each revision is a new document), parses it, and
+`apply_entry_list()` rebuilds each event: entered athletes keep their qualification route where WA
+still lists one, replacements come in without one, and the rest are recorded as `notEntered` and
+NAMED on the page rather than silently dropped. The page subtitle now says "on World Athletics'
+official entry list" instead of "qualified" when entries are in hand.
+
+**Two traps, both of which produce confident nonsense rather than an error:**
+- **The PDF writes some names surname-first** ("NAKAJIMA Yuki Joseph", "YAN Ziyi", "KITAGUCHI
+  Haruka") where the qualification API has them given-name-first. An order-sensitive match made
+  **seven athletes read as both a withdrawal and a new entry** — it would have deleted seven people
+  who are running and invented seven who are not. `entry_name_key` matches a token SET.
+- **The parse is discarded whole if any event's count disagrees with the count the PDF prints for
+  itself.** A short entry list is indistinguishable downstream from a set of withdrawals, and
+  inventing withdrawals is worse than having no entry list.
+
+**On the Benjamin question specifically: the entry list has him in BOTH the 400m and the 400m
+hurdles.** He is the last row of the 400mH list with no world ranking beside him, which is what an
+Olympic-champion wild card looks like there. So the user's information that he is running the flat
+400m only is not what WA's own entry list says as of that revision — the schedule still makes both
+impossible (400m final and 400mH semi in one session, 99 minutes apart), and the gold "which
+clashes" badge is now the honest treatment with official backing behind it.
+
+`pypdf` is a new dependency, in `requirements.txt`.
+
+### Qualified in two events is not entered in two events
+
+Reported by the user: Rai Benjamin is shown in the 400m hurdles projection, and the Ultimate's
+previews have him in the flat 400m only.
+
+**Our data is faithful to WA and the presentation was still wrong.**
+`getChampionshipQualifications` lists who is ELIGIBLE, and it marks Benjamin qualified in both the
+400m (world rankings, position 5) and the 400mH (wild card, Olympic champion). **11 athletes are
+qualified in two events**, so 21 projection rows were quietly claiming a double.
+
+Most of those doubles are ordinary — a sprinter in the 100m and 200m on different evenings, 1500m
+and 5000m two days apart. One is not, and **WA's own timetable is what separates them**: the men's
+400m FINAL and the men's 400mH SEMI-FINAL are in the same session on 12 September, 99 minutes apart.
+The rule "these two events share a session" flags **exactly Benjamin and none of the ten legitimate
+doubles** — checked across the whole field, not assumed.
+
+`ultimate_predictions.double_entries` computes it and every athlete row now carries
+`alsoQualifiedIn: [{label, discKey, clashes}]`. The table shows a quiet badge for a normal double
+and a gold one reading "which clashes" for an impossible one. **It does not decide which event he
+will run**, because nothing on disk knows: `isStartlistPublished` is false on all 40 phases.
+
+**Re-scraping also flipped `fieldPublished` to true and added a `qualifiedField` key** (28 events,
+3,049 lines) that did not exist before — WA published the field between the ship and now. Worth
+knowing: `namedQualifiers` dropped 43 → 27 in the same scrape, and the 14 who vanished include Lyles
+and Davis-Woodhall, both of whom have withdrawn. WA appears to be pruning that carousel, so it is
+not a reliable roster on its own.
+
+### Two counts of "marks", both correct, both labelled the same
+
+Also reported: the landing ribbon says **3,200** and How it works says **44,712**. Both are right and
+they answer different questions — `scoreScale.rows` is this season's ranked marks (100 per discipline
+across 32), `corpus.marks` is the 2018-2025 training corpus. Side by side under near-identical labels
+they read as a contradiction. Now "Marks ranked this season" and "Past marks learned from", EN and FR.
+
+### The Ultimate numbering report was not a bug
+
+Reported mid-session as "the 100m shows second and third but not first". Investigated end to end and
+the fix from earlier that day was already live: both repos in sync with `origin/main`, the deployed
+bundle carrying the post-fix strings, and all 25 events on podiumcall.vercel.app numbering 1..N with
+no holes. **A single-page app does not re-fetch its own JavaScript without a reload**, so a tab
+opened before the deploy keeps running the pre-fix bundle indefinitely. `index.html` is served
+`max-age=0, must-revalidate`, so one hard reload settles it. Worth checking that first next time a
+"still broken" report describes symptoms that exactly match a fix already shipped.
+
+What was real inside it: with the model's own number one reported out, the list renumbers 1..N and
+the three medal badges land on its 2nd, 3rd and 4th, with nothing saying so. **`ultimate.projection.promoted`**
+now says it, in a gold-ruled line ABOVE the table — below it, a reader has already drawn the wrong
+conclusion. Shown only when a flagged athlete's own rank is 3 or better, so the javelin (flagged
+athlete at 7) and the pole vault (a watch, which never moves anyone) stay quiet. Not marked per row:
+when the number one withdraws, every row below moves, so a per-row marker decorates the whole table
+and says nothing. EN and FR at parity, **749 keys each**.
+
+### The re-tune, and why --tune had never covered this model
+
+`tune_hyperparameters` called `build_labeled_dataset()`, the **Diamond-League-only** path, and took no
+`--pooled` flag. The deployed model has been the 531-final championships pool since 2026-09-07, so
+every re-tune since then has been tuning a model nobody runs. It now takes `pooled`/`tiers` from the
+same flags the retrain uses, and `n_jobs=-1` at scoring time (a speed knob, not a modelling one, and
+kept OUT of the grid dicts because they are compared against `DEFAULT_MODEL_PARAMS` by equality).
+
+Its winner moved `min_samples_leaf` 1 -> 4 and `n_estimators` 200 -> 300, **0.3 ahead at seed 42,
+which is inside this project's noise floor and means nothing on its own**. Measured across ten paired
+seeds it is **+0.71 toplist on 10 of 10 and +0.64 field on 8 of 10**, and it was adopted on that.
+The grid searching at one seed while the adoption decision needs ten is worth remembering: the search
+ranks, it does not decide.
+
+**Nothing is pushed.** The user asked to see it locally first and to be the one to say when it goes
+out. When it does, it is the usual sequence, and `data/h2h/meet_dates.csv` is a new file that must
+be added: `build_static_api.py` has already been run, both repos need committing (`git add -f` as
+always), and Render plus Vercel redeploy on push.
+
+---
+
 ## NEXT STEPS (set 2026-09-08, after the ship — start here)
 
 Everything before this is shipped and live. These two are the open work, both asked for
 directly, and neither has been started.
+
+**Item 1 is now ANSWERED — see the head-to-head section immediately above. Item 2, dark mode, was
+explicitly deferred by the user on 2026-09-08 and should not be started until they say.**
 
 ### 1. Improve accuracy WITHOUT thinning the field — a brainstorm, not a retrain
 

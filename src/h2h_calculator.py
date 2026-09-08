@@ -45,8 +45,16 @@ def one_row_per_athlete(race_df):
     return race_df.sort_values("place").drop_duplicates(subset=["athlete"], keep="first")
 
 
-def calculate_h2h(df):
-    """Head-to-head records, counted one race at a time.
+def pairwise_records(df):
+    """One row per ordered pair per race: who raced whom, and who won.
+
+    Split out of calculate_h2h so there is exactly ONE definition of "these
+    two met and this one won", used by both consumers. train_model needs the
+    un-aggregated form because it aggregates per final, over the races run
+    before that final's own date; aggregating here first would throw away the
+    `meet` column that carries the date. Two implementations of this pairing
+    would drift, which is the failure mode `normalize_name` already has a test
+    pinning it against.
 
     A race -- not a meeting -- is the unit, because a meeting is not a
     contest. Two athletes are only compared when they were on the same
@@ -81,6 +89,7 @@ def calculate_h2h(df):
             # a 2-row athlete against a 3-row athlete produced up to 6
             # "meetings" -- the same comparison repeated, which is why 64% of
             # all pairs with >=5 meetings came out as perfect sweeps.
+            meet = race_df["meet"].iloc[0]
             rows = list(zip(race_df["athlete"], race_df["place"]))
 
             for i, (a, place_a) in enumerate(rows):
@@ -93,21 +102,32 @@ def calculate_h2h(df):
                         # invent a result.
                         continue
                     a_wins = 1 if place_a < place_b else 0
-                    records.append({"discipline": disc, "athlete_a": a, "athlete_b": b,
+                    records.append({"discipline": disc, "meet": meet,
+                                    "athlete_a": a, "athlete_b": b,
                                     "a_wins": a_wins, "total": 1})
-                    records.append({"discipline": disc, "athlete_a": b, "athlete_b": a,
+                    records.append({"discipline": disc, "meet": meet,
+                                    "athlete_a": b, "athlete_b": a,
                                     "a_wins": 1 - a_wins, "total": 1})
 
-    if not records:
-        return pd.DataFrame()
+    return pd.DataFrame(records)
 
-    h2h = pd.DataFrame(records)
-    h2h = h2h.groupby(["discipline", "athlete_a", "athlete_b"]).agg(
+
+def aggregate_records(records):
+    """Pairwise records collapsed into a win rate per ordered pair."""
+    if records.empty:
+        return pd.DataFrame()
+    h2h = records.groupby(["discipline", "athlete_a", "athlete_b"]).agg(
         wins=("a_wins", "sum"),
         meetings=("total", "sum")
     ).reset_index()
     h2h["win_rate"] = h2h["wins"] / h2h["meetings"]
     return h2h
+
+
+def calculate_h2h(df):
+    """Head-to-head win rates over every race in `df`. See pairwise_records
+    for how a race is defined and why that definition is shared."""
+    return aggregate_records(pairwise_records(df))
 
 if __name__ == "__main__":
     print("Loading meet results...")

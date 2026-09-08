@@ -37,6 +37,10 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 
+# The three form features are defined ONCE, in the module run.py serves from,
+# so training and inference cannot drift apart on what a column means.
+import feature_builder
+
 # Guarded: several modules in src/ do this, and each wraps the SAME
 # sys.stdout.buffer. With two of them imported into one process the first
 # wrapper to be garbage-collected closes the buffer under the second, and
@@ -114,6 +118,11 @@ FINALS_LABELS_PATH = os.path.join(BASE_DIR, "data", "labels", "finals.csv")
 # Who actually contested each of those finals, for the "real field" metric.
 FINALS_FIELDS_PATH = os.path.join(BASE_DIR, "data", "labels", "final_fields.csv")
 H2H_PATH = os.path.join(BASE_DIR, "data", "h2h", "h2h_rates.csv")
+# The raw races behind h2h_rates.csv, plus when each meeting was held
+# (src/h2h_scraper.py --dates-only). Together these let a rivalry be read as it
+# stood on the day of a given final instead of as it stands today.
+MEET_RESULTS_PATH = os.path.join(BASE_DIR, "data", "h2h", "meet_results.csv")
+MEET_DATES_PATH = os.path.join(BASE_DIR, "data", "h2h", "meet_dates.csv")
 VENUE_GEO_PATH = os.path.join(BASE_DIR, "data", "venues_geo.csv")
 VENUE_WEATHER_PATH = os.path.join(BASE_DIR, "data", "venue_weather.csv")
 
@@ -176,6 +185,13 @@ def venue_elevations():
 # a given year is read from the scraped file itself (see build_labeled_dataset) --
 # not hand-flagged here.
 LABEL_YEARS = [y for y in range(2018, 2026) if y != 2020]
+
+# The first year the walk-forward backtest SCORES. Every earlier label year
+# is training seed only. Pinned rather than derived so that adding history
+# behind the labels cannot move the metric's population -- see
+# walk_forward_folds. 2021 is what LABEL_YEARS[2:] meant when the labels
+# started at 2018, so every accuracy figure in HANDOFF stays comparable.
+FIRST_TEST_YEAR = 2021
 DL_VENUES = [
     "doha", "shanghai", "suzhou", "shaoxing", "rabat", "florence", "paris",
     "oslo", "lausanne", "stockholm", "silesia", "monaco", "london",
@@ -356,6 +372,10 @@ def add_new_features(df):
         is_field = discipline in FIELD_EVENTS
         weighted_sb_map, wind_adj_map, trend_map, days_map = {}, {}, {}, {}
         gap_var_map = {}
+        # Every dated mark this group can legally see, handed to the shared
+        # form-feature definitions below. None when the discipline has no raw
+        # file or no usable dates.
+        form_log, form_reference = None, None
         # The final's own date when there is one, so nothing after the race
         # can reach a feature that claims to predict it. Without a cut-off
         # (the Diamond-League-only path) this stays the 1 September the model
@@ -404,6 +424,9 @@ def add_new_features(df):
             if "Date" in raw.columns:
                 raw["date"] = pd.to_datetime(raw["Date"], format="%d %b %Y", errors="coerce")
                 ref_date = pd.Timestamp(cutoff) if cutoff is not None else pd.Timestamp(f"{year}-09-01")
+                form_log = raw[["athlete_name", "date", "Mark"]].rename(
+                    columns={"athlete_name": "name", "Mark": "mark"})
+                form_reference = ref_date
 
                 for athlete in group["athlete_name"]:
                     ath = raw[raw["athlete_name"] == athlete].sort_values("date", ascending=False)
@@ -447,6 +470,19 @@ def add_new_features(df):
         group["recent_trend"] = group["athlete_name"].map(trend_map).fillna(0.0)
         group["days_since_last"] = group["athlete_name"].map(days_map).fillna(999)
         group["gap_variability"] = group["athlete_name"].map(gap_var_map).fillna(0.0)
+
+        # The form group (--with-form). Definitions are IMPORTED from
+        # feature_builder rather than written twice: run.py selects its feature
+        # columns by name, so a column computed differently here and there is
+        # present, correctly named, and quietly means something else.
+        group["field_gap"] = feature_builder.field_gap(
+            group["season_best"], is_field).to_numpy()
+        sb_age, ratio = feature_builder.form_from_log(
+            form_log, group["athlete_name"], group["season_best"],
+            form_reference if form_reference is not None else f"{year}-09-01",
+            is_field)
+        group["sb_age_days"] = sb_age
+        group["recent_best_ratio"] = ratio
         all_groups.append(group)
     return pd.concat(all_groups, ignore_index=True)
 
@@ -588,10 +624,11 @@ def build_labeled_dataset():
     return labeled.drop(columns=["_name_key"])
 
 
-def add_h2h_features(df):
-    """Adds h2h_win_rate per (athlete, discipline, year) row: average win
-    rate against the other athletes in that discipline-year's training pool
-    (>=2 meetings required, matching run.py's inference-time threshold).
+MIN_H2H_MEETINGS = 2  # matches run.py's inference-time threshold
+
+
+def build_h2h_lookup(rates_df):
+    """{a_lower: {b_lower: win_rate}} for one discipline.
 
     data/h2h/h2h_rates.csv uses normal-case names ("Trayvon Bromell") while
     every other data source in this pipeline uses WA's ALL-CAPS-surname
@@ -600,29 +637,159 @@ def add_h2h_features(df):
     0.5 for every athlete in every prediction ever made by run.py's blend,
     despite 156k real matchup rows sitting unused. Matching case-insensitive
     here (and in run.py) is the actual fix -- confirmed live: 0/8 exact
-    matches vs 7/8 case-insensitive matches for a sample discipline.
-    """
-    h2h_df = pd.read_csv(H2H_PATH)
-    h2h_df["a_lower"] = h2h_df["athlete_a"].str.lower()
-    h2h_df["b_lower"] = h2h_df["athlete_b"].str.lower()
-    h2h_df = h2h_df[h2h_df["meetings"] >= 2]
+    matches vs 7/8 case-insensitive matches for a sample discipline."""
+    lookup = {}
+    for a, b, rate in zip(rates_df["athlete_a"].str.lower(),
+                          rates_df["athlete_b"].str.lower(),
+                          rates_df["win_rate"]):
+        lookup.setdefault(a, {})[b] = rate
+    return lookup
 
+
+def mean_rate_against(lookup, names_lower):
+    """Each athlete's average win rate against the others in the same list.
+
+    0.5 -- an honest coin flip -- when this pairing has never been raced, which
+    is most of them. This is the shape run.py computes at serve time against
+    the field it is about to score."""
+    out = []
+    for me in names_lower:
+        mine = lookup.get(me)
+        if not mine:
+            out.append(0.5)
+            continue
+        seen = [mine[opp] for opp in names_lower if opp != me and opp in mine]
+        out.append(sum(seen) / len(seen) if seen else 0.5)
+    return out
+
+
+_DATED_RECORDS = None
+
+
+def dated_h2h_records():
+    """Every pairwise race result with the date it was run on, or an empty
+    frame when the meet dates have not been scraped yet.
+
+    data/h2h/h2h_rates.csv has no time dimension at all -- it aggregates every
+    meeting on disk -- so reading it whole for a 2022 final scored that final
+    on a rivalry as it stood in 2025.
+
+    And it is worse than ordinary lookahead. The scraper's meeting list and the
+    label file overlap: **229 of the 531 finals in the pooled training set have
+    their own meeting in this data**, because the 2022 World Championships
+    men's 100m page and the men_100m 2022 Worlds label are the same race. For
+    those 43% of labels the model was reading who won the race it was being
+    asked to predict, out of a feature. Measured over 10 paired seeds, that is
+    worth 2.5 points of toplist accuracy and 2.0 of field accuracy, on the
+    model's second-most-important feature.
+
+    `python src/h2h_scraper.py --dates-only` writes the dates this needs."""
+    global _DATED_RECORDS
+    if _DATED_RECORDS is not None:
+        return _DATED_RECORDS
+    if not (os.path.exists(MEET_RESULTS_PATH) and os.path.exists(MEET_DATES_PATH)):
+        _DATED_RECORDS = pd.DataFrame()
+        return _DATED_RECORDS
+
+    import h2h_calculator  # same directory; imported late so a plain
+                           # `import train_model` stays cheap
+    results = pd.read_csv(MEET_RESULTS_PATH, low_memory=False)
+    records = h2h_calculator.pairwise_records(results)
+    dates = pd.read_csv(MEET_DATES_PATH, parse_dates=["date"])[["meet", "date"]]
+    records = records.merge(dates, on="meet", how="left")
+    # An undated meet is dropped rather than defaulted. Giving it a date would
+    # be inventing when a race happened in order to decide whether a later
+    # final was allowed to see it, which is the exact mistake being fixed.
+    undated = records["date"].isna().sum()
+    if undated:
+        print(f"  WARNING: {undated} h2h records from undated meets, excluded")
+    records = records.dropna(subset=["date"])
+    records["a_lower"] = records["athlete_a"].str.lower()
+    records["b_lower"] = records["athlete_b"].str.lower()
+    _DATED_RECORDS = records.sort_values("date").reset_index(drop=True)
+    return _DATED_RECORDS
+
+
+def add_h2h_features(df):
+    """Adds h2h_win_rate: an athlete's average win rate against the rest of
+    the pool being scored with them.
+
+    THE CUT-OFF IS THE POINT, exactly as it is in build_features. When every
+    label was one September Diamond League Final a year, reading the whole
+    rivalry file was survivable. Pooled across 531 championship finals it reads
+    the answer out of the future, and for 229 of them out of the race itself --
+    see dated_h2h_records. So when the frame carries per-final cut-offs, the
+    rates are rebuilt from the races run strictly BEFORE each final.
+
+    A meeting is dated on its LAST day, which for a championship event page is
+    the final's own day, so that championship's heats and semis are excluded
+    along with the final. Slightly conservative -- a semi-final really is
+    information available beforehand -- and it is the right kind of
+    conservative: it matches what run.py can see when it projects a race that
+    has not happened.
+
+    Without cut-offs (the Diamond-League-only path, which build_labeled_dataset
+    produces with neither a cutoff nor a competition column) this reads
+    h2h_rates.csv whole and groups by discipline-year, which is byte-identical
+    to the behaviour the deployed model was trained on. Verified, not assumed.
+
+    run.py deliberately keeps reading the whole file at serve time. Predicting
+    Budapest from every race already run is not lookahead, it is the point."""
     df = df.copy()
-    rates = []
-    for (discipline, year), group in df.groupby(["discipline", "year"]):
-        sub = h2h_df[h2h_df["discipline"] == discipline]
-        lookup = {}
-        for _, r in sub.iterrows():
-            lookup.setdefault(r["a_lower"], {})[r["b_lower"]] = r["win_rate"]
+    keys = group_keys(df)
+    records = dated_h2h_records() if "cutoff" in df.columns else pd.DataFrame()
+
+    if records.empty:
+        rates_df = pd.read_csv(H2H_PATH)
+        rates_df = rates_df[rates_df["meetings"] >= MIN_H2H_MEETINGS]
+        by_discipline = {d: build_h2h_lookup(g) for d, g in rates_df.groupby("discipline")}
+        per_cutoff = None
+    else:
+        by_discipline = None
+        # Aggregated once per distinct (discipline, cut-off) rather than once
+        # per final: a discipline's finals share cut-off dates across years
+        # only rarely, but rebuilding 531 times over 141k records is minutes
+        # of work to arrive at the same tables.
+        per_cutoff = {}
+        for discipline, disc_records in records.groupby("discipline", sort=False):
+            dates = disc_records["date"].to_numpy()
+            cutoffs = sorted({pd.Timestamp(c) for c in
+                              df.loc[df["discipline"] == discipline, "cutoff"].unique()})
+            for cutoff in cutoffs:
+                before = disc_records.iloc[:int(np.searchsorted(dates, cutoff, side="left"))]
+                agg = h2h_aggregate(before)
+                per_cutoff[(discipline, cutoff)] = build_h2h_lookup(agg) if len(agg) else {}
+
+    rates = pd.Series(index=df.index, dtype=float)
+    for _, group in df.groupby(keys, sort=False):
+        discipline = group["discipline"].iloc[0]
+        if per_cutoff is None:
+            lookup = by_discipline.get(discipline, {})
+        else:
+            lookup = per_cutoff.get((discipline, pd.Timestamp(group["cutoff"].iloc[0])), {})
         names_lower = [n.lower() for n in group["athlete_name"]]
-        for name_lower in names_lower:
-            opp_rates = [
-                lookup[name_lower][opp] for opp in names_lower
-                if opp != name_lower and name_lower in lookup and opp in lookup[name_lower]
-            ]
-            rates.append(sum(opp_rates) / len(opp_rates) if opp_rates else 0.5)
+        # Assigned by INDEX, not position. The old version appended to a list
+        # and assigned it positionally, which was only ever correct because
+        # every caller happened to hand it a frame already sorted the way
+        # groupby iterates. Nothing enforced that, and nothing would have
+        # raised if it stopped being true.
+        rates.loc[group.index] = mean_rate_against(lookup, names_lower)
     df["h2h_win_rate"] = rates
     return df
+
+
+def h2h_aggregate(records):
+    """Pairwise records collapsed to win rates, thresholded the way run.py
+    thresholds them. Kept next to its caller rather than in h2h_calculator
+    because the >=2 threshold is a modelling choice, not part of what a
+    head-to-head record IS."""
+    if records.empty:
+        return pd.DataFrame(columns=["athlete_a", "athlete_b", "win_rate"])
+    agg = records.groupby(["athlete_a", "athlete_b"], sort=False).agg(
+        wins=("a_wins", "sum"), meetings=("total", "sum")).reset_index()
+    agg = agg[agg["meetings"] >= MIN_H2H_MEETINGS].copy()
+    agg["win_rate"] = agg["wins"] / agg["meetings"]
+    return agg
 
 
 def mark_final_field(df):
@@ -666,16 +833,25 @@ def mark_final_field(df):
 
 
 DEFAULT_MODEL_PARAMS = {
-    "n_estimators": 200, "max_depth": 16, "min_samples_leaf": 1,
+    "n_estimators": 300, "max_depth": 16, "min_samples_leaf": 4,
     "class_weight": None, "random_state": 42,
-}  # walk-forward-tuned via --tune (2026-08-22, re-tuned 2026-08-23 twice more: once
-   # after extending LABEL_YEARS to 2018-2025, again after adding major_meets_scraper.py
-   # + the recognized-names noise filter). Re-tuned five times total as the feature set,
-   # training-set size, or data-quality filtering changed -- each round picked a
-   # different winner (including flipping class_weight None<->balanced twice), a sign
-   # that hyperparameter search on a dataset this size (459 rows) is itself fairly
-   # noisy -- don't read too much into which single config "won" a given round, but
-   # do still re-tune whenever the data changes rather than reusing an old winner.
+}
+# 2026-09-08: min_samples_leaf 1 -> 4, n_estimators 200 -> 300. This is the
+# FIRST re-tune ever run against the model that actually ships -- --tune built
+# the Diamond-League-only dataset until today, so every earlier round tuned a
+# model nobody runs. The grid put this candidate 0.3 ahead at seed 42, which
+# this project's own noise floor says means nothing; measured properly it is
+# +0.71 toplist on 10 of 10 paired seeds and +0.64 field on 8 of 10. Adopted on
+# that, not on the grid.
+#
+# Earlier history, kept: walk-forward-tuned via --tune (2026-08-22, re-tuned 2026-08-23 twice more: once
+# after extending LABEL_YEARS to 2018-2025, again after adding major_meets_scraper.py
+# + the recognized-names noise filter). Re-tuned five times total as the feature set,
+# training-set size, or data-quality filtering changed -- each round picked a
+# different winner (including flipping class_weight None<->balanced twice), a sign
+# that hyperparameter search on a dataset this size (459 rows) is itself fairly
+# noisy -- don't read too much into which single config "won" a given round, but
+# do still re-tune whenever the data changes rather than reusing an old winner.
 
 
 def _score_fold(train, test, feature_cols, model_params=None):
@@ -791,7 +967,21 @@ def walk_forward_folds(full, feature_cols, model_params=None, verbose=True, stat
     breakdown (see _score_fold). Kept as an optional out-parameter so the
     return signature stays a 2-tuple for tune_hyperparameters()."""
     total_correct, total_possible = 0, 0
-    test_years = LABEL_YEARS[2:]  # first 2 years only ever serve as training seed
+    # Which years get SCORED is deliberately pinned, not derived from how many
+    # label years exist. It used to be LABEL_YEARS[2:] -- "everything after the
+    # first two" -- which is the same thing while the labels are 2018-2025, and
+    # stops being the same thing the moment history is added behind them.
+    #
+    # Extending the labels back to 2009 (2026-09-08) would otherwise have moved
+    # the test years from 2021-2025 to 2011-2025, changing the denominator from
+    # 1,119 predictions to something else and quietly making every accuracy
+    # figure in HANDOFF incomparable to the next one. Worse, the added folds are
+    # the WEAKEST ones -- a 2011 fold trains on 2009-2010 alone -- so more and
+    # better training data would have shown up as a lower number.
+    #
+    # Extra history feeds TRAINING, which is what it is for. The scored
+    # population does not move.
+    test_years = [y for y in LABEL_YEARS if y >= FIRST_TEST_YEAR]
     for test_year in test_years:
         train_years = [y for y in LABEL_YEARS if y < test_year]
         train = full[full["year"].isin(train_years)]
@@ -827,7 +1017,7 @@ def walk_forward_folds(full, feature_cols, model_params=None, verbose=True, stat
     return total_correct, total_possible
 
 
-def tune_hyperparameters(feature_cols):
+def tune_hyperparameters(feature_cols, pooled=False, tiers=None):
     """Small grid search over RandomForest params, each candidate scored by
     the exact same walk-forward folds train_and_backtest() reports honest
     accuracy with -- so "best" here means "generalizes best across 2023,
@@ -835,10 +1025,17 @@ def tune_hyperparameters(feature_cols):
     ranked results and returns the winner, doesn't touch outputs/. Whoever
     reads the results decides whether to make a candidate the new
     DEFAULT_MODEL_PARAMS -- this deliberately isn't automatic, so a
-    retrain's default hyperparameters can't silently drift between runs."""
-    labeled = build_labeled_dataset()
-    ranked = add_season_rank(labeled)
-    full = add_new_features(ranked)
+    retrain's default hyperparameters can't silently drift between runs.
+
+    `pooled` matters and did not used to be here. The DEPLOYED model is the
+    531-final championships pool, and this only ever built the
+    Diamond-League-only dataset -- so every re-tune since that model shipped
+    has been tuning a model nobody runs, and reporting it under a heading that
+    did not say so. Pass the same --pooled --tiers the retrain uses."""
+    if pooled:
+        full = build_pooled_dataset(tiers)
+    else:
+        full = add_new_features(add_season_rank(build_labeled_dataset()))
     full = add_h2h_features(full)
     full = full.dropna(subset=feature_cols)
 
@@ -850,10 +1047,16 @@ def tune_hyperparameters(feature_cols):
         for cw in ["balanced", None]
     ]
 
-    print(f"\n=== Hyperparameter search ({len(grid)} candidates, walk-forward scored) ===")
+    print(f"\n=== Hyperparameter search ({len(grid)} candidates, walk-forward scored"
+          f"{', pooled' if pooled else ''}) ===")
     results = []
     for params in grid:
-        correct, possible = walk_forward_folds(full, feature_cols, params, verbose=False)
+        # n_jobs is a speed knob, not a modelling one -- a forest's trees are
+        # seeded from random_state regardless of how many cores build them --
+        # so it is added at scoring time and kept OUT of the grid dicts, which
+        # are compared against DEFAULT_MODEL_PARAMS by equality below.
+        correct, possible = walk_forward_folds(
+            full, feature_cols, {**params, "n_jobs": -1}, verbose=False)
         acc = round(correct / possible * 100, 1) if possible else 0.0
         results.append((acc, correct, possible, params))
 
@@ -1064,6 +1267,16 @@ if __name__ == "__main__":
                         help="Add gap_variability -- how EVENLY an athlete's season was paced, "
                              "as opposed to meets_count, which only counts it. Measured at "
                              "+0.68 pts mean over 10 seeds (8/10 wins).")
+    parser.add_argument("--with-form", action="store_true",
+                        help="Add sb_age_days, recent_best_ratio and field_gap -- how old the "
+                             "season best is, how far off it the athlete currently is, and how "
+                             "far behind the field's leader they sit in MARKS rather than "
+                             "places. Measured together at +0.73 toplist / +0.97 field over 10 "
+                             "paired seeds (9/10 and 10/10 wins), and +0.73/+1.19 again on ten "
+                             "held-out seeds. Individually two of the three are nothing; the "
+                             "gain is the three together, and it survives a same-width shuffled "
+                             "control, which a gain from merely widening the feature matrix "
+                             "would not.")
     parser.add_argument("--pooled", action="store_true",
                         help="Train on EVERY final we have a podium for (data/labels/finals.csv: "
                              "Diamond League Finals, Olympics, World and European Championships, "
@@ -1102,15 +1315,19 @@ if __name__ == "__main__":
     if args.with_schedule:
         feature_cols += ["gap_variability"]
         label_parts.append("schedule")
+    if args.with_form:
+        feature_cols += ["sb_age_days", "recent_best_ratio", "field_gap"]
+        label_parts.append("form")
     label = " + ".join(label_parts)
 
+    tiers = [t.strip() for t in args.tiers.split(",")] if args.tiers else None
+
     if args.tune:
-        tune_hyperparameters(feature_cols)
+        tune_hyperparameters(feature_cols, pooled=args.pooled, tiers=tiers)
         sys.exit(0)
 
     if args.pooled:
         label += " + pooled finals"
-    tiers = [t.strip() for t in args.tiers.split(",")] if args.tiers else None
     if tiers:
         label += " [" + ",".join(tiers) + "]"
     model, scaler, accuracy_pct, field_pct = train_and_backtest(

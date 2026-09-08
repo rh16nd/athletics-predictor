@@ -1,5 +1,5 @@
 {
-  "toplist_pool_pct": 45.5,
-  "final_field_pct": 62.4,
+  "toplist_pool_pct": 44.8,
+  "final_field_pct": 60.9,
   "note": "toplist_pool_pct picks 3 from every athlete in a discipline-year's toplist (~101); final_field_pct picks 3 from the ~8-10 who actually contested the Final, which is what run.py does."
 }

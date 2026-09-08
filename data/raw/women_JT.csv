@@ -1037,14 +1037,1138 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Nat.1,Venue,Date,Results Score,discipline,
 ,53.92,,Victoria HUDSON,28 MAY 1996,AUT,8.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,53.22,,Anete SIETIŅA,05 FEB 1996,LAT,9.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,50.93,,Haruka KITAGUCHI,16 MAR 1998,JPN,10.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
-,63.88,,Huihui LYU,26 JUN 1989,CHN,1.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,62.96,,Christin HUSSONG,17 MAR 1994,GER,2.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,60.38,,Kara WINGER,10 APR 1986,USA,3.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,52.69,,Jo-Ane VAN DYK,03 OCT 1997,RSA,4.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,60.07,,Laila FERRER,30 JUL 1982,BRA,5.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,59.32,,Kelsey-Lee BARBER,20 SEP 1991,AUS,6.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,56.61,,Nikola OGRODNÍKOVÁ,18 AUG 1990,CZE,7.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,51.97,,Kelechi NWANAGA,24 DEC 1997,NGR,8.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
+1.0,72.28,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,"Gottlieb-Daimler Stadion, Stuttgart (GER)",13 SEP 2008,1306.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14262671,toplist
+2.0,69.81,,Christina OBERGFÖLL,22 AUG 1981,GER,1,,Elstal (GER),31 AUG 2008,1260.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14279102,toplist
+3.0,68.34,,Steffi NERIUS,01 JUL 1972,GER,2,,Elstal (GER),31 AUG 2008,1233.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14279041,toplist
+4.0,67.25,,Mariya ABAKUMOVA,15 JAN 1986,RUS,1,,Irkutsk (RUS),02 AUG 2008,1213.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14297183,toplist
+5.0,66.06,,Linda STAHL,02 OCT 1985,GER,2,,Leverkusen (GER),30 JUL 2008,1190.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14279868,toplist
+6.0,65.75,,Goldie SAYERS,16 JUL 1982,GBR,3,,"National Stadium, Beijing (CHN)",21 AUG 2008,1185.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14276278,toplist
+7.0,64.02,,Olisdeilys MENÉNDEZ,14 NOV 1979,CUB,1,,Bilbao (ESP),21 JUN 2008,1153.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14263481,toplist
+8.0,63.49,,Justine ROBBESON,15 MAY 1985,RSA,1,,Potchefstroom (RSA),16 FEB 2008,1143.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14296805,toplist
+9.0,63.44,,Martina RATEJ,02 NOV 1981,SLO,1,,Celje (SLO),18 JUN 2008,1142.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14300230,toplist
+10.0,63.24,,Natalya SHIMCHUK,01 OCT 1981,BLR,1,,"Parc des Sports, Annecy (FRA)",21 JUN 2008,1138.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14269625,toplist
+11.0,63.23,,Tetyana LYAKHOVICH,20 MAY 1979,UKR,1,,Kyiv (UKR),01 JUL 2008,1138.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14303861,toplist
+12.0,63.01,,Vera REBRIK,25 FEB 1989,UKR,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",10 JUL 2008,1134.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14304081,toplist
+13.0,62.81,,Barbara MADEJCZYK,30 SEP 1976,POL,3q2,,"National Stadium, Beijing (CHN)",19 AUG 2008,1130.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14294063,toplist
+14.0,62.24,,Sunette VILJOEN,06 OCT 1983,RSA,1,,Potchefstroom (RSA),26 FEB 2008,1119.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14297120,toplist
+15.0,62.09,,Li ZHANG,17 JAN 1989,CHN,1,,Beijing (CHN),25 MAY 2008,1117.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14264439,toplist
+16.0,62.04,,Marina NOVIK,19 JAN 1984,BLR,1,,Grodno (BLR),08 JUL 2008,1116.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14269710,toplist
+17.0,61.97,,Monica STOIAN,25 AUG 1982,ROU,2f1,,Halle (GER),24 MAY 2008,1114.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14295952,toplist
+18.0,61.90,,Urszula JASIŃSKA-PIWNICKA,06 DEC 1983,POL,1,,Sopot (POL),04 MAY 2008,1113.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14293775,toplist
+19.0,61.81,,Mercedes CHILLA,19 JAN 1980,ESP,3q1,,"National Stadium, Beijing (CHN)",19 AUG 2008,1112.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14261819,toplist
+20.0,61.74,,Katharina MOLITOR,08 NOV 1983,GER,3f1,,Halle (GER),24 MAY 2008,1110.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14278931,toplist
+21.0,61.59,,Mikaela INGBERG,29 JUL 1974,FIN,1,,Lapua (FIN),08 JUN 2008,1107.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14259508,toplist
+22.0,61.56,,Kara WINGER,10 APR 1986,USA,1f1,,"Champaign, IL (USA)",17 MAY 2008,1107.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14318617,toplist
+23.0,61.23,,Felicia ŢILEA-MOLDOVAN,29 SEP 1967,ROU,1,,Bucureşti (ROU),06 JUN 2008,1101.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14296002,toplist
+24.0,61.21,,Sava LIKA,27 JUN 1970,GRE,1,,Athina (GRE),14 JUN 2008,1100.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14280756,toplist
+25.0,61.02,,Jarmila KLIMEŠOVÁ,09 FEB 1981,CZE,1,,Kalamata (GRE),04 JUN 2008,1097.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14263013,toplist
+26.0,60.84,,Yanet CRUZ,08 FEB 1988,CUB,1,,Uberlandia (BRA),11 MAY 2008,1094.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14263617,toplist
+27.0,60.68,,Dan SONG,05 JUL 1990,CHN,1,,Chengdu (CHN),30 MAR 2008,1091.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14265337,toplist
+28.0,60.60,,Zahra BANI,31 DEC 1979,ITA,4,,Zaragoza (ESP),31 MAY 2008,1089.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14283709,toplist
+29.0,60.30,,Chunfeng CHANG,04 MAY 1988,CHN,1,,Shizuoka (JPN),03 MAY 2008,1084.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14266720,toplist
+30.0,60.19,,Claudia COSLOVICH,26 APR 1972,ITA,1,,Gorizia (ITA),22 JUN 2008,1081.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14284113,toplist
+31.0,60.13,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,6q1,,"National Stadium, Beijing (CHN)",19 AUG 2008,1080.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14290053,toplist
+32.0,60.12,,Lada CHERNOVA,1970,RUS,1,,"Meteor, Zhukovskiy (RUS)",15 JUN 2008,1080.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14297522,toplist
+33.0,59.92,,Dana POUNDS-LYON,05 JUN 1984,USA,1,,"Tucson, AZ (USA)",24 MAY 2008,1076.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14319213,toplist
+34.0,59.88,,Moonika AAVA,19 JUN 1979,EST,1,,Tallinn (EST),14 MAY 2008,1076.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14260212,toplist
+35.0,59.80,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,1,,Lapinlahti (FIN),20 JUL 2008,1074.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14283446,toplist
+36.0,59.76,,Sílvia CRUZ,29 DEC 1980,POR,2,,Leiria (POR),21 JUN 2008,1074.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14294849,toplist
+37.0,59.62,,Mariya YAKOVENKO,06 JAN 1982,RUS,2,,"Meteor, Zhukovskiy (RUS)",15 JUN 2008,1071.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14299769,toplist
+38.0,59.59,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,3,,Kaunas (LTU),08 JUN 2008,1070.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14290245,toplist
+39.0,59.40,,Nora Aida BICET,29 OCT 1977,CUB,2,,Bilbao (ESP),21 JUN 2008,1067.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14263677,toplist
+40.0,59.30,,Alessandra NOBRE RESENDE,05 MAR 1975,BRA,1,,Sâo Caetano do Sul (BRA),26 JAN 2008,1065.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14268938,toplist
+41.0,59.25,,Lingyu LI,26 JAN 1989,CHN,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",10 JUL 2008,1064.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14266005,toplist
+42.0,59.05,,Olha IVANKOVA,07 JAN 1973,UKR,1,,Kyiv (UKR),31 MAY 2008,1060.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14303651,toplist
+43.0,59.04,,Chunhua LIU,01 OCT 1986,CHN,1,,Shijiazhuang (CHN),13 OCT 2008,1060.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14265830,toplist
+44.0,58.97,,Esther EISENLAUER,29 OCT 1977,GER,6f1,,Halle (GER),24 MAY 2008,1059.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14277476,toplist
+45.0,58.89,,Jelena JAAKKOLA,07 MAR 1989,FIN,1,,Kuortane (FIN),25 MAY 2008,1057.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14259503,toplist
+46.0,58.86,,Kirsi AHONEN,08 APR 1976,FIN,1,,Tampere (FIN),26 JUL 2008,1057.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14259657,toplist
+47.0,58.84,,Nikola TOMEČKOVÁ-BREJCHOVÁ,25 JUN 1974,CZE,7,,Ostrava (CZE),12 JUN 2008,1056.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14262645,toplist
+48.0,58.83,,Maria Nicoleta NEGOIŢĂ,06 DEC 1986,ROU,1,,Zalău (ROU),03 MAY 2008,1056.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14295792,toplist
+49.0,58.77,,Kathryn MITCHELL,10 JUL 1982,AUS,1,,Ballarat (AUS),15 JAN 2008,1055.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14271632,toplist
+49.0,58.77,,Tatjana JELAČA,10 AUG 1990,SRB,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",10 JUL 2008,1055.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14300348,toplist
+51.0,58.76,,Gyeongae GIM,05 MAR 1988,KOR,1,,Daegu (KOR),04 JUN 2008,1055.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14289719,toplist
+52.0,58.67,,Inga STASIULIONYTÉ,29 JUN 1981,LTU,1,,"Walnut, CA (USA)",20 APR 2008,1053.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14290392,toplist
+53.0,58.62,,Sandra SCHAFFARZIK,22 JUN 1987,GER,7f1,,Halle (GER),24 MAY 2008,1052.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14279503,toplist
+54.0,58.39,,Laverne EVE,16 JUN 1965,BAH,3,,Uberlandia (BRA),11 MAY 2008,1048.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14270643,toplist
+55.0,58.31,,Kim KREINER,26 JUL 1977,USA,2,,"Eugene, OR (USA)",09 MAY 2008,1047.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14314757,toplist
+56.0,58.25,,Rachel BUCIARSKI,10 OCT 1986,USA,1f1,,"Eugene, OR (USA)",25 APR 2008,1046.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14324890,toplist
+57.0,58.20,,Taina UPPA-KOLKKALA,24 OCT 1976,FIN,4,,Kuortane (FIN),25 MAY 2008,1045.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14258905,toplist
+58.0,57.95,,Nikolett SZABÓ,03 MAR 1980,HUN,5,,"Stadion Juliska, Praha (CZE)",16 JUN 2008,1040.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14282399,toplist
+59.0,57.90,,Oksana GROMOVA,23 SEP 1980,RUS,2,,Kazan (RUS),19 JUL 2008,1039.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14297872,toplist
+60.0,57.64,,Kimberley MICKLE,28 DEC 1984,AUS,2,,Sydney (AUS),16 FEB 2008,1034.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14271652,toplist
+61.0,57.58,,Ruby RADOCAJ,08 MAR 1985,USA,2f2,,"Champaign, IL (USA)",17 MAY 2008,1033.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14319450,toplist
+62.0,57.55,,Tazmin BRITS,08 JAN 1991,RSA,1,,Pretoria (RSA),19 APR 2008,1033.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14296112,toplist
+63.0,57.45,,Margaryta DOROZHON,04 SEP 1987,UKR,4,,Torino (ITA),06 JUN 2008,1031.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14303544,toplist
+64.0,57.35,,Juan XUE,10 FEB 1986,CHN,3,,Beijing (CHN),25 MAY 2008,1029.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14264750,toplist
+64.0,57.35,,Lin FU,21 FEB 1989,CHN,2,,Shijiazhuang (CHN),13 OCT 2008,1029.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14266470,toplist
+66.0,57.31,,Nadia VIGLIANO,24 JUN 1977,FRA,1,,Draguignan (FRA),08 JUN 2008,1028.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14274214,toplist
+66.0,57.31,,Angeliki TSIOLAKOUDI,10 MAY 1976,GRE,2,,Athina (GRE),14 JUN 2008,1028.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14280967,toplist
+68.0,57.25,,Sarah WALTER,05 MAY 1978,FRA,1,,Albertville (FRA),10 JUL 2008,1027.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14274268,toplist
+69.0,57.22,,Emma-Gene EVANS,25 JAN 1984,LCA,1,,"El Paso, TX (USA)",29 MAR 2008,1026.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14290131,toplist
+70.0,57.20,,Kateema RIETTIE,05 DEC 1973,JAM,1,,"New York, NY (USA)",22 JUN 2008,1026.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14285875,toplist
+71.0,56.78,,Meagan HALLIWILL,26 NOV 1985,USA,1,,"Williamsburg, VA (USA)",04 APR 2008,1018.0,women_JT,2008,https://worldathletics.org/athletes/united-states/meagan-halliwill-14311774,toplist
+72.0,56.72,,Olivia MCKOY,01 DEC 1973,JAM,1,,Kingston (JAM),29 JUN 2008,1017.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14285803,toplist
+73.0,56.71,,Yuki EBIHARA,28 OCT 1985,JPN,1,,Kawasaki (JPN),26 JUN 2008,1017.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14286145,toplist
+73.0,56.71,,Ning MA,04 NOV 1983,CHN,4,,Shijiazhuang (CHN),13 OCT 2008,1017.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14265639,toplist
+75.0,56.70,,Ioanna PARKA,31 OCT 1985,GRE,2,,Athina (GRE),09 MAY 2008,1017.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14280853,toplist
+75.0,56.70,,Raine KUNINGAS,20 OCT 1988,EST,2,,Tallinn (EST),14 MAY 2008,1017.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14260122,toplist
+77.0,56.40,,María de la Caridad ÁLVAREZ,30 AUG 1975,CUB,1,,La Habana (CUB),16 FEB 2008,1011.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14263694,toplist
+78.0,56.35,,Buoban PHAMANG,27 DEC 1986,THA,13q2,,"National Stadium, Beijing (CHN)",19 AUG 2008,1010.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14302694,toplist
+79.0,56.32,,Lindy LEVEAUX-AGRICOLE,14 NOV 1978,SEY,14q2,,"National Stadium, Beijing (CHN)",19 AUG 2008,1010.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14300023,toplist
+80.0,56.23,,Elisabeth PAUER,01 MAY 1983,AUT,2,,Potchefstroom (RSA),26 FEB 2008,1008.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14270820,toplist
+81.0,56.21,,Stefanie HESSLER,16 MAR 1983,GER,2,,Zeulenroda (GER),27 JUN 2008,1008.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14278025,toplist
+81.0,56.21,,Beibei LIU,05 OCT 1990,CHN,5,,Shijiazhuang (CHN),13 OCT 2008,1008.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14941190,toplist
+83.0,56.14,,Anastasiya SVECHNIKOVA,20 SEP 1992,UZB,1,,Tashkent (UZB),17 JUL 2008,1006.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14325074,toplist
+84.0,56.06,,Franziska KREBS,11 OCT 1985,GER,2,,Kienbaum (GER),18 FEB 2008,1005.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14278508,toplist
+85.0,55.99,,Bregje CROLLA,31 JAN 1986,NED,1ce1,,"FBK Stadium, Hengelo (NED)",29 JUN 2008,1004.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14291557,toplist
+86.0,55.96,,Zuleima ARAMÉNDIZ,23 SEP 1975,COL,1,,Bogotá (COL),19 APR 2008,1003.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14264061,toplist
+87.0,55.80,,Yainelis RIBEAUX,30 DEC 1987,CUB,1,,La Habana (CUB),20 JUN 2008,1000.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14263338,toplist
+88.0,55.74,,Pauliina LAAMANEN,10 OCT 1984,FIN,3,,Lapua (FIN),08 JUN 2008,999.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14259337,toplist
+89.0,55.73,,Kayla WILKINSON-COLGROVE,20 AUG 1984,USA,1,,"Boulder, CO (USA)",16 MAY 2008,999.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14324190,toplist
+90.0,55.70,,Li ZHANG,19 OCT 1978,CHN,2,,Chengdu (CHN),29 MAR 2008,998.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14264441,toplist
+91.0,55.63,,Alexandra Renalda NASTA-TSISIOU,02 JUL 1981,CYP,8,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,997.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14280492,toplist
+92.0,55.61,,Meihong WU,05 JUN 1984,CHN,7,,Beijing (CHN),25 MAY 2008,997.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14264929,toplist
+93.0,55.48,,Momoko MATSUMOTO,07 DEC 1987,JPN,1,,Isahaya (JPN),17 MAY 2008,994.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14287064,toplist
+94.0,55.44,,Joanna BALDYGA,13 DEC 1986,POL,3,,Szczecin (POL),05 JUL 2008,994.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14293398,toplist
+95.0,55.15,,Kamila CHUDZIK,09 DEC 1986,POL,1ce,,Zielona Góra (POL),07 JUN 2008,988.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14293505,toplist
+96.0,54.86,,Liliya DUSMETOVA,11 FEB 1981,UZB,1,,Tashkent (UZB),23 MAY 2008,983.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14325009,toplist
+97.0,54.85,,Andrea KVĚTOVÁ,27 FEB 1984,CZE,1q2,,"Des Moines, IA (USA)",12 JUN 2008,983.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14262954,toplist
+98.0,54.81,,Lilli SCHWARZKOPF,28 AUG 1983,GER,1ce2,,"Stadionring, Ratingen (GER)",22 JUN 2008,982.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14279763,toplist
+99.0,54.75,,María GONZÁLEZ,28 MAR 1982,VEN,2,,Bogotá (COL),19 JUL 2008,981.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14325140,toplist
+99.0,54.75,,Haean SEO,01 JUL 1985,KOR,1,,Yeochun (KOR),12 OCT 2008,981.0,women_JT,2008,https://worldathletics.org/athletes/athlete=14289889,toplist
+1.0,68.59,,Christina OBERGFÖLL,22 AUG 1981,GER,1,,"Estádio Dr. Magalhães Pessoa, Leiria (POR)",20 JUN 2009,1237.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14279102,toplist
+2.0,68.23,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,"Stadion Juliska, Praha (CZE)",08 JUN 2009,1231.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14262671,toplist
+3.0,67.30,,Steffi NERIUS,01 JUL 1972,GER,1,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1213.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14279041,toplist
+4.0,65.43,,Sunette VILJOEN,06 OCT 1983,RSA,1q2,,Beograd (SRB),07 JUL 2009,1179.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14297120,toplist
+5.0,64.51,,Madara PALAMEIKA,18 JUN 1987,LAT,1,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",19 JUL 2009,1162.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14290055,toplist
+5.0,64.51,,Monica STOIAN,25 AUG 1982,ROU,3,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1162.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14295952,toplist
+7.0,63.95,,Kara WINGER,10 APR 1986,USA,1f2,,"Eugene, OR (USA)",27 JUN 2009,1151.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14318617,toplist
+8.0,63.86,,Linda STAHL,02 OCT 1985,GER,1q1,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1150.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14279868,toplist
+9.0,63.53,,Urszula JASIŃSKA-PIWNICKA,06 DEC 1983,POL,1,,Kalamata (GRE),30 MAY 2009,1143.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14293775,toplist
+10.0,63.49,,Kimberley MICKLE,28 DEC 1984,AUS,1,,Perth (AUS),14 MAR 2009,1143.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14271652,toplist
+11.0,63.42,,Martina RATEJ,02 NOV 1981,SLO,2q1,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1141.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14300230,toplist
+12.0,63.25,,Marina NOVIK,19 JAN 1984,BLR,1,,Minsk (BLR),01 AUG 2009,1138.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14269710,toplist
+13.0,63.18,,Yainelis RIBEAUX,30 DEC 1987,CUB,1,,La Habana (CUB),19 JUN 2009,1137.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14263338,toplist
+14.0,63.11,,Olisdeilys MENÉNDEZ,14 NOV 1979,CUB,6,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1136.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14263481,toplist
+15.0,62.90,,Yanet CRUZ,08 FEB 1988,CUB,1f1,,La Habana (CUB),27 FEB 2009,1132.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14263617,toplist
+16.0,62.69,,Katharina MOLITOR,08 NOV 1983,GER,4,,Leverkusen (GER),31 JUL 2009,1128.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14278931,toplist
+17.0,62.26,,Vera REBRIK,25 FEB 1989,UKR,2,,Osaka (JPN),09 MAY 2009,1120.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14304081,toplist
+18.0,62.20,,Maria Nicoleta NEGOIŢĂ,06 DEC 1986,ROU,1,,Onesti (ROU),09 MAY 2009,1119.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14295792,toplist
+19.0,61.90,,Valeriya ZABRUSKOVA,29 JUL 1975,RUS,1,,Cheboksary (RUS),25 JUL 2009,1113.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14299840,toplist
+20.0,61.76,,Mercedes CHILLA,19 JAN 1980,ESP,1,,Huelva (ESP),10 JUN 2009,1111.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14261819,toplist
+21.0,61.37,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,1,,Reykjavík (ISL),16 MAY 2009,1103.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14283446,toplist
+22.0,61.03,,Mikaela INGBERG,29 JUL 1974,FIN,2,,Pihtipudas (FIN),28 JUN 2009,1097.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14259508,toplist
+23.0,60.97,,Sava LIKA,27 JUN 1970,GRE,1,,Pescara (ITA),02 JUL 2009,1096.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14280756,toplist
+24.0,60.84,,Yuki EBIHARA,28 OCT 1985,JPN,1,,Tokyo (JPN),11 APR 2009,1094.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14286145,toplist
+25.0,60.76,,Moonika AAVA,19 JUN 1979,EST,1f1,,Los Realejos (ESP),15 MAR 2009,1092.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14260212,toplist
+26.0,60.65,,Zahra BANI,31 DEC 1979,ITA,2,,Pescara (ITA),02 JUL 2009,1090.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14283709,toplist
+26.0,60.65,,Chunhua LIU,01 OCT 1986,CHN,1,,Jinan (CHN),23 OCT 2009,1090.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14265830,toplist
+28.0,60.60,,Margaryta DOROZHON,04 SEP 1987,UKR,1,,Kyiv (UKR),17 MAY 2009,1089.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14303544,toplist
+29.0,60.53,,Kim KREINER,26 JUL 1977,USA,1,,"Portland, OR (USA)",25 JUL 2009,1088.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14314757,toplist
+30.0,60.35,,Tatjana JELAČA,10 AUG 1990,SRB,1,,"Karađorđe Stadium, Novi Sad (SRB)",26 JUL 2009,1084.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14300348,toplist
+31.0,60.00,,Mareike RITTWEG,01 JUN 1984,GER,5,,Baunatal (GER),05 JUN 2009,1078.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14279401,toplist
+32.0,59.94,,Li ZHANG,17 JAN 1989,CHN,2,,Jinan (CHN),23 OCT 2009,1077.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14264439,toplist
+33.0,59.82,,Goldie SAYERS,16 JUL 1982,GBR,2,,"Crystal Palace, London (GBR)",25 JUL 2009,1075.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14276278,toplist
+34.0,59.62,,Rachel BUCIARSKI,10 OCT 1986,USA,1,,"Fayetteville, AR (USA)",12 JUN 2009,1071.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14324890,toplist
+35.0,59.31,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,1,,Ventspils (LAT),25 JUL 2009,1065.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14290245,toplist
+36.0,59.10,,Nora Aida BICET,29 OCT 1977,CUB,2,,Huelva (ESP),10 JUN 2009,1061.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14263677,toplist
+37.0,59.01,,Elisabeth PAUER,01 MAY 1983,AUT,3,,Chania (GRE),01 JUN 2009,1060.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14270820,toplist
+38.0,58.99,,Ning MA,04 NOV 1983,CHN,3,,Jinan (CHN),23 OCT 2009,1059.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14265639,toplist
+39.0,58.83,,Barbara MADEJCZYK,30 SEP 1976,POL,3,,"Stadion Juliska, Praha (CZE)",08 JUN 2009,1056.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14294063,toplist
+39.0,58.83,,Susanne SIEBERT,02 AUG 1984,GER,4,,Ulm (GER),05 JUL 2009,1056.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14279431,toplist
+41.0,58.65,,Alessandra NOBRE RESENDE,05 MAR 1975,BRA,3,,"Mangueirão, Belém (BRA)",24 MAY 2009,1053.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14268938,toplist
+42.0,58.52,,Mariya YAKOVENKO,06 JAN 1982,RUS,2f1,,"Adler, Sochi (RUS)",20 FEB 2009,1051.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14299769,toplist
+43.0,58.44,,Silvia Aparecida DE OLIVEIRA,23 NOV 1975,BRA,4,,Sâo Caetano do Sul (BRA),07 FEB 2009,1049.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14269194,toplist
+44.0,58.24,,Raine KUNINGAS,20 OCT 1988,EST,4,,Tallinn (EST),25 AUG 2009,1045.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14260122,toplist
+45.0,58.21,,Elizabeth GLEADLE,05 DEC 1988,CAN,6,,Beograd (SRB),09 JUL 2009,1045.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14267948,toplist
+46.0,58.08,,Zhang YING,05 JAN 1988,CHN,4,,Jinan (CHN),23 OCT 2009,1042.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14264582,toplist
+47.0,57.99,,Dayami DELGADO,14 MAR 1985,CUB,3,,La Habana (CUB),19 JUN 2009,1041.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14263609,toplist
+48.0,57.88,,Jarmila KLIMEŠOVÁ,09 FEB 1981,CZE,2,,Praha (CZE),28 JUN 2009,1039.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14263013,toplist
+49.0,57.83,,Marina MAKSIMOVA,20 MAY 1985,RUS,2,,Cheboksary (RUS),25 JUL 2009,1038.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14298524,toplist
+50.0,57.82,,Lingyu LI,26 JAN 1989,CHN,2,,Jinan (CHN),05 JUL 2009,1038.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14266005,toplist
+51.0,57.70,,Gyeongae GIM,05 MAR 1988,KOR,1,,Gwangju (KOR),30 OCT 2009,1035.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14289719,toplist
+52.0,57.68,,Oona SORMUNEN,02 AUG 1989,FIN,1,,Saarijärvi (FIN),20 JUN 2009,1035.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14258967,toplist
+53.0,57.67,,Olha IVANKOVA,07 JAN 1973,UKR,1,,Yalta (UKR),22 JUL 2009,1035.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14303651,toplist
+54.0,57.63,,Felicia ŢILEA-MOLDOVAN,29 SEP 1967,ROU,3,,Bucureşti (ROU),05 JUN 2009,1034.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14296002,toplist
+55.0,57.51,,Sandra SCHAFFARZIK,22 JUN 1987,GER,1,,Türkheim (GER),17 MAY 2009,1032.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14279503,toplist
+56.0,57.48,,Lindy LEVEAUX-AGRICOLE,14 NOV 1978,SEY,1,,Beirut (LBN),01 OCT 2009,1031.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14300023,toplist
+57.0,57.44,,Laverne EVE,16 JUN 1965,BAH,1,,"Coral Gables, FL (USA)",11 APR 2009,1031.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14270643,toplist
+58.0,57.36,,Franziska KREBS,11 OCT 1985,GER,2,,Schönebeck (GER),17 JUN 2009,1029.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14278508,toplist
+59.0,57.27,,Marina BUKSA,15 MAR 1987,BLR,1f1,,Staiki (BLR),04 FEB 2009,1027.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14269961,toplist
+60.0,57.09,,Chunfeng CHANG,04 MAY 1988,CHN,5,,Jinan (CHN),23 OCT 2009,1024.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14266720,toplist
+61.0,56.99,,Haean SEO,01 JUL 1985,KOR,2,,Gwangju (KOR),30 OCT 2009,1022.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14289889,toplist
+62.0,56.91,,Esther EISENLAUER,29 OCT 1977,GER,5,,Biberach (GER),24 JUN 2009,1021.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14277476,toplist
+63.0,56.83,,Lin FU,21 FEB 1989,CHN,2,,Suzhou (CHN),22 MAY 2009,1019.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14266470,toplist
+64.0,56.80,,Mathilde ANDRAUD,28 APR 1989,FRA,1,,Nice (FRA),28 JUN 2009,1019.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14258756,toplist
+65.0,56.75,,Jucilene Sales DE LIMA,14 SEP 1990,BRA,6,,"Mangueirão, Belém (BRA)",24 MAY 2009,1018.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14269216,toplist
+66.0,56.62,,Melissa DUPRÉ,05 NOV 1986,BEL,1,,Ústí nad Labem (CZE),16 APR 2009,1015.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14270382,toplist
+67.0,56.61,,Gerlize DE KLERK,23 MAR 1989,RSA,2,,Potchefstroom (RSA),07 NOV 2009,1015.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14296198,toplist
+68.0,56.52,,Laura CORNFORD,11 JUN 1988,AUS,1,,Sydney (AUS),14 FEB 2009,1014.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14272281,toplist
+69.0,56.50,,Juan XUE,10 FEB 1986,CHN,3,,Suzhou (CHN),22 MAY 2009,1013.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14264750,toplist
+70.0,56.49,,Beibei WANG,22 JAN 1989,CHN,5,,Jinan (CHN),05 JUL 2009,1013.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14265158,toplist
+71.0,56.31,,Nikolett SZABÓ,03 MAR 1980,HUN,,,Budapest (HUN),29 JUL 2009,1010.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14282399,toplist
+72.0,56.30,,Xiaowei DU,11 AUG 1987,CHN,4,,Jiaxing (CHN),14 JUN 2009,1009.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14266522,toplist
+73.0,56.25,,Linda BRIVULE,09 SEP 1983,LAT,1f1,,"Austin, TX (USA)",04 APR 2009,1009.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14289956,toplist
+74.0,56.21,,Jelena JAAKKOLA,07 MAR 1989,FIN,3,,Pihtipudas (FIN),28 JUN 2009,1008.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14259503,toplist
+75.0,56.15,,Annika PETERSSON,10 JAN 1979,SWE,1,,Malmö (SWE),02 AUG 2009,1007.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14302344,toplist
+76.0,56.09,,Hana'a OMAR,03 JAN 1983,EGY,1,,Damascus (SYR),06 OCT 2009,1006.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14262219,toplist
+77.0,55.91,,Anna WESSMAN,09 OCT 1989,SWE,3,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",19 JUL 2009,1002.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14302530,toplist
+78.0,55.87,,Oksana GROMOVA,23 SEP 1980,RUS,1,,Tula (RUS),01 AUG 2009,1002.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14297872,toplist
+79.0,55.83,,Tazmin BRITS,08 JAN 1991,RSA,1,,Potchefstroom (RSA),04 MAR 2009,1001.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14296112,toplist
+80.0,55.76,,Kanako SHIBA,11 MAY 1990,JPN,1,,Kofu (JPN),18 OCT 2009,999.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14287812,toplist
+81.0,55.68,,Kirsi AHONEN,08 APR 1976,FIN,1,,"Fana Stadion, Bergen (NOR)",20 JUN 2009,998.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14259657,toplist
+82.0,55.67,,Sílvia CRUZ,29 DEC 1980,POR,1,,Seixal (POR),26 JUL 2009,998.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14294849,toplist
+83.0,55.65,,Meihong WU,05 JUN 1984,CHN,7,,Jinan (CHN),05 JUL 2009,997.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14264929,toplist
+84.0,55.61,,Anna URBICKA,01 MAR 1987,POL,1,,Biala Podlaska (POL),30 MAY 2009,997.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14294589,toplist
+85.0,55.60,,Jana TRAKMANN,17 FEB 1982,EST,2,,Jögeva (EST),28 MAY 2009,997.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14259990,toplist
+85.0,55.60,,Angeliki TSIOLAKOUDI,10 MAY 1976,GRE,2,,Thessaloniki (GRE),02 AUG 2009,997.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14280967,toplist
+87.0,55.58,,Liliya DUSMETOVA,11 FEB 1981,UZB,1,,Tashkent (UZB),21 MAY 2009,996.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14325009,toplist
+87.0,55.58,,Haruka MATOBA,24 APR 1987,JPN,1,,Tokyo (JPN),04 SEP 2009,996.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14287038,toplist
+89.0,55.57,,Nivia Lidia MÉNDEZ,11 MAY 1990,CUB,4,,La Habana (CUB),25 APR 2009,996.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14263474,toplist
+90.0,55.52,,Nadia VIGLIANO,24 JUN 1977,FRA,1,,Angers (FRA),23 JUL 2009,995.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14274214,toplist
+91.0,55.40,,Panayota TOULOUMTZI,26 SEP 1986,GRE,3,,Thessaloniki (GRE),02 AUG 2009,993.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14280944,toplist
+92.0,55.38,,Marissa TSCHIDA,07 JUL 1989,USA,1,,"Seattle, WA (USA)",02 MAY 2009,992.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14323020,toplist
+93.0,55.33,,Li ZHANG,19 OCT 1978,CHN,8,,Jinan (CHN),23 OCT 2009,992.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14264441,toplist
+94.0,55.32,,Emika YOSHIDA,10 DEC 1985,JPN,1,,Shizuoka (JPN),03 MAY 2009,991.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14288516,toplist
+95.0,55.25,,Lilli SCHWARZKOPF,28 AUG 1983,GER,1ce,,"Stadionring, Ratingen (GER)",21 JUN 2009,990.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14279763,toplist
+96.0,55.22,,Carita HINKKA,01 APR 1991,FIN,4,,Pihtipudas (FIN),28 JUN 2009,989.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14259537,toplist
+96.0,55.22,,Feng ZHANG,1989,CHN,8,,Beograd (SRB),09 JUL 2009,989.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14264481,toplist
+98.0,55.18,,Katie CORONADO,13 SEP 1986,USA,2f1,,"Austin, TX (USA)",04 APR 2009,989.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14308113,toplist
+99.0,55.16,,Zuleima ARAMÉNDIZ,23 SEP 1975,COL,1,,Medellín (COL),25 APR 2009,988.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14264061,toplist
+100.0,55.08,,Alicia DESHASIER,15 APR 1984,USA,4f2,,"Eugene, OR (USA)",27 JUN 2009,987.0,women_JT,2009,https://worldathletics.org/athletes/athlete=14308936,toplist
+1.0,68.66,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,"Stadio Olimpico, Roma (ITA)",10 JUN 2010,1239.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14262671,toplist
+2.0,68.63,,Christina OBERGFÖLL,22 AUG 1981,GER,1,,Elstal (GER),12 SEP 2010,1238.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14279102,toplist
+3.0,67.16,,Martina RATEJ,02 NOV 1981,SLO,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",14 MAY 2010,1211.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14300230,toplist
+4.0,66.81,,Linda STAHL,02 OCT 1985,GER,1,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1204.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14279868,toplist
+5.0,66.67,,Kara WINGER,10 APR 1986,USA,1,,"Drake Stadium, Des Moines, IA (USA)",25 JUN 2010,1202.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14318617,toplist
+6.0,66.38,,Sunette VILJOEN,06 OCT 1983,RSA,1,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1196.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14297120,toplist
+7.0,64.53,,Katharina MOLITOR,08 NOV 1983,GER,1,,Leverkusen (GER),25 JUN 2010,1162.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14278931,toplist
+8.0,64.07,,Mercedes CHILLA,19 JAN 1980,ESP,1,,Valencia (ESP),12 JUN 2010,1153.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14261819,toplist
+9.0,63.36,,Vera REBRIK,25 FEB 1989,UKR,1,,Istanbul (TUR),12 JUN 2010,1140.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14304081,toplist
+10.0,63.15,,Goldie SAYERS,16 JUL 1982,GBR,1,,Bedford (GBR),31 MAY 2010,1136.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14276278,toplist
+11.0,62.07,,Yanet CRUZ,08 FEB 1988,CUB,1,,La Habana (CUB),12 MAR 2010,1116.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14263617,toplist
+12.0,62.02,,Madara PALAMEIKA,18 JUN 1987,LAT,1,,Jékabpils (LAT),17 JUN 2010,1115.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14290055,toplist
+13.0,61.56,,Yuki EBIHARA,28 OCT 1985,JPN,1,,Guangzhou (CHN),25 NOV 2010,1107.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14286145,toplist
+14.0,61.51,,Juan XUE,10 FEB 1986,CHN,1,,Jinan (CHN),08 AUG 2010,1106.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14264750,toplist
+15.0,61.43,,Elisabeth PAUER,01 MAY 1983,AUT,1,,Villach (AUT),10 JUL 2010,1104.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14270820,toplist
+16.0,61.36,,Kimberley MICKLE,28 DEC 1984,AUS,2,,"Poljud Stadion, Split (CRO)",04 SEP 2010,1103.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14271652,toplist
+17.0,61.23,,Justine ROBBESON,15 MAY 1985,RSA,2,,Potchefstroom (RSA),17 APR 2010,1101.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14296805,toplist
+18.0,61.13,,Olisdeilys MENÉNDEZ,14 NOV 1979,CUB,1,,La Habana (CUB),22 MAY 2010,1099.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14263481,toplist
+19.0,61.04,,Esther EISENLAUER,29 OCT 1977,GER,4,,Braunschweig (GER),18 JUL 2010,1097.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14277476,toplist
+20.0,60.88,,Yainelis RIBEAUX,30 DEC 1987,CUB,1,,La Habana (CUB),17 JUN 2010,1094.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14263338,toplist
+21.0,60.74,,Jarmila KLIMEŠOVÁ,09 FEB 1981,CZE,1,,Olomouc (CZE),08 MAY 2010,1092.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14263013,toplist
+22.0,60.72,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,4,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1091.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14283446,toplist
+23.0,60.68,,Laura WHITTINGHAM,06 JUN 1986,GBR,1,,Bedford (GBR),15 AUG 2010,1091.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14276725,toplist
+24.0,60.60,,Lingyu LI,26 JAN 1989,CHN,2,,Jinan (CHN),08 AUG 2010,1089.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14266005,toplist
+25.0,60.58,,Li ZHANG,17 JAN 1989,CHN,1,,Chongqing (CHN),26 JUN 2010,1089.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14264439,toplist
+26.0,60.26,,Mareike RITTWEG,01 JUN 1984,GER,1,,Osterode (GER),22 JUN 2010,1083.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14279401,toplist
+27.0,60.11,,Rachel BUCIARSKI,10 OCT 1986,USA,1,,Rabat (MAR),06 JUN 2010,1080.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14324890,toplist
+28.0,60.08,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,1,,Valmiera (LAT),17 JUL 2010,1079.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14290053,toplist
+29.0,60.04,,Marina MAKSIMOVA,20 MAY 1985,RUS,1,,Yerino (RUS),11 JUN 2010,1079.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14298524,toplist
+30.0,59.87,,Zahra BANI,31 DEC 1979,ITA,1,,Grosseto (ITA),01 JUL 2010,1076.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14283709,toplist
+31.0,59.68,,Kathryn MITCHELL,10 JUL 1982,AUS,1,,Melbourne (AUS),28 MAR 2010,1072.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14271632,toplist
+32.0,59.27,,Bregje CROLLA,31 JAN 1986,NED,1,,Sittard (NED),06 JUN 2010,1064.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14291557,toplist
+33.0,58.99,,Evelien DEKKERS,28 APR 1988,NED,1f2,,"Eugene, OR (USA)",12 JUN 2010,1059.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14291600,toplist
+34.0,58.85,,Felicia ŢILEA-MOLDOVAN,29 SEP 1967,ROU,4,,Barcelona (ESP),09 JUL 2010,1057.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14296002,toplist
+35.0,58.82,,Urszula JASIŃSKA-PIWNICKA,06 DEC 1983,POL,1,,Gdansk (POL),15 MAY 2010,1056.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14293775,toplist
+36.0,58.66,,Monica STOIAN,25 AUG 1982,ROU,5f1,,Arles (FRA),21 MAR 2010,1053.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14295952,toplist
+37.0,58.62,,Anastasiya SVECHNIKOVA,20 SEP 1992,UZB,1,,Tashkent (UZB),28 SEP 2010,1052.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14325074,toplist
+38.0,58.60,,Hana'a OMAR,03 JAN 1983,EGY,1,,Cairo (EGY),25 JUN 2010,1052.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14262219,toplist
+39.0,58.54,,Tatjana JELAČA,10 AUG 1990,SRB,1,,Beograd (SRB),20 JUN 2010,1051.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14300348,toplist
+40.0,58.53,,Nora Aida BICET,29 OCT 1977,CUB,1,,Gorizia (ITA),21 JUL 2010,1051.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14263677,toplist
+41.0,58.49,,Chunhua LIU,01 OCT 1986,CHN,1,,Zhaoqing (CHN),29 MAY 2010,1050.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14265830,toplist
+42.0,58.46,,Maria Nicoleta NEGOIŢĂ,06 DEC 1986,ROU,1,,Constanta (ROU),04 JUN 2010,1049.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14295792,toplist
+43.0,58.41,,Xiaowei DU,11 AUG 1987,CHN,4,,Jinan (CHN),08 AUG 2010,1049.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14266522,toplist
+44.0,58.33,,Mariya YAKOVENKO,06 JAN 1982,RUS,1,,"Adler, Sochi (RUS)",25 FEB 2010,1047.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14299769,toplist
+45.0,58.17,,Zhang YING,05 JAN 1988,CHN,1,,Suzhou (CHN),24 APR 2010,1044.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14264582,toplist
+46.0,58.14,,Marina NOVIK,19 JAN 1984,BLR,1,,Vitebsk (BLR),15 MAY 2010,1044.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14269710,toplist
+47.0,58.11,,Olha IVANKOVA,07 JAN 1973,UKR,2,,Yalta (UKR),28 MAY 2010,1043.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14303651,toplist
+48.0,58.09,,Gyeongae GIM,05 MAR 1988,KOR,1,,Changwon (KOR),13 MAY 2010,1043.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14289719,toplist
+49.0,57.84,,Elizabeth GLEADLE,05 DEC 1988,CAN,1f1,,"Austin, TX (USA)",03 APR 2010,1038.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14267948,toplist
+50.0,57.61,,Haean SEO,01 JUL 1985,KOR,1,,Youngkwang (KOR),21 APR 2010,1034.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14289889,toplist
+51.0,57.51,,Ning MA,04 NOV 1983,CHN,5,,Jinan (CHN),08 AUG 2010,1032.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14265639,toplist
+52.0,57.31,,Yuka MORI,21 JUL 1992,JPN,1,,Okinawa (JPN),29 JUL 2010,1028.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14375944,toplist
+53.0,57.26,,Sanni UTRIAINEN,05 FEB 1991,FIN,1,,Helsinki (FIN),27 AUG 2010,1027.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14258906,toplist
+54.0,57.24,,Chunfeng CHANG,04 MAY 1988,CHN,2,,Hefei (CHN),13 JUN 2010,1027.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14266720,toplist
+55.0,57.16,,Maria Lucelly MURILLO,05 MAY 1991,COL,1,,Cali (COL),03 JUL 2010,1025.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14336120,toplist
+56.0,57.11,,Oona SORMUNEN,02 AUG 1989,FIN,3,,"Fana Stadion, Bergen (NOR)",19 JUN 2010,1024.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14258967,toplist
+57.0,57.04,,Elisabeth EBERL,25 MAR 1988,AUT,1,,Kapfenberg (AUT),13 JUN 2010,1023.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14270974,toplist
+58.0,56.75,,Ping WANG,28 JUL 1990,CHN,7,,Jinan (CHN),08 AUG 2010,1018.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14334812,toplist
+59.0,56.71,,Marissa TSCHIDA,07 JUL 1989,USA,2f1,,"Austin, TX (USA)",03 APR 2010,1017.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14323020,toplist
+60.0,56.68,,Laila FERRER,30 JUL 1982,BRA,1,,São Paulo (BRA),18 SEP 2010,1016.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14269171,toplist
+61.0,56.64,,Haixia TIAN,03 JUN 1990,CHN,4,,Hefei (CHN),13 JUN 2010,1016.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14370127,toplist
+61.0,56.64,,Līna MŪZE,04 DEC 1992,LAT,2,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",21 JUL 2010,1016.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14334855,toplist
+63.0,56.58,,Barbara MADEJCZYK,30 SEP 1976,POL,8,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1015.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14294063,toplist
+64.0,56.49,,Zuleima ARAMÉNDIZ,23 SEP 1975,COL,1,,Bogotá (COL),11 APR 2010,1013.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14264061,toplist
+65.0,56.46,,Emika YOSHIDA,10 DEC 1985,JPN,2,,Marugame (JPN),05 JUN 2010,1012.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14288516,toplist
+66.0,56.22,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,1,,Warszawa (POL),08 JUN 2010,1008.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14290245,toplist
+67.0,56.20,,Anna WESSMAN,09 OCT 1989,SWE,3f1,,"Austin, TX (USA)",03 APR 2010,1008.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14302530,toplist
+68.0,56.18,,Tazmin BRITS,08 JAN 1991,RSA,2,,Durban (RSA),21 MAR 2010,1007.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14296112,toplist
+69.0,56.14,,Laura CORNFORD,11 JUN 1988,AUS,1,,Wollongong (AUS),30 OCT 2010,1006.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14272281,toplist
+70.0,56.09,,Annika PETERSSON,10 JAN 1979,SWE,1f1,,Sopot (POL),18 JUL 2010,1006.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14302344,toplist
+71.0,56.04,,Franziska KREBS,11 OCT 1985,GER,3,,Kienbaum (GER),22 FEB 2010,1005.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14278508,toplist
+72.0,56.01,,Oksana GROMOVA,23 SEP 1980,RUS,2,,Yerino (RUS),11 JUN 2010,1004.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14297872,toplist
+73.0,55.90,,Susanne SIEBERT,02 AUG 1984,GER,5,,Halle (GER),15 MAY 2010,1002.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14279431,toplist
+74.0,55.87,,Sílvia CRUZ,29 DEC 1980,POR,1,,Leiria (POR),18 JUL 2010,1002.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14294849,toplist
+75.0,55.83,,Kateema RIETTIE,05 DEC 1973,JAM,1,,"Philadelphia, PA (USA)",23 APR 2010,1001.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14285875,toplist
+76.0,55.73,,Jucilene Sales DE LIMA,14 SEP 1990,BRA,2,,São Paulo (BRA),18 SEP 2010,999.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14269216,toplist
+77.0,55.69,,Bernarda LETNAR,26 DEC 1989,SLO,2,,Novo Mesto (SLO),13 JUL 2010,998.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14300177,toplist
+77.0,55.69,,Sara KOLAK,22 JUN 1995,CRO,1,,Maribor (SLO),02 OCT 2010,998.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14380461,toplist
+79.0,55.68,,Lismania MUNOZ,28 FEB 1993,CUB,4,,La Habana (CUB),22 MAY 2010,998.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14362587,toplist
+80.0,55.66,,Mathilde ANDRAUD,28 APR 1989,FRA,1,,Grenoble (FRA),23 JUN 2010,998.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14258756,toplist
+81.0,55.63,,Sava LIKA,27 JUN 1970,GRE,1,,Patra (GRE),13 JUN 2010,997.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14280756,toplist
+82.0,55.60,,Amy BACKEL,27 SEP 1987,USA,1,,"Columbia, MO (USA)",16 MAY 2010,997.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14305129,toplist
+82.0,55.60,,Rafaela TORRES GONÇALVES,27 NOV 1991,BRA,1,,Piracicaba (BRA),16 MAY 2010,997.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14368586,toplist
+84.0,55.53,,Alicia DESHASIER,15 APR 1984,USA,3,,"Drake Stadium, Des Moines, IA (USA)",25 JUN 2010,995.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14308936,toplist
+85.0,55.47,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,1,,Yalta (UKR),30 MAR 2010,994.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14303628,toplist
+86.0,55.45,,Krista WOODWARD,22 NOV 1984,CAN,2,,Burnaby (CAN),05 JUL 2010,994.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14266941,toplist
+87.0,55.38,,Ioulia PANIDI,16 FEB 1983,GRE,1,,Thiva (GRE),04 AUG 2010,992.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14280823,toplist
+88.0,55.35,,Christin HUSSONG,17 MAR 1994,GER,1,,Pirmasens (GER),02 MAY 2010,992.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14372241,toplist
+88.0,55.35,,Angeliki TSIOLAKOUDI,10 MAY 1976,GRE,2,,Kalamata (GRE),29 MAY 2010,992.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14280967,toplist
+88.0,55.35,,Huihui LYU,26 JUN 1989,CHN,2,,Zhaoqing (CHN),29 MAY 2010,992.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14265696,toplist
+91.0,55.27,,Liping SUI,01 MAY 1991,CHN,5q1,,Jinan (CHN),07 AUG 2010,990.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14334864,toplist
+92.0,55.20,,Jelena JAAKKOLA,07 MAR 1989,FIN,3f2,,Arles (FRA),21 MAR 2010,989.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14259503,toplist
+93.0,55.12,,Ping CHEN,08 SEP 1988,CHN,2,,Suzhou (CHN),24 APR 2010,988.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14266672,toplist
+94.0,55.08,,Silvia CARLI,17 SEP 1985,ITA,2,,Grosseto (ITA),01 JUL 2010,987.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14283979,toplist
+95.0,55.05,,Nikolett SZABÓ,03 MAR 1980,HUN,1,,Budapest (HUN),30 APR 2010,986.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14282399,toplist
+96.0,54.98,,Magdalena CZENSKA,14 JUN 1981,POL,2f1,,Sopot (POL),18 JUL 2010,985.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14293533,toplist
+97.0,54.91,,Alexia KOGUT KUBIAK,22 JAN 1988,FRA,2,,Grenoble (FRA),23 JUN 2010,984.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14256912,toplist
+98.0,54.89,,Izzy JEFFS,03 FEB 1992,GBR,2,,Bedford (GBR),15 AUG 2010,983.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14336244,toplist
+99.0,54.84,,Melissa DUPRÉ,05 NOV 1986,BEL,2,,Istanbul (TUR),12 JUN 2010,982.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14270382,toplist
+99.0,54.84,,Sandra SCHAFFARZIK,22 JUN 1987,GER,6,,Braunschweig (GER),18 JUL 2010,982.0,women_JT,2010,https://worldathletics.org/athletes/athlete=14279503,toplist
+1.0,71.58,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,"DS, Daegu (KOR)",02 SEP 2011,1293.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14262671,toplist
+2.0,69.57,,Christina OBERGFÖLL,22 AUG 1981,GER,1,,"Letzigrund, Zürich (SUI)",08 SEP 2011,1256.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14279102,toplist
+3.0,68.38,,Sunette VILJOEN,06 OCT 1983,RSA,2,,"DS, Daegu (KOR)",02 SEP 2011,1234.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14297120,toplist
+4.0,65.89,,Martina RATEJ,02 NOV 1981,SLO,1,,Slovenska Bistrica (SLO),29 MAY 2011,1187.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14300230,toplist
+5.0,64.67,,Katharina MOLITOR,08 NOV 1983,GER,2,,Kassel (GER),24 JUL 2011,1165.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14278931,toplist
+6.0,64.46,,Goldie SAYERS,16 JUL 1982,GBR,2,,"Olympiastadion, Stockholm (SWE)",18 JUN 2011,1161.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14276278,toplist
+7.0,63.82,,Kimberley MICKLE,28 DEC 1984,AUS,1,,Sydney (AUS),19 MAR 2011,1149.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14271652,toplist
+8.0,63.77,,Mercedes CHILLA,19 JAN 1980,ESP,1,,Rabat (MAR),05 JUN 2011,1148.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14261819,toplist
+9.0,63.50,,Yanet CRUZ,08 FEB 1988,CUB,1,,La Habana (CUB),19 MAR 2011,1143.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14263617,toplist
+10.0,63.46,,Madara PALAMEIKA,18 JUN 1987,LAT,1,,Novi Sad (SRB),18 JUN 2011,1142.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14290055,toplist
+11.0,62.76,,Kara WINGER,10 APR 1986,USA,3,,"Stadio Olimpico, Roma (ITA)",26 MAY 2011,1129.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14318617,toplist
+12.0,62.30,,Yainelis RIBEAUX,30 DEC 1987,CUB,1,,La Habana (CUB),05 AUG 2011,1121.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14263338,toplist
+13.0,61.60,,Vera REBRIK,25 FEB 1989,UKR,1,,Yalta (UKR),31 MAY 2011,1108.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14304081,toplist
+14.0,61.26,,Justine ROBBESON,15 MAY 1985,RSA,1,,Maputo (MOZ),02 JUL 2011,1101.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14296805,toplist
+15.0,61.12,,Jarmila KLIMEŠOVÁ,09 FEB 1981,CZE,3,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1099.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14263013,toplist
+16.0,60.78,,Linda STAHL,02 OCT 1985,GER,1,,Velenje (SLO),28 JUN 2011,1092.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14279868,toplist
+17.0,60.73,,Marina MAKSIMOVA,20 MAY 1985,RUS,1,,Yerino (RUS),04 JUN 2011,1091.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14298524,toplist
+18.0,60.65,,Chunhua LIU,01 OCT 1986,CHN,1,,Zhaoqing (CHN),23 APR 2011,1090.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14265830,toplist
+19.0,60.64,,Līna MŪZE,04 DEC 1992,LAT,1,,Riga (LAT),02 JUN 2011,1090.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14334855,toplist
+20.0,60.40,,Rachel BUCIARSKI,10 OCT 1986,USA,1,,Burnaby (CAN),01 JUL 2011,1085.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14324890,toplist
+21.0,60.32,,Yuki EBIHARA,28 OCT 1985,JPN,1,,Toyama (JPN),07 MAY 2011,1084.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14286145,toplist
+22.0,60.30,,Zahra BANI,31 DEC 1979,ITA,1,,Gorizia (ITA),30 JUN 2011,1084.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14283709,toplist
+23.0,60.26,,Xiaowei DU,11 AUG 1987,CHN,1,,Hefei (CHN),11 SEP 2011,1083.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14266522,toplist
+24.0,60.25,,Maria Nicoleta NEGOIŢĂ,06 DEC 1986,ROU,1,,Onesti (ROU),14 MAY 2011,1083.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14295792,toplist
+25.0,60.10,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,1,,Yalta (UKR),24 FEB 2011,1080.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14303628,toplist
+26.0,60.08,,Risa MIYASHITA,26 APR 1984,JPN,1,,Kumagaya (JPN),11 JUN 2011,1079.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14418697,toplist
+27.0,60.07,,Elisabeth EBERL,25 MAR 1988,AUT,1,,Lappeenranta (FIN),13 AUG 2011,1079.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14270974,toplist
+28.0,60.06,,Anastasiya SVECHNIKOVA,20 SEP 1992,UZB,1,,Tashkent (UZB),30 SEP 2011,1079.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14325074,toplist
+29.0,60.02,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,1,,Besancon (FRA),14 JUN 2011,1078.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14290245,toplist
+30.0,59.95,,Laura WHITTINGHAM,06 JUN 1986,GBR,1,,Saarijärvi (FIN),26 JUN 2011,1077.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14276725,toplist
+31.0,59.86,,Nora Aida BICET,29 OCT 1977,ESP,2,,Málaga (ESP),06 AUG 2011,1075.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14263677,toplist
+32.0,59.74,,Christin HUSSONG,17 MAR 1994,GER,1,,Lille (FRA),07 JUL 2011,1073.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14372241,toplist
+33.0,59.61,,Tatjana JELAČA,10 AUG 1990,SRB,1,,Sokolac (BIH),23 JUL 2011,1071.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14300348,toplist
+34.0,59.52,,Sílvia CRUZ,29 DEC 1980,POR,1,,Leiria (POR),12 MAR 2011,1069.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14294849,toplist
+35.0,59.50,,Chunfeng CHANG,04 MAY 1988,CHN,1,,Nanchang (CHN),16 JUL 2011,1069.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14266720,toplist
+35.0,59.50,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,1,,Riga (LAT),09 AUG 2011,1069.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14290053,toplist
+37.0,59.47,,Kathryn MITCHELL,10 JUL 1982,AUS,1,,Gold Coast (AUS),13 AUG 2011,1068.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14271632,toplist
+38.0,59.41,,Esther EISENLAUER,29 OCT 1977,GER,3,,Kassel (GER),24 JUL 2011,1067.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14277476,toplist
+39.0,59.29,,Sarah MAYER,20 MAY 1991,GER,1,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1065.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14278834,toplist
+40.0,59.15,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,7q1,,"DS, Daegu (KOR)",01 SEP 2011,1062.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14283446,toplist
+41.0,59.00,,Sava LIKA,27 JUN 1970,GRE,1,,Kalamata (GRE),04 JUN 2011,1059.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14280756,toplist
+42.0,58.72,,Huihui LYU,26 JUN 1989,CHN,2,,Zhaoqing (CHN),23 APR 2011,1054.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14265696,toplist
+42.0,58.72,,Oona SORMUNEN,02 AUG 1989,FIN,1q2,,"Mestský Stadion, Ostrava (CZE)",14 JUL 2011,1054.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14258967,toplist
+44.0,58.64,,Krista WOODWARD,22 NOV 1984,CAN,1f1,,"Walnut, CA (USA)",15 APR 2011,1053.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14266941,toplist
+45.0,58.61,,Oksana GROMOVA,23 SEP 1980,RUS,1,,"Adler, Sochi (RUS)",22 APR 2011,1052.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14297872,toplist
+46.0,58.52,,Gyeongae GIM,05 MAR 1988,KOR,1,,Goyang (KOR),09 OCT 2011,1051.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14289719,toplist
+47.0,58.46,,Viktoriya SUDARUSHKINA,02 SEP 1990,RUS,1,,"Adler, Sochi (RUS)",24 FEB 2011,1049.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14299480,toplist
+48.0,58.42,,Ping WANG,28 JUL 1990,CHN,2,,Chengdu (CHN),29 MAR 2011,1049.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14334812,toplist
+49.0,58.40,,Elizabeth GLEADLE,05 DEC 1988,CAN,1,,Lethbridge (CAN),20 MAY 2011,1048.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14267948,toplist
+50.0,58.25,,Melissa DUPRÉ,05 NOV 1986,BEL,5,,"National Stadium, Shenzhen (CHN)",18 AUG 2011,1046.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14270382,toplist
+51.0,58.24,,Sanni UTRIAINEN,05 FEB 1991,FIN,1,,Lahti (FIN),08 JUN 2011,1045.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14258906,toplist
+51.0,58.24,,Mareike RITTWEG,01 JUN 1984,GER,1,,Bottrop (GER),15 JUL 2011,1045.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14279401,toplist
+53.0,58.03,,Vanda JUHÁSZ,06 JUN 1989,HUN,1,,Szekszárd (HUN),06 AUG 2011,1041.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14281743,toplist
+54.0,58.01,,Alicia DESHASIER,15 APR 1984,USA,1,,Guadalajara (MEX),27 OCT 2011,1041.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14308936,toplist
+55.0,57.93,,Marina NOVIK,19 JAN 1984,BLR,1,,Minsk (BLR),03 JUN 2011,1040.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14269710,toplist
+56.0,57.82,,Liina LAASMA,13 JAN 1992,EST,1,,Rakvere (EST),06 JUL 2011,1038.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14372661,toplist
+57.0,57.81,,Laila FERRER,30 JUL 1982,BRA,1,,São Paulo (BRA),06 AUG 2011,1037.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14269171,toplist
+58.0,57.74,,Laura CORNFORD,11 JUN 1988,AUS,2,,Sydney (AUS),19 MAR 2011,1036.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14272281,toplist
+59.0,57.58,,Yusbely PARRA,31 JUL 1986,VEN,1,,Barquisimeto (VEN),14 DEC 2011,1033.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14325185,toplist
+60.0,57.50,,Lisanne SCHOL,22 JUN 1991,NED,1q1,,"Mestský Stadion, Ostrava (CZE)",14 JUL 2011,1032.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14329120,toplist
+61.0,57.47,,Haean SEO,01 JUL 1985,KOR,2,,Goyang (KOR),09 OCT 2011,1031.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14289889,toplist
+62.0,57.40,,Lada CHERNOVA,1970,RUS,2,,"Adler, Sochi (RUS)",24 FEB 2011,1030.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14297522,toplist
+62.0,57.40,,Olisdeilys MENÉNDEZ,14 NOV 1979,CUB,2,,La Habana (CUB),28 MAY 2011,1030.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14263481,toplist
+62.0,57.40,,Angeliki TSIOLAKOUDI,10 MAY 1976,GRE,2,,Kalamata (GRE),04 JUN 2011,1030.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14280967,toplist
+62.0,57.40,,Hanna KHABINA,25 OCT 1991,UKR,2,,Donetsk (UKR),04 AUG 2011,1030.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14303626,toplist
+66.0,57.39,,Lingyu LI,26 JAN 1989,CHN,2,,Hefei (CHN),11 SEP 2011,1030.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14266005,toplist
+67.0,57.32,,Linda SELUI,15 NOV 1977,FRA,1,,Nouméa (FRA),06 SEP 2011,1028.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14293165,toplist
+68.0,57.26,,Flor Denis RUIZ HURTADO,29 JAN 1991,COL,1,,Ponce (PUR),02 APR 2011,1027.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14369335,toplist
+69.0,57.18,,Prescilla LECURIEUX,01 DEC 1992,FRA,1q1,,Dreux (FRA),15 JUL 2011,1026.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14334958,toplist
+70.0,57.11,,Nadeeka LAKMALI,18 SEP 1981,SRI,1,,Diyagama (SRI),08 SEP 2011,1024.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14300512,toplist
+71.0,57.10,,Alexia KOGUT KUBIAK,22 JAN 1988,FRA,1,,Reims (FRA),22 MAY 2011,1024.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14256912,toplist
+72.0,57.09,,Anna WESSMAN,09 OCT 1989,SWE,1,,Helsinki (FIN),10 SEP 2011,1024.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14302530,toplist
+73.0,56.75,,Juan XUE,10 FEB 1986,CHN,1,,Jiaxing (CHN),22 MAY 2011,1018.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14264750,toplist
+74.0,56.51,,Bernarda LETNAR,26 DEC 1989,SLO,1,,Palmanova (ITA),01 MAY 2011,1013.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14300177,toplist
+75.0,56.46,,Xénia NAGY,29 MAR 1986,HUN,1,,Debrecen (HUN),21 MAY 2011,1012.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14282104,toplist
+76.0,56.42,,Ping CHEN,08 SEP 1988,CHN,4,,Hefei (CHN),11 SEP 2011,1012.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14266672,toplist
+77.0,56.41,,Romina UGATAI,10 OCT 1986,FRA,2,,Strasbourg (FRA),12 JUN 2011,1011.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14274133,toplist
+78.0,56.38,,Irena ŠEDIVÁ,19 JAN 1992,CZE,7,,"Stadion Juliska, Praha (CZE)",13 JUN 2011,1011.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14328010,toplist
+79.0,56.31,,Kateryna DERUN,24 SEP 1993,UKR,2q1,,"Kadrioru staadion, Tallinn (EST)",23 JUL 2011,1010.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14303533,toplist
+80.0,56.27,,Liping SUI,01 MAY 1991,CHN,4,,Jiaxing (CHN),21 MAY 2011,1009.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14334864,toplist
+81.0,56.17,,Leryn FRANCO,01 MAR 1982,PAR,2,,Barquisimeto (VEN),29 JUL 2011,1007.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14293255,toplist
+82.0,56.08,,Li ZHANG,17 JAN 1989,CHN,3,,Fuzhou (CHN),25 JUN 2011,1005.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14264439,toplist
+83.0,56.04,,Gerlize DE KLERK,23 MAR 1989,RSA,3,,Germiston (RSA),26 MAR 2011,1005.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14296198,toplist
+84.0,56.02,,Marissa TSCHIDA,07 JUL 1989,USA,1,,"Tucson, AZ (USA)",13 MAY 2011,1004.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14323020,toplist
+85.0,55.94,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,2,,Grodno (BLR),07 JUL 2011,1003.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14269852,toplist
+86.0,55.93,,Margaret SIMPSON,31 DEC 1981,GHA,1ce,,Maputo (MOZ),14 SEP 2011,1003.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14280471,toplist
+87.0,55.85,,Maria Lucelly MURILLO,05 MAY 1991,COL,1,,Buenos Aires (ARG),05 JUN 2011,1001.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14336120,toplist
+88.0,55.82,,Lismania MUNOZ,28 FEB 1993,CUB,3,,La Habana (CUB),19 MAR 2011,1001.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14362587,toplist
+89.0,55.79,,Antoinette NANA DJIMOU,02 AUG 1985,FRA,1ce1,,"DS, Daegu (KOR)",30 AUG 2011,1000.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14273285,toplist
+90.0,55.71,,Susanne SIEBERT,02 AUG 1984,GER,1,,Türkheim (GER),15 MAY 2011,999.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14279431,toplist
+91.0,55.70,,Haruka MATOBA,24 APR 1987,JPN,3,,Kumagaya (JPN),11 JUN 2011,998.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14287038,toplist
+92.0,55.59,,Nadia VIGLIANO,24 JUN 1977,FRA,1,,Albi (FRA),28 JUL 2011,996.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14274214,toplist
+93.0,55.53,,Magdalena CZENSKA,14 JUN 1981,POL,1,,Bydgoszcz (POL),13 AUG 2011,995.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14293533,toplist
+94.0,55.52,,Laura HENKEL,23 FEB 1992,GER,1,,Jena (GER),06 AUG 2011,995.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14277986,toplist
+95.0,55.44,,Jucilene Sales DE LIMA,14 SEP 1990,BRA,1,,São Paulo (BRA),01 OCT 2011,994.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14269216,toplist
+96.0,55.35,,Xiaodan SONG,23 JAN 1993,CHN,1,,Jinan (CHN),05 JUN 2011,992.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14430160,toplist
+97.0,55.34,,Felicia ŢILEA-MOLDOVAN,29 SEP 1967,ROU,1,,Brazzaville (CGO),12 JUN 2011,992.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14296002,toplist
+97.0,55.34,,Alessandra NOBRE RESENDE,05 MAR 1975,BRA,2,,São Paulo (BRA),06 AUG 2011,992.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14268938,toplist
+99.0,55.25,,Zhang YING,05 JAN 1988,CHN,6,,Hefei (CHN),11 SEP 2011,990.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14264582,toplist
+100.0,55.15,,Rafaela TORRES GONÇALVES,27 NOV 1991,BRA,3,,Sâo Caetano do Sul (BRA),14 MAY 2011,988.0,women_JT,2011,https://worldathletics.org/athletes/athlete=14368586,toplist
+1.0,69.55,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,"Olympic Stadium, London (GBR)",09 AUG 2012,1255.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14262671,toplist
+2.0,69.35,,Sunette VILJOEN,06 OCT 1983,RSA,1,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1252.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14297120,toplist
+3.0,67.04,,Christina OBERGFÖLL,22 AUG 1981,GER,1,,St. Wendel (GER),10 JUN 2012,1209.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14279102,toplist
+4.0,66.86,,Vera REBRIK,25 FEB 1989,UKR,1,,"Olympiastadion, Helsinki (FIN)",29 JUN 2012,1205.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14304081,toplist
+5.0,66.17,,Goldie SAYERS,16 JUL 1982,GBR,1,,"Crystal Palace, London (GBR)",14 JUL 2012,1192.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14276278,toplist
+6.0,65.80,,Mariya ABAKUMOVA,15 JAN 1986,RUS,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",23 AUG 2012,1186.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14297183,toplist
+7.0,65.24,,Martina RATEJ,02 NOV 1981,SLO,1,,Domžale (SLO),25 FEB 2012,1175.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14300230,toplist
+8.0,65.11,,Lingyu LI,26 JAN 1989,CHN,1f1,,Fuzhou (CHN),23 JUN 2012,1173.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14266005,toplist
+9.0,64.95,,Huihui LYU,26 JUN 1989,CHN,1,,Zhaoqing (CHN),14 APR 2012,1170.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14265696,toplist
+10.0,64.91,,Linda STAHL,02 OCT 1985,GER,3,,"Olympic Stadium, London (GBR)",09 AUG 2012,1169.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14279868,toplist
+11.0,64.74,,Li ZHANG,17 JAN 1989,CHN,1,,Wuhan (CHN),28 APR 2012,1166.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14264439,toplist
+12.0,64.34,,Kathryn MITCHELL,10 JUL 1982,AUS,2,,"Mestský Stadion, Ostrava (CZE)",25 MAY 2012,1158.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14271632,toplist
+13.0,64.12,,Kimberley MICKLE,28 DEC 1984,AUS,1,,Mannheim (GER),23 JUN 2012,1154.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14271652,toplist
+14.0,63.20,,Katharina MOLITOR,08 NOV 1983,GER,3,,"Wattenscheid, Bochum (GER)",17 JUN 2012,1137.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14278931,toplist
+15.0,62.81,,Chunhua LIU,01 OCT 1986,CHN,1,,Tianjin (CHN),12 MAY 2012,1130.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14265830,toplist
+16.0,62.77,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,3q2,,"Olympic Stadium, London (GBR)",07 AUG 2012,1129.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14283446,toplist
+17.0,62.75,,Yanet CRUZ,08 FEB 1988,CUB,1,,La Habana (CUB),24 MAR 2012,1129.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14263617,toplist
+18.0,62.74,,Madara PALAMEIKA,18 JUN 1987,LAT,5,,"Stade Olympique de la Pontaise, Lausanne (SUI)",23 AUG 2012,1129.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14290055,toplist
+19.0,62.53,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,1,,Liepaja (LAT),07 JUL 2012,1125.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14290053,toplist
+20.0,62.36,,Yuki EBIHARA,28 OCT 1985,JPN,1,,Osaka (JPN),10 JUN 2012,1122.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14286145,toplist
+21.0,61.89,,Xiaowei DU,11 AUG 1987,CHN,2,,Chengdu (CHN),12 MAR 2012,1113.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14266522,toplist
+22.0,61.84,,Margaryta DOROZHON,04 SEP 1987,UKR,2,,Yalta (UKR),28 MAY 2012,1112.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14303544,toplist
+23.0,61.51,,Brittany BORMAN,01 JUL 1989,USA,1,,"Hayward Field, Eugene, OR (USA)",01 JUL 2012,1106.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14306164,toplist
+24.0,61.46,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,1,,Yalta (UKR),23 FEB 2012,1105.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14303628,toplist
+25.0,61.40,,Sofi FLINK,08 JUL 1995,SWE,1,,"Estadio Olímpico, Barcelona (ESP)",11 JUL 2012,1104.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14428373,toplist
+26.0,61.17,,Anastasiya SVECHNIKOVA,20 SEP 1992,UZB,1,,Tashkent (UZB),24 APR 2012,1100.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14325074,toplist
+27.0,61.15,,Elizabeth GLEADLE,05 DEC 1988,CAN,1,,Burnaby (CAN),10 JUN 2012,1099.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14267948,toplist
+28.0,61.06,,Rachel BUCIARSKI,10 OCT 1986,USA,1,,Baie Mahault (FRA),01 MAY 2012,1098.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14324890,toplist
+29.0,61.04,,Līna MŪZE,04 DEC 1992,LAT,1,,Kaunas (LTU),08 JUL 2012,1097.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14334855,toplist
+30.0,60.96,,Jarmila KLIMEŠOVÁ,09 FEB 1981,CZE,1,,Potchefstroom (RSA),24 MAR 2012,1096.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14263013,toplist
+31.0,60.89,,Tatjana JELAČA,10 AUG 1990,SRB,1,,Sremska Mitrovica (SRB),15 JUL 2012,1094.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14300348,toplist
+32.0,60.70,,Yainelis RIBEAUX,30 DEC 1987,CUB,2,,La Habana (CUB),24 MAR 2012,1091.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14263338,toplist
+33.0,60.59,,Viktoriya SUDARUSHKINA,02 SEP 1990,RUS,1,,Sotteville-lès-Rouen (FRA),10 JUL 2012,1089.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14299480,toplist
+34.0,60.56,,Chunfeng CHANG,04 MAY 1988,CHN,3,,Chengdu (CHN),12 MAR 2012,1088.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14266720,toplist
+35.0,60.49,,Kara WINGER,10 APR 1986,USA,1q,,"Hayward Field, Eugene, OR (USA)",29 JUN 2012,1087.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14318617,toplist
+36.0,60.33,,Marina MAKSIMOVA,20 MAY 1985,RUS,3f1,,Bar (MNE),17 MAR 2012,1084.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14298524,toplist
+37.0,60.21,,Laila FERRER,30 JUL 1982,BRA,1,,Rio de Janeiro (BRA),20 MAY 2012,1082.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14269171,toplist
+38.0,60.08,,Oksana GROMOVA,23 SEP 1980,RUS,1,,Moskva (RUS),13 JUN 2012,1079.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14297872,toplist
+39.0,59.95,,Juan XUE,10 FEB 1986,CHN,5,,Wuhan (CHN),28 APR 2012,1077.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14264750,toplist
+40.0,59.88,,Xinli YANG,07 FEB 1988,CHN,6,,Wuhan (CHN),28 APR 2012,1076.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14368004,toplist
+41.0,59.85,,Mareike RITTWEG,01 JUN 1984,GER,4,,Halle (GER),19 MAY 2012,1075.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14279401,toplist
+42.0,59.83,,Marina NOVIK,19 JAN 1984,BLR,1,,Brest (BLR),28 APR 2012,1075.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14269710,toplist
+43.0,59.43,,Zahra BANI,31 DEC 1979,ITA,5,,Halle (GER),19 MAY 2012,1067.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14283709,toplist
+44.0,59.33,,Yusbely PARRA,31 JUL 1986,VEN,2,,La Habana (CUB),22 JUN 2012,1066.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14325185,toplist
+45.0,59.32,,Flor Denis RUIZ HURTADO,29 JAN 1991,COL,1,,Medellín (COL),28 APR 2012,1065.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14369335,toplist
+46.0,59.31,,Sanni UTRIAINEN,05 FEB 1991,FIN,1,,Leverkusen (GER),01 JUN 2012,1065.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14258906,toplist
+46.0,59.31,,Vanda JUHÁSZ,06 JUN 1989,HUN,1,,Szekszárd (HUN),16 JUN 2012,1065.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14281743,toplist
+48.0,59.22,,Yuka MORI,21 JUL 1992,JPN,1,,Osaka (JPN),13 MAY 2012,1064.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14375944,toplist
+49.0,59.20,,Shiying LIU,24 SEP 1993,CHN,2,,"Estadio Olímpico, Barcelona (ESP)",11 JUL 2012,1063.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14430159,toplist
+50.0,59.15,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,1,,Grodno (BLR),06 JUL 2012,1062.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14269852,toplist
+51.0,59.14,,Ping WANG,28 JUL 1990,CHN,4,,Tianjin (CHN),12 MAY 2012,1062.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14334812,toplist
+51.0,59.14,,Oona SORMUNEN,02 AUG 1989,FIN,1,,Lahti (FIN),25 AUG 2012,1062.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14258967,toplist
+53.0,59.05,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,8q2,,"Olympic Stadium, London (GBR)",07 AUG 2012,1060.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14290245,toplist
+54.0,58.93,,Haruka MATOBA,24 APR 1987,JPN,2,,Osaka (JPN),10 JUN 2012,1058.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14287038,toplist
+55.0,58.82,,Nora Aida BICET,29 OCT 1977,ESP,1,,Los Corrales de Buelna (ESP),18 JUL 2012,1056.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14263677,toplist
+56.0,58.56,,Sava LIKA,27 JUN 1970,GRE,1,,Athina (GRE),16 JUN 2012,1051.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14280756,toplist
+57.0,58.52,,Lyubov ZHATKINA,30 MAR 1990,RUS,1,,Yerino (RUS),21 JUL 2012,1051.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14299883,toplist
+58.0,58.51,,Melissa DUPRÉ,05 NOV 1986,BEL,1,,Sint-Niklaas (BEL),17 MAY 2012,1050.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14270382,toplist
+59.0,58.42,,Esther EISENLAUER,29 OCT 1977,GER,5f1,,Bar (MNE),17 MAR 2012,1049.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14277476,toplist
+60.0,58.27,,Risa MIYASHITA,26 APR 1984,JPN,3,,Osaka (JPN),10 JUN 2012,1046.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14418697,toplist
+61.0,58.07,,Gyeongae GIM,05 MAR 1988,KOR,1,,Kimchun (KOR),09 MAY 2012,1042.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14289719,toplist
+62.0,58.04,,Kimberly HAMILTON,28 NOV 1985,USA,3,,"Hayward Field, Eugene, OR (USA)",01 JUL 2012,1042.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14367387,toplist
+63.0,57.97,,Alicia DESHASIER,15 APR 1984,USA,3,,"Tucson, AZ (USA)",19 MAY 2012,1040.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14308936,toplist
+64.0,57.90,,Beibei LIU,05 OCT 1990,CHN,8,,Wuhan (CHN),28 APR 2012,1039.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14941190,toplist
+65.0,57.85,,Jucilene Sales DE LIMA,14 SEP 1990,BRA,1,,São Paulo (BRA),30 JUN 2012,1038.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14269216,toplist
+66.0,57.77,,Leryn FRANCO,01 MAR 1982,PAR,2,,Barquisimeto (VEN),08 JUN 2012,1037.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14293255,toplist
+66.0,57.77,,Hanna KHABINA,25 OCT 1991,UKR,3,,Yalta (UKR),14 JUN 2012,1037.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14303626,toplist
+68.0,57.68,,Susanne SIEBERT,02 AUG 1984,GER,2,,Wetzlar (GER),18 AUG 2012,1035.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14279431,toplist
+69.0,57.52,,Ping CHEN,08 SEP 1988,CHN,7,,Chengdu (CHN),12 MAR 2012,1032.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14266672,toplist
+70.0,57.42,,Xénia NAGY,29 MAR 1986,HUN,3,,Leverkusen (GER),01 JUN 2012,1030.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14282104,toplist
+71.0,57.41,,Irena ŠEDIVÁ,19 JAN 1992,CZE,7,,"Mestský Stadion, Ostrava (CZE)",25 MAY 2012,1030.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14328010,toplist
+72.0,57.40,,Mercedes CHILLA,19 JAN 1980,ESP,1,,Durango (ESP),19 MAY 2012,1030.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14261819,toplist
+73.0,57.27,,Antoinette NANA DJIMOU,02 AUG 1985,FRA,2ce,,"Stade Pierre Paul Bernard, Talence (FRA)",16 SEP 2012,1027.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14273285,toplist
+74.0,57.23,,Prescilla LECURIEUX,01 DEC 1992,FRA,1,,Aix-les-Bains (FRA),20 MAY 2012,1027.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14334958,toplist
+75.0,57.22,,Magdalena CZENSKA,14 JUN 1981,POL,1,,Bielsko-Biala (POL),15 JUN 2012,1026.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14293533,toplist
+75.0,57.22,,Séphora BISSOLY,06 NOV 1981,FRA,3,,Sotteville-lès-Rouen (FRA),10 JUL 2012,1026.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14258448,toplist
+77.0,57.12,,Marija VUČENOVIĆ,03 APR 1993,SRB,3,,"Estadio Olímpico, Barcelona (ESP)",11 JUL 2012,1025.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14372662,toplist
+78.0,56.96,,Mathilde ANDRAUD,28 APR 1989,FRA,1f1,,Lons-le-Saunier (FRA),02 JUN 2012,1022.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14258756,toplist
+78.0,56.96,,Sofia IFANTIDOU,05 JAN 1985,GRE,1ce2,,"Olympic Stadium, London (GBR)",04 AUG 2012,1022.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14281010,toplist
+80.0,56.93,,Desiree SCHWARZ,24 APR 1992,GER,1,,Heilbronn (GER),08 JUL 2012,1021.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14328074,toplist
+81.0,56.89,,Abigaíl GÓMEZ,31 JAN 1991,MEX,1,,Irapuato (MEX),08 JUL 2012,1020.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14291085,toplist
+82.0,56.84,,Kihou KUZE,28 MAR 1995,JPN,5,,Osaka (JPN),10 JUN 2012,1019.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14523599,toplist
+83.0,56.76,,Nadeeka LAKMALI,18 SEP 1981,SRI,1,,Colombo (SRI),14 NOV 2012,1018.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14300512,toplist
+84.0,56.72,,Barbara MADEJCZYK,30 SEP 1976,POL,1,,Szczecin (POL),21 JUL 2012,1017.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14294063,toplist
+85.0,56.67,,Maria Nicoleta NEGOIŢĂ,06 DEC 1986,ROU,1,,Bucureşti (ROU),08 JUN 2012,1016.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14295792,toplist
+86.0,56.61,,Eliza Raluca TOADER,12 MAY 1990,ROU,1,,Cluj-Napoca (ROU),20 MAY 2012,1015.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14295984,toplist
+87.0,56.56,,Xiaodan SONG,23 JAN 1993,CHN,5f1,,Kunshan (CHN),24 SEP 2012,1014.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14430160,toplist
+88.0,56.49,,Charlotte MÜLLER,14 SEP 1993,GER,1,,Mönchengladbach (GER),21 JUL 2012,1013.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14386855,toplist
+89.0,56.32,,Haean SEO,01 JUL 1985,KOR,2,,Kimchun (KOR),09 MAY 2012,1010.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14289889,toplist
+90.0,56.20,,Tiffany PERKINS,13 SEP 1991,CAN,2,,Irapuato (MEX),08 JUL 2012,1008.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14373883,toplist
+90.0,56.20,,Sarah MAYER,20 MAY 1991,GER,1,,Kandel (GER),29 JUL 2012,1008.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14278834,toplist
+92.0,56.17,,Raine KUNINGAS,20 OCT 1988,EST,,,Tallinn (EST),24 MAY 2012,1007.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14260122,toplist
+93.0,56.11,,Suman DEVI,15 JUL 1985,IND,1,,Patiala (IND),21 APR 2012,1006.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14282827,toplist
+94.0,56.10,,Liveta JASIŪNAITĖ,26 JUL 1994,LTU,1,,Kaunas (LTU),03 JUN 2012,1006.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14417641,toplist
+95.0,55.97,,Franziska KREBS,11 OCT 1985,GER,2,,Szczecin (POL),21 JUL 2012,1003.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14278508,toplist
+96.0,55.95,,Angeliki TSIOLAKOUDI,10 MAY 1976,GRE,1,,Nikiti (GRE),08 JUL 2012,1003.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14280967,toplist
+97.0,55.90,,Margaret SIMPSON,31 DEC 1981,GHA,1ce2,,"Mösle-Stadium, Götzis (AUT)",27 MAY 2012,1002.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14280471,toplist
+98.0,55.86,,Bregje CROLLA,31 JAN 1986,NED,2,,Hoorn (NED),12 MAY 2012,1001.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14291557,toplist
+99.0,55.80,,Elisabeth EBERL,25 MAR 1988,AUT,1,,Graz (AUT),23 MAY 2012,1000.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14270974,toplist
+100.0,55.79,,Izzy JEFFS,03 FEB 1992,GBR,1,,Eton (GBR),30 JUN 2012,1000.0,women_JT,2012,https://worldathletics.org/athletes/athlete=14336244,toplist
+1.0,70.53,,Mariya ABAKUMOVA,15 JAN 1986,RUS,1,,"Olympiastadion, Berlin (GER)",01 SEP 2013,1274.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14297183,toplist
+2.0,69.05,,Christina OBERGFÖLL,22 AUG 1981,GER,1,,"Luzhniki Stadion, Moskva (RUS)",18 AUG 2013,1246.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14279102,toplist
+3.0,66.60,,Kimberley MICKLE,28 DEC 1984,AUS,2,,"Luzhniki Stadion, Moskva (RUS)",18 AUG 2013,1200.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14271652,toplist
+4.0,65.76,,Linda STAHL,02 OCT 1985,GER,1,,Halle (GER),25 MAY 2013,1185.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14279868,toplist
+5.0,64.51,,Sunette VILJOEN,06 OCT 1983,RSA,2q2,,"Luzhniki Stadion, Moskva (RUS)",16 AUG 2013,1162.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14297120,toplist
+6.0,64.48,,Huihui LYU,26 JUN 1989,CHN,1,,Chengdu (CHN),18 MAR 2013,1161.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14265696,toplist
+7.0,64.38,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,1,,Riga (LAT),30 MAY 2013,1159.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14290053,toplist
+8.0,64.30,,Vera REBRIK,25 FEB 1989,UKR,1,,Yalta (UKR),17 MAY 2013,1158.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14304081,toplist
+9.0,63.77,,Kathryn MITCHELL,10 JUL 1982,AUS,5,,"Luzhniki Stadion, Moskva (RUS)",18 AUG 2013,1148.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14271632,toplist
+10.0,63.55,,Katharina MOLITOR,08 NOV 1983,GER,2,,Halle (GER),25 MAY 2013,1144.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14278931,toplist
+11.0,63.06,,Lingyu LI,26 JAN 1989,CHN,1,,Shenyang (CHN),09 SEP 2013,1135.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14266005,toplist
+12.0,62.83,,Yuki EBIHARA,28 OCT 1985,JPN,1,,Hiroshima (JPN),29 APR 2013,1130.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14286145,toplist
+13.0,62.72,,Madara PALAMEIKA,18 JUN 1987,LAT,1,,Valmiera (LAT),19 JUL 2013,1128.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14290055,toplist
+14.0,62.68,,Tatjana JELAČA,10 AUG 1990,SRB,3q2,,"Luzhniki Stadion, Moskva (RUS)",16 AUG 2013,1128.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14300348,toplist
+15.0,62.50,,Liina LAASMA,13 JAN 1992,EST,1,,Kohila (EST),31 AUG 2013,1124.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14372661,toplist
+16.0,62.33,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,Domažlice (CZE),13 SEP 2013,1121.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14262671,toplist
+17.0,62.07,,Li ZHANG,17 JAN 1989,CHN,2,,Shenyang (CHN),09 SEP 2013,1116.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14264439,toplist
+18.0,62.01,,Margaryta DOROZHON,04 SEP 1987,UKR,1,,Donetsk (UKR),26 JUL 2013,1115.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14303544,toplist
+19.0,61.98,,Jucilene Sales DE LIMA,14 SEP 1990,BRA,1,,São Paulo (BRA),08 JUN 2013,1115.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14269216,toplist
+20.0,61.97,,Līna MŪZE,04 DEC 1992,LAT,1,,Jékabpils (LAT),26 JUL 2013,1114.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14334855,toplist
+21.0,61.96,,Sofi FLINK,08 JUL 1995,SWE,4q1,,"Luzhniki Stadion, Moskva (RUS)",16 AUG 2013,1114.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14428373,toplist
+22.0,61.37,,Xinli YANG,07 FEB 1988,CHN,1,,Jinan (CHN),11 MAY 2013,1103.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14368004,toplist
+23.0,61.18,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,2,,Donetsk (UKR),26 JUL 2013,1100.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14303628,toplist
+24.0,60.98,,Hanna KHABINA,25 OCT 1991,UKR,2,,Yalta (UKR),20 FEB 2013,1096.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14303626,toplist
+25.0,60.91,,Brittany BORMAN,01 JUL 1989,USA,1,,"Drake Stadium, Des Moines, IA (USA)",20 JUN 2013,1095.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14306164,toplist
+26.0,60.90,,Chunfeng CHANG,04 MAY 1988,CHN,3,,Shenyang (CHN),09 SEP 2013,1095.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14266720,toplist
+27.0,60.80,,Eliza Raluca TOADER,12 MAY 1990,ROU,1,,Argos Orestiko (GRE),03 JUL 2013,1093.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14295984,toplist
+28.0,60.64,,Nadeeka LAKMALI,18 SEP 1981,SRI,1,,Colombo (SRI),17 JUL 2013,1090.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14300512,toplist
+29.0,60.56,,Oona SORMUNEN,02 AUG 1989,FIN,1,,Kuortane (FIN),03 AUG 2013,1088.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14258967,toplist
+30.0,60.23,,Flor Denis RUIZ HURTADO,29 JAN 1991,COL,1,,Cartagena de Indias (COL),06 JUL 2013,1082.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14369335,toplist
+30.0,60.23,,Shiying LIU,24 SEP 1993,CHN,4,,Shenyang (CHN),09 SEP 2013,1082.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14430159,toplist
+32.0,60.15,,Krista WOODWARD,22 NOV 1984,CAN,3,,Tokyo (JPN),05 MAY 2013,1081.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14266941,toplist
+33.0,59.97,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,2,,Sollentuna (SWE),27 JUN 2013,1077.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14283446,toplist
+34.0,59.91,,Laila FERRER,30 JUL 1982,BRA,2,,São Paulo (BRA),08 JUN 2013,1076.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14269171,toplist
+35.0,59.81,,Nora Aida BICET,29 OCT 1977,ESP,3,,Rabat (MAR),09 JUN 2013,1074.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14263677,toplist
+36.0,59.76,,Mercedes CHILLA,19 JAN 1980,ESP,4,,Rabat (MAR),09 JUN 2013,1074.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14261819,toplist
+37.0,59.37,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,1,,Brest (BLR),27 APR 2013,1066.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14269852,toplist
+38.0,59.35,,Sanni UTRIAINEN,05 FEB 1991,FIN,2,,Kuortane (FIN),03 AUG 2013,1066.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14258906,toplist
+39.0,59.29,,Lismania MUNOZ,28 FEB 1993,CUB,1,,La Habana (CUB),16 MAR 2013,1065.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14362587,toplist
+40.0,59.21,,Xiaodan SONG,23 JAN 1993,CHN,3,,Jinan (CHN),11 MAY 2013,1063.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14430160,toplist
+41.0,59.03,,Chunhua LIU,01 OCT 1986,CHN,5,,Shenyang (CHN),09 SEP 2013,1060.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14265830,toplist
+42.0,58.98,,Kihou KUZE,28 MAR 1995,JPN,2,,Tokyo (JPN),07 JUN 2013,1059.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14523599,toplist
+43.0,58.97,,Vanda JUHÁSZ,06 JUN 1989,HUN,1,,Budapest (HUN),27 JUL 2013,1059.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14281743,toplist
+44.0,58.64,,Beibei LIU,05 OCT 1990,CHN,7,,Shenyang (CHN),09 SEP 2013,1053.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14941190,toplist
+45.0,58.59,,Yekaterina STARYGINA,26 AUG 1995,RUS,1,,Yerino (RUS),02 JUN 2013,1052.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14460764,toplist
+46.0,58.58,,Kelsey-Lee BARBER,20 SEP 1991,AUS,2,,Sydney (AUS),13 APR 2013,1052.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14336705,toplist
+47.0,58.55,,Christin HUSSONG,17 MAR 1994,GER,5,,Elstal (GER),25 AUG 2013,1051.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14372241,toplist
+48.0,58.08,,Desiree SCHWARZ,24 APR 1992,GER,1,,Göttingen (GER),16 JUN 2013,1042.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14328074,toplist
+49.0,58.00,,Oksana GROMOVA,23 SEP 1980,RUS,2,,"Adler, Sochi (RUS)",28 FEB 2013,1041.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14297872,toplist
+50.0,57.83,,Ping WANG,28 JUL 1990,CHN,3,,Suzhou (CHN),30 MAY 2013,1038.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14334812,toplist
+51.0,57.79,,Sara KOLAK,22 JUN 1995,CRO,3,,"Stadio Guidobaldi, Rieti (ITA)",21 JUL 2013,1037.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14380461,toplist
+52.0,57.74,,Dan SONG,05 JUL 1990,CHN,4,,Jinan (CHN),11 MAY 2013,1036.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14265337,toplist
+53.0,57.69,,Barbara MADEJCZYK,30 SEP 1976,POL,1,,Toruń (POL),20 JUL 2013,1035.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14294063,toplist
+54.0,57.48,,Coralys ORTIZ,16 APR 1985,PUR,1,,Morelia (MEX),07 JUL 2013,1031.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14295332,toplist
+55.0,57.47,,Susanne SIEBERT,02 AUG 1984,GER,6,,Luzern (SUI),17 JUL 2013,1031.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14279431,toplist
+56.0,57.38,,Mizuki MURAKAMI,03 MAY 1991,JPN,1,,Osaka (JPN),12 MAY 2013,1029.0,women_JT,2013,https://worldathletics.org/athletes/japan/mizuki-murakami-14335243,toplist
+57.0,57.32,,Gundega GRĪVA,08 APR 1991,LAT,1,,Potchefstroom (RSA),20 APR 2013,1028.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14289992,toplist
+58.0,57.30,,Tetyana FETISKINA,11 SEP 1994,UKR,2,,Yalta (UKR),17 MAY 2013,1028.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14414100,toplist
+58.0,57.30,,Marina MAKSIMOVA,20 MAY 1985,RUS,1,,Sochi (RUS),26 MAY 2013,1028.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14298524,toplist
+60.0,57.12,,Kara WINGER,10 APR 1986,USA,1,,"Lisle, IL (USA)",20 JUL 2013,1025.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14318617,toplist
+61.0,57.10,,Yainelis RIBEAUX,30 DEC 1987,CUB,1,,La Habana (CUB),15 FEB 2013,1024.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14263338,toplist
+61.0,57.10,,Mareike RITTWEG,01 JUN 1984,GER,4,,Ulm (GER),07 JUL 2013,1024.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14279401,toplist
+63.0,56.98,,Eva VIVOD,07 AUG 1994,SLO,1,,Nova Gorica (SLO),02 JUN 2013,1022.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14380458,toplist
+64.0,56.85,,Sarah MAYER,20 MAY 1991,GER,1,,Kienbaum (GER),18 FEB 2013,1020.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14278834,toplist
+65.0,56.83,,Liping SUI,01 MAY 1991,CHN,3,,Zhaoqing (CHN),27 APR 2013,1019.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14334864,toplist
+66.0,56.74,,Tove Beate DAHLE,06 APR 1988,NOR,1,,Bærum (NOR),15 JUN 2013,1018.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14292596,toplist
+67.0,56.72,,Haean SEO,01 JUL 1985,KOR,1,,Goseong (KOR),19 JUN 2013,1017.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14289889,toplist
+68.0,56.66,,Ariana INCE,14 MAR 1989,USA,2,,"Drake Stadium, Des Moines, IA (USA)",20 JUN 2013,1016.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14313260,toplist
+69.0,56.31,,Izzy JEFFS,03 FEB 1992,GBR,1,,Loughborough (GBR),19 MAY 2013,1010.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14336244,toplist
+70.0,56.22,,Risa MIYASHITA,26 APR 1984,JPN,3,,Tokyo (JPN),07 JUN 2013,1008.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14418697,toplist
+71.0,56.20,,Nikola OGRODNÍKOVÁ,18 AUG 1990,CZE,1,,Přerov (CZE),01 MAY 2013,1008.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14262856,toplist
+71.0,56.20,,Marcelina WITEK,02 JUN 1995,POL,1,,Kolobrzeg (POL),20 SEP 2013,1008.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14417579,toplist
+73.0,56.17,,Mathilde ANDRAUD,28 APR 1989,FRA,1,,St-Denis-Réunion (FRA),20 APR 2013,1007.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14258756,toplist
+73.0,56.17,,Juan XUE,10 FEB 1986,CHN,5,,Shenyang (CHN),15 JUN 2013,1007.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14264750,toplist
+75.0,56.13,,Irena ŠEDIVÁ,19 JAN 1992,CZE,1f2,,Castellón (ESP),16 MAR 2013,1006.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14328010,toplist
+76.0,56.10,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,2,,Ventspils (LAT),21 JUL 2013,1006.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14290245,toplist
+77.0,56.04,,Annu RANI,29 AUG 1992,IND,1,,Kochi (JPN),20 DEC 2013,1005.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14422692,toplist
+78.0,56.03,,Brianna BAIN,23 JUN 1993,USA,1,,"Palo Alto, CA (USA)",20 APR 2013,1004.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14441624,toplist
+79.0,56.00,,Maria Lucelly MURILLO,05 MAY 1991,COL,2,,Cali (COL),22 JUN 2013,1004.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14336120,toplist
+80.0,55.98,,Sava LIKA,27 JUN 1970,GRE,1,,Athina (GRE),21 JUL 2013,1004.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14280756,toplist
+81.0,55.89,,Nicoleta Madalina ANGHELESCU,13 JAN 1992,ROU,2,,Bucureşti (ROU),07 JUN 2013,1002.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14365218,toplist
+82.0,55.81,,Anikó ORMAY,22 JAN 1991,HUN,2,,Budapest (HUN),27 JUL 2013,1000.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14282162,toplist
+83.0,55.77,,You WU,28 DEC 1992,CHN,5,,Chengdu (CHN),31 MAR 2013,1000.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14334863,toplist
+84.0,55.73,,Ai YAMAUCHI,06 DEC 1994,JPN,2,,Hiroshima (JPN),29 APR 2013,999.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14444442,toplist
+85.0,55.68,,Leryn FRANCO,01 MAR 1982,PAR,2,,São Paulo (BRA),12 MAY 2013,998.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14293255,toplist
+86.0,55.66,,Marina SAITO,15 OCT 1995,JPN,1,,Chofu (JPN),06 OCT 2013,998.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14547924,toplist
+87.0,55.62,,Jenni KANGAS,03 JUL 1992,FIN,1,,Mikkeli (FIN),27 MAY 2013,997.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14259460,toplist
+88.0,55.61,,Sílvia CRUZ,29 DEC 1980,POR,2,,Vila Real de Santo António (POR),25 MAY 2013,997.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14294849,toplist
+89.0,55.60,,Marija VUČENOVIĆ,03 APR 1993,SRB,2,,Sremska Mitrovica (SRB),15 JUN 2013,997.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14372662,toplist
+90.0,55.58,,Séphora BISSOLY,06 NOV 1981,FRA,1,,Besancon (FRA),15 JUN 2013,996.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14258448,toplist
+91.0,55.46,,Yu KAWANOBE,22 NOV 1991,JPN,3,,Hiroshima (JPN),29 APR 2013,994.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14388939,toplist
+91.0,55.46,,Esther EISENLAUER,29 OCT 1977,GER,1,,Kaiserslautern (GER),09 MAY 2013,994.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14277476,toplist
+93.0,55.36,,Gyeongae GIM,05 MAR 1988,KOR,2,,Incheon (KOR),21 OCT 2013,992.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14289719,toplist
+94.0,55.35,,Sara JEMAI,12 APR 1992,ITA,1,,Rieti (ITA),14 JUN 2013,992.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14333692,toplist
+95.0,55.15,,Kimberly HAMILTON,28 NOV 1985,USA,4,,"Drake Stadium, Des Moines, IA (USA)",20 JUN 2013,988.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14367387,toplist
+96.0,55.10,,Kateryna DERUN,24 SEP 1993,UKR,3,,Yalta (UKR),20 FEB 2013,987.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14303533,toplist
+97.0,55.02,,Elisabeth EBERL,25 MAR 1988,AUT,2,,"Central Stadium, Kazan (RUS)",09 JUL 2013,986.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14270974,toplist
+98.0,54.99,,Alexia KOGUT KUBIAK,22 JAN 1988,FRA,1,,St-Etienne (FRA),19 MAY 2013,985.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14256912,toplist
+99.0,54.98,,Lilian MEURER SEIBERT,23 JUL 1989,BRA,3,,Campinas (BRA),04 MAY 2013,985.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14268957,toplist
+100.0,54.95,,Freya JONES,13 NOV 1993,GBR,1,,"Eugene, OR (USA)",05 JUN 2013,984.0,women_JT,2013,https://worldathletics.org/athletes/athlete=14941023,toplist
+1.0,67.99,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1226.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14262671,toplist
+2.0,67.32,,Linda STAHL,02 OCT 1985,GER,1,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1214.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14279868,toplist
+3.0,67.29,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,1,,Kirovograd (UKR),26 JUL 2014,1213.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14303628,toplist
+4.0,66.83,,Kimberley MICKLE,28 DEC 1984,AUS,1,,"Albert Park, Melbourne (AUS)",22 MAR 2014,1205.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14271652,toplist
+5.0,66.15,,Madara PALAMEIKA,18 JUN 1987,LAT,1,,Jelgava (LAT),26 JUN 2014,1192.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14290055,toplist
+6.0,66.10,,Kathryn MITCHELL,10 JUL 1982,AUS,2,,Adelaide (AUS),15 FEB 2014,1191.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14271632,toplist
+7.0,65.47,,Li ZHANG,17 JAN 1989,CHN,1,,Incheon (KOR),01 OCT 2014,1179.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14264439,toplist
+8.0,65.32,,Sunette VILJOEN,06 OCT 1983,RSA,1,,"Le Grand Stade, Marrakech (MAR)",13 AUG 2014,1177.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14297120,toplist
+9.0,64.50,,Elizabeth GLEADLE,05 DEC 1988,CAN,1f1,,Lethbridge (CAN),16 MAY 2014,1161.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14267948,toplist
+10.0,64.21,,Tatjana JELAČA,10 AUG 1990,SRB,2,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1156.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14300348,toplist
+11.0,63.92,,Kelsey-Lee BARBER,20 SEP 1991,AUS,1,,Canberra (AUS),08 FEB 2014,1151.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14336705,toplist
+12.0,63.80,,Flor Denis RUIZ HURTADO,29 JAN 1991,COL,1,,Veracruz (MEX),27 NOV 2014,1148.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14369335,toplist
+13.0,63.61,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,1,,Grodno (BLR),25 JUL 2014,1145.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14269852,toplist
+13.0,63.61,,Martina RATEJ,02 NOV 1981,SLO,1,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1145.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14300230,toplist
+15.0,63.40,,Katharina MOLITOR,08 NOV 1983,GER,2,,Ulm (GER),27 JUL 2014,1141.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14278931,toplist
+16.0,63.34,,Christin HUSSONG,17 MAR 1994,GER,1,,Luzern (SUI),15 JUL 2014,1140.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14372241,toplist
+17.0,63.17,,Liina LAASMA,13 JAN 1992,EST,1,,Leiria (POR),15 MAR 2014,1137.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14372661,toplist
+18.0,62.90,,Kara WINGER,10 APR 1986,USA,1,,"Chula Vista, CA (USA)",31 JUL 2014,1132.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14318617,toplist
+19.0,62.89,,Jucilene Sales DE LIMA,14 SEP 1990,BRA,1,,São Paulo (BRA),11 OCT 2014,1132.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14269216,toplist
+20.0,62.75,,Goldie SAYERS,16 JUL 1982,GBR,1,,Birmingham (GBR),29 JUN 2014,1129.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14276278,toplist
+21.0,62.72,,Shiying LIU,24 SEP 1993,CHN,1,,Chengdu (CHN),29 MAR 2014,1128.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14430159,toplist
+22.0,62.56,,Lingyu LI,26 JAN 1989,CHN,1,,Suzhou (CHN),10 OCT 2014,1125.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14266005,toplist
+23.0,62.05,,Brittany BORMAN,01 JUL 1989,USA,2,,"Sacramento, CA (USA)",26 JUN 2014,1116.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14306164,toplist
+24.0,61.57,,Vera REBRIK,25 FEB 1989,RUS,1,,Sochi (RUS),30 MAY 2014,1107.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14304081,toplist
+25.0,61.51,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,2,,Jelgava (LAT),26 JUN 2014,1106.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14290053,toplist
+26.0,61.34,,Margaryta DOROZHON,04 SEP 1987,UKR,1,,Tel Aviv (ISR),16 JUL 2014,1103.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14303544,toplist
+27.0,61.24,,Marcelina WITEK,02 JUN 1995,POL,1,,Bialogard (POL),06 SEP 2014,1101.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14417579,toplist
+28.0,60.33,,Laila FERRER,30 JUL 1982,BRA,2,,São Paulo (BRA),11 OCT 2014,1084.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14269171,toplist
+29.0,60.32,,Kateryna DERUN,24 SEP 1993,UKR,2,,Kirovograd (UKR),26 JUL 2014,1084.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14303533,toplist
+30.0,60.30,,Xinli YANG,07 FEB 1988,CHN,3,,Suzhou (CHN),10 OCT 2014,1084.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14368004,toplist
+31.0,60.25,,Yuki EBIHARA,28 OCT 1985,JPN,1,,Nagasaki (JPN),19 OCT 2014,1083.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14286145,toplist
+32.0,60.04,,Nikola OGRODNÍKOVÁ,18 AUG 1990,CZE,1,,Kolin (CZE),07 SEP 2014,1079.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14262856,toplist
+33.0,60.03,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,3,,"Stadion Juliska, Praha (CZE)",09 JUN 2014,1079.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14283446,toplist
+34.0,59.95,,Olga SHESTAKOVA,04 DEC 1993,RUS,1,,Krasnodar (RUS),21 FEB 2014,1077.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14456572,toplist
+35.0,59.80,,Mathilde ANDRAUD,28 APR 1989,FRA,5,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1074.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14258756,toplist
+36.0,59.53,,Annu RANI,29 AUG 1992,IND,3,,Incheon (KOR),01 OCT 2014,1069.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14422692,toplist
+37.0,59.42,,Susanne SIEBERT,02 AUG 1984,GER,5,,Luzern (SUI),15 JUL 2014,1067.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14279431,toplist
+38.0,59.34,,Lyubov ZHATKINA,30 MAR 1990,RUS,1,,Krasnodar (RUS),21 FEB 2014,1066.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14299883,toplist
+39.0,59.10,,Xiaodan SONG,23 JAN 1993,CHN,2,,Zhaoqing (CHN),20 APR 2014,1061.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14430160,toplist
+40.0,59.04,,Nadeeka LAKMALI,18 SEP 1981,SRI,6,,"Hampden Park, Glasgow (GBR)",30 JUL 2014,1060.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14300512,toplist
+41.0,58.63,,Izzy JEFFS,03 FEB 1992,GBR,1,,Loughborough (GBR),26 APR 2014,1053.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14336244,toplist
+42.0,58.47,,Lismania MUNOZ,28 FEB 1993,CUB,1,,La Habana (CUB),20 MAR 2014,1050.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14362587,toplist
+43.0,58.44,,Sofi FLINK,08 JUL 1995,SWE,1f1,,Pihtipudas (FIN),29 JUN 2014,1049.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14428373,toplist
+44.0,58.43,,Oona SORMUNEN,02 AUG 1989,FIN,3,,Kuortane (FIN),13 JUL 2014,1049.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14258967,toplist
+45.0,58.37,,Leigh PETRANOFF,16 MAY 1989,USA,1,,"Tucson, AZ (USA)",22 MAY 2014,1048.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14318886,toplist
+46.0,58.33,,Risa MIYASHITA,26 APR 1984,JPN,2,,Nagasaki (JPN),19 OCT 2014,1047.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14418697,toplist
+47.0,58.20,,Coralys ORTIZ,16 APR 1985,PUR,3,,Ciudad de México (MEX),15 AUG 2014,1045.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14295332,toplist
+48.0,58.13,,DeLoma MILLER,10 MAY 1992,USA,1,,"Eugene, OR (USA)",11 JUN 2014,1043.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14329649,toplist
+49.0,58.06,,Mercedes CHILLA,19 JAN 1980,ESP,1,,Zaragoza (ESP),28 JUN 2014,1042.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14261819,toplist
+50.0,58.02,,Līna MŪZE,04 DEC 1992,LAT,1,,Valmiera (LAT),18 JUL 2014,1041.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14334855,toplist
+51.0,57.97,,Kihou KUZE,28 MAR 1995,JPN,1,,Kumagaya (JPN),05 SEP 2014,1040.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14523599,toplist
+52.0,57.90,,Ariana INCE,14 MAR 1989,USA,,,"Tempe, AZ (USA)",12 APR 2014,1039.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14313260,toplist
+53.0,57.79,,Sara KOLAK,22 JUN 1995,CRO,2,,Leiria (POR),15 MAR 2014,1037.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14380461,toplist
+54.0,57.73,,Elizabeth HERRS,20 DEC 1993,USA,1,,"Lubbock, TX (USA)",16 MAY 2014,1036.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14469539,toplist
+55.0,57.63,,Avione Larie ALLGOOD,14 DEC 1993,USA,2,,"Lubbock, TX (USA)",16 MAY 2014,1034.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14304708,toplist
+56.0,57.60,,Mackenzie LITTLE,22 DEC 1996,AUS,2q,,"Albert Park, Melbourne (AUS)",04 APR 2014,1034.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14464527,toplist
+57.0,57.59,,Kimberly HAMILTON,28 NOV 1985,USA,4,,"Sacramento, CA (USA)",26 JUN 2014,1033.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14367387,toplist
+58.0,57.54,,Elisabeth EBERL,25 MAR 1988,AUT,1,,Wien (AUT),04 JUL 2014,1032.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14270974,toplist
+59.0,57.48,,Petra ANDREJSKOVÁ,25 JUN 1992,CZE,1,,Ostrava (CZE),02 AUG 2014,1031.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14374682,toplist
+60.0,57.44,,Marie-Therese OBST,07 JAN 1996,NOR,1,,Mannheim (GER),05 JUL 2014,1031.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14526544,toplist
+61.0,57.31,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,1,,Kaunas (LTU),01 JUN 2014,1028.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14290245,toplist
+62.0,57.28,,Heidi NOKELAINEN,30 SEP 1990,FIN,1,,Joensuu (FIN),24 JUL 2014,1028.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14373435,toplist
+62.0,57.28,,Abigaíl GÓMEZ,31 JAN 1991,MEX,2,,Veracruz (MEX),27 NOV 2014,1028.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14291085,toplist
+64.0,57.23,,Gyeongae GIM,05 MAR 1988,KOR,1,,Jeonju (KOR),01 NOV 2014,1027.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14289719,toplist
+65.0,57.12,,Chunfeng CHANG,04 MAY 1988,CHN,4,,Suzhou (CHN),10 OCT 2014,1025.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14266720,toplist
+66.0,56.94,,Jarmila JURKOVIČOVÁ,09 FEB 1981,CZE,2,,Ostrava (CZE),02 AUG 2014,1021.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14263013,toplist
+67.0,56.92,,Suman DEVI,15 JUL 1985,IND,2,,Lucknow (IND),07 JUN 2014,1021.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14282827,toplist
+68.0,56.91,,Prescilla LECURIEUX,01 DEC 1992,FRA,3,,Leiria (POR),15 MAR 2014,1021.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14334958,toplist
+69.0,56.85,,Yekaterina STARYGINA,26 AUG 1995,RUS,1,,"Hayward Field, Eugene, OR (USA)",24 JUL 2014,1020.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14460764,toplist
+70.0,56.80,,Eva VIVOD,07 AUG 1994,SLO,1,,"Gainesville, FL (USA)",04 APR 2014,1019.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14380458,toplist
+71.0,56.76,,Xiaowei DU,11 AUG 1987,CHN,5,,Suzhou (CHN),10 OCT 2014,1018.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14266522,toplist
+72.0,56.73,,Marija VUČENOVIĆ,03 APR 1993,SRB,2f1,,"Austin, TX (USA)",28 MAR 2014,1017.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14372662,toplist
+73.0,56.71,,Maria Lucelly MURILLO,05 MAY 1991,COL,2,,Medellín (COL),29 JUN 2014,1017.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14336120,toplist
+74.0,56.60,,Rafaela TORRES GONÇALVES,27 NOV 1991,BRA,2,,"Mangueirão, Belém (BRA)",10 AUG 2014,1015.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14368586,toplist
+75.0,56.57,,Dilhani LEKAMGE,14 JAN 1987,SRI,1,,Colombo (SRI),15 JUL 2014,1014.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14300521,toplist
+76.0,56.55,,Sara JEMAI,12 APR 1992,ITA,2,,Padova (ITA),05 JUL 2014,1014.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14333692,toplist
+76.0,56.55,,Ai YAMAUCHI,06 DEC 1994,JPN,2,,Kumagaya (JPN),05 SEP 2014,1014.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14444442,toplist
+78.0,56.53,,Maria ANDREJCZYK,09 MAR 1996,POL,1,,Toruń (POL),04 MAY 2014,1014.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14500245,toplist
+79.0,56.44,,Yevgeniya ANANCHENKO,07 JAN 1992,RUS,1,,Krasnodar (RUS),05 JUN 2014,1012.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14403518,toplist
+80.0,56.43,,Hannah CARSON,26 JAN 1993,USA,7,,"Sacramento, CA (USA)",26 JUN 2014,1012.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14307295,toplist
+81.0,56.39,,Nora Aida BICET,29 OCT 1977,ESP,1,,Linz (AUT),19 JUL 2014,1011.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14263677,toplist
+82.0,56.30,,Alexie ALAÏS,09 OCT 1994,FRA,1,,Aubagne (FRA),15 JUN 2014,1009.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14428592,toplist
+83.0,56.26,,Tereza VYTLAČILOVÁ,25 SEP 1995,CZE,1,,Třinec (CZE),28 JUN 2014,1009.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14456192,toplist
+84.0,56.15,,Barbara MADEJCZYK,30 SEP 1976,POL,6,,Leiria (POR),15 MAR 2014,1007.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14294063,toplist
+85.0,56.14,,Karolina BOŁDYSZ-ARCHACKA,21 APR 1993,POL,1,,Białystok (POL),01 JUN 2014,1006.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14389701,toplist
+86.0,56.05,,Sarah MAYER,20 MAY 1991,GER,5,,Ulm (GER),27 JUL 2014,1005.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14278834,toplist
+87.0,56.02,,Marta KAKOL,25 FEB 1992,POL,1,,Gdansk (POL),31 MAY 2014,1004.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14293806,toplist
+87.0,56.02,,Haean SEO,01 JUL 1985,KOR,2,,Kimchun (KOR),26 JUN 2014,1004.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14289889,toplist
+87.0,56.02,,Marina MAKSIMOVA,20 MAY 1985,RUS,1,,Moskva (RUS),02 JUL 2014,1004.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14298524,toplist
+90.0,56.01,,Irena ŠEDIVÁ,19 JAN 1992,CZE,1,,Praha (CZE),03 JUN 2014,1004.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14328010,toplist
+91.0,55.98,,Marina SAITO,15 OCT 1995,JPN,3,,Nagasaki (JPN),19 OCT 2014,1004.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14547924,toplist
+92.0,55.97,,Nicoleta Madalina ANGHELESCU,13 JAN 1992,ROU,1,,Bucureşti (ROU),25 MAY 2014,1003.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14365218,toplist
+93.0,55.96,,Yainelis RIBEAUX,30 DEC 1987,CUB,2,,La Habana (CUB),20 MAR 2014,1003.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14263338,toplist
+94.0,55.95,,Gundega GRĪVA,08 APR 1991,LAT,5,,Leverkusen (GER),06 JUN 2014,1003.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14289992,toplist
+95.0,55.91,,Victoria PATERRA,07 JUL 1992,USA,1,,"Athens, OH (USA)",15 MAY 2014,1002.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14460997,toplist
+96.0,55.89,,Urszula JAKIMOWICZ,11 JUN 1988,POL,1,,Kolobrzeg (POL),19 SEP 2014,1002.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14293992,toplist
+97.0,55.87,,Katrina SIRMA,31 MAR 1994,LAT,1,,Riga (LAT),08 MAR 2014,1002.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14373180,toplist
+98.0,55.78,,Sarah LEIDL,05 MAR 1987,GER,1,,München (GER),31 MAY 2014,1000.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14278651,toplist
+99.0,55.75,,Shiori TOMA,07 FEB 1996,JPN,1,,Taipei City (TPE),13 JUN 2014,999.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14608127,toplist
+100.0,55.72,,Beibei LIU,05 OCT 1990,CHN,5,,Chengdu (CHN),29 MAR 2014,999.0,women_JT,2014,https://worldathletics.org/athletes/athlete=14941190,toplist
+1.0,67.69,,Katharina MOLITOR,08 NOV 1983,GER,1,,"National Stadium, Beijing (CHN)",30 AUG 2015,1221.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14278931,toplist
+2.0,66.62,,Sunette VILJOEN,06 OCT 1983,RSA,1,,"Albert Park, Melbourne (AUS)",21 MAR 2015,1201.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14297120,toplist
+3.0,66.57,,Kimberley MICKLE,28 DEC 1984,AUS,2,,"Albert Park, Melbourne (AUS)",21 MAR 2015,1200.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14271652,toplist
+4.0,66.47,,Kara WINGER,10 APR 1986,USA,1,,"Austin, TX (USA)",02 MAY 2015,1198.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14318617,toplist
+5.0,66.13,,Huihui LYU,26 JUN 1989,CHN,2,,"National Stadium, Beijing (CHN)",30 AUG 2015,1192.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14265696,toplist
+6.0,65.92,,Christin HUSSONG,17 MAR 1994,GER,1q2,,"National Stadium, Beijing (CHN)",28 AUG 2015,1188.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14372241,toplist
+7.0,65.75,,Martina RATEJ,02 NOV 1981,SLO,1,,Ptuj (SLO),28 FEB 2015,1185.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14300230,toplist
+8.0,65.66,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,"Olympiastadion, Stockholm (SWE)",30 JUL 2015,1183.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14262671,toplist
+9.0,65.07,,Lingyu LI,26 JAN 1989,CHN,2q2,,"National Stadium, Beijing (CHN)",28 AUG 2015,1172.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14266005,toplist
+10.0,65.01,,Madara PALAMEIKA,18 JUN 1987,LAT,1,,"Olympic Stadium, London (GBR)",25 JUL 2015,1171.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14290055,toplist
+11.0,64.93,,Vera REBRIK,25 FEB 1989,RUS,1,,Cheboksary (RUS),05 AUG 2015,1169.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14304081,toplist
+12.0,64.83,,Elizabeth GLEADLE,05 DEC 1988,CAN,1,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1168.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14267948,toplist
+13.0,64.75,,Brittany BORMAN,01 JUL 1989,USA,2,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1166.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14306164,toplist
+14.0,64.65,,Linda STAHL,02 OCT 1985,GER,2,,Luzern (SUI),14 JUL 2015,1164.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14279868,toplist
+15.0,64.61,,Christina OBERGFÖLL,22 AUG 1981,GER,4,,"National Stadium, Beijing (CHN)",30 AUG 2015,1163.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14279102,toplist
+16.0,64.56,,Margaryta DOROZHON,04 SEP 1987,ISR,1,,"Bislett Stadion, Oslo (NOR)",11 JUN 2015,1163.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14303544,toplist
+17.0,63.86,,Yulenmis AGUILAR,03 AUG 1996,CUB,1,,Edmonton (CAN),02 AUG 2015,1150.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14518738,toplist
+18.0,63.80,,Yuki EBIHARA,28 OCT 1985,JPN,4,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1148.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14286145,toplist
+19.0,63.78,,Kelsey-Lee BARBER,20 SEP 1991,AUS,1,,Canberra (AUS),07 FEB 2015,1148.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14336705,toplist
+20.0,63.70,,Kathryn MITCHELL,10 JUL 1982,AUS,2,,Canberra (AUS),07 FEB 2015,1147.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14271632,toplist
+21.0,63.03,,Sanni UTRIAINEN,05 FEB 1991,FIN,1,,Kuortane (FIN),08 AUG 2015,1134.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14258906,toplist
+22.0,62.95,,Li ZHANG,17 JAN 1989,CHN,1,,Mungyeong (KOR),04 OCT 2015,1133.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14264439,toplist
+23.0,62.81,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,6q2,,"National Stadium, Beijing (CHN)",28 AUG 2015,1130.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14290053,toplist
+24.0,62.77,,Shiying LIU,24 SEP 1993,CHN,1f1,,Chengdu (CHN),01 APR 2015,1129.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14430159,toplist
+25.0,62.14,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,1,,Riga (LAT),28 MAY 2015,1118.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14283446,toplist
+26.0,62.11,,Maria ANDREJCZYK,09 MAR 1996,POL,1,,"Stadion OPO Cetniewo, Władysławowo (POL)",01 AUG 2015,1117.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14500245,toplist
+27.0,62.09,,Goldie SAYERS,16 JUL 1982,GBR,6,,"Olympic Stadium, London (GBR)",25 JUL 2015,1117.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14276278,toplist
+28.0,62.00,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,1,,Tel Aviv (ISR),02 JUL 2015,1115.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14269852,toplist
+29.0,61.92,,Xinli YANG,07 FEB 1988,CHN,2f1,,Chengdu (CHN),01 APR 2015,1114.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14368004,toplist
+30.0,61.90,,Kateryna DERUN,24 SEP 1993,UKR,1,,Kirovograd (UKR),01 AUG 2015,1113.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14303533,toplist
+31.0,61.41,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,8q1,,"National Stadium, Beijing (CHN)",28 AUG 2015,1104.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14303628,toplist
+32.0,61.27,,Mariya ABAKUMOVA,15 JAN 1986,RUS,1,,Yerino (RUS),25 JUL 2015,1102.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14297183,toplist
+33.0,61.23,,Jucilene Sales DE LIMA,14 SEP 1990,BRA,,,"Los Angeles, CA (USA)",11 APR 2015,1101.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14269216,toplist
+34.0,60.67,,Mathilde ANDRAUD,28 APR 1989,FRA,1f1,,Salon-de-Provence (FRA),11 OCT 2015,1090.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14258756,toplist
+35.0,60.54,,Yevgeniya ANANCHENKO,07 JAN 1992,RUS,1,,Krasnodar (RUS),17 JAN 2015,1088.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14403518,toplist
+36.0,60.48,,Līna MŪZE,04 DEC 1992,LAT,1,,"Stade Senghor, Dakar (SEN)",23 MAY 2015,1087.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14334855,toplist
+37.0,60.01,,Anete KOCIŅA,05 FEB 1996,LAT,2,,Ventspils (LAT),08 AUG 2015,1078.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14475585,toplist
+38.0,59.89,,Irena ŠEDIVÁ,19 JAN 1992,CZE,3,,"Main Stadium, Gwangju (KOR)",12 JUL 2015,1076.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14328010,toplist
+39.0,59.86,,Flor Denis RUIZ HURTADO,29 JAN 1991,COL,2,,Lima (PER),14 JUN 2015,1075.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14369335,toplist
+39.0,59.86,,Heidi NOKELAINEN,30 SEP 1990,FIN,2,,Joensuu (FIN),23 JUL 2015,1075.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14373435,toplist
+41.0,59.84,,Ariana INCE,14 MAR 1989,USA,1,,"Walnut, CA (USA)",18 APR 2015,1075.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14313260,toplist
+42.0,59.73,,Margaux NICOLLIN,01 MAY 1995,FRA,1,,"Tomblaine, Nancy (FRA)",25 JUL 2015,1073.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14461536,toplist
+43.0,59.57,,Hannah CARSON,26 JAN 1993,USA,3,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1070.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14307295,toplist
+44.0,59.26,,Abigaíl GÓMEZ,31 JAN 1991,MEX,1,,Morelia (MEX),13 JUN 2015,1064.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14291085,toplist
+45.0,59.15,,Laila FERRER,30 JUL 1982,BRA,2,,"Stade Senghor, Dakar (SEN)",23 MAY 2015,1062.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14269171,toplist
+46.0,59.05,,Kimberly HAMILTON,28 NOV 1985,USA,4,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1060.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14367387,toplist
+47.0,59.03,,Lidia PARADA,11 JUN 1993,ESP,1,,Castellón (ESP),01 AUG 2015,1060.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14375951,toplist
+48.0,58.85,,Annu RANI,29 AUG 1992,IND,1,,Kolkata (IND),18 SEP 2015,1057.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14422692,toplist
+49.0,58.81,,Oona SORMUNEN,02 AUG 1989,FIN,3,,Joensuu (FIN),23 JUL 2015,1056.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14258967,toplist
+50.0,58.77,,Mercedes CHILLA,19 JAN 1980,ESP,1,,Mersin (TUR),30 MAY 2015,1055.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14261819,toplist
+51.0,58.76,,Ai YAMAUCHI,06 DEC 1994,JPN,1,,Osaka (JPN),17 MAY 2015,1055.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14444442,toplist
+52.0,58.74,,Haean SEO,01 JUL 1985,KOR,1,,Goseong (KOR),18 JUN 2015,1055.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14289889,toplist
+53.0,58.70,,Liina LAASMA,13 JAN 1992,EST,1,,Türi (EST),09 OCT 2015,1054.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14372661,toplist
+54.0,58.61,,Anastasiya SVECHNIKOVA,20 SEP 1992,UZB,1,,Bishkek (KGZ),20 JUN 2015,1052.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14325074,toplist
+55.0,58.58,,Xiaowei DU,11 AUG 1987,CHN,2,,Beijing (CHN),28 JUN 2015,1052.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14266522,toplist
+56.0,58.52,,Nadeeka LAKMALI,18 SEP 1981,SRI,1,,Diyagama (SRI),20 DEC 2015,1051.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14300512,toplist
+57.0,58.51,,Hitomi SUKENAGA,04 MAY 1988,JPN,2,,Nagoya (JPN),26 JUN 2015,1050.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14287926,toplist
+58.0,58.43,,Marta KAKOL,25 FEB 1992,POL,1,,Warszawa (POL),26 JUL 2015,1049.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14293806,toplist
+59.0,58.34,,Anna WESSMAN,09 OCT 1989,SWE,4,,"Main Stadium, Gwangju (KOR)",12 JUL 2015,1047.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14302530,toplist
+60.0,58.12,,Marcelina WITEK,02 JUN 1995,POL,2,,Warszawa (POL),26 JUL 2015,1043.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14417579,toplist
+61.0,57.91,,Risa MIYASHITA,26 APR 1984,JPN,1,,Kitakyushu (JPN),03 NOV 2015,1039.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14418697,toplist
+62.0,57.77,,Elizabeth HERRS,20 DEC 1993,USA,1,,"Norman, OK (USA)",18 APR 2015,1037.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14469539,toplist
+63.0,57.73,,Marina SAITO,15 OCT 1995,JPN,3,,Nagoya (JPN),26 JUN 2015,1036.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14547924,toplist
+64.0,57.64,,Karlee MCQUILLEN,31 MAY 1989,USA,2,,"Gainesville, FL (USA)",03 APR 2015,1034.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14316758,toplist
+65.0,57.56,,Dandan ZHU,01 MAR 1994,CHN,1f2,,Chengdu (CHN),01 APR 2015,1033.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14488716,toplist
+66.0,57.39,,Izzy JEFFS,03 FEB 1992,GBR,2,,Loughborough (GBR),18 JUL 2015,1030.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14336244,toplist
+67.0,57.25,,Gyeongae GIM,05 MAR 1988,KOR,2,,Goseong (KOR),18 JUN 2015,1027.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14289719,toplist
+68.0,57.20,,Sara JEMAI,12 APR 1992,ITA,1,,Busto Arsizio (ITA),28 JUN 2015,1026.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14333692,toplist
+69.0,57.15,,Suman DEVI,15 JUL 1985,IND,2,,Kolkata (IND),18 SEP 2015,1025.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14282827,toplist
+70.0,57.13,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,1,,Kaunas (LTU),09 MAY 2015,1025.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14290245,toplist
+71.0,57.02,,Haruka KITAGUCHI,16 MAR 1998,JPN,1,,Wakayama (JPN),04 OCT 2015,1023.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14649131,toplist
+72.0,56.89,,Sarah LEIDL,05 MAR 1987,GER,5,,Nürnberg (GER),26 JUL 2015,1020.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14278651,toplist
+73.0,56.78,,Sarah MAYER,20 MAY 1991,GER,6,,Nürnberg (GER),26 JUL 2015,1018.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14278834,toplist
+74.0,56.77,,Lilian MEURER SEIBERT,23 JUL 1989,BRA,3,,Sao Bernardo do Campo (BRA),16 MAY 2015,1018.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14268957,toplist
+74.0,56.77,,Daixian HE,01 SEP 1994,CHN,4,,Suzhou (CHN),23 SEP 2015,1018.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14420742,toplist
+76.0,56.76,,Arantza MORENO,16 JAN 1995,ESP,1,,Pamplona (ESP),23 MAY 2015,1018.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14470473,toplist
+76.0,56.76,,Sofi FLINK,08 JUL 1995,SWE,9,,"Olympiastadion, Stockholm (SWE)",30 JUL 2015,1018.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14428373,toplist
+78.0,56.74,,Tatsiana BAREISHA,17 MAR 1993,BLR,2,,Brest (BLR),26 MAY 2015,1018.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14407052,toplist
+79.0,56.60,,Yekaterina STARYGINA,26 AUG 1995,RUS,1,,"Adler, Sochi (RUS)",11 FEB 2015,1015.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14460764,toplist
+80.0,56.59,,Madison WILTROUT,04 JUN 1999,USA,1,,"North Huntingdon, PA (USA)",07 MAY 2015,1015.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14647649,toplist
+81.0,56.56,,Jenni KANGAS,03 JUL 1992,FIN,1,,Alavus (FIN),13 JUN 2015,1014.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14259460,toplist
+82.0,56.54,,Mizuki KATO,27 OCT 1993,JPN,1,,Kyoto (JPN),12 APR 2015,1014.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14649134,toplist
+82.0,56.54,,Sofia IFANTIDOU,05 JAN 1985,GRE,1,,Athina (GRE),25 JUL 2015,1014.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14281010,toplist
+84.0,56.52,,Eda TUĞSUZ,27 MAR 1997,TUR,1,,Mersin (TUR),28 FEB 2015,1014.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14590157,toplist
+85.0,56.48,,Leigh PETRANOFF,16 MAY 1989,USA,5,,"Albert Park, Melbourne (AUS)",21 MAR 2015,1013.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14318886,toplist
+86.0,56.43,,Lisanne SCHOL,22 JUN 1991,NED,2,,Leiden (NED),13 JUN 2015,1012.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14329120,toplist
+87.0,56.34,,Chunfeng CHANG,04 MAY 1988,CHN,2f1,,Chengdu (CHN),05 APR 2015,1010.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14266720,toplist
+88.0,56.30,,Nikola OGRODNÍKOVÁ,18 AUG 1990,CZE,7f1,,Leiria (POR),14 MAR 2015,1009.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14262856,toplist
+89.0,56.29,,Jiajia CHEN,14 OCT 1998,CHN,4,,Beijing (CHN),28 JUN 2015,1009.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14694432,toplist
+90.0,56.27,,Petra ANDREJSKOVÁ,25 JUN 1992,CZE,1,,Kladno (CZE),14 JUN 2015,1009.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14374682,toplist
+91.0,56.24,,Aleksandra OSTROWSKA,19 DEC 1997,POL,3,,"Ekängens Friidrottsarena, Eskilstuna (SWE)",19 JUL 2015,1008.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14593124,toplist
+92.0,56.16,,Eliza Raluca TOADER,12 MAY 1990,ROU,1,,Pitesti (ROU),23 MAY 2015,1007.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14295984,toplist
+93.0,56.15,,Sarah FIRESTONE,26 FEB 1995,USA,1,,"East Lansing, MI (USA)",16 MAY 2015,1007.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14477943,toplist
+94.0,56.01,,DeLoma MILLER,10 MAY 1992,USA,1,,"Baton Rouge, LA (USA)",02 MAY 2015,1004.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14329649,toplist
+95.0,55.95,,Annabella BOGDÁN,07 APR 1992,HUN,1,,Szekszárd (HUN),01 JUL 2015,1003.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14380129,toplist
+96.0,55.91,,Réka SZILÁGYI,19 JAN 1996,HUN,4,,"Ekängens Friidrottsarena, Eskilstuna (SWE)",19 JUL 2015,1002.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14494014,toplist
+97.0,55.85,,Tetyana FETISKINA,11 SEP 1994,UKR,2,,Kharkiv (UKR),13 MAY 2015,1001.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14414100,toplist
+98.0,55.77,,Liveta JASIŪNAITĖ,26 JUL 1994,LTU,3,,"Kadrioru staadion, Tallinn (EST)",11 JUL 2015,1000.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14417641,toplist
+99.0,55.74,,Shiori TOMA,07 FEB 1996,JPN,4,,Hiroshima (JPN),19 APR 2015,999.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14608127,toplist
+100.0,55.72,,Sigrid BORGE,03 DEC 1995,NOR,4,,"Kadrioru staadion, Tallinn (EST)",11 JUL 2015,999.0,women_JT,2015,https://worldathletics.org/athletes/athlete=14481209,toplist
+1.0,67.30,,Vera REBRIK,25 FEB 1989,RUS,1,,Sochi (RUS),19 FEB 2016,1213.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14304081,toplist
+2.0,67.11,,Maria ANDREJCZYK,09 MAR 1996,POL,1q2,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1210.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14500245,toplist
+3.0,66.87,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,Tábor (CZE),19 JUN 2016,1205.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14262671,toplist
+4.0,66.41,,Christin HUSSONG,17 MAR 1994,GER,1,,Kassel (GER),19 JUN 2016,1197.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14372241,toplist
+5.0,66.34,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,1,,"Olympisch Stadion, Amsterdam (NED)",09 JUL 2016,1196.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14269852,toplist
+6.0,66.18,,Sara KOLAK,22 JUN 1995,CRO,1,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1193.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14380461,toplist
+6.0,66.18,,Madara PALAMEIKA,18 JUN 1987,LAT,1,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1193.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14290055,toplist
+8.0,65.64,,Shiying LIU,24 SEP 1993,CHN,1,,Shaoxing (CHN),16 APR 2016,1183.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14430159,toplist
+9.0,65.25,,Linda STAHL,02 OCT 1985,GER,2,,"Olympisch Stadion, Amsterdam (NED)",09 JUL 2016,1175.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14279868,toplist
+10.0,65.14,,Sunette VILJOEN,06 OCT 1983,RSA,1,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1173.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14297120,toplist
+11.0,64.96,,Christina OBERGFÖLL,22 AUG 1981,GER,1,,Halle (GER),21 MAY 2016,1170.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14279102,toplist
+12.0,64.37,,Kathryn MITCHELL,10 JUL 1982,AUS,1,,"Albert Park, Melbourne (AUS)",05 MAR 2016,1159.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14271632,toplist
+13.0,64.04,,Huihui LYU,26 JUN 1989,CHN,7,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1153.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14265696,toplist
+14.0,63.84,,Flor Denis RUIZ HURTADO,29 JAN 1991,COL,1,,Cali (COL),25 JUN 2016,1149.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14369335,toplist
+15.0,63.65,,Liina LAASMA,13 JAN 1992,EST,2,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",22 MAY 2016,1146.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14372661,toplist
+16.0,63.54,,Mathilde ANDRAUD,28 APR 1989,FRA,2,,Halle (GER),21 MAY 2016,1144.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14258756,toplist
+17.0,63.20,,Katharina MOLITOR,08 NOV 1983,GER,4,,"Olympisch Stadion, Amsterdam (NED)",09 JUL 2016,1137.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14278931,toplist
+18.0,62.89,,Lingyu LI,26 JAN 1989,CHN,1f1,,Pihtipudas (FIN),03 JUL 2016,1132.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14266005,toplist
+19.0,62.82,,Kateryna DERUN,24 SEP 1993,UKR,1,,Kyiv (UKR),05 MAY 2016,1130.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14303533,toplist
+20.0,62.78,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,1,,Riga (LAT),31 MAY 2016,1130.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14290053,toplist
+21.0,62.59,,Elizabeth GLEADLE,05 DEC 1988,CAN,1,,"Todoroki Stadium, Kawasaki (JPN)",08 MAY 2016,1126.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14267948,toplist
+22.0,62.19,,Yuki EBIHARA,28 OCT 1985,JPN,2,,"Todoroki Stadium, Kawasaki (JPN)",08 MAY 2016,1119.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14286145,toplist
+22.0,62.19,,Maggie MALONE,30 DEC 1993,USA,1,,"Eugene, OR (USA)",09 JUN 2016,1119.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14469594,toplist
+24.0,62.13,,Heidi NOKELAINEN,30 SEP 1990,FIN,1,,Lappeenranta (FIN),27 AUG 2016,1117.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14373435,toplist
+25.0,62.10,,Tatsiana BAREISHA,17 MAR 1993,BLR,1,,Minsk (BLR),01 JUN 2016,1117.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14407052,toplist
+26.0,62.09,,Līna MŪZE,04 DEC 1992,LAT,2,,Valmiera (LAT),10 JUN 2016,1117.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14334855,toplist
+27.0,62.02,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,1,,Kyiv (UKR),25 JUN 2016,1115.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14303628,toplist
+28.0,61.86,,Kara WINGER,10 APR 1986,USA,3,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1112.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14318617,toplist
+29.0,61.70,,Laila FERRER,30 JUL 1982,BRA,1q1,,Sao Bernardo do Campo (BRA),01 JUL 2016,1109.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14269171,toplist
+30.0,61.56,,Li ZHANG,17 JAN 1989,CHN,1,,Chongqing (CHN),18 JUN 2016,1107.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14264439,toplist
+31.0,61.48,,Marcelina WITEK,02 JUN 1995,POL,1,,Złocieniec (POL),30 APR 2016,1105.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14417579,toplist
+32.0,61.42,,Anna WESSMAN,09 OCT 1989,SWE,1,,Tampere (FIN),03 SEP 2016,1104.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14302530,toplist
+33.0,61.38,,Haruka KITAGUCHI,16 MAR 1998,JPN,3,,"Todoroki Stadium, Kawasaki (JPN)",08 MAY 2016,1104.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14649131,toplist
+34.0,61.37,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,3,,"Stadion Juliska, Praha (CZE)",06 JUN 2016,1103.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14283446,toplist
+35.0,61.32,,Liveta JASIŪNAITĖ,26 JUL 1994,LTU,1,,Kaunas (LTU),21 MAY 2016,1102.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14417641,toplist
+36.0,61.27,,Brittany BORMAN,01 JUL 1989,USA,5,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1102.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14306164,toplist
+37.0,61.20,,Hannah CARSON,26 JAN 1993,USA,2,,"Eugene, OR (USA)",09 JUN 2016,1100.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14307295,toplist
+38.0,61.03,,Martina RATEJ,02 NOV 1981,SLO,1,,Velenje (SLO),31 AUG 2016,1097.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14300230,toplist
+39.0,60.86,,Risa MIYASHITA,26 APR 1984,JPN,1,,Osaka (JPN),24 SEP 2016,1094.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14418697,toplist
+40.0,60.70,,Jenni KANGAS,03 JUL 1992,FIN,1,,Heinola (FIN),18 AUG 2016,1091.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14259460,toplist
+41.0,60.37,,Coralys ORTIZ,16 APR 1985,PUR,1,,Gurabo (PUR),27 FEB 2016,1085.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14295332,toplist
+42.0,60.01,,Annu RANI,29 AUG 1992,IND,1,,Lucknow (IND),29 SEP 2016,1078.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14422692,toplist
+43.0,59.68,,Ariana INCE,14 MAR 1989,USA,1,,"Tucson, AZ (USA)",21 MAY 2016,1072.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14313260,toplist
+44.0,59.55,,Mariya ABAKUMOVA,15 JAN 1986,RUS,2,,Sochi (RUS),19 FEB 2016,1070.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14297183,toplist
+45.0,59.50,,Anete KOCIŅA,05 FEB 1996,LAT,3,,Valmiera (LAT),10 JUN 2016,1069.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14475585,toplist
+46.0,59.45,,Suman DEVI,15 JUL 1985,IND,1,,Guwahati (IND),11 FEB 2016,1068.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14282827,toplist
+47.0,59.41,,Sanni UTRIAINEN,05 FEB 1991,FIN,1,,Vantaa (FIN),28 MAY 2016,1067.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14258906,toplist
+48.0,59.39,,Réka SZILÁGYI,19 JAN 1996,HUN,1,,Bar (MNE),01 MAY 2016,1067.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14494014,toplist
+49.0,59.33,,Sigrid BORGE,03 DEC 1995,NOR,1,,Arad (ROU),12 MAR 2016,1066.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14481209,toplist
+50.0,59.19,,Dandan ZHU,01 MAR 1994,CHN,2,,Chengdu (CHN),10 APR 2016,1063.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14488716,toplist
+51.0,59.16,,Sofi FLINK,08 JUL 1995,SWE,2,,Kuortane (FIN),25 JUN 2016,1062.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14428373,toplist
+52.0,59.02,,Kelsey-Lee BARBER,20 SEP 1991,AUS,1,,Canberra (AUS),20 FEB 2016,1060.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14336705,toplist
+53.0,58.95,,Eda TUĞSUZ,27 MAR 1997,TUR,1,,Mersin (TUR),23 MAY 2016,1059.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14590157,toplist
+54.0,58.86,,Oona SORMUNEN,02 AUG 1989,FIN,1,,Lahti (FIN),14 JUL 2016,1057.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14258967,toplist
+55.0,58.81,,Avione Larie ALLGOOD,14 DEC 1993,USA,1,,"Fort Worth, TX (USA)",13 MAY 2016,1056.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14304708,toplist
+56.0,58.79,,Goldie SAYERS,16 JUL 1982,GBR,1,,"Austin, TX (USA)",07 MAY 2016,1056.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14276278,toplist
+57.0,58.72,,Abigaíl GÓMEZ,31 JAN 1991,MEX,1,,"Claremont, CA (USA)",09 APR 2016,1054.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14291085,toplist
+58.0,58.65,,Kimberly HAMILTON,28 NOV 1985,USA,2q2,,"Hayward Field, Eugene, OR (USA)",07 JUL 2016,1053.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14367387,toplist
+59.0,58.53,,Tetyana FETISKINA,11 SEP 1994,UKR,2,,Kyiv (UKR),05 MAY 2016,1051.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14414100,toplist
+60.0,58.31,,Krista WOODWARD,22 NOV 1984,CAN,1,,Langley (CAN),17 JUN 2016,1047.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14266941,toplist
+61.0,58.21,,Marina SAITO,15 OCT 1995,JPN,1,,Kumagaya (JPN),04 SEP 2016,1045.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14547924,toplist
+62.0,58.18,,Nikola OGRODNÍKOVÁ,18 AUG 1990,CZE,1,,Ustí Nad Orlicí (CZE),04 SEP 2016,1044.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14262856,toplist
+63.0,57.86,,Jarmila JURKOVIČOVÁ,09 FEB 1981,CZE,7,,"Stadion Juliska, Praha (CZE)",06 JUN 2016,1038.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14263013,toplist
+64.0,57.85,,Alexia KOGUT KUBIAK,22 JAN 1988,FRA,1,,Aix-en-Provence (FRA),08 MAY 2016,1038.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14256912,toplist
+65.0,57.83,,Irena ŠEDIVÁ,19 JAN 1992,CZE,2,,"Gainesville, FL (USA)",02 APR 2016,1038.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14328010,toplist
+66.0,57.81,,Marija VUČENOVIĆ,03 APR 1993,SRB,2,,"Tuscaloosa, AL (USA)",13 MAY 2016,1037.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14372662,toplist
+66.0,57.81,,Alexie ALAÏS,09 OCT 1994,FRA,1,,Grenoble (FRA),15 JUN 2016,1037.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14428592,toplist
+68.0,57.67,,Yevgeniya ANANCHENKO,07 JAN 1992,RUS,2,,Cheboksary (RUS),23 JUN 2016,1035.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14403518,toplist
+69.0,57.59,,Klaudia MASZUREWSKA,28 AUG 1997,POL,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",20 JUL 2016,1033.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14500247,toplist
+70.0,57.56,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,1,,Alicante (ESP),24 APR 2016,1033.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14290245,toplist
+71.0,57.51,,Xiaowei DU,11 AUG 1987,CHN,2,,Taiyuan (CHN),22 MAY 2016,1032.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14266522,toplist
+72.0,57.50,,Gyeongae GIM,05 MAR 1988,KOR,1,,Hwaseong (KOR),04 JUN 2016,1032.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14289719,toplist
+73.0,57.45,,Mariya RYBNIKOVA,28 OCT 1994,RUS,3,,Cheboksary (RUS),23 JUN 2016,1031.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14408876,toplist
+74.0,57.44,,Joanna BLAIR,01 MAR 1986,GBR,1,,Birmingham (GBR),26 JUN 2016,1031.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14274507,toplist
+75.0,57.40,,Fabienne SCHÖNIG,27 JUL 1997,GER,1,,Wipperfürth (GER),01 MAY 2016,1030.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14525589,toplist
+76.0,57.34,,Lidia PARADA,11 JUN 1993,ESP,4q2,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1029.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14375951,toplist
+77.0,57.32,,Lingdan SU,12 JAN 1997,CHN,1,,Ho Chi-Minh (VIE),04 JUN 2016,1028.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14694433,toplist
+77.0,57.32,,Jo-Ane VAN DYK,03 OCT 1997,RSA,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",20 JUL 2016,1028.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14558613,toplist
+79.0,57.20,,Kimberley MICKLE,28 DEC 1984,AUS,12q1,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1026.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14271652,toplist
+80.0,57.09,,Yulenmis AGUILAR,03 AUG 1996,CUB,1,,San Salvador (ESA),17 JUL 2016,1024.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14518738,toplist
+81.0,57.06,,Audrey MALONE,16 JUN 1995,USA,3,,"Eugene, OR (USA)",09 JUN 2016,1024.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14611789,toplist
+82.0,57.02,,Edivania DOS SANTOS ARAUJO,27 AUG 1995,BRA,2q1,,Sao Bernardo do Campo (BRA),01 JUL 2016,1023.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14496377,toplist
+83.0,56.99,,Annabella BOGDÁN,07 APR 1992,HUN,7,,Arad (ROU),12 MAR 2016,1022.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14380129,toplist
+84.0,56.98,,Sarah LEIDL,05 MAR 1987,GER,1,,Erding (GER),17 JUL 2016,1022.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14278651,toplist
+85.0,56.92,,Dilhani LEKAMGE,14 JAN 1987,SRI,1,,Diyagama (SRI),14 AUG 2016,1021.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14300521,toplist
+86.0,56.91,,Jessie MERCKLE,13 JUL 1994,USA,1,,"High Point, NC (USA)",01 APR 2016,1021.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14479274,toplist
+87.0,56.88,,Sofia IFANTIDOU,05 JAN 1985,GRE,1ce2,,"Stadio Luigi Ridolfi, Firenze (ITA)",30 APR 2016,1020.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14281010,toplist
+88.0,56.86,,Zahra BANI,31 DEC 1979,ITA,1,,Pavia (ITA),01 MAY 2016,1020.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14283709,toplist
+89.0,56.79,,Hiroko TAKIGAWA,25 JUL 1994,JPN,1,,Hiratsuka (JPN),10 JUN 2016,1019.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14479730,toplist
+90.0,56.73,,Poonam RANI,06 JUN 1990,IND,2,,Lucknow (IND),29 SEP 2016,1017.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14409568,toplist
+91.0,56.64,,Marta KAKOL,25 FEB 1992,POL,3,,Warszawa (POL),21 MAY 2016,1016.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14293806,toplist
+92.0,56.56,,Sara JEMAI,12 APR 1992,ITA,2,,Pavia (ITA),01 MAY 2016,1014.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14333692,toplist
+93.0,56.48,,Mahiro OSA,26 NOV 1999,JPN,1,,Okayama (JPN),30 JUL 2016,1013.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14755966,toplist
+94.0,56.40,,Anna TARASIUK,30 OCT 1997,BLR,2q1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",19 JUL 2016,1011.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14515136,toplist
+95.0,56.35,,Nicolle MURPHY,19 OCT 1994,USA,5,,"Hayward Field, Eugene, OR (USA)",09 JUL 2016,1010.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14535458,toplist
+96.0,56.24,,Eleonora BACCIOTTI,13 DEC 1989,ITA,1,,Rieti (ITA),26 JUN 2016,1008.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14283681,toplist
+97.0,56.21,,Margaux NICOLLIN,01 MAY 1995,FRA,2,,Tunis (TUN),04 JUN 2016,1008.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14461536,toplist
+98.0,56.19,,Yuka MORI,21 JUL 1992,JPN,4,,Nagoya (JPN),25 JUN 2016,1007.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14375944,toplist
+98.0,56.19,,Nikol TABAČKOVÁ,24 JAN 1998,CZE,4,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",20 JUL 2016,1007.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14526919,toplist
+100.0,56.17,,Shiori TOMA,07 FEB 1996,JPN,1,,Kurume (JPN),17 SEP 2016,1007.0,women_JT,2016,https://worldathletics.org/athletes/athlete=14608127,toplist
+1.0,68.43,,Sara KOLAK,22 JUN 1995,CRO,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1234.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14380461,toplist
+2.0,68.26,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1,,"Olympic Stadium, London (GBR)",09 JUL 2017,1231.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14262671,toplist
+3.0,67.59,,Huihui LYU,26 JUN 1989,CHN,1q2,,"Olympic Stadium, London (GBR)",06 AUG 2017,1219.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14265696,toplist
+4.0,67.21,,Eda TUĞSUZ,27 MAR 1997,TUR,1,,Baku (AZE),18 MAY 2017,1212.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14590157,toplist
+5.0,66.47,,Shiying LIU,24 SEP 1993,CHN,1,,"Todoroki Stadium, Kawasaki (JPN)",21 MAY 2017,1198.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14430159,toplist
+6.0,66.30,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,1,,"Hayward Field, Eugene, OR (USA)",26 MAY 2017,1195.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14269852,toplist
+7.0,66.25,,Lingyu LI,26 JAN 1989,CHN,2,,"Olympic Stadium, London (GBR)",08 AUG 2017,1194.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14266005,toplist
+8.0,66.12,,Kathryn MITCHELL,10 JUL 1982,AUS,3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1192.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14271632,toplist
+9.0,65.64,,Martina RATEJ,02 NOV 1981,SLO,2q2,,"Olympic Stadium, London (GBR)",06 AUG 2017,1183.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14300230,toplist
+10.0,65.37,,Katharina MOLITOR,08 NOV 1983,GER,1q1,,"Olympic Stadium, London (GBR)",06 AUG 2017,1178.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14278931,toplist
+11.0,64.80,,Kara WINGER,10 APR 1986,USA,1,,"Austin, TX (USA)",14 APR 2017,1167.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14318617,toplist
+12.0,64.53,,Kelsey-Lee BARBER,20 SEP 1991,AUS,2,,"Letzigrund, Zürich (SUI)",24 AUG 2017,1162.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14336705,toplist
+13.0,64.47,,Elizabeth GLEADLE,05 DEC 1988,CAN,4,,"Olympic Stadium, London (GBR)",09 JUL 2017,1161.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14267948,toplist
+13.0,64.47,,Anete KOCIŅA,05 FEB 1996,LAT,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",16 JUL 2017,1161.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14475585,toplist
+15.0,64.18,,Christin HUSSONG,17 MAR 1994,GER,1,,Luzern (SUI),11 JUL 2017,1155.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14372241,toplist
+16.0,63.92,,Madara PALAMEIKA,18 JUN 1987,LAT,1,,Jelgava (LAT),18 JUN 2017,1151.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14290055,toplist
+17.0,63.49,,Sunette VILJOEN,06 OCT 1983,RSA,1,,Potchefstroom (RSA),21 APR 2017,1143.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14297120,toplist
+18.0,63.43,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,1,,Joensuu (FIN),12 JUL 2017,1142.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14283446,toplist
+19.0,63.31,,Marcelina WITEK,02 JUN 1995,POL,1,,"Taipei Municipal Stadium, Taipei City (TPE)",25 AUG 2017,1139.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14417579,toplist
+20.0,63.28,,Sigrid BORGE,03 DEC 1995,NOR,1,,Nadderud (NOR),17 JUN 2017,1139.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14481209,toplist
+21.0,63.07,,Margaryta DOROZHON,04 SEP 1987,ISR,1,,Jerusalem (ISR),13 JUL 2017,1135.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14303544,toplist
+22.0,62.80,,Vera REBRIK,25 FEB 1989,RUS,1,,"Yunost Stadium, Adler, Sochi (RUS)",14 MAY 2017,1130.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14304081,toplist
+23.0,62.52,,Laila FERRER,30 JUL 1982,BRA,1,,Sao Bernardo do Campo (BRA),11 JUN 2017,1125.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14269171,toplist
+24.0,62.48,,Flor Denis RUIZ HURTADO,29 JAN 1991,COL,1,,Santa Marta (COL),24 NOV 2017,1124.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14369335,toplist
+25.0,62.37,,Marina SAITO,15 OCT 1995,JPN,2,,"Taipei Municipal Stadium, Taipei City (TPE)",25 AUG 2017,1122.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14547924,toplist
+26.0,62.24,,Nikola OGRODNÍKOVÁ,18 AUG 1990,CZE,4,,"Stadion Juliska, Praha (CZE)",05 JUN 2017,1119.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14262856,toplist
+27.0,61.95,,Yuki EBIHARA,28 OCT 1985,JPN,1,,Sapporo (JPN),09 JUL 2017,1114.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14286145,toplist
+28.0,61.86,,Annu RANI,29 AUG 1992,IND,1,,Patiala (IND),04 JUN 2017,1112.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14422692,toplist
+29.0,61.38,,Ariana INCE,14 MAR 1989,USA,1,,"East Stroudsburg, PA (USA)",09 JUL 2017,1104.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14313260,toplist
+30.0,61.32,,Liina LAASMA,13 JAN 1992,EST,1,,Tallinn (EST),19 MAY 2017,1102.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14372661,toplist
+30.0,61.32,,Li ZHANG,17 JAN 1989,CHN,3,,Tianjin (CHN),03 SEP 2017,1102.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14264439,toplist
+32.0,61.24,,Xiaowei DU,11 AUG 1987,CHN,3q,,Tianjin (CHN),02 SEP 2017,1101.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14266522,toplist
+33.0,61.07,,Haruka KITAGUCHI,16 MAR 1998,JPN,1,,Matsuyama (JPN),08 OCT 2017,1098.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14649131,toplist
+34.0,60.98,,Jenni KANGAS,03 JUL 1992,FIN,3,,"Taipei Municipal Stadium, Taipei City (TPE)",25 AUG 2017,1096.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14259460,toplist
+35.0,60.68,,Anna WESSMAN,09 OCT 1989,SWE,1,,Linköping (SWE),25 MAY 2017,1091.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14302530,toplist
+36.0,60.55,,Līna MŪZE,04 DEC 1992,LAT,3,,Ogre (LAT),29 JUL 2017,1088.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14334855,toplist
+37.0,60.48,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,1,,Kyiv (UKR),30 JUN 2017,1087.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14303628,toplist
+38.0,60.24,,Liveta JASIŪNAITĖ,26 JUL 1994,LTU,1,,Palanga (LTU),21 JUL 2017,1082.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14417641,toplist
+39.0,60.03,,Risa MIYASHITA,26 APR 1984,JPN,4,,"Todoroki Stadium, Kawasaki (JPN)",21 MAY 2017,1079.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14418697,toplist
+40.0,59.94,,Mikako YAMASHITA,03 MAY 1997,JPN,2,,Matsuyama (JPN),08 OCT 2017,1077.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14719729,toplist
+41.0,59.35,,Viktoryia YARMAKOVA,18 JAN 1995,BLR,4q1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",15 JUL 2017,1066.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14470791,toplist
+42.0,59.32,,Nafissatou THIAM,19 AUG 1994,BEL,1ce1,,"Mösle-Stadium, Götzis (AUT)",28 MAY 2017,1065.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14428253,toplist
+43.0,59.28,,Zahra BANI,31 DEC 1979,ITA,1,,Rieti (ITA),12 FEB 2017,1065.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14283709,toplist
+44.0,59.23,,Sofia IFANTIDOU,05 JAN 1985,GRE,1,,Patra (GRE),17 JUN 2017,1064.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14281010,toplist
+45.0,59.10,,Yuka MORI,21 JUL 1992,JPN,4,,Osaka (JPN),24 JUN 2017,1061.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14375944,toplist
+46.0,59.03,,Daniella MIEKO NISIMURA,26 MAR 1994,BRA,1,,Sao Bernardo do Campo (BRA),25 MAR 2017,1060.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14496366,toplist
+47.0,58.97,,Sofi FLINK,08 JUL 1995,SWE,7,,"Paavo Nurmen Stadion, Turku (FIN)",13 JUN 2017,1059.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14428373,toplist
+48.0,58.95,,Oona SORMUNEN,02 AUG 1989,FIN,2,,Lahti (FIN),09 JUN 2017,1059.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14258967,toplist
+49.0,58.90,,Yulenmis AGUILAR,03 AUG 1996,CUB,1,,La Habana (CUB),16 MAR 2017,1058.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14518738,toplist
+50.0,58.79,,Annabella BOGDÁN,07 APR 1992,HUN,1,,Székesfehérvár (HUN),10 JUN 2017,1056.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14380129,toplist
+51.0,58.76,,Margaux NICOLLIN,01 MAY 1995,FRA,1,,Vénissieux (FRA),12 FEB 2017,1055.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14461536,toplist
+51.0,58.76,,Irena ŠEDIVÁ,19 JAN 1992,CZE,1,,"Eugene, OR (USA)",08 JUN 2017,1055.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14328010,toplist
+53.0,58.72,,Lisanne SCHOL,22 JUN 1991,NED,1,,Utrecht (NED),16 JUL 2017,1054.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14329120,toplist
+54.0,58.58,,Marija VUČENOVIĆ,03 APR 1993,SRB,2,,"Eugene, OR (USA)",08 JUN 2017,1052.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14372662,toplist
+55.0,58.55,,Heidi NOKELAINEN,30 SEP 1990,FIN,2f1,,Pihtipudas (FIN),02 JUL 2017,1051.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14373435,toplist
+56.0,58.51,,Coralys ORTIZ,16 APR 1985,PUR,6,,"Stadion Juliska, Praha (CZE)",05 JUN 2017,1050.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14295332,toplist
+57.0,58.49,,Réka SZILÁGYI,19 JAN 1996,HUN,1,,Vác (HUN),01 OCT 2017,1050.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14494014,toplist
+58.0,58.41,,Anouk VETTER,04 FEB 1993,NED,1ce2,,"Olympic Stadium, London (GBR)",06 AUG 2017,1049.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14372340,toplist
+59.0,58.35,,Lingdan SU,12 JAN 1997,CHN,3,,Jinan (CHN),17 MAY 2017,1047.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14694433,toplist
+60.0,58.34,,Victoria HUDSON,28 MAY 1996,AUT,1,,Wien (AUT),15 AUG 2017,1047.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14446694,toplist
+61.0,58.33,,Tetyana FETISKINA,11 SEP 1994,UKR,2,,Kyiv (UKR),30 JUN 2017,1047.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14414100,toplist
+62.0,58.31,,Géraldine RUCKSTUHL,24 FEB 1998,SUI,2ce1,,"Mösle-Stadium, Götzis (AUT)",28 MAY 2017,1047.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14544283,toplist
+63.0,58.28,,Tatsiana BAREISHA,17 MAR 1993,BLR,2,,Brest (BLR),28 APR 2017,1046.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14407052,toplist
+64.0,58.23,,Rebekah WALES,02 OCT 1995,USA,1,,"Columbia, SC (USA)",13 MAY 2017,1045.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14485102,toplist
+65.0,58.18,,Christine WINKLER,04 MAY 1995,GER,1,,Offenburg (GER),13 MAY 2017,1044.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14454136,toplist
+66.0,58.15,,Kelechi NWANAGA,24 DEC 1997,NGR,1,,Ozoro (NGR),18 JUL 2017,1044.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14652209,toplist
+67.0,58.11,,Dilhani LEKAMGE,14 JAN 1987,SRI,2,,Bhubaneshwar (IND),06 JUL 2017,1043.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14300521,toplist
+68.0,58.00,,Anna TARASIUK,30 OCT 1997,BLR,6,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",16 JUL 2017,1041.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14515136,toplist
+69.0,57.97,,Lidia PARADA,11 JUN 1993,ESP,1,,Barcelona (ESP),22 JUL 2017,1040.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14375951,toplist
+70.0,57.95,,Estefany CHACÓN,01 NOV 1997,VEN,1,,Barinas (VEN),24 SEP 2017,1040.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14544568,toplist
+71.0,57.84,,Bernarda LETNAR,26 DEC 1989,SLO,2,,Celje (SLO),21 MAY 2017,1038.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14300177,toplist
+72.0,57.74,,Rafaela TORRES GONÇALVES,27 NOV 1991,BRA,2,,Sao Bernardo do Campo (BRA),13 MAY 2017,1036.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14368586,toplist
+73.0,57.64,,Indré JAKUBAITYTĖ,24 JAN 1976,LTU,4,,Jelgava (LAT),18 JUN 2017,1034.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14290245,toplist
+74.0,57.58,,Xinli YANG,07 FEB 1988,CHN,4,,Chengdu (CHN),27 MAR 2017,1033.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14368004,toplist
+75.0,57.32,,Dandan ZHU,01 MAR 1994,CHN,4,,Jinan (CHN),17 MAY 2017,1028.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14488716,toplist
+76.0,57.21,,Paola PADOVAN,04 DEC 1995,ITA,1,,Firenze (ITA),09 JUN 2017,1026.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14460678,toplist
+77.0,57.16,,Simona DOBILAITĖ,23 MAY 1995,LTU,2,,Riga (LAT),19 MAY 2017,1025.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14448474,toplist
+78.0,57.02,,Jo-Ane VAN DYK,03 OCT 1997,RSA,9,,"Taipei Municipal Stadium, Taipei City (TPE)",25 AUG 2017,1023.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14558613,toplist
+79.0,56.96,,Dana BERGRATH,24 APR 1994,GER,1,,Pfungstadt (GER),02 AUG 2017,1022.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14401044,toplist
+80.0,56.93,,Ashley PRYKE,07 JUL 1997,CAN,3,,"Eugene, OR (USA)",08 JUN 2017,1021.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14662435,toplist
+81.0,56.92,,Jelena JAAKKOLA,07 MAR 1989,FIN,3,,Vantaa (FIN),27 MAY 2017,1021.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14259503,toplist
+82.0,56.91,,Eloah Caetano SCRAMIN,08 JUN 1996,BRA,3,,Sao Bernardo do Campo (BRA),11 JUN 2017,1021.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14542851,toplist
+83.0,56.89,,Arantza MORENO,16 JAN 1995,ESP,1,,Pamplona (ESP),27 JUL 2017,1020.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14470473,toplist
+84.0,56.88,,Svetlana PECHNIKOVA,06 SEP 1994,RUS,2,,"Adler, Sochi (RUS)",17 FEB 2017,1020.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14434428,toplist
+85.0,56.84,,Nikol TABAČKOVÁ,24 JAN 1998,CZE,1,,Breclav (CZE),06 MAY 2017,1019.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14526919,toplist
+85.0,56.84,,Tori PEETERS,17 MAY 1994,NZL,1,,Dunedin (NZL),28 OCT 2017,1019.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14465380,toplist
+87.0,56.82,,Hitomi SUKENAGA,04 MAY 1988,JPN,7,,Osaka (JPN),24 JUN 2017,1019.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14287926,toplist
+88.0,56.68,,Kihou KUZE,28 MAR 1995,JPN,3,,Osaka (JPN),23 SEP 2017,1016.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14523599,toplist
+89.0,56.61,,Alexie ALAÏS,09 OCT 1994,FRA,1,,Saint Louis (FRA),16 JUN 2017,1015.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14428592,toplist
+90.0,56.57,,Yuzhen YU,05 MAR 1998,CHN,2,,Chengdu (CHN),31 MAR 2017,1014.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14638612,toplist
+91.0,56.54,,Alina SHUKH,12 FEB 1999,UKR,3,,Lutsk (UKR),06 JUN 2017,1014.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14538827,toplist
+92.0,56.47,,Jatta-Mari JÄÄSKELÄINEN,27 FEB 1994,FIN,3f1,,Raasepori (FIN),04 JUN 2017,1013.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14538119,toplist
+93.0,56.46,,Chen CHEN,19 JAN 1996,CHN,3,,Taiyuan (CHN),09 MAY 2017,1012.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14638588,toplist
+94.0,56.44,,Sae TAKEMOTO,23 NOV 1999,JPN,1,,Yamagata (JPN),01 AUG 2017,1012.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14766655,toplist
+95.0,56.43,,Sviatlana PARFIONOVA,30 OCT 1987,BLR,1,,Minsk (BLR),20 JUL 2017,1012.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14269518,toplist
+96.0,56.32,,Laura IKAUNIECE,31 MAY 1992,LAT,2,,Tallinn (EST),19 MAY 2017,1010.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14363929,toplist
+97.0,56.31,,Hiroko TAKIGAWA,25 JUL 1994,JPN,3,,Hiratsuka (JPN),09 JUN 2017,1010.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14479730,toplist
+98.0,56.24,,Klaudia MASZUREWSKA,28 AUG 1997,POL,6,,Riga (LAT),25 MAY 2017,1008.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14500247,toplist
+98.0,56.24,,Gyeongae GIM,05 MAR 1988,KOR,1,,Cheongju (KOR),23 OCT 2017,1008.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14289719,toplist
+100.0,56.20,,Saara LIPSANEN,13 SEP 1995,FIN,1,,Kauhava (FIN),04 AUG 2017,1008.0,women_JT,2017,https://worldathletics.org/athletes/athlete=14503894,toplist
+,67.30,,Steffi NERIUS,01 JUL 1972,GER,1.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,66.42,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,2.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,64.51,,Monica STOIAN,25 AUG 1982,ROU,3.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,64.34,,Christina OBERGFÖLL,22 AUG 1981,GER,4.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,63.23,,Linda STAHL,02 OCT 1985,GER,5.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,63.11,,Olisdeilys MENÉNDEZ,14 NOV 1979,CUB,6.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,60.29,,Sava LIKA,27 JUN 1970,GRE,7.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,58.25,,Vera REBRIK,25 FEB 1989,UKR,8.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,57.65,,Maria Nicoleta NEGOIŢĂ,06 DEC 1986,ROU,9.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,57.57,,Martina RATEJ,02 NOV 1981,SLO,10.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,51.15,,Rachel BUCIARSKI,10 OCT 1986,USA,11.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,DQ,,Mariya ABAKUMOVA,15 JAN 1986,RUS, - ,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,66.81,,Linda STAHL,02 OCT 1985,GER,1.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,65.58,,Christina OBERGFÖLL,22 AUG 1981,GER,2.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,65.36,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,3.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,63.81,,Katharina MOLITOR,08 NOV 1983,GER,4.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,61.40,,Mercedes CHILLA,19 JAN 1980,ESP,5.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,60.99,,Martina RATEJ,02 NOV 1981,SLO,6.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,60.78,,Madara PALAMEIKA,18 JUN 1987,LAT,7.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,56.50,,Jarmila KLIMEŠOVÁ,09 FEB 1981,CZE,8.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,54.32,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,9.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,53.67,,Zahra BANI,31 DEC 1979,ITA,10.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,52.13,,Tatjana JELAČA,10 AUG 1990,SRB,11.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,DQ,,Mariya ABAKUMOVA,15 JAN 1986,RUS, - ,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,71.58,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,68.38,,Sunette VILJOEN,06 OCT 1983,RSA,2.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,65.24,,Christina OBERGFÖLL,22 AUG 1981,GER,3.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,64.32,,Katharina MOLITOR,08 NOV 1983,GER,4.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,61.96,,Kimberley MICKLE,28 DEC 1984,AUS,5.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,61.65,,Martina RATEJ,02 NOV 1981,SLO,6.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,59.27,,Jarmila KLIMEŠOVÁ,09 FEB 1981,CZE,7.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,59.08,,Yuki EBIHARA,28 OCT 1985,JPN,8.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,58.18,,Goldie SAYERS,16 JUL 1982,GBR,9.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,58.08,,Madara PALAMEIKA,18 JUN 1987,LAT,10.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,DNS,,Linda STAHL,02 OCT 1985,GER,,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,DQ,,Mariya ABAKUMOVA,15 JAN 1986,RUS, - ,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,69.55,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,65.16,,Christina OBERGFÖLL,22 AUG 1981,GER,2.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,64.91,,Linda STAHL,02 OCT 1985,GER,3.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,64.53,,Sunette VILJOEN,06 OCT 1983,RSA,4.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,63.70,,Huihui LYU,26 JUN 1989,CHN,5.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,62.89,,Katharina MOLITOR,08 NOV 1983,GER,6.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,60.73,,Madara PALAMEIKA,18 JUN 1987,LAT,7.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,59.46,,Kathryn MITCHELL,10 JUL 1982,AUS,8.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,59.08,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,9.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,58.78,,Elizabeth GLEADLE,05 DEC 1988,CAN,10.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,DQ,,Martina RATEJ,02 NOV 1981,SLO, - ,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,DQ,,Mariya ABAKUMOVA,15 JAN 1986,RUS, - ,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,66.86,,Vera REBRIK,25 FEB 1989,UKR,1.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,65.12,,Christina OBERGFÖLL,22 AUG 1981,GER,2.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,63.69,,Linda STAHL,02 OCT 1985,GER,3.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,63.01,,Goldie SAYERS,16 JUL 1982,GBR,4.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,60.99,,Katharina MOLITOR,08 NOV 1983,GER,5.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,59.34,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,6.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,57.58,,Tatjana JELAČA,10 AUG 1990,SRB,7.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,56.82,,Madara PALAMEIKA,18 JUN 1987,LAT,8.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,56.25,,Sava LIKA,27 JUN 1970,GRE,9.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,55.60,,Līna MŪZE,04 DEC 1992,LAT,10.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,55.14,,Sanni UTRIAINEN,05 FEB 1991,FIN,11.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,53.40,,Zahra BANI,31 DEC 1979,ITA,12.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,69.05,,Christina OBERGFÖLL,22 AUG 1981,GER,1.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,66.60,,Kimberley MICKLE,28 DEC 1984,AUS,2.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,65.09,,Mariya ABAKUMOVA,15 JAN 1986,RUS,3.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,64.78,,Linda STAHL,02 OCT 1985,GER,4.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,63.77,,Kathryn MITCHELL,10 JUL 1982,AUS,5.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,63.58,,Sunette VILJOEN,06 OCT 1983,RSA,6.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,61.30,,Lingyu LI,26 JAN 1989,CHN,7.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,60.81,,Tatjana JELAČA,10 AUG 1990,SRB,8.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,59.52,,Sofi FLINK,08 JUL 1995,SWE,9.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,58.33,,Vera REBRIK,25 FEB 1989,UKR,10.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,58.16,,Nadeeka LAKMALI,18 SEP 1981,SRI,11.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,DQ,,Viktoriya SUDARUSHKINA,02 SEP 1990,RUS, - ,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,64.41,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,64.21,,Tatjana JELAČA,10 AUG 1990,SRB,2.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,63.91,,Linda STAHL,02 OCT 1985,GER,3.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,62.04,,Madara PALAMEIKA,18 JUN 1987,LAT,4.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,61.66,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,5.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,61.58,,Martina RATEJ,02 NOV 1981,SLO,6.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,59.29,,Christin HUSSONG,17 MAR 1994,GER,7.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,58.33,,Goldie SAYERS,16 JUL 1982,GBR,8.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,58.00,,Katharina MOLITOR,08 NOV 1983,GER,9.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,57.91,,Mercedes CHILLA,19 JAN 1980,ESP,10.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,57.82,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,11.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,56.68,,Sofi FLINK,08 JUL 1995,SWE,12.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,67.69,,Katharina MOLITOR,08 NOV 1983,GER,1.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,66.13,,Huihui LYU,26 JUN 1989,CHN,2.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,65.79,,Sunette VILJOEN,06 OCT 1983,RSA,3.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,64.61,,Christina OBERGFÖLL,22 AUG 1981,GER,4.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,64.10,,Lingyu LI,26 JAN 1989,CHN,5.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,62.98,,Christin HUSSONG,17 MAR 1994,GER,6.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,62.20,,Sinta SPRUDZĀNE,26 FEB 1988,LAT,7.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,60.88,,Kara WINGER,10 APR 1986,USA,8.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,60.08,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,9.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,59.88,,Linda STAHL,02 OCT 1985,GER,10.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,59.82,,Elizabeth GLEADLE,05 DEC 1988,CAN,11.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,58.26,,Brittany BORMAN,01 JUL 1989,USA,12.,,IAAF World Championships,30 AUG 2015,,,2015,,major_meet
+,66.18,,Sara KOLAK,22 JUN 1995,CRO,1.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,64.92,,Sunette VILJOEN,06 OCT 1983,RSA,2.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,64.80,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,3.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,64.78,,Maria ANDREJCZYK,09 MAR 1996,POL,4.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,64.60,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,5.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,64.36,,Kathryn MITCHELL,10 JUL 1982,AUS,6.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,64.04,,Huihui LYU,26 JUN 1989,CHN,7.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,62.92,,Christina OBERGFÖLL,22 AUG 1981,GER,8.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,61.54,,Flor Denis RUIZ HURTADO,29 JAN 1991,COL,9.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,60.14,,Madara PALAMEIKA,18 JUN 1987,LAT,10.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,59.71,,Linda STAHL,02 OCT 1985,GER,11.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,57.70,,Christin HUSSONG,17 MAR 1994,GER,12.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,66.34,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,1.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,65.25,,Linda STAHL,02 OCT 1985,GER,2.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,63.50,,Sara KOLAK,22 JUN 1995,CRO,3.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,63.20,,Katharina MOLITOR,08 NOV 1983,GER,4.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,62.66,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,5.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,60.65,,Martina RATEJ,02 NOV 1981,SLO,6.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,60.39,,Madara PALAMEIKA,18 JUN 1987,LAT,7.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,60.37,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,8.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,59.41,,Jenni KANGAS,03 JUL 1992,FIN,9.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,58.86,,Hanna HATSKO-FEDUSOVA,03 OCT 1990,UKR,10.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,56.97,,Eda TUĞSUZ,27 MAR 1997,TUR,11.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,53.94,,Liveta JASIŪNAITĖ,26 JUL 1994,LTU,12.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,66.76,,Barbora ŠPOTÁKOVÁ,30 JUN 1981,CZE,1.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,66.25,,Lingyu LI,26 JAN 1989,CHN,2.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,65.26,,Huihui LYU,26 JUN 1989,CHN,3.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,64.95,,Sara KOLAK,22 JUN 1995,CRO,4.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,64.52,,Eda TUĞSUZ,27 MAR 1997,TUR,5.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,64.05,,Tatsiana KHALADOVICH,21 JUN 1991,BLR,6.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,63.75,,Katharina MOLITOR,08 NOV 1983,GER,7.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,62.84,,Shiying LIU,24 SEP 1993,CHN,8.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,61.05,,Martina RATEJ,02 NOV 1981,SLO,9.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,60.76,,Kelsey-Lee BARBER,20 SEP 1991,AUS,10.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,60.16,,Ásdís HJÁLMSDÓTTIR,28 OCT 1985,ISL,11.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,60.12,,Elizabeth GLEADLE,05 DEC 1988,CAN,12.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
 ,67.90,,Christin HUSSONG,17 MAR 1994,GER,1.,,European Athletics Championships,10 AUG 2018,,,2018,,major_meet
 ,61.85,,Nikola OGRODNÍKOVÁ,18 AUG 1990,CZE,2.,,European Athletics Championships,10 AUG 2018,,,2018,,major_meet
 ,61.59,,Liveta JASIŪNAITĖ,26 JUL 1994,LTU,3.,,European Athletics Championships,10 AUG 2018,,,2018,,major_meet
@@ -1201,6 +2325,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Nat.1,Venue,Date,Results Score,discipline,
 ,51.29,,Petra SIČAKOVÁ,14 APR 2003,CZE,9.,,62nd Ostrava Golden Spike,27 JUN 2023,,,2023,,major_meet
 ,56.24,,Maggie MALONE,30 DEC 1993,USA,1.,,USATF NYC Grand Prix,24 JUN 2023,,,2023,,major_meet
 ,55.63,,Ariana INCE,14 MAR 1989,USA,2.,,USATF NYC Grand Prix,24 JUN 2023,,,2023,,major_meet
+,53.57,,Rebekah WALES,02 OCT 1995,USA,4.,,USATF NYC Grand Prix,24 JUN 2023,,,2023,,major_meet
 ,65.80,,Haruka KITAGUCHI,16 MAR 1998,JPN,1.,,The XXXIII Olympic Games,10 AUG 2024,,,2024,,major_meet
 ,63.93,,Jo-Ane VAN DYK,03 OCT 1997,RSA,2.,,The XXXIII Olympic Games,10 AUG 2024,,,2024,,major_meet
 ,63.68,,Nikola OGRODNÍKOVÁ,18 AUG 1990,CZE,3.,,The XXXIII Olympic Games,10 AUG 2024,,,2024,,major_meet

@@ -1403,12 +1403,1137 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,DNF,,Salomé AFONSO,19 NOV 1997,POR,,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
 ,DNF,,Freweyni HAILU,12 FEB 2001,ETH,,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
 ,4:08.37,,Joceline WIND,12 SEP 2000,SUI,11.,,Weltklasse Zürich,28 AUG 2025,,,2025,,dl_meeting
-,4:16.01,,Winny CHEBET,20 DEC 1990,KEN,1.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,4:16.36,,Shelby HOULIHAN,08 FEB 1993,USA,2.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,4:17.19,,Rababe ARAFI,12 JAN 1991,MAR,3.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,4:18.82,,Linden HALL,20 JUN 1991,AUS,5.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,4:19.46,,Simona VRZALOVÁ,07 APR 1988,CZE,6.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,4:22.56,,Sofia ENNAOUI,30 AUG 1995,POL,7.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
+1.0,3:59.75,,Gelete BURKA,23 JAN 1986,ETH,1,,"Velódromo Luis Puig, Valencia (ESP) (i)",09 MAR 2008,1230.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14259909,toplist
+2.0,3:59.79,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,2,,"Velódromo Luis Puig, Valencia (ESP) (i)",09 MAR 2008,1230.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14268773,toplist
+3.0,4:00.23,,Nancy Jebet LANGAT,22 AUG 1981,KEN,1,,"National Stadium, Beijing (CHN)",23 AUG 2008,1204.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14289224,toplist
+4.0,4:00.33,,Shannon ROWBURY,19 SEP 1984,USA,2,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1203.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14320310,toplist
+5.0,4:00.35,,Liliana BARBULESCU-POPESCU,05 FEB 1982,ROU,1f1,,Bucureşti (ROU),24 MAY 2008,1203.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14295417,toplist
+6.0,4:01.61,,Irina LISHCHINSKA,15 JAN 1976,UKR,2,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1193.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14303841,toplist
+7.0,4:01.78,,Nataliya TOBIAS,22 NOV 1980,UKR,3,,"National Stadium, Beijing (CHN)",23 AUG 2008,1191.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14304251,toplist
+8.0,4:02.02,,Anna ALMINOVA,17 JAN 1985,RUS,1,,Kazan (RUS),20 JUL 2008,1189.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14297233,toplist
+9.0,4:02.10,,Lisa DOBRISKEY,23 DEC 1983,GBR,4,,"National Stadium, Beijing (CHN)",23 AUG 2008,1189.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14274903,toplist
+10.0,4:02.44,,Sarah JAMIESON,24 MAR 1975,AUS,3,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1186.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14271884,toplist
+11.0,4:02.56,,Natalya PANTELEYEVA,10 SEP 1983,RUS,1,,"Stade Louis II, Monaco (MON)",29 JUL 2008,1185.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14298837,toplist
+12.0,4:02.77,,Dolores CHECA,27 DEC 1982,ESP,4,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1183.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14261820,toplist
+13.0,4:03.19,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,6,,"National Stadium, Beijing (CHN)",23 AUG 2008,1180.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14260591,toplist
+14.0,4:03.31,,Gulnara SAMITOVA-GALKINA,09 JUL 1978,RUS,1,,Irkutsk (RUS),02 AUG 2008,1179.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14299161,toplist
+15.0,4:03.68,,Yekaterina SHARMINA,06 AUG 1986,RUS,1,,Moskva (RUS) (i),10 FEB 2008,1198.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14298562,toplist
+16.0,4:04.12,,Cristina VASILOIU,04 MAR 1988,ROU,3,,Kalamata (GRE),04 JUN 2008,1173.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14296012,toplist
+17.0,4:04.17,,Viola Jelagat KIBIWOT,22 DEC 1983,KEN,4,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1172.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14289100,toplist
+18.0,4:04.19,,Daniela YORDANOVA,08 MAR 1976,BUL,3,,"Velódromo Luis Puig, Valencia (ESP) (i)",09 MAR 2008,1194.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14268523,toplist
+18.0,4:04.19,,Natalya YEVDOKIMOVA,17 MAR 1978,RUS,2,,Kazan (RUS),20 JUL 2008,1172.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14299824,toplist
+20.0,4:04.31,,Elena BUHĂIANU-ANTOCI,16 JAN 1975,ROU,3,,Bucureşti (ROU),06 JUN 2008,1171.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14295463,toplist
+21.0,4:04.44,,Iris María FUENTES-PILA,10 AUG 1980,ESP,5,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1170.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14261554,toplist
+22.0,4:04.46,,Sylwia EJDYS,15 JUL 1984,POL,4,,"Stade Louis II, Monaco (MON)",29 JUL 2008,1170.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14293602,toplist
+23.0,4:04.59,,Irene JELAGAT,10 DEC 1988,KEN,5,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1169.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14289013,toplist
+24.0,4:04.88,,Christin WURTH-THOMAS,11 JUL 1980,USA,3,,"Eugene, OR (USA)",08 JUN 2008,1167.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14324759,toplist
+24.0,4:04.88,,Yelena ZADOROZHNAYA,03 DEC 1977,RUS,2,,Irkutsk (RUS),02 AUG 2008,1167.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14299842,toplist
+26.0,4:05.13,,Anna MISHCHENKO,25 AUG 1983,UKR,9,,"National Stadium, Beijing (CHN)",23 AUG 2008,1165.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14303916,toplist
+27.0,4:05.27,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,4,,"Stade Olympique de la Pontaise, Lausanne (SUI)",02 SEP 2008,1164.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14261624,toplist
+28.0,4:05.30,,Agnes SAMARIA,11 AUG 1972,NAM,5,,"Stade Louis II, Monaco (MON)",29 JUL 2008,1163.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14291444,toplist
+29.0,4:05.36,,Siham HILALI,02 MAY 1986,MAR,3h1,,"National Stadium, Beijing (CHN)",21 AUG 2008,1163.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14290679,toplist
+30.0,4:05.67,,Meskerem ASSEFA,03 OCT 1991,ETH,1,,Jerez de la Frontera (ESP),24 JUN 2008,1160.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14259921,toplist
+31.0,4:05.77,,Yelena ORLOVA,30 MAY 1980,RUS,3,,Irkutsk (RUS),02 AUG 2008,1160.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14299345,toplist
+32.0,4:05.83,,Stephanie TWELL,17 AUG 1989,GBR,7,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1159.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14276601,toplist
+33.0,4:05.86,,Lidia CHOJECKA,25 JAN 1977,POL,7,,"Stade Louis II, Monaco (MON)",29 JUL 2008,1159.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14293498,toplist
+34.0,4:06.14,,Qing LIU,28 APR 1986,CHN,1f2,,Suzhou (CHN),29 JUN 2008,1157.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14265761,toplist
+35.0,4:06.17,,Kara GOUCHER,09 JUL 1978,USA,1f3,,Burnaby (CAN),21 JUN 2008,1156.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14311212,toplist
+36.0,4:06.19,,Hannah ENGLAND,06 MAR 1987,GBR,1,,"Des Moines, IA (USA)",14 JUN 2008,1156.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14274986,toplist
+37.0,4:06.21,,Wioletta FRANKIEWICZ,09 JUN 1977,POL,3,,Warszawa (POL),15 JUN 2008,1156.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14293623,toplist
+38.0,4:06.26,,Anna WILLARD,31 MAR 1984,USA,1,,"Indianapolis, IN (USA)",14 JUN 2008,1156.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14324194,toplist
+39.0,4:06.32,,Alemitu BEKELE,17 SEP 1977,TUR,1,,Istanbul (TUR),29 JUN 2008,1155.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14303217,toplist
+40.0,4:06.37,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,1,,Villeneuve d'Ascq (FRA),27 JUN 2008,1155.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14290712,toplist
+41.0,4:06.67,,Sally KIPYEGO,19 DEC 1985,KEN,2,,"Des Moines, IA (USA)",14 JUN 2008,1152.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14289173,toplist
+42.0,4:06.71,,René KALMER,03 NOV 1980,RSA,2,,Madrid (ESP),05 JUL 2008,1152.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14296453,toplist
+43.0,4:06.84,,Mimi BELETE,09 JUN 1988,BEL,1f1,,Oordegem (BEL),26 JUL 2008,1151.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14270503,toplist
+44.0,4:06.93,,Morgan UCENY,10 MAR 1985,USA,1,,Luzern (SUI),16 JUL 2008,1150.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14323124,toplist
+45.0,4:06.94,,Anna JAKUBCZAK,02 FEB 1973,POL,5,,Warszawa (POL),15 JUN 2008,1150.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14293747,toplist
+46.0,4:06.97,,Lisa CORRIGAN,02 DEC 1984,AUS,3,,"Carson, CA (USA)",18 MAY 2008,1150.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14272278,toplist
+47.0,4:07.00,,Susan SCOTT,26 SEP 1977,GBR,2,,Villeneuve d'Ascq (FRA),27 JUN 2008,1150.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14276297,toplist
+48.0,4:07.07,,Malindi ELMORE,13 MAR 1980,CAN,8,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1149.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14268042,toplist
+49.0,4:07.26,,Lindsey GALLO,29 NOV 1981,USA,2,,"Indianapolis, IN (USA)",14 JUN 2008,1148.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14310661,toplist
+50.0,4:07.41,,Olesya CHUMAKOVA-MIKHEYEVA,23 JUL 1981,RUS,2,,Moskva (RUS) (i),10 FEB 2008,1168.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14297556,toplist
+51.0,4:07.46,,Sylvia Jebiwot KIBET,28 MAR 1984,KEN,1,,Karlsruhe (GER) (i),10 FEB 2008,1168.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14289098,toplist
+52.0,4:07.50,,Sarah BROWN,15 OCT 1986,USA,3,,"Des Moines, IA (USA)",14 JUN 2008,1146.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14306246,toplist
+53.0,4:07.62,,Amy MORTIMER,16 AUG 1981,USA,3,,"Icahn Stadium, New York, NY (USA)",31 MAY 2008,1145.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14317469,toplist
+54.0,4:07.65,,Erin DONOHUE,08 MAY 1983,USA,4,,"Eugene, OR (USA)",08 JUN 2008,1145.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14309170,toplist
+55.0,4:07.74,,Charlene THOMAS,06 MAY 1982,GBR,6,,Rabat (MAR),14 JUN 2008,1144.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14276408,toplist
+56.0,4:07.77,,Marta DOMÍNGUEZ,03 NOV 1975,ESP,5,,Madrid (ESP),05 JUL 2008,1144.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14261710,toplist
+57.0,4:07.80,,Sonja ROMAN,11 MAR 1979,SLO,5,,Kalamata (GRE),04 JUN 2008,1144.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14300233,toplist
+58.0,4:07.82,,Olga KOMYAGINA,10 FEB 1974,RUS,3,,Villeneuve d'Ascq (FRA),27 JUN 2008,1143.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14298180,toplist
+59.0,4:07.87,,Jenelle DEATHERAGE,25 SEP 1977,USA,3,,"Indianapolis, IN (USA)",14 JUN 2008,1143.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14308791,toplist
+60.0,4:07.95,,Konstantina EFENTAKI,01 OCT 1978,GRE,4f1,,Heusden-Zolder (BEL),20 JUL 2008,1142.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14280593,toplist
+61.0,4:07.97,,Nahida TOUHAMI,10 FEB 1978,ALG,6,,Jerez de la Frontera (ESP),24 JUN 2008,1142.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14272758,toplist
+62.0,4:08.06,,Tetyana PETLYUK,22 FEB 1982,UKR,4f1,,Kyiv (UKR),01 JUL 2008,1142.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14304013,toplist
+63.0,4:08.07,,Anastasiya FESENKO,17 JUN 1982,RUS,6,,Kalamata (GRE),04 JUN 2008,1141.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14297691,toplist
+64.0,4:08.11,,Liliya SHOBUKHOVA,13 NOV 1977,RUS,2,,"Meteor, Zhukovskiy (RUS)",15 JUN 2008,1141.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14299314,toplist
+65.0,4:08.14,,Georgie CLARKE,17 JUN 1984,AUS,3f3,,Burnaby (CAN),21 JUN 2008,1141.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14272318,toplist
+66.0,4:08.18,,Marina MUNĆAN,06 NOV 1982,SRB,1,,"Los Angeles, CA (USA)",07 JUN 2008,1141.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14300389,toplist
+67.0,4:08.36,,Helen CLITHEROE,02 JAN 1974,GBR,3,,Shanghai (CHN),20 SEP 2008,1139.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14276033,toplist
+68.0,4:08.54,,Brianna FELNAGLE,09 DEC 1986,USA,1,,"Chapel Hill, NC (USA)",17 MAY 2008,1138.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14309986,toplist
+69.0,4:08.55,,Sara HALL,15 APR 1983,AUS,6f1,,Heusden-Zolder (BEL),20 JUL 2008,1138.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14305595,toplist
+70.0,4:08.56,,Hilary STELLINGWERFF,07 AUG 1981,CAN,1,,Windsor (CAN),05 JUL 2008,1138.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14268056,toplist
+71.0,4:08.79,,Meselech MELKAMU,19 APR 1985,ETH,5,,Shanghai (CHN),20 SEP 2008,1136.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14259772,toplist
+72.0,4:08.87,,Fei XUE,08 AUG 1989,CHN,2f2,,Suzhou (CHN),29 JUN 2008,1135.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14264755,toplist
+73.0,4:08.89,,Deirdre BYRNE,21 SEP 1982,IRL,7f1,,Heusden-Zolder (BEL),20 JUL 2008,1135.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14283149,toplist
+74.0,4:09.10,,Nouria MÉRAH-BENIDA,19 OCT 1970,ALG,8,,"Stade Louis II, Monaco (MON)",29 JUL 2008,1133.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14272784,toplist
+75.0,4:09.32,,Yelena KANALES,07 FEB 1976,RUS,1h3,,Kazan (RUS),19 JUL 2008,1132.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14298009,toplist
+76.0,4:09.43,,Lauren FLESHMAN,26 SEP 1981,USA,5,,"Eugene, OR (USA)",08 JUN 2008,1131.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14310192,toplist
+77.0,4:09.59,,Tatyana GUDKOVA,26 MAR 1985,RUS,3h2,,Kazan (RUS),19 JUL 2008,1130.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14297356,toplist
+78.0,4:09.61,,Carmen DOUMA-HUSSAR,12 MAR 1977,CAN,5,,"Icahn Stadium, New York, NY (USA)",31 MAY 2008,1129.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14268089,toplist
+79.0,4:09.86,,Maria de Lurdes MUTOLA,27 OCT 1972,MOZ,5,,Doha (QAT),09 MAY 2008,1128.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14291362,toplist
+80.0,4:10.02,,Asmerawork BEKELE,11 AUG 1991,ETH,1,,Huelva (ESP),13 JUN 2008,1126.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14329596,toplist
+81.0,4:10.14,,Kalkidan GEZAHEGNE,08 MAY 1991,ETH,10,,"Stade Louis II, Monaco (MON)",29 JUL 2008,1125.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14259836,toplist
+82.0,4:10.17,,Nicole TETER,08 NOV 1973,USA,8f1,,Heusden-Zolder (BEL),20 JUL 2008,1125.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14322615,toplist
+83.0,4:10.19,,Daniela DONISĂ,23 APR 1988,ROU,3,,Bucureşti (ROU),05 JUL 2008,1125.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14295574,toplist
+84.0,4:10.33,,Veronicah Nyaruai WANJIRU,29 OCT 1989,KEN,7,,Doha (QAT),09 MAY 2008,1124.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14289384,toplist
+85.0,4:10.39,,Bouchra CHAABI,22 SEP 1980,MAR,13,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1123.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14290620,toplist
+86.0,4:10.45,,Faye FULLERTON,31 MAY 1984,GBR,3,,Loughborough (GBR),18 MAY 2008,1123.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14275088,toplist
+87.0,4:10.50,,Irene ALFONSO,06 FEB 1981,ESP,5,,Barcelona (ESP),19 JUL 2008,1123.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14262136,toplist
+88.0,4:10.57,,Natalya POPKOVA,21 SEP 1988,RUS,1f2,,Tula (RUS),06 JUL 2008,1122.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14298974,toplist
+89.0,4:10.73,,Anna ROSTKOWSKA,26 JUL 1980,POL,8,,Villeneuve d'Ascq (FRA),27 JUN 2008,1121.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14294353,toplist
+90.0,4:10.78,,Kristina UGAROVA,22 OCT 1987,RUS,1,,Chelyabinsk (RUS),29 JUN 2008,1120.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14298068,toplist
+91.0,4:10.85,,Mary Jane HARRELSON-REEVES,17 JUN 1978,USA,10f1,,Heusden-Zolder (BEL),20 JUL 2008,1120.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14312001,toplist
+92.0,4:10.86,,Almenesh BELETE,26 JUL 1989,ETH,4f1,,Oordegem (BEL),26 JUL 2008,1120.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14259898,toplist
+93.0,4:11.02,,Dacia BARR,09 JUL 1986,USA,4,,"Des Moines, IA (USA)",14 JUN 2008,1119.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14368423,toplist
+94.0,4:11.10,,Margaret Wangari MURIUKI,21 MAR 1986,KEN,7,,Kalamata (GRE),04 JUN 2008,1118.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14289494,toplist
+95.0,4:11.17,,Jemma SIMPSON,10 FEB 1984,GBR,4h2,,"Velódromo Luis Puig, Valencia (ESP) (i)",08 MAR 2008,1138.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14276350,toplist
+96.0,4:11.22,,Emma PALLANT,04 JUN 1989,GBR,7,,Barcelona (ESP),19 JUL 2008,1117.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14275995,toplist
+97.0,4:11.26,,Dudu KARAKAYA,11 NOV 1985,TUR,1,,Izmir (TUR),31 MAY 2008,1117.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14303281,toplist
+98.0,4:11.29,,Celia TAYLOR,22 JAN 1977,GBR,2,,Wien (AUT) (i),29 JAN 2008,1137.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14274579,toplist
+99.0,4:11.35,,Tiffany MCWILLIAMS,20 OCT 1982,USA,5f1,,Oordegem (BEL),26 JUL 2008,1116.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14316782,toplist
+100.0,4:11.36,,Jenny SIMPSON,23 AUG 1986,USA,9,,Luzern (SUI),16 JUL 2008,1116.0,women_1500m,2008,https://worldathletics.org/athletes/athlete=14305392,toplist
+1.0,3:56.55,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,1,,"Stadio Olimpico, Roma (ITA)",10 JUL 2009,1233.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14268773,toplist
+2.0,3:58.79,,Gelete BURKA,23 JAN 1986,ETH,1,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1215.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14259909,toplist
+3.0,3:59.38,,Anna WILLARD,31 MAR 1984,USA,2,,"Letzigrund, Zürich (SUI)",28 AUG 2009,1210.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14324194,toplist
+4.0,3:59.50,,Lisa DOBRISKEY,23 DEC 1983,GBR,3,,"Letzigrund, Zürich (SUI)",28 AUG 2009,1210.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14274903,toplist
+5.0,3:59.66,,Natalya YEVDOKIMOVA,17 MAR 1978,RUS,1,,Cheboksary (RUS),26 JUL 2009,1208.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14299824,toplist
+6.0,3:59.90,,Jenny SIMPSON,23 AUG 1986,USA,2,,"Eugene, OR (USA)",07 JUN 2009,1206.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14305392,toplist
+7.0,3:59.98,,Christin WURTH-THOMAS,11 JUL 1980,USA,2,,"Stadio Olimpico, Roma (ITA)",10 JUL 2009,1206.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14324759,toplist
+8.0,4:00.81,,Shannon ROWBURY,19 SEP 1984,USA,4,,"Letzigrund, Zürich (SUI)",28 AUG 2009,1199.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14320310,toplist
+9.0,4:00.86,,Oksana ZBROZHEK,12 JAN 1978,RUS,2,,Cheboksary (RUS),26 JUL 2009,1199.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14299869,toplist
+10.0,4:00.95,,Mariem ALAOUI SELSOULI,08 APR 1984,MAR,3,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1198.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14290568,toplist
+11.0,4:01.64,,Nancy Jebet LANGAT,22 AUG 1981,KEN,6,,"Letzigrund, Zürich (SUI)",28 AUG 2009,1192.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14289224,toplist
+12.0,4:01.77,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,1f1,,"Velódromo Luis Puig, Valencia (ESP) (i)",14 FEB 2009,1214.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14261624,toplist
+13.0,4:02.13,,Sonja ROMAN,11 MAR 1979,SLO,4,,"Stadio Olimpico, Roma (ITA)",10 JUL 2009,1188.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14300233,toplist
+14.0,4:02.30,,Sylwia EJDYS,15 JUL 1984,POL,6,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1187.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14293602,toplist
+15.0,4:02.34,,Gulnara SAMITOVA-GALKINA,09 JUL 1978,RUS,1,,Moskva (RUS),12 JUN 2009,1187.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14299161,toplist
+16.0,4:02.49,,Yevgeniya ZOLOTOVA,28 APR 1983,RUS,3,,Cheboksary (RUS),26 JUL 2009,1186.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14299926,toplist
+17.0,4:02.70,,Viola Jelagat KIBIWOT,22 DEC 1983,KEN,2,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1184.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14289100,toplist
+18.0,4:02.98,,Kalkidan GEZAHEGNE,08 MAY 1991,ETH,3,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1182.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14259836,toplist
+19.0,4:03.23,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,7,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1180.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14290712,toplist
+20.0,4:03.43,,Hind DEHIBA CHAHYD,17 MAR 1979,FRA,4,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1178.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14258138,toplist
+21.0,4:03.48,,Stephanie TWELL,17 AUG 1989,GBR,8,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1178.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14276601,toplist
+22.0,4:03.62,,Irene JELAGAT,10 DEC 1988,KEN,4,,Rieti (ITA),06 SEP 2009,1177.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14289013,toplist
+23.0,4:03.73,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,2sf1,,"Olympiastadion, Berlin (GER)",21 AUG 2009,1176.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14260591,toplist
+24.0,4:03.74,,Siham HILALI,02 MAY 1986,MAR,5,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1176.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14290679,toplist
+25.0,4:03.92,,Natalya PANTELEYEVA,10 SEP 1983,RUS,4,,Cheboksary (RUS),26 JUL 2009,1174.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14298837,toplist
+26.0,4:04.29,,Hannah ENGLAND,06 MAR 1987,GBR,9,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1171.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14274986,toplist
+27.0,4:04.36,,Mimi BELETE,09 JUN 1988,ETH,6,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1171.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14270503,toplist
+28.0,4:04.59,,Yuliya ZARIPOVA,26 APR 1986,RUS,3,,Warszawa (POL),07 JUN 2009,1169.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14299856,toplist
+29.0,4:04.83,,Lidia CHOJECKA,25 JAN 1977,POL,8,,"Stadio Olimpico, Roma (ITA)",10 JUL 2009,1167.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14293498,toplist
+30.0,4:04.84,,Marta DOMÍNGUEZ,03 NOV 1975,ESP,2,,Madrid (ESP),04 JUL 2009,1167.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14261710,toplist
+31.0,4:04.98,,Elisa CUSMA,24 JUL 1981,ITA,7,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1166.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14284142,toplist
+32.0,4:05.06,,Charlene THOMAS,06 MAY 1982,GBR,4,,Warszawa (POL),07 JUN 2009,1165.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14276408,toplist
+33.0,4:05.21,,Erin DONOHUE,08 MAY 1983,USA,8,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1164.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14309170,toplist
+34.0,4:05.40,,Yekaterina SHARMINA,06 AUG 1986,RUS,5,,Cheboksary (RUS),26 JUL 2009,1162.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14298562,toplist
+35.0,4:05.57,,Iris María FUENTES-PILA,10 AUG 1980,ESP,2,,Barcelona (ESP),25 JUL 2009,1161.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14261554,toplist
+36.0,4:05.60,,Judit VARGA,16 APR 1976,ITA,6,,"Stade Olympique de la Pontaise, Lausanne (SUI)",07 JUL 2009,1161.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14282595,toplist
+37.0,4:05.63,,Irina LISHCHINSKA,15 JAN 1976,UKR,4,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1161.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14303841,toplist
+38.0,4:05.67,,Sarah BROWN,15 OCT 1986,USA,9,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1160.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14306246,toplist
+39.0,4:05.86,,Susan KUIJKEN,08 JUL 1986,NED,1,,Uden (NED),27 JUN 2009,1159.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14291825,toplist
+39.0,4:05.86,,Natalya POPKOVA,21 SEP 1988,RUS,1,,Moskva (RUS),01 JUL 2009,1159.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14298974,toplist
+41.0,4:05.99,,Meskerem ASSEFA,03 OCT 1991,ETH,8,,"Eugene, OR (USA)",07 JUN 2009,1158.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14259921,toplist
+42.0,4:06.07,,Adrienne HERZOG,30 SEP 1985,NED,3,,Barcelona (ESP),25 JUL 2009,1157.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14291707,toplist
+43.0,4:06.08,,Yuliya STEPANOVA,03 JUL 1986,RUS,1,,Bryansk (RUS),26 JUN 2009,1157.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14299108,toplist
+44.0,4:06.45,,Anna MISHCHENKO,25 AUG 1983,UKR,5,,Stockholm (SWE),31 JUL 2009,1154.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14303916,toplist
+45.0,4:06.51,,Tetyana PETLYUK,22 FEB 1982,UKR,1,,Yalta (UKR),22 JUL 2009,1154.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14304013,toplist
+46.0,4:06.75,,Irina KRAKOVIAK,16 NOV 1977,LTU,7,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1152.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14290281,toplist
+47.0,4:06.84,,Renata PLIŚ,05 FEB 1985,POL,6,,Warszawa (POL),07 JUN 2009,1151.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14294279,toplist
+48.0,4:06.91,,Shalane FLANAGAN,08 JUL 1981,USA,10,,"Eugene, OR (USA)",07 JUN 2009,1151.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14310164,toplist
+49.0,4:06.94,,Malindi ELMORE,13 MAR 1980,CAN,2,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1150.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14268042,toplist
+50.0,4:07.19,,Amy MORTIMER,16 AUG 1981,USA,3,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1148.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14317469,toplist
+51.0,4:07.41,,Vivian Jepkemei CHERUIYOT,11 SEP 1983,KEN,2,,Doha (QAT),08 MAY 2009,1147.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14288971,toplist
+52.0,4:07.43,,Tamara TVERDOSTUP,17 JUL 1979,UKR,7,,Warszawa (POL),07 JUN 2009,1147.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14304309,toplist
+53.0,4:07.51,,Irene ALFONSO,06 FEB 1981,ESP,11,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1146.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14262136,toplist
+54.0,4:07.63,,Alena FESENKO,04 OCT 1988,RUS,2,,Moskva (RUS),01 JUL 2009,1145.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14297690,toplist
+55.0,4:07.68,,Sally KIPYEGO,19 DEC 1985,KEN,1f1,,Burnaby (CAN),14 JUN 2009,1145.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14289173,toplist
+56.0,4:07.80,,Hasna BENHASSI,01 JUN 1978,MAR,4,,Rabat (MAR),23 MAY 2009,1144.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14290605,toplist
+57.0,4:07.91,,Treniere MOSER,27 OCT 1981,USA,12,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1143.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14307753,toplist
+58.0,4:07.94,,Katrina WOOTTON,02 SEP 1985,GBR,1f1,,Watford (GBR),13 JUN 2009,1143.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14276808,toplist
+59.0,4:07.98,,Elena ROMAGNOLO,05 OCT 1982,ITA,8,,Warszawa (POL),07 JUN 2009,1142.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14285145,toplist
+60.0,4:08.01,,Hanane OUHADDOU,01 JAN 1982,MAR,5,,Rabat (MAR),23 MAY 2009,1142.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14290753,toplist
+60.0,4:08.01,,Caster SEMENYA,07 JAN 1991,RSA,1,,Bambous (MRI),02 AUG 2009,1142.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14330057,toplist
+62.0,4:08.07,,Asli CAKIR ALPTEKIN,20 AUG 1985,TUR,2,,Patra (GRE),06 JUL 2009,1141.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14303222,toplist
+63.0,4:08.10,,Meselech MELKAMU,19 APR 1985,ETH,7,,Shanghai (CHN),20 SEP 2009,1141.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14259772,toplist
+64.0,4:08.31,,Helen CLITHEROE,02 JAN 1974,GBR,8,,Shanghai (CHN),20 SEP 2009,1140.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14276033,toplist
+65.0,4:08.52,,Nikki HAMBLIN,20 MAY 1988,GBR,2,,Uden (NED),27 JUN 2009,1138.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14275215,toplist
+66.0,4:08.57,,Sylvia Jebiwot KIBET,28 MAR 1984,KEN,2,,Nairobi (KEN),27 JUN 2009,1138.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14289098,toplist
+67.0,4:08.61,,Ines CHENONGE,01 FEB 1982,KEN,3,,Nairobi (KEN),27 JUN 2009,1137.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14288867,toplist
+68.0,4:08.79,,Kristina UGAROVA,22 OCT 1987,RUS,2,,Bryansk (RUS),26 JUN 2009,1136.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14298068,toplist
+69.0,4:08.96,,Hilary STELLINGWERFF,07 AUG 1981,CAN,5,,Barcelona (ESP),25 JUL 2009,1135.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14268056,toplist
+70.0,4:09.08,,Anastasiya FESENKO,17 JUN 1982,RUS,3,,"Peace and Friendship Stadium, Piraeus (GRE) (i)",25 FEB 2009,1155.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14297691,toplist
+71.0,4:09.09,,Almenesh BELETE,26 JUL 1989,ETH,1f2,,Brasschaat (BEL),26 JUL 2009,1134.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14259898,toplist
+72.0,4:09.35,,Deirdre BYRNE,21 SEP 1982,IRL,6,,Barcelona (ESP),25 JUL 2009,1131.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14283149,toplist
+73.0,4:09.50,,Barbara MAVEAU,16 FEB 1987,BEL,2f2,,Brasschaat (BEL),26 JUL 2009,1130.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14270292,toplist
+74.0,4:09.52,,Brenda MARTINEZ,08 SEP 1987,USA,1f1,,Gent (BEL),21 JUL 2009,1130.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14316143,toplist
+75.0,4:09.54,,Ruth Bosibori NYANGAU,02 JAN 1988,KEN,4,,Daegu (KOR),25 SEP 2009,1130.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14288794,toplist
+76.0,4:09.55,,Susan SCOTT,26 SEP 1977,GBR,2,,"National Indoor Arena, Birmingham (GBR) (i)",21 FEB 2009,1151.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14276297,toplist
+77.0,4:09.62,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,2,,Heusden-Zolder (BEL),18 JUL 2009,1129.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14292722,toplist
+78.0,4:09.69,,Sara HALL,15 APR 1983,USA,3f1,,"Palo Alto, CA (USA)",02 MAY 2009,1129.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14305595,toplist
+79.0,4:09.75,,Heidi DAHL,15 FEB 1986,USA,2,,Leverkusen (GER),31 JUL 2009,1128.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14360522,toplist
+80.0,4:09.77,,Kara GOUCHER,09 JUL 1978,USA,3f1,,Burnaby (CAN),14 JUN 2009,1128.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14311212,toplist
+81.0,4:09.86,,Lauren PAQUETTE,27 JUN 1986,USA,7,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1128.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14311688,toplist
+82.0,4:09.95,,Morgan UCENY,10 MAR 1985,USA,2,,Luzern (SUI),15 JUL 2009,1127.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14323124,toplist
+83.0,4:09.96,,Emma PALLANT,04 JUN 1989,GBR,9,,Rabat (MAR),23 MAY 2009,1127.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14275995,toplist
+84.0,4:10.01,,Kaila MCKNIGHT,05 MAY 1986,AUS,1,,Sollentuna (SWE),25 JUN 2009,1126.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14271670,toplist
+85.0,4:10.04,,Amy YODER BEGLEY,11 JAN 1978,USA,4f1,,"Palo Alto, CA (USA)",02 MAY 2009,1126.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14324822,toplist
+86.0,4:10.09,,Mihaela STĂNCESCU-NEACŞU,03 MAY 1979,ROU,8,,Barcelona (ESP),25 JUL 2009,1126.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14295946,toplist
+87.0,4:10.19,,Marina MUNĆAN,06 NOV 1982,SRB,3f1,,Gent (BEL),21 JUL 2009,1125.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14300389,toplist
+88.0,4:10.23,,Lauren CENTROWITZ,25 SEP 1986,USA,3f2,,Brasschaat (BEL),26 JUL 2009,1125.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14307413,toplist
+89.0,4:10.26,,Yevgeniya ZINUROVA,16 NOV 1982,RUS,3h3,,Cheboksary (RUS),23 JUL 2009,1124.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14299918,toplist
+90.0,4:10.30,,Kelly NEELY,17 JUN 1978,IRL,4f1,,Gent (BEL),21 JUL 2009,1124.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14283304,toplist
+91.0,4:10.31,,Natallia KAREIVA,14 NOV 1985,BLR,1,,Grodno (BLR),27 JUN 2009,1124.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14269823,toplist
+92.0,4:10.34,,Lindsey GALLO,29 NOV 1981,USA,3,,Leverkusen (GER),31 JUL 2009,1124.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14310661,toplist
+93.0,4:10.36,,Yeliz KURT,15 JAN 1984,TUR,1,,Bursa (TUR),09 JUN 2009,1124.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14303299,toplist
+94.0,4:10.56,,Jessica AUGUSTO,08 NOV 1981,POR,4f1,,"Velódromo Luis Puig, Valencia (ESP) (i)",14 FEB 2009,1143.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14294784,toplist
+95.0,4:10.64,,Esther DESVIAT,27 JAN 1982,ESP,5f1,,"Velódromo Luis Puig, Valencia (ESP) (i)",14 FEB 2009,1142.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14261738,toplist
+96.0,4:10.71,,Lindsey DE GRANDE,26 APR 1989,BEL,4f2,,Brasschaat (BEL),26 JUL 2009,1121.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14270439,toplist
+97.0,4:10.74,,Tatyana GUDKOVA,26 MAR 1985,RUS,1,,Casablanca (MAR),14 JUN 2009,1121.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14297356,toplist
+98.0,4:10.78,,Yekaterina ISHOVA,17 JAN 1989,RUS,3h4,,Cheboksary (RUS),23 JUL 2009,1120.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14297822,toplist
+99.0,4:10.79,,Mika YOSHIKAWA,16 SEP 1984,JPN,2,,Osaka (JPN),09 MAY 2009,1120.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14288541,toplist
+100.0,4:10.90,,Olesya SYREVA,25 NOV 1983,RUS,3f3,,Moskva (RUS) (i),15 FEB 2009,1140.0,women_1500m,2009,https://worldathletics.org/athletes/athlete=14299506,toplist
+1.0,3:58.93,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,1,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1214.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14268773,toplist
+2.0,3:59.28,,Gelete BURKA,23 JAN 1986,ETH,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1211.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14259909,toplist
+3.0,3:59.35,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1211.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14290712,toplist
+4.0,3:59.59,,Christin WURTH-THOMAS,11 JUL 1980,USA,1,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1209.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14324759,toplist
+5.0,3:59.76,,Hind DEHIBA CHAHYD,17 MAR 1979,FRA,2,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1207.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14258138,toplist
+6.0,3:59.79,,Lisa DOBRISKEY,23 DEC 1983,GBR,3,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1207.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14274903,toplist
+7.0,4:00.13,,Nancy Jebet LANGAT,22 AUG 1981,KEN,3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1204.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289224,toplist
+8.0,4:00.20,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,1,,"Estadio Olímpico, Barcelona (ESP)",01 AUG 2010,1204.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14261624,toplist
+9.0,4:00.25,,Mimi BELETE,09 JUN 1988,BRN,2,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1203.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14270503,toplist
+10.0,4:01.17,,Fanjanteino FELIX,26 JAN 1980,FRA,4,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1196.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14257541,toplist
+11.0,4:01.30,,Shannon ROWBURY,19 SEP 1984,USA,5,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1195.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14320310,toplist
+11.0,4:01.30,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,3,,"Estadio Olímpico, Barcelona (ESP)",01 AUG 2010,1195.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14260591,toplist
+13.0,4:01.96,,Abeba AREGAWI,05 JUL 1990,ETH,1,,Heusden-Zolder (BEL),10 JUL 2010,1190.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14360651,toplist
+14.0,4:02.00,,Meseret DEFAR,19 NOV 1983,ETH,2,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1189.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14259882,toplist
+15.0,4:02.20,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,5,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1188.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14292722,toplist
+16.0,4:02.40,,Morgan UCENY,10 MAR 1985,USA,5,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1186.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14323124,toplist
+17.0,4:02.54,,Stephanie TWELL,17 AUG 1989,GBR,3,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1185.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14276601,toplist
+18.0,4:03.14,,Anna MISHCHENKO,25 AUG 1983,UKR,6,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1180.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14303916,toplist
+19.0,4:03.28,,Kalkidan GEZAHEGNE,08 MAY 1991,ETH,1,,Stockholm (SWE) (i),10 FEB 2010,1201.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14259836,toplist
+20.0,4:03.39,,Viola Jelagat KIBIWOT,22 DEC 1983,KEN,7,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1178.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289100,toplist
+21.0,4:03.49,,Erin DONOHUE,08 MAY 1983,USA,7,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1178.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14309170,toplist
+22.0,4:03.63,,Jenny SIMPSON,23 AUG 1986,USA,4,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1176.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14305392,toplist
+23.0,4:03.76,,Irene JELAGAT,10 DEC 1988,KEN,5,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1175.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289013,toplist
+24.0,4:03.83,,Mouna TABSAART,07 APR 1987,MAR,1,,Tanger (MAR),10 JUL 2010,1175.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14290779,toplist
+25.0,4:03.89,,Siham HILALI,02 MAY 1986,MAR,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",14 MAY 2010,1174.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14290679,toplist
+26.0,4:04.17,,Janeth JEPKOSGEI,13 DEC 1983,KEN,6,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1172.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289031,toplist
+27.0,4:04.23,,Liliana BARBULESCU-POPESCU,05 FEB 1982,ROU,1,,Barcelona (ESP),09 JUL 2010,1172.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14295417,toplist
+28.0,4:04.33,,Hannah ENGLAND,06 MAR 1987,GBR,3,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1171.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14274986,toplist
+29.0,4:04.52,,Anna WILLARD,31 MAR 1984,USA,9,,"Olympiastadion, Stockholm (SWE)",06 AUG 2010,1169.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14324194,toplist
+30.0,4:04.80,,Genzebe DIBABA,08 FEB 1991,ETH,1,,Gent (BEL) (i),14 FEB 2010,1189.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14259874,toplist
+31.0,4:04.8h,,Asli CAKIR ALPTEKIN,20 AUG 1985,TUR,1,,Izmir (TUR),29 JUN 2010,1167.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14303222,toplist
+32.0,4:04.91,,Oksana ZBROZHEK,12 JAN 1978,RUS,7,,"Estadio Olímpico, Barcelona (ESP)",01 AUG 2010,1166.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14299869,toplist
+33.0,4:05.33,,Sylvia Jebiwot KIBET,28 MAR 1984,KEN,2,,Stockholm (SWE) (i),10 FEB 2010,1185.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289098,toplist
+34.0,4:05.52,,Sylwia EJDYS,15 JUL 1984,POL,2,,Warszawa (POL),08 JUN 2010,1162.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14293602,toplist
+35.0,4:05.62,,Meskerem ASSEFA,03 OCT 1991,ETH,1,,Sotteville-lès-Rouen (FRA),12 JUN 2010,1161.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14259921,toplist
+36.0,4:05.93,,Nikki HAMBLIN,20 MAY 1988,NZL,3,,Heusden-Zolder (BEL),10 JUL 2010,1158.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14275215,toplist
+37.0,4:06.03,,Elena ROMAGNOLO,05 OCT 1982,ITA,3,,Barcelona (ESP),09 JUL 2010,1158.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14285145,toplist
+38.0,4:06.04,,Helen CLITHEROE,02 JAN 1974,GBR,4,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1157.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14276033,toplist
+39.0,4:06.29,,Susan KUIJKEN,08 JUL 1986,NED,1f1,,Uden (NED),03 JUL 2010,1155.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14291825,toplist
+40.0,4:06.34,,Nicole SIFUENTES,30 JUN 1986,CAN,1,,"Los Angeles, CA (USA)",22 MAY 2010,1155.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14268054,toplist
+41.0,4:06.39,,Jemma SIMPSON,10 FEB 1984,GBR,2,,"Los Angeles, CA (USA)",22 MAY 2010,1155.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14276350,toplist
+42.0,4:06.44,,Shalane FLANAGAN,08 JUL 1981,USA,9,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1154.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14310164,toplist
+43.0,4:06.52,,Natallia KAREIVA,14 NOV 1985,BLR,1,,Minsk (BLR),14 JUL 2010,1154.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14269823,toplist
+44.0,4:06.58,,Ann Karindi MWANGI,08 DEC 1988,KEN,5,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1153.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289075,toplist
+45.0,4:06.67,,Anastasiya VOLODKINA,15 JUL 1988,RUS,2,,Saransk (RUS),15 JUL 2010,1152.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14299754,toplist
+46.0,4:06.76,,Renata PLIŚ,05 FEB 1985,POL,8,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1152.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14294279,toplist
+47.0,4:06.87,,Almenesh BELETE,26 JUL 1989,ETH,4,,Heusden-Zolder (BEL),10 JUL 2010,1151.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14259898,toplist
+48.0,4:06.99,,Hilary STELLINGWERFF,07 AUG 1981,CAN,13,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1150.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14268056,toplist
+49.0,4:07.11,,Sara MOREIRA,17 OCT 1985,POR,4,,Barcelona (ESP),09 JUL 2010,1149.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14294989,toplist
+50.0,4:07.30,,Juliana Paula GOMEZ,12 JUL 1983,BRA,2,,San Fernando (ESP),05 JUN 2010,1148.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14269027,toplist
+51.0,4:07.39,,Yuliya STEPANOVA,03 JUL 1986,RUS,3,,Saransk (RUS),15 JUL 2010,1147.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14299108,toplist
+52.0,4:07.49,,Treniere MOSER,27 OCT 1981,USA,12,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1146.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14307753,toplist
+53.0,4:07.57,,René KALMER,03 NOV 1980,RSA,5,,Heusden-Zolder (BEL),10 JUL 2010,1145.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14296453,toplist
+54.0,4:07.82,,Sally KIPYEGO,19 DEC 1985,KEN,1,,"Eugene, OR (USA)",28 MAY 2010,1143.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289173,toplist
+54.0,4:07.82,,Yelena KOROBKINA,25 NOV 1990,RUS,3,,"Meteor, Zhukovskiy (RUS)",26 JUN 2010,1143.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14298217,toplist
+56.0,4:07.89,,Jessica AUGUSTO,08 NOV 1981,POR,1,,Espinho (POR) (i),27 FEB 2010,1164.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14294784,toplist
+57.0,4:08.01,,Yelena ZADOROZHNAYA,03 DEC 1977,RUS,1,,Yerino (RUS),11 JUN 2010,1142.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14299842,toplist
+58.0,4:08.05,,Yelena ARZHAKOVA,08 SEP 1989,RUS,1,,Yerino (RUS),31 JUL 2010,1142.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14297282,toplist
+59.0,4:08.06,,Tizita BOGALE,13 JUL 1993,ETH,1,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",25 JUL 2010,1142.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14360655,toplist
+60.0,4:08.18,,Mapaseka MAKHANYA,09 APR 1985,RSA,6,,Heusden-Zolder (BEL),10 JUL 2010,1141.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14296590,toplist
+61.0,4:08.2h,,Mariya SAVINOVA,13 AUG 1985,RUS,1,,Chelyabinsk (RUS) (i),16 JAN 2010,1162.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14299184,toplist
+62.0,4:08.22,,Sarah BROWN,15 OCT 1986,USA,7,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1140.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14306246,toplist
+63.0,4:08.25,,Yevgeniya ZOLOTOVA,28 APR 1983,RUS,1f1,,Moskva (RUS) (i),13 FEB 2010,1161.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14299926,toplist
+64.0,4:08.30,,Asmerawork BEKELE,11 AUG 1991,ETH,1,,Huelva (ESP),09 JUN 2010,1140.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14329596,toplist
+65.0,4:08.53,,Elisa CUSMA,24 JUL 1981,ITA,5,,"Fana Stadion, Bergen (NOR)",20 JUN 2010,1138.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14284142,toplist
+66.0,4:08.78,,Kaila MCKNIGHT,05 MAY 1986,AUS,3,,Sotteville-lès-Rouen (FRA),12 JUN 2010,1136.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14271670,toplist
+67.0,4:08.86,,Lucia KLOCOVÁ,20 NOV 1983,SVK,2,,Dubnica nad Váhom (SVK),22 AUG 2010,1135.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14301465,toplist
+68.0,4:09.10,,Malindi ELMORE,13 MAR 1980,CAN,3,,Dubnica nad Váhom (SVK),22 AUG 2010,1133.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14268042,toplist
+69.0,4:09.20,,Lindsey DE GRANDE,26 APR 1989,BEL,4,,Dubnica nad Váhom (SVK),22 AUG 2010,1133.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14270439,toplist
+70.0,4:09.22,,Bertukan FEYESA,04 JUL 1991,ETH,4,,Sotteville-lès-Rouen (FRA),12 JUN 2010,1133.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14259859,toplist
+70.0,4:09.22,,Molly HUDDLE,31 AUG 1984,USA,1f1,,Brasschaat (BEL),11 JUL 2010,1133.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14313054,toplist
+72.0,4:09.24,,Mary WANGARI,04 OCT 1986,KEN,2,,"Stade Raymond Petit, Tomblaine (FRA)",25 JUN 2010,1132.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289498,toplist
+72.0,4:09.24,,Elizabeth MALOY,10 AUG 1985,USA,2f1,,Brasschaat (BEL),11 JUL 2010,1132.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14315930,toplist
+74.0,4:09.4h,,Margaret Wangari MURIUKI,21 MAR 1986,KEN,1,,Nairobi (KEN),03 JUN 2010,1131.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14289494,toplist
+75.0,4:09.42,,Charlotte SCHÖNBECK,22 DEC 1984,SWE,6h2,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1131.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14302413,toplist
+76.0,4:09.45,,Latifa ESSAROKH,11 DEC 1973,FRA,4,,"Meteor, Zhukovskiy (RUS)",26 JUN 2010,1131.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14257602,toplist
+77.0,4:09.46,,Yekaterina SHARMINA,06 AUG 1986,RUS,6,,Saransk (RUS),15 JUL 2010,1131.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14298562,toplist
+78.0,4:09.51,,Ciara MAGEEAN,12 MAR 1992,IRL,2,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",25 JUL 2010,1130.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14275665,toplist
+78.0,4:09.51,,Janet ACHOLA,26 JUN 1988,UGA,9,,New Delhi (IND),08 OCT 2010,1130.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14303363,toplist
+80.0,4:09.58,,Truong Thanh HANG,01 MAY 1986,VIE,2,,Guangzhou (CHN),23 NOV 2010,1130.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14325282,toplist
+81.0,4:09.86,,Charlotte BROWNING,08 OCT 1987,GBR,1,,Solihull (GBR),10 JUL 2010,1128.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14274591,toplist
+82.0,4:09.98,,Natalya POPKOVA,21 SEP 1988,RUS,3,,Moskva (RUS),29 JUN 2010,1127.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14298974,toplist
+83.0,4:10.00,,Stacey SMITH,24 FEB 1990,GBR,5f1,,Ninove (BEL),07 AUG 2010,1126.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14276404,toplist
+84.0,4:10.04,,Hazel MURPHY,25 JUN 1984,IRL,6f1,,Ninove (BEL),07 AUG 2010,1126.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14283320,toplist
+85.0,4:10.07,,Carmen DOUMA-HUSSAR,12 MAR 1977,CAN,1f1,,Burnaby (CAN),05 JUL 2010,1126.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14268089,toplist
+86.0,4:10.11,,Sara HALL,15 APR 1983,USA,14,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1126.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14305595,toplist
+87.0,4:10.14,,Irina MARACHEVA,24 SEP 1984,RUS,3,,Istanbul (TUR),12 JUN 2010,1125.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14298552,toplist
+88.0,4:10.19,,Anna BALAKSHINA,22 NOV 1986,RUS,1,,Moskva (RUS),14 MAY 2010,1125.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14362882,toplist
+89.0,4:10.28,,Megan WRIGHT,27 JAN 1982,CAN,2f1,,Burnaby (CAN),05 JUL 2010,1124.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14267519,toplist
+90.0,4:10.31,,Charlene THOMAS,06 MAY 1982,GBR,8,,"FBK Stadium, Hengelo (NED)",30 MAY 2010,1124.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14276408,toplist
+91.0,4:10.36,,Lidia CHOJECKA,25 JAN 1977,POL,4,,"Velódromo Luis Puig, Valencia (ESP) (i)",13 FEB 2010,1145.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14293498,toplist
+92.0,4:10.38,,Lisa CORRIGAN,02 DEC 1984,AUS,1f1,,Belfast (GBR),24 JUL 2010,1123.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14272278,toplist
+92.0,4:10.38,,Lyubov PULYAYEVA,26 APR 1982,RUS,4,,Yerino (RUS),31 JUL 2010,1123.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14299035,toplist
+94.0,4:10.41,,Celia TAYLOR,22 JAN 1977,GBR,2f1,,Uden (NED),03 JUL 2010,1123.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14274579,toplist
+95.0,4:10.49,,Lauren FLESHMAN,26 SEP 1981,USA,6,,Dubnica nad Váhom (SVK),22 AUG 2010,1123.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14310192,toplist
+96.0,4:10.50,,Yuliya ZARIPOVA,26 APR 1986,RUS,,,Cheboksary (RUS),02 JUN 2010,1123.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14299856,toplist
+96.0,4:10.50,,Olesya CHUMAKOVA-MIKHEYEVA,23 JUL 1981,RUS,4,,Istanbul (TUR),12 JUN 2010,1123.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14297556,toplist
+98.0,4:10.54,,Angelika CICHOCKA,15 MAR 1988,POL,2,,Düsseldorf (GER) (i),03 FEB 2010,1143.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14293508,toplist
+98.0,4:10.54,,Amy MORTIMER,16 AUG 1981,USA,8,,Heusden-Zolder (BEL),10 JUL 2010,1122.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14317469,toplist
+100.0,4:10.57,,Margaret INFELD,,USA,1,,Lapinlahti (FIN),18 JUL 2010,1122.0,women_1500m,2010,https://worldathletics.org/athletes/athlete=14313264,toplist
+1.0,4:00.06,,Morgan UCENY,10 MAR 1985,USA,1,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1205.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14323124,toplist
+2.0,4:00.33,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,1,,"FBK Stadium, Hengelo (NED)",29 MAY 2011,1203.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14268773,toplist
+3.0,4:00.77,,Mariem ALAOUI SELSOULI,08 APR 1984,MAR,2,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1199.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14290568,toplist
+4.0,4:00.97,,Kalkidan GEZAHEGNE,08 MAY 1991,ETH,2,,"FBK Stadium, Hengelo (NED)",29 MAY 2011,1198.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14259836,toplist
+5.0,4:01.09,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,2,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1197.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14290712,toplist
+6.0,4:01.33,,Siham HILALI,02 MAY 1986,MAR,3,,"FBK Stadium, Hengelo (NED)",29 MAY 2011,1195.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14290679,toplist
+7.0,4:01.47,,Abeba AREGAWI,05 JUL 1990,ETH,1,,Stockholm (SWE) (i),22 FEB 2011,1216.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14360651,toplist
+8.0,4:01.50,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,1,,Barcelona (ESP),22 JUL 2011,1193.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14260591,toplist
+9.0,4:01.73,,Anna MISHCHENKO,25 AUG 1983,UKR,4,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1192.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14303916,toplist
+10.0,4:01.77,,Yekaterina KOSTETSKAYA,31 DEC 1986,RUS,1,,Cheboksary (RUS),24 JUL 2011,1191.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298246,toplist
+11.0,4:01.89,,Hannah ENGLAND,06 MAR 1987,GBR,2,,Barcelona (ESP),22 JUL 2011,1190.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14274986,toplist
+12.0,4:02.12,,Meskerem ASSEFA,03 OCT 1991,ETH,2,,"Stadio Olimpico, Roma (ITA)",26 MAY 2011,1189.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14259921,toplist
+13.0,4:02.31,,Mercy CHERONO,07 MAY 1991,KEN,3,,Barcelona (ESP),22 JUL 2011,1187.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14288952,toplist
+14.0,4:02.32,,Janeth JEPKOSGEI,13 DEC 1983,KEN,6,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1187.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14289031,toplist
+15.0,4:02.42,,Hellen OBIRI,13 DEC 1989,KEN,7,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1186.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14424921,toplist
+16.0,4:02.59,,Irene JELAGAT,10 DEC 1988,KEN,4,,"FBK Stadium, Hengelo (NED)",29 MAY 2011,1185.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14289013,toplist
+17.0,4:03.02,,Hind DEHIBA CHAHYD,17 MAR 1979,FRA,3f1,,"Stadio Guidobaldi, Rieti (ITA)",10 SEP 2011,1181.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14258138,toplist
+18.0,4:03.13,,Mimi BELETE,09 JUN 1988,BRN,9,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1180.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14270503,toplist
+19.0,4:03.28,,Gelete BURKA,23 JAN 1986,ETH,3,,"Stadio Olimpico, Roma (ITA)",26 MAY 2011,1179.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14259909,toplist
+20.0,4:03.41,,Tuǧba KOYUNCU,16 FEB 1991,TUR,1,,Samsun (TUR),15 AUG 2011,1178.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14377221,toplist
+21.0,4:03.50,,Renata PLIŚ,05 FEB 1985,POL,11,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1178.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14294279,toplist
+22.0,4:03.54,,Jenny SIMPSON,23 AUG 1986,USA,5,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1177.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14305392,toplist
+23.0,4:03.59,,Anastasiya VOLODKINA,15 JUL 1988,RUS,2,,Cheboksary (RUS),24 JUL 2011,1177.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14299754,toplist
+24.0,4:03.66,,Nancy Jebet LANGAT,22 AUG 1981,KEN,5,,"Stadio Olimpico, Roma (ITA)",26 MAY 2011,1176.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14289224,toplist
+25.0,4:03.69,,Tatyana TOMASHOVA,01 JUL 1975,RUS,4f1,,"Stadio Guidobaldi, Rieti (ITA)",10 SEP 2011,1176.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14299581,toplist
+26.0,4:03.72,,Christin WURTH-THOMAS,11 JUL 1980,USA,6,,"Stadio Olimpico, Roma (ITA)",26 MAY 2011,1176.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14324759,toplist
+27.0,4:03.79,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,13,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1175.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14292722,toplist
+28.0,4:03.92,,Anna KONOVALOVA,04 JUL 1988,RUS,4,,Cheboksary (RUS),24 JUL 2011,1174.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298197,toplist
+29.0,4:03.94,,Tizita BOGALE,13 JUL 1993,ETH,5,,Barcelona (ESP),22 JUL 2011,1174.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14360655,toplist
+30.0,4:04.64,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,6,,Barcelona (ESP),22 JUL 2011,1168.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14261624,toplist
+31.0,4:04.76,,Lisa DOBRISKEY,23 DEC 1983,GBR,8,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1168.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14274903,toplist
+32.0,4:04.82,,Nikki HAMBLIN,20 MAY 1988,NZL,7,,Barcelona (ESP),22 JUL 2011,1167.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14275215,toplist
+33.0,4:04.85,,Bertukan FEYESA,04 JUL 1991,ETH,1,,Brazzaville (CGO),12 JUN 2011,1167.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14259859,toplist
+34.0,4:04.96,,Malika AKKAOUI,25 DEC 1987,MAR,4,,"DS, Daegu (KOR)",12 MAY 2011,1166.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14290566,toplist
+35.0,4:05.06,,Zoe BUCKMAN,21 DEC 1988,AUS,8f1,,"Stadio Guidobaldi, Rieti (ITA)",10 SEP 2011,1165.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14272380,toplist
+36.0,4:05.38,,Sylwia EJDYS,15 JUL 1984,POL,5,,Stockholm (SWE) (i),22 FEB 2011,1184.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14293602,toplist
+37.0,4:05.47,,Yevgeniya ZOLOTOVA,28 APR 1983,RUS,1f2,,Moskva (RUS) (i),29 JAN 2011,1184.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14299926,toplist
+38.0,4:05.51,,Viola Jelagat KIBIWOT,22 DEC 1983,KEN,5,,"FBK Stadium, Hengelo (NED)",29 MAY 2011,1162.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14289100,toplist
+39.0,4:05.53,,Nataliya TOBIAS,22 NOV 1980,UKR,2f2,,Yalta (UKR),30 MAY 2011,1161.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14304251,toplist
+40.0,4:05.65,,Kaila MCKNIGHT,05 MAY 1986,AUS,5,,"DS, Daegu (KOR)",12 MAY 2011,1161.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14271670,toplist
+41.0,4:05.73,,Shannon ROWBURY,19 SEP 1984,USA,3,,"Crystal Palace, London (GBR)",06 AUG 2011,1160.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14320310,toplist
+42.0,4:05.90,,Genzebe DIBABA,08 FEB 1991,ETH,2f2,,"Stadio Guidobaldi, Rieti (ITA)",10 SEP 2011,1159.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14259874,toplist
+43.0,4:06.23,,Sally KIPYEGO,19 DEC 1985,KEN,1f1,,"Eugene, OR (USA)",22 APR 2011,1156.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14289173,toplist
+44.0,4:06.49,,Helen CLITHEROE,02 JAN 1974,GBR,4,,"Alexander Stadium, Birmingham (GBR)",10 JUL 2011,1154.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14276033,toplist
+45.0,4:06.50,,Kenia SINCLAIR,14 JUL 1980,JAM,1,,Sydney (AUS),19 MAR 2011,1154.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14285911,toplist
+45.0,4:06.50,,Isabel MACÍAS,11 AUG 1984,ESP,8,,Barcelona (ESP),22 JUL 2011,1154.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14261137,toplist
+45.0,4:06.50,,Angelika CICHOCKA,15 MAR 1988,POL,2,,Sopot (POL),05 AUG 2011,1154.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14293508,toplist
+48.0,4:06.63,,Shalane FLANAGAN,08 JUL 1981,USA,10,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1153.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14310164,toplist
+49.0,4:06.64,,Yelena SOBOLEVA,03 OCT 1982,RUS,2,,Moskva (RUS),09 JUL 2011,1153.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14299411,toplist
+50.0,4:06.75,,Olga KUNGINA,17 DEC 1986,RUS,3,,Moskva (RUS),09 JUL 2011,1152.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14297803,toplist
+51.0,4:06.77,,Gabriele GRUNEWALD,25 JUN 1986,USA,4,,"Crystal Palace, London (GBR)",06 AUG 2011,1152.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14304816,toplist
+52.0,4:06.78,,Irina MARACHEVA,24 SEP 1984,RUS,5,,Cheboksary (RUS),24 JUL 2011,1152.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298552,toplist
+53.0,4:06.81,,Stacey SMITH,24 FEB 1990,GBR,5,,"Alexander Stadium, Birmingham (GBR)",10 JUL 2011,1151.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14276404,toplist
+54.0,4:06.85,,Charlene THOMAS,06 MAY 1982,GBR,1,,"Olympiastadion, Stockholm (SWE)",19 JUN 2011,1151.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14276408,toplist
+55.0,4:07.01,,Yuliya ZARIPOVA,26 APR 1986,RUS,1,,Sochi (RUS),24 MAY 2011,1150.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14299856,toplist
+56.0,4:07.04,,Yekaterina ISHOVA,17 JAN 1989,RUS,4,,Moskva (RUS),09 JUL 2011,1150.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14297822,toplist
+56.0,4:07.04,,Erin DONOHUE,08 MAY 1983,USA,2,,Joensuu (FIN),27 JUL 2011,1150.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14309170,toplist
+58.0,4:07.18,,Hilary STELLINGWERFF,07 AUG 1981,CAN,3,,Sopot (POL),05 AUG 2011,1148.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14268056,toplist
+59.0,4:07.20,,Svetlana SIMAKOVA,12 JUN 1987,RUS,5,,Moskva (RUS),09 JUL 2011,1148.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298106,toplist
+60.0,4:07.24,,Anzhelika SHEVCHENKO,29 OCT 1987,UKR,3f2,,Yalta (UKR),30 MAY 2011,1148.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14304163,toplist
+61.0,4:07.28,,Lidia CHOJECKA,25 JAN 1977,POL,9,,Barcelona (ESP),22 JUL 2011,1148.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14293498,toplist
+62.0,4:07.29,,Sara MOREIRA,17 OCT 1985,POR,10,,Barcelona (ESP),22 JUL 2011,1148.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14294989,toplist
+63.0,4:07.40,,Natalya POPKOVA,21 SEP 1988,RUS,6,,Moskva (RUS),09 JUL 2011,1147.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298974,toplist
+64.0,4:07.44,,Katie MACKEY,12 NOV 1987,USA,1f1,,"Los Angeles, CA (USA)",21 MAY 2011,1146.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14310264,toplist
+65.0,4:07.45,,Ciara MAGEEAN,12 MAR 1992,IRL,1f1,,Birmingham (GBR),20 AUG 2011,1146.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14275665,toplist
+66.0,4:07.53,,Jemma SIMPSON,10 FEB 1984,GBR,2f1,,Birmingham (GBR),20 AUG 2011,1146.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14276350,toplist
+67.0,4:07.57,,Treniere MOSER,27 OCT 1981,USA,7,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1145.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14307753,toplist
+68.0,4:07.63,,Nancy CHEPKWEMOI,08 OCT 1993,KEN,1f1,,Kessel-Lo (BEL),13 AUG 2011,1145.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14288890,toplist
+69.0,4:07.67,,Yekaterina SHARMINA,06 AUG 1986,RUS,1f3,,Moskva (RUS) (i),18 FEB 2011,1166.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298562,toplist
+70.0,4:07.70,,Denise KREBS,27 JUN 1987,GER,2,,"National Stadium, Shenzhen (CHN)",21 AUG 2011,1144.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14278507,toplist
+71.0,4:07.74,,Ann Karindi MWANGI,08 DEC 1988,KEN,7,,"DS, Daegu (KOR)",12 MAY 2011,1144.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14289075,toplist
+72.0,4:07.86,,Alfiya MURYASOVA,03 OCT 1988,RUS,2,,Sochi (RUS),24 MAY 2011,1143.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298079,toplist
+72.0,4:07.86,,Malindi ELMORE,13 MAR 1980,CAN,1,,Burnaby (CAN),01 JUL 2011,1143.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14268042,toplist
+74.0,4:07.90,,Fang LIU,25 FEB 1990,CHN,3,,"National Stadium, Shenzhen (CHN)",21 AUG 2011,1143.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14329580,toplist
+75.0,4:08.09,,Alice SCHMIDT,03 OCT 1981,USA,1,,Padova (ITA),17 JUL 2011,1141.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14320742,toplist
+76.0,4:08.10,,Nelly JEPKOSGEI,14 JUL 1991,KEN,4,,Brazzaville (CGO),12 JUN 2011,1141.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14373314,toplist
+77.0,4:08.13,,Ancuţa BOBOCEL,03 OCT 1987,ROU,1,,"Schleyer Halle, Stuttgart (GER) (i)",05 FEB 2011,1162.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14295440,toplist
+78.0,4:08.45,,Nicole SIFUENTES,30 JUN 1986,CAN,1f1,,Gent (BEL),30 JUL 2011,1139.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14268054,toplist
+79.0,4:08.60,,Phoebe WRIGHT,30 AUG 1988,USA,3f1,,"Los Angeles, CA (USA)",21 MAY 2011,1137.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14324744,toplist
+79.0,4:08.60,,Lyubov PULYAYEVA,26 APR 1982,RUS,1h1,,Cheboksary (RUS),23 JUL 2011,1137.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14299035,toplist
+81.0,4:08.63,,Corinna HARRER,19 JAN 1991,GER,2f1,,Gent (BEL),30 JUL 2011,1137.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14277904,toplist
+82.0,4:08.71,,Yelena KOROBKINA,25 NOV 1990,RUS,4f2,,Moskva (RUS) (i),29 JAN 2011,1158.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298217,toplist
+83.0,4:08.74,,Sara VAUGHN,16 MAY 1986,USA,3,,Burnaby (CAN),01 JUL 2011,1136.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14325833,toplist
+84.0,4:08.76,,Fanjanteino FELIX,26 JAN 1980,FRA,2,,"Schleyer Halle, Stuttgart (GER) (i)",05 FEB 2011,1157.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14257541,toplist
+85.0,4:08.80,,Joyce CHEPKURUI,,KEN,2,,Nairobi (KEN),16 JUL 2011,1136.0,women_1500m,2011,https://worldathletics.org/athletes/kenya/joyce-chepkurui-14288925,toplist
+86.0,4:08.81,,Yelena ARZHAKOVA,08 SEP 1989,RUS,2f3,,Moskva (RUS) (i),18 FEB 2011,1157.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14297282,toplist
+87.0,4:08.89,,Tereza ČAPKOVÁ,24 JUL 1987,CZE,4,,"National Stadium, Shenzhen (CHN)",21 AUG 2011,1135.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14263185,toplist
+88.0,4:08.93,,Olesya SYREVA,25 NOV 1983,RUS,1,,Omsk (RUS) (i),21 JAN 2011,1156.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14299506,toplist
+89.0,4:08.96,,Emily INFELD,21 MAR 1990,USA,5,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1135.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14313263,toplist
+90.0,4:09.04,,Danuta URBANIK,24 DEC 1989,POL,3h1,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1134.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14294586,toplist
+91.0,4:09.08,,Mary WANGARI,04 OCT 1986,KEN,1,,Nairobi (KEN),03 JUN 2011,1134.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14289498,toplist
+92.0,4:09.13,,Diana SUJEW,02 NOV 1990,GER,4h1,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1133.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14279982,toplist
+93.0,4:09.17,,Annet NEGESA,24 APR 1992,UGA,1,,Gaborone (BOT),15 MAY 2011,1133.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14303395,toplist
+94.0,4:09.18,,Lindsey DE GRANDE,26 APR 1989,BEL,4,,Gent (BEL) (i),13 FEB 2011,1154.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14270439,toplist
+95.0,4:09.48,,Faith KIPYEGON,10 JAN 1994,KEN,1,,Lille (FRA),09 JUL 2011,1130.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14413305,toplist
+96.0,4:09.67,,Sigrid VANDEN BEMPT,10 FEB 1981,BEL,10,,Stockholm (SWE) (i),22 FEB 2011,1150.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14270127,toplist
+97.0,4:09.69,,Anna LUCHKINA,13 JAN 1986,RUS,2h1,,Cheboksary (RUS),23 JUL 2011,1129.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14298484,toplist
+97.0,4:09.69,,Elizabeth MALOY,10 AUG 1985,USA,4f1,,Gent (BEL),30 JUL 2011,1129.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14315930,toplist
+99.0,4:09.71,,Iris María FUENTES-PILA,10 AUG 1980,ESP,12,,Barcelona (ESP),22 JUL 2011,1129.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14261554,toplist
+100.0,4:09.80,,Senbere TEFERI,03 MAY 1995,ETH,2f1,,Kessel-Lo (BEL),13 AUG 2011,1128.0,women_1500m,2011,https://worldathletics.org/athletes/athlete=14477329,toplist
+1.0,3:56.54,,Abeba AREGAWI,05 JUL 1990,ETH,1,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1233.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14360651,toplist
+2.0,3:57.77,,Genzebe DIBABA,08 FEB 1991,ETH,1,,"Shanghai Stadium, Shanghai (CHN)",19 MAY 2012,1223.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14259874,toplist
+3.0,3:59.25,,Viola Jelagat KIBIWOT,22 DEC 1983,KEN,2,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1212.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14289100,toplist
+4.0,3:59.61,,Svetlana KARAMASHEVA,24 MAY 1988,RUS,1f2,,Moskva (RUS),13 JUN 2012,1209.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14298946,toplist
+5.0,3:59.65,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,3,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1208.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14290712,toplist
+6.0,3:59.68,,Hellen OBIRI,13 DEC 1989,KEN,2,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1208.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14424921,toplist
+7.0,4:00.09,,Yelena SOBOLEVA,03 OCT 1982,RUS,1,,Cheboksary (RUS),06 JUL 2012,1205.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14299411,toplist
+8.0,4:00.11,,Yekaterina POISTOGOVA,01 MAR 1991,RUS,1,,Zhukovskiy (RUS),17 JUN 2012,1205.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14299862,toplist
+9.0,4:00.53,,Kristina UGAROVA,22 OCT 1987,RUS,3f2,,Moskva (RUS),13 JUN 2012,1201.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14298068,toplist
+10.0,4:01.19,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,1,,"Olympiastadion, Stockholm (SWE)",17 AUG 2012,1196.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14268773,toplist
+11.0,4:01.59,,Morgan UCENY,10 MAR 1985,USA,4,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1193.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14323124,toplist
+12.0,4:01.72,,Mimi BELETE,09 JUN 1988,BRN,2,,"Olympiastadion, Stockholm (SWE)",17 AUG 2012,1192.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14270503,toplist
+13.0,4:01.85,,Natalya YEVDOKIMOVA,17 MAR 1978,RUS,2,,Cheboksary (RUS),06 JUL 2012,1191.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14299824,toplist
+14.0,4:01.95,,Tatyana TOMASHOVA,01 JUL 1975,RUS,4f2,,Moskva (RUS),13 JUN 2012,1190.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14299581,toplist
+15.0,4:02.13,,Lisa DOBRISKEY,23 DEC 1983,GBR,5,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1188.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14274903,toplist
+16.0,4:02.33,,Yuliya CHIZHENKO,30 AUG 1979,RUS,1,,St. Petersburg (RUS),19 JUN 2012,1187.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14297548,toplist
+17.0,4:02.59,,Siham HILALI,02 MAY 1986,MAR,6,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1185.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14290679,toplist
+18.0,4:02.99,,Laura WEIGHTMAN,01 JUL 1991,GBR,4sf2,,"Olympic Stadium, London (GBR)",08 AUG 2012,1182.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14276688,toplist
+18.0,4:02.99,,Lucia KLOCOVÁ,20 NOV 1983,SVK,5sf2,,"Olympic Stadium, London (GBR)",08 AUG 2012,1182.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14301465,toplist
+20.0,4:03.15,,Shannon ROWBURY,19 SEP 1984,USA,4,,"Olympiastadion, Stockholm (SWE)",17 AUG 2012,1180.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14320310,toplist
+21.0,4:03.18,,Mary KURIA,29 NOV 1987,KEN,1,,Rovereto (ITA),04 SEP 2012,1180.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14419015,toplist
+22.0,4:03.33,,Anna MISHCHENKO,25 AUG 1983,UKR,3,,"Bislett Stadion, Oslo (NOR)",07 JUN 2012,1179.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14303916,toplist
+23.0,4:03.67,,Mariem ALAOUI SELSOULI,08 APR 1984,MAR,1,,Liévin (FRA) (i),14 FEB 2012,1198.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14290568,toplist
+24.0,4:03.71,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,8,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1176.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14292722,toplist
+25.0,4:03.82,,Faith KIPYEGON,10 JAN 1994,KEN,5,,"Shanghai Stadium, Shanghai (CHN)",19 MAY 2012,1175.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14413305,toplist
+26.0,4:04.05,,Hannah ENGLAND,06 MAR 1987,GBR,1,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1173.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14274986,toplist
+27.0,4:04.07,,Jenny SIMPSON,23 AUG 1986,USA,2,,Rovereto (ITA),04 SEP 2012,1173.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14305392,toplist
+28.0,4:04.26,,Eunice Jepkoech SUM,10 APR 1988,KEN,9,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1171.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14423891,toplist
+29.0,4:04.30,,Corinna HARRER,19 JAN 1991,GER,5,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1171.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14277904,toplist
+30.0,4:04.48,,Renata PLIŚ,05 FEB 1985,POL,7,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1170.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14294279,toplist
+31.0,4:04.76,,Nicole SIFUENTES,30 JUN 1986,CAN,1,,"San Diego, CA (USA)",20 JUN 2012,1168.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14268054,toplist
+32.0,4:04.84,,Isabel MACÍAS,11 AUG 1984,ESP,10,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1167.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14261137,toplist
+32.0,4:04.84,,Gabriele GRUNEWALD,25 JUN 1986,USA,1,,Lignano Sabbiadoro (ITA),17 JUL 2012,1167.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14304816,toplist
+34.0,4:05.03,,Zoe BUCKMAN,21 DEC 1988,AUS,7sf2,,"Olympic Stadium, London (GBR)",08 AUG 2012,1165.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14272380,toplist
+35.0,4:05.08,,Hilary STELLINGWERFF,07 AUG 1981,CAN,8,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1165.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14268056,toplist
+36.0,4:05.16,,Genzeb SHUMI,29 JAN 1991,BRN,4,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1164.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14413310,toplist
+37.0,4:05.42,,Anna WILLARD,31 MAR 1984,USA,2,,"San Diego, CA (USA)",20 JUN 2012,1162.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14324194,toplist
+38.0,4:05.52,,Janet ACHOLA,26 JUN 1988,UGA,5,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1162.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14303363,toplist
+39.0,4:05.61,,Kaila MCKNIGHT,05 MAY 1986,AUS,6,,"Shanghai Stadium, Shanghai (CHN)",19 MAY 2012,1161.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14271670,toplist
+40.0,4:05.64,,Alice SCHMIDT,03 OCT 1981,USA,1,,"Hayward Field, Eugene, OR (USA)",01 JUN 2012,1161.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14320742,toplist
+41.0,4:05.71,,Diana SUJEW,02 NOV 1990,GER,6,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1160.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14279982,toplist
+42.0,4:05.76,,Lucy OLIVER,18 NOV 1988,NZL,3,,"San Diego, CA (USA)",20 JUN 2012,1160.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14293189,toplist
+43.0,4:05.80,,Rababe ARAFI,12 JAN 1991,MAR,1,,Porto Novo (BEN),29 JUN 2012,1159.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14290578,toplist
+44.0,4:06.01,,Tizita BOGALE,13 JUL 1993,ETH,3,,Liévin (FRA) (i),14 FEB 2012,1179.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14360655,toplist
+44.0,4:06.01,,Denise KREBS,27 JUN 1987,GER,2,,Dessau (GER),25 MAY 2012,1158.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14278507,toplist
+46.0,4:06.06,,Senbere TEFERI,03 MAY 1995,ETH,4,,Rovereto (ITA),04 SEP 2012,1157.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14477329,toplist
+47.0,4:06.42,,Mercy CHERONO,07 MAY 1991,KEN,2,,"Letzigrund, Zürich (SUI)",30 AUG 2012,1154.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14288952,toplist
+48.0,4:06.48,,Marina MUNĆAN,06 NOV 1982,SRB,3,,Lignano Sabbiadoro (ITA),17 JUL 2012,1154.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14300389,toplist
+49.0,4:06.50,,Yuliya KREVSUN,08 DEC 1980,UKR,1h1,,Yalta (UKR),12 JUN 2012,1154.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14303623,toplist
+49.0,4:06.50,,Margaret Wangari MURIUKI,21 MAR 1986,KEN,3,,Porto Novo (BEN),29 JUN 2012,1154.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14289494,toplist
+51.0,4:06.52,,Meskerem ASSEFA,03 OCT 1991,ETH,2,,Daegu (KOR),16 MAY 2012,1154.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14259921,toplist
+52.0,4:06.57,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,8sf1,,"Olympic Stadium, London (GBR)",08 AUG 2012,1153.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14261624,toplist
+53.0,4:06.6h,,Vivian Jepkemei CHERUIYOT,11 SEP 1983,KEN,1,,Nairobi (KEN),18 MAY 2012,1153.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14288971,toplist
+54.0,4:06.66,,Feyne GEMEDA,28 JUN 1992,ETH,1,,Brazzaville (CGO),10 JUN 2012,1153.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14475152,toplist
+55.0,4:06.67,,Katie MACKEY,12 NOV 1987,USA,3f1,,"Los Angeles, CA (USA)",18 MAY 2012,1152.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14310264,toplist
+56.0,4:06.73,,Yelena KOROBKINA,25 NOV 1990,RUS,1,,Joensuu (FIN),18 AUG 2012,1152.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14298217,toplist
+57.0,4:06.79,,Angelika CICHOCKA,15 MAR 1988,POL,2,,Bydgoszcz (POL),03 JUN 2012,1152.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14293508,toplist
+58.0,4:06.87,,Nicole TULLY,30 OCT 1986,USA,4,,Lignano Sabbiadoro (ITA),17 JUL 2012,1151.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14320686,toplist
+59.0,4:06.96,,Brenda MARTINEZ,08 SEP 1987,USA,3f2,,"Los Angeles, CA (USA)",18 MAY 2012,1150.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14316143,toplist
+60.0,4:07.06,,Charlene THOMAS,06 MAY 1982,GBR,7,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1149.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14276408,toplist
+61.0,4:07.07,,Sheila REID,02 AUG 1989,CAN,5,,Lignano Sabbiadoro (ITA),17 JUL 2012,1149.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14267319,toplist
+62.0,4:07.23,,Julia LUCAS,04 MAR 1984,USA,4f2,,"Los Angeles, CA (USA)",18 MAY 2012,1148.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14315663,toplist
+63.0,4:07.34,,Janeth JEPKOSGEI,13 DEC 1983,KEN,8,,"Shanghai Stadium, Shanghai (CHN)",19 MAY 2012,1147.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14289031,toplist
+64.0,4:07.36,,Elina SUJEW,02 NOV 1990,GER,4,,Bottrop (GER),06 JUL 2012,1147.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14279983,toplist
+65.0,4:07.49,,Stephanie TWELL,17 AUG 1989,GBR,9,,"Bislett Stadion, Oslo (NOR)",07 JUN 2012,1146.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14276601,toplist
+66.0,4:07.55,,Elisa CUSMA,24 JUL 1981,ITA,6,,Lignano Sabbiadoro (ITA),17 JUL 2012,1146.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14284142,toplist
+67.0,4:07.59,,Amela TERZIĆ,02 JAN 1993,SRB,2,,"Estadio Olímpico, Barcelona (ESP)",15 JUL 2012,1145.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14333695,toplist
+68.0,4:07.63,,Halima HACHLAF,06 SEP 1988,MAR,1,,Rabat (MAR),27 MAY 2012,1145.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14290676,toplist
+69.0,4:07.67,,Sonja ROMAN,11 MAR 1979,SLO,10,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1145.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14300233,toplist
+70.0,4:07.77,,Emily INFELD,21 MAR 1990,USA,7,,Lignano Sabbiadoro (ITA),17 JUL 2012,1144.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14313263,toplist
+71.0,4:07.86,,Lidia CHOJECKA,25 JAN 1977,POL,2f1,,Bielsko-Biala (POL),17 JUN 2012,1143.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14293498,toplist
+72.0,4:07.90,,Malindi ELMORE,13 MAR 1980,CAN,6,,Daegu (KOR),16 MAY 2012,1143.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14268042,toplist
+73.0,4:08.12,,Elizabeth MALOY,10 AUG 1985,USA,9,,Lignano Sabbiadoro (ITA),17 JUL 2012,1141.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14315930,toplist
+74.0,4:08.24,,Sifan HASSAN,01 JAN 1993,ETH,5,,Bottrop (GER),06 JUL 2012,1140.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14489606,toplist
+75.0,4:08.25,,Sarah BROWN,15 OCT 1986,USA,6,,"Hayward Field, Eugene, OR (USA)",01 JUL 2012,1140.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14306246,toplist
+76.0,4:08.27,,Tereza ČAPKOVÁ,24 JUL 1987,CZE,4,,Dessau (GER),25 MAY 2012,1140.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14263185,toplist
+77.0,4:08.31,,Margaret INFELD,,USA,7,,"Hayward Field, Eugene, OR (USA)",01 JUL 2012,1140.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14313264,toplist
+78.0,4:08.32,,Danuta URBANIK,24 DEC 1989,POL,3f1,,Bielsko-Biala (POL),17 JUN 2012,1140.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14294586,toplist
+79.0,4:08.34,,Sara VAUGHN,16 MAY 1986,USA,5f2,,"Los Angeles, CA (USA)",18 MAY 2012,1139.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14325833,toplist
+80.0,4:08.36,,Anna KONOVALOVA,04 JUL 1988,RUS,1,,Irkutsk (RUS),03 AUG 2012,1139.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14298197,toplist
+81.0,4:08.38,,Olesya CHUMAKOVA-MIKHEYEVA,23 JUL 1981,RUS,5,,Cheboksary (RUS),06 JUL 2012,1139.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14297556,toplist
+82.0,4:08.39,,Azmera GEBRU,31 OCT 1995,ETH,3,,"Stade Raymond Petit, Tomblaine (FRA)",08 JUL 2012,1139.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14428518,toplist
+83.0,4:08.55,,Hind DEHIBA CHAHYD,17 MAR 1979,FRA,5,,Liévin (FRA) (i),14 FEB 2012,1159.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14258138,toplist
+84.0,4:08.59,,Sally KIPYEGO,19 DEC 1985,KEN,1f2,,"Eugene, OR (USA)",20 APR 2012,1137.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14289173,toplist
+85.0,4:08.6h,,Lucy Kabuu WANGUI,24 MAR 1984,KEN,2,,Nairobi (KEN),18 MAY 2012,1137.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14289505,toplist
+86.0,4:08.72,,Phoebe WRIGHT,30 AUG 1988,USA,6f2,,"Los Angeles, CA (USA)",18 MAY 2012,1136.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14324744,toplist
+87.0,4:08.80,,Brianna FELNAGLE,09 DEC 1986,USA,6f1,,"Los Angeles, CA (USA)",18 MAY 2012,1136.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14309986,toplist
+88.0,4:08.87,,Betlhem DESALEGN,13 NOV 1991,UAE,1,,Casablanca (MAR),09 JUN 2012,1135.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14418940,toplist
+89.0,4:08.91,,Alfiya MURYASOVA,03 OCT 1988,RUS,3,,Zhukovskiy (RUS),17 JUN 2012,1135.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14298079,toplist
+90.0,4:08.93,,Svitlana SHMIDT,20 MAR 1990,UKR,1f2,,Zaporozhye (UKR) (i),27 JAN 2012,1156.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14304178,toplist
+91.0,4:08.94,,Margherita MAGNANI,26 FEB 1987,ITA,10,,Lignano Sabbiadoro (ITA),17 JUL 2012,1135.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14284658,toplist
+92.0,4:09.04,,Fanjanteino FELIX,26 JAN 1980,FRA,6,,Liévin (FRA) (i),14 FEB 2012,1155.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14257541,toplist
+93.0,4:09.06,,Esma AYDEMIR,01 JAN 1992,TUR,1,,Izmir (TUR),19 MAY 2012,1134.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14378580,toplist
+94.0,4:09.10,,Nancy Jebet LANGAT,22 AUG 1981,KEN,8,,"Olympiastadion, Stockholm (SWE)",17 AUG 2012,1133.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14289224,toplist
+95.0,4:09.19,,Ioana Raluca DOAGĂ,05 APR 1992,ROU,1,,Bucureşti (ROU),05 JUL 2012,1133.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14295568,toplist
+96.0,4:09.25,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,9,,"Olympiastadion, Stockholm (SWE)",17 AUG 2012,1132.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14260591,toplist
+97.0,4:09.34,,Nazret WELDU,01 JAN 1990,ERI,1f1,,Mataró (ESP),08 JUL 2012,1132.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14262207,toplist
+97.0,4:09.34,,Treniere MOSER,27 OCT 1981,USA,11,,Lignano Sabbiadoro (ITA),17 JUL 2012,1132.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14307753,toplist
+99.0,4:09.41,,Nancy CHEPKWEMOI,08 OCT 1993,KEN,4,,Rabat (MAR),27 MAY 2012,1131.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14288890,toplist
+100.0,4:09.42,,Emma COBURN,19 OCT 1990,USA,7f2,,"Los Angeles, CA (USA)",18 MAY 2012,1131.0,women_1500m,2012,https://worldathletics.org/athletes/athlete=14307810,toplist
+1.0,3:56.60,,Abeba AREGAWI,05 JUL 1990,SWE,1,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1233.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14360651,toplist
+2.0,3:56.98,,Faith KIPYEGON,10 JAN 1994,KEN,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1230.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14413305,toplist
+3.0,3:57.54,,Genzebe DIBABA,08 FEB 1991,ETH,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1225.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14259874,toplist
+4.0,3:58.58,,Hellen OBIRI,13 DEC 1989,KEN,1,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1217.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14424921,toplist
+5.0,4:00.48,,Jenny SIMPSON,23 AUG 1986,USA,1,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1202.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14305392,toplist
+6.0,4:00.76,,Viola Jelagat KIBIWOT,22 DEC 1983,KEN,4,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1199.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14289100,toplist
+7.0,4:00.94,,Brenda MARTINEZ,08 SEP 1987,USA,3,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1198.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14316143,toplist
+8.0,4:01.28,,Shannon ROWBURY,19 SEP 1984,USA,4,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1195.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14320310,toplist
+9.0,4:01.41,,Nancy Jebet LANGAT,22 AUG 1981,KEN,3,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1194.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14289224,toplist
+10.0,4:01.48,,Gabriele GRUNEWALD,25 JUN 1986,USA,5,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1194.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14304816,toplist
+11.0,4:02.05,,Eunice Jepkoech SUM,10 APR 1988,KEN,5,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1189.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14423891,toplist
+12.0,4:02.16,,Siham HILALI,02 MAY 1986,MAR,4,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1188.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14290679,toplist
+13.0,4:02.85,,Treniere MOSER,27 OCT 1981,USA,5,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1183.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14307753,toplist
+14.0,4:02.96,,Sheila REID,02 AUG 1989,CAN,6,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1182.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14267319,toplist
+15.0,4:03.38,,Hannah ENGLAND,06 MAR 1987,GBR,8,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1178.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14274986,toplist
+16.0,4:03.56,,Mary KURIA,29 NOV 1987,KEN,6,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1177.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14419015,toplist
+17.0,4:03.63,,Mimi BELETE,09 JUN 1988,BRN,7,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1176.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14270503,toplist
+18.0,4:03.73,,Sifan HASSAN,01 JAN 1993,ETH,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",04 JUL 2013,1176.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14489606,toplist
+19.0,4:03.74,,Charlene THOMAS,06 MAY 1982,GBR,1,,Watford (GBR),04 SEP 2013,1176.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14276408,toplist
+20.0,4:04.30,,Yelena SOBOLEVA,03 OCT 1982,RUS,9,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1171.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14299411,toplist
+21.0,4:04.36,,Gelete BURKA,23 JAN 1986,ETH,9,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1171.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14259909,toplist
+22.0,4:04.55,,Senbere TEFERI,03 MAY 1995,ETH,10,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1169.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14477329,toplist
+23.0,4:04.60,,Katie MACKEY,12 NOV 1987,USA,1f1,,"Los Angeles, CA (USA)",17 MAY 2013,1169.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14310264,toplist
+24.0,4:04.62,,Mary CAIN,03 MAY 1996,USA,2f1,,"Los Angeles, CA (USA)",17 MAY 2013,1169.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14411230,toplist
+25.0,4:04.63,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,10,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1169.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14290712,toplist
+26.0,4:04.65,,Nicole SIFUENTES,30 JUN 1986,CAN,3f1,,"Los Angeles, CA (USA)",17 MAY 2013,1168.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14268054,toplist
+27.0,4:04.81,,Lisa DOBRISKEY,23 DEC 1983,GBR,1,,Szczecin (POL),15 JUN 2013,1167.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14274903,toplist
+28.0,4:04.82,,Zoe BUCKMAN,21 DEC 1988,AUS,1sf1,,"Luzhniki Stadion, Moskva (RUS)",13 AUG 2013,1167.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14272380,toplist
+29.0,4:04.97,,Malika AKKAOUI,25 DEC 1987,MAR,1,,Sotteville-lès-Rouen (FRA),08 JUL 2013,1166.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14290566,toplist
+30.0,4:05.11,,Luiza GEGA,05 NOV 1988,ALB,2,,Szczecin (POL),15 JUN 2013,1165.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14272917,toplist
+30.0,4:05.11,,Meraf BAHTA,24 JUN 1989,ERI,1,,Heusden-Zolder (BEL),13 JUL 2013,1165.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14262200,toplist
+32.0,4:05.13,,Betlhem DESALEGN,13 NOV 1991,UAE,8,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1165.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14418940,toplist
+33.0,4:05.16,,Axumawit EMBAYE,18 OCT 1994,ETH,2,,Heusden-Zolder (BEL),13 JUL 2013,1164.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14534819,toplist
+34.0,4:05.22,,Rababe ARAFI,12 JAN 1991,MAR,9,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1164.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14290578,toplist
+35.0,4:05.27,,Sarah BROWN,15 OCT 1986,USA,4f1,,"Los Angeles, CA (USA)",17 MAY 2013,1164.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14306246,toplist
+36.0,4:05.35,,Yelena KOROBKINA,25 NOV 1990,RUS,1,,Yerino (RUS),02 JUN 2013,1163.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14298217,toplist
+37.0,4:05.36,,Laura WEIGHTMAN,01 JUL 1991,GBR,11,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1163.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14276688,toplist
+38.0,4:05.38,,Susan KUIJKEN,08 JUL 1986,NED,2,,"Mestský Stadion, Ostrava (CZE)",27 JUN 2013,1163.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14291825,toplist
+39.0,4:05.62,,Diana SUJEW,02 NOV 1990,GER,5,,Heusden-Zolder (BEL),13 JUL 2013,1161.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14279982,toplist
+40.0,4:05.64,,Brianna FELNAGLE,09 DEC 1986,USA,6,,Heusden-Zolder (BEL),13 JUL 2013,1161.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14309986,toplist
+41.0,4:05.66,,Violah CHEPTOO,01 MAR 1989,KEN,3,,"Mestský Stadion, Ostrava (CZE)",27 JUN 2013,1160.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14372181,toplist
+42.0,4:05.69,,Amela TERZIĆ,02 JAN 1993,SRB,1,,"Ratinan Stadion, Tampere (FIN)",14 JUL 2013,1160.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14333695,toplist
+43.0,4:05.82,,Mercy CHERONO,07 MAY 1991,KEN,2,,"Boudewijnstadion, Bruxelles (BEL)",06 SEP 2013,1159.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14288952,toplist
+44.0,4:05.83,,Emma JACKSON,07 JUN 1988,GBR,2,,Watford (GBR),04 SEP 2013,1159.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14275428,toplist
+45.0,4:05.89,,Julia LUCAS,04 MAR 1984,USA,5f1,,"Los Angeles, CA (USA)",17 MAY 2013,1159.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14315663,toplist
+46.0,4:05.91,,Anna SHCHAGINA,07 DEC 1991,RUS,1,,Moskva (RUS),25 JUL 2013,1158.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14390107,toplist
+47.0,4:06.19,,Kalkidan GEZAHEGNE,08 MAY 1991,ETH,4,,"Mestský Stadion, Ostrava (CZE)",27 JUN 2013,1156.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14259836,toplist
+48.0,4:06.20,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,11,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1156.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14260591,toplist
+49.0,4:06.22,,Tuǧba KOYUNCU,16 FEB 1991,TUR,3,,Mersin (TUR),26 JUN 2013,1156.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14377221,toplist
+50.0,4:06.34,,Margherita MAGNANI,26 FEB 1987,ITA,4,,Mersin (TUR),26 JUN 2013,1155.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14284658,toplist
+51.0,4:06.39,,Renata PLIŚ,05 FEB 1985,POL,11,,"Stadio Olimpico, Roma (ITA)",06 JUN 2013,1155.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14294279,toplist
+52.0,4:06.50,,Maureen KOSTER,03 JUL 1992,NED,2,,Nijmegen (NED),12 JUN 2013,1154.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14372338,toplist
+53.0,4:06.60,,Corinna HARRER,19 JAN 1991,GER,6,,"Mestský Stadion, Ostrava (CZE)",27 JUN 2013,1153.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14277904,toplist
+54.0,4:06.67,,Cory Ann MCGEE,29 MAY 1992,USA,7,,Heusden-Zolder (BEL),13 JUL 2013,1152.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14316538,toplist
+55.0,4:06.69,,Halima HACHLAF,06 SEP 1988,MAR,5,,Rabat (MAR),09 JUN 2013,1152.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14290676,toplist
+56.0,4:06.87,,Emma COBURN,19 OCT 1990,USA,8f1,,"Los Angeles, CA (USA)",17 MAY 2013,1151.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14307810,toplist
+57.0,4:07.17,,Kim CONLEY,14 MAR 1986,USA,9f1,,"Los Angeles, CA (USA)",17 MAY 2013,1149.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14307978,toplist
+58.0,4:07.27,,Gudaf TSEGAY,23 JAN 1997,ETH,1f1,,Ninove (BEL),27 JUL 2013,1148.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14595214,toplist
+59.0,4:07.31,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,12,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1147.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14268773,toplist
+60.0,4:07.32,,Sonja ROMAN,11 MAR 1979,SLO,8,,Heusden-Zolder (BEL),13 JUL 2013,1147.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14300233,toplist
+61.0,4:07.36,,Kate VAN BUSKIRK,09 JUN 1987,CAN,5sf2,,"Luzhniki Stadion, Moskva (RUS)",13 AUG 2013,1147.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14267049,toplist
+62.0,4:07.40,,Kate GRACE,24 OCT 1988,USA,1,,Lignano Sabbiadoro (ITA),16 JUL 2013,1147.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14327446,toplist
+63.0,4:07.51,,Hilary STELLINGWERFF,07 AUG 1981,CAN,1f1,,Burnaby (CAN),01 JUL 2013,1146.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14268056,toplist
+64.0,4:07.63,,Anna KONOVALOVA,04 JUL 1988,RUS,2,,Moskva (RUS),25 JUL 2013,1145.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14298197,toplist
+65.0,4:07.67,,Feyne GEMEDA,28 JUN 1992,ETH,9,,"Mestský Stadion, Ostrava (CZE)",27 JUN 2013,1145.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14475152,toplist
+66.0,4:07.70,,Isabel MACÍAS,11 AUG 1984,ESP,5,,Sotteville-lès-Rouen (FRA),08 JUL 2013,1144.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14261137,toplist
+67.0,4:07.76,,Laura MUIR,09 MAY 1993,GBR,7,,"Alexander Stadium, Birmingham (GBR)",30 JUN 2013,1144.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14422111,toplist
+68.0,4:08.09,,Renee TOMLIN,21 NOV 1988,USA,10f1,,"Los Angeles, CA (USA)",17 MAY 2013,1141.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14322892,toplist
+68.0,4:08.09,,Molly HUDDLE,31 AUG 1984,USA,4,,Lignano Sabbiadoro (ITA),16 JUL 2013,1141.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14313054,toplist
+70.0,4:08.25,,Heather WILSON,13 JUN 1990,USA,5,,Lignano Sabbiadoro (ITA),16 JUL 2013,1140.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14324444,toplist
+71.0,4:08.37,,Heather KAMPF,19 JAN 1987,USA,1f1,,Oordegem (BEL),06 JUL 2013,1139.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14309194,toplist
+72.0,4:08.43,,Tabitha WAMBUI,29 DEC 1983,KEN,4,,Nairobi (KEN),13 JUL 2013,1139.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14289490,toplist
+73.0,4:08.49,,Morgan UCENY,10 MAR 1985,USA,7,,"Icahn Stadium, New York, NY (USA)",25 MAY 2013,1138.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14323124,toplist
+74.0,4:08.51,,Jemma SIMPSON,10 FEB 1984,GBR,11f1,,"Los Angeles, CA (USA)",17 MAY 2013,1138.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14276350,toplist
+75.0,4:08.59,,Nelly JEPKOSGEI,14 JUL 1991,KEN,3,,Beijing (CHN),21 MAY 2013,1137.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14373314,toplist
+76.0,4:08.65,,Yelena KOBELEVA,12 JUN 1988,RUS,3f2,,Yerino (RUS),15 JUN 2013,1137.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14386692,toplist
+77.0,4:08.77,,Chelsea SODARO,09 MAY 1989,USA,6,,Lignano Sabbiadoro (ITA),16 JUL 2013,1136.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14941419,toplist
+78.0,4:08.78,,Tereza ČAPKOVÁ,24 JUL 1987,CZE,10,,"Mestský Stadion, Ostrava (CZE)",27 JUN 2013,1136.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14263185,toplist
+79.0,4:08.80,,Ioana Raluca DOAGĂ,05 APR 1992,ROU,4,,"Ratinan Stadion, Tampere (FIN)",14 JUL 2013,1136.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14295568,toplist
+80.0,4:08.81,,Yekaterina KUPINA,02 FEB 1986,RUS,3,,Moskva (RUS),25 JUL 2013,1136.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14298343,toplist
+81.0,4:08.82,,Elina SUJEW,02 NOV 1990,GER,4,,Bottrop (GER),19 JUL 2013,1136.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14279983,toplist
+82.0,4:09.00,,Dawit SEYAUM,27 JUL 1996,ETH,1,,Réduit (MRI),01 SEP 2013,1134.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14578833,toplist
+83.0,4:09.06,,Yuliya CHIZHENKO,30 AUG 1979,RUS,1,,Sochi (RUS),25 MAY 2013,1134.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14297548,toplist
+83.0,4:09.06,,Esma AYDEMIR,01 JAN 1992,TUR,5,,Mersin (TUR),26 JUN 2013,1134.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14378580,toplist
+85.0,4:09.13,,Lea WALLACE,19 DEC 1988,USA,8,,"Stade Olympique de la Pontaise, Lausanne (SUI)",04 JUL 2013,1133.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14323560,toplist
+86.0,4:09.21,,Elena ROMAGNOLO,05 OCT 1982,ITA,7,,Lignano Sabbiadoro (ITA),16 JUL 2013,1133.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14285145,toplist
+87.0,4:09.45,,Sanae EL OTMANI,20 DEC 1986,MAR,1,,Rabat (MAR),01 JUN 2013,1131.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14290660,toplist
+88.0,4:09.57,,Natalija PILIUŠINA,22 OCT 1990,LTU,4f1,,"Palo Alto, CA (USA)",28 APR 2013,1130.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14290348,toplist
+89.0,4:09.64,,Kerri GALLAGHER,31 MAY 1989,USA,1,,Victoria (CAN),05 JUL 2013,1129.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14363231,toplist
+89.0,4:09.64,,Christine BARDELLE,16 AUG 1974,FRA,1f1,,Gent (BEL),03 AUG 2013,1129.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14258642,toplist
+91.0,4:09.67,,Eilish MCCOLGAN,25 NOV 1990,GBR,1,,Loughborough (GBR),19 MAY 2013,1129.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14275729,toplist
+92.0,4:09.75,,Rosibel GARCÍA,13 FEB 1981,COL,1,,Trujillo (PER),26 NOV 2013,1128.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14264010,toplist
+93.0,4:09.79,,Muriel CONEO PAREDES,15 MAR 1987,COL,2,,Trujillo (PER),26 NOV 2013,1128.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14264036,toplist
+94.0,4:09.95,,Geena GALL,18 JAN 1987,USA,2,,Victoria (CAN),05 JUL 2013,1127.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14310643,toplist
+95.0,4:09.98,,Yelena TUMAYEVA,24 AUG 1989,RUS,4,,Moskva (RUS),25 JUL 2013,1127.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14451205,toplist
+96.0,4:10.00,,Danuta URBANIK,24 DEC 1989,POL,2,,"Stadion Juliska, Praha (CZE)",10 JUN 2013,1126.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14294586,toplist
+96.0,4:10.00,,Giulia VIOLA,24 APR 1991,ITA,6,,Mersin (TUR),26 JUN 2013,1126.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14360794,toplist
+98.0,4:10.01,,Nikki HAMBLIN,20 MAY 1988,NZL,3,,Victoria (CAN),05 JUL 2013,1126.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14275215,toplist
+99.0,4:10.04,,Katarzyna BRONIATOWSKA,22 FEB 1990,POL,4,,Szczecin (POL),15 JUN 2013,1126.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14293462,toplist
+100.0,4:10.08,,Ayako JIN'NOUCHI,21 JAN 1987,JPN,2f1,,Gent (BEL),03 AUG 2013,1126.0,women_1500m,2013,https://worldathletics.org/athletes/athlete=14286609,toplist
+1.0,3:55.17,,Genzebe DIBABA,08 FEB 1991,ETH,1,,"Europahalle, Karlsruhe (GER) (i)",01 FEB 2014,1268.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14259874,toplist
+2.0,3:57.00,,Sifan HASSAN,01 JAN 1993,NED,1,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1230.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14489606,toplist
+3.0,3:57.05,,Hellen OBIRI,13 DEC 1989,KEN,1,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1229.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14424921,toplist
+4.0,3:57.22,,Jenny SIMPSON,23 AUG 1986,USA,2,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1228.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14305392,toplist
+5.0,3:57.57,,Abeba AREGAWI,05 JUL 1990,SWE,2,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1225.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14360651,toplist
+6.0,3:58.01,,Faith KIPYEGON,10 JAN 1994,KEN,3,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1222.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14413305,toplist
+7.0,3:59.49,,Shannon ROWBURY,19 SEP 1984,USA,5,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1210.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14320310,toplist
+8.0,3:59.53,,Dawit SEYAUM,27 JUL 1996,ETH,1,,"Le Grand Stade, Marrakech (MAR)",08 JUN 2014,1209.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14578833,toplist
+9.0,4:00.07,,Laura MUIR,09 MAY 1993,GBR,6,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1205.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14422111,toplist
+10.0,4:00.08,,Mimi BELETE,09 JUN 1988,BRN,7,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1205.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14270503,toplist
+11.0,4:00.17,,Laura WEIGHTMAN,01 JUL 1991,GBR,8,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1204.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14276688,toplist
+12.0,4:00.46,,Viola Jelagat KIBIWOT,22 DEC 1983,KEN,3,,"Letzigrund, Zürich (SUI)",28 AUG 2014,1202.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14289100,toplist
+13.0,4:01.34,,Meraf BAHTA,24 JUN 1989,SWE,5,,"Letzigrund, Zürich (SUI)",28 AUG 2014,1195.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14262200,toplist
+14.0,4:01.36,,Brenda MARTINEZ,08 SEP 1987,USA,6,,"Letzigrund, Zürich (SUI)",28 AUG 2014,1195.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14316143,toplist
+15.0,4:01.54,,Eunice Jepkoech SUM,10 APR 1988,KEN,6,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1193.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14423891,toplist
+16.0,4:02.35,,Axumawit EMBAYE,18 OCT 1994,ETH,9,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1187.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14534819,toplist
+17.0,4:02.71,,Rababe ARAFI,12 JAN 1991,MAR,1,,Beijing (CHN),21 MAY 2014,1184.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14290578,toplist
+18.0,4:02.83,,Gudaf TSEGAY,23 JAN 1997,ETH,2,,Beijing (CHN),21 MAY 2014,1183.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14595214,toplist
+19.0,4:03.12,,Luiza GEGA,05 NOV 1988,ALB,3,,Beijing (CHN),21 MAY 2014,1181.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14272917,toplist
+20.0,4:03.98,,Perine NENGAMPI,1989,KEN,2,,Heusden-Zolder (BEL),19 JUL 2014,1174.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14477600,toplist
+21.0,4:04.07,,Irene JELAGAT,10 DEC 1988,KEN,5,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1173.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14289013,toplist
+22.0,4:04.09,,Zoe BUCKMAN,21 DEC 1988,AUS,9,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1173.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14272380,toplist
+23.0,4:04.10,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,6,,"FBK Stadium, Hengelo (NED)",08 JUN 2014,1173.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14268773,toplist
+24.0,4:04.11,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,3,,Heusden-Zolder (BEL),19 JUL 2014,1173.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14292722,toplist
+25.0,4:04.18,,Treniere MOSER,27 OCT 1981,USA,5,,"Hampden Park, Glasgow (GBR)",11 JUL 2014,1172.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14307753,toplist
+26.0,4:04.67,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,5,,Heusden-Zolder (BEL),19 JUL 2014,1168.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14261624,toplist
+27.0,4:04.76,,Morgan UCENY,10 MAR 1985,USA,12,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1168.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14323124,toplist
+28.0,4:04.87,,Nicole SIFUENTES,30 JUN 1986,CAN,13,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1167.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14268054,toplist
+29.0,4:04.92,,Maureen KOSTER,03 JUL 1992,NED,8,,"FBK Stadium, Hengelo (NED)",08 JUN 2014,1166.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14372338,toplist
+30.0,4:05.08,,Nikki HAMBLIN,20 MAY 1988,NZL,2h1,,"Hampden Park, Glasgow (GBR)",28 JUL 2014,1165.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14275215,toplist
+31.0,4:05.22,,Gabriele GRUNEWALD,25 JUN 1986,USA,1,,Lignano Sabbiadoro (ITA),08 JUL 2014,1164.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14304816,toplist
+32.0,4:05.23,,Ann Karindi MWANGI,08 DEC 1988,KEN,6,,Heusden-Zolder (BEL),19 JUL 2014,1164.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14289075,toplist
+33.0,4:05.27,,Hannah ENGLAND,06 MAR 1987,GBR,9,,"FBK Stadium, Hengelo (NED)",08 JUN 2014,1164.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14274986,toplist
+34.0,4:05.29,,Emma COBURN,19 OCT 1990,USA,7,,Heusden-Zolder (BEL),19 JUL 2014,1163.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14307810,toplist
+35.0,4:05.32,,Federica DEL BUONO,12 DEC 1994,ITA,1,,Rovereto (ITA),02 SEP 2014,1163.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14480247,toplist
+36.0,4:05.38,,Kate VAN BUSKIRK,09 JUN 1987,CAN,8,,Heusden-Zolder (BEL),19 JUL 2014,1163.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14267049,toplist
+37.0,4:05.40,,Renata PLIŚ,05 FEB 1985,POL,9,,"Hampden Park, Glasgow (GBR)",11 JUL 2014,1162.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14294279,toplist
+38.0,4:05.46,,Siham HILALI,02 MAY 1986,MAR,11,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1162.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14290679,toplist
+39.0,4:05.58,,Anna SHCHAGINA,07 DEC 1991,RUS,2,,"Le Grand Stade, Marrakech (MAR)",08 JUN 2014,1161.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14390107,toplist
+40.0,4:05.72,,Diana SUJEW,02 NOV 1990,GER,10,,"FBK Stadium, Hengelo (NED)",08 JUN 2014,1160.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14279982,toplist
+41.0,4:05.74,,Katie MACKEY,12 NOV 1987,USA,1,,"Seattle, WA (USA)",06 AUG 2014,1160.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14310264,toplist
+42.0,4:05.76,,Melissa DUNCAN,30 JAN 1990,AUS,5h1,,"Hampden Park, Glasgow (GBR)",28 JUL 2014,1160.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14272171,toplist
+43.0,4:06.05,,Margherita MAGNANI,26 FEB 1987,ITA,9,,Heusden-Zolder (BEL),19 JUL 2014,1157.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14284658,toplist
+44.0,4:06.06,,Kaila MCKNIGHT,05 MAY 1986,AUS,6h1,,"Hampden Park, Glasgow (GBR)",28 JUL 2014,1157.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14271670,toplist
+45.0,4:06.10,,Stacey Chepkemboi NDIWA,06 DEC 1992,KEN,2,,Rovereto (ITA),02 SEP 2014,1157.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14330221,toplist
+46.0,4:06.16,,Heather KAMPF,19 JAN 1987,USA,10,,Heusden-Zolder (BEL),19 JUL 2014,1156.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14309194,toplist
+47.0,4:06.34,,Mary CAIN,03 MAY 1996,USA,2,,"Sacramento, CA (USA)",29 JUN 2014,1155.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14411230,toplist
+48.0,4:06.38,,Habiba GHRIBI,09 APR 1984,TUN,3,,"Sports Park Mladost, Zagreb (CRO)",02 SEP 2014,1155.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14303124,toplist
+49.0,4:07.05,,Alexa EFRAIMSON,20 FEB 1997,USA,10,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1149.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14522335,toplist
+50.0,4:07.11,,Violah CHEPTOO,01 MAR 1989,KEN,3f1,,"Los Angeles, CA (USA)",15 MAY 2014,1149.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14372181,toplist
+51.0,4:07.21,,Susan KUIJKEN,08 JUL 1986,NED,1,,Perth (AUS),22 FEB 2014,1148.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14291825,toplist
+52.0,4:07.34,,Sofia ENNAOUI,30 AUG 1995,POL,1,,Szczecin (POL),07 JUN 2014,1147.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14436869,toplist
+52.0,4:07.34,,Amela TERZIĆ,02 JAN 1993,SRB,1,,Velenje (SLO),01 JUL 2014,1147.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14333695,toplist
+52.0,4:07.34,,Kokeb TESFAYE,05 MAY 1997,ETH,1,,Montreuil-sous-Bois (FRA),07 JUL 2014,1147.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14594975,toplist
+55.0,4:07.35,,Kate GRACE,24 OCT 1988,USA,1f1,,"Palo Alto, CA (USA)",04 MAY 2014,1147.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14327446,toplist
+56.0,4:07.37,,Jemma SIMPSON,10 FEB 1984,GBR,5f1,,"Los Angeles, CA (USA)",15 MAY 2014,1147.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14276350,toplist
+57.0,4:07.42,,Brianna FELNAGLE,09 DEC 1986,USA,6f1,,"Los Angeles, CA (USA)",15 MAY 2014,1147.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14309986,toplist
+58.0,4:07.47,,Heather WILSON,13 JUN 1990,USA,7f1,,"Los Angeles, CA (USA)",15 MAY 2014,1146.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14324444,toplist
+59.0,4:07.50,,Viktoriya POHORYELSKA,04 AUG 1990,UKR,1f2,,Kyiv (UKR),03 JUN 2014,1146.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14304036,toplist
+60.0,4:07.55,,Angelika CICHOCKA,15 MAR 1988,POL,2,,Szczecin (POL),07 JUN 2014,1146.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14293508,toplist
+61.0,4:07.59,,Besu SADO,12 JAN 1996,ETH,2,,Montreuil-sous-Bois (FRA),07 JUL 2014,1145.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14654401,toplist
+62.0,4:07.67,,Giulia VIOLA,24 APR 1991,ITA,4,,Rovereto (ITA),02 SEP 2014,1145.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14360794,toplist
+63.0,4:07.70,,Jordan HASAY,21 SEP 1991,USA,13,,"Hampden Park, Glasgow (GBR)",11 JUL 2014,1144.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14312156,toplist
+64.0,4:07.77,,Feyne GEMEDA,28 JUN 1992,ETH,1,,Sotteville-lès-Rouen (FRA),14 JUN 2014,1144.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14475152,toplist
+65.0,4:07.82,,Elina SUJEW,02 NOV 1990,GER,13,,"FBK Stadium, Hengelo (NED)",08 JUN 2014,1143.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14279983,toplist
+66.0,4:07.88,,Molly LUDLOW,04 AUG 1987,USA,3,,Lignano Sabbiadoro (ITA),08 JUL 2014,1143.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14305568,toplist
+67.0,4:07.95,,Danuta URBANIK,24 DEC 1989,POL,3,,Szczecin (POL),07 JUN 2014,1142.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14294586,toplist
+68.0,4:08.08,,Amanda ECCLESTON,18 JUN 1990,USA,2,,"Seattle, WA (USA)",06 AUG 2014,1141.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14569199,toplist
+69.0,4:08.16,,Tamara TVERDOSTUP,17 JUL 1979,UKR,4,,Beijing (CHN),21 MAY 2014,1141.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14304309,toplist
+69.0,4:08.16,,Denise KREBS,27 JUN 1987,GER,12,,Heusden-Zolder (BEL),19 JUL 2014,1141.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14278507,toplist
+71.0,4:08.24,,Kristina UGAROVA,22 OCT 1987,RUS,3,,Kazan (RUS),26 JUL 2014,1140.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14298068,toplist
+72.0,4:08.49,,Senbere TEFERI,03 MAY 1995,ETH,3,,Tokyo (JPN),11 MAY 2014,1138.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14477329,toplist
+73.0,4:08.57,,Sarah BROWN,15 OCT 1986,USA,4,,"Sacramento, CA (USA)",29 JUN 2014,1138.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14306246,toplist
+74.0,4:08.58,,Mercy CHERONO,07 MAY 1991,KEN,1,,"Albert Park, Melbourne (AUS)",22 MAR 2014,1138.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14288952,toplist
+75.0,4:08.62,,Tigist GASHAW,25 DEC 1996,ETH,1f1,,Montbéliard (FRA),06 JUN 2014,1137.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14477333,toplist
+76.0,4:08.79,,Betlhem DESALEGN,13 NOV 1991,UAE,3,,"Globe Arena, Stockholm (SWE) (i)",06 FEB 2014,1157.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14418940,toplist
+76.0,4:08.79,,Katarzyna BRONIATOWSKA,22 FEB 1990,POL,4,,Szczecin (POL),07 JUN 2014,1136.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14293462,toplist
+78.0,4:08.85,,Selah BUSIENEI,27 DEC 1991,KEN,3,,Nairobi (KEN),07 JUN 2014,1135.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14479236,toplist
+79.0,4:08.88,,Malika AKKAOUI,25 DEC 1987,MAR,1,,Fes (MAR),24 MAY 2014,1135.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14290566,toplist
+80.0,4:08.89,,Natalya PRYSHCHEPA,11 SEP 1994,UKR,10,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1135.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14426885,toplist
+81.0,4:09.00,,Stephanie CHARNIGO,25 JUL 1988,USA,2h2,,"Sacramento, CA (USA)",27 JUN 2014,1134.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14307505,toplist
+82.0,4:09.14,,Jaisha ORCHATTERI,23 MAY 1983,IND,1,,Patiala (IND),19 AUG 2014,1133.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14282858,toplist
+83.0,4:09.22,,Isabel MACÍAS,11 AUG 1984,ESP,5,,"National Indoor Arena, Birmingham (GBR) (i)",15 FEB 2014,1154.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14261137,toplist
+84.0,4:09.23,,Sanae EL OTMANI,20 DEC 1986,MAR,2,,Fes (MAR),24 MAY 2014,1132.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14290660,toplist
+85.0,4:09.34,,Lea WALLACE,19 DEC 1988,USA,8,,"Des Moines, IA (USA)",25 APR 2014,1132.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14323560,toplist
+86.0,4:09.48,,Kim CONLEY,14 MAR 1986,USA,4f1,,Kortrijk (BEL),12 JUL 2014,1130.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14307978,toplist
+87.0,4:09.87,,Nicole TULLY,30 OCT 1986,USA,10f1,,"Los Angeles, CA (USA)",15 MAY 2014,1127.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14320686,toplist
+88.0,4:09.88,,Yuliya VASILYEVA,23 MAR 1987,RUS,2h2,,Kazan (RUS),25 JUL 2014,1127.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14299683,toplist
+89.0,4:09.99,,Kerri GALLAGHER,31 MAY 1989,USA,1,,Victoria (CAN),08 JUL 2014,1127.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14363231,toplist
+90.0,4:10.05,,Sara VAUGHN,16 MAY 1986,USA,1,,"Walnut, CA (USA)",18 APR 2014,1126.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14325833,toplist
+91.0,4:10.09,,Corinna HARRER,19 JAN 1991,GER,3,,Dessau (GER),11 JUN 2014,1126.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14277904,toplist
+91.0,4:10.09,,Marina POSPELOVA,23 JUL 1990,RUS,2,,Zhukovskiy (RUS),27 JUN 2014,1126.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14325987,toplist
+93.0,4:10.11,,Jip VASTENBURG,21 MAR 1994,NED,13,,Heusden-Zolder (BEL),19 JUL 2014,1126.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14423990,toplist
+94.0,4:10.14,,Olga NITSINA,11 FEB 1989,RUS,1,,Sochi (RUS),29 MAY 2014,1125.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14478422,toplist
+95.0,4:10.28,,Maren ORTH,22 JUN 1990,GER,4,,Dessau (GER),11 JUN 2014,1124.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14278412,toplist
+96.0,4:10.36,,Bridey DELANEY,16 JUL 1989,AUS,3,,"Albert Park, Melbourne (AUS)",22 MAR 2014,1124.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14272222,toplist
+97.0,4:10.38,,Seltana AIT HAMMOU,21 MAY 1980,MAR,1,,Rabat (MAR),22 JUN 2014,1123.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14290565,toplist
+98.0,4:10.41,,Genzeb SHUMI,29 JAN 1991,BRN,5,,"Le Grand Stade, Marrakech (MAR)",08 JUN 2014,1123.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14413310,toplist
+99.0,4:10.45,,Sofie VAN ACCOM,07 JUN 1989,BEL,1f1,,Ninove (BEL),02 AUG 2014,1123.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14270184,toplist
+100.0,4:10.51,,Katie WRIGHT,17 FEB 1988,NZL,2f1,,Ninove (BEL),02 AUG 2014,1122.0,women_1500m,2014,https://worldathletics.org/athletes/athlete=14293218,toplist
+1.0,3:50.07,,Genzebe DIBABA,08 FEB 1991,ETH,1,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1287.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14259874,toplist
+2.0,3:56.05,,Sifan HASSAN,01 JAN 1993,NED,2,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1237.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14489606,toplist
+3.0,3:56.29,,Shannon ROWBURY,19 SEP 1984,USA,3,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1236.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14320310,toplist
+4.0,3:57.30,,Jenny SIMPSON,23 AUG 1986,USA,4,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1227.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14305392,toplist
+5.0,3:58.66,,Laura MUIR,09 MAY 1993,GBR,5,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1216.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14422111,toplist
+6.0,3:59.32,,Faith KIPYEGON,10 JAN 1994,KEN,,,"Boudewijnstadion, Bruxelles (BEL)",11 SEP 2015,1211.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14413305,toplist
+7.0,3:59.76,,Dawit SEYAUM,27 JUL 1996,ETH,3,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1207.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14578833,toplist
+8.0,3:59.79,,Maureen KOSTER,03 JUL 1992,NED,6,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1207.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14372338,toplist
+9.0,4:00.65,,Besu SADO,12 JAN 1996,ETH,7,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1200.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14654401,toplist
+10.0,4:01.26,,Mercy CHERONO,07 MAY 1991,KEN,2,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1195.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14288952,toplist
+11.0,4:01.41,,Viola Jelagat KIBIWOT,22 DEC 1983,KEN,5,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1194.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14289100,toplist
+12.0,4:01.46,,Anna SHCHAGINA,07 DEC 1991,RUS,8,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1194.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14390107,toplist
+13.0,4:01.86,,Senbere TEFERI,03 MAY 1995,ETH,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",15 MAY 2015,1191.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14477329,toplist
+14.0,4:01.97,,Abeba AREGAWI,05 JUL 1990,SWE,2,,"Alexander Stadium, Birmingham (GBR)",07 JUN 2015,1190.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14360651,toplist
+15.0,4:02.63,,Luiza GEGA,05 NOV 1988,ALB,4,,"Suhaim bin Hamad Stadium, Doha (QAT)",15 MAY 2015,1184.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14272917,toplist
+16.0,4:02.92,,Axumawit EMBAYE,18 OCT 1994,ETH,2,,"Messehalle, Karlsruhe (GER) (i)",31 JAN 2015,1204.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14534819,toplist
+17.0,4:02.94,,Rababe ARAFI,12 JAN 1991,MAR,7,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1182.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14290578,toplist
+18.0,4:03.06,,Angelika CICHOCKA,15 MAR 1988,POL,9,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1181.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14293508,toplist
+19.0,4:03.09,,Gudaf TSEGAY,23 JAN 1997,ETH,1,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1181.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14595214,toplist
+19.0,4:03.09,,Nancy CHEPKWEMOI,08 OCT 1993,KEN,1f1,,Watford (GBR),27 JUN 2015,1181.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14288890,toplist
+21.0,4:03.20,,Sarah BROWN,15 OCT 1986,USA,6,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1180.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14306246,toplist
+22.0,4:03.28,,Beatrice CHEPKOECH,06 JUL 1991,KEN,1,,Heusden-Zolder (BEL),18 JUL 2015,1179.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14383286,toplist
+23.0,4:03.39,,Alexa EFRAIMSON,20 FEB 1997,USA,7,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1178.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14522335,toplist
+24.0,4:03.56,,Kerri GALLAGHER,31 MAY 1989,USA,1,,Lignano Sabbiadoro (ITA),07 JUL 2015,1177.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14363231,toplist
+25.0,4:03.81,,Katie MACKEY,12 NOV 1987,USA,8,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1175.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14310264,toplist
+26.0,4:04.10,,Violah CHEPTOO,01 MAR 1989,KEN,2,,Lignano Sabbiadoro (ITA),07 JUL 2015,1173.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14372181,toplist
+27.0,4:04.17,,Lauren JOHNSON,04 MAY 1987,USA,2,,Heusden-Zolder (BEL),18 JUL 2015,1172.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14335068,toplist
+28.0,4:04.26,,Treniere MOSER,27 OCT 1981,USA,9,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1171.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14307753,toplist
+28.0,4:04.26,,Gabriele GRUNEWALD,25 JUN 1986,USA,5,,"Bislett Stadion, Oslo (NOR)",11 JUN 2015,1171.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14304816,toplist
+28.0,4:04.26,,Sofia ENNAOUI,30 AUG 1995,POL,9,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1171.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14436869,toplist
+31.0,4:04.48,,Tatyana TOMASHOVA,01 JUL 1975,RUS,1,,Cheboksary (RUS),05 AUG 2015,1170.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14299581,toplist
+32.0,4:04.49,,Malika AKKAOUI,25 DEC 1987,MAR,3,,"National Stadium, Beijing (CHN)",20 MAY 2015,1170.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14290566,toplist
+33.0,4:04.50,,Heather KAMPF,19 JAN 1987,USA,12,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1170.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14309194,toplist
+34.0,4:04.66,,Siham HILALI,02 MAY 1986,MAR,5,,"National Stadium, Beijing (CHN)",20 MAY 2015,1168.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14290679,toplist
+35.0,4:04.70,,Laura WEIGHTMAN,01 JUL 1991,GBR,6,,"Bislett Stadion, Oslo (NOR)",11 JUN 2015,1168.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14276688,toplist
+36.0,4:04.74,,Renata PLIŚ,05 FEB 1985,POL,7,,"Bislett Stadion, Oslo (NOR)",11 JUN 2015,1168.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14294279,toplist
+37.0,4:04.77,,Amela TERZIĆ,02 JAN 1993,SRB,1,,"Kadrioru staadion, Tallinn (EST)",12 JUL 2015,1167.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14333695,toplist
+38.0,4:05.03,,Nikki HAMBLIN,20 MAY 1988,NZL,6,,"National Stadium, Beijing (CHN)",20 MAY 2015,1165.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14275215,toplist
+39.0,4:05.10,,Emma COBURN,19 OCT 1990,USA,11,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1165.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14307810,toplist
+40.0,4:05.24,,Fiona BENSON,25 MAY 1992,CAN,2,,"Stadio Guidobaldi, Rieti (ITA)",13 SEP 2015,1164.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14464215,toplist
+41.0,4:05.31,,Caroline CHEPKEMOI,01 MAR 1993,KEN,4,,Heusden-Zolder (BEL),18 JUL 2015,1163.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14330377,toplist
+42.0,4:05.37,,Mimi BELETE,09 JUN 1988,BRN,3,,"Stadio Guidobaldi, Rieti (ITA)",13 SEP 2015,1163.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14270503,toplist
+43.0,4:05.39,,Stephanie GARCIA,03 MAY 1988,USA,1,,"Greenville, SC (USA)",30 MAY 2015,1163.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14310707,toplist
+44.0,4:05.52,,Aisha PRAUGHT LEER,14 DEC 1989,USA,2,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1162.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14361190,toplist
+45.0,4:05.56,,Melissa DUNCAN,30 JAN 1990,AUS,9,,"Bislett Stadion, Oslo (NOR)",11 JUN 2015,1161.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14272171,toplist
+46.0,4:05.58,,Tigist GASHAW,25 DEC 1996,BRN,3,,"Bregyó Athletic Center, Székesfehérvár (HUN)",07 JUL 2015,1161.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14477333,toplist
+47.0,4:05.73,,Betlhem DESALEGN,13 NOV 1991,UAE,6h1,,"National Stadium, Beijing (CHN)",22 AUG 2015,1160.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14418940,toplist
+48.0,4:05.89,,Nicole TULLY,30 OCT 1986,USA,5,,Heusden-Zolder (BEL),18 JUL 2015,1159.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14320686,toplist
+49.0,4:06.29,,Natalya PRYSHCHEPA,11 SEP 1994,UKR,3,,"Kadrioru staadion, Tallinn (EST)",12 JUL 2015,1155.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14426885,toplist
+50.0,4:06.30,,Zoe BUCKMAN,21 DEC 1988,AUS,12,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1155.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14272380,toplist
+51.0,4:06.36,,Ann Karindi MWANGI,08 DEC 1988,KEN,3,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1155.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14289075,toplist
+52.0,4:06.37,,Susan KUIJKEN,08 JUL 1986,NED,7,,"National Stadium, Beijing (CHN)",20 MAY 2015,1155.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14291825,toplist
+53.0,4:06.42,,Meraf BAHTA,24 JUN 1989,SWE,2,,"Globe Arena, Stockholm (SWE) (i)",19 FEB 2015,1176.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14262200,toplist
+54.0,4:06.44,,Nicole SIFUENTES,30 JUN 1986,CAN,1,,"Atlanta, GA (USA)",01 AUG 2015,1154.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14268054,toplist
+55.0,4:06.49,,Ciara MAGEEAN,12 MAR 1992,IRL,5,,"Stadio Guidobaldi, Rieti (ITA)",13 SEP 2015,1154.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14275665,toplist
+56.0,4:06.81,,Margherita MAGNANI,26 FEB 1987,ITA,6,,Heusden-Zolder (BEL),18 JUL 2015,1151.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14284658,toplist
+57.0,4:06.90,,Rachel SCHNEIDER,18 JUL 1991,USA,7,,Heusden-Zolder (BEL),18 JUL 2015,1151.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14320785,toplist
+58.0,4:06.97,,Sheila REID,02 AUG 1989,CAN,1,,Padova (ITA),06 SEP 2015,1150.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14267319,toplist
+59.0,4:07.08,,Sasha GOLLISH,27 DEC 1981,CAN,2f10,,London (CAN),17 MAY 2015,1149.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14267941,toplist
+60.0,4:07.37,,Anastasiya ALEKSANDROVA,16 FEB 1994,RUS,1,,Sochi (RUS),28 MAY 2015,1147.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14434423,toplist
+61.0,4:07.44,,Gabriela STAFFORD,13 SEP 1995,CAN,3f10,,London (CAN),17 MAY 2015,1146.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14501531,toplist
+61.0,4:07.44,,Kokeb TESFAYE,05 MAY 1997,ETH,8,,"National Stadium, Beijing (CHN)",20 MAY 2015,1146.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14594975,toplist
+63.0,4:07.55,,Stephanie BROWN,04 MAR 1991,USA,2,,"Greenville, SC (USA)",30 MAY 2015,1146.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14306645,toplist
+64.0,4:07.56,,Maren ORTH,22 JUN 1990,GER,8,,Heusden-Zolder (BEL),18 JUL 2015,1145.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14278412,toplist
+65.0,4:07.58,,Selah BUSIENEI,27 DEC 1991,KEN,1,,Mungyeong (KOR),08 OCT 2015,1145.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14479236,toplist
+66.0,4:07.75,,Irene JELAGAT,10 DEC 1988,KEN,10,,"Stade Olympique de la Pontaise, Lausanne (SUI)",09 JUL 2015,1144.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14289013,toplist
+67.0,4:07.95,,Florina PIERDEVARĂ,29 MAR 1990,ROU,4,,Lignano Sabbiadoro (ITA),07 JUL 2015,1142.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14295849,toplist
+68.0,4:08.04,,Abbey COOPER,25 MAY 1992,USA,1f3,,"Waltham, MA (USA)",13 JUN 2015,1142.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14451797,toplist
+69.0,4:08.15,,Heidi SEE,09 AUG 1989,AUS,3,,"Greenville, SC (USA)",30 MAY 2015,1141.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14272019,toplist
+70.0,4:08.31,,Muriel CONEO PAREDES,15 MAR 1987,COL,10h1,,"National Stadium, Beijing (CHN)",22 AUG 2015,1140.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14264036,toplist
+71.0,4:08.47,,Kate VAN BUSKIRK,09 JUN 1987,CAN,3,,Liège (BEL),15 JUL 2015,1138.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14267049,toplist
+72.0,4:08.53,,Salima EL OUALI ALAMI,29 DEC 1983,MAR,4,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1138.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14366662,toplist
+73.0,4:08.54,,Angela PETTY,16 AUG 1991,NZL,1,,Leixlip (IRL),13 JUN 2015,1138.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14293170,toplist
+73.0,4:08.54,,Feyne GEMEDA,28 JUN 1992,ETH,6,,"Bregyó Athletic Center, Székesfehérvár (HUN)",07 JUL 2015,1138.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14475152,toplist
+75.0,4:08.65,,Dominique SCOTT,24 JUN 1992,RSA,6,,Lignano Sabbiadoro (ITA),07 JUL 2015,1137.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14941416,toplist
+76.0,4:08.87,,Federica DEL BUONO,12 DEC 1994,ITA,1,,Ancona (ITA) (i),07 FEB 2015,1156.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14480247,toplist
+77.0,4:08.92,,Charlene THOMAS,06 MAY 1982,GBR,1f1,,Oxford (GBR),18 JUL 2015,1135.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14276408,toplist
+78.0,4:08.93,,Rebecca ADDISON,28 MAY 1991,USA,4,,"Greenville, SC (USA)",30 MAY 2015,1135.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14335830,toplist
+79.0,4:09.08,,Mary CAIN,03 MAY 1996,USA,4,,Liège (BEL),15 JUL 2015,1134.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14411230,toplist
+80.0,4:09.10,,Olesya MURATOVA,25 OCT 1992,RUS,2,,Sochi (RUS),28 MAY 2015,1133.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14404260,toplist
+81.0,4:09.15,,Yekaterina SOKOLOVA,16 DEC 1995,RUS,3,,Sochi (RUS),28 MAY 2015,1133.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14562690,toplist
+82.0,4:09.22,,Katarzyna BRONIATOWSKA,22 FEB 1990,POL,2,,Spala (POL) (i),07 FEB 2015,1154.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14293462,toplist
+83.0,4:09.28,,Elina SUJEW,02 NOV 1990,GER,10,,Heusden-Zolder (BEL),18 JUL 2015,1132.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14279983,toplist
+84.0,4:09.31,,Morgan UCENY,10 MAR 1985,USA,8,,"Alexander Stadium, Birmingham (GBR)",07 JUN 2015,1132.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14323124,toplist
+85.0,4:09.49,,Melissa SALERNO,22 NOV 1986,USA,5,,"Greenville, SC (USA)",30 MAY 2015,1130.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14320495,toplist
+86.0,4:09.56,,Rhianwedd PRICE-WEIMER,11 AUG 1994,GBR,1,,"Eugene, OR (USA)",13 JUN 2015,1130.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14471620,toplist
+86.0,4:09.56,,Jess JUDD,07 JAN 1995,GBR,2f1,,Watford (GBR),27 JUN 2015,1130.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14336301,toplist
+88.0,4:09.57,,Heather WILSON,13 JUN 1990,USA,6,,"Greenville, SC (USA)",30 MAY 2015,1130.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14324444,toplist
+89.0,4:09.58,,Konstanze KLOSTERHALFEN,18 FEB 1997,GER,2,,Nürnberg (GER),26 JUL 2015,1130.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14496249,toplist
+90.0,4:09.62,,Shelby HOULIHAN,08 FEB 1993,USA,7,,Liège (BEL),15 JUL 2015,1129.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14368938,toplist
+91.0,4:09.65,,Cory Ann MCGEE,29 MAY 1992,USA,6h2,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1129.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14316538,toplist
+92.0,4:09.7h,,Eunice Jepkoech SUM,10 APR 1988,KEN,1,,Nakuru (KEN),18 APR 2015,1129.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14423891,toplist
+93.0,4:09.74,,Melissa COURTNEY-BRYANT,30 AUG 1993,GBR,3f1,,Watford (GBR),27 JUN 2015,1128.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14274781,toplist
+94.0,4:09.88,,Vivian Jepkemei CHERUIYOT,11 SEP 1983,KEN,1,,Nairobi (KEN),11 JUL 2015,1127.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14288971,toplist
+95.0,4:09.91,,Hanna KLEIN,06 APR 1993,GER,3,,Nürnberg (GER),26 JUL 2015,1127.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14360692,toplist
+96.0,4:09.99,,Isabel MACÍAS,11 AUG 1984,ESP,11,,Heusden-Zolder (BEL),18 JUL 2015,1127.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14261137,toplist
+97.0,4:10.0h,,Virginia NYAMBURA,20 JUL 1993,KEN,1,,Nairobi (KEN),21 MAR 2015,1126.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14425796,toplist
+98.0,4:10.04,,Corinna HARRER,19 JAN 1991,GER,2,,Regensburg (GER),06 JUN 2015,1126.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14277904,toplist
+99.0,4:10.17,,Madeleine MURRAY,19 OCT 1993,GBR,2f1,,Solihull (GBR),22 AUG 2015,1125.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14582882,toplist
+100.0,4:10.24,,Faye FULLERTON,31 MAY 1984,GBR,4f1,,Watford (GBR),27 JUN 2015,1125.0,women_1500m,2015,https://worldathletics.org/athletes/athlete=14275088,toplist
+1.0,3:55.22,,Laura MUIR,09 MAY 1993,GBR,1,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1244.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14422111,toplist
+2.0,3:56.41,,Faith KIPYEGON,10 JAN 1994,KEN,1,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1235.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14413305,toplist
+3.0,3:56.46,,Genzebe DIBABA,08 FEB 1991,ETH,,,"Globe Arena, Stockholm (SWE) (i)",17 FEB 2016,1257.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14259874,toplist
+4.0,3:57.13,,Sifan HASSAN,01 JAN 1993,NED,3,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1229.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14489606,toplist
+5.0,3:57.78,,Shannon ROWBURY,19 SEP 1984,USA,1,,"Letzigrund, Zürich (SUI)",01 SEP 2016,1223.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14320310,toplist
+6.0,3:58.09,,Dawit SEYAUM,27 JUL 1996,ETH,5,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1221.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14578833,toplist
+7.0,3:58.19,,Jenny SIMPSON,23 AUG 1986,USA,6,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1220.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14305392,toplist
+8.0,3:59.34,,Hellen OBIRI,13 DEC 1989,KEN,2,,"Shanghai Stadium, Shanghai (CHN)",14 MAY 2016,1211.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14424921,toplist
+9.0,3:59.47,,Besu SADO,12 JAN 1996,ETH,6,,"Letzigrund, Zürich (SUI)",01 SEP 2016,1210.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14654401,toplist
+10.0,4:00.18,,Gudaf TSEGAY,23 JAN 1997,ETH,3,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1204.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14595214,toplist
+11.0,4:01.00,,Sofia ENNAOUI,30 AUG 1995,POL,8,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1197.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14436869,toplist
+12.0,4:01.46,,Ciara MAGEEAN,12 MAR 1992,IRL,9,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1194.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14275665,toplist
+13.0,4:01.78,,Linden HALL,20 JUN 1991,AUS,5,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1191.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14272002,toplist
+14.0,4:01.99,,Caster SEMENYA,07 JAN 1991,RSA,1,,Durban (RSA),24 JUN 2016,1190.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14330057,toplist
+15.0,4:02.62,,Meraf BAHTA,24 JUN 1989,SWE,3,,"Olympic Stadium, London (GBR)",22 JUL 2016,1185.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14262200,toplist
+16.0,4:02.66,,Laura WEIGHTMAN,01 JUL 1991,GBR,4,,"Olympic Stadium, London (GBR)",22 JUL 2016,1184.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14276688,toplist
+16.0,4:02.66,,Winny CHEBET,20 DEC 1990,KEN,10,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1184.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14288808,toplist
+18.0,4:03.05,,Axumawit EMBAYE,18 OCT 1994,ETH,5,,"Olympic Stadium, London (GBR)",22 JUL 2016,1181.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14534819,toplist
+19.0,4:03.22,,Zoe BUCKMAN,21 DEC 1988,AUS,11,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1180.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14272380,toplist
+20.0,4:03.25,,Angelika CICHOCKA,15 MAR 1988,POL,1,,"Olympiastadion, Stockholm (SWE)",16 JUN 2016,1180.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14293508,toplist
+20.0,4:03.25,,Amanda ECCLESTON,18 JUN 1990,USA,6,,"Olympic Stadium, London (GBR)",22 JUL 2016,1180.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14569199,toplist
+22.0,4:03.39,,Shelby HOULIHAN,08 FEB 1993,USA,7,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1178.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14368938,toplist
+23.0,4:03.57,,Brenda MARTINEZ,08 SEP 1987,USA,8,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1177.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14316143,toplist
+24.0,4:03.70,,Betlhem DESALEGN,13 NOV 1991,UAE,3,,"National Stadium, Beijing (CHN)",18 MAY 2016,1176.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14418940,toplist
+25.0,4:03.74,,Eilish MCCOLGAN,25 NOV 1990,GBR,7,,"Olympic Stadium, London (GBR)",22 JUL 2016,1176.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14275729,toplist
+26.0,4:03.84,,Maureen KOSTER,03 JUL 1992,NED,9,,"Olympic Stadium, London (GBR)",22 JUL 2016,1175.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14372338,toplist
+27.0,4:03.94,,Morgan UCENY,10 MAR 1985,USA,1,,"Greenville, SC (USA)",04 JUN 2016,1174.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14323124,toplist
+28.0,4:03.95,,Rababe ARAFI,12 JAN 1991,MAR,2,,Durban (RSA),24 JUN 2016,1174.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14290578,toplist
+29.0,4:03.96,,Sheila REID,02 AUG 1989,CAN,9,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1174.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14267319,toplist
+30.0,4:03.97,,Nicole SIFUENTES,30 JUN 1986,CAN,2,,"Greenville, SC (USA)",04 JUN 2016,1174.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14268054,toplist
+31.0,4:04.13,,Mary KURIA,29 NOV 1987,KEN,1,,Huelva (ESP),03 JUN 2016,1173.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14419015,toplist
+32.0,4:04.26,,Nelly JEPKOSGEI,14 JUL 1991,KEN,3,,"National Stadium, Beijing (CHN)",18 MAY 2016,1171.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14373314,toplist
+33.0,4:04.46,,Heather KAMPF,19 JAN 1987,USA,3,,"Greenville, SC (USA)",04 JUN 2016,1170.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14309194,toplist
+34.0,4:04.62,,Jenny BLUNDELL,09 MAY 1994,AUS,4,,"National Stadium, Beijing (CHN)",18 MAY 2016,1169.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14272435,toplist
+35.0,4:05.22,,Nancy CHEPKWEMOI,08 OCT 1993,KEN,8,,"Shanghai Stadium, Shanghai (CHN)",14 MAY 2016,1164.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14288890,toplist
+35.0,4:05.22,,Adanech ANBESA,23 JAN 1998,ETH,3,,Durban (RSA),24 JUN 2016,1164.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14714491,toplist
+37.0,4:05.29,,Lauren JOHNSON,04 MAY 1987,USA,5,,"National Stadium, Beijing (CHN)",18 MAY 2016,1163.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14335068,toplist
+38.0,4:05.35,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,11,,"Olympic Stadium, London (GBR)",22 JUL 2016,1163.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14292722,toplist
+39.0,4:05.40,,Renata PLIŚ,05 FEB 1985,POL,12,,"Olympic Stadium, London (GBR)",22 JUL 2016,1162.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14294279,toplist
+40.0,4:05.45,,Judith KIYENG,10 DEC 1993,KEN,1,,Nairobi (KEN),28 MAY 2016,1162.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14593551,toplist
+41.0,4:05.53,,Amela TERZIĆ,02 JAN 1993,SRB,2,,Huelva (ESP),03 JUN 2016,1161.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14333695,toplist
+42.0,4:05.61,,Hilary STELLINGWERFF,07 AUG 1981,CAN,5,,"Greenville, SC (USA)",04 JUN 2016,1161.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14268056,toplist
+43.0,4:05.65,,Kate GRACE,24 OCT 1988,USA,1f4,,"Los Angeles, CA (USA)",20 MAY 2016,1161.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14327446,toplist
+44.0,4:05.67,,Anastasiya ALEKSANDROVA,16 FEB 1994,RUS,1,,Zhukovskiy (RUS),05 JUN 2016,1160.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14434423,toplist
+45.0,4:05.84,,Fantu WORKU,29 MAR 1999,ETH,4,,Durban (RSA),24 JUN 2016,1159.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14751322,toplist
+46.0,4:05.98,,Charlene THOMAS,06 MAY 1982,GBR,1,,Heusden-Zolder (BEL),16 JUL 2016,1158.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14276408,toplist
+47.0,4:06.00,,Violah CHEPTOO,01 MAR 1989,KEN,7,,"National Stadium, Beijing (CHN)",18 MAY 2016,1158.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14372181,toplist
+48.0,4:06.20,,Stephanie TWELL,17 AUG 1989,GBR,13,,"Olympic Stadium, London (GBR)",22 JUL 2016,1156.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14276601,toplist
+49.0,4:06.28,,Selah BUSIENEI,27 DEC 1991,KEN,2,,Nairobi (KEN),28 MAY 2016,1156.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14479236,toplist
+50.0,4:06.33,,Katie MACKEY,12 NOV 1987,USA,3f4,,"Los Angeles, CA (USA)",20 MAY 2016,1155.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14310264,toplist
+51.0,4:06.38,,Alexa EFRAIMSON,20 FEB 1997,USA,6,,"Greenville, SC (USA)",04 JUN 2016,1155.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14522335,toplist
+52.0,4:06.43,,Sara SUTHERLAND,31 JAN 1992,USA,7,,"Greenville, SC (USA)",04 JUN 2016,1154.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14455444,toplist
+53.0,4:06.47,,Madeleine HILLS,15 MAY 1987,AUS,3,,Heusden-Zolder (BEL),16 JUL 2016,1154.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14271970,toplist
+54.0,4:06.53,,Gabriela STAFFORD,13 SEP 1995,CAN,3f1,,"Portland, OR (USA)",12 JUN 2016,1154.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14501531,toplist
+54.0,4:06.53,,Tigist GASHAW,25 DEC 1996,BRN,3f1,,Sollentuna (SWE),28 JUN 2016,1154.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14477333,toplist
+56.0,4:06.54,,Marta PEN FREITAS,31 JUL 1993,POR,2,,Barcelona (ESP),30 JUN 2016,1153.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14364494,toplist
+57.0,4:06.58,,Danuta URBANIK,24 DEC 1989,POL,1,,Turku (FIN),29 JUN 2016,1153.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14294586,toplist
+58.0,4:06.80,,Stephanie GARCIA,03 MAY 1988,USA,8,,"Greenville, SC (USA)",04 JUN 2016,1151.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14310707,toplist
+59.0,4:06.89,,Luiza GEGA,05 NOV 1988,ALB,1,,Istanbul (TUR) (i),27 FEB 2016,1172.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14272917,toplist
+60.0,4:06.91,,Konstanze KLOSTERHALFEN,18 FEB 1997,GER,1,,"Mestský Stadion, Ostrava (CZE)",20 MAY 2016,1151.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14496249,toplist
+61.0,4:06.92,,Emma COBURN,19 OCT 1990,USA,5f4,,"Los Angeles, CA (USA)",20 MAY 2016,1151.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14307810,toplist
+62.0,4:06.93,,Melissa DUNCAN,30 JAN 1990,AUS,4,,"Reggie Lewis Center, Boston, MA (USA) (i)",14 FEB 2016,1172.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14272171,toplist
+63.0,4:06.96,,Yekaterina SOKOLOVA,16 DEC 1995,RUS,1,,Sochi (RUS),26 MAY 2016,1150.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14562690,toplist
+64.0,4:06.99,,Muriel CONEO PAREDES,15 MAR 1987,COL,3,,Huelva (ESP),03 JUN 2016,1150.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14264036,toplist
+64.0,4:06.99,,Gesa Felicitas KRAUSE,03 AUG 1992,GER,9,,"Olympiastadion, Stockholm (SWE)",16 JUN 2016,1150.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14329341,toplist
+66.0,4:07.04,,Treniere MOSER,27 OCT 1981,USA,11,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1150.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14307753,toplist
+67.0,4:07.18,,Nikki HAMBLIN,20 MAY 1988,NZL,9,,"Greenville, SC (USA)",04 JUN 2016,1148.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14275215,toplist
+67.0,4:07.18,,Sarah MCDONALD,02 AUG 1993,GBR,1,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1148.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14472518,toplist
+69.0,4:07.21,,Kate MURPHY,15 AUG 1999,USA,1,,"Somerville, MA (USA)",17 JUN 2016,1148.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14698755,toplist
+70.0,4:07.30,,Sofie VAN ACCOM,07 JUN 1989,BEL,4,,Heusden-Zolder (BEL),16 JUL 2016,1148.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14270184,toplist
+71.0,4:07.34,,Cory Ann MCGEE,29 MAY 1992,USA,5,,Heusden-Zolder (BEL),16 JUL 2016,1147.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14316538,toplist
+72.0,4:07.39,,Siham HILALI,02 MAY 1986,MAR,5,,Durban (RSA),24 JUN 2016,1147.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14290679,toplist
+73.0,4:07.40,,Diana SUJEW,02 NOV 1990,GER,1f1,,Kortrijk (BEL),09 JUL 2016,1147.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14279982,toplist
+74.0,4:07.42,,Malika AKKAOUI,25 DEC 1987,MAR,5h2,,"Estádio Olímpico, Rio de Janeiro (BRA)",12 AUG 2016,1147.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14290566,toplist
+75.0,4:07.55,,Melissa COURTNEY-BRYANT,30 AUG 1993,GBR,2,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1146.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14274781,toplist
+76.0,4:07.74,,Anna SHCHAGINA,07 DEC 1991,RUS,1,,Zhukovskiy (RUS),20 JUL 2016,1144.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14390107,toplist
+77.0,4:07.78,,Hannah ENGLAND,06 MAR 1987,GBR,4f1,,Kortrijk (BEL),09 JUL 2016,1144.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14274986,toplist
+78.0,4:07.83,,Angela PETTY,16 AUG 1991,NZL,2,,Turku (FIN),29 JUN 2016,1143.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14293170,toplist
+79.0,4:07.84,,Rachel SCHNEIDER,18 JUL 1991,USA,6,,Heusden-Zolder (BEL),16 JUL 2016,1143.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14320785,toplist
+80.0,4:07.91,,Margherita MAGNANI,26 FEB 1987,ITA,7,,Heusden-Zolder (BEL),16 JUL 2016,1143.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14284658,toplist
+81.0,4:07.96,,Lucia KLOCOVÁ,20 NOV 1983,SVK,2,,"Mestský Stadion, Ostrava (CZE)",20 MAY 2016,1142.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14301465,toplist
+82.0,4:08.11,,Janet ACHOLA,26 JUN 1988,UGA,6,,Durban (RSA),24 JUN 2016,1141.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14303363,toplist
+83.0,4:08.13,,Ashley HIGGINSON,17 MAR 1989,USA,7f4,,"Los Angeles, CA (USA)",20 MAY 2016,1141.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14312552,toplist
+84.0,4:08.14,,Denise KREBS,27 JUN 1987,GER,3,,Turku (FIN),29 JUN 2016,1141.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14278507,toplist
+85.0,4:08.29,,Solange Andreia PEREIRA,16 DEC 1989,ESP,5,,Barcelona (ESP),30 JUN 2016,1140.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14260792,toplist
+86.0,4:08.36,,Sandrafelis Chebet TUEI,20 JAN 1998,KEN,3,,Nairobi (KEN),28 MAY 2016,1139.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14643483,toplist
+87.0,4:08.45,,Heidi SEE,09 AUG 1989,AUS,9f4,,"Los Angeles, CA (USA)",20 MAY 2016,1139.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14272019,toplist
+88.0,4:08.56,,Hanna KLEIN,06 APR 1993,GER,5f1,,Kortrijk (BEL),09 JUL 2016,1138.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14360692,toplist
+89.0,4:08.64,,Claudia Mihaela BOBOCEA,11 JUN 1992,ROU,3,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1137.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14377909,toplist
+90.0,4:08.68,,Kristina MÄKI,22 SEP 1991,CZE,5,,Turku (FIN),29 JUN 2016,1137.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14362176,toplist
+91.0,4:08.71,,Christina ARAGON,17 JUN 1997,USA,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",24 JUL 2016,1136.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14594088,toplist
+92.0,4:08.75,,Beatha NISHIMWE,01 DEC 1998,RWA,7,,Durban (RSA),24 JUN 2016,1136.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14690370,toplist
+93.0,4:08.91,,Sarah LAHTI,18 FEB 1995,SWE,2f1,,Oordegem (BEL),29 MAY 2016,1135.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14403185,toplist
+94.0,4:08.94,,Federica DEL BUONO,12 DEC 1994,ITA,1f1,,Cles (ITA),25 AUG 2016,1135.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14480247,toplist
+95.0,4:08.95,,Selina BÜCHEL,26 JUL 1991,SUI,5,,"Messehalle, Karlsruhe (GER) (i)",06 FEB 2016,1156.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14300684,toplist
+95.0,4:08.95,,Darya BARYSEVICH,06 APR 1990,BLR,4,,"Wieslaw Maniak Municipal Athletic Stadium, Szczecin (POL)",18 JUN 2016,1135.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14269991,toplist
+97.0,4:09.03,,Karoline Bjerkeli GRØVDAL,14 JUN 1990,NOR,3f1,,Oordegem (BEL),29 MAY 2016,1134.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14292573,toplist
+98.0,4:09.08,,Shannon OSIKA,15 JUN 1993,USA,1,,Guelph (CAN),25 JUN 2016,1134.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14334753,toplist
+99.0,4:09.16,,Stephanie BROWN,04 MAR 1991,USA,4f1,,"Portland, OR (USA)",12 JUN 2016,1133.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14306645,toplist
+100.0,4:09.25,,Winfred Nzisa MBITHE,30 MAY 1997,KEN,4,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",24 JUL 2016,1132.0,women_1500m,2016,https://worldathletics.org/athletes/athlete=14643562,toplist
+1.0,3:56.14,,Sifan HASSAN,01 JAN 1993,NED,1,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1237.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14489606,toplist
+2.0,3:57.04,,Faith KIPYEGON,10 JAN 1994,KEN,1,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1229.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14413305,toplist
+3.0,3:57.82,,Genzebe DIBABA,08 FEB 1991,ETH,,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1223.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14259874,toplist
+4.0,3:58.92,,Konstanze KLOSTERHALFEN,18 FEB 1997,GER,1,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1214.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14496249,toplist
+5.0,3:59.16,,Winny CHEBET,20 DEC 1990,KEN,2,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1212.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14288808,toplist
+6.0,3:59.55,,Gudaf TSEGAY,23 JAN 1997,ETH,3,,"Stade Charléty, Paris (FRA)",01 JUL 2017,1209.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14595214,toplist
+7.0,4:00.35,,Laura MUIR,09 MAY 1993,GBR,,,"Olympic Stadium, London (GBR)",09 JUL 2017,1203.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14422111,toplist
+8.0,4:00.44,,Hellen OBIRI,13 DEC 1989,KEN,,,"Olympic Stadium, London (GBR)",09 JUL 2017,1202.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14424921,toplist
+9.0,4:00.49,,Meraf BAHTA,24 JUN 1989,SWE,5,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1202.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14262200,toplist
+10.0,4:00.52,,Dawit SEYAUM,27 JUL 1996,ETH,2,,"Shanghai Stadium, Shanghai (CHN)",13 MAY 2017,1201.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14578833,toplist
+11.0,4:00.70,,Jenny SIMPSON,23 AUG 1986,USA,6,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1200.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14305392,toplist
+12.0,4:00.71,,Laura WEIGHTMAN,01 JUL 1991,GBR,7,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1200.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14276688,toplist
+13.0,4:00.98,,Besu SADO,12 JAN 1996,ETH,2,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1198.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14654401,toplist
+14.0,4:01.60,,Eilish MCCOLGAN,25 NOV 1990,GBR,2,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1193.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14275729,toplist
+15.0,4:01.61,,Angelika CICHOCKA,15 MAR 1988,POL,4,,"Stade Charléty, Paris (FRA)",01 JUL 2017,1193.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14293508,toplist
+16.0,4:01.75,,Rababe ARAFI,12 JAN 1991,MAR,4,,"Hayward Field, Eugene, OR (USA)",27 MAY 2017,1191.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14290578,toplist
+17.0,4:02.25,,Susan KRUMINS,08 JUL 1986,NED,3,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1187.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14291825,toplist
+18.0,4:02.75,,Nelly JEPKOSGEI,14 JUL 1991,BRN,5,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1183.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14373314,toplist
+18.0,4:02.75,,Brenda MARTINEZ,08 SEP 1987,USA,3,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",16 JUL 2017,1183.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14316143,toplist
+20.0,4:02.84,,Caster SEMENYA,07 JAN 1991,RSA,2h1,,"Olympic Stadium, London (GBR)",04 AUG 2017,1183.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14330057,toplist
+21.0,4:03.2h,,Beatrice CHEPKOECH,06 JUL 1991,KEN,1,,Nairobi (KEN),10 JUN 2017,1180.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14383286,toplist
+22.0,4:03.35,,Sofia ENNAOUI,30 AUG 1995,POL,3h3,,"Olympic Stadium, London (GBR)",04 AUG 2017,1179.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14436869,toplist
+23.0,4:03.36,,Malika AKKAOUI,25 DEC 1987,MAR,5,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",16 JUL 2017,1179.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14290566,toplist
+24.0,4:03.55,,Gabriela STAFFORD,13 SEP 1995,CAN,5,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1177.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14501531,toplist
+25.0,4:03.57,,Ciara MAGEEAN,12 MAR 1992,IRL,,,"Olympic Stadium, London (GBR)",09 JUL 2017,1177.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14275665,toplist
+26.0,4:03.59,,Kate GRACE,24 OCT 1988,USA,7,,"Hayward Field, Eugene, OR (USA)",27 MAY 2017,1177.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14327446,toplist
+27.0,4:03.73,,Jess JUDD,07 JAN 1995,GBR,6h1,,"Olympic Stadium, London (GBR)",04 AUG 2017,1176.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14336301,toplist
+28.0,4:03.77,,Maureen KOSTER,03 JUL 1992,NED,8,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1175.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14372338,toplist
+29.0,4:03.93,,Colleen QUIGLEY,20 NOV 1992,USA,1,,Heusden-Zolder (BEL),22 JUL 2017,1174.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14437440,toplist
+30.0,4:04.15,,Hanna KLEIN,06 APR 1993,GER,2,,Heusden-Zolder (BEL),22 JUL 2017,1172.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14360692,toplist
+31.0,4:04.34,,Amanda ECCLESTON,18 JUN 1990,USA,3,,Heusden-Zolder (BEL),22 JUL 2017,1171.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14569199,toplist
+32.0,4:04.37,,Linden HALL,20 JUN 1991,AUS,2f1,,"Portland, OR (USA)",11 JUN 2017,1171.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14272002,toplist
+33.0,4:04.4h,,Judith KIYENG,10 DEC 1993,KEN,2,,Nairobi (KEN),10 JUN 2017,1170.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14593551,toplist
+34.0,4:04.46,,Winfred Nzisa MBITHE,30 MAY 1997,KEN,4,,Heusden-Zolder (BEL),22 JUL 2017,1170.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14643562,toplist
+35.0,4:04.49,,Aleksandra GULYAYEVA,30 APR 1994,RUS,1,,Zhukovskiy (RUS),02 JUL 2017,1170.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14502964,toplist
+36.0,4:04.56,,Shannon ROWBURY,19 SEP 1984,USA,,,"New York, NY (USA) (i)",11 FEB 2017,1191.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14320310,toplist
+36.0,4:04.56,,Sara VAUGHN,16 MAY 1986,USA,8h3,,"Olympic Stadium, London (GBR)",04 AUG 2017,1169.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14325833,toplist
+38.0,4:04.63,,Stephanie GARCIA,03 MAY 1988,USA,5,,Heusden-Zolder (BEL),22 JUL 2017,1169.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14310707,toplist
+39.0,4:04.75,,Alexa EFRAIMSON,20 FEB 1997,USA,6,,Heusden-Zolder (BEL),22 JUL 2017,1168.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14522335,toplist
+40.0,4:04.82,,Nicole SIFUENTES,30 JUN 1986,CAN,6,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1167.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14268054,toplist
+41.0,4:04.90,,Yelena KOROBKINA,25 NOV 1990,RUS,1,,Zhukovskiy (RUS),30 JUL 2017,1166.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14298217,toplist
+42.0,4:04.93,,Zoe BUCKMAN,21 DEC 1988,AUS,8,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",16 JUL 2017,1166.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14272380,toplist
+43.0,4:04.94,,Alemaz SAMUEL,05 JUL 1999,ETH,6,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1166.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14716074,toplist
+44.0,4:04.95,,Axumawit EMBAYE,18 OCT 1994,ETH,2,,"Arena Toruń, Toruń (POL) (i)",10 FEB 2017,1188.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14534819,toplist
+45.0,4:05.29,,Katie SNOWDEN,09 MAR 1994,GBR,2,,Watford (GBR),14 JUN 2017,1163.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14360725,toplist
+46.0,4:05.30,,Hannah FIELDS,04 FEB 1993,USA,1,,"San Francisco, CA (USA)",29 JUN 2017,1163.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14680084,toplist
+47.0,4:05.47,,Meryem AKDAĞ,05 AUG 1992,TUR,1,,Bursa (TUR),07 JUL 2017,1162.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14520745,toplist
+48.0,4:05.48,,Sarah MCDONALD,02 AUG 1993,GBR,9h3,,"Olympic Stadium, London (GBR)",04 AUG 2017,1162.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14472518,toplist
+49.0,4:05.71,,Marta PEN FREITAS,31 JUL 1993,POR,1,,"Greenville, SC (USA)",03 JUN 2017,1160.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14364494,toplist
+49.0,4:05.71,,Anastasiya ALEKSANDROVA,16 FEB 1994,RUS,2,,Zhukovskiy (RUS),30 JUL 2017,1160.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14434423,toplist
+51.0,4:05.77,,Worknesh ABYE,1999,ETH,7,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1160.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14800828,toplist
+52.0,4:05.81,,Fantu WORKU,29 MAR 1999,ETH,10h1,,"Olympic Stadium, London (GBR)",04 AUG 2017,1159.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14751322,toplist
+53.0,4:05.82,,Melissa COURTNEY-BRYANT,30 AUG 1993,GBR,,,"Olympic Stadium, London (GBR)",09 JUL 2017,1159.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14274781,toplist
+53.0,4:05.82,,Marta PÉREZ,19 APR 1993,ESP,11h1,,"Olympic Stadium, London (GBR)",04 AUG 2017,1159.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14452646,toplist
+55.0,4:05.88,,Lauren JOHNSON,04 MAY 1987,USA,3f1,,"Portland, OR (USA)",11 JUN 2017,1159.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14335068,toplist
+56.0,4:06.17,,Shannon OSIKA,15 JUN 1993,USA,3,,"Greenville, SC (USA)",03 JUN 2017,1156.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14334753,toplist
+57.0,4:06.20,,Adanech ANBESA,23 JAN 1998,ETH,14,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1156.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14714491,toplist
+57.0,4:06.20,,Siham HILALI,02 MAY 1986,MAR,10,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",16 JUL 2017,1156.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14290679,toplist
+59.0,4:06.22,,Shelby HOULIHAN,08 FEB 1993,USA,10,,"Alexander Stadium, Birmingham (GBR)",20 AUG 2017,1156.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14368938,toplist
+60.0,4:06.3h,,Loice CHEMNUNG,22 FEB 1997,KEN,4,,Nairobi (KEN),10 JUN 2017,1155.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14590680,toplist
+61.0,4:06.30,,Amela TERZIĆ,02 JAN 1993,SRB,1f1,,Huelva (ESP),14 JUN 2017,1155.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14333695,toplist
+61.0,4:06.30,,Margherita MAGNANI,26 FEB 1987,ITA,8,,Heusden-Zolder (BEL),22 JUL 2017,1155.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14284658,toplist
+63.0,4:06.33,,Claudia Mihaela BOBOCEA,11 JUN 1992,ROU,7,,"Shanghai Stadium, Shanghai (CHN)",13 MAY 2017,1155.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14377909,toplist
+64.0,4:06.34,,Esther CHEBET,09 OCT 1997,UGA,1f1,,Kortrijk (BEL),08 JUL 2017,1155.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14677914,toplist
+65.0,4:06.39,,Solange Andreia PEREIRA,16 DEC 1989,ESP,11,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",16 JUL 2017,1155.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14260792,toplist
+66.0,4:06.43,,Aníta HINRIKSDÓTTIR,13 JAN 1996,ISL,10,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1154.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14401301,toplist
+67.0,4:06.66,,Luiza GEGA,05 NOV 1988,ALB,1,,Istanbul (TUR) (i),17 FEB 2017,1174.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14272917,toplist
+68.0,4:06.92,,Stephanie TWELL,17 AUG 1989,GBR,,,"Olympic Stadium, London (GBR)",09 JUL 2017,1151.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14276601,toplist
+69.0,4:07.06,,Hellen Ekalale LOBUN,18 MAR 1999,KEN,1,,Yamagata (JPN),30 JUL 2017,1149.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14786743,toplist
+70.0,4:07.07,,Sheila REID,02 AUG 1989,CAN,1f3,,"Los Angeles, CA (USA)",18 MAY 2017,1149.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14267319,toplist
+71.0,4:07.08,,Simona VRZALOVÁ,07 APR 1988,CZE,9,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1149.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14262590,toplist
+72.0,4:07.15,,Katie MACKEY,12 NOV 1987,USA,8,,"Shanghai Stadium, Shanghai (CHN)",13 MAY 2017,1149.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14310264,toplist
+73.0,4:07.23,,Yelena MURASHOVA,14 DEC 1987,RUS,3,,Zhukovskiy (RUS),30 JUL 2017,1148.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14423954,toplist
+74.0,4:07.25,,Karoline Bjerkeli GRØVDAL,14 JUN 1990,NOR,2f1,,Oordegem (BEL),27 MAY 2017,1148.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14292573,toplist
+75.0,4:07.29,,Emily LIPARI,19 NOV 1992,USA,4,,"San Francisco, CA (USA)",29 JUN 2017,1148.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14315463,toplist
+76.0,4:07.32,,Georgia GRIFFITH,05 DEC 1996,AUS,1f1,,"Portland, OR (USA)",16 JUN 2017,1147.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14549778,toplist
+77.0,4:07.38,,Danuta URBANIK,24 DEC 1989,POL,1,,Neustadt (GER),02 JUL 2017,1147.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14294586,toplist
+78.0,4:07.66,,Violah CHEPTOO,01 MAR 1989,KEN,3f3,,"Los Angeles, CA (USA)",18 MAY 2017,1145.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14372181,toplist
+78.0,4:07.66,,Anna SHCHAGINA,07 DEC 1991,RUS,4,,Zhukovskiy (RUS),02 JUL 2017,1145.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14390107,toplist
+80.0,4:07.70,,Sasha GOLLISH,27 DEC 1981,CAN,4f3,,"Los Angeles, CA (USA)",18 MAY 2017,1144.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14267941,toplist
+81.0,4:07.72,,Jenny BLUNDELL,09 MAY 1994,AUS,12,,"Shanghai Stadium, Shanghai (CHN)",13 MAY 2017,1144.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14272435,toplist
+82.0,4:07.76,,Selah BUSIENEI,27 DEC 1991,KEN,5,,Padova (ITA),16 JUL 2017,1144.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14479236,toplist
+83.0,4:07.79,,Darya BARYSEVICH,06 APR 1990,BLR,10,,Heusden-Zolder (BEL),22 JUL 2017,1144.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14269991,toplist
+84.0,4:07.90,,Sanne VERSTEGEN-WOLTERS,10 NOV 1985,NED,12,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1143.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14292246,toplist
+85.0,4:07.93,,Winnie NANYONDO,23 AUG 1993,UGA,10,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1143.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14534257,toplist
+86.0,4:08.04,,Dominique SCOTT,24 JUN 1992,RSA,6,,Padova (ITA),16 JUL 2017,1142.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14941416,toplist
+87.0,4:08.17,,Diana SUJEW,02 NOV 1990,GER,2,,Neustadt (GER),02 JUL 2017,1141.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14279982,toplist
+88.0,4:08.19,,Kristina MÄKI,22 SEP 1991,CZE,4,,Liège (BEL),19 JUL 2017,1141.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14362176,toplist
+89.0,4:08.22,,Megan MANSY,27 MAR 1994,USA,6,,"New York, NY (USA)",06 JUL 2017,1140.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14478617,toplist
+90.0,4:08.39,,Sara SUTHERLAND,31 JAN 1992,USA,8,,Padova (ITA),16 JUL 2017,1139.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14455444,toplist
+91.0,4:08.42,,Danielle JONES,21 AUG 1996,USA,4f1,,"Portland, OR (USA)",11 JUN 2017,1139.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14479600,toplist
+92.0,4:08.47,,Linn NILSSON,15 OCT 1990,SWE,3,,Dublin (IRL),12 JUL 2017,1138.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14302255,toplist
+93.0,4:08.64,,Bone CHELUKE,11 DEC 1998,ETH,14,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1137.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14800829,toplist
+94.0,4:08.81,,Martyna GALANT,26 JAN 1995,POL,1,,Bydgoszcz (POL),02 JUN 2017,1136.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14603017,toplist
+95.0,4:08.84,,Fadwa SIDI MADANE,20 NOV 1994,MAR,2,,Barcelona (ESP),29 JUN 2017,1135.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14440473,toplist
+95.0,4:08.84,,Caroline CHEPKEMOI,01 MAR 1993,KEN,12,,Heusden-Zolder (BEL),22 JUL 2017,1135.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14330377,toplist
+97.0,4:08.85,,Mary KURIA,29 NOV 1987,KEN,6,,"Mestský Stadion, Ostrava (CZE)",28 JUN 2017,1135.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14419015,toplist
+98.0,4:08.95,,Rachel SCHNEIDER,18 JUL 1991,USA,6f3,,"Los Angeles, CA (USA)",18 MAY 2017,1135.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14320785,toplist
+99.0,4:09.03,,Lovisa LINDH,09 JUL 1991,SWE,1,,Florø (NOR),10 JUN 2017,1134.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14302145,toplist
+100.0,4:09.08,,Katie RAINSBERGER,18 AUG 1998,USA,2f1,,"Portland, OR (USA)",16 JUN 2017,1134.0,women_1500m,2017,https://worldathletics.org/athletes/athlete=14586652,toplist
+,4:03.74,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,1.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:03.75,,Lisa DOBRISKEY,23 DEC 1983,GBR,2.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:04.18,,Shannon ROWBURY,19 SEP 1984,USA,3.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:04.91,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,4.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:05.21,,Christin WURTH-THOMAS,11 JUL 1980,USA,5.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:06.19,,Anna WILLARD,31 MAR 1984,USA,6.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:07.17,,Lidia CHOJECKA,25 JAN 1977,POL,7.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:08.81,,Kalkidan GEZAHEGNE,08 MAY 1991,ETH,8.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:11.21,,Gelete BURKA,23 JAN 1986,ETH,9.,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,DQ,,Natalya YEVDOKIMOVA,17 MAR 1978,RUS, - ,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,DQ,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,DQ,,Mariem ALAOUI SELSOULI,08 APR 1984,MAR, - ,,IAAF World Championships,23 AUG 2009,,,2009,,major_meet
+,4:00.20,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,1.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:01.17,,Hind DEHIBA CHAHYD,17 MAR 1979,FRA,2.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:01.30,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,3.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:01.54,,Lisa DOBRISKEY,23 DEC 1983,GBR,4.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:02.70,,Stephanie TWELL,17 AUG 1989,GBR,5.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:04.16,,Fanjanteino FELIX,26 JAN 1980,FRA,6.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:04.91,,Oksana ZBROZHEK,12 JAN 1978,RUS,7.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:05.07,,Hannah ENGLAND,06 MAR 1987,GBR,8.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:07.22,,Anna MISHCHENKO,25 AUG 1983,UKR,9.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:24.82,,Sylwia EJDYS,15 JUL 1984,POL,10.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,DQ,,Asli CAKIR ALPTEKIN,20 AUG 1985,TUR, - ,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,DQ,,Anna ALMINOVA,17 JAN 1985,RUS, - ,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,4:05.40,,Jenny SIMPSON,23 AUG 1986,USA,1.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:05.68,,Hannah ENGLAND,06 MAR 1987,GBR,2.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:05.87,,Natalia RODRÍGUEZ,02 JUN 1979,ESP,3.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:06.18,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,4.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:06.42,,Kalkidan GEZAHEGNE,08 MAY 1991,ETH,5.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:06.85,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,6.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:07.60,,Mimi BELETE,09 JUN 1988,BRN,7.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:08.14,,Tuǧba KOYUNCU,16 FEB 1991,TUR,8.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:19.71,,Morgan UCENY,10 MAR 1985,USA,9.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:20.23,,Hellen OBIRI,13 DEC 1989,KEN,10.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:22.67,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,11.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,DQ,,Nataliya TOBIAS,22 NOV 1980,UKR, - ,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,4:10.74,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,1.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,4:11.03,,Abeba AREGAWI,05 JUL 1990,ETH,2.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,4:11.26,,Shannon ROWBURY,19 SEP 1984,USA,3.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,4:12.64,,Lucia KLOCOVÁ,20 NOV 1983,SVK,4.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,4:13.02,,Lisa DOBRISKEY,23 DEC 1983,GBR,5.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,4:15.60,,Laura WEIGHTMAN,01 JUL 1991,GBR,6.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,4:16.57,,Hellen OBIRI,13 DEC 1989,KEN,7.,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,DNF,,Morgan UCENY,10 MAR 1985,USA,,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,DQ,,Asli CAKIR ALPTEKIN,20 AUG 1985,TUR, - ,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,DQ,,Tatyana TOMASHOVA,01 JUL 1975,RUS, - ,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,DQ,,Natallia KAREIVA,14 NOV 1985,BLR, - ,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,DQ,,Yekaterina KOSTETSKAYA,31 DEC 1986,RUS, - ,,The XXX Olympic Games,10 AUG 2012,,,2012,,major_meet
+,4:08.80,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,1.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,4:09.28,,Diana SUJEW,02 NOV 1990,GER,2.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,4:10.17,,Tereza ČAPKOVÁ,24 JUL 1987,CZE,3.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,4:10.38,,Corinna HARRER,19 JAN 1991,GER,4.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,4:11.12,,Isabel MACÍAS,11 AUG 1984,ESP,5.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,4:13.32,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,6.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,4:15.63,,Marina MUNĆAN,06 NOV 1982,SRB,7.,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,DQ,,Anna MISHCHENKO,25 AUG 1983,UKR, - ,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,DQ,,Asli CAKIR ALPTEKIN,20 AUG 1985,TUR, - ,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,DQ,,Yekaterina ISHOVA,17 JAN 1989,RUS, - ,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,DQ,,Kristina UGAROVA,22 OCT 1987,RUS, - ,,Helsinki European Championships,01 JUL 2012,,,2012,,major_meet
+,4:02.67,,Abeba AREGAWI,05 JUL 1990,SWE,1.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:02.99,,Jenny SIMPSON,23 AUG 1986,USA,2.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:03.86,,Hellen OBIRI,13 DEC 1989,KEN,3.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:04.98,,Hannah ENGLAND,06 MAR 1987,GBR,4.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:05.08,,Faith KIPYEGON,10 JAN 1994,KEN,5.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:05.77,,Zoe BUCKMAN,21 DEC 1988,AUS,6.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:05.99,,Genzebe DIBABA,08 FEB 1991,ETH,7.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:06.01,,Nancy Jebet LANGAT,22 AUG 1981,KEN,8.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:07.19,,Mary CAIN,03 MAY 1996,USA,9.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:09.16,,Siham HILALI,02 MAY 1986,MAR,10.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,DQ,,Yekaterina SHARMINA,06 AUG 1986,RUS, - ,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,DQ,,Yelena KOROBKINA,25 NOV 1990,RUS, - ,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,4:04.18,,Sifan HASSAN,01 JAN 1993,NED,1.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:05.08,,Abeba AREGAWI,05 JUL 1990,SWE,2.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:06.32,,Laura WEIGHTMAN,01 JUL 1991,GBR,3.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:06.65,,Renata PLIŚ,05 FEB 1985,POL,4.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:07.49,,Federica DEL BUONO,12 DEC 1994,ITA,5.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:07.80,,Hannah ENGLAND,06 MAR 1987,GBR,6.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:08.05,,Anna SHCHAGINA,07 DEC 1991,RUS,7.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:08.63,,Diana SUJEW,02 NOV 1990,GER,8.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:08.85,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,9.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:08.89,,Natalya PRYSHCHEPA,11 SEP 1994,UKR,10.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:19.11,,Amela TERZIĆ,02 JAN 1993,SRB,11.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,DQ,,Svetlana KARAMASHEVA,24 MAY 1988,RUS, - ,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,4:08.09,,Genzebe DIBABA,08 FEB 1991,ETH,1.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:08.96,,Faith KIPYEGON,10 JAN 1994,KEN,2.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:09.34,,Sifan HASSAN,01 JAN 1993,NED,3.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:10.26,,Dawit SEYAUM,27 JUL 1996,ETH,4.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:11.48,,Laura MUIR,09 MAY 1993,GBR,5.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:12.16,,Abeba AREGAWI,05 JUL 1990,SWE,6.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:12.39,,Shannon ROWBURY,19 SEP 1984,USA,7.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:13.22,,Angelika CICHOCKA,15 MAR 1988,POL,8.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:13.66,,Rababe ARAFI,12 JAN 1991,MAR,9.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:14.18,,Tatyana TOMASHOVA,01 JUL 1975,RUS,10.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:16.28,,Jenny SIMPSON,23 AUG 1986,USA,11.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:16.98,,Malika AKKAOUI,25 DEC 1987,MAR,12.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,4:08.92,,Faith KIPYEGON,10 JAN 1994,KEN,1.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:10.27,,Genzebe DIBABA,08 FEB 1991,ETH,2.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:10.53,,Jenny SIMPSON,23 AUG 1986,USA,3.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:11.05,,Shannon ROWBURY,19 SEP 1984,USA,4.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:11.23,,Sifan HASSAN,01 JAN 1993,NED,5.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:12.59,,Meraf BAHTA,24 JUN 1989,SWE,6.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:12.88,,Laura MUIR,09 MAY 1993,GBR,7.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:13.14,,Dawit SEYAUM,27 JUL 1996,ETH,8.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:13.58,,Besu SADO,12 JAN 1996,ETH,9.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:14.72,,Sofia ENNAOUI,30 AUG 1995,POL,10.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:14.95,,Laura WEIGHTMAN,01 JUL 1991,GBR,11.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:15.16,,Rababe ARAFI,12 JAN 1991,MAR,12.,,The XXXI Olympic Games,16 AUG 2016,,,2016,,major_meet
+,4:33.00,,Angelika CICHOCKA,15 MAR 1988,POL,1.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:33.76,,Sifan HASSAN,01 JAN 1993,NED,2.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:33.78,,Ciara MAGEEAN,12 MAR 1992,IRL,3.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:34.15,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,4.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:34.41,,Marta PEN FREITAS,31 JUL 1993,POR,5.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:34.54,,Maren ORTH,22 JUN 1990,GER,6.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:34.84,,Sofia ENNAOUI,30 AUG 1995,POL,7.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:34.88,,Solange Andreia PEREIRA,16 DEC 1989,ESP,8.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:34.93,,Sarah MCDONALD,02 AUG 1993,GBR,9.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:35.61,,Lucia KLOCOVÁ,20 NOV 1983,SVK,10.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:36.51,,Margherita MAGNANI,26 FEB 1987,ITA,11.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:37.70,,Amela TERZIĆ,02 JAN 1993,SRB,12.,,European Athletics Championships,10 JUL 2016,,,2016,,major_meet
+,4:02.59,,Faith KIPYEGON,10 JAN 1994,KEN,1.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:02.76,,Jenny SIMPSON,23 AUG 1986,USA,2.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:02.90,,Caster SEMENYA,07 JAN 1991,RSA,3.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:02.97,,Laura MUIR,09 MAY 1993,GBR,4.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:03.34,,Sifan HASSAN,01 JAN 1993,NED,5.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:04.11,,Laura WEIGHTMAN,01 JUL 1991,GBR,6.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:04.16,,Angelika CICHOCKA,15 MAR 1988,POL,7.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:04.35,,Rababe ARAFI,12 JAN 1991,MAR,8.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:04.76,,Meraf BAHTA,24 JUN 1989,SWE,9.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:05.87,,Malika AKKAOUI,25 DEC 1987,MAR,10.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:06.22,,Hanna KLEIN,06 APR 1993,GER,11.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
+,4:06.72,,Genzebe DIBABA,08 FEB 1991,ETH,12.,,IAAF World Championships in Athletics,07 AUG 2017,,,2017,,major_meet
 ,4:02.32,,Laura MUIR,09 MAY 1993,GBR,1.,,European Athletics Championships,12 AUG 2018,,,2018,,major_meet
 ,4:03.08,,Sofia ENNAOUI,30 AUG 1995,POL,2.,,European Athletics Championships,12 AUG 2018,,,2018,,major_meet
 ,4:03.75,,Laura WEIGHTMAN,01 JUL 1991,GBR,3.,,European Athletics Championships,12 AUG 2018,,,2018,,major_meet

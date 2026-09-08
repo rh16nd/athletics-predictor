@@ -260,6 +260,66 @@ def looks_like_hurdles(caption_lower):
     return "hurdle" in caption_lower or bool(_HURDLES_ABBREV.search(caption_lower))
 
 
+# WHEN a meeting happened, which meet_results.csv has never recorded.
+#
+# Without it every head-to-head rate is an all-time figure, and train_model
+# reads the whole file for every label year -- so a 2022 final was being
+# predicted from a rivalry as it stood in 2025. Measured over 10 paired seeds,
+# that lookahead is worth up to 2.06 points of the reported accuracy.
+#
+# Written to its own file rather than into meet_results.csv, so the results
+# themselves stay byte-identical to what the eighteenth session's four scraper
+# fixes produced. Fold it in at the next full re-scrape.
+MEET_DATES_PATH = os.path.join(H2H_DIR, "meet_dates.csv")
+
+_MONTHS = ("January|February|March|April|May|June|July|August|September|"
+           "October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec")
+_DATE_TOKEN = re.compile(rf"\b(\d{{1,2}})\s+({_MONTHS})\b\.?(?:\s+(\d{{4}}))?", re.I)
+
+
+def parse_meet_date(soup, year):
+    """The LAST day this meeting competed, from the infobox's Dates row.
+
+    The last day, not the first, for two different reasons that agree. A
+    two-day Diamond League meeting runs half its programme on day two, and a
+    championship event page reads "15 July (preliminary round & heats) 16 July
+    (semi-final & final)" -- the final is the day that matters, and it is
+    always last. Erring late is also the safe direction here: this date decides
+    which races a LATER final is allowed to see, so a day of slack excludes a
+    race rather than leaking one.
+
+    The year is often absent from a championship page (it is in the title
+    instead), so the caller's year fills in. Returns None rather than guessing
+    when there is no infobox or no parsable date -- an undated meet is left out
+    of a cut-off, not silently treated as having happened at some default time.
+    """
+    box = None
+    for table in soup.find_all("table"):
+        if "infobox" in " ".join(table.get("class") or []):
+            box = table
+            break
+    if box is None:
+        return None
+
+    text = ""
+    for row in box.find_all("tr"):
+        head, cell = row.find("th"), row.find("td")
+        if head and cell and head.get_text(" ", strip=True).lower().startswith("date"):
+            text = cell.get_text(" ", strip=True)
+            break
+    if not text:
+        return None
+
+    matches = _DATE_TOKEN.findall(text)
+    if not matches:
+        return None
+    day, month, found_year = matches[-1]
+    try:
+        return pd.Timestamp(f"{day} {month.rstrip('.')} {found_year or year}")
+    except ValueError:
+        return None
+
+
 def fetch_page(url):
     try:
         r = requests.get(url, headers=HEADERS, timeout=15)
@@ -474,10 +534,20 @@ def scrape_meet(url, competition_level, year):
     return scrape_soup(soup, url, competition_level, year)
 
 
+def meet_name_of(soup, url):
+    """The `meet` value every row of meet_results.csv is keyed by.
+
+    Shared with the date pass so the two files cannot drift apart on a title
+    Wikipedia has since edited -- a date keyed to a name the results no longer
+    use would join to nothing and read as "this meeting has no date"."""
+    h1 = soup.find("h1")
+    return h1.get_text(strip=True) if h1 else url
+
+
 def scrape_soup(soup, url, competition_level, year):
     """The parsing half of scrape_meet, split out so it can be tested
     against saved HTML instead of the live encyclopedia."""
-    meet_name = soup.find("h1").get_text(strip=True) if soup.find("h1") else url
+    meet_name = meet_name_of(soup, url)
     results = []
 
     # For individual event pages (Worlds/Olympics), classify from page title
@@ -510,20 +580,53 @@ def scrape_soup(soup, url, competition_level, year):
 
     return results
 
+def save_meet_dates(dates):
+    """dates: list of (meet, year, competition_level, Timestamp or None)."""
+    df = pd.DataFrame(dates, columns=["meet", "year", "competition_level", "date"])
+    df = df.dropna(subset=["meet"]).drop_duplicates(subset=["meet"], keep="last")
+    df["date"] = pd.to_datetime(df["date"]).dt.strftime("%Y-%m-%d")
+    df.to_csv(MEET_DATES_PATH, index=False)
+    missing = df[df["date"].isna()]
+    print(f"\nSaved {len(df)} meets to {MEET_DATES_PATH}, "
+          f"{len(df) - len(missing)} dated")
+    # Named, never counted. An undated meet is dropped from every cut-off, so
+    # a silent one is signal quietly going missing.
+    for name in missing["meet"]:
+        print(f"  NO DATE: {name}")
+
+
 if __name__ == "__main__":
-    all_results = []
+    # --dates-only fetches the same pages but records just the meet's date,
+    # leaving meet_results.csv untouched. That is the safe way to add the
+    # column: a full re-scrape would rewrite results the eighteenth session
+    # spent four bug fixes getting right.
+    dates_only = "--dates-only" in sys.argv
+
+    all_results, all_dates = [], []
     total = len(MEET_PAGES)
 
     for i, (competition_level, year, url) in enumerate(MEET_PAGES):
         page_name = url.split("/")[-1].replace("_", " ").replace("%C3%BC", "u")[:50]
         print(f"[{i+1}/{total}] {competition_level} {year} — {page_name}")
-        rows = scrape_meet(url, competition_level, year)
-        if rows:
-            print(f"  -> {len(rows)} rows")
-        all_results.extend(rows)
+        soup = fetch_page(url)
+        if soup is not None:
+            name = meet_name_of(soup, url)
+            when = parse_meet_date(soup, year)
+            all_dates.append((name, year, competition_level, when))
+            print(f"  -> {when.date() if when is not None else 'NO DATE'}")
+            if not dates_only:
+                rows = scrape_soup(soup, url, competition_level, year)
+                if rows:
+                    print(f"  -> {len(rows)} rows")
+                all_results.extend(rows)
         time.sleep(0.5)
 
-    if all_results:
+    if all_dates:
+        save_meet_dates(all_dates)
+
+    if dates_only:
+        print("\n[--dates-only — meet_results.csv not touched]")
+    elif all_results:
         df = pd.DataFrame(all_results)
         out_path = os.path.join(H2H_DIR, "meet_results.csv")
         df.to_csv(out_path, index=False)

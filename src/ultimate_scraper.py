@@ -34,6 +34,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from html import unescape as hunescape
 
 import requests
@@ -187,6 +188,182 @@ MINISITE_HEADERS = {
     "Accept": "text/html,application/xhtml+xml",
     "Accept-Language": "en-GB,en;q=0.9",
 }
+
+# ---------------------------------------------------------------------------
+# THE OFFICIAL ENTRY LIST.
+#
+# fetch_startlists() below asks the competition API and gets nothing: all 40
+# phases report isStartlistPublished false three days out. But the entry list
+# DOES exist -- as a PDF linked from a press release, revised hourly, and it is
+# materially different from the qualification list this file already reads.
+#
+# Qualification says who is ELIGIBLE. Entries say who is RUNNING. Checked
+# 2026-09-08 against the 7 September 15:30 CEST revision: 27 athletes we were
+# projecting are not entered, including **Tara Davis-Woodhall, our number one
+# in the women's long jump at 56.6%**, and 26 entered athletes were missing
+# from our field entirely. Reported by the user, who had seen the previews and
+# knew Rai Benjamin was in the flat 400m and not the hurdles -- which is
+# exactly what this list says, and what the qualification list could not.
+# ---------------------------------------------------------------------------
+ENTRY_RELEASE_HINT = "final-entry-lists"
+ENTRY_DOC_RE = re.compile(r'href="(https://assets\.aws\.worldathletics\.org/document/[^"]+\.pdf)"'
+                          r'[^>]*>\s*entries by event and world ranking', re.I)
+_ENTRY_ANY_DOC = re.compile(r'https://assets\.aws\.worldathletics\.org/document/[^"\s\\]+\.pdf')
+
+# "100 Metres16" -- the event name with its athlete count glued on, because the
+# PDF is two-column and pypdf flattens it. "MEN51" is the sex divider.
+ENTRY_SEX_RE = re.compile(r"^(MEN|WOMEN)(\d+)$")
+ENTRY_EVENT_RE = re.compile(
+    r"^([\d,]*\s*(?:Metres Hurdles|Metres Steeplechase|Metres)"
+    r"|High Jump|Pole Vault|Long Jump|Triple Jump|Shot Put"
+    r"|Discus Throw|Hammer Throw|Javelin Throw)(\d+)$")
+# bib, name, 3-letter nation, then a mark
+ENTRY_ATHLETE_RE = re.compile(r"^(\d{2,3})\s+(.+?)\s+([A-Z]{3})\s+[\d.:]")
+
+
+def find_entry_list_pdf():
+    """The URL of WA's current "entries by event" PDF, or None.
+
+    Found by following the press release rather than hard-coding a document id:
+    the list is revised hourly and each revision is a new document."""
+    try:
+        r = requests.get(MINISITE_URL + "/2026/news", headers=MINISITE_HEADERS, timeout=40)
+        page = r.text if r.status_code == 200 else ""
+        link = re.search(rf'href="([^"]*{ENTRY_RELEASE_HINT}[^"]*)"', page)
+        url = link.group(1) if link else None
+        if url and url.startswith("/"):
+            url = "https://worldathletics.org" + url
+        if not url:
+            r = requests.get(MINISITE_URL, headers=MINISITE_HEADERS, timeout=40)
+            link = re.search(rf'href="([^"]*{ENTRY_RELEASE_HINT}[^"]*)"', r.text)
+            url = link.group(1) if link else None
+        if not url:
+            print("  entry list: no press release found")
+            return None
+        art = requests.get(url, headers=MINISITE_HEADERS, timeout=40)
+        if art.status_code != 200:
+            print(f"  entry list: press release HTTP {art.status_code}")
+            return None
+        body = art.text
+        m = ENTRY_DOC_RE.search(body)
+        if m:
+            return m.group(1)
+        # Fall back to the first document link, but SAY SO -- the three PDFs
+        # are the same entries sorted three ways, so the wrong one is still
+        # the right athletes, but a silent fallback is how a parser starts
+        # reading a federation listing as an event listing.
+        any_doc = _ENTRY_ANY_DOC.search(body)
+        if any_doc:
+            print("  entry list: named link not found, using the first document link")
+            return any_doc.group(0)
+    except Exception as e:
+        print(f"  entry list: lookup failed ({str(e)[:60]})")
+    return None
+
+
+def parse_entry_pdf(data):
+    """{event label: [athlete names]} from the entry-list PDF's bytes.
+
+    Returns {} rather than a partial field if any event's parsed count
+    disagrees with the count the PDF prints for itself. A short entry list is
+    indistinguishable from a set of withdrawals downstream, and inventing
+    withdrawals is worse than having no entry list at all."""
+    try:
+        from pypdf import PdfReader
+    except ImportError:
+        print("  entry list: pypdf not installed, skipping")
+        return {}
+    import io as _io
+    try:
+        reader = PdfReader(_io.BytesIO(data))
+        text = "\n".join(p.extract_text() or "" for p in reader.pages)
+    except Exception as e:
+        print(f"  entry list: could not read the PDF ({str(e)[:60]})")
+        return {}
+
+    sex = event = None
+    out, expected = {}, {}
+    for line in (l.strip() for l in text.splitlines()):
+        if not line:
+            continue
+        m = ENTRY_SEX_RE.match(line.upper())
+        if m:
+            sex = m.group(1).title()
+            continue
+        m = ENTRY_EVENT_RE.match(line)
+        if m and sex:
+            event = f"{sex}'s {m.group(1).strip()}"
+            expected[event] = int(m.group(2))
+            out.setdefault(event, [])
+            continue
+        m = ENTRY_ATHLETE_RE.match(line)
+        if m and event:
+            out[event].append(m.group(2).strip())
+
+    mismatched = [e for e, names in out.items() if len(names) != expected.get(e)]
+    if mismatched or not out:
+        print(f"  entry list: parse disagrees with the PDF's own counts "
+              f"({len(mismatched)} events) -- discarding rather than guessing")
+        return {}
+    return out
+
+
+def entry_name_key(name):
+    """An order-insensitive key for matching a name across the two sources.
+
+    WA's PDF writes some names surname-first ("NAKAJIMA Yuki Joseph", "YAN
+    Ziyi") where the qualification API has them given-name-first. Matching on
+    the string made seven athletes read as BOTH a withdrawal and a new entry --
+    which would have deleted seven people who are running and invented seven
+    who are not. A token set is immune to the ordering and to the diacritics."""
+    s = unicodedata.normalize("NFKD", str(name))
+    s = "".join(c for c in s if not unicodedata.combining(c)).upper()
+    return frozenset(t for t in s.replace(".", " ").replace("-", " ").split() if t)
+
+
+def apply_entry_list(event, entered):
+    """One event's field, rebuilt from who is actually ENTERED.
+
+    Qualification says who is eligible; entries say who is running, and on
+    2026-09-08 they disagreed about 19 athletes per side. Keeps each qualified
+    athlete's route and ranking score where WA still lists them, carries over
+    anyone entered who never appeared in the qualification list (replacements
+    do not get a qualification route), and records the rest as `notEntered` so
+    the page can name them instead of just dropping them."""
+    by_key = {entry_name_key(a["name"]): a for a in event.get("athletes") or []}
+    kept, added = [], []
+    for name in entered:
+        k = entry_name_key(name)
+        if k in by_key:
+            kept.append(by_key.pop(k))
+        else:
+            added.append({"name": name, "nat": None, "qualifiedBy": None,
+                          "position": None, "rankingScore": None, "waId": None})
+    return {**event,
+            "athletes": kept + added,
+            "notEntered": [a["name"] for a in by_key.values()],
+            "fieldSource": "entries"}
+
+
+def fetch_entry_lists():
+    """{event label: [names]} from WA's published entry list, or {}."""
+    url = find_entry_list_pdf()
+    if not url:
+        return {}
+    try:
+        r = requests.get(url, headers=MINISITE_HEADERS, timeout=60)
+    except Exception as e:
+        print(f"  entry list: download failed ({str(e)[:60]})")
+        return {}
+    if r.status_code != 200:
+        print(f"  entry list: document HTTP {r.status_code}")
+        return {}
+    entries = parse_entry_pdf(r.content)
+    if entries:
+        print(f"  entry list: {len(entries)} events, "
+              f"{sum(len(v) for v in entries.values())} athletes ({url.rsplit('/', 1)[-1]})")
+    return entries
+
 
 # Each carousel on the minisite is a content module titled by qualification
 # route. Matched on the title rather than the array index, so WA reordering

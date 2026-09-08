@@ -49,6 +49,7 @@ Usage:
     python src/major_meets_scraper.py
 """
 import os
+import re
 import sys
 import time
 import io
@@ -72,7 +73,13 @@ sys.path.insert(0, os.path.dirname(__file__))
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse graphql()/resolve_discipline_key()
 
 RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
-YEARS = [y for y in range(2018, 2026) if y != 2020]  # matches train_model.LABEL_YEARS
+# 2009 is where WA's calendar starts carrying championship results. 2020 is
+# excluded because the season was cancelled, not because the data is missing.
+# Extended back from 2018 on 2026-09-08: the pre-2018 seasons hold five senior
+# World Championships, two Olympic Games and four European Championships that
+# were reachable all along and filtered out by a rankingCategory that does not
+# exist before 2018. See PRE_2018_CATEGORY.
+YEARS = [y for y in range(2009, 2026) if y != 2020]
 
 OLYMPIC_GAMES = 5
 WORLD_ATHLETICS_SERIES = 3806
@@ -109,6 +116,41 @@ AREA_CHAMPIONSHIPS = 3660
 # +0.33 on 6/10. The gap is noise, so this is a correctness fix with no
 # accuracy claim attached.
 SERIES_RANKING_CATEGORY = "OW"
+
+# WA's own label for every meeting held before the ranking categories
+# existed. It is a category value like any other, not a placeholder.
+PRE_2018_CATEGORY = "Pre 2018"
+
+# ...and before 2018 there IS no rankingCategory to read. WA tags every
+# pre-2018 meeting, of every kind, with the literal string "Pre 2018", so the
+# OW filter above silently excluded nine seasons of championships that are
+# sitting in the API with results attached: the senior World Championships of
+# 2009, 2011, 2013, 2015 and 2017.
+#
+# With no classification to lean on the name is all there is, which is exactly
+# the situation the leaky keyword list was in. The difference is direction.
+# That list was an EXCLUSION list, so anything it had not thought of got in.
+# This is an INCLUSION test built by surveying all 38 meetings WA lists in this
+# group for 2009-2017: it admits a name that is the World Championships and
+# nothing else. Everything else in those seasons carries a qualifier the
+# pattern cannot match -- Cross Country, Half Marathon, Youth, Indoor, Junior,
+# Race Walking, Relays, U20, U18, and the Continental Cup.
+PRE_2018_WORLDS = re.compile(
+    r"^(?:\d+(?:st|nd|rd|th)\s+)?(?:IAAF|World Athletics)\s+"
+    r"World Championships(?:\s+in Athletics)?$",
+    re.IGNORECASE,
+)
+
+
+def is_senior_worlds(meeting):
+    """The senior outdoor World Championships, under either era's rules."""
+    category = meeting.get("rankingCategory")
+    if category == SERIES_RANKING_CATEGORY:
+        return True
+    if category == PRE_2018_CATEGORY:
+        return bool(PRE_2018_WORLDS.match((meeting.get("name") or "").strip()))
+    return False
+
 
 CALENDAR_QUERY = """query getCalendarEvents($startDate: String, $endDate: String, $competitionGroupId: Int) {
   getCalendarEvents(startDate: $startDate, endDate: $endDate, competitionGroupId: $competitionGroupId, limit: 100) {
@@ -152,7 +194,7 @@ def find_year_meetings(year):
         meetings.append((m, "Olympics"))
 
     for m in find_meetings(year, WORLD_ATHLETICS_SERIES):
-        if m.get("rankingCategory") != SERIES_RANKING_CATEGORY:
+        if not is_senior_worlds(m):
             continue
         meetings.append((m, "World Champs"))
 

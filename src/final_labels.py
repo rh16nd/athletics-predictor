@@ -60,10 +60,25 @@ SEASON_FILE = re.compile(r"_20\d\d(_meetings)?\.csv$")
 # rather than baked into the pool so accuracy can be reported per tier -- the
 # risk of pooling this widely is that "podium in a final" stops meaning one
 # thing, and the only way to see that happening is to measure the tiers apart.
+#
+# The names changed when the IAAF became World Athletics, and the pre-2018
+# seasons added on 2026-09-08 use the older ones. "IAAF World Championships"
+# matches neither of the two spellings this list originally carried, and
+# "Barcelona European Championships" does not match "european athletics
+# championships" -- so the five pre-2018 Worlds and three of the four pre-2018
+# Euros would have been silently filed as `tour` and then excluded by the
+# --tiers argument the model trains with. Making "Athletics" optional in both
+# patterns covers every real name across both eras; checked against all 20
+# championship meetings the calendar returns for 2009-2025.
+#
+# Widening a pattern is how the old NAME_EXCLUDE list went wrong, so note the
+# difference: nothing decides here whether a meeting BELONGS in the training
+# set. major_meets_scraper has already made that call, and these patterns only
+# sort what it returned. A too-wide pattern here mislabels a tier; it cannot
+# admit a road race.
 TIERS = [
-    ("global", re.compile(r"olympic|world athletics championships|"
-                          r"world championships in athletics", re.I)),
-    ("continental", re.compile(r"european athletics championships|continental cup", re.I)),
+    ("global", re.compile(r"olympic|world (athletics )?championships", re.I)),
+    ("continental", re.compile(r"european (athletics )?championships|continental cup", re.I)),
     ("dl_final", re.compile(r"^diamond league final$", re.I)),
     # Everything else major_meets_scraper returns: Continental Tour Gold and
     # the bigger invitationals (Ostrava, Paavo Nurmi, Kip Keino, FBK Games).

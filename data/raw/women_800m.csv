@@ -1269,13 +1269,1094 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,1:58.81,,Claudia HOLLINGSWORTH,12 APR 2005,AUS,7.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,1:59.60,,Rénelle LAMOTE,26 DEC 1993,FRA,8.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,1:59.64,,Addison WILEY,24 OCT 2003,USA,9.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
-,1:54.77,,Caster SEMENYA,07 JAN 1991,RSA,1.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,1:57.16,,Ajee' WILSON,08 MAY 1994,USA,2.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,1:57.36,,Natoya GOULE,30 MAR 1991,JAM,3.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,1:59.58,,Natalya PRYSHCHEPA,11 SEP 1994,UKR,4.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,2:01.26,,Angela PETTY,16 AUG 1991,NZL,5.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,2:04.43,,Anna SABAT,09 NOV 1993,POL,6.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,2:10.63,,Brittany MCGOWAN,24 APR 1991,AUS,8.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
+1.0,1:54.01,,Pamela JELIMO,05 DEC 1989,KEN,1,,"Letzigrund, Zürich (SUI)",29 AUG 2008,1272.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14289015,toplist
+2.0,1:56.00,,Tatyana ANDRIANOVA,10 DEC 1979,RUS,1,,Kazan (RUS),18 JUL 2008,1235.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14297242,toplist
+3.0,1:56.07,,Janeth JEPKOSGEI,13 DEC 1983,KEN,2,,"National Stadium, Beijing (CHN)",18 AUG 2008,1234.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14289031,toplist
+4.0,1:56.64,,Svetlana KLYUKA,27 DEC 1978,RUS,2,,Kazan (RUS),18 JUL 2008,1223.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14298143,toplist
+5.0,1:56.67,,Yekaterina KOSTETSKAYA,31 DEC 1986,RUS,3,,Kazan (RUS),18 JUL 2008,1223.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14298246,toplist
+6.0,1:56.73,,Hasna BENHASSI,01 JUN 1978,MAR,3,,"National Stadium, Beijing (CHN)",18 AUG 2008,1221.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14290605,toplist
+7.0,1:57.32,,Yuliya KREVSUN,08 DEC 1980,UKR,2sf3,,"National Stadium, Beijing (CHN)",16 AUG 2008,1211.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14303623,toplist
+8.0,1:57.68,,Maria de Lurdes MUTOLA,27 OCT 1972,MOZ,5,,"National Stadium, Beijing (CHN)",18 AUG 2008,1204.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14291362,toplist
+9.0,1:57.80,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,2,,"Letzigrund, Zürich (SUI)",29 AUG 2008,1202.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14268773,toplist
+10.0,1:58.04,,Yevgeniya ZINUROVA,16 NOV 1982,RUS,1h2,,Kazan (RUS),17 JUL 2008,1198.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299918,toplist
+11.0,1:58.12,,Olga KOTLYAROVA,12 APR 1976,RUS,4,,Kazan (RUS),18 JUL 2008,1196.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14298253,toplist
+12.0,1:58.24,,Kenia SINCLAIR,14 JUL 1980,JAM,6,,"National Stadium, Beijing (CHN)",18 AUG 2008,1194.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14285911,toplist
+13.0,1:58.38,,Tetyana PETLYUK,22 FEB 1982,UKR,1,,Kyiv (UKR),03 JUL 2008,1191.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14304013,toplist
+14.0,1:58.45,,Marilyn OKORO,23 SEP 1984,GBR,1,,"Crystal Palace, London (GBR)",26 JUL 2008,1190.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14275966,toplist
+15.0,1:58.51,,Lucia KLOCOVÁ,20 NOV 1983,SVK,2,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1189.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14301465,toplist
+16.0,1:58.72,,Anna ROSTKOWSKA,26 JUL 1980,POL,4,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1185.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14294353,toplist
+17.0,1:58.78,,Zulia CALATAYUD,09 NOV 1979,CUB,4sf2,,"National Stadium, Beijing (CHN)",16 AUG 2008,1184.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14263655,toplist
+18.0,1:58.84,,Natalya IGNATOVA,06 MAY 1981,RUS,1,,Moskva (RUS) (i),09 FEB 2008,1205.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299294,toplist
+19.0,1:58.93,,Mariya ZHURAVLYOVA,07 NOV 1986,RUS,1h6,,Kazan (RUS),17 JUL 2008,1181.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299249,toplist
+19.0,1:58.93,,Elodie GUEGAN,19 DEC 1985,FRA,5,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1181.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14257214,toplist
+21.0,1:59.11,,Jennifer MEADOWS,17 APR 1981,GBR,6,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1178.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14275784,toplist
+22.0,1:59.17,,Jemma SIMPSON,10 FEB 1984,GBR,1,,Milano (ITA),02 JUL 2008,1177.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14276350,toplist
+23.0,1:59.22,,Elisa CUSMA,24 JUL 1981,ITA,2,,Milano (ITA),02 JUL 2008,1176.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14284142,toplist
+24.0,1:59.34,,Liliana BARBULESCU-POPESCU,05 FEB 1982,ROU,1f1,,Bucureşti (ROU),25 MAY 2008,1174.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14295417,toplist
+25.0,1:59.38,,Rosibel GARCÍA,13 FEB 1981,COL,5sf1,,"National Stadium, Beijing (CHN)",16 AUG 2008,1173.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14264010,toplist
+26.0,1:59.43,,Tamsyn MANOU,20 JUL 1978,AUS,6,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1172.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14271772,toplist
+27.0,1:59.46,,Mariya SAVINOVA,13 AUG 1985,RUS,2,,Moskva (RUS) (i),09 FEB 2008,1195.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299184,toplist
+28.0,1:59.57,,Brigita LANGERHOLC,23 JUL 1976,SLO,9,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1170.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14300174,toplist
+29.0,1:59.60,,Tatyana POPOVA,05 JAN 1984,RUS,1,,"Meteor, Zhukovskiy (RUS)",15 JUN 2008,1169.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14298982,toplist
+30.0,1:59.67,,Alice SCHMIDT,03 OCT 1981,USA,5f1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",02 SEP 2008,1168.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14320742,toplist
+31.0,1:59.70,,Irina MARACHEVA,24 SEP 1984,RUS,1,,Lappeenranta (FIN),03 AUG 2008,1168.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14298552,toplist
+32.0,1:59.82,,Hazel CLARK,03 OCT 1977,USA,1,,Ponce (PUR),17 MAY 2008,1165.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14307687,toplist
+33.0,1:59.92,,Madeleine PAPE,24 FEB 1984,AUS,2,,Sydney (AUS),16 FEB 2008,1164.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14271515,toplist
+34.0,1:59.98,,Yvonne HAK,30 JUN 1986,NED,4,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1163.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14291688,toplist
+35.0,2:00.01,,Morgan UCENY,10 MAR 1985,USA,3,,"Crystal Palace, London (GBR)",26 JUL 2008,1162.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14323124,toplist
+36.0,2:00.06,,Elena Mirela LAVRIC,17 FEB 1991,ROU,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",11 JUL 2008,1161.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14295709,toplist
+37.0,2:00.09,,Neisha BERNARD-THOMAS,21 JAN 1981,GRN,5h4,,"National Stadium, Beijing (CHN)",15 AUG 2008,1161.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14281029,toplist
+38.0,2:00.12,,Olga CRISTEA,13 DEC 1987,MDA,6sf3,,"National Stadium, Beijing (CHN)",16 AUG 2008,1160.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14290892,toplist
+39.0,2:00.15,,Eglė BALČIŪNAITĖ,31 OCT 1988,LTU,4h6,,"National Stadium, Beijing (CHN)",15 AUG 2008,1160.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14290183,toplist
+40.0,2:00.21,,Vanja PERIŠIĆ,05 JUL 1985,CRO,1,,Velenje (SLO),26 JUN 2008,1158.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14263752,toplist
+41.0,2:00.33,,Merve AYDIN,17 MAR 1990,TUR,1,,Istanbul (TUR),05 JUL 2008,1156.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14303209,toplist
+42.0,2:00.35,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,2,,"Stadio Quercia, Rovereto (ITA)",10 SEP 2008,1156.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14261624,toplist
+43.0,2:00.36,,Sylwia EJDYS,15 JUL 1984,POL,2,,Moskva (RUS),10 JUN 2008,1156.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14293602,toplist
+44.0,2:00.37,,Jemma SIMS,02 MAR 1985,GBR,2,,Jerez de la Frontera (ESP),24 JUN 2008,1156.0,women_800m,2008,https://worldathletics.org/athletes/great-britain-ni/jemma-sims-14276351,toplist
+44.0,2:00.37,,Ewelina SĘTOWSKA-DRYK,05 MAR 1980,POL,4,,"Crystal Palace, London (GBR)",26 JUL 2008,1156.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14294399,toplist
+46.0,2:00.41,,Marian BURNETT,22 FEB 1976,GUY,2,,Ponce (PUR),17 MAY 2008,1155.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14281103,toplist
+47.0,2:00.44,,Agnes SAMARIA,11 AUG 1972,NAM,1,,Dessau (GER),30 MAY 2008,1154.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14291444,toplist
+48.0,2:00.46,,Mina AIT HAMMOU,18 JUL 1978,MAR,5,,"FBK Stadium, Hengelo (NED)",24 MAY 2008,1154.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14290564,toplist
+49.0,2:00.49,,Victoria GRIFFITHS,09 OCT 1984,GBR,1f1,,Manchester (GBR),31 MAY 2008,1153.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14275190,toplist
+49.0,2:00.49,,Zoya NESTERENKO-HLADUN,10 MAR 1983,UKR,2,,Kalamata (GRE),04 JUN 2008,1153.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14303955,toplist
+51.0,2:00.51,,Monika GRADZKI-MERL,21 SEP 1979,GER,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",01 JUL 2008,1153.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14277762,toplist
+52.0,2:00.57,,Alysia MONTAÑO,23 APR 1986,USA,1,,"Tempe, AZ (USA)",17 MAY 2008,1152.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14313660,toplist
+53.0,2:00.68,,Mayte MARTÍNEZ,17 MAY 1976,ESP,3,,Stockholm (SWE) (i),21 FEB 2008,1174.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14261047,toplist
+54.0,2:00.69,,Tatyana DUDCHENKO,18 NOV 1983,RUS,2h5,,Kazan (RUS),17 JUL 2008,1150.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14298823,toplist
+55.0,2:00.71,,Mihaela STĂNCESCU-NEACŞU,03 MAY 1979,ROU,3,,Kalamata (GRE),04 JUN 2008,1150.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14295946,toplist
+56.0,2:00.86,,Julia KREBS,1988,GER,1,,Beograd (SRB),29 MAY 2008,1147.0,women_800m,2008,https://worldathletics.org/athletes/germany/julia-krebs-14278509,toplist
+56.0,2:00.86,,Amanda PRITCHARD-MOSS,18 MAR 1980,GBR,2,,Zaragoza (ESP),31 MAY 2008,1147.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14276111,toplist
+58.0,2:00.91,,Yeliz KURT,15 JAN 1984,TUR,1,,Izmir (TUR),01 JUN 2008,1146.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14303299,toplist
+59.0,2:00.93,,Irina KRAKOVIAK,16 NOV 1977,LTU,1,,Kaunas (LTU),31 MAY 2008,1146.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14290281,toplist
+60.0,2:00.95,,Faith MACHARIA,09 FEB 1976,KEN,6,,Ostrava (CZE),12 JUN 2008,1145.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14289245,toplist
+61.0,2:00.96,,Mariya DRYAKHLOVA,24 APR 1984,RUS,3,,"Meteor, Zhukovskiy (RUS)",15 JUN 2008,1145.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14297638,toplist
+61.0,2:00.96,,Nataliya LUPU,04 NOV 1987,UKR,3,,Kyiv (UKR),03 JUL 2008,1145.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14303856,toplist
+63.0,2:01.03,,Shannon ROWBURY,19 SEP 1984,USA,4,,"Eugene, OR (USA)",08 JUN 2008,1144.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14320310,toplist
+64.0,2:01.07,,Nicole TETER,08 NOV 1973,USA,5,,"Eugene, OR (USA)",08 JUN 2008,1143.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14322615,toplist
+65.0,2:01.14,,Maria Carmo TAVARES,27 APR 1974,POR,4f1,,Barcelona (ESP),19 JUL 2008,1142.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14295120,toplist
+66.0,2:01.17,,Natalya TSYGANOVA,07 FEB 1971,RUS,2h4,,Kazan (RUS),17 JUL 2008,1141.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299614,toplist
+67.0,2:01.19,,Viktoriya TERESHCHUK,18 FEB 1982,UKR,1h2,,Kyiv (UKR),02 JUL 2008,1141.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14304255,toplist
+67.0,2:01.19,,Erin DONOHUE,08 MAY 1983,USA,1,,Naimette-Xhovémont (BEL),16 JUL 2008,1141.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14309170,toplist
+69.0,2:01.20,,Kameisha BENNETT,13 JAN 1981,USA,3,,"Eugene, OR (USA)",30 JUN 2008,1141.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14305673,toplist
+70.0,2:01.23,,Lyubov ZORINA,08 SEP 1984,RUS,4,,"Meteor, Zhukovskiy (RUS)",15 JUN 2008,1140.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299927,toplist
+70.0,2:01.23,,Yuliya STEPANOVA,03 JUL 1986,RUS,2,,Chelyabinsk (RUS),27 JUN 2008,1140.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299108,toplist
+72.0,2:01.34,,Christin WURTH-THOMAS,11 JUL 1980,USA,7,,"Crystal Palace, London (GBR)",26 JUL 2008,1138.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14324759,toplist
+73.0,2:01.35,,Svetlana USOVICH,14 OCT 1980,BLR,5,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",01 JUL 2008,1138.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14269562,toplist
+74.0,2:01.48,,Eleni FILANDRA,12 JAN 1984,GRE,5,,Kalamata (GRE),04 JUN 2008,1136.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14280604,toplist
+75.0,2:01.60,,Charlotte BEST,07 MAR 1985,GBR,6,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",01 JUL 2008,1134.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14274491,toplist
+76.0,2:01.61,,Chanelle PRICE,22 AUG 1990,USA,6,,"Eugene, OR (USA)",08 JUN 2008,1134.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14319275,toplist
+77.0,2:01.68,,Nahida TOUHAMI,10 FEB 1978,ALG,2f1,,Brasschaat (BEL),23 JUL 2008,1132.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14272758,toplist
+78.0,2:01.70,,Diane CUMMINS,19 JAN 1974,CAN,7,,"Eugene, OR (USA)",08 JUN 2008,1132.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14268144,toplist
+78.0,2:01.70,,Anna ALMINOVA,17 JAN 1985,RUS,1,,Irkutsk (RUS),02 AUG 2008,1132.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14297233,toplist
+80.0,2:01.73,,Svetlana SIDUNOVA,29 MAY 1981,RUS,5,,"Meteor, Zhukovskiy (RUS)",15 JUN 2008,1131.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299352,toplist
+81.0,2:01.78,,Laetitia VALDONADO,04 AUG 1977,FRA,7,,"FBK Stadium, Hengelo (NED)",24 MAY 2008,1131.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14274144,toplist
+82.0,2:01.80,,Yelena KOFANOVA,08 AUG 1988,RUS,1,,Albertville (FRA),10 JUL 2008,1130.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14298153,toplist
+83.0,2:01.81,,Zhanna SMOLINA,19 JAN 1978,RUS,1,,Almaty (KAZ),07 JUN 2008,1130.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14299402,toplist
+84.0,2:02.01,,Maggie VESSEY,23 DEC 1981,USA,5,,"Eugene, OR (USA)",30 JUN 2008,1127.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14323367,toplist
+85.0,2:02.03,,Guzel DAVLATCHINA,30 JUL 1983,RUS,3h2,,Kazan (RUS),17 JUL 2008,1126.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14297575,toplist
+86.0,2:02.05,,Machteld MULDER,21 FEB 1989,NED,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",11 JUL 2008,1126.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14291886,toplist
+87.0,2:02.12,,Meskerem ASSEFA,03 OCT 1991,ETH,1,,Rio de Janeiro (BRA),18 MAY 2008,1125.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14259921,toplist
+88.0,2:02.14,,Irina LISHCHINSKA,15 JAN 1976,UKR,1,,Firenze (ITA),28 JUN 2008,1124.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14303841,toplist
+89.0,2:02.15,,Margarita FUENTES-PILA,06 OCT 1982,ESP,9,,Zaragoza (ESP),31 MAY 2008,1124.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14261555,toplist
+89.0,2:02.15,,Alison LEONARD,17 MAR 1990,GBR,4,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",11 JUL 2008,1124.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14275590,toplist
+91.0,2:02.19,,Esther DESVIAT,27 JAN 1982,ESP,10,,Zaragoza (ESP),31 MAY 2008,1123.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14261738,toplist
+92.0,2:02.25,,Agnieszka SOWIŃSKA-LESZCZYNSKA,25 OCT 1987,POL,5f1,,Warszawa (POL),15 JUN 2008,1122.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14294449,toplist
+93.0,2:02.26,,Tamara TVERDOSTUP,17 JUL 1979,UKR,5,,Kyiv (UKR),03 JUL 2008,1122.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14304309,toplist
+94.0,2:02.34,,Olesya CHUMAKOVA-MIKHEYEVA,23 JUL 1981,RUS,3,,Athina (GRE) (i),13 FEB 2008,1147.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14297556,toplist
+94.0,2:02.34,,Brenda MARTINEZ,08 SEP 1987,USA,1f1,,"Los Angeles, CA (USA)",07 JUN 2008,1121.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14316143,toplist
+96.0,2:02.35,,Geena GALL,18 JAN 1987,USA,7,,"Eugene, OR (USA)",30 JUN 2008,1121.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14310643,toplist
+97.0,2:02.36,,Nikeya GREEN,10 AUG 1983,USA,3f1,,Brasschaat (BEL),23 JUL 2008,1120.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14311378,toplist
+98.0,2:02.38,,Katie WAITS,24 AUG 1983,USA,3sf2,,"Eugene, OR (USA)",28 JUN 2008,1120.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14309736,toplist
+99.0,2:02.46,,Virginie FOUQUET,09 SEP 1975,FRA,3,,Rabat (MAR),14 JUN 2008,1119.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14257473,toplist
+100.0,2:02.48,,Hannah ENGLAND,06 MAR 1987,GBR,2,,"Atlanta, GA (USA)",17 MAY 2008,1118.0,women_800m,2008,https://worldathletics.org/athletes/athlete=14274986,toplist
+1.0,1:55.45,,Caster SEMENYA,07 JAN 1991,RSA,1,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1245.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14330057,toplist
+2.0,1:57.84,,Maggie VESSEY,23 DEC 1981,USA,1,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1201.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14323367,toplist
+3.0,1:57.90,,Mariya SAVINOVA,13 AUG 1985,RUS,1,,Moskva (RUS),01 JUL 2009,1200.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299184,toplist
+3.0,1:57.90,,Janeth JEPKOSGEI,13 DEC 1983,KEN,2,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1200.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14289031,toplist
+5.0,1:57.93,,Jennifer MEADOWS,17 APR 1981,GBR,3,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1200.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14275784,toplist
+6.0,1:58.00,,Yuliya KREVSUN,08 DEC 1980,UKR,4,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1198.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14303623,toplist
+7.0,1:58.23,,Svetlana KLYUKA,27 DEC 1978,RUS,1h2,,Cheboksary (RUS),23 JUL 2009,1194.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14298143,toplist
+8.0,1:58.60,,Yelena KOFANOVA,08 AUG 1988,RUS,2,,Moskva (RUS),01 JUL 2009,1187.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14298153,toplist
+9.0,1:58.80,,Anna WILLARD,31 MAR 1984,USA,1,,"Stade de France, Paris-St-Denis (FRA)",17 JUL 2009,1184.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14324194,toplist
+10.0,1:58.81,,Elisa CUSMA,24 JUL 1981,ITA,6,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1184.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14284142,toplist
+10.0,1:58.81,,Mayte MARTÍNEZ,17 MAY 1976,ESP,7,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1184.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14261047,toplist
+12.0,1:58.99,,Yuliya STEPANOVA,03 JUL 1986,RUS,1h3,,Cheboksary (RUS),23 JUL 2009,1180.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299108,toplist
+13.0,1:59.03,,Hasna BENHASSI,01 JUN 1978,MAR,1f1,,Madrid (ESP),04 JUL 2009,1180.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14290605,toplist
+14.0,1:59.07,,Jemma SIMPSON,10 FEB 1984,GBR,4,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1179.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14276350,toplist
+15.0,1:59.13,,Oksana ZBROZHEK,12 JAN 1978,RUS,3,,"Stade de France, Paris-St-Denis (FRA)",17 JUL 2009,1178.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299869,toplist
+15.0,1:59.13,,Kenia SINCLAIR,14 JUL 1980,JAM,5,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1178.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14285911,toplist
+17.0,1:59.17,,Nancy Jebet LANGAT,22 AUG 1981,KEN,1,,"Stadio Quercia, Rovereto (ITA)",01 SEP 2009,1177.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14289224,toplist
+18.0,1:59.27,,Marilyn OKORO,23 SEP 1984,GBR,1,,"National Indoor Arena, Birmingham (GBR) (i)",21 FEB 2009,1198.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14275966,toplist
+19.0,1:59.30,,Tetyana PETLYUK,22 FEB 1982,UKR,1f2,,Yalta (UKR),23 JUL 2009,1175.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14304013,toplist
+20.0,1:59.31,,Yekaterina KOSTETSKAYA,31 DEC 1986,RUS,6,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1175.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14298246,toplist
+21.0,1:59.35,,Christin WURTH-THOMAS,11 JUL 1980,USA,7,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1174.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14324759,toplist
+22.0,1:59.36,,Irina MARACHEVA,24 SEP 1984,RUS,1h2,,Moskva (RUS) (i),13 FEB 2009,1196.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14298552,toplist
+23.0,1:59.49,,Pamela JELIMO,05 DEC 1989,KEN,2,,Nairobi (KEN),25 JUL 2009,1171.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14289015,toplist
+24.0,1:59.57,,Elodie GUEGAN,19 DEC 1985,FRA,5,,"Stade de France, Paris-St-Denis (FRA)",17 JUL 2009,1170.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14257214,toplist
+25.0,1:59.60,,Tatyana ANDRIANOVA,10 DEC 1979,RUS,1f5,,Moskva (RUS),30 MAY 2009,1169.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14297242,toplist
+26.0,1:59.77,,Anna ROSTKOWSKA,26 JUL 1980,POL,6,,"Stade de France, Paris-St-Denis (FRA)",17 JUL 2009,1166.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14294353,toplist
+27.0,1:59.79,,Lucia KLOCOVÁ,20 NOV 1983,SVK,7,,"Stade de France, Paris-St-Denis (FRA)",17 JUL 2009,1166.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14301465,toplist
+28.0,1:59.82,,Yevgeniya ZINUROVA,16 NOV 1982,RUS,1h5,,Cheboksary (RUS),23 JUL 2009,1165.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299918,toplist
+29.0,1:59.85,,Yevgeniya ZOLOTOVA,28 APR 1983,RUS,2h3,,Cheboksary (RUS),23 JUL 2009,1165.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299926,toplist
+30.0,1:59.94,,Hannah ENGLAND,06 MAR 1987,GBR,4,,"Estádio Dr. Magalhães Pessoa, Leiria (POR)",20 JUN 2009,1163.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14274986,toplist
+31.0,1:59.96,,Hazel CLARK,03 OCT 1977,USA,4sf2,,"Olympiastadion, Berlin (GER)",17 AUG 2009,1163.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14307687,toplist
+32.0,1:59.98,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,1,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1163.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14268773,toplist
+32.0,1:59.98,,Mouna TABSAART,07 APR 1987,MAR,1,,Casablanca (MAR),14 JUN 2009,1163.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14290779,toplist
+34.0,2:00.06,,Morgan UCENY,10 MAR 1985,USA,10,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1161.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14323124,toplist
+35.0,2:00.10,,Lenka MASNÁ,22 APR 1985,CZE,5,,"Estádio Dr. Magalhães Pessoa, Leiria (POR)",20 JUN 2009,1160.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14262910,toplist
+36.0,2:00.20,,Zulia CALATAYUD,09 NOV 1979,CUB,2,,Huelva (ESP),10 JUN 2009,1159.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14263655,toplist
+37.0,2:00.29,,Gulnara SAMITOVA-GALKINA,09 JUL 1978,RUS,1,,Sochi (RUS),31 MAY 2009,1157.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299161,toplist
+38.0,2:00.32,,Nataliya LUPU,04 NOV 1987,UKR,1f2,,Donetsk (UKR),02 JUL 2009,1157.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14303856,toplist
+39.0,2:00.34,,Madeleine PAPE,24 FEB 1984,AUS,1,,Gold Coast (AUS),30 MAY 2009,1156.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14271515,toplist
+40.0,2:00.40,,Phoebe WRIGHT,30 AUG 1988,USA,1,,"Marietta, GA (USA)",19 JUL 2009,1155.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14324744,toplist
+41.0,2:00.44,,Geena GALL,18 JAN 1987,USA,1,,Lignano Sabbiadoro (ITA),12 JUL 2009,1154.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14310643,toplist
+42.0,2:00.45,,Olha YEKYMENKO,04 SEP 1987,UKR,2f2,,Donetsk (UKR),02 JUL 2009,1154.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14303674,toplist
+42.0,2:00.45,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,5f1,,Madrid (ESP),04 JUL 2009,1154.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14261624,toplist
+44.0,2:00.47,,Yuneysi SANTIUSTI,24 DEC 1984,CUB,2,,Lignano Sabbiadoro (ITA),12 JUL 2009,1154.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14263389,toplist
+45.0,2:00.64,,Zoya NESTERENKO-HLADUN,10 MAR 1983,UKR,3,,Thessaloniki (GRE),10 JUN 2009,1151.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14303955,toplist
+46.0,2:00.71,,Irina KRAKOVIAK,16 NOV 1977,LTU,6,,Ostrava (CZE),17 JUN 2009,1150.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14290281,toplist
+46.0,2:00.71,,Jana HARTMANN,23 MAY 1981,GER,6,,"Estádio Dr. Magalhães Pessoa, Leiria (POR)",20 JUN 2009,1150.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14277912,toplist
+48.0,2:00.74,,Hind DEHIBA CHAHYD,17 MAR 1979,FRA,2,,Casablanca (MAR),14 JUN 2009,1149.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14258138,toplist
+49.0,2:00.77,,Tamara TVERDOSTUP,17 JUL 1979,UKR,4f1,,Yalta (UKR),04 JUN 2009,1148.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14304309,toplist
+50.0,2:00.85,,Brenda MARTINEZ,08 SEP 1987,USA,1f2,,Brasschaat (BEL),26 JUL 2009,1147.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14316143,toplist
+51.0,2:00.88,,Heidi DAHL,15 FEB 1986,USA,2f2,,Brasschaat (BEL),26 JUL 2009,1147.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14360522,toplist
+52.0,2:00.90,,Nikki HAMBLIN,20 MAY 1988,NZL,3f2,,Brasschaat (BEL),26 JUL 2009,1146.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14275215,toplist
+53.0,2:00.91,,Judit VARGA,16 APR 1976,HUN,4,,Thessaloniki (GRE),10 JUN 2009,1146.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14282595,toplist
+53.0,2:00.91,,Halima HACHLAF,06 SEP 1988,MAR,2,,Pescara (ITA),02 JUL 2009,1146.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14290676,toplist
+55.0,2:00.94,,Shannon ROWBURY,19 SEP 1984,USA,8,,"Stade de France, Paris-St-Denis (FRA)",17 JUL 2009,1145.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14320310,toplist
+56.0,2:01.03,,Yeliz KURT,15 JAN 1984,TUR,1,,Kalamata (GRE),30 MAY 2009,1144.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14303299,toplist
+57.0,2:01.07,,Mariya SYVOROTKINA,11 DEC 1983,RUS,2,,Sochi (RUS),31 MAY 2009,1143.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299510,toplist
+58.0,2:01.09,,Marian BURNETT,22 FEB 1976,GUY,4f2,,Brasschaat (BEL),26 JUL 2009,1143.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14281103,toplist
+58.0,2:01.09,,Alysia MONTAÑO,23 APR 1986,USA,1f1,,Leverkusen (GER),31 JUL 2009,1143.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14313660,toplist
+60.0,2:01.13,,Eleni FILANDRA,12 JAN 1984,GRE,3,,Pescara (ITA),02 JUL 2009,1142.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14280604,toplist
+61.0,2:01.14,,Olha ZAVHORODNYA,06 JAN 1983,UKR,5f1,,Yalta (UKR),04 JUN 2009,1142.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14304362,toplist
+62.0,2:01.19,,Seltana AIT HAMMOU,21 MAY 1980,MAR,3,,Casablanca (MAR),14 JUN 2009,1141.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14290565,toplist
+63.0,2:01.27,,Daniela REINA,15 MAY 1981,ITA,4,,Huelva (ESP),10 JUN 2009,1140.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14285108,toplist
+64.0,2:01.28,,Laura JANUSZEWSKI,28 FEB 1986,USA,5,,"Eugene, OR (USA)",28 JUN 2009,1139.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14402373,toplist
+65.0,2:01.31,,Yvonne HAK,30 JUN 1986,NED,9f1,,Madrid (ESP),04 JUL 2009,1139.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14291688,toplist
+66.0,2:01.33,,Liliya LOBANOVA,14 OCT 1985,UKR,6f1,,Yalta (UKR),04 JUN 2009,1139.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14304026,toplist
+66.0,2:01.33,,Chanelle PRICE,22 AUG 1990,USA,2,,"Marietta, GA (USA)",19 JUL 2009,1139.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14319275,toplist
+68.0,2:01.34,,Fanjanteino FELIX,26 JAN 1980,FRA,2,,Castres (FRA),05 AUG 2009,1138.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14257541,toplist
+68.0,2:01.34,,Claire GIBSON,25 DEC 1982,GBR,1f1,,Cardiff (GBR),15 AUG 2009,1138.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14275134,toplist
+70.0,2:01.35,,Natalya YEVDOKIMOVA,17 MAR 1978,RUS,4,,Sochi (RUS),31 MAY 2009,1138.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299824,toplist
+71.0,2:01.36,,Winny CHEBET,20 DEC 1990,KEN,2,,Bambous (MRI),31 JUL 2009,1138.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14288808,toplist
+72.0,2:01.40,,Irina LISHCHINSKA,15 JAN 1976,UKR,6,,Milano (ITA),25 JUN 2009,1137.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14303841,toplist
+73.0,2:01.43,,Sylwia EJDYS,15 JUL 1984,POL,3f1,,Karlsruhe (GER) (i),15 FEB 2009,1162.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14293602,toplist
+74.0,2:01.52,,Elena Mirela LAVRIC,17 FEB 1991,ROU,7,,Milano (ITA),25 JUN 2009,1135.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14295709,toplist
+75.0,2:01.53,,Olha BIBIK,05 FEB 1990,UKR,8f1,,Yalta (UKR),04 JUN 2009,1135.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14303454,toplist
+75.0,2:01.53,,Agnieszka SOWIŃSKA-LESZCZYNSKA,25 OCT 1987,POL,3,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1135.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14294449,toplist
+77.0,2:01.54,,Irene ALFONSO,06 FEB 1981,ESP,5,,Huelva (ESP),10 JUN 2009,1135.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14262136,toplist
+78.0,2:01.55,,Tatyana DUDCHENKO,18 NOV 1983,RUS,3,,Tula (RUS),02 AUG 2009,1135.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14298823,toplist
+79.0,2:01.56,,LaTavia THOMAS,17 DEC 1988,USA,3,,"Fayetteville, AR (USA)",13 JUN 2009,1134.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14322681,toplist
+80.0,2:01.61,,Aleksandra UVAROVA,04 MAY 1988,RUS,2,,Kazan (RUS),17 JUN 2009,1134.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299654,toplist
+81.0,2:01.67,,Cherono KOECH,08 DEC 1992,KEN,1,,"Bressanone, Trentino-Alto Adige (ITA)",12 JUL 2009,1133.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14367292,toplist
+82.0,2:01.69,,Katie WAITS,24 AUG 1983,USA,8,,"Eugene, OR (USA)",28 JUN 2009,1132.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14309736,toplist
+83.0,2:01.73,,Linda MARGUET,11 SEP 1983,FRA,4,,Pescara (ITA),02 JUL 2009,1131.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14273027,toplist
+84.0,2:01.77,,Yuliya TUTAYEVA,07 DEC 1988,RUS,3,,Kazan (RUS),17 JUN 2009,1131.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14360323,toplist
+85.0,2:01.87,,Charlene THOMAS,06 MAY 1982,GBR,2f1,,Watford (GBR),13 JUN 2009,1129.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14276408,toplist
+86.0,2:01.89,,Olga KOTLYAROVA,12 APR 1976,RUS,2h3,,Moskva (RUS) (i),13 FEB 2009,1155.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14298253,toplist
+87.0,2:01.90,,Rosibel GARCÍA,13 FEB 1981,COL,3,,Cuxhaven (GER),22 JUL 2009,1128.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14264010,toplist
+88.0,2:01.92,,Tintu LUKA,26 APR 1989,IND,1,,Chennai (IND),28 DEC 2009,1128.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14282954,toplist
+89.0,2:01.95,,Laurane PICOCHE,17 JUL 1985,FRA,4,,Casablanca (MAR),14 JUN 2009,1128.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14273515,toplist
+90.0,2:01.97,,Anastasiya FESENKO,17 JUN 1982,RUS,2f5,,Moskva (RUS),30 MAY 2009,1127.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14297691,toplist
+91.0,2:01.98,,Abeba AREGAWI,05 JUL 1990,ETH,3,,Tanger (MAR),12 JUL 2009,1127.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14360651,toplist
+91.0,2:01.98,,Victoria GRIFFITHS,09 OCT 1984,GBR,1,,"Crystal Palace, London (GBR)",25 JUL 2009,1127.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14275190,toplist
+93.0,2:02.00,,Sandra TEIXEIRA,13 MAR 1978,POR,10,,"Estádio Dr. Magalhães Pessoa, Leiria (POR)",20 JUN 2009,1127.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14295126,toplist
+94.0,2:02.02,,Neisha BERNARD-THOMAS,21 JAN 1981,GRN,2,,Kingston (JAM),28 JUN 2009,1126.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14281029,toplist
+95.0,2:02.05,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,8,,Zagreb (CRO),31 AUG 2009,1126.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14292722,toplist
+96.0,2:02.06,,Natallia KAREIVA,14 NOV 1985,BLR,3,,"Fana Stadion, Bergen (NOR)",20 JUN 2009,1126.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14269823,toplist
+97.0,2:02.09,,Emma JACKSON,07 JUN 1988,GBR,5,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1125.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14275428,toplist
+98.0,2:02.10,,Malika AKKAOUI,25 DEC 1987,MAR,4,,Tanger (MAR),12 JUL 2009,1125.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14290566,toplist
+99.0,2:02.11,,Yekaterina ZAVYALOVA,01 MAR 1991,RUS,4,,Tula (RUS),02 AUG 2009,1125.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14299862,toplist
+100.0,2:02.13,,Janina GOLDFUSS,22 JUL 1983,GER,5f2,,Brasschaat (BEL),26 JUL 2009,1124.0,women_800m,2009,https://worldathletics.org/athletes/athlete=14277734,toplist
+1.0,1:57.34,,Alysia MONTAÑO,23 APR 1986,USA,1,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1210.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14313660,toplist
+2.0,1:57.56,,Mariya SAVINOVA,13 AUG 1985,RUS,1,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1206.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299184,toplist
+3.0,1:57.75,,Nancy Jebet LANGAT,22 AUG 1981,KEN,2,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1203.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14289224,toplist
+4.0,1:57.84,,Janeth JEPKOSGEI,13 DEC 1983,KEN,3,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1201.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14289031,toplist
+5.0,1:58.16,,Kenia SINCLAIR,14 JUL 1980,JAM,2,,"Poljud Stadion, Split (CRO)",04 SEP 2010,1195.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14285911,toplist
+5.0,1:58.16,,Caster SEMENYA,07 JAN 1991,RSA,1,,Milano (ITA),09 SEP 2010,1195.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14330057,toplist
+7.0,1:58.22,,Phoebe WRIGHT,30 AUG 1988,USA,4,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1194.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14324744,toplist
+8.0,1:58.40,,Halima HACHLAF,06 SEP 1988,MAR,1,,"Stadio Olimpico, Roma (ITA)",10 JUN 2010,1191.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14290676,toplist
+9.0,1:58.43,,Jennifer MEADOWS,17 APR 1981,GBR,2,,"Aspire Dome, Doha (QAT) (i)",14 MAR 2010,1212.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14275784,toplist
+10.0,1:58.50,,Yelena KOFANOVA,08 AUG 1988,RUS,1,,Saransk (RUS),13 AUG 2010,1189.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14298153,toplist
+11.0,1:58.65,,Yevgeniya ZINUROVA,16 NOV 1982,RUS,1f4,,Moskva (RUS) (i),14 FEB 2010,1208.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299918,toplist
+12.0,1:58.67,,Morgan UCENY,10 MAR 1985,USA,1f2,,Luzern (SUI),08 AUG 2010,1186.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14323124,toplist
+12.0,1:58.67,,Hind DEHIBA CHAHYD,17 MAR 1979,FRA,2,,Milano (ITA),09 SEP 2010,1186.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14258138,toplist
+14.0,1:58.74,,Jemma SIMPSON,10 FEB 1984,GBR,2,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1185.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14276350,toplist
+15.0,1:58.85,,Yvonne HAK,30 JUN 1986,NED,1,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1183.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14291688,toplist
+16.0,1:58.89,,Anna WILLARD,31 MAR 1984,USA,3,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1182.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14324194,toplist
+17.0,1:58.97,,Yuliya KREVSUN,08 DEC 1980,UKR,1h4,,Donetsk (UKR),02 JUL 2010,1181.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14303623,toplist
+18.0,1:59.00,,Maggie VESSEY,23 DEC 1981,USA,2f2,,Lignano Sabbiadoro (ITA),18 JUL 2010,1180.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14323367,toplist
+19.0,1:59.12,,Mayte MARTÍNEZ,17 MAY 1976,ESP,2h2,,"Estadio Olímpico, Barcelona (ESP)",27 JUL 2010,1178.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14261047,toplist
+20.0,1:59.13,,Elisa CUSMA,24 JUL 1981,ITA,5,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1178.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14284142,toplist
+21.0,1:59.17,,Tintu LUKA,26 APR 1989,IND,4,,"Poljud Stadion, Split (CRO)",04 SEP 2010,1177.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14282954,toplist
+22.0,1:59.28,,Tatyana ANDRIANOVA,10 DEC 1979,RUS,3,,"Meteor, Zhukovskiy (RUS)",26 JUN 2010,1175.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14297242,toplist
+23.0,1:59.29,,Eglė BALČIŪNAITĖ,31 OCT 1988,LTU,7,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1175.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14290183,toplist
+24.0,1:59.31,,Lucia KLOCOVÁ,20 NOV 1983,SVK,3h2,,"Estadio Olímpico, Barcelona (ESP)",27 JUL 2010,1175.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14301465,toplist
+25.0,1:59.54,,Zahra BOURAS,13 JAN 1987,ALG,1,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1170.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14272848,toplist
+26.0,1:59.59,,Nataliya LUPU,04 NOV 1987,UKR,1f2,,Yalta (UKR),29 MAY 2010,1170.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14303856,toplist
+27.0,1:59.60,,Neisha BERNARD-THOMAS,21 JAN 1981,GRN,2,,Kingston (JAM),01 MAY 2010,1169.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14281029,toplist
+28.0,1:59.66,,Nikki HAMBLIN,20 MAY 1988,NZL,6,,"Poljud Stadion, Split (CRO)",04 SEP 2010,1168.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14275215,toplist
+29.0,1:59.71,,Lenka MASNÁ,22 APR 1985,CZE,2h3,,"Estadio Olímpico, Barcelona (ESP)",27 JUL 2010,1167.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14262910,toplist
+30.0,1:59.82,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,3,,"Sports Park Mladost, Zagreb (CRO)",01 SEP 2010,1165.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14292722,toplist
+31.0,1:59.83,,Molly LUDLOW,04 AUG 1987,USA,4f2,,Lignano Sabbiadoro (ITA),18 JUL 2010,1165.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14305568,toplist
+32.0,1:59.85,,Yuliya STEPANOVA,03 JUL 1986,RUS,1,,Montreuil-sous-Bois (FRA),08 JUN 2010,1165.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299108,toplist
+33.0,1:59.89,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,8,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1164.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14268773,toplist
+34.0,1:59.99,,Erin DONOHUE,08 MAY 1983,USA,1,,Liège (BEL),13 JUL 2010,1162.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14309170,toplist
+35.0,2:00.01,,Oksana ZBROZHEK,12 JAN 1978,RUS,2,,Moskva (RUS),29 JUN 2010,1162.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299869,toplist
+36.0,2:00.08,,Diane CUMMINS,19 JAN 1974,CAN,2f1,,Kessel-Lo (BEL),14 AUG 2010,1161.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14268144,toplist
+37.0,2:00.14,,Lisa DOBRISKEY,23 DEC 1983,GBR,6,,"Crystal Palace, London (GBR)",14 AUG 2010,1160.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14274903,toplist
+38.0,2:00.15,,Anastasiya VOLODKINA,15 JUL 1988,RUS,4,,"Meteor, Zhukovskiy (RUS)",26 JUN 2010,1160.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299754,toplist
+39.0,2:00.17,,Aleksandra BULANOVA,10 JUN 1989,RUS,1f3,,Moskva (RUS),07 JUN 2010,1159.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299865,toplist
+40.0,2:00.18,,Fanjanteino FELIX,26 JAN 1980,FRA,3,,Milano (ITA),09 SEP 2010,1159.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14257541,toplist
+41.0,2:00.19,,Anna BALAKSHINA,22 NOV 1986,RUS,2f3,,Moskva (RUS),07 JUN 2010,1159.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14362882,toplist
+42.0,2:00.28,,Eunice Jepkoech SUM,10 APR 1988,KEN,2,,Velenje (SLO),01 JUL 2010,1157.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14423891,toplist
+43.0,2:00.29,,Margarita MUKASHEVA,04 JAN 1986,KAZ,1,,Guangzhou (CHN),25 NOV 2010,1157.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14288662,toplist
+44.0,2:00.40,,Yuliya TUTAYEVA,07 DEC 1988,RUS,2,,Cheboksary (RUS),03 JUL 2010,1155.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14360323,toplist
+44.0,2:00.40,,Cherono KOECH,08 DEC 1992,KEN,2,,"Olympiastadion, Berlin (GER)",22 AUG 2010,1155.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14367292,toplist
+46.0,2:00.45,,Hazel CLARK,03 OCT 1977,USA,3,,Kingston (JAM),01 MAY 2010,1154.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14307687,toplist
+46.0,2:00.45,,Renata PLIŚ,05 FEB 1985,POL,5,,"Sports Park Mladost, Zagreb (CRO)",01 SEP 2010,1154.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14294279,toplist
+48.0,2:00.46,,Emma JACKSON,07 JUN 1988,GBR,4,,New Delhi (IND),11 OCT 2010,1154.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14275428,toplist
+49.0,2:00.47,,Shannon ROWBURY,19 SEP 1984,USA,10,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1154.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14320310,toplist
+49.0,2:00.47,,Hannah ENGLAND,06 MAR 1987,GBR,5,,New Delhi (IND),11 OCT 2010,1154.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14274986,toplist
+51.0,2:00.51,,Treniere MOSER,27 OCT 1981,USA,4,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1153.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14307753,toplist
+52.0,2:00.53,,Olga SOLDATOVA,08 SEP 1985,RUS,1h6,,Saransk (RUS),12 JUL 2010,1153.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299423,toplist
+53.0,2:00.61,,Christin WURTH-THOMAS,11 JUL 1980,USA,5,,"Olympiastadion, Berlin (GER)",22 AUG 2010,1151.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14324759,toplist
+54.0,2:00.62,,Yevgeniya ZOLOTOVA,28 APR 1983,RUS,2f4,,Moskva (RUS) (i),14 FEB 2010,1175.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299926,toplist
+55.0,2:00.65,,Alena FESENKO,04 OCT 1988,RUS,5,,"Meteor, Zhukovskiy (RUS)",26 JUN 2010,1151.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14297690,toplist
+56.0,2:00.70,,Charlotte SCHÖNBECK,22 DEC 1984,SWE,2f1,,Göteborg (SWE),10 AUG 2010,1150.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14302413,toplist
+57.0,2:00.72,,Fabienne KOHLMANN,06 NOV 1989,GER,1,,Dessau (GER),28 MAY 2010,1149.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14278418,toplist
+57.0,2:00.72,,Irina MARACHEVA,24 SEP 1984,RUS,3,,Velenje (SLO),01 JUL 2010,1149.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14298552,toplist
+59.0,2:00.86,,Angelika CICHOCKA,15 MAR 1988,POL,1,,Spala (POL) (i),20 FEB 2010,1171.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14293508,toplist
+60.0,2:00.87,,Olha ZAVHORODNYA,06 JAN 1983,UKR,2f1,,Donetsk (UKR),03 JUL 2010,1147.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14304362,toplist
+61.0,2:00.88,,Winny CHEBET,20 DEC 1990,KEN,2,,Nairobi (KEN),26 JUN 2010,1147.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14288808,toplist
+61.0,2:00.88,,Eleni FILANDRA,12 JAN 1984,GRE,5h3,,"Estadio Olímpico, Barcelona (ESP)",27 JUL 2010,1147.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14280604,toplist
+63.0,2:00.91,,Truong Thanh HANG,01 MAY 1986,VIE,2,,Guangzhou (CHN),25 NOV 2010,1146.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14325282,toplist
+64.0,2:01.01,,Malika AKKAOUI,25 DEC 1987,MAR,3,,"Nyayo National Stadium, Nairobi (KEN)",01 AUG 2010,1144.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14290566,toplist
+65.0,2:01.02,,Hasna BENHASSI,01 JUN 1978,MAR,1f1,,Huelva (ESP),09 JUN 2010,1144.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14290605,toplist
+66.0,2:01.09,,Daniela REINA,15 MAY 1981,ITA,10,,"Stadio Olimpico, Roma (ITA)",10 JUN 2010,1143.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14285108,toplist
+67.0,2:01.16,,Celia TAYLOR,22 JAN 1977,GBR,3,,"Crystal Palace, London (GBR)",13 AUG 2010,1142.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14274579,toplist
+68.0,2:01.18,,Claudia HOFFMANN,10 DEC 1982,GER,2,,"Wattenscheid, Bochum (GER)",26 JUN 2010,1141.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14278068,toplist
+69.0,2:01.19,,Yekaterina KOSTETSKAYA,31 DEC 1986,RUS,3f1,,Huelva (ESP),09 JUN 2010,1141.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14298246,toplist
+69.0,2:01.19,,Laura JANUSZEWSKI,28 FEB 1986,USA,1f1,,Brasschaat (BEL),11 JUL 2010,1141.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14402373,toplist
+71.0,2:01.20,,Marian BURNETT,22 FEB 1976,GUY,6,,"Meteor, Zhukovskiy (RUS)",26 JUN 2010,1141.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14281103,toplist
+71.0,2:01.20,,Linda MARGUET,11 SEP 1983,FRA,4,,Liège (BEL),13 JUL 2010,1141.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14273027,toplist
+73.0,2:01.33,,Marilyn OKORO,23 SEP 1984,GBR,3h1,,"Estadio Olímpico, Barcelona (ESP)",27 JUL 2010,1139.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14275966,toplist
+74.0,2:01.40,,LaTavia THOMAS,17 DEC 1988,USA,2f1,,"Baton Rouge, LA (USA)",17 APR 2010,1137.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14322681,toplist
+75.0,2:01.52,,Pamela JELIMO,05 DEC 1989,KEN,2,,Daegu (KOR),19 MAY 2010,1135.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14289015,toplist
+76.0,2:01.54,,Anna KONOVALOVA,04 JUL 1988,RUS,3,,Saransk (RUS),13 AUG 2010,1135.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14298197,toplist
+77.0,2:01.57,,Olha BIBIK,05 FEB 1990,UKR,3f1,,Donetsk (UKR),03 JUL 2010,1134.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14303454,toplist
+78.0,2:01.58,,Elena Mirela LAVRIC,17 FEB 1991,ROU,1f1,,Constanta (ROU),04 JUN 2010,1134.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14295709,toplist
+79.0,2:01.61,,Irene ALFONSO,06 FEB 1981,ESP,7h3,,"Estadio Olímpico, Barcelona (ESP)",27 JUL 2010,1134.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14262136,toplist
+80.0,2:01.67,,Victoria GRIFFITHS,09 OCT 1984,GBR,9,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1133.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14275190,toplist
+81.0,2:01.68,,Alice SCHMIDT,03 OCT 1981,USA,1f1,,"Los Angeles, CA (USA)",22 MAY 2010,1132.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14320742,toplist
+82.0,2:01.75,,Heather KAMPF,19 JAN 1987,USA,6,,Liège (BEL),13 JUL 2010,1131.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14309194,toplist
+82.0,2:01.75,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,4,,"Nyayo National Stadium, Nairobi (KEN)",01 AUG 2010,1131.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14290712,toplist
+84.0,2:01.76,,Rose-Anne GALLIGAN,09 DEC 1987,IRL,6h2,,"Estadio Olímpico, Barcelona (ESP)",27 JUL 2010,1131.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14283222,toplist
+85.0,2:01.81,,Angee NOTT,21 DEC 1975,USA,1,,"Nashville, TN (USA)",05 JUN 2010,1130.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14312416,toplist
+85.0,2:01.81,,Yuneysi SANTIUSTI,24 DEC 1984,CUB,4,,Padova (ITA),03 SEP 2010,1130.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14263389,toplist
+87.0,2:01.82,,Alison LEONARD,17 MAR 1990,GBR,4,,"Crystal Palace, London (GBR)",13 AUG 2010,1130.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14275590,toplist
+88.0,2:01.85,,Anna VERKHOVSKAYA,11 JAN 1988,RUS,4,,Saransk (RUS),13 AUG 2010,1129.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299695,toplist
+89.0,2:01.88,,Madeleine PAPE,24 FEB 1984,AUS,3,,Daegu (KOR),19 MAY 2010,1129.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14271515,toplist
+89.0,2:01.88,,Charlotte BEST,07 MAR 1985,GBR,5,,"Crystal Palace, London (GBR)",13 AUG 2010,1129.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14274491,toplist
+91.0,2:01.93,,Stacey SMITH,24 FEB 1990,GBR,2f1,,Belfast (GBR),24 JUL 2010,1128.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14276404,toplist
+92.0,2:02.01,,Liliana BARBULESCU-POPESCU,05 FEB 1982,ROU,1f1,,Sofia (BUL),26 JUN 2010,1127.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14295417,toplist
+93.0,2:02.04,,Rose Mary ALMANZA,13 JUL 1992,CUB,1,,La Habana (CUB),03 JUL 2010,1126.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14365951,toplist
+94.0,2:02.11,,Anastasiya TKACHUK,20 APR 1993,UKR,1h3,,Donetsk (UKR),02 JUL 2010,1125.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14375877,toplist
+95.0,2:02.12,,Jenny SIMPSON,23 AUG 1986,USA,4f2,,"Los Angeles, CA (USA)",22 MAY 2010,1125.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14305392,toplist
+96.0,2:02.13,,Liliya LOBANOVA,14 OCT 1985,UKR,1f2,,Vinnitsa (UKR),15 JUL 2010,1124.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14304026,toplist
+97.0,2:02.14,,Heidi DAHL,15 FEB 1986,USA,6f2,,Lignano Sabbiadoro (ITA),18 JUL 2010,1124.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14360522,toplist
+98.0,2:02.16,,Geena GALL,18 JAN 1987,USA,2f1,,"Los Angeles, CA (USA)",22 MAY 2010,1124.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14310643,toplist
+99.0,2:02.24,,Oksana SKOROBOGATKO,04 SEP 1984,RUS,6f4,,Moskva (RUS) (i),14 FEB 2010,1149.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14299481,toplist
+100.0,2:02.25,,Sarah BROWN,15 OCT 1986,USA,1,,"Knoxville, TN (USA)",08 MAY 2010,1122.0,women_800m,2010,https://worldathletics.org/athletes/athlete=14306246,toplist
+1.0,1:56.35,,Caster SEMENYA,07 JAN 1991,RSA,1,,"DS, Daegu (KOR)",04 SEP 2011,1228.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14330057,toplist
+2.0,1:57.19,,Yekaterina KOSTETSKAYA,31 DEC 1986,RUS,1,,Cheboksary (RUS),22 JUL 2011,1213.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14298246,toplist
+3.0,1:57.42,,Janeth JEPKOSGEI,13 DEC 1983,KEN,2,,"DS, Daegu (KOR)",04 SEP 2011,1209.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14289031,toplist
+4.0,1:57.48,,Alysia MONTAÑO,23 APR 1986,USA,3,,"DS, Daegu (KOR)",04 SEP 2011,1208.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14313660,toplist
+5.0,1:58.04,,Yelena KOFANOVA,08 AUG 1988,RUS,1,,Moskva (RUS),06 AUG 2011,1198.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14298153,toplist
+6.0,1:58.12,,Svetlana USOVICH,14 OCT 1980,BLR,1,,Szczecin (POL),25 JUN 2011,1196.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14269562,toplist
+7.0,1:58.14,,Yuliya STEPANOVA,03 JUL 1986,RUS,1,,Moskva (RUS) (i),17 FEB 2011,1216.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14299108,toplist
+8.0,1:58.21,,Kenia SINCLAIR,14 JUL 1980,JAM,1f1,,"Olympiastadion, Stockholm (SWE)",29 JUL 2011,1194.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14285911,toplist
+9.0,1:58.27,,Halima HACHLAF,06 SEP 1988,MAR,1,,"Bislett Stadion, Oslo (NOR)",09 JUN 2011,1193.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14290676,toplist
+10.0,1:58.30,,Liliya LOBANOVA,14 OCT 1985,UKR,1f2,,Yalta (UKR),31 MAY 2011,1193.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14304026,toplist
+11.0,1:58.37,,Morgan UCENY,10 MAR 1985,USA,1,,Lignano Sabbiadoro (ITA),19 JUL 2011,1192.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14323124,toplist
+12.0,1:58.50,,Maggie VESSEY,23 DEC 1981,USA,4,,"DS, Daegu (KOR)",04 SEP 2011,1189.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14323367,toplist
+13.0,1:58.60,,Jennifer MEADOWS,17 APR 1981,GBR,1,,"Crystal Palace, London (GBR)",05 AUG 2011,1187.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14275784,toplist
+14.0,1:58.61,,Alice SCHMIDT,03 OCT 1981,USA,2,,Lignano Sabbiadoro (ITA),19 JUL 2011,1187.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14320742,toplist
+15.0,1:58.70,,Yuneysi SANTIUSTI,24 DEC 1984,CUB,2,,"Sports Park Mladost, Zagreb (CRO)",13 SEP 2011,1186.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14263389,toplist
+16.0,1:58.71,,Irina MARACHEVA,24 SEP 1984,RUS,2,,Moskva (RUS),10 JUL 2011,1185.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14298552,toplist
+17.0,1:59.12,,Nataliya LUPU,04 NOV 1987,UKR,2f2,,Yalta (UKR),31 MAY 2011,1178.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14303856,toplist
+17.0,1:59.12,,Molly LUDLOW,04 AUG 1987,USA,3,,Lignano Sabbiadoro (ITA),19 JUL 2011,1178.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14305568,toplist
+19.0,1:59.17,,Yekaterina SHARMINA,06 AUG 1986,RUS,1,,Moskva (RUS),12 JUN 2011,1177.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14298562,toplist
+19.0,1:59.17,,Fantu MAGISO,09 JUN 1992,ETH,3sf3,,"DS, Daegu (KOR)",02 SEP 2011,1177.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14429098,toplist
+21.0,1:59.21,,Zahra BOURAS,13 JAN 1987,ALG,1,,"Stadion Juliska, Praha (CZE)",13 JUN 2011,1176.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14272848,toplist
+22.0,1:59.25,,Phoebe WRIGHT,30 AUG 1988,USA,4,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1176.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14324744,toplist
+23.0,1:59.30,,Marina ARZAMASOVA,17 DEC 1987,BLR,1,,Brest (BLR),21 MAY 2011,1175.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14427676,toplist
+24.0,1:59.32,,Yuliya KREVSUN,08 DEC 1980,UKR,3f2,,Yalta (UKR),31 MAY 2011,1174.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14303623,toplist
+25.0,1:59.35,,Yelena ARZHAKOVA,08 SEP 1989,RUS,2,,Moskva (RUS) (i),17 FEB 2011,1196.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14297282,toplist
+26.0,1:59.38,,Ilona USOVICH,14 NOV 1982,BLR,2,,Brest (BLR),21 MAY 2011,1173.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14269565,toplist
+27.0,1:59.48,,Lucia KLOCOVÁ,20 NOV 1983,SVK,2,,"Stadion Juliska, Praha (CZE)",13 JUN 2011,1172.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14301465,toplist
+28.0,1:59.53,,Marilyn OKORO,23 SEP 1984,GBR,1,,Lee Valley (GBR),06 AUG 2011,1171.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14275966,toplist
+29.0,1:59.56,,Olha ZAVHORODNYA,06 JAN 1983,UKR,1,,"National Stadium, Shenzhen (CHN)",18 AUG 2011,1170.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14304362,toplist
+30.0,1:59.59,,Jemma SIMPSON,10 FEB 1984,GBR,5,,"Olympiastadion, Berlin (GER)",11 SEP 2011,1170.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14276350,toplist
+31.0,1:59.62,,Geena GALL,18 JAN 1987,USA,5,,Lignano Sabbiadoro (ITA),19 JUL 2011,1169.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14310643,toplist
+32.0,1:59.66,,Eunice Jepkoech SUM,10 APR 1988,KEN,2,,Nairobi (KEN),16 JUL 2011,1168.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14423891,toplist
+33.0,1:59.67,,LaTavia THOMAS,17 DEC 1988,USA,1f1,,Ninove (BEL),06 AUG 2011,1168.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14322681,toplist
+34.0,1:59.68,,Cherono KOECH,08 DEC 1992,KEN,3,,Nairobi (KEN),16 JUL 2011,1168.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14367292,toplist
+35.0,1:59.75,,Malika AKKAOUI,25 DEC 1987,MAR,2f1,,"Olympiastadion, Stockholm (SWE)",29 JUL 2011,1167.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14290566,toplist
+36.0,1:59.76,,Tatyana DUDCHENKO,18 NOV 1983,RUS,3,,Cheboksary (RUS),22 JUL 2011,1167.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14298823,toplist
+37.0,1:59.77,,Emma JACKSON,07 JUN 1988,GBR,4sf2,,"DS, Daegu (KOR)",02 SEP 2011,1166.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14275428,toplist
+38.0,1:59.83,,Yuliya TUTAYEVA,07 DEC 1988,RUS,3,,Moskva (RUS),10 JUL 2011,1165.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14360323,toplist
+39.0,2:00.14,,Aleksandra BULANOVA,10 JUN 1989,RUS,,,Moskva (RUS),15 JUN 2011,1160.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14299865,toplist
+40.0,2:00.17,,Erica MOORE,25 MAR 1988,USA,6,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1159.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14317298,toplist
+41.0,2:00.19,,Anna WILLARD,31 MAR 1984,USA,7,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1159.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14324194,toplist
+42.0,2:00.20,,Angelika CICHOCKA,15 MAR 1988,POL,6,,"Sports Park Mladost, Zagreb (CRO)",13 SEP 2011,1159.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14293508,toplist
+43.0,2:00.30,,Yvonne HAK,30 JUN 1986,NED,6,,"Bislett Stadion, Oslo (NOR)",09 JUN 2011,1157.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14291688,toplist
+44.0,2:00.32,,Anastasiya VOLODKINA,15 JUL 1988,RUS,1h2,,Cheboksary (RUS),21 JUL 2011,1157.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14299754,toplist
+45.0,2:00.37,,Anastasiya TKACHUK,20 APR 1993,UKR,4f2,,Yalta (UKR),31 MAY 2011,1156.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14375877,toplist
+46.0,2:00.40,,Annet NEGESA,24 APR 1992,UGA,3,,"FBK Stadium, Hengelo (NED)",29 MAY 2011,1155.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14303395,toplist
+47.0,2:00.41,,Heather KAMPF,19 JAN 1987,USA,6,,Lignano Sabbiadoro (ITA),19 JUL 2011,1155.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14309194,toplist
+48.0,2:00.45,,Treniere MOSER,27 OCT 1981,USA,8,,Lignano Sabbiadoro (ITA),19 JUL 2011,1154.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14307753,toplist
+49.0,2:00.46,,Merve AYDIN,17 MAR 1990,TUR,1,,"Mestský Stadion, Ostrava (CZE)",15 JUL 2011,1154.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14303209,toplist
+50.0,2:00.54,,Hellen OBIRI,13 DEC 1989,KEN,7,,"Crystal Palace, London (GBR)",05 AUG 2011,1153.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14424921,toplist
+51.0,2:00.56,,Rose Mary ALMANZA,13 JUL 1992,CUB,1,,La Habana (CUB),06 MAY 2011,1152.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14365951,toplist
+52.0,2:00.57,,Viktoriya YALOVTSEVA,04 NOV 1978,KAZ,1,,Bishkek (KGZ),05 JUN 2011,1152.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14288749,toplist
+53.0,2:00.65,,Lynsey SHARP,11 JUL 1990,GBR,2,,"Mestský Stadion, Ostrava (CZE)",15 JUL 2011,1151.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14276316,toplist
+54.0,2:00.68,,Ingvill MÅKESTAD BOVIM,07 AUG 1981,NOR,8,,"Crystal Palace, London (GBR)",05 AUG 2011,1150.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14292722,toplist
+55.0,2:00.72,,Christin WURTH-THOMAS,11 JUL 1980,USA,1f1,,"Palo Alto, CA (USA)",01 MAY 2011,1149.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14324759,toplist
+56.0,2:00.76,,Marina POSPELOVA,23 JUL 1990,RUS,2h1,,Cheboksary (RUS),21 JUL 2011,1149.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14325987,toplist
+57.0,2:00.78,,Tamsyn MANOU,20 JUL 1978,AUS,4f2,,"Olympiastadion, Stockholm (SWE)",29 JUL 2011,1148.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14271772,toplist
+58.0,2:00.79,,Rosibel GARCÍA,13 FEB 1981,COL,4sf1,,"DS, Daegu (KOR)",02 SEP 2011,1148.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14264010,toplist
+59.0,2:00.83,,Hind DEHIBA CHAHYD,17 MAR 1979,FRA,3,,Reims (FRA),05 JUL 2011,1147.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14258138,toplist
+60.0,2:00.84,,Danuta URBANIK,24 DEC 1989,POL,4,,Szczecin (POL),25 JUN 2011,1147.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14294586,toplist
+61.0,2:00.85,,Lemlem BEREKET,10 DEC 1987,CAN,2f1,,Ninove (BEL),06 AUG 2011,1147.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14262209,toplist
+62.0,2:00.89,,Margarita MUKASHEVA,04 JAN 1986,KAZ,1,,Kunshan (CHN),26 MAY 2011,1146.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14288662,toplist
+63.0,2:00.92,,Lenka MASNÁ,22 APR 1985,CZE,3,,"Stadion Juliska, Praha (CZE)",13 JUN 2011,1146.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14262910,toplist
+63.0,2:00.92,,Tatyana VINOGRADOVA,09 DEC 1988,RUS,2h5,,Cheboksary (RUS),21 JUL 2011,1146.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14298554,toplist
+65.0,2:00.93,,Jana HARTMANN,23 MAY 1981,GER,4,,"Stadion Juliska, Praha (CZE)",13 JUN 2011,1146.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14277912,toplist
+66.0,2:00.95,,Tintu LUKA,26 APR 1989,IND,5sf2,,"DS, Daegu (KOR)",02 SEP 2011,1145.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14282954,toplist
+67.0,2:00.96,,Annette Mwanzi LUKHUYI,21 JUL 1987,KEN,5,,Rovereto (ITA),13 SEP 2011,1145.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14289333,toplist
+68.0,2:01.04,,Elisa CUSMA,24 JUL 1981,ITA,4,,"Olympiastadion, Stockholm (SWE)",18 JUN 2011,1144.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14284142,toplist
+69.0,2:01.05,,Laura JANUSZEWSKI,28 FEB 1986,USA,9,,Lignano Sabbiadoro (ITA),19 JUL 2011,1144.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14402373,toplist
+70.0,2:01.07,,Brenda MARTINEZ,08 SEP 1987,USA,10,,Lignano Sabbiadoro (ITA),19 JUL 2011,1143.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14316143,toplist
+71.0,2:01.14,,Anna BALAKSHINA,22 NOV 1986,RUS,1h1,,Moskva (RUS) (i),16 FEB 2011,1167.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14362882,toplist
+72.0,2:01.17,,Christine SCHMALTZ,14 APR 1988,USA,8,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1141.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14326217,toplist
+73.0,2:01.20,,Jenny SIMPSON,23 AUG 1986,USA,6f1,,"Los Angeles, CA (USA)",21 MAY 2011,1141.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14305392,toplist
+74.0,2:01.23,,Eglė BALČIŪNAITĖ,31 OCT 1988,LTU,1f1,,Düsseldorf (GER) (i),11 FEB 2011,1165.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14290183,toplist
+75.0,2:01.32,,Linda MARGUET,11 SEP 1983,FRA,2sf2,,"Palais Omnisports de Paris-Bercy, Paris (FRA) (i)",05 MAR 2011,1164.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14273027,toplist
+76.0,2:01.33,,Heidi DAHL,15 FEB 1986,USA,4,,"National Stadium, Kingston (JAM)",07 MAY 2011,1139.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14360522,toplist
+77.0,2:01.34,,Chunyu WANG,17 JAN 1995,CHN,1,,Nanchang (CHN),23 OCT 2011,1138.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14462001,toplist
+78.0,2:01.40,,Olga SOLDATOVA,08 SEP 1985,RUS,6,,Moskva (RUS),10 JUL 2011,1137.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14299423,toplist
+79.0,2:01.41,,Truong Thanh HANG,01 MAY 1986,VIE,1,,Kobe (JPN),10 JUL 2011,1137.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14325282,toplist
+80.0,2:01.45,,Natoya GOULE,30 MAR 1991,JAM,2,,Kingston (JAM),25 JUN 2011,1136.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14285696,toplist
+81.0,2:01.47,,Nuria FERNÁNDEZ,16 AUG 1976,ESP,1,,Zaragoza (ESP),25 JUN 2011,1136.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14261624,toplist
+82.0,2:01.50,,Marta MILANI,09 MAR 1987,ITA,4,,Torino (ITA),10 JUN 2011,1136.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14284811,toplist
+82.0,2:01.50,,Gabriela Eilzabeth MEDINA,03 JUL 1985,MEX,1,,Mayagüez (PUR),17 JUL 2011,1136.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14291142,toplist
+84.0,2:01.54,,Jessica SMITH,11 OCT 1989,CAN,2,,Burnaby (CAN),01 JUL 2011,1135.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14321527,toplist
+85.0,2:01.55,,Mariem ALAOUI SELSOULI,08 APR 1984,MAR,4,,Milano (ITA),18 SEP 2011,1135.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14290568,toplist
+86.0,2:01.61,,Sylivia Chematui CHESEBE,17 MAY 1987,KEN,4,,Nairobi (KEN),16 JUL 2011,1134.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14329964,toplist
+87.0,2:01.73,,Oksana DYOMINA,04 AUG 1990,RUS,2,,Yerino (RUS),30 JUL 2011,1131.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14329321,toplist
+88.0,2:01.76,,Alena FESENKO,04 OCT 1988,RUS,3h4,,Cheboksary (RUS),21 JUL 2011,1131.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14297690,toplist
+89.0,2:01.77,,Neisha BERNARD-THOMAS,21 JAN 1981,GRN,5,,"National Stadium, Kingston (JAM)",07 MAY 2011,1131.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14281029,toplist
+90.0,2:01.78,,Yelena KOBELEVA,12 JUN 1988,RUS,3h1,,Cheboksary (RUS),21 JUL 2011,1131.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14386692,toplist
+90.0,2:01.78,,Tuǧba KOYUNCU,16 FEB 1991,TUR,1,,Ankara (TUR),31 JUL 2011,1131.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14377221,toplist
+92.0,2:01.82,,Ewelina SĘTOWSKA-DRYK,05 MAR 1980,POL,5,,Milano (ITA),18 SEP 2011,1130.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14294399,toplist
+93.0,2:01.85,,Corinna HARRER,19 JAN 1991,GER,1,,Neustadt (GER),08 JUL 2011,1129.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14277904,toplist
+94.0,2:01.90,,Ruriko KUBO,23 JAN 1989,JPN,3f1,,Ninove (BEL),06 AUG 2011,1128.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14286931,toplist
+95.0,2:01.91,,Tereza ČAPKOVÁ,24 JUL 1987,CZE,6,,"Stadion Juliska, Praha (CZE)",13 JUN 2011,1128.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14263185,toplist
+96.0,2:01.98,,Elodie GUEGAN,19 DEC 1985,FRA,4,,Rio de Janeiro (BRA),20 JUL 2011,1127.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14257214,toplist
+97.0,2:02.02,,Natalya PERYAKOVA,04 MAR 1983,RUS,1h3,,Cheboksary (RUS),21 JUL 2011,1126.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14298887,toplist
+98.0,2:02.04,,Amy WEISSENBACH,16 JUN 1994,USA,1,,"Clovis, CA (USA)",04 JUN 2011,1126.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14423484,toplist
+98.0,2:02.04,,Siham HILALI,02 MAY 1986,MAR,2,,Bottrop (GER),15 JUL 2011,1126.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14290679,toplist
+100.0,2:02.05,,Mariya ZHURAVLYOVA,07 NOV 1986,RUS,3,,Yerino (RUS),30 JUL 2011,1126.0,women_800m,2011,https://worldathletics.org/athletes/athlete=14299249,toplist
+1.0,1:56.59,,Francine NIYONSABA,05 MAY 1993,BDI,1,,"Boudewijnstadion, Bruxelles (BEL)",07 SEP 2012,1224.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14532686,toplist
+2.0,1:56.76,,Pamela JELIMO,05 DEC 1989,KEN,1f1,,Heusden-Zolder (BEL),07 JUL 2012,1221.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14289015,toplist
+3.0,1:57.23,,Caster SEMENYA,07 JAN 1991,RSA,1,,"Olympic Stadium, London (GBR)",11 AUG 2012,1212.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14330057,toplist
+4.0,1:57.37,,Alysia MONTAÑO,23 APR 1986,USA,1,,"Hayward Field, Eugene, OR (USA)",01 JUN 2012,1210.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14313660,toplist
+5.0,1:57.48,,Fantu MAGISO,09 JUN 1992,ETH,1,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1208.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14429098,toplist
+6.0,1:57.77,,Yelena KOFANOVA,08 AUG 1988,RUS,1h3,,Cheboksary (RUS),03 JUL 2012,1202.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14298153,toplist
+7.0,1:57.79,,Janeth JEPKOSGEI,13 DEC 1983,KEN,1,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1202.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14289031,toplist
+8.0,1:57.82,,Irina MARACHEVA,24 SEP 1984,RUS,1,,Sochi (RUS),27 MAY 2012,1202.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14298552,toplist
+9.0,1:57.93,,Yekaterina POISTOGOVA,01 MAR 1991,RUS,1f2,,Moskva (RUS),13 JUN 2012,1200.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14299862,toplist
+10.0,1:58.46,,Nataliya LUPU,04 NOV 1987,UKR,1f2,,Yalta (UKR),14 JUN 2012,1190.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14303856,toplist
+11.0,1:58.53,,Yuneysi SANTIUSTI,24 DEC 1984,CUB,2,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1189.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14263389,toplist
+12.0,1:58.55,,Tatyana VINOGRADOVA,09 DEC 1988,RUS,1h4,,Cheboksary (RUS),03 JUL 2012,1188.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14298554,toplist
+13.0,1:58.72,,Svetlana USOVICH,14 OCT 1980,BLR,1,,Brest (BLR),26 MAY 2012,1185.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14269562,toplist
+14.0,1:58.78,,Zahra BOURAS,13 JAN 1987,ALG,1,,Montreuil-sous-Bois (FRA),05 JUN 2012,1184.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14272848,toplist
+15.0,1:58.84,,Halima HACHLAF,06 SEP 1988,MAR,4sf2,,"Olympic Stadium, London (GBR)",09 AUG 2012,1183.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14290676,toplist
+16.0,1:59.01,,Malika AKKAOUI,25 DEC 1987,MAR,1,,Liévin (FRA) (i),14 FEB 2012,1202.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14290566,toplist
+17.0,1:59.03,,Svetlana CHERKASOVA,20 MAY 1978,RUS,2f1,,Moskva (RUS),11 JUN 2012,1180.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14297513,toplist
+18.0,1:59.08,,Annet NEGESA,24 APR 1992,UGA,3,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1179.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14303395,toplist
+19.0,1:59.13,,Eunice Jepkoech SUM,10 APR 1988,KEN,2,,Porto Novo (BEN),01 JUL 2012,1178.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14423891,toplist
+20.0,1:59.14,,Brenda MARTINEZ,08 SEP 1987,USA,3,,"Boudewijnstadion, Bruxelles (BEL)",07 SEP 2012,1178.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14316143,toplist
+21.0,1:59.16,,Anna WILLARD,31 MAR 1984,USA,4,,"Boudewijnstadion, Bruxelles (BEL)",07 SEP 2012,1177.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14324194,toplist
+22.0,1:59.18,,Molly LUDLOW,04 AUG 1987,USA,2,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1177.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14305568,toplist
+23.0,1:59.20,,Margarita MUKASHEVA,04 JAN 1986,KAZ,2sf3,,"Olympic Stadium, London (GBR)",09 AUG 2012,1177.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14288662,toplist
+24.0,1:59.24,,Geena GALL,18 JAN 1987,USA,2,,"Hayward Field, Eugene, OR (USA)",25 JUN 2012,1176.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14310643,toplist
+25.0,1:59.25,,Yuliya KREVSUN,08 DEC 1980,UKR,2f2,,Yalta (UKR),14 JUN 2012,1176.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14303623,toplist
+26.0,1:59.32,,Olena ZHUSHMAN,30 DEC 1985,UKR,3f2,,Yalta (UKR),14 JUN 2012,1174.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14304375,toplist
+27.0,1:59.33,,Marilyn OKORO,23 SEP 1984,GBR,4,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1174.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14275966,toplist
+28.0,1:59.37,,Emma JACKSON,07 JUN 1988,GBR,5,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1174.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14275428,toplist
+28.0,1:59.37,,Winny CHEBET,20 DEC 1990,KEN,2,,"Stadio Guidobaldi, Rieti (ITA)",09 SEP 2012,1174.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14288808,toplist
+30.0,1:59.39,,Abeba AREGAWI,05 JUL 1990,ETH,3,,"Olympiastadion, Berlin (GER)",02 SEP 2012,1173.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14360651,toplist
+31.0,1:59.40,,Yuliya TUTAYEVA,07 DEC 1988,RUS,3f2,,Moskva (RUS),13 JUN 2012,1173.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14360323,toplist
+32.0,1:59.45,,Marina POSPELOVA,23 JUL 1990,RUS,1h6,,Moskva (RUS) (i),22 FEB 2012,1195.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14325987,toplist
+33.0,1:59.46,,Alice SCHMIDT,03 OCT 1981,USA,3,,"Hayward Field, Eugene, OR (USA)",25 JUN 2012,1172.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14320742,toplist
+34.0,1:59.55,,Rose Mary ALMANZA,13 JUL 1992,CUB,1,,La Habana (CUB),29 JUN 2012,1170.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14365951,toplist
+35.0,1:59.61,,Maggie VESSEY,23 DEC 1981,USA,1,,"Sports Park Mladost, Zagreb (CRO)",04 SEP 2012,1169.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14323367,toplist
+36.0,1:59.62,,Liliya LOBANOVA,14 OCT 1985,UKR,4f2,,Yalta (UKR),14 JUN 2012,1169.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14304026,toplist
+37.0,1:59.63,,Marina ARZAMASOVA,17 DEC 1987,BLR,2,,Montreuil-sous-Bois (FRA),05 JUN 2012,1169.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14427676,toplist
+38.0,1:59.66,,Hannah ENGLAND,06 MAR 1987,GBR,1,,Linz (AUT),20 AUG 2012,1168.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14274986,toplist
+39.0,1:59.69,,Tintu LUKA,26 APR 1989,IND,5sf2,,"Olympic Stadium, London (GBR)",09 AUG 2012,1168.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14282954,toplist
+40.0,1:59.72,,Phoebe WRIGHT,30 AUG 1988,USA,5,,"Hayward Field, Eugene, OR (USA)",25 JUN 2012,1167.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14324744,toplist
+41.0,1:59.74,,Elena Mirela LAVRIC,17 FEB 1991,ROU,5,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1167.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14295709,toplist
+42.0,1:59.82,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,3,,"Hayward Field, Eugene, OR (USA)",01 JUN 2012,1165.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14268335,toplist
+43.0,1:59.85,,Yekaterina KUPINA,02 FEB 1986,RUS,5f2,,Moskva (RUS),13 JUN 2012,1165.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14298343,toplist
+44.0,1:59.86,,Jessica SMITH,11 OCT 1989,CAN,1f1,,Burnaby (CAN),10 JUN 2012,1165.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14321527,toplist
+45.0,1:59.90,,Yelena SOBOLEVA,03 OCT 1982,RUS,7f1,,Moskva (RUS),11 JUN 2012,1164.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14299411,toplist
+46.0,1:59.97,,Erica MOORE,25 MAR 1988,USA,3,,"Ataköy Arena, Istanbul (TUR) (i)",11 MAR 2012,1186.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14317298,toplist
+47.0,2:00.06,,Oksana DYOMINA,04 AUG 1990,RUS,2h3,,Cheboksary (RUS),03 JUL 2012,1161.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14329321,toplist
+48.0,2:00.15,,Chanelle PRICE,22 AUG 1990,USA,3f1,,Ninove (BEL),21 JUL 2012,1160.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14319275,toplist
+49.0,2:00.16,,Lucia KLOCOVÁ,20 NOV 1983,SVK,7,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1159.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14301465,toplist
+49.0,2:00.16,,Rosibel GARCÍA,13 FEB 1981,COL,2sf1,,"Olympic Stadium, London (GBR)",09 AUG 2012,1159.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14264010,toplist
+51.0,2:00.22,,Ibtissam LAKHOUAD,07 DEC 1980,MAR,1,,Rabat (MAR),27 MAY 2012,1158.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14290712,toplist
+52.0,2:00.23,,Tatyana DUDCHENKO,18 NOV 1983,RUS,4,,Sochi (RUS),27 MAY 2012,1158.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14298823,toplist
+52.0,2:00.23,,Merve AYDIN,17 MAR 1990,TUR,1,,Minsk (BLR),12 JUN 2012,1158.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14303209,toplist
+54.0,2:00.27,,Lydia WAFULA,15 FEB 1988,KEN,2f1,,Bottrop (GER),06 JUL 2012,1157.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14289477,toplist
+55.0,2:00.33,,Natalya PERYAKOVA,04 MAR 1983,RUS,1h7,,Cheboksary (RUS),03 JUL 2012,1156.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14298887,toplist
+56.0,2:00.34,,Corinna HARRER,19 JAN 1991,GER,3,,Albi (FRA),15 AUG 2012,1156.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14277904,toplist
+57.0,2:00.38,,Kristina UGAROVA,22 OCT 1987,RUS,1f3,,Moskva (RUS),21 JUN 2012,1155.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14298068,toplist
+58.0,2:00.39,,Alena GLAZKOVA,06 MAY 1988,RUS,2f3,,Moskva (RUS),21 JUN 2012,1155.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14387703,toplist
+59.0,2:00.44,,Eleni FILANDRA,12 JAN 1984,GRE,1,,Athina (GRE),16 JUN 2012,1154.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14280604,toplist
+59.0,2:00.44,,Maryam Yusuf JAMAL,16 SEP 1984,BRN,1f1,,Nottwil (SUI),30 JUN 2012,1154.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14268773,toplist
+61.0,2:00.52,,Lynsey SHARP,11 JUL 1990,GBR,1,,"Olympiastadion, Helsinki (FIN)",29 JUN 2012,1153.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14276316,toplist
+62.0,2:00.53,,Cherono KOECH,08 DEC 1992,KEN,4sf3,,"Olympic Stadium, London (GBR)",09 AUG 2012,1153.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14367292,toplist
+63.0,2:00.55,,Olha LYAKHOVA,18 MAR 1992,UKR,5f2,,Yalta (UKR),14 JUN 2012,1152.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14325668,toplist
+63.0,2:00.55,,Diane CUMMINS,19 JAN 1974,CAN,5,,"Sports Park Mladost, Zagreb (CRO)",04 SEP 2012,1152.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14268144,toplist
+65.0,2:00.59,,Yvonne HAK,30 JUN 1986,NED,1,,Gouda (NED),24 AUG 2012,1152.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14291688,toplist
+66.0,2:00.64,,Elena POPESCU,06 SEP 1989,MDA,1f2,,Yalta (UKR),28 MAY 2012,1151.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14457894,toplist
+67.0,2:00.67,,Angela PETTY,16 AUG 1991,NZL,2f1,,Heusden-Zolder (BEL),07 JUL 2012,1150.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14293170,toplist
+68.0,2:00.68,,Adriana MUÑOZ,16 MAR 1982,CUB,2,,La Habana (CUB),29 JUN 2012,1150.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14263461,toplist
+68.0,2:00.68,,Neisha BERNARD-THOMAS,21 JAN 1981,GRN,7sf2,,"Olympic Stadium, London (GBR)",09 AUG 2012,1150.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14281029,toplist
+70.0,2:00.69,,Svetlana KARAMASHEVA,24 MAY 1988,RUS,f2,,Moskva (RUS),21 JUN 2012,1150.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14298946,toplist
+71.0,2:00.72,,Jemma SIMPSON,10 FEB 1984,GBR,4,,Lignano Sabbiadoro (ITA),17 JUL 2012,1149.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14276350,toplist
+72.0,2:00.78,,Anastasiya TKACHUK,20 APR 1993,UKR,1f3,,Yalta (UKR),28 MAY 2012,1148.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14375877,toplist
+73.0,2:00.79,,Yevgeniya ZOLOTOVA,28 APR 1983,RUS,3f2,,Moskva (RUS),11 JUN 2012,1148.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14299926,toplist
+74.0,2:00.82,,Lemlem BEREKET,10 DEC 1987,CAN,4f1,,Burnaby (CAN),10 JUN 2012,1148.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14262209,toplist
+75.0,2:00.90,,Jane JELAGAT,25 NOV 1983,KEN,2,,Nairobi (KEN),15 JUN 2012,1146.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14288827,toplist
+76.0,2:00.91,,Ajee' WILSON,08 MAY 1994,USA,1,,"Estadio Olímpico, Barcelona (ESP)",12 JUL 2012,1146.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14411176,toplist
+77.0,2:00.92,,Anna MISHCHENKO,25 AUG 1983,UKR,2f3,,Yalta (UKR),28 MAY 2012,1146.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14303916,toplist
+78.0,2:00.96,,Jess JUDD,07 JAN 1995,GBR,2,,"Estadio Olímpico, Barcelona (ESP)",12 JUL 2012,1145.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14336301,toplist
+79.0,2:01.06,,Nachelle MACKIE,15 MAR 1990,USA,1,,"Des Moines, IA (USA)",08 JUN 2012,1143.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14465961,toplist
+80.0,2:01.18,,Genzeb SHUMI,29 JAN 1991,BRN,2f1,,Nottwil (SUI),30 JUN 2012,1141.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14413310,toplist
+81.0,2:01.21,,Sylivia Chematui CHESEBE,17 MAY 1987,KEN,3,,Nairobi (KEN),15 JUN 2012,1141.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14329964,toplist
+82.0,2:01.22,,Hilary STELLINGWERFF,07 AUG 1981,CAN,4,,"Stade Olympique de la Pontaise, Lausanne (SUI)",23 AUG 2012,1140.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14268056,toplist
+83.0,2:01.27,,LaTavia THOMAS,17 DEC 1988,USA,6,,"Hayward Field, Eugene, OR (USA)",01 JUN 2012,1140.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14322681,toplist
+84.0,2:01.29,,Carolin WALTER,29 FEB 1988,GER,1,,Karlsruhe (GER) (i),26 FEB 2012,1164.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14280186,toplist
+85.0,2:01.30,,Nicole SIFUENTES,30 JUN 1986,CAN,5,,Lignano Sabbiadoro (ITA),17 JUL 2012,1139.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14268054,toplist
+86.0,2:01.32,,Angelika CICHOCKA,15 MAR 1988,POL,6,,"Sports Park Mladost, Zagreb (CRO)",04 SEP 2012,1139.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14293508,toplist
+87.0,2:01.33,,Lea WALLACE,19 DEC 1988,USA,2f1,,Victoria (CAN),13 JUN 2012,1139.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14323560,toplist
+88.0,2:01.35,,Marta MILANI,09 MAR 1987,ITA,6,,Lignano Sabbiadoro (ITA),17 JUL 2012,1138.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14284811,toplist
+89.0,2:01.38,,Lenka MASNÁ,22 APR 1985,CZE,1,,Huelva (ESP),07 JUN 2012,1138.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14262910,toplist
+90.0,2:01.40,,Charlene LIPSEY,16 JUL 1991,USA,2,,"Des Moines, IA (USA)",08 JUN 2012,1137.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14326493,toplist
+90.0,2:01.40,,Katie PALMER-COX,01 DEC 1988,USA,6f1,,Burnaby (CAN),10 JUN 2012,1137.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14326257,toplist
+92.0,2:01.46,,Teodora KOLAROVA,29 MAY 1981,BUL,5,,"Moratalaz, Madrid (ESP)",07 JUL 2012,1136.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14268663,toplist
+92.0,2:01.46,,Jing ZHAO,09 JUL 1988,CHN,1,,Kunshan (CHN),24 SEP 2012,1136.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14264335,toplist
+94.0,2:01.48,,Chunyu WANG,17 JAN 1995,CHN,2,,Kunshan (CHN),24 SEP 2012,1136.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14462001,toplist
+95.0,2:01.53,,Elisa CUSMA,24 JUL 1981,ITA,5,,Liévin (FRA) (i),14 FEB 2012,1161.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14284142,toplist
+95.0,2:01.53,,Tamsyn MANOU,20 JUL 1978,AUS,1,,Sydney (AUS),18 FEB 2012,1135.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14271772,toplist
+97.0,2:01.54,,Heather KAMPF,19 JAN 1987,USA,4h3,,"Hayward Field, Eugene, OR (USA)",22 JUN 2012,1135.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14309194,toplist
+98.0,2:01.55,,Kenia SINCLAIR,14 JUL 1980,JAM,1,,Kingston (JAM),30 JUN 2012,1135.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14285911,toplist
+99.0,2:01.58,,Ewelina SĘTOWSKA-DRYK,05 MAR 1980,POL,2,,Bydgoszcz (POL),03 JUN 2012,1134.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14294399,toplist
+100.0,2:01.61,,Olga SOLDATOVA,08 SEP 1985,RUS,6,,Sochi (RUS),27 MAY 2012,1134.0,women_800m,2012,https://worldathletics.org/athletes/athlete=14299423,toplist
+1.0,1:56.72,,Francine NIYONSABA,05 MAY 1993,BDI,1,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1222.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14532686,toplist
+2.0,1:57.38,,Eunice Jepkoech SUM,10 APR 1988,KEN,1,,"Luzhniki Stadion, Moskva (RUS)",18 AUG 2013,1210.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14423891,toplist
+3.0,1:57.64,,Malika AKKAOUI,25 DEC 1987,MAR,2,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1205.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14290566,toplist
+4.0,1:57.75,,Alysia MONTAÑO,23 APR 1986,USA,3,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1203.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14313660,toplist
+5.0,1:57.91,,Brenda MARTINEZ,08 SEP 1987,USA,2,,"Luzhniki Stadion, Moskva (RUS)",18 AUG 2013,1200.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14316143,toplist
+6.0,1:58.21,,Ajee' WILSON,08 MAY 1994,USA,4,,"Luzhniki Stadion, Moskva (RUS)",18 AUG 2013,1194.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14411176,toplist
+7.0,1:58.71,,Janeth JEPKOSGEI,13 DEC 1983,KEN,3,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1185.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14289031,toplist
+8.0,1:58.92,,Caster SEMENYA,07 JAN 1991,RSA,1,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1182.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14330057,toplist
+9.0,1:58.93,,Mariya SAVINOVA,13 AUG 1985,RUS,2,,"Letzigrund, Zürich (SUI)",29 AUG 2013,1181.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14299184,toplist
+10.0,1:58.96,,Margarita MUKASHEVA,04 JAN 1986,KAZ,1,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1181.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14288662,toplist
+11.0,1:59.20,,Abeba AREGAWI,05 JUL 1990,SWE,1,,"FBK Stadium, Hengelo (NED)",08 JUN 2013,1177.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14360651,toplist
+12.0,1:59.21,,Yekaterina KUPINA,02 FEB 1986,RUS,1f2,,Yerino (RUS),02 JUN 2013,1176.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14298343,toplist
+13.0,1:59.30,,Winny CHEBET,20 DEC 1990,KEN,1,,"Sports Park Mladost, Zagreb (CRO)",03 SEP 2013,1175.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14288808,toplist
+14.0,1:59.38,,Halima HACHLAF,06 SEP 1988,MAR,1,,Rabat (MAR),25 JUL 2013,1173.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14290676,toplist
+15.0,1:59.40,,Nelly JEPKOSGEI,14 JUL 1991,KEN,2,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1173.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14373314,toplist
+16.0,1:59.43,,Marilyn OKORO,23 SEP 1984,GBR,2h1,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1172.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14275966,toplist
+16.0,1:59.43,,Nataliya LUPU,04 NOV 1987,UKR,3sf1,,"Luzhniki Stadion, Moskva (RUS)",16 AUG 2013,1172.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14303856,toplist
+18.0,1:59.47,,Kate GRACE,24 OCT 1988,USA,4,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1172.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14327446,toplist
+19.0,1:59.51,,Mary CAIN,03 MAY 1996,USA,5,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1171.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14411230,toplist
+20.0,1:59.56,,Lenka MASNÁ,22 APR 1985,CZE,4sf1,,"Luzhniki Stadion, Moskva (RUS)",16 AUG 2013,1170.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14262910,toplist
+21.0,1:59.60,,Yelena KOTULSKAYA,08 AUG 1988,RUS,2f2,,Yerino (RUS),02 JUN 2013,1169.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14298153,toplist
+21.0,1:59.60,,Marina ARZAMASOVA,17 DEC 1987,BLR,4h1,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1169.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14427676,toplist
+23.0,1:59.61,,Ayvika MALANOVA,28 NOV 1992,RUS,3f2,,Yerino (RUS),02 JUN 2013,1169.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14408963,toplist
+24.0,1:59.76,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,1,,Victoria (CAN),05 JUL 2013,1167.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14268335,toplist
+25.0,1:59.79,,Elena Mirela LAVRIC,17 FEB 1991,ROU,2,,"Olympic Stadium, London (GBR)",26 JUL 2013,1166.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14295709,toplist
+26.0,1:59.82,,Eglė BALČIŪNAITĖ,31 OCT 1988,LTU,3,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1165.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14290183,toplist
+27.0,1:59.85,,Jess JUDD,07 JAN 1995,GBR,1,,"Alexander Stadium, Birmingham (GBR)",30 JUN 2013,1165.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14336301,toplist
+28.0,1:59.93,,Natoya GOULE,30 MAR 1991,JAM,1,,Kingston (JAM),22 JUN 2013,1163.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14285696,toplist
+29.0,2:00.03,,Angela PETTY,16 AUG 1991,NZL,4,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1162.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14293170,toplist
+30.0,2:00.04,,Heather KAMPF,19 JAN 1987,USA,1,,Lignano Sabbiadoro (ITA),16 JUL 2013,1162.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14309194,toplist
+31.0,2:00.13,,Rose Mary ALMANZA,13 JUL 1992,CUB,1,,La Habana (CUB),04 JUN 2013,1160.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14365951,toplist
+32.0,2:00.15,,Siham HILALI,02 MAY 1986,MAR,6,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1160.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14290679,toplist
+33.0,2:00.20,,Phoebe WRIGHT,30 AUG 1988,USA,2,,Lignano Sabbiadoro (ITA),16 JUL 2013,1159.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14324744,toplist
+34.0,2:00.23,,Laura ROESLER,19 DEC 1991,USA,5,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1158.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14320153,toplist
+35.0,2:00.25,,Fantu MAGISO,09 JUN 1992,ETH,3,,"Bislett Stadion, Oslo (NOR)",13 JUN 2013,1158.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14429098,toplist
+36.0,2:00.30,,Lea WALLACE,19 DEC 1988,USA,3,,Lignano Sabbiadoro (ITA),16 JUL 2013,1157.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14323560,toplist
+37.0,2:00.31,,Alena GLAZKOVA,06 MAY 1988,RUS,1h3,,Moskva (RUS) (i),12 FEB 2013,1180.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14387703,toplist
+38.0,2:00.32,,Svetlana CHERKASOVA,20 MAY 1978,RUS,2,,Sochi (RUS),26 MAY 2013,1157.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14297513,toplist
+39.0,2:00.39,,Hannah ENGLAND,06 MAR 1987,GBR,4,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1155.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14274986,toplist
+40.0,2:00.43,,Jessica SMITH,11 OCT 1989,CAN,5,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1155.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14321527,toplist
+41.0,2:00.45,,Jenny SIMPSON,23 AUG 1986,USA,1f1,,"Los Angeles, CA (USA)",17 MAY 2013,1154.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14305392,toplist
+42.0,2:00.49,,Aníta HINRIKSDÓTTIR,13 JAN 1996,ISL,1,,Mannheim (GER),30 JUN 2013,1153.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14401301,toplist
+43.0,2:00.53,,Geena GALL,18 JAN 1987,USA,3sf2,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1153.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14310643,toplist
+44.0,2:00.58,,Rababe ARAFI,12 JAN 1991,MAR,1f1,,Oordegem (BEL),06 JUL 2013,1152.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14290578,toplist
+44.0,2:00.58,,Rose-Anne GALLIGAN,09 DEC 1987,IRL,6,,"Olympic Stadium, London (GBR)",26 JUL 2013,1152.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14283222,toplist
+46.0,2:00.60,,Angelika CICHOCKA,15 MAR 1988,POL,2,,"Sports Park Mladost, Zagreb (CRO)",03 SEP 2013,1152.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14293508,toplist
+47.0,2:00.61,,LaTavia THOMAS,17 DEC 1988,USA,5sf2,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1151.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14322681,toplist
+47.0,2:00.61,,Marina POSPELOVA,23 JUL 1990,RUS,1,,Moskva (RUS),23 JUL 2013,1151.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14325987,toplist
+49.0,2:00.62,,Yelena SOBOLEVA,03 OCT 1982,RUS,3,,Sochi (RUS),26 MAY 2013,1151.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14299411,toplist
+50.0,2:00.76,,Sylivia Chematui CHESEBE,17 MAY 1987,KEN,3,,Nairobi (KEN),22 JUN 2013,1149.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14329964,toplist
+51.0,2:00.79,,Olha LYAKHOVA,18 MAR 1992,UKR,1f3,,Yalta (UKR),06 JUN 2013,1148.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14325668,toplist
+52.0,2:00.80,,Laura MUIR,09 MAY 1993,GBR,2h4,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1148.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14422111,toplist
+53.0,2:00.81,,Olena ZHUSHMAN,30 DEC 1985,UKR,2f1,,Bellinzona (SUI),11 JUN 2013,1148.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14304375,toplist
+54.0,2:00.82,,Manal EBAHRAOUI,06 JAN 1994,MAR,2,,Rabat (MAR),25 JUL 2013,1148.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14431568,toplist
+55.0,2:00.86,,Sifan HASSAN,01 JAN 1993,ETH,1,,Heusden-Zolder (BEL),13 JUL 2013,1147.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14489606,toplist
+56.0,2:00.88,,Chanelle PRICE,22 AUG 1990,USA,6sf2,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1147.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14319275,toplist
+57.0,2:00.93,,Tatyana VINOGRADOVA,09 DEC 1988,RUS,2f3,,Yerino (RUS),16 JUN 2013,1146.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14298554,toplist
+57.0,2:00.93,,Sanne VERSTEGEN-WOLTERS,10 NOV 1985,NED,1,,Huizingen (BEL),06 AUG 2013,1146.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14292246,toplist
+57.0,2:00.93,,Zoe BUCKMAN,21 DEC 1988,AUS,5,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1146.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14272380,toplist
+57.0,2:00.93,,Laura CROWE,05 SEP 1987,IRL,6,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1146.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14283172,toplist
+61.0,2:00.97,,Justine FEDRONIC,11 MAY 1991,FRA,9,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1145.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14309967,toplist
+62.0,2:00.98,,Amy WEISSENBACH,16 JUN 1994,USA,4sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1145.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14423484,toplist
+63.0,2:01.00,,Olena SIDORSKA,30 JUL 1994,UKR,5f2,,Yerino (RUS),02 JUN 2013,1144.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14330133,toplist
+64.0,2:01.02,,Jennifer MEADOWS,17 APR 1981,GBR,1sf1,,"Scandinavium, Göteborg (SWE) (i)",02 MAR 2013,1169.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14275784,toplist
+64.0,2:01.02,,Maggie VESSEY,23 DEC 1981,USA,5sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1144.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14323367,toplist
+66.0,2:01.07,,Anna SHCHAGINA,07 DEC 1991,RUS,3f3,,Yerino (RUS),16 JUN 2013,1143.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14390107,toplist
+67.0,2:01.12,,Diane CUMMINS,19 JAN 1974,CAN,2,,Victoria (CAN),05 JUL 2013,1142.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14268144,toplist
+68.0,2:01.13,,Karine BELLEAU-BÉLIVEAU,29 DEC 1983,CAN,3,,Victoria (CAN),05 JUL 2013,1142.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14329905,toplist
+69.0,2:01.17,,Selah BUSIENEI,27 DEC 1991,KEN,2,,Nairobi (KEN),11 MAY 2013,1141.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14479236,toplist
+70.0,2:01.22,,Kelly HETHERINGTON,10 MAR 1989,AUS,1,,Sydney (AUS),14 APR 2013,1140.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14271967,toplist
+71.0,2:01.25,,Tigst ASSEFA,03 DEC 1996,ETH,3f1,,Bellinzona (SUI),11 JUN 2013,1140.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14388506,toplist
+72.0,2:01.30,,Sahily DIAGO MESA,26 AUG 1995,CUB,1,,La Habana (CUB),28 JUN 2013,1139.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14465503,toplist
+73.0,2:01.34,,Anna ROSTKOWSKA,26 JUL 1980,POL,7,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1138.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14294353,toplist
+74.0,2:01.35,,Helen CROFTS,28 MAY 1990,CAN,3sf1,,"Central Stadium, Kazan (RUS)",08 JUL 2013,1138.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14329608,toplist
+75.0,2:01.38,,Gabriele GRUNEWALD,25 JUN 1986,USA,5,,"Hayward Field, Eugene, OR (USA)",31 MAY 2013,1138.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14304816,toplist
+76.0,2:01.40,,Marta MILANI,09 MAR 1987,ITA,4,,Lignano Sabbiadoro (ITA),16 JUL 2013,1137.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14284811,toplist
+77.0,2:01.43,,Clarisse MOH,06 DEC 1986,FRA,4f1,,Oordegem (BEL),06 JUL 2013,1137.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14273190,toplist
+78.0,2:01.44,,Anna BALAKSHINA,22 NOV 1986,RUS,2f2,,Moskva (RUS),15 JUL 2013,1137.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14362882,toplist
+79.0,2:01.48,,Renata PLIŚ,05 FEB 1985,POL,8,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1136.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14294279,toplist
+80.0,2:01.56,,Olga KOMANDINA,21 SEP 1989,RUS,1h2,,Moskva (RUS) (i),12 FEB 2013,1160.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14298511,toplist
+81.0,2:01.59,,Natalija PILIUŠINA,22 OCT 1990,LTU,5sf1,,"Central Stadium, Kazan (RUS)",08 JUL 2013,1134.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14290348,toplist
+82.0,2:01.64,,Selina BÜCHEL,26 JUL 1991,SUI,4sf1,,"Scandinavium, Göteborg (SWE) (i)",02 MAR 2013,1159.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14300684,toplist
+83.0,2:01.65,,Tuǧba KOYUNCU,16 FEB 1991,TUR,1f1,,Izmir (TUR),02 JUN 2013,1133.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14377221,toplist
+84.0,2:01.67,,Anastasiya TKACHUK,20 APR 1993,UKR,4f1,,Bellinzona (SUI),11 JUN 2013,1133.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14375877,toplist
+84.0,2:01.67,,Mary KURIA,29 NOV 1987,KEN,3,,Rovereto (ITA),03 SEP 2013,1133.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14419015,toplist
+86.0,2:01.68,,Svetlana ROGOZINA,26 DEC 1992,RUS,4f3,,Yerino (RUS),16 JUN 2013,1132.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14442618,toplist
+87.0,2:01.70,,Charlene LIPSEY,16 JUL 1991,USA,4,,"Eugene, OR (USA)",07 JUN 2013,1132.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14326493,toplist
+88.0,2:01.72,,Lydia WAFULA,15 FEB 1988,KEN,5,,Rovereto (ITA),03 SEP 2013,1132.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14289477,toplist
+89.0,2:01.74,,Khadija RAHMOUNI,30 NOV 1986,MAR,2,,Huelva (ESP),12 JUN 2013,1131.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14290755,toplist
+90.0,2:01.84,,Nicole SIFUENTES,30 JUN 1986,CAN,1f1,,Gent (BEL),03 AUG 2013,1130.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14268054,toplist
+91.0,2:01.87,,Yvonne HAK,30 JUN 1986,NED,4,,"Alexander Stadium, Birmingham (GBR)",30 JUN 2013,1129.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14291688,toplist
+91.0,2:01.87,,Tintu LUKA,26 APR 1989,IND,1,,Ranchi (IND),08 SEP 2013,1129.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14282954,toplist
+93.0,2:01.96,,Luiza GEGA,05 NOV 1988,ALB,4,,Mersin (TUR),29 JUN 2013,1127.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14272917,toplist
+94.0,2:01.98,,Rosibel GARCÍA,13 FEB 1981,COL,1,,Trujillo (PER),28 NOV 2013,1127.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14264010,toplist
+95.0,2:02.00,,Katie MACKEY,12 NOV 1987,USA,2f1,,Gent (BEL),03 AUG 2013,1127.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14310264,toplist
+96.0,2:02.04,,Ibtissam AIT ELBATOUL,26 NOV 1989,MAR,2,,Casablanca (MAR),06 JUL 2013,1126.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14441476,toplist
+97.0,2:02.05,,Chunyu WANG,17 JAN 1995,CHN,6h2,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1126.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14462001,toplist
+98.0,2:02.06,,Megan MALASARTE,01 AUG 1992,USA,7sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1126.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14443532,toplist
+99.0,2:02.10,,Samantha MURPHY,18 MAR 1992,CAN,5,,"Eugene, OR (USA)",07 JUN 2013,1125.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14375873,toplist
+100.0,2:02.12,,Anne KESSELRING,04 DEC 1989,GER,7,,"Hayward Field, Eugene, OR (USA)",31 MAY 2013,1125.0,women_800m,2013,https://worldathletics.org/athletes/athlete=14278294,toplist
+1.0,1:57.67,,Ajee' WILSON,08 MAY 1994,USA,1,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1204.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14411176,toplist
+2.0,1:57.74,,Sahily DIAGO MESA,26 AUG 1995,CUB,1,,La Habana (CUB),25 MAY 2014,1203.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14465503,toplist
+3.0,1:57.92,,Eunice Jepkoech SUM,10 APR 1988,KEN,2,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1200.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14423891,toplist
+4.0,1:58.15,,Marina ARZAMASOVA,17 DEC 1987,BLR,1,,"Letzigrund, Zürich (SUI)",16 AUG 2014,1196.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14427676,toplist
+5.0,1:58.63,,Winnie NANYONDO,23 AUG 1993,UGA,3,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1187.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14534257,toplist
+6.0,1:58.70,,Janeth JEPKOSGEI,13 DEC 1983,KEN,4,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1186.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14289031,toplist
+7.0,1:58.80,,Lynsey SHARP,11 JUL 1990,GBR,2,,"Letzigrund, Zürich (SUI)",16 AUG 2014,1184.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14276316,toplist
+8.0,1:58.84,,Brenda MARTINEZ,08 SEP 1987,USA,1,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1183.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14316143,toplist
+9.0,1:59.02,,Margarita MUKASHEVA,04 JAN 1986,KAZ,1,,Incheon (KOR),01 OCT 2014,1180.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14288662,toplist
+10.0,1:59.04,,Laura ROESLER,19 DEC 1991,USA,2,,"Sacramento, CA (USA)",29 JUN 2014,1179.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14320153,toplist
+11.0,1:59.19,,Tintu LUKA,26 APR 1989,IND,2,,Incheon (KOR),01 OCT 2014,1177.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14282954,toplist
+12.0,1:59.24,,Tigst ASSEFA,03 DEC 1996,ETH,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",03 JUL 2014,1176.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14388506,toplist
+13.0,1:59.30,,Molly LUDLOW,04 AUG 1987,USA,3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",03 JUL 2014,1175.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14305568,toplist
+14.0,1:59.48,,Rose Mary ALMANZA,13 JUL 1992,CUB,1,,"Stade Raymond Petit, Tomblaine (FRA)",27 JUN 2014,1172.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14365951,toplist
+14.0,1:59.48,,Jing ZHAO,09 JUL 1988,CHN,3,,Incheon (KOR),01 OCT 2014,1172.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14264335,toplist
+16.0,1:59.51,,Agatha JERUTO,02 APR 1994,KEN,1f1,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1171.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14425846,toplist
+17.0,1:59.63,,Joanna JÓŹWIK,30 JAN 1991,POL,3,,"Letzigrund, Zürich (SUI)",16 AUG 2014,1169.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14336174,toplist
+18.0,1:59.70,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,1,,Victoria (CAN),08 JUL 2014,1168.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14268335,toplist
+19.0,1:59.75,,Chanelle PRICE,22 AUG 1990,USA,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1167.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14319275,toplist
+20.0,1:59.77,,Jess JUDD,07 JAN 1995,GBR,3,,"Bislett Stadion, Oslo (NOR)",11 JUN 2014,1166.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14336301,toplist
+21.0,1:59.86,,Olga KOMANDINA,21 SEP 1989,RUS,2,,"Luzhniki, South Arena, Moskva (RUS)",12 JUN 2014,1165.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14298511,toplist
+22.0,1:59.92,,Olha LYAKHOVA,18 MAR 1992,UKR,2f1,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1164.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14325668,toplist
+23.0,1:59.93,,Lenka MASNÁ,22 APR 1985,CZE,4,,"Mestský Stadion, Ostrava (CZE)",17 JUN 2014,1163.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14262910,toplist
+24.0,1:59.95,,Sifan HASSAN,01 JAN 1993,NED,5,,"Mestský Stadion, Ostrava (CZE)",17 JUN 2014,1163.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14489606,toplist
+25.0,1:59.96,,Maggie VESSEY,23 DEC 1981,USA,2f1,,"Los Angeles, CA (USA)",15 MAY 2014,1163.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14323367,toplist
+26.0,2:00.06,,Rénelle LAMOTE,26 DEC 1993,FRA,8,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1161.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14424718,toplist
+27.0,2:00.08,,Alison LEONARD,17 MAR 1990,GBR,5,,"Hampden Park, Glasgow (GBR)",12 JUL 2014,1161.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14275590,toplist
+28.0,2:00.12,,Yekaterina KUPINA,02 FEB 1986,RUS,1f2,,Sochi (RUS),30 MAY 2014,1160.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14298343,toplist
+29.0,2:00.28,,Natoya GOULE,30 MAR 1991,JAM,1,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1157.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14285696,toplist
+30.0,2:00.30,,Angelika CICHOCKA,15 MAR 1988,POL,4,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1157.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14293508,toplist
+31.0,2:00.31,,Svetlana ROGOZINA,26 DEC 1992,RUS,1f4,,Moskva (RUS),03 JUL 2014,1157.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14442618,toplist
+32.0,2:00.32,,Jennifer MEADOWS,17 APR 1981,GBR,7,,"Hampden Park, Glasgow (GBR)",12 JUL 2014,1157.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14275784,toplist
+33.0,2:00.41,,Justine FEDRONIC,11 MAY 1991,FRA,9,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1155.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14309967,toplist
+34.0,2:00.49,,Margaret Nyairera WAMBUI,15 SEP 1995,KEN,1,,"Hayward Field, Eugene, OR (USA)",24 JUL 2014,1153.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14656975,toplist
+35.0,2:00.50,,Hannah ENGLAND,06 MAR 1987,GBR,1f1,,Oxford (GBR),19 JUL 2014,1153.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14274986,toplist
+36.0,2:00.51,,Noélie YARIGO,26 DEC 1985,BEN,1f1,,Ninove (BEL),02 AUG 2014,1153.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14270067,toplist
+37.0,2:00.55,,Sanne VERSTEGEN-WOLTERS,10 NOV 1985,NED,2,,Heusden-Zolder (BEL),19 JUL 2014,1152.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14292246,toplist
+38.0,2:00.58,,Malika AKKAOUI,25 DEC 1987,MAR,6,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1152.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14290566,toplist
+38.0,2:00.58,,Federica DEL BUONO,12 DEC 1994,ITA,5f1,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1152.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14480247,toplist
+40.0,2:00.59,,Angela PETTY,16 AUG 1991,NZL,1f1,,Stretford (GBR),12 JUL 2014,1152.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14293170,toplist
+41.0,2:00.65,,Heather KAMPF,19 JAN 1987,USA,4f2,,"Hayward Field, Eugene, OR (USA)",30 MAY 2014,1151.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14309194,toplist
+42.0,2:00.67,,Yevgeniya ZINUROVA,16 NOV 1982,RUS,2f2,,Sochi (RUS),30 MAY 2014,1150.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14299918,toplist
+42.0,2:00.67,,Laura MUIR,09 MAY 1993,GBR,4,,"Alexander Stadium, Birmingham (GBR)",24 AUG 2014,1150.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14422111,toplist
+44.0,2:00.91,,Charlene LIPSEY,16 JUL 1991,USA,2,,"Moratalaz, Madrid (ESP)",19 JUL 2014,1146.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14326493,toplist
+44.0,2:00.91,,Vanya STAMBOLOVA,28 NOV 1983,BUL,4,,"Letzigrund, Zürich (SUI)",16 AUG 2014,1146.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14268563,toplist
+46.0,2:00.92,,Marina POSPELOVA,23 JUL 1990,RUS,3,,"Luzhniki, South Arena, Moskva (RUS)",12 JUN 2014,1146.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14325987,toplist
+46.0,2:00.92,,Jessica SMITH,11 OCT 1989,CAN,3,,Heusden-Zolder (BEL),19 JUL 2014,1146.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14321527,toplist
+48.0,2:00.93,,Selina BÜCHEL,26 JUL 1991,SUI,1h3,,"Ergo Arena, Sopot (POL) (i)",07 MAR 2014,1170.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14300684,toplist
+49.0,2:00.95,,LaTavia THOMAS,17 DEC 1988,USA,3,,"Moratalaz, Madrid (ESP)",19 JUL 2014,1145.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14322681,toplist
+50.0,2:01.05,,Yevgeniya SUBBOTINA,30 OCT 1989,RUS,1,,Kazan (RUS),24 JUL 2014,1144.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14427230,toplist
+51.0,2:01.10,,Geena GALL,18 JAN 1987,USA,2f1,,"Walnut, CA (USA)",19 APR 2014,1143.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14310643,toplist
+52.0,2:01.12,,Shelby HOULIHAN,08 FEB 1993,USA,7,,"Sacramento, CA (USA)",29 JUN 2014,1142.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14368938,toplist
+53.0,2:01.13,,Anna MUSINA,03 NOV 1984,RUS,2,,Kazan (RUS),24 JUL 2014,1142.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14299428,toplist
+54.0,2:01.22,,Kate GRACE,24 OCT 1988,USA,3,,"Ann Arbor, MI (USA)",10 AUG 2014,1140.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14327446,toplist
+55.0,2:01.23,,Aníta HINRIKSDÓTTIR,13 JAN 1996,ISL,2,,"Letzigrund, Zürich (SUI)",28 AUG 2014,1140.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14401301,toplist
+56.0,2:01.24,,Elena Mirela LAVRIC,17 FEB 1991,ROU,3sf1,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1140.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14295709,toplist
+57.0,2:01.25,,Christina HERING,09 OCT 1994,GER,8,,"Olympiastadion, Berlin (GER)",31 AUG 2014,1140.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14446706,toplist
+58.0,2:01.26,,Brittany MCGOWAN,24 APR 1991,AUS,1,,Brisbane (AUS),29 MAR 2014,1140.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14455164,toplist
+59.0,2:01.29,,Anna SHCHAGINA,07 DEC 1991,RUS,1,,Moskva (RUS) (i),18 FEB 2014,1164.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14390107,toplist
+60.0,2:01.31,,Luiza GEGA,05 NOV 1988,ALB,1f1,,"Dinamo Arena, Tbilisi (GEO)",21 JUN 2014,1139.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14272917,toplist
+61.0,2:01.33,,Nataliya LUPU,04 NOV 1987,UKR,2f1,,"CSKA, Moskva (RUS) (i)",02 FEB 2014,1164.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14303856,toplist
+62.0,2:01.35,,Svetlana ULOGA,23 NOV 1986,RUS,1f1,,Montbéliard (FRA),06 JUN 2014,1138.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14297289,toplist
+63.0,2:01.38,,Diane CUMMINS,19 JAN 1974,CAN,2,,Victoria (CAN),08 JUL 2014,1138.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14268144,toplist
+64.0,2:01.45,,Anastasiya TKACHUK,20 APR 1993,UKR,2f3,,Kyiv (UKR),04 JUN 2014,1136.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14375877,toplist
+65.0,2:01.46,,Karine BELLEAU-BÉLIVEAU,29 DEC 1983,CAN,1f1,,"Palo Alto, CA (USA)",04 MAY 2014,1136.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14329905,toplist
+66.0,2:01.50,,Jemma SIMPSON,10 FEB 1984,GBR,7f2,,"Hayward Field, Eugene, OR (USA)",30 MAY 2014,1136.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14276350,toplist
+67.0,2:01.53,,Kelly HETHERINGTON,10 MAR 1989,AUS,2,,Brisbane (AUS),29 MAR 2014,1135.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14271967,toplist
+68.0,2:01.54,,Helen CROFTS,28 MAY 1990,CAN,3f1,,Ninove (BEL),02 AUG 2014,1135.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14329608,toplist
+69.0,2:01.55,,Zeyituna MOHAMMED,02 FEB 1996,ETH,1,,Addis Ababa (ETH),12 JUN 2014,1135.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14579510,toplist
+70.0,2:01.57,,Marilyn OKORO,23 SEP 1984,GBR,3,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1134.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14275966,toplist
+71.0,2:01.67,,Mary CAIN,03 MAY 1996,USA,4,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1133.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14411230,toplist
+72.0,2:01.68,,Cristina Guadalupe GUEVARA,11 DEC 1987,MEX,2,,Veracruz (MEX),25 NOV 2014,1132.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14291092,toplist
+73.0,2:01.70,,Fabienne KOHLMANN,06 NOV 1989,GER,1f2,,Regensburg (GER),07 JUN 2014,1132.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14278418,toplist
+74.0,2:01.73,,Lovisa LINDH,09 JUL 1991,SWE,2h1,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1131.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14302145,toplist
+75.0,2:01.75,,Christina RODGERS,04 AUG 1988,USA,2f2,,"Los Angeles, CA (USA)",15 MAY 2014,1131.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14320115,toplist
+75.0,2:01.75,,Katherine KATSANEVAKIS,06 NOV 1988,AUS,3,,"San Marcos, TX (USA)",23 MAY 2014,1131.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14271848,toplist
+77.0,2:01.76,,Marta MILANI,09 MAR 1987,ITA,1f2,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1131.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14284811,toplist
+78.0,2:01.78,,Georgia WASSALL,03 MAR 1996,AUS,2,,Sydney (AUS),15 MAR 2014,1131.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14455359,toplist
+79.0,2:01.79,,Treniere MOSER,27 OCT 1981,USA,2f1,,"Palo Alto, CA (USA)",04 MAY 2014,1130.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14307753,toplist
+80.0,2:01.82,,Hanna TARVER,22 OCT 1993,GBR,4f1,,Ninove (BEL),02 AUG 2014,1130.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14380483,toplist
+81.0,2:01.85,,Sylivia Chematui CHESEBE,17 MAY 1987,KEN,5,,"Stade Raymond Petit, Tomblaine (FRA)",27 JUN 2014,1129.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14329964,toplist
+82.0,2:01.86,,Mantegbosh MELESE,20 JAN 1988,ETH,2,,Addis Ababa (ETH),12 JUN 2014,1129.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14388511,toplist
+83.0,2:01.89,,Jenna WESTAWAY,19 JUN 1994,CAN,2,,"New York, NY (USA) (i)",15 FEB 2014,1155.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14367613,toplist
+83.0,2:01.89,,Emily DUDGEON,03 MAR 1993,GBR,1,,Watford (GBR),18 JUN 2014,1129.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14372889,toplist
+85.0,2:01.91,,Phoebe WRIGHT,30 AUG 1988,USA,1f1,,Dublin (IRL),11 JUL 2014,1128.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14324744,toplist
+86.0,2:01.92,,Sushma DEVI,07 MAY 1984,IND,4,,Incheon (KOR),01 OCT 2014,1128.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14282828,toplist
+87.0,2:01.94,,Shelayna OSKAN-CLARKE,20 JAN 1990,GBR,9,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1128.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14329259,toplist
+88.0,2:01.95,,Erica MOORE,25 MAR 1988,USA,5h4,,"Sacramento, CA (USA)",26 JUN 2014,1128.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14317298,toplist
+89.0,2:01.96,,Selma KAJAN,30 JUL 1991,AUS,2f1,,Dublin (IRL),11 JUL 2014,1127.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14271853,toplist
+90.0,2:01.97,,Yuneysi SANTIUSTI,24 DEC 1984,CUB,6f1,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1127.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14263389,toplist
+91.0,2:02.01,,Adelle TRACEY,27 MAY 1993,GBR,5f1,,"Los Angeles, CA (USA)",15 MAY 2014,1127.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14941414,toplist
+91.0,2:02.01,,Shannon LEINERT,30 JUN 1987,USA,2,,"Portland, OR (USA)",15 JUN 2014,1127.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14315233,toplist
+91.0,2:02.01,,Gabriele GRUNEWALD,25 JUN 1986,USA,2f2,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1127.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14304816,toplist
+94.0,2:02.02,,Nicole SIFUENTES,30 JUN 1986,CAN,4,,Heusden-Zolder (BEL),19 JUL 2014,1126.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14268054,toplist
+95.0,2:02.04,,Docus AJOK,12 JUL 1994,UGA,1,,Kampala (UGA),01 JUN 2014,1126.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14594859,toplist
+96.0,2:02.05,,Rachel AUBRY,18 MAR 1990,CAN,5f1,,Ninove (BEL),02 AUG 2014,1126.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14268428,toplist
+97.0,2:02.07,,Rose-Anne GALLIGAN,09 DEC 1987,IRL,2f1,,Manchester (GBR),31 MAY 2014,1125.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14283222,toplist
+97.0,2:02.07,,Clarisse MOH,06 DEC 1986,FRA,5,,Heusden-Zolder (BEL),19 JUL 2014,1125.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14273190,toplist
+99.0,2:02.14,,Cecilia BAROWSKI,07 DEC 1992,USA,3h1,,"Sacramento, CA (USA)",26 JUN 2014,1124.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14363187,toplist
+100.0,2:02.15,,Stephanie CHARNIGO,25 JUL 1988,USA,1f1,,"Boston, MA (USA) (i)",07 FEB 2014,1150.0,women_800m,2014,https://worldathletics.org/athletes/athlete=14307505,toplist
+1.0,1:56.99,,Eunice Jepkoech SUM,10 APR 1988,KEN,1,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1217.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14423891,toplist
+2.0,1:57.52,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,1sf3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1207.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14268335,toplist
+3.0,1:57.54,,Marina ARZAMASOVA,17 DEC 1987,BLR,2sf3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1207.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14427676,toplist
+4.0,1:57.62,,Francine NIYONSABA,05 MAY 1993,BDI,1f1,,"Stadio Guidobaldi, Rieti (ITA)",13 SEP 2015,1205.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14532686,toplist
+5.0,1:57.70,,Rose Mary ALMANZA,13 JUL 1992,CUB,2,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1204.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14365951,toplist
+6.0,1:57.71,,Lynsey SHARP,11 JUL 1990,GBR,1,,"Olympiastadion, Berlin (GER)",06 SEP 2015,1204.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14276316,toplist
+7.0,1:57.87,,Ajee' WILSON,08 MAY 1994,USA,2,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1201.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14411176,toplist
+8.0,1:57.95,,Selina BÜCHEL,26 JUL 1991,SUI,3,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1199.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14300684,toplist
+9.0,1:58.02,,Faith KIPYEGON,10 JAN 1994,KEN,2f1,,"Stadio Guidobaldi, Rieti (ITA)",13 SEP 2015,1198.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14413305,toplist
+10.0,1:58.34,,Fabienne KOHLMANN,06 NOV 1989,GER,2,,"Olympiastadion, Berlin (GER)",06 SEP 2015,1192.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14278418,toplist
+11.0,1:58.35,,Joanna JÓŹWIK,30 JAN 1991,POL,4sf3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1192.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14336174,toplist
+12.0,1:58.50,,Sifan HASSAN,01 JAN 1993,NED,5sf3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1189.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14489606,toplist
+13.0,1:58.55,,Rababe ARAFI,12 JAN 1991,MAR,1sf1,,"National Stadium, Beijing (CHN)",27 AUG 2015,1188.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14290578,toplist
+14.0,1:58.57,,Nataliya LUPU,04 NOV 1987,UKR,2sf1,,"National Stadium, Beijing (CHN)",27 AUG 2015,1188.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14303856,toplist
+15.0,1:58.64,,Olha LYAKHOVA,18 MAR 1992,UKR,3f1,,"Stadio Guidobaldi, Rieti (ITA)",13 SEP 2015,1187.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14325668,toplist
+16.0,1:58.68,,Molly LUDLOW,04 AUG 1987,USA,4,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1186.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14305568,toplist
+17.0,1:58.86,,Shelayna OSKAN-CLARKE,20 JAN 1990,GBR,1sf2,,"National Stadium, Beijing (CHN)",27 AUG 2015,1183.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14329259,toplist
+17.0,1:58.86,,Rénelle LAMOTE,26 DEC 1993,FRA,2sf2,,"National Stadium, Beijing (CHN)",27 AUG 2015,1183.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14424718,toplist
+19.0,1:59.03,,Malika AKKAOUI,25 DEC 1987,MAR,6sf3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1180.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14290566,toplist
+20.0,1:59.06,,Brenda MARTINEZ,08 SEP 1987,USA,3,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1179.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14316143,toplist
+20.0,1:59.06,,Angela PETTY,16 AUG 1991,NZL,1,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1179.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14293170,toplist
+22.0,1:59.10,,Chanelle PRICE,22 AUG 1990,USA,5,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1178.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14319275,toplist
+23.0,1:59.14,,Lucia KLOCOVÁ,20 NOV 1983,SVK,7sf3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1178.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14301465,toplist
+24.0,1:59.15,,Alysia MONTAÑO,23 APR 1986,USA,1,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1177.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14313660,toplist
+25.0,1:59.21,,Jennifer MEADOWS,17 APR 1981,GBR,1f1,,Wien (AUT) (i),31 JAN 2015,1199.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14275784,toplist
+26.0,1:59.26,,Simoya CAMPBELL-JOHNSON,01 MAR 1994,JAM,2,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1175.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14470017,toplist
+27.0,1:59.37,,Janeth JEPKOSGEI,13 DEC 1983,KEN,2,,"Icahn Stadium, New York, NY (USA)",13 JUN 2015,1174.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14289031,toplist
+28.0,1:59.54,,Christina HERING,09 OCT 1994,GER,2,,Nürnberg (GER),26 JUL 2015,1170.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14446706,toplist
+29.0,1:59.55,,Angelika CICHOCKA,15 MAR 1988,POL,5f1,,"Stadio Guidobaldi, Rieti (ITA)",13 SEP 2015,1170.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14293508,toplist
+30.0,1:59.59,,Caster SEMENYA,07 JAN 1991,RSA,3h1,,"National Stadium, Beijing (CHN)",26 AUG 2015,1170.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14330057,toplist
+30.0,1:59.59,,Fiona BENSON,25 MAY 1992,CAN,5sf2,,"National Stadium, Beijing (CHN)",27 AUG 2015,1170.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14464215,toplist
+32.0,1:59.63,,Natoya GOULE,30 MAR 1991,JAM,1,,Kingston (JAM),27 JUN 2015,1169.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14285696,toplist
+33.0,1:59.71,,Raevyn ROGERS,07 SEP 1996,USA,1,,"Eugene, OR (USA)",13 JUN 2015,1167.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14378260,toplist
+34.0,1:59.90,,Amela TERZIĆ,02 JAN 1993,SRB,1,,"Beroe Stadium, Stara Zagora (BUL)",20 JUN 2015,1164.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14333695,toplist
+35.0,1:59.91,,Sahily DIAGO MESA,26 AUG 1995,CUB,2,,Ponce (PUR),23 MAY 2015,1164.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14465503,toplist
+36.0,1:59.98,,Abeba AREGAWI,05 JUL 1990,SWE,4,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1163.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14360651,toplist
+37.0,2:00.03,,Shannon ROWBURY,19 SEP 1984,USA,5,,"Olympiastadion, Berlin (GER)",06 SEP 2015,1162.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14320310,toplist
+38.0,2:00.05,,Maggie VESSEY,23 DEC 1981,USA,1sf2,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1161.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14323367,toplist
+39.0,2:00.11,,Sofia ENNAOUI,30 AUG 1995,POL,5sf1,,"National Stadium, Beijing (CHN)",27 AUG 2015,1160.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14436869,toplist
+40.0,2:00.21,,Eglė BALČIŪNAITĖ,31 OCT 1988,LTU,4,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1158.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14290183,toplist
+40.0,2:00.21,,Anastasiya RYEMYEN,20 APR 1993,UKR,2,,Kirovograd (UKR),01 AUG 2015,1158.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14375877,toplist
+42.0,2:00.40,,Flavia Maria DE LIMA,01 JUL 1993,BRA,3,,"CIBC, Toronto (CAN)",22 JUL 2015,1155.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14496105,toplist
+43.0,2:00.42,,Laura MUIR,09 MAY 1993,GBR,2,,"Alexander Stadium, Birmingham (GBR)",07 JUN 2015,1155.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14422111,toplist
+43.0,2:00.42,,Treniere MOSER,27 OCT 1981,USA,7,,"Icahn Stadium, New York, NY (USA)",13 JUN 2015,1155.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14307753,toplist
+45.0,2:00.48,,Lauren WALLACE,04 MAY 1990,USA,5sf2,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1154.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14369147,toplist
+46.0,2:00.50,,Alison LEONARD,17 MAR 1990,GBR,1f1,,Oordegem (BEL),23 MAY 2015,1153.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14275590,toplist
+47.0,2:00.56,,Tintu LUKA,26 APR 1989,IND,1,,Kolkata (IND),19 SEP 2015,1152.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14282954,toplist
+48.0,2:00.60,,Charlene LIPSEY,16 JUL 1991,USA,9,,"Icahn Stadium, New York, NY (USA)",13 JUN 2015,1152.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14326493,toplist
+49.0,2:00.61,,Phoebe WRIGHT,30 AUG 1988,USA,3sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1151.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14324744,toplist
+50.0,2:00.63,,Claudia SAUNDERS,19 MAY 1994,FRA,2,,"Eugene, OR (USA)",13 JUN 2015,1151.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14373742,toplist
+51.0,2:00.76,,Dana MECKE,20 SEP 1987,USA,4sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1149.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14316795,toplist
+52.0,2:00.79,,Jenny SIMPSON,23 AUG 1986,USA,2f2,,"Los Angeles, CA (USA)",14 MAY 2015,1148.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14305392,toplist
+53.0,2:00.81,,McKayla FRICKER,19 APR 1992,USA,6sf2,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1148.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14455768,toplist
+54.0,2:00.83,,Yevgeniya SUBBOTINA,30 OCT 1989,RUS,1,,Yerino (RUS),25 JUL 2015,1147.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14427230,toplist
+55.0,2:00.91,,Florina PIERDEVARĂ,29 MAR 1990,ROU,4,,Mungyeong (KOR),05 OCT 2015,1146.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14295849,toplist
+56.0,2:00.95,,LaTavia THOMAS,17 DEC 1988,USA,3,,Sotteville-lès-Rouen (FRA),06 JUL 2015,1145.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14322681,toplist
+57.0,2:00.97,,Noélie YARIGO,26 DEC 1985,BEN,10,,"Icahn Stadium, New York, NY (USA)",13 JUN 2015,1145.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14270067,toplist
+58.0,2:01.01,,Aníta HINRIKSDÓTTIR,13 JAN 1996,ISL,5h6,,"National Stadium, Beijing (CHN)",26 AUG 2015,1144.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14401301,toplist
+59.0,2:01.07,,Jessica SMITH,11 OCT 1989,CAN,4f1,,"Portland, OR (USA)",14 JUN 2015,1143.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14321527,toplist
+60.0,2:01.10,,Adelle TRACEY,27 MAY 1993,GBR,1f1,,Ninove (BEL),01 AUG 2015,1143.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14941414,toplist
+61.0,2:01.11,,Alexa EFRAIMSON,20 FEB 1997,USA,1,,Liège (BEL),15 JUL 2015,1142.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14522335,toplist
+62.0,2:01.17,,Hanna GREEN,16 OCT 1994,USA,3,,"Eugene, OR (USA)",13 JUN 2015,1141.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14492679,toplist
+63.0,2:01.20,,Katie MACKEY,12 NOV 1987,USA,5f1,,"Portland, OR (USA)",14 JUN 2015,1141.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14310264,toplist
+64.0,2:01.21,,Ciara EVERARD,10 JUL 1990,IRL,2f1,,Oordegem (BEL),23 MAY 2015,1141.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14283205,toplist
+65.0,2:01.23,,Gabriele GRUNEWALD,25 JUN 1986,USA,5,,Bellinzona (SUI),21 JUL 2015,1140.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14304816,toplist
+66.0,2:01.26,,Docus AJOK,12 JUL 1994,UGA,2sf2,,"Main Stadium, Gwangju (KOR)",09 JUL 2015,1140.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14594859,toplist
+67.0,2:01.27,,Habitam ALEMU,09 JUL 1997,ETH,5,,"Stade Raymond Petit, Tomblaine (FRA)",01 JUL 2015,1140.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14730994,toplist
+68.0,2:01.30,,Charline MATHIAS,23 MAY 1992,LUX,6,,Bellinzona (SUI),21 JUL 2015,1139.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14335470,toplist
+69.0,2:01.31,,Yuliya STEPANOVA,03 JUL 1986,RUS,1f2,,Regensburg (GER),06 JUN 2015,1139.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14299108,toplist
+70.0,2:01.32,,Margaret Nyairera WAMBUI,15 SEP 1995,KEN,3,,"Hayward Field, Eugene, OR (USA)",29 MAY 2015,1139.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14656975,toplist
+71.0,2:01.43,,Esther GUERRERO,07 FEB 1990,ESP,7,,"Moratalaz, Madrid (ESP)",11 JUL 2015,1137.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14261358,toplist
+72.0,2:01.44,,Sarah SCHMIDT,04 OCT 1996,GER,1,,Jena (GER),02 AUG 2015,1137.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14497171,toplist
+73.0,2:01.46,,Déborah RODRÍGUEZ,02 DEC 1992,URU,1,,Lima (PER),14 JUN 2015,1136.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14304406,toplist
+73.0,2:01.46,,Annette Mwanzi LUKHUYI,21 JUL 1987,KEN,3,,Nairobi (KEN),01 AUG 2015,1136.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14289333,toplist
+75.0,2:01.56,,Sarah BROWN,15 OCT 1986,USA,3f1,,Victoria (CAN),10 JUN 2015,1134.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14306246,toplist
+75.0,2:01.56,,Rachel AUBRY,18 MAR 1990,CAN,3f1,,Ninove (BEL),01 AUG 2015,1134.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14268428,toplist
+77.0,2:01.59,,Shume Chaltu REGASA,13 DEC 1996,ETH,3,,Brazzaville (CGO),14 SEP 2015,1134.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14579505,toplist
+78.0,2:01.60,,Kokeb TESFAYE,05 MAY 1997,ETH,1,,Leuven (BEL),08 AUG 2015,1134.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14594975,toplist
+79.0,2:01.61,,Chrishuna WILLIAMS,31 MAR 1993,USA,1f1,,"Palo Alto, CA (USA)",02 MAY 2015,1134.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14369842,toplist
+79.0,2:01.61,,Svetlana ULOGA,23 NOV 1986,RUS,1f5,,Yerino (RUS),10 JUL 2015,1134.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14297289,toplist
+79.0,2:01.61,,Tatyana VINOGRADOVA,09 DEC 1988,RUS,2h2,,Cheboksary (RUS),03 AUG 2015,1134.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14298554,toplist
+82.0,2:01.62,,Shannon LEINERT,30 JUN 1987,USA,3,,"St. Louis, MO (USA)",04 JUN 2015,1133.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14315233,toplist
+83.0,2:01.69,,Trine MJÅLAND,30 JUN 1990,NOR,2f1,,Oordegem (BEL),30 MAY 2015,1132.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14364618,toplist
+84.0,2:01.71,,Ayvika MALANOVA,28 NOV 1992,RUS,,,Moskva (RUS) (i),28 JAN 2015,1158.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14408963,toplist
+85.0,2:01.72,,Elián PÉRIZ,01 APR 1984,ESP,8,,"Moratalaz, Madrid (ESP)",11 JUL 2015,1132.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14260786,toplist
+86.0,2:01.77,,Katie SNOWDEN,09 MAR 1994,GBR,1f1,,Manchester (GBR),30 MAY 2015,1131.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14360725,toplist
+87.0,2:01.82,,Alexandra BELL,04 NOV 1992,GBR,3,,Dublin (IRL),24 JUL 2015,1130.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14360105,toplist
+88.0,2:01.87,,Geena GALL,18 JAN 1987,USA,2f1,,"Los Angeles, CA (USA)",14 MAY 2015,1129.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14310643,toplist
+88.0,2:01.87,,Annie LEBLANC,29 APR 1992,CAN,6f1,,"Portland, OR (USA)",14 JUN 2015,1129.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14328931,toplist
+90.0,2:01.92,,Shelby HOULIHAN,08 FEB 1993,USA,1,,"Tempe, AZ (USA)",11 APR 2015,1128.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14368938,toplist
+91.0,2:01.93,,Kendra CHAMBERS,11 SEP 1990,USA,1,,"Austin, TX (USA)",11 APR 2015,1128.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14307439,toplist
+91.0,2:01.93,,Natalija PILIUŠINA,22 OCT 1990,LTU,3f1,,"Palo Alto, CA (USA)",02 MAY 2015,1128.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14290348,toplist
+91.0,2:01.93,,Lenka MASNÁ,22 APR 1985,CZE,2,,"Pankritio Stadium, Herakleion (GRE)",20 JUN 2015,1128.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14262910,toplist
+94.0,2:01.97,,Winnie NANYONDO,23 AUG 1993,UGA,3f1,,Kortrijk (BEL),11 JUL 2015,1127.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14534257,toplist
+94.0,2:01.97,,Emily DUDGEON,03 MAR 1993,GBR,4,,Dublin (IRL),24 JUL 2015,1127.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14372889,toplist
+96.0,2:02.02,,Lauren JOHNSON,04 MAY 1987,USA,2,,"Portland, OR (USA)",08 AUG 2015,1126.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14335068,toplist
+97.0,2:02.05,,Violah CHEPTOO,01 MAR 1989,KEN,7,,"Stade Raymond Petit, Tomblaine (FRA)",01 JUL 2015,1126.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14372181,toplist
+98.0,2:02.06,,Anastasiya ALEKSANDROVA,16 FEB 1994,RUS,1h1,,Saransk (RUS),15 JUN 2015,1126.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14434423,toplist
+98.0,2:02.06,,Sylivia Chematui CHESEBE,17 MAY 1987,KEN,4,,Nairobi (KEN),01 AUG 2015,1126.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14329964,toplist
+100.0,2:02.07,,Anna SHCHAGINA,07 DEC 1991,RUS,2f5,,Yerino (RUS),10 JUL 2015,1125.0,women_800m,2015,https://worldathletics.org/athletes/athlete=14390107,toplist
+1.0,1:55.28,,Caster SEMENYA,07 JAN 1991,RSA,1,,"Estádio Olímpico, Rio de Janeiro (BRA)",20 AUG 2016,1248.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14330057,toplist
+2.0,1:56.24,,Francine NIYONSABA,05 MAY 1993,BDI,2,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1230.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14532686,toplist
+3.0,1:56.89,,Margaret Nyairera WAMBUI,15 SEP 1995,KEN,3,,"Estádio Olímpico, Rio de Janeiro (BRA)",20 AUG 2016,1219.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14656975,toplist
+4.0,1:57.02,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,4,,"Estádio Olímpico, Rio de Janeiro (BRA)",20 AUG 2016,1216.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14268335,toplist
+5.0,1:57.37,,Joanna JÓŹWIK,30 JAN 1991,POL,5,,"Estádio Olímpico, Rio de Janeiro (BRA)",20 AUG 2016,1210.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14336174,toplist
+6.0,1:57.47,,Eunice Jepkoech SUM,10 APR 1988,KEN,3,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1208.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14423891,toplist
+7.0,1:57.68,,Molly LUDLOW,04 AUG 1987,USA,4,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1204.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14305568,toplist
+8.0,1:57.69,,Lynsey SHARP,11 JUL 1990,GBR,6,,"Estádio Olímpico, Rio de Janeiro (BRA)",20 AUG 2016,1204.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14276316,toplist
+9.0,1:58.01,,Rénelle LAMOTE,26 DEC 1993,FRA,2,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1198.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14424718,toplist
+10.0,1:58.28,,Kate GRACE,24 OCT 1988,USA,5,,"Letzigrund, Zürich (SUI)",01 SEP 2016,1193.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14327446,toplist
+11.0,1:58.36,,Marina ARZAMASOVA,17 DEC 1987,BLR,6,,"Letzigrund, Zürich (SUI)",01 SEP 2016,1192.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14427676,toplist
+12.0,1:58.49,,Rose Mary ALMANZA,13 JUL 1992,CUB,1f1,,Barcelona (ESP),30 JUN 2016,1189.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14365951,toplist
+13.0,1:58.60,,Natalya PRYSHCHEPA,11 SEP 1994,UKR,7,,"Letzigrund, Zürich (SUI)",01 SEP 2016,1187.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14426885,toplist
+14.0,1:58.77,,Selina BÜCHEL,26 JUL 1991,SUI,5,,"Stade Olympique de la Pontaise, Lausanne (SUI)",25 AUG 2016,1184.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14300684,toplist
+15.0,1:58.84,,Sahily DIAGO MESA,26 AUG 1995,CUB,1,,Puebla (MEX),17 APR 2016,1183.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14465503,toplist
+16.0,1:58.93,,Lisneidy VEITÍA,29 APR 1994,CUB,2f1,,Barcelona (ESP),30 JUN 2016,1181.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14412591,toplist
+17.0,1:58.97,,Angelika CICHOCKA,15 MAR 1988,POL,6,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1181.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14293508,toplist
+18.0,1:58.99,,Habitam ALEMU,09 JUL 1997,ETH,3h4,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1180.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14730994,toplist
+19.0,1:59.12,,Noélie YARIGO,26 DEC 1985,BEN,4h4,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1178.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14270067,toplist
+20.0,1:59.38,,Natoya GOULE,30 MAR 1991,JAM,1,,"Atlanta, GA (USA)",04 JUN 2016,1173.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14285696,toplist
+21.0,1:59.41,,Lovisa LINDH,09 JUL 1991,SWE,4sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1173.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14302145,toplist
+22.0,1:59.44,,Ajee' WILSON,08 MAY 1994,USA,2h2,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1172.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14411176,toplist
+23.0,1:59.45,,Shelayna OSKAN-CLARKE,20 JAN 1990,GBR,5sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1172.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14329259,toplist
+24.0,1:59.59,,Chrishuna WILLIAMS,31 MAR 1993,USA,3,,"Hayward Field, Eugene, OR (USA)",04 JUL 2016,1170.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14369842,toplist
+25.0,1:59.64,,Brenda MARTINEZ,08 SEP 1987,USA,1sf2,,"Hayward Field, Eugene, OR (USA)",02 JUL 2016,1169.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14316143,toplist
+26.0,1:59.70,,Nataliya LUPU,04 NOV 1987,UKR,2,,Lutsk (UKR),19 JUN 2016,1168.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14303856,toplist
+27.0,1:59.77,,Gudaf TSEGAY,23 JAN 1997,ETH,8,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1166.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14595214,toplist
+28.0,1:59.78,,Halimah NAKAAYI,16 OCT 1994,UGA,5h4,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1166.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14431159,toplist
+29.0,1:59.86,,Justine FEDRONIC,11 MAY 1991,FRA,2,,"Atlanta, GA (USA)",04 JUN 2016,1165.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14309967,toplist
+30.0,1:59.88,,Svetlana ULOGA,23 NOV 1986,RUS,1f3,,Moskva (RUS),01 JUL 2016,1164.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14297289,toplist
+30.0,1:59.88,,Winny CHEBET,20 DEC 1990,KEN,4,,"Olympic Stadium, London (GBR)",23 JUL 2016,1164.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14288808,toplist
+32.0,1:59.93,,Malika AKKAOUI,25 DEC 1987,MAR,4,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1163.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14290566,toplist
+32.0,1:59.93,,Chunyu WANG,17 JAN 1995,CHN,4h2,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1163.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14462001,toplist
+34.0,1:59.97,,Shannon ROWBURY,19 SEP 1984,USA,3,,"Eugene, OR (USA)",29 JUL 2016,1163.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14320310,toplist
+35.0,2:00.00,,Renée EYKENS,08 JUN 1996,BEL,3h5,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1162.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14474581,toplist
+36.0,2:00.04,,Yuneysi SANTIUSTI,24 DEC 1984,ITA,9,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1162.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14263389,toplist
+37.0,2:00.10,,Emily Cherotich TUEI,13 MAY 1986,KEN,8,,"Olympiastadion, Berlin (GER)",03 SEP 2016,1160.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14289041,toplist
+38.0,2:00.14,,Aníta HINRIKSDÓTTIR,13 JAN 1996,ISL,6h4,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1160.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14401301,toplist
+39.0,2:00.15,,Laura ROESLER,19 DEC 1991,USA,1f3,,"Los Angeles, CA (USA)",20 MAY 2016,1160.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14320153,toplist
+40.0,2:00.20,,Alysia MONTAÑO,23 APR 1986,USA,3sf2,,"Hayward Field, Eugene, OR (USA)",02 JUL 2016,1159.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14313660,toplist
+41.0,2:00.21,,Tigst ASSEFA,03 DEC 1996,ETH,4h5,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1158.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14388506,toplist
+42.0,2:00.24,,Aleksandra GULYAYEVA,30 APR 1994,RUS,1,,Zhukovskiy (RUS),21 JUL 2016,1158.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14502964,toplist
+43.0,2:00.27,,Sifan HASSAN,01 JAN 1993,NED,5h3,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1157.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14489606,toplist
+44.0,2:00.32,,Olha LYAKHOVA,18 MAR 1992,UKR,2,,Bellinzona (SUI),06 JUN 2016,1157.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14325668,toplist
+45.0,2:00.34,,Sofia ENNAOUI,30 AUG 1995,POL,3,,Bellinzona (SUI),06 JUN 2016,1156.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14436869,toplist
+46.0,2:00.37,,Christina HERING,09 OCT 1994,GER,1,,Dessau (GER),27 MAY 2016,1156.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14446706,toplist
+47.0,2:00.46,,Margarita MUKASHEVA,04 JAN 1986,KAZ,1,,Almaty (KAZ),05 JUL 2016,1154.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14288662,toplist
+48.0,2:00.49,,Fabienne KOHLMANN,06 NOV 1989,GER,1h1,,Kassel (GER),18 JUN 2016,1153.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14278418,toplist
+49.0,2:00.52,,Alison LEONARD,17 MAR 1990,GBR,5,,"Olympic Stadium, London (GBR)",23 JUL 2016,1153.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14275590,toplist
+50.0,2:00.53,,Alexandra BELL,04 NOV 1992,GBR,1,,Dublin (IRL),22 JUL 2016,1153.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14360105,toplist
+51.0,2:00.55,,Heather KAMPF,19 JAN 1987,USA,3,,"Somerville, MA (USA)",17 JUN 2016,1152.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14309194,toplist
+52.0,2:00.57,,Laura MUIR,09 MAY 1993,GBR,1f1,,Montbéliard (FRA),01 JUN 2016,1152.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14422111,toplist
+52.0,2:00.57,,Winnie NANYONDO,23 AUG 1993,UGA,1f2,,Leiden (NED),11 JUN 2016,1152.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14534257,toplist
+52.0,2:00.57,,Lucia KLOCOVÁ,20 NOV 1983,SVK,4h8,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1152.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14301465,toplist
+55.0,2:00.58,,Tintu LUKA,26 APR 1989,IND,6h3,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1152.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14282954,toplist
+56.0,2:00.59,,Raevyn ROGERS,07 SEP 1996,USA,5,,"Hayward Field, Eugene, OR (USA)",04 JUL 2016,1152.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14378260,toplist
+57.0,2:00.62,,Angela PETTY,16 AUG 1991,NZL,2,,Liège (BEL),13 JUL 2016,1151.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14293170,toplist
+58.0,2:00.65,,Charlene LIPSEY,16 JUL 1991,USA,5,,"Atlanta, GA (USA)",04 JUN 2016,1151.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14326493,toplist
+59.0,2:00.74,,Jennifer MEADOWS,17 APR 1981,GBR,4,,Bellinzona (SUI),06 JUN 2016,1149.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14275784,toplist
+59.0,2:00.74,,Sanne VERSTEGEN-WOLTERS,10 NOV 1985,NED,1f1,,Sollentuna (SWE),28 JUN 2016,1149.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14292246,toplist
+61.0,2:00.76,,Kendra CHAMBERS,11 SEP 1990,USA,1,,Lignano Sabbiadoro (ITA),13 JUL 2016,1149.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14307439,toplist
+62.0,2:00.79,,Ciara MAGEEAN,12 MAR 1992,IRL,2,,Dublin (IRL),22 JUL 2016,1148.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14275665,toplist
+63.0,2:00.80,,Chanelle PRICE,22 AUG 1990,USA,6,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1148.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14319275,toplist
+64.0,2:00.81,,Kenia SINCLAIR,14 JUL 1980,JAM,6,,"Atlanta, GA (USA)",04 JUN 2016,1148.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14285911,toplist
+65.0,2:00.82,,Maggie VESSEY,23 DEC 1981,USA,3f1,,"Palo Alto, CA (USA)",01 MAY 2016,1148.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14323367,toplist
+66.0,2:00.94,,Hedda HYNNE,13 MAR 1990,NOR,7,,"Olympisch Stadion, Amsterdam (NED)",09 JUL 2016,1145.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14458686,toplist
+67.0,2:00.96,,Sylivia Chematui CHESEBE,17 MAY 1987,KEN,4,,Eldoret (KEN),01 JUL 2016,1145.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14329964,toplist
+68.0,2:00.98,,Eglay Nafuna NALYANYA,28 MAY 1996,KEN,5,,Eldoret (KEN),01 JUL 2016,1145.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14520779,toplist
+69.0,2:00.99,,Alexa EFRAIMSON,20 FEB 1997,USA,2f1,,"Portland, OR (USA)",15 MAY 2016,1145.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14522335,toplist
+69.0,2:00.99,,Amela TERZIĆ,02 JAN 1993,SRB,2h1,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1145.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14333695,toplist
+71.0,2:01.02,,Olivia BAKER,12 JUN 1996,USA,4f1,,"Palo Alto, CA (USA)",01 MAY 2016,1144.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14411226,toplist
+72.0,2:01.03,,Phoebe WRIGHT,30 AUG 1988,USA,3f3,,"Los Angeles, CA (USA)",20 MAY 2016,1144.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14324744,toplist
+73.0,2:01.09,,Yuliya KAROL,26 JUN 1991,BLR,5h8,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1143.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14426626,toplist
+74.0,2:01.10,,Sarah MCDONALD,02 AUG 1993,GBR,1f1,,Oxford (GBR),23 JUL 2016,1143.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14472518,toplist
+75.0,2:01.12,,Simoya CAMPBELL-JOHNSON,01 MAR 1994,JAM,2,,Lignano Sabbiadoro (ITA),13 JUL 2016,1142.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14470017,toplist
+76.0,2:01.20,,Esther GUERRERO,07 FEB 1990,ESP,5f1,,"Moratalaz, Madrid (ESP)",23 JUN 2016,1141.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14261358,toplist
+77.0,2:01.21,,Santa TKHAKUR,23 APR 1993,RUS,2,,Zhukovskiy (RUS),21 JUL 2016,1141.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14406383,toplist
+78.0,2:01.22,,Anastasiya RYEMYEN,20 APR 1993,UKR,4,,Heusden-Zolder (BEL),16 JUL 2016,1140.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14375877,toplist
+79.0,2:01.23,,Florina PIERDEVARĂ,29 MAR 1990,ROU,1,,Florø (NOR),04 JUN 2016,1140.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14295849,toplist
+80.0,2:01.24,,Adelle TRACEY,27 MAY 1993,GBR,1f1,,Watford (GBR),28 MAY 2016,1140.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14941414,toplist
+81.0,2:01.27,,Selma KAJAN,30 JUL 1991,AUS,4f1,,Barcelona (ESP),30 JUN 2016,1140.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14271853,toplist
+82.0,2:01.29,,McKayla FRICKER,19 APR 1992,USA,3,,"Houston, TX (USA)",23 JUL 2016,1139.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14455768,toplist
+83.0,2:01.34,,Hannah ENGLAND,06 MAR 1987,GBR,3,,Padova (ITA),17 JUL 2016,1138.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14274986,toplist
+84.0,2:01.39,,Nelly JEPKOSGEI,14 JUL 1991,KEN,7,,Bellinzona (SUI),06 JUN 2016,1137.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14373314,toplist
+85.0,2:01.47,,Katie MACKEY,12 NOV 1987,USA,5f1,,"Palo Alto, CA (USA)",01 MAY 2016,1136.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14310264,toplist
+86.0,2:01.49,,Claudia Mihaela BOBOCEA,11 JUN 1992,ROU,3f2,,Leiden (NED),11 JUN 2016,1136.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14377909,toplist
+86.0,2:01.49,,Rababe ARAFI,12 JAN 1991,MAR,5,,Durban (RSA),26 JUN 2016,1136.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14290578,toplist
+88.0,2:01.55,,Konstanze KLOSTERHALFEN,18 FEB 1997,GER,1f1,,Leverkusen (GER),08 JUL 2016,1135.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14496249,toplist
+89.0,2:01.56,,Shelby HOULIHAN,08 FEB 1993,USA,3f1,,"Portland, OR (USA)",15 MAY 2016,1134.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14368938,toplist
+90.0,2:01.59,,Lauren JOHNSON,04 MAY 1987,USA,1f2,,"Portland, OR (USA)",12 JUN 2016,1134.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14335068,toplist
+91.0,2:01.63,,Brittany MCGOWAN,24 APR 1991,AUS,1f1,,Nivelles (BEL),18 JUN 2016,1133.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14455164,toplist
+91.0,2:01.63,,Tanja SPILL,16 DEC 1995,GER,2f1,,Leverkusen (GER),08 JUL 2016,1133.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14429758,toplist
+93.0,2:01.65,,Clarisse MOH,06 DEC 1986,FRA,2f1,,Nivelles (BEL),18 JUN 2016,1133.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14273190,toplist
+94.0,2:01.67,,Lora STOREY,19 OCT 1989,AUS,1f2,,"Palo Alto, CA (USA)",01 MAY 2016,1133.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14450892,toplist
+95.0,2:01.73,,Trine MJÅLAND,30 JUN 1990,NOR,6sf2,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1131.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14364618,toplist
+96.0,2:01.75,,Megan KRUMPOCH,31 AUG 1992,USA,4f1,,Kessel-Lo (BEL),30 JUL 2016,1131.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14451794,toplist
+97.0,2:01.77,,Yngvild ELVEMO,28 MAY 1990,NOR,4,,"Olympiastadion, Stockholm (SWE)",16 JUN 2016,1131.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14376283,toplist
+98.0,2:01.80,,Anastasiya ALEKSANDROVA,16 FEB 1994,RUS,3,,Cheboksary (RUS),21 JUN 2016,1130.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14434423,toplist
+99.0,2:01.84,,Jessica SMITH,11 OCT 1989,CAN,2f2,,"Palo Alto, CA (USA)",01 MAY 2016,1130.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14321527,toplist
+100.0,2:01.86,,Déborah RODRÍGUEZ,02 DEC 1992,URU,6h6,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1129.0,women_800m,2016,https://worldathletics.org/athletes/athlete=14304406,toplist
+1.0,1:55.16,,Caster SEMENYA,07 JAN 1991,RSA,1,,"Olympic Stadium, London (GBR)",13 AUG 2017,1250.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14330057,toplist
+2.0,1:55.47,,Francine NIYONSABA,05 MAY 1993,BDI,2,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1245.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14532686,toplist
+3.0,1:55.61,,Ajee' WILSON,08 MAY 1994,USA,3,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1242.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14411176,toplist
+4.0,1:56.81,,Sifan HASSAN,01 JAN 1993,NED,4,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1220.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14489606,toplist
+5.0,1:56.87,,Margaret Nyairera WAMBUI,15 SEP 1995,KEN,3,,"Letzigrund, Zürich (SUI)",24 AUG 2017,1219.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14656975,toplist
+6.0,1:57.01,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,5,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1216.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14268335,toplist
+7.0,1:57.05,,Habitam ALEMU,09 JUL 1997,ETH,4,,"Letzigrund, Zürich (SUI)",24 AUG 2017,1216.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14730994,toplist
+8.0,1:57.38,,Charlene LIPSEY,16 JUL 1991,USA,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1210.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14326493,toplist
+9.0,1:57.78,,Eunice Jepkoech SUM,10 APR 1988,KEN,3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1202.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14423891,toplist
+10.0,1:58.01,,Lynsey SHARP,11 JUL 1990,GBR,6,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1198.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14276316,toplist
+11.0,1:58.13,,Winny CHEBET,20 DEC 1990,KEN,2,,"Sports Park Mladost, Zagreb (CRO)",29 AUG 2017,1196.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14288808,toplist
+12.0,1:58.34,,Aleksandra GULYAYEVA,30 APR 1994,RUS,1,,Zhukovskiy (RUS),29 JUL 2017,1192.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14502964,toplist
+13.0,1:58.41,,Angelika CICHOCKA,15 MAR 1988,POL,6,,"Olympic Stadium, London (GBR)",13 AUG 2017,1191.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14293508,toplist
+14.0,1:58.43,,Brenda MARTINEZ,08 SEP 1987,USA,7,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1190.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14316143,toplist
+15.0,1:58.69,,Laura MUIR,09 MAY 1993,GBR,5,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1186.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14422111,toplist
+16.0,1:58.77,,Lovisa LINDH,09 JUL 1991,SWE,6,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1184.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14302145,toplist
+17.0,1:58.82,,Natalya PRYSHCHEPA,11 SEP 1994,UKR,8,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1183.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14426885,toplist
+18.0,1:59.10,,Raevyn ROGERS,07 SEP 1996,USA,1f1,,"Torrance, CA (USA)",15 APR 2017,1178.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14378260,toplist
+19.0,1:59.11,,Rose Mary ALMANZA,13 JUL 1992,CUB,1,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1178.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14365951,toplist
+20.0,1:59.20,,Svetlana ULOGA,23 NOV 1986,RUS,2,,Zhukovskiy (RUS),29 JUL 2017,1177.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14297289,toplist
+21.0,1:59.29,,Joanna JÓŹWIK,30 JAN 1991,POL,1,,"Arena Toruń, Toruń (POL) (i)",10 FEB 2017,1197.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14336174,toplist
+22.0,1:59.30,,Kate GRACE,24 OCT 1988,USA,1f1,,"Portland, OR (USA)",11 JUN 2017,1175.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14327446,toplist
+23.0,1:59.37,,Genzebe DIBABA,08 FEB 1991,ETH,5,,"Suhaim bin Hamad Stadium, Doha (QAT)",05 MAY 2017,1174.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14259874,toplist
+24.0,1:59.46,,Selina BÜCHEL,26 JUL 1991,SUI,5,,"Hayward Field, Eugene, OR (USA)",27 MAY 2017,1172.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14300684,toplist
+25.0,1:59.54,,Laura ROESLER,19 DEC 1991,USA,2f1,,"Torrance, CA (USA)",15 APR 2017,1170.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14320153,toplist
+26.0,1:59.55,,Sanne VERSTEGEN-WOLTERS,10 NOV 1985,NED,2,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1170.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14292246,toplist
+27.0,1:59.65,,Konstanze KLOSTERHALFEN,18 FEB 1997,GER,1f6,,Pfungstadt (GER),03 JUN 2017,1168.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14496249,toplist
+28.0,1:59.74,,Noélie YARIGO,26 DEC 1985,BEN,3sf1,,"Olympic Stadium, London (GBR)",11 AUG 2017,1167.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14270067,toplist
+29.0,1:59.82,,Shelayna OSKAN-CLARKE,20 JAN 1990,GBR,2,,"Olympic Stadium, London (GBR)",09 JUL 2017,1165.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14329259,toplist
+30.0,1:59.84,,Olha LYAKHOVA,18 MAR 1992,UKR,5,,"Olympiastadion, Stockholm (SWE)",18 JUN 2017,1165.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14325668,toplist
+31.0,1:59.87,,Hedda HYNNE,13 MAR 1990,NOR,3,,"Olympic Stadium, London (GBR)",09 JUL 2017,1165.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14458686,toplist
+32.0,1:59.95,,Nelly JEPKOSGEI,14 JUL 1991,BRN,1f1,,Rehlingen (GER),05 JUN 2017,1163.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14373314,toplist
+33.0,1:59.97,,Kseniya SAVINA,04 JUN 1989,RUS,3,,Zhukovskiy (RUS),29 JUL 2017,1163.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14377057,toplist
+34.0,2:00.03,,Chrishuna WILLIAMS,31 MAR 1993,USA,3,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1162.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14369842,toplist
+35.0,2:00.05,,Aníta HINRIKSDÓTTIR,13 JAN 1996,ISL,6,,"Bislett Stadion, Oslo (NOR)",15 JUN 2017,1161.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14401301,toplist
+36.0,2:00.17,,Yuneysi SANTIUSTI,24 DEC 1984,ITA,3,,Bellinzona (SUI),18 JUL 2017,1159.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14263389,toplist
+37.0,2:00.18,,Emily Cherotich TUEI,13 MAY 1986,KEN,3,,Nairobi (KEN),24 JUN 2017,1159.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14289041,toplist
+38.0,2:00.22,,Winnie NANYONDO,23 AUG 1993,UGA,4,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1158.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14534257,toplist
+39.0,2:00.26,,Adelle TRACEY,27 MAY 1993,GBR,6sf1,,"Olympic Stadium, London (GBR)",11 AUG 2017,1158.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14941414,toplist
+40.0,2:00.34,,Yekaterina KUPINA,02 FEB 1986,RUS,3f3,,Yerino (RUS),15 JUL 2017,1156.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14298343,toplist
+41.0,2:00.38,,Chanelle PRICE,22 AUG 1990,USA,3f1,,"Torrance, CA (USA)",15 APR 2017,1155.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14319275,toplist
+42.0,2:00.43,,Hanna HERMANSSON,18 MAY 1989,SWE,7sf1,,"Olympic Stadium, London (GBR)",11 AUG 2017,1155.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14408520,toplist
+43.0,2:00.44,,Angela PETTY,16 AUG 1991,NZL,3f4,,"Los Angeles, CA (USA)",18 MAY 2017,1154.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14293170,toplist
+44.0,2:00.48,,Eglė BALČIŪNAITĖ,31 OCT 1988,LTU,6sf2,,"Olympic Stadium, London (GBR)",11 AUG 2017,1154.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14290183,toplist
+45.0,2:00.53,,Hannah FIELDS,04 FEB 1993,USA,2f1,,"Portland, OR (USA)",11 JUN 2017,1153.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14680084,toplist
+46.0,2:00.56,,Natoya GOULE,30 MAR 1991,JAM,2f1,,"Nashville, TN (USA)",10 JUN 2017,1152.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14285696,toplist
+47.0,2:00.61,,Kore TOLA,16 JAN 1997,ETH,1,,"FBK Stadium, Hengelo (NED)",10 JUN 2017,1151.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14579506,toplist
+48.0,2:00.62,,Emily RICHARDS,21 JUL 1995,USA,3f1,,"Nashville, TN (USA)",10 JUN 2017,1151.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14531868,toplist
+48.0,2:00.62,,Alexandra BELL,04 NOV 1992,GBR,8,,"Olympic Stadium, London (GBR)",09 JUL 2017,1151.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14360105,toplist
+50.0,2:00.65,,Samantha WATSON,10 NOV 1999,USA,4,,Bellinzona (SUI),18 JUL 2017,1151.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14625816,toplist
+51.0,2:00.69,,Jazmine FRAY,06 JUN 1997,USA,1f1,,"Clemson, SC (USA) (i)",11 FEB 2017,1174.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14529273,toplist
+52.0,2:00.71,,Malika AKKAOUI,25 DEC 1987,MAR,1,,Abidjan (CIV),24 JUL 2017,1150.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14290566,toplist
+53.0,2:00.77,,Mahlet MULUGETA,20 MAR 1995,ETH,2,,"FBK Stadium, Hengelo (NED)",10 JUN 2017,1148.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14477315,toplist
+53.0,2:00.77,,Esther GUERRERO,07 FEB 1990,ESP,5,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1148.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14261358,toplist
+53.0,2:00.77,,Christina HERING,09 OCT 1994,GER,5,,Bellinzona (SUI),18 JUL 2017,1148.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14446706,toplist
+53.0,2:00.77,,Tatyana VINOGRADOVA,09 DEC 1988,RUS,1h1,,Zhukovskiy (RUS),28 JUL 2017,1148.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14298554,toplist
+57.0,2:00.79,,Docus AJOK,12 JUL 1994,UGA,1f1,,Huelva (ESP),14 JUN 2017,1148.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14594859,toplist
+58.0,2:00.80,,Halimah NAKAAYI,16 OCT 1994,UGA,2f1,,Barcelona (ESP),29 JUN 2017,1148.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14431159,toplist
+59.0,2:00.84,,Ce'Aira BROWN,04 NOV 1993,USA,3,,"New York, NY (USA)",06 JUL 2017,1147.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14463544,toplist
+60.0,2:00.90,,Cecilia BAROWSKI,07 DEC 1992,USA,4f4,,"Los Angeles, CA (USA)",18 MAY 2017,1146.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14363187,toplist
+60.0,2:00.90,,Georgia GRIFFITH,05 DEC 1996,AUS,3f1,,"Portland, OR (USA)",11 JUN 2017,1146.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14549778,toplist
+62.0,2:00.92,,Yume KITAMURA,23 DEC 1995,JPN,1,,Fukui (JPN),10 SEP 2017,1146.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14664059,toplist
+63.0,2:00.95,,Alexa EFRAIMSON,20 FEB 1997,USA,5f1,,"Portland, OR (USA)",11 JUN 2017,1145.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14522335,toplist
+64.0,2:01.10,,Kendra CHAMBERS,11 SEP 1990,USA,5f1,,"Torrance, CA (USA)",15 APR 2017,1143.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14307439,toplist
+65.0,2:01.23,,Hannah ENGLAND,06 MAR 1987,GBR,6,,"Sports Park Mladost, Zagreb (CRO)",29 AUG 2017,1140.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14274986,toplist
+66.0,2:01.25,,Sarah MCDONALD,02 AUG 1993,GBR,7,,"Sports Park Mladost, Zagreb (CRO)",29 AUG 2017,1140.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14472518,toplist
+67.0,2:01.28,,Hanna GREEN,16 OCT 1994,USA,1,,"Atlanta, GA (USA)",14 MAY 2017,1139.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14492679,toplist
+68.0,2:01.36,,Justine FEDRONIC,11 MAY 1991,FRA,3,,"New York, NY (USA) (i)",11 FEB 2017,1163.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14309967,toplist
+69.0,2:01.42,,Shea COLLINSWORTH,18 FEB 1995,USA,1f1,,"Ames, IA (USA) (i)",11 FEB 2017,0.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14736215,toplist
+69.0,2:01.42,,Adanech ANBESA,23 JAN 1998,ETH,3,,"FBK Stadium, Hengelo (NED)",10 JUN 2017,1137.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14714491,toplist
+71.0,2:01.45,,Yelena MURASHOVA,14 DEC 1987,RUS,5,,Zhukovskiy (RUS),29 JUL 2017,1136.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14423954,toplist
+72.0,2:01.46,,Keely SMALL,09 JUN 2001,AUS,1f1,,Canberra (AUS),11 MAR 2017,1136.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14576087,toplist
+72.0,2:01.46,,Jackline WAMBUI,08 FEB 2000,KEN,1,,"Kasarani, Nairobi (KEN)",16 JUL 2017,1136.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14801322,toplist
+74.0,2:01.50,,Gena LÖFSTRAND,23 OCT 1995,RSA,2f1,,Luzern (SUI),11 JUL 2017,1136.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14467937,toplist
+75.0,2:01.54,,Sofia ENNAOUI,30 AUG 1995,POL,2,,Radom (POL),04 JUN 2017,1135.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14436869,toplist
+75.0,2:01.54,,Brooke FELDMEIER,26 JAN 1996,USA,3,,"Eugene, OR (USA)",10 JUN 2017,1135.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14487045,toplist
+77.0,2:01.56,,Annie LEBLANC,29 APR 1992,CAN,6f1,,"Portland, OR (USA)",11 JUN 2017,1134.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14328931,toplist
+78.0,2:01.57,,Anastasiya RYEMYEN,20 APR 1993,UKR,3,,Metz (FRA) (i),12 FEB 2017,1160.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14375877,toplist
+79.0,2:01.62,,Santa TKHAKUR,23 APR 1993,RUS,4f3,,Yerino (RUS),15 JUL 2017,1133.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14406383,toplist
+80.0,2:01.64,,Jenny SIMPSON,23 AUG 1986,USA,8,,"Sports Park Mladost, Zagreb (CRO)",29 AUG 2017,1133.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14305392,toplist
+81.0,2:01.68,,Kenyetta IYEVBELE,22 AUG 1992,USA,2f2,,"Concord, MA (USA)",01 JUN 2017,1132.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14437845,toplist
+82.0,2:01.72,,Brittany MCGOWAN,24 APR 1991,AUS,4f1,,Barcelona (ESP),29 JUN 2017,1132.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14455164,toplist
+83.0,2:01.73,,Dana MECKE,20 SEP 1987,USA,5,,"Hayward Field, Eugene, OR (USA)",26 MAY 2017,1131.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14316795,toplist
+84.0,2:01.74,,Lauren JOHNSON,04 MAY 1987,USA,1,,Lignano Sabbiadoro (ITA),12 JUL 2017,1131.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14335068,toplist
+85.0,2:01.87,,Laura WEIGHTMAN,01 JUL 1991,GBR,2f1,,Stretford (GBR),25 JUL 2017,1129.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14276688,toplist
+86.0,2:01.90,,Lora STOREY,19 OCT 1989,AUS,2f1,,Canberra (AUS),11 MAR 2017,1128.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14450892,toplist
+87.0,2:01.92,,Marina ARZAMASOVA,17 DEC 1987,BLR,4h4,,"Olympic Stadium, London (GBR)",10 AUG 2017,1128.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14427676,toplist
+88.0,2:01.93,,Renée EYKENS,08 JUN 1996,BEL,9,,"Sports Park Mladost, Zagreb (CRO)",29 AUG 2017,1128.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14474581,toplist
+89.0,2:01.96,,Olesya MURATOVA,25 OCT 1992,RUS,5f3,,Yerino (RUS),15 JUL 2017,1127.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14404260,toplist
+89.0,2:01.96,,Dina ALEKSANDROVA,09 AUG 1992,RUS,2h1,,Zhukovskiy (RUS),28 JUL 2017,1127.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14408822,toplist
+91.0,2:02.00,,Tigist KETEMA,15 SEP 1998,ETH,1,,Sabadell (ESP) (i),07 FEB 2017,1153.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14751320,toplist
+92.0,2:02.03,,Amanda ECCLESTON,18 JUN 1990,USA,4f2,,"Concord, MA (USA)",01 JUN 2017,1126.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14569199,toplist
+93.0,2:02.06,,LaTavia THOMAS,17 DEC 1988,USA,2,,Baie Mahault (FRA),17 MAY 2017,1126.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14322681,toplist
+93.0,2:02.06,,Lydia Jeruto LAGAT,23 NOV 2000,KEN,2,,"Kasarani, Nairobi (KEN)",16 JUL 2017,1126.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14796129,toplist
+95.0,2:02.07,,Kimarra MCDONALD,14 AUG 1987,JAM,5f2,,"Concord, MA (USA)",01 JUN 2017,1125.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14316491,toplist
+96.0,2:02.09,,Jacqueline FAIRCHILD,03 MAY 1989,GBR,3f1,,Stretford (GBR),25 JUL 2017,1125.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14378309,toplist
+97.0,2:02.10,,Clarisse MOH,06 DEC 1986,FRA,7f1,,Oordegem (BEL),27 MAY 2017,1125.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14273190,toplist
+98.0,2:02.11,,Síofra CLÉIRIGH BÜTTNER,21 JUL 1995,IRL,1sf1,,"Lexington, KY (USA)",26 MAY 2017,1125.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14408010,toplist
+99.0,2:02.13,,Lindsey BUTTERWORTH,27 SEP 1992,CAN,2f1,,Ninove (BEL),15 JUL 2017,1124.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14373715,toplist
+100.0,2:02.14,,Natalia EVANGELIDOU,10 MAR 1991,CYP,6f1,,Luzern (SUI),11 JUL 2017,1124.0,women_800m,2017,https://worldathletics.org/athletes/athlete=14474809,toplist
+,1:55.45,,Caster SEMENYA,07 JAN 1991,RSA,1.,,IAAF World Championships,19 AUG 2009,,,2009,,major_meet
+,1:57.90,,Janeth JEPKOSGEI,13 DEC 1983,KEN,2.,,IAAF World Championships,19 AUG 2009,,,2009,,major_meet
+,1:57.93,,Jennifer MEADOWS,17 APR 1981,GBR,3.,,IAAF World Championships,19 AUG 2009,,,2009,,major_meet
+,1:58.00,,Yuliya KREVSUN,08 DEC 1980,UKR,4.,,IAAF World Championships,19 AUG 2009,,,2009,,major_meet
+,1:58.68,,Mariya SAVINOVA,13 AUG 1985,RUS,5.,,IAAF World Championships,19 AUG 2009,,,2009,,major_meet
+,1:58.81,,Elisa CUSMA,24 JUL 1981,ITA,6.,,IAAF World Championships,19 AUG 2009,,,2009,,major_meet
+,1:58.81,,Mayte MARTÍNEZ,17 MAY 1976,ESP,7.,,IAAF World Championships,19 AUG 2009,,,2009,,major_meet
+,2:00.32,,Marilyn OKORO,23 SEP 1984,GBR,8.,,IAAF World Championships,19 AUG 2009,,,2009,,major_meet
+,1:58.85,,Yvonne HAK,30 JUN 1986,NED,1.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,1:59.39,,Jennifer MEADOWS,17 APR 1981,GBR,2.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,1:59.48,,Lucia KLOCOVÁ,20 NOV 1983,SVK,3.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,1:59.90,,Jemma SIMPSON,10 FEB 1984,GBR,4.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,1:59.91,,Lenka MASNÁ,22 APR 1985,CZE,5.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,1:59.97,,Mayte MARTÍNEZ,17 MAY 1976,ESP,6.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,DQ,,Svetlana KLYUKA,27 DEC 1978,RUS, - ,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,DQ,,Mariya SAVINOVA,13 AUG 1985,RUS, - ,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,1:56.35,,Caster SEMENYA,07 JAN 1991,RSA,1.,,IAAF World Championships,04 SEP 2011,,,2011,,major_meet
+,1:57.42,,Janeth JEPKOSGEI,13 DEC 1983,KEN,2.,,IAAF World Championships,04 SEP 2011,,,2011,,major_meet
+,1:57.48,,Alysia MONTAÑO,23 APR 1986,USA,3.,,IAAF World Championships,04 SEP 2011,,,2011,,major_meet
+,1:58.50,,Maggie VESSEY,23 DEC 1981,USA,4.,,IAAF World Championships,04 SEP 2011,,,2011,,major_meet
+,1:58.66,,Kenia SINCLAIR,14 JUL 1980,JAM,5.,,IAAF World Championships,04 SEP 2011,,,2011,,major_meet
+,DQ,,Mariya SAVINOVA,13 AUG 1985,RUS, - ,,IAAF World Championships,04 SEP 2011,,,2011,,major_meet
+,DQ,,Yekaterina KOSTETSKAYA,31 DEC 1986,RUS, - ,,IAAF World Championships,04 SEP 2011,,,2011,,major_meet
+,DQ,,Yuliya STEPANOVA,03 JUL 1986,RUS, - ,,IAAF World Championships,04 SEP 2011,,,2011,,major_meet
+,1:57.23,,Caster SEMENYA,07 JAN 1991,RSA,1.,,The XXX Olympic Games,11 AUG 2012,,,2012,,major_meet
+,1:57.59,,Pamela JELIMO,05 DEC 1989,KEN,2.,,The XXX Olympic Games,11 AUG 2012,,,2012,,major_meet
+,1:57.93,,Alysia MONTAÑO,23 APR 1986,USA,3.,,The XXX Olympic Games,11 AUG 2012,,,2012,,major_meet
+,1:59.63,,Francine NIYONSABA,05 MAY 1993,BDI,4.,,The XXX Olympic Games,11 AUG 2012,,,2012,,major_meet
+,2:00.19,,Janeth JEPKOSGEI,13 DEC 1983,KEN,5.,,The XXX Olympic Games,11 AUG 2012,,,2012,,major_meet
+,DQ,,Mariya SAVINOVA,13 AUG 1985,RUS, - ,,The XXX Olympic Games,11 AUG 2012,,,2012,,major_meet
+,DQ,,Yekaterina POISTOGOVA,01 MAR 1991,RUS, - ,,The XXX Olympic Games,11 AUG 2012,,,2012,,major_meet
+,DQ,,Yelena ARZHAKOVA,08 SEP 1989,RUS, - ,,The XXX Olympic Games,11 AUG 2012,,,2012,,major_meet
+,2:00.52,,Lynsey SHARP,11 JUL 1990,GBR,1.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,2:01.02,,Marina ARZAMASOVA,17 DEC 1987,BLR,2.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,2:01.29,,Liliya LOBANOVA,14 OCT 1985,UKR,3.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,2:01.38,,Lucia KLOCOVÁ,20 NOV 1983,SVK,4.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,2:02.14,,Jemma SIMPSON,10 FEB 1984,GBR,5.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,2:06.59,,Natalija PILIUŠINA,22 OCT 1990,LTU,6.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,DQ,,Irina MARACHEVA,24 SEP 1984,RUS, - ,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,DQ,,Yelena ARZHAKOVA,08 SEP 1989,RUS, - ,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,1:57.38,,Eunice Jepkoech SUM,10 APR 1988,KEN,1.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,1:57.91,,Brenda MARTINEZ,08 SEP 1987,USA,2.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,1:57.95,,Alysia MONTAÑO,23 APR 1986,USA,3.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,1:58.21,,Ajee' WILSON,08 MAY 1994,USA,4.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,1:59.79,,Nataliya LUPU,04 NOV 1987,UKR,5.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,2:00.59,,Lenka MASNÁ,22 APR 1985,CZE,6.,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,DQ,,Mariya SAVINOVA,13 AUG 1985,RUS, - ,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,DQ,,Yekaterina POISTOGOVA,01 MAR 1991,RUS, - ,,IAAF World Championships,18 AUG 2013,,,2013,,major_meet
+,1:58.15,,Marina ARZAMASOVA,17 DEC 1987,BLR,1.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,1:58.80,,Lynsey SHARP,11 JUL 1990,GBR,2.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,1:59.63,,Joanna JÓŹWIK,30 JAN 1991,POL,3.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,2:00.91,,Vanya STAMBOLOVA,28 NOV 1983,BUL,4.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,2:01.65,,Jess JUDD,07 JAN 1995,GBR,5.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,2:09.25,,Elena Mirela LAVRIC,17 FEB 1991,ROU,6.,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,DQ,,Yekaterina POISTOGOVA,01 MAR 1991,RUS, - ,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,DQ,,Svetlana ROGOZINA,26 DEC 1992,RUS, - ,,Zürich European Championships,16 AUG 2014,,,2014,,major_meet
+,1:58.03,,Marina ARZAMASOVA,17 DEC 1987,BLR,1.,,IAAF World Championships,29 AUG 2015,,,2015,,major_meet
+,1:58.12,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,2.,,IAAF World Championships,29 AUG 2015,,,2015,,major_meet
+,1:58.18,,Eunice Jepkoech SUM,10 APR 1988,KEN,3.,,IAAF World Championships,29 AUG 2015,,,2015,,major_meet
+,1:58.90,,Rababe ARAFI,12 JAN 1991,MAR,4.,,IAAF World Championships,29 AUG 2015,,,2015,,major_meet
+,1:58.99,,Shelayna OSKAN-CLARKE,20 JAN 1990,GBR,5.,,IAAF World Championships,29 AUG 2015,,,2015,,major_meet
+,1:58.99,,Nataliya LUPU,04 NOV 1987,UKR,6.,,IAAF World Championships,29 AUG 2015,,,2015,,major_meet
+,1:59.09,,Joanna JÓŹWIK,30 JAN 1991,POL,7.,,IAAF World Championships,29 AUG 2015,,,2015,,major_meet
+,1:59.70,,Rénelle LAMOTE,26 DEC 1993,FRA,8.,,IAAF World Championships,29 AUG 2015,,,2015,,major_meet
+,1:55.28,,Caster SEMENYA,07 JAN 1991,RSA,1.,,The XXXI Olympic Games,20 AUG 2016,,,2016,,major_meet
+,1:56.49,,Francine NIYONSABA,05 MAY 1993,BDI,2.,,The XXXI Olympic Games,20 AUG 2016,,,2016,,major_meet
+,1:56.89,,Margaret Nyairera WAMBUI,15 SEP 1995,KEN,3.,,The XXXI Olympic Games,20 AUG 2016,,,2016,,major_meet
+,1:57.02,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,4.,,The XXXI Olympic Games,20 AUG 2016,,,2016,,major_meet
+,1:57.37,,Joanna JÓŹWIK,30 JAN 1991,POL,5.,,The XXXI Olympic Games,20 AUG 2016,,,2016,,major_meet
+,1:57.69,,Lynsey SHARP,11 JUL 1990,GBR,6.,,The XXXI Olympic Games,20 AUG 2016,,,2016,,major_meet
+,1:59.10,,Marina ARZAMASOVA,17 DEC 1987,BLR,7.,,The XXXI Olympic Games,20 AUG 2016,,,2016,,major_meet
+,1:59.57,,Kate GRACE,24 OCT 1988,USA,8.,,The XXXI Olympic Games,20 AUG 2016,,,2016,,major_meet
+,1:59.70,,Natalya PRYSHCHEPA,11 SEP 1994,UKR,1.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,2:00.19,,Rénelle LAMOTE,26 DEC 1993,FRA,2.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,2:00.37,,Lovisa LINDH,09 JUL 1991,SWE,3.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,2:00.47,,Selina BÜCHEL,26 JUL 1991,SUI,4.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,2:00.53,,Yuneysi SANTIUSTI,24 DEC 1984,ITA,5.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,2:00.57,,Joanna JÓŹWIK,30 JAN 1991,POL,6.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,2:00.94,,Hedda HYNNE,13 MAR 1990,NOR,7.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,2:02.55,,Aníta HINRIKSDÓTTIR,13 JAN 1996,ISL,8.,,European Athletics Championships,09 JUL 2016,,,2016,,major_meet
+,1:55.16,,Caster SEMENYA,07 JAN 1991,RSA,1.,,IAAF World Championships in Athletics,13 AUG 2017,,,2017,,major_meet
+,1:55.92,,Francine NIYONSABA,05 MAY 1993,BDI,2.,,IAAF World Championships in Athletics,13 AUG 2017,,,2017,,major_meet
+,1:56.65,,Ajee' WILSON,08 MAY 1994,USA,3.,,IAAF World Championships in Athletics,13 AUG 2017,,,2017,,major_meet
+,1:57.54,,Margaret Nyairera WAMBUI,15 SEP 1995,KEN,4.,,IAAF World Championships in Athletics,13 AUG 2017,,,2017,,major_meet
+,1:57.68,,Melissa BISHOP-NRIAGU,05 AUG 1988,CAN,5.,,IAAF World Championships in Athletics,13 AUG 2017,,,2017,,major_meet
+,1:58.41,,Angelika CICHOCKA,15 MAR 1988,POL,6.,,IAAF World Championships in Athletics,13 AUG 2017,,,2017,,major_meet
+,1:58.73,,Charlene LIPSEY,16 JUL 1991,USA,7.,,IAAF World Championships in Athletics,13 AUG 2017,,,2017,,major_meet
+,1:58.98,,Lynsey SHARP,11 JUL 1990,GBR,8.,,IAAF World Championships in Athletics,13 AUG 2017,,,2017,,major_meet
 ,2:00.38,,Natalya PRYSHCHEPA,11 SEP 1994,UKR,1.,,European Athletics Championships,10 AUG 2018,,,2018,,major_meet
 ,2:00.62,,Rénelle LAMOTE,26 DEC 1993,FRA,2.,,European Athletics Championships,10 AUG 2018,,,2018,,major_meet
 ,2:00.79,,Olha LYAKHOVA,18 MAR 1992,UKR,3.,,European Athletics Championships,10 AUG 2018,,,2018,,major_meet
@@ -1366,6 +2447,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,2:05.60,,Kendra CHAMBERS,11 SEP 1990,USA,7.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,2:06.91,,Samantha WATSON,10 NOV 1999,USA,8.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,2:07.04,,Síofra CLÉIRIGH BÜTTNER,21 JUL 1995,IRL,9.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
+,DNF,,Alexa EFRAIMSON,20 FEB 1997,USA,,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,1:56.30,,Athing MU,08 JUN 2002,USA,1.,,"World Athletics Championships, Oregon 2022",24 JUL 2022,,,2022,,major_meet
 ,1:56.38,,Keely HODGKINSON,03 MAR 2002,GBR,2.,,"World Athletics Championships, Oregon 2022",24 JUL 2022,,,2022,,major_meet
 ,1:56.71,,Mary MORAA,15 JUN 2000,KEN,3.,,"World Athletics Championships, Oregon 2022",24 JUL 2022,,,2022,,major_meet

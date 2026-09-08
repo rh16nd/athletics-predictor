@@ -1331,14 +1331,1168 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Nat.1,Venue,Date,Results Score,discipline,
 ,DNF,,Wilberforce Chemiat KONES,19 SEP 1993,KEN,,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
 ,DNF,,Wesley LANGAT,07 JUL 1994,KEN,,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
 ,DNF,,Mohamed TINDOUFT,12 MAR 1993,MAR,,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
-,8:22.55,,Conseslus KIPRUTO,08 DEC 1994,KEN,1.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,8:29.70,,Matthew HUGHES,03 AUG 1989,CAN,2.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,8:32.89,,Yohanes CHIAPPINELLI,18 AUG 1997,ITA,3.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,8:33.76,,Fernando CARRO,01 APR 1992,ESP,4.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,8:37.00,,Kosei YAMAGUCHI,19 AUG 1991,JPN,5.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,8:40.69,,John KOECH,23 AUG 1995,BRN,6.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,DNS,,Evan JAGER,08 MAR 1989,USA,,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,DNF,,Soufiane EL BAKKALI,07 JAN 1996,MAR,,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
+1.0,8:00.57,,Paul Kipsiele KOECH,10 NOV 1981,KEN,1,,Heusden-Zolder (BEL),20 JUL 2008,1255.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208637,toplist
+2.0,8:07.64,,Richard Kipkemboi MATEELONG,14 OCT 1983,KEN,1,,Doha (QAT),09 MAY 2008,1223.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14209047,toplist
+3.0,8:08.53,,Tareq Mubarak TAHER,1986,BRN,1,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1219.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14175111,toplist
+4.0,8:08.95,,Mahiedine MEKHISSI,15 MAR 1985,FRA,2,,"Letzigrund, Zürich (SUI)",29 AUG 2008,1217.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14186447,toplist
+5.0,8:09.05,,Michael KIPYEGO,02 OCT 1983,KEN,3,,"Letzigrund, Zürich (SUI)",29 AUG 2008,1216.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208532,toplist
+6.0,8:09.25,,Ezekiel KEMBOI,25 MAY 1982,KEN,1,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1215.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14207908,toplist
+7.0,8:10.26,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,2,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2008,1211.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208442,toplist
+8.0,8:11.10,,Mustafa MOHAMED,01 MAR 1979,SWE,3,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1207.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14227863,toplist
+9.0,8:12.50,,Simon VROEMEN,11 MAY 1969,NED,1,,Cottbus (GER),11 JUN 2008,1200.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14214729,toplist
+10.0,8:12.72,,Bouabdellah TAHRI,20 DEC 1978,FRA,4,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1199.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14187746,toplist
+11.0,8:13.20,,Hamid EZZINE,05 OCT 1983,MAR,3,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1197.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14212132,toplist
+12.0,8:13.47,,Yacob JARSO,05 FEB 1988,ETH,4,,"National Stadium, Beijing (CHN)",18 AUG 2008,1196.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14181522,toplist
+13.0,8:13.87,,Collins KOSGEI,04 AUG 1986,KEN,2,,Doha (QAT),09 MAY 2008,1194.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208742,toplist
+14.0,8:14.29,,Benjamin KIPLAGAT,04 MAR 1989,UGA,2,,"FBK Stadium, Hengelo (NED)",24 MAY 2008,1192.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14229601,toplist
+15.0,8:14.32,,Brahim TALEB,16 FEB 1985,MAR,4,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1192.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14212492,toplist
+16.0,8:14.52,,Wesley KIPROTICH,01 AUG 1979,KEN,2,,Stockholm (SWE),22 JUL 2008,1191.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208432,toplist
+17.0,8:14.68,,Nahom Mesfin TARIKU,03 JUN 1989,ETH,1,,Neerpelt (BEL),31 MAY 2008,1191.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14181645,toplist
+18.0,8:14.74,,Vincent ZOUAOUI DANDRIEUX,12 OCT 1980,FRA,5,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1190.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14188220,toplist
+19.0,8:15.58,,Abdelkader HACHLAF,03 JUL 1979,MAR,2,,Rabat (MAR),14 JUN 2008,1186.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14212177,toplist
+20.0,8:15.80,,Abubaker Ali KAMAL,08 NOV 1983,QAT,2,,Huelva (ESP),13 JUN 2008,1185.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14219053,toplist
+21.0,8:16.36,,Reuben KOSGEI,12 AUG 1979,KEN,2,,Neerpelt (BEL),31 MAY 2008,1183.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208767,toplist
+21.0,8:16.36,,Youcef ABDI,07 DEC 1977,AUS,6,,"National Stadium, Beijing (CHN)",18 AUG 2008,1183.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14180225,toplist
+23.0,8:17.28,,Jonathan Muia NDIKU,18 SEP 1991,KEN,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",13 JUL 2008,1179.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14209367,toplist
+24.0,8:17.34,,Anthony FAMIGLIETTI,08 NOV 1978,USA,3h2,,"National Stadium, Beijing (CHN)",16 AUG 2008,1179.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14237511,toplist
+25.0,8:17.37,,Mohamed-Khaled BELABBAS,04 JUL 1981,FRA,6,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1178.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14183168,toplist
+26.0,8:18.97,,Ivan LUKYANOV,31 JAN 1981,MDA,7h2,,"National Stadium, Beijing (CHN)",16 AUG 2008,1171.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14212711,toplist
+27.0,8:19.13,,Tarik Langat AKDAG,16 JUN 1988,KEN,4,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1170.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208848,toplist
+28.0,8:19.81,,Abraham CHIRCHIR,01 AUG 1980,KEN,2,,Heusden-Zolder (BEL),20 JUL 2008,1167.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14207659,toplist
+29.0,8:19.86,,Ruben RAMOLEFI,17 JUL 1978,RSA,1h3,,"National Stadium, Beijing (CHN)",16 AUG 2008,1167.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14221021,toplist
+30.0,8:20.07,,Rubén PALOMEQUE,14 AUG 1980,ESP,3,,Heusden-Zolder (BEL),20 JUL 2008,1166.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14165479,toplist
+31.0,8:20.32,,Krijn VAN KOOLWIJK,30 AUG 1981,BEL,4,,Heusden-Zolder (BEL),20 JUL 2008,1165.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14177228,toplist
+32.0,8:20.84,,Daniel HULING,16 JUL 1983,USA,6,,"Stade Louis II, Monaco (MON)",29 JUL 2008,1163.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14241342,toplist
+33.0,8:21.13,,Pieter DESMET,07 JUN 1983,BEL,5,,Heusden-Zolder (BEL),20 JUL 2008,1161.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14177586,toplist
+34.0,8:21.16,,Ildar MINSHIN,05 FEB 1985,RUS,1,,Tula (RUS),06 JUL 2008,1161.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14223230,toplist
+35.0,8:21.24,,Boštjan BUČ,13 APR 1980,SLO,8h2,,"National Stadium, Beijing (CHN)",16 AUG 2008,1161.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14225013,toplist
+36.0,8:21.46,,Kyle ALCORN,18 MAR 1985,USA,6,,Heusden-Zolder (BEL),20 JUL 2008,1160.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14231108,toplist
+37.0,8:21.47,,William NELSON,11 SEP 1984,USA,2,,"Eugene, OR (USA)",05 JUL 2008,1160.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14247058,toplist
+38.0,8:21.73,,Matteo VILLANI,28 AUG 1982,ITA,8,,Heusden-Zolder (BEL),20 JUL 2008,1159.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14201702,toplist
+39.0,8:21.81,,Chakir BOUJATTAOUI,16 JAN 1983,MAR,8,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1158.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14214857,toplist
+40.0,8:21.99,,Joshua MCADAMS,26 MAR 1980,USA,3,,"Eugene, OR (USA)",05 JUL 2008,1158.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14245262,toplist
+41.0,8:22.01,,Abdellatif CHEMLAL,11 JAN 1982,MAR,1,,Castellón (ESP),07 JUN 2008,1158.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14211971,toplist
+42.0,8:22.07,,Roba GARI,12 APR 1982,ETH,1,,"Stadion Juliska, Praha (CZE)",16 JUN 2008,1157.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14181609,toplist
+43.0,8:22.1h,,Elijah CHELIMO,20 APR 1987,KEN,1,,Brazzaville (CGO),01 JUN 2008,1157.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14207503,toplist
+44.0,8:22.20,,Willy Rutto KOMEN,22 DEC 1987,KEN,3,,Nairobi (KEN),18 APR 2008,1157.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208677,toplist
+44.0,8:22.20,,Tomasz SZYMKOWIAK,05 JUL 1983,POL,3,,Neerpelt (BEL),31 MAY 2008,1157.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14217721,toplist
+46.0,8:22.35,,Jukka KESKISALO,27 MAR 1981,FIN,6,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1156.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14182035,toplist
+47.0,8:22.95,,Andrew LEMONCELLO,12 OCT 1982,GBR,8,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1153.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14189887,toplist
+48.0,8:23.19,,Eliseo MARTÍN,05 NOV 1973,ESP,5h3,,"National Stadium, Beijing (CHN)",16 AUG 2008,1152.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14165844,toplist
+49.0,8:23.28,,José Luis BLANCO,03 JUN 1975,ESP,3,,Huelva (ESP),13 JUN 2008,1152.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14167058,toplist
+50.0,8:23.65,,Jamel CHATBI,30 APR 1984,MAR,1,,Casablanca (MAR),22 JUN 2008,1150.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14211964,toplist
+51.0,8:23.66,,Stuart STOKES,05 DEC 1976,GBR,3,,"Stadion Juliska, Praha (CZE)",16 JUN 2008,1150.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14190891,toplist
+52.0,8:24.04,,Pavel POTAPOVICH,26 NOV 1980,RUS,1,,Moskva (RUS),10 JUN 2008,1148.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14223625,toplist
+53.0,8:24.14,,Itai MAGIDI,09 JAN 1981,ISR,1,,Longeville (FRA),04 JUL 2008,1148.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14199311,toplist
+54.0,8:24.19,,David LANGAT,10 MAR 1983,KEN,5,,"Stadion Juliska, Praha (CZE)",16 JUN 2008,1148.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208842,toplist
+55.0,8:24.30,,Roman USOV,04 JUN 1978,RUS,2,,Tula (RUS),06 JUL 2008,1147.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14224371,toplist
+56.0,8:24.7h,,Abraham KEBETO,1986,ETH,3,,Brazzaville (CGO),01 JUN 2008,1146.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14181535,toplist
+57.0,8:25.09,,David Biwott CHEMWENO,18 DEC 1981,KEN,2,,Longeville (FRA),04 JUL 2008,1144.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14207532,toplist
+58.0,8:25.12,,Hicham SADOUK,18 MAY 1984,MAR,4,,Rabat (MAR),31 MAY 2008,1144.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14212211,toplist
+59.0,8:25.14,,Patrick Kipyegon TERER,06 JUL 1989,KEN,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",13 JUL 2008,1144.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14209891,toplist
+60.0,8:25.28,,Andrey FARNOSOV,09 JUL 1980,RUS,3,,Longeville (FRA),04 JUL 2008,1143.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14222139,toplist
+61.0,8:25.41,,Zakrya Ali KAMIL,25 MAR 1988,QAT,2,,Tanger (MAR),13 JUL 2008,1142.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14327994,toplist
+62.0,8:25.71,,Ali Thamer KAMAL,12 NOV 1988,QAT,7,,"FBK Stadium, Hengelo (NED)",24 MAY 2008,1141.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14219054,toplist
+63.0,8:25.90,,Marcin CHABOWSKI,28 JUN 1986,POL,2,,Szczecin (POL),06 JUL 2008,1140.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14216466,toplist
+64.0,8:26.13,,Irba LAKHAL,12 DEC 1975,FRA,4,,Neerpelt (BEL),31 MAY 2008,1139.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14185746,toplist
+65.0,8:26.25,,Antonio David JIMÉNEZ,18 FEB 1977,ESP,9,,Heusden-Zolder (BEL),20 JUL 2008,1139.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14166106,toplist
+66.0,8:26.58,,Bjørnar Ustad KRISTENSEN,26 JAN 1982,NOR,5,,Neerpelt (BEL),31 MAY 2008,1137.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14215367,toplist
+67.0,8:26.66,,Filmon GHIRMAI,25 JAN 1979,GER,10,,Heusden-Zolder (BEL),20 JUL 2008,1137.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14192206,toplist
+68.0,8:26.91,,Rabie MAKHLOUFI,11 NOV 1986,ALG,9,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1136.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14180690,toplist
+69.0,8:27.00,,Martin DENT,08 FEB 1979,AUS,1,,Sydney (AUS),16 FEB 2008,1135.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14179817,toplist
+70.0,8:27.06,,Julius NYAMU,01 DEC 1977,KEN,2,,"Mangueirão, Belém (BRA)",25 MAY 2008,1135.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14209484,toplist
+70.0,8:27.06,,Peter NOWILL,15 JUN 1979,AUS,8,,Rabat (MAR),14 JUN 2008,1135.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14179045,toplist
+72.0,8:27.53,,Ismaïli JILALI,08 JUL 1979,MAR,5,,Rabat (MAR),31 MAY 2008,1133.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14212241,toplist
+73.0,8:27.56,,Abdelghani AIT BAHMED,28 JUL 1989,MAR,6,,Neerpelt (BEL),31 MAY 2008,1133.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14211802,toplist
+74.0,8:27.67,,Dereje WAKENE,,ETH,7,,Neerpelt (BEL),31 MAY 2008,1132.0,men_3000sc,2008,https://worldathletics.org/athletes/ethiopia/dereje-wakene-14329191,toplist
+75.0,8:27.78,,Corey NOWITZKE,26 APR 1984,USA,4h1,,"Eugene, OR (USA)",03 JUL 2008,1132.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14247363,toplist
+76.0,8:28.21,,Steve SLATTERY,14 AUG 1980,USA,2,,"Icahn Stadium, New York, NY (USA)",31 MAY 2008,1130.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14251455,toplist
+77.0,8:28.30,,Martin PRÖLL,21 MAR 1981,AUT,9,,"Stadion Juliska, Praha (CZE)",16 JUN 2008,1130.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14178249,toplist
+78.0,8:28.48,,Luke GUNN,22 MAR 1985,GBR,3,,Solihull (GBR),28 JUN 2008,1129.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14189446,toplist
+79.0,8:28.88,,Alberto Casimiro PAULO,03 OCT 1985,POR,4,,Barakaldo (ESP),11 JUL 2008,1127.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14218429,toplist
+80.0,8:28.90,,Yuri FLORIANI,25 DEC 1981,ITA,11,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1127.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14200339,toplist
+81.0,8:29.0h,,Linus Kipwambok CHUMBA,09 FEB 1980,KEN,1,,Nairobi (KEN),23 MAY 2008,1126.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14207682,toplist
+82.0,8:29.02,,Simon AYEKO,10 MAY 1987,UGA,1,,Pezenas (FRA),31 MAY 2008,1126.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14229566,toplist
+83.0,8:29.21,,Abraham CHERONO,21 JUL 1980,KEN,3,,Nairobi (KEN),28 JUN 2008,1126.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14207587,toplist
+84.0,8:29.40,,Solomon KANDIE,28 AUG 1978,KEN,3,,"Icahn Stadium, New York, NY (USA)",31 MAY 2008,1125.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14207829,toplist
+85.0,8:29.46,,Łukasz PARSZCZYŃSKI,04 MAY 1985,POL,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",01 JUL 2008,1124.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14217337,toplist
+86.0,8:29.52,,Adam BOWDEN,05 AUG 1982,GBR,4,,Solihull (GBR),28 JUN 2008,1124.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14188611,toplist
+87.0,8:29.75,,Yoshitaka IWAMIZU,20 JUN 1979,JPN,1,,Kawasaki (JPN),29 JUN 2008,1123.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14203532,toplist
+88.0,8:29.84,,Caleb NGETICH,20 JAN 1981,KEN,,,Barcelona (ESP),01 JUN 2008,1123.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14209416,toplist
+89.0,8:30.02,,Vadim SLOBODENYUK,17 MAR 1981,UKR,1,,Kędzierzyn-Koźle (POL),06 JUN 2008,1122.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14230622,toplist
+90.0,8:30.15,,Mário TEIXEIRA,20 SEP 1974,POR,7,,Huelva (ESP),13 JUN 2008,1121.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14218639,toplist
+91.0,8:30.17,,David KIRWA,01 AUG 1985,KEN,2,,Bilbao (ESP),21 JUN 2008,1121.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14208564,toplist
+92.0,8:30.19,,Jake MORSE,17 APR 1985,USA,5,,"Icahn Stadium, New York, NY (USA)",31 MAY 2008,1121.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14246657,toplist
+93.0,8:30.39,,Legesse LAMISO,13 JAN 1990,ETH,3,,Cottbus (GER),11 JUN 2008,1120.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14181552,toplist
+94.0,8:30.49,,Ángel MULLERA,20 APR 1984,ESP,5,,Barakaldo (ESP),11 JUL 2008,1120.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14165596,toplist
+95.0,8:30.63,,Rafał SNOCHOWSKI,31 OCT 1983,POL,3,,Szczecin (POL),06 JUL 2008,1119.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14217584,toplist
+96.0,8:30.73,,Radosław POPŁAWSKI,16 JAN 1983,POL,2,,Kędzierzyn-Koźle (POL),06 JUN 2008,1119.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14217411,toplist
+97.0,8:30.99,,Mustapha FERRANE,22 MAR 1984,ALG,6,,Tanger (MAR),13 JUL 2008,1118.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14180761,toplist
+98.0,8:31.0h,,Aggrey CHIRICHIR,22 NOV 1984,KEN,2h2,,Nairobi (KEN),26 JUN 2008,1118.0,men_3000sc,2008,https://worldathletics.org/athletes/kenya/aggrey-chirichir-14207676,toplist
+99.0,8:31.65,,Halil AKKAŞ,01 JUL 1983,TUR,1,,Istanbul (TUR),22 JUN 2008,1115.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14229307,toplist
+100.0,8:31.70,,Valērijs ŽOLNEROVIČS,19 APR 1985,LAT,6,,Barakaldo (ESP),11 JUL 2008,1115.0,men_3000sc,2008,https://worldathletics.org/athletes/athlete=14211125,toplist
+1.0,7:58.85,,Ezekiel KEMBOI,25 MAY 1982,KEN,1,,Doha (QAT),08 MAY 2009,1263.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14207908,toplist
+2.0,8:00.89,,Richard Kipkemboi MATEELONG,14 OCT 1983,KEN,2,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1254.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209047,toplist
+3.0,8:01.18,,Bouabdellah TAHRI,20 DEC 1978,FRA,3,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1253.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14187746,toplist
+4.0,8:01.26,,Paul Kipsiele KOECH,10 NOV 1981,KEN,4,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1252.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14208637,toplist
+5.0,8:03.17,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,1,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1243.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14208442,toplist
+6.0,8:06.13,,Tareq Mubarak TAHER,1986,BRN,3,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1230.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14175111,toplist
+7.0,8:06.98,,Mahiedine MEKHISSI,15 MAR 1985,FRA,2,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1226.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14186447,toplist
+8.0,8:08.48,,Michael KIPYEGO,02 OCT 1983,KEN,2,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1219.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14208532,toplist
+9.0,8:08.86,,Jamel CHATBI,30 APR 1984,MAR,1,,Tanger (MAR),12 JUL 2009,1217.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14211964,toplist
+10.0,8:10.63,,Elijah CHELIMO,20 APR 1987,KEN,5,,Doha (QAT),08 MAY 2009,1209.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14207503,toplist
+11.0,8:10.67,,Jukka KESKISALO,27 MAR 1981,FIN,6,,"Letzigrund, Zürich (SUI)",28 AUG 2009,1209.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14182035,toplist
+12.0,8:11.32,,Roba GARI,12 APR 1982,ETH,4,,Thessaloniki (GRE),13 SEP 2009,1206.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14181609,toplist
+13.0,8:11.40,,Abel Kiprop MUTAI,02 OCT 1988,KEN,4,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1205.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209248,toplist
+14.0,8:11.63,,Ruben RAMOLEFI,17 JUL 1978,RSA,3,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1204.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14221021,toplist
+15.0,8:12.13,,Yacob JARSO,05 FEB 1988,ETH,5,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1202.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14181522,toplist
+16.0,8:12.98,,Benjamin KIPLAGAT,04 MAR 1989,UGA,6,,Ostrava (CZE),17 JUN 2009,1198.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14229601,toplist
+17.0,8:13.83,,Chakir BOUJATTAOUI,16 JAN 1983,MAR,2,,Pescara (ITA),02 JUL 2009,1194.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14214857,toplist
+18.0,8:13.96,,Patrick Kipyegon TERER,06 JUL 1989,KEN,2,,Metz (FRA),03 JUL 2009,1194.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209891,toplist
+19.0,8:14.45,,Wesley KIPROTICH,01 AUG 1979,KEN,6,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1192.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14208432,toplist
+20.0,8:14.51,,Linus Kipwambok CHUMBA,09 FEB 1980,KEN,7,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1191.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14207682,toplist
+21.0,8:14.69,,Daniel HULING,16 JUL 1983,USA,4,,"Boudewijnstadion, Bruxelles (BEL)",04 SEP 2009,1191.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14241342,toplist
+22.0,8:15.63,,Abdellatif CHEMLAL,11 JAN 1982,MAR,8,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1186.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14211971,toplist
+23.0,8:16.50,,Collins KOSGEI,04 AUG 1986,KEN,8,,Ostrava (CZE),17 JUN 2009,1182.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14208742,toplist
+24.0,8:16.51,,Eliseo MARTÍN,05 NOV 1973,ESP,9,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1182.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14165844,toplist
+25.0,8:17.94,,Bernard NGANGA,17 JAN 1985,KEN,3,,Metz (FRA),03 JUL 2009,1176.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209082,toplist
+26.0,8:18.04,,Simon AYEKO,10 MAY 1987,UGA,4,,Metz (FRA),03 JUL 2009,1175.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14229566,toplist
+27.0,8:18.44,,Mustafa MOHAMED,01 MAR 1979,SWE,6,,"Stade de France, Paris-St-Denis (FRA)",17 JUL 2009,1174.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14227863,toplist
+28.0,8:18.95,,Abubaker Ali KAMAL,08 NOV 1983,QAT,5h1,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1171.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14219053,toplist
+29.0,8:19.69,,José Luis BLANCO,03 JUN 1975,ESP,4,,Barcelona (ESP),25 JUL 2009,1168.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14167058,toplist
+30.0,8:20.58,,Legesse LAMISO,13 JAN 1990,ETH,1,,"Stadion Juliska, Praha (CZE)",08 JUN 2009,1164.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14181552,toplist
+31.0,8:20.88,,Silas Kosgei KITUM,25 MAY 1990,KEN,6,,Barcelona (ESP),25 JUL 2009,1163.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14208587,toplist
+32.0,8:21.07,,Abdelkader HACHLAF,03 JUL 1979,MAR,3,,Tanger (MAR),12 JUL 2009,1162.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14212177,toplist
+33.0,8:21.32,,Tomasz SZYMKOWIAK,05 JUL 1983,POL,11,,Ostrava (CZE),17 JUN 2009,1161.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14217721,toplist
+34.0,8:21.38,,Tarik Langat AKDAG,16 JUN 1988,KEN,1,,Moskva (RUS),01 JUL 2009,1160.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14208848,toplist
+35.0,8:22.50,,Caleb NGETICH,20 JAN 1981,KEN,2,,Huelva (ESP),10 JUN 2009,1155.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209416,toplist
+36.0,8:22.75,,Ángel MULLERA,20 APR 1984,ESP,1,,Barakaldo (ESP),10 JUL 2009,1154.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14165596,toplist
+37.0,8:22.83,,Joshua MCADAMS,26 MAR 1980,USA,3,,Heusden-Zolder (BEL),18 JUL 2009,1154.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14245262,toplist
+38.0,8:22.90,,Abraham CHIRCHIR,01 AUG 1980,KEN,8,,Barcelona (ESP),25 JUL 2009,1154.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14207659,toplist
+39.0,8:23.81,,Pieter DESMET,07 JUN 1983,BEL,4,,Heusden-Zolder (BEL),18 JUL 2009,1150.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14177586,toplist
+40.0,8:24.22,,Krijn VAN KOOLWIJK,30 AUG 1981,BEL,8h2,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1148.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14177228,toplist
+41.0,8:25.11,,Wenli SUN,09 FEB 1978,CHN,1,,Jinan (CHN),21 OCT 2009,1144.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14171459,toplist
+42.0,8:25.27,,Vincent ZOUAOUI DANDRIEUX,12 OCT 1980,FRA,11,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1143.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14188220,toplist
+43.0,8:25.53,,Rabie MAKHLOUFI,11 NOV 1986,ALG,10,,Barcelona (ESP),25 JUL 2009,1142.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14180690,toplist
+44.0,8:25.79,,Ivan LUKYANOV,31 JAN 1981,MDA,1,,Beograd (SRB),11 JUL 2009,1141.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14212711,toplist
+45.0,8:25.80,,Halil AKKAŞ,01 JUL 1983,TUR,2,,Beograd (SRB),11 JUL 2009,1141.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14229307,toplist
+46.0,8:26.08,,Ben BRUCE,10 SEP 1982,USA,1f1,,"Palo Alto, CA (USA)",02 MAY 2009,1139.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14233625,toplist
+47.0,8:26.16,,José Alberto CAIRO SÁNCHEZ,02 SEP 1986,CUB,1,,La Habana (CUB),19 JUN 2009,1139.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14169314,toplist
+48.0,8:26.18,,Steffen ULICZKA,17 JUL 1984,GER,3,,Beograd (SRB),11 JUL 2009,1139.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14194551,toplist
+49.0,8:26.5h,,Ezekiel KIMELI,,KEN,3,,Kakamega (KEN),18 APR 2009,1138.0,men_3000sc,2009,https://worldathletics.org/athletes/kenya/ezekiel-kimeli-14369381,toplist
+50.0,8:27.09,,Robin WATSON,23 JUN 1983,CAN,4,,"Eugene, OR (USA)",07 JUN 2009,1135.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14254398,toplist
+51.0,8:27.14,,Xiangqian LIN,27 JAN 1987,CHN,2,,Jinan (CHN),21 OCT 2009,1135.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14171983,toplist
+52.0,8:27.20,,Ildar MINSHIN,05 FEB 1985,RUS,2,,Moskva (RUS),01 JUL 2009,1134.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14223230,toplist
+53.0,8:27.53,,Alexandre GENEST,30 JUN 1986,CAN,4,,Beograd (SRB),11 JUL 2009,1133.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14174234,toplist
+54.0,8:28.1h,,Jonathan Muia NDIKU,18 SEP 1991,KEN,1,,Nairobi (KEN),16 JUN 2009,1130.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209367,toplist
+55.0,8:28.43,,Filmon GHIRMAI,25 JAN 1979,GER,13,,Barcelona (ESP),25 JUL 2009,1129.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14192206,toplist
+56.0,8:28.49,,Bjørnar Ustad KRISTENSEN,26 JAN 1982,NOR,5h3,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1129.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14215367,toplist
+57.0,8:28.67,,Mario BAZÁN,01 SEP 1987,PER,8h1,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1128.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14216132,toplist
+58.0,8:29.07,,Vincent Kipsegechi YATOR,11 JUL 1989,KEN,10,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1126.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209990,toplist
+59.0,8:29.12,,Enrique SÁNCHEZ,14 OCT 1983,ESP,5,,Huelva (ESP),10 JUN 2009,1126.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14164993,toplist
+60.0,8:29.24,,Kyle PERRY,01 DEC 1983,USA,1,,"Fayetteville, AR (USA)",12 JUN 2009,1125.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14248292,toplist
+61.0,8:29.45,,Jakub NOWAK,18 NOV 1989,POL,1,,Warszawa (POL),18 JUL 2009,1125.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14369960,toplist
+62.0,8:29.48,,Nahom Mesfin TARIKU,03 JUN 1989,ETH,1,,Sapporo (JPN),06 JUN 2009,1124.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14181645,toplist
+63.0,8:29.86,,Alberto Casimiro PAULO,03 OCT 1985,POR,6,,Beograd (SRB),11 JUL 2009,1123.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14218429,toplist
+64.0,8:29.88,,Abdelghani AIT BAHMED,28 JUL 1989,MAR,4,,Tanger (MAR),12 JUL 2009,1123.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14211802,toplist
+65.0,8:30.48,,Andrey FARNOSOV,09 JUL 1980,RUS,2f2,,Cheboksary (RUS),23 JUL 2009,1120.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14222139,toplist
+66.0,8:30.76,,Youcef ABDI,07 DEC 1977,AUS,1,,Sydney (AUS),28 FEB 2009,1119.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14180225,toplist
+67.0,8:31.1h,,Patrick NTHIWA,30 JUN 1983,KEN,2,,Nairobi (KEN),23 MAY 2009,1117.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209465,toplist
+68.0,8:31.18,,Pyotr IVANENKO,11 JAN 1986,RUS,5,,"Stadion Juliska, Praha (CZE)",08 JUN 2009,1117.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14222468,toplist
+69.0,8:31.29,,Per JACOBSEN,30 DEC 1977,SWE,6,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",10 JUN 2009,1116.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14227646,toplist
+70.0,8:31.5h,,Stephen KIPROTICH,25 NOV 1990,KEN,2,,Nairobi (KEN),16 JUN 2009,1115.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14388839,toplist
+71.0,8:31.52,,Øystein SYLTA,03 MAR 1978,NOR,5,,Moskva (RUS),01 JUL 2009,1115.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14215518,toplist
+72.0,8:31.75,,Collins NGENO,14 APR 1983,KEN,11,,Heusden-Zolder (BEL),18 JUL 2009,1114.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209401,toplist
+73.0,8:31.77,,Assefa Tola NIGUSSE,,ETH,5,,Metz (FRA),03 JUL 2009,1114.0,men_3000sc,2009,https://worldathletics.org/athletes/ethiopia/assefa-tola-nigusse-14375043,toplist
+74.0,8:31.81,,Marcin CHABOWSKI,28 JUN 1986,POL,2,,Bydgoszcz (POL),02 AUG 2009,1114.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14216466,toplist
+75.0,8:31.82,,Albert MINCZÉR,01 OCT 1986,HUN,6,,"Stadion Juliska, Praha (CZE)",08 JUN 2009,1114.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14196949,toplist
+76.0,8:31.97,,Joseph MCKENZIE,30 MAR 1986,RSA,2,,Stellenbosch (RSA),14 MAR 2009,1113.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14220568,toplist
+77.0,8:31.99,,Matteo VILLANI,28 AUG 1982,ITA,6,,Huelva (ESP),10 JUN 2009,1113.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14201702,toplist
+78.0,8:32.12,,Rubén PALOMEQUE,14 AUG 1980,ESP,4,,Barcelona (ESP),01 AUG 2009,1113.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14165479,toplist
+79.0,8:32.21,,Boštjan BUČ,13 APR 1980,SLO,1,,Maribor (SLO),02 AUG 2009,1112.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14225013,toplist
+80.0,8:32.23,,Abdelhamid ZERRIFI,20 JUN 1986,ALG,6,,Metz (FRA),03 JUL 2009,1112.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14180600,toplist
+81.0,8:32.30,,Vadim SLOBODENYUK,17 MAR 1981,UKR,1,,Yalta (UKR),04 JUN 2009,1112.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14230622,toplist
+82.0,8:32.88,,Francisco Javier LARA,24 JUN 1976,ESP,17,,Barcelona (ESP),25 JUL 2009,1109.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14166044,toplist
+83.0,8:33.22,,Illya SUKHAREV,17 JUN 1986,UKR,6,,Moskva (RUS),01 JUL 2009,1108.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14230653,toplist
+84.0,8:33.36,,Vincent LE DAUPHIN,28 JUN 1976,FRA,9,,Stockholm (SWE),31 JUL 2009,1107.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14185879,toplist
+85.0,8:33.90,,Mário TEIXEIRA,20 SEP 1974,POR,1,,Lisboa (POR),30 JUL 2009,1105.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14218639,toplist
+86.0,8:34.02,,Kyle ALCORN,18 MAR 1985,USA,6,,"Eugene, OR (USA)",07 JUN 2009,1104.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14231108,toplist
+87.0,8:34.12,,Aleksandr PAVELYEV,30 JUL 1987,RUS,1,,Kazan (RUS),17 JUN 2009,1104.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14223483,toplist
+88.0,8:34.15,,Mateusz DEMCZYSZAK,18 JAN 1986,POL,3,,Bydgoszcz (POL),02 AUG 2009,1104.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14216548,toplist
+89.0,8:34.36,,Pedro Miguel RIBEIRO,25 MAR 1981,POR,1,,Seixal (POR),26 JUL 2009,1103.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14218504,toplist
+90.0,8:34.57,,Jake MORSE,17 APR 1985,USA,5f1,,"Palo Alto, CA (USA)",02 MAY 2009,1102.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14246657,toplist
+91.0,8:34.60,,Yuri FLORIANI,25 DEC 1981,ITA,4,,Pescara (ITA),02 JUL 2009,1102.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14200339,toplist
+92.0,8:34.7h,,Erick Kipkoech ROTICH,14 APR 1983,KEN,7,,Nairobi (KEN),25 JUN 2009,1101.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14209655,toplist
+93.0,8:34.76,,Hicham SADOUK,18 MAY 1984,MAR,10,,Rabat (MAR),23 MAY 2009,1101.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14212211,toplist
+94.0,8:34.85,,Brian OLINGER,02 JUN 1983,USA,2h2,,"Eugene, OR (USA)",25 JUN 2009,1101.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14247604,toplist
+95.0,8:34.95,,Yoshitaka IWAMIZU,20 JUN 1979,JPN,2,,Sapporo (JPN),06 JUN 2009,1100.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14203532,toplist
+96.0,8:35.04,,Hassan OUBASSOUR,20 JUL 1980,FRA,7,,Metz (FRA),03 JUL 2009,1100.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14186879,toplist
+97.0,8:35.12,,Hillary BOR,22 NOV 1989,KEN,2,,"Fayetteville, AR (USA)",12 JUN 2009,1100.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14232976,toplist
+97.0,8:35.12,,Tom KLOOS,08 SEP 1977,USA,5h2,,"Eugene, OR (USA)",25 JUN 2009,1100.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14243143,toplist
+99.0,8:35.19,,Hiroyoshi UMEGAE,05 JAN 1984,JPN,3,,Sapporo (JPN),06 JUN 2009,1099.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14206608,toplist
+100.0,8:35.21,,Takayuki MATSUURA,16 DEC 1985,JPN,1,,Niigata (JPN),05 OCT 2009,1099.0,men_3000sc,2009,https://worldathletics.org/athletes/athlete=14204431,toplist
+1.0,8:00.90,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,1,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1254.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208442,toplist
+2.0,8:01.74,,Ezekiel KEMBOI,25 MAY 1982,KEN,1,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1250.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14207908,toplist
+3.0,8:02.07,,Paul Kipsiele KOECH,10 NOV 1981,KEN,2,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1248.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208637,toplist
+4.0,8:02.52,,Mahiedine MEKHISSI,15 MAR 1985,FRA,1,,"Boudewijnstadion, Bruxelles (BEL)",27 AUG 2010,1246.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14186447,toplist
+5.0,8:03.72,,Bouabdellah TAHRI,20 DEC 1978,FRA,1,,Metz (FRA),29 JUN 2010,1241.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14187746,toplist
+6.0,8:03.81,,Benjamin KIPLAGAT,04 MAR 1989,UGA,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1240.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14229601,toplist
+7.0,8:06.44,,Richard Kipkemboi MATEELONG,14 OCT 1983,KEN,5,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1228.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14209047,toplist
+8.0,8:09.12,,Tarik Langat AKDAG,16 JUN 1988,KEN,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",14 MAY 2010,1216.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208848,toplist
+9.0,8:09.63,,Saif Saaeed SHAHEEN,15 OCT 1982,QAT,6,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1214.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14219103,toplist
+10.0,8:09.87,,Roba GARI,12 APR 1982,ETH,2,,"Poljud Stadion, Split (CRO)",05 SEP 2010,1212.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14181609,toplist
+11.0,8:12.42,,Silas Kosgei KITUM,25 MAY 1990,KEN,2,,"Olympiastadion, Stockholm (SWE)",06 AUG 2010,1201.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208587,toplist
+12.0,8:12.93,,Elijah CHELIMO,20 APR 1987,KEN,3,,"Olympiastadion, Stockholm (SWE)",06 AUG 2010,1198.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14207503,toplist
+13.0,8:13.29,,Daniel HULING,16 JUL 1983,USA,4,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1197.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14241342,toplist
+14.0,8:16.22,,Bernard NGANGA,17 JAN 1985,KEN,1,,Sotteville-lès-Rouen (FRA),12 JUN 2010,1184.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14209082,toplist
+15.0,8:16.46,,Michael KIPYEGO,02 OCT 1983,KEN,8,,"Suhaim bin Hamad Stadium, Doha (QAT)",14 MAY 2010,1182.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208532,toplist
+16.0,8:16.50,,Ruben RAMOLEFI,17 JUL 1978,RSA,9,,"Suhaim bin Hamad Stadium, Doha (QAT)",14 MAY 2010,1182.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14221021,toplist
+17.0,8:16.68,,Bisluke Kipkorir KIPLAGAT,08 AUG 1988,KEN,3,,Daegu (KOR),19 MAY 2010,1181.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208306,toplist
+18.0,8:17.21,,Tareq Mubarak TAHER,1986,BRN,4,,"Olympiastadion, Stockholm (SWE)",06 AUG 2010,1179.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14175111,toplist
+19.0,8:17.71,,Brahim TALEB,16 FEB 1985,MAR,1,,Heusden-Zolder (BEL),10 JUL 2010,1177.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14212492,toplist
+20.0,8:17.92,,Abdellatif CHEMLAL,11 JAN 1982,MAR,4,,Rabat (MAR),06 JUN 2010,1176.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14211971,toplist
+21.0,8:18.23,,Tomasz SZYMKOWIAK,05 JUL 1983,POL,8,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1175.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14217721,toplist
+22.0,8:18.48,,Linus Kipwambok CHUMBA,09 FEB 1980,KEN,5,,"Olympiastadion, Stockholm (SWE)",06 AUG 2010,1173.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14207682,toplist
+23.0,8:18.84,,Nahom Mesfin TARIKU,03 JUN 1989,ETH,1,,Sapporo (JPN),14 JUN 2010,1172.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14181645,toplist
+24.0,8:19.25,,Jonathan Muia NDIKU,18 SEP 1991,KEN,2,,Nairobi (KEN),26 JUN 2010,1170.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14209367,toplist
+25.0,8:19.50,,Hillary Kipsang YEGO,02 APR 1992,KEN,3,,Heusden-Zolder (BEL),10 JUL 2010,1169.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14375963,toplist
+26.0,8:19.64,,Ivan LUKYANOV,31 JAN 1981,MDA,3,,"Estadio Olímpico, Barcelona (ESP)",01 AUG 2010,1168.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14212711,toplist
+27.0,8:19.67,,Patrick Kipyegon TERER,06 JUL 1989,KEN,2,,Bydgoszcz (POL),06 JUN 2010,1168.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14209891,toplist
+28.0,8:20.12,,Wesley KIPROTICH,01 AUG 1979,KEN,6,,Daegu (KOR),19 MAY 2010,1166.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208432,toplist
+29.0,8:20.72,,Collins KOSGEI,04 AUG 1986,KEN,3,,Bydgoszcz (POL),06 JUN 2010,1163.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208742,toplist
+30.0,8:21.15,,Abraham CHERONO,21 JUL 1980,KEN,3,,Nairobi (KEN),26 JUN 2010,1161.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14207587,toplist
+31.0,8:21.20,,Birhan GETAHUN,05 SEP 1991,ETH,2,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1161.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14424162,toplist
+32.0,8:21.27,,Vincent ZOUAOUI DANDRIEUX,12 OCT 1980,FRA,11,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1161.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14188220,toplist
+33.0,8:22.00,,José Luis BLANCO,03 JUN 1975,ESP,1,,Huelva (ESP),09 JUN 2010,1158.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14167058,toplist
+34.0,8:22.34,,Simon AYEKO,10 MAY 1987,UGA,5,,Bydgoszcz (POL),06 JUN 2010,1156.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14229566,toplist
+35.0,8:22.67,,Noureddine SMAÏL,06 FEB 1987,FRA,12,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1155.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14187675,toplist
+36.0,8:22.88,,Ben BRUCE,10 SEP 1982,USA,3,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1154.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14233625,toplist
+37.0,8:22.98,,Mustafa MOHAMED,01 MAR 1979,SWE,13,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1153.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14227863,toplist
+38.0,8:23.23,,Abraham CHIRCHIR,01 AUG 1980,KEN,4,,Nairobi (KEN),26 JUN 2010,1152.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14207659,toplist
+39.0,8:23.39,,Youcef ABDI,07 DEC 1977,AUS,6,,"Poljud Stadion, Split (CRO)",05 SEP 2010,1151.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14180225,toplist
+40.0,8:23.52,,Abdelkader HACHLAF,03 JUL 1979,MAR,7,,Rabat (MAR),06 JUN 2010,1151.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14212177,toplist
+41.0,8:23.69,,Albert Kiptoo YATOR,06 SEP 1993,KEN,5,,"Boudewijnstadion, Bruxelles (BEL)",27 AUG 2010,1150.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14425938,toplist
+42.0,8:24.04,,Hubert POKROP,02 NOV 1985,POL,3,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1148.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14217408,toplist
+43.0,8:24.05,,Steve SLATTERY,14 AUG 1980,USA,7,,Daegu (KOR),19 MAY 2010,1148.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14251455,toplist
+44.0,8:24.06,,Alberto Casimiro PAULO,03 OCT 1985,POR,5,,Heusden-Zolder (BEL),10 JUL 2010,1148.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14218429,toplist
+45.0,8:24.51,,Bjørnar Ustad KRISTENSEN,26 JAN 1982,NOR,6,,"Boudewijnstadion, Bruxelles (BEL)",27 AUG 2010,1146.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14215367,toplist
+46.0,8:25.04,,Haron LAGAT,15 AUG 1983,KEN,6,,Heusden-Zolder (BEL),10 JUL 2010,1144.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14208829,toplist
+47.0,8:25.11,,Eliseo MARTÍN,05 NOV 1973,ESP,7,,Heusden-Zolder (BEL),10 JUL 2010,1144.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14165844,toplist
+48.0,8:25.39,,Steffen ULICZKA,17 JUL 1984,GER,5,,"Estadio Olímpico, Barcelona (ESP)",01 AUG 2010,1142.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14194551,toplist
+49.0,8:25.42,,Antonio David JIMÉNEZ,18 FEB 1977,ESP,7,,"Boudewijnstadion, Bruxelles (BEL)",27 AUG 2010,1142.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14166106,toplist
+50.0,8:25.60,,Stephen KIPROTICH,25 NOV 1990,KEN,1,,Cottbus (GER),30 MAY 2010,1142.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14388839,toplist
+51.0,8:25.99,,Ángel MULLERA,20 APR 1984,ESP,1,,Barakaldo (ESP),23 JUN 2010,1140.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14165596,toplist
+52.0,8:26.21,,Andrey FARNOSOV,09 JUL 1980,RUS,6,,"Meteor, Zhukovskiy (RUS)",26 JUN 2010,1139.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14222139,toplist
+53.0,8:26.26,,Assefa Tola NIGUSSE,,ETH,3,,Velenje (SLO),01 JUL 2010,1139.0,men_3000sc,2010,https://worldathletics.org/athletes/ethiopia/assefa-tola-nigusse-14375043,toplist
+54.0,8:26.27,,Ali Thamer KAMAL,12 NOV 1988,QAT,2,,Guangzhou (CHN),23 NOV 2010,1139.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14219054,toplist
+55.0,8:26.31,,Mateusz DEMCZYSZAK,18 JAN 1986,POL,6,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1138.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14216548,toplist
+56.0,8:26.45,,Víctor GARCÍA,13 MAR 1985,ESP,2,,Huelva (ESP),09 JUN 2010,1138.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14166402,toplist
+57.0,8:27.34,,Martin PRÖLL,21 MAR 1981,AUT,7,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1134.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14178249,toplist
+58.0,8:27.55,,Abdellah LAMGHARI,16 DEC 1979,MAR,2,,Agadir (MAR),26 JUN 2010,1133.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14211770,toplist
+59.0,8:27.95,,Kyle ALCORN,18 MAR 1985,USA,1f1,,"Palo Alto, CA (USA)",01 MAY 2010,1131.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14231108,toplist
+60.0,8:28.03,,Rubén PALOMEQUE,14 AUG 1980,ESP,4,,Huelva (ESP),09 JUN 2010,1131.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14165479,toplist
+61.0,8:28.14,,Jacob ARAPTANY,11 FEB 1992,UGA,1h2,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",23 JUL 2010,1130.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14428739,toplist
+62.0,8:28.27,,Brian OLINGER,02 JUN 1983,USA,2f1,,"Palo Alto, CA (USA)",01 MAY 2010,1130.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14247604,toplist
+63.0,8:28.89,,Luke GUNN,22 MAR 1985,GBR,4,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1127.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14189446,toplist
+64.0,8:29.1h,,Ben SIWA,27 MAY 1989,UGA,,,Kampala (UGA),03 JUL 2010,1126.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14229664,toplist
+65.0,8:29.34,,Kyle HEATH,24 AUG 1986,USA,4f1,,"Palo Alto, CA (USA)",01 MAY 2010,1125.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14240344,toplist
+66.0,8:30.22,,Jukka KESKISALO,27 MAR 1981,FIN,3,,Sotteville-lès-Rouen (FRA),12 JUN 2010,1121.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14182035,toplist
+67.0,8:30.43,,Caleb NGETICH,20 JAN 1981,KEN,2,,Biberach (GER),09 JUL 2010,1120.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14209416,toplist
+68.0,8:30.49,,Aoi MATSUMOTO,07 SEP 1987,JPN,1,,Niigata (JPN),11 OCT 2010,1120.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14330415,toplist
+69.0,8:30.64,,Filmon GHIRMAI,25 JAN 1979,GER,3,,Biberach (GER),09 JUL 2010,1119.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14192206,toplist
+70.0,8:30.84,,Anthony FAMIGLIETTI,08 NOV 1978,USA,7,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1118.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14237511,toplist
+71.0,8:30.88,,Krijn VAN KOOLWIJK,30 AUG 1981,BEL,10,,Heusden-Zolder (BEL),10 JUL 2010,1118.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14177228,toplist
+72.0,8:30.96,,Pieter DESMET,07 JUN 1983,BEL,1,,Oordegem (BEL),05 JUN 2010,1118.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14177586,toplist
+72.0,8:30.96,,Ali Ahmed AL AMRI,28 DEC 1987,KSA,3,,Guangzhou (CHN),23 NOV 2010,1118.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14210607,toplist
+74.0,8:31.08,,Boštjan BUČ,13 APR 1980,SLO,5h2,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1117.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14225013,toplist
+75.0,8:31.21,,Edwin MOLEPE,31 MAY 1987,RSA,2,,Oordegem (BEL),05 JUN 2010,1117.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14220684,toplist
+76.0,8:31.80,,José Alberto CAIRO SÁNCHEZ,02 SEP 1986,CUB,1,,San Fernando (ESP),05 JUN 2010,1114.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14169314,toplist
+77.0,8:32.2h,,Michael BUR,,KEN,1h2,,Nairobi (KEN),24 JUN 2010,1112.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14426324,toplist
+78.0,8:32.21,,Mário TEIXEIRA,20 SEP 1974,POR,2,,San Fernando (ESP),05 JUN 2010,1112.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14218639,toplist
+79.0,8:32.24,,Stuart STOKES,05 DEC 1976,GBR,5,,New Delhi (IND),11 OCT 2010,1112.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14190891,toplist
+80.0,8:32.46,,Hassan OUBASSOUR,20 JUL 1980,FRA,4,,Metz (FRA),29 JUN 2010,1111.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14186879,toplist
+81.0,8:32.71,,Illia SLAVINSKI,02 AUG 1984,BLR,3,,Rethymno (GRE),07 JUL 2010,1110.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14176544,toplist
+82.0,8:33.08,,Kyle PERRY,01 DEC 1983,USA,1,,Windsor (CAN),29 MAY 2010,1109.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14248292,toplist
+83.0,8:33.29,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,2,,Barakaldo (ESP),23 JUN 2010,1108.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14165696,toplist
+84.0,8:33.48,,Janne UKONMAANAHO,13 MAR 1984,FIN,9h2,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1107.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14182641,toplist
+85.0,8:33.57,,Matteo VILLANI,28 AUG 1982,ITA,1,,Firenze (ITA),05 JUN 2010,1106.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14201702,toplist
+86.0,8:33.90,,Legesse LAMISO,13 JAN 1990,ETH,8,,"FBK Stadium, Hengelo (NED)",30 MAY 2010,1105.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14181552,toplist
+87.0,8:34.15,,Yuri FLORIANI,25 DEC 1981,ITA,2,,Firenze (ITA),05 JUN 2010,1104.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14200339,toplist
+88.0,8:34.18,,Matthew HUGHES,03 AUG 1989,CAN,1,,"Eugene, OR (USA)",11 JUN 2010,1104.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14174102,toplist
+89.0,8:34.42,,Reuben Chebon MWEI,04 DEC 1985,KEN,6f1,,"Palo Alto, CA (USA)",01 MAY 2010,1103.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14207484,toplist
+90.0,8:34.43,,Joshua MCADAMS,26 MAR 1980,USA,4,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1103.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14245262,toplist
+91.0,8:34.64,,Pedro Miguel RIBEIRO,25 MAR 1981,POR,4,,Barakaldo (ESP),23 JUN 2010,1102.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14218504,toplist
+92.0,8:34.83,,Francisco Javier LARA,24 JUN 1976,ESP,4,,San Fernando (ESP),05 JUN 2010,1101.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14166044,toplist
+93.0,8:34.84,,Vadim SLOBODENYUK,17 MAR 1981,UKR,1,,Yalta (UKR),28 MAY 2010,1101.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14230622,toplist
+94.0,8:34.96,,Hiroyoshi UMEGAE,05 JAN 1984,JPN,2,,Niigata (JPN),26 SEP 2010,1100.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14206608,toplist
+95.0,8:35.05,,Jakub WIŚNIEWSKI,03 NOV 1977,POL,4,,Moskva (RUS),29 JUN 2010,1100.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14217844,toplist
+96.0,8:35.17,,William NELSON,11 SEP 1984,USA,5,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1099.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14247058,toplist
+97.0,8:35.29,,Irba LAKHAL,12 DEC 1975,FRA,15,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1099.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14185746,toplist
+98.0,8:35.32,,Diego TAMAYO,06 DEC 1983,ESP,7,,Huelva (ESP),09 JUN 2010,1099.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14164877,toplist
+99.0,8:35.60,,Donald CABRAL,12 DEC 1989,USA,2f3,,"Greensboro, NC (USA)",29 MAY 2010,1098.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14363391,toplist
+100.0,8:35.75,,Joonas HARJAMÄKI,30 MAY 1986,FIN,2,,Espoo (FIN),30 JUN 2010,1097.0,men_3000sc,2010,https://worldathletics.org/athletes/athlete=14181863,toplist
+1.0,7:53.64,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,1,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1288.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14208442,toplist
+2.0,7:55.76,,Ezekiel KEMBOI,25 MAY 1982,KEN,2,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1278.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14207908,toplist
+3.0,7:57.32,,Paul Kipsiele KOECH,10 NOV 1981,KEN,3,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1271.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14208637,toplist
+4.0,8:02.09,,Mahiedine MEKHISSI,15 MAR 1985,FRA,1,,"Stade de France, Paris-St-Denis (FRA)",08 JUL 2011,1248.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14186447,toplist
+5.0,8:05.72,,Bouabdellah TAHRI,20 DEC 1978,FRA,4,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1232.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14187746,toplist
+6.0,8:05.88,,Bernard NGANGA,17 JAN 1985,KEN,2,,"Olympiastadion, Berlin (GER)",11 SEP 2011,1231.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14209082,toplist
+7.0,8:07.41,,Richard Kipkemboi MATEELONG,14 OCT 1983,KEN,5,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1224.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14209047,toplist
+8.0,8:07.71,,Hillary Kipsang YEGO,02 APR 1992,KEN,3,,"Shanghai Stadium, Shanghai (CHN)",15 MAY 2011,1222.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14375963,toplist
+9.0,8:07.75,,Jonathan Muia NDIKU,18 SEP 1991,KEN,6,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1222.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14209367,toplist
+10.0,8:08.43,,Benjamin KIPLAGAT,04 MAR 1989,UGA,3,,"Stade de France, Paris-St-Denis (FRA)",08 JUL 2011,1219.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14229601,toplist
+11.0,8:08.59,,Tarik Langat AKDAG,16 JUN 1988,KEN,4,,"Shanghai Stadium, Shanghai (CHN)",15 MAY 2011,1218.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14208848,toplist
+12.0,8:10.03,,Roba GARI,12 APR 1982,ETH,4,,"Stade de France, Paris-St-Denis (FRA)",08 JUL 2011,1212.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14181609,toplist
+13.0,8:11.31,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,5,,"Stade de France, Paris-St-Denis (FRA)",08 JUL 2011,1206.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14425940,toplist
+14.0,8:11.50,,Ruben RAMOLEFI,17 JUL 1978,RSA,2h2,,"DS, Daegu (KOR)",29 AUG 2011,1205.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14221021,toplist
+15.0,8:11.81,,Hamid EZZINE,05 OCT 1983,MAR,3h2,,"DS, Daegu (KOR)",29 AUG 2011,1204.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14212132,toplist
+16.0,8:12.04,,Nahom Mesfin TARIKU,03 JUN 1989,ETH,4h2,,"DS, Daegu (KOR)",29 AUG 2011,1203.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14181645,toplist
+17.0,8:12.17,,Silas Kosgei KITUM,25 MAY 1990,KEN,3,,"DS, Daegu (KOR)",12 MAY 2011,1202.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14208587,toplist
+18.0,8:12.25,,Nordine GEZZAR,17 FEB 1980,FRA,9,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1202.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14185007,toplist
+19.0,8:13.04,,Abdelkader HACHLAF,03 JUL 1979,MAR,1,,Rabat (MAR),05 JUN 2011,1198.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14212177,toplist
+20.0,8:14.22,,Elijah CHELIMO,20 APR 1987,KEN,2,,"Sports Park Mladost, Zagreb (CRO)",13 SEP 2011,1193.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14207503,toplist
+21.0,8:14.28,,Elias KEMBOI,10 MAY 1984,KEN,3,,"Olympiastadion, Berlin (GER)",11 SEP 2011,1192.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14207906,toplist
+22.0,8:15.47,,Łukasz PARSZCZYŃSKI,04 MAY 1985,POL,8,,"Stade de France, Paris-St-Denis (FRA)",08 JUL 2011,1187.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14217337,toplist
+23.0,8:15.72,,Jacob ARAPTANY,11 FEB 1992,UGA,1,,Kampala (UGA),23 JUL 2011,1186.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14428739,toplist
+24.0,8:15.80,,Haron LAGAT,15 AUG 1983,KEN,3,,"Sports Park Mladost, Zagreb (CRO)",13 SEP 2011,1185.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14208829,toplist
+25.0,8:16.41,,Youcef ABDI,07 DEC 1977,AUS,1,,Lapinlahti (FIN),24 JUL 2011,1183.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14180225,toplist
+26.0,8:16.47,,Ángel MULLERA,20 APR 1984,ESP,2,,Barcelona (ESP),22 JUL 2011,1182.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14165596,toplist
+27.0,8:17.27,,William NELSON,11 SEP 1984,USA,11,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1179.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14247058,toplist
+28.0,8:17.36,,Birhan GETAHUN,05 SEP 1991,ETH,1,,Maputo (MOZ),11 SEP 2011,1178.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14424162,toplist
+29.0,8:17.84,,Vincent ZOUAOUI DANDRIEUX,12 OCT 1980,FRA,12,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1176.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14188220,toplist
+30.0,8:17.87,,Mohamed-Khaled BELABBAS,04 JUL 1981,FRA,3,,Barcelona (ESP),22 JUL 2011,1176.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14183168,toplist
+31.0,8:19.00,,Tomas TAJADURA JUEZ,25 JUN 1985,ESP,4,,Barcelona (ESP),22 JUL 2011,1171.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14164881,toplist
+32.0,8:19.10,,Ben BRUCE,10 SEP 1982,USA,5,,Barcelona (ESP),22 JUL 2011,1171.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14233625,toplist
+33.0,8:19.31,,Patrick Kipyegon TERER,06 JUL 1989,KEN,6,,Barcelona (ESP),22 JUL 2011,1170.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14209891,toplist
+34.0,8:19.33,,Alexandre GENEST,30 JUN 1986,CAN,7,,Barcelona (ESP),22 JUL 2011,1170.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14174234,toplist
+35.0,8:19.69,,Ivan LUKYANOV,31 JAN 1981,MDA,8,,"DS, Daegu (KOR)",01 SEP 2011,1168.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14212711,toplist
+36.0,8:20.72,,Sisay KORME,09 JAN 1985,ETH,3,,Maputo (MOZ),11 SEP 2011,1163.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14472934,toplist
+37.0,8:21.02,,Abel Kiprop MUTAI,02 OCT 1988,KEN,1,,Cottbus (GER),25 JUN 2011,1162.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14209248,toplist
+38.0,8:21.40,,Willy Rutto KOMEN,22 DEC 1987,KEN,1,,"Crystal Palace, London (GBR)",05 AUG 2011,1160.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14208677,toplist
+39.0,8:21.77,,Antonio David JIMÉNEZ,18 FEB 1977,ESP,8,,"Olympiastadion, Berlin (GER)",11 SEP 2011,1159.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14166106,toplist
+40.0,8:21.95,,Andrey FARNOSOV,09 JUL 1980,RUS,4,,"Meteor, Zhukovskiy (RUS)",03 JUL 2011,1158.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14222139,toplist
+41.0,8:22.00,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,1,,Huelva (ESP),02 JUN 2011,1158.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14165696,toplist
+42.0,8:22.34,,Abraham CHIRCHIR,01 AUG 1980,KEN,3,,Nairobi (KEN),16 JUL 2011,1156.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14207659,toplist
+43.0,8:22.41,,Alberto Casimiro PAULO,03 OCT 1985,POR,4h3,,"DS, Daegu (KOR)",29 AUG 2011,1156.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14218429,toplist
+44.0,8:22.61,,Víctor GARCÍA,13 MAR 1985,ESP,2,,Huelva (ESP),02 JUN 2011,1155.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14166402,toplist
+45.0,8:23.02,,Sebastián MARTOS,20 JUN 1989,ESP,3,,Huelva (ESP),02 JUN 2011,1153.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14165762,toplist
+46.0,8:23.19,,Bjørnar Ustad KRISTENSEN,26 JAN 1982,NOR,8,,"Bislett Stadion, Oslo (NOR)",09 JUN 2011,1152.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14215367,toplist
+47.0,8:23.27,,Kyle ALCORN,18 MAR 1985,USA,2f1,,"Palo Alto, CA (USA)",01 MAY 2011,1152.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14231108,toplist
+48.0,8:23.28,,Rubén PALOMEQUE,14 AUG 1980,ESP,8,,Barcelona (ESP),22 JUL 2011,1152.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14165479,toplist
+49.0,8:23.36,,Brian OLINGER,02 JUN 1983,USA,2,,"Crystal Palace, London (GBR)",05 AUG 2011,1152.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14247604,toplist
+50.0,8:23.43,,Eliseo MARTÍN,05 NOV 1973,ESP,9,,Barcelona (ESP),22 JUL 2011,1151.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14165844,toplist
+51.0,8:24.10,,Linus Kipwambok CHUMBA,09 FEB 1980,KEN,10,,"Shanghai Stadium, Shanghai (CHN)",15 MAY 2011,1148.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14207682,toplist
+52.0,8:24.87,,Matthew HUGHES,03 AUG 1989,CAN,1,,"Des Moines, IA (USA)",10 JUN 2011,1145.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14174102,toplist
+53.0,8:25.03,,Gilbert KIRUI,22 JAN 1994,KEN,1,,Gaborone (BOT),12 MAY 2011,1144.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14425946,toplist
+54.0,8:25.52,,Tomasz SZYMKOWIAK,05 JUL 1983,POL,2,,Bydgoszcz (POL),03 JUN 2011,1142.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14217721,toplist
+55.0,8:25.82,,Abdelhakim ZILALI,20 JUN 1983,FRA,13,,"Stade de France, Paris-St-Denis (FRA)",08 JUL 2011,1141.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14212523,toplist
+56.0,8:25.95,,Daniel HULING,16 JUL 1983,USA,5,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1140.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14241342,toplist
+57.0,8:26.03,,Nikolay CHAVKIN,24 APR 1984,RUS,1,,Nice (FRA),18 SEP 2011,1140.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14221966,toplist
+58.0,8:26.21,,Vadim SLOBODENYUK,17 MAR 1981,UKR,1,,Yalta (UKR),31 MAY 2011,1139.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14230622,toplist
+59.0,8:26.38,,Donnie COWART,24 OCT 1985,USA,4,,Lapinlahti (FIN),24 JUL 2011,1138.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14235468,toplist
+60.0,8:26.43,,Steffen ULICZKA,17 JUL 1984,GER,3,,Cottbus (GER),25 JUN 2011,1138.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14194551,toplist
+61.0,8:26.45,,Jukka KESKISALO,27 MAR 1981,FIN,5,,Lapinlahti (FIN),24 JUL 2011,1138.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14182035,toplist
+62.0,8:26.75,,Ali Ahmed AL AMRI,28 DEC 1987,KSA,6h2,,"DS, Daegu (KOR)",29 AUG 2011,1136.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14210607,toplist
+63.0,8:26.82,,Edwin MOLEPE,31 MAY 1987,RSA,1,,Metz (FRA),27 JUN 2011,1136.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14220684,toplist
+64.0,8:27.08,,Janne UKONMAANAHO,13 MAR 1984,FIN,6,,Lapinlahti (FIN),24 JUL 2011,1135.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14182641,toplist
+65.0,8:27.12,,Łukasz KUJAWSKI,02 MAR 1988,POL,4,,Strasbourg (FRA),12 JUN 2011,1135.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14217024,toplist
+66.0,8:27.30,,Conseslus KIPRUTO,08 DEC 1994,KEN,1,,Königs Wusterhausen (GER),09 SEP 2011,1134.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14479159,toplist
+67.0,8:27.49,,Albert MINCZÉR,01 OCT 1986,HUN,5,,Strasbourg (FRA),12 JUN 2011,1133.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14196949,toplist
+67.0,8:27.49,,Hassan OUBASSOUR,20 JUL 1980,FRA,2,,Metz (FRA),27 JUN 2011,1133.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14186879,toplist
+69.0,8:27.55,,Krystian ZALEWSKI,11 APR 1989,POL,3,,Bydgoszcz (POL),03 JUN 2011,1133.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14217925,toplist
+70.0,8:28.13,,Clement Kimutai KEMBOI,10 FEB 1992,KEN,2,,Königs Wusterhausen (GER),09 SEP 2011,1130.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14425950,toplist
+71.0,8:28.52,,Steve SLATTERY,14 AUG 1980,USA,14,,"Shanghai Stadium, Shanghai (CHN)",15 MAY 2011,1129.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14251455,toplist
+72.0,8:28.64,,Adil ALILECH,26 JUN 1986,MAR,2,,Casablanca (MAR),21 MAY 2011,1128.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14441534,toplist
+72.0,8:28.64,,Yuri FLORIANI,25 DEC 1981,ITA,2,,Heusden-Zolder (BEL),16 JUL 2011,1128.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14200339,toplist
+74.0,8:29.02,,Simon AYEKO,10 MAY 1987,UGA,7h2,,"DS, Daegu (KOR)",29 AUG 2011,1126.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14229566,toplist
+75.0,8:29.18,,Mario BAZÁN,01 SEP 1987,PER,4f1,,"Palo Alto, CA (USA)",01 MAY 2011,1126.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14216132,toplist
+76.0,8:29.75,,Boštjan BUČ,13 APR 1980,SLO,7,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1123.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14225013,toplist
+77.0,8:30.02,,Amor BEN YAHIA,01 JUL 1985,TUN,6h1,,"DS, Daegu (KOR)",29 AUG 2011,1122.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14229127,toplist
+78.0,8:30.23,,Abubaker Ali KAMAL,08 NOV 1983,QAT,1,,Kobe (JPN),08 JUL 2011,1121.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14219053,toplist
+79.0,8:30.24,,Ernest Tumelo MOTLAGALE,02 DEC 1986,RSA,2,,Cape Town (RSA),16 APR 2011,1121.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14325540,toplist
+80.0,8:30.49,,Yegor NIKOLAYEV,28 APR 1988,RUS,1f2,,Yerino (RUS),04 JUN 2011,1120.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14223363,toplist
+81.0,8:30.78,,Joshua MCADAMS,26 MAR 1980,USA,4,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1119.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14245262,toplist
+82.0,8:31.06,,Habtamu FAYISA,19 APR 1993,ETH,7,,Strasbourg (FRA),12 JUN 2011,1117.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14431366,toplist
+83.0,8:31.09,,Halil AKKAŞ,01 JUL 1983,TUR,6,,Dubnica nad Váhom (SVK),15 SEP 2011,1117.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14229307,toplist
+84.0,8:31.52,,Derek SCOTT,07 NOV 1985,USA,1,,"Walnut, CA (USA)",14 APR 2011,1115.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14250808,toplist
+85.0,8:31.56,,Luke GUNN,22 MAR 1985,GBR,6,,"Crystal Palace, London (GBR)",05 AUG 2011,1115.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14189446,toplist
+86.0,8:31.65,,Kaleb KESHEBO,,ETH,1,,Dar Es Salaam (TAN),04 JUN 2011,1115.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14477338,toplist
+87.0,8:32.07,,Hubert POKROP,02 NOV 1985,POL,8,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1113.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14217408,toplist
+88.0,8:32.14,,Donald CABRAL,12 DEC 1989,USA,2,,"Des Moines, IA (USA)",10 JUN 2011,1113.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14363391,toplist
+89.0,8:32.61,,Aleksandr PAVELYEV,30 JUL 1987,RUS,3,,Cheboksary (RUS),21 JUL 2011,1111.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14223483,toplist
+90.0,8:32.70,,Bisluke Kipkorir KIPLAGAT,08 AUG 1988,KEN,11,,Barcelona (ESP),22 JUL 2011,1110.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14208306,toplist
+91.0,8:33.58,,Abdelatif HADJAM,08 AUG 1990,FRA,3,,Metz (FRA),27 JUN 2011,1106.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14325997,toplist
+92.0,8:33.59,,Weynay GHEBRESILASIE,24 MAR 1994,ERI,7,,Maputo (MOZ),11 SEP 2011,1106.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14433434,toplist
+93.0,8:34.15,,Enrique SÁNCHEZ,14 OCT 1983,ESP,12,,Barcelona (ESP),22 JUL 2011,1104.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14164993,toplist
+94.0,8:34.25,,Ben SIWA,27 MAY 1989,UGA,2,,Kampala (UGA),23 JUL 2011,1103.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14229664,toplist
+95.0,8:34.50,,Illya SUKHAREV,17 JUN 1986,UKR,1,,Donetsk (UKR),04 AUG 2011,1102.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14230653,toplist
+96.0,8:34.75,,Antonio ABADÍA,02 JUL 1990,ESP,11,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1101.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14167359,toplist
+97.0,8:34.90,,José Gregorio PEÑA,12 JAN 1987,VEN,5h2,,Rio de Janeiro (BRA),21 JUL 2011,1101.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14256190,toplist
+98.0,8:35.03,,Vitaliy NEVYANTSEV,08 SEP 1983,RUS,9,,"Meteor, Zhukovskiy (RUS)",03 JUL 2011,1100.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14223342,toplist
+99.0,8:35.11,,Artem KOSINOV,31 JUL 1986,KAZ,2,,Kobe (JPN),08 JUL 2011,1100.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14207205,toplist
+100.0,8:35.45,,Abdellah DACHA,26 JAN 1992,MAR,9,,Rabat (MAR),05 JUN 2011,1098.0,men_3000sc,2011,https://worldathletics.org/athletes/athlete=14211978,toplist
+1.0,7:54.31,,Paul Kipsiele KOECH,10 NOV 1981,KEN,1,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1285.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14208637,toplist
+2.0,7:56.81,,Richard Kipkemboi MATEELONG,14 OCT 1983,KEN,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1273.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14209047,toplist
+3.0,8:01.67,,Abel Kiprop MUTAI,02 OCT 1988,KEN,2,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1250.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14209248,toplist
+4.0,8:01.73,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,2,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1250.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14208442,toplist
+5.0,8:03.43,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,4,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1242.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14425940,toplist
+6.0,8:03.49,,Conseslus KIPRUTO,08 DEC 1994,KEN,1,,"Stade Louis II, Monaco (MON)",20 JUL 2012,1242.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14479159,toplist
+7.0,8:06.16,,Roba GARI,12 APR 1982,ETH,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1229.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14181609,toplist
+8.0,8:06.81,,Evan JAGER,08 MAR 1989,USA,3,,"Stade Louis II, Monaco (MON)",20 JUL 2012,1227.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14241750,toplist
+9.0,8:08.33,,Bernard NGANGA,17 JAN 1985,KEN,3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",23 AUG 2012,1220.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14209082,toplist
+10.0,8:10.20,,Brahim TALEB,16 FEB 1985,MAR,2,,Rabat (MAR),27 MAY 2012,1211.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14212492,toplist
+11.0,8:10.55,,Ezekiel KEMBOI,25 MAY 1982,KEN,4,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1209.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14207908,toplist
+12.0,8:10.90,,Mahiedine MEKHISSI,15 MAR 1985,FRA,2,,Lille (FRA),09 JUN 2012,1208.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14186447,toplist
+13.0,8:11.27,,Gilbert KIRUI,22 JAN 1994,KEN,7,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1206.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14425946,toplist
+14.0,8:11.83,,Hillary Kipsang YEGO,02 APR 1992,KEN,6,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1204.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14375963,toplist
+15.0,8:12.84,,Elijah CHELIMO,20 APR 1987,KEN,8,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1199.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14207503,toplist
+16.0,8:13.71,,Ángel MULLERA,20 APR 1984,ESP,7,,"Boudewijnstadion, Bruxelles (BEL)",07 SEP 2012,1195.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14165596,toplist
+17.0,8:14.48,,Jacob ARAPTANY,11 FEB 1992,UGA,7,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1191.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14428739,toplist
+18.0,8:15.20,,Víctor GARCÍA,13 MAR 1985,ESP,1,,Huelva (ESP),07 JUN 2012,1188.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14166402,toplist
+19.0,8:16.48,,Silas Kosgei KITUM,25 MAY 1990,KEN,8,,"Boudewijnstadion, Bruxelles (BEL)",07 SEP 2012,1182.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14208587,toplist
+20.0,8:16.93,,Hamid EZZINE,05 OCT 1983,MAR,2,,Huelva (ESP),07 JUN 2012,1180.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14212132,toplist
+21.0,8:16.96,,Wilson MARABA,1986,KEN,2,,Porto Novo (BEN),29 JUN 2012,1180.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14209017,toplist
+22.0,8:17.55,,Benjamin KIPLAGAT,04 MAR 1989,UGA,8,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1178.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14229601,toplist
+23.0,8:17.85,,Tarik Langat AKDAG,16 JUN 1988,TUR,4h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1176.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14208848,toplist
+24.0,8:17.88,,Jonathan Muia NDIKU,18 SEP 1991,KEN,8,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1176.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14209367,toplist
+25.0,8:18.03,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,3,,Huelva (ESP),07 JUN 2012,1175.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14165696,toplist
+26.0,8:18.16,,Nahom Mesfin TARIKU,03 JUN 1989,ETH,5h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1175.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14181645,toplist
+27.0,8:18.63,,Birhan GETAHUN,05 SEP 1991,ETH,9,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1173.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14424162,toplist
+28.0,8:18.89,,Nordine GEZZAR,17 FEB 1980,FRA,3,,Lille (FRA),09 JUN 2012,1172.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14185007,toplist
+29.0,8:19.14,,Donald CABRAL,12 DEC 1989,USA,1f2,,"Los Angeles, CA (USA)",18 MAY 2012,1170.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14363391,toplist
+30.0,8:20.81,,Daniel HULING,16 JUL 1983,USA,2f2,,"Los Angeles, CA (USA)",18 MAY 2012,1163.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14241342,toplist
+31.0,8:20.86,,Kyle ALCORN,18 MAR 1985,USA,3f2,,"Los Angeles, CA (USA)",18 MAY 2012,1163.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14231108,toplist
+32.0,8:21.42,,William NELSON,11 SEP 1984,USA,9,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1160.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14247058,toplist
+33.0,8:21.66,,Yoann KOWAL,28 MAY 1987,FRA,9,,"Boudewijnstadion, Bruxelles (BEL)",07 SEP 2012,1159.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14185672,toplist
+34.0,8:21.78,,Hicham SIGUENI,30 JAN 1993,MAR,1,,Liège (BEL),05 JUL 2012,1159.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14375781,toplist
+35.0,8:21.80,,Łukasz PARSZCZYŃSKI,04 MAY 1985,POL,10,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1158.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14217337,toplist
+36.0,8:21.98,,Youcef ABDI,07 DEC 1977,AUS,2,,Istanbul (TUR),09 JUN 2012,1158.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14180225,toplist
+37.0,8:22.09,,Ivan LUKYANOV,31 JAN 1981,MDA,5h3,,"Olympic Stadium, London (GBR)",03 AUG 2012,1157.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14212711,toplist
+38.0,8:22.19,,Vadim SLOBODENYUK,17 MAR 1981,UKR,1f2,,Yalta (UKR),28 MAY 2012,1157.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14230622,toplist
+39.0,8:22.24,,Nelson KIPKOGEI,09 MAR 1993,KEN,2,,Liège (BEL),05 JUL 2012,1157.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14425939,toplist
+40.0,8:22.32,,Mohamed-Khaled BELABBAS,04 JUL 1981,ALG,6h3,,"Olympic Stadium, London (GBR)",03 AUG 2012,1156.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14183168,toplist
+41.0,8:22.62,,Yuri FLORIANI,25 DEC 1981,ITA,11,,"Stadio Olimpico, Roma (ITA)",31 MAY 2012,1155.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14200339,toplist
+41.0,8:22.62,,Alexandre GENEST,30 JUN 1986,CAN,7h3,,"Olympic Stadium, London (GBR)",03 AUG 2012,1155.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14174234,toplist
+43.0,8:22.70,,Amor BEN YAHIA,01 JUL 1985,TUN,7h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1154.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14229127,toplist
+44.0,8:22.93,,Steffen ULICZKA,17 JUL 1984,GER,3,,Liège (BEL),05 JUL 2012,1153.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14194551,toplist
+45.0,8:23.22,,Hakan DUVAR,21 AUG 1990,TUR,3,,Istanbul (TUR),09 JUN 2012,1152.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14377141,toplist
+46.0,8:23.31,,Andrey FARNOSOV,09 JUL 1980,RUS,3,,Moskva (RUS),11 JUN 2012,1152.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14222139,toplist
+47.0,8:23.61,,Timothy TOROITICH,10 OCT 1991,UGA,4,,Brazzaville (CGO),10 JUN 2012,1150.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14413323,toplist
+48.0,8:23.62,,Simon AYEKO,10 MAY 1987,UGA,2,,Mataró (ESP),08 JUL 2012,1150.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14229566,toplist
+49.0,8:24.06,,José Gregorio PEÑA,12 JAN 1987,VEN,8h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1148.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14256190,toplist
+50.0,8:24.13,,Artem KOSINOV,31 JUL 1986,KAZ,4,,Moskva (RUS),11 JUN 2012,1148.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14207205,toplist
+51.0,8:24.19,,Antonio David JIMÉNEZ,18 FEB 1977,ESP,4,,Huelva (ESP),07 JUN 2012,1148.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14166106,toplist
+52.0,8:24.28,,Sisay KORME,09 JAN 1985,ETH,1,,Fortaleza (BRA),09 MAY 2012,1147.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14472934,toplist
+52.0,8:24.28,,Ruben RAMOLEFI,17 JUL 1978,RSA,11,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1147.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14221021,toplist
+54.0,8:24.53,,Roberto ALAIZ,20 JUL 1990,ESP,6,,Huelva (ESP),07 JUN 2012,1146.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14370728,toplist
+55.0,8:24.76,,Ernest Tumelo MOTLAGALE,02 DEC 1986,RSA,2,,Port Elizabeth (RSA),14 APR 2012,1145.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14325540,toplist
+56.0,8:25.12,,Haron LAGAT,15 AUG 1983,KEN,1,,Dessau (GER),25 MAY 2012,1144.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14208829,toplist
+57.0,8:25.50,,Krystian ZALEWSKI,11 APR 1989,POL,2,,Dessau (GER),25 MAY 2012,1142.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14217925,toplist
+58.0,8:25.66,,Dejeni REGASSA,18 APR 1989,BRN,3,,Luzern (SUI),17 JUL 2012,1141.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14181596,toplist
+59.0,8:25.67,,Clement Kimutai KEMBOI,10 FEB 1992,KEN,4,,Luzern (SUI),17 JUL 2012,1141.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14425950,toplist
+60.0,8:25.98,,Jaouad CHEMLAL,11 APR 1994,MAR,8,,Rabat (MAR),27 MAY 2012,1140.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14433902,toplist
+61.0,8:26.00,,Sebastián MARTOS,20 JUN 1989,ESP,4,,Mataró (ESP),08 JUL 2012,1140.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14165762,toplist
+62.0,8:26.08,,Ben BRUCE,10 SEP 1982,USA,1,,"Murfreesboro, TN (USA)",02 JUN 2012,1139.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14233625,toplist
+63.0,8:26.12,,Abraham CHIRCHIR,01 AUG 1980,KEN,9,,Rabat (MAR),27 MAY 2012,1139.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14207659,toplist
+64.0,8:26.22,,Ali Ahmed AL AMRI,28 DEC 1987,KSA,9h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1139.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14210607,toplist
+65.0,8:26.33,,Tafese SOBOKA,29 SEP 1993,ETH,5,,Porto Novo (BEN),29 JUN 2012,1138.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14532477,toplist
+66.0,8:26.38,,Nikolay CHAVKIN,24 APR 1984,RUS,1f2,,Cheboksary (RUS),03 JUL 2012,1138.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14221966,toplist
+67.0,8:26.51,,Donnie COWART,24 OCT 1985,USA,1,,"Indianapolis, IN (USA)",13 JUN 2012,1138.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14235468,toplist
+68.0,8:27.24,,Patrick Kipyegon TERER,06 JUL 1989,KEN,6,,Moskva (RUS),11 JUN 2012,1134.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14209891,toplist
+69.0,8:27.61,,Łukasz OSLIZLO,14 MAY 1989,POL,2,,Bottrop (GER),07 JUL 2012,1133.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14217308,toplist
+70.0,8:27.65,,Eliseo MARTÍN,05 NOV 1973,ESP,6,,Mataró (ESP),08 JUL 2012,1132.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14165844,toplist
+71.0,8:27.77,,David ADAMS,04 JAN 1989,USA,5f2,,"Los Angeles, CA (USA)",18 MAY 2012,1132.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14230968,toplist
+72.0,8:27.96,,Jukka KESKISALO,27 MAR 1981,FIN,8,,"Stade Louis II, Monaco (MON)",20 JUL 2012,1131.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14182035,toplist
+73.0,8:28.46,,Chris WINTER,22 JUL 1986,CAN,6,,Luzern (SUI),17 JUL 2012,1129.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14173286,toplist
+74.0,8:28.52,,Diego TAMAYO,06 DEC 1983,ESP,7,,Mataró (ESP),08 JUL 2012,1129.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14164877,toplist
+75.0,8:28.77,,Abdellah DACHA,26 JAN 1992,MAR,1,,Oordegem (BEL),26 MAY 2012,1128.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14211978,toplist
+76.0,8:28.90,,Craig FORYS,13 JUL 1989,USA,1,,"Madison, WI (USA)",12 MAY 2012,1127.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14237983,toplist
+77.0,8:28.97,,Weynay GHEBRESILASIE,24 MAR 1994,ERI,2,,Oordegem (BEL),26 MAY 2012,1127.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14433434,toplist
+78.0,8:29.03,,Habtamu FAYISA,19 APR 1993,ETH,6,,Porto Novo (BEN),29 JUN 2012,1126.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14431366,toplist
+79.0,8:29.08,,Patrick NASTI,30 AUG 1989,ITA,7,,Huelva (ESP),07 JUN 2012,1126.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14334792,toplist
+80.0,8:29.17,,Dmitriy BALASHOV,19 JAN 1989,RUS,2f2,,Cheboksary (RUS),03 JUL 2012,1126.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14377163,toplist
+81.0,8:29.22,,Luke GUNN,22 MAR 1985,GBR,3,,Oordegem (BEL),26 MAY 2012,1126.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14189446,toplist
+82.0,8:29.29,,Augustus MAIYO,10 MAY 1983,USA,4h2,,"Hayward Field, Eugene, OR (USA)",25 JUN 2012,1125.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14208973,toplist
+83.0,8:29.32,,Stuart STOKES,05 DEC 1976,GBR,4,,Oordegem (BEL),26 MAY 2012,1125.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14190891,toplist
+84.0,8:29.39,,Enrique SÁNCHEZ,14 OCT 1983,ESP,8,,Mataró (ESP),08 JUL 2012,1125.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14164993,toplist
+85.0,8:29.59,,Ilgizar SAFIULIN,09 DEC 1992,RUS,3f2,,Cheboksary (RUS),03 JUL 2012,1124.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14376859,toplist
+86.0,8:29.7h,,Peter MATELONG,1989,KEN,4,,Nairobi (KEN),15 JUN 2012,1123.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14366994,toplist
+87.0,8:29.78,,Monatcer ZAGHOU,14 MAY 1989,MAR,2,,Fes (MAR),05 MAY 2012,1123.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14472742,toplist
+88.0,8:29.98,,Dean BRUMMER,15 SEP 1988,RSA,4,,Dessau (GER),25 MAY 2012,1122.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14219795,toplist
+89.0,8:30.08,,Brian OLINGER,02 JUN 1983,USA,5h2,,"Hayward Field, Eugene, OR (USA)",25 JUN 2012,1122.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14247604,toplist
+90.0,8:30.34,,Halil AKKAŞ,01 JUL 1983,TUR,1,,Izmir (TUR),20 MAY 2012,1121.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14229307,toplist
+91.0,8:30.50,,John KIPRUGUT,,KEN,1,,Eldoret (KEN),11 FEB 2012,1120.0,men_3000sc,2012,https://worldathletics.org/athletes/kenya/john-kiprugut-14555234,toplist
+92.0,8:30.54,,Max KING,24 FEB 1980,USA,6,,"Hayward Field, Eugene, OR (USA)",28 JUN 2012,1120.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14243005,toplist
+93.0,8:30.80,,Nelson KOSGEI,1993,KEN,6,,Dessau (GER),25 MAY 2012,1119.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14432895,toplist
+94.0,8:30.83,,Lyle WEESE,26 OCT 1979,USA,7f2,,"Los Angeles, CA (USA)",18 MAY 2012,1118.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14254489,toplist
+95.0,8:31.01,,Abdelmadjed TOUIL,11 FEB 1989,ALG,3,,Bottrop (GER),07 JUL 2012,1118.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14329135,toplist
+96.0,8:31.02,,Tomasz SZYMKOWIAK,05 JUL 1983,POL,11,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1118.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14217721,toplist
+97.0,8:31.08,,Cory LESLIE,24 OCT 1989,USA,4h1,,"Hayward Field, Eugene, OR (USA)",25 JUN 2012,1117.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14243958,toplist
+98.0,8:31.10,,Ronald Kibet TANUI,1988,KEN,2,,Eldoret (KEN),11 FEB 2012,1117.0,men_3000sc,2012,https://worldathletics.org/athletes/kenya/ronald-kibet-tanui-14422540,toplist
+99.0,8:31.15,,Joshua MCADAMS,26 MAR 1980,USA,5h1,,"Hayward Field, Eugene, OR (USA)",25 JUN 2012,1117.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14245262,toplist
+100.0,8:31.2h,,Lawrence Kemboi KIPSANG,15 JUN 1993,KEN,1h1,,Nairobi (KEN),14 JUN 2012,1117.0,men_3000sc,2012,https://worldathletics.org/athletes/athlete=14479203,toplist
+1.0,7:59.03,,Ezekiel KEMBOI,25 MAY 1982,KEN,1,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1263.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14207908,toplist
+2.0,8:00.09,,Mahiedine MEKHISSI,15 MAR 1985,FRA,2,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1258.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14186447,toplist
+3.0,8:01.16,,Conseslus KIPRUTO,08 DEC 1994,KEN,1,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2013,1253.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14479159,toplist
+4.0,8:02.63,,Paul Kipsiele KOECH,10 NOV 1981,KEN,2,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2013,1246.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14208637,toplist
+5.0,8:03.57,,Hillary Kipsang YEGO,02 APR 1992,KEN,3,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2013,1241.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14375963,toplist
+6.0,8:06.86,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,1,,"Olympic Stadium, London (GBR)",27 JUL 2013,1226.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14208442,toplist
+7.0,8:06.96,,Gilbert KIRUI,22 JAN 1994,KEN,2,,"Olympic Stadium, London (GBR)",27 JUL 2013,1226.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14425946,toplist
+8.0,8:08.60,,Evan JAGER,08 MAR 1989,USA,4,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1218.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14241750,toplist
+9.0,8:08.72,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,2,,"Letzigrund, Zürich (SUI)",29 AUG 2013,1218.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14425940,toplist
+10.0,8:08.83,,Abel Kiprop MUTAI,02 OCT 1988,KEN,4,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2013,1217.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14209248,toplist
+11.0,8:11.64,,Matthew HUGHES,03 AUG 1989,CAN,6,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1204.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14174102,toplist
+12.0,8:12.22,,Roba GARI,12 APR 1982,ETH,4,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1202.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14181609,toplist
+13.0,8:12.53,,Yoann KOWAL,28 MAY 1987,FRA,1,,Rabat (MAR),09 JUN 2013,1200.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14185672,toplist
+14.0,8:13.07,,Benjamin KIPLAGAT,04 MAR 1989,UGA,5,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1198.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14229601,toplist
+15.0,8:13.27,,Hamid EZZINE,05 OCT 1983,MAR,2,,Rabat (MAR),09 JUN 2013,1197.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14212132,toplist
+16.0,8:14.05,,Amor BEN YAHIA,01 JUL 1985,TUN,1,,Mersin (TUR),28 JUN 2013,1193.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14229127,toplist
+17.0,8:15.89,,Noureddine SMAÏL,06 FEB 1987,FRA,6,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1185.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14187675,toplist
+18.0,8:15.93,,Abdelmadjed TOUIL,11 FEB 1989,ALG,4,,Rabat (MAR),09 JUN 2013,1185.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14329135,toplist
+19.0,8:16.43,,Jacob ARAPTANY,11 FEB 1992,UGA,1,,"Puskás Ferenc Stadion, Budapest (HUN)",10 JUL 2013,1183.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14428739,toplist
+20.0,8:16.96,,John KOECH,23 AUG 1995,KEN,6,,"Olympiastadion, Stockholm (SWE)",22 AUG 2013,1180.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14530682,toplist
+21.0,8:17.18,,Clement Kimutai KEMBOI,10 FEB 1992,KEN,2,,"Puskás Ferenc Stadion, Budapest (HUN)",10 JUL 2013,1179.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14425950,toplist
+22.0,8:18.78,,Jonathan Muia NDIKU,18 SEP 1991,KEN,5,,Rabat (MAR),09 JUN 2013,1172.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14209367,toplist
+23.0,8:19.07,,Elijah CHELIMO,20 APR 1987,KEN,3,,"Puskás Ferenc Stadion, Budapest (HUN)",10 JUL 2013,1171.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14207503,toplist
+24.0,8:19.14,,Bernard NGANGA,17 JAN 1985,KEN,4,,Beijing (CHN),21 MAY 2013,1170.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14209082,toplist
+25.0,8:19.22,,Jaouad CHEMLAL,11 APR 1994,MAR,6,,Rabat (MAR),09 JUN 2013,1170.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14433902,toplist
+26.0,8:19.26,,Ángel MULLERA,20 APR 1984,ESP,4h1,,"Luzhniki Stadion, Moskva (RUS)",12 AUG 2013,1170.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14165596,toplist
+27.0,8:19.64,,Ivan LUKYANOV,31 JAN 1981,MDA,5h1,,"Luzhniki Stadion, Moskva (RUS)",12 AUG 2013,1168.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14212711,toplist
+28.0,8:20.08,,Cory LESLIE,24 OCT 1989,USA,4,,Tokyo (JPN),05 MAY 2013,1166.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14243958,toplist
+28.0,8:20.08,,Tarik Langat AKDAG,16 JUN 1988,TUR,2,,Mersin (TUR),28 JUN 2013,1166.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14208848,toplist
+30.0,8:20.11,,Hichem BOUCHICHA,19 MAY 1989,ALG,2,,Rabat (MAR),01 JUN 2013,1166.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14428442,toplist
+31.0,8:20.87,,José Gregorio PEÑA,12 JAN 1987,VEN,7,,"Olympiastadion, Berlin (GER)",01 SEP 2013,1163.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14256190,toplist
+32.0,8:21.19,,Anthony ROTICH,20 OCT 1990,USA,1,,"Eugene, OR (USA)",07 JUN 2013,1161.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14511345,toplist
+33.0,8:21.62,,Mohammed BOULAMA,31 DEC 1993,MAR,3,,Rabat (MAR),01 JUN 2013,1159.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14526696,toplist
+34.0,8:21.92,,Daniel HULING,16 JUL 1983,USA,7,,"Olympiastadion, Stockholm (SWE)",22 AUG 2013,1158.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14241342,toplist
+35.0,8:22.68,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,1,,Huelva (ESP),12 JUN 2013,1155.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14165696,toplist
+36.0,8:22.95,,Haron LAGAT,15 AUG 1983,KEN,8,,"Olympiastadion, Berlin (GER)",01 SEP 2013,1153.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14208829,toplist
+37.0,8:22.97,,Sebastián MARTOS,20 JUN 1989,ESP,2,,Huelva (ESP),12 JUN 2013,1153.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14165762,toplist
+38.0,8:23.16,,Henry LELEI,31 DEC 1988,KEN,2,,"Eugene, OR (USA)",07 JUN 2013,1152.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14417049,toplist
+39.0,8:23.31,,Krystian ZALEWSKI,11 APR 1989,POL,9,,Rabat (MAR),09 JUN 2013,1152.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14217925,toplist
+40.0,8:23.43,,Alexandre GENEST,30 JUN 1986,CAN,3f1,,"Palo Alto, CA (USA)",28 APR 2013,1151.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14174234,toplist
+41.0,8:23.57,,Steffen ULICZKA,17 JUL 1984,GER,3,,Huelva (ESP),12 JUN 2013,1151.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14194551,toplist
+42.0,8:23.84,,Monatcer ZAGHOU,14 MAY 1989,MAR,10,,Rabat (MAR),09 JUN 2013,1149.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14472742,toplist
+43.0,8:24.45,,Stanley Kipkoech KEBENEI,06 NOV 1989,KEN,3,,"Eugene, OR (USA)",07 JUN 2013,1147.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14458880,toplist
+44.0,8:24.59,,Timothy TOROITICH,10 OCT 1991,UGA,5,,"Puskás Ferenc Stadion, Budapest (HUN)",10 JUL 2013,1146.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14413323,toplist
+45.0,8:24.62,,Yuri FLORIANI,25 DEC 1981,ITA,4,,Huelva (ESP),12 JUN 2013,1146.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14200339,toplist
+46.0,8:24.90,,Habtamu FAYISA,19 APR 1993,ETH,11,,Rabat (MAR),09 JUN 2013,1145.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14431366,toplist
+47.0,8:25.0h,,Lawrence Kemboi KIPSANG,15 JUN 1993,KEN,2,,Nairobi (KEN),22 JUN 2013,1144.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14479203,toplist
+48.0,8:25.01,,Łukasz PARSZCZYŃSKI,04 MAY 1985,POL,9,,"Bislett Stadion, Oslo (NOR)",13 JUN 2013,1144.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14217337,toplist
+49.0,8:25.2h,,Edwin KIRWA,25 MAY 1979,KEN,3,,Nairobi (KEN),22 JUN 2013,1143.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14530700,toplist
+50.0,8:25.34,,Roberto ALAIZ,20 JUL 1990,ESP,6,,"Puskás Ferenc Stadion, Budapest (HUN)",10 JUL 2013,1143.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14370728,toplist
+51.0,8:25.37,,Jamel CHATBI,30 APR 1984,ITA,13,,Rabat (MAR),09 JUN 2013,1143.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14211964,toplist
+52.0,8:25.56,,De'Sean TURNER,16 SEP 1988,USA,3,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1142.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14253549,toplist
+53.0,8:25.96,,Abdelhamid ZERRIFI,20 JUN 1986,ALG,13,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1140.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14180600,toplist
+54.0,8:26.24,,Vadim SLOBODENYUK,17 MAR 1981,UKR,1,,Yalta (UKR),06 JUN 2013,1139.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14230622,toplist
+55.0,8:26.30,,Mateusz DEMCZYSZAK,18 JAN 1986,POL,1,,Toruń (POL),19 JUL 2013,1138.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14216548,toplist
+56.0,8:26.77,,Tomasz SZYMKOWIAK,05 JUL 1983,POL,7,,Huelva (ESP),12 JUN 2013,1136.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14217721,toplist
+57.0,8:26.82,,Andrew POORE,03 DEC 1988,USA,4,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1136.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14941410,toplist
+58.0,8:27.09,,Mitko TSENOV,13 JUN 1993,BUL,1,,Pravets (BUL),15 JUN 2013,1135.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14376708,toplist
+59.0,8:27.36,,Silas Kosgei KITUM,25 MAY 1990,KEN,7,,Beijing (CHN),21 MAY 2013,1134.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14208587,toplist
+60.0,8:28.21,,Wilson MARABA,1986,KEN,4,,"Mestský Stadion, Ostrava (CZE)",27 JUN 2013,1130.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14209017,toplist
+61.0,8:28.6h,,Gerald Nicolas GIRALDO VILLA,21 MAR 1989,COL,2,,Trujillo (PER),29 NOV 2013,1128.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14336094,toplist
+62.0,8:28.65,,Ilgizar SAFIULIN,09 DEC 1992,RUS,8h1,,"Luzhniki Stadion, Moskva (RUS)",12 AUG 2013,1128.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14376859,toplist
+63.0,8:28.74,,James WILKINSON,13 JUL 1990,GBR,6,,"Mestský Stadion, Ostrava (CZE)",27 JUN 2013,1128.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14329415,toplist
+64.0,8:28.92,,Chris WINTER,22 JUL 1986,CAN,1,,Lapinlahti (FIN),21 JUL 2013,1127.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14173286,toplist
+65.0,8:29.10,,William NELSON,11 SEP 1984,USA,2,,"Los Angeles, CA (USA)",17 MAY 2013,1126.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14247058,toplist
+66.0,8:29.2h,,Hillary Cheserek KEMBOI,1986,KEN,2,,Nairobi (KEN),11 MAY 2013,1126.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14422539,toplist
+67.0,8:29.5h,,Peter MATELONG,1989,KEN,4,,Nairobi (KEN),22 JUN 2013,1124.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14366994,toplist
+68.0,8:29.82,,Hicham SIGUENI,30 JAN 1993,MAR,10,,"Hayward Field, Eugene, OR (USA)",01 JUN 2013,1123.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14375781,toplist
+69.0,8:29.92,,Meresa KAHSAY,23 MAY 1996,ETH,11,,"Olympiastadion, Stockholm (SWE)",22 AUG 2013,1122.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14477337,toplist
+70.0,8:30.02,,Donnie COWART,24 OCT 1985,USA,3,,"Los Angeles, CA (USA)",17 MAY 2013,1122.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14235468,toplist
+71.0,8:30.05,,Brahim TALEB,16 FEB 1985,MAR,1,,Casablanca (MAR),06 JUL 2013,1122.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14212492,toplist
+72.0,8:30.28,,Patrick NASTI,30 AUG 1989,ITA,4,,Dessau (GER),31 MAY 2013,1121.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14334792,toplist
+73.0,8:30.78,,Devis LICCIARDI,21 JUL 1986,ITA,1,,Brugnera (ITA),07 SEP 2013,1119.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14200653,toplist
+74.0,8:30.87,,Travis MAHONEY,25 JUL 1990,USA,4,,"Los Angeles, CA (USA)",17 MAY 2013,1118.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14362500,toplist
+75.0,8:31.28,,Matt CLEAVER,07 NOV 1989,USA,5,,"Los Angeles, CA (USA)",17 MAY 2013,1116.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14371431,toplist
+76.0,8:31.34,,Andrey FARNOSOV,09 JUL 1980,RUS,9,,Huelva (ESP),12 JUN 2013,1116.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14222139,toplist
+77.0,8:31.4h,,Kennedy NJIRU,1987,KEN,3,,Nairobi (KEN),11 MAY 2013,1116.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14530691,toplist
+78.0,8:31.48,,Taylor MILNE,14 SEP 1981,CAN,6,,"Los Angeles, CA (USA)",17 MAY 2013,1116.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14173784,toplist
+79.0,8:31.75,,Josphat Kimutai KOECH,1983,KEN,2,,Brugnera (ITA),07 SEP 2013,1114.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14335141,toplist
+80.0,8:32.32,,Bilal TABTI,07 JUN 1993,ALG,1,,Algiers (ALG),05 JUL 2013,1112.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14431369,toplist
+81.0,8:32.37,,Willy Rutto KOMEN,22 DEC 1987,KEN,4,,Bellinzona (SUI),11 JUN 2013,1112.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14208677,toplist
+82.0,8:32.41,,Hillary BOR,22 NOV 1989,KEN,7f1,,"Palo Alto, CA (USA)",28 APR 2013,1112.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14232976,toplist
+83.0,8:32.51,,Tomas TAJADURA JUEZ,25 JUN 1985,ESP,10,,Huelva (ESP),12 JUN 2013,1111.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14164881,toplist
+84.0,8:32.57,,Cameron BEAN,17 DEC 1986,USA,8f1,,"Palo Alto, CA (USA)",28 APR 2013,1111.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14232209,toplist
+85.0,8:32.68,,Rob MULLETT,31 JUL 1987,GBR,6,,Dessau (GER),31 MAY 2013,1110.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14190233,toplist
+86.0,8:32.72,,Nelson KIPKOGEI,09 MAR 1993,BRN,6,,Algiers (ALG),18 JUN 2013,1110.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14425939,toplist
+87.0,8:32.89,,Jun SHINOTO,02 APR 1985,JPN,10f1,,"Palo Alto, CA (USA)",28 APR 2013,1109.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14205825,toplist
+88.0,8:33.06,,Edwin MOLEPE,31 MAY 1987,RSA,1,,Stellenbosch (RSA),12 APR 2013,1109.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14220684,toplist
+89.0,8:33.09,,Alberto Casimiro PAULO,03 OCT 1985,POR,11,,Huelva (ESP),12 JUN 2013,1109.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14218429,toplist
+90.0,8:33.18,,Alex KIBET,10 NOV 1990,KEN,1,,Doha (QAT),30 APR 2013,1108.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14525981,toplist
+91.0,8:33.22,,Craig FORYS,13 JUL 1989,USA,1,,Baie Mahault (FRA),08 MAY 2013,1108.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14237983,toplist
+92.0,8:33.48,,Tsuyoshi TAKEDA,22 JAN 1987,JPN,7,,Tokyo (JPN),05 MAY 2013,1107.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14206208,toplist
+93.0,8:33.57,,Minato YAMASHITA,15 NOV 1988,JPN,1,,Tokyo (JPN),07 JUN 2013,1106.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14419469,toplist
+94.0,8:33.72,,Redouane MEJDOUB,03 MAR 1987,MAR,3,,Casablanca (MAR),06 JUL 2013,1106.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14420172,toplist
+95.0,8:33.74,,Youcef ABDI,07 DEC 1977,AUS,1,,"Albert Park, Melbourne (AUS)",06 APR 2013,1106.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14180225,toplist
+96.0,8:33.82,,Aoi MATSUMOTO,07 SEP 1987,JPN,2,,Tokyo (JPN),07 JUN 2013,1105.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14330415,toplist
+97.0,8:34.23,,Donald CABRAL,12 DEC 1989,USA,7,,"Los Angeles, CA (USA)",17 MAY 2013,1104.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14363391,toplist
+98.0,8:34.32,,Tareq Mubarak TAHER,1986,BRN,10h1,,"Luzhniki Stadion, Moskva (RUS)",12 AUG 2013,1103.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14175111,toplist
+99.0,8:34.42,,Zak SEDDON,28 JUN 1994,GBR,11f1,,"Palo Alto, CA (USA)",28 APR 2013,1103.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14386241,toplist
+100.0,8:34.55,,Luis Enrique IBARRA,04 JUL 1980,MEX,8,,"Los Angeles, CA (USA)",17 MAY 2013,1102.0,men_3000sc,2013,https://worldathletics.org/athletes/athlete=14241495,toplist
+1.0,7:58.41,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,1,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1265.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14425940,toplist
+2.0,8:03.23,,Mahiedine MEKHISSI,15 MAR 1985,FRA,2,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1243.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14186447,toplist
+3.0,8:04.12,,Ezekiel KEMBOI,25 MAY 1982,KEN,1,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1239.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14207908,toplist
+4.0,8:04.64,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1237.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14208442,toplist
+5.0,8:04.71,,Evan JAGER,08 MAR 1989,USA,3,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1236.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14241750,toplist
+6.0,8:05.47,,Paul Kipsiele KOECH,10 NOV 1981,KEN,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1233.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14208637,toplist
+7.0,8:09.07,,Hillary Kipsang YEGO,02 APR 1992,KEN,5,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1216.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14375963,toplist
+8.0,8:09.81,,Conseslus KIPRUTO,08 DEC 1994,KEN,2,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1213.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14479159,toplist
+9.0,8:10.44,,Jonathan Muia NDIKU,18 SEP 1991,KEN,1,,"Hampden Park, Glasgow (GBR)",01 AUG 2014,1210.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14209367,toplist
+10.0,8:11.86,,Gilbert KIRUI,22 JAN 1994,KEN,6,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1203.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14425946,toplist
+11.0,8:12.81,,Matthew HUGHES,03 AUG 1989,CAN,4,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1199.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14174102,toplist
+12.0,8:14.33,,Hamid EZZINE,05 OCT 1983,MAR,2,,Sotteville-lès-Rouen (FRA),14 JUN 2014,1192.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14212132,toplist
+13.0,8:15.01,,Bernard NGANGA,17 JAN 1985,KEN,5,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1189.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14209082,toplist
+14.0,8:15.48,,Brahim TALEB,16 FEB 1985,MAR,6,,"Bislett Stadion, Oslo (NOR)",11 JUN 2014,1187.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14212492,toplist
+15.0,8:15.61,,Daniel HULING,16 JUL 1983,USA,4,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1186.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14241342,toplist
+16.0,8:15.83,,Abel Kiprop MUTAI,02 OCT 1988,KEN,4,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1185.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14209248,toplist
+17.0,8:16.20,,Krystian ZALEWSKI,11 APR 1989,POL,5,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1184.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14217925,toplist
+18.0,8:16.96,,Clement Kimutai KEMBOI,10 FEB 1992,KEN,6,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1180.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14425950,toplist
+19.0,8:17.03,,Barnabas KIPYEGO,12 JUN 1995,KEN,3,,"Alexander Stadium, Birmingham (GBR)",24 AUG 2014,1180.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14657342,toplist
+20.0,8:17.27,,Abubaker Ali KAMAL,08 NOV 1983,QAT,3,,"Le Grand Stade, Marrakech (MAR)",14 SEP 2014,1179.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14219053,toplist
+21.0,8:17.40,,Víctor GARCÍA,13 MAR 1985,ESP,7,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1178.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14166402,toplist
+22.0,8:18.31,,Sebastián MARTOS,20 JUN 1989,ESP,2,,Huelva (ESP),12 JUN 2014,1174.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14165762,toplist
+23.0,8:19.00,,Haron LAGAT,15 AUG 1983,KEN,6,,"Alexander Stadium, Birmingham (GBR)",24 AUG 2014,1171.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14208829,toplist
+24.0,8:19.59,,Lawrence Kemboi KIPSANG,15 JUN 1993,KEN,1,,"Sports Park Mladost, Zagreb (CRO)",02 SEP 2014,1168.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14479203,toplist
+25.0,8:19.99,,John KOECH,23 AUG 1995,BRN,2,,Bydgoszcz (POL),02 JUN 2014,1167.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14530682,toplist
+26.0,8:20.04,,Donald CABRAL,12 DEC 1989,USA,3,,"Sacramento, CA (USA)",29 JUN 2014,1166.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14363391,toplist
+27.0,8:20.29,,Ilgizar SAFIULIN,09 DEC 1992,RUS,7,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1165.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14376859,toplist
+28.0,8:20.84,,Jacob ARAPTANY,11 FEB 1992,UGA,1,,Tokyo (JPN),11 MAY 2014,1163.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14428739,toplist
+29.0,8:20.87,,Mitko TSENOV,13 JUN 1993,BUL,4,,Huelva (ESP),12 JUN 2014,1163.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14376708,toplist
+30.0,8:20.92,,Jaouad CHEMLAL,11 APR 1994,MAR,11,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1162.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14433902,toplist
+31.0,8:21.78,,Marvin BLANCO,16 JUN 1988,VEN,5,,Huelva (ESP),12 JUN 2014,1159.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14256040,toplist
+32.0,8:22.26,,Hillary Cheserek KEMBOI,1986,KEN,1,,Bilbao (ESP),21 JUN 2014,1156.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14422539,toplist
+33.0,8:22.38,,Mateusz DEMCZYSZAK,18 JAN 1986,POL,12,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1156.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14216548,toplist
+34.0,8:22.46,,Titus KIBIEGO,03 MAY 1996,KEN,1,,Nairobi (KEN),25 JUN 2014,1156.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14590672,toplist
+35.0,8:22.76,,James WILKINSON,13 JUL 1990,GBR,6,,Huelva (ESP),12 JUN 2014,1154.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14329415,toplist
+36.0,8:24.09,,Craig FORYS,13 JUL 1989,USA,5,,Luzern (SUI),15 JUL 2014,1148.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14237983,toplist
+37.0,8:24.29,,Martin GRAU,26 MAR 1992,GER,2,,Dessau (GER),11 JUN 2014,1147.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14374909,toplist
+38.0,8:24.45,,Nelson KIPKOGEI,09 MAR 1993,BRN,3,,Bydgoszcz (POL),02 JUN 2014,1147.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14425939,toplist
+39.0,8:25.20,,Hicham SIGUENI,30 JAN 1993,MAR,2,,Bilbao (ESP),21 JUN 2014,1143.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14375781,toplist
+40.0,8:25.38,,Jamel CHATBI,30 APR 1984,ITA,7,,Huelva (ESP),12 JUN 2014,1143.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14211964,toplist
+41.0,8:25.45,,Chala BEYO,18 JAN 1996,ETH,4,,"Le Grand Stade, Marrakech (MAR)",14 SEP 2014,1142.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14660572,toplist
+42.0,8:25.50,,Yoann KOWAL,28 MAY 1987,FRA,1,,"Eintracht-Stadion, Braunschweig (GER)",22 JUN 2014,1142.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14185672,toplist
+43.0,8:25.71,,Andrew BAYER,03 FEB 1990,USA,6,,Luzern (SUI),15 JUL 2014,1141.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14360463,toplist
+44.0,8:26.05,,Benjamin KIPLAGAT,04 MAR 1989,UGA,3,,Tokyo (JPN),11 MAY 2014,1140.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14229601,toplist
+45.0,8:26.08,,Meresa KAHSAY,23 MAY 1996,ETH,11,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1139.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14477337,toplist
+46.0,8:26.19,,Ivan LUKYANOV,31 JAN 1981,RUS,1f2,,Kazan (RUS),24 JUL 2014,1139.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14212711,toplist
+47.0,8:26.30,,Cory LESLIE,24 OCT 1989,USA,4,,"Sacramento, CA (USA)",29 JUN 2014,1138.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14243958,toplist
+48.0,8:26.34,,Yuri FLORIANI,25 DEC 1981,ITA,13,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1138.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14200339,toplist
+49.0,8:26.45,,Tarik Langat AKDAG,16 JUN 1988,TUR,5,,"Le Grand Stade, Marrakech (MAR)",08 JUN 2014,1138.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14208848,toplist
+50.0,8:26.61,,José Gregorio PEÑA,12 JAN 1987,VEN,4,,Sotteville-lès-Rouen (FRA),14 JUN 2014,1137.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14256190,toplist
+51.0,8:26.79,,Steffen ULICZKA,17 JUL 1984,GER,7,,Luzern (SUI),15 JUL 2014,1136.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14194551,toplist
+52.0,8:26.85,,Birhan GETAHUN,05 SEP 1991,ETH,1,,Montbéliard (FRA),06 JUN 2014,1136.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14424162,toplist
+53.0,8:27.0h,,Peter Kibet LAGAT,26 MAY 1992,KEN,1,,Nairobi (KEN),24 MAY 2014,1135.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14375972,toplist
+53.0,8:27.0h,,Joash KIPLIMO,21 MAY 1991,KEN,4,,Nairobi (KEN),07 JUN 2014,1135.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14420236,toplist
+55.0,8:27.00,,Roberto ALAIZ,20 JUL 1990,ESP,3,,Padova (ITA),06 JUL 2014,1135.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14370728,toplist
+56.0,8:27.53,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,9,,Huelva (ESP),12 JUN 2014,1133.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14165696,toplist
+57.0,8:27.81,,Taylor MILNE,14 SEP 1981,CAN,1,,Guelph (CAN),31 MAY 2014,1132.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14173784,toplist
+58.0,8:28.03,,Yuriy KLOPTSOV,22 DEC 1989,RUS,1,,Sochi (RUS),29 MAY 2014,1131.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14432286,toplist
+58.0,8:28.03,,Łukasz PARSZCZYŃSKI,04 MAY 1985,POL,1,,Joensuu (FIN),24 JUL 2014,1131.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14217337,toplist
+60.0,8:28.12,,Patrick NASTI,30 AUG 1989,ITA,10,,Huelva (ESP),12 JUN 2014,1130.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14334792,toplist
+61.0,8:28.17,,Chris WINTER,22 JUL 1986,CAN,9,,Luzern (SUI),15 JUL 2014,1130.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14173286,toplist
+62.0,8:28.42,,William NELSON,11 SEP 1984,USA,5,,Tokyo (JPN),11 MAY 2014,1129.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14247058,toplist
+63.0,8:28.73,,Andrey FARNOSOV,09 JUL 1980,RUS,2f2,,Kazan (RUS),24 JUL 2014,1128.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14222139,toplist
+64.0,8:28.83,,Nicholas Kiptonui BETT,20 DEC 1996,KEN,3,,Dessau (GER),11 JUN 2014,1127.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14590710,toplist
+65.0,8:28.97,,Tolosa NURGI,29 MAR 1990,ETH,2,,Montbéliard (FRA),06 JUN 2014,1127.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14593399,toplist
+66.0,8:29.08,,Donnie COWART,24 OCT 1985,USA,2,,Joensuu (FIN),24 JUL 2014,1126.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14235468,toplist
+67.0,8:29.16,,Ángel MULLERA,20 APR 1984,ESP,3,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1126.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14165596,toplist
+68.0,8:29.28,,Dominic Chemut KIPTARUS,19 AUG 1996,KEN,3,,Nairobi (KEN),25 JUN 2014,1125.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14643559,toplist
+69.0,8:29.41,,Abdelhakim ZILALI,20 JUN 1983,FRA,5,,Sotteville-lès-Rouen (FRA),14 JUN 2014,1125.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14212523,toplist
+70.0,8:29.48,,Halil AKKAŞ,01 JUL 1983,TUR,1,,Fes (MAR),24 MAY 2014,1124.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14229307,toplist
+71.0,8:29.82,,Vadim SLOBODENYUK,17 MAR 1981,UKR,1f2,,Kirovograd (UKR),25 JUL 2014,1123.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14230622,toplist
+72.0,8:29.89,,Jukka KESKISALO,27 MAR 1981,FIN,3,,Joensuu (FIN),24 JUL 2014,1123.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14182035,toplist
+73.0,8:29.97,,Habtamu FAYISA,19 APR 1993,ETH,3,,Montbéliard (FRA),06 JUN 2014,1122.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14431366,toplist
+74.0,8:29.99,,Romain COLLENOT-SPRIET,09 JAN 1992,FRA,6,,Sotteville-lès-Rouen (FRA),14 JUN 2014,1122.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14371887,toplist
+75.0,8:30.0h,,Abraham CHIRCHIR,01 AUG 1980,KEN,5,,Nairobi (KEN),07 JUN 2014,1122.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14207659,toplist
+76.0,8:30.54,,Anthony ROTICH,20 OCT 1990,USA,2f1,,"Palo Alto, CA (USA)",04 MAY 2014,1120.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14511345,toplist
+77.0,8:30.7h,,Wilson MARABA,1986,KEN,6,,Nairobi (KEN),07 JUN 2014,1119.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14209017,toplist
+78.0,8:32.0h,,Edwin KIRWA,25 MAY 1979,KEN,7,,Nairobi (KEN),07 JUN 2014,1113.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14530700,toplist
+79.0,8:32.03,,Hichem BOUCHICHA,19 MAY 1989,ALG,8,,"Le Grand Stade, Marrakech (MAR)",08 JUN 2014,1113.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14428442,toplist
+80.0,8:32.23,,Abdelhamid ZERRIFI,20 JUN 1986,ALG,7,,Sotteville-lès-Rouen (FRA),14 JUN 2014,1112.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14180600,toplist
+81.0,8:32.61,,Evans Rutto CHEMATOT,19 MAR 1996,BRN,3,,"Hayward Field, Eugene, OR (USA)",27 JUL 2014,1111.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14597338,toplist
+82.0,8:32.66,,Soufiane EL BAKKALI,07 JAN 1996,MAR,3,,Fes (MAR),24 MAY 2014,1110.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14590424,toplist
+83.0,8:32.69,,Illya SUKHAREV,17 JUN 1986,UKR,2f2,,Kirovograd (UKR),25 JUL 2014,1110.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14230653,toplist
+84.0,8:32.82,,Tomas TAJADURA JUEZ,25 JUN 1985,ESP,11,,Huelva (ESP),12 JUN 2014,1110.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14164881,toplist
+85.0,8:32.92,,Aric VAN HALEN,06 OCT 1989,USA,3f1,,"Palo Alto, CA (USA)",04 MAY 2014,1109.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14364273,toplist
+86.0,8:33.09,,Janne UKONMAANAHO,13 MAR 1984,FIN,12,,Huelva (ESP),12 JUN 2014,1109.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14182641,toplist
+87.0,8:33.40,,Dejeni REGASSA,18 APR 1989,BRN,9,,"Le Grand Stade, Marrakech (MAR)",08 JUN 2014,1107.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14181596,toplist
+88.0,8:33.53,,Monatcer ZAGHOU,14 MAY 1989,MAR,8,,Beijing (CHN),21 MAY 2014,1107.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14472742,toplist
+89.0,8:33.79,,De'Sean TURNER,16 SEP 1988,USA,1,,"Bloomington, IN (USA)",02 MAY 2014,1105.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14253549,toplist
+90.0,8:33.84,,Aoi MATSUMOTO,07 SEP 1987,JPN,4,,Joensuu (FIN),24 JUL 2014,1105.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14330415,toplist
+91.0,8:34.1h,,Kennedy MUREITHI,,KEN,9,,Nairobi (KEN),07 JUN 2014,1104.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14426651,toplist
+92.0,8:34.37,,Mohammed BOULAMA,31 DEC 1993,MAR,6,,Tokyo (JPN),11 MAY 2014,1103.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14526696,toplist
+92.0,8:34.37,,Jun SHINOTO,02 APR 1985,JPN,1,,Yamaguchi (JPN),11 OCT 2014,1103.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14205825,toplist
+94.0,8:34.64,,James NIPPERESS,21 MAY 1990,AUS,7,,Tokyo (JPN),11 MAY 2014,1102.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14179058,toplist
+95.0,8:34.71,,Alexandre GENEST,30 JUN 1986,CAN,3,,Guelph (CAN),31 MAY 2014,1101.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14174234,toplist
+96.0,8:34.8h,,Kennedy KOSGEI,,KEN,3h1,,Nairobi (KEN),06 JUN 2014,1101.0,men_3000sc,2014,https://worldathletics.org/athletes/kenya/kennedy-kosgei-14530701,toplist
+97.0,8:35.0h,,Silas Kimeli TOO,1993,KEN,2,,Iten (KEN),31 MAY 2014,1100.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14425906,toplist
+98.0,8:35.05,,Tabor STEVENS,21 JUN 1991,USA,1,,"Allendale, MI (USA)",23 MAY 2014,1100.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14439293,toplist
+99.0,8:35.27,,Stanley Kipkoech KEBENEI,06 NOV 1989,KEN,2,,"Eugene, OR (USA)",14 JUN 2014,1099.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14458880,toplist
+100.0,8:35.45,,Luke GUNN,22 MAR 1985,GBR,1f2,,"Los Angeles, CA (USA)",15 MAY 2014,1098.0,men_3000sc,2014,https://worldathletics.org/athletes/athlete=14189446,toplist
+1.0,7:58.83,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,1,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1264.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14425940,toplist
+2.0,8:00.45,,Evan JAGER,08 MAR 1989,USA,2,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1256.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14241750,toplist
+3.0,8:01.71,,Ezekiel KEMBOI,25 MAY 1982,KEN,1,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1250.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14207908,toplist
+4.0,8:05.20,,Conseslus KIPRUTO,08 DEC 1994,KEN,3,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1234.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14479159,toplist
+5.0,8:10.09,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,4,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1211.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14208442,toplist
+6.0,8:10.24,,Paul Kipsiele KOECH,10 NOV 1981,KEN,1,,"Letzigrund, Zürich (SUI)",03 SEP 2015,1211.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14208637,toplist
+7.0,8:11.64,,Jonathan Muia NDIKU,18 SEP 1991,KEN,1,,"National Stadium, Beijing (CHN)",20 MAY 2015,1204.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14209367,toplist
+8.0,8:12.68,,Clement Kimutai KEMBOI,10 FEB 1992,KEN,5,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1200.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14425950,toplist
+9.0,8:13.10,,Hillary Kipsang YEGO,02 APR 1992,KEN,4,,"Olympic Stadium, London (GBR)",25 JUL 2015,1198.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14375963,toplist
+10.0,8:13.37,,Donald CABRAL,12 DEC 1989,USA,2,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1196.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14363391,toplist
+11.0,8:14.11,,Daniel HULING,16 JUL 1983,USA,3,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1193.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14241342,toplist
+12.0,8:14.75,,John KOECH,23 AUG 1995,BRN,3,,"National Stadium, Beijing (CHN)",20 MAY 2015,1190.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14530682,toplist
+13.0,8:15.66,,Bernard NGANGA,17 JAN 1985,KEN,4,,"National Stadium, Beijing (CHN)",20 MAY 2015,1186.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14209082,toplist
+14.0,8:16.54,,Hicham SIGUENI,30 JAN 1993,MAR,1,,"Olympiastadion, Stockholm (SWE)",30 JUL 2015,1182.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14375781,toplist
+15.0,8:16.56,,Brahim TALEB,16 FEB 1985,MAR,2,,"Olympiastadion, Stockholm (SWE)",30 JUL 2015,1182.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14212492,toplist
+16.0,8:18.08,,Andrew BAYER,03 FEB 1990,USA,6,,"Olympic Stadium, London (GBR)",25 JUL 2015,1175.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14360463,toplist
+17.0,8:18.38,,Yoann KOWAL,28 MAY 1987,FRA,6,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",14 JUN 2015,1174.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14185672,toplist
+18.0,8:18.49,,Ilgizar SAFIULIN,09 DEC 1992,RUS,10,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1173.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14376859,toplist
+19.0,8:18.51,,Lawrence Kemboi KIPSANG,15 JUN 1993,KEN,5,,"National Stadium, Beijing (CHN)",20 MAY 2015,1173.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14479203,toplist
+20.0,8:18.63,,Matthew HUGHES,03 AUG 1989,CAN,8,,"National Stadium, Beijing (CHN)",24 AUG 2015,1173.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14174102,toplist
+21.0,8:18.78,,Hamid EZZINE,05 OCT 1983,MAR,6,,"National Stadium, Beijing (CHN)",20 MAY 2015,1172.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14212132,toplist
+22.0,8:19.26,,Nicholas Kiptonui BETT,20 DEC 1996,KEN,1,,Heusden-Zolder (BEL),18 JUL 2015,1170.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14590710,toplist
+23.0,8:19.30,,Amor BEN YAHIA,01 JUL 1985,TUN,7,,"National Stadium, Beijing (CHN)",20 MAY 2015,1170.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14229127,toplist
+24.0,8:19.85,,Roberto ALAIZ,20 JUL 1990,ESP,9,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1167.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14370728,toplist
+25.0,8:19.90,,Taylor MILNE,14 SEP 1981,CAN,2,,Heusden-Zolder (BEL),18 JUL 2015,1167.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14173784,toplist
+26.0,8:20.38,,Abel Kiprop MUTAI,02 OCT 1988,KEN,8,,"Shanghai Stadium, Shanghai (CHN)",17 MAY 2015,1165.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14209248,toplist
+27.0,8:21.15,,Bilal TABTI,07 JUN 1993,ALG,1,,Amiens (FRA),27 JUN 2015,1161.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14431369,toplist
+28.0,8:21.22,,Krystian ZALEWSKI,11 APR 1989,POL,9,,"National Stadium, Beijing (CHN)",24 AUG 2015,1161.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14217925,toplist
+29.0,8:21.59,,Tarik Langat AKDAG,16 JUN 1988,TUR,1,,Mersin (TUR),31 MAY 2015,1159.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14208848,toplist
+30.0,8:21.78,,Fernando CARRO,01 APR 1992,ESP,3,,Heusden-Zolder (BEL),18 JUL 2015,1159.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14375772,toplist
+31.0,8:21.89,,Mitko TSENOV,13 JUN 1993,BUL,5,,"Olympiastadion, Stockholm (SWE)",30 JUL 2015,1158.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14376708,toplist
+32.0,8:21.93,,Barnabas KIPYEGO,12 JUN 1995,KEN,11,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1158.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14657342,toplist
+33.0,8:22.10,,Abraham KIBIWOT,06 APR 1996,KEN,8,,"Olympic Stadium, London (GBR)",25 JUL 2015,1157.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14657344,toplist
+34.0,8:22.38,,Sebastián MARTOS,20 JUN 1989,ESP,13,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1156.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14165762,toplist
+35.0,8:22.46,,Víctor GARCÍA,13 MAR 1985,ESP,9,,"Olympic Stadium, London (GBR)",25 JUL 2015,1156.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14166402,toplist
+36.0,8:22.49,,Halil AKKAŞ,01 JUL 1983,TUR,4,,Heusden-Zolder (BEL),18 JUL 2015,1155.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14229307,toplist
+37.0,8:22.9h,,Tolosa NURGI,29 MAR 1990,ETH,1,,Montbéliard (FRA),05 JUN 2015,1154.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14593399,toplist
+38.0,8:22.96,,Hillary Cheserek KEMBOI,1986,KEN,2,,Brazzaville (CGO),13 SEP 2015,1153.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14422539,toplist
+39.0,8:23.0h,,Nikolay CHAVKIN,24 APR 1984,RUS,2,,Montbéliard (FRA),05 JUN 2015,1153.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14221966,toplist
+40.0,8:23.93,,Stanley Kipkoech KEBENEI,06 NOV 1989,USA,1f1,,"Palo Alto, CA (USA)",02 MAY 2015,1149.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14458880,toplist
+41.0,8:24.19,,Hailemariyam AMARE,22 FEB 1997,ETH,3,,Brazzaville (CGO),13 SEP 2015,1148.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14657460,toplist
+42.0,8:24.26,,Joash KIPLIMO,21 MAY 1991,KEN,1,,Nairobi (KEN),11 JUL 2015,1148.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14420236,toplist
+43.0,8:24.58,,Mohamed ISMAIL,01 JAN 1997,DJI,7,,"Olympiastadion, Stockholm (SWE)",30 JUL 2015,1146.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14661612,toplist
+44.0,8:24.65,,Hichem BOUCHICHA,19 MAY 1989,ALG,2,,Amiens (FRA),27 JUN 2015,1146.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14428442,toplist
+45.0,8:24.81,,Geofrey NGENO,11 JAN 1994,KEN,3,,Nairobi (KEN),11 JUL 2015,1145.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14530662,toplist
+46.0,8:24.84,,Alexandre GENEST,30 JUN 1986,CAN,3f1,,"Palo Alto, CA (USA)",02 MAY 2015,1145.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14174234,toplist
+47.0,8:25.04,,Haron LAGAT,15 AUG 1983,KEN,5,,Heusden-Zolder (BEL),18 JUL 2015,1144.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14208829,toplist
+48.0,8:25.54,,Patrick CHURKOR,17 FEB 1991,KEN,2,,Mungyeong (KOR),08 OCT 2015,1142.0,men_3000sc,2015,https://worldathletics.org/athletes/kenya/patrick-churkor-14480144,toplist
+49.0,8:25.56,,Tafese SOBOKA,29 SEP 1993,ETH,1,,Hérouville (FRA),18 JUN 2015,1142.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14532477,toplist
+50.0,8:25.74,,Cory LESLIE,24 OCT 1989,USA,4,,"Stadion Juliska, Praha (CZE)",08 JUN 2015,1141.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14243958,toplist
+51.0,8:25.82,,Chala BEYO,18 JAN 1996,ETH,4,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1141.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14660572,toplist
+52.0,8:25.99,,Wilson MARABA,1986,KEN,4,,Nairobi (KEN),11 JUL 2015,1140.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14209017,toplist
+53.0,8:26.24,,Festus KIPRONO,29 DEC 1995,KEN,12,,"Shanghai Stadium, Shanghai (CHN)",17 MAY 2015,1139.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14479180,toplist
+54.0,8:26.34,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,9,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",14 JUN 2015,1138.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14165696,toplist
+55.0,8:26.37,,Justus LAGAT,20 MAY 1996,KEN,2,,Sollentuna (SWE),25 JUN 2015,1138.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14590711,toplist
+56.0,8:26.55,,Chris WINTER,22 JUL 1986,CAN,11,,"Olympic Stadium, London (GBR)",25 JUL 2015,1137.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14173286,toplist
+57.0,8:26.62,,Wogene Sebisibe SIDAMO,23 JUN 1998,ETH,4,,Brazzaville (CGO),13 SEP 2015,1137.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14661595,toplist
+58.0,8:26.81,,Tabor STEVENS,21 JUN 1991,USA,5f1,,"Palo Alto, CA (USA)",02 MAY 2015,1136.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14439293,toplist
+59.0,8:27.08,,Travis MAHONEY,25 JUL 1990,USA,3,,"Los Angeles, CA (USA)",14 MAY 2015,1135.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14362500,toplist
+60.0,8:27.43,,Ibrahim EZZAYDOUNI,28 APR 1991,ESP,2,,Castellón (ESP),02 AUG 2015,1133.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14374875,toplist
+61.0,8:27.7h,,Birhan GETAHUN,05 SEP 1991,ETH,5,,Montbéliard (FRA),05 JUN 2015,1132.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14424162,toplist
+62.0,8:27.79,,Soufiane EL BAKKALI,07 JAN 1996,MAR,3,,Amiens (FRA),27 JUN 2015,1132.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14590424,toplist
+63.0,8:27.86,,Donnie COWART,24 OCT 1985,USA,2,,Burnaby (CAN),08 JUN 2015,1132.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14235468,toplist
+64.0,8:27.93,,Festus RONO,28 DEC 1993,KEN,3,,Sollentuna (SWE),25 JUN 2015,1131.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14530681,toplist
+65.0,8:27.95,,Ángel MULLERA,20 APR 1984,ESP,9,,"Bislett Stadion, Oslo (NOR)",11 JUN 2015,1131.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14165596,toplist
+66.0,8:27.99,,Philip Kipkurgat YIEGO,1979,KEN,5,,Nairobi (KEN),11 JUL 2015,1131.0,men_3000sc,2015,https://worldathletics.org/athletes/kenya/philip-kipkurgat-yiego-14383247,toplist
+67.0,8:28.41,,Alex KIBET,20 OCT 1994,KEN,1,,Doha (QAT),30 APR 2015,1129.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14653039,toplist
+68.0,8:28.78,,Hicham CHAMLAL,02 DEC 1997,MAR,10,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",14 JUN 2015,1127.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14590317,toplist
+69.0,8:29.5h,,Monatcer ZAGHOU,14 MAY 1989,MAR,1,,Rabat (MAR),09 MAY 2015,1124.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14472742,toplist
+70.0,8:29.53,,Gerald Nicolas GIRALDO VILLA,21 MAR 1989,COL,1,,Lima (PER),14 JUN 2015,1124.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14336094,toplist
+71.0,8:29.7h,,Younés KNIYA,15 AUG 1995,MAR,2,,Rabat (MAR),09 MAY 2015,1123.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14590318,toplist
+72.0,8:29.83,,Benjamin KIPLAGAT,04 MAR 1989,UGA,13,,"Shanghai Stadium, Shanghai (CHN)",17 MAY 2015,1123.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14229601,toplist
+73.0,8:30.03,,Jeroen D'HOEDT,10 JAN 1990,BEL,6,,Heusden-Zolder (BEL),18 JUL 2015,1122.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14329147,toplist
+74.0,8:30.3h,,Mustapha HOUDADI,05 AUG 1986,MAR,3,,Rabat (MAR),09 MAY 2015,1121.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14441541,toplist
+75.0,8:30.35,,Jamel CHATBI,30 APR 1984,ITA,1f2,,Torino (ITA),26 JUL 2015,1121.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14211964,toplist
+76.0,8:31.04,,Gilbert KIRUI,22 JAN 1994,KEN,5,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1118.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14425946,toplist
+77.0,8:31.08,,Abdelhamid ZERRIFI,20 JUN 1986,ALG,4,,Amiens (FRA),27 JUN 2015,1117.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14180600,toplist
+78.0,8:31.10,,Jaouad CHEMLAL,11 APR 1994,MAR,3,,Huelva (ESP),10 JUN 2015,1117.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14433902,toplist
+79.0,8:31.32,,Rob MULLETT,31 JUL 1987,GBR,12,,"Olympic Stadium, London (GBR)",25 JUL 2015,1116.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14190233,toplist
+80.0,8:31.47,,José Gregorio PEÑA,12 JAN 1987,VEN,6f1,,"Palo Alto, CA (USA)",02 MAY 2015,1116.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14256190,toplist
+81.0,8:31.55,,Martin GRAU,26 MAR 1992,GER,1,,"Main Stadium, Gwangju (KOR)",11 JUL 2015,1115.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14374909,toplist
+82.0,8:31.8h,,Willy Rutto KOMEN,22 DEC 1987,KEN,5h1,,Nairobi (KEN),09 JUL 2015,1114.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14208677,toplist
+83.0,8:31.82,,Mateusz DEMCZYSZAK,18 JAN 1986,POL,15,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1114.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14216548,toplist
+84.0,8:32.05,,Yemane HAILESELASSIE,21 FEB 1998,ERI,6,,Brazzaville (CGO),13 SEP 2015,1113.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14693560,toplist
+85.0,8:32.17,,Dikotsi LEKOPA,07 JUL 1988,RSA,1f2,,Stellenbosch (RSA),18 APR 2015,1113.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14220372,toplist
+86.0,8:32.23,,Kaur KIVISTIK,29 APR 1991,EST,2,,"Main Stadium, Gwangju (KOR)",11 JUL 2015,1112.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14408165,toplist
+87.0,8:32.4h,,Yassine TINDOUFTE,,MAR,4,,Rabat (MAR),09 MAY 2015,1112.0,men_3000sc,2015,https://worldathletics.org/athletes/morocco/yassine-tindoufte-14590414,toplist
+88.0,8:32.45,,Viktor BAKHAREV,05 MAY 1994,RUS,2,,Sochi (RUS),28 MAY 2015,1111.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14479697,toplist
+89.0,8:32.48,,Isaac YEGO,18 APR 1989,KEN,8,,Nairobi (KEN),11 JUL 2015,1111.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14585378,toplist
+90.0,8:32.54,,Sisay KORME,09 JAN 1985,ETH,12,,"Bislett Stadion, Oslo (NOR)",11 JUN 2015,1111.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14472934,toplist
+91.0,8:32.89,,Hironori TSUETAKI,08 MAY 1993,JPN,1,,Nagoya (JPN),26 JUN 2015,1109.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14528840,toplist
+92.0,8:33.02,,Tumisang MONATLALA,31 OCT 1995,RSA,1f1,,Stellenbosch (RSA),18 APR 2015,1109.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14467953,toplist
+93.0,8:33.09,,Yuriy KLOPTSOV,22 DEC 1989,RUS,3,,"Main Stadium, Gwangju (KOR)",11 JUL 2015,1109.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14432286,toplist
+94.0,8:33.22,,Ole HESSELBJERG,23 APR 1990,DEN,7f1,,"Palo Alto, CA (USA)",02 MAY 2015,1108.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14167942,toplist
+95.0,8:33.25,,Hashim Mohamed SALAH,15 APR 1994,QAT,5,,Sollentuna (SWE),25 JUN 2015,1108.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14423995,toplist
+96.0,8:33.37,,Yuri FLORIANI,25 DEC 1981,ITA,6,,Huelva (ESP),10 JUN 2015,1107.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14200339,toplist
+97.0,8:33.40,,Dominic Chemut KIPTARUS,19 AUG 1996,KEN,2,,Dessau (GER),29 MAY 2015,1107.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14643559,toplist
+98.0,8:33.51,,Daniel LUNDGREN,04 JUL 1985,SWE,1f1,,Oordegem (BEL),23 MAY 2015,1107.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14227819,toplist
+99.0,8:33.52,,Evans Rutto CHEMATOT,19 MAR 1996,BRN,4,,Mungyeong (KOR),08 OCT 2015,1107.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14597338,toplist
+100.0,8:33.69,,Aoi MATSUMOTO,07 SEP 1987,JPN,7,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1106.0,men_3000sc,2015,https://worldathletics.org/athletes/athlete=14330415,toplist
+1.0,8:00.12,,Conseslus KIPRUTO,08 DEC 1994,KEN,1,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1257.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14479159,toplist
+2.0,8:03.90,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,2,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",22 MAY 2016,1240.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14425940,toplist
+3.0,8:04.01,,Evan JAGER,08 MAR 1989,USA,2,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1239.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14241750,toplist
+4.0,8:08.15,,Mahiedine MEKHISSI,15 MAR 1985,FRA,3,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1220.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14186447,toplist
+5.0,8:08.32,,Paul Kipsiele KOECH,10 NOV 1981,KEN,2,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1220.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14208637,toplist
+6.0,8:09.13,,Barnabas KIPYEGO,12 JUN 1995,KEN,3,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1216.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14657342,toplist
+7.0,8:09.25,,Abraham KIBIWOT,06 APR 1996,KEN,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1215.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14657344,toplist
+8.0,8:09.62,,John KOECH,23 AUG 1995,BRN,4,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1214.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14530682,toplist
+9.0,8:10.07,,Nicholas Kiptonui BETT,20 DEC 1996,KEN,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",25 AUG 2016,1212.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14590710,toplist
+10.0,8:10.65,,Clement Kimutai KEMBOI,10 FEB 1992,KEN,6,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1209.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14425950,toplist
+11.0,8:13.68,,Hillary BOR,22 NOV 1989,USA,6,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1195.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14232976,toplist
+12.0,8:14.19,,Ezekiel KEMBOI,25 MAY 1982,KEN,1,,"National Stadium, Beijing (CHN)",18 MAY 2016,1193.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14207908,toplist
+13.0,8:14.35,,Soufiane EL BAKKALI,07 JAN 1996,MAR,4,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1192.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14590424,toplist
+14.0,8:15.10,,Hillary Kipsang YEGO,02 APR 1992,KEN,2,,Heusden-Zolder (BEL),16 JUL 2016,1189.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14375963,toplist
+15.0,8:16.11,,Andrew BAYER,03 FEB 1990,USA,7,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1184.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14360463,toplist
+16.0,8:16.14,,Tesfaye GIRMA,24 JAN 1997,ETH,3,,Heusden-Zolder (BEL),16 JUL 2016,1184.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14748097,toplist
+17.0,8:16.21,,Yoann KOWAL,28 MAY 1987,FRA,8,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1184.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14185672,toplist
+18.0,8:16.84,,Abel Kiprop MUTAI,02 OCT 1988,KEN,8,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1181.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14209248,toplist
+19.0,8:17.75,,Tafese SOBOKA,29 SEP 1993,ETH,2f1,,Huelva (ESP),03 JUN 2016,1177.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14532477,toplist
+20.0,8:17.79,,Lawrence Kemboi KIPSANG,15 JUN 1993,KEN,9,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1176.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14479203,toplist
+21.0,8:17.84,,Chala BEYO,18 JAN 1996,ETH,3f1,,Huelva (ESP),03 JUN 2016,1176.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14660572,toplist
+22.0,8:18.28,,Alex KIBET,20 OCT 1994,KEN,4,,Heusden-Zolder (BEL),16 JUL 2016,1174.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14653039,toplist
+23.0,8:18.52,,Stanley Kipkoech KEBENEI,06 NOV 1989,USA,5,,"Stadio Olimpico, Roma (ITA)",02 JUN 2016,1173.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14458880,toplist
+24.0,8:18.58,,Daniel HULING,16 JUL 1983,USA,2f3,,"Los Angeles, CA (USA)",20 MAY 2016,1173.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14241342,toplist
+25.0,8:18.79,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,6,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1172.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14208442,toplist
+26.0,8:19.12,,Cory LESLIE,24 OCT 1989,USA,3f3,,"Los Angeles, CA (USA)",20 MAY 2016,1170.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14243958,toplist
+27.0,8:19.31,,Hamid EZZINE,05 OCT 1983,MAR,6,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",22 MAY 2016,1170.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14212132,toplist
+28.0,8:19.33,,Sebastián MARTOS,20 JUN 1989,ESP,8,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1170.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14165762,toplist
+29.0,8:19.91,,Krystian ZALEWSKI,11 APR 1989,POL,7,,"Stadio Olimpico, Roma (ITA)",02 JUN 2016,1167.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14217925,toplist
+30.0,8:20.26,,Bilal TABTI,07 JUN 1993,ALG,8,,"Stadio Olimpico, Roma (ITA)",02 JUN 2016,1165.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14431369,toplist
+31.0,8:20.35,,Benjamin KIPLAGAT,04 MAR 1989,UGA,10,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1165.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14229601,toplist
+32.0,8:20.43,,Amos KIRUI,09 FEB 1998,KEN,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",24 JUL 2016,1165.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14661596,toplist
+33.0,8:20.53,,Hicham SIGUENI,30 JAN 1993,MAR,5,,Heusden-Zolder (BEL),16 JUL 2016,1164.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14375781,toplist
+34.0,8:20.63,,Matthew HUGHES,03 AUG 1989,CAN,4f3,,"Los Angeles, CA (USA)",20 MAY 2016,1164.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14174102,toplist
+35.0,8:20.72,,Amor BEN YAHIA,01 JUL 1985,TUN,2,,Sotteville-lès-Rouen (FRA),18 JUL 2016,1163.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14229127,toplist
+35.0,8:20.72,,Donald CABRAL,12 DEC 1989,USA,1,,"Eugene, OR (USA)",29 JUL 2016,1163.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14363391,toplist
+37.0,8:21.10,,Hailemariyam AMARE,22 FEB 1997,ETH,5,,"National Stadium, Beijing (CHN)",18 MAY 2016,1162.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14657460,toplist
+38.0,8:21.23,,Phenus KIPLETING,1985,KEN,4f1,,Huelva (ESP),03 JUN 2016,1161.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14746651,toplist
+39.0,8:21.30,,Birhan GETAHUN,05 SEP 1991,ETH,2f1,,Montbéliard (FRA),01 JUN 2016,1161.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14424162,toplist
+40.0,8:21.33,,Tolosa NURGI,29 MAR 1990,ETH,10,,"Stadio Olimpico, Roma (ITA)",02 JUN 2016,1161.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14593399,toplist
+41.0,8:21.34,,Mitko TSENOV,13 JUN 1993,BUL,10,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1161.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14376708,toplist
+42.0,8:21.53,,Jacob ARAPTANY,11 FEB 1992,UGA,2h3,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1160.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14428739,toplist
+43.0,8:21.57,,Mason FERLIC,05 AUG 1993,USA,2,,"Eugene, OR (USA)",29 JUL 2016,1160.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14522389,toplist
+44.0,8:21.92,,Jamel CHATBI,30 APR 1984,ITA,9,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",22 MAY 2016,1158.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14211964,toplist
+45.0,8:22.42,,Rob MULLETT,31 JUL 1987,GBR,5f3,,"Los Angeles, CA (USA)",20 MAY 2016,1156.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14190233,toplist
+46.0,8:22.5h,,Justus LAGAT,20 MAY 1996,KEN,3,,Nairobi (KEN),28 MAY 2016,1155.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14590711,toplist
+47.0,8:22.52,,Yemane HAILESELASSIE,21 FEB 1998,ERI,6f1,,Huelva (ESP),03 JUN 2016,1155.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14693560,toplist
+48.0,8:22.7h,,Vincent KIPYEGON,31 DEC 1998,KEN,1,,Nairobi (KEN),22 JUN 2016,1154.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14590713,toplist
+49.0,8:22.83,,Getnet WALE,16 JUL 2000,ETH,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",24 JUL 2016,1154.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14760253,toplist
+50.0,8:23.38,,Donnie COWART,24 OCT 1985,USA,6f3,,"Los Angeles, CA (USA)",20 MAY 2016,1151.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14235468,toplist
+51.0,8:23.51,,Hichem BOUCHICHA,19 MAY 1989,ALG,4f1,,Montbéliard (FRA),01 JUN 2016,1151.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14428442,toplist
+52.0,8:23.77,,Mohamed ISMAIL,01 JAN 1997,DJI,11,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1150.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14661612,toplist
+53.0,8:25.34,,Viktor BAKHAREV,05 MAY 1994,RUS,1f2,,Cheboksary (RUS),21 JUN 2016,1143.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14479697,toplist
+54.0,8:25.44,,Travis MAHONEY,25 JUL 1990,USA,8f3,,"Los Angeles, CA (USA)",20 MAY 2016,1142.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14362500,toplist
+55.0,8:25.81,,Ilgizar SAFIULIN,09 DEC 1992,RUS,2f2,,Cheboksary (RUS),21 JUN 2016,1141.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14376859,toplist
+56.0,8:26.15,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,7f1,,Huelva (ESP),03 JUN 2016,1139.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14165696,toplist
+57.0,8:26.21,,Maksim YAKUSHEV,15 MAR 1992,RUS,3f2,,Cheboksary (RUS),21 JUN 2016,1139.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14414479,toplist
+58.0,8:26.23,,Nelson KIPKOGEI,09 MAR 1993,BRN,7,,Heusden-Zolder (BEL),16 JUL 2016,1139.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14425939,toplist
+59.0,8:26.30,,Altobeli SILVA,03 DEC 1990,BRA,9,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1138.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14407523,toplist
+60.0,8:26.36,,Andrey FARNOSOV,09 JUL 1980,RUS,4f2,,Cheboksary (RUS),21 JUN 2016,1138.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14222139,toplist
+60.0,8:26.36,,José Gregorio PEÑA,12 JAN 1987,VEN,8,,Heusden-Zolder (BEL),16 JUL 2016,1138.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14256190,toplist
+62.0,8:26.97,,Taylor MILNE,14 SEP 1981,CAN,1,,Guelph (CAN),25 JUN 2016,1135.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14173784,toplist
+63.0,8:27.18,,Chris WINTER,22 JUL 1986,CAN,9f3,,"Los Angeles, CA (USA)",20 MAY 2016,1135.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14173286,toplist
+64.0,8:27.19,,Craig FORYS,13 JUL 1989,USA,10f3,,"Los Angeles, CA (USA)",20 MAY 2016,1134.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14237983,toplist
+65.0,8:27.62,,Anthony ROTICH,20 OCT 1990,USA,4f1,,"Palo Alto, CA (USA)",01 MAY 2016,1133.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14511345,toplist
+66.0,8:27.99,,Ali MESSAOUDI,13 OCT 1995,ALG,1,,Algiers (ALG),28 JUN 2016,1131.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14646833,toplist
+67.0,8:28.01,,Shimels SOLOMON,28 MAR 1996,ETH,2,,Sollentuna (SWE),28 JUN 2016,1131.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14758202,toplist
+68.0,8:28.14,,Abdelhamid ZERRIFI,20 JUN 1986,FRA,11,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1130.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14180600,toplist
+69.0,8:28.34,,Djilali BEDRANI,01 OCT 1993,FRA,5f1,,Montbéliard (FRA),01 JUN 2016,1129.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14423830,toplist
+70.0,8:28.45,,Patrick CHURKOR,17 FEB 1991,KEN,6f1,,Montbéliard (FRA),01 JUN 2016,1129.0,men_3000sc,2016,https://worldathletics.org/athletes/kenya/patrick-churkor-14480144,toplist
+71.0,8:29.0h,,Hillary Cheserek KEMBOI,1986,KEN,5,,Nairobi (KEN),28 MAY 2016,1126.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14422539,toplist
+72.0,8:29.78,,Hironori TSUETAKI,08 MAY 1993,JPN,1,,Osaka (JPN),24 SEP 2016,1123.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14528840,toplist
+73.0,8:29.91,,Aras KAYA,04 APR 1994,TUR,2,,"Olympisch Stadion, Amsterdam (NED)",08 JUL 2016,1122.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14655103,toplist
+74.0,8:30.03,,Yuri FLORIANI,25 DEC 1981,ITA,1,,Rieti (ITA),26 JUN 2016,1122.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14200339,toplist
+75.0,8:30.14,,Joash KIPLIMO,21 MAY 1991,KEN,1f1,,Nairobi (KEN),26 MAY 2016,1121.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14420236,toplist
+76.0,8:30.23,,Mohamed TINDOUFT,12 MAR 1993,MAR,2,,Rabat (MAR),05 JUN 2016,1121.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14773269,toplist
+77.0,8:30.25,,Alexandre GENEST,30 JUN 1986,CAN,9f1,,"Palo Alto, CA (USA)",01 MAY 2016,1121.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14174234,toplist
+78.0,8:30.28,,Valentin PEPIOT,06 JUL 1991,FRA,12,,"Stade Louis II, Monaco (MON)",15 JUL 2016,1121.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14334974,toplist
+79.0,8:30.38,,Ivan LUKYANOV,31 JAN 1981,RUS,5f2,,Cheboksary (RUS),21 JUN 2016,1120.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14212711,toplist
+80.0,8:30.51,,Ole HESSELBJERG,23 APR 1990,DEN,1f2,,"Palo Alto, CA (USA)",01 MAY 2016,1120.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14167942,toplist
+81.0,8:30.67,,Frankline TONUI,02 AUG 1993,KEN,2,,"Eugene, OR (USA)",10 JUN 2016,1119.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14615155,toplist
+82.0,8:30.71,,Edwin KIBICHIY,02 APR 1992,KEN,3,,"Eugene, OR (USA)",10 JUN 2016,1119.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14565784,toplist
+83.0,8:30.85,,Younés KNIYA,15 AUG 1995,MAR,3,,Rabat (MAR),05 JUN 2016,1118.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14590318,toplist
+84.0,8:30.87,,Bernard NGANGA,17 JAN 1985,KEN,8,,"National Stadium, Beijing (CHN)",18 MAY 2016,1118.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14209082,toplist
+85.0,8:31.02,,Christopher DULHANTY,06 APR 1992,CAN,11f3,,"Los Angeles, CA (USA)",20 MAY 2016,1118.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14375974,toplist
+86.0,8:31.05,,Mohammed BOULAMA,31 DEC 1993,MAR,1f1,,Oordegem (BEL),29 MAY 2016,1117.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14526696,toplist
+87.0,8:31.20,,Abdalla Targan YOUSIF,28 SEP 1996,SUD,8f1,,Montbéliard (FRA),01 JUN 2016,1117.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14689952,toplist
+88.0,8:31.42,,Isaac UPDIKE,21 MAR 1992,USA,1f1,,"Los Angeles, CA (USA)",20 MAY 2016,1116.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14470536,toplist
+89.0,8:31.48,,Issam ZEGHDANE,03 SEP 1993,ALG,1,,Algiers (ALG),02 JUL 2016,1116.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14534807,toplist
+90.0,8:31.54,,Jeroen D'HOEDT,10 JAN 1990,BEL,9,,Heusden-Zolder (BEL),16 JUL 2016,1115.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14329147,toplist
+91.0,8:31.72,,Rantso MOKOPANE,08 AUG 1994,RSA,2f1,,Oordegem (BEL),29 MAY 2016,1115.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14467954,toplist
+92.0,8:31.87,,Jaouad CHEMLAL,11 APR 1994,MAR,13,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",22 MAY 2016,1114.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14433902,toplist
+93.0,8:32.10,,Collins CHEBII,1997,KEN,2,,Doha (QAT),26 APR 2016,1113.0,men_3000sc,2016,https://worldathletics.org/athletes/kenya/collins-chebii-14943653,toplist
+94.0,8:32.20,,Ala ZOGHLAMI,19 JUN 1994,ITA,1,,Castiglione della Pescaia (ITA),17 MAY 2016,1112.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14488117,toplist
+95.0,8:32.54,,Abdoullah BAMOUSSA,08 JUN 1986,ITA,6h1,,"Olympisch Stadion, Amsterdam (NED)",06 JUL 2016,1111.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14333849,toplist
+96.0,8:32.55,,Mike HARDY,13 JAN 1990,USA,2f1,,"Los Angeles, CA (USA)",20 MAY 2016,1111.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14368769,toplist
+97.0,8:32.59,,James NIPPERESS,21 MAY 1990,AUS,12f3,,"Los Angeles, CA (USA)",20 MAY 2016,1111.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14179058,toplist
+98.0,8:32.63,,Silas Kosgei KITUM,25 MAY 1990,KEN,10f1,,Huelva (ESP),03 JUN 2016,1111.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14208587,toplist
+99.0,8:32.66,,Yohanes CHIAPPINELLI,18 AUG 1997,ITA,5,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",24 JUL 2016,1110.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14577970,toplist
+100.0,8:32.74,,Dylan LAFOND,18 MAR 1993,USA,1,,"Princeton, NJ (USA)",18 JUN 2016,1110.0,men_3000sc,2016,https://worldathletics.org/athletes/athlete=14506482,toplist
+1.0,8:01.29,,Evan JAGER,08 MAR 1989,USA,1,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1252.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14241750,toplist
+2.0,8:04.63,,Conseslus KIPRUTO,08 DEC 1994,KEN,1,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1237.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14479159,toplist
+3.0,8:04.83,,Soufiane EL BAKKALI,07 JAN 1996,MAR,2,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1236.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14590424,toplist
+4.0,8:07.68,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,2,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1223.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14425940,toplist
+5.0,8:08.30,,Stanley Kipkoech KEBENEI,06 NOV 1989,USA,3,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1220.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14458880,toplist
+6.0,8:08.37,,Amos KIRUI,09 FEB 1998,KEN,4,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1219.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14661596,toplist
+7.0,8:10.62,,Abraham KIBIWOT,06 APR 1996,KEN,2,,Marseille (FRA),03 JUN 2017,1209.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14657344,toplist
+8.0,8:11.22,,Yemane HAILESELASSIE,21 FEB 1998,ERI,5,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1206.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14693560,toplist
+9.0,8:11.38,,Benjamin KIGEN,05 JUL 1993,KEN,4,,"Stade Louis II, Monaco (MON)",21 JUL 2017,1206.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14590800,toplist
+10.0,8:11.82,,Hillary BOR,22 NOV 1989,USA,6,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1204.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14232976,toplist
+11.0,8:12.20,,Nicholas Kiptonui BETT,20 DEC 1996,KEN,5,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1202.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14590710,toplist
+12.0,8:12.28,,Getnet WALE,16 JUL 2000,ETH,1,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1201.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14760253,toplist
+13.0,8:13.22,,Tafese SOBOKA,29 SEP 1993,ETH,2,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1197.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14532477,toplist
+14.0,8:13.24,,Chala BEYO,18 JAN 1996,ETH,3,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1197.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14660572,toplist
+15.0,8:13.33,,Tesfaye DERIBA,11 SEP 1998,ETH,4,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1197.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14774179,toplist
+16.0,8:13.39,,Hailemariyam AMARE,22 FEB 1997,ETH,3,,"Mestský Stadion, Ostrava (CZE)",28 JUN 2017,1196.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14657460,toplist
+17.0,8:14.13,,Barnabas KIPYEGO,12 JUN 1995,KEN,7,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1193.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14657342,toplist
+18.0,8:14.46,,Andrew BAYER,03 FEB 1990,USA,8,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1192.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14360463,toplist
+19.0,8:14.67,,Mahiedine MEKHISSI,15 MAR 1985,FRA,3,,Marseille (FRA),03 JUN 2017,1191.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14186447,toplist
+20.0,8:15.60,,Yoann KOWAL,28 MAY 1987,FRA,10,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1186.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14185672,toplist
+21.0,8:18.46,,Justus LAGAT,20 MAY 1996,KEN,4,,Marseille (FRA),03 JUN 2017,1173.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14590711,toplist
+22.0,8:18.50,,Ibrahim EZZAYDOUNI,28 APR 1991,ESP,6,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",16 JUL 2017,1173.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14374875,toplist
+23.0,8:18.77,,Hicham SIGUENI,30 JAN 1993,MAR,2,,Huelva (ESP),14 JUN 2017,1172.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14375781,toplist
+24.0,8:19.19,,Maksim YAKUSHEV,15 MAR 1992,RUS,1,,Zhukovskiy (RUS),29 JUL 2017,1170.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14414479,toplist
+25.0,8:19.67,,Tesfaye GIRMA,24 JAN 1997,ETH,12,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1168.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14748097,toplist
+26.0,8:19.87,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,2,,Nairobi (KEN),24 JUN 2017,1167.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14208442,toplist
+27.0,8:20.20,,Bilal TABTI,07 JUN 1993,ALG,1,,Amiens (FRA),10 JUN 2017,1166.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14431369,toplist
+28.0,8:20.28,,Mohamed TINDOUFT,12 MAR 1993,MAR,2,,Amiens (FRA),10 JUN 2017,1165.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14773269,toplist
+29.0,8:20.43,,Sebastián MARTOS,20 JUN 1989,ESP,3,,Huelva (ESP),14 JUN 2017,1165.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14165762,toplist
+30.0,8:20.61,,Viktor BAKHAREV,05 MAY 1994,RUS,1,,Zhukovskiy (RUS),02 JUL 2017,1164.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14479697,toplist
+30.0,8:20.61,,Ezekiel KEMBOI,25 MAY 1982,KEN,4h2,,"Olympic Stadium, London (GBR)",06 AUG 2017,1164.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14207908,toplist
+32.0,8:20.76,,Takele NIGATE,02 OCT 1999,ETH,6,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1163.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14800835,toplist
+33.0,8:21.30,,Philemon Kiplagat RUTO,20 SEP 2001,KEN,1,,Yamagata (JPN),02 AUG 2017,1161.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14758181,toplist
+34.0,8:21.84,,Matthew HUGHES,03 AUG 1989,CAN,6,,"Olympic Stadium, London (GBR)",08 AUG 2017,1158.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14174102,toplist
+35.0,8:21.92,,Jacob ARAPTANY,11 FEB 1992,UGA,7,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1158.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14428739,toplist
+36.0,8:22.00,,Abdoullah BAMOUSSA,08 JUN 1986,ITA,13,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1158.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14333849,toplist
+37.0,8:22.94,,Osama ZOGHLAMI,19 JUN 1994,ITA,1,,Palermo (ITA),12 SEP 2017,1153.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14530462,toplist
+38.0,8:23.12,,Tolosa NURGI,29 MAR 1990,ETH,6,,"Mestský Stadion, Ostrava (CZE)",28 JUN 2017,1153.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14593399,toplist
+39.0,8:23.18,,Albert CHEMUTAI,1995,UGA,5h2,,"Olympic Stadium, London (GBR)",06 AUG 2017,1152.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14751121,toplist
+40.0,8:23.2h,,Emmanuel KIPRONO,14 JUL 1995,KEN,1,,Nyahururu (KEN),06 MAY 2017,1152.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14530627,toplist
+41.0,8:23.67,,Altobeli SILVA,03 DEC 1990,BRA,8,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",16 JUL 2017,1150.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14407523,toplist
+42.0,8:23.68,,Krystian ZALEWSKI,11 APR 1989,POL,14,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1150.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14217925,toplist
+43.0,8:23.93,,Lawrence Kemboi KIPSANG,15 JUN 1993,KEN,6,,"Olympiastadion, Stockholm (SWE)",18 JUN 2017,1149.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14479203,toplist
+44.0,8:23.98,,Clement Kimutai KEMBOI,10 FEB 1992,KEN,7,,"Olympiastadion, Stockholm (SWE)",18 JUN 2017,1149.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14425950,toplist
+45.0,8:24.31,,Tarik Langat AKDAG,16 JUN 1988,TUR,4,,Huelva (ESP),14 JUN 2017,1147.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14208848,toplist
+46.0,8:25.20,,Ilgizar SAFIULIN,09 DEC 1992,RUS,2,,Sochi (RUS),25 MAY 2017,1143.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14376859,toplist
+47.0,8:25.5h,,Felix KIRONG,04 JUN 1990,KEN,1,,Nairobi (KEN),10 JUN 2017,1142.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14746653,toplist
+48.0,8:25.64,,Alex KIBET,20 OCT 1994,KEN,1,,Doha (QAT),25 APR 2017,1141.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14653039,toplist
+49.0,8:25.73,,Haron LAGAT,15 AUG 1983,USA,5,,"Sacramento, CA (USA)",25 JUN 2017,1141.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14208829,toplist
+50.0,8:25.75,,Donald CABRAL,12 DEC 1989,USA,6,,"Sacramento, CA (USA)",25 JUN 2017,1141.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14363391,toplist
+51.0,8:25.8h,,Mica Kiplagat CHESEREK,12 OCT 1996,KEN,2,,Nyahururu (KEN),06 MAY 2017,1141.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14657345,toplist
+52.0,8:25.84,,Younés KNIYA,15 AUG 1995,MAR,1,,Rabat (MAR),17 MAY 2017,1140.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14590318,toplist
+53.0,8:25.9h,,Abel Kiprop MUTAI,02 OCT 1988,KEN,1,,Nairobi (KEN),11 MAY 2017,1140.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14209248,toplist
+54.0,8:26.18,,Ala ZOGHLAMI,19 JUN 1994,ITA,7h1,,"Olympic Stadium, London (GBR)",06 AUG 2017,1139.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14488117,toplist
+55.0,8:26.25,,Nikolay CHAVKIN,24 APR 1984,RUS,3,,Zhukovskiy (RUS),29 JUL 2017,1139.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14221966,toplist
+56.0,8:26.4h,,Joash KIPLIMO,21 MAY 1991,KEN,2,,Nairobi (KEN),10 JUN 2017,1138.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14420236,toplist
+57.0,8:26.55,,Mustapha HOUDADI,05 AUG 1986,MAR,2,,Rabat (MAR),17 MAY 2017,1137.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14441541,toplist
+58.0,8:26.56,,Andrey FARNOSOV,09 JUL 1980,RUS,4,,Zhukovskiy (RUS),29 JUL 2017,1137.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14222139,toplist
+59.0,8:26.75,,M.J. ERB,02 FEB 1994,USA,7,,"Sacramento, CA (USA)",25 JUN 2017,1136.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14529264,toplist
+60.0,8:26.81,,Jakob INGEBRIGTSEN,19 SEP 2000,NOR,1,,Kortrijk (BEL),08 JUL 2017,1136.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14653717,toplist
+61.0,8:27.16,,Anthony ROTICH,20 OCT 1990,USA,2f1,,"Portland, OR (USA)",11 JUN 2017,1135.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14511345,toplist
+62.0,8:27.34,,Yohanes CHIAPPINELLI,18 AUG 1997,ITA,15,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1134.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14577970,toplist
+63.0,8:27.41,,Mohamed ISMAIL,01 JAN 1997,DJI,6,,Huelva (ESP),14 JUN 2017,1134.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14661612,toplist
+64.0,8:27.80,,Hichem BOUCHICHA,19 MAY 1989,ALG,3,,Rehlingen (GER),05 JUN 2017,1132.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14428442,toplist
+65.0,8:27.86,,Ole HESSELBJERG,23 APR 1990,DEN,8h1,,"Olympic Stadium, London (GBR)",06 AUG 2017,1132.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14167942,toplist
+66.0,8:28.40,,Edwin KIBICHIY,02 APR 1992,KEN,1,,"Eugene, OR (USA)",09 JUN 2017,1129.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14565784,toplist
+67.0,8:28.59,,José Gregorio PEÑA,12 JAN 1987,VEN,2,,Kortrijk (BEL),08 JUL 2017,1128.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14256190,toplist
+68.0,8:28.86,,Napoleon SOLOMON,14 FEB 1994,SWE,3,,Kortrijk (BEL),08 JUL 2017,1127.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14428824,toplist
+69.0,8:29.05,,Hironori TSUETAKI,08 MAY 1993,JPN,1,,Abashiri (JPN),13 JUL 2017,1126.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14528840,toplist
+70.0,8:29.12,,Hamid EZZINE,05 OCT 1983,MAR,3f1,,Belfort (FRA),09 JUN 2017,1126.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14212132,toplist
+71.0,8:29.2h,,Hillary Cheserek KEMBOI,1986,KEN,5,,Nairobi (KEN),10 JUN 2017,1126.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14422539,toplist
+72.0,8:29.24,,Daniel ARCE,22 APR 1992,ESP,1f1,,Oordegem (BEL),27 MAY 2017,1125.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14420300,toplist
+73.0,8:29.78,,Ivan LUKYANOV,31 JAN 1981,RUS,5,,Zhukovskiy (RUS),29 JUL 2017,1123.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14212711,toplist
+74.0,8:29.8h,,Wilberforce Chemiat KONES,19 SEP 1993,KEN,3,,Nyahururu (KEN),06 MAY 2017,1123.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14755096,toplist
+75.0,8:29.92,,Fernando CARRO,01 APR 1992,ESP,8,,Huelva (ESP),14 JUN 2017,1122.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14375772,toplist
+76.0,8:29.93,,Shimels SOLOMON,28 MAR 1996,ETH,3,,Djibouti (DJI),25 MAR 2017,1122.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14758202,toplist
+77.0,8:30.0h,,Daniel KIPCHUMBA,12 DEC 1997,KEN,6,,Nairobi (KEN),10 JUN 2017,1122.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14748400,toplist
+78.0,8:30.06,,Rob MULLETT,31 JUL 1987,GBR,3,,"Los Angeles, CA (USA)",18 MAY 2017,1122.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14190233,toplist
+79.0,8:30.1h,,Phenus KIPLETING,1985,KEN,3,,Nairobi (KEN),11 MAY 2017,1122.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14746651,toplist
+80.0,8:30.15,,Abel Boniface SIKOWO,27 FEB 1999,UGA,3f1,,Oordegem (BEL),27 MAY 2017,1121.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14707670,toplist
+81.0,8:30.17,,Zak SEDDON,28 JUN 1994,GBR,1f1,,"Gainesville, FL (USA)",31 MAR 2017,1121.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14386241,toplist
+82.0,8:30.28,,Donnie COWART,24 OCT 1985,USA,1,,"Nashville, TN (USA)",10 JUN 2017,1121.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14235468,toplist
+83.0,8:30.36,,Daniel HULING,16 JUL 1983,USA,3f1,,"Portland, OR (USA)",11 JUN 2017,1121.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14241342,toplist
+84.0,8:30.43,,Ángel MULLERA,20 APR 1984,ESP,1,,Lloret de Mar (ESP),18 JUL 2017,1120.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14165596,toplist
+85.0,8:30.51,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,1,,Napoli (ITA),06 MAY 2017,1120.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14165696,toplist
+86.0,8:30.67,,Raouf BOUBAKER,21 OCT 1988,TUN,4f1,,Belfort (FRA),09 JUN 2017,1119.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14773647,toplist
+87.0,8:30.76,,Abdelkarim BEN ZAHRA,27 OCT 1998,MAR,4f1,,Oordegem (BEL),27 MAY 2017,1119.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14707140,toplist
+88.0,8:30.86,,Michael JORDAN,21 MAY 1991,USA,2,,"Nashville, TN (USA)",10 JUN 2017,1118.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14419324,toplist
+89.0,8:30.87,,Mitko TSENOV,13 JUN 1993,BUL,5f1,,Belfort (FRA),09 JUN 2017,1118.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14376708,toplist
+90.0,8:30.9h,,Cleophas Kandie MEYAN,14 AUG 2000,KEN,7,,Nairobi (KEN),10 JUN 2017,1118.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14695631,toplist
+91.0,8:31.08,,Darren FAHY,14 MAY 1994,USA,2,,"Eugene, OR (USA)",09 JUN 2017,1117.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14436216,toplist
+92.0,8:31.10,,Ibrahim CHAKIR,04 SEP 1994,ESP,9,,Huelva (ESP),14 JUN 2017,1117.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14509265,toplist
+93.0,8:31.17,,Dylan BLANKENBAKER,06 JAN 1994,USA,3,,"Eugene, OR (USA)",09 JUN 2017,1117.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14588209,toplist
+94.0,8:31.35,,Jaouad CHEMLAL,11 APR 1994,MAR,1,,Castiglione della Pescaia (ITA),14 MAY 2017,1116.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14433902,toplist
+95.0,8:31.36,,Jonathan ROMEO,13 AUG 1994,ESP,3,,Barcelona (ESP),23 JUL 2017,1116.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14458888,toplist
+96.0,8:31.4h,,Isaac YEGO,18 APR 1989,KEN,8,,Nairobi (KEN),10 JUN 2017,1116.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14585378,toplist
+97.0,8:31.54,,Hillary Kipsang YEGO,02 APR 1992,TUR,1,,Bursa (TUR),07 JUL 2017,1115.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14375963,toplist
+98.0,8:31.9h,,Robert MAIYO,,KEN,4,,Nyahururu (KEN),06 MAY 2017,1114.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14704925,toplist
+99.0,8:31.95,,Tim STEGEMANN,04 AUG 1992,GER,5,,Rehlingen (GER),05 JUN 2017,1114.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14360097,toplist
+100.0,8:32.0h,,Festus KIPRONO,29 DEC 1995,KEN,9,,Nairobi (KEN),10 JUN 2017,1113.0,men_3000sc,2017,https://worldathletics.org/athletes/athlete=14479180,toplist
+,8:00.43,,Ezekiel KEMBOI,25 MAY 1982,KEN,1.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:00.89,,Richard Kipkemboi MATEELONG,14 OCT 1983,KEN,2.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:01.18,,Bouabdellah TAHRI,20 DEC 1978,FRA,3.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:01.26,,Paul Kipsiele KOECH,10 NOV 1981,KEN,4.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:12.13,,Yacob JARSO,05 FEB 1988,ETH,5.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:12.40,,Roba GARI,12 APR 1982,ETH,6.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:12.61,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,7.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:14.47,,Jukka KESKISALO,27 MAR 1981,FIN,8.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:16.51,,Eliseo MARTÍN,05 NOV 1973,ESP,9.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:17.08,,Tareq Mubarak TAHER,1986,BRN,10.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:17.82,,Benjamin KIPLAGAT,04 MAR 1989,UGA,11.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:19.72,,Abubaker Ali KAMAL,08 NOV 1983,QAT,12.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:32.54,,Ruben RAMOLEFI,17 JUL 1978,RSA,13.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:35.77,,Mustafa MOHAMED,01 MAR 1979,SWE,14.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,DQ,,Jamel CHATBI,30 APR 1984,MAR, - ,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,8:07.87,,Mahiedine MEKHISSI,15 MAR 1985,FRA,1.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:09.28,,Bouabdellah TAHRI,20 DEC 1978,FRA,2.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:19.64,,Ivan LUKYANOV,31 JAN 1981,MDA,3.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:23.37,,Tomasz SZYMKOWIAK,05 JUL 1983,POL,4.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:25.39,,Steffen ULICZKA,17 JUL 1984,GER,5.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:27.49,,Eliseo MARTÍN,05 NOV 1973,ESP,6.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:27.89,,Bjørnar Ustad KRISTENSEN,26 JAN 1982,NOR,7.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:28.08,,Alberto Casimiro PAULO,03 OCT 1985,POR,8.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:37.52,,Andrey FARNOSOV,09 JUL 1980,RUS,9.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:48.83,,Boštjan BUČ,13 APR 1980,SLO,10.,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,DQ,,José Luis BLANCO,03 JUN 1975,ESP, - ,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,DQ,,Ildar MINSHIN,05 FEB 1985,RUS, - ,,Barcelona European Championships,01 AUG 2010,,,2010,,major_meet
+,8:14.85,,Ezekiel KEMBOI,25 MAY 1982,KEN,1.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:16.05,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,2.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:16.09,,Mahiedine MEKHISSI,15 MAR 1985,FRA,3.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:17.56,,Bouabdellah TAHRI,20 DEC 1978,FRA,4.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:18.37,,Roba GARI,12 APR 1982,ETH,5.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:18.67,,Jacob ARAPTANY,11 FEB 1992,UGA,6.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:19.31,,Richard Kipkemboi MATEELONG,14 OCT 1983,KEN,7.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:19.69,,Ivan LUKYANOV,31 JAN 1981,MDA,8.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:21.97,,Hamid EZZINE,05 OCT 1983,MAR,9.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:22.21,,Benjamin KIPLAGAT,04 MAR 1989,UGA,10.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:25.39,,Nahom Mesfin TARIKU,03 JUN 1989,ETH,11.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:30.39,,Vincent ZOUAOUI DANDRIEUX,12 OCT 1980,FRA,12.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:30.47,,Ruben RAMOLEFI,17 JUL 1978,RSA,13.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:33.56,,Abraham CHIRCHIR,01 AUG 1980,KEN,14.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:33.84,,Alberto Casimiro PAULO,03 OCT 1985,POR,15.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,8:18.56,,Ezekiel KEMBOI,25 MAY 1982,KEN,1.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:19.08,,Mahiedine MEKHISSI,15 MAR 1985,FRA,2.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:19.73,,Abel Kiprop MUTAI,02 OCT 1988,KEN,3.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:20.00,,Roba GARI,12 APR 1982,ETH,4.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:23.03,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,5.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:23.87,,Evan JAGER,08 MAR 1989,USA,6.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:24.90,,Hamid EZZINE,05 OCT 1983,MAR,7.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:25.91,,Donald CABRAL,12 DEC 1989,USA,8.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:27.64,,Tarik Langat AKDAG,16 JUN 1988,TUR,9.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:28.15,,Ivan LUKYANOV,31 JAN 1981,MDA,10.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:32.40,,Brahim TALEB,16 FEB 1985,MAR,11.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:35.12,,Nahom Mesfin TARIKU,03 JUN 1989,ETH,12.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:40.07,,Yuri FLORIANI,25 DEC 1981,ITA,13.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,DNF,,Jukka KESKISALO,27 MAR 1981,FIN,,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,DQ,,Benjamin KIPLAGAT,04 MAR 1989,UGA,,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,8:33.23,,Mahiedine MEKHISSI,15 MAR 1985,FRA,1.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:35.24,,Tarik Langat AKDAG,16 JUN 1988,TUR,2.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:35.87,,Víctor GARCÍA,13 MAR 1985,ESP,3.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:38.58,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,4.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:38.76,,Łukasz PARSZCZYŃSKI,04 MAY 1985,POL,5.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:39.22,,Yuri FLORIANI,25 DEC 1981,ITA,6.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:39.35,,Krystian ZALEWSKI,11 APR 1989,POL,7.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:40.05,,Hakan DUVAR,21 AUG 1990,TUR,8.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:41.53,,Steffen ULICZKA,17 JUL 1984,GER,9.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:42.06,,Ivan LUKYANOV,31 JAN 1981,MDA,10.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:44.51,,Łukasz OSLIZLO,14 MAY 1989,POL,11.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:48.37,,Patrick NASTI,30 AUG 1989,ITA,12.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:53.30,,Antonio David JIMÉNEZ,18 FEB 1977,ESP,13.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:58.02,,Kaur KIVISTIK,29 APR 1991,EST,14.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,DQ,,Nordine GEZZAR,17 FEB 1980,FRA, - ,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,8:06.01,,Ezekiel KEMBOI,25 MAY 1982,KEN,1.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:06.37,,Conseslus KIPRUTO,08 DEC 1994,KEN,2.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:07.86,,Mahiedine MEKHISSI,15 MAR 1985,FRA,3.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:08.62,,Paul Kipsiele KOECH,10 NOV 1981,KEN,4.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:08.67,,Evan JAGER,08 MAR 1989,USA,5.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:11.64,,Matthew HUGHES,03 AUG 1989,CAN,6.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:17.04,,Abel Kiprop MUTAI,02 OCT 1988,KEN,7.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:17.41,,Yoann KOWAL,28 MAY 1987,FRA,8.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:19.53,,Hamid EZZINE,05 OCT 1983,MAR,9.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:19.99,,Ivan LUKYANOV,31 JAN 1981,MDA,10.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:20.93,,Ángel MULLERA,20 APR 1984,ESP,11.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:25.86,,Jacob ARAPTANY,11 FEB 1992,UGA,12.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:27.01,,Alexandre GENEST,30 JUN 1986,CAN,13.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:31.09,,Benjamin KIPLAGAT,04 MAR 1989,UGA,14.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,DNF,,Noureddine SMAÏL,06 FEB 1987,FRA,,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,8:26.66,,Yoann KOWAL,28 MAY 1987,FRA,1.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:27.11,,Krystian ZALEWSKI,11 APR 1989,POL,2.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:29.16,,Ángel MULLERA,20 APR 1984,ESP,3.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:30.08,,Sebastián MARTOS,20 JUN 1989,ESP,4.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:32.50,,Ivan LUKYANOV,31 JAN 1981,RUS,5.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:32.70,,Jukka KESKISALO,27 MAR 1981,FIN,6.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:32.99,,Steffen ULICZKA,17 JUL 1984,GER,7.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:33.13,,Tarik Langat AKDAG,16 JUN 1988,TUR,8.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:34.16,,Mitko TSENOV,13 JUN 1993,BUL,9.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:34.32,,Mateusz DEMCZYSZAK,18 JAN 1986,POL,10.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:42.45,,Janne UKONMAANAHO,13 MAR 1984,FIN,11.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:44.05,,Yuri FLORIANI,25 DEC 1981,ITA,12.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:44.46,,Martin GRAU,26 MAR 1992,GER,13.,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,DQ,,Nikolay CHAVKIN,24 APR 1984,RUS, - ,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,DQ,,Mahiedine MEKHISSI,15 MAR 1985,FRA,,,Zürich European Championships,14 AUG 2014,,,2014,,major_meet
+,8:11.28,,Ezekiel KEMBOI,25 MAY 1982,KEN,1.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:12.38,,Conseslus KIPRUTO,08 DEC 1994,KEN,2.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:12.54,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,3.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:12.62,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,4.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:14.39,,Daniel HULING,16 JUL 1983,USA,5.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:15.47,,Evan JAGER,08 MAR 1989,USA,6.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:17.73,,Brahim TALEB,16 FEB 1985,MAR,7.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:18.63,,Matthew HUGHES,03 AUG 1989,CAN,8.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:21.22,,Krystian ZALEWSKI,11 APR 1989,POL,9.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:24.94,,Donald CABRAL,12 DEC 1989,USA,10.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:25.72,,Hamid EZZINE,05 OCT 1983,MAR,11.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:26.19,,Hailemariyam AMARE,22 FEB 1997,ETH,12.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:29.04,,Bilal TABTI,07 JUN 1993,ALG,13.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:33.79,,Hichem BOUCHICHA,19 MAY 1989,ALG,14.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:44.81,,Tolosa NURGI,29 MAR 1990,ETH,15.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,8:03.28,,Conseslus KIPRUTO,08 DEC 1994,KEN,1.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:04.28,,Evan JAGER,08 MAR 1989,USA,2.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:11.52,,Mahiedine MEKHISSI,15 MAR 1985,FRA,3.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:14.35,,Soufiane EL BAKKALI,07 JAN 1996,MAR,4.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:16.75,,Yoann KOWAL,28 MAY 1987,FRA,5.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:18.79,,Brimin Kiprop KIPRUTO,31 JUL 1985,KEN,6.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:22.74,,Hillary BOR,22 NOV 1989,USA,7.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:25.81,,Donald CABRAL,12 DEC 1989,USA,8.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:26.30,,Altobeli SILVA,03 DEC 1990,BRA,9.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:36.83,,Matthew HUGHES,03 AUG 1989,CAN,10.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:40.68,,Yemane HAILESELASSIE,21 FEB 1998,ERI,11.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,DNF,,Jacob ARAPTANY,11 FEB 1992,UGA,,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,DNF,,Hamid EZZINE,05 OCT 1983,MAR,,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,DQ,,Ezekiel KEMBOI,25 MAY 1982,KEN,,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,DQ,,Amor BEN YAHIA,01 JUL 1985,TUN,,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,8:25.63,,Mahiedine MEKHISSI,15 MAR 1985,FRA,1.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:29.91,,Aras KAYA,04 APR 1994,TUR,2.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:30.79,,Yoann KOWAL,28 MAY 1987,FRA,3.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:31.93,,Sebastián MARTOS,20 JUN 1989,ESP,4.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:33.29,,Rob MULLETT,31 JUL 1987,GBR,5.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:33.75,,Kaur KIVISTIK,29 APR 1991,EST,6.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:35.35,,Abdoullah BAMOUSSA,08 JUN 1986,ITA,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:35.94,,Yuri FLORIANI,25 DEC 1981,ITA,8.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:40.73,,Fernando CARRO,01 APR 1992,ESP,9.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:42.27,,Ole HESSELBJERG,23 APR 1990,DEN,10.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:48.98,,Emil BLOMBERG,09 APR 1992,SWE,11.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:51.37,,Abdelaziz MERZOUGUI,30 AUG 1991,ESP,12.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,DNS,,Krystian ZALEWSKI,11 APR 1989,POL,,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,DQ,,Hakan DUVAR,21 AUG 1990,TUR, - ,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,DQ,,Jamel CHATBI,30 APR 1984,ITA, - ,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,8:14.12,,Conseslus KIPRUTO,08 DEC 1994,KEN,1.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:14.49,,Soufiane EL BAKKALI,07 JAN 1996,MAR,2.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:15.53,,Evan JAGER,08 MAR 1989,USA,3.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:15.80,,Mahiedine MEKHISSI,15 MAR 1985,FRA,4.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:21.09,,Stanley Kipkoech KEBENEI,06 NOV 1989,USA,5.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:21.84,,Matthew HUGHES,03 AUG 1989,CAN,6.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:22.12,,Tesfaye DERIBA,11 SEP 1998,ETH,7.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:23.02,,Tafese SOBOKA,29 SEP 1993,ETH,8.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:25.28,,Getnet WALE,16 JUL 2000,ETH,9.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:25.94,,Albert CHEMUTAI,1995,UGA,10.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:29.38,,Ezekiel KEMBOI,25 MAY 1982,KEN,11.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:32.90,,Jairus Kipchoge BIRECH,14 DEC 1992,KEN,12.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:34.53,,Yoann KOWAL,28 MAY 1987,FRA,13.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,8:49.18,,Jacob ARAPTANY,11 FEB 1992,UGA,14.,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
+,DQ,,Bilal TABTI,07 JUN 1993,ALG,,,IAAF World Championships in Athletics,08 AUG 2017,,,2017,,major_meet
 ,8:31.66,,Mahiedine MEKHISSI,15 MAR 1985,FRA,1.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
 ,8:34.16,,Fernando CARRO,01 APR 1992,ESP,2.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
 ,8:35.81,,Yohanes CHIAPPINELLI,18 AUG 1997,ITA,3.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
@@ -1446,6 +2600,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Nat.1,Venue,Date,Results Score,discipline,
 ,8:40.04,,Edward TRIPPAS,22 SEP 1998,AUS,11.,,USATF Golden Games,09 MAY 2021,,,2021,,major_meet
 ,8:40.45,,Anthony ROTICH,20 OCT 1990,USA,12.,,USATF Golden Games,09 MAY 2021,,,2021,,major_meet
 ,8:41.00,,Jordan MANN,12 JAN 1993,USA,13.,,USATF Golden Games,09 MAY 2021,,,2021,,major_meet
+,8:57.11,,Michael JORDAN,21 MAY 1991,USA,15.,,USATF Golden Games,09 MAY 2021,,,2021,,major_meet
 ,DNF,,Evan JAGER,08 MAR 1989,USA,,,USATF Golden Games,09 MAY 2021,,,2021,,major_meet
 ,8:17.46,,Ryuji MIURA,11 FEB 2002,JPN,1.,,"""READY STEADY TOKYO - Athletics""",09 MAY 2021,,,2021,,major_meet
 ,8:21.10,,Philemon Kiplagat RUTO,20 SEP 2001,KEN,2.,,"""READY STEADY TOKYO - Athletics""",09 MAY 2021,,,2021,,major_meet
@@ -1468,6 +2623,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Nat.1,Venue,Date,Results Score,discipline,
 ,8:36.21,,Anthony ROTICH,20 OCT 1990,USA,8.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,8:38.97,,Frankline TONUI,02 AUG 1993,USA,9.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,8:39.38,,Benard KETER,25 MAY 1992,USA,10.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
+,8:39.45,,Michael JORDAN,21 MAY 1991,USA,11.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,8:52.82,,Haron LAGAT,15 AUG 1983,USA,12.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,8:25.13,,Soufiane EL BAKKALI,07 JAN 1996,MAR,1.,,"World Athletics Championships, Oregon 2022",18 JUL 2022,,,2022,,major_meet
 ,8:26.01,,Lamecha GIRMA,26 NOV 2000,ETH,2.,,"World Athletics Championships, Oregon 2022",18 JUL 2022,,,2022,,major_meet

@@ -29,6 +29,95 @@ LONG_DISTANCE_EVENTS = {
     "men_3000sc", "women_3000sc",
 }
 
+# How far back "recent form" looks. Wide enough to catch a mid-season athlete's
+# last two or three outings, narrow enough that a March mark is not called
+# current in September.
+RECENT_WINDOW_DAYS = 45
+
+# ---------------------------------------------------------------------------
+# Feature definitions shared with the TRAINER.
+#
+# train_model.py imports these three rather than reimplementing them. That is
+# the whole reason they live here as pure functions: run.py selects
+# df[feat_cols] BY NAME, so a column computed one way in training and another
+# way at serve time is present, correctly named, and silently means something
+# else. This project has already paid for that once -- final_labels and
+# train_model each grew their own normalize_name, one upper-cased and the other
+# lower-cased, and the result was a training set with 2,940 podiums in it and
+# zero positive labels.
+# ---------------------------------------------------------------------------
+
+
+def field_gap(season_best, is_field):
+    """How far behind the best in this field an athlete is, in units of how
+    spread the field is.
+
+    season_rank and season_percentile are ORDINAL -- they say an athlete is
+    fourth, never whether fourth is a stride back or a tenth of a second. On a
+    10-seed paired test this and its two companions were worth +0.73 toplist
+    and +0.97 field accuracy, against a same-width shuffled control.
+
+    Higher always means worse, in both directions of "better mark"."""
+    season_best = pd.Series(season_best).astype(float)
+    if season_best.empty:
+        return season_best
+    leader = season_best.max() if is_field else season_best.min()
+    raw = (leader - season_best) if is_field else (season_best - leader)
+    spread = season_best.std()
+    if not spread or np.isnan(spread):
+        # One athlete, or a field that all marked identically. No spread means
+        # no gaps to measure, not a division by something very small.
+        return pd.Series(0.0, index=season_best.index)
+    return raw / spread
+
+
+def form_from_log(log, names, season_best, reference, is_field):
+    """(sb_age_days, recent_best_ratio) for each name.
+
+    `log` is one row per dated performance, columns name/date/mark, already
+    restricted to the season and to before `reference`. `names` must be
+    upper-cased the same way log["name"] is.
+
+    sb_age_days is how old the athlete's BEST mark is on the reference date.
+    days_since_last already says when they last raced; this says when they last
+    raced THIS well, which is a different fact -- an athlete whose season best
+    is four months old is a different prospect from one who set it last week.
+    999 when nothing on record, matching what days_since_last uses for the
+    same absence.
+
+    recent_best_ratio is their best mark inside the window over their season
+    best, flipped so that above 1 always means off peak. Athletes with no race
+    in the window take the field's MEDIAN rather than a made-up 1.0: a missing
+    race is not evidence of being at peak, and days_since_last already carries
+    the fact that they have not run."""
+    names = pd.Series(list(names))
+    season_best = pd.Series(list(season_best), index=names.index).astype(float)
+    reference = pd.Timestamp(reference)
+
+    if log is None or len(log) == 0:
+        return ([999.0] * len(names)).copy(), [1.0] * len(names)
+
+    log = log.dropna(subset=["date", "mark"])
+    if log.empty:
+        return [999.0] * len(names), [1.0] * len(names)
+
+    peak_idx = (log.groupby("name")["mark"].idxmax() if is_field
+                else log.groupby("name")["mark"].idxmin())
+    peak_date = log.loc[peak_idx].set_index("name")["date"]
+    age = (reference - names.map(peak_date)).dt.days
+    sb_age_days = age.fillna(999).astype(float).tolist()
+
+    window = log[log["date"] >= reference - pd.Timedelta(days=RECENT_WINDOW_DAYS)]
+    grouped = window.groupby("name")["mark"]
+    best_recent = (grouped.max() if is_field else grouped.min()) if len(window) else None
+    recent = (names.map(best_recent) if best_recent is not None
+              else pd.Series(np.nan, index=names.index)).astype(float)
+    with np.errstate(divide="ignore", invalid="ignore"):
+        ratio = (season_best / recent) if is_field else (recent / season_best)
+    ratio = ratio.replace([np.inf, -np.inf], np.nan)
+    fill = ratio.median() if ratio.notna().any() else 1.0
+    return sb_age_days, ratio.fillna(fill).tolist()
+
 
 def get_qual_limit(discipline_key):
     if discipline_key in FIELD_EVENTS:
@@ -228,8 +317,27 @@ def build_2026_features(key):
         feat["career_best"] = feat["season_best"]
         feat["prev_season_best"] = np.nan
 
-    feat["career_best"]      = feat["career_best"].fillna(feat["season_best"])
-    feat["pb_gap"]           = abs(feat["season_best"] - feat["career_best"])
+    feat["career_best"] = feat["career_best"].fillna(feat["season_best"])
+    # THIS SEASON COUNTS TOWARDS A CAREER BEST. `hist` is data/raw/<key>.csv,
+    # which stops at 2025 -- the current season lives in <key>_2026.csv -- so
+    # without this line an athlete who has just run the fastest race of their
+    # life is handed a career best from a slower year.
+    #
+    # It is not only untidy, it inverts a feature. In training, build_features
+    # takes career_best over marks up to AND INCLUDING the label year, so
+    # career_best is never worse than season_best and pb_gap always means "how
+    # far off your best you are", floored at 0. Here it was coming out as "how
+    # much you have IMPROVED", the same number with the opposite meaning, and
+    # the model reads it with the meaning it was trained on. Measured on the
+    # 2026 data before the fix: 885 of 3,993 athletes, 22.2%, every one of the
+    # 32 disciplines. Alison dos Santos, who ran 45.80 this season against a
+    # 46.29 best from earlier years, was being scored as 0.49s off his peak
+    # while setting a world record.
+    feat["career_best"] = (
+        feat[["career_best", "season_best"]].min(axis=1) if is_track
+        else feat[["career_best", "season_best"]].max(axis=1)
+    )
+    feat["pb_gap"] = abs(feat["season_best"] - feat["career_best"])
 
     if is_track:
         feat["yoy_improvement"] = feat["prev_season_best"] - feat["season_best"]
@@ -244,6 +352,14 @@ def build_2026_features(key):
     else:
         feat["season_rank"]       = feat["season_best"].rank(ascending=False)
         feat["season_percentile"] = feat["season_best"].rank(ascending=True) / len(feat)
+
+    # Over the WHOLE toplist, which is the population the trainer ranks against
+    # too. run.py cuts down to the projected field only after this returns, so
+    # computing it there instead would divide by the spread of eight elite
+    # athletes where training divided by the spread of a hundred, and the same
+    # column would carry a systematically bigger number at serve time than the
+    # model ever saw.
+    feat["field_gap"] = field_gap(feat["season_best"], not is_track).to_numpy()
 
     # Recent form features -- prefer the real current-season per-meeting file
     # (current_season_scraper.py) when it exists over the live toplist
@@ -295,13 +411,38 @@ def build_2026_features(key):
             feat["recent_trend"]    = recent_trends
             feat["days_since_last"] = days_since
             feat["gap_variability"] = gap_vars
+            # Same two definitions the trainer uses, over the same UNION of
+            # sources it reads: data/raw/<disc>.csv holds the toplist rows and
+            # the per-meeting rows together, so the 2026 equivalent is both
+            # files. The toplist row is what carries the season best and the
+            # date it was set; the meetings file carries everything since.
+            parts = [raw_df[["athlete_name", "date", "Mark"]]]
+            if "Date" in df.columns:
+                parts.append(df[["athlete_name", "Mark"]].assign(
+                    date=pd.to_datetime(df["Date"], dayfirst=True, errors="coerce")))
+            # De-duplicated, because raw_df falls back to df itself when no
+            # meetings file exists, and because a season best set at a Diamond
+            # League meeting legitimately appears in both files. One
+            # performance, one row.
+            log = (pd.concat(parts, ignore_index=True)
+                     .rename(columns={"athlete_name": "name", "Mark": "mark"})
+                     .drop_duplicates(subset=["name", "date", "mark"]))
+            sb_age, ratio = form_from_log(
+                log, feat["athlete_name"], feat["season_best"],
+                pd.Timestamp(today), not is_track)
+            feat["sb_age_days"] = sb_age
+            feat["recent_best_ratio"] = ratio
         else:
             feat["recent_trend"]    = 0.0
             feat["days_since_last"] = 999
             feat["gap_variability"] = 0.0
+            feat["sb_age_days"] = 999.0
+            feat["recent_best_ratio"] = 1.0
     except:
         feat["recent_trend"]    = 0.0
         feat["days_since_last"] = 999
         feat["gap_variability"] = 0.0
+        feat["sb_age_days"] = 999.0
+        feat["recent_best_ratio"] = 1.0
 
     return feat

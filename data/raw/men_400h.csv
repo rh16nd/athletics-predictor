@@ -1156,14 +1156,1094 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,50.13,,Julien BONVIN,10 JAN 1999,SUI,6.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,50.20,,Patrik DÖMÖTÖR,13 DEC 2000,SVK,7.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,50.42,,Vít MÜLLER,31 AUG 1996,CZE,8.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
-,47.37,,Abderrahman SAMBA,05 SEP 1995,QAT,1.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,48.46,,Annsert WHYTE,04 OCT 1987,JAM,2.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,48.56,,Karsten WARHOLM,28 FEB 1996,NOR,3.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,48.65,,Yasmani COPELLO,15 APR 1987,TUR,4.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,49.12,,Abdelmalik LAHOULOU,07 MAY 1992,ALG,5.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,49.80,,Takatoshi ABE,12 NOV 1991,JPN,6.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,50.54,,Cornel FREDERICKS,03 MAR 1990,RSA,7.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,52.62,,Kyron MCMASTER,03 JAN 1997,IVB,8.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
+1.0,47.25,,Angelo TAYLOR,29 DEC 1978,USA,1,,"National Stadium, Beijing (CHN)",18 AUG 2008,1271.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14252793,toplist
+2.0,47.79,,Kerron CLEMENT,31 OCT 1985,USA,1,,"National Stadium, Kingston (JAM)",03 MAY 2008,1242.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14234898,toplist
+3.0,48.02,,Bershawn JACKSON,08 MAY 1983,USA,2sf1,,"National Stadium, Beijing (CHN)",16 AUG 2008,1230.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14241618,toplist
+4.0,48.22,,LJ VAN ZYL,20 JUL 1985,RSA,1,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1220.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14221443,toplist
+5.0,48.30,,Danny MCFARLANE,14 FEB 1972,JAM,4,,"National Stadium, Beijing (CHN)",18 AUG 2008,1216.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14202113,toplist
+6.0,48.37,,Reuben MCCOY,16 MAR 1986,USA,2sf1,,"Eugene, OR (USA)",28 JUN 2008,1212.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14245415,toplist
+7.0,48.46,,Justin GAYMON,13 DEC 1986,USA,4,,"Eugene, OR (USA)",29 JUN 2008,1208.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14238593,toplist
+8.0,48.50,,Markino BUCKLEY,16 APR 1986,JAM,3sf2,,"National Stadium, Beijing (CHN)",16 AUG 2008,1206.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14201874,toplist
+9.0,48.52,,Johnny DUTCH,20 JAN 1989,USA,5,,"Eugene, OR (USA)",29 JUN 2008,1205.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14236956,toplist
+9.0,48.52,,Marek PLAWGO,25 FEB 1981,POL,6,,"National Stadium, Beijing (CHN)",18 AUG 2008,1205.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14217387,toplist
+11.0,48.62,,Kenji NARISAKO,25 JUL 1984,JPN,1,,Oita (JPN),04 OCT 2008,1199.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14204968,toplist
+12.0,48.68,,Brandon JOHNSON,02 MAR 1985,USA,4sf1,,"Eugene, OR (USA)",28 JUN 2008,1196.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14242034,toplist
+12.0,48.68,,Jeshua ANDERSON,22 JUN 1989,USA,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",11 JUL 2008,1196.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14231363,toplist
+14.0,48.69,,Periklis IAKOVAKIS,24 MAR 1979,GRE,4sf2,,"National Stadium, Beijing (CHN)",16 AUG 2008,1196.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14195155,toplist
+15.0,48.71,,Pieter DE VILLIERS,13 JUL 1982,RSA,1,,Germiston (RSA),22 FEB 2008,1195.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14219913,toplist
+16.0,48.78,,Isa PHILLIPS,22 APR 1984,JAM,1h1,,Kingston (JAM),27 JUN 2008,1191.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14202168,toplist
+17.0,48.84,,Michael TINSLEY,21 APR 1984,USA,3,,"National Stadium, Kingston (JAM)",03 MAY 2008,1188.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14253267,toplist
+18.0,48.87,,Javier CULSON,25 JUL 1984,PUR,4,,"National Stadium, Kingston (JAM)",03 MAY 2008,1187.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14218778,toplist
+19.0,48.92,,Alwyn MYBURGH,13 OCT 1980,RSA,3h2,,"National Stadium, Beijing (CHN)",15 AUG 2008,1184.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14220787,toplist
+20.0,48.93,,Adrian FINDLAY,01 OCT 1982,JAM,2,,"Lawrence, KS (USA)",19 APR 2008,1184.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14201983,toplist
+21.0,48.94,,LaRon BENNETT,25 NOV 1982,USA,2f2,,Ponce (PUR),17 MAY 2008,1183.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14232432,toplist
+22.0,49.00,,Aleksandr DEREVYAGIN,24 MAR 1979,RUS,1,,Kazan (RUS),18 JUL 2008,1180.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14222065,toplist
+23.0,49.05,,Bayano KAMANI,17 APR 1980,PAN,4h2,,"National Stadium, Beijing (CHN)",15 AUG 2008,1178.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14216097,toplist
+24.0,49.06,,Richard YATES,26 JAN 1986,GBR,2,,"Crystal Palace, London (GBR)",26 JUL 2008,1177.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14191326,toplist
+25.0,49.15,,Mahau SUGUIMATI,13 NOV 1984,BRA,1,,São Paulo (BRA),29 JUN 2008,1172.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14175200,toplist
+26.0,49.17,,Dai TAMESUE,03 MAY 1978,JPN,1,,Kawasaki (JPN),27 JUN 2008,1171.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14206266,toplist
+27.0,49.18,,Ockert CILLIERS,21 APR 1981,RSA,3,,Germiston (RSA),22 FEB 2008,1171.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14219835,toplist
+28.0,49.21,,Minas ALOZIDIS,07 JUL 1984,GRE,2,,Athina (GRE),14 JUN 2008,1169.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14194965,toplist
+29.0,49.22,,Robert GRIFFIN,12 FEB 1990,USA,1,,"Boulder, CO (USA)",18 MAY 2008,1169.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14239386,toplist
+29.0,49.22,,Yevgeniy MELESHENKO,19 JAN 1981,KAZ,1,,Bishkek (KGZ),31 MAY 2008,1169.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14207230,toplist
+31.0,49.25,,Fadil BELLAABOUSS,15 JUN 1986,FRA,1,,Marseille (FRA),04 JUL 2008,1167.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14183185,toplist
+32.0,49.30,,James CARTER,07 MAY 1978,USA,5,,"Stade Louis II, Monaco (MON)",29 JUL 2008,1165.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14234375,toplist
+33.0,49.34,,Sébastien MAILLARD,02 MAY 1981,FRA,1f8,,Chambéry (FRA),05 JUL 2008,1163.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14186214,toplist
+34.0,49.37,,Eric DUDLEY,18 APR 1980,USA,6sf1,,"Eugene, OR (USA)",28 JUN 2008,1161.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14236829,toplist
+35.0,49.39,,Jussi HEIKKILÄ,21 MAR 1983,FIN,2,,"Tallahassee, FL (USA)",31 MAY 2008,1160.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14181894,toplist
+36.0,49.40,,Terry THORNTON,03 JAN 1985,USA,3,,"Tallahassee, FL (USA)",31 MAY 2008,1160.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14253193,toplist
+37.0,49.42,,Aleksey POGORELOV,26 MAR 1983,KGZ,2,,Bishkek (KGZ),31 MAY 2008,1159.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14210029,toplist
+37.0,49.42,,Jonathan WILLIAMS,29 AUG 1983,BIZ,1f1,,"Los Angeles, CA (USA)",07 JUN 2008,1159.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14177043,toplist
+39.0,49.44,,Salah Eddine GHAIDI,12 MAY 1979,FRA,1f1,,Albi (FRA),25 JUL 2008,1158.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14185009,toplist
+40.0,49.48,,Ian WEAKLEY,24 FEB 1974,JAM,3,,"Lawrence, KS (USA)",19 APR 2008,1156.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14202306,toplist
+41.0,49.50,,Jonathan WILLIAMS,08 APR 1988,USA,1,,"Claremont, CA (USA)",05 APR 2008,1155.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14255046,toplist
+41.0,49.50,,Brendan COLE,29 MAY 1981,AUS,5,,Madrid (ESP),05 JUL 2008,1155.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14179923,toplist
+43.0,49.52,,Nathaniel GARCIA,18 MAR 1982,USA,7sf1,,"Eugene, OR (USA)",28 JUN 2008,1154.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14238462,toplist
+44.0,49.53,,David GREENE,11 APR 1986,GBR,1,,"Stadio Quercia, Rovereto (ITA)",10 SEP 2008,1153.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14189416,toplist
+44.0,49.53,,Kazuaki YOSHIDA,31 OCT 1987,JPN,1,,Tokyo (JPN),14 SEP 2008,1153.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14329680,toplist
+46.0,49.56,,Amaurys VALLE,18 JAN 1990,CUB,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",11 JUL 2008,1152.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14169274,toplist
+47.0,49.64,,Kyle ERICKSON,11 JAN 1981,USA,1,,"Los Angeles, CA (USA)",12 APR 2008,1148.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14237330,toplist
+48.0,49.65,,Takayuki KOIKE,12 OCT 1984,JPN,3,,Oita (JPN),04 OCT 2008,1147.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14204041,toplist
+49.0,49.66,,Konstantinos ANASTASIOU,09 SEP 1986,GRE,3,,Athina (GRE),14 JUN 2008,1147.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14194971,toplist
+50.0,49.68,,Nick ROBINSON,14 JAN 1986,USA,2,,"Lincoln, NE (USA)",31 MAY 2008,1146.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14249788,toplist
+51.0,49.70,,Ben CLARK,25 NOV 1980,USA,2,,"Claremont, CA (USA)",05 APR 2008,1145.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14234798,toplist
+52.0,49.73,,Yan MENG,30 SEP 1980,CHN,5h3,,"National Stadium, Beijing (CHN)",15 AUG 2008,1143.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14171746,toplist
+53.0,49.75,,Derrick WILLIAMS,25 MAR 1982,USA,4,,"Carson, CA (USA)",18 MAY 2008,1142.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14254993,toplist
+54.0,49.76,,Hiroaki MASUOKA,18 FEB 1986,JPN,4,,Oita (JPN),04 OCT 2008,1142.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14204330,toplist
+55.0,49.77,,Justin BOYD,25 AUG 1985,USA,3,,"Boulder, CO (USA)",18 MAY 2008,1141.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14233111,toplist
+56.0,49.79,,LaBronze GARRETT,09 NOV 1976,USA,2f1,,"New York, NY (USA)",08 JUN 2008,1140.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14238515,toplist
+56.0,49.79,,Kai KELLEY,08 NOV 1986,USA,4sf2,,"Des Moines, IA (USA)",12 JUN 2008,1140.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14242749,toplist
+58.0,49.80,,Adam KUNKEL,24 FEB 1981,CAN,4f1,,Luzern (SUI),16 JUL 2008,1140.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14173977,toplist
+59.0,49.82,,Jake HANSON,08 AUG 1987,USA,2,,"Tempe, AZ (USA)",17 MAY 2008,1139.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14239861,toplist
+59.0,49.82,,Tristan THOMAS,23 MAY 1986,AUS,2h2,,Beijing (CHN),23 MAY 2008,1139.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14178692,toplist
+59.0,49.82,,Ibrahim MAIGA,14 MAR 1979,MLI,1,,La Roche-sur-Yon (FRA),16 JUL 2008,1139.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14213406,toplist
+62.0,49.83,,Stanislav MELNIKOV,26 FEB 1987,UKR,1f2,,Yalta (UKR),07 JUN 2008,1138.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14230289,toplist
+63.0,49.84,,Abderahmane HAMMADI,24 MAR 1984,ALG,2,,Addis Ababa (ETH),02 MAY 2008,1138.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14180740,toplist
+64.0,49.85,,Bandar Yahya AL SHARAKILI,06 MAR 1987,KSA,2,,Lahti (FIN),09 JUL 2008,1137.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14210780,toplist
+65.0,49.89,,Edivaldo MONTEIRO,28 APR 1976,POR,6h1,,"National Stadium, Beijing (CHN)",15 AUG 2008,1135.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14218377,toplist
+66.0,49.92,,Masahira YOSHIKATA,23 AUG 1982,JPN,5,,Oita (JPN),04 OCT 2008,1134.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14207062,toplist
+67.0,49.94,,Ondřej DANĚK,26 NOV 1981,CZE,1f1,,Ostrava (CZE),31 MAY 2008,1133.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14168996,toplist
+67.0,49.94,,Héni KECHI,31 AUG 1980,FRA,1h2,,Albi (FRA),24 JUL 2008,1133.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14185606,toplist
+69.0,49.97,,Michal UHLÍK,09 MAR 1980,CZE,2f1,,Ostrava (CZE),31 MAY 2008,1131.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14168164,toplist
+70.0,50.01,,Abe JONES,03 JUN 1982,USA,1,,"Des Moines, IA (USA)",26 APR 2008,1129.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14242276,toplist
+70.0,50.01,,Vladimir ANTMANIS,12 MAR 1984,RUS,2,,Kazan (RUS),18 JUL 2008,1129.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14221672,toplist
+72.0,50.02,,Yuki IWATAKI,29 NOV 1986,JPN,1f1,,Tokyo (JPN),25 MAY 2008,1129.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14329681,toplist
+73.0,50.03,,Naohiro KAWAKITA,10 JUL 1980,JPN,6,,Oita (JPN),04 OCT 2008,1128.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14203807,toplist
+74.0,50.04,,Abraham JONES,,USA,1,,"Lawrence, KS (USA)",19 APR 2008,1128.0,men_400h,2008,https://worldathletics.org/athletes/united-states/abraham-jones-14242277,toplist
+75.0,50.05,,Shawon HARRIS,01 JUL 1985,USA,2h1,,"Boulder, CO (USA)",17 MAY 2008,1127.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14240078,toplist
+75.0,50.05,,Damian PRINCE,23 OCT 1986,USA,1,,"Walnut, CA (USA)",24 MAY 2008,1127.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14248874,toplist
+75.0,50.05,,Joey WOODY,22 MAY 1973,USA,4f1,,"Los Angeles, CA (USA)",07 JUN 2008,1127.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14255508,toplist
+75.0,50.05,,Daisuke KIMURA,19 DEC 1987,JPN,7,,Oita (JPN),04 OCT 2008,1127.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14203887,toplist
+79.0,50.08,,Yasmani COPELLO,15 APR 1987,CUB,2,,Cali (COL),04 JUL 2008,1126.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14169627,toplist
+79.0,50.08,,Mubarak Faraj AL NUBI,30 DEC 1977,QAT,6,,"Olympic Stadium, Athina (GRE)",13 JUL 2008,1126.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14219004,toplist
+81.0,50.09,,Idriss Abdelaziz AL HOUSAOUI,05 JAN 1984,KSA,1,,Riyadh (KSA),17 APR 2008,1125.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14210746,toplist
+81.0,50.09,,Bryan STEELE,23 MAR 1984,JAM,3h2,,Kingston (JAM),27 JUN 2008,1125.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14202252,toplist
+83.0,50.12,,Steve GREEN,15 JAN 1983,GBR,1f1,,Hendon (GBR),02 AUG 2008,1124.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14189415,toplist
+84.0,50.13,,Kurt Leone COUTO,14 MAY 1985,MOZ,4,,Pretoria (RSA),07 MAR 2008,1123.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14213444,toplist
+85.0,50.14,,Josef PROROK,16 NOV 1987,CZE,2f1,,Praha (CZE),07 JUN 2008,1123.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14168384,toplist
+85.0,50.14,,Brian DERBY,18 FEB 1981,USA,1f2,,Brasschaat (BEL),23 JUL 2008,1123.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14236317,toplist
+87.0,50.16,,Thomas KORTBEEK,02 APR 1981,NED,1,,Amsterdam (NED),06 JUL 2008,1122.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14214100,toplist
+88.0,50.17,,Dale GARLAND,13 OCT 1980,GBR,1f1,,Birmingham (GBR),08 JUN 2008,1121.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14189308,toplist
+88.0,50.17,,Mikhail LIPSKIY,05 MAR 1983,RUS,3,,Kazan (RUS),18 JUL 2008,1121.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14223012,toplist
+88.0,50.17,,Takayuki KISHIMOTO,06 MAY 1990,JPN,1,,Oita (JPN),03 OCT 2008,1121.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14334340,toplist
+91.0,50.20,,Christian GROSSENBACHER,28 JAN 1980,SUI,1f1,,Regensburg (GER),08 JUN 2008,1120.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14226062,toplist
+92.0,50.22,,Mamadou Kasse HANN,10 OCT 1986,SEN,3,,Brazzaville (CGO),01 JUN 2008,1119.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14224816,toplist
+93.0,50.24,,Steve DELICE,16 FEB 1987,HAI,1h2,,"Des Moines, IA (USA)",11 JUN 2008,1118.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14195804,toplist
+94.0,50.25,,Julius BUNGEI,16 JUN 1984,KEN,1,,Nairobi (KEN),28 JUN 2008,1117.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14207446,toplist
+94.0,50.25,,Jean Antonio VIEILLESSE,24 JAN 1986,MRI,3,,La Roche-sur-Yon (FRA),16 JUL 2008,1117.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14213529,toplist
+96.0,50.26,,Jason PEREZ,03 APR 1988,USA,2h3,,"Lincoln, NE (USA)",30 MAY 2008,1117.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14248238,toplist
+96.0,50.26,,Spyridon PAPADOPOULOS,25 SEP 1987,GRE,4,,Athina (GRE),14 JUN 2008,1117.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14195393,toplist
+98.0,50.27,,Dean GRIFFITHS,27 JAN 1980,JAM,4h2,,Kingston (JAM),27 JUN 2008,1116.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14202036,toplist
+99.0,50.28,,El Hadji Sethe MBOW,02 APR 1985,SEN,1,,Bamako (MLI),14 MAY 2008,1116.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14224829,toplist
+100.0,50.29,,Keiron STEWART,21 NOV 1989,JAM,1,,Kingston (JAM),15 MAR 2008,1115.0,men_400h,2008,https://worldathletics.org/athletes/athlete=14202257,toplist
+1.0,47.91,,Kerron CLEMENT,31 OCT 1985,USA,1,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1236.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14234898,toplist
+2.0,47.94,,LJ VAN ZYL,20 JUL 1985,RSA,1f1,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1235.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14221443,toplist
+3.0,47.98,,Bershawn JACKSON,08 MAY 1983,USA,2f1,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1232.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14241618,toplist
+4.0,48.05,,Isa PHILLIPS,22 APR 1984,JAM,1,,Kingston (JAM),27 JUN 2009,1229.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14202168,toplist
+5.0,48.09,,Javier CULSON,25 JUL 1984,PUR,2,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1227.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14218778,toplist
+6.0,48.13,,Danny MCFARLANE,14 FEB 1972,JAM,3f1,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1225.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14202113,toplist
+7.0,48.18,,Johnny DUTCH,20 JAN 1989,USA,2,,"Eugene, OR (USA)",28 JUN 2009,1222.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14236956,toplist
+8.0,48.26,,Jehue GORDON,15 DEC 1991,TTO,4,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1218.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14326172,toplist
+9.0,48.27,,David GREENE,11 APR 1986,GBR,2sf2,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1217.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14189416,toplist
+10.0,48.30,,Angelo TAYLOR,29 DEC 1978,USA,3,,"Eugene, OR (USA)",28 JUN 2009,1216.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14252793,toplist
+11.0,48.34,,Félix SÁNCHEZ,30 AUG 1977,DOM,2sf1,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1214.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14167679,toplist
+12.0,48.42,,Periklis IAKOVAKIS,24 MAR 1979,GRE,5,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1210.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14195155,toplist
+13.0,48.47,,Jeshua ANDERSON,22 JUN 1989,USA,1,,"Fayetteville, AR (USA)",12 JUN 2009,1207.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14231363,toplist
+14.0,48.53,,Michael TINSLEY,21 APR 1984,USA,4,,"Eugene, OR (USA)",28 JUN 2009,1204.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14253267,toplist
+15.0,48.67,,Mahau SUGUIMATI,13 NOV 1984,BRA,1,,Niigata (JPN),03 OCT 2009,1197.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14175200,toplist
+16.0,48.68,,Tristan THOMAS,23 MAY 1986,AUS,2,,Osaka (JPN),09 MAY 2009,1196.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14178692,toplist
+17.0,48.77,,Kenji NARISAKO,25 JUL 1984,JPN,3,,Osaka (JPN),09 MAY 2009,1192.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14204968,toplist
+18.0,48.86,,Justin GAYMON,13 DEC 1986,USA,2,,"Gainesville, FL (USA)",17 MAY 2009,1187.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14238593,toplist
+19.0,48.87,,Omar CISNEROS,19 NOV 1989,CUB,1,,La Habana (CUB),30 MAY 2009,1187.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14169633,toplist
+20.0,49.04,,Naohiro KAWAKITA,10 JUL 1980,JPN,3,,Niigata (JPN),03 OCT 2009,1178.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14203807,toplist
+21.0,49.20,,Thomas GOLLER,28 OCT 1977,GER,1,,Ulm (GER),05 JUL 2009,1170.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14192236,toplist
+22.0,49.22,,LaRon BENNETT,25 NOV 1982,USA,3,,"Stadion Juliska, Praha (CZE)",08 JUN 2009,1169.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14232432,toplist
+22.0,49.22,,Josef ROBERTSON,14 MAY 1987,JAM,3,,Kingston (JAM),27 JUN 2009,1169.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14202200,toplist
+24.0,49.23,,Markino BUCKLEY,16 APR 1986,JAM,4,,Kingston (JAM),27 JUN 2009,1168.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14201874,toplist
+25.0,49.31,,William WYNNE,30 JAN 1990,USA,1,,Port-of-Spain (TTO),02 AUG 2009,1164.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14255639,toplist
+26.0,49.34,,Masahira YOSHIKATA,23 AUG 1982,JPN,4,,Osaka (JPN),09 MAY 2009,1163.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14207062,toplist
+26.0,49.34,,Andrés Byron SILVA,27 MAR 1986,URU,7sf1,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1163.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14230875,toplist
+28.0,49.35,,Brendan COLE,29 MAY 1981,AUS,5,,Osaka (JPN),09 MAY 2009,1162.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14179923,toplist
+29.0,49.38,,Rhys WILLIAMS,27 FEB 1984,GBR,1,,Cardiff (GBR),13 JUN 2009,1161.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14191260,toplist
+30.0,49.41,,Fadil BELLAABOUSS,15 JUN 1986,FRA,2f2,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1159.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14183185,toplist
+31.0,49.43,,Bandar Yahya AL SHARAKILI,06 MAR 1987,KSA,1,,Damascus (SYR),09 OCT 2009,1158.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14210780,toplist
+32.0,49.45,,Kazuaki YOSHIDA,31 OCT 1987,JPN,3h2,,"Olympiastadion, Berlin (GER)",15 AUG 2009,1157.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14329680,toplist
+33.0,49.54,,Marek PLAWGO,25 FEB 1981,POL,7,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1153.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14217387,toplist
+33.0,49.54,,Dale GARLAND,13 OCT 1980,GBR,1,,Cardiff (GBR),15 AUG 2009,1153.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14189308,toplist
+35.0,49.55,,James CARTER,07 MAY 1978,USA,4sf1,,"Eugene, OR (USA)",27 JUN 2009,1152.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14234375,toplist
+36.0,49.56,,Yasmani COPELLO,15 APR 1987,CUB,1h1,,La Habana (CUB),19 FEB 2009,1152.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14169627,toplist
+36.0,49.56,,Idriss Abdelaziz AL HOUSAOUI,05 JAN 1984,KSA,2,,Damascus (SYR),09 OCT 2009,1152.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14210746,toplist
+38.0,49.59,,Joseph G. ABRAHAM,11 SEP 1981,IND,1,,Chennai (IND),14 MAY 2009,1150.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14197850,toplist
+39.0,49.62,,Lloyd HANLEY-BYRON,15 OCT 1987,GBR,1,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1149.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14189443,toplist
+40.0,49.66,,Ali SHIROOK,13 OCT 1979,UAE,1,,Qatif (KSA),30 APR 2009,1147.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14229551,toplist
+40.0,49.66,,Yuta IMAZEKI,06 NOV 1987,JPN,4,,Niigata (JPN),03 OCT 2009,1147.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14203331,toplist
+42.0,49.67,,Joe GREENE,20 NOV 1987,USA,4,,"Fayetteville, AR (USA)",12 JUN 2009,1146.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14239305,toplist
+42.0,49.67,,Héni KECHI,31 AUG 1980,FRA,2f1,,Chambéry (FRA),05 JUL 2009,1146.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14185606,toplist
+42.0,49.67,,Michael BULTHEEL,30 JUN 1986,BEL,6h3,,"Olympiastadion, Berlin (GER)",15 AUG 2009,1146.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14177693,toplist
+45.0,49.68,,Aleksandr DEREVYAGIN,24 MAR 1979,RUS,1h1,,Cheboksary (RUS),23 JUL 2009,1146.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14222065,toplist
+46.0,49.70,,Stanislav MELNIKOV,26 FEB 1987,UKR,6,,Osaka (JPN),09 MAY 2009,1145.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14230289,toplist
+47.0,49.73,,Jonathan WILLIAMS,29 AUG 1983,BIZ,1,,Ciudad de Guatemala (GUA),12 JUN 2009,1143.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14177043,toplist
+48.0,49.77,,Derrick WILLIAMS,25 MAR 1982,USA,1f1,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1141.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14254993,toplist
+48.0,49.77,,Kirkland THORNTON,13 JUL 1986,USA,1,,"Norman, OK (USA)",30 MAY 2009,1141.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14253190,toplist
+50.0,49.78,,Reuben MCCOY,16 MAR 1986,USA,2,,"Lawrence, KS (USA)",18 APR 2009,1141.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14245415,toplist
+50.0,49.78,,Reggie WYATT,17 SEP 1990,USA,1f4,,"Greensboro, NC (USA)",20 JUN 2009,1141.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14255622,toplist
+52.0,49.79,,Ockert CILLIERS,21 APR 1981,RSA,1,,Bursa (TUR),10 JUN 2009,1140.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14219835,toplist
+52.0,49.79,,Raphael FERNANDES,08 NOV 1984,BRA,2,,Bogotá (COL),25 JUL 2009,1140.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14175633,toplist
+54.0,49.80,,Sébastien MAILLARD,02 MAY 1981,FRA,1,,Pescara (ITA),03 JUL 2009,1140.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14186214,toplist
+55.0,49.81,,Bryce BROWN,17 SEP 1988,USA,1,,"Hutchinson, KS (USA)",23 MAY 2009,1139.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14233462,toplist
+56.0,49.83,,Leslie MURRAY,24 JAN 1991,ISV,2sf1,,"Fayetteville, AR (USA)",11 JUN 2009,1138.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14246877,toplist
+57.0,49.86,,Takayuki KISHIMOTO,06 MAY 1990,JPN,1,,Kofu (JPN),18 OCT 2009,1137.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14334340,toplist
+58.0,49.87,,Lee MOORE,20 DEC 1988,USA,1h5,,"Fayetteville, AR (USA)",10 JUN 2009,1136.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14246465,toplist
+59.0,49.90,,Vincent VANRYCKEGHEM,18 JAN 1987,BEL,3,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1135.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14177184,toplist
+60.0,49.93,,Takayuki KOIKE,12 OCT 1984,JPN,7,,Osaka (JPN),09 MAY 2009,1133.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14204041,toplist
+60.0,49.93,,Cornel FREDERICKS,03 MAR 1990,RSA,4,,Beograd (SRB),10 JUL 2009,1133.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14220044,toplist
+60.0,49.93,,Hiroaki MASUOKA,18 FEB 1986,JPN,6,,Niigata (JPN),03 OCT 2009,1133.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14204330,toplist
+63.0,49.94,,Vladimir ANTMANIS,12 MAR 1984,RUS,1,,Tula (RUS),02 AUG 2009,1133.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14221672,toplist
+64.0,49.95,,Christian DUMA,05 FEB 1982,GER,1h1,,Ulm (GER),04 JUL 2009,1132.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14191926,toplist
+65.0,49.97,,Wouter LE ROUX,17 JAN 1986,RSA,1,,Stellenbosch (RSA),14 MAR 2009,1131.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14220360,toplist
+65.0,49.97,,Naoki IHARA,22 APR 1982,JPN,1f2,,Shizuoka (JPN),03 MAY 2009,1131.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14203244,toplist
+67.0,49.99,,Alie BEAUVAIS,05 JAN 1988,USA,2,,"Princeton, NJ (USA)",17 MAY 2009,1130.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14232239,toplist
+67.0,49.99,,Javier GARCIA-TUNON,05 OCT 1985,USA,3sf1,,"Fayetteville, AR (USA)",11 JUN 2009,1130.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14238470,toplist
+69.0,50.00,,João Eufrazio DOS SANTOS NETO,05 JAN 1983,BRA,4,,Rio de Janeiro (BRA),07 JUN 2009,1130.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14175656,toplist
+70.0,50.01,,Kenta TAKEDA,27 APR 1986,JPN,1,,Ise (JPN),11 JUL 2009,1129.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14206203,toplist
+70.0,50.01,,Ben CLARK,25 NOV 1980,USA,1,,"Santa Monica, CA (USA)",25 JUL 2009,1129.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14234798,toplist
+72.0,50.02,,Hugo GRILLAS,28 FEB 1989,FRA,4,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1129.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14185135,toplist
+73.0,50.04,,Yan MENG,30 SEP 1980,CHN,1,,Jinan (CHN),25 OCT 2009,1128.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14171746,toplist
+74.0,50.06,,Emanuel MAYERS,09 MAR 1989,TTO,7,,"Fayetteville, AR (USA)",12 JUN 2009,1127.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14245213,toplist
+75.0,50.07,,Jussi HEIKKILÄ,21 MAR 1983,FIN,1f1,,Sollentuna (SWE),25 JUN 2009,1126.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14181894,toplist
+75.0,50.07,,Silvio SCHIRRMEISTER,07 DEC 1988,GER,2sf2,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",17 JUL 2009,1126.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14194032,toplist
+77.0,50.10,,Salah Eddine GHAIDI,12 MAY 1979,FRA,2,,Pescara (ITA),03 JUL 2009,1125.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14185009,toplist
+77.0,50.10,,Nicola CASCELLA,02 JUL 1985,ITA,1,,Milano (ITA),02 AUG 2009,1125.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14199862,toplist
+79.0,50.11,,Amaechi MORTON,30 OCT 1989,NGR,1,,"Palo Alto, CA (USA)",18 APR 2009,1124.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14363482,toplist
+79.0,50.11,,Takatoshi ABE,12 NOV 1991,JPN,1,,Niigata (JPN),03 OCT 2009,1124.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14334345,toplist
+81.0,50.12,,Brandon JOHNSON,02 MAR 1985,USA,2f1,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1124.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14242034,toplist
+82.0,50.13,,Richard YATES,26 JAN 1986,GBR,4,,"Mangueirão, Belém (BRA)",24 MAY 2009,1123.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14191326,toplist
+83.0,50.14,,Yeison RIVAS,24 SEP 1987,COL,6,,La Habana (CUB),05 JUL 2009,1123.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14170008,toplist
+84.0,50.16,,Allan AYALA,08 JUL 1986,GUA,2,,Ciudad de Guatemala (GUA),12 JUN 2009,1122.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14195695,toplist
+85.0,50.19,,Vyacheslav SAKAYEV,12 JAN 1988,RUS,1,,Kazan (RUS),17 JUN 2009,1120.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14223791,toplist
+85.0,50.19,,Mubarak Faraj AL NUBI,30 DEC 1977,QAT,3,,Guangzhou (CHN),13 NOV 2009,1120.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14219004,toplist
+87.0,50.20,,Mickael FRANCOIS,12 MAR 1988,FRA,1f3,,Chambéry (FRA),05 JUL 2009,1120.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14186527,toplist
+88.0,50.21,,Hamza DEYAF,04 DEC 1985,LBA,3,,Pescara (ITA),03 JUL 2009,1119.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14236401,toplist
+89.0,50.22,,Dean GRIFFITHS,27 JAN 1980,JAM,5,,Kingston (JAM),27 JUN 2009,1119.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14202036,toplist
+90.0,50.23,,Toby ULM,19 MAY 1989,GBR,5,,"Greensboro, NC (USA)",30 MAY 2009,1118.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14191078,toplist
+91.0,50.25,,Lane DENNIS,27 AUG 1986,USA,1h4,,"Norman, OK (USA)",29 MAY 2009,1117.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14236296,toplist
+92.0,50.27,,Hideki YANO,13 DEC 1985,JPN,2f2,,Shizuoka (JPN),03 MAY 2009,1116.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14206946,toplist
+93.0,50.30,,Akobundu IKWUAKOR,13 AUG 1984,NGR,2,,"Walnut, CA (USA)",06 JUN 2009,1115.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14241510,toplist
+94.0,50.31,,Tomoharu KANO,08 APR 1989,JPN,3,,Tokyo (JPN),06 SEP 2009,1115.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14329577,toplist
+95.0,50.32,,Justin BOYD,25 AUG 1985,USA,1,,"Walnut, CA (USA)",18 APR 2009,1114.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14233111,toplist
+95.0,50.32,,Jake HANSON,08 AUG 1987,USA,2,,"Eugene, OR (USA)",17 MAY 2009,1114.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14239861,toplist
+95.0,50.32,,Adam KUNKEL,24 FEB 1981,CAN,5,,"Mangueirão, Belém (BRA)",24 MAY 2009,1114.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14173977,toplist
+98.0,50.34,,Ludovic DUBOIS,13 APR 1986,FRA,1,,La Chaux-de-Fonds (SUI),28 JUN 2009,1113.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14184475,toplist
+99.0,50.35,,Viktor LEPTIKOV,02 JUL 1987,KAZ,1,,Bishkek (KGZ),07 JUN 2009,1113.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14207218,toplist
+99.0,50.35,,Ibrahim MAIGA,14 MAR 1979,MLI,1f2,,Chambéry (FRA),05 JUL 2009,1113.0,men_400h,2009,https://worldathletics.org/athletes/athlete=14213406,toplist
+1.0,47.32,,Bershawn JACKSON,08 MAY 1983,USA,1,,"Drake Stadium, Des Moines, IA (USA)",26 JUN 2010,1267.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14241618,toplist
+2.0,47.63,,Johnny DUTCH,20 JAN 1989,USA,2,,"Drake Stadium, Des Moines, IA (USA)",26 JUN 2010,1251.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14236956,toplist
+3.0,47.72,,Javier CULSON,25 JUL 1984,PUR,1,,Ponce (PUR),08 MAY 2010,1246.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14218778,toplist
+4.0,47.79,,Angelo TAYLOR,29 DEC 1978,USA,2,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1242.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14252793,toplist
+5.0,47.86,,Kerron CLEMENT,31 OCT 1985,USA,1,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1239.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14234898,toplist
+6.0,47.88,,David GREENE,11 APR 1986,GBR,1,,"Poljud Stadion, Split (CRO)",04 SEP 2010,1238.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14189416,toplist
+7.0,48.17,,Félix SÁNCHEZ,30 AUG 1977,DOM,3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1223.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14167679,toplist
+8.0,48.21,,Omar CISNEROS,19 NOV 1989,CUB,1,,La Habana (CUB),17 JUL 2010,1221.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14169633,toplist
+9.0,48.46,,Michael TINSLEY,21 APR 1984,USA,2,,Ponce (PUR),08 MAY 2010,1208.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14253267,toplist
+10.0,48.47,,Jehue GORDON,15 DEC 1991,TTO,3,,Ponce (PUR),08 MAY 2010,1207.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14326172,toplist
+10.0,48.47,,Leford GREEN,14 NOV 1986,JAM,1,,Mayagüez (PUR),27 JUL 2010,1207.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14202029,toplist
+12.0,48.51,,LJ VAN ZYL,20 JUL 1985,RSA,1,,"Nyayo National Stadium, Nairobi (KEN)",30 JUL 2010,1205.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14221443,toplist
+13.0,48.63,,Jeshua ANDERSON,22 JUN 1989,USA,1,,"Berkeley, CA (USA)",16 MAY 2010,1199.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14231363,toplist
+14.0,48.65,,Justin GAYMON,13 DEC 1986,USA,3,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1198.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14238593,toplist
+15.0,48.68,,Isa PHILLIPS,22 APR 1984,JAM,6,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1196.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14202168,toplist
+16.0,48.79,,Cornel FREDERICKS,03 MAR 1990,RSA,2,,"Nyayo National Stadium, Nairobi (KEN)",30 JUL 2010,1191.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14220044,toplist
+17.0,48.89,,Mamadou Kasse HANN,10 OCT 1986,SEN,4,,"Poljud Stadion, Split (CRO)",04 SEP 2010,1186.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14224816,toplist
+18.0,48.94,,Amaechi MORTON,30 OCT 1989,NGR,2,,"Berkeley, CA (USA)",16 MAY 2010,1183.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14363482,toplist
+19.0,48.96,,Rhys WILLIAMS,27 FEB 1984,GBR,2,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1182.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14191260,toplist
+20.0,49.01,,Kenji NARISAKO,25 JUL 1984,JPN,1,,Marugame (JPN),05 JUN 2010,1180.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14204968,toplist
+21.0,49.09,,Stanislav MELNIKOV,26 FEB 1987,UKR,3,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1176.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14230289,toplist
+22.0,49.12,,Danny MCFARLANE,14 FEB 1972,JAM,1,,Sydney (AUS),27 FEB 2010,1174.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14202113,toplist
+23.0,49.13,,Fadil BELLAABOUSS,15 JUN 1986,FRA,1,,Valence (FRA),09 JUL 2010,1173.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14183185,toplist
+24.0,49.17,,Andrés Byron SILVA,27 MAR 1986,URU,1,,Barcelona (ESP),09 JUL 2010,1171.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14230875,toplist
+25.0,49.19,,Mahau SUGUIMATI,13 NOV 1984,BRA,1,,Osaka (JPN),08 MAY 2010,1170.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14175200,toplist
+26.0,49.20,,Markino BUCKLEY,16 APR 1986,JAM,3,,Belém (BRA),19 MAY 2010,1170.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14201874,toplist
+27.0,49.31,,Bryce BROWN,17 SEP 1988,USA,1f2,,"Austin, TX (USA)",28 MAY 2010,1164.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14233462,toplist
+28.0,49.32,,LaRon BENNETT,25 NOV 1982,USA,4,,Baie Mahault (FRA),01 MAY 2010,1164.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14232432,toplist
+29.0,49.34,,Héni KECHI,31 AUG 1980,FRA,4,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1163.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14185606,toplist
+30.0,49.35,,Steve BANTON,24 FEB 1988,JAM,2,,"Charlotte, NC (USA)",29 MAY 2010,1162.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14231951,toplist
+31.0,49.36,,Vincent Kiplangat KOSKEI,11 NOV 1985,KEN,4,,New Delhi (IND),10 OCT 2010,1162.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14208789,toplist
+32.0,49.38,,Periklis IAKOVAKIS,24 MAR 1979,GRE,5,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1161.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14195155,toplist
+32.0,49.38,,Michael BULTHEEL,30 JUN 1986,BEL,5,,"Boudewijnstadion, Bruxelles (BEL)",27 AUG 2010,1161.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14177693,toplist
+34.0,49.42,,Takayuki KOIKE,12 OCT 1984,JPN,3,,Osaka (JPN),08 MAY 2010,1159.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14204041,toplist
+35.0,49.45,,Roxroy CATO,05 JAN 1988,JAM,2,,Kingston (JAM),26 JUN 2010,1157.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14333651,toplist
+36.0,49.46,,Reggie WYATT,17 SEP 1990,USA,2f3,,"Austin, TX (USA)",28 MAY 2010,1157.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14255622,toplist
+36.0,49.46,,Takatoshi ABE,12 NOV 1991,JPN,2,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",23 JUL 2010,1157.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14334345,toplist
+38.0,49.52,,Lee MOORE,20 DEC 1988,USA,1f1,,"Oxford, MS (USA)",10 APR 2010,1154.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14246465,toplist
+39.0,49.57,,Tomoharu KANO,08 APR 1989,JPN,1,,Tokyo (JPN),12 SEP 2010,1151.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14329577,toplist
+40.0,49.58,,David HUGHES,31 MAY 1984,GBR,1f1,,Luzern (SUI),08 AUG 2010,1151.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14189647,toplist
+41.0,49.63,,Naohiro KAWAKITA,10 JUL 1980,JPN,2,,Marugame (JPN),05 JUN 2010,1148.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14203807,toplist
+42.0,49.65,,Emanuel MAYERS,09 MAR 1989,TTO,2f1,,"Oxford, MS (USA)",10 APR 2010,1147.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14245213,toplist
+43.0,49.66,,Kenneth MEDWOOD,14 DEC 1987,USA,1f1,,"Northridge, CA (USA)",15 MAY 2010,1147.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14245859,toplist
+43.0,49.66,,Adrian FINDLAY,01 OCT 1982,JAM,3,,Kingston (JAM),26 JUN 2010,1147.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14201983,toplist
+45.0,49.68,,Josef PROROK,16 NOV 1987,CZE,6,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1146.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14168384,toplist
+46.0,49.69,,Yan MENG,30 SEP 1980,CHN,1,,Jinan (CHN),08 AUG 2010,1145.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14171746,toplist
+47.0,49.70,,Nathan WOODWARD,17 OCT 1989,GBR,1f1,,Genève (SUI),12 JUN 2010,1145.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14191308,toplist
+47.0,49.70,,Aleksandr DEREVYAGIN,24 MAR 1979,RUS,7,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1145.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14222065,toplist
+49.0,49.71,,Winder Bolivar CUEVAS,01 AUG 1988,DOM,2,,Santo Domingo (DOM),30 APR 2010,1144.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14327514,toplist
+50.0,49.73,,Sébastien MAILLARD,02 MAY 1981,FRA,2f1,,Genève (SUI),12 JUN 2010,1143.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14186214,toplist
+51.0,49.77,,Yuta IMAZEKI,06 NOV 1987,JPN,4,,Osaka (JPN),08 MAY 2010,1141.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14203331,toplist
+51.0,49.77,,Takayuki KISHIMOTO,06 MAY 1990,JPN,2,,Tokyo (JPN),12 SEP 2010,1141.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14334340,toplist
+53.0,49.78,,Hugo GRILLAS,28 FEB 1989,FRA,2,,Marseille (FRA),05 JUN 2010,1141.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14185135,toplist
+54.0,49.79,,Kurt Leone COUTO,14 MAY 1985,MOZ,5,,"Nyayo National Stadium, Nairobi (KEN)",30 JUL 2010,1140.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14213444,toplist
+55.0,49.82,,Sabiel ANDERSON,21 JUN 1988,JAM,3,,"Charlotte, NC (USA)",29 MAY 2010,1139.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14201799,toplist
+56.0,49.83,,Wouter LE ROUX,17 JAN 1986,RSA,2f1,,Germiston (RSA),06 APR 2010,1138.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14220360,toplist
+56.0,49.83,,Yuta KONISHI,31 JUL 1990,JPN,1,,Osaka (JPN),15 AUG 2010,1138.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14334348,toplist
+56.0,49.83,,Richard YATES,26 JAN 1986,GBR,1h3,,New Delhi (IND),09 OCT 2010,1138.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14191326,toplist
+59.0,49.85,,Brendan COLE,29 MAY 1981,AUS,5,,Osaka (JPN),08 MAY 2010,1137.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14179923,toplist
+59.0,49.85,,Georg FLEISCHHAUER,21 OCT 1988,GER,1f1,,Regensburg (GER),15 AUG 2010,1137.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14192074,toplist
+61.0,49.86,,Silvio SCHIRRMEISTER,07 DEC 1988,GER,1,,Biberach (GER),09 JUL 2010,1137.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14194032,toplist
+62.0,49.89,,Wen CHENG,06 APR 1989,CHN,2,,Jinan (CHN),08 AUG 2010,1135.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14941402,toplist
+63.0,49.96,,Joseph G. ABRAHAM,11 SEP 1981,IND,1,,Guangzhou (CHN),25 NOV 2010,1132.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14197850,toplist
+64.0,49.97,,Jamele MASON,19 OCT 1989,USA,3h1,,"Eugene, OR (USA)",09 JUN 2010,1131.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14245084,toplist
+65.0,50.02,,Steve DELICE,16 FEB 1987,HAI,2f1,,"Greensboro, NC (USA)",28 MAY 2010,1129.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14195804,toplist
+66.0,50.04,,Stephan STOLL,16 AUG 1987,GER,2,,Biberach (GER),09 JUL 2010,1128.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14194388,toplist
+67.0,50.05,,Mohamed SEGHAIER,18 JUL 1988,TUN,6,,"Nyayo National Stadium, Nairobi (KEN)",30 JUL 2010,1127.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14229277,toplist
+68.0,50.09,,Richard DAVENPORT,12 SEP 1985,GBR,1f1,,Bern (SUI),10 JUL 2010,1125.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14188985,toplist
+69.0,50.13,,Tuncay ÖRS,19 FEB 1986,TUR,1,,Bursa (TUR),06 JUN 2010,1123.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14229437,toplist
+69.0,50.13,,David ARISTIL,12 DEC 1988,USA,3h3,,"Eugene, OR (USA)",09 JUN 2010,1123.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14335341,toplist
+71.0,50.14,,Gianni CARABELLI,30 MAY 1979,ITA,2,,Padova (ITA),03 SEP 2010,1123.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14199830,toplist
+71.0,50.14,,Bandar Yahya AL SHARAKILI,06 MAR 1987,KSA,1,,Aleppo (SYR),15 OCT 2010,1123.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14210780,toplist
+73.0,50.15,,Adam DURHAM,30 AUG 1985,USA,4sf1,,"Drake Stadium, Des Moines, IA (USA)",25 JUN 2010,1122.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14236940,toplist
+74.0,50.17,,Kazuaki YOSHIDA,31 OCT 1987,JPN,1,,Marugame (JPN),15 MAY 2010,1121.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14329680,toplist
+74.0,50.17,,Eric BAILEY,23 MAY 1989,USA,2f1,,"Austin, TX (USA)",28 MAY 2010,1121.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14326850,toplist
+76.0,50.18,,Josef ROBERTSON,14 MAY 1987,JAM,2,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1121.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14202200,toplist
+77.0,50.20,,Shingo AKIMOTO,07 APR 1982,JPN,1h3,,Marugame (JPN),04 JUN 2010,1120.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14202448,toplist
+77.0,50.20,,Brent LARUE,26 APR 1987,USA,4h3,,"Eugene, OR (USA)",09 JUN 2010,1120.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14243692,toplist
+79.0,50.21,,João FERREIRA,20 OCT 1986,POR,2f1,,Chambéry (FRA),04 JUL 2010,1119.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14218212,toplist
+80.0,50.22,,Tiago Florencio BUENO,21 FEB 1983,BRA,4,,Belém (BRA),19 MAY 2010,1119.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14176208,toplist
+80.0,50.22,,Nils DUERINCK,20 MAR 1984,BEL,1f1,,Oordegem (BEL),05 JUN 2010,1119.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14177568,toplist
+80.0,50.22,,Leslie MURRAY,24 JAN 1991,ISV,3,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",23 JUL 2010,1119.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14246877,toplist
+83.0,50.24,,Ray VARNER,21 JUL 1987,USA,1f5,,"Tempe, AZ (USA)",09 APR 2010,1118.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14253794,toplist
+83.0,50.24,,Samuel JETER,20 APR 1989,USA,2f1,,"Northridge, CA (USA)",15 MAY 2010,1118.0,men_400h,2010,https://worldathletics.org/athletes/united-states/samuel-jeter-014325901,toplist
+83.0,50.24,,Durell COLEMAN,,USA,3f2,,"Austin, TX (USA)",28 MAY 2010,1118.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14235048,toplist
+86.0,50.26,,Carson BLANKS,19 SEP 1989,USA,2f3,,"Greensboro, NC (USA)",28 MAY 2010,1117.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14335339,toplist
+87.0,50.28,,Quentin SEIGEL,07 APR 1988,GER,3,,Biberach (GER),09 JUL 2010,1116.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14194260,toplist
+88.0,50.31,,Hiroaki MASUOKA,18 FEB 1986,JPN,3,,Kumagaya (JPN),16 MAY 2010,1115.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14204330,toplist
+88.0,50.31,,Attila Csongor NAGY,21 MAY 1988,ROU,4h2,,"Estadio Olímpico, Barcelona (ESP)",28 JUL 2010,1115.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14219440,toplist
+90.0,50.32,,Trey CHARLES,15 JUN 1989,USA,3f3,,"Greensboro, NC (USA)",28 MAY 2010,1114.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14234620,toplist
+91.0,50.33,,Cody WISSLEAD,22 SEP 1988,USA,3f1,,"Austin, TX (USA)",28 MAY 2010,1114.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14255355,toplist
+92.0,50.34,,Sotiris IAKOVAKIS,20 SEP 1982,GRE,2,,Thessaloniki (GRE),26 JUN 2010,1113.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14195156,toplist
+92.0,50.34,,Giacomo PANIZZA,30 JUL 1989,ITA,1,,Grosseto (ITA),01 JUL 2010,1113.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14201053,toplist
+94.0,50.35,,Joe GREENE,20 NOV 1987,USA,4,,"Des Moines, IA (USA)",24 APR 2010,1113.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14239305,toplist
+94.0,50.35,,Nick KARREN,10 DEC 1986,USA,1,,"Ruston, LA (USA)",15 MAY 2010,1113.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14242629,toplist
+94.0,50.35,,Thiago DE JESUS SALES,12 AUG 1986,BRA,5,,Belém (BRA),19 MAY 2010,1113.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14175932,toplist
+94.0,50.35,,Adam KUNKEL,24 FEB 1981,CAN,4,,"Sports Park Mladost, Zagreb (CRO)",01 SEP 2010,1113.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14173977,toplist
+98.0,50.37,,Val-Pierre DAI'RE,22 MAR 1987,USA,2,,"Ruston, LA (USA)",15 MAY 2010,1112.0,men_400h,2010,https://worldathletics.org/athletes/united-states/val-pierre-daire-014248489,toplist
+99.0,50.40,,Reuben MCCOY,16 MAR 1986,USA,1f1,,"Philadelphia, PA (USA)",24 APR 2010,1110.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14245415,toplist
+100.0,50.41,,João Eufrazio DOS SANTOS NETO,05 JAN 1983,BRA,6,,Belém (BRA),19 MAY 2010,1110.0,men_400h,2010,https://worldathletics.org/athletes/athlete=14175656,toplist
+1.0,47.66,,LJ VAN ZYL,20 JUL 1985,RSA,1,,Pretoria (RSA),25 FEB 2011,1249.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14221443,toplist
+2.0,47.93,,Jeshua ANDERSON,22 JUN 1989,USA,1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1235.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14231363,toplist
+2.0,47.93,,Bershawn JACKSON,08 MAY 1983,USA,2,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1235.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14241618,toplist
+4.0,47.94,,Angelo TAYLOR,29 DEC 1978,USA,3,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1235.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14252793,toplist
+5.0,47.99,,Omar CISNEROS,19 NOV 1989,CUB,1,,Guadalajara (MEX),27 OCT 2011,1232.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14169633,toplist
+6.0,48.14,,Cornel FREDERICKS,03 MAR 1990,RSA,2,,Durban (RSA),10 APR 2011,1224.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14220044,toplist
+7.0,48.20,,David GREENE,11 APR 1986,GBR,1,,"Alexander Stadium, Birmingham (GBR)",10 JUL 2011,1221.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14189416,toplist
+8.0,48.32,,Javier CULSON,25 JUL 1984,PUR,1,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1215.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14218778,toplist
+9.0,48.45,,Michael TINSLEY,21 APR 1984,USA,4,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1208.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14253267,toplist
+10.0,48.47,,Johnny DUTCH,20 JAN 1989,USA,5,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1207.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14236956,toplist
+11.0,48.58,,Justin GAYMON,13 DEC 1986,USA,1,,"National Stadium, Kingston (JAM)",07 MAY 2011,1202.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14238593,toplist
+12.0,48.64,,Isa PHILLIPS,22 APR 1984,JAM,2h2,,"DS, Daegu (KOR)",29 AUG 2011,1198.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14202168,toplist
+13.0,48.66,,Jehue GORDON,15 DEC 1991,TTO,1,,"Olympiastadion, Berlin (GER)",11 SEP 2011,1197.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14326172,toplist
+14.0,48.71,,Nathan WOODWARD,17 OCT 1989,GBR,1f1,,La Chaux-de-Fonds (SUI),03 JUL 2011,1195.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14191308,toplist
+15.0,48.72,,Georg FLEISCHHAUER,21 OCT 1988,GER,3h1,,"DS, Daegu (KOR)",29 AUG 2011,1194.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14192074,toplist
+16.0,48.74,,Kerron CLEMENT,31 OCT 1985,USA,2,,"National Stadium, Kingston (JAM)",07 MAY 2011,1193.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14234898,toplist
+16.0,48.74,,Félix SÁNCHEZ,30 AUG 1977,DOM,3h2,,"DS, Daegu (KOR)",29 AUG 2011,1193.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14167679,toplist
+18.0,48.98,,Jack GREEN,06 OCT 1991,GBR,4,,"Alexander Stadium, Birmingham (GBR)",10 JUL 2011,1181.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14371627,toplist
+19.0,49.03,,Leford GREEN,14 NOV 1986,JAM,1,,Mayagüez (PUR),16 JUL 2011,1179.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14202029,toplist
+20.0,49.04,,Danny MCFARLANE,14 FEB 1972,JAM,3,,"National Stadium, Kingston (JAM)",07 MAY 2011,1178.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14202113,toplist
+20.0,49.04,,Bryce BROWN,17 SEP 1988,USA,1,,"Norman, OK (USA)",15 MAY 2011,1178.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14233462,toplist
+22.0,49.07,,Aleksandr DEREVYAGIN,24 MAR 1979,RUS,3sf3,,"DS, Daegu (KOR)",30 AUG 2011,1177.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14222065,toplist
+23.0,49.08,,Amaechi MORTON,30 OCT 1989,NGR,2,,"Des Moines, IA (USA)",10 JUN 2011,1176.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14363482,toplist
+24.0,49.16,,Andrés Byron SILVA,27 MAR 1986,URU,1,,Rio de Janeiro (BRA),26 MAY 2011,1172.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14230875,toplist
+25.0,49.17,,Mahau SUGUIMATI,13 NOV 1984,BRA,1f3,,Fukuroi (JPN),03 MAY 2011,1171.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14175200,toplist
+26.0,49.20,,Winder Bolivar CUEVAS,01 AUG 1988,DOM,4,,Guadalajara (MEX),27 OCT 2011,1170.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14327514,toplist
+27.0,49.24,,Stanislav MELNIKOV,26 FEB 1987,UKR,3h5,,"DS, Daegu (KOR)",29 AUG 2011,1168.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14230289,toplist
+28.0,49.27,,Takayuki KISHIMOTO,06 MAY 1990,JPN,2f3,,Fukuroi (JPN),03 MAY 2011,1166.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14334340,toplist
+28.0,49.27,,Yuta IMAZEKI,06 NOV 1987,JPN,1,,Osaka (JPN),26 JUN 2011,1166.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14203331,toplist
+30.0,49.28,,Wen CHENG,06 APR 1989,CHN,1,,Fuzhou (CHN),26 JUN 2011,1166.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14941402,toplist
+31.0,49.30,,Jamele MASON,19 OCT 1989,PUR,1f1,,"Lubbock, TX (USA)",02 APR 2011,1165.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14245084,toplist
+32.0,49.37,,Josef ROBERTSON,14 MAY 1987,JAM,5,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1161.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14202200,toplist
+33.0,49.41,,Reggie WYATT,17 SEP 1990,USA,2,,"Tucson, AZ (USA)",14 MAY 2011,1159.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14255622,toplist
+33.0,49.41,,Yuta KONISHI,31 JUL 1990,JPN,2,,Osaka (JPN),26 JUN 2011,1159.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14334348,toplist
+35.0,49.43,,Kurt Leone COUTO,14 MAY 1985,MOZ,1,,Biberach (GER),28 JUN 2011,1158.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14213444,toplist
+36.0,49.47,,Zhilong LI,09 MAR 1988,CHN,1,,Hefei (CHN),09 SEP 2011,1156.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14370096,toplist
+37.0,49.49,,Vincent Kiplangat KOSKEI,11 NOV 1985,KEN,5h2,,"DS, Daegu (KOR)",29 AUG 2011,1155.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14208789,toplist
+38.0,49.55,,Emir BEKRIĆ,14 MAR 1991,SRB,2sf1,,"National Stadium, Shenzhen (CHN)",18 AUG 2011,1152.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14333865,toplist
+39.0,49.56,,David GOLLNOW,08 APR 1989,GER,1,,Kassel (GER),24 JUL 2011,1152.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14192238,toplist
+40.0,49.59,,Rhys WILLIAMS,27 FEB 1984,GBR,1f1,,Sollentuna (SWE),28 JUN 2011,1150.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14191260,toplist
+41.0,49.60,,Brendan COLE,29 MAY 1981,AUS,1,,Kawasaki (JPN),08 MAY 2011,1150.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14179923,toplist
+42.0,49.62,,Nikita ANDRIYANOV,07 FEB 1990,RUS,4,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1149.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14221657,toplist
+43.0,49.63,,João FERREIRA,20 OCT 1986,POR,4,,"National Stadium, Shenzhen (CHN)",19 AUG 2011,1148.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14218212,toplist
+44.0,49.64,,Takatoshi ABE,12 NOV 1991,JPN,1,,Kobe (JPN),09 JUL 2011,1148.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14334345,toplist
+45.0,49.66,,Roxroy CATO,05 JAN 1988,JAM,3,,Kingston (JAM),24 JUN 2011,1147.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14333651,toplist
+46.0,49.70,,Varg KÖNIGSMARK,28 APR 1992,GER,1,,"Kadrioru staadion, Tallinn (EST)",24 JUL 2011,1145.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14360750,toplist
+47.0,49.71,,Michael BULTHEEL,30 JUN 1986,BEL,1,,Lebbeke (BEL),31 JUL 2011,1144.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14177693,toplist
+48.0,49.72,,Jorge PAULA,08 OCT 1984,POR,1f2,,Albertville (FRA),01 JUL 2011,1144.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14218428,toplist
+48.0,49.72,,Adrien CLEMENCEAU,25 MAY 1988,FRA,2f1,,Chambéry (FRA),10 JUL 2011,1144.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14183920,toplist
+50.0,49.76,,Niall FLANNERY,26 APR 1991,GBR,3,,Bedford (GBR),26 JUN 2011,1142.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14189246,toplist
+50.0,49.76,,Hugo GRILLAS,28 FEB 1989,FRA,5,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1142.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14185135,toplist
+50.0,49.76,,Yasmani COPELLO,15 APR 1987,CUB,1,,Patra (GRE),20 JUL 2011,1142.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14169627,toplist
+50.0,49.76,,Richard DAVENPORT,12 SEP 1985,GBR,2,,Birmingham (GBR),30 JUL 2011,1142.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14188985,toplist
+54.0,49.77,,Brent LARUE,26 APR 1987,USA,1f2,,Celje (SLO),12 JUN 2011,1141.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14243692,toplist
+55.0,49.78,,Thomas PHILLIPS,23 APR 1989,GBR,4,,Bedford (GBR),26 JUN 2011,1141.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14248447,toplist
+56.0,49.79,,Vyacheslav SAKAYEV,12 JAN 1988,RUS,2,,Cheboksary (RUS),23 JUL 2011,1140.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14223791,toplist
+57.0,49.81,,David HUGHES,31 MAY 1984,GBR,2f1,,La Chaux-de-Fonds (SUI),03 JUL 2011,1139.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14189647,toplist
+57.0,49.81,,Tobias GIEHL,25 JUL 1991,GER,2,,Kassel (GER),24 JUL 2011,1139.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14334044,toplist
+59.0,49.82,,Lee MOORE,20 DEC 1988,USA,1f1,,"Oxford, MS (USA)",24 APR 2011,1139.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14246465,toplist
+60.0,49.86,,Emanuel MAYERS,09 MAR 1989,TTO,2h1,,Guadalajara (MEX),26 OCT 2011,1137.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14245213,toplist
+61.0,49.87,,Noriyuki IDEURA,29 OCT 1987,JPN,4,,Kumagaya (JPN),11 JUN 2011,1136.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14203577,toplist
+61.0,49.87,,Xiangchao XU,26 OCT 1993,CHN,1,,Nanchang (CHN),22 OCT 2011,1136.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14426614,toplist
+63.0,49.89,,Dai TAMESUE,03 MAY 1978,JPN,1f1,,Fukuroi (JPN),03 MAY 2011,1135.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14206266,toplist
+64.0,49.94,,David ARISTIL,12 DEC 1988,USA,4,,"Des Moines, IA (USA)",10 JUN 2011,1133.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14335341,toplist
+64.0,49.94,,Josè BENCOSME DE LEON,16 MAY 1992,ITA,1,,Marano (ITA),20 SEP 2011,1133.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14375713,toplist
+66.0,49.96,,Aleksey POGORELOV,26 MAR 1983,RUS,1,,Irkutsk (RUS),05 AUG 2011,1132.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14210029,toplist
+67.0,49.97,,Reuben MCCOY,16 MAR 1986,USA,5,,"National Stadium, Kingston (JAM)",07 MAY 2011,1131.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14245415,toplist
+68.0,50.00,,LaRon BENNETT,25 NOV 1982,USA,1f1,,"Auburn, AL (USA)",16 APR 2011,1130.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14232432,toplist
+68.0,50.00,,Silvio SCHIRRMEISTER,07 DEC 1988,GER,1f1,,Zeven (GER),12 JUN 2011,1130.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14194032,toplist
+70.0,50.01,,Josef PROROK,16 NOV 1987,CZE,3,,"Stadion Juliska, Praha (CZE)",13 JUN 2011,1129.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14168384,toplist
+70.0,50.01,,Stef VANHAEREN,15 JAN 1992,BEL,2,,"Kadrioru staadion, Tallinn (EST)",24 JUL 2011,1129.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14376925,toplist
+70.0,50.01,,Richard YATES,26 JAN 1986,GBR,3,,Birmingham (GBR),30 JUL 2011,1129.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14191326,toplist
+70.0,50.01,,Kenta TAKEDA,27 APR 1986,JPN,2h1,,Yamaguchi (JPN),07 OCT 2011,1129.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14206203,toplist
+74.0,50.03,,Ludovic DUBOIS,13 APR 1986,FRA,5f1,,Ninove (BEL),06 AUG 2011,1128.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14184475,toplist
+75.0,50.04,,Eric BAILEY,23 MAY 1989,USA,3,,"Norman, OK (USA)",15 MAY 2011,1128.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14326850,toplist
+75.0,50.04,,Akihiko NAKAMURA,23 OCT 1990,JPN,5,,Kumagaya (JPN),11 JUN 2011,1128.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14204865,toplist
+77.0,50.05,,Markino BUCKLEY,16 APR 1986,JAM,6,,"National Stadium, Kingston (JAM)",07 MAY 2011,1127.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14201874,toplist
+78.0,50.06,,Thomas BARR,24 JUL 1992,IRL,1,,Dublin (IRL),07 AUG 2011,1127.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14440533,toplist
+79.0,50.10,,Denys TESLENKO,18 APR 1989,UKR,1,,Vinnitsa (UKR),15 AUG 2011,1125.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14230676,toplist
+80.0,50.11,,Adam DAILEY,19 MAR 1989,USA,4,,"Norman, OK (USA)",15 MAY 2011,1124.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14325690,toplist
+80.0,50.11,,Hiroaki MASUOKA,18 FEB 1986,JPN,2h1,,Kumagaya (JPN),10 JUN 2011,1124.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14204330,toplist
+80.0,50.11,,Marek PLAWGO,25 FEB 1981,POL,1,,Bydgoszcz (POL),12 AUG 2011,1124.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14217387,toplist
+83.0,50.12,,Yeison RIVAS,24 SEP 1987,COL,1,,Ponce (PUR),16 APR 2011,1124.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14170008,toplist
+84.0,50.14,,Chieh CHEN,08 MAY 1992,TPE,3,,Fuzhou (CHN),26 JUN 2011,1123.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14228710,toplist
+84.0,50.14,,Rasmus MÄGI,04 MAY 1992,EST,4sf1,,"National Stadium, Shenzhen (CHN)",18 AUG 2011,1123.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14373195,toplist
+86.0,50.15,,Leslie MURRAY,24 JAN 1991,ISV,1f2,,"Bloomington, IN (USA)",27 MAY 2011,1122.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14246877,toplist
+86.0,50.15,,Richard LOWE,21 FEB 1989,USA,2h2,,"Des Moines, IA (USA)",08 JUN 2011,1122.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14326166,toplist
+88.0,50.16,,Eric ALEJANDRO,15 APR 1986,PUR,2,,"Clermont, FL (USA)",04 JUN 2011,1122.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14231119,toplist
+88.0,50.16,,Naohiro KAWAKITA,10 JUL 1980,JPN,2h2,,Yamaguchi (JPN),07 OCT 2011,1122.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14203807,toplist
+90.0,50.19,,Héni KECHI,31 AUG 1980,FRA,2,,Albi (FRA),30 JUL 2011,1120.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14185606,toplist
+91.0,50.20,,Raphael FERNANDES,08 NOV 1984,BRA,3,,São Paulo (BRA),07 AUG 2011,1120.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14175633,toplist
+92.0,50.22,,Abderahmane HAMMADI,24 MAR 1984,ALG,6,,Cottbus (GER),25 JUN 2011,1119.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14180740,toplist
+93.0,50.23,,Thomas KORTBEEK,02 APR 1981,NED,2f1,,Genève (SUI),28 MAY 2011,1118.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14214100,toplist
+94.0,50.24,,Naman KEITA,09 APR 1978,FRA,3f1,,Chambéry (FRA),10 JUL 2011,1118.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14185608,toplist
+95.0,50.26,,Periklis IAKOVAKIS,24 MAR 1979,GRE,1f2,,Izmir (TUR),18 JUN 2011,1117.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14195155,toplist
+96.0,50.27,,Nathan ARNETT,15 DEC 1990,BAH,1,,"Hutchinson, KS (USA)",21 MAY 2011,1116.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14178058,toplist
+97.0,50.28,,Tibor KOROKNAI,24 JAN 1990,HUN,7,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1116.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14328966,toplist
+98.0,50.29,,Ben SUMNER,16 AUG 1983,GBR,1f2,,Sofia (BUL),25 JUN 2011,1115.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14190912,toplist
+99.0,50.31,,Kuldev SINGH,04 APR 1981,IND,1,,New Delhi (IND),17 FEB 2011,1115.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14198385,toplist
+100.0,50.32,,Isaiah GILL,26 JUN 1991,USA,3f1,,"Lubbock, TX (USA)",02 APR 2011,1114.0,men_400h,2011,https://worldathletics.org/athletes/athlete=14405544,toplist
+1.0,47.63,,Félix SÁNCHEZ,30 AUG 1977,DOM,1,,"Olympic Stadium, London (GBR)",06 AUG 2012,1251.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14167679,toplist
+2.0,47.78,,Javier CULSON,25 JUL 1984,PUR,1,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1243.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14218778,toplist
+3.0,47.84,,David GREENE,11 APR 1986,GBR,2,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2012,1240.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14189416,toplist
+4.0,47.91,,Michael TINSLEY,21 APR 1984,USA,2,,"Olympic Stadium, London (GBR)",06 AUG 2012,1236.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14253267,toplist
+5.0,47.95,,Angelo TAYLOR,29 DEC 1978,USA,2sf2,,"Olympic Stadium, London (GBR)",04 AUG 2012,1234.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14252793,toplist
+6.0,47.96,,Jehue GORDON,15 DEC 1991,TTO,2sf1,,"Olympic Stadium, London (GBR)",04 AUG 2012,1233.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14326172,toplist
+7.0,48.12,,Kerron CLEMENT,31 OCT 1985,USA,3sf1,,"Olympic Stadium, London (GBR)",04 AUG 2012,1225.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14234898,toplist
+8.0,48.20,,Bershawn JACKSON,08 MAY 1983,USA,1,,"Lawrence, KS (USA)",21 APR 2012,1221.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14241618,toplist
+9.0,48.23,,Omar CISNEROS,19 NOV 1989,CUB,3sf2,,"Olympic Stadium, London (GBR)",04 AUG 2012,1220.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14169633,toplist
+10.0,48.41,,Takayuki KISHIMOTO,06 MAY 1990,JPN,1,,Osaka (JPN),09 JUN 2012,1210.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14334340,toplist
+11.0,48.60,,Jack GREEN,06 OCT 1991,GBR,4,,"Crystal Palace, London (GBR)",13 JUL 2012,1200.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14371627,toplist
+12.0,48.61,,Leford GREEN,14 NOV 1986,JAM,2sf3,,"Olympic Stadium, London (GBR)",04 AUG 2012,1200.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14202029,toplist
+13.0,48.79,,Amaechi MORTON,30 OCT 1989,NGR,1,,"Des Moines, IA (USA)",08 JUN 2012,1191.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14363482,toplist
+14.0,48.80,,Mamadou Kasse HANN,10 OCT 1986,SEN,5sf1,,"Olympic Stadium, London (GBR)",04 AUG 2012,1190.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14224816,toplist
+15.0,48.88,,Jeshua ANDERSON,22 JUN 1989,USA,1f3,,"Tempe, AZ (USA)",07 APR 2012,1186.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14231363,toplist
+16.0,48.89,,Jamele MASON,19 OCT 1989,PUR,2,,"Des Moines, IA (USA)",08 JUN 2012,1186.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14245084,toplist
+17.0,48.90,,Johnny DUTCH,20 JAN 1989,USA,1f1,,"Clermont, FL (USA)",09 JUN 2012,1185.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14236956,toplist
+18.0,48.91,,Cornel FREDERICKS,03 MAR 1990,RSA,1,,Port Elizabeth (RSA),14 APR 2012,1185.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14220044,toplist
+19.0,48.97,,Justin GAYMON,13 DEC 1986,USA,3,,"Bislett Stadion, Oslo (NOR)",07 JUN 2012,1182.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14238593,toplist
+20.0,49.02,,Kurt Leone COUTO,14 MAY 1985,MOZ,1,,"Stadion Juliska, Praha (CZE)",11 JUN 2012,1179.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14213444,toplist
+21.0,49.03,,Roxroy CATO,05 JAN 1988,JAM,1,,Port-of-Spain (TTO),19 MAY 2012,1179.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14333651,toplist
+22.0,49.04,,Periklis IAKOVAKIS,24 MAR 1979,GRE,1h1,,Athina (GRE),16 JUN 2012,1178.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14195155,toplist
+23.0,49.10,,Michael BULTHEEL,30 JUN 1986,BEL,6sf1,,"Olympic Stadium, London (GBR)",04 AUG 2012,1175.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14177693,toplist
+23.0,49.10,,Mahau SUGUIMATI,13 NOV 1984,BRA,1,,Odawara (JPN),14 OCT 2012,1175.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14175200,toplist
+25.0,49.11,,Reggie WYATT,17 SEP 1990,USA,3,,"Des Moines, IA (USA)",08 JUN 2012,1175.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14255622,toplist
+26.0,49.13,,Tristan THOMAS,23 MAY 1986,AUS,4h4,,"Olympic Stadium, London (GBR)",03 AUG 2012,1173.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14178692,toplist
+27.0,49.15,,Eric ALEJANDRO,15 APR 1986,PUR,7sf1,,"Olympic Stadium, London (GBR)",04 AUG 2012,1172.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14231119,toplist
+27.0,49.15,,Keisuke NOZAWA,07 JUN 1991,JPN,2,,Odawara (JPN),14 OCT 2012,1172.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14388871,toplist
+29.0,49.16,,Josef ROBERTSON,14 MAY 1987,JAM,4,,"National Stadium, Kingston (JAM)",05 MAY 2012,1172.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14202200,toplist
+30.0,49.17,,Rhys WILLIAMS,27 FEB 1984,GBR,5h4,,"Olympic Stadium, London (GBR)",03 AUG 2012,1171.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14191260,toplist
+31.0,49.19,,Amaurys VALLE,18 JAN 1990,CUB,1h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1170.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14169274,toplist
+32.0,49.21,,Silvio SCHIRRMEISTER,07 DEC 1988,GER,1f2,,Regensburg (GER),02 JUN 2012,1169.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14194032,toplist
+32.0,49.21,,Emir BEKRIĆ,14 MAR 1991,SRB,2h3,,"Olympic Stadium, London (GBR)",03 AUG 2012,1169.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14333865,toplist
+34.0,49.23,,Miles UKAOMA,21 JUL 1992,USA,1,,"Madison, WI (USA)",13 MAY 2012,1168.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14416006,toplist
+35.0,49.24,,Brendan COLE,29 MAY 1981,AUS,2h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1168.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14179923,toplist
+36.0,49.33,,Josè BENCOSME DE LEON,16 MAY 1992,ITA,1,,"Bressanone, Trentino-Alto Adige (ITA)",08 JUL 2012,1163.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14375713,toplist
+37.0,49.36,,Nathan WOODWARD,17 OCT 1989,GBR,1,,London (GBR),01 AUG 2012,1162.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14191308,toplist
+38.0,49.37,,Georg FLEISCHHAUER,21 OCT 1988,GER,4,,"Olympiastadion, Berlin (GER)",02 SEP 2012,1161.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14192074,toplist
+39.0,49.38,,Keyunta HAYES,15 FEB 1992,USA,4,,"Des Moines, IA (USA)",08 JUN 2012,1161.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14425486,toplist
+39.0,49.38,,Akihiko NAKAMURA,23 OCT 1990,JPN,2,,Osaka (JPN),09 JUN 2012,1161.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14204865,toplist
+39.0,49.38,,Brent LARUE,26 APR 1987,SLO,4h3,,"Olympic Stadium, London (GBR)",03 AUG 2012,1161.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14243692,toplist
+42.0,49.39,,Richard YATES,26 JAN 1986,GBR,1f5,,Oordegem (BEL),26 MAY 2012,1160.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14191326,toplist
+43.0,49.42,,LJ VAN ZYL,20 JUL 1985,RSA,1,,Tshwane (RSA),05 APR 2012,1159.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14221443,toplist
+44.0,49.43,,Ali ARASTU,18 JUN 1992,USA,2,,"Madison, WI (USA)",13 MAY 2012,1158.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14454786,toplist
+45.0,49.45,,Michael STIGLER,04 MAY 1992,USA,1,,"Manhattan, KS (USA)",13 MAY 2012,1157.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14442930,toplist
+45.0,49.45,,Bonface MUCHERU,02 MAY 1992,KEN,2,,Porto Novo (BEN),29 JUN 2012,1157.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14330374,toplist
+47.0,49.47,,Takatoshi ABE,12 NOV 1991,JPN,2sf1,,Osaka (JPN),09 JUN 2012,1156.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14334345,toplist
+48.0,49.49,,Tetsuya TATENO,05 AUG 1991,JPN,3,,Osaka (JPN),09 JUN 2012,1155.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14388874,toplist
+48.0,49.49,,Yuta IMAZEKI,06 NOV 1987,JPN,3sf2,,Osaka (JPN),09 JUN 2012,1155.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14203331,toplist
+50.0,49.53,,Stanislav MELNIKOV,26 FEB 1987,UKR,1f2,,Yalta (UKR),14 JUN 2012,1153.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14230289,toplist
+51.0,49.54,,Kenneth MEDWOOD,14 DEC 1987,BIZ,3,,"Walnut, CA (USA)",21 APR 2012,1153.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14245859,toplist
+51.0,49.54,,David ARISTIL,12 DEC 1988,USA,5,,"Des Moines, IA (USA)",08 JUN 2012,1153.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14335341,toplist
+51.0,49.54,,Rasmus MÄGI,04 MAY 1992,EST,3sf1,,"Olympiastadion, Helsinki (FIN)",28 JUN 2012,1153.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14373195,toplist
+51.0,49.54,,Varg KÖNIGSMARK,28 APR 1992,GER,1f1,,Nottwil (SUI),30 JUN 2012,1153.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14360750,toplist
+55.0,49.57,,Ben SUMNER,16 AUG 1983,GBR,3f5,,Oordegem (BEL),26 MAY 2012,1151.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14190912,toplist
+56.0,49.59,,Wen CHENG,06 APR 1989,CHN,3,,"Shanghai Stadium, Shanghai (CHN)",19 MAY 2012,1150.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14941402,toplist
+56.0,49.59,,Vyacheslav SAKAYEV,12 JAN 1988,RUS,1,,Cheboksary (RUS),04 JUL 2012,1150.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14223791,toplist
+58.0,49.61,,Kariem HUSSEIN,04 JAN 1989,SUI,1,,Bern (SUI),07 JUL 2012,1149.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14376156,toplist
+59.0,49.63,,Yuta KONISHI,31 JUL 1990,JPN,1,,Osaka (JPN),13 MAY 2012,1148.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14334348,toplist
+60.0,49.66,,Marek PLAWGO,25 FEB 1981,POL,1h2,,Bielsko-Biala (POL),15 JUN 2012,1147.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14217387,toplist
+61.0,49.68,,Chieh CHEN,08 MAY 1992,TPE,1,,Taipei City (TPE),08 MAY 2012,1146.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14228710,toplist
+62.0,49.69,,David GOLLNOW,08 APR 1989,GER,1f3,,München (GER),26 MAY 2012,1145.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14192238,toplist
+62.0,49.69,,Danny MCFARLANE,14 FEB 1972,JAM,4,,Kingston (JAM),29 JUN 2012,1145.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14202113,toplist
+64.0,49.70,,Adrien CLEMENCEAU,25 MAY 1988,FRA,4,,"Olympiastadion, Helsinki (FIN)",29 JUN 2012,1145.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14183920,toplist
+65.0,49.71,,Hederson ESTEFANI,11 SEP 1991,BRA,3,,Barquisimeto (VEN),08 JUN 2012,1144.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14376244,toplist
+65.0,49.71,,Vladimir ANTMANIS,12 MAR 1984,RUS,1h1,,Cheboksary (RUS),03 JUL 2012,1144.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14221672,toplist
+67.0,49.74,,Josef PROROK,16 NOV 1987,CZE,4,,"Stadion Juliska, Praha (CZE)",11 JUN 2012,1143.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14168384,toplist
+68.0,49.75,,Tobias GIEHL,25 JUL 1991,GER,2f3,,München (GER),26 MAY 2012,1142.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14334044,toplist
+69.0,49.77,,Ludovic DUBOIS,13 APR 1986,FRA,1,,La Chaux-de-Fonds (SUI),27 JUN 2012,1141.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14184475,toplist
+70.0,49.78,,Andrés Byron SILVA,27 MAR 1986,URU,2,,Rio de Janeiro (BRA),20 MAY 2012,1141.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14230875,toplist
+70.0,49.78,,Artem DYATLOV,22 MAY 1989,UZB,1,,Almaty (KAZ),19 JUN 2012,1141.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14330091,toplist
+72.0,49.79,,Viktor LEPTIKOV,02 JUL 1987,KAZ,1,,Bishkek (KGZ),09 JUN 2012,1140.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14207218,toplist
+73.0,49.81,,Adrian FINDLAY,01 OCT 1982,JAM,2,,Port-of-Spain (TTO),19 MAY 2012,1139.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14201983,toplist
+74.0,49.83,,Reuben MCCOY,16 MAR 1986,USA,3f1,,"Clermont, FL (USA)",09 JUN 2012,1138.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14245415,toplist
+75.0,49.86,,Zhilong LI,09 MAR 1988,CHN,1,,Tianjin (CHN),15 SEP 2012,1137.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14370096,toplist
+76.0,49.88,,Tomoharu KANO,08 APR 1989,JPN,4sf1,,Osaka (JPN),09 JUN 2012,1136.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14329577,toplist
+77.0,49.91,,Héni KECHI,31 AUG 1980,FRA,2,,Angers (FRA),17 JUN 2012,1134.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14185606,toplist
+78.0,49.93,,Richard DAVENPORT,12 SEP 1985,GBR,2,,Moskva (RUS),11 JUN 2012,1133.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14188985,toplist
+79.0,49.94,,Yasuhiro FUEKI,20 DEC 1985,JPN,5sf1,,Osaka (JPN),09 JUN 2012,1133.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14202654,toplist
+79.0,49.94,,Aleksandr DEREVYAGIN,24 MAR 1979,RUS,1h3,,Cheboksary (RUS),03 JUL 2012,1133.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14222065,toplist
+81.0,49.98,,Joseph G. ABRAHAM,11 SEP 1981,IND,1,,Patiala (IND),23 APR 2012,1131.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14197850,toplist
+81.0,49.98,,Naohiro KAWAKITA,10 JUL 1980,JPN,5sf2,,Osaka (JPN),09 JUN 2012,1131.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14203807,toplist
+83.0,49.99,,Tatsuhiko MIZUNO,25 OCT 1990,JPN,4,,Tokyo (JPN),20 MAY 2012,1130.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14334343,toplist
+83.0,49.99,,Satinder SINGH,07 FEB 1987,IND,1,,Hyderabad (IND),23 JUN 2012,1130.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14198434,toplist
+85.0,50.00,,Emanuel MAYERS,09 MAR 1989,TTO,h3,,Kingston (JAM),28 JUN 2012,1130.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14245213,toplist
+86.0,50.02,,Nikita YAKOVLEV,06 JAN 1989,BLR,4sf2,,"Olympiastadion, Helsinki (FIN)",28 JUN 2012,1129.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14176451,toplist
+87.0,50.04,,Christopher NGETICH,25 DEC 1992,KEN,2,,Nairobi (KEN),15 JUN 2012,1128.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14425829,toplist
+87.0,50.04,,Václav BARÁK,22 OCT 1990,CZE,1,,Vyškov (CZE),17 JUN 2012,1128.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14372369,toplist
+89.0,50.07,,Steven WHITE,27 JUL 1991,USA,1f1,,"Denton, TX (USA)",07 APR 2012,1126.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14401908,toplist
+90.0,50.08,,Chris CARTER,,USA,3h3,,"Des Moines, IA (USA)",06 JUN 2012,1126.0,men_400h,2012,https://worldathletics.org/athletes/united-states/chris-carter-014453908,toplist
+91.0,50.09,,Yoann DÉCIMUS,30 NOV 1987,FRA,4,,Angers (FRA),17 JUN 2012,1125.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14184208,toplist
+92.0,50.10,,Joe GREENE,20 NOV 1987,USA,3,,Port-of-Spain (TTO),19 MAY 2012,1125.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14239305,toplist
+92.0,50.10,,Thomas KORTBEEK,02 APR 1981,NED,1,,Assen (NED),20 MAY 2012,1125.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14214100,toplist
+92.0,50.10,,Jibri VICTORIAN,26 JUN 1991,USA,2sf2,,"Jacksonville, FL (USA)",25 MAY 2012,1125.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14378074,toplist
+92.0,50.10,,Aramis DÍAZ,22 NOV 1974,ITA,1,,Kessel-Lo (BEL),18 AUG 2012,1125.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14169604,toplist
+96.0,50.14,,Adam KUNKEL,24 FEB 1981,CAN,1f2,,Windsor (CAN),26 MAY 2012,1123.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14173977,toplist
+96.0,50.14,,Bryan STEELE,23 MAR 1984,JAM,1h3,,Kingston (JAM),28 JUN 2012,1123.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14202252,toplist
+96.0,50.14,,Isa PHILLIPS,22 APR 1984,JAM,5,,Kingston (JAM),29 JUN 2012,1123.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14202168,toplist
+99.0,50.15,,Winder Bolivar CUEVAS,01 AUG 1988,DOM,6h2,,"Olympic Stadium, London (GBR)",03 AUG 2012,1122.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14327514,toplist
+100.0,50.19,,Antonio BLANKS,17 DEC 1992,USA,1sf3,,"Jacksonville, FL (USA)",25 MAY 2012,1120.0,men_400h,2012,https://worldathletics.org/athletes/athlete=14483608,toplist
+1.0,47.69,,Jehue GORDON,15 DEC 1991,TTO,1,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1248.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14326172,toplist
+2.0,47.70,,Michael TINSLEY,21 APR 1984,USA,2,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1247.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14253267,toplist
+3.0,47.93,,Omar CISNEROS,19 NOV 1989,CUB,1sf3,,"Luzhniki Stadion, Moskva (RUS)",13 AUG 2013,1235.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14169633,toplist
+4.0,48.02,,Johnny DUTCH,20 JAN 1989,USA,1f2,,Ponce (PUR),18 MAY 2013,1230.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14236956,toplist
+5.0,48.05,,Emir BEKRIĆ,14 MAR 1991,SRB,3,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1229.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14333865,toplist
+6.0,48.06,,Kerron CLEMENT,31 OCT 1985,USA,2,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1228.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14234898,toplist
+7.0,48.09,,Bershawn JACKSON,08 MAY 1983,USA,3,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1227.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14241618,toplist
+8.0,48.10,,Félix SÁNCHEZ,30 AUG 1977,DOM,2sf3,,"Luzhniki Stadion, Moskva (RUS)",13 AUG 2013,1226.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14167679,toplist
+9.0,48.14,,Javier CULSON,25 JUL 1984,PUR,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",04 JUL 2013,1224.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14218778,toplist
+10.0,48.46,,Justin GAYMON,13 DEC 1986,USA,3,,"Olympic Stadium, London (GBR)",27 JUL 2013,1208.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14238593,toplist
+11.0,48.50,,Mamadou Kasse HANN,10 OCT 1986,SEN,4,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1206.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14224816,toplist
+12.0,48.58,,Reggie WYATT,17 SEP 1990,USA,1,,"Eugene, OR (USA)",07 JUN 2013,1202.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14255622,toplist
+13.0,48.66,,David GREENE,11 APR 1986,GBR,1,,Birmingham (GBR),13 JUL 2013,1197.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14189416,toplist
+14.0,48.78,,Cornel FREDERICKS,03 MAR 1990,RSA,1,,Stellenbosch (RSA),13 APR 2013,1191.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14220044,toplist
+15.0,48.79,,Mahau SUGUIMATI,13 NOV 1984,BRA,1f3,,Fukuroi (JPN),03 MAY 2013,1191.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14175200,toplist
+16.0,48.84,,Rhys WILLIAMS,27 FEB 1984,GBR,3f1,,Luzern (SUI),17 JUL 2013,1188.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14191260,toplist
+16.0,48.84,,Leford GREEN,14 NOV 1986,JAM,5,,"Boudewijnstadion, Bruxelles (BEL)",06 SEP 2013,1188.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14202029,toplist
+18.0,49.08,,Takayuki KISHIMOTO,06 MAY 1990,JPN,1,,Tokyo (JPN),09 JUN 2013,1176.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14334340,toplist
+19.0,49.11,,LJ VAN ZYL,20 JUL 1985,RSA,1f2,,Velenje (SLO),04 JUN 2013,1175.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14221443,toplist
+20.0,49.14,,Jeshua ANDERSON,22 JUN 1989,USA,1,,"Walnut, CA (USA)",20 APR 2013,1173.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14231363,toplist
+21.0,49.15,,Roxroy CATO,05 JAN 1988,JAM,1f1,,"Raleigh, NC (USA)",30 MAR 2013,1172.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14333651,toplist
+21.0,49.15,,Silvio SCHIRRMEISTER,07 DEC 1988,GER,1f1,,"International Stadium, Gateshead (GBR)",22 JUN 2013,1172.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14194032,toplist
+23.0,49.17,,Annsert WHYTE,04 OCT 1987,JAM,4sf3,,"Luzhniki Stadion, Moskva (RUS)",13 AUG 2013,1171.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14202312,toplist
+24.0,49.18,,Pieter BENEKE,18 JUL 1990,RSA,2,,Stellenbosch (RSA),13 APR 2013,1171.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14325996,toplist
+25.0,49.19,,Michael STIGLER,04 MAY 1992,USA,2,,"Eugene, OR (USA)",07 JUN 2013,1170.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14442930,toplist
+25.0,49.19,,Sebastian RODGER,29 JUN 1991,GBR,2,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1170.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14376295,toplist
+25.0,49.19,,Rasmus MÄGI,04 MAY 1992,EST,3,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1170.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14373195,toplist
+28.0,49.23,,Timofey CHALYY,07 APR 1994,RUS,1,,"Stadio Guidobaldi, Rieti (ITA)",21 JUL 2013,1168.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14479717,toplist
+29.0,49.28,,Isa PHILLIPS,22 APR 1984,JAM,5sf1,,"Luzhniki Stadion, Moskva (RUS)",13 AUG 2013,1166.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14202168,toplist
+30.0,49.31,,Yasuhiro FUEKI,20 DEC 1985,JPN,2,,Tokyo (JPN),09 JUN 2013,1164.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14202654,toplist
+31.0,49.32,,Steven WHITE,27 JUL 1991,USA,3,,"Eugene, OR (USA)",07 JUN 2013,1164.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14401908,toplist
+32.0,49.34,,Miloud RAHMANI,30 OCT 1983,ALG,2,,Mersin (TUR),29 JUN 2013,1163.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14180648,toplist
+33.0,49.35,,Mickael FRANCOIS,12 MAR 1988,FRA,1f1,,Ninove (BEL),27 JUL 2013,1162.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14186527,toplist
+34.0,49.37,,Ali ARASTU,18 JUN 1992,USA,4,,"Eugene, OR (USA)",07 JUN 2013,1161.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14454786,toplist
+35.0,49.39,,Jeffery GIBSON,15 AUG 1990,BAH,5,,"Eugene, OR (USA)",07 JUN 2013,1160.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14178020,toplist
+36.0,49.40,,Denis KUDRYAVTSEV,13 APR 1992,RUS,1,,Moskva (RUS),24 JUL 2013,1160.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14442508,toplist
+37.0,49.42,,Yuta IMAZEKI,06 NOV 1987,JPN,2f3,,Fukuroi (JPN),03 MAY 2013,1159.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14203331,toplist
+38.0,49.44,,Eric ALEJANDRO,15 APR 1986,PUR,7sf3,,"Luzhniki Stadion, Moskva (RUS)",13 AUG 2013,1158.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14231119,toplist
+39.0,49.47,,Vladimir ANTMANIS,12 MAR 1984,RUS,2,,Moskva (RUS),24 JUL 2013,1156.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14221672,toplist
+40.0,49.49,,Sabiel ANDERSON,21 JUN 1988,JAM,1,,"Pueblo, CO (USA)",25 MAY 2013,1155.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14201799,toplist
+40.0,49.49,,Richard YATES,26 JAN 1986,GBR,3,,Birmingham (GBR),13 JUL 2013,1155.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14191326,toplist
+42.0,49.52,,Yoann DÉCIMUS,30 NOV 1987,FRA,2,,Paris (FRA),14 JUL 2013,1154.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14184208,toplist
+43.0,49.56,,Tristan THOMAS,23 MAY 1986,AUS,4,,Tokyo (JPN),05 MAY 2013,1152.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14178692,toplist
+44.0,49.57,,Miles UKAOMA,21 JUL 1992,USA,6,,"Eugene, OR (USA)",07 JUN 2013,1151.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14416006,toplist
+44.0,49.57,,Takatoshi ABE,12 NOV 1991,JPN,3,,Tokyo (JPN),09 JUN 2013,1151.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14334345,toplist
+46.0,49.58,,Ben SUMNER,16 AUG 1983,GBR,1f1,,Chambéry (FRA),30 JUN 2013,1151.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14190912,toplist
+47.0,49.59,,Bonface MUCHERU,02 MAY 1992,KEN,1,,Nairobi (KEN),13 JUL 2013,1150.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14330374,toplist
+48.0,49.62,,Niall FLANNERY,26 APR 1991,GBR,2f1,,Chambéry (FRA),30 JUN 2013,1149.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14189246,toplist
+48.0,49.62,,Varg KÖNIGSMARK,28 APR 1992,GER,1,,"Letzigrund, Zürich (SUI)",29 AUG 2013,1149.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14360750,toplist
+50.0,49.65,,Ivan SHABLYUYEV,17 APR 1988,RUS,3,,Moskva (RUS),24 JUL 2013,1147.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14223883,toplist
+51.0,49.66,,Winder Bolivar CUEVAS,01 AUG 1988,DOM,6f2,,Ponce (PUR),18 MAY 2013,1147.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14327514,toplist
+51.0,49.66,,Wen CHENG,06 APR 1989,CHN,1,,Tianjin (CHN),07 OCT 2013,1147.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14941402,toplist
+53.0,49.70,,Nicholas BETT,27 JAN 1990,KEN,2,,Nairobi (KEN),13 JUL 2013,1145.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14425830,toplist
+54.0,49.71,,Yuki MATSUSHITA,09 SEP 1991,JPN,3,,Chofu (JPN),05 OCT 2013,1144.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14563847,toplist
+55.0,49.72,,Emanuel MAYERS,09 MAR 1989,TTO,1,,Morelia (MEX),07 JUL 2013,1144.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14245213,toplist
+56.0,49.73,,Georg FLEISCHHAUER,21 OCT 1988,GER,1f2,,Weinheim (GER),02 AUG 2013,1143.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14192074,toplist
+57.0,49.74,,Amadou NDIAYE,06 DEC 1992,SEN,1sf2,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1143.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14375714,toplist
+57.0,49.74,,Lucirio Francisco GARRIDO,04 OCT 1988,VEN,1,,Trujillo (PER),28 NOV 2013,1143.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14377719,toplist
+59.0,49.75,,Reuben MCCOY,16 MAR 1986,USA,2,,"Atlanta, GA (USA)",17 MAY 2013,1142.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14245415,toplist
+60.0,49.76,,Javarn GALLIMORE,07 AUG 1993,JAM,2h1,,Kingston (JAM),20 JUN 2013,1142.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14413498,toplist
+60.0,49.76,,Alejandro Emerson CHALA,02 AUG 1991,ECU,2,,Trujillo (PER),28 NOV 2013,1142.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14383440,toplist
+62.0,49.77,,Akihiko NAKAMURA,23 OCT 1990,JPN,3sf1,,Tokyo (JPN),08 JUN 2013,1141.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14204865,toplist
+62.0,49.77,,Artur TEREZAN,08 MAY 1991,BRA,2,,São Paulo (BRA),09 JUN 2013,1141.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14373214,toplist
+64.0,49.78,,Thomas BARR,24 JUL 1992,IRL,3sf2,,"Ratinan Stadion, Tampere (FIN)",12 JUL 2013,1141.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14440533,toplist
+64.0,49.78,,Michal BROŽ,16 JUN 1992,CZE,5,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1141.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14375910,toplist
+64.0,49.78,,Kariem HUSSEIN,04 JAN 1989,SUI,1,,Luzern (SUI),27 JUL 2013,1141.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14376156,toplist
+67.0,49.79,,Martin KUČERA,10 MAY 1990,SVK,1,,"Central Stadium, Kazan (RUS)",10 JUL 2013,1140.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14376378,toplist
+68.0,49.82,,William Mbevi MUTUNGA,12 JUL 1993,KEN,1,,Nairobi (KEN),22 JUN 2013,1139.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14377818,toplist
+68.0,49.82,,Mohamed SEGHAIER,18 JUL 1988,TUN,3f1,,Chambéry (FRA),30 JUN 2013,1139.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14229277,toplist
+70.0,49.85,,Wouter LE ROUX,17 JAN 1986,RSA,1,,Potchefstroom (RSA),20 APR 2013,1137.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14220360,toplist
+70.0,49.85,,Eusebio HALITI,01 JAN 1991,ITA,1,,Milano (ITA),28 JUL 2013,1137.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14200550,toplist
+72.0,49.86,,Elhadji MBOW,02 APR 1985,SEN,2,,"Pueblo, CO (USA)",25 MAY 2013,1137.0,men_400h,2013,https://worldathletics.org/athletes/senegal/elhadji-mbow-014451585,toplist
+72.0,49.86,,Keisuke NOZAWA,07 JUN 1991,JPN,4,,Tokyo (JPN),09 JUN 2013,1137.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14388871,toplist
+74.0,49.88,,Wen CHENG,18 MAR 1992,CHN,1,,Jinan (CHN),12 MAY 2013,1136.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14514472,toplist
+74.0,49.88,,Adam DURHAM,30 AUG 1985,USA,4sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1136.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14236940,toplist
+76.0,49.89,,Yasmani COPELLO,15 APR 1987,CUB,2,,Hérouville (FRA),13 JUN 2013,1135.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14169627,toplist
+76.0,49.89,,Ian DEWHURST,13 NOV 1990,AUS,3sf2,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1135.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14179814,toplist
+78.0,49.90,,Chieh CHEN,08 MAY 1992,TPE,2,,Tianjin (CHN),07 OCT 2013,1135.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14228710,toplist
+79.0,49.92,,Hugo GRILLAS,28 FEB 1989,FRA,3,,Mersin (TUR),29 JUN 2013,1134.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14185135,toplist
+80.0,49.93,,Aleksandr SKOROBOGATKO,07 AUG 1994,RUS,2,,Kazan (RUS),15 JUN 2013,1133.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14509540,toplist
+81.0,49.94,,Tomoharu KANO,08 APR 1989,JPN,4f3,,Fukuroi (JPN),03 MAY 2013,1133.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14329577,toplist
+81.0,49.94,,Yuta KONISHI,31 JUL 1990,JPN,4sf1,,Tokyo (JPN),08 JUN 2013,1133.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14334348,toplist
+83.0,49.95,,Václav BARÁK,22 OCT 1990,CZE,1,,Tábor (CZE),16 JUN 2013,1132.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14372369,toplist
+83.0,49.95,,Øyvind Strømmen KJERPESET,12 DEC 1991,NOR,1f1,,Göteborg (SWE),28 JUN 2013,1132.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14377085,toplist
+85.0,49.96,,Atsushi YAMADA,03 JUL 1991,JPN,1f2,,Fukuroi (JPN),03 MAY 2013,1132.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14388873,toplist
+85.0,49.96,,Diego CABELLO,14 JAN 1988,ESP,1,,Huelva (ESP),12 JUN 2013,1132.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14167010,toplist
+85.0,49.96,,Zhilong LI,09 MAR 1988,CHN,1,,Shenyang (CHN),16 JUN 2013,1132.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14370096,toplist
+88.0,49.98,,Omar MCLEOD,25 APR 1994,JAM,1,,Kingston (JAM),15 MAR 2013,1131.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14435592,toplist
+89.0,50.02,,Amaurys VALLE,18 JAN 1990,CUB,3,,Morelia (MEX),07 JUL 2013,1129.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14169274,toplist
+90.0,50.06,,Leonardo CAPOTOSTI,24 JUL 1988,ITA,1f1,,Orvieto (ITA),05 JUL 2013,1127.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14199825,toplist
+91.0,50.07,,Michael COCHRANE,13 AUG 1991,NZL,1,,Sydney (AUS),09 MAR 2013,1126.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14385186,toplist
+92.0,50.08,,Aleksandr DEREVYAGIN,24 MAR 1979,RUS,4,,Moskva (RUS),24 JUL 2013,1126.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14222065,toplist
+93.0,50.10,,Aramis DÍAZ,22 NOV 1974,ITA,1,,Marano (ITA),14 SEP 2013,1125.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14169604,toplist
+93.0,50.10,,Kotaro MIYAO,12 JUL 1991,JPN,4,,Chofu (JPN),05 OCT 2013,1125.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14523584,toplist
+95.0,50.11,,Jordin ANDRADE,05 MAY 1992,USA,1,,"Las Vegas, NV (USA)",11 MAY 2013,1124.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14462333,toplist
+95.0,50.11,,Ke CHEN,14 SEP 1989,CHN,2,,Jinan (CHN),12 MAY 2013,1124.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14426613,toplist
+97.0,50.12,,Jamele MASON,19 OCT 1989,PUR,8f2,,Ponce (PUR),18 MAY 2013,1124.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14245084,toplist
+98.0,50.13,,Jason HARVEY,09 AUG 1991,IRL,2,,Dublin (IRL),28 JUL 2013,1123.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14198899,toplist
+99.0,50.14,,Caleb CROSS,31 MAY 1991,USA,3f1,,"Austin, TX (USA)",24 MAY 2013,1123.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14389855,toplist
+100.0,50.16,,Daniel O'SHEA,12 FEB 1989,NZL,3,,Sydney (AUS),14 APR 2013,1122.0,men_400h,2013,https://worldathletics.org/athletes/athlete=14327881,toplist
+1.0,48.03,,Javier CULSON,25 JUL 1984,PUR,1,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1230.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14218778,toplist
+2.0,48.25,,Michael TINSLEY,21 APR 1984,USA,1,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1218.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14253267,toplist
+2.0,48.25,,Cornel FREDERICKS,03 MAR 1990,RSA,1,,"Letzigrund, Zürich (SUI)",28 AUG 2014,1218.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14220044,toplist
+4.0,48.47,,Kariem HUSSEIN,04 JAN 1989,SUI,2,,"Le Grand Stade, Marrakech (MAR)",13 SEP 2014,1207.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14376156,toplist
+5.0,48.48,,Roxroy CATO,05 JAN 1988,JAM,1,,Kingston (JAM),27 JUN 2014,1207.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14333651,toplist
+6.0,48.54,,Rasmus MÄGI,04 MAY 1992,EST,1sf3,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1204.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14373195,toplist
+7.0,48.58,,Annsert WHYTE,04 OCT 1987,JAM,2,,Kingston (JAM),27 JUN 2014,1202.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14202312,toplist
+8.0,48.65,,Andrés Byron SILVA,27 MAR 1986,URU,1,,São Paulo (BRA),02 AUG 2014,1198.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14230875,toplist
+9.0,48.69,,Ashton EATON,21 JAN 1988,USA,2,,"Hampden Park, Glasgow (GBR)",11 JUL 2014,1196.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14237014,toplist
+9.0,48.69,,Timofey CHALYY,07 APR 1994,RUS,2sf3,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1196.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14479717,toplist
+11.0,48.75,,Jehue GORDON,15 DEC 1991,TTO,2,,"Hampden Park, Glasgow (GBR)",31 JUL 2014,1193.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14326172,toplist
+12.0,48.76,,Bershawn JACKSON,08 MAY 1983,USA,1,,"Charlottesville, VA (USA)",09 MAY 2014,1192.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14241618,toplist
+13.0,48.78,,Jeffery GIBSON,15 AUG 1990,BAH,3,,"Hampden Park, Glasgow (GBR)",31 JUL 2014,1191.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14178020,toplist
+14.0,48.80,,Niall FLANNERY,26 APR 1991,GBR,1,,"Mestský Stadion, Ostrava (CZE)",17 JUN 2014,1190.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14189246,toplist
+15.0,48.86,,Mamadou Kasse HANN,10 OCT 1986,SEN,2,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2014,1187.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14224816,toplist
+16.0,48.90,,Thomas BARR,24 JUL 1992,IRL,1f1,,Genève (SUI),14 JUN 2014,1185.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14440533,toplist
+17.0,48.91,,Félix SÁNCHEZ,30 AUG 1977,DOM,4,,"Stade de France, Paris-St-Denis (FRA)",05 JUL 2014,1185.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14167679,toplist
+18.0,48.92,,Amaechi MORTON,30 OCT 1989,NGR,2,,"Le Grand Stade, Marrakech (MAR)",12 AUG 2014,1184.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14363482,toplist
+19.0,48.93,,Johnny DUTCH,20 JAN 1989,USA,1,,"Sacramento, CA (USA)",29 JUN 2014,1184.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14236956,toplist
+20.0,48.95,,Denis KUDRYAVTSEV,13 APR 1992,RUS,1f2,,Sochi (RUS),30 MAY 2014,1183.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14442508,toplist
+20.0,48.95,,Rhys WILLIAMS,27 FEB 1984,GBR,2f1,,Genève (SUI),14 JUN 2014,1183.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14191260,toplist
+22.0,48.96,,LJ VAN ZYL,20 JUL 1985,RSA,1f2,,Sasolburg (RSA),25 MAR 2014,1182.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14221443,toplist
+22.0,48.96,,Felix FRANZ,06 MAY 1993,GER,3sf3,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1182.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14378452,toplist
+24.0,49.00,,Leford GREEN,14 NOV 1986,JAM,3,,Kingston (JAM),27 JUN 2014,1180.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14202029,toplist
+25.0,49.03,,Nicholas BETT,27 JAN 1990,KEN,3,,"Le Grand Stade, Marrakech (MAR)",12 AUG 2014,1179.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14425830,toplist
+26.0,49.04,,Josef ROBERTSON,14 MAY 1987,JAM,2,,Ciudad de México (MEX),16 AUG 2014,1178.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14202200,toplist
+27.0,49.07,,Eric ALEJANDRO,15 APR 1986,PUR,2,,São Paulo (BRA),02 AUG 2014,1177.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14231119,toplist
+28.0,49.08,,Oskari MÖRÖ,31 JAN 1993,FIN,4sf3,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1176.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14378117,toplist
+29.0,49.09,,Mahau SUGUIMATI,13 NOV 1984,BRA,1,,"Mangueirão, Belém (BRA)",10 AUG 2014,1176.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14175200,toplist
+30.0,49.10,,Jeshua ANDERSON,22 JUN 1989,USA,1f1,,"Los Angeles, CA (USA)",07 JUN 2014,1175.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14231363,toplist
+31.0,49.12,,Varg KÖNIGSMARK,28 APR 1992,GER,2sf1,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1174.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14360750,toplist
+32.0,49.13,,Michael BULTHEEL,30 JUN 1986,BEL,1,,Bruxelles (BEL),27 JUL 2014,1173.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14177693,toplist
+32.0,49.13,,Patryk DOBEK,13 FEB 1994,POL,3sf1,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1173.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14389330,toplist
+34.0,49.21,,Emir BEKRIĆ,14 MAR 1991,SRB,2sf2,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1169.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14333865,toplist
+35.0,49.23,,Miles UKAOMA,21 JUL 1992,USA,1,,"Eugene, OR (USA)",13 JUN 2014,1168.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14416006,toplist
+36.0,49.25,,Bonface MUCHERU,02 MAY 1992,KEN,1,,Nairobi (KEN),07 JUN 2014,1167.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14330374,toplist
+37.0,49.29,,Jaheel HYDE,02 FEB 1997,JAM,1,,"Hayward Field, Eugene, OR (USA)",25 JUL 2014,1165.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14520436,toplist
+38.0,49.32,,Reggie WYATT,17 SEP 1990,USA,1,,Huelva (ESP),12 JUN 2014,1164.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14255622,toplist
+39.0,49.34,,Michael STIGLER,04 MAY 1992,USA,1h2,,"Eugene, OR (USA)",11 JUN 2014,1163.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14442930,toplist
+40.0,49.40,,Dmitriy KOBLOV,30 NOV 1992,KAZ,1,,Almaty (KAZ),28 JUN 2014,1160.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14375718,toplist
+41.0,49.46,,Richard YATES,26 JAN 1986,GBR,1,,Salzburg (AUT),24 MAY 2014,1157.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14191326,toplist
+42.0,49.47,,Sebastian RODGER,29 JUN 1991,GBR,4sf1,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1156.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14376295,toplist
+43.0,49.49,,Takayuki KISHIMOTO,06 MAY 1990,JPN,1,,Fukushima (JPN),08 JUN 2014,1155.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14334340,toplist
+44.0,49.52,,Ian DEWHURST,13 NOV 1990,AUS,1,,"Albert Park, Melbourne (AUS)",06 APR 2014,1154.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14179814,toplist
+45.0,49.53,,Justin GAYMON,13 DEC 1986,USA,3,,"Mangueirão, Belém (BRA)",10 AUG 2014,1153.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14238593,toplist
+46.0,49.54,,Wouter LE ROUX,17 JAN 1986,RSA,5f1,,Genève (SUI),14 JUN 2014,1153.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14220360,toplist
+47.0,49.55,,Ali Khamis KHAMIS,30 JUN 1995,BRN,2,,"Hayward Field, Eugene, OR (USA)",25 JUL 2014,1152.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14479839,toplist
+48.0,49.56,,Kurt Leone COUTO,14 MAY 1985,MOZ,1,,Potchefstroom (RSA),10 MAY 2014,1152.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14213444,toplist
+48.0,49.56,,Omar CISNEROS,19 NOV 1989,CUB,1,,Veracruz (MEX),27 NOV 2014,1152.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14169633,toplist
+50.0,49.57,,Emanuel MAYERS,09 MAR 1989,TTO,1,,Port-of-Spain (TTO),22 JUN 2014,1151.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14245213,toplist
+51.0,49.59,,Keyunta HAYES,15 FEB 1992,USA,1f2,,"Gainesville, FL (USA)",04 APR 2014,1150.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14425486,toplist
+51.0,49.59,,Hederson ESTEFANI,11 SEP 1991,BRA,1,,São Paulo (BRA),12 OCT 2014,1150.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14376244,toplist
+53.0,49.60,,Gregory COLEMAN,24 JUL 1993,USA,1sf3,,"Fayetteville, AR (USA)",30 MAY 2014,1150.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14431559,toplist
+53.0,49.60,,Yoann DÉCIMUS,30 NOV 1987,FRA,3h1,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1150.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14184208,toplist
+55.0,49.61,,Amadou NDIAYE,06 DEC 1992,SEN,1,,Reims (FRA),13 JUL 2014,1149.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14375714,toplist
+56.0,49.64,,Trevor BROWN,24 MAR 1992,USA,1f1,,"Laramie, WY (USA)",03 MAY 2014,1148.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14400799,toplist
+57.0,49.66,,Lucirio Francisco GARRIDO,04 OCT 1988,VEN,2,,Santiago de Chile (CHI),15 MAR 2014,1147.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14377719,toplist
+57.0,49.66,,Silvio SCHIRRMEISTER,07 DEC 1988,GER,2,,Salzburg (AUT),24 MAY 2014,1147.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14194032,toplist
+57.0,49.66,,Tom BURTON,29 JAN 1988,GBR,1f2,,Genève (SUI),14 JUN 2014,1147.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14370206,toplist
+60.0,49.69,,Takatoshi ABE,12 NOV 1991,JPN,2,,Fukushima (JPN),18 MAY 2014,1145.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14334345,toplist
+61.0,49.71,,Mohamed SEGHAIER,18 JUL 1988,TUN,2,,Reims (FRA),13 JUL 2014,1144.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14229277,toplist
+62.0,49.72,,Michael COCHRANE,13 AUG 1991,NZL,1,,Perth (AUS),22 FEB 2014,1144.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14385186,toplist
+63.0,49.83,,Stef VANHAEREN,15 JAN 1992,BEL,2,,Bruxelles (BEL),27 JUL 2014,1138.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14376925,toplist
+63.0,49.83,,Artur TEREZAN,08 MAY 1991,BRA,2,,São Paulo (BRA),12 OCT 2014,1138.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14373214,toplist
+65.0,49.85,,Tristan THOMAS,23 MAY 1986,AUS,2,,"Albert Park, Melbourne (AUS)",22 MAR 2014,1137.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14178692,toplist
+66.0,49.88,,Jose Luis GASPAR,25 AUG 1995,CUB,1,,La Habana (CUB),04 OCT 2014,1136.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14589161,toplist
+67.0,49.89,,Isa PHILLIPS,22 APR 1984,JAM,4,,"National Stadium, Kingston (JAM)",03 MAY 2014,1135.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14202168,toplist
+67.0,49.89,,David GREENE,11 APR 1986,GBR,1,,"Bregyó Athletic Center, Székesfehérvár (HUN)",08 JUL 2014,1135.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14189416,toplist
+67.0,49.89,,Wen CHENG,06 APR 1989,CHN,1h3,,Incheon (KOR),30 SEP 2014,1135.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14941402,toplist
+70.0,49.90,,TJ HOLMES,02 JUL 1995,USA,1sf1,,"Fayetteville, AR (USA)",30 MAY 2014,1135.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14536351,toplist
+70.0,49.90,,Tim RUMMENS,16 DEC 1987,BEL,1f2,,Oordegem (BEL),31 MAY 2014,1135.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14177334,toplist
+70.0,49.90,,Sergio FERNÁNDEZ,01 APR 1993,ESP,1,,Alcobendas (ESP),27 JUL 2014,1135.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14474482,toplist
+70.0,49.90,,Michal BROŽ,16 JUN 1992,CZE,4h1,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1135.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14375910,toplist
+74.0,49.94,,Demar MURRAY,31 AUG 1991,JAM,6,,Kingston (JAM),27 JUN 2014,1133.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14367631,toplist
+75.0,49.95,,Vladimir ANTMANIS,12 MAR 1984,RUS,3f2,,Sochi (RUS),30 MAY 2014,1132.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14221672,toplist
+75.0,49.95,,Akihiko NAKAMURA,23 OCT 1990,JPN,2,,Fukushima (JPN),08 JUN 2014,1132.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14204865,toplist
+77.0,49.96,,Kazuaki YOSHIDA,31 OCT 1987,JPN,1,,Amagasaki (JPN),17 MAY 2014,1132.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14329680,toplist
+78.0,49.97,,Yuta KONISHI,31 JUL 1990,JPN,3,,Fukushima (JPN),08 JUN 2014,1131.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14334348,toplist
+78.0,49.97,,Quincy DOWNING,16 JAN 1993,USA,3,,"Eugene, OR (USA)",13 JUN 2014,1131.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14375509,toplist
+80.0,49.98,,Tetsuya TATENO,05 AUG 1991,JPN,4,,Fukushima (JPN),08 JUN 2014,1131.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14388874,toplist
+80.0,49.98,,Adam DURHAM,30 AUG 1985,USA,2sf1,,"Sacramento, CA (USA)",28 JUN 2014,1131.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14236940,toplist
+82.0,50.00,,Eric CRAY,06 NOV 1988,PHI,2h3,,Incheon (KOR),30 SEP 2014,1130.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14326210,toplist
+83.0,50.01,,Oleg MIRONOV,05 MAR 1993,RUS,1,,Moskva (RUS),03 JUL 2014,1129.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14475443,toplist
+84.0,50.03,,Jordin ANDRADE,05 MAY 1992,USA,1f3,,"Boise, ID (USA)",03 MAY 2014,1128.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14462333,toplist
+85.0,50.05,,Adrien CLEMENCEAU,25 MAY 1988,FRA,3,,Reims (FRA),13 JUL 2014,1127.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14183920,toplist
+85.0,50.05,,Leonardo CAPOTOSTI,24 JUL 1988,ITA,3,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1127.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14199825,toplist
+87.0,50.07,,Reuben MCCOY,16 MAR 1986,USA,2,,"Clermont, FL (USA)",07 JUN 2014,1126.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14245415,toplist
+87.0,50.07,,Yuki MATSUSHITA,09 SEP 1991,JPN,3,,Heusden-Zolder (BEL),19 JUL 2014,1126.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14563847,toplist
+89.0,50.08,,Denys NECHYPORENKO,07 JAN 1990,UKR,1,,Kirovograd (UKR),25 JUL 2014,1126.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14332053,toplist
+90.0,50.09,,Cameron VINEY,,USA,3f3,,"Des Moines, IA (USA)",26 APR 2014,1125.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14425500,toplist
+90.0,50.09,,Chieh CHEN,08 MAY 1992,TPE,1,,Yunlin (TPE),20 MAY 2014,1125.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14228710,toplist
+92.0,50.11,,Rilwan ALOWONLE,12 DEC 1993,USA,1qf1,,"Jacksonville, FL (USA)",30 MAY 2014,1124.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14493123,toplist
+93.0,50.12,,Elhadji MBOW,02 APR 1985,SEN,5f1,,"Gainesville, FL (USA)",04 APR 2014,1124.0,men_400h,2014,https://worldathletics.org/athletes/senegal/elhadji-mbow-014451585,toplist
+94.0,50.13,,Kenneth SELMON,27 AUG 1996,USA,2,,"Eugene, OR (USA)",06 JUL 2014,1123.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14497263,toplist
+95.0,50.15,,Abdelmalik LAHOULOU,07 MAY 1992,ALG,2,,Marseille (FRA),31 MAY 2014,1122.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14375720,toplist
+96.0,50.16,,Cameron FRENCH,17 MAY 1992,NZL,1,,Wellington (NZL),30 MAR 2014,1122.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14385185,toplist
+97.0,50.17,,Josh TAYLOR,,USA,2sf1,,"Fayetteville, AR (USA)",30 MAY 2014,1121.0,men_400h,2014,https://worldathletics.org/athletes/united-states/josh-taylor-014452551,toplist
+97.0,50.17,,Arnaud GHISLAIN,02 DEC 1988,BEL,1h1,,Bruxelles (BEL),26 JUL 2014,1121.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14177537,toplist
+99.0,50.21,,Leslie MURRAY,24 JAN 1991,ISV,3,,Veracruz (MEX),27 NOV 2014,1119.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14246877,toplist
+100.0,50.22,,Ben SUMNER,16 AUG 1983,GBR,4f1,,Oordegem (BEL),31 MAY 2014,1119.0,men_400h,2014,https://worldathletics.org/athletes/athlete=14190912,toplist
+1.0,47.79,,Nicholas BETT,27 JAN 1990,KEN,1,,"National Stadium, Beijing (CHN)",25 AUG 2015,1242.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14425830,toplist
+2.0,48.05,,Denis KUDRYAVTSEV,13 APR 1992,RUS,2,,"National Stadium, Beijing (CHN)",25 AUG 2015,1229.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14442508,toplist
+3.0,48.09,,Bershawn JACKSON,08 MAY 1983,USA,1,,"Suhaim bin Hamad Stadium, Doha (QAT)",15 MAY 2015,1227.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14241618,toplist
+4.0,48.13,,Johnny DUTCH,20 JAN 1989,USA,1,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1225.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14236956,toplist
+5.0,48.17,,Jeffery GIBSON,15 AUG 1990,BAH,3,,"National Stadium, Beijing (CHN)",25 AUG 2015,1223.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14178020,toplist
+6.0,48.18,,Kerron CLEMENT,31 OCT 1985,USA,4,,"National Stadium, Beijing (CHN)",25 AUG 2015,1222.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14234898,toplist
+7.0,48.29,,Bonface MUCHERU,02 MAY 1992,KEN,1sf1,,"National Stadium, Beijing (CHN)",23 AUG 2015,1216.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14330374,toplist
+8.0,48.34,,Michael TINSLEY,21 APR 1984,USA,2,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1214.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14253267,toplist
+9.0,48.40,,Patryk DOBEK,13 FEB 1994,POL,3sf2,,"National Stadium, Beijing (CHN)",23 AUG 2015,1211.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14389330,toplist
+10.0,48.44,,Michael STIGLER,04 MAY 1992,USA,1,,"Austin, TX (USA)",27 MAR 2015,1209.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14442930,toplist
+11.0,48.45,,Kariem HUSSEIN,04 JAN 1989,SUI,1f1,,Zug (SUI),08 AUG 2015,1208.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14376156,toplist
+12.0,48.46,,Yasmani COPELLO,15 APR 1987,TUR,4sf2,,"National Stadium, Beijing (CHN)",23 AUG 2015,1208.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14169627,toplist
+13.0,48.48,,Javier CULSON,25 JUL 1984,PUR,1,,"Icahn Stadium, New York, NY (USA)",13 JUN 2015,1207.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14218778,toplist
+14.0,48.65,,Thomas BARR,24 JUL 1992,IRL,4,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1198.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14440533,toplist
+14.0,48.65,,Rasmus MÄGI,04 MAY 1992,EST,1f2,,Tallinn (EST),09 AUG 2015,1198.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14373195,toplist
+16.0,48.67,,Abdelmalik LAHOULOU,07 MAY 1992,ALG,1,,Brazzaville (CGO),16 SEP 2015,1197.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14375720,toplist
+17.0,48.69,,Timofey CHALYY,07 APR 1994,RUS,3sf1,,"National Stadium, Beijing (CHN)",23 AUG 2015,1196.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14479717,toplist
+18.0,48.72,,Roxroy CATO,05 JAN 1988,JAM,3,,"CIBC, Toronto (CAN)",23 JUL 2015,1194.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14333651,toplist
+19.0,48.78,,LJ VAN ZYL,20 JUL 1985,RSA,2,,"Icahn Stadium, New York, NY (USA)",13 JUN 2015,1191.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14221443,toplist
+20.0,48.84,,Miles UKAOMA,21 JUL 1992,NGR,1,,Warri (NGR),31 JUL 2015,1188.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14416006,toplist
+21.0,48.90,,Annsert WHYTE,04 OCT 1987,JAM,1,,Kingston (JAM),26 JUN 2015,1185.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14202312,toplist
+21.0,48.90,,Niall FLANNERY,26 APR 1991,GBR,2h3,,"National Stadium, Beijing (CHN)",22 AUG 2015,1185.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14189246,toplist
+23.0,48.95,,Jeshua ANDERSON,22 JUN 1989,USA,5,,"CIBC, Toronto (CAN)",23 JUL 2015,1183.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14231363,toplist
+24.0,49.01,,Jaheel HYDE,02 FEB 1997,JAM,1,,Kingston (JAM),27 MAR 2015,1180.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14520436,toplist
+25.0,49.04,,Ivan SHABLYUYEV,17 APR 1988,RUS,3,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1178.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14223883,toplist
+25.0,49.04,,Michael BULTHEEL,30 JUN 1986,BEL,1,,Bruxelles (BEL),26 JUL 2015,1178.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14177693,toplist
+27.0,49.05,,Chieh CHEN,08 MAY 1992,TPE,1,,Kaohsiung (TPE),21 OCT 2015,1178.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14228710,toplist
+28.0,49.08,,Keisuke NOZAWA,07 JUN 1991,JPN,1h1,,Gifu (JPN),26 SEP 2015,1176.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14388871,toplist
+29.0,49.12,,Eric CRAY,06 NOV 1988,PHI,1,,George Town (CAY),16 MAY 2015,1174.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14326210,toplist
+30.0,49.14,,Yuki MATSUSHITA,09 SEP 1991,JPN,1,,Chiba (JPN),15 AUG 2015,1173.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14563847,toplist
+31.0,49.15,,Kurt Leone COUTO,14 MAY 1985,MOZ,4h1,,"National Stadium, Beijing (CHN)",22 AUG 2015,1172.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14213444,toplist
+32.0,49.17,,Takayuki KISHIMOTO,06 MAY 1990,JPN,1f1,,Tokyo (JPN),26 JUL 2015,1171.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14334340,toplist
+33.0,49.20,,Adam DURHAM,30 AUG 1985,USA,2f1,,"Greensboro, NC (USA)",17 MAY 2015,1170.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14236940,toplist
+34.0,49.22,,Leford GREEN,14 NOV 1986,JAM,2,,"National Stadium, Kingston (JAM)",09 MAY 2015,1169.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14202029,toplist
+34.0,49.22,,Jehue GORDON,15 DEC 1991,TTO,7,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1169.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14326172,toplist
+34.0,49.22,,Mohamed SEGHAIER,18 JUL 1988,TUN,1f1,,La Chaux-de-Fonds (SUI),05 JUL 2015,1169.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14229277,toplist
+37.0,49.23,,Eric ALEJANDRO,15 APR 1986,PUR,2f1,,"Gainesville, FL (USA)",03 APR 2015,1168.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14231119,toplist
+38.0,49.24,,Jordin ANDRADE,05 MAY 1992,USA,2,,"Eugene, OR (USA)",12 JUN 2015,1168.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14462333,toplist
+38.0,49.24,,Miloud RAHMANI,30 OCT 1983,ALG,2,,Algiers (ALG),02 AUG 2015,1168.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14180648,toplist
+40.0,49.26,,Omar CISNEROS,19 NOV 1989,CUB,2,,Padova (ITA),06 SEP 2015,1167.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14169633,toplist
+41.0,49.31,,Jack GREEN,06 OCT 1991,GBR,4,,"Suhaim bin Hamad Stadium, Doha (QAT)",15 MAY 2015,1164.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14371627,toplist
+42.0,49.36,,Tom BURTON,29 JAN 1988,GBR,1f1,,Genève (SUI),06 JUN 2015,1162.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14370206,toplist
+43.0,49.37,,Jaak-Heinrich JAGOR,11 MAY 1990,EST,2f2,,Tallinn (EST),09 AUG 2015,1161.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14372654,toplist
+44.0,49.38,,Aron Kipchumba KOECH,27 JAN 1990,KEN,5h5,,"National Stadium, Beijing (CHN)",22 AUG 2015,1161.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14481105,toplist
+45.0,49.39,,Scottie HEARN,03 JAN 1994,USA,1,,"Starkville, MS (USA)",16 MAY 2015,1160.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14491511,toplist
+46.0,49.40,,Hederson ESTEFANI,11 SEP 1991,BRA,1,,Sao Bernardo do Campo (BRA),17 MAY 2015,1160.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14376244,toplist
+47.0,49.41,,Desmond PALMER,30 JUL 1995,USA,1,,"Tallahassee, FL (USA)",16 MAY 2015,1159.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14487109,toplist
+48.0,49.43,,Saber BOUKEMOUCHE,20 APR 1992,ALG,3,,Algiers (ALG),02 AUG 2015,1158.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14428459,toplist
+48.0,49.43,,William Mbevi MUTUNGA,12 JUL 1993,KEN,4,,Brazzaville (CGO),16 SEP 2015,1158.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14377818,toplist
+50.0,49.45,,Eric FUTCH,25 APR 1993,USA,2f1,,"Gainesville, FL (USA)",24 APR 2015,1157.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14443727,toplist
+51.0,49.48,,Keyunta HAYES,15 FEB 1992,USA,2,,"Austin, TX (USA)",27 MAR 2015,1156.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14425486,toplist
+52.0,49.50,,Cornel FREDERICKS,03 MAR 1990,RSA,4f1,,"Moratalaz, Madrid (ESP)",11 JUL 2015,1155.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14220044,toplist
+53.0,49.53,,Drew BRANCH,13 MAY 1993,USA,2,,"Starkville, MS (USA)",16 MAY 2015,1153.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14471340,toplist
+54.0,49.56,,David KENDZIERA,09 SEP 1994,USA,3,,"Eugene, OR (USA)",12 JUN 2015,1152.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14532163,toplist
+54.0,49.56,,Wen CHENG,18 MAR 1992,CHN,4h4,,"National Stadium, Beijing (CHN)",22 AUG 2015,1152.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14514472,toplist
+56.0,49.58,,Yuta KONISHI,31 JUL 1990,JPN,1,,Wuhan (CHN),06 JUN 2015,1151.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14334348,toplist
+56.0,49.58,,Mickael FRANCOIS,12 MAR 1988,FRA,2,,Bruxelles (BEL),26 JUL 2015,1151.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14186527,toplist
+56.0,49.58,,Justin GAYMON,13 DEC 1986,USA,3,,"Atlanta, GA (USA)",01 AUG 2015,1151.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14238593,toplist
+56.0,49.58,,Michael COCHRANE,13 AUG 1991,NZL,7h1,,"National Stadium, Beijing (CHN)",22 AUG 2015,1151.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14385186,toplist
+60.0,49.60,,Kenneth SELMON,27 AUG 1996,USA,2,,"Tallahassee, FL (USA)",16 MAY 2015,1150.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14497263,toplist
+61.0,49.62,,Stanislav MELNIKOV,26 FEB 1987,UKR,1h1,,Kirovograd (UKR),31 JUL 2015,1149.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14230289,toplist
+62.0,49.63,,Patrick BODIE,08 JUL 1993,BAH,2f2,,"Gainesville, FL (USA)",03 APR 2015,1148.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14375917,toplist
+62.0,49.63,,Quincy DOWNING,16 JAN 1993,USA,4,,"Starkville, MS (USA)",16 MAY 2015,1148.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14375509,toplist
+64.0,49.65,,Mahau SUGUIMATI,13 NOV 1984,BRA,1f3,,Fukuroi (JPN),03 MAY 2015,1147.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14175200,toplist
+64.0,49.65,,Javonte LIPSEY,17 OCT 1992,USA,3,,"Tallahassee, FL (USA)",16 MAY 2015,1147.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14425496,toplist
+66.0,49.66,,Jussi KANERVO,01 FEB 1993,FIN,2,,"Kadrioru staadion, Tallinn (EST)",12 JUL 2015,1147.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14375716,toplist
+67.0,49.67,,Trevor BROWN,24 MAR 1992,USA,1,,"Laramie, WY (USA)",01 MAY 2015,1146.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14400799,toplist
+67.0,49.67,,Jose Luis GASPAR,25 AUG 1995,CUB,2,,San José (CRC),09 AUG 2015,1146.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14589161,toplist
+69.0,49.68,,Josef ROBERTSON,14 MAY 1987,JAM,4,,Kingston (JAM),26 JUN 2015,1146.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14202200,toplist
+70.0,49.70,,Gregory COLEMAN,24 JUL 1993,USA,3sf3,,"Eugene, OR (USA)",10 JUN 2015,1145.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14431559,toplist
+71.0,49.72,,Cameron FRENCH,17 MAY 1992,NZL,1,,Sydney (AUS),14 MAR 2015,1144.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14385185,toplist
+72.0,49.73,,Artur TEREZAN,08 MAY 1991,BRA,4,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1143.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14373214,toplist
+73.0,49.80,,Emanuel MAYERS,09 MAR 1989,TTO,1f3,,"Randalls Island, NY (USA)",11 JUL 2015,1140.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14245213,toplist
+74.0,49.84,,Sebastian RODGER,29 JUN 1991,GBR,1,,Leixlip (IRL),13 JUN 2015,1138.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14376295,toplist
+74.0,49.84,,Kiprono KOSKEI,15 JAN 1988,KEN,4,,Nairobi (KEN),01 AUG 2015,1138.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14208760,toplist
+76.0,49.85,,David GREENE,11 APR 1986,GBR,5,,"Olympic Stadium, London (GBR)",25 JUL 2015,1137.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14189416,toplist
+77.0,49.87,,Wouter LE ROUX,17 JAN 1986,RSA,2f1,,Pretoria (RSA),07 MAR 2015,1136.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14220360,toplist
+77.0,49.87,,Andre CLARKE,06 JUN 1992,JAM,3h1,,Kingston (JAM),25 JUN 2015,1136.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14421492,toplist
+77.0,49.87,,Jonas HANßEN,15 JUL 1995,GER,1,,Mannheim (GER),28 JUN 2015,1136.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14452362,toplist
+80.0,49.89,,Takaoki HASHIMOTO,18 JUL 1992,JPN,1,,Osaka (JPN),13 SEP 2015,1135.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14523586,toplist
+81.0,49.90,,Marvin WILLIAMS,13 JUN 1996,JAM,1h3,,Kingston (JAM),25 JUN 2015,1135.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14520416,toplist
+81.0,49.90,,Yeison RIVAS,24 SEP 1987,COL,1,,Cali (COL),19 NOV 2015,1135.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14170008,toplist
+83.0,49.92,,Cameron VINEY,,USA,1,,"Tucson, AZ (USA)",11 APR 2015,1134.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14425500,toplist
+83.0,49.92,,Yasuhiro FUEKI,20 DEC 1985,JPN,4,,Gifu (JPN),26 SEP 2015,1134.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14202654,toplist
+85.0,49.93,,Leonardo CAPOTOSTI,24 JUL 1988,ITA,3f1,,"Olympic Stadium, Cheboksary (RUS)",20 JUN 2015,1133.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14199825,toplist
+86.0,49.94,,Javarn GALLIMORE,07 AUG 1993,JAM,1h2,,Kingston (JAM),25 JUN 2015,1133.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14413498,toplist
+87.0,49.95,,Kazuaki YOSHIDA,31 OCT 1987,JPN,3,,Wuhan (CHN),06 JUN 2015,1132.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14329680,toplist
+88.0,49.96,,Khallifah ROSSER,13 JUL 1995,USA,3h2,,"Hayward Field, Eugene, OR (USA)",25 JUN 2015,1132.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14520653,toplist
+89.0,49.97,,Rai BENJAMIN,27 JUL 1997,ANT,1f5,,"Greensboro, NC (USA)",21 JUN 2015,1131.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14574865,toplist
+90.0,50.00,,Lindsay HANEKOM,15 MAY 1993,RSA,1,,Stellenbosch (RSA),25 APR 2015,1130.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14501688,toplist
+90.0,50.00,,Sergio FERNÁNDEZ,01 APR 1993,ESP,1,,Monachil (ESP),08 AUG 2015,1130.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14474482,toplist
+92.0,50.01,,Okorie HENRY,04 NOV 1987,NGR,7,,Brazzaville (CGO),16 SEP 2015,1129.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14426490,toplist
+93.0,50.02,,Rilwan ALOWONLE,12 DEC 1993,USA,4,,"Tallahassee, FL (USA)",16 MAY 2015,1129.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14493123,toplist
+93.0,50.02,,Nicolai Trock HARTLING,17 JAN 1994,DEN,3,,"Kadrioru staadion, Tallinn (EST)",12 JUL 2015,1129.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14421023,toplist
+95.0,50.03,,Josh TAYLOR,,USA,1,,"Hammond, LA (USA)",10 MAY 2015,1128.0,men_400h,2015,https://worldathletics.org/athletes/united-states/josh-taylor-014452551,toplist
+96.0,50.04,,Chia-Hsuan YU,22 JAN 1995,TPE,2,,Kaohsiung (TPE),21 OCT 2015,1128.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14497696,toplist
+97.0,50.05,,Martin CARRERE,31 OCT 1990,FRA,3h1,,Villeneuve d'Ascq (FRA),11 JUL 2015,1127.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14474110,toplist
+98.0,50.06,,Silvio SCHIRRMEISTER,07 DEC 1988,GER,4f1,,"Gainesville, FL (USA)",24 APR 2015,1127.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14194032,toplist
+98.0,50.06,,Naoto NOGUCHI,07 MAY 1994,JPN,4,,Chiba (JPN),15 AUG 2015,1127.0,men_400h,2015,https://worldathletics.org/athletes/japan/naoto-noguchi-14562705,toplist
+100.0,50.07,,Oskari MÖRÖ,31 JAN 1993,FIN,1f2,,"Olympic Stadium, Cheboksary (RUS)",20 JUN 2015,1126.0,men_400h,2015,https://worldathletics.org/athletes/athlete=14378117,toplist
+1.0,47.73,,Kerron CLEMENT,31 OCT 1985,USA,1,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1245.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14234898,toplist
+2.0,47.78,,Bonface MUCHERU,02 MAY 1992,KEN,2,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1243.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14330374,toplist
+3.0,47.92,,Yasmani COPELLO,15 APR 1987,TUR,3,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1236.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14169627,toplist
+4.0,47.97,,Thomas BARR,24 JUL 1992,IRL,4,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1233.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14440533,toplist
+5.0,48.01,,Nicholas BETT,27 JAN 1990,KEN,1,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1231.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14425830,toplist
+6.0,48.07,,Annsert WHYTE,04 OCT 1987,JAM,5,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1228.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14202312,toplist
+7.0,48.10,,Johnny DUTCH,20 JAN 1989,USA,1,,Kingston (JAM),11 JUN 2016,1226.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14236956,toplist
+8.0,48.40,,Rasmus MÄGI,04 MAY 1992,EST,6,,"Estádio Olímpico, Rio de Janeiro (BRA)",18 AUG 2016,1211.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14373195,toplist
+9.0,48.46,,Javier CULSON,25 JUL 1984,PUR,2sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1208.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14218778,toplist
+10.0,48.49,,Karsten WARHOLM,28 FEB 1996,NOR,1h3,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1206.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14479487,toplist
+10.0,48.49,,Aron Kipchumba KOECH,27 JAN 1990,KEN,2sf3,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1206.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14481105,toplist
+12.0,48.56,,Roxroy CATO,05 JAN 1988,JAM,4h3,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1203.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14333651,toplist
+13.0,48.57,,Timofey CHALYY,07 APR 1994,RUS,1,,Moskva (RUS),18 JUL 2016,1202.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14479717,toplist
+14.0,48.62,,Abdelmalik LAHOULOU,07 MAY 1992,ALG,1h1,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1199.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14375720,toplist
+14.0,48.62,,Keisuke NOZAWA,07 JUN 1991,JPN,1h4,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1199.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14388871,toplist
+16.0,48.65,,Byron ROBINSON,10 MAY 1995,USA,3sf3,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1198.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14491508,toplist
+17.0,48.67,,LJ VAN ZYL,20 JUL 1985,RSA,1,,"Mestský Stadion, Ostrava (CZE)",20 MAY 2016,1197.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14221443,toplist
+18.0,48.74,,Michael TINSLEY,21 APR 1984,USA,1,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1193.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14253267,toplist
+19.0,48.81,,Jaheel HYDE,02 FEB 1997,JAM,2,,Kingston (JAM),01 JUL 2016,1190.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14520436,toplist
+20.0,48.87,,Kariem HUSSEIN,04 JAN 1989,SUI,2sf1,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1187.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14376156,toplist
+20.0,48.87,,Sergio FERNÁNDEZ,01 APR 1993,ESP,3sf1,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1187.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14474482,toplist
+22.0,48.88,,Jeshua ANDERSON,22 JUN 1989,USA,1,,"Atlanta, GA (USA)",04 JUN 2016,1186.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14231363,toplist
+22.0,48.88,,Ricky BABINEAUX,14 DEC 1990,USA,4,,"Hayward Field, Eugene, OR (USA)",10 JUL 2016,1186.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14402456,toplist
+24.0,48.91,,Eric FUTCH,25 APR 1993,USA,1,,"Eugene, OR (USA)",10 JUN 2016,1185.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14443727,toplist
+25.0,48.96,,Jeffery GIBSON,15 AUG 1990,BAH,1,,"National Stadium, Kingston (JAM)",07 MAY 2016,1182.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14178020,toplist
+25.0,48.96,,Mahau SUGUIMATI,13 NOV 1984,BRA,2,,Kumagaya (JPN),22 MAY 2016,1182.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14175200,toplist
+25.0,48.96,,Jack GREEN,06 OCT 1991,GBR,2h5,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1182.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14371627,toplist
+28.0,48.98,,Eric CRAY,06 NOV 1988,PHI,2f1,,"Moratalaz, Madrid (ESP)",23 JUN 2016,1181.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14326210,toplist
+29.0,49.01,,Patryk DOBEK,13 FEB 1994,POL,2,,"Shanghai Stadium, Shanghai (CHN)",14 MAY 2016,1180.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14389330,toplist
+30.0,49.03,,Lindsay HANEKOM,15 MAY 1993,RSA,1h2,,Bloemfontein (RSA),06 MAY 2016,1179.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14501688,toplist
+31.0,49.04,,Bershawn JACKSON,08 MAY 1983,USA,3,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1178.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14241618,toplist
+31.0,49.04,,Khallifah ROSSER,13 JUL 1995,USA,1,,"Bradenton, FL (USA)",28 MAY 2016,1178.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14520653,toplist
+31.0,49.04,,Oskari MÖRÖ,31 JAN 1993,FIN,4h5,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1178.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14378117,toplist
+34.0,49.08,,Martin KUČERA,10 MAY 1990,SVK,4sf1,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1176.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14376378,toplist
+35.0,49.09,,Marcio TELES,27 JAN 1994,BRA,2f1,,Genève (SUI),11 JUN 2016,1176.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14543428,toplist
+36.0,49.10,,Yuki MATSUSHITA,09 SEP 1991,JPN,3,,"Todoroki Stadium, Kawasaki (JPN)",08 MAY 2016,1175.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14563847,toplist
+37.0,49.15,,Mamadou Kasse HANN,10 OCT 1986,FRA,3f1,,Genève (SUI),11 JUN 2016,1172.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14224816,toplist
+38.0,49.16,,Eric ALEJANDRO,15 APR 1986,PUR,1,,Road Town (IVB),03 JUL 2016,1172.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14231119,toplist
+39.0,49.17,,Jose Luis GASPAR,25 AUG 1995,CUB,1er2,,La Habana (CUB),11 JUN 2016,1171.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14589161,toplist
+40.0,49.21,,Andrés Byron SILVA,27 MAR 1986,URU,3h6,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1169.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14230875,toplist
+41.0,49.22,,Rhys WILLIAMS,27 FEB 1984,GBR,1f1,,Oordegem (BEL),29 MAY 2016,1169.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14191260,toplist
+41.0,49.22,,Kiprono KOSKEI,15 JAN 1988,KEN,2,,Eldoret (KEN),01 JUL 2016,1169.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14208760,toplist
+43.0,49.24,,Le Roux HAMMAN,06 JAN 1992,RSA,1,,Pretoria (RSA),11 JUN 2016,1168.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14409808,toplist
+44.0,49.26,,Jordin ANDRADE,05 MAY 1992,CPV,4,,Kingston (JAM),11 JUN 2016,1167.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14462333,toplist
+45.0,49.29,,Sebastian RODGER,29 JUN 1991,GBR,1,,Oordegem (BEL),11 JUL 2016,1165.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14376295,toplist
+46.0,49.31,,Kenneth SELMON,27 AUG 1996,USA,2sf1,,"Eugene, OR (USA)",08 JUN 2016,1164.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14497263,toplist
+46.0,49.31,,TJ HOLMES,02 JUL 1995,USA,2,,"Eugene, OR (USA)",10 JUN 2016,1164.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14536351,toplist
+46.0,49.31,,Isa PHILLIPS,22 APR 1984,JAM,1h2,,Kingston (JAM),30 JUN 2016,1164.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14202168,toplist
+49.0,49.32,,Quincy DOWNING,16 JAN 1993,USA,2,,"Atlanta, GA (USA)",04 JUN 2016,1164.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14375509,toplist
+49.0,49.32,,Romel LEWIS,28 JAN 1988,JAM,4,,Kingston (JAM),01 JUL 2016,1164.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14202095,toplist
+49.0,49.32,,Ivan SHABLYUYEV,17 APR 1988,RUS,2,,Moskva (RUS),18 JUL 2016,1164.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14223883,toplist
+52.0,49.33,,Aleksandr SKOROBOGATKO,07 AUG 1994,RUS,1,,Saransk (RUS),16 JUL 2016,1163.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14509540,toplist
+53.0,49.35,,Mario LAMBRUGHI,05 FEB 1992,ITA,1,,Lignano Sabbiadoro (ITA),13 JUL 2016,1162.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14420532,toplist
+54.0,49.36,,Omar CISNEROS,19 NOV 1989,CUB,1f1,,Salamanca (ESP),04 JUN 2016,1162.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14169633,toplist
+54.0,49.36,,Robert GRANT,31 JAN 1996,USA,1sf3,,"Eugene, OR (USA)",08 JUN 2016,1162.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14520517,toplist
+56.0,49.37,,Michael BULTHEEL,30 JUN 1986,BEL,5h5,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1161.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14177693,toplist
+57.0,49.39,,Dmitriy KOBLOV,30 NOV 1992,KAZ,1,,Bishkek (KGZ),19 JUN 2016,1160.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14375718,toplist
+58.0,49.41,,Amadou NDIAYE,06 DEC 1992,SEN,2,,Durban (RSA),24 JUN 2016,1159.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14375714,toplist
+59.0,49.43,,Juander SANTOS,07 MAY 1995,DOM,1f1,,Århus (DEN),25 JUN 2016,1158.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14637649,toplist
+59.0,49.43,,Denis KUDRYAVTSEV,13 APR 1992,RUS,3,,Moskva (RUS),18 JUL 2016,1158.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14442508,toplist
+61.0,49.44,,Yuta KONISHI,31 JUL 1990,JPN,2,,Osaka (JPN),24 SEP 2016,1158.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14334348,toplist
+62.0,49.45,,Taylor MCLAUGHLIN,03 AUG 1997,USA,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",23 JUL 2016,1157.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14530564,toplist
+63.0,49.48,,Tobias GIEHL,25 JUL 1991,GER,f2,,Mönchengladbach (GER),10 JUL 2016,1156.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14334044,toplist
+64.0,49.51,,Naoya NAKANO,03 JUL 1994,JPN,1h2,,Nagoya (JPN),24 JUN 2016,1154.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14547888,toplist
+65.0,49.56,,Kyron MCMASTER,03 JAN 1997,IVB,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",23 JUL 2016,1152.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14532760,toplist
+66.0,49.60,,Miles UKAOMA,21 JUL 1992,NGR,4,,Nassau (BAH),16 APR 2016,1150.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14416006,toplist
+67.0,49.62,,Mikael Antonio DE JESÚS,19 AUG 1997,BRA,2,,Rio de Janeiro (BRA),15 MAY 2016,1149.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14580667,toplist
+67.0,49.62,,Tom BURTON,29 JAN 1988,GBR,4f1,,Genève (SUI),11 JUN 2016,1149.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14370206,toplist
+69.0,49.64,,Shotaro TANABE,23 APR 1994,JPN,1,,Osaka (JPN),08 MAY 2016,1148.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14444464,toplist
+69.0,49.64,,Andre CLARKE,06 JUN 1992,JAM,1,,Kingston (JAM),12 JUN 2016,1148.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14421492,toplist
+71.0,49.65,,Mark UJAKPOR,18 JAN 1987,ESP,3,,Rio de Janeiro (BRA),15 MAY 2016,1147.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14164811,toplist
+71.0,49.65,,Jaak-Heinrich JAGOR,11 MAY 1990,EST,5sf2,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1147.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14372654,toplist
+71.0,49.65,,Miloud RAHMANI,30 OCT 1983,ALG,1f11,,Tarare (FRA),09 JUL 2016,1147.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14180648,toplist
+74.0,49.66,,Desmond PALMER,30 JUL 1995,USA,1,,"Tallahassee, FL (USA)",15 MAY 2016,1147.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14487109,toplist
+74.0,49.66,,Ricardo CUNNINGHAM,20 APR 1982,JAM,2,,Kingston (JAM),12 JUN 2016,1147.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14201929,toplist
+76.0,49.67,,Kotaro MIYAO,12 JUL 1991,JPN,2h2,,Nagoya (JPN),24 JUN 2016,1146.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14523584,toplist
+77.0,49.68,,Michael STIGLER,04 MAY 1992,USA,4,,"Atlanta, GA (USA)",04 JUN 2016,1146.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14442930,toplist
+78.0,49.69,,Kohei UENO,13 JUL 1994,JPN,1,,Kumagaya (JPN),04 SEP 2016,1145.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14707889,toplist
+79.0,49.72,,Patryk ADAMCZYK,05 JAN 1994,POL,1f1,,Jelenia Góra (POL),31 JUL 2016,1144.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14484978,toplist
+80.0,49.73,,Nikita ANDRIYANOV,07 FEB 1990,RUS,3,,Zhukovskiy (RUS),21 JUL 2016,1143.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14221657,toplist
+81.0,49.74,,William Mbevi MUTUNGA,12 JUL 1993,KEN,1,,Nairobi (KEN),29 APR 2016,1143.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14377818,toplist
+81.0,49.74,,Kurt Leone COUTO,14 MAY 1985,MOZ,6h5,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1143.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14213444,toplist
+83.0,49.75,,Cornel FREDERICKS,03 MAR 1990,RSA,2,,Stellenbosch (RSA),15 APR 2016,1142.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14220044,toplist
+84.0,49.76,,Josè BENCOSME DE LEON,16 MAY 1992,ITA,1,,Rieti (ITA),26 JUN 2016,1142.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14375713,toplist
+84.0,49.76,,Ian DEWHURST,13 NOV 1990,AUS,2,,Oordegem (BEL),11 JUL 2016,1142.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14179814,toplist
+86.0,49.77,,Amaechi MORTON,30 OCT 1989,NGR,6,,Nassau (BAH),16 APR 2016,1141.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14363482,toplist
+86.0,49.77,,Naoto NOGUCHI,07 MAY 1994,JPN,2,,Osaka (JPN),08 MAY 2016,1141.0,men_400h,2016,https://worldathletics.org/athletes/japan/naoto-noguchi-14562705,toplist
+88.0,49.78,,Viktor LEPTIKOV,02 JUL 1987,KAZ,2,,Bishkek (KGZ),19 JUN 2016,1141.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14207218,toplist
+89.0,49.79,,Jithin PAUL,13 MAR 1990,IND,2,,Šamorín (SVK),04 JUN 2016,1140.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14198181,toplist
+90.0,49.82,,LaRon BENNETT,25 NOV 1982,USA,5,,"Atlanta, GA (USA)",04 JUN 2016,1139.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14232432,toplist
+90.0,49.82,,Rai BENJAMIN,27 JUL 1997,ANT,6,,"Eugene, OR (USA)",10 JUN 2016,1139.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14574865,toplist
+92.0,49.85,,Marvin WILLIAMS,13 JUN 1996,JAM,3h2,,Kingston (JAM),30 JUN 2016,1137.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14520416,toplist
+93.0,49.86,,Michael COCHRANE,13 AUG 1991,NZL,1,,Canberra (AUS),20 FEB 2016,1137.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14385186,toplist
+93.0,49.86,,Alfredo SEPÚLVEDA,03 AUG 1993,CHI,6,,Rio de Janeiro (BRA),15 MAY 2016,1137.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14438212,toplist
+93.0,49.86,,Artur TEREZAN,08 MAY 1991,BRA,1h3,,Sao Bernardo do Campo (BRA),02 JUL 2016,1137.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14373214,toplist
+96.0,49.87,,Jussi KANERVO,01 FEB 1993,FIN,1qf1,,"Jacksonville, FL (USA)",27 MAY 2016,1136.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14375716,toplist
+96.0,49.87,,Cameron FRENCH,17 MAY 1992,NZL,1f1,,Bruxelles (BEL),19 JUN 2016,1136.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14385185,toplist
+96.0,49.87,,Curtis BEACH,22 JUL 1990,USA,3,,"Houston, TX (USA)",23 JUL 2016,1136.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14366510,toplist
+99.0,49.88,,Robert BRYLINSKI,02 APR 1991,POL,1f2,,Kraków (POL),12 JUN 2016,1136.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14377077,toplist
+100.0,49.89,,Takayuki KISHIMOTO,06 MAY 1990,JPN,3,,Osaka (JPN),24 SEP 2016,1135.0,men_400h,2016,https://worldathletics.org/athletes/athlete=14334340,toplist
+1.0,47.80,,Kyron MCMASTER,03 JAN 1997,IVB,1,,"National Stadium, Kingston (JAM)",20 MAY 2017,1242.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14532760,toplist
+2.0,48.02,,Kerron CLEMENT,31 OCT 1985,USA,1,,"Olympic Stadium, London (GBR)",09 JUL 2017,1230.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14234898,toplist
+3.0,48.13,,Quincy DOWNING,16 JAN 1993,USA,1,,Kingston (JAM),10 JUN 2017,1225.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14375509,toplist
+4.0,48.18,,Eric FUTCH,25 APR 1993,USA,1,,"Sacramento, CA (USA)",25 JUN 2017,1222.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14443727,toplist
+5.0,48.22,,Karsten WARHOLM,28 FEB 1996,NOR,2,,"Letzigrund, Zürich (SUI)",24 AUG 2017,1220.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14479487,toplist
+6.0,48.24,,Yasmani COPELLO,15 APR 1987,TUR,3,,"Olympic Stadium, London (GBR)",09 JUL 2017,1219.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14169627,toplist
+7.0,48.26,,Michael STIGLER,04 MAY 1992,USA,2,,"Sacramento, CA (USA)",25 JUN 2017,1218.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14442930,toplist
+8.0,48.31,,Abderrahman SAMBA,05 SEP 1995,QAT,1f3,,Sasolburg (RSA),28 MAR 2017,1215.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14752208,toplist
+9.0,48.33,,Rai BENJAMIN,27 JUL 1997,USA,2,,"Eugene, OR (USA)",09 JUN 2017,1214.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14574865,toplist
+10.0,48.40,,Mamadou Kasse HANN,10 OCT 1986,FRA,1f1,,Genève (SUI),10 JUN 2017,1211.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14224816,toplist
+11.0,48.44,,TJ HOLMES,02 JUL 1995,USA,3,,"Sacramento, CA (USA)",25 JUN 2017,1209.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14536351,toplist
+12.0,48.45,,Kariem HUSSEIN,04 JAN 1989,SUI,3,,"Letzigrund, Zürich (SUI)",24 AUG 2017,1208.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14376156,toplist
+13.0,48.49,,Kemar MOWATT,12 MAR 1995,JAM,3,,"Eugene, OR (USA)",09 JUN 2017,1206.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14581545,toplist
+14.0,48.50,,Byron ROBINSON,10 MAY 1995,USA,4,,"Sacramento, CA (USA)",25 JUN 2017,1206.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14491508,toplist
+15.0,48.52,,Jaheel HYDE,02 FEB 1997,JAM,2,,"National Stadium, Kingston (JAM)",20 MAY 2017,1205.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14520436,toplist
+16.0,48.59,,Juander SANTOS,07 MAY 1995,DOM,3sf1,,"Olympic Stadium, London (GBR)",07 AUG 2017,1201.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14637649,toplist
+17.0,48.60,,Kenneth SELMON,27 AUG 1996,USA,4,,"Eugene, OR (USA)",09 JUN 2017,1200.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14497263,toplist
+17.0,48.60,,Johnny DUTCH,20 JAN 1989,USA,5,,"Sacramento, CA (USA)",25 JUN 2017,1200.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14236956,toplist
+19.0,48.63,,Bershawn JACKSON,08 MAY 1983,USA,1,,"Shanghai Stadium, Shanghai (CHN)",13 MAY 2017,1199.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14241618,toplist
+20.0,48.76,,Javier CULSON,25 JUL 1984,PUR,4,,"National Stadium, Kingston (JAM)",20 MAY 2017,1192.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14218778,toplist
+21.0,48.77,,Jack GREEN,06 OCT 1991,GBR,6,,"Olympic Stadium, London (GBR)",09 JUL 2017,1192.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14371627,toplist
+22.0,48.83,,Ricardo CUNNINGHAM,20 APR 1982,JAM,3,,Kingston (JAM),23 JUN 2017,1189.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14201929,toplist
+23.0,48.94,,Marcio TELES,27 JAN 1994,BRA,1,,Sao Bernardo do Campo (BRA),11 JUN 2017,1183.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14543428,toplist
+23.0,48.94,,Takatoshi ABE,12 NOV 1991,JPN,1h2,,Osaka (JPN),23 JUN 2017,1183.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14334345,toplist
+23.0,48.94,,Rasmus MÄGI,04 MAY 1992,EST,3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",06 JUL 2017,1183.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14373195,toplist
+26.0,48.95,,Thomas BARR,24 JUL 1992,IRL,3,,"Bislett Stadion, Oslo (NOR)",15 JUN 2017,1183.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14440533,toplist
+27.0,49.00,,David KENDZIERA,09 SEP 1994,USA,4sf2,,"Eugene, OR (USA)",07 JUN 2017,1180.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14532163,toplist
+27.0,49.00,,Michael TINSLEY,21 APR 1984,USA,5sf2,,"Sacramento, CA (USA)",24 JUN 2017,1180.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14253267,toplist
+29.0,49.02,,Quincy HALL,31 JUL 1998,USA,1,,Trujillo (PER),23 JUL 2017,1179.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14597236,toplist
+30.0,49.03,,Yuta KONISHI,31 JUL 1990,JPN,1h1,,Osaka (JPN),23 JUN 2017,1179.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14334348,toplist
+31.0,49.05,,Abdelmalik LAHOULOU,07 MAY 1992,ALG,1,,Radés (TUN),18 JUL 2017,1178.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14375720,toplist
+31.0,49.05,,Chieh CHEN,08 MAY 1992,TPE,2,,"Taipei Municipal Stadium, Taipei City (TPE)",26 AUG 2017,1178.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14228710,toplist
+33.0,49.06,,Kei MAENO,10 MAY 1991,JPN,2h1,,Osaka (JPN),23 JUN 2017,1177.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14523585,toplist
+34.0,49.13,,Hederson ESTEFANI,11 SEP 1991,BRA,2,,Sao Bernardo do Campo (BRA),11 JUN 2017,1173.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14376244,toplist
+35.0,49.14,,Dany BRAND,23 FEB 1996,SUI,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",16 JUL 2017,1173.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14513352,toplist
+36.0,49.15,,Robert GRANT,31 JAN 1996,USA,3,,"Columbia, SC (USA)",13 MAY 2017,1172.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14520517,toplist
+36.0,49.15,,Patryk DOBEK,13 FEB 1994,POL,1h1,,Białystok (POL),21 JUL 2017,1172.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14389330,toplist
+38.0,49.17,,Desmond PALMER,30 JUL 1995,USA,2,,"Atlanta, GA (USA)",14 MAY 2017,1171.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14487109,toplist
+39.0,49.19,,Andre CLARKE,06 JUN 1992,JAM,4,,Kingston (JAM),23 JUN 2017,1170.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14421492,toplist
+40.0,49.22,,Josè BENCOSME DE LEON,16 MAY 1992,ITA,1,,Orvieto (ITA),21 JUL 2017,1169.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14375713,toplist
+41.0,49.24,,Omar CISNEROS,19 NOV 1989,CUB,1f2,,Castellón (ESP),04 JUL 2017,1168.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14169633,toplist
+42.0,49.27,,Cornel FREDERICKS,03 MAR 1990,RSA,1,,Pretoria (RSA),17 MAR 2017,1166.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14220044,toplist
+43.0,49.28,,Johannes PRETORIUS,26 JAN 1994,RSA,1,,Pretoria (RSA),03 JUN 2017,1166.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14467968,toplist
+44.0,49.29,,LJ VAN ZYL,20 JUL 1985,RSA,1,,Pretoria (RSA),12 APR 2017,1165.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14221443,toplist
+45.0,49.30,,Victor COROLLER,29 JAN 1997,FRA,2sf2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",15 JUL 2017,1165.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14569485,toplist
+46.0,49.31,,Ludvy VAILLANT,15 MAR 1995,FRA,3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",16 JUL 2017,1164.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14480831,toplist
+47.0,49.33,,Roxroy CATO,05 JAN 1988,JAM,5,,Kingston (JAM),23 JUN 2017,1163.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14333651,toplist
+47.0,49.33,,Ryo KAJIKI,08 DEC 1995,JPN,2h2,,Osaka (JPN),23 JUN 2017,1163.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14703201,toplist
+49.0,49.34,,Sergio FERNÁNDEZ,01 APR 1993,ESP,1f1,,Salamanca (ESP),03 JUN 2017,1163.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14474482,toplist
+50.0,49.35,,Le Roux HAMMAN,06 JAN 1992,RSA,1,,Potchefstroom (RSA),21 APR 2017,1162.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14409808,toplist
+50.0,49.35,,Jose Luis GASPAR,25 AUG 1995,CUB,1,,La Habana (CUB),10 JUN 2017,1162.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14589161,toplist
+50.0,49.35,,Durante' PONDER,22 SEP 1988,BAH,1h,,Nassau (BAH),23 JUN 2017,1162.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14367824,toplist
+50.0,49.35,,Yusuke ISHIDA,25 MAY 1995,JPN,1,,Sapporo (JPN),09 JUL 2017,1162.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14703200,toplist
+54.0,49.36,,Shawn ROWE,07 DEC 1992,JAM,2f2,,"Philadelphia, PA (USA)",28 APR 2017,1162.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14540137,toplist
+54.0,49.36,,Lorenzo VERGANI,04 SEP 1993,ITA,1,,Trieste (ITA),02 JUL 2017,1162.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14436566,toplist
+56.0,49.38,,Jaak-Heinrich JAGOR,11 MAY 1990,EST,1,,Tallinn (EST),23 JUL 2017,1161.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14372654,toplist
+57.0,49.39,,Aron Kipchumba KOECH,27 JAN 1990,KEN,1f1,,Padova (ITA),16 JUL 2017,1160.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14481105,toplist
+57.0,49.39,,Takayuki KISHIMOTO,06 MAY 1990,JPN,1,,Matsuyama (JPN),07 OCT 2017,1160.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14334340,toplist
+59.0,49.40,,CJ ALLEN,14 FEB 1995,USA,2sf1,,"Austin, TX (USA)",26 MAY 2017,1160.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14627624,toplist
+59.0,49.40,,Yuki MATSUSHITA,09 SEP 1991,JPN,1h4,,Osaka (JPN),23 JUN 2017,1160.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14563847,toplist
+59.0,49.40,,Luke CAMPBELL,22 NOV 1994,GER,1,,Erfurt (GER),09 JUL 2017,1160.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14484875,toplist
+62.0,49.41,,Mario LAMBRUGHI,05 FEB 1992,ITA,1,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1159.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14420532,toplist
+63.0,49.42,,Jeffery GIBSON,15 AUG 1990,BAH,1,,Nassau (BAH),23 JUN 2017,1159.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14178020,toplist
+64.0,49.43,,Yoshiro WATANABE,07 JAN 1997,JPN,3h1,,Osaka (JPN),23 JUN 2017,1158.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14671468,toplist
+65.0,49.48,,AJ BOULLY,01 SEP 1992,USA,1,,"Logan, UT (USA)",12 MAY 2017,1156.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14456508,toplist
+65.0,49.48,,Johannes Gerhardus MARITZ,20 DEC 1990,NAM,2f1,,Bruxelles (BEL),09 JUL 2017,1156.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14377815,toplist
+67.0,49.49,,Isa PHILLIPS,22 APR 1984,JAM,1,,"Baton Rouge, LA (USA)",22 APR 2017,1155.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14202168,toplist
+67.0,49.49,,Jacob PAUL,06 FEB 1995,GBR,8,,"Olympic Stadium, London (GBR)",09 JUL 2017,1155.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14461424,toplist
+69.0,49.52,,Jordin ANDRADE,05 MAY 1992,CPV,2f2,,Luzern (SUI),11 JUL 2017,1154.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14462333,toplist
+70.0,49.55,,Timofey CHALYY,07 APR 1994,ANA,1,,Zhukovskiy (RUS),29 JUL 2017,1152.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14479717,toplist
+71.0,49.56,,Miloud RAHMANI,30 OCT 1983,ALG,2,,Radés (TUN),18 JUL 2017,1152.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14180648,toplist
+72.0,49.57,,Eric CRAY,06 NOV 1988,PHI,1,,Bhubaneshwar (IND),08 JUL 2017,1151.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14326210,toplist
+73.0,49.58,,Sebastian RODGER,29 JUN 1991,GBR,4f1,,Genève (SUI),10 JUN 2017,1151.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14376295,toplist
+73.0,49.58,,Leandro ZAMORA,11 MAR 1996,CUB,2,,La Habana (CUB),10 JUN 2017,1151.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14578254,toplist
+75.0,49.64,,Kazuaki YOSHIDA,31 OCT 1987,JPN,2h4,,Osaka (JPN),23 JUN 2017,1148.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14329680,toplist
+76.0,49.66,,Zhiqiang FENG,14 APR 1998,CHN,1,,Tianjin (CHN),04 SEP 2017,1147.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14750667,toplist
+77.0,49.69,,Yang WANG,20 SEP 1996,CHN,1h3,,Zhengzhou (CHN),11 APR 2017,1145.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14585437,toplist
+77.0,49.69,,Eric ALEJANDRO,15 APR 1986,PUR,3f1,,Bruxelles (BEL),09 JUL 2017,1145.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14231119,toplist
+77.0,49.69,,Guillermo RUGGERI,26 MAR 1992,ARG,3h4,,"Olympic Stadium, London (GBR)",06 AUG 2017,1145.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14407544,toplist
+80.0,49.70,,Nicholas BETT,27 JAN 1990,KEN,4,,"Suhaim bin Hamad Stadium, Doha (QAT)",05 MAY 2017,1145.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14425830,toplist
+81.0,49.74,,Tibor KOROKNAI,24 JAN 1990,HUN,1f1,,"Hadar Yosef Stadium, Tel Aviv (ISR)",24 JUN 2017,1143.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14328966,toplist
+81.0,49.74,,Niall FLANNERY,26 APR 1991,GBR,1f1,,Loughborough (GBR),22 JUL 2017,1143.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14189246,toplist
+83.0,49.77,,Ian DEWHURST,13 NOV 1990,AUS,1,,Sydney (AUS),02 APR 2017,1141.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14179814,toplist
+83.0,49.77,,Junqi CAI,11 MAR 1996,CHN,1h2,,Zhengzhou (CHN),11 APR 2017,1141.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14647980,toplist
+85.0,49.79,,Oleg MIRONOV,05 MAR 1993,RUS,2f2,,Yerino (RUS),15 JUL 2017,1140.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14475443,toplist
+85.0,49.79,,Shuo SHANG,01 JUN 1995,CHN,2,,Tianjin (CHN),04 SEP 2017,1140.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14663869,toplist
+87.0,49.80,,Naoya NAKANO,03 JUL 1994,JPN,1h3,,Osaka (JPN),23 SEP 2017,1140.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14547888,toplist
+88.0,49.81,,William WYNNE,30 JAN 1990,USA,2f2,,"Greensboro, NC (USA)",03 JUN 2017,1139.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14255639,toplist
+89.0,49.82,,Mohamed SHAIB,01 JAN 1995,SUD,2f2,,Castellón (ESP),04 JUL 2017,1139.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14786410,toplist
+89.0,49.82,,Kotaro MIYAO,12 JUL 1991,JPN,5,,Sapporo (JPN),09 JUL 2017,1139.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14523584,toplist
+91.0,49.83,,Curtis BEACH,22 JUL 1990,USA,1f1,,"Claremont, CA (USA)",03 JUN 2017,1138.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14366510,toplist
+91.0,49.83,,Sheldon WILLIAMS,17 AUG 1990,JAM,2h2,,Kingston (JAM),22 JUN 2017,1138.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14335531,toplist
+91.0,49.83,,Pavel AGAFONOV,28 AUG 1995,RUS,2,,Zhukovskiy (RUS),29 JUL 2017,1138.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14434386,toplist
+91.0,49.83,,Aleksandr SKOROBOGATKO,07 AUG 1994,RUS,3,,Zhukovskiy (RUS),29 JUL 2017,1138.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14509540,toplist
+95.0,49.84,,Cameron FRENCH,17 MAY 1992,NZL,4f1,,Bruxelles (BEL),09 JUL 2017,1138.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14385185,toplist
+96.0,49.85,,Leford GREEN,14 NOV 1986,JAM,2f1,,"Montverde, FL (USA)",10 JUN 2017,1137.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14202029,toplist
+97.0,49.88,,Jeshua ANDERSON,22 JUN 1989,USA,5,,"Somerville, MA (USA)",02 JUN 2017,1136.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14231363,toplist
+97.0,49.88,,William Mbevi MUTUNGA,12 JUL 1993,KEN,1,,Nairobi (KEN),10 JUN 2017,1136.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14377818,toplist
+97.0,49.88,,Felix FRANZ,06 MAY 1993,GER,1f1,,Regensburg (GER),11 JUN 2017,1136.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14378452,toplist
+97.0,49.88,,Cory POOLE,29 JUL 1999,USA,2,,"Sacramento, CA (USA)",24 JUN 2017,1136.0,men_400h,2017,https://worldathletics.org/athletes/athlete=14648752,toplist
+,47.91,,Kerron CLEMENT,31 OCT 1985,USA,1.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,48.09,,Javier CULSON,25 JUL 1984,PUR,2.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,48.23,,Bershawn JACKSON,08 MAY 1983,USA,3.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,48.26,,Jehue GORDON,15 DEC 1991,TTO,4.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,48.42,,Periklis IAKOVAKIS,24 MAR 1979,GRE,5.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,48.65,,Danny MCFARLANE,14 FEB 1972,JAM,6.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,48.68,,David GREENE,11 APR 1986,GBR,7.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,50.11,,Félix SÁNCHEZ,30 AUG 1977,DOM,8.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,48.12,,David GREENE,11 APR 1986,GBR,1.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,48.96,,Rhys WILLIAMS,27 FEB 1984,GBR,2.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,49.09,,Stanislav MELNIKOV,26 FEB 1987,UKR,3.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,49.34,,Héni KECHI,31 AUG 1980,FRA,4.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,49.38,,Periklis IAKOVAKIS,24 MAR 1979,GRE,5.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,49.68,,Josef PROROK,16 NOV 1987,CZE,6.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,49.70,,Aleksandr DEREVYAGIN,24 MAR 1979,RUS,7.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,1:02.94,,Fadil BELLAABOUSS,15 JUN 1986,FRA,8.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,48.26,,David GREENE,11 APR 1986,GBR,1.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,48.44,,Javier CULSON,25 JUL 1984,PUR,2.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,48.80,,LJ VAN ZYL,20 JUL 1985,RSA,3.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,48.87,,Félix SÁNCHEZ,30 AUG 1977,DOM,4.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,49.12,,Cornel FREDERICKS,03 MAR 1990,RSA,5.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,49.24,,Bershawn JACKSON,08 MAY 1983,USA,6.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,49.31,,Angelo TAYLOR,29 DEC 1978,USA,7.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,49.32,,Aleksandr DEREVYAGIN,24 MAR 1979,RUS,8.,,IAAF World Championships,01 SEP 2011,,,2011,,major_meet
+,47.63,,Félix SÁNCHEZ,30 AUG 1977,DOM,1.,,The XXX Olympic Games,06 AUG 2012,,,2012,,major_meet
+,47.91,,Michael TINSLEY,21 APR 1984,USA,2.,,The XXX Olympic Games,06 AUG 2012,,,2012,,major_meet
+,48.10,,Javier CULSON,25 JUL 1984,PUR,3.,,The XXX Olympic Games,06 AUG 2012,,,2012,,major_meet
+,48.24,,David GREENE,11 APR 1986,GBR,4.,,The XXX Olympic Games,06 AUG 2012,,,2012,,major_meet
+,48.25,,Angelo TAYLOR,29 DEC 1978,USA,5.,,The XXX Olympic Games,06 AUG 2012,,,2012,,major_meet
+,48.86,,Jehue GORDON,15 DEC 1991,TTO,6.,,The XXX Olympic Games,06 AUG 2012,,,2012,,major_meet
+,49.12,,Leford GREEN,14 NOV 1986,JAM,7.,,The XXX Olympic Games,06 AUG 2012,,,2012,,major_meet
+,49.15,,Kerron CLEMENT,31 OCT 1985,USA,8.,,The XXX Olympic Games,06 AUG 2012,,,2012,,major_meet
+,49.33,,Rhys WILLIAMS,27 FEB 1984,GBR,1.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,49.49,,Emir BEKRIĆ,14 MAR 1991,SRB,2.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,49.69,,Stanislav MELNIKOV,26 FEB 1987,UKR,3.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,49.70,,Adrien CLEMENCEAU,25 MAY 1988,FRA,4.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,50.01,,Rasmus MÄGI,04 MAY 1992,EST,5.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,50.11,,Georg FLEISCHHAUER,21 OCT 1988,GER,6.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,50.20,,Nathan WOODWARD,17 OCT 1989,GBR,7.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,50.57,,Periklis IAKOVAKIS,24 MAR 1979,GRE,8.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,47.69,,Jehue GORDON,15 DEC 1991,TTO,1.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,47.70,,Michael TINSLEY,21 APR 1984,USA,2.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,48.05,,Emir BEKRIĆ,14 MAR 1991,SRB,3.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,48.12,,Omar CISNEROS,19 NOV 1989,CUB,4.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,48.22,,Félix SÁNCHEZ,30 AUG 1977,DOM,5.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,48.38,,Javier CULSON,25 JUL 1984,PUR,6.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,48.68,,Mamadou Kasse HANN,10 OCT 1986,SEN,7.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,49.08,,Kerron CLEMENT,31 OCT 1985,USA,8.,,IAAF World Championships,15 AUG 2013,,,2013,,major_meet
+,48.96,,Kariem HUSSEIN,04 JAN 1989,SUI,1.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,49.06,,Rasmus MÄGI,04 MAY 1992,EST,2.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,49.16,,Denis KUDRYAVTSEV,13 APR 1992,RUS,3.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,49.56,,Timofey CHALYY,07 APR 1994,RUS,4.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,49.83,,Felix FRANZ,06 MAY 1993,GER,5.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,49.90,,Emir BEKRIĆ,14 MAR 1991,SRB,6.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,49.91,,Varg KÖNIGSMARK,28 APR 1992,GER,7.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,50.14,,Oskari MÖRÖ,31 JAN 1993,FIN,8.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,47.79,,Nicholas BETT,27 JAN 1990,KEN,1.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,48.05,,Denis KUDRYAVTSEV,13 APR 1992,RUS,2.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,48.17,,Jeffery GIBSON,15 AUG 1990,BAH,3.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,48.18,,Kerron CLEMENT,31 OCT 1985,USA,4.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,48.33,,Bonface MUCHERU,02 MAY 1992,KEN,5.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,48.96,,Yasmani COPELLO,15 APR 1987,TUR,6.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,49.14,,Patryk DOBEK,13 FEB 1994,POL,7.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,50.02,,Michael TINSLEY,21 APR 1984,USA,8.,,IAAF World Championships,25 AUG 2015,,,2015,,major_meet
+,47.73,,Kerron CLEMENT,31 OCT 1985,USA,1.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,47.78,,Bonface MUCHERU,02 MAY 1992,KEN,2.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,47.92,,Yasmani COPELLO,15 APR 1987,TUR,3.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,47.97,,Thomas BARR,24 JUL 1992,IRL,4.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,48.07,,Annsert WHYTE,04 OCT 1987,JAM,5.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,48.40,,Rasmus MÄGI,04 MAY 1992,EST,6.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,49.09,,Aron Kipchumba KOECH,27 JAN 1990,KEN,7.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,DQ,,Javier CULSON,25 JUL 1984,PUR,,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,48.98,,Yasmani COPELLO,15 APR 1987,TUR,1.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,49.06,,Sergio FERNÁNDEZ,01 APR 1993,ESP,2.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,49.10,,Kariem HUSSEIN,04 JAN 1989,SUI,3.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,49.24,,Oskari MÖRÖ,31 JAN 1993,FIN,4.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,49.63,,Rhys WILLIAMS,27 FEB 1984,GBR,5.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,49.82,,Karsten WARHOLM,28 FEB 1996,NOR,6.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,49.82,,Martin KUČERA,10 MAY 1990,SVK,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,DNF,,Jack GREEN,06 OCT 1991,GBR,,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,48.35,,Karsten WARHOLM,28 FEB 1996,NOR,1.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,48.49,,Yasmani COPELLO,15 APR 1987,TUR,2.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,48.52,,Kerron CLEMENT,31 OCT 1985,USA,3.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,48.99,,Kemar MOWATT,12 MAR 1995,JAM,4.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,49.00,,TJ HOLMES,02 JUL 1995,USA,5.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,49.04,,Juander SANTOS,07 MAY 1995,DOM,6.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,49.74,,Abderrahman SAMBA,05 SEP 1995,QAT,7.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,50.07,,Kariem HUSSEIN,04 JAN 1989,SUI,8.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
 ,47.64,,Karsten WARHOLM,28 FEB 1996,NOR,1.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
 ,47.81,,Yasmani COPELLO,15 APR 1987,TUR,2.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
 ,48.31,,Thomas BARR,24 JUL 1992,IRL,3.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
@@ -1191,6 +2271,8 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,50.19,,Nicholas Kiprotich CHIRCHIR,21 NOV 1998,KEN,1.,,Kip Keino Classic,18 SEP 2021,,,2021,,major_meet
 ,50.44,,Wiseman Were MUKHOBE,13 OCT 1997,KEN,2.,,Kip Keino Classic,18 SEP 2021,,,2021,,major_meet
 ,51.74,,Kipkorir ROTICH,05 MAY 1998,KEN,4.,,Kip Keino Classic,18 SEP 2021,,,2021,,major_meet
+,53.39,,William Mbevi MUTUNGA,12 JUL 1993,KEN,5.,,Kip Keino Classic,18 SEP 2021,,,2021,,major_meet
+,DQ,,Vincent Kiplangat KOSKEI,11 NOV 1985,KEN, - ,,Kip Keino Classic,18 SEP 2021,,,2021,,major_meet
 ,48.50,,Alison DOS SANTOS,03 JUN 2000,BRA,1.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
 ,48.80,,Yasmani COPELLO,15 APR 1987,TUR,2.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
 ,48.89,,Jaheel HYDE,02 FEB 1997,JAM,3.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
@@ -1213,6 +2295,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,50.58,,Chris MCALISTER,03 DEC 1995,GBR,4.,,Paavo Nurmi Games,07 JUN 2021,,,2021,,major_meet
 ,50.72,,Sokwakhana ZAZINI,23 JAN 2000,RSA,5.,,Paavo Nurmi Games,07 JUN 2021,,,2021,,major_meet
 ,52.75,,Tuomas LEHTONEN,04 AUG 1998,FIN,6.,,Paavo Nurmi Games,07 JUN 2021,,,2021,,major_meet
+,53.20,,Nicolai Trock HARTLING,17 JAN 1994,DEN,7.,,Paavo Nurmi Games,07 JUN 2021,,,2021,,major_meet
 ,1:08.26,,Oskari MÖRÖ,31 JAN 1993,FIN,8.,,Paavo Nurmi Games,07 JUN 2021,,,2021,,major_meet
 ,48.56,,Abderrahman SAMBA,05 SEP 1995,QAT,1.,,FBK Games,06 JUN 2021,,,2021,,major_meet
 ,48.88,,Yasmani COPELLO,15 APR 1987,TUR,2.,,FBK Games,06 JUN 2021,,,2021,,major_meet

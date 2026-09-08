@@ -13,7 +13,7 @@
   "trackFieldSize": 16,
   "fieldFieldSize": 8,
   "sessions": 3,
-  "fieldPublished": false,
+  "fieldPublished": true,
   "resultsAvailable": false,
   "dlFinalQualifiers": [
     {
@@ -180,7 +180,7 @@
   "namedQualifiers": [
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "MONDO DUPLANTIS",
       "disciplineLabel": "POLE VAULT",
       "nationality": "SWE",
@@ -191,29 +191,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "TARA DAVIS-WOODHALL",
-      "disciplineLabel": "LONG JUMP",
-      "nationality": "USA",
-      "profileUrl": "https://worldathletics.org/athletes/united-states/tara-davis-woodhall-14596561",
-      "waId": 14596561,
-      "discKey": "women_LJ",
-      "linkName": "Tara DAVIS-WOODHALL"
-    },
-    {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "GRANT HOLLOWAY",
-      "disciplineLabel": "110M HURDLES",
-      "nationality": "USA",
-      "profileUrl": "https://worldathletics.org/athletes/united-states/grant-holloway-14516985",
-      "waId": 14516985,
-      "discKey": null,
-      "linkName": null
-    },
-    {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "YAROSLAVA MAHUCHIKH",
       "disciplineLabel": "HIGH JUMP",
       "nationality": "UKR",
@@ -224,7 +202,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "JAKOB INGEBRIGTSEN",
       "disciplineLabel": "5000M",
       "nationality": "NOR",
@@ -235,7 +213,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "MASAI RUSSELL",
       "disciplineLabel": "100M HURDLES",
       "nationality": "USA",
@@ -246,7 +224,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "ETHAN KATZBERG",
       "disciplineLabel": "HAMMER THROW",
       "nationality": "CAN",
@@ -257,7 +235,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "JULIEN ALFRED",
       "disciplineLabel": "100M",
       "nationality": "LCA",
@@ -268,7 +246,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "MILTIADIS TENTOGLOU",
       "disciplineLabel": "LONG JUMP",
       "nationality": "GRE",
@@ -279,7 +257,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "KEELY HODGKINSON",
       "disciplineLabel": "800M",
       "nationality": "GBR",
@@ -290,7 +268,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "RAI BENJAMIN",
       "disciplineLabel": "400M HURDLES",
       "nationality": "USA",
@@ -301,40 +279,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "NINA KENNEDY",
-      "disciplineLabel": "POLE VAULT",
-      "nationality": "AUS",
-      "profileUrl": "https://worldathletics.org/athletes/australia/nina-kennedy-14407592",
-      "waId": 14407592,
-      "discKey": "women_PV",
-      "linkName": "Nina KENNEDY"
-    },
-    {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "NOAH LYLES",
-      "disciplineLabel": "100M",
-      "nationality": "USA",
-      "profileUrl": "https://worldathletics.org/athletes/united-states/noah-lyles-14536762",
-      "waId": 14536762,
-      "discKey": "men_100m",
-      "linkName": "Noah LYLES"
-    },
-    {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "FAITH KIPYEGON",
-      "disciplineLabel": "1500M",
-      "nationality": "KEN",
-      "profileUrl": "https://worldathletics.org/athletes/kenya/faith-kipyegon-14413305",
-      "waId": 14413305,
-      "discKey": "women_1500m",
-      "linkName": "Faith KIPYEGON"
-    },
-    {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "HARUKA KITAGUCHI",
       "disciplineLabel": "JAVELIN THROW",
       "nationality": "JPN",
@@ -345,7 +290,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "THEA LAFOND",
       "disciplineLabel": "TRIPLE JUMP",
       "nationality": "DMA",
@@ -356,18 +301,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "HAMISH KERR",
-      "disciplineLabel": "HIGH JUMP",
-      "nationality": "NZL",
-      "profileUrl": "https://worldathletics.org/athletes/new-zealand/hamish-kerr-14633982",
-      "waId": 14633982,
-      "discKey": "men_HJ",
-      "linkName": "Hamish KERR"
-    },
-    {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "LETSILE TEBOGO",
       "disciplineLabel": "200M",
       "nationality": "BOT",
@@ -378,7 +312,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "MARILEIDY PAULINO",
       "disciplineLabel": "400M",
       "nationality": "DOM",
@@ -389,7 +323,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "COLE HOCKER",
       "disciplineLabel": "1500M",
       "nationality": "USA",
@@ -400,7 +334,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "GABRIELLE THOMAS",
       "disciplineLabel": "200M",
       "nationality": "USA",
@@ -411,7 +345,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "EMMANUEL WANYONYI",
       "disciplineLabel": "800M",
       "nationality": "KEN",
@@ -422,18 +356,7 @@
     },
     {
       "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "BEATRICE CHEBET",
-      "disciplineLabel": "5000M",
-      "nationality": "KEN",
-      "profileUrl": "https://worldathletics.org/athletes/kenya/beatrice-chebet-14749924",
-      "waId": 14749924,
-      "discKey": null,
-      "linkName": null
-    },
-    {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
+      "routeNote": "Entered for Budapest – qualified by winning in Paris",
       "name": "ARSHAD NADEEM",
       "disciplineLabel": "JAVELIN THROW",
       "nationality": "PAK",
@@ -443,85 +366,8 @@
       "linkName": "Arshad NADEEM"
     },
     {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "QUINCY HALL",
-      "disciplineLabel": "400M",
-      "nationality": "USA",
-      "profileUrl": "https://worldathletics.org/athletes/united-states/quincy-hall-14597236",
-      "waId": 14597236,
-      "discKey": null,
-      "linkName": null
-    },
-    {
-      "route": "olympic",
-      "routeNote": "Qualified by winning in Paris",
-      "name": "SYDNEY MCLAUGHLIN-LEVRONE",
-      "disciplineLabel": "400M HURDLES",
-      "nationality": "USA",
-      "profileUrl": "https://worldathletics.org/athletes/united-states/sydney-mclaughlin-levrone-14624749",
-      "waId": 14624749,
-      "discKey": null,
-      "linkName": null
-    },
-    {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "LILIAN ODIRA",
-      "disciplineLabel": "800M",
-      "nationality": "KEN",
-      "profileUrl": "https://worldathletics.org/athletes/kenya/lilian-odira-14758184",
-      "waId": 14758184,
-      "discKey": "women_800m",
-      "linkName": "Lilian ODIRA"
-    },
-    {
-      "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "MATTIA FURLANI",
-      "disciplineLabel": "LONG JUMP",
-      "nationality": "ITA",
-      "profileUrl": "https://worldathletics.org/athletes/italy/mattia-furlani-14905216",
-      "waId": 14905216,
-      "discKey": "men_LJ",
-      "linkName": "Mattia FURLANI"
-    },
-    {
-      "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "DITAJI KAMBUNDJI",
-      "disciplineLabel": "100M HURDLES",
-      "nationality": "SUI",
-      "profileUrl": "https://worldathletics.org/athletes/switzerland/ditaji-kambundji-14739461",
-      "waId": 14739461,
-      "discKey": "women_100h",
-      "linkName": "Ditaji KAMBUNDJI"
-    },
-    {
-      "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "NOAH LYLES",
-      "disciplineLabel": "200M",
-      "nationality": "USA",
-      "profileUrl": "https://worldathletics.org/athletes/united-states/noah-lyles-14536762",
-      "waId": 14536762,
-      "discKey": "men_200m",
-      "linkName": "Noah LYLES"
-    },
-    {
-      "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "COLLEN KEBINATSHIPI",
-      "disciplineLabel": "400M",
-      "nationality": "BOT",
-      "profileUrl": "https://worldathletics.org/athletes/botswana/busang-collen-kebinatshipi-14935809",
-      "waId": 14935809,
-      "discKey": "men_400m",
-      "linkName": "Busang Collen KEBINATSHIPI"
-    },
-    {
-      "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
       "name": "NICOLA OLYSLAGERS",
       "disciplineLabel": "HIGH JUMP",
       "nationality": "AUS",
@@ -532,18 +378,18 @@
     },
     {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "OBLIQUE SEVILLE",
-      "disciplineLabel": "100M",
-      "nationality": "JAM",
-      "profileUrl": "https://worldathletics.org/athletes/jamaica/oblique-seville-14737998",
-      "waId": 14737998,
-      "discKey": "men_100m",
-      "linkName": "Oblique SEVILLE"
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
+      "name": "COLLEN KEBINATSHIPI",
+      "disciplineLabel": "400M",
+      "nationality": "BOT",
+      "profileUrl": "https://worldathletics.org/athletes/botswana/busang-collen-kebinatshipi-14935809",
+      "waId": 14935809,
+      "discKey": "men_400m",
+      "linkName": "Busang Collen KEBINATSHIPI"
     },
     {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
       "name": "MELISSA JEFFERSON-WOODEN",
       "disciplineLabel": "100M & 200M",
       "nationality": "USA",
@@ -554,7 +400,18 @@
     },
     {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
+      "name": "OBLIQUE SEVILLE",
+      "disciplineLabel": "100M",
+      "nationality": "JAM",
+      "profileUrl": "https://worldathletics.org/athletes/jamaica/oblique-seville-14737998",
+      "waId": 14737998,
+      "discKey": "men_100m",
+      "linkName": "Oblique SEVILLE"
+    },
+    {
+      "route": "world",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
       "name": "COLE HOCKER",
       "disciplineLabel": "5000M",
       "nationality": "USA",
@@ -565,7 +422,7 @@
     },
     {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
       "name": "KATIE MOON",
       "disciplineLabel": "POLE VAULT",
       "nationality": "USA",
@@ -576,7 +433,7 @@
     },
     {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
       "name": "ISAAC NADER",
       "disciplineLabel": "1500M",
       "nationality": "POR",
@@ -587,18 +444,7 @@
     },
     {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "FEMKE BOL",
-      "disciplineLabel": "400M HURDLES",
-      "nationality": "NED",
-      "profileUrl": "https://worldathletics.org/athletes/netherlands/femke-bol-14707010",
-      "waId": 14707010,
-      "discKey": null,
-      "linkName": null
-    },
-    {
-      "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
       "name": "CORDELL TINCH",
       "disciplineLabel": "110M HURDLES",
       "nationality": "USA",
@@ -609,7 +455,7 @@
     },
     {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
       "name": "LEYANIS PEREZ HERNANDEZ",
       "disciplineLabel": "TRIPLE JUMP",
       "nationality": "CUB",
@@ -620,7 +466,7 @@
     },
     {
       "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
+      "routeNote": "Entered for Budapest – qualified by winning in Tokyo",
       "name": "KESHORN WALCOTT",
       "disciplineLabel": "JAVELIN THROW",
       "nationality": "TTO",
@@ -628,28 +474,6 @@
       "waId": 14376122,
       "discKey": "men_JT",
       "linkName": "Keshorn WALCOTT"
-    },
-    {
-      "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "JULEISY ANGULO",
-      "disciplineLabel": "JAVELIN THROW",
-      "nationality": "ECU",
-      "profileUrl": "https://worldathletics.org/athletes/ecuador/juleisy-angulo-14718123",
-      "waId": 14718123,
-      "discKey": null,
-      "linkName": null
-    },
-    {
-      "route": "world",
-      "routeNote": "Qualified by winning in Tokyo",
-      "name": "SYDNEY MCLAUGHLIN-LEVRONE",
-      "disciplineLabel": "400M",
-      "nationality": "USA",
-      "profileUrl": "https://worldathletics.org/athletes/united-states/sydney-mclaughlin-levrone-14624749",
-      "waId": 14624749,
-      "discKey": null,
-      "linkName": null
     }
   ],
   "relays": [
@@ -2433,7 +2257,7 @@
     {
       "phaseName": "Final",
       "sexName": "Men",
-      "phaseDateAndTime": "2026-09-13T20:10:00.000Z",
+      "phaseDateAndTime": "2026-09-13T20:12:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": false,
       "isResultPublished": false,
@@ -2471,5 +2295,3011 @@
     }
   ],
   "startlists": [],
+  "qualifiedField": [
+    {
+      "disciplineLabel": "Women's 100 Metres",
+      "discKey": "women_100m",
+      "sex": "W",
+      "eventId": "10229509",
+      "places": 17,
+      "athletes": [
+        {
+          "name": "Melissa JEFFERSON-WOODEN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Julien ALFRED",
+          "nat": "LCA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Boglárka TAKÁCS",
+          "nat": "HUN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 3,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Tina CLAYTON",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1355,
+          "waId": null
+        },
+        {
+          "name": "Sha'Carri RICHARDSON",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1342,
+          "waId": null
+        },
+        {
+          "name": "Amy HUNT",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1304,
+          "waId": null
+        },
+        {
+          "name": "Jonielle SMITH",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1300,
+          "waId": null
+        },
+        {
+          "name": "Brianna LYSTON",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1297,
+          "waId": null
+        },
+        {
+          "name": "Zaynab DOSSO",
+          "nat": "ITA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1293,
+          "waId": null
+        },
+        {
+          "name": "Zoe HOBBS",
+          "nat": "NZL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1289,
+          "waId": null
+        },
+        {
+          "name": "Patrizia VAN DER WEKEN",
+          "nat": "LUX",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1285,
+          "waId": null
+        },
+        {
+          "name": "Lavanya WILLIAMS",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1273,
+          "waId": null
+        },
+        {
+          "name": "Tamari DAVIS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1262,
+          "waId": null
+        },
+        {
+          "name": "Audrey LEDUC",
+          "nat": "CAN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1259,
+          "waId": null
+        },
+        {
+          "name": "Jodean WILLIAMS",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1253,
+          "waId": null
+        },
+        {
+          "name": "Sade MCCREATH",
+          "nat": "CAN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 16,
+          "rankingScore": 1253,
+          "waId": null
+        },
+        {
+          "name": "Shawnti JACKSON",
+          "nat": "USA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 17,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's 200 Metres",
+      "discKey": "women_200m",
+      "sex": "W",
+      "eventId": "10229510",
+      "places": 17,
+      "athletes": [
+        {
+          "name": "Melissa JEFFERSON-WOODEN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Gabrielle THOMAS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Boglárka TAKÁCS",
+          "nat": "HUN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 3,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Amy HUNT",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1348,
+          "waId": null
+        },
+        {
+          "name": "Anavia BATTLE",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1332,
+          "waId": null
+        },
+        {
+          "name": "Kayla WHITE",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1332,
+          "waId": null
+        },
+        {
+          "name": "Shaunae MILLER-UIBO",
+          "nat": "BAH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1323,
+          "waId": null
+        },
+        {
+          "name": "Cambrea STURGIS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1306,
+          "waId": null
+        },
+        {
+          "name": "Fabienne HOENKE",
+          "nat": "SUI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1258,
+          "waId": null
+        },
+        {
+          "name": "Ashanti MOORE",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1252,
+          "waId": null
+        },
+        {
+          "name": "Torrie LEWIS",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1248,
+          "waId": null
+        },
+        {
+          "name": "Jaël BESTUÉ",
+          "nat": "ESP",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1245,
+          "waId": null
+        },
+        {
+          "name": "Jenna PRANDINI",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1241,
+          "waId": null
+        },
+        {
+          "name": "Success EDUAN",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1235,
+          "waId": null
+        },
+        {
+          "name": "Gabrielle MATTHEWS",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1231,
+          "waId": null
+        },
+        {
+          "name": "Rhasidat ADELEKE",
+          "nat": "IRL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 16,
+          "rankingScore": 1228,
+          "waId": null
+        },
+        {
+          "name": "Gémima JOSEPH",
+          "nat": "FRA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 17,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's 400 Metres",
+      "discKey": "women_400m",
+      "sex": "W",
+      "eventId": "10229511",
+      "places": 16,
+      "athletes": [
+        {
+          "name": "Marileidy PAULINO",
+          "nat": "DOM",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Henriette JÆGER",
+          "nat": "NOR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1363,
+          "waId": null
+        },
+        {
+          "name": "Natalia BUKOWIECKA",
+          "nat": "POL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1342,
+          "waId": null
+        },
+        {
+          "name": "Nickisha PRYCE",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1340,
+          "waId": null
+        },
+        {
+          "name": "Salwa Eid NASER",
+          "nat": "BRN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1338,
+          "waId": null
+        },
+        {
+          "name": "Lurdes Gloria MANUEL",
+          "nat": "CZE",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1338,
+          "waId": null
+        },
+        {
+          "name": "Aaliyah BUTLER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1324,
+          "waId": null
+        },
+        {
+          "name": "Roxana GÓMEZ",
+          "nat": "CUB",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1319,
+          "waId": null
+        },
+        {
+          "name": "Stacey Ann WILLIAMS",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1317,
+          "waId": null
+        },
+        {
+          "name": "Lieke KLAVER",
+          "nat": "NED",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1306,
+          "waId": null
+        },
+        {
+          "name": "Yemi Mary JOHN",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1277,
+          "waId": null
+        },
+        {
+          "name": "Ella ONOJUVWEVWO",
+          "nat": "NGR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1270,
+          "waId": null
+        },
+        {
+          "name": "Sharlene MAWDSLEY",
+          "nat": "IRL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1266,
+          "waId": null
+        },
+        {
+          "name": "Martina WEIL",
+          "nat": "CHI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1264,
+          "waId": null
+        },
+        {
+          "name": "Mercy Adongo OKETCH",
+          "nat": "KEN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1252,
+          "waId": null
+        },
+        {
+          "name": "Wadeline VENLOGH",
+          "nat": "HAI",
+          "qualifiedBy": "Pending DL Final",
+          "position": 16,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's 800 Metres",
+      "discKey": "women_800m",
+      "sex": "W",
+      "eventId": "10229512",
+      "places": 16,
+      "athletes": [
+        {
+          "name": "Lilian ODIRA",
+          "nat": "KEN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Keely HODGKINSON",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Audrey WERRO",
+          "nat": "SUI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1405,
+          "waId": null
+        },
+        {
+          "name": "Femke BROEDERS-BOL",
+          "nat": "NED",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1358,
+          "waId": null
+        },
+        {
+          "name": "Tsige DUGUMA",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1311,
+          "waId": null
+        },
+        {
+          "name": "Addison WILEY",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1299,
+          "waId": null
+        },
+        {
+          "name": "Prudence SEKGODISO",
+          "nat": "RSA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1289,
+          "waId": null
+        },
+        {
+          "name": "Oratile NOWE",
+          "nat": "BOT",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1283,
+          "waId": null
+        },
+        {
+          "name": "Nigist GETACHEW",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1279,
+          "waId": null
+        },
+        {
+          "name": "Roisin WILLIS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1278,
+          "waId": null
+        },
+        {
+          "name": "Shafiqua MALONEY",
+          "nat": "VIN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1273,
+          "waId": null
+        },
+        {
+          "name": "Sarah BILLINGS",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1264,
+          "waId": null
+        },
+        {
+          "name": "Rénelle LAMOTE",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1258,
+          "waId": null
+        },
+        {
+          "name": "Raevyn ROGERS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1252,
+          "waId": null
+        },
+        {
+          "name": "Eloisa COIRO",
+          "nat": "ITA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1251,
+          "waId": null
+        },
+        {
+          "name": "Halimah NAKAAYI",
+          "nat": "UGA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 16,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's 1500 Metres",
+      "discKey": "women_1500m",
+      "sex": "W",
+      "eventId": "10229513",
+      "places": 12,
+      "athletes": [
+        {
+          "name": "Jessica HULL",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 1,
+          "rankingScore": 1368,
+          "waId": null
+        },
+        {
+          "name": "Dorcus EWOI",
+          "nat": "KEN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1358,
+          "waId": null
+        },
+        {
+          "name": "Georgia HUNTER BELL",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1344,
+          "waId": null
+        },
+        {
+          "name": "Birke HAYLOM",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1340,
+          "waId": null
+        },
+        {
+          "name": "Nikki HILTZ",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1332,
+          "waId": null
+        },
+        {
+          "name": "Klaudia KAZIMIERSKA",
+          "nat": "POL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1331,
+          "waId": null
+        },
+        {
+          "name": "Freweyni HAILU",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1328,
+          "waId": null
+        },
+        {
+          "name": "Agathe GUILLEMOT",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1323,
+          "waId": null
+        },
+        {
+          "name": "Abbey CALDWELL",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1316,
+          "waId": null
+        },
+        {
+          "name": "Emily MACKAY",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1309,
+          "waId": null
+        },
+        {
+          "name": "Saron BERHE",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1282,
+          "waId": null
+        },
+        {
+          "name": "Haregeweyni KALAYU",
+          "nat": "ETH",
+          "qualifiedBy": "Pending DL Final",
+          "position": 12,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's 5000 Metres",
+      "discKey": "women_5000m",
+      "sex": "W",
+      "eventId": "10229514",
+      "places": 12,
+      "athletes": [
+        {
+          "name": "Likina AMEBAW",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 1,
+          "rankingScore": 1325,
+          "waId": null
+        },
+        {
+          "name": "Freweyni HAILU",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1313,
+          "waId": null
+        },
+        {
+          "name": "Senayet GETACHEW",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1305,
+          "waId": null
+        },
+        {
+          "name": "Aleshign BAWEKE",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1302,
+          "waId": null
+        },
+        {
+          "name": "Medina EISA",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1292,
+          "waId": null
+        },
+        {
+          "name": "Rose DAVIES",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1280,
+          "waId": null
+        },
+        {
+          "name": "Fantaye BELAYNEH",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1274,
+          "waId": null
+        },
+        {
+          "name": "Shelby HOULIHAN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1272,
+          "waId": null
+        },
+        {
+          "name": "Hannah NUTTALL",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1270,
+          "waId": null
+        },
+        {
+          "name": "Jessica HULL",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1261,
+          "waId": null
+        },
+        {
+          "name": "Maureen KOSTER",
+          "nat": "NED",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1261,
+          "waId": null
+        },
+        {
+          "name": "Marta GARCÍA",
+          "nat": "ESP",
+          "qualifiedBy": "Pending DL Final",
+          "position": 12,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's 100 Metres Hurdles",
+      "discKey": "women_100h",
+      "sex": "W",
+      "eventId": "10229522",
+      "places": 17,
+      "athletes": [
+        {
+          "name": "Masai RUSSELL",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Luca KOZÁK",
+          "nat": "HUN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Tobi AMUSAN",
+          "nat": "NGR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1394,
+          "waId": null
+        },
+        {
+          "name": "Devynne CHARLTON",
+          "nat": "BAH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1366,
+          "waId": null
+        },
+        {
+          "name": "Nadine VISSER",
+          "nat": "NED",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1345,
+          "waId": null
+        },
+        {
+          "name": "Alaysha JOHNSON",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1335,
+          "waId": null
+        },
+        {
+          "name": "Pia SKRZYSZOWSKA",
+          "nat": "POL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1334,
+          "waId": null
+        },
+        {
+          "name": "Danielle WILLIAMS",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1319,
+          "waId": null
+        },
+        {
+          "name": "Megan SIMMONDS",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1310,
+          "waId": null
+        },
+        {
+          "name": "Rayniah JONES",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1308,
+          "waId": null
+        },
+        {
+          "name": "Demisha ROSWELL",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1295,
+          "waId": null
+        },
+        {
+          "name": "Alia ARMSTRONG",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1295,
+          "waId": null
+        },
+        {
+          "name": "Ackera NUGENT",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1284,
+          "waId": null
+        },
+        {
+          "name": "Kendra HARRISON",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1280,
+          "waId": null
+        },
+        {
+          "name": "Marione FOURIE",
+          "nat": "RSA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1275,
+          "waId": null
+        },
+        {
+          "name": "Laeticia BAPTÉ",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 16,
+          "rankingScore": 1264,
+          "waId": null
+        },
+        {
+          "name": "Amber HUGHES",
+          "nat": "USA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 17,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's 400 Metres Hurdles",
+      "discKey": "women_400h",
+      "sex": "W",
+      "eventId": "10229523",
+      "places": 17,
+      "athletes": [
+        {
+          "name": "Sára MÁTÓ",
+          "nat": "HUN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Emma ZAPLETALOVÁ",
+          "nat": "SVK",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1402,
+          "waId": null
+        },
+        {
+          "name": "Anna COCKRELL",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1378,
+          "waId": null
+        },
+        {
+          "name": "Jasmine JONES",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1353,
+          "waId": null
+        },
+        {
+          "name": "Rushell CLAYTON",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1339,
+          "waId": null
+        },
+        {
+          "name": "Gianna WOODRUFF",
+          "nat": "PAN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1333,
+          "waId": null
+        },
+        {
+          "name": "Dalilah MUHAMMAD",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1326,
+          "waId": null
+        },
+        {
+          "name": "Kemi ADEKOYA",
+          "nat": "BRN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1295,
+          "waId": null
+        },
+        {
+          "name": "Amalie IUEL",
+          "nat": "NOR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1286,
+          "waId": null
+        },
+        {
+          "name": "Fatoumata Binta DIALLO",
+          "nat": "POR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1285,
+          "waId": null
+        },
+        {
+          "name": "Paulien COUCKUYT",
+          "nat": "BEL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1283,
+          "waId": null
+        },
+        {
+          "name": "Emily NEWNHAM",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1280,
+          "waId": null
+        },
+        {
+          "name": "Ayomide FOLORUNSO",
+          "nat": "ITA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1260,
+          "waId": null
+        },
+        {
+          "name": "Sanique WALKER",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1259,
+          "waId": null
+        },
+        {
+          "name": "Ashley MILLER",
+          "nat": "ZIM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1259,
+          "waId": null
+        },
+        {
+          "name": "Shiann SALMON",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 16,
+          "rankingScore": 1251,
+          "waId": null
+        },
+        {
+          "name": "Lina NIELSEN",
+          "nat": "GBR",
+          "qualifiedBy": "Pending DL Final",
+          "position": 17,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's High Jump",
+      "discKey": "women_HJ",
+      "sex": "W",
+      "eventId": "10229526",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Nicola OLYSLAGERS",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Yaroslava MAHUCHIKH",
+          "nat": "UKR",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Yuliia LEVCHENKO",
+          "nat": "UKR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1319,
+          "waId": null
+        },
+        {
+          "name": "Eleanor PATTERSON",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1318,
+          "waId": null
+        },
+        {
+          "name": "Angelina TOPIĆ",
+          "nat": "SRB",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1313,
+          "waId": null
+        },
+        {
+          "name": "Maria ŻODZIK",
+          "nat": "POL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1312,
+          "waId": null
+        },
+        {
+          "name": "Iryna GERASHCHENKO",
+          "nat": "UKR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1281,
+          "waId": null
+        },
+        {
+          "name": "Marija VUKOVIĆ",
+          "nat": "MNE",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's Pole Vault",
+      "discKey": "women_PV",
+      "sex": "W",
+      "eventId": "10229527",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Katie MOON",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Angelica MOSER",
+          "nat": "SUI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1332,
+          "waId": null
+        },
+        {
+          "name": "Sandi MORRIS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1330,
+          "waId": null
+        },
+        {
+          "name": "Tina ŠUTEJ",
+          "nat": "SLO",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1316,
+          "waId": null
+        },
+        {
+          "name": "Hana MOLL",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1313,
+          "waId": null
+        },
+        {
+          "name": "Imogen AYRIS",
+          "nat": "NZL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1291,
+          "waId": null
+        },
+        {
+          "name": "Eliza MCCARTNEY",
+          "nat": "NZL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1277,
+          "waId": null
+        },
+        {
+          "name": "Molly CAUDERY",
+          "nat": "GBR",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's Long Jump",
+      "discKey": "women_LJ",
+      "sex": "W",
+      "eventId": "10229528",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Tara DAVIS-WOODHALL",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Larissa IAPICHINO",
+          "nat": "ITA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1315,
+          "waId": null
+        },
+        {
+          "name": "Agate DE SOUSA",
+          "nat": "POR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1314,
+          "waId": null
+        },
+        {
+          "name": "Monae' NICHOLS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1311,
+          "waId": null
+        },
+        {
+          "name": "Alyssa JONES",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1305,
+          "waId": null
+        },
+        {
+          "name": "Hilary KPATCHA",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1302,
+          "waId": null
+        },
+        {
+          "name": "Claire BRYANT",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1273,
+          "waId": null
+        },
+        {
+          "name": "Jazmin SAWYERS",
+          "nat": "GBR",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's Triple Jump",
+      "discKey": "women_TJ",
+      "sex": "W",
+      "eventId": "10229529",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Leyanis PÉREZ HERNÁNDEZ",
+          "nat": "CUB",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Thea LAFOND",
+          "nat": "DMA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Saly SARR",
+          "nat": "SEN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1334,
+          "waId": null
+        },
+        {
+          "name": "Davisleydi VELAZCO",
+          "nat": "CUB",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1316,
+          "waId": null
+        },
+        {
+          "name": "Liadagmis POVEA",
+          "nat": "CUB",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1283,
+          "waId": null
+        },
+        {
+          "name": "Dariya DERKACH",
+          "nat": "ITA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1247,
+          "waId": null
+        },
+        {
+          "name": "Ackelia SMITH",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1233,
+          "waId": null
+        },
+        {
+          "name": "Gabriele SANTOS",
+          "nat": "BRA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Women's Javelin Throw",
+      "discKey": "women_JT",
+      "sex": "W",
+      "eventId": "10229533",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Juleisy ANGULO",
+          "nat": "ECU",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Haruka KITAGUCHI",
+          "nat": "JPN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Ziyi YAN",
+          "nat": "CHN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1356,
+          "waId": null
+        },
+        {
+          "name": "Adriana VILAGOŠ",
+          "nat": "SRB",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1256,
+          "waId": null
+        },
+        {
+          "name": "Flor Denis RUIZ HURTADO",
+          "nat": "COL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1246,
+          "waId": null
+        },
+        {
+          "name": "Mackenzie LITTLE",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1240,
+          "waId": null
+        },
+        {
+          "name": "Anete SIETIŅA",
+          "nat": "LAT",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1211,
+          "waId": null
+        },
+        {
+          "name": "Tori MOORBY",
+          "nat": "NZL",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's 100 Metres",
+      "discKey": "men_100m",
+      "sex": "M",
+      "eventId": "10229630",
+      "places": 16,
+      "athletes": [
+        {
+          "name": "Oblique SEVILLE",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Noah LYLES",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Kenneth BEDNAREK",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1373,
+          "waId": null
+        },
+        {
+          "name": "Kayinsola AJAYI",
+          "nat": "NGR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1365,
+          "waId": null
+        },
+        {
+          "name": "Gift LEOTLELA",
+          "nat": "RSA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1342,
+          "waId": null
+        },
+        {
+          "name": "Trayvon BROMELL",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1337,
+          "waId": null
+        },
+        {
+          "name": "Emmanuel ESEME",
+          "nat": "CMR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1332,
+          "waId": null
+        },
+        {
+          "name": "Akani SIMBINE",
+          "nat": "RSA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1313,
+          "waId": null
+        },
+        {
+          "name": "Christian COLEMAN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1306,
+          "waId": null
+        },
+        {
+          "name": "Romell GLAVE",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1301,
+          "waId": null
+        },
+        {
+          "name": "Ronal LONGA",
+          "nat": "COL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1300,
+          "waId": null
+        },
+        {
+          "name": "Lamont Marcell JACOBS",
+          "nat": "ITA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1297,
+          "waId": null
+        },
+        {
+          "name": "Lachlan KENNEDY",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1297,
+          "waId": null
+        },
+        {
+          "name": "Letsile TEBOGO",
+          "nat": "BOT",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1291,
+          "waId": null
+        },
+        {
+          "name": "Ronnie BAKER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1289,
+          "waId": null
+        },
+        {
+          "name": "Ackeem BLAKE",
+          "nat": "JAM",
+          "qualifiedBy": "Pending DL Final",
+          "position": 16,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's 200 Metres",
+      "discKey": "men_200m",
+      "sex": "M",
+      "eventId": "10229605",
+      "places": 16,
+      "athletes": [
+        {
+          "name": "Noah LYLES",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Letsile TEBOGO",
+          "nat": "BOT",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Kenneth BEDNAREK",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1413,
+          "waId": null
+        },
+        {
+          "name": "Sinesipho DAMBILE",
+          "nat": "RSA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1359,
+          "waId": null
+        },
+        {
+          "name": "Bryan LEVELL",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1338,
+          "waId": null
+        },
+        {
+          "name": "Makanakaishe CHARAMBA",
+          "nat": "ZIM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1326,
+          "waId": null
+        },
+        {
+          "name": "Alexander OGANDO",
+          "nat": "DOM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1307,
+          "waId": null
+        },
+        {
+          "name": "Andre DE GRASSE",
+          "nat": "CAN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1305,
+          "waId": null
+        },
+        {
+          "name": "José FIGUEROA",
+          "nat": "PUR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1292,
+          "waId": null
+        },
+        {
+          "name": "Yassine HSSINE",
+          "nat": "MAR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1287,
+          "waId": null
+        },
+        {
+          "name": "Aaron BROWN",
+          "nat": "CAN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1276,
+          "waId": null
+        },
+        {
+          "name": "Courtney LINDSEY",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1269,
+          "waId": null
+        },
+        {
+          "name": "Udodi Chudi ONWUZURIKE",
+          "nat": "NGR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1258,
+          "waId": null
+        },
+        {
+          "name": "Christopher TAYLOR",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1258,
+          "waId": null
+        },
+        {
+          "name": "Timothé MUMENTHALER",
+          "nat": "SUI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1245,
+          "waId": null
+        },
+        {
+          "name": "Aidan MURPHY",
+          "nat": "AUS",
+          "qualifiedBy": "Pending DL Final",
+          "position": 16,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's 400 Metres",
+      "discKey": "men_400m",
+      "sex": "M",
+      "eventId": "10229631",
+      "places": 17,
+      "athletes": [
+        {
+          "name": "Busang Collen KEBINATSHIPI",
+          "nat": "BOT",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Patrik Simon ENYINGI",
+          "nat": "HUN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Zakithi NENE",
+          "nat": "RSA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1358,
+          "waId": null
+        },
+        {
+          "name": "Jacory PATTERSON",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1357,
+          "waId": null
+        },
+        {
+          "name": "Rai BENJAMIN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1356,
+          "waId": null
+        },
+        {
+          "name": "Jereem RICHARDS",
+          "nat": "TTO",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1355,
+          "waId": null
+        },
+        {
+          "name": "Matthew HUDSON-SMITH",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1349,
+          "waId": null
+        },
+        {
+          "name": "Khaleb MCRAE",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1330,
+          "waId": null
+        },
+        {
+          "name": "Muzala SAMUKONGA",
+          "nat": "ZAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1326,
+          "waId": null
+        },
+        {
+          "name": "Bayapo NDORI",
+          "nat": "BOT",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1325,
+          "waId": null
+        },
+        {
+          "name": "Chris BAILEY",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1322,
+          "waId": null
+        },
+        {
+          "name": "Lee EPPIE",
+          "nat": "BOT",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1309,
+          "waId": null
+        },
+        {
+          "name": "Attila MOLNÁR",
+          "nat": "HUN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1307,
+          "waId": null
+        },
+        {
+          "name": "Christopher MORALES WILLIAMS",
+          "nat": "CAN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1302,
+          "waId": null
+        },
+        {
+          "name": "Jonas PHIJFFERS",
+          "nat": "NED",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1288,
+          "waId": null
+        },
+        {
+          "name": "Yuki Joseph NAKAJIMA",
+          "nat": "JPN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 16,
+          "rankingScore": 1286,
+          "waId": null
+        },
+        {
+          "name": "Muhammad Abdallah KOUNTA",
+          "nat": "FRA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 17,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's 800 Metres",
+      "discKey": "men_800m",
+      "sex": "M",
+      "eventId": "10229501",
+      "places": 16,
+      "athletes": [
+        {
+          "name": "Emmanuel WANYONYI",
+          "nat": "KEN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Djamel SEDJATI",
+          "nat": "ALG",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1382,
+          "waId": null
+        },
+        {
+          "name": "Marco AROP",
+          "nat": "CAN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1382,
+          "waId": null
+        },
+        {
+          "name": "Mohamed ATTAOUI",
+          "nat": "ESP",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1348,
+          "waId": null
+        },
+        {
+          "name": "Brandon MILLER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1344,
+          "waId": null
+        },
+        {
+          "name": "Max BURGIN",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1337,
+          "waId": null
+        },
+        {
+          "name": "Mark ENGLISH",
+          "nat": "IRL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1328,
+          "waId": null
+        },
+        {
+          "name": "Eliott CRESTAN",
+          "nat": "BEL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1319,
+          "waId": null
+        },
+        {
+          "name": "Navasky ANDERSON",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1317,
+          "waId": null
+        },
+        {
+          "name": "Slimane MOULA",
+          "nat": "ALG",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1305,
+          "waId": null
+        },
+        {
+          "name": "Ben PATTISON",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1304,
+          "waId": null
+        },
+        {
+          "name": "Gabriel TUAL",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1299,
+          "waId": null
+        },
+        {
+          "name": "Handal ROBAN",
+          "nat": "VIN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1283,
+          "waId": null
+        },
+        {
+          "name": "Marino BLOUDEK",
+          "nat": "CRO",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1279,
+          "waId": null
+        },
+        {
+          "name": "Donavan BRAZIER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1275,
+          "waId": null
+        },
+        {
+          "name": "Francesco PERNICI",
+          "nat": "ITA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 16,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's 1500 Metres",
+      "discKey": "men_1500m",
+      "sex": "M",
+      "eventId": "10229502",
+      "places": 13,
+      "athletes": [
+        {
+          "name": "Isaac NADER",
+          "nat": "POR",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Cole HOCKER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Josh KERR",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 3,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Jakob INGEBRIGTSEN",
+          "nat": "NOR",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 4,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Cameron MYERS",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1372,
+          "waId": null
+        },
+        {
+          "name": "Yared NUGUSE",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1367,
+          "waId": null
+        },
+        {
+          "name": "Timothy CHERUIYOT",
+          "nat": "KEN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1337,
+          "waId": null
+        },
+        {
+          "name": "Azeddine HABZ",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1326,
+          "waId": null
+        },
+        {
+          "name": "Jake WIGHTMAN",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1317,
+          "waId": null
+        },
+        {
+          "name": "Hobbs KESSLER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1316,
+          "waId": null
+        },
+        {
+          "name": "Ethan STRAND",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1309,
+          "waId": null
+        },
+        {
+          "name": "Robert FARKEN",
+          "nat": "GER",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1306,
+          "waId": null
+        },
+        {
+          "name": "Vincent CIATTEI",
+          "nat": "USA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 13,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's 5000 Metres",
+      "discKey": "men_5000m",
+      "sex": "M",
+      "eventId": "10229609",
+      "places": 12,
+      "athletes": [
+        {
+          "name": "Cole HOCKER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Jakob INGEBRIGTSEN",
+          "nat": "NOR",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Addisu YIHUNE",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1338,
+          "waId": null
+        },
+        {
+          "name": "Parker WOLFE",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1336,
+          "waId": null
+        },
+        {
+          "name": "Graham BLANKS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1329,
+          "waId": null
+        },
+        {
+          "name": "Grant FISHER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1326,
+          "waId": null
+        },
+        {
+          "name": "Ky ROBINSON",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1323,
+          "waId": null
+        },
+        {
+          "name": "Biniam MEHARY",
+          "nat": "ETH",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1323,
+          "waId": null
+        },
+        {
+          "name": "Nico YOUNG",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1311,
+          "waId": null
+        },
+        {
+          "name": "Jacob KROP",
+          "nat": "KEN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1310,
+          "waId": null
+        },
+        {
+          "name": "Egide NTAKARUTIMANA",
+          "nat": "BDI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1299,
+          "waId": null
+        },
+        {
+          "name": "Cornelius KEMBOI",
+          "nat": "KEN",
+          "qualifiedBy": "Pending DL Final",
+          "position": 12,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's 110 Metres Hurdles",
+      "discKey": "men_110h",
+      "sex": "M",
+      "eventId": "10229611",
+      "places": 16,
+      "athletes": [
+        {
+          "name": "Cordell TINCH",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Ja'Kobe THARP",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1407,
+          "waId": null
+        },
+        {
+          "name": "Jamal BRITT",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1394,
+          "waId": null
+        },
+        {
+          "name": "Trey CUNNINGHAM",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1358,
+          "waId": null
+        },
+        {
+          "name": "Orlando BENNETT",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1348,
+          "waId": null
+        },
+        {
+          "name": "Rachid MURATAKE",
+          "nat": "JPN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1345,
+          "waId": null
+        },
+        {
+          "name": "Enrique LLOPIS",
+          "nat": "ESP",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1338,
+          "waId": null
+        },
+        {
+          "name": "Demario PRINCE",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1326,
+          "waId": null
+        },
+        {
+          "name": "Jason JOSEPH",
+          "nat": "SUI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1325,
+          "waId": null
+        },
+        {
+          "name": "Just KWAOU-MATHEY",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1314,
+          "waId": null
+        },
+        {
+          "name": "Shunsuke IZUMIYA",
+          "nat": "JPN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1311,
+          "waId": null
+        },
+        {
+          "name": "Jakub SZYMAŃSKI",
+          "nat": "POL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1307,
+          "waId": null
+        },
+        {
+          "name": "Jamar MARSHALL",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1300,
+          "waId": null
+        },
+        {
+          "name": "Tyler MASON",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1294,
+          "waId": null
+        },
+        {
+          "name": "Bradley FRANKLIN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1285,
+          "waId": null
+        },
+        {
+          "name": "Tatsuki ABE",
+          "nat": "JPN",
+          "qualifiedBy": "Pending DL Final",
+          "position": 16,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's 400 Metres Hurdles",
+      "discKey": "men_400h",
+      "sex": "M",
+      "eventId": "10229612",
+      "places": 16,
+      "athletes": [
+        {
+          "name": "Rai BENJAMIN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Alison DOS SANTOS",
+          "nat": "BRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1487,
+          "waId": null
+        },
+        {
+          "name": "Karsten WARHOLM",
+          "nat": "NOR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1429,
+          "waId": null
+        },
+        {
+          "name": "Ezekiel NATHANIEL",
+          "nat": "NGR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1379,
+          "waId": null
+        },
+        {
+          "name": "Abderrahman SAMBA",
+          "nat": "QAT",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1372,
+          "waId": null
+        },
+        {
+          "name": "Emil AGYEKUM",
+          "nat": "GER",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1361,
+          "waId": null
+        },
+        {
+          "name": "Matheus LIMA",
+          "nat": "BRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1356,
+          "waId": null
+        },
+        {
+          "name": "Caleb DEAN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1346,
+          "waId": null
+        },
+        {
+          "name": "Trevor BASSITT",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 9,
+          "rankingScore": 1321,
+          "waId": null
+        },
+        {
+          "name": "Matic Ian GUČEK",
+          "nat": "SLO",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 10,
+          "rankingScore": 1303,
+          "waId": null
+        },
+        {
+          "name": "İsmail NEZIR",
+          "nat": "TUR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 11,
+          "rankingScore": 1302,
+          "waId": null
+        },
+        {
+          "name": "Yeral NUÑEZ",
+          "nat": "DOM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 12,
+          "rankingScore": 1298,
+          "waId": null
+        },
+        {
+          "name": "Bassem HEMEIDA",
+          "nat": "QAT",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 13,
+          "rankingScore": 1294,
+          "waId": null
+        },
+        {
+          "name": "Oskar EDLUND",
+          "nat": "SWE",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 14,
+          "rankingScore": 1285,
+          "waId": null
+        },
+        {
+          "name": "Kemorena TISANG",
+          "nat": "BOT",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 15,
+          "rankingScore": 1284,
+          "waId": null
+        },
+        {
+          "name": "Owe FISCHER-BREIHOLZ",
+          "nat": "GER",
+          "qualifiedBy": "Pending DL Final",
+          "position": 16,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's High Jump",
+      "discKey": "men_HJ",
+      "sex": "M",
+      "eventId": "10229615",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Gianmarco TAMBERI",
+          "nat": "ITA",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Oleh DOROSHCHUK",
+          "nat": "UKR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1310,
+          "waId": null
+        },
+        {
+          "name": "Jan ŠTEFELA",
+          "nat": "CZE",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1274,
+          "waId": null
+        },
+        {
+          "name": "JuVaughn HARRISON",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1264,
+          "waId": null
+        },
+        {
+          "name": "Tyus WILSON",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1255,
+          "waId": null
+        },
+        {
+          "name": "Erick PORTILLO",
+          "nat": "MEX",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1242,
+          "waId": null
+        },
+        {
+          "name": "Romaine BECKFORD",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1240,
+          "waId": null
+        },
+        {
+          "name": "Mateusz KOŁODZIEJSKI",
+          "nat": "POL",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's Pole Vault",
+      "discKey": "men_PV",
+      "sex": "M",
+      "eventId": "10229616",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Armand DUPLANTIS",
+          "nat": "SWE",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Emmanouil KARALIS",
+          "nat": "GRE",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1431,
+          "waId": null
+        },
+        {
+          "name": "Kurtis MARSCHALL",
+          "nat": "AUS",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1387,
+          "waId": null
+        },
+        {
+          "name": "Sondre GUTTORMSEN",
+          "nat": "NOR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1374,
+          "waId": null
+        },
+        {
+          "name": "Sam KENDRICKS",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1349,
+          "waId": null
+        },
+        {
+          "name": "Christopher NILSEN",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1339,
+          "waId": null
+        },
+        {
+          "name": "Baptiste THIERY",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1331,
+          "waId": null
+        },
+        {
+          "name": "Zachery BRADFORD",
+          "nat": "USA",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's Long Jump",
+      "discKey": "men_LJ",
+      "sex": "M",
+      "eventId": "10229617",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Miltiadis TENTOGLOU",
+          "nat": "GRE",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Tajay GAYLE",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1336,
+          "waId": null
+        },
+        {
+          "name": "Bozhidar SARÂBOYUKOV",
+          "nat": "BUL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1332,
+          "waId": null
+        },
+        {
+          "name": "Simon EHAMMER",
+          "nat": "SUI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1309,
+          "waId": null
+        },
+        {
+          "name": "Jorge A. HODELÍN",
+          "nat": "CUB",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1297,
+          "waId": null
+        },
+        {
+          "name": "Gerson BALDÉ",
+          "nat": "POR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1284,
+          "waId": null
+        },
+        {
+          "name": "Wayne PINNOCK",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1262,
+          "waId": null
+        },
+        {
+          "name": "Mingkun ZHANG",
+          "nat": "CHN",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's Hammer Throw",
+      "discKey": null,
+      "sex": "M",
+      "eventId": "10229621",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Ethan KATZBERG",
+          "nat": "CAN",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Bence HALÁSZ",
+          "nat": "HUN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 2,
+          "rankingScore": 1357,
+          "waId": null
+        },
+        {
+          "name": "Merlin HUMMEL",
+          "nat": "GER",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1352,
+          "waId": null
+        },
+        {
+          "name": "Mykhaylo KOKHAN",
+          "nat": "UKR",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1352,
+          "waId": null
+        },
+        {
+          "name": "Rudy WINKLER",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1309,
+          "waId": null
+        },
+        {
+          "name": "Yann CHAUSSINAND",
+          "nat": "FRA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1307,
+          "waId": null
+        },
+        {
+          "name": "Paweł FAJDEK",
+          "nat": "POL",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1295,
+          "waId": null
+        },
+        {
+          "name": "Volodymyr MYSLYVČUK",
+          "nat": "CZE",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 8,
+          "rankingScore": 1260,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Men's Javelin Throw",
+      "discKey": "men_JT",
+      "sex": "M",
+      "eventId": "10229636",
+      "places": 8,
+      "athletes": [
+        {
+          "name": "Keshorn WALCOTT",
+          "nat": "TTO",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Arshad NADEEM",
+          "nat": "PAK",
+          "qualifiedBy": "Qualified by Wild Card",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Rumesh Tharanga PATHIRAGE",
+          "nat": "SRI",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 3,
+          "rankingScore": 1379,
+          "waId": null
+        },
+        {
+          "name": "Anderson PETERS",
+          "nat": "GRN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 4,
+          "rankingScore": 1340,
+          "waId": null
+        },
+        {
+          "name": "Julian WEBER",
+          "nat": "GER",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 5,
+          "rankingScore": 1316,
+          "waId": null
+        },
+        {
+          "name": "Curtis THOMPSON",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 6,
+          "rankingScore": 1315,
+          "waId": null
+        },
+        {
+          "name": "Julius YEGO",
+          "nat": "KEN",
+          "qualifiedBy": "Qualified by World Rankings",
+          "position": 7,
+          "rankingScore": 1248,
+          "waId": null
+        },
+        {
+          "name": "Sachin YADAV",
+          "nat": "IND",
+          "qualifiedBy": "Pending DL Final",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Mixed 4x100 Metres Relay",
+      "discKey": null,
+      "sex": "X",
+      "eventId": "10230439",
+      "places": 9,
+      "athletes": [
+        {
+          "name": "Hungary",
+          "nat": "HUN",
+          "qualifiedBy": "Allocated to Host Country",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Jamaica",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Canada",
+          "nat": "CAN",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 3,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "United States",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 4,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Germany",
+          "nat": "GER",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 5,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Spain",
+          "nat": "ESP",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 6,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Nigeria",
+          "nat": "NGR",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 7,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Great Britain & N.I.",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by Top List",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Netherlands",
+          "nat": "NED",
+          "qualifiedBy": "Qualified by Top List",
+          "position": 9,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    },
+    {
+      "disciplineLabel": "Mixed 4x400 Metres Relay",
+      "discKey": null,
+      "sex": "X",
+      "eventId": "10229988",
+      "places": 9,
+      "athletes": [
+        {
+          "name": "Hungary",
+          "nat": "HUN",
+          "qualifiedBy": "Allocated to Host Country",
+          "position": 1,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "United States",
+          "nat": "USA",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 2,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Jamaica",
+          "nat": "JAM",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 3,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Great Britain & N.I.",
+          "nat": "GBR",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 4,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Kenya",
+          "nat": "KEN",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 5,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Italy",
+          "nat": "ITA",
+          "qualifiedBy": "Qualified by Designated Competition",
+          "position": 6,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Norway",
+          "nat": "NOR",
+          "qualifiedBy": "Qualified by Top List",
+          "position": 7,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Netherlands",
+          "nat": "NED",
+          "qualifiedBy": "Qualified by Top List",
+          "position": 8,
+          "rankingScore": null,
+          "waId": null
+        },
+        {
+          "name": "Belgium",
+          "nat": "BEL",
+          "qualifiedBy": "Qualified by Top List",
+          "position": 9,
+          "rankingScore": null,
+          "waId": null
+        }
+      ]
+    }
+  ],
   "results": []
 }

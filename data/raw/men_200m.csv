@@ -1159,12 +1159,1094 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,20.58,,Joseph FAHNBULLEH,11 SEP 2001,LBR,6.,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
 ,20.66,,Kyree KING,09 JUL 1994,USA,7.,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
 ,21.40,,Kobe VLEMINCKX,31 MAY 1998,BEL,8.,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
-,20.19,,Alonso EDWARD,08 DEC 1989,PAN,1.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,20.28,,Ramil GULIYEV,29 MAY 1990,TUR,2.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,20.36,,Alex QUIÑÓNEZ,11 AUG 1989,ECU,3.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,20.57,,Yuki KOIKE,15 MAY 1995,JPN,4.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,20.68,,Churandy MARTINA,03 JUL 1984,NED,5.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,20.78,,Ncincilili TITI,15 DEC 1993,RSA,6.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
+1.0,19.30,-0.9,Usain BOLT,21 AUG 1986,JAM,1,,"National Stadium, Beijing (CHN)",20 AUG 2008,1338.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14201847,toplist
+2.0,19.86,1.7,Walter DIX,31 JAN 1986,USA,1,,"Eugene, OR (USA)",06 JUL 2008,1242.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14236532,toplist
+2.0,19.86,1.7,Shawn CRAWFORD,14 JAN 1978,USA,2,,"Eugene, OR (USA)",06 JUL 2008,1242.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14235549,toplist
+4.0,19.90,1.7,Wallace SPEARMON,24 DEC 1984,USA,3,,"Eugene, OR (USA)",06 JUL 2008,1236.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14251926,toplist
+5.0,19.99,1.7,Rodney MARTIN,22 DEC 1982,USA,4,,"Eugene, OR (USA)",06 JUL 2008,1222.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14245030,toplist
+6.0,20.00,1.2,Tyson GAY,09 AUG 1982,USA,1,,"National Stadium, Kingston (JAM)",03 MAY 2008,1220.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14238588,toplist
+7.0,20.08,0.8,LaShawn MERRITT,27 JUN 1986,USA,1,,Doha (QAT),09 MAY 2008,1207.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14245966,toplist
+8.0,20.11,0.1,Churandy MARTINA,03 JUL 1984,AHO,1sf1,,"National Stadium, Beijing (CHN)",19 AUG 2008,1203.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14180965,toplist
+9.0,20.12,1.6,Brendan CHRISTIAN,11 DEC 1983,ANT,1f1,,Fort-de-France (FRA),08 MAY 2008,1201.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14180554,toplist
+10.0,20.17,0.3,Brian DZINGAI,29 APR 1981,ZIM,2,,Ostrava (CZE),12 JUN 2008,1193.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14256476,toplist
+10.0,20.17,1.7,Marvin ANDERSON,12 MAY 1982,JAM,2,,Kingston (JAM),29 JUN 2008,1193.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14201797,toplist
+12.0,20.18,1.9,Richard THOMPSON,07 JUN 1985,TTO,1h5,,"Fayetteville, AR (USA)",30 MAY 2008,1192.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14229106,toplist
+13.0,20.20,1.7,Chris WILLIAMS,15 MAR 1972,JAM,3,,Kingston (JAM),29 JUN 2008,1189.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14202319,toplist
+14.0,20.22,1.6,Charles CLARK,10 AUG 1987,USA,2,,"Tallahassee, FL (USA)",31 MAY 2008,1186.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14234803,toplist
+15.0,20.24,1.8,Chris BERRIAN,17 APR 1983,USA,1f1,,"Walnut, CA (USA)",15 JUN 2008,1182.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14232525,toplist
+16.0,20.25,1.1,Xavier CARTER,08 DEC 1985,USA,1,,"Athens, GA (USA)",12 APR 2008,1181.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14234403,toplist
+16.0,20.25,1.6,Evander WELLS,07 DEC 1987,USA,2,,"Fayetteville, AR (USA)",31 MAY 2008,1181.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14254558,toplist
+16.0,20.25,0.1,Christian MALCOLM,03 JUN 1979,GBR,4sf1,,"National Stadium, Beijing (CHN)",19 AUG 2008,1181.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14189990,toplist
+16.0,20.25,0.1,Kim COLLINS,05 APR 1976,SKN,4sf2,,"National Stadium, Beijing (CHN)",19 AUG 2008,1181.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14224942,toplist
+20.0,20.29,0.7,Gerald PHIRI,06 OCT 1988,GBR,1,,"Boulder, CO (USA)",18 MAY 2008,1175.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14190464,toplist
+21.0,20.31,1.6,Christopher LLOYD,10 OCT 1980,DMA,1f1,,"Houston, TX (USA)",03 MAY 2008,1172.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14167743,toplist
+21.0,20.31,1.7,Nesta CARTER,11 OCT 1985,JAM,4,,Kingston (JAM),29 JUN 2008,1172.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14201894,toplist
+23.0,20.32,0.0,Sandro VIANA,26 MAR 1977,BRA,1f1,,São Paulo (BRA),22 MAY 2008,1170.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14175281,toplist
+23.0,20.32,1.6,Travis PADGETT,13 DEC 1986,USA,3,,"Tallahassee, FL (USA)",31 MAY 2008,1170.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14247846,toplist
+23.0,20.32,1.6,J-Mee SAMUELS,20 MAY 1987,USA,3,,"Fayetteville, AR (USA)",31 MAY 2008,1170.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14250385,toplist
+23.0,20.32,0.3,Paul HESSION,27 JAN 1983,IRL,1qf4,,"National Stadium, Beijing (CHN)",18 AUG 2008,1170.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14198909,toplist
+27.0,20.34,0.4,Jared CONNAUGHTON,20 JUL 1985,CAN,1f2,,Windsor (CAN),06 JUL 2008,1167.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14174434,toplist
+28.0,20.36,,Rubin WILLIAMS,09 JUL 1983,USA,1f2,,"Fayetteville, AR (USA) (i)",14 MAR 2008,1232.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14255105,toplist
+28.0,20.36,1.7,Carlos MOORE,08 MAY 1984,USA,1,,"Provo, UT (USA)",24 MAY 2008,1164.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14246436,toplist
+30.0,20.37,1.3,Jeremy WARINER,31 JAN 1984,USA,f2,,"Arlington, TX (USA)",29 MAR 2008,1162.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14254258,toplist
+30.0,20.37,1.2,Jordan BOASE,10 OCT 1985,USA,1,,"Pullman, WA (USA)",03 MAY 2008,1162.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14232832,toplist
+30.0,20.37,0.7,Jeremy DODSON,30 AUG 1987,USA,2,,"Boulder, CO (USA)",18 MAY 2008,1162.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14236598,toplist
+30.0,20.37,0.2,Stéphan BUCKLAND,12 JAN 1977,MRI,5qf2,,"National Stadium, Beijing (CHN)",18 AUG 2008,1162.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14213462,toplist
+34.0,20.39,0.7,Trey HARTS,17 OCT 1987,USA,3,,"Boulder, CO (USA)",18 MAY 2008,1159.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14240150,toplist
+34.0,20.39,0.9,Chris DYKES,15 AUG 1987,USA,1,,"Lincoln, NE (USA)",31 MAY 2008,1159.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14236982,toplist
+36.0,20.40,-0.9,Cruz Rolando PALACIOS,03 MAY 1987,HON,2,,Toluca (MEX),18 JUL 2008,1163.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14195843,toplist
+37.0,20.42,1.5,Greg NIXON,12 SEP 1981,USA,1,,"Lubbock, TX (USA)",12 APR 2008,1155.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14247256,toplist
+38.0,20.43,1.6,David NEVILLE,01 JUN 1984,USA,4f2,,Fort-de-France (FRA),08 MAY 2008,1153.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14247119,toplist
+38.0,20.43,1.9,Rondel SORRILLO,24 JAN 1986,TTO,1f1,,Port-of-Spain (TTO),20 JUN 2008,1153.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14229095,toplist
+38.0,20.43,0.1,Marlon DEVONISH,01 JUN 1976,GBR,4qf1,,"National Stadium, Beijing (CHN)",18 AUG 2008,1153.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14189045,toplist
+41.0,20.44,1.0,Derrick ATKINS,05 JAN 1984,BAH,2f1,,"Berkeley, CA (USA)",26 APR 2008,1152.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14178055,toplist
+42.0,20.45,1.7,Dwight THOMAS,23 SEP 1980,JAM,5,,Kingston (JAM),29 JUN 2008,1150.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14202275,toplist
+42.0,20.45,1.1,Ashhad AGYAPONG,23 SEP 1985,USA,1f2,,Halifax (CAN),11 JUL 2008,1150.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14231051,toplist
+42.0,20.45,-0.4,Kristof BEYENS,13 JUL 1983,BEL,1f2,,Oordegem (BEL),26 JUL 2008,1152.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14177728,toplist
+42.0,20.45,0.3,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,3qf4,,"National Stadium, Beijing (CHN)",18 AUG 2008,1150.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14215468,toplist
+46.0,20.46,0.6,Ricardo WILLIAMS,29 SEP 1976,JAM,2f1,,"Mangueirão, Belém (BRA)",25 MAY 2008,1149.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14202328,toplist
+46.0,20.46,1.0,Mickey GRIMES,10 OCT 1976,USA,2f1,,"Los Angeles, CA (USA)",07 JUN 2008,1149.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14239414,toplist
+46.0,20.46,-0.9,Francis OBIKWELU,22 NOV 1978,POR,1,,Barcelona (ESP),19 JUL 2008,1154.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14218403,toplist
+49.0,20.47,1.7,Bruno DE BARROS,07 JAN 1987,BRA,1,,São Paulo (BRA),23 FEB 2008,1147.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14175190,toplist
+49.0,20.47,1.6,Eddy DE LÉPINE,30 MAR 1984,FRA,5f1,,Fort-de-France (FRA),08 MAY 2008,1147.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14184183,toplist
+49.0,20.47,0.7,Marcus PUGH,30 APR 1986,USA,5,,"Boulder, CO (USA)",18 MAY 2008,1147.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14248936,toplist
+49.0,20.47,1.0,Michael LAWRENCE,,USA,3f1,,"Los Angeles, CA (USA)",07 JUN 2008,1147.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14243742,toplist
+53.0,20.48,0.6,Bryan BARNETT,10 FEB 1987,CAN,3f1,,"Mangueirão, Belém (BRA)",25 MAY 2008,1146.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14174647,toplist
+53.0,20.48,1.9,Aaron ARMSTRONG,14 OCT 1977,TTO,2f1,,Port-of-Spain (TTO),20 JUN 2008,1146.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14228962,toplist
+53.0,20.48,1.7,Xavier BROWN,21 FEB 1983,JAM,6,,Kingston (JAM),29 JUN 2008,1146.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14201869,toplist
+56.0,20.49,0.8,Alex NELSON,21 MAR 1988,GBR,1f1,,Eton (GBR),05 JUL 2008,1144.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14190265,toplist
+57.0,20.50,-1.0,Angelo TAYLOR,29 DEC 1978,USA,1f1,,"Atlanta, GA (USA)",17 MAY 2008,1149.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14252793,toplist
+58.0,20.52,1.6,Tyree WASHINGTON,28 AUG 1976,USA,6f1,,Fort-de-France (FRA),08 MAY 2008,1139.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14254335,toplist
+59.0,20.53,0.3,Thuso MPUANG,01 MAR 1984,RSA,1,,Addis Ababa (ETH),04 MAY 2008,1138.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14220751,toplist
+59.0,20.53,-0.2,Daniel SCHNELTING,09 MAR 1986,GER,1f1,,Weinheim (GER),24 MAY 2008,1139.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14194114,toplist
+59.0,20.53,-0.7,Brent GRAY,16 SEP 1984,USA,3sf2,,"Des Moines, IA (USA)",12 JUN 2008,1142.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14239191,toplist
+62.0,20.55,1.9,Damein WHITE,06 MAY 1986,USA,1,,"Los Angeles, CA (USA)",03 MAY 2008,1135.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14254718,toplist
+62.0,20.55,0.6,Tyler CHRISTOPHER,03 OCT 1983,CAN,1f3,,"Modesto, CA (USA)",10 MAY 2008,1135.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14174460,toplist
+62.0,20.55,0.1,Joseph Obinna METU,12 JUL 1988,NGR,1,,Abuja (NGR),03 JUL 2008,1135.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14215019,toplist
+62.0,20.55,0.1,Amr Ibrahim Mostafa SEOUD,10 JUN 1986,EGY,6qf1,,"National Stadium, Beijing (CHN)",18 AUG 2008,1135.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14167441,toplist
+66.0,20.56,2.0,James DOLPHIN,17 JUN 1983,NZL,1,,Sydney (AUS),12 JAN 2008,1133.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14215649,toplist
+67.0,20.57,1.1,Roman SMIRNOV,02 SEP 1984,RUS,1f1,,Chania (GRE),07 JUN 2008,1132.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14224075,toplist
+67.0,20.57,0.7,Alexander KOSENKOW,14 MAR 1977,GER,1f1,,Regensburg (GER),08 JUN 2008,1132.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14192940,toplist
+67.0,20.57,-0.3,Anastasios GOUSIS,07 JUL 1979,GRE,2,,"Parc des Sports, Annecy (FRA)",22 JUN 2008,1133.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14195130,toplist
+67.0,20.57,0.8,Tim ABEYIE,07 NOV 1982,GBR,2f1,,Eton (GBR),05 JUL 2008,1132.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14188280,toplist
+71.0,20.58,-0.2,Kenji FUJIMITSU,01 MAY 1986,JPN,1f1,,Tokyo (JPN),25 MAY 2008,1131.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14202678,toplist
+71.0,20.58,1.9,José ACEVEDO,30 MAR 1986,VEN,2h5,,"Fayetteville, AR (USA)",30 MAY 2008,1130.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14256006,toplist
+71.0,20.58,1.9,Marcin JĘDRUSIŃSKI,28 AUG 1981,POL,1,,Chorzów (POL),31 MAY 2008,1130.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14216785,toplist
+71.0,20.58,0.4,Clement CAMPBELL,19 DEC 1975,JAM,3,,"Bislett Stadion, Oslo (NOR)",06 JUN 2008,1130.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14201883,toplist
+71.0,20.58,1.6,Marc SCHNEEBERGER,05 JUL 1981,SUI,1f1,,Jona (SUI),13 JUL 2008,1130.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14226506,toplist
+71.0,20.58,-0.9,Bernard WILLIAMS,19 JAN 1978,USA,4,,Barcelona (ESP),19 JUL 2008,1135.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14254947,toplist
+71.0,20.58,0.0,Shinji TAKAHIRA,18 JUL 1984,JPN,4h2,,"National Stadium, Beijing (CHN)",18 AUG 2008,1130.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14206136,toplist
+78.0,20.60,0.9,Tyrone CARRIER,19 DEC 1987,USA,2,,"Lincoln, NE (USA)",31 MAY 2008,1127.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14234312,toplist
+78.0,20.60,1.4,Jiří VOJTÍK,02 JUL 1981,CZE,1f1,,Praha (CZE),07 JUN 2008,1127.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14168104,toplist
+78.0,20.60,1.0,Hitoshi SAITO,09 OCT 1986,JPN,1,,Tokyo (JPN),14 SEP 2008,1127.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14205454,toplist
+81.0,20.61,1.6,Samuel FRANCIS,27 MAR 1987,QAT,1,,Sofia (BUL),30 JUN 2008,1126.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14219033,toplist
+81.0,20.61,-0.9,Ángel David RODRÍGUEZ,25 APR 1980,ESP,5,,Barcelona (ESP),19 JUL 2008,1131.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14165216,toplist
+81.0,20.61,0.9,Seth AMOO,20 MAR 1983,GHA,1f2,,Leverkusen (GER),30 JUL 2008,1126.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14194878,toplist
+84.0,20.62,0.0,Franklin NAZARENO,24 APR 1987,ECU,3,,Cochabamba (BOL),31 MAY 2008,1124.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14167616,toplist
+84.0,20.62,0.7,Jamial ROLLE,16 APR 1980,BAH,1h3,,Nassau (BAH),28 JUN 2008,1124.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14177964,toplist
+84.0,20.62,-0.3,Visa HONGISTO,09 APR 1987,FIN,4h8,,"National Stadium, Beijing (CHN)",18 AUG 2008,1125.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14181925,toplist
+84.0,20.62,1.0,Mitsuhiro ABIKO,25 OCT 1988,JPN,2,,Tokyo (JPN),14 SEP 2008,1124.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14202402,toplist
+88.0,20.63,1.0,Demetrias MCCLOUD,24 SEP 1980,USA,1,,"Greensboro, NC (USA)",14 JUN 2008,1123.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14419392,toplist
+88.0,20.63,-0.3,Gary KIKAYA,04 FEB 1978,COD,2,,Daegu (KOR),25 SEP 2008,1124.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14170195,toplist
+90.0,20.64,-0.6,Kagisho KUMBANE,21 NOV 1988,RSA,2,,Pretoria (RSA),27 MAR 2008,1124.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14220325,toplist
+90.0,20.64,0.4,Gavin SMELLIE,26 JUN 1986,CAN,3f2,,Windsor (CAN),06 JUL 2008,1121.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14173481,toplist
+90.0,20.64,1.6,Rikki FIFTON,17 JUN 1985,GBR,1f1,,Loughborough (GBR),17 JUL 2008,1121.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14189230,toplist
+93.0,20.65,1.2,Lionel LARRY,14 SEP 1986,USA,1,,"Los Angeles, CA (USA)",03 MAY 2008,1120.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14243675,toplist
+93.0,20.65,0.8,Brandon O'CONNER,02 SEP 1989,USA,1,,"Albuquerque, NM (USA)",07 JUN 2008,1120.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14247433,toplist
+95.0,20.66,,Arman DIXON,25 JUN 1986,USA,1f2,,"Boston, MA (USA) (i)",01 MAR 2008,1185.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14236534,toplist
+95.0,20.66,0.0,Cristián REYES,05 AUG 1986,CHI,1,,Santiago de Chile (CHI),26 APR 2008,1118.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14173055,toplist
+95.0,20.66,1.6,Reggie WITHERSPOON,31 MAY 1985,USA,8f1,,Fort-de-France (FRA),08 MAY 2008,1118.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14255363,toplist
+95.0,20.66,-0.5,John CAPEL,27 OCT 1978,USA,1f2,,Port-of-Spain (TTO),18 MAY 2008,1121.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14234181,toplist
+95.0,20.66,1.6,Michael GARVIN,29 SEP 1986,USA,4,,"Tallahassee, FL (USA)",31 MAY 2008,1118.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14238537,toplist
+95.0,20.66,0.3,Ramil GULIYEV,29 MAY 1990,AZE,5qf4,,"National Stadium, Beijing (CHN)",18 AUG 2008,1118.0,men_200m,2008,https://worldathletics.org/athletes/athlete=14178065,toplist
+1.0,19.19,-0.3,Usain BOLT,21 AUG 1986,JAM,1,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1352.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14201847,toplist
+2.0,19.58,1.3,Tyson GAY,09 AUG 1982,USA,1,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1287.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14238588,toplist
+3.0,19.81,-0.3,Alonso EDWARD,08 DEC 1989,PAN,2,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1251.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14216095,toplist
+4.0,19.85,-0.3,Wallace SPEARMON,24 DEC 1984,USA,3,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1245.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14251926,toplist
+5.0,19.89,-0.3,Shawn CRAWFORD,14 JAN 1978,USA,4,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1238.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14235549,toplist
+6.0,19.98,-0.3,Steve MULLINGS,29 NOV 1982,JAM,5,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1224.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14202146,toplist
+7.0,20.04,0.1,Ramil GULIYEV,29 MAY 1990,AZE,1,,Beograd (SRB),10 JUL 2009,1214.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14178065,toplist
+8.0,20.07,-0.5,LaShawn MERRITT,27 JUN 1986,USA,1,,"Carson, CA (USA)",16 MAY 2009,1212.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14245966,toplist
+9.0,20.15,0.0,Marvin ANDERSON,12 MAY 1982,JAM,1f1,,"Mangueirão, Belém (BRA)",24 MAY 2009,1196.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14201797,toplist
+10.0,20.17,0.3,Rae Monzavous EDWARDS,07 MAY 1981,USA,1f2,,"Mangueirão, Belém (BRA)",24 MAY 2009,1193.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14237108,toplist
+11.0,20.22,0.3,Ainsley WAUGH,17 SEP 1981,JAM,2f2,,"Mangueirão, Belém (BRA)",24 MAY 2009,1186.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14202305,toplist
+11.0,20.22,1.3,Shinji TAKAHIRA,18 JUL 1984,JPN,1,,Hiroshima (JPN),26 JUN 2009,1186.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14206136,toplist
+13.0,20.24,1.4,Roberto SKYERS,12 NOV 1991,CUB,1h5,,Camagüey (CUB),15 MAR 2009,1182.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14169308,toplist
+13.0,20.24,0.0,Michael RODGERS,24 APR 1985,USA,2f1,,"Mangueirão, Belém (BRA)",24 MAY 2009,1182.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14249856,toplist
+15.0,20.26,0.0,Brendan CHRISTIAN,11 DEC 1983,ANT,3f1,,"Mangueirão, Belém (BRA)",24 MAY 2009,1179.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14180554,toplist
+16.0,20.27,1.3,Xavier CARTER,08 DEC 1985,USA,3,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1178.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14234403,toplist
+16.0,20.27,0.3,Charles CLARK,10 AUG 1987,USA,3sf2,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1178.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14234803,toplist
+18.0,20.28,0.0,Mark JELKS,10 APR 1984,USA,1,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1176.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14241886,toplist
+19.0,20.29,0.8,Trey HARTS,17 OCT 1987,USA,1,,"Waco, TX (USA)",18 APR 2009,1175.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14240150,toplist
+20.0,20.30,-0.4,Rodney MARTIN,22 DEC 1982,USA,1,,Osaka (JPN),09 MAY 2009,1175.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14245030,toplist
+20.0,20.30,1.3,Jeremy WARINER,31 JAN 1984,USA,4,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1173.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14254258,toplist
+22.0,20.32,1.3,Lionel LARRY,14 SEP 1986,USA,5,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1170.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14243675,toplist
+22.0,20.32,-1.0,Darvis PATTON,04 DEC 1977,USA,2f1,,Barcelona (ESP),25 JUL 2009,1176.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14248077,toplist
+24.0,20.33,1.6,Stéphan BUCKLAND,12 JAN 1977,MRI,1,,Málaga (ESP),27 JUN 2009,1169.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14213462,toplist
+25.0,20.34,0.8,Damein WHITE,06 MAY 1986,USA,1f1,,"Los Angeles, CA (USA)",25 APR 2009,1167.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14254718,toplist
+25.0,20.34,1.6,Rubin WILLIAMS,09 JUL 1983,USA,1f1,,Rio de Janeiro (BRA),17 MAY 2009,1167.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14255105,toplist
+27.0,20.35,1.5,Derrick ATKINS,05 JAN 1984,BAH,1f5,,"Athens, GA (USA)",09 MAY 2009,1165.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14178055,toplist
+28.0,20.36,0.2,Thomas HUNTER,14 DEC 1983,USA,1f1,,Cuxhaven (GER),22 JUL 2009,1164.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14241410,toplist
+29.0,20.37,-0.4,Brian DZINGAI,29 APR 1981,ZIM,4,,Osaka (JPN),09 MAY 2009,1164.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14256476,toplist
+29.0,20.37,0.4,Trell KIMMONS,13 JUL 1985,USA,4sf2,,"Eugene, OR (USA)",28 JUN 2009,1162.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14242966,toplist
+29.0,20.37,-0.2,Toby SANDEMAN,02 MAR 1988,GBR,1,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1163.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14190693,toplist
+29.0,20.37,-0.2,Ben Youssef MEITÉ,11 NOV 1986,CIV,1,,Beirut (LBN),05 OCT 2009,1163.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14170297,toplist
+33.0,20.38,-0.4,Andrew HINDS,25 APR 1984,BAR,1,,Bridgetown (BAR),21 JUN 2009,1163.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14177859,toplist
+33.0,20.38,1.4,Jeffrey LAWAL-BALOGUN,02 JUL 1986,GBR,1f2,,La Chaux-de-Fonds (SUI),28 JUN 2009,1161.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14188452,toplist
+35.0,20.39,0.7,Greg NIXON,12 SEP 1981,USA,2f1,,"Greensboro, NC (USA)",18 APR 2009,1159.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14247256,toplist
+36.0,20.40,0.3,Emmanuel CALLENDER,10 MAY 1984,TTO,3f2,,"Mangueirão, Belém (BRA)",24 MAY 2009,1158.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14228977,toplist
+36.0,20.40,-0.3,Chris DYKES,15 AUG 1987,USA,1sf1,,"Fayetteville, AR (USA)",11 JUN 2009,1159.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14236982,toplist
+36.0,20.40,0.4,Paul HESSION,27 JAN 1983,IRL,3f1,,"Crystal Palace, London (GBR)",25 JUL 2009,1158.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14198909,toplist
+36.0,20.40,1.4,Nickel ASHMEADE,07 APR 1990,JAM,1,,Port-of-Spain (TTO),01 AUG 2009,1158.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14201803,toplist
+40.0,20.41,1.0,Robert HERING,14 JUN 1990,GER,1,,Ulm (GER),05 JUL 2009,1156.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14192506,toplist
+41.0,20.42,1.3,Hitoshi SAITO,09 OCT 1986,JPN,2,,Hiroshima (JPN),26 JUN 2009,1155.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14205454,toplist
+42.0,20.43,1.0,Alexander KOSENKOW,14 MAR 1977,GER,2,,Ulm (GER),05 JUL 2009,1153.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14192940,toplist
+42.0,20.43,0.3,Martial MBANDJOCK,14 OCT 1985,FRA,5sf2,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1153.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14186427,toplist
+44.0,20.45,1.6,Kelly WILLIE,07 SEP 1982,USA,1f2,,"Austin, TX (USA)",02 MAY 2009,1150.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14255165,toplist
+44.0,20.45,1.9,Ryan BAILEY,13 APR 1989,USA,1h2,,"Hutchinson, KS (USA)",22 MAY 2009,1150.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14231808,toplist
+44.0,20.45,0.4,Gavin SMELLIE,26 JUN 1986,CAN,1,,"Louisville, KY (USA)",30 MAY 2009,1150.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14173481,toplist
+44.0,20.45,-0.2,Rondel SORRILLO,24 JAN 1986,TTO,1sf2,,"Fayetteville, AR (USA)",11 JUN 2009,1151.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14229095,toplist
+44.0,20.45,-0.2,Kim COLLINS,05 APR 1976,SKN,1,,"Wattenscheid, Bochum (GER)",02 AUG 2009,1151.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14224942,toplist
+44.0,20.45,0.0,David ALERTE,18 SEP 1984,FRA,4sf1,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1150.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14182832,toplist
+50.0,20.46,0.5,Rikki FIFTON,17 JUN 1985,GBR,1f2,,Genève (SUI),06 JUN 2009,1149.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14189230,toplist
+50.0,20.46,1.1,Marc SCHNEEBERGER,05 JUL 1981,SUI,1f1,,La Chaux-de-Fonds (SUI),28 JUN 2009,1149.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14226506,toplist
+52.0,20.47,1.5,Gary KIKAYA,04 FEB 1978,COD,1f1,,"Chapel Hill, NC (USA)",08 MAY 2009,1147.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14170195,toplist
+52.0,20.47,-0.4,Chris BERRIAN,17 APR 1983,USA,5,,Osaka (JPN),09 MAY 2009,1149.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14232525,toplist
+52.0,20.47,1.1,Tshegofatso MESHOE,25 MAR 1987,RSA,2f1,,La Chaux-de-Fonds (SUI),28 JUN 2009,1147.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14220587,toplist
+55.0,20.48,-0.4,Mitsuhiro ABIKO,25 OCT 1988,JPN,6,,Osaka (JPN),09 MAY 2009,1148.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14202402,toplist
+55.0,20.48,0.0,Brent GRAY,16 SEP 1984,USA,1f1,,"Los Angeles, CA (USA)",09 MAY 2009,1146.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14239191,toplist
+55.0,20.48,1.7,Horatio WILLIAMS,28 AUG 1989,USA,1h5,,"Hutchinson, KS (USA)",22 MAY 2009,1146.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14335759,toplist
+55.0,20.48,0.0,Bruno DE BARROS,07 JAN 1987,BRA,5f1,,"Mangueirão, Belém (BRA)",24 MAY 2009,1146.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14175190,toplist
+59.0,20.49,0.4,Marcus ROWLAND,11 MAR 1990,USA,2,,"Louisville, KY (USA)",30 MAY 2009,1144.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14250123,toplist
+59.0,20.49,-0.2,Joel REDHEAD,03 JUL 1986,GRN,2sf2,,"Fayetteville, AR (USA)",11 JUN 2009,1145.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14195683,toplist
+61.0,20.50,0.0,Dwain CHAMBERS,05 APR 1978,GBR,1f1,,Uden (NED),27 JUN 2009,1143.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14188803,toplist
+62.0,20.51,-1.1,Jeremy HALL,27 JAN 1988,USA,1,,"Gainesville, FL (USA)",17 MAY 2009,1147.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14239698,toplist
+62.0,20.51,1.6,Arnaldo ABRANTES,27 NOV 1986,POR,3,,Málaga (ESP),27 JUN 2009,1141.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14217970,toplist
+64.0,20.52,0.5,Patrick VAN LUIJK,17 SEP 1984,NED,2f2,,Genève (SUI),06 JUN 2009,1139.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14214623,toplist
+64.0,20.52,0.4,Aleixo Platini MENGA,29 SEP 1987,GER,1f1,,Göttingen (GER),28 JUN 2009,1139.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14193693,toplist
+64.0,20.52,0.1,Amr Ibrahim Mostafa SEOUD,10 JUN 1986,EGY,2,,Beograd (SRB),10 JUL 2009,1139.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14167441,toplist
+67.0,20.53,1.5,Philippe DEROSIER,11 APR 1984,USA,2f1,,"Chapel Hill, NC (USA)",08 MAY 2009,1138.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14236348,toplist
+67.0,20.53,0.7,Gerald PHIRI,06 OCT 1988,GBR,1,,"Norman, OK (USA)",30 MAY 2009,1138.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14190464,toplist
+69.0,20.54,1.2,Rakieem SALAAM,05 APR 1990,USA,1h1,,"Norman, OK (USA)",29 MAY 2009,1136.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14363270,toplist
+69.0,20.54,0.0,Joel BROWN,31 JAN 1980,USA,1f2,,Luzern (SUI),15 JUL 2009,1136.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14233527,toplist
+71.0,20.55,1.3,Kenji FUJIMITSU,01 MAY 1986,JPN,3,,Hiroshima (JPN),26 JUN 2009,1135.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14202678,toplist
+71.0,20.55,1.3,Marlon DEVONISH,01 JUN 1976,GBR,4f2,,Rethymno (GRE),20 JUL 2009,1135.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14189045,toplist
+71.0,20.55,0.4,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,4f1,,"Crystal Palace, London (GBR)",25 JUL 2009,1135.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14215468,toplist
+74.0,20.56,1.7,Ramon GITTENS,20 JUL 1987,BAR,1f4,,"Lynchburg, VA (USA)",30 APR 2009,1133.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14177869,toplist
+74.0,20.56,-1.4,Ramone MCKENZIE,15 NOV 1990,JAM,2h2,,Kingston (JAM),28 JUN 2009,1141.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14202117,toplist
+74.0,20.56,-0.4,Johan WISSMAN,02 NOV 1982,SWE,1,,Göteborg (SWE),30 AUG 2009,1135.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14228212,toplist
+77.0,20.57,0.0,Sandro VIANA,26 MAR 1977,BRA,1,,Cochabamba (BOL),30 MAY 2009,1132.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14175281,toplist
+77.0,20.57,1.1,Leon BAPTISTE,23 MAY 1985,GBR,3f1,,La Chaux-de-Fonds (SUI),28 JUN 2009,1132.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14188461,toplist
+79.0,20.58,0.9,Dentarius LOCKE,12 DEC 1989,USA,1h1,,"Winter Park, FL (USA)",09 MAY 2009,1130.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14244257,toplist
+79.0,20.58,1.5,Curtis MITCHELL,11 MAR 1989,USA,1,,"San Mateo, CA (USA)",15 MAY 2009,1130.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14246265,toplist
+79.0,20.58,1.3,Marco CRIBARI,07 JUL 1985,SUI,2f1,,Weinheim (GER),23 MAY 2009,1130.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14225902,toplist
+82.0,20.59,0.0,Joseph Obinna METU,12 JUL 1988,NGR,1,,Abuja (NGR),25 JUL 2009,1129.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14215019,toplist
+83.0,20.60,0.6,Yohan BLAKE,26 DEC 1989,JAM,1f5,,Kingston (JAM),21 FEB 2009,1127.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14201842,toplist
+84.0,20.61,0.6,Thuso MPUANG,01 MAR 1984,RSA,1,,Stellenbosch (RSA),04 APR 2009,1126.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14220751,toplist
+84.0,20.61,1.5,Deun WHITE,13 JUL 1985,USA,1,,"Walnut, CA (USA)",18 APR 2009,1126.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14254722,toplist
+84.0,20.61,-0.4,Jordan BOASE,10 OCT 1985,USA,1,,"Seattle, WA (USA)",02 MAY 2009,1128.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14232832,toplist
+84.0,20.61,0.2,Naoki TSUKAHARA,10 MAY 1985,JPN,3,,Shizuoka (JPN),03 MAY 2009,1126.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14206515,toplist
+84.0,20.61,-0.2,Ihor BODROV,09 JUL 1987,UKR,3,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1127.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14229755,toplist
+84.0,20.61,1.2,Renny QUOW,25 AUG 1987,TTO,1,,Port-of-Spain (TTO),26 JUL 2009,1126.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14229073,toplist
+90.0,20.62,,Chris WILLIAMS,15 MAR 1972,JAM,5,,"Walnut, CA (USA)",18 APR 2009,1124.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14202319,toplist
+90.0,20.62,1.2,Daniel Alfonso GRUESO,30 JUL 1985,COL,1,,Bogotá (COL),23 MAY 2009,1124.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14170115,toplist
+90.0,20.62,-0.2,Matteo GALVAN,24 AUG 1988,ITA,4,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1125.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14200400,toplist
+93.0,20.63,0.6,Ricardo LOCKETT,30 NOV 1989,USA,1,,"San Angelo, TX (USA)",21 MAY 2009,1123.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14244262,toplist
+94.0,20.64,1.4,Maurice MITCHELL,22 DEC 1989,USA,1f1,,"Tallahassee, FL (USA)",09 MAY 2009,1121.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14246290,toplist
+94.0,20.64,0.4,Terrell WILKS,30 DEC 1989,USA,2,,"Greensboro, NC (USA)",30 MAY 2009,1121.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14254928,toplist
+96.0,20.65,0.1,Richard THOMPSON,07 JUN 1985,TTO,1f2,,"Tempe, AZ (USA)",11 APR 2009,1120.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14229106,toplist
+96.0,20.65,0.0,Jorge Célio SENA,31 JAN 1985,BRA,2,,Cochabamba (BOL),30 MAY 2009,1120.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14176122,toplist
+96.0,20.65,0.6,Sam EFFAH,29 DEC 1988,CAN,1f2,,Charlottetown (CAN),27 AUG 2009,1120.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14174321,toplist
+99.0,20.66,0.8,Michael TINSLEY,21 APR 1984,USA,1f1,,"Oxford, MS (USA)",11 APR 2009,1118.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14253267,toplist
+99.0,20.66,0.5,Yunier BETANZOS,15 OCT 1987,CUB,2f2,,Kingston (JAM),18 APR 2009,1118.0,men_200m,2009,https://worldathletics.org/athletes/athlete=14169681,toplist
+1.0,19.56,-0.8,Usain BOLT,21 AUG 1986,JAM,1,,Kingston (JAM),01 MAY 2010,1294.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14201847,toplist
+2.0,19.72,1.8,Walter DIX,31 JAN 1986,USA,1,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1264.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14236532,toplist
+2.0,19.72,0.1,Tyson GAY,09 AUG 1982,USA,1,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1264.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14238588,toplist
+4.0,19.78,0.1,Yohan BLAKE,26 DEC 1989,JAM,2,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1255.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14201842,toplist
+5.0,19.79,0.4,Wallace SPEARMON,24 DEC 1984,USA,1,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1253.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14251926,toplist
+6.0,19.97,0.0,Asafa POWELL,23 NOV 1982,JAM,1,,Kingston (JAM),27 JUN 2010,1225.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14202176,toplist
+7.0,19.99,2.0,Curtis MITCHELL,11 MAR 1989,USA,1h1,,"Miramar, FL (USA)",10 JUL 2010,1222.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14246265,toplist
+8.0,20.08,0.4,Churandy MARTINA,03 JUL 1984,AHO,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1207.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14180965,toplist
+9.0,20.10,0.4,Ryan BAILEY,13 APR 1989,USA,3,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1204.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14231808,toplist
+10.0,20.11,0.4,Steve MULLINGS,29 NOV 1982,JAM,4,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1203.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14202146,toplist
+11.0,20.14,0.1,Xavier CARTER,08 DEC 1985,USA,4,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1198.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14234403,toplist
+12.0,20.16,1.2,Christophe LEMAITRE,11 JUN 1990,FRA,1,,Valence (FRA),10 JUL 2010,1195.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14186000,toplist
+13.0,20.23,1.5,Simon MAGAKWE,14 MAY 1986,RSA,1,,Potchefstroom (RSA),17 APR 2010,1184.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14220435,toplist
+13.0,20.23,0.6,Angelo TAYLOR,29 DEC 1978,USA,2,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1184.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14252793,toplist
+15.0,20.24,1.1,Maurice MITCHELL,22 DEC 1989,USA,1f1,,"Greensboro, NC (USA)",29 MAY 2010,1182.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14246290,toplist
+16.0,20.29,0.6,Rondel SORRILLO,24 JAN 1986,TTO,1f2,,"Greensboro, NC (USA)",29 MAY 2010,1175.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14229095,toplist
+16.0,20.29,0.4,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,5,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1175.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14215468,toplist
+18.0,20.30,0.5,Andrew HOWE,12 MAY 1985,ITA,1,,Milano (ITA),09 SEP 2010,1173.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14200553,toplist
+19.0,20.31,1.2,Brandon BYRAM,11 SEP 1988,USA,1h2,,"Miramar, FL (USA)",10 JUL 2010,1172.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14327177,toplist
+20.0,20.36,1.3,Amr Ibrahim Mostafa SEOUD,10 JUN 1986,EGY,1,,"Nyayo National Stadium, Nairobi (KEN)",01 AUG 2010,1164.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14167441,toplist
+21.0,20.37,1.0,Richard THOMPSON,07 JUN 1985,TTO,1,,Port-of-Spain (TTO),27 JUN 2010,1162.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14229106,toplist
+22.0,20.38,1.2,Kenji FUJIMITSU,01 MAY 1986,JPN,1,,Marugame (JPN),05 JUN 2010,1161.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14202678,toplist
+22.0,20.38,1.0,Martial MBANDJOCK,14 OCT 1985,FRA,1,,"Stade Raymond Petit, Tomblaine (FRA)",25 JUN 2010,1161.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14186427,toplist
+22.0,20.38,0.6,Sebastian ERNST,11 OCT 1984,GER,1,,Mannheim (GER),04 JUL 2010,1161.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14192005,toplist
+22.0,20.38,-0.8,Christian MALCOLM,03 JUN 1979,GBR,2,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1165.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14189990,toplist
+26.0,20.39,1.3,Ben Youssef MEITÉ,11 NOV 1986,CIV,2,,"Nyayo National Stadium, Nairobi (KEN)",01 AUG 2010,1159.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14170297,toplist
+27.0,20.40,0.0,Marlon DEVONISH,01 JUN 1976,GBR,2,,Luzern (SUI),08 AUG 2010,1158.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14189045,toplist
+28.0,20.41,-0.4,Nílson ANDRÉ,30 JAN 1986,BRA,1f2,,Rio de Janeiro (BRA),23 MAY 2010,1158.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14175883,toplist
+28.0,20.41,0.1,Rakieem SALAAM,05 APR 1990,USA,1h6,,"Austin, TX (USA)",28 MAY 2010,1156.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14363270,toplist
+30.0,20.42,1.5,Leigh JULIUS,25 MAR 1985,RSA,2,,Potchefstroom (RSA),17 APR 2010,1155.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14220238,toplist
+30.0,20.42,0.6,Marc SCHNEEBERGER,05 JUL 1981,SUI,3,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1155.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14226506,toplist
+32.0,20.43,-1.3,Mario FORSYTHE,30 OCT 1985,JAM,1,,Heusden-Zolder (BEL),10 JUL 2010,1160.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14201990,toplist
+32.0,20.43,0.4,Leon BAPTISTE,23 MAY 1985,GBR,1sf1,,New Delhi (IND),10 OCT 2010,1153.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14188461,toplist
+32.0,20.43,1.4,Femi OGUNODE,15 MAY 1991,QAT,1,,Guangzhou (CHN),25 NOV 2010,1153.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14330343,toplist
+35.0,20.44,1.1,Fred ROSE,29 JUL 1989,USA,1f1,,"Baton Rouge, LA (USA)",17 APR 2010,1152.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14250026,toplist
+36.0,20.46,1.4,Greg NIXON,12 SEP 1981,USA,1f1,,"Los Angeles, CA (USA)",10 APR 2010,1149.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14247256,toplist
+36.0,20.46,1.2,Paul HESSION,27 JAN 1983,IRL,1f2,,"Puskás Ferenc Stadion, Budapest (HUN)",20 JUN 2010,1149.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14198909,toplist
+36.0,20.46,0.4,Ainsley WAUGH,17 SEP 1981,JAM,5,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1149.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14202305,toplist
+39.0,20.47,1.8,Evander WELLS,07 DEC 1987,USA,1f2,,"Gainesville, FL (USA)",02 APR 2010,1147.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14254558,toplist
+40.0,20.48,-0.8,Marvin ANDERSON,12 MAY 1982,JAM,4,,"Shanghai Stadium, Shanghai (CHN)",23 MAY 2010,1150.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14201797,toplist
+41.0,20.49,-0.1,Daniel Alfonso GRUESO,30 JUL 1985,COL,1,,Mayagüez (PUR),17 APR 2010,1144.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14170115,toplist
+41.0,20.49,0.3,Justin WALKER,30 NOV 1990,USA,1,,"Arlington, TX (USA)",16 MAY 2010,1144.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14360253,toplist
+41.0,20.49,1.0,David ALERTE,18 SEP 1984,FRA,3,,"Stade Raymond Petit, Tomblaine (FRA)",25 JUN 2010,1144.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14182832,toplist
+41.0,20.49,0.0,Rasheed DWYER,29 JAN 1989,JAM,2,,Mayagüez (PUR),27 JUL 2010,1144.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14201966,toplist
+41.0,20.49,0.1,Lansford SPENCE,15 DEC 1982,JAM,2,,New Delhi (IND),10 OCT 2010,1144.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14202249,toplist
+46.0,20.50,1.8,Shawn CRAWFORD,14 JAN 1978,USA,6,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1143.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14235549,toplist
+47.0,20.51,1.9,Aziz OUHADI,24 JUL 1984,MAR,1sf3,,"Nyayo National Stadium, Nairobi (KEN)",28 JUL 2010,1141.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14212412,toplist
+48.0,20.52,,Antonio SALES,26 JAN 1989,USA,2f1,,"Fayetteville, AR (USA) (i)",12 MAR 2010,1207.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14250332,toplist
+48.0,20.52,1.1,Jeffrey LAWAL-BALOGUN,02 JUL 1986,GBR,2f1,,La Chaux-de-Fonds (SUI),04 JUL 2010,1139.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14188452,toplist
+50.0,20.53,1.1,Terrell WILKS,30 DEC 1989,USA,2f1,,"Greensboro, NC (USA)",29 MAY 2010,1138.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14254928,toplist
+50.0,20.53,0.7,Josh SCOTT,03 SEP 1985,USA,1,,"Charlotte, NC (USA)",29 MAY 2010,1138.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14371964,toplist
+52.0,20.54,1.0,Matthew DAVIES,18 APR 1985,AUS,1f1,,Perth (AUS),19 FEB 2010,1136.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14179838,toplist
+52.0,20.54,1.5,Thuso MPUANG,01 MAR 1984,RSA,3,,Potchefstroom (RSA),17 APR 2010,1136.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14220751,toplist
+52.0,20.54,-0.7,Chris LAWSON,12 MAR 1983,USA,2f1,,"Atlanta, GA (USA)",15 MAY 2010,1140.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14243752,toplist
+52.0,20.54,1.3,Darrion BENT,17 SEP 1990,JAM,1f1,,Sundsvall (SWE),08 AUG 2010,1136.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14201832,toplist
+56.0,20.55,0.0,Oral THOMPSON,11 DEC 1982,JAM,1f1,,St-Martin (FRA),08 MAY 2010,1135.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14202286,toplist
+56.0,20.55,0.0,Michael RODGERS,24 APR 1985,USA,1,,Osaka (JPN),08 MAY 2010,1135.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14249856,toplist
+58.0,20.57,1.5,Gerald PHIRI,06 OCT 1988,ZAM,2f3,,"Austin, TX (USA)",29 MAY 2010,1132.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14190464,toplist
+59.0,20.58,-0.6,Shota IIZUKA,25 JUN 1991,JPN,1h2,,Shizuoka (JPN),03 MAY 2010,1133.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14327811,toplist
+60.0,20.59,,Marcus ROWLAND,11 MAR 1990,USA,1h3,,"Fayetteville, AR (USA) (i)",12 MAR 2010,1196.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14250123,toplist
+60.0,20.59,-2.4,Leroy DIXON,20 JUN 1983,USA,1sf1,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1143.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14236555,toplist
+60.0,20.59,0.0,Brendan CHRISTIAN,11 DEC 1983,ANT,4,,Mayagüez (PUR),27 JUL 2010,1129.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14180554,toplist
+63.0,20.60,-0.7,Joel REDHEAD,03 JUL 1986,GRN,1h5,,"New York, NY (USA)",18 APR 2010,1131.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14195683,toplist
+63.0,20.60,-0.1,Jared CONNAUGHTON,20 JUL 1985,CAN,1qf2,,New Delhi (IND),09 OCT 2010,1127.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14174434,toplist
+65.0,20.61,0.7,Ihor BODROV,09 JUL 1987,UKR,1f2,,Yalta (UKR),28 MAY 2010,1126.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14229755,toplist
+65.0,20.61,-0.7,Jonathan BORLÉE,22 FEB 1988,BEL,1f2,,Oordegem (BEL),05 JUN 2010,1130.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14177716,toplist
+65.0,20.61,-0.9,Daniel SCHNELTING,09 MAR 1986,GER,1f2,,Bottrop (GER),09 JUL 2010,1131.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14194114,toplist
+68.0,20.62,-0.7,Rodney MARTIN,22 DEC 1982,USA,1h4,,"Drake Stadium, Des Moines, IA (USA)",26 JUN 2010,1128.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14245030,toplist
+69.0,20.63,-0.8,Dwight MULLINGS,10 DEC 1986,JAM,1f1,,"Oxford, MS (USA)",10 APR 2010,1127.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14202145,toplist
+69.0,20.63,0.5,Sandro VIANA,26 MAR 1977,BRA,1f1,,São Paulo (BRA),25 APR 2010,1123.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14175281,toplist
+69.0,20.63,-0.8,Nickel ASHMEADE,07 APR 1990,JAM,5,,Kingston (JAM),01 MAY 2010,1127.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14201803,toplist
+69.0,20.63,0.5,Jeremy DODSON,30 AUG 1987,USA,3,,"Columbia, MO (USA)",16 MAY 2010,1123.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14236598,toplist
+69.0,20.63,0.3,Teddy WILLIAMS,03 JUL 1988,USA,2,,"Arlington, TX (USA)",16 MAY 2010,1123.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14255123,toplist
+69.0,20.63,1.0,Aziz ZAKARI,02 SEP 1976,GHA,4,,"Stade Raymond Petit, Tomblaine (FRA)",25 JUN 2010,1123.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14194940,toplist
+69.0,20.63,-0.1,Justin GATLIN,10 FEB 1982,USA,1,,Arzana (ITA),07 SEP 2010,1123.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14238562,toplist
+69.0,20.63,1.0,Omar Jouma AL SALFA,15 OCT 1989,UAE,1h2,,Guangzhou (CHN),24 NOV 2010,1123.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14229538,toplist
+77.0,20.64,1.8,Tony MCQUAY,16 APR 1990,USA,3f2,,"Gainesville, FL (USA)",02 APR 2010,1121.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14371133,toplist
+77.0,20.64,-0.2,Javon YOUNG,21 AUG 1990,USA,1f4,,"Gainesville, FL (USA)",02 APR 2010,1122.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14255733,toplist
+77.0,20.64,1.0,Trey HARTS,17 OCT 1987,USA,1h1,,"Columbia, MO (USA)",15 MAY 2010,1121.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14240150,toplist
+77.0,20.64,1.7,Mychal DUNGEY,13 OCT 1988,USA,1,,"Albuquerque, NM (USA)",15 MAY 2010,1121.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14236891,toplist
+77.0,20.64,1.1,Bruce OWENS,25 JUL 1987,USA,4f1,,"Greensboro, NC (USA)",29 MAY 2010,1121.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14247805,toplist
+82.0,20.65,0.2,Roberto SKYERS,12 NOV 1991,CUB,4,,Baie Mahault (FRA),01 MAY 2010,1120.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14169308,toplist
+82.0,20.65,1.7,Charles SILMON,04 JUL 1991,USA,2,,"Albuquerque, NM (USA)",15 MAY 2010,1120.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14941415,toplist
+82.0,20.65,1.7,Duk-hyung JEON,08 AUG 1984,KOR,1,,Daegu (KOR),08 JUN 2010,1120.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14210188,toplist
+82.0,20.65,1.9,Joseph Obinna METU,12 JUL 1988,NGR,2sf3,,"Nyayo National Stadium, Nairobi (KEN)",28 JUL 2010,1120.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14215019,toplist
+86.0,20.67,,Charles CLARK,10 AUG 1987,USA,1f1,,"Blacksburg, VA (USA) (i)",27 FEB 2010,1184.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14234803,toplist
+86.0,20.67,,Calvin SMITH,10 DEC 1987,USA,1h1,,"Fayetteville, AR (USA) (i)",27 FEB 2010,1184.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14251552,toplist
+86.0,20.67,1.1,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,1,,Rethymno (GRE),07 JUL 2010,1117.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14329437,toplist
+86.0,20.67,0.0,Cruz Rolando PALACIOS,03 MAY 1987,HON,5,,Mayagüez (PUR),27 JUL 2010,1117.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14195843,toplist
+90.0,20.68,0.2,Leford GREEN,14 NOV 1986,JAM,1f1,,"Charlotte, NC (USA)",10 APR 2010,1115.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14202029,toplist
+90.0,20.68,1.1,Emmanuel CALLENDER,10 MAY 1984,TTO,1,,Port-of-Spain (TTO),04 JUL 2010,1115.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14228977,toplist
+90.0,20.68,1.7,Brian DZINGAI,29 APR 1981,ZIM,1f1,,Karlstad (SWE),15 JUL 2010,1115.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14256476,toplist
+93.0,20.69,0.0,Till HELMKE,06 MAY 1984,GER,2f1,,Weinheim (GER),22 MAY 2010,1114.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14192482,toplist
+93.0,20.69,-0.3,Ryan SHIELDS,12 MAY 1983,JAM,1,,Bruxelles (BEL),08 AUG 2010,1115.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14251160,toplist
+95.0,20.70,,Alonso EDWARD,08 DEC 1989,PAN,1f1,,"Fayetteville, AR (USA) (i)",13 FEB 2010,1179.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14216095,toplist
+95.0,20.70,0.0,Michael DEHAVEN,16 MAY 1989,USA,2f1,,"Auburn, AL (USA)",17 APR 2010,1112.0,men_200m,2010,https://worldathletics.org/athletes/united-states/michael-dehaven-014236202,toplist
+95.0,20.70,-2.1,Clement CAMPBELL,19 DEC 1975,JAM,1h4,,"New York, NY (USA)",18 APR 2010,1124.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14201883,toplist
+95.0,20.70,0.9,Obakeng NGWIGWA,09 MAY 1985,BOT,1f1,,"Chapel Hill, NC (USA)",08 MAY 2010,1112.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14176311,toplist
+95.0,20.70,0.6,Darius LAW,24 JUL 1989,USA,3f2,,"Greensboro, NC (USA)",29 MAY 2010,1112.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14326536,toplist
+100.0,20.71,0.0,Bryan BARNETT,10 FEB 1987,CAN,1f1,,"Tempe, AZ (USA)",10 APR 2010,1111.0,men_200m,2010,https://worldathletics.org/athletes/athlete=14174647,toplist
+1.0,19.26,0.7,Yohan BLAKE,26 DEC 1989,JAM,1,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1339.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201842,toplist
+2.0,19.40,0.8,Usain BOLT,21 AUG 1986,JAM,1,,"DS, Daegu (KOR)",03 SEP 2011,1316.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201847,toplist
+3.0,19.53,0.7,Walter DIX,31 JAN 1986,USA,2,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1295.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14236532,toplist
+4.0,19.80,0.8,Christophe LEMAITRE,11 JUN 1990,FRA,3,,"DS, Daegu (KOR)",03 SEP 2011,1252.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14186000,toplist
+5.0,19.91,0.7,Nickel ASHMEADE,07 APR 1990,JAM,3,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1234.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201803,toplist
+6.0,19.95,0.8,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,4,,"DS, Daegu (KOR)",03 SEP 2011,1228.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14215468,toplist
+7.0,20.05,0.0,Rakieem SALAAM,05 APR 1990,USA,1,,"Norman, OK (USA)",15 MAY 2011,1212.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14363270,toplist
+8.0,20.13,0.2,LaShawn MERRITT,27 JUN 1986,USA,1,,"Stadio Guidobaldi, Rieti (ITA)",10 SEP 2011,1200.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14245966,toplist
+9.0,20.15,1.6,Steve MULLINGS,29 NOV 1982,JAM,2,,"National Stadium, Kingston (JAM)",07 MAY 2011,1196.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14202146,toplist
+10.0,20.16,1.1,Bruno DE BARROS,07 JAN 1987,BRA,1h1,,São Paulo (BRA),06 AUG 2011,1195.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14175190,toplist
+10.0,20.16,1.6,Rondel SORRILLO,24 JAN 1986,TTO,1,,Port-of-Spain (TTO),14 AUG 2011,1195.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14229095,toplist
+12.0,20.18,1.6,Wallace SPEARMON,24 DEC 1984,USA,3,,"National Stadium, Kingston (JAM)",07 MAY 2011,1192.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14251926,toplist
+13.0,20.19,1.1,Maurice MITCHELL,22 DEC 1989,USA,1,,"Durham, NC (USA)",23 APR 2011,1190.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14246290,toplist
+14.0,20.20,1.9,Justin GATLIN,10 FEB 1982,USA,1f1,,"Clermont, FL (USA)",21 MAY 2011,1189.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14238562,toplist
+14.0,20.20,-0.3,Rasheed DWYER,29 JAN 1989,JAM,1,,"National Stadium, Shenzhen (CHN)",19 AUG 2011,1190.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201966,toplist
+16.0,20.25,1.6,Nesta CARTER,11 OCT 1985,JAM,4,,"National Stadium, Kingston (JAM)",07 MAY 2011,1181.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201894,toplist
+16.0,20.25,0.9,Darvis PATTON,04 DEC 1977,USA,1sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1181.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14248077,toplist
+18.0,20.27,-0.3,Marvin ANDERSON,12 MAY 1982,JAM,1,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1179.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201797,toplist
+19.0,20.28,-0.8,Alonso EDWARD,08 DEC 1989,PAN,1,,Reims (FRA),05 JUL 2011,1180.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14216095,toplist
+20.0,20.29,-0.8,Mario FORSYTHE,30 OCT 1985,JAM,2,,Reims (FRA),05 JUL 2011,1179.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201990,toplist
+21.0,20.30,0.5,Femi OGUNODE,15 MAY 1991,QAT,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2011,1173.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14330343,toplist
+22.0,20.31,1.1,Andrew HOWE,12 MAY 1985,ITA,1,,"Stadio Olimpico, Roma (ITA)",26 MAY 2011,1172.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14200553,toplist
+22.0,20.31,0.2,Roberto SKYERS,12 NOV 1991,CUB,1sf1,,Guadalajara (MEX),26 OCT 2011,1172.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14169308,toplist
+24.0,20.32,0.8,Ramil GULIYEV,29 MAY 1990,TUR,1f1,,Istanbul (TUR),11 JUN 2011,1170.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14178065,toplist
+25.0,20.33,0.9,Jeremy DODSON,30 AUG 1987,USA,2sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1169.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14236598,toplist
+25.0,20.33,0.5,Lansford SPENCE,15 DEC 1982,JAM,1sf3,,Guadalajara (MEX),26 OCT 2011,1169.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14202249,toplist
+27.0,20.38,1.4,Michael MATHIEU,24 JUN 1984,BAH,1,,Nassau (BAH),14 MAY 2011,1161.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14177996,toplist
+27.0,20.38,0.0,Churandy MARTINA,03 JUL 1984,NED,1,,Amsterdam (NED),31 JUL 2011,1161.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14180965,toplist
+29.0,20.39,0.0,Tran HOWELL,27 MAR 1988,USA,2,,"Norman, OK (USA)",15 MAY 2011,1159.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14241230,toplist
+29.0,20.39,0.2,Sandro VIANA,26 MAR 1977,BRA,2sf1,,Guadalajara (MEX),26 OCT 2011,1159.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14175281,toplist
+31.0,20.41,1.1,Kirani JAMES,01 SEP 1992,GRN,1f1,,"El Paso, TX (USA)",16 APR 2011,1156.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14195659,toplist
+31.0,20.41,0.8,Michael MASON,26 APR 1987,JAM,1f1,,Kingston (JAM),21 MAY 2011,1156.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14202107,toplist
+33.0,20.42,,Sebastian ERNST,11 OCT 1984,GER,1f2,,Leipzig (GER) (i),27 FEB 2011,1223.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14192005,toplist
+33.0,20.42,0.7,Jonathan BORLÉE,22 FEB 1988,BEL,1,,Rabat (MAR),05 JUN 2011,1155.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14177716,toplist
+35.0,20.43,1.9,Greg NIXON,12 SEP 1981,USA,1f1,,"Walnut, CA (USA)",04 JUN 2011,1153.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14247256,toplist
+35.0,20.43,1.1,Marek NIIT,09 AUG 1987,EST,2h2,,"Des Moines, IA (USA)",09 JUN 2011,1153.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14181103,toplist
+35.0,20.43,-1.0,Warren WEIR,31 OCT 1989,JAM,2,,Barcelona (ESP),22 JUL 2011,1159.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14202309,toplist
+38.0,20.44,0.6,Horatio WILLIAMS,28 AUG 1989,USA,1h1,,"Des Moines, IA (USA)",09 JUN 2011,1152.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14335759,toplist
+38.0,20.44,0.3,Amr Ibrahim Mostafa SEOUD,10 JUN 1986,EGY,2h1,,"DS, Daegu (KOR)",02 SEP 2011,1152.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14167441,toplist
+40.0,20.45,1.9,Jared CONNAUGHTON,20 JUL 1985,CAN,1f1,,"Clermont, FL (USA)",11 JUN 2011,1150.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14174434,toplist
+40.0,20.45,0.9,Shawn CRAWFORD,14 JAN 1978,USA,2sf3,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1150.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14235549,toplist
+42.0,20.46,2.0,Justin AUSTIN,10 AUG 1989,USA,1,,"Iowa City, IA (USA)",15 MAY 2011,1149.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14360852,toplist
+42.0,20.46,0.8,Harry AIKINES-ARYEETEY,29 AUG 1988,GBR,1f2,,La Chaux-de-Fonds (SUI),03 JUL 2011,1149.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14188310,toplist
+44.0,20.49,1.9,Ameer WEBB,19 MAR 1991,USA,2f1,,"Walnut, CA (USA)",04 JUN 2011,1144.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14373694,toplist
+44.0,20.49,,Shinji TAKAHIRA,18 JUL 1984,JPN,1,,Kumagaya (JPN),11 JUN 2011,1144.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14206136,toplist
+44.0,20.49,0.2,Alex QUIÑÓNEZ,11 AUG 1989,ECU,3sf1,,Guadalajara (MEX),26 OCT 2011,1144.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14368885,toplist
+47.0,20.50,1.8,Jonathan ÅSTRAND,09 SEP 1985,FIN,1f1,,Izmir (TUR),19 JUN 2011,1143.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14181795,toplist
+48.0,20.51,1.9,Terrell WILKS,30 DEC 1989,USA,1f2,,"Gainesville, FL (USA)",16 APR 2011,1141.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14254928,toplist
+48.0,20.51,0.5,Daniel BAILEY,09 SEP 1986,ANT,2f3,,Kingston (JAM),16 APR 2011,1141.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14180555,toplist
+48.0,20.51,-0.8,Alex WILSON,19 SEP 1990,SUI,1f1,,Genève (SUI),28 MAY 2011,1145.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14329085,toplist
+48.0,20.51,0.7,Reto Amaru SCHENKEL,28 APR 1988,SUI,1f1,,La Chaux-de-Fonds (SUI),03 JUL 2011,1141.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14226483,toplist
+48.0,20.51,0.7,Leon BAPTISTE,23 MAY 1985,GBR,2f1,,La Chaux-de-Fonds (SUI),03 JUL 2011,1141.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14188461,toplist
+48.0,20.51,-0.9,Ainsley WAUGH,17 SEP 1981,JAM,1f2,,Bottrop (GER),15 JUL 2011,1146.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14202305,toplist
+48.0,20.51,0.6,Paul HESSION,27 JAN 1983,IRL,1,,Dublin (IRL),06 AUG 2011,1141.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14198909,toplist
+55.0,20.52,0.7,Jordan BOASE,10 OCT 1985,USA,3,,Rabat (MAR),05 JUN 2011,1139.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14232832,toplist
+55.0,20.52,0.3,Michael HERRERA,05 JUN 1985,CUB,1,,La Habana (CUB),24 JUN 2011,1139.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14169498,toplist
+55.0,20.52,0.6,James ELLINGTON,06 SEP 1985,GBR,1f1,,Metz (FRA),27 JUN 2011,1139.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14189152,toplist
+55.0,20.52,0.7,Marc SCHNEEBERGER,05 JUL 1981,SUI,3f1,,La Chaux-de-Fonds (SUI),03 JUL 2011,1139.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14226506,toplist
+55.0,20.52,0.3,Kim COLLINS,05 APR 1976,SKN,3h1,,"DS, Daegu (KOR)",02 SEP 2011,1139.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14224942,toplist
+60.0,20.53,0.5,Jason YOUNG,21 MAR 1991,JAM,2sf1,,Kingston (JAM),25 JUN 2011,1138.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14325557,toplist
+60.0,20.53,0.9,Xavier CARTER,08 DEC 1985,USA,4sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1138.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14234403,toplist
+60.0,20.53,0.9,Calesio NEWMAN,20 AUG 1986,USA,4sf3,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1138.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14247139,toplist
+60.0,20.53,0.7,Richard KILTY,02 SEP 1989,GBR,4f1,,La Chaux-de-Fonds (SUI),03 JUL 2011,1138.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14189811,toplist
+64.0,20.54,1.8,Demetrius PINDER,13 FEB 1989,BAH,1f5,,"San Diego, CA (USA)",19 MAR 2011,1136.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14177972,toplist
+64.0,20.54,-0.8,Daniel TALBOT,01 MAY 1991,GBR,2f1,,Genève (SUI),28 MAY 2011,1140.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14190940,toplist
+64.0,20.54,0.6,LaShawn BUTLER,03 FEB 1987,USA,2h1,,"Des Moines, IA (USA)",09 JUN 2011,1136.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14233971,toplist
+64.0,20.54,1.5,Bryan BARNETT,10 FEB 1987,CAN,1,,Victoria (CAN),03 JUL 2011,1136.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14174647,toplist
+64.0,20.54,-0.8,Christian MALCOLM,03 JUN 1979,GBR,5,,Reims (FRA),05 JUL 2011,1140.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14189990,toplist
+69.0,20.55,0.7,Torrin LAWRENCE,11 APR 1989,USA,1f1,,"Auburn, AL (USA)",16 APR 2011,1135.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14243745,toplist
+69.0,20.55,0.5,Asafa POWELL,23 NOV 1982,JAM,3f3,,Kingston (JAM),16 APR 2011,1135.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14202176,toplist
+69.0,20.55,-0.6,Thuso MPUANG,01 MAR 1984,RSA,1,,Stellenbosch (RSA),30 APR 2011,1138.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14220751,toplist
+69.0,20.55,1.9,Deun WHITE,13 JUL 1985,USA,3f1,,"Walnut, CA (USA)",04 JUN 2011,1135.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14254722,toplist
+69.0,20.55,0.8,Hitoshi SAITO,09 OCT 1986,JPN,1h1,,Kumagaya (JPN),10 JUN 2011,1135.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14205454,toplist
+69.0,20.55,0.4,Kenroy ANDERSON,27 JUN 1987,JAM,4,,Kingston (JAM),26 JUN 2011,1135.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201795,toplist
+75.0,20.56,-0.5,Idrissa ADAM,28 DEC 1984,CMR,1,,Bamako (MLI),26 APR 2011,1136.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14170274,toplist
+75.0,20.56,1.2,Charles SILMON,04 JUL 1991,USA,1,,"Fort Collins, CO (USA)",14 MAY 2011,1133.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14941415,toplist
+75.0,20.56,0.0,Sota KAWATSURA,19 JUN 1989,JPN,1,,Tokyo (JPN),22 MAY 2011,1133.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14334122,toplist
+75.0,20.56,-1.4,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,1,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1141.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14329437,toplist
+75.0,20.56,0.5,Nílson ANDRÉ,30 JAN 1986,BRA,3,,São Paulo (BRA),07 AUG 2011,1133.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14175883,toplist
+80.0,20.57,1.4,Wayde VAN NIEKERK,15 JUL 1992,RSA,1,,Durban (RSA),10 APR 2011,1132.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14417677,toplist
+80.0,20.57,1.1,Brandon BYRAM,11 SEP 1988,USA,2,,"Durham, NC (USA)",23 APR 2011,1132.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14327177,toplist
+80.0,20.57,1.9,Joel REDHEAD,03 JUL 1986,GRN,2f1,,"Clermont, FL (USA)",21 MAY 2011,1132.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14195683,toplist
+80.0,20.57,0.8,Adolphus NEVERS,19 MAR 1990,JAM,2f1,,Kingston (JAM),21 MAY 2011,1132.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14335534,toplist
+80.0,20.57,0.9,Diego CAVALCANTI,18 MAR 1991,BRA,1h3,,São Paulo (BRA),06 AUG 2011,1132.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14176180,toplist
+85.0,20.58,0.5,Lebogang MOENG,10 OCT 1989,RSA,1,,Germiston (RSA),03 APR 2011,1130.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14466819,toplist
+85.0,20.58,1.1,Akheem GAUNTLETT,26 AUG 1990,JAM,2f1,,"Fayetteville, AR (USA)",06 MAY 2011,1130.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14326437,toplist
+87.0,20.59,0.8,Clement CAMPBELL,19 DEC 1975,JAM,1f1,,"Durham, NC (USA)",08 MAY 2011,1129.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14201883,toplist
+87.0,20.59,2.0,Dentarius LOCKE,12 DEC 1989,USA,3,,"Athens, GA (USA)",15 MAY 2011,1129.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14244257,toplist
+87.0,20.59,-0.6,Brijesh LAWRENCE,27 DEC 1989,SKN,1,,"Marion, IN (USA)",28 MAY 2011,1132.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14330250,toplist
+87.0,20.59,1.2,Yuichi KOBAYASHI,25 AUG 1989,JPN,1h2,,Kumagaya (JPN),10 JUN 2011,1129.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14204014,toplist
+87.0,20.59,0.8,James ALAKA,08 SEP 1989,GBR,1sf1,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1129.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14188324,toplist
+92.0,20.60,2.0,Ben Youssef MEITÉ,11 NOV 1986,CIV,2,,Dakar (SEN),28 MAY 2011,1127.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14170297,toplist
+92.0,20.60,1.9,Brendan CHRISTIAN,11 DEC 1983,ANT,3f1,,"Clermont, FL (USA)",11 JUN 2011,1127.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14180554,toplist
+92.0,20.60,-0.9,Marlon DEVONISH,01 JUN 1976,GBR,2f2,,Bottrop (GER),15 JUL 2011,1132.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14189045,toplist
+92.0,20.60,1.5,Luke FAGAN,31 JUL 1988,GBR,1f1,,Manchester (GBR),13 AUG 2011,1127.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14189191,toplist
+96.0,20.61,,Tony MCQUAY,16 APR 1990,USA,1f2,,"Fayetteville, AR (USA) (i)",27 FEB 2011,1193.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14371133,toplist
+96.0,20.61,0.6,Leford GREEN,14 NOV 1986,JAM,1h3,,"Charlotte, NC (USA)",18 MAR 2011,1126.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14202029,toplist
+96.0,20.61,0.8,Arnaldo ABRANTES,27 NOV 1986,POR,2f2,,La Chaux-de-Fonds (SUI),03 JUL 2011,1126.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14217970,toplist
+99.0,20.62,0.0,Ryota YAMAGATA,10 JUN 1992,JPN,3,,Tokyo (JPN),22 MAY 2011,1124.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14369915,toplist
+99.0,20.62,-0.3,Patrick VAN LUIJK,17 SEP 1984,NED,5,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1125.0,men_200m,2011,https://worldathletics.org/athletes/athlete=14214623,toplist
+1.0,19.32,0.4,Usain BOLT,21 AUG 1986,JAM,1,,"Olympic Stadium, London (GBR)",09 AUG 2012,1329.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14201847,toplist
+2.0,19.44,0.4,Yohan BLAKE,26 DEC 1989,JAM,2,,"Olympic Stadium, London (GBR)",09 AUG 2012,1310.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14201842,toplist
+3.0,19.84,0.4,Warren WEIR,31 OCT 1989,JAM,3,,"Olympic Stadium, London (GBR)",09 AUG 2012,1245.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14202309,toplist
+4.0,19.85,1.4,Churandy MARTINA,03 JUL 1984,NED,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",23 AUG 2012,1244.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14180965,toplist
+4.0,19.85,0.0,Nickel ASHMEADE,07 APR 1990,JAM,2,,"Letzigrund, Zürich (SUI)",30 AUG 2012,1244.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14201803,toplist
+6.0,19.86,1.5,Jason YOUNG,21 MAR 1991,JAM,1f1,,Luzern (SUI),17 JUL 2012,1242.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14325557,toplist
+7.0,19.90,0.4,Wallace SPEARMON,24 DEC 1984,USA,4,,"Olympic Stadium, London (GBR)",09 AUG 2012,1236.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14251926,toplist
+8.0,19.91,1.1,Christophe LEMAITRE,11 JUN 1990,FRA,1,,"Crystal Palace, London (GBR)",14 JUL 2012,1234.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14186000,toplist
+9.0,20.02,-0.5,Walter DIX,31 JAN 1986,USA,1,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1220.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14236532,toplist
+10.0,20.10,-1.1,Harry ADAMS,27 NOV 1989,USA,1f1,,"Coral Gables, FL (USA)",14 APR 2012,1210.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14230975,toplist
+11.0,20.11,1.0,Justin GATLIN,10 FEB 1982,USA,1f1,,"Gainesville, FL (USA)",21 APR 2012,1203.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14238562,toplist
+12.0,20.13,0.2,Maurice MITCHELL,22 DEC 1989,USA,1sf1,,"Jacksonville, FL (USA)",26 MAY 2012,1200.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14246290,toplist
+13.0,20.14,1.8,Tyreek HILL,01 MAR 1994,USA,1,,"Orlando, FL (USA)",26 MAY 2012,1198.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14474995,toplist
+14.0,20.16,0.9,LaShawn MERRITT,27 JUN 1986,USA,1f1,,St-Martin (FRA),05 MAY 2012,1195.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14245966,toplist
+14.0,20.16,0.8,Michael MATHIEU,24 JUN 1984,BAH,1,,Belém (BRA),06 MAY 2012,1195.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14177996,toplist
+16.0,20.21,0.1,Marvin ANDERSON,12 MAY 1982,JAM,4,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1187.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14201797,toplist
+17.0,20.22,-0.5,Tremaine HARRIS,10 FEB 1992,CAN,1,,Irapuato (MEX),08 JUL 2012,1189.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14377679,toplist
+18.0,20.23,-1.1,Demetrius PINDER,13 FEB 1989,BAH,2f1,,"Coral Gables, FL (USA)",14 APR 2012,1190.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14177972,toplist
+19.0,20.27,-0.6,Anaso JOBODWANA,30 JUL 1992,RSA,2sf2,,"Olympic Stadium, London (GBR)",08 AUG 2012,1181.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14383348,toplist
+20.0,20.28,1.5,Calesio NEWMAN,20 AUG 1986,USA,1h3,,"Hayward Field, Eugene, OR (USA)",29 JUN 2012,1176.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14247139,toplist
+20.0,20.28,0.7,Alex QUIÑÓNEZ,11 AUG 1989,ECU,1h6,,"Olympic Stadium, London (GBR)",07 AUG 2012,1176.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14368885,toplist
+22.0,20.30,0.3,Jared CONNAUGHTON,20 JUL 1985,CAN,1,,Fortaleza (BRA),09 MAY 2012,1173.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14174434,toplist
+23.0,20.31,0.7,Jonathan BORLÉE,22 FEB 1988,BEL,1f1,,"Lubbock, TX (USA)",05 MAY 2012,1172.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14177716,toplist
+24.0,20.32,-0.2,Darvis PATTON,04 DEC 1977,USA,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",23 AUG 2012,1171.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14248077,toplist
+25.0,20.33,1.9,Isiah YOUNG,05 JAN 1990,USA,2f1,,"Oxford, MS (USA)",14 APR 2012,1169.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14360879,toplist
+25.0,20.33,1.5,Prezel HARDY,01 JUN 1992,USA,1,,"Manhattan, KS (USA)",13 MAY 2012,1169.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14367136,toplist
+25.0,20.33,1.9,Aleixo Platini MENGA,29 SEP 1987,GER,1f2,,Mannheim (GER),09 JUN 2012,1169.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14193693,toplist
+25.0,20.33,-0.7,Mario FORSYTHE,30 OCT 1985,JAM,1,,"Puskás Ferenc Stadion, Budapest (HUN)",20 AUG 2012,1173.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14201990,toplist
+29.0,20.34,-0.5,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1170.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14215468,toplist
+30.0,20.36,0.2,Kind BUTLER,08 APR 1989,USA,2sf1,,"Jacksonville, FL (USA)",26 MAY 2012,1164.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14328473,toplist
+31.0,20.37,1.2,Nesta CARTER,11 OCT 1985,JAM,2sf1,,Kingston (JAM),30 JUN 2012,1162.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14201894,toplist
+31.0,20.37,0.8,Bruno DE BARROS,07 JAN 1987,BRA,1,,São Paulo (BRA),01 JUL 2012,1162.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14175190,toplist
+33.0,20.38,-1.3,Simon MAGAKWE,14 MAY 1986,RSA,1,,Potchefstroom (RSA),24 MAR 2012,1168.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14220435,toplist
+33.0,20.38,1.0,Julian FORTE,07 JAN 1993,JAM,1,,Kingston (JAM),17 JUN 2012,1161.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14367596,toplist
+33.0,20.38,0.8,Aldemir GOMES JÚNIOR,08 JUN 1992,BRA,2,,São Paulo (BRA),01 JUL 2012,1161.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14429482,toplist
+33.0,20.38,1.1,Adam GEMILI,06 OCT 1993,GBR,1f1,,Derby (GBR),09 SEP 2012,1161.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14427998,toplist
+37.0,20.39,,Ameer WEBB,19 MAR 1991,USA,1h2,,"Nampa, ID (USA) (i)",09 MAR 2012,1228.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14373694,toplist
+37.0,20.39,1.8,Jeremy DODSON,30 AUG 1987,USA,1,,"Walnut, CA (USA)",21 APR 2012,1159.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14236598,toplist
+39.0,20.40,0.3,Diego CAVALCANTI,18 MAR 1991,BRA,2,,Fortaleza (BRA),09 MAY 2012,1158.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14176180,toplist
+39.0,20.40,1.5,Rondel SORRILLO,24 JAN 1986,TTO,3f1,,Luzern (SUI),17 JUL 2012,1158.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14229095,toplist
+41.0,20.42,0.0,Kei TAKASE,25 NOV 1988,JPN,1,,Osaka (JPN),10 JUN 2012,1155.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14334125,toplist
+41.0,20.42,-0.6,Aaron BROWN,27 MAY 1992,CAN,4sf2,,"Olympic Stadium, London (GBR)",08 AUG 2012,1158.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14366482,toplist
+43.0,20.43,0.5,Sandro VIANA,26 MAR 1977,BRA,2f1,,São Paulo (BRA),28 APR 2012,1153.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14175281,toplist
+43.0,20.43,0.6,Antoine ADAMS,31 AUG 1988,SKN,1f1,,Basseterre (SKN),03 JUN 2012,1153.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14224936,toplist
+43.0,20.43,0.0,Ryan BAILEY,13 APR 1989,USA,4,,"Alexander Stadium, Birmingham (GBR)",26 AUG 2012,1153.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14231808,toplist
+46.0,20.44,-0.4,Thuso MPUANG,01 MAR 1984,RSA,1,,Pretoria (RSA),05 MAY 2012,1154.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14220751,toplist
+47.0,20.45,1.3,Akheem GAUNTLETT,26 AUG 1990,JAM,1f4,,"Fayetteville, AR (USA)",04 MAY 2012,1150.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14326437,toplist
+47.0,20.45,1.7,James ALAKA,08 SEP 1989,GBR,1,,"Eugene, OR (USA)",13 MAY 2012,1150.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14188324,toplist
+47.0,20.45,1.0,Keith RICKS,09 OCT 1990,USA,1sf3,,"Jacksonville, FL (USA)",26 MAY 2012,1150.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14363398,toplist
+47.0,20.45,0.0,Shota IIZUKA,25 JUN 1991,JPN,2,,Osaka (JPN),10 JUN 2012,1150.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14327811,toplist
+51.0,20.46,1.2,Christian MALCOLM,03 JUN 1979,GBR,1f1,,Regensburg (GER),02 JUN 2012,1149.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14189990,toplist
+52.0,20.47,0.5,Keenan BROCK,01 JUN 1992,USA,1f1,,"Auburn, AL (USA)",21 APR 2012,1147.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14371106,toplist
+52.0,20.47,0.5,Dedric DUKES,04 FEB 1992,USA,2sf2,,"Jacksonville, FL (USA)",26 MAY 2012,1147.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14236857,toplist
+52.0,20.47,1.0,Horatio WILLIAMS,28 AUG 1989,USA,2sf3,,"Jacksonville, FL (USA)",26 MAY 2012,1147.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14335759,toplist
+52.0,20.47,0.7,Patrick VAN LUIJK,17 SEP 1984,NED,1f2,,Leiden (NED),09 JUN 2012,1147.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14214623,toplist
+52.0,20.47,1.6,Manteo MITCHELL,06 JUL 1987,USA,2h5,,"Hayward Field, Eugene, OR (USA)",29 JUN 2012,1147.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14246285,toplist
+57.0,20.48,0.0,Terrel COTTON,19 JUL 1988,USA,1h1,,"Pueblo, CO (USA)",25 MAY 2012,1146.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14235435,toplist
+57.0,20.48,1.3,Reto Amaru SCHENKEL,28 APR 1988,SUI,1f4,,Weinheim (GER),26 MAY 2012,1146.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14226483,toplist
+57.0,20.48,-0.8,Shawn CRAWFORD,14 JAN 1978,USA,1sf3,,"Hayward Field, Eugene, OR (USA)",30 JUN 2012,1150.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14235549,toplist
+57.0,20.48,-0.4,Delano WILLIAMS,23 DEC 1993,TKS,1,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1148.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14413548,toplist
+57.0,20.48,0.0,Bernardo BALOYES,06 JAN 1994,COL,1,,Medellín (COL),18 AUG 2012,1146.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14433876,toplist
+62.0,20.49,0.4,Troy FAULKNER,1989,USA,1,,"San Angelo, TX (USA)",05 APR 2012,1144.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14237561,toplist
+63.0,20.50,0.0,Richard KILTY,02 SEP 1989,GBR,1f1,,"Tempe, AZ (USA)",07 APR 2012,1143.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14189811,toplist
+63.0,20.50,1.8,Diondre BATSON,13 JUL 1992,USA,2,,"Walnut, CA (USA)",21 APR 2012,1143.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14415677,toplist
+63.0,20.50,-0.9,Ramon MILLER,17 FEB 1987,BAH,1f1,,"Tampa, FL (USA)",27 MAY 2012,1148.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14177987,toplist
+63.0,20.50,0.2,Aziz OUHADI,24 JUL 1984,MAR,1,,Brazzaville (CGO),10 JUN 2012,1143.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14212412,toplist
+67.0,20.51,-1.3,Lebogang MOENG,10 OCT 1989,RSA,3,,Potchefstroom (RSA),24 MAR 2012,1148.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14466819,toplist
+67.0,20.51,1.3,Zye BOEY,08 MAY 1989,USA,1f1,,"Nashville, TN (USA)",20 APR 2012,1141.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14232865,toplist
+67.0,20.51,1.5,Marcus ROWLAND,11 MAR 1990,USA,2h3,,"Hayward Field, Eugene, OR (USA)",29 JUN 2012,1141.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14250123,toplist
+70.0,20.52,0.3,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,1f1,,Genève (SUI),02 JUN 2012,1139.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14329437,toplist
+70.0,20.52,-0.5,Trevorano MACKEY,05 JAN 1992,BAH,4,,Irapuato (MEX),08 JUL 2012,1142.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14387756,toplist
+70.0,20.52,0.4,Daniel TALBOT,01 MAY 1991,GBR,1f2,,Luzern (SUI),17 JUL 2012,1139.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14190940,toplist
+70.0,20.52,0.7,Alex WILSON,19 SEP 1990,SUI,1f2,,Weinheim (GER),27 JUL 2012,1139.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14329085,toplist
+74.0,20.53,1.8,Jeremy WARINER,31 JAN 1984,USA,2f1,,"Arlington, TX (USA)",24 MAR 2012,1138.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14254258,toplist
+74.0,20.53,0.7,Sven KNIPPHALS,20 SEP 1985,GER,1f3,,Mannheim (GER),09 JUN 2012,1138.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14192885,toplist
+74.0,20.53,-0.4,Aaron ERNEST,08 NOV 1993,USA,2,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1140.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14425681,toplist
+74.0,20.53,0.0,Ramil GULIYEV,29 MAY 1990,TUR,1f1,,Lappeenranta (FIN),18 JUL 2012,1138.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14178065,toplist
+78.0,20.54,-0.6,Gil ROBERTS,15 MAR 1989,USA,1f1,,"El Paso, TX (USA)",24 MAR 2012,1139.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14249702,toplist
+78.0,20.54,1.8,Everett WALKER,03 OCT 1990,USA,2sf2,,"Austin, TX (USA)",26 MAY 2012,1136.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14374334,toplist
+78.0,20.54,0.5,Zhenye XIE,17 AUG 1993,CHN,1,,Zibo (CHN),27 MAY 2012,1136.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14376449,toplist
+78.0,20.54,1.0,Joseph Obinna METU,12 JUL 1988,NGR,h1,,Calabar (NGR),21 JUN 2012,1136.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14215019,toplist
+78.0,20.54,1.7,Ramone MCKENZIE,15 NOV 1990,JAM,4sf2,,Kingston (JAM),30 JUN 2012,1136.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14202117,toplist
+78.0,20.54,0.6,Noah AKWU,23 SEP 1990,NGR,1f1,,Kumasi (GHA),06 JUL 2012,1136.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14327823,toplist
+78.0,20.54,-0.4,Karol ZALEWSKI,07 AUG 1993,POL,4,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1138.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14403529,toplist
+78.0,20.54,0.4,Paul HESSION,27 JAN 1983,IRL,2f2,,Luzern (SUI),17 JUL 2012,1136.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14198909,toplist
+78.0,20.54,-1.4,Kenroy ANDERSON,27 JUN 1987,JAM,1,,La Roche-sur-Yon (FRA),18 JUL 2012,1144.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14201795,toplist
+87.0,20.55,1.2,Fernada BLAKELY,28 SEP 1981,USA,1f1,,"Fayetteville, AR (USA)",31 MAR 2012,1135.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14232756,toplist
+87.0,20.55,1.7,Davonte STEWART,11 JUN 1993,USA,3,,"Eugene, OR (USA)",13 MAY 2012,1135.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14423473,toplist
+87.0,20.55,0.3,James ELLINGTON,06 SEP 1985,GBR,2f1,,Genève (SUI),02 JUN 2012,1135.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14189152,toplist
+87.0,20.55,0.2,Michael COLEMAN,26 JAN 1987,USA,1,,"Houston, TX (USA)",16 JUN 2012,1135.0,men_200m,2012,https://worldathletics.org/athletes/united-states/michael-coleman-14326164,toplist
+87.0,20.55,1.5,Justin AUSTIN,10 AUG 1989,USA,4h3,,"Hayward Field, Eugene, OR (USA)",29 JUN 2012,1135.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14360852,toplist
+92.0,20.56,0.9,Ainsley WAUGH,17 SEP 1981,JAM,2f1,,St-Martin (FRA),05 MAY 2012,1133.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14202305,toplist
+92.0,20.56,0.0,Shinji TAKAHIRA,18 JUL 1984,JPN,3,,Osaka (JPN),10 JUN 2012,1133.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14206136,toplist
+92.0,20.56,1.3,Kamil KRYŃSKI,12 MAY 1987,POL,1h1,,Bielsko-Biala (POL),16 JUN 2012,1133.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14216984,toplist
+95.0,20.57,0.3,Johan WISSMAN,02 NOV 1982,SWE,1f1,,"Los Angeles, CA (USA)",12 MAY 2012,1132.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14228212,toplist
+95.0,20.57,0.2,Reggie DIXON,07 JUN 1988,USA,3sf1,,"Jacksonville, FL (USA)",26 MAY 2012,1132.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14336544,toplist
+95.0,20.57,-0.8,Remontay MCCLAIN,21 SEP 1992,USA,1f1,,"Los Angeles, CA (USA)",02 JUN 2012,1136.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14415933,toplist
+95.0,20.57,0.0,Hitoshi SAITO,09 OCT 1986,JPN,4,,Osaka (JPN),10 JUN 2012,1132.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14205454,toplist
+95.0,20.57,-0.7,Steven COLVERT,24 AUG 1990,IRL,2f1,,Velenje (SLO),14 JUN 2012,1136.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14372594,toplist
+95.0,20.57,1.5,José Carlos HERRERA,05 FEB 1986,MEX,1,,Toluca (MEX),23 JUN 2012,1132.0,men_200m,2012,https://worldathletics.org/athletes/athlete=14365623,toplist
+1.0,19.66,0.0,Usain BOLT,21 AUG 1986,JAM,1,,"Luzhniki Stadion, Moskva (RUS)",17 AUG 2013,1274.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14201847,toplist
+2.0,19.79,0.9,Warren WEIR,31 OCT 1989,JAM,1,,Kingston (JAM),23 JUN 2013,1253.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14202309,toplist
+3.0,19.86,1.6,Isiah YOUNG,05 JAN 1990,USA,1,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1242.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14360879,toplist
+4.0,19.93,-0.2,Nickel ASHMEADE,07 APR 1990,JAM,2,,"Boudewijnstadion, Bruxelles (BEL)",06 SEP 2013,1232.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14201803,toplist
+5.0,19.97,0.0,Curtis MITCHELL,11 MAR 1989,USA,1sf1,,"Luzhniki Stadion, Moskva (RUS)",16 AUG 2013,1225.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14246265,toplist
+6.0,19.98,-0.3,Jason YOUNG,21 MAR 1991,JAM,1f1,,Luzern (SUI),17 JUL 2013,1224.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14325557,toplist
+6.0,19.98,-0.3,Adam GEMILI,06 OCT 1993,GBR,1sf3,,"Luzhniki Stadion, Moskva (RUS)",16 AUG 2013,1224.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14427998,toplist
+8.0,20.01,1.4,Churandy MARTINA,03 JUL 1984,NED,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",04 JUL 2013,1218.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14180965,toplist
+9.0,20.07,0.2,Christophe LEMAITRE,11 JUN 1990,FRA,3,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1209.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14186000,toplist
+10.0,20.10,1.6,Wallace SPEARMON,24 DEC 1984,USA,3,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1204.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14251926,toplist
+11.0,20.12,-0.2,Walter DIX,31 JAN 1986,USA,3,,"Boudewijnstadion, Bruxelles (BEL)",06 SEP 2013,1202.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14236532,toplist
+12.0,20.13,1.7,Anaso JOBODWANA,30 JUL 1992,RSA,1f1,,"Greensboro, NC (USA)",25 MAY 2013,1200.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14383348,toplist
+12.0,20.13,0.9,Jason LIVERMORE,25 APR 1988,JAM,3,,Kingston (JAM),23 JUN 2013,1200.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14202097,toplist
+12.0,20.13,0.5,Antoine ADAMS,31 AUG 1988,SKN,1,,Morelia (MEX),07 JUL 2013,1200.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14224936,toplist
+15.0,20.15,0.4,Rasheed DWYER,29 JAN 1989,JAM,1f2,,"Stadion Orzeł, Warszawa (POL)",25 AUG 2013,1196.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14201966,toplist
+16.0,20.20,1.6,Ameer WEBB,19 MAR 1991,USA,4,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1189.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14373694,toplist
+17.0,20.21,1.4,Shota IIZUKA,25 JUN 1991,JPN,1f4,,Fukuroi (JPN),03 MAY 2013,1187.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14327811,toplist
+17.0,20.21,0.0,Justin GATLIN,10 FEB 1982,USA,2,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2013,1187.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14238562,toplist
+17.0,20.21,0.1,Isaac MAKWALA,24 SEP 1985,BOT,1f2,,La Chaux-de-Fonds (SUI),07 JUL 2013,1187.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14176330,toplist
+20.0,20.22,-1.3,Chris CLARKE,25 JAN 1990,GBR,1,,Bedford (GBR),25 AUG 2013,1193.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14188834,toplist
+21.0,20.23,1.5,Bryshon NELLUM,01 MAY 1989,USA,1,,"Los Angeles, CA (USA)",12 MAY 2013,1184.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14247047,toplist
+21.0,20.23,0.6,Charles SILMON,04 JUL 1991,USA,1f2,,"Austin, TX (USA)",25 MAY 2013,1184.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14941415,toplist
+21.0,20.23,-0.2,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,5,,"Boudewijnstadion, Bruxelles (BEL)",06 SEP 2013,1185.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14215468,toplist
+24.0,20.24,0.7,Bruno DE BARROS,07 JAN 1987,BRA,1,,São Paulo (BRA),19 MAY 2013,1182.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14175190,toplist
+25.0,20.26,0.7,LaShawn MERRITT,27 JUN 1986,USA,1,,George Town (CAY),08 MAY 2013,1179.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14245966,toplist
+25.0,20.26,0.5,Lalonde GORDON,25 NOV 1988,TTO,1f2,,Port-of-Spain (TTO),23 JUN 2013,1179.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14406756,toplist
+27.0,20.27,0.9,Delano WILLIAMS,23 DEC 1993,TKS,1,,Kingston (JAM),16 MAR 2013,1178.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14413548,toplist
+27.0,20.27,0.7,Mario FORSYTHE,30 OCT 1985,JAM,2,,São Paulo (BRA),19 MAY 2013,1178.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14201990,toplist
+29.0,20.30,0.2,Jimmy VICAUT,27 FEB 1992,FRA,6,,"Stade de France, Paris-St-Denis (FRA)",06 JUL 2013,1173.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14334964,toplist
+30.0,20.32,1.5,Carvin NKANATA,06 MAY 1991,USA,1,,"Princeton, NJ (USA)",12 MAY 2013,1170.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14440825,toplist
+30.0,20.32,1.6,Maurice MITCHELL,22 DEC 1989,USA,5,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1170.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14246290,toplist
+32.0,20.34,-0.1,Richard KILTY,02 SEP 1989,GBR,1f1,,La Chaux-de-Fonds (SUI),07 JUL 2013,1167.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14189811,toplist
+33.0,20.35,-0.3,Akiyuki HASHIMOTO,18 NOV 1994,JPN,1f3,,Fukuroi (JPN),03 MAY 2013,1166.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14480164,toplist
+33.0,20.35,0.7,Michael MATHIEU,24 JUN 1984,BAH,3,,São Paulo (BRA),19 MAY 2013,1165.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14177996,toplist
+35.0,20.36,-0.4,Julian REUS,29 APR 1988,GER,1,,Ulm (GER),07 JUL 2013,1166.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14193827,toplist
+36.0,20.37,1.6,Calesio NEWMAN,20 AUG 1986,USA,6,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1162.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14247139,toplist
+36.0,20.37,1.8,Mosito LEHATA,08 APR 1989,LES,1f1,,Sollentuna (SWE),27 JUN 2013,1162.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14330015,toplist
+36.0,20.37,0.3,Alonso EDWARD,08 DEC 1989,PAN,1f2,,Luzern (SUI),17 JUL 2013,1162.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14216095,toplist
+39.0,20.38,1.2,Aaron ERNEST,08 NOV 1993,USA,1f2,,"Greensboro, NC (USA)",25 MAY 2013,1161.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14425681,toplist
+39.0,20.38,-0.4,Jonathan BORLÉE,22 FEB 1988,BEL,1,,Bruxelles (BEL),21 JUL 2013,1163.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14177716,toplist
+41.0,20.39,1.3,Edino STEELE,01 JUN 1987,JAM,1f1,,"Stadion Orzeł, Warszawa (POL)",25 AUG 2013,1159.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14202253,toplist
+41.0,20.39,0.2,Serhiy SMELYK,19 APR 1987,UKR,2,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1159.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14230624,toplist
+43.0,20.41,-0.5,Ryota YAMAGATA,10 JUN 1992,JPN,1f1,,Yokohama (JPN),26 MAY 2013,1159.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14369915,toplist
+43.0,20.41,-0.5,Yoshihide KIRYU,15 DEC 1995,JPN,1,,Nara (JPN),15 JUN 2013,1159.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14547456,toplist
+43.0,20.41,-0.3,Karol ZALEWSKI,07 AUG 1993,POL,1,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1157.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14403529,toplist
+46.0,20.42,2.0,James ELLINGTON,06 SEP 1985,GBR,2,,"FBK Stadium, Hengelo (NED)",08 JUN 2013,1155.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14189152,toplist
+47.0,20.44,1.6,Aldemir GOMES JÚNIOR,08 JUN 1992,BRA,2,,"Mangueirão, Belém (BRA)",12 MAY 2013,1152.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14429482,toplist
+47.0,20.44,1.8,Alex QUIÑÓNEZ,11 AUG 1989,ECU,1,,Cartagena de Indias (COL),06 JUL 2013,1152.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14368885,toplist
+47.0,20.44,0.6,Jacques HARVEY,04 MAY 1989,JAM,1f3,,Kortrijk (BEL),14 JUL 2013,1152.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14325558,toplist
+47.0,20.44,0.8,Aaron BROWN,27 MAY 1992,CAN,1f3,,Weinheim (GER),02 AUG 2013,1152.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14366482,toplist
+51.0,20.45,-0.2,Daniel TALBOT,01 MAY 1991,GBR,1f1,,Genève (SUI),01 JUN 2013,1151.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14190940,toplist
+51.0,20.45,1.6,Dedric DUKES,04 FEB 1992,USA,7,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1150.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14236857,toplist
+51.0,20.45,-0.7,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,1,,Mersin (TUR),26 JUN 2013,1154.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14329437,toplist
+51.0,20.45,0.1,Enrico DEMONTE,25 SEP 1988,ITA,2f2,,La Chaux-de-Fonds (SUI),07 JUL 2013,1150.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14200172,toplist
+55.0,20.46,0.9,Yuichi KOBAYASHI,25 AUG 1989,JPN,2,,Tokyo (JPN),09 JUN 2013,1149.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14204014,toplist
+55.0,20.46,0.4,Bernardo BALOYES,06 JAN 1994,COL,1,,Cali (COL),23 JUN 2013,1149.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14433876,toplist
+55.0,20.46,-0.7,Ramil GULIYEV,29 MAY 1990,TUR,2,,Mersin (TUR),26 JUN 2013,1153.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14178065,toplist
+58.0,20.47,0.0,Peimeng ZHANG,13 MAR 1987,CHN,4,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2013,1147.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14171682,toplist
+58.0,20.47,0.0,Bruno HORTELANO,18 SEP 1991,ESP,2h3,,"Luzhniki Stadion, Moskva (RUS)",16 AUG 2013,1147.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14362106,toplist
+60.0,20.48,,Edward HADNOT,07 MAR 1992,USA,2f1,,"Fayetteville, AR (USA) (i)",08 MAR 2013,1213.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14430662,toplist
+60.0,20.48,0.9,Kenji FUJIMITSU,01 MAY 1986,JPN,3,,Tokyo (JPN),09 JUN 2013,1146.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14202678,toplist
+60.0,20.48,0.9,Kei TAKASE,25 NOV 1988,JPN,3,,Tokyo (JPN),09 JUN 2013,1146.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14334125,toplist
+63.0,20.49,1.6,Jeremy DODSON,30 AUG 1987,USA,1,,"Walnut, CA (USA)",20 APR 2013,1144.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14236598,toplist
+63.0,20.49,1.1,Jerrell HANCOCK,06 JUL 1989,USA,1,,"Sioux Falls, SD (USA)",11 MAY 2013,1144.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14239740,toplist
+63.0,20.49,0.9,Jermaine BROWN,04 JUL 1991,JAM,6,,Kingston (JAM),23 JUN 2013,1144.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14201858,toplist
+63.0,20.49,-0.3,Pavel MASLÁK,21 FEB 1991,CZE,3,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1145.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14168565,toplist
+67.0,20.50,0.2,Matteo GALVAN,24 AUG 1988,ITA,4,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1143.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14200400,toplist
+68.0,20.51,2.0,Jamial ROLLE,16 APR 1980,BAH,1f2,,"Montverde, FL (USA)",08 JUN 2013,1141.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14177964,toplist
+68.0,20.51,1.4,Sergio RUIZ,21 OCT 1989,ESP,1f1,,Salamanca (ESP),12 JUN 2013,1141.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14165090,toplist
+70.0,20.52,1.4,Blake HERIOT,26 SEP 1991,USA,2,,"Waco, TX (USA)",05 MAY 2013,1139.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14240556,toplist
+70.0,20.52,0.9,Diondre BATSON,13 JUL 1992,USA,3,,"Columbia, SC (USA)",12 MAY 2013,1139.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14415677,toplist
+70.0,20.52,1.3,Charles CLARK,,USA,2f1,,"Montverde, FL (USA)",08 JUN 2013,1139.0,men_200m,2013,https://worldathletics.org/athletes/united-states/charles-clark-014553615,toplist
+70.0,20.52,0.9,Shinji TAKAHIRA,18 JUL 1984,JPN,5,,Tokyo (JPN),09 JUN 2013,1139.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14206136,toplist
+74.0,20.53,0.6,Daveon COLLINS,03 OCT 1992,USA,1,,"Las Vegas, NV (USA)",11 MAY 2013,1138.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14404979,toplist
+74.0,20.53,1.2,Justin AUSTIN,10 AUG 1989,USA,2f1,,"Austin, TX (USA)",25 MAY 2013,1138.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14360852,toplist
+74.0,20.53,1.8,Nil DE OLIVEIRA,03 SEP 1986,SWE,2f1,,Sollentuna (SWE),27 JUN 2013,1138.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14476170,toplist
+77.0,20.54,1.9,Remontay MCCLAIN,21 SEP 1992,USA,1f1,,"Azusa, CA (USA)",19 APR 2013,1136.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14415933,toplist
+77.0,20.54,0.7,Tremaine HARRIS,10 FEB 1992,CAN,4,,São Paulo (BRA),19 MAY 2013,1136.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14377679,toplist
+77.0,20.54,1.3,Brandon BYRAM,11 SEP 1988,USA,3f1,,"Montverde, FL (USA)",08 JUN 2013,1136.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14327177,toplist
+80.0,20.55,2.0,Akheem GAUNTLETT,26 AUG 1990,JAM,1,,"Eugene, OR (USA)",20 APR 2013,1135.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14326437,toplist
+80.0,20.55,-2.8,Zhenye XIE,17 AUG 1993,CHN,1,,Jinan (CHN),12 MAY 2013,1151.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14376449,toplist
+80.0,20.55,0.5,Luguelín SANTOS,1992,DOM,4,,Morelia (MEX),07 JUL 2013,1135.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14370985,toplist
+80.0,20.55,0.6,Joseph Obinna METU,12 JUL 1988,NGR,2f3,,Kortrijk (BEL),14 JUL 2013,1135.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14215019,toplist
+84.0,20.56,1.4,Hitoshi SAITO,09 OCT 1986,JPN,4f4,,Fukuroi (JPN),03 MAY 2013,1133.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14205454,toplist
+85.0,20.57,1.5,Joshua ROSS,09 FEB 1981,AUS,1,,Sydney (AUS),14 APR 2013,1132.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14178860,toplist
+85.0,20.57,0.5,Wilfried KOFFI HUA,12 OCT 1987,CIV,1,,Abidjan (CIV),27 APR 2013,1132.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14185652,toplist
+85.0,20.57,0.2,Jermaine JONES,24 MAY 1991,USA,1,,"Pueblo, CO (USA)",25 MAY 2013,1132.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14518385,toplist
+85.0,20.57,0.5,Kyle GREAUX,26 APR 1988,TTO,2f2,,Port-of-Spain (TTO),23 JUN 2013,1132.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14526883,toplist
+89.0,20.58,1.7,Adolphus NEVERS,19 MAR 1990,JAM,2f3,,Ljubljana (SLO),13 JUL 2013,1130.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14335534,toplist
+90.0,20.59,0.4,Winston GEORGE,19 MAY 1987,GUY,1f1,,"Colts Neck, NJ (USA)",08 JUN 2013,1129.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14434969,toplist
+90.0,20.59,1.7,Jan ŽUMER,09 JUN 1982,SLO,3f3,,Ljubljana (SLO),13 JUL 2013,1129.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14225243,toplist
+92.0,20.60,2.0,Greg NIXON,12 SEP 1981,USA,1,,"Walnut, CA (USA)",20 APR 2013,1127.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14247256,toplist
+92.0,20.60,1.0,Elijah HALL-THOMPSON,22 AUG 1994,USA,1,,"Austin, TX (USA)",11 MAY 2013,1127.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14432013,toplist
+92.0,20.60,-0.5,Tony MCQUAY,16 APR 1990,USA,1f2,,St-Martin (FRA),11 MAY 2013,1130.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14371133,toplist
+92.0,20.60,1.5,Brendon RODNEY,09 APR 1992,CAN,2,,"Princeton, NJ (USA)",12 MAY 2013,1127.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14400932,toplist
+92.0,20.60,0.0,Davide MANENTI,16 APR 1989,ITA,1f1,,Rieti (ITA),01 JUN 2013,1127.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14200747,toplist
+92.0,20.60,0.5,Miguel FRANCIS,28 MAR 1995,ANT,1,,St. John's (CAN),02 JUN 2013,1127.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14591255,toplist
+92.0,20.60,-0.7,David BOLARINWA,20 OCT 1993,GBR,1f2,,Regensburg (GER),08 JUN 2013,1131.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14385905,toplist
+92.0,20.60,1.8,Lestrod ROLAND,05 SEP 1992,SKN,2h2,,Basseterre (SKN),09 JUN 2013,1127.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14374790,toplist
+92.0,20.60,-0.4,Trevorano MACKEY,05 JAN 1992,BAH,1h1,,Nassau (BAH),22 JUN 2013,1129.0,men_200m,2013,https://worldathletics.org/athletes/athlete=14387756,toplist
+1.0,19.68,-0.5,Justin GATLIN,10 FEB 1982,USA,1,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1274.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14238562,toplist
+2.0,19.82,-0.2,Warren WEIR,31 OCT 1989,JAM,1,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1249.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14202309,toplist
+3.0,19.84,1.2,Alonso EDWARD,08 DEC 1989,PAN,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",03 JUL 2014,1245.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14216095,toplist
+4.0,19.95,-0.2,Nickel ASHMEADE,07 APR 1990,JAM,2,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1229.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14201803,toplist
+5.0,19.96,-0.4,Isaac MAKWALA,24 SEP 1985,BOT,1f1,,La Chaux-de-Fonds (SUI),06 JUL 2014,1228.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14176330,toplist
+6.0,19.97,-0.6,Dedric DUKES,04 FEB 1992,USA,1f1,,"Gainesville, FL (USA)",04 APR 2014,1228.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14236857,toplist
+7.0,19.98,-1.6,Adam GEMILI,06 OCT 1993,GBR,1,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1232.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14427998,toplist
+7.0,19.98,0.2,Rasheed DWYER,29 JAN 1989,JAM,2,,"Le Grand Stade, Marrakech (MAR)",14 SEP 2014,1223.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14201966,toplist
+9.0,20.06,1.7,Femi OGUNODE,15 MAY 1991,QAT,1f5,,Sofia (BUL),28 JUN 2014,1211.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14330343,toplist
+10.0,20.08,1.6,Antoine ADAMS,31 AUG 1988,SKN,1f1,,Basseterre (SKN),22 JUN 2014,1207.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14224936,toplist
+10.0,20.08,-0.5,Christophe LEMAITRE,11 JUN 1990,FRA,3,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1210.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14186000,toplist
+12.0,20.13,1.3,Curtis MITCHELL,11 MAR 1989,USA,1,,"Sacramento, CA (USA)",29 JUN 2014,1200.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14246265,toplist
+13.0,20.14,1.7,Aaron ERNEST,08 NOV 1993,USA,1f1,,"Baton Rouge, LA (USA)",03 MAY 2014,1198.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14425681,toplist
+13.0,20.14,0.6,Sheldon MITCHELL,19 JUL 1990,JAM,1,,Ciudad de México (MEX),16 AUG 2014,1198.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14363765,toplist
+15.0,20.16,-0.5,Prezel HARDY,01 JUN 1992,USA,1,,"Lexington, KY (USA)",18 MAY 2014,1198.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14367136,toplist
+15.0,20.16,0.5,Aaron BROWN,27 MAY 1992,CAN,1sf1,,"Fayetteville, AR (USA)",31 MAY 2014,1195.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14366482,toplist
+17.0,20.17,2.0,Carvin NKANATA,06 MAY 1991,USA,1,,"Knoxville, TN (USA)",12 APR 2014,1193.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14440825,toplist
+18.0,20.19,-0.2,Wallace SPEARMON,24 DEC 1984,USA,4,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1191.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14251926,toplist
+18.0,20.19,1.2,Wayde VAN NIEKERK,15 JUL 1992,RSA,4,,"Stade Olympique de la Pontaise, Lausanne (SUI)",03 JUL 2014,1190.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14417677,toplist
+20.0,20.22,1.8,Rondel SORRILLO,24 JAN 1986,TTO,1f2,,"Clermont, FL (USA)",07 JUN 2014,1186.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14229095,toplist
+20.0,20.22,0.6,Gil ROBERTS,15 MAR 1989,USA,1f4,,"Chula Vista, CA (USA)",14 JUN 2014,1186.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14249702,toplist
+20.0,20.22,-0.5,Tyson GAY,09 AUG 1982,USA,4,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1189.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14238588,toplist
+23.0,20.25,0.5,Jason LIVERMORE,25 APR 1988,JAM,3,,Kingston (JAM),29 JUN 2014,1181.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14202097,toplist
+23.0,20.25,-0.8,Wilfried KOFFI HUA,12 OCT 1987,CIV,1,,"Le Grand Stade, Marrakech (MAR)",14 AUG 2014,1185.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14185652,toplist
+23.0,20.25,-0.9,Churandy MARTINA,03 JUL 1984,NED,5,,"Letzigrund, Zürich (SUI)",28 AUG 2014,1186.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14180965,toplist
+26.0,20.27,-0.1,Brandon BYRAM,11 SEP 1988,USA,1f2,,"Gainesville, FL (USA)",04 APR 2014,1178.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14327177,toplist
+26.0,20.27,1.6,Jeremy DODSON,30 AUG 1987,USA,1,,"Greenwood Village, CO (USA)",01 JUN 2014,1178.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14236598,toplist
+26.0,20.27,0.6,Remontay MCCLAIN,21 SEP 1992,USA,2f4,,"Chula Vista, CA (USA)",14 JUN 2014,1178.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14415933,toplist
+29.0,20.28,0.6,Roberto SKYERS,12 NOV 1991,CUB,2,,Ciudad de México (MEX),16 AUG 2014,1176.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14169308,toplist
+29.0,20.28,0.6,Jermaine BROWN,04 JUL 1991,JAM,3,,Ciudad de México (MEX),16 AUG 2014,1176.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14201858,toplist
+31.0,20.30,1.3,Maurice MITCHELL,22 DEC 1989,USA,3,,"Sacramento, CA (USA)",29 JUN 2014,1173.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14246290,toplist
+31.0,20.30,-1.6,Serhiy SMELYK,19 APR 1987,UKR,3,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1182.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14230624,toplist
+33.0,20.32,,Diondre BATSON,13 JUL 1992,USA,1f2,,"Albuquerque, NM (USA) (i)",14 MAR 2014,1239.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14415677,toplist
+33.0,20.32,-1.0,Aldemir GOMES JÚNIOR,08 JUN 1992,BRA,1,,Santiago de Chile (CHI),15 MAR 2014,1176.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14429482,toplist
+33.0,20.32,1.3,Zharnel HUGHES,13 JUL 1995,AIA,1sf2,,Kingston (JAM),27 MAR 2014,1170.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14414524,toplist
+36.0,20.33,0.0,Trentavis FRIDAY,05 JUN 1995,USA,1f5,,"Kernersville, NC (USA)",31 MAY 2014,1169.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14539905,toplist
+36.0,20.33,-0.6,Calesio NEWMAN,20 AUG 1986,USA,2,,"Charlotte, NC (USA)",13 JUN 2014,1172.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14247139,toplist
+38.0,20.34,1.1,Brijesh LAWRENCE,27 DEC 1989,SKN,1f2,,"Walnut, CA (USA)",19 APR 2014,1167.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14330250,toplist
+38.0,20.34,1.7,Kei TAKASE,25 NOV 1988,JPN,1h3,,Fukuroi (JPN),03 MAY 2014,1167.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14334125,toplist
+40.0,20.35,-0.5,Shavez HART,06 SEP 1992,BAH,2,,"Lexington, KY (USA)",18 MAY 2014,1168.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14442839,toplist
+40.0,20.35,-0.7,José Carlos HERRERA,05 FEB 1986,MEX,1f1,,Ninove (BEL),02 AUG 2014,1169.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14365623,toplist
+42.0,20.36,0.3,Daniel TALBOT,01 MAY 1991,GBR,1,,"Stadion Juliska, Praha (CZE)",09 JUN 2014,1164.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14190940,toplist
+42.0,20.36,0.5,Mosito LEHATA,08 APR 1989,LES,4,,"Hampden Park, Glasgow (GBR)",31 JUL 2014,1164.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14330015,toplist
+42.0,20.36,-0.4,Diego MARANI,27 APR 1990,ITA,3sf1,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1166.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14329389,toplist
+45.0,20.37,0.6,Jevaughn MINZIE,20 JUL 1995,JAM,1sf1,,Kingston (JAM),27 MAR 2014,1162.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14413602,toplist
+45.0,20.37,-0.5,Ryan BAILEY,13 APR 1989,USA,6,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1165.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14231808,toplist
+45.0,20.37,1.9,Thomas SOMERS,28 APR 1997,GBR,1sf1,,"Hayward Field, Eugene, OR (USA)",24 JUL 2014,1162.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14479766,toplist
+45.0,20.37,0.5,Akani SIMBINE,21 SEP 1993,RSA,5,,"Hampden Park, Glasgow (GBR)",31 JUL 2014,1162.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14417763,toplist
+49.0,20.38,1.2,Ameer WEBB,19 MAR 1991,USA,1,,"Austin, TX (USA)",29 MAR 2014,1161.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14373694,toplist
+49.0,20.38,1.6,Kemarley BROWN,20 JUL 1992,JAM,1f1,,"Walnut, CA (USA)",18 APR 2014,1161.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14435050,toplist
+49.0,20.38,1.8,Jorge VIDES,24 NOV 1992,BRA,1,,São Paulo (BRA),04 MAY 2014,1161.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14434411,toplist
+49.0,20.38,0.5,Andre DE GRASSE,10 NOV 1994,CAN,1,,"Mesa, AZ (USA)",17 MAY 2014,1161.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14535607,toplist
+49.0,20.38,-2.2,Lalonde GORDON,25 NOV 1988,TTO,1f2,,Port-of-Spain (TTO),22 JUN 2014,1174.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14406756,toplist
+49.0,20.38,-0.4,Ramil GULIYEV,29 MAY 1990,TUR,4sf1,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1163.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14178065,toplist
+55.0,20.39,1.4,Renny QUOW,25 AUG 1987,TTO,1f1,,"Lubbock, TX (USA)",03 MAY 2014,1159.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14229073,toplist
+55.0,20.39,0.8,Shota IIZUKA,25 JUN 1991,JPN,1f1,,Fukuroi (JPN),03 MAY 2014,1159.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14327811,toplist
+57.0,20.40,1.7,Arman Gino HALL,12 FEB 1994,USA,2f1,,"Baton Rouge, LA (USA)",03 MAY 2014,1158.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14413725,toplist
+57.0,20.40,0.4,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,3sf2,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1158.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14329437,toplist
+57.0,20.40,0.6,Daniel BAILEY,09 SEP 1986,ANT,5,,Ciudad de México (MEX),16 AUG 2014,1158.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14180555,toplist
+60.0,20.41,1.9,Ncincilili TITI,15 DEC 1993,RSA,1sf2,,Pretoria (RSA),11 APR 2014,1156.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14417761,toplist
+60.0,20.41,1.3,Brendon RODNEY,09 APR 1992,CAN,1,,"Moon Township, PA (USA)",04 MAY 2014,1156.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14400932,toplist
+60.0,20.41,0.0,Shota HARA,18 JUL 1992,JPN,1f2,,Yokohama (JPN),25 MAY 2014,1156.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14591156,toplist
+60.0,20.41,0.6,Edino STEELE,01 JUN 1987,JAM,1f13,,Kingston (JAM),31 MAY 2014,1156.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14202253,toplist
+60.0,20.41,1.3,Sean MCLEAN,23 MAR 1992,USA,4,,"Sacramento, CA (USA)",29 JUN 2014,1156.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14378052,toplist
+65.0,20.42,0.2,LaShawn MERRITT,27 JUN 1986,USA,1,,Sydney (AUS),15 MAR 2014,1155.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14245966,toplist
+65.0,20.42,0.3,Karol ZALEWSKI,07 AUG 1993,POL,2,,"Stadion Juliska, Praha (CZE)",09 JUN 2014,1155.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14403529,toplist
+67.0,20.43,-0.2,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,4,,"Suhaim bin Hamad Stadium, Doha (QAT)",09 MAY 2014,1154.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14215468,toplist
+67.0,20.43,1.1,Aleixo Platini MENGA,29 SEP 1987,GER,1f1,,"Clermont, FL (USA)",10 MAY 2014,1153.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14193693,toplist
+67.0,20.43,1.0,Ben BASSAW,09 JUL 1989,FRA,1f1,,La Roche-sur-Yon (FRA),23 JUL 2014,1153.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14334630,toplist
+67.0,20.43,0.7,Bernardo BALOYES,06 JAN 1994,COL,2,,São Paulo (BRA),03 AUG 2014,1153.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14433876,toplist
+71.0,20.44,-0.3,James ELLINGTON,06 SEP 1985,GBR,1f2,,"Clermont, FL (USA)",26 APR 2014,1153.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14189152,toplist
+71.0,20.44,1.8,Masafumi NAOKI,19 NOV 1993,JPN,1h4,,Fukuroi (JPN),03 MAY 2014,1152.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14532913,toplist
+71.0,20.44,0.6,Julian REUS,29 APR 1988,GER,1f1,,Rehlingen (GER),09 JUN 2014,1152.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14193827,toplist
+71.0,20.44,-0.3,Zhenye XIE,17 AUG 1993,CHN,1,,Suzhou (CHN),11 OCT 2014,1153.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14376449,toplist
+75.0,20.45,0.0,Joseph MORRIS,04 OCT 1989,USA,f2,,"Tempe, AZ (USA)",12 APR 2014,1150.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14246621,toplist
+75.0,20.45,1.1,Gavin SMELLIE,26 JUN 1986,CAN,1f3,,"Clermont, FL (USA)",26 APR 2014,1150.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14173481,toplist
+75.0,20.45,0.6,Kotaro TANIGUCHI,03 NOV 1994,JPN,1f2,,Fukuroi (JPN),03 MAY 2014,1150.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14547886,toplist
+75.0,20.45,1.3,Michael O'HARA,29 SEP 1996,JAM,1sf2,,"Hayward Field, Eugene, OR (USA)",24 JUL 2014,1150.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14470021,toplist
+79.0,20.46,1.7,Robin EREWA,24 JUN 1991,GER,1f3,,Mannheim (GER),06 JUL 2014,1149.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14360900,toplist
+79.0,20.46,1.5,Trevorano MACKEY,05 JAN 1992,BAH,2,,Kamloops (CAN),10 AUG 2014,1149.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14387756,toplist
+79.0,20.46,-0.1,Enrico DEMONTE,25 SEP 1988,ITA,1,,Fossano (ITA),13 SEP 2014,1149.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14200172,toplist
+79.0,20.46,1.6,Bruno DE BARROS,07 JAN 1987,BRA,2,,São Paulo (BRA),12 OCT 2014,1149.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14175190,toplist
+83.0,20.47,1.6,Justin WALKER,30 NOV 1990,USA,1,,"Conway, SC (USA)",11 MAY 2014,1147.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14360253,toplist
+84.0,20.48,-0.3,Bryce ROBINSON,13 NOV 1993,USA,1h2,,"Fayetteville, AR (USA)",30 MAY 2014,1147.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14507493,toplist
+84.0,20.48,1.2,Yohan BLAKE,26 DEC 1989,JAM,6,,"Stade Olympique de la Pontaise, Lausanne (SUI)",03 JUL 2014,1146.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14201842,toplist
+84.0,20.48,1.7,Sven KNIPPHALS,20 SEP 1985,GER,2f3,,Mannheim (GER),06 JUL 2014,1146.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14192885,toplist
+87.0,20.49,-0.2,Kirk WILSON,27 MAY 1991,USA,1,,"Rome, GA (USA)",03 MAY 2014,1145.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14510662,toplist
+87.0,20.49,1.7,Nery BRENES,25 SEP 1985,CRC,1,,San José (CRC),11 MAY 2014,1144.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14169943,toplist
+87.0,20.49,1.0,Everett WALKER,03 OCT 1990,USA,1sf3,,"Fayetteville, AR (USA)",31 MAY 2014,1144.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14374334,toplist
+87.0,20.49,0.9,Julian FORTE,07 JAN 1993,JAM,4,,"Stadio Olimpico, Roma (ITA)",05 JUN 2014,1144.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14367596,toplist
+87.0,20.49,0.0,Kenji FUJIMITSU,01 MAY 1986,JPN,1f2,,Yamaguchi (JPN),11 OCT 2014,1144.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14202678,toplist
+92.0,20.50,0.6,Shinji TAKAHIRA,18 JUL 1984,JPN,2f2,,Fukuroi (JPN),03 MAY 2014,1143.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14206136,toplist
+92.0,20.50,0.3,Michael MATHIEU,24 JUN 1984,BAH,3,,"Stadion Juliska, Praha (CZE)",09 JUN 2014,1143.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14177996,toplist
+92.0,20.50,0.0,Chris CLARKE,25 JAN 1990,GBR,1f1,,Manchester (GBR),09 AUG 2014,1143.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14188834,toplist
+92.0,20.50,0.6,Cruz Rolando PALACIOS,03 MAY 1987,HON,7,,Ciudad de México (MEX),16 AUG 2014,1143.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14195843,toplist
+96.0,20.51,1.4,David WINTERS,19 FEB 1994,USA,1f1,,"Canyon, TX (USA)",26 APR 2014,1141.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14503208,toplist
+96.0,20.51,1.7,Segun MAKINDE,06 JUL 1991,CAN,1f5,,"Lynchburg, VA (USA)",01 MAY 2014,1141.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14173878,toplist
+96.0,20.51,0.8,Michael RODGERS,24 APR 1985,USA,3f1,,Fukuroi (JPN),03 MAY 2014,1141.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14249856,toplist
+96.0,20.51,1.3,Keith RICKS,09 OCT 1990,USA,5,,"Sacramento, CA (USA)",29 JUN 2014,1141.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14363398,toplist
+96.0,20.51,1.5,Everton CLARKE,24 DEC 1992,JAM,3,,Kamloops (CAN),10 AUG 2014,1141.0,men_200m,2014,https://worldathletics.org/athletes/athlete=14481748,toplist
+1.0,19.55,-0.1,Usain BOLT,21 AUG 1986,JAM,1,,"National Stadium, Beijing (CHN)",27 AUG 2015,1292.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14201847,toplist
+2.0,19.57,0.4,Justin GATLIN,10 FEB 1982,USA,1,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1289.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14238562,toplist
+3.0,19.80,2.0,Rasheed DWYER,29 JAN 1989,JAM,1sf1,,"CIBC, Toronto (CAN)",23 JUL 2015,1252.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14201966,toplist
+4.0,19.87,-0.1,Anaso JOBODWANA,30 JUL 1992,RSA,3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1241.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14383348,toplist
+4.0,19.87,-0.1,Alonso EDWARD,08 DEC 1989,PAN,4,,"National Stadium, Beijing (CHN)",27 AUG 2015,1241.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14216095,toplist
+6.0,19.88,0.3,Andre DE GRASSE,10 NOV 1994,CAN,1,,"CIBC, Toronto (CAN)",24 JUL 2015,1239.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14535607,toplist
+6.0,19.88,-0.4,Ramil GULIYEV,29 MAY 1990,TUR,1,,"Sports Park Mladost, Zagreb (CRO)",08 SEP 2015,1241.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14178065,toplist
+8.0,19.93,0.4,Isiah YOUNG,05 JAN 1990,USA,2,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1231.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14360879,toplist
+9.0,19.94,0.6,Wayde VAN NIEKERK,15 JUL 1992,RSA,1f2,,Luzern (SUI),14 JUL 2015,1229.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14417677,toplist
+10.0,19.97,-0.4,Femi OGUNODE,15 MAY 1991,QAT,1,,"Boudewijnstadion, Bruxelles (BEL)",11 SEP 2015,1227.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14330343,toplist
+11.0,19.99,0.6,Dedric DUKES,04 FEB 1992,USA,1,,"Starkville, MS (USA)",16 MAY 2015,1222.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14236857,toplist
+12.0,20.02,1.5,Ameer WEBB,19 MAR 1991,USA,1f1,,"Norwalk, CA (USA)",06 JUN 2015,1217.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14373694,toplist
+12.0,20.02,0.3,Roberto SKYERS,12 NOV 1991,CUB,4,,"CIBC, Toronto (CAN)",24 JUL 2015,1217.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14169308,toplist
+12.0,20.02,-0.1,Zharnel HUGHES,13 JUL 1995,GBR,5,,"National Stadium, Beijing (CHN)",27 AUG 2015,1217.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14414524,toplist
+15.0,20.03,2.0,Trayvon BROMELL,10 JUL 1995,USA,1sf3,,"Eugene, OR (USA)",10 JUN 2015,1215.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14519911,toplist
+15.0,20.03,2.0,Wallace SPEARMON,24 DEC 1984,USA,2sf1,,"CIBC, Toronto (CAN)",23 JUL 2015,1215.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14251926,toplist
+17.0,20.04,1.1,Julian FORTE,07 JAN 1993,JAM,1sf2,,Kingston (JAM),27 JUN 2015,1214.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14367596,toplist
+18.0,20.05,2.0,Miguel FRANCIS,28 MAR 1995,ANT,3sf1,,"CIBC, Toronto (CAN)",23 JUL 2015,1212.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14591255,toplist
+19.0,20.09,0.8,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,1,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1206.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14329437,toplist
+20.0,20.11,0.4,Beejay LEE,05 MAR 1993,USA,4,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1203.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14415932,toplist
+21.0,20.12,1.5,Remontay MCCLAIN,21 SEP 1992,USA,2f1,,"Norwalk, CA (USA)",06 JUN 2015,1201.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14415933,toplist
+22.0,20.13,0.6,Kenji FUJIMITSU,01 MAY 1986,JPN,3f2,,Luzern (SUI),14 JUL 2015,1200.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14202678,toplist
+23.0,20.14,1.9,Carvin NKANATA,06 MAY 1991,KEN,1f1,,"Clermont, FL (USA)",18 APR 2015,1198.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14440825,toplist
+23.0,20.14,1.0,Kei TAKASE,25 NOV 1988,JPN,1,,Kumagaya (JPN),17 MAY 2015,1198.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14334125,toplist
+23.0,20.14,2.0,Tevin HESTER,10 JAN 1994,USA,2sf3,,"Eugene, OR (USA)",10 JUN 2015,1198.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14432010,toplist
+26.0,20.16,1.8,Terrel COTTON,19 JUL 1988,USA,2h5,,"Hayward Field, Eugene, OR (USA)",27 JUN 2015,1195.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14235435,toplist
+27.0,20.17,1.8,Tremayne ACY,21 JAN 1995,USA,2sf2,,"Eugene, OR (USA)",10 JUN 2015,1193.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14464673,toplist
+28.0,20.18,0.9,Nickel ASHMEADE,07 APR 1990,JAM,3,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1192.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14201803,toplist
+28.0,20.18,1.8,Noah LYLES,18 JUL 1997,USA,1,,"Eugene, OR (USA)",27 JUN 2015,1192.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14536762,toplist
+28.0,20.18,-0.4,Brendon RODNEY,09 APR 1992,CAN,3h5,,"National Stadium, Beijing (CHN)",25 AUG 2015,1194.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14400932,toplist
+31.0,20.20,0.4,Churandy MARTINA,03 JUL 1984,NED,3sf1,,"National Stadium, Beijing (CHN)",26 AUG 2015,1189.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14180965,toplist
+32.0,20.21,-1.2,Christophe LEMAITRE,11 JUN 1990,FRA,1,,"Bislett Stadion, Oslo (NOR)",11 JUN 2015,1194.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14186000,toplist
+33.0,20.22,1.3,Aaron ERNEST,08 NOV 1993,USA,1qf3,,"Jacksonville, FL (USA)",30 MAY 2015,1186.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14425681,toplist
+33.0,20.22,1.0,Yancarlos MARTÍNEZ,08 AUG 1992,DOM,4sf2,,"CIBC, Toronto (CAN)",23 JUL 2015,1186.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14672924,toplist
+35.0,20.23,0.6,Shavez HART,06 SEP 1992,BAH,2,,"Starkville, MS (USA)",16 MAY 2015,1184.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14442839,toplist
+35.0,20.23,-0.4,Akani SIMBINE,21 SEP 1993,RSA,4h5,,"National Stadium, Beijing (CHN)",25 AUG 2015,1186.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14417763,toplist
+37.0,20.24,1.8,Michael NORMAN,03 DEC 1997,USA,2,,"Eugene, OR (USA)",27 JUN 2015,1182.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14588244,toplist
+37.0,20.24,-0.1,Warren WEIR,31 OCT 1989,JAM,2h6,,"National Stadium, Beijing (CHN)",25 AUG 2015,1182.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14202309,toplist
+39.0,20.25,1.8,Harry ADAMS,27 NOV 1989,USA,3h5,,"Hayward Field, Eugene, OR (USA)",27 JUN 2015,1181.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14230975,toplist
+40.0,20.26,1.8,Kendal WILLIAMS,23 SEP 1995,USA,2,,"Tallahassee, FL (USA)",16 MAY 2015,1179.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14465376,toplist
+41.0,20.27,0.8,Daniel TALBOT,01 MAY 1991,GBR,6sf3,,"National Stadium, Beijing (CHN)",26 AUG 2015,1178.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14190940,toplist
+42.0,20.29,-0.1,Justin WALKER,30 NOV 1990,USA,1f2,,"Montverde, FL (USA)",06 JUN 2015,1175.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14360253,toplist
+42.0,20.29,1.8,Kahlil HENDERSON,18 NOV 1994,USA,3sf2,,"Eugene, OR (USA)",10 JUN 2015,1175.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14440818,toplist
+44.0,20.30,1.8,Bryce ROBINSON,13 NOV 1993,USA,1f1,,"Lubbock, TX (USA)",30 APR 2015,1173.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14507493,toplist
+44.0,20.30,1.8,Aldrich BAILEY JR,06 FEB 1994,USA,2f1,,"Austin, TX (USA)",02 MAY 2015,1173.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14436110,toplist
+44.0,20.30,0.7,Aaron BROWN,27 MAY 1992,CAN,3f1,,"National Stadium, Kingston (JAM)",09 MAY 2015,1173.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14366482,toplist
+47.0,20.31,-0.4,Jeremy DODSON,30 AUG 1987,SAM,5h5,,"National Stadium, Beijing (CHN)",25 AUG 2015,1174.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14236598,toplist
+48.0,20.32,2.0,Reynier MENA,21 NOV 1996,CUB,5sf1,,"CIBC, Toronto (CAN)",23 JUL 2015,1170.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14518308,toplist
+49.0,20.33,0.0,José Carlos HERRERA,05 FEB 1986,MEX,1h1,,Ciudad de México (MEX),29 MAR 2015,1169.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14365623,toplist
+50.0,20.34,1.4,Timothy FAUST,1992,USA,1,,"East Lansing, MI (USA)",17 MAY 2015,1167.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14429962,toplist
+50.0,20.34,2.0,Teray SMITH,28 SEP 1994,BAH,5sf3,,"Eugene, OR (USA)",10 JUN 2015,1167.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14520325,toplist
+50.0,20.34,-0.4,Abdul Hakim SANI BROWN,06 MAR 1999,JPN,1,,"Pascual Guerrero Stadium, Cali (COL)",19 JUL 2015,1169.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14671546,toplist
+53.0,20.36,1.0,Curtis MITCHELL,11 MAR 1989,USA,1h4,,"Hayward Field, Eugene, OR (USA)",27 JUN 2015,1164.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14246265,toplist
+54.0,20.37,-1.9,Bernardo BALOYES,06 JAN 1994,COL,2f2,,Medellín (COL),09 MAY 2015,1173.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14433876,toplist
+54.0,20.37,1.4,D.J. ZAHN,31 JAN 1993,USA,2,,"East Lansing, MI (USA)",17 MAY 2015,1162.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14493381,toplist
+54.0,20.37,1.8,Sean MCLEAN,23 MAR 1992,USA,4h5,,"Hayward Field, Eugene, OR (USA)",27 JUN 2015,1162.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14378052,toplist
+57.0,20.38,0.4,Jeffrey JOHN,06 JUN 1992,FRA,1f1,,Paris (FRA),05 JUL 2015,1161.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14376209,toplist
+57.0,20.38,-1.1,Jak Ali HARVEY,04 MAY 1989,TUR,1,,Ankara (TUR),05 SEP 2015,1167.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14325558,toplist
+59.0,20.39,0.6,Cameron ECHOLS-LUPER,09 APR 1995,USA,1h1,,"Ames, IA (USA)",16 MAY 2015,1159.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14481009,toplist
+59.0,20.39,1.5,Bryshon NELLUM,01 MAY 1989,USA,3f1,,"Norwalk, CA (USA)",06 JUN 2015,1159.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14247047,toplist
+59.0,20.39,1.6,Tyquendo TRACEY,10 JUN 1993,JAM,2sf1,,Kingston (JAM),27 JUN 2015,1159.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14463007,toplist
+59.0,20.39,-0.3,Wilfried KOFFI HUA,12 OCT 1987,CIV,4h1,,"National Stadium, Beijing (CHN)",25 AUG 2015,1160.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14185652,toplist
+63.0,20.40,0.3,Michael MATHIEU,24 JUN 1984,BAH,1f1,,"Coral Gables, FL (USA)",11 APR 2015,1158.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14177996,toplist
+63.0,20.40,0.0,Delano WILLIAMS,23 DEC 1993,GBR,4,,George Town (CAY),16 MAY 2015,1158.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14413548,toplist
+65.0,20.41,1.6,Bruno DE BARROS,07 JAN 1987,BRA,2h2,,"CIBC, Toronto (CAN)",23 JUL 2015,1156.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14175190,toplist
+66.0,20.42,0.9,Tre HOUSTON,23 MAR 1990,BER,1,,"San Marcos, TX (USA)",05 JUN 2015,1155.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14177108,toplist
+66.0,20.42,-0.2,Jimmy VICAUT,27 FEB 1992,FRA,1,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",14 JUN 2015,1156.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14334964,toplist
+66.0,20.42,1.4,Shota IIZUKA,25 JUN 1991,JPN,1h3,,Nagoya (JPN),26 JUN 2015,1155.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14327811,toplist
+66.0,20.42,1.7,Kyle GREAUX,26 APR 1988,TTO,1f2,,Port-of-Spain (TTO),28 JUN 2015,1155.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14526883,toplist
+66.0,20.42,0.2,Mosito LEHATA,08 APR 1989,LES,2,,"Stade Raymond Petit, Tomblaine (FRA)",01 JUL 2015,1155.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14330015,toplist
+66.0,20.42,1.0,Julian REUS,29 APR 1988,GER,1,,Nürnberg (GER),26 JUL 2015,1155.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14193827,toplist
+72.0,20.43,0.6,Joseph MORRIS,04 OCT 1989,USA,f2,,"Tempe, AZ (USA)",11 APR 2015,1153.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14246621,toplist
+73.0,20.44,0.3,Aldemir GOMES JÚNIOR,08 JUN 1992,BRA,1,,Sao Bernardo do Campo (BRA),17 MAY 2015,1152.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14429482,toplist
+74.0,20.45,0.9,Karol ZALEWSKI,07 AUG 1993,POL,1f1,,Gdansk (POL),06 JUN 2015,1150.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14403529,toplist
+74.0,20.45,-0.9,Serhiy SMELYK,19 APR 1987,UKR,1f2,,"Olympic Stadium, Cheboksary (RUS)",21 JUN 2015,1155.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14230624,toplist
+74.0,20.45,0.7,Jonathan BORLÉE,22 FEB 1988,BEL,1,,Heusden-Zolder (BEL),18 JUL 2015,1150.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14177716,toplist
+74.0,20.45,0.8,Julius MORRIS,14 APR 1994,MNT,2sf2,,San José (CRC),07 AUG 2015,1150.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14520306,toplist
+74.0,20.45,0.8,Tega ODELE,06 DEC 1995,NGR,1h6,,Brazzaville (CGO),16 SEP 2015,1150.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14593480,toplist
+74.0,20.45,-1.2,Divine ODUDURU,07 OCT 1996,NGR,2,,Brazzaville (CGO),17 SEP 2015,1157.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14579422,toplist
+80.0,20.46,-0.1,Rondel SORRILLO,24 JAN 1986,TTO,1f4,,"Gainesville, FL (USA)",03 APR 2015,1149.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14229095,toplist
+80.0,20.46,-0.1,Just'N THYMES,24 JAN 1994,USA,1f4,,"Gainesville, FL (USA)",03 APR 2015,1149.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14482592,toplist
+80.0,20.46,1.6,Ahmed ALI,15 NOV 1993,USA,1f1,,"Norman, OK (USA)",18 APR 2015,1149.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14413732,toplist
+80.0,20.46,1.0,Maurice MITCHELL,22 DEC 1989,USA,2h4,,"Hayward Field, Eugene, OR (USA)",27 JUN 2015,1149.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14246290,toplist
+80.0,20.46,1.8,Ryan CLARK,14 SEP 1996,USA,3,,"Eugene, OR (USA)",27 JUN 2015,1149.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14490760,toplist
+85.0,20.47,0.8,Chijindu UJAH,05 MAR 1994,GBR,4,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1147.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14410429,toplist
+85.0,20.47,2.0,Senoj-Jay GIVANS,30 DEC 1993,JAM,6sf3,,"Eugene, OR (USA)",10 JUN 2015,1147.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14528628,toplist
+85.0,20.47,1.8,Antoine ADAMS,31 AUG 1988,SKN,3,,San José (CRC),09 AUG 2015,1147.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14224936,toplist
+88.0,20.48,1.8,Mike Mokamba NYANG'AU,28 AUG 1996,KEN,1,,Nairobi (KEN),01 AUG 2015,1146.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14472780,toplist
+89.0,20.49,1.9,James ELLINGTON,06 SEP 1985,GBR,3f1,,"Clermont, FL (USA)",18 APR 2015,1144.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14189152,toplist
+89.0,20.49,1.6,Robin EREWA,24 JUN 1991,GER,1f2,,"Clermont, FL (USA)",16 MAY 2015,1144.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14360900,toplist
+89.0,20.49,0.6,Kevin HARRIS,04 DEC 1995,USA,2h1,,"Ames, IA (USA)",16 MAY 2015,1144.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14466950,toplist
+92.0,20.50,1.7,James HARRINGTON,03 JUL 1993,USA,1h2,,"East Lansing, MI (USA)",16 MAY 2015,1143.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14416929,toplist
+92.0,20.50,1.9,Diego PALOMEQUE,05 DEC 1993,COL,2,,Cali (COL),21 NOV 2015,1143.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14417600,toplist
+94.0,20.51,0.3,Jermaine BROWN,04 JUL 1991,JAM,2f1,,"Walnut, CA (USA)",18 APR 2015,1141.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14201858,toplist
+94.0,20.51,0.6,Terrell SMITH,10 OCT 1994,USA,3h1,,"Ames, IA (USA)",16 MAY 2015,1141.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14491171,toplist
+94.0,20.51,1.5,Kyree KING,09 JUL 1994,USA,4f1,,"Norwalk, CA (USA)",06 JUN 2015,1141.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14476000,toplist
+97.0,20.52,1.5,Parker BLUTH,02 FEB 1992,USA,1,,"San Diego, CA (USA)",16 MAY 2015,1139.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14441120,toplist
+97.0,20.52,0.1,Jinsheng LIANG,12 JAN 1996,CHN,1,,Fuzhou (CHN),29 MAY 2015,1139.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14594745,toplist
+99.0,20.53,1.1,Lalonde GORDON,25 NOV 1988,TTO,1f2,,St-Martin (FRA),09 MAY 2015,1138.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14406756,toplist
+99.0,20.53,0.3,António RODRÍGUES,12 JAN 1993,BRA,3,,Sao Bernardo do Campo (BRA),17 MAY 2015,1138.0,men_200m,2015,https://worldathletics.org/athletes/athlete=14381145,toplist
+1.0,19.74,1.4,LaShawn MERRITT,27 JUN 1986,USA,1sf3,,"Hayward Field, Eugene, OR (USA)",08 JUL 2016,1261.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14245966,toplist
+2.0,19.75,1.6,Justin GATLIN,10 FEB 1982,USA,1,,"Hayward Field, Eugene, OR (USA)",09 JUL 2016,1260.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14238562,toplist
+3.0,19.78,-0.3,Usain BOLT,21 AUG 1986,JAM,1sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1256.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14201847,toplist
+4.0,19.80,-0.3,Andre DE GRASSE,10 NOV 1994,CAN,2sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1253.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14535607,toplist
+5.0,19.81,0.4,Churandy MARTINA,03 JUL 1984,NED,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",25 AUG 2016,1250.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14180965,toplist
+6.0,19.85,1.9,Ameer WEBB,19 MAR 1991,USA,1,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1244.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14373694,toplist
+7.0,19.88,1.2,Miguel FRANCIS,28 MAR 1995,ANT,1,,Kingston (JAM),11 JUN 2016,1239.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14591255,toplist
+8.0,19.92,0.4,Alonso EDWARD,08 DEC 1989,PAN,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",25 AUG 2016,1233.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14216095,toplist
+9.0,19.95,0.4,Nethaneel MITCHELL-BLAKE,02 APR 1994,GBR,1,,"Tuscaloosa, AL (USA)",14 MAY 2016,1228.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14413552,toplist
+10.0,19.96,1.1,Brendon RODNEY,09 APR 1992,CAN,1,,Edmonton (CAN),10 JUL 2016,1226.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14400932,toplist
+11.0,19.97,0.8,Julian FORTE,07 JAN 1993,JAM,1,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1225.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14367596,toplist
+11.0,19.97,0.8,Adam GEMILI,06 OCT 1993,GBR,2,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1225.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14427998,toplist
+13.0,20.00,1.1,Aaron BROWN,27 MAY 1992,CAN,1f1,,"Baton Rouge, LA (USA)",30 APR 2016,1220.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14366482,toplist
+14.0,20.01,-0.4,Christophe LEMAITRE,11 JUN 1990,FRA,2sf1,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1220.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14186000,toplist
+15.0,20.02,1.8,Wayde VAN NIEKERK,15 JUL 1992,RSA,1,,Durban (RSA),26 JUN 2016,1217.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14417677,toplist
+16.0,20.07,0.2,Nickel ASHMEADE,07 APR 1990,JAM,1f2,,"Clermont, FL (USA)",30 APR 2016,1209.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14201803,toplist
+17.0,20.09,1.6,Noah LYLES,18 JUL 1997,USA,4,,"Hayward Field, Eugene, OR (USA)",09 JUL 2016,1206.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14536762,toplist
+17.0,20.09,-0.3,Ramil GULIYEV,29 MAY 1990,TUR,4sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1207.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14178065,toplist
+19.0,20.10,1.9,Femi OGUNODE,15 MAY 1991,QAT,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1204.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14330343,toplist
+20.0,20.11,1.8,Shota IIZUKA,25 JUN 1991,JPN,1,,Nagoya (JPN),26 JUN 2016,1203.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14327811,toplist
+21.0,20.12,1.5,Jamiel TRIMBLE,25 JUN 1995,USA,1h1,,"Lawrence, KS (USA)",28 MAY 2016,1201.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14528115,toplist
+21.0,20.12,-0.2,Bruno HORTELANO,18 SEP 1991,ESP,1h2,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1202.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14362106,toplist
+23.0,20.13,0.9,Tevin HESTER,10 JAN 1994,USA,1,,"Tallahassee, FL (USA)",15 MAY 2016,1200.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14432010,toplist
+23.0,20.13,-0.2,Yohan BLAKE,26 DEC 1989,JAM,2h2,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1201.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14201842,toplist
+25.0,20.14,1.9,Walter DIX,31 JAN 1986,USA,4,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1198.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14236532,toplist
+25.0,20.14,1.6,Michael NORMAN,03 DEC 1997,USA,5,,"Hayward Field, Eugene, OR (USA)",09 JUL 2016,1198.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14588244,toplist
+27.0,20.15,0.4,Renard HOWELL,03 MAR 1995,USA,2,,"Tuscaloosa, AL (USA)",14 MAY 2016,1196.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14503175,toplist
+28.0,20.16,2.0,Ahmed ALI,15 NOV 1993,SUD,1f1,,"Gainesville, FL (USA)",02 APR 2016,1195.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14413732,toplist
+28.0,20.16,1.4,Tyson GAY,09 AUG 1982,USA,3sf3,,"Hayward Field, Eugene, OR (USA)",08 JUL 2016,1195.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14238588,toplist
+28.0,20.16,0.7,Akani SIMBINE,21 SEP 1993,RSA,1,,"Bregyó Athletic Center, Székesfehérvár (HUN)",18 JUL 2016,1195.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14417763,toplist
+31.0,20.17,0.9,José Carlos HERRERA,05 FEB 1986,MEX,1f2,,"Walnut, CA (USA)",16 APR 2016,1193.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14365623,toplist
+31.0,20.17,1.5,Jarrion LAWSON,06 MAY 1994,USA,2h1,,"Lawrence, KS (USA)",28 MAY 2016,1193.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14443773,toplist
+33.0,20.19,0.3,Yancarlos MARTÍNEZ,08 AUG 1992,DOM,1,,Rio de Janeiro (BRA),16 MAY 2016,1190.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14672924,toplist
+33.0,20.19,0.3,Salem Eid YAQOOB,01 MAR 1996,BRN,1h3,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1190.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14697947,toplist
+35.0,20.20,1.5,Cravon GILLESPIE,31 JUL 1996,USA,1,,"Lancaster, SC (USA)",14 MAY 2016,1189.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14578228,toplist
+35.0,20.20,0.2,Nery BRENES,25 SEP 1985,CRC,1h7,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1189.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14169943,toplist
+37.0,20.21,1.4,Baboloki THEBE,18 MAR 1997,BOT,1,,Gaborone (BOT),22 MAY 2016,1187.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14643508,toplist
+37.0,20.21,0.4,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,4,,"Stade Olympique de la Pontaise, Lausanne (SUI)",25 AUG 2016,1187.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14329437,toplist
+39.0,20.23,1.0,Beejay LEE,05 MAR 1993,USA,2f1,,"Walnut, CA (USA)",16 APR 2016,1184.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14415932,toplist
+40.0,20.24,-1.5,Sean MCLEAN,23 MAR 1992,USA,3,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1191.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14378052,toplist
+40.0,20.24,0.7,Isiah YOUNG,05 JAN 1990,USA,2,,"Bregyó Athletic Center, Székesfehérvár (HUN)",18 JUL 2016,1182.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14360879,toplist
+42.0,20.25,-0.4,Daniel TALBOT,01 MAY 1991,GBR,3sf1,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1183.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14190940,toplist
+43.0,20.26,-0.2,Christian COLEMAN,06 MAR 1996,USA,2,,"Eugene, OR (USA)",10 JUN 2016,1180.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14541956,toplist
+43.0,20.26,1.6,Justin WALKER,30 NOV 1990,USA,2f1,,"Montverde, FL (USA)",11 JUN 2016,1179.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14360253,toplist
+43.0,20.26,-0.3,Karol ZALEWSKI,07 AUG 1993,POL,1,,Sopot (POL),28 JUL 2016,1180.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14403529,toplist
+46.0,20.27,0.0,Aleixo Platini MENGA,29 SEP 1987,GER,1f1,,"Clermont, FL (USA)",14 MAY 2016,1178.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14193693,toplist
+46.0,20.27,1.0,Rondel SORRILLO,24 JAN 1986,TTO,3h10,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1178.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14229095,toplist
+48.0,20.29,1.0,Correion MOSBY,31 JAN 1996,USA,1,,"Levelland, TX (USA)",19 MAY 2016,1175.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14645592,toplist
+49.0,20.30,-0.3,Trayvon BROMELL,10 JUL 1995,USA,1f8,,"Waco, TX (USA)",09 APR 2016,1174.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14519911,toplist
+50.0,20.31,1.2,James ELLINGTON,06 SEP 1985,GBR,2f1,,"Clermont, FL (USA)",30 APR 2016,1172.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14189152,toplist
+50.0,20.31,1.2,Eseosa Fostine DESALU,19 FEB 1994,ITA,1,,Rieti (ITA),26 JUN 2016,1172.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14403082,toplist
+50.0,20.31,1.8,Kei TAKASE,25 NOV 1988,JPN,2,,Nagoya (JPN),26 JUN 2016,1172.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14334125,toplist
+50.0,20.31,0.4,Kendal WILLIAMS,23 SEP 1995,USA,2sf2,,"Hayward Field, Eugene, OR (USA)",08 JUL 2016,1172.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14465376,toplist
+50.0,20.31,0.3,Wallace SPEARMON,24 DEC 1984,USA,1,,"Houston, TX (USA)",23 JUL 2016,1172.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14251926,toplist
+55.0,20.32,0.9,Aldemir GOMES JÚNIOR,08 JUN 1992,BRA,2f2,,"Walnut, CA (USA)",16 APR 2016,1170.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14429482,toplist
+55.0,20.32,1.2,Warren WEIR,31 OCT 1989,JAM,3,,Kingston (JAM),11 JUN 2016,1170.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14202309,toplist
+57.0,20.33,1.8,Shota HARA,18 JUL 1992,JPN,3,,Nagoya (JPN),26 JUN 2016,1169.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14591156,toplist
+58.0,20.34,0.4,Arman Gino HALL,12 FEB 1994,USA,3,,"Tuscaloosa, AL (USA)",14 MAY 2016,1167.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14413725,toplist
+58.0,20.34,0.6,Divine ODUDURU,07 OCT 1996,NGR,2h9,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1167.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14579422,toplist
+60.0,20.35,0.8,Kenzo COTTON,13 MAY 1996,USA,1h6,,"Lawrence, KS (USA)",28 MAY 2016,1165.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14487212,toplist
+61.0,20.36,1.5,Clarence MUNYAI,20 FEB 1998,RSA,1,,Germiston (RSA),02 APR 2016,1164.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14630862,toplist
+61.0,20.36,1.2,Burkheart ELLIS JR,18 SEP 1992,BAR,1,,"Charlotte, NC (USA)",23 APR 2016,1164.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14237214,toplist
+63.0,20.37,1.0,Curtis MITCHELL,11 MAR 1989,USA,3f1,,"Walnut, CA (USA)",16 APR 2016,1162.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14246265,toplist
+63.0,20.37,1.0,Elijah HALL-THOMPSON,22 AUG 1994,USA,2,,"Levelland, TX (USA)",19 MAY 2016,1162.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14432013,toplist
+63.0,20.37,0.4,Solomon BOCKARIE,18 MAY 1987,NED,1,,Velenje (SLO),31 AUG 2016,1162.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14434756,toplist
+66.0,20.38,1.3,Antoine ADAMS,31 AUG 1988,SKN,1,,Road Town (IVB),03 JUL 2016,1161.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14224936,toplist
+66.0,20.38,0.4,Reece PRESCOD,29 FEB 1996,GBR,5,,"Stade Olympique de la Pontaise, Lausanne (SUI)",25 AUG 2016,1161.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14522622,toplist
+68.0,20.39,0.5,Devin JENKINS,06 FEB 1994,USA,2f2,,"Tempe, AZ (USA)",09 APR 2016,1159.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14490600,toplist
+68.0,20.39,1.2,Christopher BELCHER,29 JAN 1994,USA,1,,"Greensboro, NC (USA)",07 MAY 2016,1159.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14503562,toplist
+68.0,20.39,0.4,Julian REUS,29 APR 1988,GER,3h8,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1159.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14193827,toplist
+71.0,20.40,1.9,Nigel ELLIS,08 AUG 1997,JAM,1,,Montego Bay (JAM),02 FEB 2016,1158.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14576547,toplist
+71.0,20.40,0.5,Serhiy SMELYK,19 APR 1987,UKR,1,,Lutsk (UKR),19 JUN 2016,1158.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14230624,toplist
+71.0,20.40,0.3,Jorge VIDES,24 NOV 1992,BRA,1,,Sao Bernardo do Campo (BRA),03 JUL 2016,1158.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14434411,toplist
+71.0,20.40,0.9,Robin EREWA,24 JUN 1991,GER,1f1,,Mannheim (GER),29 JUL 2016,1158.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14360900,toplist
+75.0,20.41,0.0,Dedric DUKES,04 FEB 1992,USA,2f1,,"Clermont, FL (USA)",14 MAY 2016,1156.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14236857,toplist
+75.0,20.41,0.8,Reynier MENA,21 NOV 1996,CUB,1,,San Salvador (ESA),17 JUL 2016,1156.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14518308,toplist
+77.0,20.42,1.0,Isaac MAKWALA,24 SEP 1985,BOT,1f1,,Potchefstroom (RSA),15 MAR 2016,1155.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14176330,toplist
+77.0,20.42,1.0,Roberto SKYERS,12 NOV 1991,CUB,1,,La Habana (CUB),20 MAR 2016,1155.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14169308,toplist
+77.0,20.42,0.9,Michael RODGERS,24 APR 1985,USA,3f1,,Nassau (BAH),16 APR 2016,1155.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14249856,toplist
+77.0,20.42,0.6,Oshane BAILEY,08 SEP 1989,JAM,2f5,,Kingston (JAM),16 APR 2016,1155.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14201808,toplist
+77.0,20.42,0.2,Bernardo BALOYES,06 JAN 1994,COL,1f2,,Medellín (COL),30 APR 2016,1155.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14433876,toplist
+77.0,20.42,0.0,Ramon GITTENS,20 JUL 1987,BAR,1,,Bridgetown (BAR),27 JUN 2016,1155.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14177869,toplist
+83.0,20.43,1.6,Gavin SMELLIE,26 JUN 1986,CAN,1f3,,"Gainesville, FL (USA)",02 APR 2016,1153.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14173481,toplist
+83.0,20.43,0.4,Kahlil HENDERSON,18 NOV 1994,USA,4,,"Tuscaloosa, AL (USA)",14 MAY 2016,1153.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14440818,toplist
+83.0,20.43,0.1,Leshon COLLINS,11 DEC 1993,USA,1,,"Orlando, FL (USA)",15 MAY 2016,1153.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14425471,toplist
+83.0,20.43,-0.3,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,2f1,,Bruxelles (BEL),19 JUN 2016,1154.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14215468,toplist
+87.0,20.44,0.9,Emmanuel MATADI,15 APR 1991,USA,3f2,,"Walnut, CA (USA)",16 APR 2016,1152.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14375111,toplist
+87.0,20.44,0.3,Aldrich BAILEY JR,06 FEB 1994,USA,1f1,,"Austin, TX (USA)",16 APR 2016,1152.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14436110,toplist
+87.0,20.44,0.1,Jeremy DODSON,30 AUG 1987,SAM,1,,"Longmont, CO (USA)",13 MAY 2016,1152.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14236598,toplist
+87.0,20.44,1.2,Davide MANENTI,16 APR 1989,ITA,2,,Rieti (ITA),26 JUN 2016,1152.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14200747,toplist
+87.0,20.44,1.3,Tatenda TSUMBA,12 NOV 1991,ZIM,1,,"Chula Vista, CA (USA)",26 JUN 2016,1152.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14518229,toplist
+92.0,20.45,-0.5,Alex HARTMANN,07 MAR 1993,AUS,1,,Canberra (AUS),07 FEB 2016,1153.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14467409,toplist
+92.0,20.45,0.3,Demetrius PINDER,13 FEB 1989,BAH,2f1,,"Austin, TX (USA)",16 APR 2016,1150.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14177972,toplist
+92.0,20.45,0.9,Asafa POWELL,23 NOV 1982,JAM,1,,"National Stadium, Kingston (JAM)",07 MAY 2016,1150.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14202176,toplist
+92.0,20.45,1.0,Nick GRAY,02 JUN 1997,USA,1h2,,"Jacksonville, FL (USA)",27 MAY 2016,1150.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14531871,toplist
+92.0,20.45,1.2,Terrel COTTON,19 JUL 1988,USA,5,,Kingston (JAM),11 JUN 2016,1150.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14235435,toplist
+92.0,20.45,1.3,Aaron ERNEST,08 NOV 1993,USA,1f2,,"Montverde, FL (USA)",11 JUN 2016,1150.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14425681,toplist
+92.0,20.45,1.8,Adama JAMMEH,10 JUN 1993,GAM,2,,Durban (RSA),26 JUN 2016,1150.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14487524,toplist
+92.0,20.45,0.0,Levi Asher CADOGAN,08 NOV 1995,BAR,2,,Bridgetown (BAR),27 JUN 2016,1150.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14469941,toplist
+92.0,20.45,1.0,Everton CLARKE,24 DEC 1992,JAM,2h3,,Kingston (JAM),02 JUL 2016,1150.0,men_200m,2016,https://worldathletics.org/athletes/athlete=14481748,toplist
+1.0,19.77,0.0,Isaac MAKWALA,24 SEP 1985,BOT,1,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1256.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14176330,toplist
+2.0,19.84,1.2,Wayde VAN NIEKERK,15 JUL 1992,RSA,1,,Kingston (JAM),10 JUN 2017,1245.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14417677,toplist
+3.0,19.85,-0.5,Christian COLEMAN,06 MAR 1996,USA,1sf1,,"Lexington, KY (USA)",27 MAY 2017,1247.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14541956,toplist
+4.0,19.90,-0.4,Noah LYLES,18 JUL 1997,USA,1,,"Shanghai Stadium, Shanghai (CHN)",13 MAY 2017,1238.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14536762,toplist
+5.0,19.95,1.7,Akani SIMBINE,21 SEP 1993,RSA,1f5,,Pretoria (RSA),04 MAR 2017,1228.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14417763,toplist
+6.0,19.97,0.2,Jereem RICHARDS,13 JAN 1994,TTO,1sf3,,"Lexington, KY (USA)",27 MAY 2017,1225.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14434521,toplist
+6.0,19.97,1.0,Yohan BLAKE,26 DEC 1989,JAM,1,,Kingston (JAM),25 JUN 2017,1225.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14201842,toplist
+8.0,20.01,1.6,Christopher BELCHER,29 JAN 1994,USA,1sf3,,"Eugene, OR (USA)",07 JUN 2017,1218.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14503562,toplist
+8.0,20.01,0.6,Andre DE GRASSE,10 NOV 1994,CAN,1,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1218.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14535607,toplist
+8.0,20.01,0.9,Ameer WEBB,19 MAR 1991,USA,2,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1218.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14373694,toplist
+11.0,20.02,0.9,Ramil GULIYEV,29 MAY 1990,TUR,3,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1217.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14178065,toplist
+12.0,20.04,-0.4,Nethaneel MITCHELL-BLAKE,02 APR 1994,GBR,1sf2,,"Lexington, KY (USA)",27 MAY 2017,1216.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14413552,toplist
+13.0,20.10,1.7,Clarence MUNYAI,20 FEB 1998,RSA,2f5,,Pretoria (RSA),04 MAR 2017,1204.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14630862,toplist
+14.0,20.11,1.2,Rasheed DWYER,29 JAN 1989,JAM,2,,Kingston (JAM),10 JUN 2017,1203.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14201966,toplist
+14.0,20.11,0.5,Bernardo BALOYES,06 JAN 1994,COL,1,,Medellín (COL),11 JUN 2017,1203.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14433876,toplist
+16.0,20.14,1.7,Ncincilili TITI,15 DEC 1993,RSA,1f1,,"Columbia, SC (USA)",15 APR 2017,1198.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14417761,toplist
+16.0,20.14,0.9,Isiah YOUNG,05 JAN 1990,USA,1,,"Bregyó Athletic Center, Székesfehérvár (HUN)",04 JUL 2017,1198.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14360879,toplist
+18.0,20.15,1.3,Aldemir GOMES JÚNIOR,08 JUN 1992,BRA,1,,Sao Bernardo do Campo (BRA),11 JUN 2017,1196.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14429482,toplist
+19.0,20.16,0.3,Daniel TALBOT,01 MAY 1991,GBR,2h3,,"Olympic Stadium, London (GBR)",07 AUG 2017,1195.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14190940,toplist
+20.0,20.17,0.9,Aaron BROWN,27 MAY 1992,CAN,4,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1193.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14366482,toplist
+21.0,20.18,1.7,Jaylen BACON,05 AUG 1996,USA,1h6,,"Austin, TX (USA)",26 MAY 2017,1192.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14531147,toplist
+21.0,20.18,1.2,Warren WEIR,31 OCT 1989,JAM,3,,Kingston (JAM),10 JUN 2017,1192.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14202309,toplist
+23.0,20.19,-1.0,Kyle GREAUX,26 APR 1988,TTO,2f2,,Port-of-Spain (TTO),25 JUN 2017,1196.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14526883,toplist
+24.0,20.20,0.5,Gift LEOTLELA,12 MAY 1998,RSA,3,,Potchefstroom (RSA),22 APR 2017,1189.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14578589,toplist
+24.0,20.20,-0.2,Zhenye XIE,17 AUG 1993,CHN,1,,Tianjin (CHN),05 SEP 2017,1190.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14376449,toplist
+26.0,20.21,-2.3,Elijah HALL-THOMPSON,22 AUG 1994,USA,3,,"Sacramento, CA (USA)",25 JUN 2017,1200.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14432013,toplist
+26.0,20.21,0.9,Christophe LEMAITRE,11 JUN 1990,FRA,5,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1187.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14186000,toplist
+28.0,20.22,1.2,Zharnel HUGHES,13 JUL 1995,GBR,4,,Kingston (JAM),10 JUN 2017,1186.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14414524,toplist
+29.0,20.24,-0.5,Jaron FLOURNOY,24 NOV 1996,USA,2sf1,,"Lexington, KY (USA)",27 MAY 2017,1185.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14647543,toplist
+29.0,20.24,-0.7,Fred KERLEY,07 MAY 1995,USA,2,,"Olympic Stadium, London (GBR)",09 JUL 2017,1186.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14504382,toplist
+31.0,20.25,1.7,Brandon CARNES,06 MAR 1995,USA,1h1,,"Austin, TX (USA)",26 MAY 2017,1181.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14466007,toplist
+31.0,20.25,-0.5,Teray SMITH,28 SEP 1994,BAH,3sf1,,"Lexington, KY (USA)",27 MAY 2017,1184.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14520325,toplist
+31.0,20.25,-0.4,Kahlil HENDERSON,18 NOV 1994,USA,3sf2,,"Lexington, KY (USA)",27 MAY 2017,1183.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14440818,toplist
+34.0,20.27,-0.4,LaShawn MERRITT,27 JUN 1986,USA,2,,"Shanghai Stadium, Shanghai (CHN)",13 MAY 2017,1180.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14245966,toplist
+34.0,20.27,1.6,Kyree KING,09 JUL 1994,USA,2sf1,,"Eugene, OR (USA)",07 JUN 2017,1178.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14476000,toplist
+34.0,20.27,-0.5,Churandy MARTINA,03 JUL 1984,NED,2,,"Stade Charléty, Paris (FRA)",01 JUL 2017,1181.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14180965,toplist
+34.0,20.27,-0.2,Lebokeng SESELE,10 DEC 1990,RSA,1f1,,Kortrijk (BEL),08 JUL 2017,1179.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14517755,toplist
+34.0,20.27,1.3,Alex QUIÑÓNEZ,11 AUG 1989,ECU,1,,Santa Marta (COL),22 NOV 2017,1178.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14368885,toplist
+39.0,20.28,0.7,Julius MORRIS,14 APR 1994,MNT,1,,"El Paso, TX (USA)",14 MAY 2017,1176.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14520306,toplist
+40.0,20.29,1.0,Julian REUS,29 APR 1988,GER,1,,Erfurt (GER),09 JUL 2017,1175.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14193827,toplist
+40.0,20.29,-0.6,Sydney SIAME,07 OCT 1997,ZAM,1h5,,"Olympic Stadium, London (GBR)",07 AUG 2017,1178.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14656979,toplist
+42.0,20.30,0.6,Kendal WILLIAMS,23 SEP 1995,USA,4,,"Columbia, SC (USA)",13 MAY 2017,1173.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14465376,toplist
+42.0,20.30,1.7,Aldrich BAILEY JR,06 FEB 1994,USA,2h1,,"Austin, TX (USA)",26 MAY 2017,1173.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14436110,toplist
+42.0,20.30,0.6,David LIMA,06 SEP 1990,POR,1f2,,La Chaux-de-Fonds (SUI),02 JUL 2017,1173.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14376520,toplist
+45.0,20.31,1.7,Jeffrey JOHN,06 JUN 1992,FRA,1f1,,Genève (SUI),10 JUN 2017,1172.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14376209,toplist
+46.0,20.32,-0.4,Deshawn MARSHALL,01 NOV 1994,USA,4sf2,,"Lexington, KY (USA)",27 MAY 2017,1172.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14554482,toplist
+46.0,20.32,1.3,Senoj-Jay GIVANS,30 DEC 1993,JAM,2sf2,,"Eugene, OR (USA)",07 JUN 2017,1170.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14528628,toplist
+46.0,20.32,-0.2,Marqueze WASHINGTON,29 SEP 1993,USA,1f2,,"Mesa, AZ (USA)",10 JUN 2017,1171.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14465148,toplist
+46.0,20.32,0.5,Diego PALOMEQUE,05 DEC 1993,COL,2,,Medellín (COL),11 JUN 2017,1170.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14417600,toplist
+46.0,20.32,0.3,Abdul Hakim SANI BROWN,06 MAR 1999,JPN,1,,Osaka (JPN),25 JUN 2017,1170.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14671546,toplist
+51.0,20.33,1.5,Jamiel TRIMBLE,25 JUN 1995,USA,1,,"Logan, UT (USA)",12 MAY 2017,1169.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14528115,toplist
+51.0,20.33,1.2,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,1h1,,"Stadium Lille Métropole, Villeneuve d'Ascq (FRA)",23 JUN 2017,1169.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14329437,toplist
+51.0,20.33,1.6,Ján VOLKO,02 NOV 1996,SVK,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",15 JUL 2017,1169.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14511687,toplist
+54.0,20.34,0.6,Filippo TORTU,15 JUN 1998,ITA,4,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1167.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14629026,toplist
+54.0,20.34,0.0,Aleixo Platini MENGA,29 SEP 1987,GER,1f1,,Regensburg (GER),11 JUN 2017,1167.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14193693,toplist
+56.0,20.35,-0.4,Adam GEMILI,06 OCT 1993,GBR,3,,"Shanghai Stadium, Shanghai (CHN)",13 MAY 2017,1167.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14427998,toplist
+56.0,20.35,0.2,Chad WALKER,14 APR 1997,JAM,1sf2,,Kingston (JAM),24 JUN 2017,1165.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14540104,toplist
+58.0,20.36,,Just'N THYMES,24 JAN 1994,USA,2f2,,"College Station, TX (USA) (i)",11 MAR 2017,1232.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14482592,toplist
+59.0,20.37,0.1,Joseph MILLAR,24 SEP 1992,NZL,1,,Hamilton (NZL),19 MAR 2017,1162.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14366795,toplist
+59.0,20.37,1.3,Dedric DUKES,04 FEB 1992,USA,1f2,,St-Martin (FRA),13 MAY 2017,1162.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14236857,toplist
+59.0,20.37,1.5,Alex WILSON,19 SEP 1990,SUI,1f1,,Weinheim (GER),27 MAY 2017,1162.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14329085,toplist
+59.0,20.37,0.3,Burkheart ELLIS JR,18 SEP 1992,BAR,1,,St. Michael (BAR),25 JUN 2017,1162.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14237214,toplist
+59.0,20.37,0.0,Nickel ASHMEADE,07 APR 1990,JAM,1f1,,Luzern (SUI),11 JUL 2017,1162.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14201803,toplist
+64.0,20.38,0.0,José Carlos HERRERA,05 FEB 1986,MEX,1f1,,Ciudad de México (MEX),11 FEB 2017,1161.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14365623,toplist
+64.0,20.38,0.2,Nick GRAY,02 JUN 1997,USA,2sf3,,"Lexington, KY (USA)",27 MAY 2017,1161.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14531871,toplist
+64.0,20.38,1.6,Gavin SMELLIE,26 JUN 1986,CAN,1h6,,Windsor (CAN),18 JUN 2017,1161.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14173481,toplist
+64.0,20.38,0.8,Leon REID,26 JUL 1994,GBR,3,,Birmingham (GBR),02 JUL 2017,1161.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14427999,toplist
+64.0,20.38,0.5,Christopher TAYLOR,01 OCT 1999,JAM,1,,Trujillo (PER),22 JUL 2017,1161.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14635736,toplist
+69.0,20.39,1.7,Chijindu UJAH,05 MAR 1994,GBR,1f2,,"Tempe, AZ (USA)",08 APR 2017,1159.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14410429,toplist
+69.0,20.39,1.5,Maxwell WILLIS,02 SEP 1998,USA,1h4,,"Austin, TX (USA)",26 MAY 2017,1159.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14596318,toplist
+69.0,20.39,1.1,Kenroy ANDERSON,27 JUN 1987,JAM,2sf3,,Kingston (JAM),24 JUN 2017,1159.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14201795,toplist
+69.0,20.39,0.9,Jonathan QUARCOO,13 OCT 1996,NOR,1sf1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",15 JUL 2017,1159.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14575831,toplist
+73.0,20.40,1.7,Paul DEDEWO,05 JUN 1991,USA,2f2,,"Tempe, AZ (USA)",08 APR 2017,1158.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14406755,toplist
+73.0,20.40,0.7,Joachim Hendrik MAARTENS,24 MAY 1996,RSA,1sf2,,Potchefstroom (RSA),22 APR 2017,1158.0,men_200m,2017,https://worldathletics.org/athletes/south-africa/joachim-hendrik-maartens-14578600,toplist
+73.0,20.40,1.5,Salem Eid YAQOOB,01 MAR 1996,BRN,1,,Manama (BRN),10 MAY 2017,1158.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14697947,toplist
+73.0,20.40,0.2,Shota IIZUKA,25 JUN 1991,JPN,1h3,,Osaka (JPN),24 JUN 2017,1158.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14327811,toplist
+73.0,20.40,-1.0,Ben BASSAW,09 JUL 1989,FRA,1f1,,La Roche-sur-Yon (FRA),05 JUL 2017,1164.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14334630,toplist
+78.0,20.41,-1.5,Wilfried KOFFI HUA,12 OCT 1987,CIV,1f1,,"Claremont, CA (USA)",03 JUN 2017,1165.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14185652,toplist
+78.0,20.41,1.8,Mark Otieno ODHIAMBO,11 MAY 1993,KEN,1,,Nairobi (KEN),10 JUN 2017,1156.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14692921,toplist
+78.0,20.41,0.9,Julian FORTE,07 JAN 1993,JAM,3sf1,,Kingston (JAM),24 JUN 2017,1156.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14367596,toplist
+78.0,20.41,0.1,Winston GEORGE,19 MAY 1987,GUY,1,,"Leonora Stadium, Leonora (GUY)",15 JUL 2017,1156.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14434969,toplist
+82.0,20.42,1.8,Roger GURSKI,11 JUL 1997,GER,1f2,,Jena (GER),27 MAY 2017,1155.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14656574,toplist
+82.0,20.42,1.2,Sean MCLEAN,23 MAR 1992,USA,5,,Kingston (JAM),10 JUN 2017,1155.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14378052,toplist
+82.0,20.42,-1.3,Serhiy SMELYK,19 APR 1987,UKR,1f5,,Kyiv (UKR),30 JUN 2017,1162.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14230624,toplist
+85.0,20.43,0.3,Andrew HUDSON,14 DEC 1996,USA,1f1,,"Tempe, AZ (USA)",08 APR 2017,1153.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14586216,toplist
+85.0,20.43,1.2,Riak REESE,23 NOV 1994,USA,1f1,,"Auburn, AL (USA)",22 APR 2017,1153.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14516918,toplist
+85.0,20.43,1.8,Keitavious WALTER,16 APR 1996,USA,1f1,,"Hattiesburg, MS (USA)",29 APR 2017,1153.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14633625,toplist
+85.0,20.43,0.2,Tevin HESTER,10 JAN 1994,USA,1f1,,"Greensboro, NC (USA)",14 MAY 2017,1153.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14432010,toplist
+89.0,20.44,1.7,Miguel FRANCIS,28 MAR 1995,GBR,1f4,,Kingston (JAM),15 APR 2017,1152.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14591255,toplist
+89.0,20.44,-0.1,Walter DIX,31 JAN 1986,USA,3f1,,"Columbia, SC (USA)",22 APR 2017,1152.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14236532,toplist
+91.0,20.45,-1.0,Brendon RODNEY,09 APR 1992,CAN,2f1,,St. George's (GRN),08 APR 2017,1156.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14400932,toplist
+91.0,20.45,1.7,Robin VANDERBEMDEN,10 FEB 1994,BEL,2f1,,Genève (SUI),10 JUN 2017,1150.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14426238,toplist
+93.0,20.46,0.3,Pavel MASLÁK,21 FEB 1991,CZE,1,,Třinec (CZE),11 JUN 2017,1149.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14168565,toplist
+94.0,20.47,1.7,Méba Mickaël ZEZE,19 MAY 1994,FRA,3f1,,Genève (SUI),10 JUN 2017,1147.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14389351,toplist
+94.0,20.47,0.3,Kenji FUJIMITSU,01 MAY 1986,JPN,2,,Osaka (JPN),25 JUN 2017,1147.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14202678,toplist
+94.0,20.47,-0.2,Micheal CAMPBELL,29 NOV 1996,JAM,2f1,,Kortrijk (BEL),08 JUL 2017,1148.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14638951,toplist
+97.0,20.48,,Omar MCLEOD,25 APR 1994,JAM,1f5,,"Fayetteville, AR (USA) (i)",17 FEB 2017,1213.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14435592,toplist
+97.0,20.48,0.4,Demish GAYE,20 JAN 1993,JAM,1f3,,Kingston (JAM),11 MAR 2017,1146.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14581991,toplist
+97.0,20.48,0.2,Steven GAYLE,19 MAR 1994,USA,1f1,,"Tallahassee, FL (USA)",24 MAR 2017,1146.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14463522,toplist
+97.0,20.48,1.2,Dentarius LOCKE,12 DEC 1989,USA,1f1,,"Tallahassee, FL (USA)",05 MAY 2017,1146.0,men_200m,2017,https://worldathletics.org/athletes/athlete=14244257,toplist
+,19.19,,Usain BOLT,21 AUG 1986,JAM,1.,,IAAF World Championships,20 AUG 2009,,,2009,,major_meet
+,19.81,,Alonso EDWARD,08 DEC 1989,PAN,2.,,IAAF World Championships,20 AUG 2009,,,2009,,major_meet
+,19.85,,Wallace SPEARMON,24 DEC 1984,USA,3.,,IAAF World Championships,20 AUG 2009,,,2009,,major_meet
+,19.89,,Shawn CRAWFORD,14 JAN 1978,USA,4.,,IAAF World Championships,20 AUG 2009,,,2009,,major_meet
+,19.98,,Steve MULLINGS,29 NOV 1982,JAM,5.,,IAAF World Championships,20 AUG 2009,,,2009,,major_meet
+,20.39,,Charles CLARK,10 AUG 1987,USA,6.,,IAAF World Championships,20 AUG 2009,,,2009,,major_meet
+,20.61,,Ramil GULIYEV,29 MAY 1990,AZE,7.,,IAAF World Championships,20 AUG 2009,,,2009,,major_meet
+,20.68,,David ALERTE,18 SEP 1984,FRA,8.,,IAAF World Championships,20 AUG 2009,,,2009,,major_meet
+,20.37,,Christophe LEMAITRE,11 JUN 1990,FRA,1.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,20.38,,Christian MALCOLM,03 JUN 1979,GBR,2.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,20.42,,Martial MBANDJOCK,14 OCT 1985,FRA,3.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,20.62,,Marlon DEVONISH,01 JUN 1976,GBR,4.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,20.63,,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,5.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,20.71,,Paul HESSION,27 JAN 1983,IRL,6.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,20.90,,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,7.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,1:27.24,,David ALERTE,18 SEP 1984,FRA,8.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,19.40,,Usain BOLT,21 AUG 1986,JAM,1.,,IAAF World Championships,03 SEP 2011,,,2011,,major_meet
+,19.70,,Walter DIX,31 JAN 1986,USA,2.,,IAAF World Championships,03 SEP 2011,,,2011,,major_meet
+,19.80,,Christophe LEMAITRE,11 JUN 1990,FRA,3.,,IAAF World Championships,03 SEP 2011,,,2011,,major_meet
+,19.95,,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,4.,,IAAF World Championships,03 SEP 2011,,,2011,,major_meet
+,20.29,,Nickel ASHMEADE,07 APR 1990,JAM,5.,,IAAF World Championships,03 SEP 2011,,,2011,,major_meet
+,20.31,,Bruno DE BARROS,07 JAN 1987,BRA,6.,,IAAF World Championships,03 SEP 2011,,,2011,,major_meet
+,20.34,,Rondel SORRILLO,24 JAN 1986,TTO,7.,,IAAF World Championships,03 SEP 2011,,,2011,,major_meet
+,DNF,,Alonso EDWARD,08 DEC 1989,PAN,,,IAAF World Championships,03 SEP 2011,,,2011,,major_meet
+,19.32,,Usain BOLT,21 AUG 1986,JAM,1.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,19.44,,Yohan BLAKE,26 DEC 1989,JAM,2.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,19.84,,Warren WEIR,31 OCT 1989,JAM,3.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,19.90,,Wallace SPEARMON,24 DEC 1984,USA,4.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,20.00,,Churandy MARTINA,03 JUL 1984,NED,5.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,20.19,,Christophe LEMAITRE,11 JUN 1990,FRA,6.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,20.57,,Alex QUIÑÓNEZ,11 AUG 1989,ECU,7.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,20.69,,Anaso JOBODWANA,30 JUL 1992,RSA,8.,,The XXX Olympic Games,09 AUG 2012,,,2012,,major_meet
+,20.42,,Churandy MARTINA,03 JUL 1984,NED,1.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,20.87,,Patrick VAN LUIJK,17 SEP 1984,NED,2.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,20.95,,Daniel TALBOT,01 MAY 1991,GBR,3.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,20.99,,Jonathan BORLÉE,22 FEB 1988,BEL,4.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,21.11,,Nil DE OLIVEIRA,03 SEP 1986,SWE,5.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,21.26,,Chris CLARKE,25 JAN 1990,GBR,6.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,21.26,,Diego MARANI,27 APR 1990,ITA,7.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,21.27,,Paul HESSION,27 JAN 1983,IRL,8.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,19.66,,Usain BOLT,21 AUG 1986,JAM,1.,,IAAF World Championships,17 AUG 2013,,,2013,,major_meet
+,19.79,,Warren WEIR,31 OCT 1989,JAM,2.,,IAAF World Championships,17 AUG 2013,,,2013,,major_meet
+,20.04,,Curtis MITCHELL,11 MAR 1989,USA,3.,,IAAF World Championships,17 AUG 2013,,,2013,,major_meet
+,20.05,,Nickel ASHMEADE,07 APR 1990,JAM,4.,,IAAF World Championships,17 AUG 2013,,,2013,,major_meet
+,20.08,,Adam GEMILI,06 OCT 1993,GBR,5.,,IAAF World Championships,17 AUG 2013,,,2013,,major_meet
+,20.14,,Anaso JOBODWANA,30 JUL 1992,RSA,6.,,IAAF World Championships,17 AUG 2013,,,2013,,major_meet
+,20.35,,Churandy MARTINA,03 JUL 1984,NED,7.,,IAAF World Championships,17 AUG 2013,,,2013,,major_meet
+,20.37,,Jaysuma SAIDY NDURE,01 JAN 1984,NOR,8.,,IAAF World Championships,17 AUG 2013,,,2013,,major_meet
+,19.98,,Adam GEMILI,06 OCT 1993,GBR,1.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,20.15,,Christophe LEMAITRE,11 JUN 1990,FRA,2.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,20.30,,Serhiy SMELYK,19 APR 1987,UKR,3.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,20.37,,Churandy MARTINA,03 JUL 1984,NED,4.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,20.43,,Diego MARANI,27 APR 1990,ITA,5.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,20.48,,Ramil GULIYEV,29 MAY 1990,TUR,6.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,20.53,,Lykourgos-Stefanos TSAKONAS,08 MAR 1990,GRE,7.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,20.58,,Karol ZALEWSKI,07 AUG 1993,POL,8.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,19.55,,Usain BOLT,21 AUG 1986,JAM,1.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,19.74,,Justin GATLIN,10 FEB 1982,USA,2.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,19.87,,Anaso JOBODWANA,30 JUL 1992,RSA,3.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,19.87,,Alonso EDWARD,08 DEC 1989,PAN,4.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,20.02,,Zharnel HUGHES,13 JUL 1995,GBR,5.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,20.11,,Ramil GULIYEV,29 MAY 1990,TUR,6.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,20.27,,Femi OGUNODE,15 MAY 1991,QAT,7.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,20.33,,Nickel ASHMEADE,07 APR 1990,JAM,8.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,19.78,,Usain BOLT,21 AUG 1986,JAM,1.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,20.02,,Andre DE GRASSE,10 NOV 1994,CAN,2.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,20.12,,Christophe LEMAITRE,11 JUN 1990,FRA,3.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,20.12,,Adam GEMILI,06 OCT 1993,GBR,4.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,20.13,,Churandy MARTINA,03 JUL 1984,NED,5.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,20.19,,LaShawn MERRITT,27 JUN 1986,USA,6.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,20.23,,Alonso EDWARD,08 DEC 1989,PAN,7.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,20.43,,Ramil GULIYEV,29 MAY 1990,TUR,8.,,The XXXI Olympic Games,18 AUG 2016,,,2016,,major_meet
+,20.45,,Bruno HORTELANO,18 SEP 1991,ESP,1.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,20.51,,Ramil GULIYEV,29 MAY 1990,TUR,2.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,20.56,,Daniel TALBOT,01 MAY 1991,GBR,3.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,20.56,,Solomon BOCKARIE,18 MAY 1987,NED,4.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,20.60,,Nethaneel MITCHELL-BLAKE,02 APR 1994,GBR,5.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,20.66,,Davide MANENTI,16 APR 1989,ITA,6.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,20.70,,Alex WILSON,19 SEP 1990,SUI,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,DQ,,Churandy MARTINA,03 JUL 1984,NED,,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,20.09,,Ramil GULIYEV,29 MAY 1990,TUR,1.,,IAAF World Championships in Athletics,10 AUG 2017,,,2017,,major_meet
+,20.11,,Wayde VAN NIEKERK,15 JUL 1992,RSA,2.,,IAAF World Championships in Athletics,10 AUG 2017,,,2017,,major_meet
+,20.11,,Jereem RICHARDS,13 JAN 1994,TTO,3.,,IAAF World Championships in Athletics,10 AUG 2017,,,2017,,major_meet
+,20.24,,Nethaneel MITCHELL-BLAKE,02 APR 1994,GBR,4.,,IAAF World Championships in Athletics,10 AUG 2017,,,2017,,major_meet
+,20.26,,Ameer WEBB,19 MAR 1991,USA,5.,,IAAF World Championships in Athletics,10 AUG 2017,,,2017,,major_meet
+,20.44,,Isaac MAKWALA,24 SEP 1985,BOT,6.,,IAAF World Championships in Athletics,10 AUG 2017,,,2017,,major_meet
+,20.63,,Abdul Hakim SANI BROWN,06 MAR 1999,JPN,7.,,IAAF World Championships in Athletics,10 AUG 2017,,,2017,,major_meet
+,20.64,,Isiah YOUNG,05 JAN 1990,USA,8.,,IAAF World Championships in Athletics,10 AUG 2017,,,2017,,major_meet
 ,19.76,,Ramil GULIYEV,29 MAY 1990,TUR,1.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
 ,20.04,,Nethaneel MITCHELL-BLAKE,02 APR 1994,GBR,2.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
 ,20.04,,Alex WILSON,19 SEP 1990,SUI,3.,,European Athletics Championships,09 AUG 2018,,,2018,,major_meet
@@ -1242,6 +2324,8 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,20.46,,Josephus LYLES,22 JUL 1998,USA,2.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,20.73,,Christopher TAYLOR,01 OCT 1999,JAM,3.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,20.76,,Rodney ROWE,17 MAR 1997,USA,4.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
+,21.05,,Jimmy VICAUT,27 FEB 1992,FRA,5.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
+,21.05,,Senoj-Jay GIVANS,30 DEC 1993,JAM,6.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,21.47,,Remontay MCCLAIN,21 SEP 1992,USA,7.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,19.31,,Noah LYLES,18 JUL 1997,USA,1.,,"World Athletics Championships, Oregon 2022",21 JUL 2022,,,2022,,major_meet
 ,19.77,,Kenneth BEDNAREK,14 OCT 1998,USA,2.,,"World Athletics Championships, Oregon 2022",21 JUL 2022,,,2022,,major_meet
@@ -1300,11 +2384,13 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,20.44,,Josephus LYLES,22 JUL 1998,USA,4.,,Memorial Borisa Hanžekovića,10 SEP 2023,,,2023,,major_meet
 ,20.81,,Ján VOLKO,02 NOV 1996,SVK,5.,,Memorial Borisa Hanžekovića,10 SEP 2023,,,2023,,major_meet
 ,20.99,,Jerome BLAKE,18 AUG 1995,CAN,6.,,Memorial Borisa Hanžekovića,10 SEP 2023,,,2023,,major_meet
+,21.24,,Micheal CAMPBELL,29 NOV 1996,JAM,8.,,Memorial Borisa Hanžekovića,10 SEP 2023,,,2023,,major_meet
 ,19.99,,Alexander OGANDO,03 MAY 2000,DOM,1.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,18 JUL 2023,,,2023,,major_meet
 ,20.05,,Erriyon KNIGHTON,29 JAN 2004,USA,2.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,18 JUL 2023,,,2023,,major_meet
 ,20.36,,Andrew HUDSON,14 DEC 1996,JAM,3.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,18 JUL 2023,,,2023,,major_meet
 ,20.41,,Julian FORTE,07 JAN 1993,JAM,4.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,18 JUL 2023,,,2023,,major_meet
 ,20.50,,Kyree KING,09 JUL 1994,USA,5.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,18 JUL 2023,,,2023,,major_meet
+,20.75,,Micheal CAMPBELL,29 NOV 1996,JAM,6.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,18 JUL 2023,,,2023,,major_meet
 ,20.90,,Yuki KOIKE,15 MAY 1995,JPN,7.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,18 JUL 2023,,,2023,,major_meet
 ,DQ,,Elijah MORROW,30 OCT 1995,USA,,,Gyulai István Memorial - Hungarian Athletics Grand Prix,18 JUL 2023,,,2023,,major_meet
 ,20.22,,Luxolo ADAMS,01 AUG 1996,RSA,1.,,62nd Ostrava Golden Spike,27 JUN 2023,,,2023,,major_meet
@@ -1364,3 +2450,4 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,20.36,,Eseosa Fostine DESALU,19 FEB 1994,ITA,5.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,12 AUG 2025,,,2025,,major_meet
 ,20.52,,Adrian KERR,07 OCT 2003,JAM,6.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,12 AUG 2025,,,2025,,major_meet
 ,20.53,,Tsebo MATSOSO,27 MAY 1999,RSA,7.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,12 AUG 2025,,,2025,,major_meet
+,20.88,,Micheal CAMPBELL,29 NOV 1996,JAM,8.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,12 AUG 2025,,,2025,,major_meet

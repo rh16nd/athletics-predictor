@@ -1146,13 +1146,1094 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,22.69,,Mckenzie LONG,11 JUL 2000,USA,6.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,22.73,,Daryll NEITA,29 AUG 1996,GBR,7.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,23.23,,Léonie POINTET,17 FEB 2001,SUI,8.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
-,22.16,,Shaunae MILLER-UIBO,15 APR 1994,BAH,1.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,22.28,,Dafne SCHIPPERS,15 JUN 1992,NED,2.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,22.61,,Marie-Josée TA LOU,18 NOV 1988,CIV,3.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,22.62,,Shericka JACKSON,16 JUL 1994,JAM,4.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,22.62,,Edidiong ODIONG,13 MAR 1997,BRN,5.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,23.18,,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,6.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
-,24.34,,Viktoriya ZYABKINA,04 SEP 1992,KAZ,8.,,IAAF Continental Cup,09 SEP 2018,,,2018,,major_meet
+1.0,21.74,0.6,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1,,"National Stadium, Beijing (CHN)",21 AUG 2008,1265.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285598,toplist
+2.0,21.93,0.6,Allyson FELIX,18 NOV 1985,USA,2,,"National Stadium, Beijing (CHN)",21 AUG 2008,1245.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14309983,toplist
+3.0,21.99,1.1,Kerron STEWART,16 APR 1984,JAM,2,,Kingston (JAM),29 JUN 2008,1239.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285938,toplist
+4.0,22.01,0.6,Muna LEE,30 OCT 1981,USA,4,,"National Stadium, Beijing (CHN)",21 AUG 2008,1237.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14315186,toplist
+5.0,22.11,1.1,Sherone SIMPSON,12 AUG 1984,JAM,3,,Kingston (JAM),29 JUN 2008,1226.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285909,toplist
+6.0,22.15,1.1,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,4,,Kingston (JAM),29 JUN 2008,1222.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285680,toplist
+7.0,22.25,1.1,Simone FACEY,07 MAY 1985,JAM,5,,Kingston (JAM),29 JUN 2008,1211.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285672,toplist
+8.0,22.29,1.4,Porscha LUCAS,18 JUN 1988,USA,1,,"Boulder, CO (USA)",18 MAY 2008,1207.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14315666,toplist
+9.0,22.34,0.6,Marshevet HOOKER,25 SEP 1984,USA,5,,"National Stadium, Beijing (CHN)",21 AUG 2008,1202.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14312862,toplist
+10.0,22.40,,Bianca KNIGHT,02 JAN 1989,USA,1f2,,"Fayetteville, AR (USA) (i)",14 MAR 2008,1236.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14314587,toplist
+11.0,22.47,-0.6,Carmelita JETER,24 NOV 1979,USA,2,,"Carson, CA (USA)",18 MAY 2008,1192.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14313618,toplist
+12.0,22.48,0.2,Anastasiya KAPACHINSKAYA,21 NOV 1979,RUS,1,,Moskva (RUS),10 JUN 2008,1188.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14298016,toplist
+12.0,22.48,0.0,Shalonda SOLOMON,19 DEC 1985,USA,3sf2,,"Eugene, OR (USA)",05 JUL 2008,1188.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14321706,toplist
+14.0,22.49,0.5,Sanya RICHARDS-ROSS,26 FEB 1985,USA,2,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1187.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14319838,toplist
+14.0,22.49,-0.1,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,1,,Luzern (SUI),16 JUL 2008,1187.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14270639,toplist
+16.0,22.50,0.5,Muriel HURTIS,25 MAR 1979,FRA,3,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1186.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14257078,toplist
+16.0,22.50,0.8,Shericka WILLIAMS,17 SEP 1985,JAM,1,,Rieti (ITA),07 SEP 2008,1186.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14286003,toplist
+18.0,22.56,0.0,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,1sf1,,Kazan (RUS),19 JUL 2008,1179.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14297674,toplist
+19.0,22.57,1.4,Nickeisha ANDERSON,15 MAR 1985,JAM,3,,"Boulder, CO (USA)",18 MAY 2008,1178.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285530,toplist
+20.0,22.58,0.7,Yuliya GUSHCHINA,04 MAR 1983,RUS,2,,"Olympiastadion, Berlin (GER)",01 JUN 2008,1177.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14297898,toplist
+21.0,22.59,-0.1,Lauryn WILLIAMS,11 SEP 1983,USA,3sf1,,"Eugene, OR (USA)",05 JUL 2008,1176.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14324318,toplist
+22.0,22.61,-0.2,Cydonie MOTHERSILL,19 MAR 1978,CAY,4sf2,,"National Stadium, Beijing (CHN)",20 AUG 2008,1175.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14266914,toplist
+23.0,22.62,0.5,LaVerne JONES-FERRETTE,16 SEP 1981,ISV,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",01 JUL 2008,1173.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14283604,toplist
+24.0,22.63,0.0,Ebonie FLOYD,21 OCT 1983,USA,5sf2,,"Eugene, OR (USA)",05 JUL 2008,1172.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14310239,toplist
+25.0,22.65,0.5,Rakia AL GASSRA,06 SEP 1982,BRN,4,,"Stadio Olimpico, Roma (ITA)",11 JUL 2008,1170.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14268780,toplist
+26.0,22.66,-0.1,Torri EDWARDS,31 JAN 1977,USA,4sf1,,"Eugene, OR (USA)",05 JUL 2008,1169.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14309556,toplist
+27.0,22.67,1.9,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,1,,"Fayetteville, AR (USA)",31 MAY 2008,1168.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14302975,toplist
+28.0,22.69,1.5,Isabel LE ROUX,23 JAN 1987,RSA,1,,Addis Ababa (ETH),04 MAY 2008,1166.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14296528,toplist
+29.0,22.70,1.5,Kadiatou CAMARA,04 MAY 1981,MLI,2,,Addis Ababa (ETH),04 MAY 2008,1165.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14291318,toplist
+29.0,22.70,0.3,Sheri-Ann BROOKS,11 FEB 1983,JAM,1,,"Mangueirão, Belém (BRA)",25 MAY 2008,1165.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285566,toplist
+29.0,22.70,0.4,LaShauntea MOORE,31 JUL 1983,USA,4,,"Stade de France, Paris-St-Denis (FRA)",18 JUL 2008,1165.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14317320,toplist
+32.0,22.72,1.4,Allison GEORGE,03 JAN 1988,GRN,4,,"Boulder, CO (USA)",18 MAY 2008,1163.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14281035,toplist
+32.0,22.72,1.8,Emily FREEMAN,24 NOV 1980,GBR,1f4,,Leiden (NED),14 JUN 2008,1163.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14275081,toplist
+34.0,22.73,-0.6,Susanthika JAYASINGHE,17 DEC 1975,SRI,4,,"Carson, CA (USA)",18 MAY 2008,1165.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14300498,toplist
+35.0,22.74,0.9,Kim GEVAERT,05 AUG 1978,BEL,1,,Nivelles (BEL),10 MAY 2008,1161.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14270370,toplist
+35.0,22.74,0.2,Oludamola OSAYOMI,26 JUN 1986,NGR,1,,Abuja (NGR),03 JUL 2008,1161.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14292505,toplist
+35.0,22.74,1.7,Sabina VEIT,02 DEC 1985,SLO,1,,Maribor (SLO),20 JUL 2008,1161.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14300275,toplist
+38.0,22.75,1.4,Alexandria ANDERSON,28 JAN 1987,USA,5,,"Boulder, CO (USA)",18 MAY 2008,1160.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14304791,toplist
+38.0,22.75,1.4,Tiffany TOWNSEND,14 JUN 1989,USA,6,,"Boulder, CO (USA)",18 MAY 2008,1160.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14322941,toplist
+40.0,22.76,2.0,Virgil HODGE,17 NOV 1983,SKN,1f1,,"Fort Worth, TX (USA)",19 APR 2008,1159.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14300050,toplist
+40.0,22.76,0.3,Debbie DUNN,26 MAR 1978,USA,2,,"Mangueirão, Belém (BRA)",25 MAY 2008,1159.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14309386,toplist
+42.0,22.77,0.0,Yuliya CHERMOSHANSKAYA,06 JAN 1986,RUS,2sf1,,Kazan (RUS),19 JUL 2008,1158.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14297516,toplist
+43.0,22.79,1.4,Scottesha MILLER,14 JAN 1988,USA,7,,"Boulder, CO (USA)",18 MAY 2008,1156.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14317043,toplist
+44.0,22.80,0.4,Roxana DÍAZ,17 MAY 1981,CUB,3f1,,Barcelona (ESP),19 JUL 2008,1155.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14263600,toplist
+45.0,22.82,0.0,Ionela ŢIRLEA-MANOLACHE,09 FEB 1976,ROU,1,,Bucureşti (ROU),06 JUL 2008,1153.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14296003,toplist
+46.0,22.84,0.7,Natalie KNIGHT,24 OCT 1986,USA,1,,"Auburn, AL (USA)",18 MAY 2008,1151.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14314594,toplist
+47.0,22.85,1.0,Sheniqua FERGUSON,24 NOV 1989,BAH,2,,Nassau (BAH),28 JUN 2008,1150.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14270638,toplist
+47.0,22.85,1.1,Aleen BAILEY,25 NOV 1980,JAM,7,,Kingston (JAM),29 JUN 2008,1150.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285532,toplist
+49.0,22.86,1.8,Adrienne POWER,11 DEC 1981,CAN,3f2,,"Provo, UT (USA)",24 MAY 2008,1149.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14267353,toplist
+50.0,22.90,1.9,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,1h1,,"Fayetteville, AR (USA)",30 MAY 2008,1145.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285727,toplist
+51.0,22.91,0.1,Jade BAILEY,10 JUN 1983,BAR,1,,Bridgetown (BAR),22 JUN 2008,1144.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14270592,toplist
+51.0,22.91,1.9,Nataliya PYHYDA,30 JAN 1981,UKR,1h6,,Kyiv (UKR),02 JUL 2008,1144.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14304022,toplist
+53.0,22.92,-1.2,Leslie COLE,16 FEB 1987,USA,1,,Toluca (MEX),18 JUL 2008,1150.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14307858,toplist
+54.0,22.94,1.9,Jeneba TARMOH,27 SEP 1989,USA,2,,"Fayetteville, AR (USA)",31 MAY 2008,1141.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14322457,toplist
+54.0,22.94,-0.5,Christine OHURUOGU,17 MAY 1984,GBR,3,,"Bislett Stadion, Oslo (NOR)",06 JUN 2008,1144.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14275963,toplist
+54.0,22.94,0.0,Gloria KEMASUODE,30 DEC 1979,NGR,1,,Abuja (NGR),23 JUN 2008,1141.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14292428,toplist
+54.0,22.94,1.7,Inna EFTIMOVA,19 JUN 1988,BUL,1,,Sofia (BUL),30 JUN 2008,1141.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14268718,toplist
+58.0,22.96,1.0,Meritzer WILLIAMS,01 JAN 1989,SKN,2,,Basseterre (SKN),21 JUN 2008,1139.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14324331,toplist
+59.0,22.98,0.8,Vincenza CALÍ,15 OCT 1983,ITA,3,,Rieti (ITA),07 SEP 2008,1137.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14283927,toplist
+60.0,22.99,-0.6,Ashlee KIDD,26 JUL 1985,USA,7,,"Carson, CA (USA)",18 MAY 2008,1139.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14314376,toplist
+60.0,22.99,0.0,Stephanie DURST,06 JAN 1982,USA,6sf2,,"Eugene, OR (USA)",05 JUL 2008,1136.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14309424,toplist
+62.0,23.00,0.1,Lavaughn JONES,,USA,2,,Baie Mahault (FRA),01 MAY 2008,1135.0,women_200m,2008,https://worldathletics.org/athletes/united-states/lavaughn-jones-14313957,toplist
+63.0,23.01,1.4,Nivea SMITH,18 FEB 1990,BAH,1,,Basseterre (SKN),22 MAR 2008,1134.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14270617,toplist
+63.0,23.01,1.8,Mechelle LEWIS,20 SEP 1980,USA,4f2,,"Provo, UT (USA)",24 MAY 2008,1134.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14315355,toplist
+63.0,23.01,0.9,Anastasiya VINOGRADOVA,13 SEP 1986,KAZ,1h1,,Bishkek (KGZ),20 JUN 2008,1134.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14288746,toplist
+66.0,23.02,1.7,Amantle MONTSHO,04 JUL 1983,BOT,1,,Algiers (ALG),29 MAY 2008,1132.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14269474,toplist
+66.0,23.02,0.6,Natalya ANTYUKH,26 JUN 1981,RUS,2,,Tula (RUS),06 JUL 2008,1132.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14297264,toplist
+68.0,23.04,0.0,Mikele BARBER,04 OCT 1980,USA,7sf2,,"Eugene, OR (USA)",05 JUL 2008,1130.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14305305,toplist
+69.0,23.05,1.9,Olivia BORLÉE,10 APR 1986,BEL,3,,Heusden-Zolder (BEL),20 JUL 2008,1129.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14270487,toplist
+70.0,23.06,0.0,Carol RODRÍGUEZ,16 DEC 1985,PUR,1h1,,"Tempe, AZ (USA)",16 MAY 2008,1128.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14295349,toplist
+70.0,23.06,0.7,Vanda FERREIRA GOMES,07 NOV 1988,BRA,1,,Cochabamba (BOL),31 MAY 2008,1128.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14269053,toplist
+72.0,23.07,1.3,Christine AMERTIL,18 AUG 1979,BAH,1,,"Athens, GA (USA)",19 APR 2008,1127.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14270669,toplist
+72.0,23.07,0.3,Vida ANIM,07 DEC 1983,GHA,1,,Naimette-Xhovémont (BEL),16 JUL 2008,1127.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14280442,toplist
+74.0,23.08,0.9,Wyllesheia MYRICK,21 NOV 1979,USA,3,,"Coral Gables, FL (USA)",12 APR 2008,1126.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14317693,toplist
+74.0,23.08,-0.8,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,1,,Tainan (TPE),29 MAY 2008,1130.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285764,toplist
+74.0,23.08,0.5,Evelyn Carolina de Oliveira DOS SANTOS,11 APR 1985,BRA,1,,São Paulo (BRA),29 JUN 2008,1126.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14269113,toplist
+77.0,23.09,0.0,Charonda WILLIAMS,27 MAR 1987,USA,1,,"Tempe, AZ (USA)",17 MAY 2008,1125.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14324253,toplist
+77.0,23.09,0.1,Darlenys OBREGÓN,21 FEB 1986,COL,2h2,,Cali (COL),05 JUL 2008,1125.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14263958,toplist
+79.0,23.10,0.5,LaKadron IVERY,23 JUN 1983,USA,5f1,,"Provo, UT (USA)",24 MAY 2008,1124.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14313323,toplist
+80.0,23.11,2.0,Nadine PALMER,19 FEB 1983,JAM,2f1,,"Fort Worth, TX (USA)",19 APR 2008,1123.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14285844,toplist
+81.0,23.12,1.9,Lynne LAYNE,01 APR 1988,USA,3,,"Fayetteville, AR (USA)",31 MAY 2008,1122.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14315125,toplist
+81.0,23.12,1.9,Trish BARTHOLOMEW,23 OCT 1986,GRN,4,,"Fayetteville, AR (USA)",31 MAY 2008,1122.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14281027,toplist
+83.0,23.13,0.7,Thaissa BARBOSA PRESTI,07 NOV 1985,BRA,2,,Cochabamba (BOL),31 MAY 2008,1121.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14269419,toplist
+83.0,23.13,1.9,Cache ARMBRISTER,26 SEP 1989,USA,5,,"Fayetteville, AR (USA)",31 MAY 2008,1121.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14304985,toplist
+83.0,23.13,0.2,Natalya RUSAKOVA,12 DEC 1979,RUS,4,,Moskva (RUS),10 JUN 2008,1121.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14298302,toplist
+83.0,23.13,0.8,Anyika ONUORA,28 OCT 1984,GBR,4,,Villeneuve d'Ascq (FRA),27 JUN 2008,1121.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14275975,toplist
+83.0,23.13,0.4,Gloria ASUMNU,22 MAY 1985,USA,4f1,,Barcelona (ESP),19 JUL 2008,1121.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14305055,toplist
+83.0,23.13,1.9,Hanna MARIEN,16 MAY 1982,BEL,4,,Heusden-Zolder (BEL),20 JUL 2008,1121.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14270301,toplist
+83.0,23.13,-0.4,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,4h2,,"National Stadium, Beijing (CHN)",19 AUG 2008,1123.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14268643,toplist
+90.0,23.14,-0.2,Krista SIMKINS,27 DEC 1986,USA,1f1,,"Coral Gables, FL (USA)",29 MAR 2008,1121.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14321287,toplist
+90.0,23.14,1.1,Jolanda DIEGO,28 JUL 1986,USA,1,,"Los Angeles, CA (USA)",03 MAY 2008,1120.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14309020,toplist
+90.0,23.14,1.2,Tawanna MEADOWS,04 AUG 1986,USA,1h3,,"Denton, TX (USA)",10 MAY 2008,1120.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14316787,toplist
+90.0,23.14,1.7,Nelly BANCO,17 FEB 1986,FRA,1f2,,Montgeron (FRA),11 MAY 2008,1120.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14258660,toplist
+94.0,23.15,2.0,Natasha HASTINGS,23 JUL 1986,USA,1,,"Walnut, CA (USA)",20 APR 2008,1119.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14312172,toplist
+94.0,23.15,1.8,Michelle PERRY,01 MAY 1979,USA,4,,"Walnut, CA (USA)",20 APR 2008,1119.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14318803,toplist
+94.0,23.15,2.0,Shana COX,22 JAN 1985,USA,1,,"Champaign, IL (USA)",18 MAY 2008,1119.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14308212,toplist
+94.0,23.15,0.6,Me'Lisa BARBER,04 OCT 1980,USA,1,,"Greensboro, NC (USA)",14 JUN 2008,1119.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14305304,toplist
+98.0,23.16,,Anna GEFLIKH,01 FEB 1983,RUS,3,,Moskva (RUS) (i),09 FEB 2008,1162.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14297775,toplist
+98.0,23.16,1.5,Sherry FLETCHER,17 JAN 1986,GRN,3f1,,"Baton Rouge, LA (USA)",12 APR 2008,1118.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14281033,toplist
+98.0,23.16,-0.2,Lee MCCONNELL,09 OCT 1978,GBR,1f2,,Genève (SUI),31 MAY 2008,1119.0,women_200m,2008,https://worldathletics.org/athletes/athlete=14275732,toplist
+1.0,21.88,1.3,Allyson FELIX,18 NOV 1985,USA,1,,Stockholm (SWE),31 JUL 2009,1250.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14309983,toplist
+2.0,22.23,1.3,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,2,,Stockholm (SWE),31 JUL 2009,1214.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14270639,toplist
+3.0,22.29,0.5,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,2sf1,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1207.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285598,toplist
+3.0,22.29,0.1,Sanya RICHARDS-ROSS,26 FEB 1985,USA,2,,Thessaloniki (GRE),12 SEP 2009,1207.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14319838,toplist
+5.0,22.30,0.5,Muna LEE,30 OCT 1981,USA,1sf3,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1206.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14315186,toplist
+6.0,22.34,1.7,Lauryn WILLIAMS,11 SEP 1983,USA,1,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1202.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14324318,toplist
+7.0,22.38,0.5,Porscha LUCAS,18 JUN 1988,USA,1sf2,,"Fayetteville, AR (USA)",11 JUN 2009,1198.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14315666,toplist
+8.0,22.41,1.6,Shalonda SOLOMON,19 DEC 1985,USA,1f1,,"Walnut, CA (USA)",06 JUN 2009,1195.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14321706,toplist
+9.0,22.42,0.1,Kerron STEWART,16 APR 1984,JAM,3,,Thessaloniki (GRE),12 SEP 2009,1194.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285938,toplist
+10.0,22.45,1.4,Cydonie MOTHERSILL,19 MAR 1978,CAY,2,,Shanghai (CHN),20 SEP 2009,1191.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14266914,toplist
+11.0,22.46,0.3,LaVerne JONES-FERRETTE,16 SEP 1981,ISV,1,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1190.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14283604,toplist
+12.0,22.50,1.6,Bianca KNIGHT,02 JAN 1989,USA,2f1,,"Walnut, CA (USA)",06 JUN 2009,1186.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14314587,toplist
+13.0,22.51,0.3,Marshevet HOOKER,25 SEP 1984,USA,1h4,,"Olympiastadion, Berlin (GER)",19 AUG 2009,1184.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14312862,toplist
+14.0,22.55,1.9,Charonda WILLIAMS,27 MAR 1987,USA,2sf1,,"Eugene, OR (USA)",28 JUN 2009,1180.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14324253,toplist
+14.0,22.55,0.3,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,2sf2,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1180.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285805,toplist
+16.0,22.57,1.9,LaShauntea MOORE,31 JUL 1983,USA,3sf1,,"Eugene, OR (USA)",28 JUN 2009,1178.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14317320,toplist
+16.0,22.57,0.1,Shericka WILLIAMS,17 SEP 1985,JAM,5,,Thessaloniki (GRE),12 SEP 2009,1178.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14286003,toplist
+18.0,22.58,-1.1,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,2,,Kingston (JAM),28 JUN 2009,1183.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285680,toplist
+18.0,22.58,0.5,Simone FACEY,07 MAY 1985,JAM,2sf3,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1177.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285672,toplist
+20.0,22.59,0.0,Carmelita JETER,24 NOV 1979,USA,1f2,,"Los Angeles, CA (USA)",11 APR 2009,1176.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14313618,toplist
+21.0,22.60,-0.8,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,2,,"Mangueirão, Belém (BRA)",24 MAY 2009,1179.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14302975,toplist
+21.0,22.60,0.5,Alexandria ANDERSON,28 JAN 1987,USA,2sf2,,"Fayetteville, AR (USA)",11 JUN 2009,1175.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14304791,toplist
+21.0,22.60,1.9,Ebonie FLOYD,21 OCT 1983,USA,4sf1,,"Eugene, OR (USA)",28 JUN 2009,1175.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14310239,toplist
+24.0,22.63,,Yuliya GUSHCHINA,04 MAR 1983,RUS,1,,Sochi (RUS),30 MAY 2009,1172.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14297898,toplist
+25.0,22.64,0.5,Emily FREEMAN,24 NOV 1980,GBR,3sf1,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1171.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14275081,toplist
+25.0,22.64,0.5,Eleni ARTYMATA,16 MAY 1986,CYP,4sf1,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1171.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14263333,toplist
+27.0,22.73,-2.0,Debbie DUNN,26 MAR 1978,USA,3,,Rieti (ITA),06 SEP 2009,1174.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14309386,toplist
+28.0,22.74,1.1,Rose-Mary WHYTE,08 SEP 1986,JAM,1f1,,Salamanca (ESP),08 JUL 2009,1161.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285988,toplist
+29.0,22.75,-0.6,Stephanie DURST,06 JAN 1982,USA,1f1,,"Stadion Juliska, Praha (CZE)",08 JUN 2009,1163.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14309424,toplist
+30.0,22.76,0.4,Laverne MONGER,30 NOV 1984,USA,1,,Ponce (PUR),16 MAY 2009,1159.0,women_200m,2009,https://worldathletics.org/athletes/united-states/laverne-monger-14317226,toplist
+31.0,22.78,0.5,Murielle AHOURÉ,23 AUG 1987,CIV,4sf2,,"Fayetteville, AR (USA)",11 JUN 2009,1157.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14304569,toplist
+32.0,22.80,1.2,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,1,,"Louisville, KY (USA)",30 MAY 2009,1155.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285727,toplist
+32.0,22.80,0.0,Yelena BOLSUN,25 JUN 1982,RUS,2,,Cheboksary (RUS),26 JUL 2009,1155.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14297427,toplist
+34.0,22.82,,Lyudmila LITVINOVA,08 JUN 1985,RUS,2,,Sochi (RUS),30 MAY 2009,1153.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14298462,toplist
+34.0,22.82,0.0,Olga ZAYTSEVA,10 NOV 1984,RUS,3,,Cheboksary (RUS),26 JUL 2009,1153.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14299866,toplist
+36.0,22.83,-0.2,Aleen BAILEY,25 NOV 1980,JAM,2f2,,"Orlando, FL (USA)",13 JUN 2009,1153.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285532,toplist
+37.0,22.84,1.1,Shareese WOODS,20 FEB 1985,USA,2f1,,Salamanca (ESP),08 JUL 2009,1151.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14324669,toplist
+38.0,22.85,0.3,Christine OHURUOGU,17 MAY 1984,GBR,2,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1150.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14275963,toplist
+38.0,22.85,1.9,Gloria ASUMNU,22 MAY 1985,USA,5sf1,,"Eugene, OR (USA)",28 JUN 2009,1150.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14305055,toplist
+40.0,22.87,-0.8,Rachelle BOONE-SMITH,30 JUN 1981,USA,4,,"Mangueirão, Belém (BRA)",24 MAY 2009,1152.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14306134,toplist
+41.0,22.89,1.1,Joanna ATKINS,31 JAN 1989,USA,3f2,,"Tempe, AZ (USA)",11 APR 2009,1146.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14305059,toplist
+42.0,22.90,0.5,Monique DELL,23 SEP 1985,NZL,3sf3,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1145.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14293209,toplist
+43.0,22.91,1.0,Tiffany TOWNSEND,14 JUN 1989,USA,1sf1,,"Fayetteville, AR (USA)",11 JUN 2009,1144.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14322941,toplist
+44.0,22.93,1.8,Libania GRENOT,12 JUL 1983,ITA,1,,Rieti (ITA),17 MAY 2009,1142.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14263547,toplist
+44.0,22.93,1.9,Leslie COLE,16 FEB 1987,USA,6sf1,,"Eugene, OR (USA)",28 JUN 2009,1142.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14307858,toplist
+46.0,22.94,-1.9,Nataliya PYHYDA,30 JAN 1981,UKR,1h1,,Yalta (UKR),04 JUN 2009,1152.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14304022,toplist
+46.0,22.94,0.6,Chalonda GOODMAN,29 SEP 1990,USA,1,,"Greensboro, NC (USA)",20 JUN 2009,1141.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14311151,toplist
+48.0,22.95,0.2,Nickeisha ANDERSON,15 MAR 1985,JAM,1h1,,"Lubbock, TX (USA)",16 MAY 2009,1140.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285530,toplist
+48.0,22.95,1.2,Semoy HACKETT,27 NOV 1988,TTO,1,,"San Angelo, TX (USA)",23 MAY 2009,1140.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14303004,toplist
+50.0,22.97,-1.4,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,1,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1146.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14297674,toplist
+51.0,22.99,0.0,Yelizaveta BRYZGINA,28 NOV 1989,UKR,2,,Yalta (UKR),04 JUN 2009,1136.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14303484,toplist
+51.0,22.99,0.0,Natalya RUSAKOVA,12 DEC 1979,RUS,4,,Cheboksary (RUS),26 JUL 2009,1136.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14298302,toplist
+53.0,23.00,-1.5,Yekaterina YEFIMOVA,28 JUN 1989,RUS,1,,Kazan (RUS),17 JUN 2009,1144.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14297657,toplist
+53.0,23.00,1.7,Chisato FUKUSHIMA,27 JUN 1988,JPN,1,,Hiroshima (JPN),26 JUN 2009,1135.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14286217,toplist
+55.0,23.01,1.6,Carol RODRÍGUEZ,16 DEC 1985,PUR,3f1,,"Walnut, CA (USA)",06 JUN 2009,1134.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14295349,toplist
+55.0,23.01,-0.6,Sheri-Ann BROOKS,11 FEB 1983,JAM,3f1,,"Stadion Juliska, Praha (CZE)",08 JUN 2009,1137.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285566,toplist
+57.0,23.02,-0.4,Sally MCLELLAN,19 SEP 1986,AUS,1,,Gold Coast (AUS),14 JUN 2009,1134.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14271668,toplist
+58.0,23.03,0.5,Johanna DANOIS,04 APR 1987,FRA,5sf1,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1131.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14257906,toplist
+59.0,23.05,1.1,Christine AMERTIL,18 AUG 1979,BAH,3f1,,Salamanca (ESP),08 JUL 2009,1129.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14270669,toplist
+60.0,23.06,,Natasha HASTINGS,23 JUL 1986,USA,1,,"San Diego, CA (USA)",14 JUN 2009,1128.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14312172,toplist
+61.0,23.07,-1.4,Ewelina PTAK,20 MAR 1987,POL,2,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1135.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14293871,toplist
+62.0,23.08,0.9,Jodie WILLIAMS,28 SEP 1993,GBR,1,,"Bressanone, Trentino-Alto Adige (ITA)",12 JUL 2009,1126.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14276757,toplist
+62.0,23.08,0.9,Allison PETER,14 JUL 1992,ISV,2,,"Bressanone, Trentino-Alto Adige (ITA)",12 JUL 2009,1126.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14283608,toplist
+64.0,23.09,1.6,Amber PURVIS,23 JAN 1990,USA,1,,"Eugene, OR (USA)",04 APR 2009,1125.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14319382,toplist
+64.0,23.09,-0.8,Kaltouma NADJINA,16 NOV 1976,CHA,1,,Beirut (LBN),05 OCT 2009,1129.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14266890,toplist
+66.0,23.11,0.1,Isabel LE ROUX,23 JAN 1987,RSA,1f1,,Germiston (RSA),06 MAR 2009,1123.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14296528,toplist
+66.0,23.11,0.0,Roxana DÍAZ,17 MAY 1981,CUB,1f1,,Camagüey (CUB),15 MAR 2009,1123.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14263600,toplist
+66.0,23.11,1.0,Scottesha MILLER,14 JAN 1988,USA,3sf1,,"Fayetteville, AR (USA)",11 JUN 2009,1123.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14317043,toplist
+69.0,23.14,1.7,Lina JACQUES-SÉBASTIEN,10 APR 1985,FRA,2,,Angers (FRA),24 JUL 2009,1120.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14257046,toplist
+69.0,23.14,0.0,Norma GONZÁLEZ,11 AUG 1982,COL,1,,Bogotá (COL),24 JUL 2009,1120.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14264003,toplist
+71.0,23.15,0.0,Jessica BEARD,08 JAN 1989,USA,1f4,,"Tempe, AZ (USA)",28 MAR 2009,1119.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14305526,toplist
+71.0,23.15,1.5,Momoko TAKAHASHI,16 NOV 1988,JPN,2,,Shizuoka (JPN),03 MAY 2009,1119.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14288023,toplist
+71.0,23.15,0.9,Ashton PURVIS,12 JUL 1992,USA,3,,"Bressanone, Trentino-Alto Adige (ITA)",12 JUL 2009,1119.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14319383,toplist
+71.0,23.15,1.1,Marika POPOWICZ-DRAPAŁA,28 APR 1988,POL,1sf2,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1119.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14294295,toplist
+71.0,23.15,1.1,Alena KIYEVICH,06 OCT 1987,BLR,2sf2,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",18 JUL 2009,1119.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14374824,toplist
+71.0,23.15,0.2,Olivia BORLÉE,10 APR 1986,BEL,1,,Oordegem (BEL),02 AUG 2009,1119.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14270487,toplist
+71.0,23.15,-0.8,Kimberly HYACINTHE,28 MAR 1989,CAN,2,,Beirut (LBN),05 OCT 2009,1123.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14267823,toplist
+78.0,23.16,0.9,Jessica YOUNG-WARREN,06 APR 1987,USA,1h3,,"Norman, OK (USA)",29 MAY 2009,1118.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14324854,toplist
+78.0,23.16,0.4,Adrienne POWER,11 DEC 1981,CAN,1,,Cuxhaven (GER),22 JUL 2009,1118.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14267353,toplist
+80.0,23.17,1.7,Ashlee KIDD,26 JUL 1985,USA,1,,Santo Domingo (DOM),10 MAY 2009,1117.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14314376,toplist
+80.0,23.17,1.7,Amy Mbacké THIAM,10 NOV 1976,SEN,3,,Angers (FRA),24 JUL 2009,1117.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14300015,toplist
+80.0,23.17,-1.0,Natalya ANTYUKH,26 JUN 1981,RUS,2sf1,,Cheboksary (RUS),25 JUL 2009,1123.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14297264,toplist
+83.0,23.19,0.5,Virgil HODGE,17 NOV 1983,SKN,5sf3,,"Olympiastadion, Berlin (GER)",20 AUG 2009,1115.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14300050,toplist
+83.0,23.19,0.1,Darlenys OBREGÓN,21 FEB 1986,COL,1,,Sucre (BOL),25 NOV 2009,1115.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14263958,toplist
+85.0,23.20,1.5,Jura Lanconia LEVY,04 NOV 1990,JAM,1,,Vieux-Fort (LCA),13 APR 2009,1114.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285765,toplist
+85.0,23.20,,Yelizaveta DEMIROVA,14 AUG 1987,RUS,4,,Sochi (RUS),30 MAY 2009,1114.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14299187,toplist
+85.0,23.20,0.6,Octavious FREEMAN,20 APR 1992,USA,2,,"Greensboro, NC (USA)",20 JUN 2009,1114.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14335310,toplist
+85.0,23.20,0.4,Helen PRYER,21 JAN 1979,GBR,2,,Cuxhaven (GER),22 JUL 2009,1114.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14276120,toplist
+89.0,23.21,0.9,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,4f1,,Rethymno (GRE),20 JUL 2009,1113.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14285764,toplist
+90.0,23.22,1.2,Cache ARMBRISTER,26 SEP 1989,BAH,2,,"Louisville, KY (USA)",30 MAY 2009,1112.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14304985,toplist
+90.0,23.22,0.3,Joice MADUAKA,30 SEP 1973,GBR,3,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1112.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14275664,toplist
+90.0,23.22,1.0,Jade BAILEY,10 JUN 1983,BAR,1f1,,Metz (FRA),03 JUL 2009,1112.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14270592,toplist
+90.0,23.22,0.0,Anna GEFLIKH,01 FEB 1983,RUS,6,,Cheboksary (RUS),26 JUL 2009,1112.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14297775,toplist
+94.0,23.23,,Gabrielle MAYO,26 JAN 1989,USA,3f1,,"College Station, TX (USA) (i)",13 MAR 2009,1155.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14316298,toplist
+94.0,23.23,,Allison GEORGE,03 JAN 1988,GRN,1h1,,"College Station, TX (USA) (i)",13 MAR 2009,1155.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14281035,toplist
+94.0,23.23,-2.7,Francena MCCORORY,20 OCT 1988,USA,1,,"Greensboro, NC (USA)",02 MAY 2009,1127.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14316439,toplist
+97.0,23.24,0.8,Evelyn Carolina de Oliveira DOS SANTOS,11 APR 1985,BRA,3,,Rio de Janeiro (BRA),17 MAY 2009,1110.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14269113,toplist
+97.0,23.24,1.2,Solen DESERT,02 AUG 1982,FRA,1,,Cesson-Sévigné (FRA),13 JUN 2009,1110.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14257800,toplist
+97.0,23.24,1.3,Vida ANIM,07 DEC 1983,GHA,2,,"Wattenscheid, Bochum (GER)",02 AUG 2009,1110.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14280442,toplist
+100.0,23.25,0.8,Iryna SHTANHYEYEVA,08 FEB 1982,UKR,2f1,,Kalamata (GRE),30 MAY 2009,1109.0,women_200m,2009,https://worldathletics.org/athletes/athlete=14304182,toplist
+1.0,21.98,1.4,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1240.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285598,toplist
+2.0,22.03,1.4,Allyson FELIX,18 NOV 1985,USA,2,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1234.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14309983,toplist
+3.0,22.32,0.1,Myriam SOUMARÉ,29 OCT 1986,FRA,1,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1204.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14273961,toplist
+4.0,22.40,0.6,Consuella MOORE,29 AUG 1981,USA,1,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1196.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14317293,toplist
+5.0,22.41,1.2,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,1,,Saransk (RUS),15 JUL 2010,1195.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14297674,toplist
+6.0,22.44,0.1,Yelizaveta BRYZGINA,28 NOV 1989,UKR,2,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1192.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14303484,toplist
+7.0,22.46,1.1,LaShauntea MOORE,31 JUL 1983,USA,1,,Baie Mahault (FRA),01 MAY 2010,1190.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14317320,toplist
+8.0,22.47,0.6,Shalonda SOLOMON,19 DEC 1985,USA,2,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1189.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14321706,toplist
+9.0,22.49,1.1,Porscha LUCAS,18 JUN 1988,USA,1h1,,"Eugene, OR (USA)",10 JUN 2010,1187.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14315666,toplist
+10.0,22.54,1.0,Carmelita JETER,24 NOV 1979,USA,1,,"Bislett Stadion, Oslo (NOR)",04 JUN 2010,1181.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14313618,toplist
+10.0,22.54,2.0,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,1,,Haldensleben (GER),22 AUG 2010,1181.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285805,toplist
+12.0,22.57,0.0,Kerron STEWART,16 APR 1984,JAM,1f1,,"Auburn, AL (USA)",17 APR 2010,1178.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285938,toplist
+13.0,22.59,1.4,Bianca KNIGHT,02 JAN 1989,USA,3,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1176.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14314587,toplist
+13.0,22.59,0.1,Lina JACQUES-SÉBASTIEN,10 APR 1985,FRA,4,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1176.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14257046,toplist
+15.0,22.61,0.1,Eleni ARTYMATA,16 MAY 1986,CYP,5,,"Estadio Olímpico, Barcelona (ESP)",31 JUL 2010,1174.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14263333,toplist
+16.0,22.62,0.0,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,3,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1173.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14270639,toplist
+17.0,22.65,0.7,Jeneba TARMOH,27 SEP 1989,USA,1,,"Columbia, MO (USA)",16 MAY 2010,1170.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14322457,toplist
+17.0,22.65,0.0,Sherone SIMPSON,12 AUG 1984,JAM,4,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1170.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285909,toplist
+19.0,22.69,1.1,Cydonie MOTHERSILL,19 MAR 1978,CAY,1h2,,Mayagüez (PUR),27 JUL 2010,1166.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14266914,toplist
+20.0,22.71,0.2,Nivea SMITH,18 FEB 1990,BAH,1,,Nassau (BAH),26 JUN 2010,1164.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14270617,toplist
+20.0,22.71,-0.1,Blessing OKAGBARE,09 OCT 1988,NGR,1,,Lignano Sabbiadoro (ITA),18 JUL 2010,1164.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14292330,toplist
+20.0,22.71,2.0,Shareese WOODS,20 FEB 1985,USA,2,,Haldensleben (GER),22 AUG 2010,1164.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14324669,toplist
+23.0,22.72,-0.3,Sheri-Ann BROOKS,11 FEB 1983,JAM,1,,Rio de Janeiro (BRA),23 MAY 2010,1164.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285566,toplist
+24.0,22.74,0.6,Amber PURVIS,23 JAN 1990,USA,4,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1161.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14319382,toplist
+25.0,22.75,-0.5,Semoy HACKETT,27 NOV 1988,TTO,1,,"Charlotte, NC (USA)",29 MAY 2010,1163.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14303004,toplist
+26.0,22.78,0.0,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,5,,"Stade de France, Paris-St-Denis (FRA)",16 JUL 2010,1157.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14302975,toplist
+27.0,22.79,2.0,Jodie WILLIAMS,28 SEP 1993,GBR,1,,Loughborough (GBR),22 MAY 2010,1156.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14276757,toplist
+27.0,22.79,1.2,Yekaterina VYSOTSKAYA,10 AUG 1987,RUS,2,,Saransk (RUS),15 JUL 2010,1156.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14299761,toplist
+29.0,22.80,1.8,Aymeé MARTÍNEZ,17 NOV 1988,CUB,1,,La Habana (CUB),11 JUN 2010,1155.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14263494,toplist
+29.0,22.80,1.8,Yuliya GUSHCHINA,04 MAR 1983,RUS,2,,Moskva (RUS),29 JUN 2010,1155.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14297898,toplist
+31.0,22.81,-1.4,Rose-Mary WHYTE,08 SEP 1986,JAM,2,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1162.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285988,toplist
+32.0,22.83,0.6,Alexandria ANDERSON,28 JAN 1987,USA,5,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1152.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14304791,toplist
+33.0,22.84,1.6,Candyce MCGRONE,24 MAR 1989,USA,1f1,,"Greensboro, NC (USA)",29 MAY 2010,1151.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14316585,toplist
+33.0,22.84,0.6,Me'Lisa BARBER,04 OCT 1980,USA,6,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1151.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14305304,toplist
+35.0,22.86,-0.2,Debbie DUNN,26 MAR 1978,USA,1,,Ponce (PUR),08 MAY 2010,1150.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14309386,toplist
+36.0,22.87,1.6,Sheniqua FERGUSON,24 NOV 1989,BAH,1f3,,"Greensboro, NC (USA)",29 MAY 2010,1148.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14270638,toplist
+37.0,22.89,-0.2,Chisato FUKUSHIMA,27 JUN 1988,JPN,1,,Shizuoka (JPN),03 MAY 2010,1147.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14286217,toplist
+38.0,22.90,-0.2,Marshevet HOOKER,25 SEP 1984,USA,5,,Kingston (JAM),01 MAY 2010,1146.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14312862,toplist
+38.0,22.90,1.8,Ashton PURVIS,12 JUL 1992,USA,1,,"Clovis, CA (USA)",05 JUN 2010,1145.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14319383,toplist
+38.0,22.90,0.6,Tiffany TOWNSEND,14 JUN 1989,USA,7,,"Drake Stadium, Des Moines, IA (USA)",27 JUN 2010,1145.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14322941,toplist
+38.0,22.90,1.8,Simone FACEY,07 MAY 1985,JAM,1f1,,Donnas (ITA),10 JUL 2010,1145.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285672,toplist
+42.0,22.91,1.8,Kseniya RYZHOVA,19 APR 1987,RUS,4,,Moskva (RUS),29 JUN 2010,1144.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14299689,toplist
+43.0,22.92,0.3,Francena MCCORORY,20 OCT 1988,USA,1f1,,"Gainesville, FL (USA)",02 APR 2010,1143.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14316439,toplist
+43.0,22.92,0.4,Ebonie FLOYD,21 OCT 1983,USA,1,,Sollentuna (SWE),01 JUL 2010,1143.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14310239,toplist
+45.0,22.97,-0.1,Charonda WILLIAMS,27 MAR 1987,USA,1f2,,"Tempe, AZ (USA)",10 APR 2010,1138.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14324253,toplist
+45.0,22.97,1.4,Natasha HASTINGS,23 JUL 1986,USA,1f1,,"Greensboro, NC (USA)",17 APR 2010,1138.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14312172,toplist
+45.0,22.97,1.1,Roxana DÍAZ,17 MAY 1981,CUB,3,,Baie Mahault (FRA),01 MAY 2010,1138.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14263600,toplist
+48.0,22.98,,Shavon GREAVES,20 DEC 1988,USA,1f1,,"University Park, PA (USA) (i)",28 FEB 2010,1179.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14311336,toplist
+49.0,22.99,-0.6,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,1h4,,"Greensboro, NC (USA)",28 MAY 2010,1139.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285727,toplist
+49.0,22.99,-0.5,Stormy KENDRICK,06 JAN 1991,USA,1,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",23 JUL 2010,1139.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14314295,toplist
+51.0,23.00,0.2,Christine AMERTIL,18 AUG 1979,BAH,2,,Nassau (BAH),26 JUN 2010,1135.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14270669,toplist
+52.0,23.03,-0.7,Natalya ANTYUKH,26 JUN 1981,RUS,1,,Sochi (RUS),28 MAY 2010,1135.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14297264,toplist
+52.0,23.03,0.4,Denisa ROSOLOVÁ,21 AUG 1986,CZE,1f2,,"Puskás Ferenc Stadion, Budapest (HUN)",20 JUN 2010,1131.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14262688,toplist
+54.0,23.04,1.2,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,1f1,,Kingston (JAM),05 JUN 2010,1130.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285809,toplist
+55.0,23.05,1.6,Jessica BEARD,08 JAN 1989,USA,2h3,,"Columbia, MO (USA)",15 MAY 2010,1129.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14305526,toplist
+55.0,23.05,-0.7,Amantle MONTSHO,04 JUL 1983,BOT,1,,Brazzaville (CGO),30 MAY 2010,1133.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14269474,toplist
+57.0,23.07,-0.3,Ana Claudia LEMOS,06 NOV 1988,BRA,3,,Rio de Janeiro (BRA),23 MAY 2010,1128.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14269001,toplist
+57.0,23.07,-1.0,Peta-Gaye DOWDIE,18 JAN 1977,JAM,1,,"Clermont, FL (USA)",12 JUN 2010,1133.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285657,toplist
+59.0,23.08,-0.2,Erika RIVERA,11 NOV 1986,PUR,4,,Ponce (PUR),08 MAY 2010,1127.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14295341,toplist
+59.0,23.08,-0.8,Kimberlyn DUNCAN,02 AUG 1991,USA,1h1,,"Greensboro, NC (USA)",28 MAY 2010,1130.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14309365,toplist
+59.0,23.08,1.6,Teona RODGERS,26 JUN 1989,USA,2f1,,"Greensboro, NC (USA)",29 MAY 2010,1126.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14320122,toplist
+62.0,23.09,1.1,Carol RODRÍGUEZ,16 DEC 1985,PUR,6,,Baie Mahault (FRA),01 MAY 2010,1125.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14295349,toplist
+63.0,23.10,0.7,Esther CREMER,29 MAR 1988,GER,1f1,,Regensburg (GER),15 AUG 2010,1124.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14277297,toplist
+63.0,23.10,2.0,Mikele BARBER,04 OCT 1980,USA,3,,Haldensleben (GER),22 AUG 2010,1124.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14305305,toplist
+65.0,23.11,-0.2,Adrienne POWER,11 DEC 1981,CAN,1,,Calgary (CAN),20 JUN 2010,1124.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14267353,toplist
+65.0,23.11,0.7,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,3f1,,Rethymno (GRE),07 JUL 2010,1123.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285764,toplist
+67.0,23.12,1.4,Véronique MANG,15 DEC 1984,FRA,1,,La Roche-sur-Yon (FRA),22 JUL 2010,1122.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14272993,toplist
+68.0,23.13,1.0,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,1f2,,"Stadion Juliska, Praha (CZE)",14 JUN 2010,1121.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285586,toplist
+69.0,23.14,,Scottesha MILLER,14 JAN 1988,USA,1h1,,"Fayetteville, AR (USA) (i)",12 MAR 2010,1164.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14317043,toplist
+70.0,23.15,,Yuliya KATSURA,28 MAY 1983,RUS,1,,Moskva (RUS) (i),27 FEB 2010,1163.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14298051,toplist
+70.0,23.15,1.4,Natalie KNIGHT,24 OCT 1986,USA,1f2,,Kortrijk (BEL),11 JUL 2010,1119.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14314594,toplist
+72.0,23.16,0.6,Christie JONES,15 OCT 1988,USA,2f3,,"Austin, TX (USA)",29 MAY 2010,1118.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14313885,toplist
+72.0,23.16,1.4,Ashlee KIDD,26 JUL 1985,USA,5,,"Icahn Stadium, New York, NY (USA)",12 JUN 2010,1118.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14314376,toplist
+72.0,23.16,0.3,Mariya RYEMYEN,02 AUG 1987,UKR,1f1,,Donetsk (UKR),03 JUL 2010,1118.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14304082,toplist
+75.0,23.17,-0.2,Momoko TAKAHASHI,16 NOV 1988,JPN,2,,Shizuoka (JPN),03 MAY 2010,1118.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14288023,toplist
+75.0,23.17,1.4,Monica HARGROVE,30 DEC 1982,USA,2f2,,Kortrijk (BEL),11 JUL 2010,1117.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14311954,toplist
+77.0,23.18,0.8,Olivia BORLÉE,10 APR 1986,BEL,1,,Bruxelles (BEL),18 JUL 2010,1116.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14270487,toplist
+78.0,23.19,1.3,Sally MCLELLAN,19 SEP 1986,AUS,1,,Sydney (AUS),27 FEB 2010,1115.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14271668,toplist
+79.0,23.21,0.6,Kristine SCOTT,22 DEC 1987,USA,1f2,,"Atlanta, GA (USA)",15 MAY 2010,1113.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14320926,toplist
+79.0,23.21,-0.4,Weronika WEDLER,17 JUL 1989,POL,4,,Bydgoszcz (POL),06 JUN 2010,1115.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14294618,toplist
+79.0,23.21,1.3,Jamile SAMUEL,24 APR 1992,NED,2sf1,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",22 JUL 2010,1113.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14291975,toplist
+79.0,23.21,-0.2,Emily FREEMAN,24 NOV 1980,GBR,4sf1,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1114.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14275081,toplist
+79.0,23.21,-0.3,Jessica ENNIS-HILL,28 JAN 1986,GBR,1ce3,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1114.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14274988,toplist
+84.0,23.22,1.7,Gabrielle MAYO,26 JAN 1989,USA,3f1,,"Austin, TX (USA)",01 MAY 2010,1112.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14316298,toplist
+84.0,23.22,-0.5,Leslie COLE,16 FEB 1987,USA,4f1,,"Atlanta, GA (USA)",15 MAY 2010,1115.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14307858,toplist
+86.0,23.23,-2.1,Janelle REDHEAD,27 DEC 1989,GRN,1f1,,"Albuquerque, NM (USA)",01 MAY 2010,1123.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14281044,toplist
+86.0,23.23,-0.5,Barbara PIERRE,28 APR 1987,USA,2,,"Charlotte, NC (USA)",29 MAY 2010,1114.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14318999,toplist
+86.0,23.23,-0.9,Yulia RAKHMANOVA,25 OCT 1991,KAZ,1,,Tashkent (UZB),04 JUN 2010,1116.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14427003,toplist
+89.0,23.24,1.2,Esther AKINSULIE,22 APR 1984,CAN,1f1,,"Baton Rouge, LA (USA)",17 APR 2010,1110.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14268465,toplist
+89.0,23.24,1.2,Kenyanna WILSON,27 OCT 1988,USA,1f1,,"Baton Rouge, LA (USA)",17 APR 2010,1110.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14324461,toplist
+89.0,23.24,1.0,Dominique DUNCAN,07 MAY 1990,USA,2f2,,"Austin, TX (USA)",29 MAY 2010,1110.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14309360,toplist
+89.0,23.24,0.6,Terra EVANS,07 OCT 1989,USA,3f3,,"Austin, TX (USA)",29 MAY 2010,1110.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14309825,toplist
+89.0,23.24,-1.0,Octavious FREEMAN,20 APR 1992,USA,1,,"Greensboro, NC (USA)",18 JUN 2010,1116.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14335310,toplist
+89.0,23.24,0.2,Yelizaveta DEMIROVA,14 AUG 1987,RUS,1f1,,"Meteor, Zhukovskiy (RUS)",26 JUN 2010,1110.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14299187,toplist
+89.0,23.24,0.9,Nelly BANCO,17 FEB 1986,FRA,3,,Valence (FRA),10 JUL 2010,1110.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14258660,toplist
+96.0,23.25,1.5,Shericka WILLIAMS,17 SEP 1985,JAM,1,,Kingston (JAM),20 FEB 2010,1109.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14286003,toplist
+96.0,23.25,1.3,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,3f1,,Velletri (ITA),17 JUL 2010,1109.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14286000,toplist
+98.0,23.26,0.1,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,2,,Belém (BRA),19 MAY 2010,1108.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14285518,toplist
+98.0,23.26,0.8,Abiodun OYEPITAN,30 DEC 1979,GBR,2,,New Delhi (IND),11 OCT 2010,1108.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14275991,toplist
+100.0,23.27,-0.6,Tianna MADISON,30 AUG 1985,USA,1f2,,Sundsvall (SWE),08 AUG 2010,1110.0,women_200m,2010,https://worldathletics.org/athletes/athlete=14315831,toplist
+1.0,22.15,1.0,Shalonda SOLOMON,19 DEC 1985,USA,1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1222.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14321706,toplist
+2.0,22.20,-0.4,Carmelita JETER,24 NOV 1979,USA,1,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1219.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14313618,toplist
+3.0,22.22,-1.0,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1,,"DS, Daegu (KOR)",02 SEP 2011,1221.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285598,toplist
+4.0,22.24,1.5,Kimberlyn DUNCAN,02 AUG 1991,USA,1,,"Des Moines, IA (USA)",11 JUN 2011,1212.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14309365,toplist
+5.0,22.28,1.0,Jeneba TARMOH,27 SEP 1989,USA,3,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1208.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14322457,toplist
+6.0,22.32,-0.4,Allyson FELIX,18 NOV 1985,USA,2,,"Stade Louis II, Monaco (MON)",22 JUL 2011,1206.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14309983,toplist
+7.0,22.35,1.0,Bianca KNIGHT,02 JAN 1989,USA,4,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1201.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14314587,toplist
+8.0,22.48,1.0,Ana Claudia LEMOS,06 NOV 1988,BRA,1h1,,São Paulo (BRA),06 AUG 2011,1188.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14269001,toplist
+9.0,22.54,0.7,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,1,,"National Stadium, Shenzhen (CHN)",19 AUG 2011,1181.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285805,toplist
+10.0,22.55,-0.2,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,1,,"Sports Park Mladost, Zagreb (CRO)",13 SEP 2011,1181.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285586,toplist
+11.0,22.58,0.0,Olesya POVH,18 OCT 1987,UKR,1f2,,Yalta (UKR),31 MAY 2011,1177.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14304049,toplist
+11.0,22.58,1.5,Tiffany TOWNSEND,14 JUN 1989,USA,3,,"Des Moines, IA (USA)",11 JUN 2011,1177.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14322941,toplist
+11.0,22.58,1.0,LaShauntea MOORE,31 JUL 1983,USA,6,,"Hayward Field, Eugene, OR (USA)",26 JUN 2011,1177.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14317320,toplist
+14.0,22.59,1.0,Marshevet HOOKER,25 SEP 1984,USA,2,,"Alexander Stadium, Birmingham (GBR)",10 JUL 2011,1176.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14312862,toplist
+14.0,22.59,-0.1,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,3,,"Letzigrund, Zürich (SUI)",08 SEP 2011,1176.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285680,toplist
+16.0,22.62,1.9,Yelizaveta DEMIROVA,14 AUG 1987,RUS,1h1,,Moskva (RUS),10 JUL 2011,1173.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14299187,toplist
+16.0,22.62,-0.2,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,2h5,,"DS, Daegu (KOR)",01 SEP 2011,1174.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14268643,toplist
+18.0,22.63,0.1,Kerron STEWART,16 APR 1984,JAM,2,,Kingston (JAM),26 JUN 2011,1172.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285938,toplist
+18.0,22.63,1.2,Sanya RICHARDS-ROSS,26 FEB 1985,USA,2,,"Puskás Ferenc Stadion, Budapest (HUN)",30 JUL 2011,1172.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14319838,toplist
+20.0,22.65,1.7,Lauryn WILLIAMS,11 SEP 1983,USA,1f1,,"Coral Gables, FL (USA)",16 APR 2011,1170.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14324318,toplist
+21.0,22.68,0.7,Mariya RYEMYEN,02 AUG 1987,UKR,1,,Strasbourg (FRA),12 JUN 2011,1167.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14304082,toplist
+21.0,22.68,1.6,Joanna ATKINS,31 JAN 1989,USA,1,,Rethymno (GRE),13 JUL 2011,1167.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14305059,toplist
+23.0,22.69,-0.3,Dafne SCHIPPERS,15 JUN 1992,NED,1h3,,"DS, Daegu (KOR)",01 SEP 2011,1167.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14291986,toplist
+24.0,22.70,2.0,Anthonique STRACHAN,22 AUG 1993,BAH,1,,"Miramar, FL (USA)",23 JUL 2011,1165.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14368117,toplist
+25.0,22.71,-0.1,Myriam SOUMARÉ,29 OCT 1986,FRA,1h1,,"DS, Daegu (KOR)",01 SEP 2011,1164.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14273961,toplist
+26.0,22.73,-1.8,Patricia HALL,16 OCT 1982,JAM,1f2,,"Houston, TX (USA)",19 MAY 2011,1172.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285712,toplist
+26.0,22.73,0.1,Sherone SIMPSON,12 AUG 1984,JAM,3,,Kingston (JAM),26 JUN 2011,1162.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285909,toplist
+28.0,22.76,1.8,Jura Lanconia LEVY,04 NOV 1990,JAM,1,,"Hutchinson, KS (USA)",21 MAY 2011,1159.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285765,toplist
+28.0,22.76,0.9,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,3,,"Stadio Olimpico, Roma (ITA)",26 MAY 2011,1159.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14270639,toplist
+30.0,22.77,1.7,Natasha HASTINGS,23 JUL 1986,USA,1f1,,"Gainesville, FL (USA)",01 APR 2011,1158.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14312172,toplist
+31.0,22.79,0.1,Aleen BAILEY,25 NOV 1980,JAM,4,,Kingston (JAM),26 JUN 2011,1156.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285532,toplist
+31.0,22.79,-0.1,Hrystyna STUY,03 FEB 1988,UKR,3sf2,,"DS, Daegu (KOR)",01 SEP 2011,1156.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14304242,toplist
+33.0,22.80,1.2,Nivea SMITH,18 FEB 1990,BAH,3h1,,"Des Moines, IA (USA)",09 JUN 2011,1155.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14270617,toplist
+34.0,22.81,-0.5,Yuliya CHERMOSHANSKAYA,06 JAN 1986,RUS,1,,Sochi (RUS),25 MAY 2011,1157.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14297516,toplist
+34.0,22.81,1.2,Candyce MCGRONE,24 MAR 1989,USA,1f2,,"Eugene, OR (USA)",28 MAY 2011,1154.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14316585,toplist
+34.0,22.81,1.1,Stephanie DURST,06 JAN 1982,USA,2h1,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1154.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14309424,toplist
+37.0,22.82,1.5,Cydonie MOTHERSILL,19 MAR 1978,CAY,1,,"Atlanta, GA (USA)",05 JUN 2011,1153.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14266914,toplist
+38.0,22.83,1.3,Aareon PAYNE,03 SEP 1990,USA,1,,"Walnut, CA (USA)",16 APR 2011,1152.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14318660,toplist
+38.0,22.83,0.9,Aurieyall SCOTT,18 MAY 1992,USA,1,,"Eugene, OR (USA)",25 JUN 2011,1152.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14366294,toplist
+40.0,22.84,,Semoy HACKETT,27 NOV 1988,TTO,1f2,,"Fayetteville, AR (USA) (i)",27 FEB 2011,1193.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14303004,toplist
+40.0,22.84,1.1,Jessica DAVIS,31 OCT 1992,USA,1,,"Tucson, AZ (USA)",14 MAY 2011,1151.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14308683,toplist
+42.0,22.85,1.3,Charonda WILLIAMS,27 MAR 1987,USA,2,,"Walnut, CA (USA)",16 APR 2011,1150.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14324253,toplist
+43.0,22.86,1.9,Oludamola OSAYOMI,26 JUN 1986,NGR,1,,Maputo (MOZ),15 SEP 2011,1149.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14292505,toplist
+43.0,22.86,0.5,Simone FACEY,07 MAY 1985,JAM,2,,Guadalajara (MEX),27 OCT 2011,1149.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285672,toplist
+45.0,22.87,1.0,Alexandria ANDERSON,28 JAN 1987,USA,4,,"Alexander Stadium, Birmingham (GBR)",10 JUL 2011,1148.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14304791,toplist
+46.0,22.89,1.7,Rachelle BOONE-SMITH,30 JUN 1981,USA,3h2,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1146.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14306134,toplist
+46.0,22.89,0.3,Kai SELVON,13 APR 1992,TTO,3h4,,"DS, Daegu (KOR)",01 SEP 2011,1146.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14303044,toplist
+48.0,22.90,0.9,Crystal EMMANUEL,27 NOV 1991,CAN,1f1,,Toronto (CAN),12 JUN 2011,1145.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14270576,toplist
+49.0,22.91,1.0,Janelle REDHEAD,27 DEC 1989,GRN,1f1,,"El Paso, TX (USA)",16 APR 2011,1144.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14281044,toplist
+49.0,22.91,0.1,Darya PIZHANKOVA,09 JAN 1990,UKR,1h1,,Yalta (UKR),31 MAY 2011,1144.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14373175,toplist
+49.0,22.91,0.9,Leslie COLE,16 FEB 1987,USA,1f1,,"Walnut, CA (USA)",04 JUN 2011,1144.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14307858,toplist
+52.0,22.92,-0.4,Sheniqua FERGUSON,24 NOV 1989,BAH,1f1,,"Tallahassee, FL (USA)",09 APR 2011,1145.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14270638,toplist
+53.0,22.93,1.9,Yuliya GUSHCHINA,04 MAR 1983,RUS,h1,,Moskva (RUS),10 JUL 2011,1142.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14297898,toplist
+53.0,22.93,-0.2,Anyika ONUORA,28 OCT 1984,GBR,5h5,,"DS, Daegu (KOR)",01 SEP 2011,1143.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14275975,toplist
+55.0,22.94,,Amantle MONTSHO,04 JUL 1983,BOT,1f2,,Réduit (MRI),17 APR 2011,1141.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14269474,toplist
+55.0,22.94,-1.5,Jodie WILLIAMS,28 SEP 1993,GBR,1,,"Kadrioru staadion, Tallinn (EST)",23 JUL 2011,1150.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14276757,toplist
+55.0,22.94,1.2,Blessing OKAGBARE,09 OCT 1988,NGR,3,,"Puskás Ferenc Stadion, Budapest (HUN)",30 JUL 2011,1141.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14292330,toplist
+58.0,22.95,,Jessica BEARD,08 JAN 1989,USA,1f1,,"College Station, TX (USA) (i)",22 JAN 2011,1182.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14305526,toplist
+59.0,22.96,,Rebecca ALEXANDER,02 MAY 1990,USA,2h1,,"Fayetteville, AR (USA) (i)",26 FEB 2011,1181.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14304636,toplist
+59.0,22.96,0.1,Octavious FREEMAN,20 APR 1992,USA,1,,"Orlando, FL (USA)",28 MAY 2011,1139.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14335310,toplist
+61.0,22.97,1.1,Amber PURVIS,23 JAN 1990,USA,2,,"Tucson, AZ (USA)",14 MAY 2011,1138.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14319382,toplist
+61.0,22.97,2.0,Nelky CASABONA,12 MAY 1984,CUB,1,,Barquisimeto (VEN),29 JUL 2011,1138.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14263640,toplist
+63.0,22.99,-0.2,Debbie DUNN,26 MAR 1978,USA,2f1,,Ponce (PUR),14 MAY 2011,1137.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14309386,toplist
+63.0,22.99,1.6,Jessica YOUNG-WARREN,06 APR 1987,USA,3h4,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1136.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14324854,toplist
+65.0,23.01,-0.4,Dezerea BRYANT,27 APR 1993,USA,1,,"La Crosse, WI (USA)",04 JUN 2011,1136.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14375109,toplist
+65.0,23.01,0.2,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,2h1,,Kingston (JAM),25 JUN 2011,1134.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285727,toplist
+67.0,23.02,1.1,English GARDNER,22 APR 1992,USA,3,,"Tucson, AZ (USA)",14 MAY 2011,1132.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14310719,toplist
+67.0,23.02,0.1,Yelizaveta BRYZGINA,28 NOV 1989,UKR,2h1,,Yalta (UKR),31 MAY 2011,1132.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14303484,toplist
+67.0,23.02,0.5,Mariely SÁNCHEZ,30 DEC 1988,DOM,3,,Guadalajara (MEX),27 OCT 2011,1132.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14262360,toplist
+70.0,23.03,,Dominique DUNCAN,07 MAY 1990,USA,3f1,,"College Station, TX (USA) (i)",11 MAR 2011,1174.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14309360,toplist
+70.0,23.03,1.7,Christy UDOH,30 SEP 1991,USA,4h2,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1131.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14374336,toplist
+72.0,23.05,0.4,Sally PEARSON,19 SEP 1986,AUS,1,,Brisbane (AUS),11 FEB 2011,1129.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14271668,toplist
+73.0,23.06,2.0,Porscha LUCAS,18 JUN 1988,USA,2,,"Lawrence, KS (USA)",23 APR 2011,1128.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14315666,toplist
+73.0,23.06,1.0,Norma GONZÁLEZ,11 AUG 1982,COL,1,,Bogotá (COL),07 MAY 2011,1128.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14264003,toplist
+73.0,23.06,1.4,Ndeye SOUMAH FATOU,06 APR 1986,SEN,1f2,,Donnas (ITA),03 JUL 2011,1128.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14300011,toplist
+73.0,23.06,0.2,Lina JACQUES-SÉBASTIEN,10 APR 1985,FRA,1f1,,Paris (FRA),10 JUL 2011,1128.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14257046,toplist
+73.0,23.06,1.9,Vida ANIM,07 DEC 1983,GHA,2,,Maputo (MOZ),15 SEP 2011,1128.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14280442,toplist
+73.0,23.06,0.5,Tameka WILLIAMS,31 AUG 1989,SKN,4,,Guadalajara (MEX),27 OCT 2011,1128.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14300061,toplist
+79.0,23.07,1.1,Shareese WOODS,20 FEB 1985,USA,4h1,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1127.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14324669,toplist
+79.0,23.07,0.7,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,1h2,,São Paulo (BRA),06 AUG 2011,1127.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14269361,toplist
+81.0,23.08,0.2,Denisa ROSOLOVÁ,21 AUG 1986,CZE,3,,"Stadion Juliska, Praha (CZE)",13 JUN 2011,1126.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14262688,toplist
+82.0,23.09,1.2,Stormy KENDRICK,06 JAN 1991,USA,1,,"Durham, NC (USA)",23 APR 2011,1125.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14314295,toplist
+83.0,23.10,1.2,Allison PETER,14 JUL 1992,ISV,5h1,,"Des Moines, IA (USA)",09 JUN 2011,1124.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14283608,toplist
+83.0,23.10,0.9,Phylicia GEORGE,16 NOV 1987,CAN,2f1,,Toronto (CAN),12 JUN 2011,1124.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14310864,toplist
+83.0,23.10,0.1,Gloria ASUMNU,22 MAY 1985,USA,2,,Sotteville-lès-Rouen (FRA),02 JUL 2011,1124.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14305055,toplist
+86.0,23.11,1.0,Endurance ABINUWA,31 JUL 1987,NGR,3f1,,"El Paso, TX (USA)",16 APR 2011,1123.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14292313,toplist
+86.0,23.11,1.8,Jessica ENNIS-HILL,28 JAN 1986,GBR,2ce4,,"Mösle-Stadium, Götzis (AUT)",28 MAY 2011,1123.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14274988,toplist
+88.0,23.12,0.9,Consuella MOORE,29 AUG 1981,USA,2f1,,"Walnut, CA (USA)",04 JUN 2011,1122.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14317293,toplist
+89.0,23.13,-0.7,Chisato FUKUSHIMA,27 JUN 1988,JPN,1,,Fukuroi (JPN),03 MAY 2011,1125.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14286217,toplist
+89.0,23.13,1.4,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,3,,Mayagüez (PUR),17 JUL 2011,1121.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14285764,toplist
+91.0,23.14,1.2,Chalonda GOODMAN,29 SEP 1990,USA,6h1,,"Des Moines, IA (USA)",09 JUN 2011,1120.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14311151,toplist
+92.0,23.15,0.0,Ashley COLLIER,04 FEB 1992,USA,2h4,,"Norman, OK (USA)",14 MAY 2011,1119.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14307904,toplist
+92.0,23.15,2.0,Kseniya RYZHOVA,19 APR 1987,RUS,1h2,,Moskva (RUS),10 JUL 2011,1119.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14299689,toplist
+94.0,23.16,,Jasmine HYDER,25 AUG 1988,USA,3f14,,"College Station, TX (USA) (i)",12 FEB 2011,1162.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14307467,toplist
+94.0,23.16,0.7,Anna GEFLIKH,01 FEB 1983,RUS,3,,"National Stadium, Shenzhen (CHN)",19 AUG 2011,1118.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14297775,toplist
+96.0,23.17,,TyNia GAITHER,16 MAR 1993,BAH,1,,"Tampa, FL (USA)",19 MAR 2011,1117.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14362366,toplist
+96.0,23.17,0.4,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,3,,"DS, Daegu (KOR)",12 MAY 2011,1117.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14297674,toplist
+98.0,23.18,,Shavon GREAVES,20 DEC 1988,USA,2f3,,"University Park, PA (USA) (i)",29 JAN 2011,1160.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14311336,toplist
+99.0,23.20,0.6,Moa HJELMER,19 JUN 1990,SWE,1sf1,,"Mestský Stadion, Ostrava (CZE)",16 JUL 2011,1114.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14301966,toplist
+100.0,23.21,2.0,Abiodun OYEPITAN,30 DEC 1979,GBR,1f1,,"Norwalk, CA (USA)",16 APR 2011,1113.0,women_200m,2011,https://worldathletics.org/athletes/athlete=14275991,toplist
+1.0,21.69,1.0,Allyson FELIX,18 NOV 1985,USA,1,,"Hayward Field, Eugene, OR (USA)",30 JUN 2012,1271.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14309983,toplist
+2.0,22.09,-0.3,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1229.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14319838,toplist
+2.0,22.09,-0.2,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,2,,"Olympic Stadium, London (GBR)",08 AUG 2012,1229.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285680,toplist
+4.0,22.11,1.0,Carmelita JETER,24 NOV 1979,USA,2,,"Hayward Field, Eugene, OR (USA)",30 JUN 2012,1226.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14313618,toplist
+5.0,22.19,1.9,Kimberlyn DUNCAN,02 AUG 1991,USA,1h2,,"Des Moines, IA (USA)",07 JUN 2012,1218.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14309365,toplist
+5.0,22.19,1.0,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,1,,Cheboksary (RUS),06 JUL 2012,1218.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14297674,toplist
+7.0,22.32,1.0,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1sf1,,"Olympic Stadium, London (GBR)",07 AUG 2012,1204.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285598,toplist
+8.0,22.35,1.0,Jeneba TARMOH,27 SEP 1989,USA,5,,"Hayward Field, Eugene, OR (USA)",30 JUN 2012,1201.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14322457,toplist
+9.0,22.37,0.3,Tianna MADISON,30 AUG 1985,USA,1,,Ponce (PUR),12 MAY 2012,1199.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14315831,toplist
+9.0,22.37,0.6,Sherone SIMPSON,12 AUG 1984,JAM,2,,Kingston (JAM),01 JUL 2012,1199.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285909,toplist
+11.0,22.42,1.5,Murielle AHOURÉ,23 AUG 1987,CIV,1,,"Bislett Stadion, Oslo (NOR)",07 JUN 2012,1194.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14304569,toplist
+11.0,22.42,1.2,Natalya RUSAKOVA,12 DEC 1979,RUS,1h3,,Cheboksary (RUS),06 JUL 2012,1194.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14298302,toplist
+13.0,22.45,1.4,Tameka WILLIAMS,31 AUG 1989,SKN,1,,Basseterre (SKN),03 JUN 2012,1191.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14300061,toplist
+14.0,22.46,-0.3,Bianca KNIGHT,02 JAN 1989,USA,2,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1191.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14314587,toplist
+15.0,22.52,1.0,Charonda WILLIAMS,27 MAR 1987,USA,1f1,,Luzern (SUI),17 JUL 2012,1183.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14324253,toplist
+16.0,22.53,0.1,Nercely SOTO,23 AUG 1990,VEN,1,,Caracas (VEN),12 MAY 2012,1182.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14377437,toplist
+16.0,22.53,0.2,Anthonique STRACHAN,22 AUG 1993,BAH,1,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1182.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14368117,toplist
+18.0,22.55,0.2,Semoy HACKETT,27 NOV 1988,TTO,1sf2,,"Jacksonville, FL (USA)",26 MAY 2012,1180.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14303004,toplist
+19.0,22.56,1.0,Myriam SOUMARÉ,29 OCT 1986,FRA,3sf1,,"Olympic Stadium, London (GBR)",07 AUG 2012,1179.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14273961,toplist
+20.0,22.58,1.3,Mariya RYEMYEN,02 AUG 1987,UKR,1h5,,"Olympic Stadium, London (GBR)",06 AUG 2012,1177.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14304082,toplist
+21.0,22.61,0.6,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,4,,Kingston (JAM),01 JUL 2012,1174.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285805,toplist
+22.0,22.62,0.4,Yelizaveta DEMIROVA,14 AUG 1987,RUS,1h2,,Cheboksary (RUS),06 JUL 2012,1173.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14299187,toplist
+22.0,22.62,1.0,LaVerne JONES-FERRETTE,16 SEP 1981,ISV,3sf2,,"Olympic Stadium, London (GBR)",07 AUG 2012,1173.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14283604,toplist
+24.0,22.63,0.9,Leslie COLE,16 FEB 1987,USA,1,,"Walnut, CA (USA)",21 APR 2012,1172.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14307858,toplist
+24.0,22.63,0.8,Blessing OKAGBARE,09 OCT 1988,NGR,3,,"Hayward Field, Eugene, OR (USA)",02 JUN 2012,1172.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14292330,toplist
+26.0,22.64,1.9,Sheniqua FERGUSON,24 NOV 1989,BAH,1f1,,"Auburn, AL (USA)",07 APR 2012,1171.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14270638,toplist
+26.0,22.64,1.0,Yelizaveta BRYZGINA,28 NOV 1989,UKR,4sf2,,"Olympic Stadium, London (GBR)",07 AUG 2012,1171.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14303484,toplist
+28.0,22.65,0.9,Porscha LUCAS,18 JUN 1988,USA,1,,Port-of-Spain (TTO),19 MAY 2012,1170.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14315666,toplist
+29.0,22.66,0.3,Hrystyna STUY,03 FEB 1988,UKR,3h4,,"Olympic Stadium, London (GBR)",06 AUG 2012,1169.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14304242,toplist
+30.0,22.68,1.0,Aurieyall SCOTT,18 MAY 1992,USA,8,,"Hayward Field, Eugene, OR (USA)",30 JUN 2012,1167.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14366294,toplist
+30.0,22.68,1.7,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,1,,"Moratalaz, Madrid (ESP)",07 JUL 2012,1167.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285586,toplist
+32.0,22.70,0.4,Shaunae MILLER,15 APR 1994,BAH,1,,Nassau (BAH),02 MAR 2012,1165.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14368116,toplist
+32.0,22.70,0.0,Dafne SCHIPPERS,15 JUN 1992,NED,1sf1,,"Olympiastadion, Helsinki (FIN)",29 JUN 2012,1165.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14291986,toplist
+32.0,22.70,0.6,Kerron STEWART,16 APR 1984,JAM,5,,Kingston (JAM),01 JUL 2012,1165.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285938,toplist
+35.0,22.71,-0.3,LaShauntea MOORE,31 JUL 1983,USA,1,,Daegu (KOR),16 MAY 2012,1165.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14317320,toplist
+35.0,22.71,1.5,Abiodun OYEPITAN,30 DEC 1979,GBR,2,,"Bislett Stadion, Oslo (NOR)",07 JUN 2012,1164.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14275991,toplist
+35.0,22.71,-0.5,Viktoriya KASHEYEVA,07 MAY 1989,UKR,2f2,,Yalta (UKR),14 JUN 2012,1167.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14304071,toplist
+38.0,22.72,0.2,Cambrya JONES,20 SEP 1990,USA,2sf2,,"Jacksonville, FL (USA)",26 MAY 2012,1163.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14360397,toplist
+38.0,22.72,1.9,Christy UDOH,30 SEP 1991,USA,2h2,,"Des Moines, IA (USA)",07 JUN 2012,1163.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14374336,toplist
+40.0,22.73,0.1,Lawretta OZOH,05 SEP 1990,NGR,1,,Calabar (NGR),23 JUN 2012,1162.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14388488,toplist
+40.0,22.73,1.0,Olga BELKINA,23 AUG 1990,RUS,4,,Cheboksary (RUS),06 JUL 2012,1162.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14297344,toplist
+42.0,22.74,1.9,Octavious FREEMAN,20 APR 1992,USA,3h2,,"Des Moines, IA (USA)",07 JUN 2012,1161.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14335310,toplist
+43.0,22.77,0.2,Allison PETER,14 JUL 1992,ISV,1h3,,"Manhattan, KS (USA)",12 MAY 2012,1158.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14283608,toplist
+43.0,22.77,0.6,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,6,,Kingston (JAM),01 JUL 2012,1158.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285727,toplist
+45.0,22.82,1.7,Shalonda SOLOMON,19 DEC 1985,USA,3,,"National Stadium, Kingston (JAM)",05 MAY 2012,1153.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14321706,toplist
+45.0,22.82,1.3,English GARDNER,22 APR 1992,USA,1,,"Eugene, OR (USA)",13 MAY 2012,1153.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14310719,toplist
+45.0,22.82,1.0,Yuliya CHERMOSHANSKAYA,06 JAN 1986,RUS,5,,Cheboksary (RUS),06 JUL 2012,1153.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14297516,toplist
+45.0,22.82,1.0,Evelyn Carolina de Oliveira DOS SANTOS,11 APR 1985,BRA,6sf2,,"Olympic Stadium, London (GBR)",07 AUG 2012,1153.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14269113,toplist
+49.0,22.83,-0.3,Jessica ENNIS-HILL,28 JAN 1986,GBR,2ce5,,"Olympic Stadium, London (GBR)",03 AUG 2012,1153.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14274988,toplist
+50.0,22.84,0.6,Aleen BAILEY,25 NOV 1980,JAM,7,,Kingston (JAM),01 JUL 2012,1151.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285532,toplist
+51.0,22.85,0.5,Chalonda GOODMAN,29 SEP 1990,USA,2f1,,"Gainesville, FL (USA)",06 APR 2012,1150.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14311151,toplist
+51.0,22.85,0.3,Kai SELVON,13 APR 1992,TTO,4h4,,"Olympic Stadium, London (GBR)",06 AUG 2012,1150.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14303044,toplist
+51.0,22.85,-0.7,Libania GRENOT,12 JUL 1983,ITA,3,,Padova (ITA),02 SEP 2012,1154.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14263547,toplist
+54.0,22.86,,Kamaria BROWN,21 DEC 1992,USA,1f2,,"College Station, TX (USA) (i)",25 FEB 2012,1191.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14306592,toplist
+54.0,22.86,0.5,Johanna DANOIS,04 APR 1987,FRA,2,,Angers (FRA),17 JUN 2012,1149.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14257906,toplist
+56.0,22.88,,Patricia HALL,16 OCT 1982,JAM,1f1,,Eaubonne (FRA) (i),16 FEB 2012,1189.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285712,toplist
+57.0,22.89,0.0,Tsholofelo SELEMELA-THIPE,12 SEP 1986,RSA,1,,Potchefstroom (RSA),24 MAR 2012,1146.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14296850,toplist
+57.0,22.89,0.0,Amantle MONTSHO,04 JUL 1983,BOT,1f3,,Shizuoka (JPN),03 MAY 2012,1146.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14269474,toplist
+57.0,22.89,0.6,Ashley COLLIER,04 FEB 1992,USA,1h2,,"Manhattan, KS (USA)",12 MAY 2012,1146.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14307904,toplist
+57.0,22.89,0.6,Paris DANIELS,25 JAN 1990,USA,1h2,,"Manhattan, KS (USA)",12 MAY 2012,1146.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14308570,toplist
+57.0,22.89,0.1,Gloria ASUMNU,22 MAY 1985,NGR,2,,Calabar (NGR),23 JUN 2012,1146.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14305055,toplist
+62.0,22.91,0.7,Shayla MAHAN,18 JAN 1989,USA,1,,Brazzaville (CGO),10 JUN 2012,1144.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14315866,toplist
+63.0,22.92,1.4,Viktoriya ZYABKINA,04 SEP 1992,KAZ,1,,Bishkek (KGZ),10 JUN 2012,1143.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14375464,toplist
+63.0,22.92,0.0,Rosângela SANTOS,20 DEC 1990,BRA,1,,São Paulo (BRA),01 JUL 2012,1143.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14268928,toplist
+63.0,22.92,1.0,Eleni ARTYMATA,16 MAY 1986,CYP,7sf2,,"Olympic Stadium, London (GBR)",07 AUG 2012,1143.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14263333,toplist
+66.0,22.93,-0.9,Jamile SAMUEL,24 APR 1992,NED,2,,"FBK Stadium, Hengelo (NED)",27 MAY 2012,1147.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14291975,toplist
+66.0,22.93,0.6,Anyika ONUORA,28 OCT 1984,GBR,1f4,,Regensburg (GER),02 JUN 2012,1142.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14275975,toplist
+66.0,22.93,0.6,Natasha HASTINGS,23 JUL 1986,USA,4sf2,,"Hayward Field, Eugene, OR (USA)",29 JUN 2012,1142.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14312172,toplist
+69.0,22.94,0.2,Dominique DUNCAN,07 MAY 1990,USA,2h3,,"Manhattan, KS (USA)",12 MAY 2012,1141.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14309360,toplist
+69.0,22.94,0.5,Margaret ADEOYE,22 APR 1985,GBR,3h1,,"Olympic Stadium, London (GBR)",06 AUG 2012,1141.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14274348,toplist
+71.0,22.95,0.7,Gloria HOOPER,03 MAR 1992,ITA,2h4,,"Olympiastadion, Helsinki (FIN)",29 JUN 2012,1140.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14381808,toplist
+72.0,22.96,-0.3,Mikele BARBER,04 OCT 1980,USA,3,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1140.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14305305,toplist
+72.0,22.96,0.8,Tiffany TOWNSEND,14 JUN 1989,USA,3sf3,,"Hayward Field, Eugene, OR (USA)",29 JUN 2012,1139.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14322941,toplist
+72.0,22.96,0.7,Lauryn WILLIAMS,11 SEP 1983,USA,1,,"Letzigrund, Zürich (SUI)",30 AUG 2012,1139.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14324318,toplist
+75.0,22.97,0.1,Dezerea BRYANT,27 APR 1993,USA,2sf1,,"Jacksonville, FL (USA)",26 MAY 2012,1138.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14375109,toplist
+76.0,22.98,1.5,Cathleen TSCHIRCH,23 JUL 1979,GER,1f1,,Jena (GER),19 MAY 2012,1137.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14280079,toplist
+76.0,22.98,1.2,Alexandria ANDERSON,28 JAN 1987,USA,2h6,,"Hayward Field, Eugene, OR (USA)",28 JUN 2012,1137.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14304791,toplist
+76.0,22.98,0.9,Nelly BANCO,17 FEB 1986,FRA,3,,Sotteville-lès-Rouen (FRA),10 JUL 2012,1137.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14258660,toplist
+76.0,22.98,1.0,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,6sf1,,"Olympic Stadium, London (GBR)",07 AUG 2012,1137.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14268643,toplist
+80.0,22.99,1.2,Ashley SPENCER,08 JUN 1993,USA,1,,"Madison, WI (USA)",13 MAY 2012,1136.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14476234,toplist
+81.0,23.00,0.5,Lina JACQUES-SÉBASTIEN,10 APR 1985,FRA,3,,Angers (FRA),17 JUN 2012,1135.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14257046,toplist
+82.0,23.01,-0.7,Ana Claudia LEMOS,06 NOV 1988,BRA,2h1,,São Paulo (BRA),30 JUN 2012,1138.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14269001,toplist
+83.0,23.02,1.0,Sally PEARSON,19 SEP 1986,AUS,1,,"Albert Park, Melbourne (AUS)",03 MAR 2012,1132.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14271668,toplist
+83.0,23.02,1.5,Yekaterina SMIRNOVA,08 SEP 1988,RUS,1h1,,Cheboksary (RUS),06 JUL 2012,1132.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14299745,toplist
+85.0,23.03,,Jura Lanconia LEVY,04 NOV 1990,JAM,1f2,,"Geneva, OH (USA) (i)",03 MAR 2012,0.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14285765,toplist
+85.0,23.03,0.5,Darshay DAVIS,23 SEP 1991,USA,3f1,,"Gainesville, FL (USA)",06 APR 2012,1131.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14371024,toplist
+85.0,23.03,1.3,Phyllis FRANCIS,04 MAY 1992,USA,2,,"Eugene, OR (USA)",13 MAY 2012,1131.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14310414,toplist
+85.0,23.03,0.9,Alexis LOVE,24 APR 1991,USA,2h3,,"Des Moines, IA (USA)",07 JUN 2012,1131.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14407555,toplist
+89.0,23.04,1.0,Marina PANTELEYEVA,16 MAY 1989,RUS,6,,Cheboksary (RUS),06 JUL 2012,1130.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14941245,toplist
+90.0,23.06,-0.3,Marlena WESH,16 FEB 1991,HAI,2,,"Charlottesville, VA (USA)",21 APR 2012,1129.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14323938,toplist
+91.0,23.08,1.5,Inna WEIT,05 AUG 1988,GER,1f1,,Mannheim (GER),09 JUN 2012,1126.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14280246,toplist
+91.0,23.08,0.0,Lea SPRUNGER,05 MAR 1990,SUI,2h2,,"Olympiastadion, Helsinki (FIN)",29 JUN 2012,1126.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14301240,toplist
+91.0,23.08,1.2,Janelle REDHEAD,27 DEC 1989,GRN,2h2,,"Olympic Stadium, London (GBR)",06 AUG 2012,1126.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14281044,toplist
+94.0,23.09,1.3,Lauryn NEWSON,06 AUG 1990,USA,3,,"Eugene, OR (USA)",13 MAY 2012,1125.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14366589,toplist
+94.0,23.09,0.6,Erika Belinda CHÁVEZ,04 JUN 1990,ECU,,,Ciudad de México (MEX),13 MAY 2012,1125.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14262325,toplist
+94.0,23.09,1.8,Yuliya KATSURA,28 MAY 1983,RUS,2f2,,Zhukovskiy (RUS),17 JUN 2012,1125.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14298051,toplist
+97.0,23.10,1.0,Joanna ATKINS,31 JAN 1989,USA,4h3,,"Hayward Field, Eugene, OR (USA)",28 JUN 2012,1124.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14305059,toplist
+97.0,23.10,0.8,Crystal EMMANUEL,27 NOV 1991,CAN,5h6,,"Olympic Stadium, London (GBR)",06 AUG 2012,1124.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14270576,toplist
+99.0,23.11,0.8,Candace JACKSON,13 FEB 1991,USA,1f1,,"Lubbock, TX (USA)",05 MAY 2012,1123.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14335822,toplist
+100.0,23.12,0.0,Chisato FUKUSHIMA,27 JUN 1988,JPN,2f3,,Shizuoka (JPN),03 MAY 2012,1122.0,women_200m,2012,https://worldathletics.org/athletes/athlete=14286217,toplist
+1.0,22.13,1.0,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1,,Kingston (JAM),23 JUN 2013,1224.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285680,toplist
+2.0,22.24,-0.5,Murielle AHOURÉ,23 AUG 1987,CIV,1,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1215.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14304569,toplist
+3.0,22.26,-0.5,Tiffany TOWNSEND,14 JUN 1989,USA,2,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1213.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14322941,toplist
+4.0,22.30,0.0,Allyson FELIX,18 NOV 1985,USA,1sf2,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1206.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14309983,toplist
+5.0,22.31,1.3,Blessing OKAGBARE,09 OCT 1988,NGR,1,,"Walnut, CA (USA)",20 APR 2013,1205.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14292330,toplist
+6.0,22.32,0.9,Anthonique STRACHAN,22 AUG 1993,BAH,1,,Nassau (BAH),22 JUN 2013,1204.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14368117,toplist
+7.0,22.35,1.3,Kimberlyn DUNCAN,02 AUG 1991,USA,1,,"Columbia, SC (USA)",12 MAY 2013,1201.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14309365,toplist
+8.0,22.40,1.5,LaShauntea MOORE,31 JUL 1983,USA,1h3,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1196.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14317320,toplist
+9.0,22.41,1.6,Shalonda SOLOMON,19 DEC 1985,USA,1,,Edmonton (CAN),29 JUN 2013,1195.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14321706,toplist
+10.0,22.45,0.9,Shaunae MILLER,15 APR 1994,BAH,2,,Nassau (BAH),22 JUN 2013,1191.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14368116,toplist
+11.0,22.46,1.5,Aurieyall SCOTT,18 MAY 1992,USA,2h3,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1190.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14366294,toplist
+12.0,22.51,1.4,Patricia HALL,16 OCT 1982,JAM,1,,São Paulo (BRA),19 MAY 2013,1184.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285712,toplist
+13.0,22.53,-1.3,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1,,"Icahn Stadium, New York, NY (USA)",25 MAY 2013,1189.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285598,toplist
+14.0,22.55,1.9,Octavious FREEMAN,20 APR 1992,USA,2f1,,"Greensboro, NC (USA)",25 MAY 2013,1180.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14335310,toplist
+15.0,22.57,1.4,Chauntae BAYNE,04 APR 1984,USA,2,,São Paulo (BRA),19 MAY 2013,1178.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14305505,toplist
+16.0,22.58,0.1,Lauryn WILLIAMS,11 SEP 1983,USA,2f1,,"Coral Gables, FL (USA)",13 APR 2013,1177.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14324318,toplist
+16.0,22.58,1.3,Kamaria BROWN,21 DEC 1992,USA,2,,"Columbia, SC (USA)",12 MAY 2013,1177.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14306592,toplist
+16.0,22.58,1.0,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,2,,Kingston (JAM),23 JUN 2013,1177.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285805,toplist
+19.0,22.61,1.4,Ana Claudia LEMOS,06 NOV 1988,BRA,3,,São Paulo (BRA),19 MAY 2013,1174.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14269001,toplist
+19.0,22.61,1.4,Mariya RYEMYEN,02 AUG 1987,UKR,1,,"Stade Olympique de la Pontaise, Lausanne (SUI)",04 JUL 2013,1174.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14304082,toplist
+21.0,22.62,1.1,English GARDNER,22 APR 1992,USA,1,,"Los Angeles, CA (USA)",12 MAY 2013,1173.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14310719,toplist
+21.0,22.62,-0.7,Danielle WILLIAMS,14 SEP 1992,JAM,1,,"Pueblo, CO (USA)",25 MAY 2013,1177.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14450995,toplist
+21.0,22.62,-0.2,Carrie RUSSELL,18 OCT 1990,JAM,1,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1174.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285894,toplist
+24.0,22.68,0.4,Viktoriya KASHEYEVA,07 MAY 1989,UKR,1f2,,Yalta (UKR),06 JUN 2013,1167.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14304071,toplist
+25.0,22.70,,Ashton PURVIS,12 JUL 1992,USA,2f2,,"Fayetteville, AR (USA) (i)",24 FEB 2013,1206.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14319383,toplist
+25.0,22.70,0.0,Jeneba TARMOH,27 SEP 1989,USA,3sf1,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1165.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14322457,toplist
+27.0,22.71,0.5,Kerron STEWART,16 APR 1984,JAM,2,,"National Stadium, Kingston (JAM)",04 MAY 2013,1164.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285938,toplist
+27.0,22.71,-0.1,Charonda WILLIAMS,27 MAR 1987,USA,2f3,,Ljubljana (SLO),13 JUL 2013,1164.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14324253,toplist
+29.0,22.72,-1.8,Yelizaveta BRYZGINA,28 NOV 1989,UKR,1,,Donetsk (UKR),26 JUL 2013,1173.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14303484,toplist
+30.0,22.73,1.6,Paris DANIELS,25 JAN 1990,USA,1,,"Waco, TX (USA)",05 MAY 2013,1162.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14308570,toplist
+31.0,22.75,-0.7,Vashti THOMAS,21 APR 1990,USA,2,,"Pueblo, CO (USA)",25 MAY 2013,1164.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14322713,toplist
+32.0,22.76,-0.1,Franciela KRASUCKI,26 APR 1988,BRA,1,,São Paulo (BRA),09 JUN 2013,1159.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14269257,toplist
+33.0,22.77,1.1,Phyllis FRANCIS,04 MAY 1992,USA,2,,"Los Angeles, CA (USA)",12 MAY 2013,1158.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14310414,toplist
+33.0,22.77,1.4,Carmelita JETER,24 NOV 1979,USA,5,,"Stade Olympique de la Pontaise, Lausanne (SUI)",04 JUL 2013,1158.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14313618,toplist
+35.0,22.78,1.2,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,3,,"Stadio Olimpico, Roma (ITA)",06 JUN 2013,1157.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14268643,toplist
+35.0,22.78,1.6,Kimberly HYACINTHE,28 MAR 1989,CAN,1,,"Central Stadium, Kazan (RUS)",10 JUL 2013,1157.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14267823,toplist
+37.0,22.79,-0.5,Anyika ONUORA,28 OCT 1984,GBR,4,,"Olympic Stadium, London (GBR)",27 JUL 2013,1159.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14275975,toplist
+38.0,22.81,,Johanna DANOIS,04 APR 1987,FRA,1,,Aubière (FRA) (i),16 FEB 2013,1196.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14257906,toplist
+38.0,22.81,0.1,Jessica BEARD,08 JAN 1989,USA,3f1,,"Coral Gables, FL (USA)",13 APR 2013,1154.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14305526,toplist
+40.0,22.83,0.5,Sherone SIMPSON,12 AUG 1984,JAM,3,,"National Stadium, Kingston (JAM)",04 MAY 2013,1152.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285909,toplist
+40.0,22.83,0.5,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,4,,"National Stadium, Kingston (JAM)",04 MAY 2013,1152.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285727,toplist
+40.0,22.83,0.3,Myriam SOUMARÉ,29 OCT 1986,FRA,3h6,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1152.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14273961,toplist
+43.0,22.84,1.7,Shericka JACKSON,16 JUL 1994,JAM,2,,Nassau (BAH),01 APR 2013,1151.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14325599,toplist
+43.0,22.84,1.0,Dafne SCHIPPERS,15 JUN 1992,NED,3,,"FBK Stadium, Hengelo (NED)",08 JUN 2013,1151.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14291986,toplist
+45.0,22.85,1.3,Candyce MCGRONE,24 MAR 1989,USA,2,,"Walnut, CA (USA)",20 APR 2013,1150.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14316585,toplist
+45.0,22.85,-1.1,DeeDee TROTTER,08 DEC 1982,USA,5sf1,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1156.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14322997,toplist
+47.0,22.86,0.4,Hrystyna STUY,03 FEB 1988,UKR,2h7,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1149.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14304242,toplist
+48.0,22.87,-1.1,Dezerea BRYANT,27 APR 1993,USA,6sf1,,"Drake Stadium, Des Moines, IA (USA)",23 JUN 2013,1154.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14375109,toplist
+49.0,22.88,-0.2,Margaret ADEOYE,22 APR 1985,GBR,2,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1148.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14274348,toplist
+50.0,22.89,1.8,Natasha HASTINGS,23 JUL 1986,USA,2f1,,"Gainesville, FL (USA)",05 APR 2013,1146.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14312172,toplist
+50.0,22.89,1.6,Cierra WHITE,29 APR 1993,USA,2,,"Waco, TX (USA)",05 MAY 2013,1146.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14430809,toplist
+50.0,22.89,1.6,Crystal EMMANUEL,27 NOV 1991,CAN,5,,Edmonton (CAN),29 JUN 2013,1146.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14270576,toplist
+53.0,22.91,-0.2,Andreea Luiza OGRĂZEANU,24 MAR 1990,ROU,1h1,,Bucureşti (ROU),29 JUN 2013,1145.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14295803,toplist
+53.0,22.91,-0.1,Lenora GUION FIRMIN,07 AUG 1991,FRA,3h5,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1144.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14257514,toplist
+55.0,22.92,-0.5,Jodie WILLIAMS,28 SEP 1993,GBR,1,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1146.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14276757,toplist
+55.0,22.92,-0.1,Irene EKELUND,08 MAR 1997,SWE,1,,Donetsk (UKR),14 JUL 2013,1143.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14403224,toplist
+57.0,22.93,1.0,Angela MOROŞANU,26 JUL 1986,ROU,1f1,,Bucureşti (ROU),07 JUN 2013,1142.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14295767,toplist
+58.0,22.98,-0.5,Michelle-Lee AHYE,10 APR 1992,TTO,1h3,,Port-of-Spain (TTO),23 JUN 2013,1140.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14302966,toplist
+58.0,22.98,1.6,Hanna-Maari LATVALA,30 OCT 1987,FIN,2,,"Central Stadium, Kazan (RUS)",10 JUL 2013,1137.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14259316,toplist
+60.0,23.00,,Regina GEORGE,17 FEB 1991,NGR,1h1,,"Fayetteville, AR (USA) (i)",23 FEB 2013,1177.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14310865,toplist
+60.0,23.00,1.5,Jessica YOUNG-WARREN,06 APR 1987,USA,4h3,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1135.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14324854,toplist
+60.0,23.00,-0.6,Kineke ALEXANDER,21 FEB 1986,VIN,1,,Morelia (MEX),07 JUL 2013,1138.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14325306,toplist
+63.0,23.01,1.9,Jasmine HYDER,25 AUG 1988,USA,1f1,,"San Marcos, TX (USA)",29 MAR 2013,1134.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14307467,toplist
+63.0,23.01,1.6,Mariely SÁNCHEZ,30 DEC 1988,DOM,7,,Edmonton (CAN),29 JUN 2013,1134.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14262360,toplist
+65.0,23.04,0.0,Ashley SPENCER,08 JUN 1993,USA,1f2,,"Tempe, AZ (USA)",06 APR 2013,1130.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14476234,toplist
+65.0,23.04,0.2,Brianna ROLLINS,18 AUG 1991,USA,1,,"Raleigh, NC (USA)",18 APR 2013,1130.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14320208,toplist
+67.0,23.05,1.3,Kali DAVIS-WHITE,27 OCT 1994,USA,1,,"Jacksonville, FL (USA)",04 MAY 2013,1129.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14436980,toplist
+67.0,23.05,0.3,Kai SELVON,13 APR 1992,TTO,1f2,,Port-of-Spain (TTO),23 JUN 2013,1129.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14303044,toplist
+69.0,23.08,-0.6,Aleen BAILEY,25 NOV 1980,JAM,2,,Morelia (MEX),07 JUL 2013,1129.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285532,toplist
+69.0,23.08,1.6,Natasha MORRISON,17 NOV 1992,JAM,1f1,,Sundsvall (SWE),28 JUL 2013,1126.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285826,toplist
+71.0,23.10,1.0,Ebonie FLOYD,21 OCT 1983,USA,2f1,,"Lake Charles, LA (USA)",13 APR 2013,1124.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14310239,toplist
+71.0,23.10,1.5,Shareese WOODS,20 FEB 1985,USA,5h3,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1124.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14324669,toplist
+71.0,23.10,2.0,Inna WEIT,05 AUG 1988,GER,1f3,,Bottrop (GER),19 JUL 2013,1124.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14280246,toplist
+71.0,23.10,0.0,Gloria HOOPER,03 MAR 1992,ITA,4h1,,"Luzhniki Stadion, Moskva (RUS)",15 AUG 2013,1124.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14381808,toplist
+75.0,23.11,,Trisha-Ann HAWTHORNE,08 NOV 1989,JAM,1f1,,"Boston, MA (USA) (i)",25 JAN 2013,1167.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14312225,toplist
+75.0,23.11,0.3,Kaliese SPENCER,06 MAY 1987,JAM,2f1,,Rovereto (ITA),03 SEP 2013,1123.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14285929,toplist
+77.0,23.12,0.4,Melissa BREEN,17 SEP 1990,AUS,1,,Sydney (AUS),09 MAR 2013,1122.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14272403,toplist
+77.0,23.12,1.6,Shai-Anne DAVIS,04 DEC 1993,CAN,4,,"Central Stadium, Kazan (RUS)",10 JUL 2013,1122.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14373586,toplist
+79.0,23.13,,Christy UDOH,30 SEP 1991,NGR,4f1,,"Fayetteville, AR (USA) (i)",08 MAR 2013,1165.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14374336,toplist
+79.0,23.13,-0.1,Rosângela SANTOS,20 DEC 1990,BRA,3,,São Paulo (BRA),09 JUN 2013,1121.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14268928,toplist
+79.0,23.13,1.5,Chalonda GOODMAN,29 SEP 1990,USA,6h3,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1121.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14311151,toplist
+79.0,23.13,-0.1,Ángela Gabriela TENORIO,27 JAN 1996,ECU,2,,Donetsk (UKR),14 JUL 2013,1121.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14496119,toplist
+83.0,23.14,,Ashley COLLIER,04 FEB 1992,USA,2h3,,"Fayetteville, AR (USA) (i)",23 FEB 2013,1164.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14307904,toplist
+83.0,23.14,-0.1,Dina ASHER-SMITH,04 DEC 1995,GBR,1,,Loughborough (GBR),19 MAY 2013,1120.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14378282,toplist
+85.0,23.15,1.9,Taylor EVANS,07 OCT 1989,USA,2f1,,"San Marcos, TX (USA)",29 MAR 2013,1119.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14309824,toplist
+85.0,23.15,,Lekeisha LAWSON,03 JUN 1987,USA,1f1,,"Los Angeles, CA (USA)",06 APR 2013,1119.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14315112,toplist
+85.0,23.15,1.6,Le'Quisha PARKER,26 MAY 1993,USA,2,,"Greensboro, NC (USA)",04 MAY 2013,1119.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14496769,toplist
+85.0,23.15,1.1,Jenna PRANDINI,20 NOV 1992,USA,3,,"Los Angeles, CA (USA)",12 MAY 2013,1119.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14329068,toplist
+85.0,23.15,-0.4,Eleni ARTYMATA,16 MAY 1986,CYP,1,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",23 JUN 2013,1121.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14263333,toplist
+90.0,23.16,-0.4,Bianca KNIGHT,02 JAN 1989,USA,4f2,,Ponce (PUR),18 MAY 2013,1120.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14314587,toplist
+90.0,23.16,0.3,Natalia POHREBNIAK,19 FEB 1988,UKR,2,,Yalta (UKR),18 MAY 2013,1118.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14304035,toplist
+90.0,23.16,-0.1,Yelizaveta DEMIROVA,14 AUG 1987,RUS,1sf2,,Moskva (RUS),24 JUL 2013,1118.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14299187,toplist
+90.0,23.16,0.7,Marzia CARAVELLI,23 OCT 1981,ITA,1,,Milano (ITA),28 JUL 2013,1118.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14283967,toplist
+94.0,23.17,-1.2,Libania GRENOT,12 JUL 1983,ITA,1f2,,St-Martin (FRA),11 MAY 2013,1124.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14263547,toplist
+94.0,23.17,0.1,Olivia EKPONE,05 JAN 1993,USA,1f2,,"Austin, TX (USA)",25 MAY 2013,1117.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14309601,toplist
+94.0,23.17,0.9,Nivea SMITH,18 FEB 1990,BAH,3,,Nassau (BAH),22 JUN 2013,1117.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14270617,toplist
+97.0,23.18,1.8,Arianna WASHINGTON,04 SEP 1996,USA,1,,"Cerritos, CA (USA)",24 MAY 2013,1116.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14468500,toplist
+97.0,23.18,0.4,Maria BELIMPASAKI,19 JUN 1991,GRE,1f1,,Thiva (GRE),24 JUL 2013,1116.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14280530,toplist
+99.0,23.19,2.0,Felicia BROWN,27 OCT 1993,USA,1f1,,"Nashville, TN (USA)",19 APR 2013,1115.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14366314,toplist
+99.0,23.19,1.9,Destinee GAUSE,04 APR 1994,USA,3f1,,"Greensboro, NC (USA)",25 MAY 2013,1115.0,women_200m,2013,https://worldathletics.org/athletes/athlete=14373732,toplist
+1.0,22.02,0.1,Allyson FELIX,18 NOV 1985,USA,1,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1236.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14309983,toplist
+2.0,22.03,-0.5,Dafne SCHIPPERS,15 JUN 1992,NED,1,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1237.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14291986,toplist
+3.0,22.11,0.1,Myriam SOUMARÉ,29 OCT 1986,FRA,2,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1226.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14273961,toplist
+4.0,22.18,1.5,Tori BOWIE,27 AUG 1990,USA,1,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1219.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14360382,toplist
+5.0,22.23,-0.8,Olivia EKPONE,05 JAN 1993,USA,1,,"Lexington, KY (USA)",18 MAY 2014,1218.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14309601,toplist
+5.0,22.23,1.5,Blessing OKAGBARE,09 OCT 1988,NGR,2,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1214.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14292330,toplist
+7.0,22.27,1.3,Joanna ATKINS,31 JAN 1989,USA,1f1,,"Gainesville, FL (USA)",04 APR 2014,1209.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14305059,toplist
+8.0,22.36,-0.1,Murielle AHOURÉ,23 AUG 1987,CIV,1,,"Le Grand Stade, Marrakech (MAR)",14 AUG 2014,1200.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14304569,toplist
+9.0,22.41,1.9,Jeneba TARMOH,27 SEP 1989,USA,1h2,,"Sacramento, CA (USA)",29 JUN 2014,1195.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14322457,toplist
+10.0,22.46,-0.5,Jodie WILLIAMS,28 SEP 1993,GBR,2,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1193.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14276757,toplist
+11.0,22.49,1.3,Kaylin WHITNEY,09 MAR 1998,USA,1,,"Eugene, OR (USA)",06 JUL 2014,1187.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14524719,toplist
+12.0,22.50,,Kamaria BROWN,21 DEC 1992,USA,1f2,,"College Station, TX (USA) (i)",01 MAR 2014,1226.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14306592,toplist
+12.0,22.50,0.0,Anthonique STRACHAN,22 AUG 1993,BAH,2,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2014,1186.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14368117,toplist
+14.0,22.53,1.3,Kimberlyn DUNCAN,02 AUG 1991,USA,1f1,,"Coral Gables, FL (USA)",12 APR 2014,1182.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14309365,toplist
+14.0,22.53,0.2,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1,,"National Stadium, Kingston (JAM)",03 MAY 2014,1182.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285680,toplist
+16.0,22.58,0.4,Bianca WILLIAMS,18 DEC 1993,GBR,3,,"Hampden Park, Glasgow (GBR)",31 JUL 2014,1177.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14401125,toplist
+17.0,22.60,-1.6,Jenna PRANDINI,20 NOV 1992,USA,1,,"Pullman, WA (USA)",18 MAY 2014,1184.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14329068,toplist
+18.0,22.61,1.6,Yekaterina RENZHINA,18 OCT 1994,RUS,1,,Yerino (RUS),10 JUL 2014,1174.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14421170,toplist
+18.0,22.61,0.3,Dina ASHER-SMITH,04 DEC 1995,GBR,2sf1,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1174.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14378282,toplist
+20.0,22.64,1.8,Shalonda SOLOMON,19 DEC 1985,USA,2h3,,"Sacramento, CA (USA)",29 JUN 2014,1171.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14321706,toplist
+20.0,22.64,0.4,Anyika ONUORA,28 OCT 1984,GBR,4,,"Hampden Park, Glasgow (GBR)",31 JUL 2014,1171.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14275975,toplist
+22.0,22.67,0.0,Simone FACEY,07 MAY 1985,JAM,1,,Beijing (CHN),21 MAY 2014,1168.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285672,toplist
+23.0,22.68,-0.8,Dezerea BRYANT,27 APR 1993,USA,2,,"Lexington, KY (USA)",18 MAY 2014,1171.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14375109,toplist
+23.0,22.68,1.4,Morolake AKINOSUN,17 MAY 1994,USA,1sf2,,"Fayetteville, AR (USA)",31 MAY 2014,1167.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14430813,toplist
+23.0,22.68,-0.5,Tianna BARTOLETTA,30 AUG 1985,USA,1,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1170.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14315831,toplist
+23.0,22.68,0.4,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,5,,"Hampden Park, Glasgow (GBR)",31 JUL 2014,1167.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285805,toplist
+27.0,22.72,-1.0,Jamile SAMUEL,24 APR 1992,NED,1f1,,Genève (SUI),14 JUN 2014,1169.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14291975,toplist
+27.0,22.72,0.3,Tiffany TOWNSEND,14 JUN 1989,USA,2,,Heusden-Zolder (BEL),19 JUL 2014,1163.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14322941,toplist
+29.0,22.77,-1.1,Michelle-Lee AHYE,10 APR 1992,TTO,1h2,,Port-of-Spain (TTO),22 JUN 2014,1164.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14302966,toplist
+30.0,22.78,-0.6,Kyra JEFFERSON,23 SEP 1994,USA,1f4,,"Gainesville, FL (USA)",04 APR 2014,1160.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14411312,toplist
+30.0,22.78,0.3,Marie-Josée TA LOU,18 NOV 1988,CIV,5,,"Le Grand Stade, Marrakech (MAR)",14 SEP 2014,1157.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14415994,toplist
+32.0,22.80,1.6,Yekaterina VYSOTSKAYA,10 AUG 1987,RUS,2,,Yerino (RUS),10 JUL 2014,1155.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14299761,toplist
+33.0,22.81,1.5,English GARDNER,22 APR 1992,USA,6,,"Hayward Field, Eugene, OR (USA)",31 MAY 2014,1154.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14310719,toplist
+33.0,22.81,0.1,Ana Claudia LEMOS,06 NOV 1988,BRA,1,,São Paulo (BRA),12 OCT 2014,1154.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14269001,toplist
+35.0,22.82,0.4,Dominique DUNCAN,07 MAY 1990,USA,1f1,,"San Marcos, TX (USA)",05 APR 2014,1153.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14309360,toplist
+35.0,22.82,1.5,Franciela KRASUCKI,26 APR 1988,BRA,1,,São Paulo (BRA),04 MAY 2014,1153.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14269257,toplist
+37.0,22.83,-0.5,Mujinga KAMBUNDJI,17 JUN 1992,SUI,5,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1155.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14300897,toplist
+38.0,22.85,0.1,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,4f1,,"Clermont, FL (USA)",26 APR 2014,1150.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285727,toplist
+38.0,22.85,0.1,Olga SAFRONOVA,05 NOV 1991,KAZ,1,,Almaty (KAZ),28 JUN 2014,1150.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14288586,toplist
+40.0,22.87,0.1,Shaunae MILLER,15 APR 1994,BAH,1f1,,"Athens, GA (USA)",12 APR 2014,1148.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14368116,toplist
+41.0,22.88,1.5,TyNia GAITHER,16 MAR 1993,BAH,2sf3,,"Fayetteville, AR (USA)",31 MAY 2014,1147.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14362366,toplist
+41.0,22.88,-0.6,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,2,,Kingston (JAM),29 JUN 2014,1150.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285586,toplist
+43.0,22.89,1.5,Katarina JOHNSON-THOMPSON,09 JAN 1993,GBR,2ce7,,"Mösle-Stadium, Götzis (AUT)",31 MAY 2014,1146.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14276543,toplist
+43.0,22.89,1.3,Natalia POHREBNIAK,19 FEB 1988,UKR,1f1,,Kalamata (GRE),31 MAY 2014,1146.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14304035,toplist
+43.0,22.89,-1.0,Aleen BAILEY,25 NOV 1980,JAM,2,,"Le Grand Stade, Marrakech (MAR)",08 JUN 2014,1152.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285532,toplist
+46.0,22.90,1.9,Mahagony JONES,20 DEC 1990,USA,2h2,,"Sacramento, CA (USA)",29 JUN 2014,1145.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14313963,toplist
+47.0,22.91,1.8,Tawanna MEADOWS,04 AUG 1986,USA,1f1,,"San Marcos, TX (USA)",26 APR 2014,1144.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14316787,toplist
+48.0,22.92,,Phyllis FRANCIS,04 MAY 1992,USA,1f1,,"Albuquerque, NM (USA) (i)",14 FEB 2014,1185.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14310414,toplist
+48.0,22.92,0.1,Ashley SPENCER,08 JUN 1993,USA,1f3,,"Waco, TX (USA)",19 APR 2014,1143.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14476234,toplist
+50.0,22.93,-0.5,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,1f2,,Kingston (JAM),12 APR 2014,1145.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285809,toplist
+51.0,22.94,1.9,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1f1,,"Clermont, FL (USA)",10 MAY 2014,1141.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285598,toplist
+52.0,22.95,0.1,Ashton PURVIS,12 JUL 1992,USA,1f2,,"Tempe, AZ (USA)",12 APR 2014,1140.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14319383,toplist
+52.0,22.95,0.9,Brittany BROWN,18 APR 1995,USA,3sf1,,"Fayetteville, AR (USA)",31 MAY 2014,1140.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14437218,toplist
+54.0,22.96,0.1,Arianna WASHINGTON,04 SEP 1996,USA,1,,"Clovis, CA (USA)",07 JUN 2014,1139.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14468500,toplist
+55.0,22.97,1.5,Sheniqua FERGUSON,24 NOV 1989,BAH,2,,São Paulo (BRA),04 MAY 2014,1138.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14270638,toplist
+55.0,22.97,1.5,Ashley FIELDS,13 APR 1993,USA,3sf3,,"Fayetteville, AR (USA)",31 MAY 2014,1138.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14373924,toplist
+57.0,22.98,0.3,Hanna-Maari LATVALA,30 OCT 1987,FIN,3sf1,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1137.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14259316,toplist
+58.0,23.01,0.6,Cierra WHITE,29 APR 1993,USA,2h2,,"Eugene, OR (USA)",12 JUN 2014,1134.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14430809,toplist
+58.0,23.01,1.8,Rebekka HAASE,02 JAN 1993,GER,1f1,,Mannheim (GER),06 JUL 2014,1134.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14360165,toplist
+58.0,23.01,1.6,Yelizaveta DEMIROVA,14 AUG 1987,RUS,3,,Yerino (RUS),10 JUL 2014,1134.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14299187,toplist
+61.0,23.02,1.3,Justine PALFRAMAN,04 NOV 1993,RSA,1,,Pretoria (RSA),26 APR 2014,1132.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14360057,toplist
+61.0,23.02,1.9,Bianca KNIGHT,02 JAN 1989,USA,3h2,,"Sacramento, CA (USA)",29 JUN 2014,1132.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14314587,toplist
+61.0,23.02,1.3,Jada MARTIN,08 JUN 1995,USA,2,,"Eugene, OR (USA)",06 JUL 2014,1132.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14430830,toplist
+64.0,23.03,0.9,Paris DANIELS,25 JAN 1990,USA,1,,"Austin, TX (USA)",29 MAR 2014,1131.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14308570,toplist
+64.0,23.03,1.3,DeeDee TROTTER,08 DEC 1982,USA,4f1,,"Gainesville, FL (USA)",04 APR 2014,1131.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14322997,toplist
+64.0,23.03,1.6,Kimberly HYACINTHE,28 MAR 1989,CAN,2f2,,"Clermont, FL (USA)",26 APR 2014,1131.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14267823,toplist
+67.0,23.04,1.2,Crystal EMMANUEL,27 NOV 1991,CAN,1f3,,Ottawa (CAN),31 MAY 2014,1130.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14270576,toplist
+68.0,23.05,1.0,Janet AMPONSAH,12 APR 1993,GHA,1f1,,"Canyon, TX (USA)",12 APR 2014,1129.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14334452,toplist
+68.0,23.05,0.7,Marie GAYOT,18 DEC 1989,FRA,1,,La Roche-sur-Yon (FRA),23 JUL 2014,1129.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14257376,toplist
+70.0,23.06,,Regine WILLIAMS,01 SEP 1995,USA,1f5,,"Fayetteville, AR (USA) (i)",31 JAN 2014,1171.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14413717,toplist
+70.0,23.06,1.8,Amantle MONTSHO,04 JUL 1983,BOT,1f1,,Fukuroi (JPN),03 MAY 2014,1128.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14269474,toplist
+70.0,23.06,1.2,Katie WISE,15 OCT 1993,USA,1,,"Carbondale, IL (USA)",18 MAY 2014,1128.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14476220,toplist
+70.0,23.06,-0.5,Natasha HASTINGS,23 JUL 1986,USA,2,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1131.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14312172,toplist
+70.0,23.06,0.0,Jennifer GALAIS,07 MAR 1992,FRA,1,,Aubagne (FRA),15 JUN 2014,1128.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14379003,toplist
+70.0,23.06,1.6,Yelena BOLSUN,25 JUN 1982,RUS,4,,Yerino (RUS),10 JUL 2014,1128.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14297427,toplist
+70.0,23.06,-0.9,Muna LEE,30 OCT 1981,USA,1f1,,Lapinlahti (FIN),20 JUL 2014,1133.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14315186,toplist
+77.0,23.08,-0.3,Jessica BEARD,08 JAN 1989,USA,1,,"Houston, TX (USA)",06 JUN 2014,1127.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14305526,toplist
+78.0,23.09,2.0,Lekeisha LAWSON,03 JUN 1987,USA,1f1,,"Azusa, CA (USA)",18 APR 2014,1125.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14315112,toplist
+78.0,23.09,-0.6,Gloria ASUMNU,22 MAY 1985,NGR,1sf1,,"Le Grand Stade, Marrakech (MAR)",13 AUG 2014,1128.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14305055,toplist
+80.0,23.10,1.8,Kai SELVON,13 APR 1992,TTO,2f1,,"Auburn, AL (USA)",05 APR 2014,1124.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14303044,toplist
+80.0,23.10,2.0,Shapri ROMERO,13 NOV 1991,USA,1f3,,"Tucson, AZ (USA)",12 APR 2014,1124.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14453641,toplist
+82.0,23.11,,Patricia HALL,16 OCT 1982,JAM,1,,"College Station, TX (USA) (i)",08 FEB 2014,1167.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285712,toplist
+83.0,23.12,0.9,Cambrya JONES,20 SEP 1990,USA,1f1,,"Fairfax, VA (USA)",12 APR 2014,1122.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14360397,toplist
+83.0,23.12,0.4,Shakima WIMBLEY,23 APR 1995,USA,1,,"Chapel Hill, NC (USA)",19 APR 2014,1122.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14467626,toplist
+83.0,23.12,-0.8,Aaliyah BROWN,06 JAN 1995,USA,3,,"Lexington, KY (USA)",18 MAY 2014,1126.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14306531,toplist
+83.0,23.12,-0.6,Maria BELIMPASAKI,19 JUN 1991,GRE,1f1,,"Kadrioru staadion, Tallinn (EST)",22 JUN 2014,1125.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14280530,toplist
+83.0,23.12,1.2,Candace HILL,11 FEB 1999,USA,1,,"Rock Hill, SC (USA)",07 JUL 2014,1122.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14596374,toplist
+83.0,23.12,1.6,Anastasiya KOCHERZHOVA,16 OCT 1990,RUS,5,,Yerino (RUS),10 JUL 2014,1122.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14386715,toplist
+83.0,23.12,0.7,Natalіya STROHOVA,26 DEC 1992,UKR,2,,Kirovograd (UKR),25 JUL 2014,1122.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14404895,toplist
+83.0,23.12,0.3,Lea SPRUNGER,05 MAR 1990,SUI,4sf1,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1122.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14301240,toplist
+91.0,23.13,0.4,Allison PETER,14 JUL 1992,ISV,1h1,,Port-of-Spain (TTO),22 JUN 2014,1121.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14283608,toplist
+92.0,23.14,0.1,Nercely SOTO,23 AUG 1990,VEN,1h1,,Veracruz (MEX),26 NOV 2014,1120.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14377437,toplist
+93.0,23.15,1.2,Kendall BAISDEN,05 MAR 1995,USA,2h2,,"Lubbock, TX (USA)",17 MAY 2014,1119.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14326466,toplist
+93.0,23.15,1.8,Esther CREMER,29 MAR 1988,GER,1f2,,Weinheim (GER),31 MAY 2014,1119.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14277297,toplist
+93.0,23.15,0.3,Kelly PROPER,01 MAY 1988,IRL,5sf1,,"Letzigrund, Zürich (SUI)",14 AUG 2014,1119.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14276119,toplist
+96.0,23.16,1.8,Lyudmila LITVINOVA,08 JUN 1985,RUS,2f1,,"San Marcos, TX (USA)",26 APR 2014,1118.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14298462,toplist
+96.0,23.16,1.7,Jura Lanconia LEVY,04 NOV 1990,JAM,1,,"Gulf Shores, AL (USA)",24 MAY 2014,1118.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14285765,toplist
+96.0,23.16,1.2,Ángela Gabriela TENORIO,27 JAN 1996,ECU,1sf2,,"Hayward Field, Eugene, OR (USA)",24 JUL 2014,1118.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14496119,toplist
+99.0,23.17,0.1,Courtney OKOLO,15 MAR 1994,USA,3f3,,"Waco, TX (USA)",19 APR 2014,1117.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14432036,toplist
+99.0,23.17,-1.3,Reyare THOMAS,23 NOV 1987,TTO,2f2,,Port-of-Spain (TTO),22 JUN 2014,1124.0,women_200m,2014,https://worldathletics.org/athletes/athlete=14303055,toplist
+1.0,21.63,0.2,Dafne SCHIPPERS,15 JUN 1992,NED,1,,"National Stadium, Beijing (CHN)",28 AUG 2015,1277.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14291986,toplist
+2.0,21.66,0.2,Elaine THOMPSON,28 JUN 1992,JAM,2,,"National Stadium, Beijing (CHN)",28 AUG 2015,1274.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14285956,toplist
+3.0,21.97,0.2,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,3,,"National Stadium, Beijing (CHN)",28 AUG 2015,1241.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14285598,toplist
+4.0,21.98,1.6,Allyson FELIX,18 NOV 1985,USA,1,,"Suhaim bin Hamad Stadium, Doha (QAT)",15 MAY 2015,1240.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14309983,toplist
+5.0,22.01,0.2,Candyce MCGRONE,24 MAR 1989,USA,4,,"National Stadium, Beijing (CHN)",28 AUG 2015,1237.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14316585,toplist
+6.0,22.07,0.2,Dina ASHER-SMITH,04 DEC 1995,GBR,5,,"National Stadium, Beijing (CHN)",28 AUG 2015,1230.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14378282,toplist
+7.0,22.14,0.2,Shaunae MILLER,15 APR 1994,BAH,1f1,,"National Stadium, Kingston (JAM)",09 MAY 2015,1223.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14368116,toplist
+8.0,22.18,1.9,Dezerea BRYANT,27 APR 1993,USA,1,,"Eugene, OR (USA)",13 JUN 2015,1219.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14375109,toplist
+9.0,22.20,0.4,Jenna PRANDINI,20 NOV 1992,USA,1,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1217.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14329068,toplist
+10.0,22.23,-2.8,Tori BOWIE,27 AUG 1990,USA,1,,"Icahn Stadium, New York, NY (USA)",13 JUN 2015,1230.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14360382,toplist
+10.0,22.23,-0.3,Jeneba TARMOH,27 SEP 1989,USA,3,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1215.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14322457,toplist
+12.0,22.24,1.9,Kamaria BROWN,21 DEC 1992,USA,3,,"Eugene, OR (USA)",13 JUN 2015,1212.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14306592,toplist
+12.0,22.24,1.9,Kyra JEFFERSON,23 SEP 1994,USA,4,,"Eugene, OR (USA)",13 JUN 2015,1212.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14411312,toplist
+14.0,22.29,1.6,Murielle AHOURÉ,23 AUG 1987,CIV,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",15 MAY 2015,1207.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14304569,toplist
+15.0,22.32,0.8,Charonda WILLIAMS,27 MAR 1987,USA,1f1,,Luzern (SUI),14 JUL 2015,1204.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14324253,toplist
+15.0,22.32,-0.1,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,3sf1,,"National Stadium, Beijing (CHN)",27 AUG 2015,1204.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14268643,toplist
+17.0,22.37,0.2,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,3f1,,"National Stadium, Kingston (JAM)",09 MAY 2015,1199.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14285680,toplist
+18.0,22.43,0.3,Shakima WIMBLEY,23 APR 1995,USA,1,,"Tallahassee, FL (USA)",16 MAY 2015,1193.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14467626,toplist
+18.0,22.43,-0.7,Candace HILL,11 FEB 1999,USA,1,,"Pascual Guerrero Stadium, Cali (COL)",19 JUL 2015,1197.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14596374,toplist
+20.0,22.47,0.4,Kaylin WHITNEY,09 MAR 1998,USA,4,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1189.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14524719,toplist
+21.0,22.50,0.2,Sherone SIMPSON,12 AUG 1984,JAM,8,,"National Stadium, Beijing (CHN)",28 AUG 2015,1186.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14285909,toplist
+22.0,22.51,1.3,Semoy HACKETT,27 NOV 1988,TTO,2,,San José (CRC),09 AUG 2015,1184.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14303004,toplist
+23.0,22.52,1.9,Morolake AKINOSUN,17 MAY 1994,USA,5,,"Eugene, OR (USA)",13 JUN 2015,1183.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14430813,toplist
+24.0,22.55,1.4,Simone FACEY,07 MAY 1985,JAM,1,,Edmonton (CAN),12 JUL 2015,1180.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14285672,toplist
+25.0,22.56,1.4,Shalonda SOLOMON,19 DEC 1985,USA,2,,Edmonton (CAN),12 JUL 2015,1179.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14321706,toplist
+25.0,22.56,-0.1,Marie-Josée TA LOU,18 NOV 1988,CIV,3sf2,,"National Stadium, Beijing (CHN)",27 AUG 2015,1179.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14415994,toplist
+27.0,22.60,0.4,Muna LEE,30 OCT 1981,USA,7,,"Hayward Field, Eugene, OR (USA)",28 JUN 2015,1175.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14315186,toplist
+28.0,22.62,0.8,Tiffany TOWNSEND,14 JUN 1989,USA,3f1,,Luzern (SUI),14 JUL 2015,1173.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14322941,toplist
+29.0,22.64,-0.1,Mujinga KAMBUNDJI,17 JUN 1992,SUI,4sf1,,"National Stadium, Beijing (CHN)",27 AUG 2015,1171.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14300897,toplist
+30.0,22.67,-2.8,Blessing OKAGBARE,09 OCT 1988,NGR,2,,"Icahn Stadium, New York, NY (USA)",13 JUN 2015,1184.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14292330,toplist
+31.0,22.68,2.0,Chioma AGWUNOBI,,USA,1qf2,,"Jacksonville, FL (USA)",30 MAY 2015,1167.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14507533,toplist
+32.0,22.69,1.6,Anthonique STRACHAN,22 AUG 1993,BAH,3,,"Suhaim bin Hamad Stadium, Doha (QAT)",15 MAY 2015,1166.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14368117,toplist
+33.0,22.70,0.1,Phyllis FRANCIS,04 MAY 1992,USA,2f1,,"Walnut, CA (USA)",18 APR 2015,1165.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14310414,toplist
+34.0,22.72,1.6,Kerron STEWART,16 APR 1984,JAM,2sf1,,"CIBC, Toronto (CAN)",23 JUL 2015,1163.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14285938,toplist
+35.0,22.74,0.1,English GARDNER,22 APR 1992,USA,3f1,,"Walnut, CA (USA)",18 APR 2015,1161.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14310719,toplist
+35.0,22.74,1.2,Kamaria DURANT,24 FEB 1991,TTO,1h2,,"CIBC, Toronto (CAN)",23 JUL 2015,1161.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14302992,toplist
+37.0,22.75,0.1,Natalia POHREBNIAK,19 FEB 1988,UKR,1,,Kirovograd (UKR),31 JUL 2015,1160.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14304035,toplist
+38.0,22.76,0.2,Natasha HASTINGS,23 JUL 1986,USA,2f1,,"Austin, TX (USA)",11 APR 2015,1159.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14312172,toplist
+38.0,22.76,2.0,Felicia BROWN,27 OCT 1993,USA,2qf2,,"Jacksonville, FL (USA)",30 MAY 2015,1159.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14366314,toplist
+38.0,22.76,1.8,Jada MARTIN,08 JUN 1995,USA,2sf2,,"Eugene, OR (USA)",11 JUN 2015,1159.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14430830,toplist
+38.0,22.76,1.9,Aaliyah BROWN,06 JAN 1995,USA,6,,"Eugene, OR (USA)",13 JUN 2015,1159.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14306531,toplist
+42.0,22.77,1.7,Rosângela SANTOS,20 DEC 1990,BRA,4,,"Alexander Stadium, Birmingham (GBR)",07 JUN 2015,1158.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14268928,toplist
+42.0,22.77,-0.8,Viktoriya ZYABKINA,04 SEP 1992,KAZ,1,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1162.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14375464,toplist
+44.0,22.80,0.2,Kendall BAISDEN,05 MAR 1995,USA,1h2,,"Ames, IA (USA)",16 MAY 2015,1155.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14326466,toplist
+45.0,22.82,0.8,Reyare THOMAS,23 NOV 1987,TTO,1,,Port-of-Spain (TTO),11 JUL 2015,1153.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14303055,toplist
+46.0,22.83,0.1,Kimberlyn DUNCAN,02 AUG 1991,USA,4f1,,"Walnut, CA (USA)",18 APR 2015,1152.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14309365,toplist
+47.0,22.84,0.2,Cierra WHITE,29 APR 1993,USA,2h2,,"Ames, IA (USA)",16 MAY 2015,1151.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14430809,toplist
+47.0,22.84,1.9,Khamica BINGHAM,15 JUN 1994,CAN,1h3,,Windsor (CAN),23 MAY 2015,1151.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14405309,toplist
+47.0,22.84,-0.5,Ángela Gabriela TENORIO,27 JAN 1996,ECU,1,,Cuenca (ECU),31 MAY 2015,1154.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14496119,toplist
+50.0,22.85,0.2,Bianca WILLIAMS,18 DEC 1993,GBR,2h4,,"National Stadium, Beijing (CHN)",26 AUG 2015,1150.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14401125,toplist
+51.0,22.86,0.4,Aisha CAVIN,03 DEC 1992,USA,1,,"East Lansing, MI (USA)",17 MAY 2015,1149.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14369566,toplist
+51.0,22.86,1.4,Kimberly HYACINTHE,28 MAR 1989,CAN,3,,Edmonton (CAN),12 JUL 2015,1149.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14267823,toplist
+53.0,22.87,0.8,Shericka JACKSON,16 JUL 1994,JAM,1f2,,Luzern (SUI),14 JUL 2015,1148.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14325599,toplist
+53.0,22.87,-0.3,Sanya RICHARDS-ROSS,26 FEB 1985,USA,6,,"Olympic Stadium, London (GBR)",25 JUL 2015,1149.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14319838,toplist
+55.0,22.88,1.6,Deanna HILL,13 APR 1996,USA,1f4,,"Gainesville, FL (USA)",03 APR 2015,1147.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14430848,toplist
+55.0,22.88,-1.8,Carmelita JETER,24 NOV 1979,USA,1f1,,"Norwalk, CA (USA)",06 JUN 2015,1157.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14313618,toplist
+55.0,22.88,0.8,Jodie WILLIAMS,28 SEP 1993,GBR,5f1,,Luzern (SUI),14 JUL 2015,1147.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14276757,toplist
+58.0,22.89,1.9,Jasmine TODD,23 DEC 1993,USA,1h1,,"Los Angeles, CA (USA)",16 MAY 2015,1146.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14375278,toplist
+58.0,22.89,0.4,Brittany BROWN,18 APR 1995,USA,2,,"East Lansing, MI (USA)",17 MAY 2015,1146.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14437218,toplist
+58.0,22.89,0.7,Porscha LUCAS,18 JUN 1988,USA,3h5,,"Hayward Field, Eugene, OR (USA)",27 JUN 2015,1146.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14315666,toplist
+61.0,22.90,-0.7,Lauren Rain WILLIAMS,25 JUL 1999,USA,2,,"Pascual Guerrero Stadium, Cali (COL)",19 JUL 2015,1149.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14636153,toplist
+62.0,22.92,1.6,Margaret ADEOYE,22 APR 1985,GBR,3f2,,"Clermont, FL (USA)",18 APR 2015,1143.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14274348,toplist
+62.0,22.92,1.4,Crystal EMMANUEL,27 NOV 1991,CAN,4,,Edmonton (CAN),12 JUL 2015,1143.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14270576,toplist
+62.0,22.92,-0.1,Gloria HOOPER,03 MAR 1992,ITA,5sf3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1143.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14381808,toplist
+65.0,22.93,1.2,Taylor WASHINGTON,06 MAY 1993,USA,1f4,,"Fayetteville, AR (USA)",11 APR 2015,1142.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14335321,toplist
+65.0,22.93,1.3,Courtney OKOLO,15 MAR 1994,USA,1h1,,"Ames, IA (USA)",16 MAY 2015,1142.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14432036,toplist
+65.0,22.93,0.5,Destinee GAUSE,04 APR 1994,USA,2qf3,,"Jacksonville, FL (USA)",30 MAY 2015,1142.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14373732,toplist
+68.0,22.94,2.0,Shannon HYLTON,19 DEC 1996,GBR,1,,Loughborough (GBR),17 MAY 2015,1141.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14482422,toplist
+68.0,22.94,0.0,Anna KIEŁBASIŃSKA,26 JUN 1990,POL,1,,Kraków (POL),21 JUL 2015,1141.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14293852,toplist
+68.0,22.94,0.3,Desiree HENRY,26 AUG 1995,GBR,1,,Mannheim (GER),08 AUG 2015,1141.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14360349,toplist
+71.0,22.95,-0.2,Jamile SAMUEL,24 APR 1992,NED,1,,Mersin (TUR),31 MAY 2015,1141.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14291975,toplist
+71.0,22.95,-1.1,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,1h2,,Kingston (JAM),27 JUN 2015,1146.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14285727,toplist
+71.0,22.95,-0.8,A'Keyla MITCHELL,25 OCT 1995,USA,2,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1144.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14491414,toplist
+71.0,22.95,1.2,Isidora JIMÉNEZ,10 AUG 1993,CHI,4h2,,"CIBC, Toronto (CAN)",23 JUL 2015,1140.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14407566,toplist
+71.0,22.95,1.0,Rebekka HAASE,02 JAN 1993,GER,1,,Nürnberg (GER),26 JUL 2015,1140.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14360165,toplist
+76.0,22.96,1.9,Justine PALFRAMAN,04 NOV 1993,RSA,1,,Stellenbosch (RSA),25 APR 2015,1139.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14360057,toplist
+77.0,22.97,0.8,Sally PEARSON,19 SEP 1986,AUS,1,,Canberra (AUS),07 FEB 2015,1138.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14271668,toplist
+77.0,22.97,0.7,TyNia GAITHER,16 MAR 1993,BAH,1,,"Los Angeles, CA (USA)",17 MAY 2015,1138.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14362366,toplist
+77.0,22.97,0.5,Alexis FAULKNOR,22 SEP 1994,USA,3h4,,"Hayward Field, Eugene, OR (USA)",27 JUN 2015,1138.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14366528,toplist
+80.0,22.99,2.0,Leslie COLE,16 FEB 1987,USA,1f1,,"Azusa, CA (USA)",17 APR 2015,1136.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14307858,toplist
+80.0,22.99,0.8,Lekeisha LAWSON,03 JUN 1987,USA,1f1,,"Fresno, CA (USA)",25 APR 2015,1136.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14315112,toplist
+80.0,22.99,1.2,Nercely SOTO,23 AUG 1990,VEN,5h2,,"CIBC, Toronto (CAN)",23 JUL 2015,1136.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14377437,toplist
+83.0,23.02,0.7,Tatjana PINTO,02 JUL 1992,GER,1f1,,Mannheim (GER),28 JUN 2015,1132.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14279214,toplist
+84.0,23.03,0.2,Salwa Eid NASER,23 MAY 1998,BRN,2f3,,Plovdiv (BUL),28 JUN 2015,1131.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14643442,toplist
+84.0,23.03,1.2,Sheniqua FERGUSON,24 NOV 1989,BAH,6h2,,"CIBC, Toronto (CAN)",23 JUL 2015,1131.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14270638,toplist
+84.0,23.03,1.3,Celiangely MORALES,02 NOV 1985,PUR,5,,San José (CRC),09 AUG 2015,1131.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14295325,toplist
+87.0,23.04,1.6,Ella NELSON,10 MAY 1994,AUS,1f1,,Brisbane (AUS),29 MAR 2015,1130.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14336753,toplist
+87.0,23.04,1.6,Janet AMPONSAH,12 APR 1993,GHA,1f1,,"Canyon, TX (USA)",25 APR 2015,1130.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14334452,toplist
+87.0,23.04,0.3,Sabria HADLEY,01 JAN 1995,USA,2,,"Tallahassee, FL (USA)",16 MAY 2015,1130.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14471485,toplist
+87.0,23.04,1.8,Yekaterina SMIRNOVA,08 SEP 1988,RUS,1,,Sochi (RUS),29 MAY 2015,1130.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14299745,toplist
+87.0,23.04,0.5,Gina LÜCKENKEMPER,21 NOV 1996,GER,1f1,,Mannheim (GER),28 JUN 2015,1130.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14450088,toplist
+87.0,23.04,-0.1,Maja MIHALINEC,17 DEC 1989,SLO,8sf1,,"National Stadium, Beijing (CHN)",27 AUG 2015,1130.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14300190,toplist
+93.0,23.05,0.4,Jodean WILLIAMS,11 NOV 1993,JAM,3h3,,Kingston (JAM),27 JUN 2015,1129.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14435095,toplist
+94.0,23.06,1.3,J'Nea BELLAMY,1994,USA,1,,"Storrs, CT (USA)",16 MAY 2015,1128.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14491285,toplist
+95.0,23.07,,Arianna WASHINGTON,04 SEP 1996,USA,3f1,,"Fayetteville, AR (USA) (i)",14 MAR 2015,1170.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14468500,toplist
+95.0,23.07,0.1,Francena MCCORORY,20 OCT 1988,USA,1f6,,"Hampton, VA (USA)",10 APR 2015,1127.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14316439,toplist
+97.0,23.08,-0.3,Jessica BEARD,08 JAN 1989,USA,3f1,,"Gainesville, FL (USA)",03 APR 2015,1127.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14305526,toplist
+97.0,23.08,1.7,Ana Claudia LEMOS,06 NOV 1988,BRA,1,,Sao Bernardo do Campo (BRA),17 MAY 2015,1126.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14269001,toplist
+97.0,23.08,1.6,Arialis Josefa GANDULLA,22 JUN 1995,CUB,6sf1,,"CIBC, Toronto (CAN)",23 JUL 2015,1126.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14465496,toplist
+97.0,23.08,1.0,Anna-Lena FREESE,21 JAN 1994,GER,2,,Nürnberg (GER),26 JUL 2015,1126.0,women_200m,2015,https://worldathletics.org/athletes/athlete=14361576,toplist
+1.0,21.78,-0.1,Elaine THOMPSON,28 JUN 1992,JAM,1,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1261.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14285956,toplist
+2.0,21.86,0.2,Dafne SCHIPPERS,15 JUN 1992,NED,2,,"Letzigrund, Zürich (SUI)",01 SEP 2016,1252.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14291986,toplist
+3.0,21.99,1.9,Tori BOWIE,27 AUG 1990,USA,1,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1239.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14360382,toplist
+4.0,22.02,0.2,Allyson FELIX,18 NOV 1985,USA,3,,"Letzigrund, Zürich (SUI)",01 SEP 2016,1236.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14309983,toplist
+5.0,22.05,0.8,Shaunae MILLER,15 APR 1994,BAH,1,,Kingston (JAM),11 JUN 2016,1232.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14368116,toplist
+6.0,22.21,1.9,Arianna WASHINGTON,04 SEP 1996,USA,1,,"Eugene, OR (USA)",11 JUN 2016,1216.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14468500,toplist
+6.0,22.21,-0.1,Marie-Josée TA LOU,18 NOV 1988,CIV,4,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1216.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14415994,toplist
+8.0,22.25,1.9,Deajah STEVENS,19 MAY 1995,USA,2,,"Eugene, OR (USA)",11 JUN 2016,1211.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14378231,toplist
+8.0,22.25,0.8,Michelle-Lee AHYE,10 APR 1992,TTO,2sf3,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1211.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14302966,toplist
+10.0,22.26,-1.3,Felicia BROWN,27 OCT 1993,USA,1,,"Tuscaloosa, AL (USA)",14 MAY 2016,1217.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14366314,toplist
+11.0,22.29,0.5,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1f1,,"Clermont, FL (USA)",30 APR 2016,1207.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14285598,toplist
+12.0,22.31,-0.1,Dina ASHER-SMITH,04 DEC 1995,GBR,5,,"Estádio Olímpico, Rio de Janeiro (BRA)",17 AUG 2016,1205.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14378282,toplist
+13.0,22.38,0.4,Lea SPRUNGER,05 MAR 1990,SUI,1,,Genève (SUI),17 JUL 2016,1198.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14301240,toplist
+14.0,22.39,0.8,Jenna PRANDINI,20 NOV 1992,USA,2,,Kingston (JAM),11 JUN 2016,1197.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14329068,toplist
+15.0,22.40,1.4,Joanna ATKINS,31 JAN 1989,USA,1f1,,"Clermont, FL (USA)",14 MAY 2016,1196.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14305059,toplist
+16.0,22.42,0.1,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,2sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1194.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14268643,toplist
+17.0,22.46,0.1,Desiree HENRY,26 AUG 1995,GBR,2,,"Stade de France, Paris-St-Denis (FRA)",27 AUG 2016,1190.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14360349,toplist
+18.0,22.47,1.9,Gabrielle THOMAS,07 DEC 1996,USA,3,,"Eugene, OR (USA)",11 JUN 2016,1189.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14733520,toplist
+19.0,22.48,-1.3,Taylor WASHINGTON,06 MAY 1993,USA,2,,"Tuscaloosa, AL (USA)",14 MAY 2016,1195.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14335321,toplist
+20.0,22.49,-1.1,Hannah CUNLIFFE,09 JAN 1996,USA,1,,"Seattle, WA (USA)",15 MAY 2016,1193.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14365078,toplist
+21.0,22.50,0.1,Phyllis FRANCIS,04 MAY 1992,USA,2,,"Houston, TX (USA)",23 JUL 2016,1186.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14310414,toplist
+21.0,22.50,0.1,Ella NELSON,10 MAY 1994,AUS,3sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1186.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14336753,toplist
+21.0,22.50,0.2,Simone FACEY,07 MAY 1985,JAM,5,,"Letzigrund, Zürich (SUI)",01 SEP 2016,1186.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14285672,toplist
+24.0,22.52,0.1,Murielle AHOURÉ,23 AUG 1987,CIV,2h8,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1183.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14304569,toplist
+25.0,22.54,1.9,Morolake AKINOSUN,17 MAY 1994,USA,4,,"Eugene, OR (USA)",11 JUN 2016,1181.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14430813,toplist
+25.0,22.54,1.9,TyNia GAITHER,16 MAR 1993,BAH,5,,"Eugene, OR (USA)",11 JUN 2016,1181.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14362366,toplist
+27.0,22.56,1.6,Kyra JEFFERSON,23 SEP 1994,USA,1h4,,"Tuscaloosa, AL (USA)",12 MAY 2016,1179.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14411312,toplist
+27.0,22.56,0.9,Shakima WIMBLEY,23 APR 1995,USA,1,,"Tallahassee, FL (USA)",15 MAY 2016,1179.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14467626,toplist
+27.0,22.56,1.9,Libania GRENOT,12 JUL 1983,ITA,1f1,,"Tampa, FL (USA)",27 MAY 2016,1179.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14263547,toplist
+30.0,22.57,0.3,Natasha HASTINGS,23 JUL 1986,USA,2,,Nassau (BAH),16 APR 2016,1178.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14312172,toplist
+31.0,22.58,1.8,Blessing OKAGBARE,09 OCT 1988,NGR,1f1,,Sollentuna (SWE),28 JUN 2016,1177.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14292330,toplist
+32.0,22.60,-1.3,Jada MARTIN,08 JUN 1995,USA,3,,"Tuscaloosa, AL (USA)",14 MAY 2016,1182.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14430830,toplist
+32.0,22.60,0.7,Deanna HILL,13 APR 1996,USA,1h2,,"Lawrence, KS (USA)",28 MAY 2016,1175.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14430848,toplist
+34.0,22.61,1.6,Sada WILLIAMS,01 DEC 1997,BAR,1,,St. Michael (BAR),18 MAR 2016,1174.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14592846,toplist
+34.0,22.61,1.6,Semoy HACKETT,27 NOV 1988,TTO,2f2,,Port-of-Spain (TTO),26 JUN 2016,1174.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14303004,toplist
+36.0,22.63,1.9,Alexis LOVE,24 APR 1991,USA,2f1,,"Tampa, FL (USA)",27 MAY 2016,1172.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14407555,toplist
+36.0,22.63,1.0,Shalonda SOLOMON,19 DEC 1985,USA,2,,"Bregyó Athletic Center, Székesfehérvár (HUN)",18 JUL 2016,1172.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14321706,toplist
+36.0,22.63,1.0,Tiffany TOWNSEND,14 JUN 1989,USA,3,,"Bregyó Athletic Center, Székesfehérvár (HUN)",18 JUL 2016,1172.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14322941,toplist
+39.0,22.64,1.0,Ashley HENDERSON,04 DEC 1995,USA,1f1,,"Palo Alto, CA (USA)",01 MAY 2016,1171.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14436992,toplist
+39.0,22.64,0.5,Natalia POHREBNIAK,19 FEB 1988,UKR,2h1,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1171.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14304035,toplist
+41.0,22.65,1.0,Daye Shon ROBERSON,03 JUL 1995,USA,2f1,,"Palo Alto, CA (USA)",01 MAY 2016,1170.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14465761,toplist
+42.0,22.66,0.7,Viktoriya ZYABKINA,04 SEP 1992,KAZ,1,,Almaty (KAZ),26 JUN 2016,1169.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14375464,toplist
+43.0,22.67,0.0,Gina LÜCKENKEMPER,21 NOV 1996,GER,1f1,,Regensburg (GER),05 JUN 2016,1168.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14450088,toplist
+44.0,22.69,0.5,Jodie WILLIAMS,28 SEP 1993,GBR,3h7,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1166.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14276757,toplist
+45.0,22.71,-1.0,Taylor BENNETT,15 JAN 1997,USA,1f8,,"Waco, TX (USA)",09 APR 2016,1170.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14486589,toplist
+46.0,22.72,1.6,Reyare THOMAS,23 NOV 1987,TTO,3f2,,Port-of-Spain (TTO),26 JUN 2016,1163.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14303055,toplist
+47.0,22.73,1.4,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,2f1,,"Clermont, FL (USA)",14 MAY 2016,1162.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14302975,toplist
+48.0,22.74,0.6,Edidiong ODIONG,13 MAR 1997,BRN,1h9,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1161.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14541241,toplist
+49.0,22.75,1.3,Alexandria ANDERSON,28 JAN 1987,USA,1,,Montreuil-sous-Bois (FRA),07 JUN 2016,1160.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14304791,toplist
+50.0,22.76,1.7,Candace HILL,11 FEB 1999,USA,1h2,,"Clovis, CA (USA)",25 JUN 2016,1159.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14596374,toplist
+51.0,22.77,0.1,Shayla SANDERS,06 JAN 1994,USA,1f1,,"Los Angeles, CA (USA)",26 MAR 2016,1158.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14405076,toplist
+52.0,22.78,0.7,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,1,,Kingston (JAM),16 APR 2016,1157.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14285805,toplist
+52.0,22.78,1.9,Kortnei JOHNSON,11 AUG 1997,USA,1h3,,"Tuscaloosa, AL (USA)",12 MAY 2016,1157.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14519052,toplist
+52.0,22.78,0.1,Mujinga KAMBUNDJI,17 JUN 1992,SUI,3h8,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1157.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14300897,toplist
+55.0,22.79,,Courtney OKOLO,15 MAR 1994,USA,1,,"Ames, IA (USA) (i)",27 FEB 2016,0.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14432036,toplist
+55.0,22.79,1.0,Khianna GRAY,30 DEC 1996,USA,1h2,,"Jacksonville, FL (USA)",27 MAY 2016,1156.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14597005,toplist
+55.0,22.79,1.3,Katarina JOHNSON-THOMPSON,09 JAN 1993,GBR,1ce7,,"Mösle-Stadium, Götzis (AUT)",28 MAY 2016,1156.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14276543,toplist
+55.0,22.79,1.0,Nadine GONSKA,23 JAN 1990,GER,1f2,,Mannheim (GER),29 JUL 2016,1156.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14374120,toplist
+59.0,22.80,1.7,Cambrya JONES,20 SEP 1990,USA,1f1,,"Coral Gables, FL (USA)",09 APR 2016,1155.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14360397,toplist
+59.0,22.80,-0.1,Lauren Rain WILLIAMS,25 JUL 1999,USA,1,,"Norwalk, CA (USA)",27 MAY 2016,1155.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14636153,toplist
+59.0,22.80,1.2,LaTessa JOHNSON,13 APR 1997,USA,2h3,,"Lawrence, KS (USA)",28 MAY 2016,1155.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14492786,toplist
+59.0,22.80,0.5,Crystal EMMANUEL,27 NOV 1991,CAN,3h1,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1155.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14270576,toplist
+63.0,22.81,-0.8,Jeneba TARMOH,27 SEP 1989,USA,4,,"Olympic Stadium, London (GBR)",23 JUL 2016,1158.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14322457,toplist
+63.0,22.81,0.8,Laura MÜLLER,11 DEC 1995,GER,1f1,,Mannheim (GER),29 JUL 2016,1154.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14402867,toplist
+65.0,22.83,-0.4,Jamile SAMUEL,24 APR 1992,NED,4,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1154.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14291975,toplist
+66.0,22.84,0.3,Kaylin WHITNEY,09 MAR 1998,USA,4,,Nassau (BAH),16 APR 2016,1151.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14524719,toplist
+66.0,22.84,1.2,Alyssa CONLEY,27 APR 1991,RSA,2,,Durban (RSA),26 JUN 2016,1151.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14296159,toplist
+68.0,22.85,0.7,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,2,,Kingston (JAM),16 APR 2016,1150.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14285764,toplist
+68.0,22.85,1.9,Felecia MAJORS,11 FEB 1995,USA,2h2,,"Tuscaloosa, AL (USA)",12 MAY 2016,1150.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14464049,toplist
+70.0,22.86,0.4,Kali DAVIS-WHITE,27 OCT 1994,USA,2f1,,"Tallahassee, FL (USA)",16 APR 2016,1149.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14436980,toplist
+70.0,22.86,0.4,Tessa VAN SCHAGEN,02 FEB 1994,NED,1,,Amsterdam (NED),19 JUN 2016,1149.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14401527,toplist
+70.0,22.86,0.8,Lisa MAYER,02 MAY 1996,GER,2h2,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1149.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14448966,toplist
+73.0,22.87,0.3,Jasmine CAMACHO-QUINN,21 AUG 1996,USA,2h3,,"Jacksonville, FL (USA)",27 MAY 2016,1148.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14494234,toplist
+74.0,22.88,1.6,Kai SELVON,13 APR 1992,TTO,5f2,,Port-of-Spain (TTO),26 JUN 2016,1147.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14303044,toplist
+74.0,22.88,1.8,Chisato FUKUSHIMA,27 JUN 1988,JPN,1,,Nagoya (JPN),26 JUN 2016,1147.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14286217,toplist
+74.0,22.88,0.8,Nercely SOTO,23 AUG 1990,VEN,7sf3,,"Estádio Olímpico, Rio de Janeiro (BRA)",16 AUG 2016,1147.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14377437,toplist
+77.0,22.89,-0.2,Quanera HAYES,07 MAR 1992,USA,2f1,,"Gainesville, FL (USA)",22 APR 2016,1147.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14509544,toplist
+77.0,22.89,0.8,Audra SEGREE,10 MAY 1990,JAM,3,,Kingston (JAM),11 JUN 2016,1146.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14285899,toplist
+77.0,22.89,1.4,Gloria HOOPER,03 MAR 1992,ITA,1,,Rieti (ITA),26 JUN 2016,1146.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14381808,toplist
+77.0,22.89,0.4,Ellen SPRUNGER,05 AUG 1986,SUI,2,,Genève (SUI),17 JUL 2016,1146.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14301239,toplist
+81.0,22.92,1.2,Gina BASS,03 MAY 1995,GAM,3,,Durban (RSA),26 JUN 2016,1143.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14479741,toplist
+82.0,22.93,1.1,Kauiza MOREIRA VENANCIO,11 JUN 1987,BRA,1,,Sao Bernardo do Campo (BRA),03 JUL 2016,1142.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14268796,toplist
+83.0,22.94,1.7,Jessica BEARD,08 JAN 1989,USA,3f1,,"Coral Gables, FL (USA)",09 APR 2016,1141.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14305526,toplist
+83.0,22.94,0.9,A'Keyla MITCHELL,25 OCT 1995,USA,1f1,,"Baton Rouge, LA (USA)",09 APR 2016,1141.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14491414,toplist
+83.0,22.94,0.8,Ángela Gabriela TENORIO,27 JAN 1996,ECU,4h2,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1141.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14496119,toplist
+86.0,22.95,0.3,Shericka JACKSON,16 JUL 1994,JAM,2f1,,Kingston (JAM),30 JAN 2016,1140.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14325599,toplist
+86.0,22.95,0.7,Briana GUILLORY,21 NOV 1997,USA,1,,"Lincoln, NE (USA)",15 MAY 2016,1140.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14581059,toplist
+86.0,22.95,0.7,Olga SAFRONOVA,05 NOV 1991,KAZ,2,,Almaty (KAZ),26 JUN 2016,1140.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14288586,toplist
+86.0,22.95,0.5,Anna KIEŁBASIŃSKA,26 JUN 1990,POL,4h1,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1140.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14293852,toplist
+90.0,22.96,-0.2,Ashleigh NELSON,20 FEB 1991,GBR,1f6,,"Waco, TX (USA)",23 APR 2016,1140.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14275890,toplist
+90.0,22.96,-0.1,Anthonique STRACHAN,22 AUG 1993,BAH,3h5,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1139.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14368117,toplist
+92.0,22.97,0.2,Destiny CARTER,09 OCT 1992,USA,1h6,,"Jacksonville, FL (USA)",27 MAY 2016,1138.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14625419,toplist
+92.0,22.97,2.0,Lauryn GHEE,31 OCT 1998,USA,1h3,,"Greensboro, NC (USA)",19 JUN 2016,1138.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14649927,toplist
+94.0,22.98,1.2,Lekeisha LAWSON,03 JUN 1987,USA,1f1,,"Norwalk, CA (USA)",04 JUN 2016,1137.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14315112,toplist
+94.0,22.98,1.9,Marie VEALE,17 NOV 1994,USA,1f2,,"Norwalk, CA (USA)",04 JUN 2016,1137.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14489184,toplist
+96.0,22.99,2.0,Kerron STEWART,16 APR 1984,JAM,4f1,,"Austin, TX (USA)",16 APR 2016,1136.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14285938,toplist
+96.0,22.99,1.2,Brenessa THOMPSON,22 JUL 1996,GUY,3h3,,"Lawrence, KS (USA)",28 MAY 2016,1136.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14474359,toplist
+96.0,22.99,0.9,Janet AMPONSAH,12 APR 1993,GHA,1,,Cape Coast (GHA),08 JUL 2016,1136.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14334452,toplist
+99.0,23.00,1.4,Kendra HARRISON,18 SEP 1992,USA,1f1,,"Lexington, KY (USA)",07 MAY 2016,1135.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14425415,toplist
+99.0,23.00,-0.4,Lilla MCMILLAN,31 AUG 1994,USA,1,,"Orlando, FL (USA)",15 MAY 2016,1137.0,women_200m,2016,https://worldathletics.org/athletes/athlete=14423529,toplist
+1.0,21.77,1.5,Tori BOWIE,27 AUG 1990,USA,1,,"Hayward Field, Eugene, OR (USA)",27 MAY 2017,1262.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14360382,toplist
+2.0,21.88,0.1,Shaunae MILLER,15 APR 1994,BAH,1,,"Letzigrund, Zürich (SUI)",24 AUG 2017,1250.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14368116,toplist
+3.0,21.98,1.5,Elaine THOMPSON,28 JUN 1992,JAM,3,,"Hayward Field, Eugene, OR (USA)",27 MAY 2017,1240.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14285956,toplist
+4.0,22.02,1.1,Kyra JEFFERSON,23 SEP 1994,USA,1,,"Eugene, OR (USA)",10 JUN 2017,1236.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14411312,toplist
+5.0,22.05,0.8,Dafne SCHIPPERS,15 JUN 1992,NED,1,,"Olympic Stadium, London (GBR)",11 AUG 2017,1232.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14291986,toplist
+6.0,22.08,0.8,Marie-Josée TA LOU,18 NOV 1988,CIV,2,,"Olympic Stadium, London (GBR)",11 AUG 2017,1229.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14415994,toplist
+7.0,22.09,1.5,Deajah STEVENS,19 MAY 1995,USA,1,,"Eugene, OR (USA)",14 MAY 2017,1228.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14378231,toplist
+8.0,22.22,0.8,Dina ASHER-SMITH,04 DEC 1995,GBR,4,,"Olympic Stadium, London (GBR)",11 AUG 2017,1215.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14378282,toplist
+9.0,22.33,1.5,Allyson FELIX,18 NOV 1985,USA,5,,"Hayward Field, Eugene, OR (USA)",27 MAY 2017,1203.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14309983,toplist
+10.0,22.39,1.1,Arianna WASHINGTON,04 SEP 1996,USA,2,,"Eugene, OR (USA)",10 JUN 2017,1197.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14468500,toplist
+11.0,22.41,1.5,Deanna HILL,13 APR 1996,USA,2,,"Eugene, OR (USA)",14 MAY 2017,1195.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14430848,toplist
+12.0,22.42,-0.3,Mujinga KAMBUNDJI,17 JUN 1992,SUI,1,,Zürich (SUI),22 JUL 2017,1195.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14300897,toplist
+13.0,22.46,0.2,Shericka JACKSON,16 JUL 1994,JAM,3,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1190.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14325599,toplist
+14.0,22.47,0.7,Shakima WIMBLEY,23 APR 1995,USA,1f3,,"Gainesville, FL (USA)",28 APR 2017,1189.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14467626,toplist
+15.0,22.50,0.0,Michelle-Lee AHYE,10 APR 1992,TTO,1f2,,Port-of-Spain (TTO),25 JUN 2017,1186.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14302966,toplist
+15.0,22.50,0.0,Crystal EMMANUEL,27 NOV 1991,CAN,1f1,,Cork (IRL),18 JUL 2017,1186.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14270576,toplist
+17.0,22.53,,Hannah CUNLIFFE,09 JAN 1996,USA,2f2,,"College Station, TX (USA) (i)",11 MAR 2017,1223.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14365078,toplist
+18.0,22.54,-1.0,Ashley HENDERSON,04 DEC 1995,USA,1,,"Logan, UT (USA)",12 MAY 2017,1187.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14436992,toplist
+18.0,22.54,0.6,Kimberlyn DUNCAN,02 AUG 1991,USA,1f1,,St-Martin (FRA),13 MAY 2017,1181.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14309365,toplist
+18.0,22.54,1.5,Jenna PRANDINI,20 NOV 1992,USA,7,,"Hayward Field, Eugene, OR (USA)",27 MAY 2017,1181.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14329068,toplist
+21.0,22.55,-0.3,Quanera HAYES,07 MAR 1992,USA,2f1,,"Gainesville, FL (USA)",28 APR 2017,1181.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14509544,toplist
+21.0,22.55,1.7,Brittany BROWN,18 APR 1995,USA,2sf2,,"Eugene, OR (USA)",08 JUN 2017,1180.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14437218,toplist
+23.0,22.56,0.4,Gabrielle THOMAS,07 DEC 1996,USA,1sf3,,"Lexington, KY (USA)",27 MAY 2017,1179.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14733520,toplist
+23.0,22.56,-0.3,Lea SPRUNGER,05 MAR 1990,SUI,2,,Zürich (SUI),22 JUL 2017,1180.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14301240,toplist
+25.0,22.58,1.5,Alexandria ANDERSON,28 JAN 1987,USA,1f1,,"Austin, TX (USA)",29 APR 2017,1177.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14304791,toplist
+26.0,22.59,0.2,Phyllis FRANCIS,04 MAY 1992,USA,4,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1176.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14310414,toplist
+27.0,22.60,1.6,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1f1,,"Gainesville, FL (USA)",30 MAR 2017,1175.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14285598,toplist
+27.0,22.60,1.0,Felicia BROWN,27 OCT 1993,USA,1f1,,St. George's (GRN),08 APR 2017,1175.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14366314,toplist
+29.0,22.61,1.4,Destiny CARTER,09 OCT 1992,USA,1h1,,"Lexington, KY (USA)",26 MAY 2017,1174.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14625419,toplist
+30.0,22.64,0.5,Shalonda SOLOMON,19 DEC 1985,USA,3,,"National Stadium, Kingston (JAM)",20 MAY 2017,1171.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14321706,toplist
+30.0,22.64,1.7,Lisa MAYER,02 MAY 1996,GER,1f1,,Weinheim (GER),27 MAY 2017,1171.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14448966,toplist
+32.0,22.65,-0.8,Laura MÜLLER,11 DEC 1995,GER,1,,Erfurt (GER),09 JUL 2017,1174.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14402867,toplist
+33.0,22.68,1.8,Candace HILL,11 FEB 1999,USA,1f1,,"Los Angeles, CA (USA)",08 APR 2017,1167.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14596374,toplist
+33.0,22.68,1.1,Murielle AHOURÉ,23 AUG 1987,CIV,1,,"Olympiastadion, Stockholm (SWE)",18 JUN 2017,1167.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14304569,toplist
+35.0,22.69,1.4,Desiree HENRY,26 AUG 1995,GBR,2f1,,"Azusa, CA (USA)",14 APR 2017,1166.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14360349,toplist
+36.0,22.71,1.0,TyNia GAITHER,16 MAR 1993,BAH,2f1,,St. George's (GRN),08 APR 2017,1164.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14362366,toplist
+36.0,22.71,0.8,Shashalee FORBES,10 MAY 1996,JAM,1,,Kingston (JAM),25 JUN 2017,1164.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14574709,toplist
+38.0,22.72,-0.3,Tiffany TOWNSEND,14 JUN 1989,USA,3f1,,"Gainesville, FL (USA)",28 APR 2017,1164.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14322941,toplist
+39.0,22.74,-0.3,Joanna ATKINS,31 JAN 1989,USA,4f1,,"Gainesville, FL (USA)",28 APR 2017,1162.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14305059,toplist
+39.0,22.74,0.8,Simone FACEY,07 MAY 1985,JAM,2,,Kingston (JAM),25 JUN 2017,1161.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14285672,toplist
+41.0,22.76,1.1,Rebekka HAASE,02 JAN 1993,GER,3,,"Olympiastadion, Stockholm (SWE)",18 JUN 2017,1159.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14360165,toplist
+42.0,22.77,1.5,Natalliah WHYTE,09 AUG 1997,JAM,2h1,,"Columbia, SC (USA)",11 MAY 2017,1158.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14413448,toplist
+42.0,22.77,0.2,Semoy HACKETT,27 NOV 1988,TTO,1,,Freeport (BAH),22 JUL 2017,1158.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14303004,toplist
+44.0,22.79,1.5,Kendall ELLIS,08 MAR 1996,USA,1f1,,"Los Angeles, CA (USA)",18 MAR 2017,1156.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14443893,toplist
+44.0,22.79,1.1,Aaliyah BROWN,06 JAN 1995,USA,4,,"Eugene, OR (USA)",10 JUN 2017,1156.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14306531,toplist
+46.0,22.80,0.2,Kortnei JOHNSON,11 AUG 1997,USA,2sf1,,"Lexington, KY (USA)",27 MAY 2017,1155.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14519052,toplist
+46.0,22.80,1.2,Jada MARTIN,08 JUN 1995,USA,2sf2,,"Lexington, KY (USA)",27 MAY 2017,1155.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14430830,toplist
+46.0,22.80,-0.3,Sada WILLIAMS,01 DEC 1997,BAR,1,,St. Michael (BAR),25 JUN 2017,1156.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14592846,toplist
+49.0,22.81,1.1,Viktoriya ZYABKINA,04 SEP 1992,KAZ,1,,Almaty (KAZ),14 MAY 2017,1154.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14375464,toplist
+49.0,22.81,1.0,Shania COLLINS,14 NOV 1996,USA,2h2,,"Lexington, KY (USA)",26 MAY 2017,1154.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14477995,toplist
+49.0,22.81,-2.9,Katarina JOHNSON-THOMPSON,09 JAN 1993,GBR,1ce5,,"Mösle-Stadium, Götzis (AUT)",27 MAY 2017,1171.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14276543,toplist
+52.0,22.82,1.1,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,4,,"Olympiastadion, Stockholm (SWE)",18 JUN 2017,1153.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14268643,toplist
+53.0,22.83,-0.3,Bianca WILLIAMS,18 DEC 1993,GBR,5f1,,"Gainesville, FL (USA)",28 APR 2017,1153.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14401125,toplist
+54.0,22.84,1.3,Jaevin REED,05 FEB 1998,USA,1f3,,"San Antonio, TX (USA)",25 MAR 2017,1151.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14492781,toplist
+54.0,22.84,0.3,Anthonique STRACHAN,22 AUG 1993,BAH,3,,Kingston (JAM),10 JUN 2017,1151.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14368117,toplist
+54.0,22.84,1.7,Justine PALFRAMAN,04 NOV 1993,RSA,1f1,,Kortrijk (BEL),08 JUL 2017,1151.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14360057,toplist
+57.0,22.86,0.4,Khianna GRAY,30 DEC 1996,USA,2sf3,,"Lexington, KY (USA)",27 MAY 2017,1149.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14597005,toplist
+57.0,22.86,1.3,Finette AGYAPONG,01 FEB 1997,GBR,1sf1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",15 JUL 2017,1149.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14551632,toplist
+59.0,22.87,1.3,Blessing OKAGBARE,09 OCT 1988,NGR,1,,"Lubbock, TX (USA)",28 APR 2017,1148.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14292330,toplist
+59.0,22.87,1.8,Taylor BENNETT,15 JAN 1997,USA,1f3,,"Lubbock, TX (USA)",28 APR 2017,1148.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14486589,toplist
+61.0,22.88,1.0,Jura Lanconia LEVY,04 NOV 1990,JAM,3f1,,St. George's (GRN),08 APR 2017,1147.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14285765,toplist
+61.0,22.88,-0.1,Jasmine CAMACHO-QUINN,21 AUG 1996,PUR,2h6,,"Lexington, KY (USA)",26 MAY 2017,1147.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14494234,toplist
+61.0,22.88,0.4,Sabria HADLEY,01 JAN 1995,USA,3sf3,,"Lexington, KY (USA)",27 MAY 2017,1147.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14471485,toplist
+64.0,22.89,1.8,Najia HUDSPETH,25 OCT 1996,USA,1h2,,"Logan, UT (USA)",12 MAY 2017,1146.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14614498,toplist
+65.0,22.90,1.5,Makenzie DUNMORE,07 OCT 1997,USA,5,,"Eugene, OR (USA)",14 MAY 2017,1145.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14536492,toplist
+65.0,22.90,0.7,Janet AMPONSAH,12 APR 1993,GHA,1,,"El Paso, TX (USA)",14 MAY 2017,1145.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14334452,toplist
+65.0,22.90,1.3,Sarah ATCHO,01 JUN 1995,SUI,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",15 JUL 2017,1145.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14450880,toplist
+68.0,22.91,1.8,Destiny SMITH-BARNETT,26 JUL 1996,USA,2h2,,"Logan, UT (USA)",12 MAY 2017,1144.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14475801,toplist
+69.0,22.92,0.7,Tobi AMUSAN,23 APR 1997,NGR,2,,"El Paso, TX (USA)",14 MAY 2017,1143.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14579526,toplist
+69.0,22.92,1.4,Cassondra HALL,23 SEP 1997,USA,2h1,,"Lexington, KY (USA)",26 MAY 2017,1143.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14489365,toplist
+69.0,22.92,0.2,India BROWN,29 JAN 1996,USA,4sf1,,"Lexington, KY (USA)",27 MAY 2017,1143.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14491880,toplist
+72.0,22.93,0.1,Shimayra WILLIAMS,02 DEC 1995,JAM,2,,Kingston (JAM),08 APR 2017,1142.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14413660,toplist
+72.0,22.93,1.5,Elexis GUSTER,07 JUL 1994,USA,6,,"Eugene, OR (USA)",14 MAY 2017,1142.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14487449,toplist
+72.0,22.93,1.5,Vitoria Cristina ROSA,12 JAN 1996,BRA,1,,Sao Bernardo do Campo (BRA),11 JUN 2017,1142.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14481687,toplist
+72.0,22.93,-0.8,Nadine GONSKA,23 JAN 1990,GER,3,,Erfurt (GER),09 JUL 2017,1146.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14374120,toplist
+76.0,22.94,,Ashley SPENCER,08 JUN 1993,USA,1f10,,"Lincoln, NE (USA) (i)",04 FEB 2017,1183.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14476234,toplist
+76.0,22.94,,Diamond SPAULDING,29 SEP 1996,USA,3h1,,"College Station, TX (USA) (i)",10 MAR 2017,1183.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14439760,toplist
+76.0,22.94,1.5,Alyssa CONLEY,27 APR 1991,RSA,1,,Potchefstroom (RSA),22 APR 2017,1141.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14296159,toplist
+76.0,22.94,1.1,Brenessa THOMPSON,22 JUL 1996,GUY,1h2,,"Columbia, SC (USA)",11 MAY 2017,1141.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14474359,toplist
+76.0,22.94,0.0,Shannon HYLTON,19 DEC 1996,GBR,1,,Birmingham (GBR),02 JUL 2017,1141.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14482422,toplist
+81.0,22.95,0.4,Shayla SANDERS,06 JAN 1994,USA,2,,"Gainesville, FL (USA)",31 MAR 2017,1140.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14405076,toplist
+81.0,22.95,1.5,Ama PIPI,26 NOV 1995,GBR,1f1,,"Norman, OK (USA)",22 APR 2017,1140.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14479776,toplist
+81.0,22.95,1.7,Edidiong ODIONG,13 MAR 1997,BRN,1,,Baku (AZE),18 MAY 2017,1140.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14541241,toplist
+81.0,22.95,0.5,Candyce MCGRONE,24 MAR 1989,USA,5,,"National Stadium, Kingston (JAM)",20 MAY 2017,1140.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14316585,toplist
+81.0,22.95,0.3,Dezerea BRYANT,27 APR 1993,USA,4,,Kingston (JAM),10 JUN 2017,1140.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14375109,toplist
+81.0,22.95,1.5,Rosângela SANTOS,20 DEC 1990,BRA,2,,Sao Bernardo do Campo (BRA),11 JUN 2017,1140.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14268928,toplist
+81.0,22.95,0.8,Jodean WILLIAMS,11 NOV 1993,JAM,3,,Kingston (JAM),25 JUN 2017,1140.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14435095,toplist
+88.0,22.96,0.0,Sydney MCLAUGHLIN,07 AUG 1999,USA,1f2,,"Egg Harbor City, NJ (USA)",03 JUN 2017,1139.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14624749,toplist
+88.0,22.96,-1.4,Irene SIRAGUSA,23 JUN 1993,ITA,1,,"Taipei Municipal Stadium, Taipei City (TPE)",26 AUG 2017,1147.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14361469,toplist
+90.0,22.97,0.5,Kevona DAVIS,20 DEC 2001,JAM,1,,Kingston (JAM),24 JUN 2017,1138.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14630588,toplist
+90.0,22.97,0.0,Kayelle CLARKE,28 FEB 1996,TTO,2f2,,Port-of-Spain (TTO),25 JUN 2017,1138.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14434525,toplist
+92.0,22.98,1.3,Jacquelyn BALDWIN,03 JAN 1997,USA,2h5,,"Lexington, KY (USA)",26 MAY 2017,1137.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14592246,toplist
+92.0,22.98,0.0,Gina BASS,03 MAY 1995,GAM,1f1,,Bruay-la-Buissiere (FRA),04 JUL 2017,1137.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14479741,toplist
+94.0,22.99,1.5,Teahna DANIELS,25 MAR 1997,USA,2f1,,"Austin, TX (USA)",29 APR 2017,1136.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14443924,toplist
+95.0,23.00,,Danyel WHITE,10 FEB 1998,USA,4h1,,"College Station, TX (USA) (i)",10 MAR 2017,1177.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14486596,toplist
+95.0,23.00,1.5,Ella NELSON,10 MAY 1994,AUS,1f1,,Canberra (AUS),12 MAR 2017,1135.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14336753,toplist
+95.0,23.00,1.6,Symone MASON,31 AUG 1999,USA,1,,"Jacksonville, FL (USA)",18 MAR 2017,1135.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14498940,toplist
+95.0,23.00,-0.3,Charonda WILLIAMS,27 MAR 1987,USA,7f1,,"Gainesville, FL (USA)",28 APR 2017,1136.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14324253,toplist
+95.0,23.00,-0.6,Maria BELIMPASAKI,19 JUN 1991,GRE,1f2,,Argos Orestiko (GRE),10 JUN 2017,1138.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14280530,toplist
+95.0,23.00,1.7,Shavine HODGES,22 OCT 1992,JAM,2f1,,Kortrijk (BEL),08 JUL 2017,1135.0,women_200m,2017,https://worldathletics.org/athletes/athlete=14285734,toplist
+,22.02,,Allyson FELIX,18 NOV 1985,USA,1.,,IAAF World Championships,21 AUG 2009,,,2009,,major_meet
+,22.35,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,2.,,IAAF World Championships,21 AUG 2009,,,2009,,major_meet
+,22.41,,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,3.,,IAAF World Championships,21 AUG 2009,,,2009,,major_meet
+,22.48,,Muna LEE,30 OCT 1981,USA,4.,,IAAF World Championships,21 AUG 2009,,,2009,,major_meet
+,22.62,,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,5.,,IAAF World Championships,21 AUG 2009,,,2009,,major_meet
+,22.80,,Simone FACEY,07 MAY 1985,JAM,6.,,IAAF World Championships,21 AUG 2009,,,2009,,major_meet
+,22.98,,Emily FREEMAN,24 NOV 1980,GBR,7.,,IAAF World Championships,21 AUG 2009,,,2009,,major_meet
+,23.05,,Eleni ARTYMATA,16 MAY 1986,CYP,8.,,IAAF World Championships,21 AUG 2009,,,2009,,major_meet
+,22.32,,Myriam SOUMARÉ,29 OCT 1986,FRA,1.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,22.44,,Yelizaveta BRYZGINA,28 NOV 1989,UKR,2.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,22.44,,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,3.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,22.59,,Lina JACQUES-SÉBASTIEN,10 APR 1985,FRA,4.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,22.61,,Eleni ARTYMATA,16 MAY 1986,CYP,5.,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,DQ,,Anastasiya KAPACHINSKAYA,21 NOV 1979,RUS, - ,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,DQ,,Yuliya CHERMOSHANSKAYA,06 JAN 1986,RUS, - ,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,DQ,,Véronique MANG,15 DEC 1984,FRA,,,Barcelona European Championships,31 JUL 2010,,,2010,,major_meet
+,22.22,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,22.37,,Carmelita JETER,24 NOV 1979,USA,2.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,22.42,,Allyson FELIX,18 NOV 1985,USA,3.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,22.61,,Shalonda SOLOMON,19 DEC 1985,USA,4.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,22.70,,Kerron STEWART,16 APR 1984,JAM,5.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,22.96,,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,6.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,23.02,,Hrystyna STUY,03 FEB 1988,UKR,7.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,23.17,,Sherone SIMPSON,12 AUG 1984,JAM,8.,,IAAF World Championships,02 SEP 2011,,,2011,,major_meet
+,21.88,,Allyson FELIX,18 NOV 1985,USA,1.,,The XXX Olympic Games,08 AUG 2012,,,2012,,major_meet
+,22.09,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,2.,,The XXX Olympic Games,08 AUG 2012,,,2012,,major_meet
+,22.14,,Carmelita JETER,24 NOV 1979,USA,3.,,The XXX Olympic Games,08 AUG 2012,,,2012,,major_meet
+,22.38,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,4.,,The XXX Olympic Games,08 AUG 2012,,,2012,,major_meet
+,22.39,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,5.,,The XXX Olympic Games,08 AUG 2012,,,2012,,major_meet
+,22.57,,Murielle AHOURÉ,23 AUG 1987,CIV,6.,,The XXX Olympic Games,08 AUG 2012,,,2012,,major_meet
+,22.63,,Myriam SOUMARÉ,29 OCT 1986,FRA,7.,,The XXX Olympic Games,08 AUG 2012,,,2012,,major_meet
+,DQ,,Semoy HACKETT,27 NOV 1988,TTO, - ,,The XXX Olympic Games,08 AUG 2012,,,2012,,major_meet
+,23.05,,Mariya RYEMYEN,02 AUG 1987,UKR,1.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,23.17,,Hrystyna STUY,03 FEB 1988,UKR,2.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,23.21,,Myriam SOUMARÉ,29 OCT 1986,FRA,3.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,23.25,,Viktoriya KASHEYEVA,07 MAY 1989,UKR,4.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,23.53,,Dafne SCHIPPERS,15 JUN 1992,NED,5.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,23.55,,Jamile SAMUEL,24 APR 1992,NED,6.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,23.59,,Eleni ARTYMATA,16 MAY 1986,CYP,7.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,23.61,,Johanna DANOIS,04 APR 1987,FRA,8.,,Helsinki European Championships,30 JUN 2012,,,2012,,major_meet
+,22.17,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1.,,IAAF World Championships,16 AUG 2013,,,2013,,major_meet
+,22.32,,Murielle AHOURÉ,23 AUG 1987,CIV,2.,,IAAF World Championships,16 AUG 2013,,,2013,,major_meet
+,22.32,,Blessing OKAGBARE,09 OCT 1988,NGR,3.,,IAAF World Championships,16 AUG 2013,,,2013,,major_meet
+,22.74,,Shaunae MILLER,15 APR 1994,BAH,4.,,IAAF World Championships,16 AUG 2013,,,2013,,major_meet
+,22.78,,Jeneba TARMOH,27 SEP 1989,USA,5.,,IAAF World Championships,16 AUG 2013,,,2013,,major_meet
+,22.81,,Charonda WILLIAMS,27 MAR 1987,USA,6.,,IAAF World Championships,16 AUG 2013,,,2013,,major_meet
+,22.84,,Mariya RYEMYEN,02 AUG 1987,UKR,7.,,IAAF World Championships,16 AUG 2013,,,2013,,major_meet
+,DNF,,Allyson FELIX,18 NOV 1985,USA,,,IAAF World Championships,16 AUG 2013,,,2013,,major_meet
+,22.03,,Dafne SCHIPPERS,15 JUN 1992,NED,1.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,22.46,,Jodie WILLIAMS,28 SEP 1993,GBR,2.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,22.58,,Myriam SOUMARÉ,29 OCT 1986,FRA,3.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,22.68,,Bianca WILLIAMS,18 DEC 1993,GBR,4.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,22.83,,Mujinga KAMBUNDJI,17 JUN 1992,SUI,5.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,23.31,,Jamile SAMUEL,24 APR 1992,NED,6.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,23.48,,Hanna-Maari LATVALA,30 OCT 1987,FIN,7.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,DNF,,Dina ASHER-SMITH,04 DEC 1995,GBR,,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,21.63,,Dafne SCHIPPERS,15 JUN 1992,NED,1.,,IAAF World Championships,28 AUG 2015,,,2015,,major_meet
+,21.66,,Elaine THOMPSON,28 JUN 1992,JAM,2.,,IAAF World Championships,28 AUG 2015,,,2015,,major_meet
+,21.97,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,3.,,IAAF World Championships,28 AUG 2015,,,2015,,major_meet
+,22.01,,Candyce MCGRONE,24 MAR 1989,USA,4.,,IAAF World Championships,28 AUG 2015,,,2015,,major_meet
+,22.07,,Dina ASHER-SMITH,04 DEC 1995,GBR,5.,,IAAF World Championships,28 AUG 2015,,,2015,,major_meet
+,22.31,,Jeneba TARMOH,27 SEP 1989,USA,6.,,IAAF World Championships,28 AUG 2015,,,2015,,major_meet
+,22.41,,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,7.,,IAAF World Championships,28 AUG 2015,,,2015,,major_meet
+,22.50,,Sherone SIMPSON,12 AUG 1984,JAM,8.,,IAAF World Championships,28 AUG 2015,,,2015,,major_meet
+,21.78,,Elaine THOMPSON,28 JUN 1992,JAM,1.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,21.88,,Dafne SCHIPPERS,15 JUN 1992,NED,2.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,22.15,,Tori BOWIE,27 AUG 1990,USA,3.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,22.21,,Marie-Josée TA LOU,18 NOV 1988,CIV,4.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,22.31,,Dina ASHER-SMITH,04 DEC 1995,GBR,5.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,22.34,,Michelle-Lee AHYE,10 APR 1992,TTO,6.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,22.65,,Deajah STEVENS,19 MAY 1995,USA,7.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,22.69,,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,8.,,The XXXI Olympic Games,17 AUG 2016,,,2016,,major_meet
+,22.37,,Dina ASHER-SMITH,04 DEC 1995,GBR,1.,,European Athletics Championships,07 JUL 2016,,,2016,,major_meet
+,22.52,,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,2.,,European Athletics Championships,07 JUL 2016,,,2016,,major_meet
+,22.74,,Gina LÜCKENKEMPER,21 NOV 1996,GER,3.,,European Athletics Championships,07 JUL 2016,,,2016,,major_meet
+,22.83,,Jamile SAMUEL,24 APR 1992,NED,4.,,European Athletics Championships,07 JUL 2016,,,2016,,major_meet
+,22.84,,Natalia POHREBNIAK,19 FEB 1988,UKR,5.,,European Athletics Championships,07 JUL 2016,,,2016,,major_meet
+,22.96,,Jodie WILLIAMS,28 SEP 1993,GBR,6.,,European Athletics Championships,07 JUL 2016,,,2016,,major_meet
+,23.03,,Tessa VAN SCHAGEN,02 FEB 1994,NED,7.,,European Athletics Championships,07 JUL 2016,,,2016,,major_meet
+,23.10,,Lisa MAYER,02 MAY 1996,GER,8.,,European Athletics Championships,07 JUL 2016,,,2016,,major_meet
+,22.05,,Dafne SCHIPPERS,15 JUN 1992,NED,1.,,IAAF World Championships in Athletics,11 AUG 2017,,,2017,,major_meet
+,22.08,,Marie-Josée TA LOU,18 NOV 1988,CIV,2.,,IAAF World Championships in Athletics,11 AUG 2017,,,2017,,major_meet
+,22.15,,Shaunae MILLER,15 APR 1994,BAH,3.,,IAAF World Championships in Athletics,11 AUG 2017,,,2017,,major_meet
+,22.22,,Dina ASHER-SMITH,04 DEC 1995,GBR,4.,,IAAF World Championships in Athletics,11 AUG 2017,,,2017,,major_meet
+,22.44,,Deajah STEVENS,19 MAY 1995,USA,5.,,IAAF World Championships in Athletics,11 AUG 2017,,,2017,,major_meet
+,22.59,,Kimberlyn DUNCAN,02 AUG 1991,USA,6.,,IAAF World Championships in Athletics,11 AUG 2017,,,2017,,major_meet
+,22.60,,Crystal EMMANUEL,27 NOV 1991,CAN,7.,,IAAF World Championships in Athletics,11 AUG 2017,,,2017,,major_meet
+,23.07,,TyNia GAITHER,16 MAR 1993,BAH,8.,,IAAF World Championships in Athletics,11 AUG 2017,,,2017,,major_meet
 ,21.89,,Dina ASHER-SMITH,04 DEC 1995,GBR,1.,,European Athletics Championships,11 AUG 2018,,,2018,,major_meet
 ,22.14,,Dafne SCHIPPERS,15 JUN 1992,NED,2.,,European Athletics Championships,11 AUG 2018,,,2018,,major_meet
 ,22.37,,Jamile SAMUEL,24 APR 1992,NED,3.,,European Athletics Championships,11 AUG 2018,,,2018,,major_meet
@@ -1185,12 +2266,14 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,22.30,,Shericka JACKSON,16 JUL 1994,JAM,2.,,Memorial Borisa Hanžekovića,14 SEP 2021,,,2021,,major_meet
 ,23.05,,Anthonique STRACHAN,22 AUG 1993,BAH,3.,,Memorial Borisa Hanžekovića,14 SEP 2021,,,2021,,major_meet
 ,23.37,,Shashalee FORBES,10 MAY 1996,JAM,4.,,Memorial Borisa Hanžekovića,14 SEP 2021,,,2021,,major_meet
+,23.58,,Moa HJELMER,19 JUN 1990,SWE,5.,,Memorial Borisa Hanžekovića,14 SEP 2021,,,2021,,major_meet
 ,21.96,,Shericka JACKSON,16 JUL 1994,JAM,1.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
 ,22.15,,Shaunae MILLER-UIBO,15 APR 1994,BAH,2.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
 ,22.70,,Dafne SCHIPPERS,15 JUN 1992,NED,3.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
 ,22.74,,Mujinga KAMBUNDJI,17 JUN 1992,SUI,4.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
 ,22.80,,Morolake AKINOSUN,17 MAY 1994,USA,5.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
 ,22.85,,Dezerea BRYANT,27 APR 1993,USA,6.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
+,23.17,,Desiree HENRY,26 AUG 1995,GBR,7.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
 ,22.35,,Sha'Carri RICHARDSON,25 MAR 2000,USA,1.,,60th Ostrava Golden Spike,19 MAY 2021,,,2021,,major_meet
 ,22.59,,Blessing OKAGBARE,09 OCT 1988,NGR,2.,,60th Ostrava Golden Spike,19 MAY 2021,,,2021,,major_meet
 ,22.85,,Mujinga KAMBUNDJI,17 JUN 1992,SUI,3.,,60th Ostrava Golden Spike,19 MAY 2021,,,2021,,major_meet
@@ -1227,6 +2310,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,22.82,,Morolake AKINOSUN,17 MAY 1994,USA,4.,,New York Grand Prix,12 JUN 2022,,,2022,,major_meet
 ,22.93,,Kortnei JOHNSON,11 AUG 1997,USA,5.,,New York Grand Prix,12 JUN 2022,,,2022,,major_meet
 ,23.20,,Anglerne ANNELUS,10 JAN 1997,USA,6.,,New York Grand Prix,12 JUN 2022,,,2022,,major_meet
+,23.54,,Destiny SMITH-BARNETT,26 JUL 1996,USA,7.,,New York Grand Prix,12 JUN 2022,,,2022,,major_meet
 ,22.21,,Aminatou SEYNI,24 OCT 1996,NIG,1.,,61st Golden Spike,31 MAY 2022,,,2022,,major_meet
 ,22.78,,Allyson FELIX,18 NOV 1985,USA,2.,,61st Golden Spike,31 MAY 2022,,,2022,,major_meet
 ,22.97,,Vittoria FONTANA,23 JUL 2000,ITA,3.,,61st Golden Spike,31 MAY 2022,,,2022,,major_meet

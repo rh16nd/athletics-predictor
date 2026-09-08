@@ -1205,14 +1205,1094 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,11.25,,Patrizia VAN DER WEKEN,12 NOV 1999,LUX,8.,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
 ,11.42,,Rani ROSIUS,25 APR 2000,BEL,9.,,Memorial van Damme,22 AUG 2025,,,2025,,dl_meeting
 ,11.21,,Salomé KORA,08 JUN 1994,SUI,8.,,Weltklasse Zürich,28 AUG 2025,,,2025,,dl_meeting
-,11.14,,Marie-Josée TA LOU,18 NOV 1988,CIV,1.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,11.16,,Dina ASHER-SMITH,04 DEC 1995,GBR,2.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,11.21,,Jenna PRANDINI,20 NOV 1992,USA,3.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,11.23,,Dafne SCHIPPERS,15 JUN 1992,NED,4.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,11.44,,Ángela Gabriela TENORIO,27 JAN 1996,ECU,5.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,11.51,,Yongli WEI,11 OCT 1991,CHN,6.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,11.52,,Hajar AL KHALDI,17 MAR 1995,BRN,7.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,11.74,,Janet AMPONSAH,12 APR 1993,GHA,8.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
+1.0,10.78,1.8,Torri EDWARDS,31 JAN 1977,USA,1sf2,,"Eugene, OR (USA)",28 JUN 2008,1248.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14309556,toplist
+1.0,10.78,0.0,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1,,"National Stadium, Beijing (CHN)",17 AUG 2008,1248.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285680,toplist
+3.0,10.80,0.7,Kerron STEWART,16 APR 1984,JAM,1,,Kingston (JAM),27 JUN 2008,1244.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285938,toplist
+4.0,10.85,1.0,Muna LEE,30 OCT 1981,USA,1,,"Eugene, OR (USA)",28 JUN 2008,1233.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14315186,toplist
+5.0,10.87,0.7,Sherone SIMPSON,12 AUG 1984,JAM,3,,Kingston (JAM),27 JUN 2008,1228.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285909,toplist
+5.0,10.87,0.0,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1,,"Crystal Palace, London (GBR)",26 JUL 2008,1228.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285598,toplist
+7.0,10.90,1.0,Lauryn WILLIAMS,11 SEP 1983,USA,3,,"Eugene, OR (USA)",28 JUN 2008,1222.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14324318,toplist
+8.0,10.93,1.5,Allyson FELIX,18 NOV 1985,USA,1,,Doha (QAT),09 MAY 2008,1215.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14309983,toplist
+8.0,10.93,1.0,Marshevet HOOKER,25 SEP 1984,USA,4,,"Eugene, OR (USA)",28 JUN 2008,1215.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14312862,toplist
+10.0,10.95,1.8,Simone FACEY,07 MAY 1985,JAM,1,,"Boulder, CO (USA)",18 MAY 2008,1211.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285672,toplist
+11.0,10.97,0.7,Carmelita JETER,24 NOV 1979,USA,1qf2,,"Eugene, OR (USA)",27 JUN 2008,1206.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14313618,toplist
+11.0,10.97,1.8,Mechelle LEWIS,20 SEP 1980,USA,2sf2,,"Eugene, OR (USA)",28 JUN 2008,1206.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14315355,toplist
+13.0,11.02,1.0,Angela WILLIAMS,30 JAN 1980,USA,6,,"Eugene, OR (USA)",28 JUN 2008,1195.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14324225,toplist
+14.0,11.03,1.1,Gloria ASUMNU,22 MAY 1985,USA,1,,"Clermont, FL (USA)",24 MAY 2008,1193.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14305055,toplist
+14.0,11.03,1.8,LaShauntea MOORE,31 JUL 1983,USA,4sf2,,"Eugene, OR (USA)",28 JUN 2008,1193.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14317320,toplist
+16.0,11.05,0.3,Kim GEVAERT,05 AUG 1978,BEL,1,,Nivelles (BEL),10 MAY 2008,1189.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14270370,toplist
+16.0,11.05,2.0,Montell DOUGLAS,24 JAN 1986,GBR,1f1,,Loughborough (GBR),17 JUL 2008,1189.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14274921,toplist
+18.0,11.06,1.9,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,1,,"Austin, TX (USA)",05 APR 2008,1187.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14302975,toplist
+18.0,11.06,1.9,Chandra STURRUP,12 SEP 1971,BAH,1,,Luzern (SUI),16 JUL 2008,1187.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14270612,toplist
+20.0,11.07,0.7,Bianca KNIGHT,02 JAN 1989,USA,4qf2,,"Eugene, OR (USA)",27 JUN 2008,1185.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14314587,toplist
+20.0,11.07,1.8,Me'Lisa BARBER,04 OCT 1980,USA,6sf2,,"Eugene, OR (USA)",28 JUN 2008,1185.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14305304,toplist
+20.0,11.07,1.8,Alexandria ANDERSON,28 JAN 1987,USA,7sf2,,"Eugene, OR (USA)",28 JUN 2008,1185.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14304791,toplist
+23.0,11.08,0.7,Alexis WEATHERSPOON,27 JUL 1983,USA,5qf2,,"Eugene, OR (USA)",27 JUN 2008,1182.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14323785,toplist
+23.0,11.08,0.2,Oludamola OSAYOMI,26 JUN 1986,NGR,1,,Abuja (NGR),02 JUL 2008,1182.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14292505,toplist
+25.0,11.09,1.1,Alexis JOYCE,15 SEP 1983,USA,2,,"Clermont, FL (USA)",24 MAY 2008,1180.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14314057,toplist
+26.0,11.11,1.9,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,2,,Luzern (SUI),16 JUL 2008,1176.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14270639,toplist
+27.0,11.12,1.5,Rakia AL GASSRA,06 SEP 1982,BRN,1,,Milano (ITA),02 JUL 2008,1174.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14268780,toplist
+28.0,11.13,1.2,Chryste GAINES,14 SEP 1970,USA,2h1,,"Clermont, FL (USA)",14 JUN 2008,1172.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14310623,toplist
+28.0,11.13,0.1,Yevgeniya POLYAKOVA,29 MAY 1983,RUS,2qf1,,"National Stadium, Beijing (CHN)",16 AUG 2008,1172.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14298965,toplist
+30.0,11.14,1.5,Sheri-Ann BROOKS,11 FEB 1983,JAM,3,,Doha (QAT),09 MAY 2008,1169.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285566,toplist
+30.0,11.14,0.2,Francisca IDOKO,15 JUN 1985,NGR,2sf2,,Abuja (NGR),02 JUL 2008,1169.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14292415,toplist
+30.0,11.14,0.4,Yulia NESTSIARENKA,15 JUN 1979,BLR,4qf4,,"National Stadium, Beijing (CHN)",16 AUG 2008,1169.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14269715,toplist
+30.0,11.14,0.0,Jeanette KWAKYE,20 MAR 1983,GBR,6,,"National Stadium, Beijing (CHN)",17 AUG 2008,1169.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14275544,toplist
+34.0,11.15,-0.9,Lauryn WILLIAMS,1977,CAN,2f1,,"Carson, CA (USA)",18 MAY 2008,1172.0,women_100m,2008,https://worldathletics.org/athletes/canada/lauryn-williams-14266969,toplist
+34.0,11.15,1.8,Porscha LUCAS,18 JUN 1988,USA,3,,"Boulder, CO (USA)",18 MAY 2008,1167.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14315666,toplist
+36.0,11.16,1.2,Victoria JORDAN,26 FEB 1990,USA,1,,"Austin, TX (USA)",09 MAY 2008,1165.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14314031,toplist
+36.0,11.16,1.8,Shalonda SOLOMON,19 DEC 1985,USA,5h1,,"Eugene, OR (USA)",27 JUN 2008,1165.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14321706,toplist
+36.0,11.16,1.6,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,1h2,,Kingston (JAM),28 JUN 2008,1165.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285727,toplist
+39.0,11.17,1.6,Juanita BROADDUS,12 MAY 1985,USA,2,,"Auburn, AL (USA)",18 MAY 2008,1163.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14306461,toplist
+40.0,11.19,1.1,Stephanie DURST,06 JAN 1982,USA,2,,Baie Mahault (FRA),01 MAY 2008,1159.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14309424,toplist
+41.0,11.20,1.1,Peta-Gaye DOWDIE,18 JAN 1977,JAM,3,,"Clermont, FL (USA)",24 MAY 2008,1157.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285657,toplist
+41.0,11.20,1.2,Aleen BAILEY,25 NOV 1980,JAM,4h1,,"Clermont, FL (USA)",14 JUN 2008,1157.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285532,toplist
+43.0,11.21,1.2,Wyllesheia MYRICK,21 NOV 1979,USA,2,,"Coral Gables, FL (USA)",12 APR 2008,1154.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14317693,toplist
+43.0,11.21,2.0,Virgil HODGE,17 NOV 1983,SKN,1,,"Fort Worth, TX (USA)",17 MAY 2008,1154.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14300050,toplist
+43.0,11.21,1.8,Scottesha MILLER,14 JAN 1988,USA,4,,"Boulder, CO (USA)",18 MAY 2008,1154.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14317043,toplist
+43.0,11.21,1.0,Emma ANIA,07 FEB 1979,GBR,2f1,,Torino (ITA),06 JUN 2008,1154.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14274387,toplist
+43.0,11.21,1.3,Jeneba TARMOH,27 SEP 1989,USA,1,,"Columbus, OH (USA)",20 JUN 2008,1154.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14322457,toplist
+43.0,11.21,1.5,Christine ARRON,13 SEP 1973,FRA,1h1,,Albi (FRA),24 JUL 2008,1154.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14258727,toplist
+49.0,11.22,0.0,Vida ANIM,07 DEC 1983,GHA,1f1,,Biberach (GER),28 JUN 2008,1152.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14280442,toplist
+49.0,11.22,1.1,Daria KORCZYŃSKA,30 JUL 1981,POL,3h8,,"National Stadium, Beijing (CHN)",16 AUG 2008,1152.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14294213,toplist
+51.0,11.23,1.7,Nickeisha ANDERSON,15 MAR 1985,JAM,1f2,,"Lawrence, KS (USA)",19 APR 2008,1150.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285530,toplist
+51.0,11.23,0.6,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,4h3,,Kingston (JAM),28 JUN 2008,1150.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285586,toplist
+53.0,11.24,1.5,Susanthika JAYASINGHE,17 DEC 1975,SRI,4,,Doha (QAT),09 MAY 2008,1148.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14300498,toplist
+53.0,11.24,0.6,LaVerne JONES-FERRETTE,16 SEP 1981,ISV,2,,"Mangueirão, Belém (BRA)",25 MAY 2008,1148.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14283604,toplist
+55.0,11.25,1.7,Anastasiya VINOGRADOVA,13 SEP 1986,KAZ,1,,Almaty (KAZ),07 JUN 2008,1146.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14288746,toplist
+56.0,11.26,-0.9,Sanya RICHARDS-ROSS,26 FEB 1985,USA,9f1,,"Carson, CA (USA)",18 MAY 2008,1149.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14319838,toplist
+56.0,11.26,1.3,Inna EFTIMOVA,19 JUN 1988,BUL,1,,Sofia (BUL),14 JUN 2008,1144.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14268718,toplist
+56.0,11.26,0.4,Natalya MURINOVICH,27 MAY 1985,RUS,2,,"Meteor, Zhukovskiy (RUS)",15 JUN 2008,1144.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14298682,toplist
+59.0,11.27,0.9,Tawanna MEADOWS,04 AUG 1986,USA,1,,"Denton, TX (USA)",11 MAY 2008,1142.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14316787,toplist
+59.0,11.27,1.3,Anita PISTONE,29 OCT 1976,ITA,4,,"Parc des Sports, Annecy (FRA)",21 JUN 2008,1142.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285038,toplist
+59.0,11.27,2.0,Laura TURNER,12 AUG 1982,GBR,2f1,,Loughborough (GBR),17 JUL 2008,1142.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14276597,toplist
+62.0,11.28,1.1,Lakecia EALEY,22 JAN 1986,USA,1h4,,"Tallahassee, FL (USA)",30 MAY 2008,1139.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14309454,toplist
+62.0,11.28,1.6,Natalia POHREBNIAK,19 FEB 1988,UKR,1,,Kyiv (UKR),01 JUL 2008,1139.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14304035,toplist
+62.0,11.28,-0.8,Verena SAILER,16 OCT 1985,GER,1,,Nürnberg (GER),05 JUL 2008,1143.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14279480,toplist
+65.0,11.29,1.5,Ebonie FLOYD,21 OCT 1983,USA,5,,Doha (QAT),09 MAY 2008,1137.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14310239,toplist
+65.0,11.29,0.1,Sani ROSEBY,05 FEB 1982,USA,3,,"Provo, UT (USA)",24 MAY 2008,1137.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14320252,toplist
+65.0,11.29,1.6,Toyin OLUPONA,29 JAN 1983,CAN,4f1,,"Clermont, FL (USA)",14 JUN 2008,1137.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14267427,toplist
+65.0,11.29,0.7,Mikele BARBER,04 OCT 1980,USA,8qf2,,"Eugene, OR (USA)",27 JUN 2008,1137.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14305305,toplist
+69.0,11.30,0.5,Santana LOWERY,15 JAN 1987,USA,1,,"Oxford, MS (USA)",12 APR 2008,1135.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14315649,toplist
+69.0,11.30,0.9,Sherry FLETCHER,17 JAN 1986,GRN,3,,"Baton Rouge, LA (USA)",19 APR 2008,1135.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14281033,toplist
+69.0,11.30,1.8,Lina JACQUES-SÉBASTIEN,10 APR 1985,FRA,1,,Sotteville-lès-Rouen (FRA),15 JUN 2008,1135.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14257046,toplist
+72.0,11.31,1.5,Shayla MAHAN,18 JAN 1989,USA,2,,"Greensboro, NC (USA)",19 APR 2008,1133.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14315866,toplist
+72.0,11.31,1.5,Alimat ISMAILA,13 JUL 1984,NGR,1,,"El Paso, TX (USA)",17 MAY 2008,1133.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14292420,toplist
+72.0,11.31,1.1,Amber ROBINSON,05 JUN 1980,USA,5,,"Clermont, FL (USA)",24 MAY 2008,1133.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14320049,toplist
+72.0,11.31,0.3,LaDedra GUY,16 NOV 1984,USA,5f2,,"Icahn Stadium, New York, NY (USA)",31 MAY 2008,1133.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14311650,toplist
+72.0,11.31,0.2,Carima LOUAMI,12 MAY 1979,FRA,1f1,,Genève (SUI),31 MAY 2008,1133.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14256577,toplist
+72.0,11.31,1.5,Semoy HACKETT,27 NOV 1988,TTO,1sf2,,Port-of-Spain (TTO),20 JUN 2008,1133.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14303004,toplist
+72.0,11.31,0.0,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,3f1,,Biberach (GER),28 JUN 2008,1133.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14268643,toplist
+79.0,11.32,0.7,Irina PRIVALOVA,22 NOV 1968,RUS,1,,Moskva (RUS),10 JUL 2008,1131.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14299012,toplist
+79.0,11.32,0.0,Ezinne OKPARAEBO,03 MAR 1988,NOR,2h10,,"National Stadium, Beijing (CHN)",16 AUG 2008,1131.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14292744,toplist
+81.0,11.33,0.9,Melinda SMEDLEY,11 FEB 1981,USA,2f2,,"Modesto, CA (USA)",10 MAY 2008,1129.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14321452,toplist
+81.0,11.33,0.0,Yuliya GUSHCHINA,04 MAR 1983,RUS,1f2,,Dessau (GER),30 MAY 2008,1129.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14297898,toplist
+81.0,11.33,0.1,Lina GRINČIKAITĖ SAMUOLĖ,03 MAY 1987,LTU,2qf5,,"National Stadium, Beijing (CHN)",16 AUG 2008,1129.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14290237,toplist
+81.0,11.33,1.9,Melissa BREEN,17 SEP 1990,AUS,1,,Canberra (AUS),08 NOV 2008,1129.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14272403,toplist
+85.0,11.34,0.6,Carol RODRÍGUEZ,16 DEC 1985,PUR,2,,"Austin, TX (USA)",05 APR 2008,1127.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14295349,toplist
+85.0,11.34,1.8,Allison GEORGE,03 JAN 1988,GRN,5,,"Boulder, CO (USA)",18 MAY 2008,1127.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14281035,toplist
+85.0,11.34,1.3,Jessica ONYEPUNUKA,03 MAY 1986,USA,1,,"Northridge, CA (USA)",31 MAY 2008,1127.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14318305,toplist
+85.0,11.34,0.2,Gloria KEMASUODE,30 DEC 1979,NGR,3,,Abuja (NGR),02 JUL 2008,1127.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14292428,toplist
+85.0,11.34,1.2,Yomara HINESTROZA,20 MAY 1988,COL,1,,Bogotá (COL),19 JUL 2008,1127.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14263997,toplist
+90.0,11.35,-1.3,Geraldine PILLAY,25 AUG 1977,RSA,1,,Germiston (RSA),22 FEB 2008,1132.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14296751,toplist
+90.0,11.35,1.8,Christine OHURUOGU,17 MAY 1984,GBR,1f1,,"Irvine, CA (USA)",04 MAY 2008,1125.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14275963,toplist
+90.0,11.35,1.4,Tangela NEAL,07 APR 1979,USA,5h1,,"Clermont, FL (USA)",24 MAY 2008,1125.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14317752,toplist
+90.0,11.35,0.1,Agnes Osazuwa OLATUNJI,21 JUN 1990,NGR,1h6,,Abuja (NGR),01 JUL 2008,1125.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14292504,toplist
+90.0,11.35,1.5,Vincenza CALÍ,15 OCT 1983,ITA,3,,Milano (ITA),02 JUL 2008,1125.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14283927,toplist
+90.0,11.35,0.6,Pia TAJNIKAR,19 SEP 1985,SLO,1,,Maribor (SLO),03 JUL 2008,1125.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14300262,toplist
+96.0,11.36,1.9,Latonia WILSON,30 NOV 1984,USA,4,,"Austin, TX (USA)",05 APR 2008,1123.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14324466,toplist
+96.0,11.36,1.7,Chisato FUKUSHIMA,27 JUN 1988,JPN,1f1,,Hiroshima (JPN),29 APR 2008,1123.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14286217,toplist
+96.0,11.36,1.8,Monique HENDERSON,18 FEB 1983,USA,2f1,,"Irvine, CA (USA)",04 MAY 2008,1123.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14312380,toplist
+96.0,11.36,0.4,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,5qf4,,"National Stadium, Beijing (CHN)",16 AUG 2008,1123.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14285518,toplist
+100.0,11.37,1.2,Dominique DUNCAN,07 MAY 1990,USA,2,,"Austin, TX (USA)",09 MAY 2008,1120.0,women_100m,2008,https://worldathletics.org/athletes/athlete=14309360,toplist
+1.0,10.64,1.2,Carmelita JETER,24 NOV 1979,USA,1,,Shanghai (CHN),20 SEP 2009,1280.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14313618,toplist
+2.0,10.73,0.1,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1,,"Olympiastadion, Berlin (GER)",17 AUG 2009,1259.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285680,toplist
+3.0,10.75,0.4,Kerron STEWART,16 APR 1984,JAM,1,,"Stadio Olimpico, Roma (ITA)",10 JUL 2009,1255.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285938,toplist
+4.0,10.89,1.2,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,2,,Shanghai (CHN),20 SEP 2009,1224.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285598,toplist
+5.0,10.94,1.7,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,1,,Port-of-Spain (TTO),19 JUN 2009,1213.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14302975,toplist
+6.0,10.97,0.0,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,2,,"Stade Louis II, Monaco (MON)",28 JUL 2009,1206.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14270639,toplist
+7.0,10.99,0.4,Chandra STURRUP,12 SEP 1971,BAH,3,,"Stadio Olimpico, Roma (ITA)",10 JUL 2009,1202.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14270612,toplist
+8.0,11.01,0.1,Lauryn WILLIAMS,11 SEP 1983,USA,5,,"Olympiastadion, Berlin (GER)",17 AUG 2009,1198.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14324318,toplist
+9.0,11.02,1.4,Alexandria ANDERSON,28 JAN 1987,USA,1h3,,"Fayetteville, AR (USA)",10 JUN 2009,1195.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14304791,toplist
+10.0,11.04,1.3,Shalonda SOLOMON,19 DEC 1985,USA,1f2,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1191.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14321706,toplist
+11.0,11.05,1.3,Tianna MADISON,30 AUG 1985,USA,2f2,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1189.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14315831,toplist
+12.0,11.07,1.3,Aleen BAILEY,25 NOV 1980,JAM,3f2,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1185.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285532,toplist
+13.0,11.08,1.3,Allyson FELIX,18 NOV 1985,USA,2,,Rethymno (GRE),20 JUL 2009,1182.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14309983,toplist
+14.0,11.09,-0.9,Murielle AHOURÉ,23 AUG 1987,CIV,1,,"Greensboro, NC (USA)",30 MAY 2009,1185.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14304569,toplist
+15.0,11.12,1.0,Porscha LUCAS,18 JUN 1988,USA,2f2,,"Austin, TX (USA)",04 APR 2009,1174.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14315666,toplist
+16.0,11.13,1.8,Gabrielle MAYO,26 JAN 1989,USA,1,,"Austin, TX (USA)",04 APR 2009,1172.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14316298,toplist
+16.0,11.13,1.8,Tiffany TOWNSEND,14 JUN 1989,USA,2,,"Austin, TX (USA)",04 APR 2009,1172.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14322941,toplist
+16.0,11.13,0.1,LaVerne JONES-FERRETTE,16 SEP 1981,ISV,1,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1172.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14283604,toplist
+16.0,11.13,0.1,Stephanie DURST,06 JAN 1982,USA,2,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1172.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14309424,toplist
+16.0,11.13,0.1,Muna LEE,30 OCT 1981,USA,3qf3,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1172.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14315186,toplist
+21.0,11.14,1.2,Marshevet HOOKER,25 SEP 1984,USA,2,,"National Stadium, Kingston (JAM)",02 MAY 2009,1169.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14312862,toplist
+21.0,11.14,1.4,Charonda WILLIAMS,27 MAR 1987,USA,1,,"Eugene, OR (USA)",17 MAY 2009,1169.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14324253,toplist
+21.0,11.14,1.4,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,2h3,,"Fayetteville, AR (USA)",10 JUN 2009,1169.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285727,toplist
+24.0,11.15,1.3,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,4f2,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1167.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285518,toplist
+24.0,11.15,0.2,Gloria ASUMNU,22 MAY 1985,USA,1,,Lapua (FIN),08 JUL 2009,1167.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14305055,toplist
+24.0,11.15,0.5,Sherone SIMPSON,12 AUG 1984,JAM,1,,Padova (ITA),30 AUG 2009,1167.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285909,toplist
+27.0,11.16,-1.5,Sheri-Ann BROOKS,11 FEB 1983,JAM,3,,Kingston (JAM),27 JUN 2009,1174.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285566,toplist
+27.0,11.16,0.0,Yevgeniya POLYAKOVA,29 MAY 1983,RUS,1sf1,,Cheboksary (RUS),24 JUL 2009,1165.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14298965,toplist
+27.0,11.16,-0.1,Blessing OKAGBARE,09 OCT 1988,NGR,1,,Abuja (NGR),24 JUL 2009,1165.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14292330,toplist
+30.0,11.17,0.8,Bianca KNIGHT,02 JAN 1989,USA,1f1,,"Oxford, MS (USA)",11 APR 2009,1163.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14314587,toplist
+31.0,11.18,1.4,Barbara PIERRE,28 APR 1987,HAI,1h2,,"San Angelo, TX (USA)",21 MAY 2009,1161.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14318999,toplist
+31.0,11.18,1.1,Semoy HACKETT,27 NOV 1988,TTO,1,,"San Angelo, TX (USA)",23 MAY 2009,1161.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14303004,toplist
+31.0,11.18,-0.3,Jessica YOUNG-WARREN,06 APR 1987,USA,2,,"Norman, OK (USA)",30 MAY 2009,1162.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14324854,toplist
+31.0,11.18,-0.2,Verena SAILER,16 OCT 1985,GER,1,,Ulm (GER),04 JUL 2009,1162.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14279480,toplist
+35.0,11.19,1.2,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,1,,Kingston (JAM),18 APR 2009,1159.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285586,toplist
+36.0,11.20,1.6,Kenyanna WILSON,27 OCT 1988,USA,3h1,,"Fayetteville, AR (USA)",10 JUN 2009,1157.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14324461,toplist
+36.0,11.20,1.6,LaKya BROOKINS,28 JUL 1989,USA,4h1,,"Fayetteville, AR (USA)",10 JUN 2009,1157.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14306486,toplist
+38.0,11.21,1.9,LaShauntea MOORE,31 JUL 1983,USA,1f1,,"Austin, TX (USA)",02 MAY 2009,1154.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14317320,toplist
+39.0,11.22,1.2,Virgil HODGE,17 NOV 1983,SKN,1,,Basseterre (SKN),21 JUN 2009,1152.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14300050,toplist
+39.0,11.22,0.8,Chalonda GOODMAN,29 SEP 1990,USA,1,,Port-of-Spain (TTO),31 JUL 2009,1152.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14311151,toplist
+41.0,11.23,1.9,Simone FACEY,07 MAY 1985,JAM,2f1,,"Austin, TX (USA)",02 MAY 2009,1150.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285672,toplist
+42.0,11.24,1.9,Chisato FUKUSHIMA,27 JUN 1988,JPN,1,,Tottori (JPN),07 JUN 2009,1148.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14286217,toplist
+42.0,11.24,-0.4,Marion WAGNER,01 FEB 1978,GER,1h3,,Ulm (GER),04 JUL 2009,1150.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14280166,toplist
+44.0,11.25,-0.8,Vida ANIM,07 DEC 1983,GHA,1,,Malles Venosta (ITA),28 JUN 2009,1150.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14280442,toplist
+45.0,11.26,1.9,Sally MCLELLAN,19 SEP 1986,AUS,1h1,,Brisbane (AUS),21 FEB 2009,1144.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14271668,toplist
+45.0,11.26,1.4,Svetlana NABOKINA,26 JAN 1982,RUS,1,,Bryansk (RUS),26 JUN 2009,1144.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14298690,toplist
+47.0,11.27,0.6,Torri EDWARDS,31 JAN 1977,USA,6h2,,"Stadio Olimpico, Roma (ITA)",10 JUL 2009,1142.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14309556,toplist
+47.0,11.27,0.0,Carrie RUSSELL,18 OCT 1990,JAM,3f1,,Luzern (SUI),15 JUL 2009,1142.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285894,toplist
+49.0,11.28,1.3,Carol RODRÍGUEZ,16 DEC 1985,PUR,8f2,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1139.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14295349,toplist
+49.0,11.28,0.1,Lucimar Aparecida DE MOURA,22 MAR 1974,BRA,1,,Rio de Janeiro (BRA),05 JUN 2009,1139.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14269205,toplist
+51.0,11.29,0.0,Courtney PATTERSON,10 FEB 1985,ISV,1,,"Clermont, FL (USA)",07 JUN 2009,1137.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14318613,toplist
+51.0,11.29,0.5,Olga PCHELA,13 OCT 1982,RUS,1h1,,Bryansk (RUS),26 JUN 2009,1137.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14298867,toplist
+51.0,11.29,0.1,Ezinne OKPARAEBO,03 MAR 1988,NOR,5f1,,"Bislett Stadion, Oslo (NOR)",03 JUL 2009,1137.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14292744,toplist
+54.0,11.30,1.3,Ebonie FLOYD,21 OCT 1983,USA,4,,Doha (QAT),08 MAY 2009,1135.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14310239,toplist
+54.0,11.30,0.0,Rachelle BOONE-SMITH,30 JUN 1981,USA,2,,"Mangueirão, Belém (BRA)",24 MAY 2009,1135.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14306134,toplist
+56.0,11.31,1.9,Jeneba TARMOH,27 SEP 1989,USA,3f1,,"Austin, TX (USA)",02 MAY 2009,1133.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14322457,toplist
+56.0,11.31,1.0,Guzel KHUBBIEVA,02 MAY 1976,UZB,1f1,,Suzhou (CHN),23 MAY 2009,1133.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14325026,toplist
+56.0,11.31,0.1,Oludamola OSAYOMI,26 JUN 1986,NGR,4,,"FBK Stadium, Hengelo (NED)",01 JUN 2009,1133.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14292505,toplist
+56.0,11.31,1.7,Ayanna HUTCHINSON,18 FEB 1978,TTO,3,,Port-of-Spain (TTO),19 JUN 2009,1133.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14303012,toplist
+56.0,11.31,-0.3,Lina GRINČIKAITĖ SAMUOLĖ,03 MAY 1987,LTU,1,,Beograd (SRB),08 JUL 2009,1134.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14290237,toplist
+56.0,11.31,1.4,Yekaterina BUTUSOVA,10 JAN 1984,RUS,1h7,,Cheboksary (RUS),23 JUL 2009,1133.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14297481,toplist
+62.0,11.32,1.9,Momoko TAKAHASHI,16 NOV 1988,JPN,2,,Tottori (JPN),07 JUN 2009,1131.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14288023,toplist
+63.0,11.33,1.1,Bettina MÜLLER-WEISSINA,12 JUL 1973,AUT,1h1,,Sofia (BUL),09 JUN 2009,1129.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14270835,toplist
+63.0,11.33,0.9,Emily FREEMAN,24 NOV 1980,GBR,1f3,,"Olympiastadion, Berlin (GER)",14 JUN 2009,1129.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14275081,toplist
+63.0,11.33,0.0,Natalia POHREBNIAK,19 FEB 1988,UKR,1,,Donetsk (UKR),02 JUL 2009,1129.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14304035,toplist
+66.0,11.34,1.9,Allison GEORGE,03 JAN 1988,GRN,4f1,,"Austin, TX (USA)",02 MAY 2009,1127.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14281035,toplist
+66.0,11.34,1.9,LaDedra GUY,16 NOV 1984,USA,4f1,,"Austin, TX (USA)",02 MAY 2009,1127.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14311650,toplist
+66.0,11.34,1.6,Joanna ATKINS,31 JAN 1989,USA,1h1,,"Gainesville, FL (USA)",16 MAY 2009,1127.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14305059,toplist
+66.0,11.34,1.0,Aksana DRAHUN,19 APR 1981,BLR,1f1,,Minsk (BLR),29 MAY 2009,1127.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14269935,toplist
+66.0,11.34,-0.2,Lisa SCHORR,30 MAY 1982,GER,3,,Ulm (GER),04 JUL 2009,1128.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14279653,toplist
+66.0,11.34,-0.4,Anne CIBIS,27 SEP 1985,GER,1h4,,Ulm (GER),04 JUL 2009,1129.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14278960,toplist
+66.0,11.34,1.0,Myriam SOUMARÉ,29 OCT 1986,FRA,1h3,,Angers (FRA),24 JUL 2009,1127.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14273961,toplist
+73.0,11.35,1.2,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,2,,Kingston (JAM),18 APR 2009,1125.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285805,toplist
+73.0,11.35,1.1,Cathleen TSCHIRCH,23 JUL 1979,GER,2h2,,Regensburg (GER),07 JUN 2009,1125.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14280079,toplist
+73.0,11.35,0.3,Yelena BOLSUN,25 JUN 1982,RUS,1h6,,Cheboksary (RUS),23 JUL 2009,1125.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14297427,toplist
+76.0,11.36,-0.7,Tsholofelo SELEMELA-THIPE,12 SEP 1986,RSA,1,,Stellenbosch (RSA),14 MAR 2009,1127.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14296850,toplist
+76.0,11.36,0.9,Tangela NEAL,07 APR 1979,USA,4f1,,"Coral Gables, FL (USA)",11 APR 2009,1123.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14317752,toplist
+76.0,11.36,1.1,Janika MARTELL,31 OCT 1985,JAM,3,,"San Angelo, TX (USA)",23 MAY 2009,1123.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285780,toplist
+76.0,11.36,2.0,Yuliya KATSURA,28 MAY 1983,RUS,1,,Krasnodar (RUS),09 JUN 2009,1123.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14298051,toplist
+76.0,11.36,0.9,Ashleigh NELSON,20 FEB 1991,GBR,2f3,,"Olympiastadion, Berlin (GER)",14 JUN 2009,1123.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14275890,toplist
+81.0,11.37,1.8,Sherry FLETCHER,17 JAN 1986,GRN,3f1,,"Baton Rouge, LA (USA)",18 APR 2009,1120.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14281033,toplist
+81.0,11.37,1.3,Georgia KOKLONI,07 MAY 1981,GRE,2sf1,,Pescara (ITA),01 JUL 2009,1120.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14280706,toplist
+81.0,11.37,0.0,Anna GEFLIKH,01 FEB 1983,RUS,1sf2,,Cheboksary (RUS),24 JUL 2009,1120.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14297775,toplist
+81.0,11.37,1.8,Adrienne POWER,11 DEC 1981,CAN,1,,Moncton (CAN),01 AUG 2009,1120.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14267353,toplist
+81.0,11.37,0.8,Eleni ARTYMATA,16 MAY 1986,CYP,5qf2,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1120.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14263333,toplist
+86.0,11.38,1.8,Cherrelle GARRETT,07 MAY 1989,USA,1h2,,"Eugene, OR (USA)",16 MAY 2009,1118.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14310750,toplist
+86.0,11.38,-0.4,Yasmin KWADWO,09 NOV 1990,GER,2h3,,Ulm (GER),04 JUL 2009,1120.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14278598,toplist
+86.0,11.38,0.2,Marika POPOWICZ-DRAPAŁA,28 APR 1988,POL,1f1,,Bydgoszcz (POL),31 JUL 2009,1118.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14294295,toplist
+86.0,11.38,0.8,Amber PURVIS,23 JAN 1990,USA,2,,Port-of-Spain (TTO),31 JUL 2009,1118.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14319382,toplist
+90.0,11.39,0.8,Sheniqua FERGUSON,24 NOV 1989,BAH,2f1,,"Oxford, MS (USA)",11 APR 2009,1116.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14270638,toplist
+90.0,11.39,1.8,Dominique' MALOY,18 APR 1989,USA,2h2,,"Eugene, OR (USA)",16 MAY 2009,1116.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14315929,toplist
+90.0,11.39,-0.3,Scottesha MILLER,14 JAN 1988,USA,7,,"Norman, OK (USA)",30 MAY 2009,1117.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14317043,toplist
+90.0,11.39,0.7,Jodie WILLIAMS,28 SEP 1993,GBR,1,,"Bressanone, Trentino-Alto Adige (ITA)",09 JUL 2009,1116.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14276757,toplist
+90.0,11.39,2.0,Sónia TAVARES,21 MAR 1986,POR,2,,Lisboa (POR),12 JUL 2009,1116.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14295124,toplist
+95.0,11.40,0.4,Laura TURNER,12 AUG 1982,GBR,1h1,,Bottrop (GER),26 JUN 2009,1114.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14276597,toplist
+95.0,11.40,-1.0,Emma ANIA,07 FEB 1979,GBR,3h2,,"Stadio Quercia, Rovereto (ITA)",01 SEP 2009,1120.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14274387,toplist
+97.0,11.41,1.1,Nandelle CAMERON,21 OCT 1983,TTO,4,,"San Angelo, TX (USA)",23 MAY 2009,1112.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14302981,toplist
+97.0,11.41,1.9,Jura Lanconia LEVY,04 NOV 1990,JAM,1,,Spanish Town (JAM),13 JUN 2009,1112.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14285765,toplist
+97.0,11.41,1.0,Montell DOUGLAS,24 JAN 1986,GBR,1f1,,La Chaux-de-Fonds (SUI),28 JUN 2009,1112.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14274921,toplist
+97.0,11.41,1.7,Felipa Alicia PALACIOS,01 DEC 1975,COL,2,,Bogotá (COL),24 JUL 2009,1112.0,women_100m,2009,https://worldathletics.org/athletes/athlete=14263952,toplist
+1.0,10.78,0.8,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1,,"Hayward Field, Eugene, OR (USA)",03 JUL 2010,1248.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285598,toplist
+2.0,10.82,0.4,Carmelita JETER,24 NOV 1979,USA,1,,"Stade Louis II, Monaco (MON)",22 JUL 2010,1239.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14313618,toplist
+3.0,10.84,1.8,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,1f1,,"Clermont, FL (USA)",05 JUN 2010,1235.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14302975,toplist
+4.0,10.90,1.8,Shalonda SOLOMON,19 DEC 1985,USA,2f1,,"Clermont, FL (USA)",05 JUN 2010,1222.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14321706,toplist
+5.0,10.96,1.4,Kerron STEWART,16 APR 1984,JAM,2,,Kingston (JAM),01 MAY 2010,1209.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285938,toplist
+6.0,10.97,1.2,LaShauntea MOORE,31 JUL 1983,USA,1,,Maringa (BRA),30 MAY 2010,1206.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14317320,toplist
+6.0,10.97,0.0,Marshevet HOOKER,25 SEP 1984,USA,3,,"Letzigrund, Zürich (SUI)",19 AUG 2010,1206.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14312862,toplist
+8.0,11.00,0.3,Blessing OKAGBARE,09 OCT 1988,NGR,1h1,,"Crystal Palace, London (GBR)",14 AUG 2010,1200.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14292330,toplist
+9.0,11.02,0.3,Sherone SIMPSON,12 AUG 1984,JAM,3,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1195.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285909,toplist
+10.0,11.04,1.8,Alexandria ANDERSON,28 JAN 1987,USA,3f1,,"Clermont, FL (USA)",05 JUN 2010,1191.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14304791,toplist
+11.0,11.05,1.7,Yelena NEVMERZHITSKAYA,27 JUL 1980,BLR,1,,Grodno (BLR),26 JUN 2010,1189.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14269713,toplist
+12.0,11.08,0.4,Sheri-Ann BROOKS,11 FEB 1983,JAM,1,,Baie Mahault (FRA),01 MAY 2010,1182.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285566,toplist
+13.0,11.10,-0.6,Verena SAILER,16 OCT 1985,GER,1,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1181.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14279480,toplist
+14.0,11.11,2.0,Laura TURNER,12 AUG 1982,GBR,1f1,,La Chaux-de-Fonds (SUI),04 JUL 2010,1176.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14276597,toplist
+14.0,11.11,-0.6,Véronique MANG,15 DEC 1984,FRA,2,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1179.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14272993,toplist
+16.0,11.13,2.0,Gabrielle MAYO,26 JAN 1989,USA,1,,"Austin, TX (USA)",03 APR 2010,1172.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14316298,toplist
+16.0,11.13,1.5,Chandra STURRUP,12 SEP 1971,BAH,1,,"Mestský Stadion, Ostrava (CZE)",27 MAY 2010,1172.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14270612,toplist
+18.0,11.14,1.2,Carrie RUSSELL,18 OCT 1990,JAM,3h1,,"International Stadium, Gateshead (GBR)",10 JUL 2010,1169.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285894,toplist
+19.0,11.15,0.4,Gloria ASUMNU,22 MAY 1985,USA,2,,Baie Mahault (FRA),01 MAY 2010,1167.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14305055,toplist
+19.0,11.15,1.8,Ruddy ZANG MILAMA,06 JUN 1987,GAB,2,,"Nyayo National Stadium, Nairobi (KEN)",29 JUL 2010,1167.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14274338,toplist
+19.0,11.15,0.6,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,2,,"Stadio Guidobaldi, Rieti (ITA)",29 AUG 2010,1167.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14270639,toplist
+19.0,11.15,1.4,Ana Claudia LEMOS,06 NOV 1988,BRA,1,,São Paulo (BRA),04 SEP 2010,1167.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14269001,toplist
+23.0,11.16,1.2,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,2,,Maringa (BRA),30 MAY 2010,1165.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285518,toplist
+23.0,11.16,1.4,Octavious FREEMAN,20 APR 1992,USA,1,,"Clermont, FL (USA)",12 JUN 2010,1165.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14335310,toplist
+25.0,11.17,0.9,Mikele BARBER,04 OCT 1980,USA,1,,"Bislett Stadion, Oslo (NOR)",04 JUN 2010,1163.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14305305,toplist
+25.0,11.17,2.0,Ashton PURVIS,12 JUL 1992,USA,1,,"Clovis, CA (USA)",05 JUN 2010,1163.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14319383,toplist
+27.0,11.18,2.0,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,2,,"Austin, TX (USA)",03 APR 2010,1161.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285727,toplist
+27.0,11.18,0.5,Porscha LUCAS,18 JUN 1988,USA,1f3,,"Austin, TX (USA)",28 MAY 2010,1161.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14315666,toplist
+27.0,11.18,-0.6,Myriam SOUMARÉ,29 OCT 1986,FRA,3,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1164.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14273961,toplist
+30.0,11.19,0.1,Jeneba TARMOH,27 SEP 1989,USA,1,,"Columbia, MO (USA)",16 MAY 2010,1159.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14322457,toplist
+30.0,11.19,1.1,Sheniqua FERGUSON,24 NOV 1989,BAH,1,,"Knoxville, TN (USA)",16 MAY 2010,1159.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14270638,toplist
+30.0,11.19,0.3,Aleen BAILEY,25 NOV 1980,JAM,4h1,,"Crystal Palace, London (GBR)",14 AUG 2010,1159.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285532,toplist
+33.0,11.20,0.8,Tianna MADISON,30 AUG 1985,USA,1,,Villeneuve d'Ascq (FRA),24 AUG 2010,1157.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14315831,toplist
+34.0,11.21,1.7,Chisato FUKUSHIMA,27 JUN 1988,JPN,1,,Hiroshima (JPN),29 APR 2010,1154.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14286217,toplist
+35.0,11.22,1.7,Yuliya KATSURA,28 MAY 1983,RUS,1,,Sochi (RUS),27 MAY 2010,1152.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14298051,toplist
+35.0,11.22,1.1,Kenyanna WILSON,27 OCT 1988,USA,2f3,,"Greensboro, NC (USA)",28 MAY 2010,1152.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14324461,toplist
+35.0,11.22,1.8,Oludamola OSAYOMI,26 JUN 1986,NGR,3,,"Nyayo National Stadium, Nairobi (KEN)",29 JUL 2010,1152.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14292505,toplist
+38.0,11.23,-0.6,Ezinne OKPARAEBO,03 MAR 1988,NOR,4,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1153.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14292744,toplist
+39.0,11.24,1.7,Anna GUROVA,29 APR 1981,RUS,2,,Sochi (RUS),27 MAY 2010,1148.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14297890,toplist
+39.0,11.24,0.8,Jodie WILLIAMS,28 SEP 1993,GBR,1,,Bedford (GBR),31 MAY 2010,1148.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14276757,toplist
+39.0,11.24,1.9,Georgia KOKLONI,07 MAY 1981,GRE,1h1,,Patra (GRE),12 JUN 2010,1148.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14280706,toplist
+42.0,11.25,1.7,Yuliya BALYKINA,12 APR 1984,BLR,2,,Grodno (BLR),26 JUN 2010,1146.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14303437,toplist
+42.0,11.25,1.0,Mariya RYEMYEN,02 AUG 1987,UKR,3sf1,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1146.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14304082,toplist
+44.0,11.26,1.1,Takeia PINCKNEY,24 JUL 1991,USA,2,,"Knoxville, TN (USA)",16 MAY 2010,1144.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14319020,toplist
+45.0,11.27,0.4,Semoy HACKETT,27 NOV 1988,TTO,1h1,,"Charlotte, NC (USA)",27 MAY 2010,1142.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14303004,toplist
+45.0,11.27,0.4,Yevgeniya POLYAKOVA,29 MAY 1983,RUS,1h2,,Yerino (RUS),11 JUN 2010,1142.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14298965,toplist
+45.0,11.27,-2.5,Allyson FELIX,18 NOV 1985,USA,1,,"Drake Stadium, Des Moines, IA (USA)",25 JUN 2010,1157.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14309983,toplist
+48.0,11.28,2.0,Jura Lanconia LEVY,04 NOV 1990,JAM,4,,"Austin, TX (USA)",03 APR 2010,1139.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285765,toplist
+48.0,11.28,0.9,Charonda WILLIAMS,27 MAR 1987,USA,1,,"Walnut, CA (USA)",17 APR 2010,1139.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14324253,toplist
+48.0,11.28,1.9,Terra EVANS,07 OCT 1989,USA,1f1,,"Norman, OK (USA)",24 APR 2010,1139.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14309825,toplist
+48.0,11.28,1.6,Yuna MEKHTI-ZADE,25 APR 1986,RUS,2,,Saransk (RUS),13 JUL 2010,1139.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14298594,toplist
+48.0,11.28,1.0,Sally PEARSON,19 SEP 1986,AUS,1sf3,,New Delhi (IND),07 OCT 2010,1139.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14271668,toplist
+53.0,11.29,0.6,Marecia PEMBERTON,07 JAN 1990,SKN,1f1,,"Greensboro, NC (USA)",28 MAY 2010,1137.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14300055,toplist
+53.0,11.29,0.2,Olesya POVH,18 OCT 1987,UKR,1f1,,Donetsk (UKR),01 JUL 2010,1137.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14304049,toplist
+55.0,11.30,1.9,Scottesha MILLER,14 JAN 1988,USA,2f1,,"Norman, OK (USA)",24 APR 2010,1135.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14317043,toplist
+55.0,11.30,0.3,Christine ARRON,13 SEP 1973,FRA,1sf1,,Valence (FRA),08 JUL 2010,1135.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14258727,toplist
+57.0,11.31,1.8,LaKya BROOKINS,28 JUL 1989,USA,3f1,,"Greensboro, NC (USA)",17 APR 2010,1133.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14306486,toplist
+57.0,11.31,1.1,Shayla MAHAN,18 JAN 1989,USA,1h6,,"Greensboro, NC (USA)",27 MAY 2010,1133.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14315866,toplist
+57.0,11.31,1.4,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,1h1,,Yerino (RUS),11 JUN 2010,1133.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14297674,toplist
+57.0,11.31,1.1,Trisha-Ann HAWTHORNE,08 NOV 1989,JAM,4,,Kingston (JAM),26 JUN 2010,1133.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14312225,toplist
+61.0,11.32,0.7,Erika RIVERA,11 NOV 1986,PUR,4f3,,Ponce (PUR),08 MAY 2010,1131.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14295341,toplist
+61.0,11.32,1.1,Michelle-Lee AHYE,10 APR 1992,TTO,1,,Port-of-Spain (TTO),26 JUN 2010,1131.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14302966,toplist
+61.0,11.32,1.7,Hrystyna STUY,03 FEB 1988,UKR,1,,Moskva (RUS),29 JUN 2010,1131.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14304242,toplist
+61.0,11.32,1.6,Joanna ATKINS,31 JAN 1989,USA,1,,Lapinlahti (FIN),18 JUL 2010,1131.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14305059,toplist
+65.0,11.33,0.0,Yasmin KWADWO,09 NOV 1990,GER,1,,Mannheim (GER),03 JUL 2010,1129.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14278598,toplist
+65.0,11.33,0.0,Anne CIBIS,27 SEP 1985,GER,1,,Mannheim (GER),03 JUL 2010,1129.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14278960,toplist
+65.0,11.33,0.3,Cydonie MOTHERSILL,19 MAR 1978,CAY,4,,Rethymno (GRE),07 JUL 2010,1129.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14266914,toplist
+65.0,11.33,,Agnes Osazuwa OLATUNJI,21 JUN 1990,NGR,2sf2,,"Nyayo National Stadium, Nairobi (KEN)",28 JUL 2010,1129.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14292504,toplist
+65.0,11.33,0.3,Natasha JOE-MAYERS,10 MAR 1979,VIN,1h1,,New Delhi (IND),06 OCT 2010,1129.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14325310,toplist
+70.0,11.34,1.0,Melissa BREEN,17 SEP 1990,AUS,1,,Canberra (AUS),20 MAR 2010,1127.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14272403,toplist
+70.0,11.34,1.2,Virginia CRAWFORD,07 SEP 1983,USA,1,,"Walnut, CA (USA)",17 APR 2010,1127.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14319237,toplist
+70.0,11.34,1.5,Consuella MOORE,29 AUG 1981,USA,1f1,,"Irvine, CA (USA)",02 MAY 2010,1127.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14317293,toplist
+70.0,11.34,1.9,Jenna PRANDINI,20 NOV 1992,USA,1h1,,"Clovis, CA (USA)",04 JUN 2010,1127.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14329068,toplist
+70.0,11.34,1.6,Yuliya KASHINA,26 FEB 1987,RUS,4,,Saransk (RUS),13 JUL 2010,1127.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14298047,toplist
+70.0,11.34,1.2,Guzel KHUBBIEVA,02 MAY 1976,UZB,2,,Guangzhou (CHN),22 NOV 2010,1127.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14325026,toplist
+76.0,11.35,1.7,Momoko TAKAHASHI,16 NOV 1988,JPN,2,,Hiroshima (JPN),29 APR 2010,1125.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14288023,toplist
+76.0,11.35,0.7,Me'Lisa BARBER,04 OCT 1980,USA,5f3,,Ponce (PUR),08 MAY 2010,1125.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14305304,toplist
+76.0,11.35,0.1,Tiffany TOWNSEND,14 JUN 1989,USA,2,,"Columbia, MO (USA)",16 MAY 2010,1125.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14322941,toplist
+76.0,11.35,1.6,Anna GEFLIKH,01 FEB 1983,RUS,5,,Saransk (RUS),13 JUL 2010,1125.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14297775,toplist
+76.0,11.35,1.1,Barbara PIERRE,28 APR 1987,USA,2,,Nuoro (ITA),14 JUL 2010,1125.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14318999,toplist
+76.0,11.35,1.0,Lina GRINČIKAITĖ SAMUOLĖ,03 MAY 1987,LTU,4sf1,,"Estadio Olímpico, Barcelona (ESP)",29 JUL 2010,1125.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14290237,toplist
+82.0,11.36,-1.8,Shareese WOODS,20 FEB 1985,USA,1f1,,"Orlando, FL (USA)",27 MAR 2010,1133.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14324669,toplist
+82.0,11.36,1.0,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,2f2,,Kingston (JAM),08 MAY 2010,1123.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285586,toplist
+82.0,11.36,0.6,Stormy KENDRICK,06 JAN 1991,USA,2f1,,"Greensboro, NC (USA)",28 MAY 2010,1123.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14314295,toplist
+85.0,11.37,2.0,Georgina NEMBHARD,24 NOV 1988,JAM,1f1,,"Athens, GA (USA)",10 APR 2010,1120.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14317823,toplist
+85.0,11.37,0.0,Shavon GREAVES,20 DEC 1988,USA,1f1,,"Columbus, OH (USA)",01 MAY 2010,1120.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14311336,toplist
+85.0,11.37,1.7,Ayanna HUTCHINSON,18 FEB 1978,TTO,3,,Port-of-Spain (TTO),26 JUN 2010,1120.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14303012,toplist
+88.0,11.38,2.0,Lamarra CURRIE,02 OCT 1987,USA,1,,"Chapel Hill, NC (USA)",08 MAY 2010,1118.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14308441,toplist
+88.0,11.38,0.3,Amber PURVIS,23 JAN 1990,USA,1,,"Berkeley, CA (USA)",16 MAY 2010,1118.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14319382,toplist
+88.0,11.38,1.8,Courtney PATTERSON,10 FEB 1985,ISV,4f1,,"Clermont, FL (USA)",05 JUN 2010,1118.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14318613,toplist
+88.0,11.38,1.9,Weronika WEDLER,17 JUL 1989,POL,1h1,,Bielsko-Biala (POL),08 JUL 2010,1118.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14294618,toplist
+88.0,11.38,1.6,Yelena CHERNYAYEVA,19 SEP 1988,RUS,6,,Saransk (RUS),13 JUL 2010,1118.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14298276,toplist
+93.0,11.39,0.9,Lekeisha LAWSON,03 JUN 1987,USA,2,,"Walnut, CA (USA)",17 APR 2010,1116.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14315112,toplist
+93.0,11.39,0.4,Nelky CASABONA,12 MAY 1984,CUB,1,,La Habana (CUB),21 MAY 2010,1116.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14263640,toplist
+93.0,11.39,2.0,Elaine O'NEILL,20 AUG 1989,GBR,3f1,,La Chaux-de-Fonds (SUI),04 JUL 2010,1116.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14275951,toplist
+96.0,11.40,2.0,Natasha HASTINGS,23 JUL 1986,USA,2f1,,"Athens, GA (USA)",10 APR 2010,1114.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14312172,toplist
+96.0,11.40,1.3,Josephine Ada OMAKA,29 NOV 1993,NGR,1h3,,Lagos (NGR),30 APR 2010,1114.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14329605,toplist
+96.0,11.40,1.6,Petrice RICHARDS,16 JUN 1984,JAM,1,,"Greensboro, NC (USA)",08 MAY 2010,1114.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14285872,toplist
+96.0,11.40,1.3,Chastity RIGGIEN,05 JUL 1989,USA,1h2,,"Orlando, FL (USA)",15 MAY 2010,1114.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14319913,toplist
+96.0,11.40,0.8,Kristy WHYTE,,BAH,2h1,,"Greensboro, NC (USA)",27 MAY 2010,1114.0,women_100m,2010,https://worldathletics.org/athletes/athlete=14324124,toplist
+1.0,10.70,2.0,Carmelita JETER,24 NOV 1979,USA,1,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1266.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14313618,toplist
+2.0,10.76,1.1,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1253.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285598,toplist
+3.0,10.86,2.0,Marshevet HOOKER,25 SEP 1984,USA,2,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1231.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14312862,toplist
+4.0,10.87,2.0,Kerron STEWART,16 APR 1984,JAM,3,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1228.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285938,toplist
+5.0,10.90,0.4,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,3,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1222.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14302975,toplist
+6.0,10.95,2.0,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,4,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1211.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285680,toplist
+7.0,10.96,0.8,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,1f1,,Sliven (BUL),02 JUL 2011,1209.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14268643,toplist
+8.0,10.99,1.8,Oludamola OSAYOMI,26 JUN 1986,NGR,1f1,,São Paulo (BRA),22 MAY 2011,1202.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14292505,toplist
+9.0,11.00,2.0,Sherone SIMPSON,12 AUG 1984,JAM,5,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1200.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285909,toplist
+10.0,11.01,1.8,Alexandria ANDERSON,28 JAN 1987,USA,2f1,,São Paulo (BRA),22 MAY 2011,1198.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14304791,toplist
+11.0,11.03,0.6,English GARDNER,22 APR 1992,USA,1,,"Tucson, AZ (USA)",14 MAY 2011,1193.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14310719,toplist
+12.0,11.05,1.7,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,1,,"FBK Stadium, Hengelo (NED)",29 MAY 2011,1189.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285586,toplist
+12.0,11.05,-0.7,Carrie RUSSELL,18 OCT 1990,JAM,1,,"National Stadium, Shenzhen (CHN)",17 AUG 2011,1193.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285894,toplist
+14.0,11.06,1.9,Murielle AHOURÉ,23 AUG 1987,CIV,1f1,,"Greensboro, NC (USA)",15 MAY 2011,1187.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14304569,toplist
+15.0,11.08,2.0,Blessing OKAGBARE,09 OCT 1988,NGR,7,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1182.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14292330,toplist
+15.0,11.08,1.5,Candyce MCGRONE,24 MAR 1989,USA,1,,"Des Moines, IA (USA)",10 JUN 2011,1182.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14316585,toplist
+15.0,11.08,0.4,Shalonda SOLOMON,19 DEC 1985,USA,4,,"Boudewijnstadion, Bruxelles (BEL)",16 SEP 2011,1182.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14321706,toplist
+18.0,11.09,1.1,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,2,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1180.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14270639,toplist
+18.0,11.09,1.5,Kimberlyn DUNCAN,02 AUG 1991,USA,2,,"Des Moines, IA (USA)",10 JUN 2011,1180.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14309365,toplist
+18.0,11.09,1.6,Mikele BARBER,04 OCT 1980,USA,2h1,,"Hayward Field, Eugene, OR (USA)",23 JUN 2011,1180.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14305305,toplist
+18.0,11.09,1.4,Ruddy ZANG MILAMA,06 JUN 1987,GAB,1,,Albi (FRA),29 JUL 2011,1180.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14274338,toplist
+22.0,11.10,0.1,LaKya BROOKINS,28 JUL 1989,USA,1,,"Auburn, AL (USA)",16 APR 2011,1178.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14306486,toplist
+22.0,11.10,0.3,Jura Lanconia LEVY,04 NOV 1990,JAM,3,,Kingston (JAM),24 JUN 2011,1178.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285765,toplist
+24.0,11.11,1.4,Véronique MANG,15 DEC 1984,FRA,2,,Albi (FRA),29 JUL 2011,1176.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14272993,toplist
+25.0,11.12,1.1,Aurieyall SCOTT,18 MAY 1992,USA,1,,"Eugene, OR (USA)",24 JUN 2011,1174.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14366294,toplist
+26.0,11.14,1.5,Jessica YOUNG-WARREN,06 APR 1987,USA,3,,"Des Moines, IA (USA)",10 JUN 2011,1169.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14324854,toplist
+26.0,11.14,2.0,Barbara PIERRE,28 APR 1987,USA,1f1,,"Clermont, FL (USA)",11 JUN 2011,1169.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14318999,toplist
+28.0,11.15,2.0,Lauryn WILLIAMS,11 SEP 1983,USA,8,,"Hayward Field, Eugene, OR (USA)",04 JUN 2011,1167.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14324318,toplist
+28.0,11.15,1.8,Aleen BAILEY,25 NOV 1980,JAM,2h1,,Kingston (JAM),24 JUN 2011,1167.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285532,toplist
+28.0,11.15,1.6,Jeanette KWAKYE,20 MAR 1983,GBR,1f1,,La Chaux-de-Fonds (SUI),03 JUL 2011,1167.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14275544,toplist
+31.0,11.17,0.1,Sheniqua FERGUSON,24 NOV 1989,BAH,2,,"Auburn, AL (USA)",16 APR 2011,1163.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14270638,toplist
+31.0,11.17,-0.1,Semoy HACKETT,27 NOV 1988,TTO,1h2,,"Athens, GA (USA)",14 MAY 2011,1163.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14303004,toplist
+31.0,11.17,-1.2,Natalia POHREBNIAK,19 FEB 1988,UKR,1h3,,Yalta (UKR),30 MAY 2011,1170.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14304035,toplist
+31.0,11.17,1.6,LaShauntea MOORE,31 JUL 1983,USA,3sf1,,"Hayward Field, Eugene, OR (USA)",24 JUN 2011,1163.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14317320,toplist
+31.0,11.17,1.4,Myriam SOUMARÉ,29 OCT 1986,FRA,3,,Albi (FRA),29 JUL 2011,1163.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14273961,toplist
+36.0,11.18,1.6,Anyika ONUORA,28 OCT 1984,GBR,1,,Zeulenroda (GER),29 MAY 2011,1161.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14275975,toplist
+36.0,11.18,0.5,Jodie WILLIAMS,28 SEP 1993,GBR,1,,"Kadrioru staadion, Tallinn (EST)",22 JUL 2011,1161.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14276757,toplist
+38.0,11.19,1.0,Ana Claudia LEMOS,06 NOV 1988,BRA,1h1,,São Paulo (BRA),26 MAR 2011,1159.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14269001,toplist
+38.0,11.19,,Tiffany TOWNSEND,14 JUN 1989,USA,2,,"Des Moines, IA (USA)",30 APR 2011,1159.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14322941,toplist
+38.0,11.19,0.6,Jessica DAVIS,31 OCT 1992,USA,2,,"Tucson, AZ (USA)",14 MAY 2011,1159.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14308683,toplist
+38.0,11.19,0.5,Gloria ASUMNU,22 MAY 1985,USA,2,,Rio de Janeiro (BRA),26 MAY 2011,1159.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14305055,toplist
+38.0,11.19,1.6,Kenyanna WILSON,27 OCT 1988,USA,4sf1,,"Hayward Field, Eugene, OR (USA)",24 JUN 2011,1159.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14324461,toplist
+38.0,11.19,1.2,Dafne SCHIPPERS,15 JUN 1992,NED,1f1,,Mannheim (GER),13 AUG 2011,1159.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14291986,toplist
+38.0,11.19,-2.2,Kai SELVON,13 APR 1992,TTO,1,,Port-of-Spain (TTO),13 AUG 2011,1172.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14303044,toplist
+45.0,11.20,1.5,Shayla MAHAN,18 JAN 1989,USA,1f2,,"Columbia, SC (USA)",26 MAR 2011,1157.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14315866,toplist
+45.0,11.20,0.5,Sally PEARSON,19 SEP 1986,AUS,1,,Perth (AUS),31 MAR 2011,1157.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14271668,toplist
+45.0,11.20,-1.2,Inna EFTIMOVA,19 JUN 1988,BUL,1,,Plovdiv (BUL),09 JUL 2011,1164.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14268718,toplist
+45.0,11.20,-2.2,Michelle-Lee AHYE,10 APR 1992,TTO,2,,Port-of-Spain (TTO),13 AUG 2011,1170.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14302966,toplist
+49.0,11.21,0.6,Amber PURVIS,23 JAN 1990,USA,3,,"Tucson, AZ (USA)",14 MAY 2011,1154.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14319382,toplist
+49.0,11.21,1.9,Rachelle BOONE-SMITH,30 JUN 1981,USA,2f1,,"Greensboro, NC (USA)",15 MAY 2011,1154.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14306134,toplist
+49.0,11.21,0.3,Octavious FREEMAN,20 APR 1992,USA,1,,"Orlando, FL (USA)",28 MAY 2011,1154.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14335310,toplist
+49.0,11.21,2.0,Scottesha MILLER,14 JAN 1988,USA,2f1,,"Clermont, FL (USA)",11 JUN 2011,1154.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14317043,toplist
+49.0,11.21,0.4,Mariya RYEMYEN,02 AUG 1987,UKR,1,,Strasbourg (FRA),12 JUN 2011,1154.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14304082,toplist
+49.0,11.21,1.4,Ezinne OKPARAEBO,03 MAR 1988,NOR,3h2,,"DS, Daegu (KOR)",28 AUG 2011,1154.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14292744,toplist
+55.0,11.22,0.2,Bianca KNIGHT,02 JAN 1989,USA,3f2,,Ponce (PUR),14 MAY 2011,1152.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14314587,toplist
+55.0,11.22,-0.2,Rosângela SANTOS,20 DEC 1990,BRA,1,,Guadalajara (MEX),25 OCT 2011,1153.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14268928,toplist
+57.0,11.23,1.6,Jeneba TARMOH,27 SEP 1989,USA,4h1,,"Hayward Field, Eugene, OR (USA)",23 JUN 2011,1150.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14322457,toplist
+57.0,11.23,0.1,Laura TURNER,12 AUG 1982,GBR,1,,Bedford (GBR),16 JUL 2011,1150.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14276597,toplist
+59.0,11.24,0.4,Olesya POVH,18 OCT 1987,UKR,2,,Strasbourg (FRA),12 JUN 2011,1148.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14304049,toplist
+59.0,11.24,-0.3,Chisato FUKUSHIMA,27 JUN 1988,JPN,1f1,,Tottori (JPN),26 JUN 2011,1149.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14286217,toplist
+61.0,11.26,1.8,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,4f1,,São Paulo (BRA),22 MAY 2011,1144.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285518,toplist
+61.0,11.26,-0.2,Shakera REECE,31 AUG 1988,BAR,3,,Guadalajara (MEX),25 OCT 2011,1145.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14270549,toplist
+63.0,11.27,1.9,Cydonie MOTHERSILL,19 MAR 1978,CAY,1,,"Atlanta, GA (USA)",05 JUN 2011,1142.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14266914,toplist
+64.0,11.28,1.4,Carima LOUAMI,12 MAY 1979,FRA,4,,Albi (FRA),29 JUL 2011,1139.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14256577,toplist
+64.0,11.28,0.5,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,3h7,,"DS, Daegu (KOR)",28 AUG 2011,1139.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14297674,toplist
+66.0,11.29,0.6,Jasmine BALDWIN-FOSS,27 SEP 1986,USA,1f1,,"Los Angeles, CA (USA)",07 MAY 2011,1137.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14305243,toplist
+66.0,11.29,1.8,Christina MANNING,29 MAY 1990,USA,1,,"Iowa City, IA (USA)",15 MAY 2011,1137.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14363368,toplist
+66.0,11.29,0.6,Tianna MADISON,30 AUG 1985,USA,1h2,,"Clermont, FL (USA)",21 MAY 2011,1137.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14315831,toplist
+66.0,11.29,1.0,Yasmin KWADWO,09 NOV 1990,GER,1f1,,Weinheim (GER),28 MAY 2011,1137.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14278598,toplist
+70.0,11.30,1.9,Simone FACEY,07 MAY 1985,JAM,8,,"National Stadium, Kingston (JAM)",07 MAY 2011,1135.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285672,toplist
+70.0,11.30,2.0,Joanna ATKINS,31 JAN 1989,USA,2,,Rethymno (GRE),13 JUL 2011,1135.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14305059,toplist
+70.0,11.30,0.0,Yuliya GUSHCHINA,04 MAR 1983,RUS,1h3,,Cheboksary (RUS),21 JUL 2011,1135.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14297898,toplist
+70.0,11.30,-2.2,Ayanna HUTCHINSON,18 FEB 1978,TTO,3,,Port-of-Spain (TTO),13 AUG 2011,1148.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14303012,toplist
+74.0,11.31,0.9,Trisha-Ann HAWTHORNE,08 NOV 1989,JAM,1f1,,"Storrs, CT (USA)",09 APR 2011,1133.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14312225,toplist
+74.0,11.31,-0.1,Consuella MOORE,29 AUG 1981,USA,2,,"Walnut, CA (USA)",16 APR 2011,1133.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14317293,toplist
+74.0,11.31,1.7,Stephanie DURST,06 JAN 1982,USA,5,,"FBK Stadium, Hengelo (NED)",29 MAY 2011,1133.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14309424,toplist
+74.0,11.31,2.0,Toyin OLUPONA,29 JAN 1983,CAN,3f1,,"Clermont, FL (USA)",11 JUN 2011,1133.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14267427,toplist
+74.0,11.31,2.0,Nickesha WILLIAMS,02 APR 1987,USA,3f1,,"Clermont, FL (USA)",11 JUN 2011,1133.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14324340,toplist
+79.0,11.32,0.9,Endurance ABINUWA,31 JUL 1987,NGR,2f1,,"El Paso, TX (USA)",16 APR 2011,1131.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14292313,toplist
+79.0,11.32,0.6,Dominique DUNCAN,07 MAY 1990,USA,1h3,,"Norman, OK (USA)",14 MAY 2011,1131.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14309360,toplist
+79.0,11.32,1.4,Céline DISTEL-BONNET,25 JUL 1987,FRA,5,,Albi (FRA),29 JUL 2011,1131.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14257742,toplist
+82.0,11.33,1.9,Marta JESCHKE,02 JUN 1986,POL,1,,Kraków (POL),12 JUN 2011,1129.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14293783,toplist
+82.0,11.33,1.6,Leena GÜNTHER,16 APR 1991,GER,1er2,,Mannheim (GER),13 AUG 2011,1129.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14277843,toplist
+84.0,11.34,0.6,Marecia PEMBERTON,07 JAN 1990,SKN,1f1,,"Tallahassee, FL (USA)",09 APR 2011,1127.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14300055,toplist
+84.0,11.34,1.9,Chelsea HAYES,09 FEB 1988,USA,1h1,,"Honolulu, HI (USA)",12 MAY 2011,1127.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14941407,toplist
+84.0,11.34,1.3,Chastity RIGGIEN,05 JUL 1989,USA,3h4,,"Hayward Field, Eugene, OR (USA)",23 JUN 2011,1127.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14319913,toplist
+84.0,11.34,1.8,Andreea Luiza OGRĂZEANU,24 MAR 1990,ROU,1,,Bucureşti (ROU),29 JUN 2011,1127.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14295803,toplist
+84.0,11.34,-0.7,Nelky CASABONA,12 MAY 1984,CUB,1,,Barquisimeto (VEN),27 JUL 2011,1131.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14263640,toplist
+84.0,11.34,1.4,Ayodelé IKUESAN,15 MAY 1985,FRA,6,,Albi (FRA),29 JUL 2011,1127.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14257067,toplist
+84.0,11.34,-0.7,Hrystyna STUY,03 FEB 1988,UKR,2,,"National Stadium, Shenzhen (CHN)",17 AUG 2011,1131.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14304242,toplist
+91.0,11.35,2.0,Dominique WARD-HOLMES,25 JUN 1986,USA,1f4,,"Nashville, TN (USA)",09 APR 2011,1125.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14323638,toplist
+91.0,11.35,1.1,Sheila PAUL,30 SEP 1989,USA,2,,"Houston, TX (USA)",15 MAY 2011,1125.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14318639,toplist
+91.0,11.35,1.7,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,2h1,,"Clermont, FL (USA)",21 MAY 2011,1125.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14285727,toplist
+91.0,11.35,1.2,Grecia BOLTON,02 OCT 1989,USA,1h4,,"Eugene, OR (USA)",26 MAY 2011,1125.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14306099,toplist
+91.0,11.35,1.0,Marion WAGNER,01 FEB 1978,GER,2f1,,Weinheim (GER),28 MAY 2011,1125.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14280166,toplist
+91.0,11.35,0.0,Darya PIZHANKOVA,09 JAN 1990,UKR,2f2,,Yalta (UKR),30 MAY 2011,1125.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14373175,toplist
+91.0,11.35,2.0,Weronika WEDLER,17 JUL 1989,POL,1h3,,Sosnowiec (POL),11 JUN 2011,1125.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14294618,toplist
+98.0,11.36,-0.1,Virginia CRAWFORD,07 SEP 1983,USA,3,,"Walnut, CA (USA)",16 APR 2011,1123.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14319237,toplist
+98.0,11.36,1.6,Yongli WEI,11 OCT 1991,CHN,1,,Nanchang (CHN),16 JUL 2011,1123.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14423021,toplist
+98.0,11.36,1.2,Charonda WILLIAMS,27 MAR 1987,USA,1,,Lapinlahti (FIN),24 JUL 2011,1123.0,women_100m,2011,https://worldathletics.org/athletes/athlete=14324253,toplist
+1.0,10.70,0.6,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1,,Kingston (JAM),29 JUN 2012,1266.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285680,toplist
+2.0,10.78,1.5,Carmelita JETER,24 NOV 1979,USA,2,,"Olympic Stadium, London (GBR)",04 AUG 2012,1248.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14313618,toplist
+3.0,10.81,1.5,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,3,,"Olympic Stadium, London (GBR)",04 AUG 2012,1242.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285598,toplist
+4.0,10.85,1.5,Tianna MADISON,30 AUG 1985,USA,4,,"Olympic Stadium, London (GBR)",04 AUG 2012,1233.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14315831,toplist
+5.0,10.86,1.0,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,2,,"National Stadium, Kingston (JAM)",05 MAY 2012,1231.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14302975,toplist
+6.0,10.89,1.5,Allyson FELIX,18 NOV 1985,USA,5,,"Olympic Stadium, London (GBR)",04 AUG 2012,1224.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14309983,toplist
+7.0,10.92,1.0,Blessing OKAGBARE,09 OCT 1988,NGR,1sf3,,"Olympic Stadium, London (GBR)",04 AUG 2012,1217.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14292330,toplist
+8.0,10.94,0.6,Kerron STEWART,16 APR 1984,JAM,3,,Kingston (JAM),29 JUN 2012,1213.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285938,toplist
+9.0,10.96,1.9,Kimberlyn DUNCAN,02 AUG 1991,USA,1,,"Baton Rouge, LA (USA)",13 MAY 2012,1209.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14309365,toplist
+10.0,10.99,1.3,Murielle AHOURÉ,23 AUG 1987,CIV,1h7,,"Olympic Stadium, London (GBR)",03 AUG 2012,1202.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14304569,toplist
+11.0,11.01,1.9,Ashley COLLIER,04 FEB 1992,USA,1,,"Manhattan, KS (USA)",13 MAY 2012,1198.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14307904,toplist
+11.0,11.01,0.6,Sherone SIMPSON,12 AUG 1984,JAM,4,,Kingston (JAM),29 JUN 2012,1198.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285909,toplist
+13.0,11.03,1.1,Ruddy ZANG MILAMA,06 JUN 1987,GAB,1,,Port-of-Spain (TTO),19 MAY 2012,1193.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14274338,toplist
+14.0,11.04,1.5,Aleen BAILEY,25 NOV 1980,JAM,2h3,,Kingston (JAM),29 JUN 2012,1191.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285532,toplist
+15.0,11.05,1.3,Sheri-Ann BROOKS,11 FEB 1983,JAM,1,,Edmonton (CAN),16 JUN 2012,1189.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285566,toplist
+15.0,11.05,0.6,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,5,,Kingston (JAM),29 JUN 2012,1189.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285586,toplist
+15.0,11.05,1.4,Verena SAILER,16 OCT 1985,GER,1f1,,Weinheim (GER),27 JUL 2012,1189.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14279480,toplist
+18.0,11.06,1.7,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,1h2,,"Olympiastadion, Helsinki (FIN)",27 JUN 2012,1187.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14268643,toplist
+19.0,11.07,0.9,Sheniqua FERGUSON,24 NOV 1989,BAH,1,,"Auburn, AL (USA)",21 APR 2012,1185.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14270638,toplist
+19.0,11.07,0.9,Jeneba TARMOH,27 SEP 1989,USA,3,,"Hayward Field, Eugene, OR (USA)",23 JUN 2012,1185.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14322457,toplist
+19.0,11.07,0.4,Myriam SOUMARÉ,29 OCT 1986,FRA,2h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1185.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14273961,toplist
+19.0,11.07,1.3,LaVerne JONES-FERRETTE,16 SEP 1981,ISV,2h7,,"Olympic Stadium, London (GBR)",03 AUG 2012,1185.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14283604,toplist
+23.0,11.08,1.2,Olesya POVH,18 OCT 1987,UKR,1,,Yalta (UKR),04 JUN 2012,1182.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14304049,toplist
+24.0,11.09,1.5,Octavious FREEMAN,20 APR 1992,USA,1,,"New Orleans, LA (USA)",13 MAY 2012,1180.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14335310,toplist
+25.0,11.10,1.9,Semoy HACKETT,27 NOV 1988,TTO,2,,"Baton Rouge, LA (USA)",13 MAY 2012,1178.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14303004,toplist
+25.0,11.10,1.8,English GARDNER,22 APR 1992,USA,1h3,,"Des Moines, IA (USA)",06 JUN 2012,1178.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14310719,toplist
+25.0,11.10,1.2,Ezinne OKPARAEBO,03 MAR 1988,NOR,4sf2,,"Olympic Stadium, London (GBR)",04 AUG 2012,1178.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14292744,toplist
+28.0,11.11,0.2,LaShauntea MOORE,31 JUL 1983,USA,1,,Baie Mahault (FRA),01 MAY 2012,1176.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14317320,toplist
+28.0,11.11,0.6,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,6,,Kingston (JAM),29 JUN 2012,1176.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285727,toplist
+30.0,11.12,0.7,Olga SAFRONOVA,05 NOV 1991,KAZ,1,,Tashkent (UZB),01 JUN 2012,1174.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14288586,toplist
+30.0,11.12,1.4,Alexandria ANDERSON,28 JAN 1987,USA,1sf2,,"Hayward Field, Eugene, OR (USA)",23 JUN 2012,1174.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14304791,toplist
+32.0,11.13,0.7,Mikele BARBER,04 OCT 1980,USA,6,,"Suhaim bin Hamad Stadium, Doha (QAT)",11 MAY 2012,1172.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14305305,toplist
+32.0,11.13,-0.3,Gloria ASUMNU,22 MAY 1985,NGR,2,,Calabar (NGR),21 JUN 2012,1173.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14305055,toplist
+32.0,11.13,1.4,Bianca KNIGHT,02 JAN 1989,USA,2sf2,,"Hayward Field, Eugene, OR (USA)",23 JUN 2012,1172.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14314587,toplist
+32.0,11.13,0.1,Charonda WILLIAMS,27 MAR 1987,USA,3f1,,Luzern (SUI),17 JUL 2012,1172.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14324253,toplist
+36.0,11.15,1.8,Chelsea HAYES,09 FEB 1988,USA,2h3,,"Des Moines, IA (USA)",06 JUN 2012,1167.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14941407,toplist
+36.0,11.15,1.4,Lauryn WILLIAMS,11 SEP 1983,USA,3sf2,,"Hayward Field, Eugene, OR (USA)",23 JUN 2012,1167.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14324318,toplist
+38.0,11.17,1.9,Allison PETER,14 JUL 1992,ISV,2,,"Manhattan, KS (USA)",13 MAY 2012,1163.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14283608,toplist
+38.0,11.17,1.4,Anne CIBIS,27 SEP 1985,GER,2f1,,Weinheim (GER),27 JUL 2012,1163.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14278960,toplist
+38.0,11.17,0.0,Rosângela SANTOS,20 DEC 1990,BRA,3sf1,,"Olympic Stadium, London (GBR)",04 AUG 2012,1163.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14268928,toplist
+41.0,11.18,2.0,Tameka WILLIAMS,31 AUG 1989,SKN,1f6,,"San Marcos, TX (USA)",28 APR 2012,1161.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14300061,toplist
+42.0,11.19,1.5,Michelle-Lee AHYE,10 APR 1992,TTO,2,,"Walnut, CA (USA)",21 APR 2012,1159.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14302966,toplist
+42.0,11.19,1.7,Tatjana PINTO,02 JUL 1992,GER,1h5,,Weinheim (GER),26 MAY 2012,1159.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14279214,toplist
+42.0,11.19,-0.3,Lawretta OZOH,05 SEP 1990,NGR,3,,Calabar (NGR),21 JUN 2012,1160.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14388488,toplist
+42.0,11.19,1.6,Aurieyall SCOTT,18 MAY 1992,USA,1,,Irapuato (MEX),06 JUL 2012,1159.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14366294,toplist
+42.0,11.19,1.5,Lina GRINČIKAITĖ SAMUOLĖ,03 MAY 1987,LTU,4h3,,"Olympic Stadium, London (GBR)",03 AUG 2012,1159.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14290237,toplist
+47.0,11.20,1.5,Me'Lisa BARBER,04 OCT 1980,USA,3,,"Walnut, CA (USA)",21 APR 2012,1157.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14305304,toplist
+47.0,11.20,1.5,Chastity RIGGIEN,05 JUL 1989,USA,1f1,,"Hattiesburg, MS (USA)",28 APR 2012,1157.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14319913,toplist
+47.0,11.20,2.0,Natalia POHREBNIAK,19 FEB 1988,UKR,1sf3,,Yalta (UKR),12 JUN 2012,1157.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14304035,toplist
+47.0,11.20,-1.2,Sally PEARSON,19 SEP 1986,AUS,1f1,,Nivelles (BEL),23 JUN 2012,1164.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14271668,toplist
+47.0,11.20,1.5,Jura Lanconia LEVY,04 NOV 1990,JAM,4h3,,Kingston (JAM),29 JUN 2012,1157.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285765,toplist
+47.0,11.20,1.7,Anthonique STRACHAN,22 AUG 1993,BAH,1,,"Estadio Olímpico, Barcelona (ESP)",11 JUL 2012,1157.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14368117,toplist
+47.0,11.20,0.6,Mariya RYEMYEN,02 AUG 1987,UKR,1,,Rovereto (ITA),04 SEP 2012,1157.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14304082,toplist
+54.0,11.21,1.2,Abiodun OYEPITAN,30 DEC 1979,GBR,1h1,,"Orlando, FL (USA)",26 MAY 2012,1154.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14275991,toplist
+54.0,11.21,1.8,Kai SELVON,13 APR 1992,TTO,3h3,,"Des Moines, IA (USA)",06 JUN 2012,1154.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14303044,toplist
+56.0,11.22,1.2,Tiffany TOWNSEND,14 JUN 1989,USA,2f1,,"Gainesville, FL (USA)",06 APR 2012,1152.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14322941,toplist
+56.0,11.22,0.6,Trisha-Ann HAWTHORNE,08 NOV 1989,JAM,1,,"New York, NY (USA)",30 MAY 2012,1152.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14312225,toplist
+56.0,11.22,1.4,Leslie COLE,16 FEB 1987,USA,1f1,,"Los Angeles, CA (USA)",02 JUN 2012,1152.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14307858,toplist
+56.0,11.22,1.5,Guzel KHUBBIEVA,02 MAY 1976,UZB,3h6,,"Olympic Stadium, London (GBR)",03 AUG 2012,1152.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14325026,toplist
+60.0,11.24,1.5,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,1f1,,Kingston (JAM),26 MAY 2012,1148.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285805,toplist
+60.0,11.24,1.4,Carrie RUSSELL,18 OCT 1990,JAM,5h1,,"Crystal Palace, London (GBR)",14 JUL 2012,1148.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285894,toplist
+62.0,11.25,1.1,Phylicia GEORGE,16 NOV 1987,CAN,4,,Port-of-Spain (TTO),19 MAY 2012,1146.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14310864,toplist
+63.0,11.26,-1.8,Shalonda SOLOMON,19 DEC 1985,USA,1f1,,"Coral Gables, FL (USA)",14 APR 2012,1154.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14321706,toplist
+63.0,11.26,1.0,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,7,,"National Stadium, Kingston (JAM)",05 MAY 2012,1144.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14270639,toplist
+63.0,11.26,1.7,Olga BELKINA,23 AUG 1990,RUS,2h2,,"Olympiastadion, Helsinki (FIN)",27 JUN 2012,1144.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14297344,toplist
+63.0,11.26,1.0,Tezdzhan NAIMOVA,01 MAY 1987,BUL,3,,"Stadio Guidobaldi, Rieti (ITA)",09 SEP 2012,1144.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14268617,toplist
+67.0,11.27,1.0,Christine ARRON,13 SEP 1973,FRA,1h2,,Angers (FRA),16 JUN 2012,1142.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14258727,toplist
+67.0,11.27,2.0,Melissa BREEN,17 SEP 1990,AUS,2f2,,Luzern (SUI),17 JUL 2012,1142.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14272403,toplist
+69.0,11.28,1.0,Tori BOWIE,27 AUG 1990,USA,2f1,,"Baton Rouge, LA (USA)",21 APR 2012,1139.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14360382,toplist
+69.0,11.28,0.4,Alexis LOVE,24 APR 1991,USA,1,,"Cape Girardeau, MO (USA)",05 MAY 2012,1139.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14407555,toplist
+69.0,11.28,1.9,Paris DANIELS,25 JAN 1990,USA,3,,"Manhattan, KS (USA)",13 MAY 2012,1139.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14308570,toplist
+72.0,11.29,1.0,Dezerea BRYANT,27 APR 1993,USA,1,,"Charlottesville, VA (USA)",21 APR 2012,1137.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14375109,toplist
+72.0,11.29,1.2,Cleo VANBUREN,01 MAY 1986,USA,1f2,,"Clermont, FL (USA)",02 JUN 2012,1137.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14323118,toplist
+74.0,11.30,0.6,Ana Claudia LEMOS,06 NOV 1988,BRA,1h1,,São Paulo (BRA),03 MAR 2012,1135.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14269001,toplist
+74.0,11.30,2.0,Dominique DUNCAN,07 MAY 1990,USA,1h3,,"Austin, TX (USA)",28 MAR 2012,1135.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14309360,toplist
+74.0,11.30,1.9,Darshay DAVIS,23 SEP 1991,USA,3,,"Baton Rouge, LA (USA)",13 MAY 2012,1135.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14371024,toplist
+74.0,11.30,0.4,Reyare THOMAS,23 NOV 1987,TTO,1,,"Levelland, TX (USA)",17 MAY 2012,1135.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14303055,toplist
+74.0,11.30,0.4,Cathleen TSCHIRCH,23 JUL 1979,GER,1h2,,Jena (GER),19 MAY 2012,1135.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14280079,toplist
+74.0,11.30,0.3,Yuliya CHERMOSHANSKAYA,06 JAN 1986,RUS,1,,Yerino (RUS),14 JUL 2012,1135.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14297516,toplist
+74.0,11.30,0.5,Viktoriya KASHEYEVA,07 MAY 1989,UKR,,,Albi (FRA),15 AUG 2012,1135.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14304071,toplist
+81.0,11.31,1.5,Laura TURNER,12 AUG 1982,GBR,4,,"Walnut, CA (USA)",21 APR 2012,1133.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14276597,toplist
+81.0,11.31,1.5,Oludamola OSAYOMI,26 JUN 1986,NGR,5,,"Walnut, CA (USA)",21 APR 2012,1133.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14292505,toplist
+81.0,11.31,1.1,Anyika ONUORA,28 OCT 1984,GBR,3f1,,Regensburg (GER),02 JUN 2012,1133.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14275975,toplist
+81.0,11.31,1.4,Lekeisha LAWSON,03 JUN 1987,USA,2f1,,"Los Angeles, CA (USA)",02 JUN 2012,1133.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14315112,toplist
+85.0,11.32,2.0,Simone FACEY,07 MAY 1985,JAM,1f1,,"Orlando, FL (USA)",24 MAR 2012,1131.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14285672,toplist
+85.0,11.32,1.2,Véronique MANG,15 DEC 1984,FRA,1,,Montgeron (FRA),13 MAY 2012,1131.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14272993,toplist
+85.0,11.32,0.3,Kateřina ČECHOVÁ,21 MAR 1988,CZE,1,,Vyškov (CZE),16 JUN 2012,1131.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14263180,toplist
+85.0,11.32,-1.0,Natalya RUSAKOVA,12 DEC 1979,RUS,1sf1,,Cheboksary (RUS),04 JUL 2012,1137.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14298302,toplist
+85.0,11.32,0.4,Andreea Luiza OGRĂZEANU,24 MAR 1990,ROU,1h1,,Bucureşti (ROU),05 JUL 2012,1131.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14295803,toplist
+90.0,11.33,-0.1,Shayla SANDERS,06 JAN 1994,USA,1,,"Fort Lauderdale, FL (USA)",24 MAR 2012,1129.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14405076,toplist
+90.0,11.33,2.0,Tawanna MEADOWS,04 AUG 1986,USA,2f6,,"San Marcos, TX (USA)",28 APR 2012,1129.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14316787,toplist
+90.0,11.33,1.7,Cambrya JONES,20 SEP 1990,USA,4h2,,"Des Moines, IA (USA)",06 JUN 2012,1129.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14360397,toplist
+90.0,11.33,0.9,Nimet KARAKUŞ,23 JAN 1993,TUR,1,,Eskisehir (TUR),23 JUN 2012,1129.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14373643,toplist
+94.0,11.34,1.5,Agnes Osazuwa OLATUNJI,21 JUN 1990,NGR,6,,"Walnut, CA (USA)",21 APR 2012,1127.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14292504,toplist
+94.0,11.34,0.3,Chisato FUKUSHIMA,27 JUN 1988,JPN,1f1,,Hiroshima (JPN),29 APR 2012,1127.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14286217,toplist
+94.0,11.34,1.3,Terra EVANS,07 OCT 1989,USA,1f1,,"Lubbock, TX (USA)",05 MAY 2012,1127.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14309825,toplist
+94.0,11.34,0.6,Melinda SMEDLEY,11 FEB 1981,USA,1f1,,"Los Angeles, CA (USA)",05 MAY 2012,1127.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14321452,toplist
+94.0,11.34,1.9,Chalonda GOODMAN,29 SEP 1990,USA,5,,"Manhattan, KS (USA)",13 MAY 2012,1127.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14311151,toplist
+94.0,11.34,-0.1,Yelizaveta DEMIROVA,14 AUG 1987,RUS,2,,Moskva (RUS),11 JUN 2012,1127.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14299187,toplist
+94.0,11.34,0.9,Maria BELIMPASAKI,19 JUN 1991,GRE,1,,Athina (GRE),15 JUN 2012,1127.0,women_100m,2012,https://worldathletics.org/athletes/athlete=14280530,toplist
+1.0,10.71,-0.3,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1,,"Luzhniki Stadion, Moskva (RUS)",12 AUG 2013,1265.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285680,toplist
+2.0,10.79,1.1,Blessing OKAGBARE,09 OCT 1988,NGR,1,,"Olympic Stadium, London (GBR)",27 JUL 2013,1246.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14292330,toplist
+3.0,10.85,1.8,English GARDNER,22 APR 1992,USA,1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1233.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14310719,toplist
+3.0,10.85,2.0,Barbara PIERRE,28 APR 1987,USA,1sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1233.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14318999,toplist
+5.0,10.87,1.8,Octavious FREEMAN,20 APR 1992,USA,2,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1228.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14335310,toplist
+6.0,10.91,1.8,Alexandria ANDERSON,28 JAN 1987,USA,3,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1220.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14304791,toplist
+6.0,10.91,1.5,Murielle AHOURÉ,23 AUG 1987,CIV,1,,Sotteville-lès-Rouen (FRA),08 JUL 2013,1220.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14304569,toplist
+8.0,10.93,1.8,Jeneba TARMOH,27 SEP 1989,USA,4,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1215.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14322457,toplist
+8.0,10.93,0.7,Carmelita JETER,24 NOV 1979,USA,2h1,,"Olympic Stadium, London (GBR)",27 JUL 2013,1215.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14313618,toplist
+10.0,10.96,2.0,Aurieyall SCOTT,18 MAY 1992,USA,2sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1209.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14366294,toplist
+10.0,10.96,0.9,Kerron STEWART,16 APR 1984,JAM,1,,Kingston (JAM),21 JUN 2013,1209.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285938,toplist
+12.0,10.98,0.5,Carrie RUSSELL,18 OCT 1990,JAM,1f2,,"Letzigrund, Zürich (SUI)",29 AUG 2013,1204.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285894,toplist
+13.0,11.00,1.8,Muna LEE,30 OCT 1981,USA,7,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1200.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14315186,toplist
+13.0,11.00,1.7,Lauryn WILLIAMS,11 SEP 1983,USA,5sf2,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1200.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14324318,toplist
+15.0,11.01,0.0,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1,,"National Stadium, Kingston (JAM)",04 MAY 2013,1198.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285598,toplist
+16.0,11.02,1.1,Verena SAILER,16 OCT 1985,GER,1f1,,Weinheim (GER),02 AUG 2013,1195.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14279480,toplist
+17.0,11.04,1.2,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,1,,"Bislett Stadion, Oslo (NOR)",13 JUN 2013,1191.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14268643,toplist
+17.0,11.04,1.5,Shalonda SOLOMON,19 DEC 1985,USA,2f1,,"Moratalaz, Madrid (ESP)",13 JUL 2013,1191.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14321706,toplist
+19.0,11.05,1.7,Ana Claudia LEMOS,06 NOV 1988,BRA,1,,"Mangueirão, Belém (BRA)",12 MAY 2013,1189.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14269001,toplist
+20.0,11.06,-0.2,Allyson FELIX,18 NOV 1985,USA,,,Manchester (GBR),25 MAY 2013,1188.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14309983,toplist
+20.0,11.06,1.1,Mariya RYEMYEN,02 AUG 1987,UKR,1f2,,Yalta (UKR),05 JUN 2013,1187.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14304082,toplist
+20.0,11.06,1.6,Michelle-Lee AHYE,10 APR 1992,TTO,1f2,,Port-of-Spain (TTO),22 JUN 2013,1187.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14302966,toplist
+23.0,11.07,1.2,Mandy WHITE,23 OCT 1988,USA,1,,"Walnut, CA (USA)",20 APR 2013,1185.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14327004,toplist
+23.0,11.07,2.0,Charonda WILLIAMS,27 MAR 1987,USA,4sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1185.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14324253,toplist
+23.0,11.07,0.9,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,2,,Kingston (JAM),21 JUN 2013,1185.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285586,toplist
+26.0,11.08,0.9,Kimberlyn DUNCAN,02 AUG 1991,USA,3,,"Eugene, OR (USA)",07 JUN 2013,1182.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14309365,toplist
+27.0,11.09,1.9,Cierra WHITE,29 APR 1993,USA,1f1,,"Lubbock, TX (USA)",25 APR 2013,1180.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14430809,toplist
+27.0,11.09,1.5,Dafne SCHIPPERS,15 JUN 1992,NED,1f3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",04 JUL 2013,1180.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14291986,toplist
+29.0,11.12,2.0,Chauntae BAYNE,04 APR 1984,USA,1,,"San Marcos, TX (USA)",06 APR 2013,1174.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14305505,toplist
+30.0,11.13,-0.7,Franciela KRASUCKI,26 APR 1988,BRA,1sf2,,São Paulo (BRA),06 JUN 2013,1176.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14269257,toplist
+31.0,11.14,1.8,Tori BOWIE,27 AUG 1990,USA,2,,"Walnut, CA (USA)",20 APR 2013,1169.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14360382,toplist
+31.0,11.14,1.6,Lekeisha LAWSON,03 JUN 1987,USA,1f1,,"Azusa, CA (USA)",11 MAY 2013,1169.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14315112,toplist
+31.0,11.14,1.1,Olesya POVH,18 OCT 1987,UKR,2f2,,Yalta (UKR),05 JUN 2013,1169.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14304049,toplist
+31.0,11.14,0.9,Sheri-Ann BROOKS,11 FEB 1983,JAM,3,,Kingston (JAM),21 JUN 2013,1169.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285566,toplist
+35.0,11.15,1.7,Mikele BARBER,04 OCT 1980,USA,2,,"Mangueirão, Belém (BRA)",12 MAY 2013,1167.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14305305,toplist
+36.0,11.16,2.0,Jessica YOUNG-WARREN,06 APR 1987,USA,6sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1165.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14324854,toplist
+37.0,11.17,0.9,Natasha MORRISON,17 NOV 1992,JAM,5,,Kingston (JAM),21 JUN 2013,1163.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285826,toplist
+38.0,11.18,0.0,Sheniqua FERGUSON,24 NOV 1989,BAH,1,,Nassau (BAH),21 JUN 2013,1161.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14270638,toplist
+39.0,11.19,1.2,Candyce MCGRONE,24 MAR 1989,USA,2,,"Walnut, CA (USA)",20 APR 2013,1159.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14316585,toplist
+39.0,11.19,1.7,Tiffany TOWNSEND,14 JUN 1989,USA,8sf2,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1159.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14322941,toplist
+39.0,11.19,0.9,Aleen BAILEY,25 NOV 1980,JAM,6,,Kingston (JAM),21 JUN 2013,1159.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285532,toplist
+42.0,11.20,-0.2,Anyika ONUORA,28 OCT 1984,GBR,,,Manchester (GBR),25 MAY 2013,1158.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14275975,toplist
+42.0,11.20,2.0,Dezerea BRYANT,27 APR 1993,USA,8sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1157.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14375109,toplist
+42.0,11.20,-0.2,Asha PHILIP,25 OCT 1990,GBR,1,,Birmingham (GBR),13 JUL 2013,1158.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14276065,toplist
+45.0,11.21,0.9,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,7,,Kingston (JAM),21 JUN 2013,1154.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285727,toplist
+46.0,11.22,1.3,Tatjana PINTO,02 JUL 1992,GER,1f1,,Weinheim (GER),25 MAY 2013,1152.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14279214,toplist
+47.0,11.23,1.7,Rosângela SANTOS,20 DEC 1990,BRA,4,,"Mangueirão, Belém (BRA)",12 MAY 2013,1150.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14268928,toplist
+47.0,11.23,0.3,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,1f1,,Kingston (JAM),18 MAY 2013,1150.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285805,toplist
+47.0,11.23,2.0,Viktoriya VRUCHINSKAYA,04 APR 1991,RUS,1h1,,Yerino (RUS),02 JUN 2013,1150.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14360385,toplist
+47.0,11.23,1.6,Kai SELVON,13 APR 1992,TTO,2f2,,Port-of-Spain (TTO),22 JUN 2013,1150.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14303044,toplist
+47.0,11.23,-0.3,Ezinne OKPARAEBO,03 MAR 1988,NOR,3h1,,"Luzhniki Stadion, Moskva (RUS)",11 AUG 2013,1151.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14292744,toplist
+52.0,11.24,1.8,Natasha HASTINGS,23 JUL 1986,USA,6,,"Walnut, CA (USA)",20 APR 2013,1148.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14312172,toplist
+52.0,11.24,1.9,Ruddy ZANG MILAMA,06 JUN 1987,GAB,1,,"Baltimore, MD (USA)",20 APR 2013,1148.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14274338,toplist
+52.0,11.24,1.4,Chastity RIGGIEN,05 JUL 1989,USA,1f1,,"Clermont, FL (USA)",11 MAY 2013,1148.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14319913,toplist
+52.0,11.24,-0.7,Danielle WILLIAMS,14 SEP 1992,JAM,1,,"Pueblo, CO (USA)",25 MAY 2013,1152.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14450995,toplist
+52.0,11.24,0.3,Tawanna MEADOWS,04 AUG 1986,USA,2h2,,"Montverde, FL (USA)",08 JUN 2013,1148.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14316787,toplist
+52.0,11.24,0.1,Mariely SÁNCHEZ,30 DEC 1988,DOM,2,,Morelia (MEX),05 JUL 2013,1148.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14262360,toplist
+58.0,11.25,0.3,Melissa BREEN,17 SEP 1990,AUS,1,,Sydney (AUS),09 MAR 2013,1146.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14272403,toplist
+58.0,11.25,1.8,Mary Beth SANT,06 APR 1995,USA,1f1,,"Denver, CO (USA)",01 JUN 2013,1146.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14400792,toplist
+60.0,11.26,1.5,LaShauntea MOORE,31 JUL 1983,USA,5f1,,"Moratalaz, Madrid (ESP)",13 JUL 2013,1144.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14317320,toplist
+60.0,11.26,1.0,Stella AKAKPO,28 FEB 1994,FRA,1h1,,"Stadio Guidobaldi, Rieti (ITA)",18 JUL 2013,1144.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14385848,toplist
+62.0,11.27,1.4,Gloria ASUMNU,22 MAY 1985,NGR,2f1,,"Clermont, FL (USA)",11 MAY 2013,1142.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14305055,toplist
+62.0,11.27,1.1,Natalia POHREBNIAK,19 FEB 1988,UKR,3f2,,Yalta (UKR),05 JUN 2013,1142.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14304035,toplist
+62.0,11.27,0.5,Sherone SIMPSON,12 AUG 1984,JAM,2f1,,Kingston (JAM),08 JUN 2013,1142.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285909,toplist
+65.0,11.28,0.9,Kataryna GANCHAR,30 AUG 1988,BLR,1,,Brest (BLR),24 MAY 2013,1139.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14269914,toplist
+66.0,11.29,-0.2,Yekaterina KUZINA,28 JUN 1991,RUS,1,,Yerino (RUS),15 JUN 2013,1138.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14298374,toplist
+66.0,11.29,-0.3,Yongli WEI,11 OCT 1991,CHN,1,,Pune (IND),04 JUL 2013,1138.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14423021,toplist
+66.0,11.29,0.8,Marika POPOWICZ-DRAPAŁA,28 APR 1988,POL,1,,Toruń (POL),19 JUL 2013,1137.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14294295,toplist
+69.0,11.30,1.3,Myriam SOUMARÉ,29 OCT 1986,FRA,1,,Paris (FRA),13 JUL 2013,1135.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14273961,toplist
+70.0,11.31,1.8,Jenna PRANDINI,20 NOV 1992,USA,7,,"Walnut, CA (USA)",20 APR 2013,1133.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14329068,toplist
+70.0,11.31,0.9,Jennifer MADU,23 SEP 1994,USA,5,,"Eugene, OR (USA)",07 JUN 2013,1133.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14366502,toplist
+70.0,11.31,0.5,Lina GRINČIKAITĖ SAMUOLĖ,03 MAY 1987,LTU,1,,"S. Darius & S. Girėnas Stadium, Kaunas (LTU)",22 JUN 2013,1133.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14290237,toplist
+70.0,11.31,1.8,Hayley MILLS-JONES,04 SEP 1988,GBR,1,,Manchester (GBR),22 JUN 2013,1133.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14275477,toplist
+70.0,11.31,0.9,Céline DISTEL-BONNET,25 JUL 1987,FRA,1h1,,Paris (FRA),13 JUL 2013,1133.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14257742,toplist
+75.0,11.32,1.0,Emily BLOK,14 APR 1991,USA,1h1,,"Las Vegas, NV (USA)",10 MAY 2013,1131.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14306011,toplist
+75.0,11.32,1.4,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,3f1,,"Clermont, FL (USA)",11 MAY 2013,1131.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14270639,toplist
+75.0,11.32,-0.2,Jodie WILLIAMS,28 SEP 1993,GBR,,,Manchester (GBR),25 MAY 2013,1132.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14276757,toplist
+75.0,11.32,1.8,Nadine PALMER,19 FEB 1983,JAM,1,,"New York, NY (USA)",30 MAY 2013,1131.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285844,toplist
+79.0,11.33,0.9,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,3f1,,"Gainesville, FL (USA)",20 APR 2013,1129.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14285518,toplist
+79.0,11.33,0.0,Ana HOLLAND,16 FEB 1995,USA,1,,"Lakewood, PA (USA)",18 MAY 2013,1129.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14439572,toplist
+79.0,11.33,2.0,Mahagony JONES,20 DEC 1990,USA,1h5,,"Greensboro, NC (USA)",23 MAY 2013,1129.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14313963,toplist
+79.0,11.33,1.7,Stephanie KALU,08 MAY 1993,NGR,2h6,,"Austin, TX (USA)",23 MAY 2013,1129.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14367120,toplist
+79.0,11.33,1.1,Hrystyna STUY,03 FEB 1988,UKR,4f2,,Yalta (UKR),05 JUN 2013,1129.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14304242,toplist
+79.0,11.33,-0.8,Ky WESTBROOK,25 FEB 1996,USA,1,,Donetsk (UKR),11 JUL 2013,1133.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14430849,toplist
+79.0,11.33,1.4,Shai-Anne DAVIS,04 DEC 1993,CAN,1f2,,Weinheim (GER),02 AUG 2013,1129.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14373586,toplist
+79.0,11.33,0.5,Ashleigh NELSON,20 FEB 1991,GBR,1f1,,"Letzigrund, Zürich (SUI)",29 AUG 2013,1129.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14275890,toplist
+87.0,11.34,1.4,Cleo VANBUREN,01 MAY 1986,USA,1f1,,"Arlington, TX (USA)",23 MAR 2013,1127.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14323118,toplist
+87.0,11.34,1.8,Chelsea HAYES,09 FEB 1988,USA,2f1,,"Baton Rouge, LA (USA)",20 APR 2013,1127.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14941407,toplist
+87.0,11.34,1.6,Paris DANIELS,25 JAN 1990,USA,2,,"Waco, TX (USA)",05 MAY 2013,1127.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14308570,toplist
+87.0,11.34,0.2,Ashley MARSHALL,10 SEP 1993,USA,1,,"Northridge, CA (USA)",11 MAY 2013,1127.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14431947,toplist
+87.0,11.34,0.6,Remona BURCHELL,15 SEP 1991,JAM,1,,"Hutchinson, KS (USA)",18 MAY 2013,1127.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14413497,toplist
+87.0,11.34,-0.2,Yuliya KASHINA,26 FEB 1987,RUS,2,,Yerino (RUS),15 JUN 2013,1128.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14298047,toplist
+87.0,11.34,1.5,Kateřina ČECHOVÁ,21 MAR 1988,CZE,2f3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",04 JUL 2013,1127.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14263180,toplist
+87.0,11.34,1.3,Ayodelé IKUESAN,15 MAY 1985,FRA,3,,Paris (FRA),13 JUL 2013,1127.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14257067,toplist
+95.0,11.35,0.3,Ashton PURVIS,12 JUL 1992,USA,1f2,,"Tempe, AZ (USA)",16 MAR 2013,1125.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14319383,toplist
+95.0,11.35,1.6,Shataya HENDRICKS,15 AUG 1989,USA,2f1,,"Coral Gables, FL (USA)",13 APR 2013,1125.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14312392,toplist
+95.0,11.35,1.4,Trisha-Ann HAWTHORNE,08 NOV 1989,JAM,5f1,,"Clermont, FL (USA)",11 MAY 2013,1125.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14312225,toplist
+95.0,11.35,1.7,Irene EKELUND,08 MAR 1997,SWE,1,,Kil (SWE),08 JUN 2013,1125.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14403224,toplist
+95.0,11.35,-0.2,Yuliya KATSURA,28 MAY 1983,RUS,3,,Yerino (RUS),15 JUN 2013,1126.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14298051,toplist
+95.0,11.35,1.2,Cache ARMBRISTER,26 SEP 1989,BAH,2h2,,Morelia (MEX),05 JUL 2013,1125.0,women_100m,2013,https://worldathletics.org/athletes/athlete=14304985,toplist
+1.0,10.80,0.8,Tori BOWIE,27 AUG 1990,USA,1,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1244.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14360382,toplist
+2.0,10.85,1.6,Michelle-Lee AHYE,10 APR 1992,TTO,1sf2,,Port-of-Spain (TTO),21 JUN 2014,1233.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14302966,toplist
+2.0,10.85,0.3,Blessing OKAGBARE,09 OCT 1988,NGR,1,,"Hampden Park, Glasgow (GBR)",28 JUL 2014,1233.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14292330,toplist
+4.0,10.86,2.0,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,1h1,,"Clermont, FL (USA)",07 JUN 2014,1231.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285598,toplist
+5.0,10.92,2.0,Tianna BARTOLETTA,30 AUG 1985,USA,1sf1,,"Sacramento, CA (USA)",27 JUN 2014,1217.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14315831,toplist
+6.0,10.97,0.8,Murielle AHOURÉ,23 AUG 1987,CIV,3,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1206.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14304569,toplist
+7.0,11.00,1.5,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,h4,,"Clermont, FL (USA)",26 APR 2014,1200.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285727,toplist
+8.0,11.01,2.0,English GARDNER,22 APR 1992,USA,2sf1,,"Sacramento, CA (USA)",27 JUN 2014,1198.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14310719,toplist
+8.0,11.01,0.8,Allyson FELIX,18 NOV 1985,USA,5,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1198.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14309983,toplist
+8.0,11.01,0.8,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,6,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1198.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285680,toplist
+11.0,11.02,2.0,Joanna ATKINS,31 JAN 1989,USA,3sf1,,"Sacramento, CA (USA)",27 JUN 2014,1195.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14305059,toplist
+11.0,11.02,-0.4,Kerron STEWART,16 APR 1984,JAM,2,,Kingston (JAM),27 JUN 2014,1197.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285938,toplist
+13.0,11.03,1.7,Remona BURCHELL,15 SEP 1991,JAM,1qf2,,"Jacksonville, FL (USA)",30 MAY 2014,1193.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14413497,toplist
+13.0,11.03,0.9,Dafne SCHIPPERS,15 JUN 1992,NED,1f2,,"Hampden Park, Glasgow (GBR)",12 JUL 2014,1193.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14291986,toplist
+13.0,11.03,0.8,Myriam SOUMARÉ,29 OCT 1986,FRA,7,,"Stade Louis II, Monaco (MON)",18 JUL 2014,1193.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14273961,toplist
+16.0,11.04,0.6,Morolake AKINOSUN,17 MAY 1994,USA,1h2,,"Eugene, OR (USA)",11 JUN 2014,1191.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14430813,toplist
+17.0,11.05,2.0,Barbara PIERRE,28 APR 1987,USA,2sf2,,"Sacramento, CA (USA)",27 JUN 2014,1189.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14318999,toplist
+18.0,11.06,1.1,Natasha MORRISON,17 NOV 1992,JAM,2h1,,Kingston (JAM),27 JUN 2014,1187.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285826,toplist
+19.0,11.07,2.0,Lekeisha LAWSON,03 JUN 1987,USA,3sf2,,"Sacramento, CA (USA)",27 JUN 2014,1185.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14315112,toplist
+20.0,11.08,1.1,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,3h1,,Kingston (JAM),27 JUN 2014,1182.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285586,toplist
+21.0,11.09,1.3,Simone FACEY,07 MAY 1985,JAM,1f1,,"Clermont, FL (USA)",10 MAY 2014,1180.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285672,toplist
+22.0,11.10,1.1,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,1f1,,Gavardo (ITA),18 MAY 2014,1178.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14268643,toplist
+22.0,11.10,0.9,Kaylin WHITNEY,09 MAR 1998,USA,1,,"Eugene, OR (USA)",05 JUL 2014,1178.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14524719,toplist
+22.0,11.10,0.5,Carrie RUSSELL,18 OCT 1990,JAM,1,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1178.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285894,toplist
+25.0,11.11,1.9,Melissa BREEN,17 SEP 1990,AUS,1h1,,Canberra (AUS),09 FEB 2014,1176.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14272403,toplist
+25.0,11.11,0.8,Jenna PRANDINI,20 NOV 1992,USA,1f1,,"Walnut, CA (USA)",19 APR 2014,1176.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14329068,toplist
+25.0,11.11,1.0,Tawanna MEADOWS,04 AUG 1986,USA,1f1,,"San Marcos, TX (USA)",26 APR 2014,1176.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14316787,toplist
+25.0,11.11,1.3,Olivia EKPONE,05 JAN 1993,USA,1,,"Lexington, KY (USA)",18 MAY 2014,1176.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14309601,toplist
+25.0,11.11,1.2,Alexandria ANDERSON,28 JAN 1987,USA,2f1,,"Clermont, FL (USA)",31 MAY 2014,1176.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14304791,toplist
+25.0,11.11,-2.1,Jeneba TARMOH,27 SEP 1989,USA,1,,Edmonton (CAN),06 JUL 2014,1188.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14322457,toplist
+31.0,11.12,1.0,Jamile SAMUEL,24 APR 1992,NED,1f1,,Genève (SUI),14 JUN 2014,1174.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14291975,toplist
+31.0,11.12,2.0,Shalonda SOLOMON,19 DEC 1985,USA,4sf2,,"Sacramento, CA (USA)",27 JUN 2014,1174.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14321706,toplist
+33.0,11.13,0.0,Ana Claudia LEMOS,06 NOV 1988,BRA,1,,São Paulo (BRA),01 AUG 2014,1172.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14269001,toplist
+33.0,11.13,0.5,Jessica YOUNG-WARREN,06 APR 1987,USA,2,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1172.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14324854,toplist
+35.0,11.14,1.4,Verena SAILER,16 OCT 1985,GER,1f1,,Mannheim (GER),05 JUL 2014,1169.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14279480,toplist
+35.0,11.14,1.5,Dina ASHER-SMITH,04 DEC 1995,GBR,1h1,,Mannheim (GER),05 JUL 2014,1169.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14378282,toplist
+37.0,11.15,0.0,Gloria ASUMNU,22 MAY 1985,NGR,1sf3,,Calabar (NGR),19 JUN 2014,1167.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14305055,toplist
+38.0,11.16,1.2,Aleen BAILEY,25 NOV 1980,JAM,3f1,,"Clermont, FL (USA)",31 MAY 2014,1165.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285532,toplist
+39.0,11.17,1.1,Elaine THOMPSON,28 JUN 1992,JAM,1f8,,Kingston (JAM),31 MAY 2014,1163.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285956,toplist
+39.0,11.17,1.0,Carina HORN,09 MAR 1989,RSA,1h1,,St. Pölten (AUT),14 JUN 2014,1163.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14361361,toplist
+39.0,11.17,1.0,Bianca WILLIAMS,18 DEC 1993,GBR,2f1,,Genève (SUI),14 JUN 2014,1163.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14401125,toplist
+42.0,11.18,0.3,Asha PHILIP,25 OCT 1990,GBR,4,,"Hampden Park, Glasgow (GBR)",28 JUL 2014,1161.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14276065,toplist
+43.0,11.19,-0.6,Christania WILLIAMS,17 OCT 1994,JAM,1,,Kingston (JAM),28 MAR 2014,1162.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14413656,toplist
+43.0,11.19,0.8,Ashleigh NELSON,20 FEB 1991,GBR,2h5,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1159.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14275890,toplist
+45.0,11.20,1.9,Shayla SANDERS,06 JAN 1994,USA,1h1,,"Austin, TX (USA)",28 MAR 2014,1157.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14405076,toplist
+45.0,11.20,1.3,Jodie WILLIAMS,28 SEP 1993,GBR,3f1,,"Gainesville, FL (USA)",19 APR 2014,1157.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14276757,toplist
+45.0,11.20,0.8,Kimberlyn DUNCAN,02 AUG 1991,USA,1f1,,"Baton Rouge, LA (USA)",19 APR 2014,1157.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14309365,toplist
+45.0,11.20,1.3,Cierra WHITE,29 APR 1993,USA,1h1,,"Lubbock, TX (USA)",17 MAY 2014,1157.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14430809,toplist
+45.0,11.20,2.0,Bianca KNIGHT,02 JAN 1989,USA,5sf2,,"Sacramento, CA (USA)",27 JUN 2014,1157.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14314587,toplist
+45.0,11.20,0.0,Tatjana PINTO,02 JUL 1992,GER,1,,Ulm (GER),26 JUL 2014,1157.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14279214,toplist
+45.0,11.20,-1.4,Marie-Josée TA LOU,18 NOV 1988,CIV,3,,"Le Grand Stade, Marrakech (MAR)",11 AUG 2014,1165.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14415994,toplist
+45.0,11.20,0.0,Mujinga KAMBUNDJI,17 JUN 1992,SUI,2sf3,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1157.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14300897,toplist
+53.0,11.21,-0.4,Desiree HENRY,26 AUG 1995,GBR,2h2,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1156.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14360349,toplist
+54.0,11.22,0.6,Arianna WASHINGTON,04 SEP 1996,USA,1,,"Clovis, CA (USA)",07 JUN 2014,1152.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14468500,toplist
+54.0,11.22,1.0,Natalia POHREBNIAK,19 FEB 1988,UKR,2h1,,St. Pölten (AUT),14 JUN 2014,1152.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14304035,toplist
+54.0,11.22,0.0,Ayodelé IKUESAN,15 MAY 1985,FRA,3sf3,,"Letzigrund, Zürich (SUI)",13 AUG 2014,1152.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14257067,toplist
+57.0,11.23,1.7,Katie WISE,15 OCT 1993,USA,1,,"Carbondale, IL (USA)",18 MAY 2014,1150.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14476220,toplist
+57.0,11.23,0.1,Trisha-Ann HAWTHORNE,08 NOV 1989,JAM,3,,Beijing (CHN),21 MAY 2014,1150.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14312225,toplist
+57.0,11.23,-2.0,Olga SAFRONOVA,05 NOV 1991,KAZ,1,,Bishkek (KGZ),07 JUN 2014,1162.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14288586,toplist
+57.0,11.23,0.6,Jennifer MADU,23 SEP 1994,USA,3h3,,"Eugene, OR (USA)",11 JUN 2014,1150.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14366502,toplist
+61.0,11.24,-1.1,Franciela KRASUCKI,26 APR 1988,BRA,1f1,,São Paulo (BRA),05 APR 2014,1154.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14269257,toplist
+61.0,11.24,1.3,Dezerea BRYANT,27 APR 1993,USA,3,,"Lexington, KY (USA)",18 MAY 2014,1148.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14375109,toplist
+61.0,11.24,1.4,Hrystyna STUY,03 FEB 1988,UKR,1,,Izmir (TUR),03 JUN 2014,1148.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14304242,toplist
+61.0,11.24,1.5,Céline DISTEL-BONNET,25 JUL 1987,FRA,2h1,,Reims (FRA),12 JUL 2014,1148.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14257742,toplist
+61.0,11.24,1.1,Stella AKAKPO,28 FEB 1994,FRA,1h2,,Reims (FRA),12 JUL 2014,1148.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14385848,toplist
+61.0,11.24,-0.4,Ezinne OKPARAEBO,03 MAR 1988,NOR,2h4,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1150.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14292744,toplist
+61.0,11.24,0.0,Carmelita JETER,24 NOV 1979,USA,2h1,,"Alexander Stadium, Birmingham (GBR)",24 AUG 2014,1148.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14313618,toplist
+68.0,11.25,0.0,Jasmine TODD,23 DEC 1993,USA,1f2,,"Walnut, CA (USA)",19 APR 2014,1146.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14375278,toplist
+68.0,11.25,0.3,Ángela Gabriela TENORIO,27 JAN 1996,ECU,1f1,,Medellín (COL),31 MAY 2014,1146.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14496119,toplist
+70.0,11.26,1.2,Candyce MCGRONE,24 MAR 1989,USA,3f1,,"Gainesville, FL (USA)",04 APR 2014,1144.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14316585,toplist
+70.0,11.26,0.3,Muna LEE,30 OCT 1981,USA,1,,Kuortane (FIN),13 JUL 2014,1144.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14315186,toplist
+72.0,11.27,1.8,Sally PEARSON,19 SEP 1986,AUS,2,,Canberra (AUS),09 FEB 2014,1142.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14271668,toplist
+72.0,11.27,1.5,Sharika NELVIS,10 MAY 1990,USA,1f3,,"Jonesboro, AR (USA)",26 APR 2014,1142.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14376876,toplist
+72.0,11.27,,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,2f2,,"Clermont, FL (USA)",31 MAY 2014,1142.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285518,toplist
+75.0,11.28,1.5,Ruddy ZANG MILAMA,06 JUN 1987,GAB,1h5,,"Greensboro, NC (USA)",11 MAY 2014,1139.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14274338,toplist
+75.0,11.28,1.0,Jura Lanconia LEVY,04 NOV 1990,JAM,1,,"Gulf Shores, AL (USA)",24 MAY 2014,1139.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14285765,toplist
+75.0,11.28,1.8,Margaret ADEOYE,22 APR 1985,GBR,1h2,,Genève (SUI),14 JUN 2014,1139.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14274348,toplist
+78.0,11.29,0.9,Tristie JOHNSON,20 NOV 1993,USA,1,,"Greensboro, NC (USA)",03 MAY 2014,1137.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14527007,toplist
+78.0,11.29,2.0,Kai SELVON,13 APR 1992,TTO,1f1,,"Tallahassee, FL (USA)",09 MAY 2014,1137.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14303044,toplist
+78.0,11.29,1.4,Mikele BARBER,04 OCT 1980,USA,1f1,,"Los Angeles, CA (USA)",07 JUN 2014,1137.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14305305,toplist
+78.0,11.29,0.6,Mahagony JONES,20 DEC 1990,USA,2h2,,"Eugene, OR (USA)",11 JUN 2014,1137.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14313963,toplist
+78.0,11.29,2.0,Kenyanna WILSON,27 OCT 1988,USA,7sf1,,"Sacramento, CA (USA)",27 JUN 2014,1137.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14324461,toplist
+78.0,11.29,1.5,Andrea PURICA,21 NOV 1995,VEN,1,,Veracruz (MEX),25 NOV 2014,1137.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14526573,toplist
+84.0,11.30,0.0,Jessica DAVIS,31 OCT 1992,USA,2f2,,"Walnut, CA (USA)",19 APR 2014,1135.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14308683,toplist
+84.0,11.30,0.2,Hanna-Maari LATVALA,30 OCT 1987,FIN,3h3,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1135.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14259316,toplist
+84.0,11.30,0.0,Ewa SWOBODA,26 JUL 1997,POL,1h3,,"Olympic Stadium, Nanjing (CHN)",21 AUG 2014,1135.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14451085,toplist
+84.0,11.30,-0.5,Tiffany TOWNSEND,14 JUN 1989,USA,2,,"Stadion PGE Narodowy, Warszawa (POL)",23 AUG 2014,1138.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14322941,toplist
+84.0,11.30,0.3,Chisato FUKUSHIMA,27 JUN 1988,JPN,1h1,,Nagasaki (JPN),19 OCT 2014,1135.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14286217,toplist
+89.0,11.31,0.9,Sheniqua FERGUSON,24 NOV 1989,BAH,1f1,,"Auburn, AL (USA)",05 APR 2014,1133.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14270638,toplist
+89.0,11.31,0.8,Aaliyah BROWN,06 JAN 1995,USA,2f1,,"Baton Rouge, LA (USA)",19 APR 2014,1133.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14306531,toplist
+89.0,11.31,0.7,Andreea Luiza OGRĂZEANU,24 MAR 1990,ROU,2f1,,Weinheim (GER),31 MAY 2014,1133.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14295803,toplist
+89.0,11.31,1.7,Teahna DANIELS,25 MAR 1997,USA,2,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1133.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14443924,toplist
+89.0,11.31,1.0,Kristina SIVKOVA,28 FEB 1997,RUS,1,,Kazan (RUS),24 JUL 2014,1133.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14560320,toplist
+94.0,11.32,-0.6,Jonielle SMITH,30 JAN 1996,JAM,2,,Kingston (JAM),28 MAR 2014,1134.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14413641,toplist
+94.0,11.32,0.0,Chelsea HAYES,09 FEB 1988,USA,3f2,,"Walnut, CA (USA)",19 APR 2014,1131.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14941407,toplist
+94.0,11.32,1.3,Tiffani MCREYNOLDS,04 DEC 1991,USA,2h1,,"Lubbock, TX (USA)",17 MAY 2014,1131.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14316768,toplist
+94.0,11.32,1.3,Keilah TYSON,06 NOV 1992,USA,4,,"Lexington, KY (USA)",18 MAY 2014,1131.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14366298,toplist
+94.0,11.32,1.0,Rebekka HAASE,02 JAN 1993,GER,1h2,,Ulm (GER),26 JUL 2014,1131.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14360165,toplist
+94.0,11.32,0.5,Khamica BINGHAM,15 JUN 1994,CAN,3sf2,,"Hampden Park, Glasgow (GBR)",28 JUL 2014,1131.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14405309,toplist
+94.0,11.32,0.5,Rosângela SANTOS,20 DEC 1990,BRA,1,,Sao Bernardo do Campo (BRA),23 AUG 2014,1131.0,women_100m,2014,https://worldathletics.org/athletes/athlete=14268928,toplist
+1.0,10.74,0.2,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1257.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285680,toplist
+2.0,10.79,1.5,English GARDNER,22 APR 1992,USA,1sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1246.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14310719,toplist
+3.0,10.80,0.2,Blessing OKAGBARE,09 OCT 1988,NGR,2,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1244.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14292330,toplist
+4.0,10.81,1.7,Murielle AHOURÉ,23 AUG 1987,CIV,2f1,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1242.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14304569,toplist
+4.0,10.81,1.2,Tori BOWIE,27 AUG 1990,USA,1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1242.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14360382,toplist
+4.0,10.81,-0.3,Dafne SCHIPPERS,15 JUN 1992,NED,2,,"National Stadium, Beijing (CHN)",24 AUG 2015,1243.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14291986,toplist
+7.0,10.84,1.5,Elaine THOMPSON,28 JUN 1992,JAM,2f2,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1235.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285956,toplist
+7.0,10.84,1.4,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,1f2,,Port-of-Spain (TTO),27 JUN 2015,1235.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14302975,toplist
+9.0,10.89,-0.2,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,2sf3,,"National Stadium, Beijing (CHN)",24 AUG 2015,1225.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285598,toplist
+10.0,10.92,1.4,Jenna PRANDINI,20 NOV 1992,USA,1f1,,"Walnut, CA (USA)",18 APR 2015,1217.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14329068,toplist
+10.0,10.92,1.2,Jasmine TODD,23 DEC 1993,USA,3,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1217.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14375278,toplist
+10.0,10.92,1.6,Barbara PIERRE,28 APR 1987,USA,1h2,,"CIBC, Toronto (CAN)",21 JUL 2015,1217.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14318999,toplist
+13.0,10.93,1.2,Jeneba TARMOH,27 SEP 1989,USA,4,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1215.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14322457,toplist
+14.0,10.94,1.2,Tianna BARTOLETTA,30 AUG 1985,USA,5,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1213.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14315831,toplist
+15.0,10.95,0.9,Sherone SIMPSON,12 AUG 1984,JAM,1,,"CIBC, Toronto (CAN)",22 JUL 2015,1211.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285909,toplist
+16.0,10.96,0.9,Natasha MORRISON,17 NOV 1992,JAM,3sf2,,"National Stadium, Beijing (CHN)",24 AUG 2015,1209.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285826,toplist
+17.0,10.97,-2.5,Michelle-Lee AHYE,10 APR 1992,TTO,1f1,,"Gainesville, FL (USA)",03 APR 2015,1221.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14302966,toplist
+18.0,10.98,2.0,Candace HILL,11 FEB 1999,USA,1,,"Shoreline, WA (USA)",20 JUN 2015,1204.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14596374,toplist
+19.0,10.99,0.9,Ángela Gabriela TENORIO,27 JAN 1996,ECU,2,,"CIBC, Toronto (CAN)",22 JUL 2015,1202.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14496119,toplist
+19.0,10.99,0.1,Dina ASHER-SMITH,04 DEC 1995,GBR,1h1,,"Olympic Stadium, London (GBR)",25 JUL 2015,1202.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14378282,toplist
+21.0,11.00,1.8,Candyce MCGRONE,24 MAR 1989,USA,1h4,,"Hayward Field, Eugene, OR (USA)",25 JUN 2015,1200.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14316585,toplist
+21.0,11.00,1.5,Dezerea BRYANT,27 APR 1993,USA,4sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1200.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14375109,toplist
+23.0,11.01,1.4,Ana Claudia LEMOS,06 NOV 1988,BRA,2f1,,"Walnut, CA (USA)",18 APR 2015,1198.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14269001,toplist
+23.0,11.01,1.2,Carmelita JETER,24 NOV 1979,USA,7,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1198.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14313618,toplist
+23.0,11.01,1.4,Samantha HENRY-ROBINSON,25 SEP 1988,JAM,1h3,,San José (CRC),07 AUG 2015,1198.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285727,toplist
+26.0,11.02,1.4,Muna LEE,30 OCT 1981,USA,3f1,,"Walnut, CA (USA)",18 APR 2015,1195.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14315186,toplist
+26.0,11.02,0.6,Marie-Josée TA LOU,18 NOV 1988,CIV,1,,Brazzaville (CGO),14 SEP 2015,1195.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14415994,toplist
+28.0,11.04,-2.5,Remona BURCHELL,15 SEP 1991,JAM,2f1,,"Gainesville, FL (USA)",03 APR 2015,1206.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14413497,toplist
+28.0,11.04,1.5,Rosângela SANTOS,20 DEC 1990,BRA,3f2,,"Hayward Field, Eugene, OR (USA)",30 MAY 2015,1191.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14268928,toplist
+30.0,11.06,0.2,Shalonda SOLOMON,19 DEC 1985,USA,2f1,,"Gainesville, FL (USA)",24 APR 2015,1187.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14321706,toplist
+30.0,11.06,1.8,Lekeisha LAWSON,03 JUN 1987,USA,3h4,,"Hayward Field, Eugene, OR (USA)",25 JUN 2015,1187.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14315112,toplist
+30.0,11.06,1.2,Carina HORN,09 MAR 1989,RSA,1h2,,"Moratalaz, Madrid (ESP)",11 JUL 2015,1187.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14361361,toplist
+33.0,11.07,0.9,Mujinga KAMBUNDJI,17 JUN 1992,SUI,5sf2,,"National Stadium, Beijing (CHN)",24 AUG 2015,1185.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14300897,toplist
+34.0,11.08,1.2,Ruddy ZANG MILAMA,06 JUN 1987,GAB,1,,"Greensboro, NC (USA)",17 MAY 2015,1182.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14274338,toplist
+34.0,11.08,1.8,Aaliyah BROWN,06 JAN 1995,USA,1sf3,,"Eugene, OR (USA)",11 JUN 2015,1182.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14306531,toplist
+34.0,11.08,1.7,Tiffany TOWNSEND,14 JUN 1989,USA,2h3,,"Moratalaz, Madrid (ESP)",11 JUL 2015,1182.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14322941,toplist
+37.0,11.09,0.2,Allyson FELIX,18 NOV 1985,USA,3f1,,"National Stadium, Kingston (JAM)",09 MAY 2015,1180.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14309983,toplist
+37.0,11.09,1.8,Keilah TYSON,06 NOV 1992,USA,2sf3,,"Eugene, OR (USA)",11 JUN 2015,1180.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14366298,toplist
+37.0,11.09,1.1,Natalia POHREBNIAK,19 FEB 1988,UKR,1,,Kirovograd (UKR),30 JUL 2015,1180.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14304035,toplist
+37.0,11.09,-1.2,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,2h3,,"National Stadium, Beijing (CHN)",23 AUG 2015,1187.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14268643,toplist
+41.0,11.10,1.8,Asha PHILIP,25 OCT 1990,GBR,3,,"FBK Stadium, Hengelo (NED)",24 MAY 2015,1178.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14276065,toplist
+41.0,11.10,0.6,Simone FACEY,07 MAY 1985,JAM,1,,Edmonton (CAN),12 JUL 2015,1178.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285672,toplist
+41.0,11.10,0.0,Verena SAILER,16 OCT 1985,GER,1f1,,Mannheim (GER),08 AUG 2015,1178.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14279480,toplist
+44.0,11.11,1.7,Christania WILLIAMS,17 OCT 1994,JAM,1f1,,Kingston (JAM),30 MAY 2015,1176.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14413656,toplist
+44.0,11.11,0.0,Desiree HENRY,26 AUG 1995,GBR,2f1,,Mannheim (GER),08 AUG 2015,1176.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14360349,toplist
+46.0,11.12,-1.2,Ezinne OKPARAEBO,03 MAR 1988,NOR,4h3,,"National Stadium, Beijing (CHN)",23 AUG 2015,1181.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14292744,toplist
+47.0,11.13,1.4,Kimberlyn DUNCAN,02 AUG 1991,USA,4f1,,"Walnut, CA (USA)",18 APR 2015,1172.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14309365,toplist
+47.0,11.13,2.0,Aleia HOBBS,24 FEB 1996,USA,2sf1,,"Eugene, OR (USA)",11 JUN 2015,1172.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14430847,toplist
+47.0,11.13,0.9,Khamica BINGHAM,15 JUN 1994,CAN,6,,"CIBC, Toronto (CAN)",22 JUL 2015,1172.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14405309,toplist
+47.0,11.13,0.5,Semoy HACKETT,27 NOV 1988,TTO,5sf1,,"National Stadium, Beijing (CHN)",24 AUG 2015,1172.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14303004,toplist
+51.0,11.14,2.0,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,1f2,,"Randalls Island, NY (USA)",11 JUL 2015,1169.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285518,toplist
+51.0,11.14,0.0,Charonda WILLIAMS,27 MAR 1987,USA,1f1,,Luzern (SUI),14 JUL 2015,1169.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14324253,toplist
+53.0,11.16,1.8,Sally PEARSON,19 SEP 1986,AUS,1f1,,Canberra (AUS),07 FEB 2015,1165.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14271668,toplist
+53.0,11.16,1.8,Jennifer MADU,23 SEP 1994,USA,3sf3,,"Eugene, OR (USA)",11 JUN 2015,1165.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14366502,toplist
+53.0,11.16,1.5,Alexandria ANDERSON,28 JAN 1987,USA,6sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1165.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14304791,toplist
+56.0,11.17,1.4,Mikele BARBER,04 OCT 1980,USA,5f1,,"Walnut, CA (USA)",18 APR 2015,1163.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14305305,toplist
+56.0,11.17,1.8,Ky WESTBROOK,25 FEB 1996,USA,4sf3,,"Eugene, OR (USA)",11 JUN 2015,1163.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14430849,toplist
+56.0,11.17,0.4,Kerron STEWART,16 APR 1984,JAM,5,,Kingston (JAM),26 JUN 2015,1163.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285938,toplist
+59.0,11.19,0.0,Khalifa ST. FORT,13 FEB 1998,TTO,2,,"Pascual Guerrero Stadium, Cali (COL)",16 JUL 2015,1159.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14577655,toplist
+59.0,11.19,0.9,Viktoriya ZYABKINA,04 SEP 1992,KAZ,6sf2,,"National Stadium, Beijing (CHN)",24 AUG 2015,1159.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14375464,toplist
+61.0,11.20,0.0,Jessica YOUNG-WARREN,06 APR 1987,USA,3,,Bellinzona (SUI),21 JUL 2015,1157.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14324854,toplist
+61.0,11.20,0.0,Olga SAFRONOVA,05 NOV 1991,KAZ,1h2,,Almaty (KAZ),25 JUL 2015,1157.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14288586,toplist
+63.0,11.21,1.9,Sheniqua FERGUSON,24 NOV 1989,BAH,1h1,,"Auburn, AL (USA)",18 APR 2015,1154.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14270638,toplist
+63.0,11.21,1.3,Rebekka HAASE,02 JAN 1993,GER,1sf1,,Wetzlar (GER),13 JUN 2015,1154.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14360165,toplist
+65.0,11.22,2.0,Yelizaveta DEMIROVA,14 AUG 1987,RUS,1,,Yerino (RUS),06 JUN 2015,1152.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14299187,toplist
+65.0,11.22,2.0,Tawanna MEADOWS,04 AUG 1986,USA,1h1,,"Montverde, FL (USA)",06 JUN 2015,1152.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14316787,toplist
+65.0,11.22,1.4,Reyare THOMAS,23 NOV 1987,TTO,3f2,,Port-of-Spain (TTO),27 JUN 2015,1152.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14303055,toplist
+68.0,11.23,0.2,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,6f1,,"National Stadium, Kingston (JAM)",09 MAY 2015,1150.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14285586,toplist
+68.0,11.23,1.5,Tatjana PINTO,02 JUL 1992,GER,1f1,,Regensburg (GER),06 JUN 2015,1150.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14279214,toplist
+68.0,11.23,-0.5,Chisato FUKUSHIMA,27 JUN 1988,JPN,3h7,,"National Stadium, Beijing (CHN)",23 AUG 2015,1153.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14286217,toplist
+71.0,11.24,1.6,Ewa SWOBODA,26 JUL 1997,POL,1f1,,St. Pölten (AUT),04 JUN 2015,1148.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14451085,toplist
+71.0,11.24,1.6,Yekaterina SMIRNOVA,08 SEP 1988,RUS,2f1,,St. Pölten (AUT),04 JUN 2015,1148.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14299745,toplist
+71.0,11.24,0.6,Teahna DANIELS,25 MAR 1997,USA,1,,"Eugene, OR (USA)",26 JUN 2015,1148.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14443924,toplist
+74.0,11.25,1.8,Jamile SAMUEL,24 APR 1992,NED,4,,"FBK Stadium, Hengelo (NED)",24 MAY 2015,1146.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14291975,toplist
+74.0,11.25,0.9,Gina LÜCKENKEMPER,21 NOV 1996,GER,1sf2,,Wetzlar (GER),13 JUN 2015,1146.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14450088,toplist
+76.0,11.26,0.9,Melissa BREEN,17 SEP 1990,AUS,1,,Brisbane (AUS),28 MAR 2015,1144.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14272403,toplist
+76.0,11.26,1.5,Tristie JOHNSON,20 NOV 1993,USA,1,,"Greensboro, NC (USA)",02 MAY 2015,1144.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14527007,toplist
+76.0,11.26,2.0,Zaria FRANCIS,22 MAR 1998,USA,2,,"Shoreline, WA (USA)",20 JUN 2015,1144.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14614448,toplist
+76.0,11.26,1.8,Alexis FAULKNOR,22 SEP 1994,USA,6h4,,"Hayward Field, Eugene, OR (USA)",25 JUN 2015,1144.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14366528,toplist
+80.0,11.27,0.8,Jamaul ANDREWS,1999,TTO,1f3,,Port-of-Spain (TTO),26 APR 2015,1142.0,women_100m,2015,https://worldathletics.org/athletes/trinidad-and-tobago/jamaul-andrews-14699372,toplist
+80.0,11.27,0.7,Alphonsus Peace UKO,26 DEC 1995,NGR,1f2,,"Clermont, FL (USA)",16 MAY 2015,1142.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14480031,toplist
+80.0,11.27,1.1,TyNia GAITHER,16 MAR 1993,BAH,2,,"Los Angeles, CA (USA)",17 MAY 2015,1142.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14362366,toplist
+80.0,11.27,2.0,Kseniya RYZHOVA,19 APR 1987,RUS,2,,Yerino (RUS),06 JUN 2015,1142.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14299689,toplist
+80.0,11.27,1.5,Crystal EMMANUEL,27 NOV 1991,CAN,2,,Edmonton (CAN),03 JUL 2015,1142.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14270576,toplist
+80.0,11.27,0.5,Yongli WEI,11 OCT 1991,CHN,8sf1,,"National Stadium, Beijing (CHN)",24 AUG 2015,1142.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14423021,toplist
+86.0,11.28,1.5,Sabria HADLEY,01 JAN 1995,USA,1,,"Tallahassee, FL (USA)",16 MAY 2015,1139.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14471485,toplist
+86.0,11.28,1.0,Marika POPOWICZ-DRAPAŁA,28 APR 1988,POL,1f2,,Bydgoszcz (POL),14 JUN 2015,1139.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14294295,toplist
+86.0,11.28,0.6,Sanya RICHARDS-ROSS,26 FEB 1985,USA,5,,Edmonton (CAN),12 JUL 2015,1139.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14319838,toplist
+89.0,11.29,-1.3,Janet AMPONSAH,12 APR 1993,GHA,1f1,,"Canyon, TX (USA)",25 APR 2015,1144.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14334452,toplist
+89.0,11.29,-0.3,Morolake AKINOSUN,17 MAY 1994,USA,1h2,,"Ames, IA (USA)",16 MAY 2015,1138.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14430813,toplist
+89.0,11.29,0.2,Véronique MANG,15 DEC 1984,FRA,9,,"Stade de France, Paris-St-Denis (FRA)",04 JUL 2015,1137.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14272993,toplist
+92.0,11.30,2.0,Shayla SANDERS,06 JAN 1994,USA,3sf1,,"Eugene, OR (USA)",11 JUN 2015,1135.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14405076,toplist
+92.0,11.30,0.2,Lolo JONES,05 AUG 1982,USA,3h2,,Bellinzona (SUI),21 JUL 2015,1135.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14313962,toplist
+92.0,11.30,0.1,Anna-Lena FREESE,21 JAN 1994,GER,2h1,,Nürnberg (GER),25 JUL 2015,1135.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14361576,toplist
+92.0,11.30,1.1,Andrea IVANČEVIĆ,21 AUG 1984,CRO,1,,Varaždin (CRO),25 JUL 2015,1135.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14263811,toplist
+92.0,11.30,0.6,Yasmin KWADWO,09 NOV 1990,GER,1f2,,Mannheim (GER),08 AUG 2015,1135.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14278598,toplist
+97.0,11.31,1.2,Mikiah BRISCO,14 JUL 1996,USA,2h3,,"Starkville, MS (USA)",15 MAY 2015,1133.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14465133,toplist
+97.0,11.31,2.0,Yekaterina RENZHINA,18 OCT 1994,RUS,3,,Yerino (RUS),06 JUN 2015,1133.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14421170,toplist
+97.0,11.31,1.5,Lisa MAYER,02 MAY 1996,GER,2,,Wetzlar (GER),13 JUN 2015,1133.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14448966,toplist
+97.0,11.31,1.5,Kimberly HYACINTHE,28 MAR 1989,CAN,3,,Edmonton (CAN),03 JUL 2015,1133.0,women_100m,2015,https://worldathletics.org/athletes/athlete=14267823,toplist
+1.0,10.70,0.3,Elaine THOMPSON,28 JUN 1992,JAM,1,,Kingston (JAM),01 JUL 2016,1266.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285956,toplist
+2.0,10.74,1.0,English GARDNER,22 APR 1992,USA,1,,"Hayward Field, Eugene, OR (USA)",03 JUL 2016,1257.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14310719,toplist
+3.0,10.78,1.6,Murielle AHOURÉ,23 AUG 1987,CIV,1f1,,"Montverde, FL (USA)",11 JUN 2016,1248.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14304569,toplist
+3.0,10.78,1.0,Tianna BARTOLETTA,30 AUG 1985,USA,2,,"Hayward Field, Eugene, OR (USA)",03 JUL 2016,1248.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14315831,toplist
+3.0,10.78,1.0,Tori BOWIE,27 AUG 1990,USA,3,,"Hayward Field, Eugene, OR (USA)",03 JUL 2016,1248.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14360382,toplist
+6.0,10.83,0.7,Dafne SCHIPPERS,15 JUN 1992,NED,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",06 MAY 2016,1237.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14291986,toplist
+6.0,10.83,1.6,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,2f1,,"Montverde, FL (USA)",11 JUN 2016,1237.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285598,toplist
+8.0,10.86,0.5,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,3,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1231.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285680,toplist
+8.0,10.86,0.5,Marie-Josée TA LOU,18 NOV 1988,CIV,4,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1231.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14415994,toplist
+10.0,10.90,1.0,Michelle-Lee AHYE,10 APR 1992,TTO,2sf1,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1222.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14302966,toplist
+11.0,10.95,1.7,Jenna PRANDINI,20 NOV 1992,USA,1f1,,"Walnut, CA (USA)",16 APR 2016,1211.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14329068,toplist
+11.0,10.95,1.0,Morolake AKINOSUN,17 MAY 1994,USA,4,,"Hayward Field, Eugene, OR (USA)",03 JUL 2016,1211.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14430813,toplist
+13.0,10.96,1.0,Christania WILLIAMS,17 OCT 1994,JAM,3sf1,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1209.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14413656,toplist
+14.0,10.99,1.7,Hannah CUNLIFFE,09 JAN 1996,USA,2f1,,"Walnut, CA (USA)",16 APR 2016,1202.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14365078,toplist
+15.0,11.00,0.4,Simone FACEY,07 MAY 1985,JAM,1f1,,"Gainesville, FL (USA)",22 APR 2016,1200.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285672,toplist
+15.0,11.00,1.2,Tatjana PINTO,02 JUL 1992,GER,1er1,,Mannheim (GER),29 JUL 2016,1200.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14279214,toplist
+17.0,11.01,2.0,Arianna WASHINGTON,04 SEP 1996,USA,2h3,,"Hayward Field, Eugene, OR (USA)",02 JUL 2016,1198.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14468500,toplist
+18.0,11.02,0.3,Blessing OKAGBARE,09 OCT 1988,NGR,1,,Sapele (NGR),07 JUL 2016,1195.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14292330,toplist
+19.0,11.04,1.5,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,2sf2,,Port-of-Spain (TTO),25 JUN 2016,1191.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14302975,toplist
+19.0,11.04,1.2,Gina LÜCKENKEMPER,21 NOV 1996,GER,2er1,,Mannheim (GER),29 JUL 2016,1191.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14450088,toplist
+21.0,11.06,1.5,Desiree HENRY,26 AUG 1995,GBR,1f4,,"Azusa, CA (USA)",15 APR 2016,1187.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14360349,toplist
+22.0,11.07,1.5,Lekeisha LAWSON,03 JUN 1987,USA,1f2,,"Chula Vista, CA (USA)",18 JUN 2016,1185.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14315112,toplist
+22.0,11.07,2.0,Carina HORN,09 MAR 1989,RSA,2,,Durban (RSA),22 JUN 2016,1185.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14361361,toplist
+22.0,11.07,1.0,Semoy HACKETT,27 NOV 1988,TTO,2f2,,Port-of-Spain (TTO),25 JUN 2016,1185.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14303004,toplist
+22.0,11.07,1.8,Barbara PIERRE,28 APR 1987,USA,2h5,,"Hayward Field, Eugene, OR (USA)",02 JUL 2016,1185.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14318999,toplist
+22.0,11.07,0.9,Candace HILL,11 FEB 1999,USA,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",21 JUL 2016,1185.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14596374,toplist
+22.0,11.07,-1.3,Dina ASHER-SMITH,04 DEC 1995,GBR,3h2,,"Olympic Stadium, London (GBR)",23 JUL 2016,1192.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14378282,toplist
+28.0,11.09,0.8,Olga SAFRONOVA,05 NOV 1991,KAZ,1,,Almaty (KAZ),24 MAY 2016,1180.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14288586,toplist
+28.0,11.09,1.6,Joanna ATKINS,31 JAN 1989,USA,3f1,,"Montverde, FL (USA)",11 JUN 2016,1180.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14305059,toplist
+30.0,11.10,1.7,Mikele BARBER,04 OCT 1980,USA,3f1,,"Walnut, CA (USA)",16 APR 2016,1178.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14305305,toplist
+31.0,11.11,1.7,Kimberlyn DUNCAN,02 AUG 1991,USA,4f1,,"Walnut, CA (USA)",16 APR 2016,1176.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14309365,toplist
+31.0,11.11,-0.1,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,2,,"National Stadium, Beijing (CHN)",18 MAY 2016,1176.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14268643,toplist
+31.0,11.11,-2.2,Natalia POHREBNIAK,19 FEB 1988,UKR,1,,Lutsk (UKR),17 JUN 2016,1189.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14304035,toplist
+31.0,11.11,1.0,Tiffany TOWNSEND,14 JUN 1989,USA,8,,"Hayward Field, Eugene, OR (USA)",03 JUL 2016,1176.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14322941,toplist
+35.0,11.12,0.9,Ewa SWOBODA,26 JUL 1997,POL,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",21 JUL 2016,1174.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14451085,toplist
+36.0,11.13,1.2,Shayla SANDERS,06 JAN 1994,USA,1f1,,"Los Angeles, CA (USA)",26 MAR 2016,1172.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14405076,toplist
+36.0,11.13,0.4,Candyce MCGRONE,24 MAR 1989,USA,3f1,,"Gainesville, FL (USA)",22 APR 2016,1172.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14316585,toplist
+36.0,11.13,1.0,Ángela Gabriela TENORIO,27 JAN 1996,ECU,2,,"Moratalaz, Madrid (ESP)",23 JUN 2016,1172.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14496119,toplist
+36.0,11.13,1.8,Tawanna MEADOWS,04 AUG 1986,USA,2h1,,"Hayward Field, Eugene, OR (USA)",02 JUL 2016,1172.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14316787,toplist
+40.0,11.14,0.1,Mujinga KAMBUNDJI,17 JUN 1992,SUI,1h1,,Weinheim (GER),29 MAY 2016,1169.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14300897,toplist
+40.0,11.14,1.8,Brenessa THOMPSON,22 JUL 1996,GUY,1,,"Leonora Stadium, Leonora (GUY)",18 JUN 2016,1169.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14474359,toplist
+40.0,11.14,1.4,Octavious FREEMAN,20 APR 1992,USA,1f1,,Port-of-Spain (TTO),25 JUN 2016,1169.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14335310,toplist
+40.0,11.14,0.7,Ana Claudia LEMOS,06 NOV 1988,BRA,1,,Medellín (COL),10 JUL 2016,1169.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14269001,toplist
+44.0,11.15,1.8,Kaylor HARRIS,31 OCT 1998,USA,1h2,,"Dallas, TX (USA)",18 MAR 2016,1167.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14596523,toplist
+44.0,11.15,1.2,Viktoriya ZYABKINA,04 SEP 1992,KAZ,1,,Almaty (KAZ),25 JUN 2016,1167.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14375464,toplist
+46.0,11.16,1.5,Carmelita JETER,24 NOV 1979,USA,7,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1165.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14313618,toplist
+46.0,11.16,1.0,Khalifa ST. FORT,13 FEB 1998,TTO,4f2,,Port-of-Spain (TTO),25 JUN 2016,1165.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14577655,toplist
+46.0,11.16,1.8,Shalonda SOLOMON,19 DEC 1985,USA,3h1,,"Hayward Field, Eugene, OR (USA)",02 JUL 2016,1165.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14321706,toplist
+46.0,11.16,-1.3,Asha PHILIP,25 OCT 1990,GBR,5h2,,"Olympic Stadium, London (GBR)",23 JUL 2016,1172.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14276065,toplist
+50.0,11.17,0.2,Kyra JEFFERSON,23 SEP 1994,USA,1f3,,"Gainesville, FL (USA)",22 APR 2016,1163.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14411312,toplist
+50.0,11.17,1.6,Kaylin WHITNEY,09 MAR 1998,USA,4f1,,"Montverde, FL (USA)",11 JUN 2016,1163.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14524719,toplist
+50.0,11.17,-0.4,Stella AKAKPO,28 FEB 1994,FRA,1,,Angers (FRA),25 JUN 2016,1165.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14385848,toplist
+50.0,11.17,0.3,Shashalee FORBES,10 MAY 1996,JAM,6,,Kingston (JAM),01 JUL 2016,1163.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14574709,toplist
+50.0,11.17,1.7,Imani LANSIQUOT,17 DEC 1997,GBR,1h3,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",20 JUL 2016,1163.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14506362,toplist
+55.0,11.18,0.8,Deajah STEVENS,19 MAY 1995,USA,2h2,,"Hayward Field, Eugene, OR (USA)",02 JUL 2016,1161.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14378231,toplist
+56.0,11.19,0.8,Alexandria ANDERSON,28 JAN 1987,USA,1f1,,"Austin, TX (USA)",16 APR 2016,1159.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14304791,toplist
+56.0,11.19,0.0,Shaunae MILLER,15 APR 1994,BAH,2f1,,"Clermont, FL (USA)",30 APR 2016,1159.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14368116,toplist
+56.0,11.19,1.8,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,1f1,,"Phoenix, AZ (USA)",21 MAY 2016,1159.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285586,toplist
+56.0,11.19,-1.3,Kerron STEWART,16 APR 1984,JAM,3,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",22 MAY 2016,1166.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285938,toplist
+56.0,11.19,1.8,Ashleigh NELSON,20 FEB 1991,GBR,2f1,,Weinheim (GER),29 MAY 2016,1159.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14275890,toplist
+56.0,11.19,1.1,TyNia GAITHER,16 MAR 1993,BAH,2sf2,,"Eugene, OR (USA)",09 JUN 2016,1159.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14362366,toplist
+56.0,11.19,0.9,Floriane GNAFOUA,30 JAN 1996,FRA,2h2,,Angers (FRA),25 JUN 2016,1159.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14506074,toplist
+63.0,11.20,1.7,Jasmine TODD,23 DEC 1993,USA,5f1,,"Walnut, CA (USA)",16 APR 2016,1157.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14375278,toplist
+63.0,11.20,1.3,Khianna GRAY,30 DEC 1996,USA,1sf3,,"Eugene, OR (USA)",09 JUN 2016,1157.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14597005,toplist
+63.0,11.20,0.7,Evelin RIVERA,03 DEC 1997,COL,2,,Medellín (COL),10 JUL 2016,1157.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14598212,toplist
+66.0,11.21,1.2,Teahna DANIELS,25 MAR 1997,USA,2f1,,"Los Angeles, CA (USA)",26 MAR 2016,1154.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14443924,toplist
+66.0,11.21,1.1,Olesya POVH,18 OCT 1987,UKR,1,,Kirovograd (UKR),25 MAY 2016,1154.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14304049,toplist
+66.0,11.21,1.9,Lorène Dorcas BAZOLO,04 MAY 1983,POR,1f1,,Salamanca (ESP),04 JUN 2016,1154.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14375638,toplist
+66.0,11.21,1.5,Ashley HENDERSON,04 DEC 1995,USA,1sf1,,"Eugene, OR (USA)",09 JUN 2016,1154.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14436992,toplist
+66.0,11.21,1.3,Deanna HILL,13 APR 1996,USA,2sf3,,"Eugene, OR (USA)",09 JUN 2016,1154.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14430848,toplist
+66.0,11.21,1.6,Shelbi WHITE,,USA,6f1,,"Montverde, FL (USA)",11 JUN 2016,1154.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14492003,toplist
+66.0,11.21,0.7,Eliecith PALACIOS,15 AUG 1987,COL,3,,Medellín (COL),10 JUL 2016,1154.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14263955,toplist
+73.0,11.22,0.3,Rebekka HAASE,02 JAN 1993,GER,3f1,,"Clermont, FL (USA)",14 MAY 2016,1152.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14360165,toplist
+73.0,11.22,1.8,Reyare THOMAS,23 NOV 1987,TTO,2,,"Leonora Stadium, Leonora (GUY)",18 JUN 2016,1152.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14303055,toplist
+73.0,11.22,1.0,Kristina SIVKOVA,28 FEB 1997,RUS,1,,Cheboksary (RUS),20 JUN 2016,1152.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14560320,toplist
+76.0,11.23,0.6,Alyssa CONLEY,27 APR 1991,RSA,2f1,,Gavardo (ITA),29 MAY 2016,1150.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14296159,toplist
+76.0,11.23,-0.3,Rosângela SANTOS,20 DEC 1990,BRA,1,,Rio de Janeiro (BRA),05 JUN 2016,1151.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14268928,toplist
+76.0,11.23,1.2,Daryll NEITA,29 AUG 1996,GBR,1sf1,,Birmingham (GBR),25 JUN 2016,1150.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14476603,toplist
+79.0,11.24,-0.1,Yongli WEI,11 OCT 1991,CHN,4,,"National Stadium, Beijing (CHN)",18 MAY 2016,1148.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14423021,toplist
+79.0,11.24,1.8,Gloria ASUMNU,22 MAY 1985,NGR,2f1,,"Phoenix, AZ (USA)",21 MAY 2016,1148.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14305055,toplist
+79.0,11.24,0.0,Hrystyna STUY,03 FEB 1988,UKR,1h1,,Kirovograd (UKR),25 MAY 2016,1148.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14304242,toplist
+79.0,11.24,1.5,Mikiah BRISCO,14 JUL 1996,USA,2sf1,,"Eugene, OR (USA)",09 JUN 2016,1148.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14465133,toplist
+79.0,11.24,0.6,Gayon EVANS,15 JAN 1990,JAM,4f1,,Kingston (JAM),11 JUN 2016,1148.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285670,toplist
+79.0,11.24,0.6,Remona BURCHELL,15 SEP 1991,JAM,5f1,,Kingston (JAM),11 JUN 2016,1148.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14413497,toplist
+85.0,11.25,1.8,I'Shunique HAMILTON,16 DEC 1997,USA,2h2,,"Dallas, TX (USA)",18 MAR 2016,1146.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14430864,toplist
+85.0,11.25,1.1,Jura Lanconia LEVY,04 NOV 1990,JAM,1f5,,Kingston (JAM),16 APR 2016,1146.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285765,toplist
+85.0,11.25,1.1,Lisa MAYER,02 MAY 1996,GER,2f1,,Wetzlar (GER),07 MAY 2016,1146.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14448966,toplist
+85.0,11.25,0.5,Felicia BROWN,27 OCT 1993,USA,1h3,,"Tuscaloosa, AL (USA)",13 MAY 2016,1146.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14366314,toplist
+85.0,11.25,1.6,Jennifer GALAIS,07 MAR 1992,FRA,1h1,,Vénissieux (FRA),04 JUN 2016,1146.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14379003,toplist
+85.0,11.25,1.9,Me'Lisa BARBER,04 OCT 1980,USA,2f1,,"Norwalk, CA (USA)",04 JUN 2016,1146.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14305304,toplist
+85.0,11.25,1.1,Anna Ramona PAPAIOANNOU,15 JUN 1989,CYP,1f1,,Lefkosia (CYP),18 JUN 2016,1146.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14263288,toplist
+85.0,11.25,-0.6,Tahesia HARRIGAN-SCOTT,15 FEB 1982,IVB,1,,Road Town (IVB),03 JUL 2016,1149.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14285518,toplist
+93.0,11.26,0.5,Marizol LANDÁZURI,13 JUN 1991,ECU,1,,Cuenca (ECU),26 MAR 2016,1144.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14596259,toplist
+93.0,11.26,0.3,Flings OWUSU-AGYAPONG,16 OCT 1988,GHA,4f1,,"Clermont, FL (USA)",14 MAY 2016,1144.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14318423,toplist
+93.0,11.26,1.2,Iman Essa JASIM,09 JUL 1997,BRN,3,,Almaty (KAZ),25 JUN 2016,1144.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14701080,toplist
+93.0,11.26,-0.9,Kali DAVIS-WHITE,27 OCT 1994,USA,2sf3,,Kingston (JAM),01 JUL 2016,1149.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14436980,toplist
+93.0,11.26,0.6,Crystal EMMANUEL,27 NOV 1991,CAN,1,,Edmonton (CAN),09 JUL 2016,1144.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14270576,toplist
+93.0,11.26,1.1,Phylicia GEORGE,16 NOV 1987,CAN,1h3,,Edmonton (CAN),09 JUL 2016,1144.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14310864,toplist
+99.0,11.27,0.4,Quanera HAYES,07 MAR 1992,USA,2f2,,"Gainesville, FL (USA)",22 APR 2016,1142.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14509544,toplist
+99.0,11.27,1.6,Kortnei JOHNSON,11 AUG 1997,USA,1qf2,,"Jacksonville, FL (USA)",27 MAY 2016,1142.0,women_100m,2016,https://worldathletics.org/athletes/athlete=14519052,toplist
+1.0,10.71,0.8,Elaine THOMPSON,28 JUN 1992,JAM,1,,Kingston (JAM),23 JUN 2017,1264.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14285956,toplist
+2.0,10.82,0.9,Michelle-Lee AHYE,10 APR 1992,TTO,1f2,,Port-of-Spain (TTO),24 JUN 2017,1239.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14302966,toplist
+3.0,10.83,1.1,Murielle AHOURÉ,23 AUG 1987,CIV,1f1,,"Montverde, FL (USA)",10 JUN 2017,1237.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14304569,toplist
+4.0,10.84,1.1,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,2f1,,"Montverde, FL (USA)",10 JUN 2017,1235.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14285598,toplist
+5.0,10.85,2.0,Aleia HOBBS,24 FEB 1996,USA,1f1,,"Baton Rouge, LA (USA)",29 APR 2017,1233.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14430847,toplist
+5.0,10.85,0.1,Tori BOWIE,27 AUG 1990,USA,1,,"Olympic Stadium, London (GBR)",06 AUG 2017,1233.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14360382,toplist
+7.0,10.86,0.1,Marie-Josée TA LOU,18 NOV 1988,CIV,2,,"Olympic Stadium, London (GBR)",06 AUG 2017,1231.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14415994,toplist
+8.0,10.88,0.9,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,2f2,,Port-of-Spain (TTO),24 JUN 2017,1226.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14302975,toplist
+9.0,10.91,-0.2,Rosângela SANTOS,20 DEC 1990,BRA,2sf2,,"Olympic Stadium, London (GBR)",06 AUG 2017,1221.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14268928,toplist
+10.0,10.94,-0.1,Schillonie CALVERT-POWELL,27 JUL 1988,JAM,1h1,,"Mesa, AZ (USA)",10 JUN 2017,1213.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14285586,toplist
+11.0,10.95,0.8,Dafne SCHIPPERS,15 JUN 1992,NED,1f1,,"Azusa, CA (USA)",14 APR 2017,1211.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14291986,toplist
+11.0,10.95,1.3,Gina LÜCKENKEMPER,21 NOV 1996,GER,1h1,,"Olympic Stadium, London (GBR)",05 AUG 2017,1211.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14450088,toplist
+13.0,10.96,0.3,Mikiah BRISCO,14 JUL 1996,USA,1,,"Eugene, OR (USA)",10 JUN 2017,1209.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14465133,toplist
+14.0,10.98,0.7,Morolake AKINOSUN,17 MAY 1994,USA,1h4,,"Sacramento, CA (USA)",22 JUN 2017,1204.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14430813,toplist
+15.0,10.99,1.4,Barbara PIERRE,28 APR 1987,USA,1h1,,"Sacramento, CA (USA)",22 JUN 2017,1202.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14318999,toplist
+15.0,10.99,-1.4,Blessing OKAGBARE,09 OCT 1988,NGR,3,,"Olympic Stadium, London (GBR)",09 JUL 2017,1210.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14292330,toplist
+17.0,11.00,0.7,Deajah STEVENS,19 MAY 1995,USA,1f1,,"Torrance, CA (USA)",15 APR 2017,1200.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14378231,toplist
+18.0,11.01,1.8,Ashley HENDERSON,04 DEC 1995,USA,1sf1,,"Austin, TX (USA)",26 MAY 2017,1198.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14436992,toplist
+18.0,11.01,1.6,Aaliyah BROWN,06 JAN 1995,USA,2h2,,"Sacramento, CA (USA)",22 JUN 2017,1198.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14306531,toplist
+20.0,11.03,1.4,Kimberlyn DUNCAN,02 AUG 1991,USA,2h1,,"Sacramento, CA (USA)",22 JUN 2017,1193.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14309365,toplist
+20.0,11.03,0.7,Allyson FELIX,18 NOV 1985,USA,2h4,,"Sacramento, CA (USA)",22 JUN 2017,1193.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14309983,toplist
+20.0,11.03,0.7,Christania WILLIAMS,17 OCT 1994,JAM,2sf2,,Kingston (JAM),23 JUN 2017,1193.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14413656,toplist
+23.0,11.04,-0.2,English GARDNER,22 APR 1992,USA,2h3,,"Sacramento, CA (USA)",22 JUN 2017,1192.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14310719,toplist
+23.0,11.04,0.8,Simone FACEY,07 MAY 1985,JAM,2,,Kingston (JAM),23 JUN 2017,1191.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14285672,toplist
+23.0,11.04,0.8,Tianna BARTOLETTA,30 AUG 1985,USA,1f1,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1191.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14315831,toplist
+26.0,11.05,2.0,Destiny CARTER,09 OCT 1992,USA,2f1,,"Baton Rouge, LA (USA)",29 APR 2017,1189.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14625419,toplist
+26.0,11.05,1.4,Jenna PRANDINI,20 NOV 1992,USA,3h1,,"Sacramento, CA (USA)",22 JUN 2017,1189.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14329068,toplist
+28.0,11.06,0.7,Arianna WASHINGTON,04 SEP 1996,USA,2f1,,"Torrance, CA (USA)",15 APR 2017,1187.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14468500,toplist
+28.0,11.06,1.8,Rebekka HAASE,02 JAN 1993,GER,2h,,Zeulenroda (GER),25 MAY 2017,1187.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14360165,toplist
+28.0,11.06,0.3,Teahna DANIELS,25 MAR 1997,USA,3,,"Eugene, OR (USA)",10 JUN 2017,1187.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14443924,toplist
+28.0,11.06,0.8,Jura Lanconia LEVY,04 NOV 1990,JAM,3,,Kingston (JAM),23 JUN 2017,1187.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14285765,toplist
+28.0,11.06,0.9,Khalifa ST. FORT,13 FEB 1998,TTO,3f2,,Port-of-Spain (TTO),24 JUN 2017,1187.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14577655,toplist
+33.0,11.07,0.0,Mujinga KAMBUNDJI,17 JUN 1992,SUI,1f1,,Bellinzona (SUI),18 JUL 2017,1185.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14300897,toplist
+34.0,11.09,0.6,Desiree HENRY,26 AUG 1995,GBR,1f2,,"Azusa, CA (USA)",14 APR 2017,1180.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14360349,toplist
+34.0,11.09,0.7,Kortnei JOHNSON,11 AUG 1997,USA,3f1,,"Torrance, CA (USA)",15 APR 2017,1180.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14519052,toplist
+34.0,11.09,0.8,Natasha MORRISON,17 NOV 1992,JAM,4,,Kingston (JAM),23 JUN 2017,1180.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14285826,toplist
+34.0,11.09,0.7,Remona BURCHELL,15 SEP 1991,JAM,3sf2,,Kingston (JAM),23 JUN 2017,1180.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14413497,toplist
+38.0,11.10,0.3,Carina HORN,09 MAR 1989,RSA,1sf1,,Potchefstroom (RSA),21 APR 2017,1178.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14361361,toplist
+38.0,11.10,0.8,Shashalee FORBES,10 MAY 1996,JAM,5,,Kingston (JAM),23 JUN 2017,1178.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14574709,toplist
+40.0,11.11,1.4,Hannah CUNLIFFE,09 JAN 1996,USA,3,,"Eugene, OR (USA)",14 MAY 2017,1176.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14365078,toplist
+40.0,11.11,1.9,Semoy HACKETT,27 NOV 1988,TTO,1,,"Miami, FL (USA)",08 JUL 2017,1176.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14303004,toplist
+42.0,11.12,1.9,Kerron STEWART,16 APR 1984,JAM,1h4,,"Auburn, AL (USA)",22 APR 2017,1174.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14285938,toplist
+43.0,11.13,0.4,Jonielle SMITH,30 JAN 1996,JAM,1h3,,"Columbia, SC (USA)",12 MAY 2017,1172.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14413641,toplist
+43.0,11.13,0.1,Carolle ZAHI,12 JUN 1994,FRA,1,,Marseille (FRA),15 JUL 2017,1172.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14477479,toplist
+43.0,11.13,0.8,Dina ASHER-SMITH,04 DEC 1995,GBR,2h1,,"Alexander Stadium, Birmingham (GBR)",20 AUG 2017,1172.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14378282,toplist
+46.0,11.14,-0.4,Daryll NEITA,29 AUG 1996,GBR,4h2,,"Olympic Stadium, London (GBR)",09 JUL 2017,1171.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14476603,toplist
+46.0,11.14,1.3,Asha PHILIP,25 OCT 1990,GBR,4h1,,"Olympic Stadium, London (GBR)",05 AUG 2017,1169.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14276065,toplist
+46.0,11.14,0.8,Crystal EMMANUEL,27 NOV 1991,CAN,2h2,,"Olympic Stadium, London (GBR)",05 AUG 2017,1169.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14270576,toplist
+46.0,11.14,-0.2,Lisa MAYER,02 MAY 1996,GER,1f2,,"Olympiastadion, Berlin (GER)",27 AUG 2017,1170.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14448966,toplist
+50.0,11.16,0.7,Mikele BARBER,04 OCT 1980,USA,5f1,,"Torrance, CA (USA)",15 APR 2017,1165.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14305305,toplist
+50.0,11.16,2.0,Javianne OLIVER,26 DEC 1994,USA,3f1,,"Baton Rouge, LA (USA)",29 APR 2017,1165.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14484313,toplist
+50.0,11.16,1.2,Tawanna MEADOWS,04 AUG 1986,USA,1,,"New York, NY (USA)",06 JUL 2017,1165.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14316787,toplist
+53.0,11.17,1.4,Deanna HILL,13 APR 1996,USA,6h1,,"Sacramento, CA (USA)",22 JUN 2017,1163.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14430848,toplist
+53.0,11.17,2.0,Sally PEARSON,19 SEP 1986,AUS,1f7,,Brisbane (AUS),16 DEC 2017,1163.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14271668,toplist
+55.0,11.18,1.2,Ángela Gabriela TENORIO,27 JAN 1996,ECU,1,,Rovereto (ITA),29 AUG 2017,1161.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14496119,toplist
+56.0,11.19,1.1,Charonda WILLIAMS,27 MAR 1987,USA,5f1,,"Montverde, FL (USA)",10 JUN 2017,1159.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14324253,toplist
+56.0,11.19,1.0,Shaunae MILLER,15 APR 1994,BAH,5h2,,"Alexander Stadium, Birmingham (GBR)",20 AUG 2017,1159.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14368116,toplist
+58.0,11.20,1.6,Candyce MCGRONE,24 MAR 1989,USA,4h2,,"Sacramento, CA (USA)",22 JUN 2017,1157.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14316585,toplist
+59.0,11.21,0.8,Destiny SMITH-BARNETT,26 JUL 1996,USA,3f1,,"Azusa, CA (USA)",14 APR 2017,1154.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14475801,toplist
+59.0,11.21,1.7,Quanesha BURKS,15 MAR 1995,USA,2h1,,"Columbia, SC (USA)",12 MAY 2017,1154.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14490255,toplist
+61.0,11.22,1.2,Orphée NEOLA,01 FEB 1991,FRA,2,,Montgeron (FRA),14 MAY 2017,1152.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14273302,toplist
+62.0,11.23,1.1,Candace HILL,11 FEB 1999,USA,1h1,,"Sacramento, CA (USA)",23 JUN 2017,1150.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14596374,toplist
+63.0,11.24,0.9,Symone MASON,31 AUG 1999,USA,1,,"Jacksonville, FL (USA)",18 MAR 2017,1148.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14498940,toplist
+63.0,11.24,1.3,Gabrielle THOMAS,07 DEC 1996,USA,1f2,,"Gainesville, FL (USA)",31 MAR 2017,1148.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14733520,toplist
+63.0,11.24,0.4,Shericka JACKSON,16 JUL 1994,JAM,1f1,,Kingston (JAM),06 MAY 2017,1148.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14325599,toplist
+63.0,11.24,0.0,Vitoria Cristina ROSA,12 JAN 1996,BRA,2,,Sao Bernardo do Campo (BRA),09 JUN 2017,1148.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14481687,toplist
+63.0,11.24,0.2,Ashton PURVIS,12 JUL 1992,USA,2f2,,"Mesa, AZ (USA)",10 JUN 2017,1148.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14319383,toplist
+63.0,11.24,1.6,Kevona DAVIS,20 DEC 2001,JAM,1,,Kingston (JAM),23 JUN 2017,1148.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14630588,toplist
+63.0,11.24,0.3,Tatjana PINTO,02 JUL 1992,GER,1h1,,Ninove (BEL),15 JUL 2017,1148.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14279214,toplist
+63.0,11.24,0.6,Ewa SWOBODA,26 JUL 1997,POL,5h6,,"Olympic Stadium, London (GBR)",05 AUG 2017,1148.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14451085,toplist
+71.0,11.25,0.8,Naomi Amanda SEDNEY,17 DEC 1994,NED,1f3,,"Gainesville, FL (USA)",31 MAR 2017,1146.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14401525,toplist
+71.0,11.25,1.8,Danielle WILLIAMS,14 SEP 1992,JAM,2,,"Greensboro, NC (USA)",15 APR 2017,1146.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14450995,toplist
+71.0,11.25,0.4,Brenessa THOMPSON,22 JUL 1996,GUY,2h3,,"Columbia, SC (USA)",12 MAY 2017,1146.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14474359,toplist
+71.0,11.25,1.9,Sina MAYER,10 APR 1995,GER,1h2,,Regensburg (GER),11 JUN 2017,1146.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14401271,toplist
+71.0,11.25,1.6,Tiffany TOWNSEND,14 JUN 1989,USA,6h2,,"Sacramento, CA (USA)",22 JUN 2017,1146.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14322941,toplist
+71.0,11.25,1.2,Andrea PURICA,21 NOV 1995,VEN,1,,Castellón (ESP),04 JUL 2017,1146.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14526573,toplist
+71.0,11.25,0.8,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,7sf1,,"Olympic Stadium, London (GBR)",06 AUG 2017,1146.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14268643,toplist
+78.0,11.26,0.9,Marizol LANDÁZURI,13 JUN 1991,ECU,1f1,,Medellín (COL),29 APR 2017,1144.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14596259,toplist
+78.0,11.26,0.4,Alexandria ANDERSON,28 JAN 1987,USA,1,,St-Martin (FRA),13 MAY 2017,1144.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14304791,toplist
+78.0,11.26,0.8,Shauna HELPS,23 OCT 1996,JAM,1,,"Atlanta, GA (USA)",14 MAY 2017,1144.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14413449,toplist
+78.0,11.26,1.2,Jamile SAMUEL,24 APR 1992,NED,3,,Montgeron (FRA),14 MAY 2017,1144.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14291975,toplist
+78.0,11.26,1.1,Gabriele CUNNINGHAM,22 FEB 1998,USA,2h1,,"Sacramento, CA (USA)",23 JUN 2017,1144.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14533396,toplist
+83.0,11.27,1.1,Cierra WHITE,29 APR 1993,USA,1,,"Amarillo, TX (USA)",14 MAY 2017,1142.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14430809,toplist
+83.0,11.27,-0.4,Dezerea BRYANT,27 APR 1993,USA,2,,Baie Mahault (FRA),17 MAY 2017,1144.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14375109,toplist
+83.0,11.27,1.7,Tameka WILLIAMS,31 AUG 1989,SKN,1,,St. George's (GRN),04 JUN 2017,1142.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14300061,toplist
+83.0,11.27,-0.9,Ashleigh NELSON,20 FEB 1991,GBR,2sf2,,Birmingham (GBR),01 JUL 2017,1147.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14275890,toplist
+83.0,11.27,1.2,Joanna ATKINS,31 JAN 1989,USA,4,,"New York, NY (USA)",06 JUL 2017,1142.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14305059,toplist
+83.0,11.27,1.6,Salomé KORA,08 JUN 1994,SUI,1f1,,Bulle (SUI),08 JUL 2017,1142.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14509523,toplist
+89.0,11.28,1.3,Shayla SANDERS,06 JAN 1994,USA,2f2,,"Gainesville, FL (USA)",31 MAR 2017,1139.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14405076,toplist
+89.0,11.28,2.0,Sha'Carri RICHARDSON,25 MAR 2000,USA,1,,"Austin, TX (USA)",13 MAY 2017,1139.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14717691,toplist
+89.0,11.28,1.4,Krystsina TSIMANOUSKAYA,19 NOV 1996,BLR,1f3,,Ellwangen (GER),20 MAY 2017,1139.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14571586,toplist
+89.0,11.28,0.0,Khianna GRAY,30 DEC 1996,USA,2h1,,"Lexington, KY (USA)",25 MAY 2017,1139.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14597005,toplist
+89.0,11.28,1.2,Floriane GNAFOUA,30 JAN 1996,FRA,4,,Montreuil-sous-Bois (FRA),01 JUN 2017,1139.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14506074,toplist
+89.0,11.28,0.0,Amelie-Sophie LEDERER,22 APR 1994,GER,2h2,,Erfurt (GER),08 JUL 2017,1139.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14361699,toplist
+95.0,11.29,2.0,Toea WISIL,01 JAN 1988,PNG,1f1,,Canberra (AUS),17 FEB 2017,1137.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14293371,toplist
+95.0,11.29,2.0,Shavine HODGES,22 OCT 1992,JAM,2,,"Athens, GA (USA)",06 MAY 2017,1137.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14285734,toplist
+95.0,11.29,0.8,Rebakah SMITH,01 MAY 1998,USA,2,,"Atlanta, GA (USA)",14 MAY 2017,1137.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14622472,toplist
+95.0,11.29,0.3,Ky WESTBROOK,25 FEB 1996,USA,8,,"Eugene, OR (USA)",10 JUN 2017,1137.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14430849,toplist
+95.0,11.29,1.9,Lara MATHEIS,02 AUG 1992,GER,2h2,,Regensburg (GER),11 JUN 2017,1137.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14361034,toplist
+95.0,11.29,1.9,Jennifer MONTAG,11 FEB 1998,GER,2h2,,Regensburg (GER),11 JUN 2017,1137.0,women_100m,2017,https://worldathletics.org/athletes/athlete=14545765,toplist
+,10.73,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1.,,IAAF World Championships,17 AUG 2009,,,2009,,major_meet
+,10.75,,Kerron STEWART,16 APR 1984,JAM,2.,,IAAF World Championships,17 AUG 2009,,,2009,,major_meet
+,10.90,,Carmelita JETER,24 NOV 1979,USA,3.,,IAAF World Championships,17 AUG 2009,,,2009,,major_meet
+,10.95,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,4.,,IAAF World Championships,17 AUG 2009,,,2009,,major_meet
+,11.01,,Lauryn WILLIAMS,11 SEP 1983,USA,5.,,IAAF World Championships,17 AUG 2009,,,2009,,major_meet
+,11.05,,Debbie FERGUSON-MCKENZIE,16 JAN 1976,BAH,6.,,IAAF World Championships,17 AUG 2009,,,2009,,major_meet
+,11.05,,Chandra STURRUP,12 SEP 1971,BAH,7.,,IAAF World Championships,17 AUG 2009,,,2009,,major_meet
+,11.16,,Aleen BAILEY,25 NOV 1980,JAM,8.,,IAAF World Championships,17 AUG 2009,,,2009,,major_meet
+,11.10,,Verena SAILER,16 OCT 1985,GER,1.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,11.11,,Véronique MANG,15 DEC 1984,FRA,2.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,11.18,,Myriam SOUMARÉ,29 OCT 1986,FRA,3.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,11.23,,Ezinne OKPARAEBO,03 MAR 1988,NOR,4.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,11.31,,Mariya RYEMYEN,02 AUG 1987,UKR,5.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,11.36,,Anna GUROVA,29 APR 1981,RUS,6.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,11.36,,Georgia KOKLONI,07 MAY 1981,GRE,7.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,11.37,,Christine ARRON,13 SEP 1973,FRA,8.,,Barcelona European Championships,29 JUL 2010,,,2010,,major_meet
+,10.90,,Carmelita JETER,24 NOV 1979,USA,1.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,10.97,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,2.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,10.98,,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,3.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,10.99,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,4.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,11.12,,Blessing OKAGBARE,09 OCT 1988,NGR,5.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,11.15,,Kerron STEWART,16 APR 1984,JAM,6.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,11.27,,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,7.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,11.33,,Marshevet HOOKER,25 SEP 1984,USA,8.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,10.75,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1.,,The XXX Olympic Games,04 AUG 2012,,,2012,,major_meet
+,10.78,,Carmelita JETER,24 NOV 1979,USA,2.,,The XXX Olympic Games,04 AUG 2012,,,2012,,major_meet
+,10.81,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,3.,,The XXX Olympic Games,04 AUG 2012,,,2012,,major_meet
+,10.85,,Tianna MADISON,30 AUG 1985,USA,4.,,The XXX Olympic Games,04 AUG 2012,,,2012,,major_meet
+,10.89,,Allyson FELIX,18 NOV 1985,USA,5.,,The XXX Olympic Games,04 AUG 2012,,,2012,,major_meet
+,10.94,,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,6.,,The XXX Olympic Games,04 AUG 2012,,,2012,,major_meet
+,11.00,,Murielle AHOURÉ,23 AUG 1987,CIV,7.,,The XXX Olympic Games,04 AUG 2012,,,2012,,major_meet
+,11.01,,Blessing OKAGBARE,09 OCT 1988,NGR,8.,,The XXX Olympic Games,04 AUG 2012,,,2012,,major_meet
+,11.28,,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,1.,,Helsinki European Championships,28 JUN 2012,,,2012,,major_meet
+,11.32,,Olesya POVH,18 OCT 1987,UKR,2.,,Helsinki European Championships,28 JUN 2012,,,2012,,major_meet
+,11.32,,Lina GRINČIKAITĖ SAMUOLĖ,03 MAY 1987,LTU,3.,,Helsinki European Championships,28 JUN 2012,,,2012,,major_meet
+,11.39,,Ezinne OKPARAEBO,03 MAR 1988,NOR,4.,,Helsinki European Championships,28 JUN 2012,,,2012,,major_meet
+,11.42,,Olga BELKINA,23 AUG 1990,RUS,5.,,Helsinki European Championships,28 JUN 2012,,,2012,,major_meet
+,11.42,,Verena SAILER,16 OCT 1985,GER,6.,,Helsinki European Championships,28 JUN 2012,,,2012,,major_meet
+,11.54,,Anne CIBIS,27 SEP 1985,GER,7.,,Helsinki European Championships,28 JUN 2012,,,2012,,major_meet
+,11.62,,Tatjana PINTO,02 JUL 1992,GER,8.,,Helsinki European Championships,28 JUN 2012,,,2012,,major_meet
+,10.71,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,10.93,,Murielle AHOURÉ,23 AUG 1987,CIV,2.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,10.94,,Carmelita JETER,24 NOV 1979,USA,3.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,10.97,,English GARDNER,22 APR 1992,USA,4.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,10.97,,Kerron STEWART,16 APR 1984,JAM,5.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,11.04,,Blessing OKAGBARE,09 OCT 1988,NGR,6.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,11.10,,Alexandria ANDERSON,28 JAN 1987,USA,7.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,11.16,,Octavious FREEMAN,20 APR 1992,USA,8.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,11.12,,Dafne SCHIPPERS,15 JUN 1992,NED,1.,,Zürich European Championships,13 AUG 2014,,,2014,,major_meet
+,11.16,,Myriam SOUMARÉ,29 OCT 1986,FRA,2.,,Zürich European Championships,13 AUG 2014,,,2014,,major_meet
+,11.22,,Ashleigh NELSON,20 FEB 1991,GBR,3.,,Zürich European Championships,13 AUG 2014,,,2014,,major_meet
+,11.30,,Mujinga KAMBUNDJI,17 JUN 1992,SUI,4.,,Zürich European Championships,13 AUG 2014,,,2014,,major_meet
+,11.33,,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,5.,,Zürich European Championships,13 AUG 2014,,,2014,,major_meet
+,11.38,,Céline DISTEL-BONNET,25 JUL 1987,FRA,6.,,Zürich European Championships,13 AUG 2014,,,2014,,major_meet
+,11.43,,Desiree HENRY,26 AUG 1995,GBR,7.,,Zürich European Championships,13 AUG 2014,,,2014,,major_meet
+,11.54,,Ayodelé IKUESAN,15 MAY 1985,FRA,8.,,Zürich European Championships,13 AUG 2014,,,2014,,major_meet
+,10.76,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,10.81,,Dafne SCHIPPERS,15 JUN 1992,NED,2.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,10.86,,Tori BOWIE,27 AUG 1990,USA,3.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,10.91,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,4.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,10.98,,Michelle-Lee AHYE,10 APR 1992,TTO,5.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,11.01,,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,6.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,11.02,,Natasha MORRISON,17 NOV 1992,JAM,7.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,11.02,,Blessing OKAGBARE,09 OCT 1988,NGR,8.,,IAAF World Championships,24 AUG 2015,,,2015,,major_meet
+,10.71,,Elaine THOMPSON,28 JUN 1992,JAM,1.,,The XXXI Olympic Games,13 AUG 2016,,,2016,,major_meet
+,10.83,,Tori BOWIE,27 AUG 1990,USA,2.,,The XXXI Olympic Games,13 AUG 2016,,,2016,,major_meet
+,10.86,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,3.,,The XXXI Olympic Games,13 AUG 2016,,,2016,,major_meet
+,10.86,,Marie-Josée TA LOU,18 NOV 1988,CIV,4.,,The XXXI Olympic Games,13 AUG 2016,,,2016,,major_meet
+,10.90,,Dafne SCHIPPERS,15 JUN 1992,NED,5.,,The XXXI Olympic Games,13 AUG 2016,,,2016,,major_meet
+,10.92,,Michelle-Lee AHYE,10 APR 1992,TTO,6.,,The XXXI Olympic Games,13 AUG 2016,,,2016,,major_meet
+,10.94,,English GARDNER,22 APR 1992,USA,7.,,The XXXI Olympic Games,13 AUG 2016,,,2016,,major_meet
+,11.80,,Christania WILLIAMS,17 OCT 1994,JAM,8.,,The XXXI Olympic Games,13 AUG 2016,,,2016,,major_meet
+,10.90,,Dafne SCHIPPERS,15 JUN 1992,NED,1.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,11.20,,Ivet LALOVA-COLLIO,18 MAY 1984,BUL,2.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,11.25,,Mujinga KAMBUNDJI,17 JUN 1992,SUI,3.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,11.27,,Asha PHILIP,25 OCT 1990,GBR,4.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,11.28,,Natalia POHREBNIAK,19 FEB 1988,UKR,5.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,11.33,,Tatjana PINTO,02 JUL 1992,GER,6.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,11.36,,Floriane GNAFOUA,30 JAN 1996,FRA,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,DNF,,Desiree HENRY,26 AUG 1995,GBR,,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,10.85,,Tori BOWIE,27 AUG 1990,USA,1.,,IAAF World Championships in Athletics,06 AUG 2017,,,2017,,major_meet
+,10.86,,Marie-Josée TA LOU,18 NOV 1988,CIV,2.,,IAAF World Championships in Athletics,06 AUG 2017,,,2017,,major_meet
+,10.96,,Dafne SCHIPPERS,15 JUN 1992,NED,3.,,IAAF World Championships in Athletics,06 AUG 2017,,,2017,,major_meet
+,10.98,,Murielle AHOURÉ,23 AUG 1987,CIV,4.,,IAAF World Championships in Athletics,06 AUG 2017,,,2017,,major_meet
+,10.98,,Elaine THOMPSON,28 JUN 1992,JAM,5.,,IAAF World Championships in Athletics,06 AUG 2017,,,2017,,major_meet
+,11.01,,Michelle-Lee AHYE,10 APR 1992,TTO,6.,,IAAF World Championships in Athletics,06 AUG 2017,,,2017,,major_meet
+,11.06,,Rosângela SANTOS,20 DEC 1990,BRA,7.,,IAAF World Championships in Athletics,06 AUG 2017,,,2017,,major_meet
+,11.09,,Kelly-Ann BAPTISTE,14 OCT 1986,TTO,8.,,IAAF World Championships in Athletics,06 AUG 2017,,,2017,,major_meet
 ,10.85,,Dina ASHER-SMITH,04 DEC 1995,GBR,1.,,European Athletics Championships,07 AUG 2018,,,2018,,major_meet
 ,10.98,,Gina LÜCKENKEMPER,21 NOV 1996,GER,2.,,European Athletics Championships,07 AUG 2018,,,2018,,major_meet
 ,10.99,,Dafne SCHIPPERS,15 JUN 1992,NED,3.,,European Athletics Championships,07 AUG 2018,,,2018,,major_meet
@@ -1244,6 +2324,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,11.22,,Kayla WHITE,14 SEP 1996,USA,5.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
 ,11.51,,Shashalee FORBES,10 MAY 1996,JAM,6.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
 ,11.56,,Lorène Dorcas BAZOLO,04 MAY 1983,POR,7.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
+,11.79,,Marika POPOWICZ-DRAPAŁA,28 APR 1988,POL,8.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
 ,10.71,,Elaine THOMPSON-HERAH,28 JUN 1992,JAM,1.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
 ,10.82,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,2.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
 ,10.86,,Marie-Josée TA LOU,18 NOV 1988,CIV,3.,,Gyulai István Memorial - Hungarian Athletics Grand Prix,06 JUL 2021,,,2021,,major_meet
@@ -1286,6 +2367,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,11.22,,Jenna PRANDINI,20 NOV 1992,USA,4.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,11.22,,Kemba NELSON,23 FEB 2000,JAM,5.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,11.22,,Teahna DANIELS,25 MAR 1997,USA,6.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
+,11.30,,Allyson FELIX,18 NOV 1985,USA,7.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,11.30,,Tianna BARTOLETTA,30 AUG 1985,USA,8.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,26.21,,Christania WILLIAMS,17 OCT 1994,JAM,9.,,USATF Grand Prix,24 APR 2021,,,2021,,major_meet
 ,10.67,,Shelly-Ann FRASER-PRYCE,27 DEC 1986,JAM,1.,,"World Athletics Championships, Oregon 2022",17 JUL 2022,,,2022,,major_meet
@@ -1337,6 +2419,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discip
 ,11.33,,Gina BASS,03 MAY 1995,GAM,3.,,4th Irena Szewinska Memorial,03 JUN 2022,,,2022,,major_meet
 ,11.42,,Zaynab DOSSO,12 SEP 1999,ITA,4.,,4th Irena Szewinska Memorial,03 JUN 2022,,,2022,,major_meet
 ,11.53,,Krystsina TSIMANOUSKAYA,19 NOV 1996,BLR,5.,,4th Irena Szewinska Memorial,03 JUN 2022,,,2022,,major_meet
+,11.58,,Marika POPOWICZ-DRAPAŁA,28 APR 1988,POL,6.,,4th Irena Szewinska Memorial,03 JUN 2022,,,2022,,major_meet
 ,DNS,,Arialis GANDULLA,22 JUN 1995,POR,,,4th Irena Szewinska Memorial,03 JUN 2022,,,2022,,major_meet
 ,10.99,,Gina LÜCKENKEMPER,21 NOV 1996,GER,1.,,European Athletics Championships,16 AUG 2022,,,2022,,major_meet
 ,10.99,,Mujinga KAMBUNDJI,17 JUN 1992,SUI,2.,,European Athletics Championships,16 AUG 2022,,,2022,,major_meet

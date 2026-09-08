@@ -1146,14 +1146,1094 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Nat.1,Venue,Date,Results Score,discipline,
 ,51.19,,Natalia BUKOWIECKA,17 JAN 1998,POL,6.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,51.69,,Britton WILSON,13 NOV 2000,USA,7.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
 ,53.05,,Sada WILLIAMS,01 DEC 1997,BAR,8.,,Athletissima Lausanne,20 AUG 2025,,,2025,,dl_meeting
-,49.32,,Salwa Eid NASER,23 MAY 1998,BRN,1.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,49.62,,Caster SEMENYA,07 JAN 1991,RSA,2.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,50.82,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,3.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,51.51,,Lisanne DE WITTE,10 SEP 1992,NED,4.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,51.59,,Shakima WIMBLEY,23 APR 1995,USA,5.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,51.64,,Justyna ŚWIĘTY-ERSETIC,03 DEC 1992,POL,6.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,52.47,,Christine BOTLOGETSWE,01 OCT 1995,BOT,7.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
-,52.50,,Anneliese RUBIE-RENSHAW,22 APR 1992,AUS,8.,,IAAF Continental Cup,08 SEP 2018,,,2018,,major_meet
+1.0,49.62,,Christine OHURUOGU,17 MAY 1984,GBR,1,,"National Stadium, Beijing (CHN)",19 AUG 2008,1221.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14275963,toplist
+2.0,49.69,,Shericka WILLIAMS,17 SEP 1985,JAM,2,,"National Stadium, Beijing (CHN)",19 AUG 2008,1218.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14286003,toplist
+3.0,49.74,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1,,"Letzigrund, Zürich (SUI)",29 AUG 2008,1216.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14319838,toplist
+4.0,49.83,,Amantle MONTSHO,04 JUL 1983,BOT,1,,Addis Ababa (ETH),02 MAY 2008,1212.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14269474,toplist
+4.0,49.83,,Allyson FELIX,18 NOV 1985,USA,1,,Doha (QAT),09 MAY 2008,1212.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14309983,toplist
+6.0,50.01,,Yuliya GUSHCHINA,04 MAR 1983,RUS,4,,"National Stadium, Beijing (CHN)",19 AUG 2008,1205.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14297898,toplist
+7.0,50.02,,Anastasiya KAPACHINSKAYA,21 NOV 1979,RUS,1f3,,Moskva (RUS),10 JUL 2008,1205.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298016,toplist
+8.0,50.05,,Rose-Mary WHYTE,08 SEP 1986,JAM,1,,Kingston (JAM),29 JUN 2008,1203.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285988,toplist
+9.0,50.11,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,2,,Kingston (JAM),29 JUN 2008,1201.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14286000,toplist
+10.0,50.25,,Tatyana FIROVA,10 OCT 1982,RUS,3,,Kazan (RUS),18 JUL 2008,1195.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14297707,toplist
+11.0,50.32,,Mary WINEBERG,03 JAN 1980,USA,2,,"Eugene, OR (USA)",08 JUN 2008,1193.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14308581,toplist
+12.0,50.55,,Kaliese SPENCER,06 MAY 1987,JAM,1f1,,"Azusa, CA (USA)",18 APR 2008,1183.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285929,toplist
+13.0,50.59,,Yelena MIGUNOVA,04 JAN 1984,RUS,4,,Kazan (RUS),18 JUL 2008,1182.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298614,toplist
+14.0,50.62,,Shereefa LLOYD,02 SEP 1982,JAM,4,,Kingston (JAM),29 JUN 2008,1181.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285774,toplist
+14.0,50.62,,Tatyana VESHKUROVA,23 SEP 1981,RUS,3sf2,,Kazan (RUS),17 JUL 2008,1181.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14299702,toplist
+14.0,50.62,,Lyudmila LITVINOVA,08 JUN 1985,RUS,5,,Kazan (RUS),18 JUL 2008,1181.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298462,toplist
+17.0,50.71,,Nicola SANDERS,23 JUN 1982,GBR,4sf3,,"National Stadium, Beijing (CHN)",17 AUG 2008,1177.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14276271,toplist
+18.0,50.80,,Natasha HASTINGS,23 JUL 1986,USA,3,,Doha (QAT),09 MAY 2008,1174.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14312172,toplist
+19.0,50.83,,Libania GRENOT,12 JUL 1983,ITA,5sf3,,"National Stadium, Beijing (CHN)",17 AUG 2008,1172.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14263547,toplist
+20.0,50.84,,Shana COX,22 JAN 1985,USA,1,,"Tallahassee, FL (USA)",31 MAY 2008,1172.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14308212,toplist
+21.0,50.87,,Bobby-Gaye WILKINS-GOODEN,10 SEP 1988,JAM,3sf2,,Kingston (JAM),28 JUN 2008,1171.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285991,toplist
+22.0,50.88,,DeeDee TROTTER,08 DEC 1982,USA,3,,"Eugene, OR (USA)",03 JUL 2008,1170.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14322997,toplist
+23.0,50.89,,Folashade ABUGAN,17 DEC 1990,NGR,2,,Addis Ababa (ETH),02 MAY 2008,1170.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14292316,toplist
+24.0,50.93,,Aliann Tabitha POMPEY,09 MAR 1978,GUY,3sf1,,"National Stadium, Beijing (CHN)",17 AUG 2008,1168.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14281116,toplist
+25.0,50.98,,Monique HENDERSON,18 FEB 1983,USA,4,,"Eugene, OR (USA)",03 JUL 2008,1166.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14312380,toplist
+25.0,50.98,,Indira TERRERO,29 NOV 1985,CUB,1,,Cali (COL),04 JUL 2008,1166.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14263364,toplist
+27.0,51.09,,Olesya ZYKINA,07 OCT 1980,RUS,1,,Moskva (RUS) (i),09 FEB 2008,1196.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14299945,toplist
+27.0,51.09,,Jessica BEARD,08 JAN 1989,USA,1,,"Boulder, CO (USA)",18 MAY 2008,1162.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14305526,toplist
+27.0,51.09,,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,6,,Kingston (JAM),29 JUN 2008,1162.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285764,toplist
+30.0,51.10,,Natalya NAZAROVA,26 MAY 1979,RUS,2,,"Velódromo Luis Puig, Valencia (ESP) (i)",09 MAR 2008,1195.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298707,toplist
+31.0,51.11,,Debbie DUNN,26 MAR 1978,USA,1,,Fortaleza (BRA),14 MAY 2008,1161.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14309386,toplist
+32.0,51.12,,Tatyana LEVINA,28 FEB 1977,RUS,2h2,,Kazan (RUS),17 JUL 2008,1161.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298447,toplist
+33.0,51.17,,Antonina YEFREMOVA,19 JUL 1981,UKR,1h4,,Kyiv (UKR),01 JUL 2008,1159.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14304342,toplist
+34.0,51.18,,Svetlana POSPELOVA,24 DEC 1979,RUS,2h1,,Kazan (RUS),17 JUL 2008,1159.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298992,toplist
+35.0,51.19,,Natalya ANTYUKH,26 JUN 1981,RUS,1h3,,Kazan (RUS),17 JUL 2008,1158.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14297264,toplist
+36.0,51.24,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,3h2,,Kazan (RUS),17 JUL 2008,1156.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298308,toplist
+37.0,51.25,,Sherone SIMPSON,12 AUG 1984,JAM,1f2,,Kingston (JAM),22 MAR 2008,1156.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285909,toplist
+37.0,51.25,,Ebonie FLOYD,21 OCT 1983,USA,5,,"Eugene, OR (USA)",08 JUN 2008,1156.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14310239,toplist
+37.0,51.25,,Christine AMERTIL,18 AUG 1979,BAH,2h1,,"National Stadium, Beijing (CHN)",16 AUG 2008,1156.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14270669,toplist
+40.0,51.29,,Trish BARTHOLOMEW,23 OCT 1986,GRN,2,,"Des Moines, IA (USA)",14 JUN 2008,1154.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14281027,toplist
+41.0,51.32,,Sonita SUTHERLAND,09 AUG 1987,JAM,2f2,,Kingston (JAM),22 MAR 2008,1153.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285944,toplist
+42.0,51.39,,Racheal NACHULA,14 JAN 1990,ZAM,3,,Addis Ababa (ETH),02 MAY 2008,1150.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14325330,toplist
+42.0,51.39,,Carol RODRÍGUEZ,16 DEC 1985,PUR,1,,"Los Angeles, CA (USA)",03 MAY 2008,1150.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14295349,toplist
+42.0,51.39,,Ajoke ODUMOSU,27 OCT 1987,NGR,3h1,,"National Stadium, Beijing (CHN)",16 AUG 2008,1150.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14292468,toplist
+45.0,51.41,,Shareese WOODS,20 FEB 1985,USA,3,,"Velódromo Luis Puig, Valencia (ESP) (i)",09 MAR 2008,1183.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14324669,toplist
+45.0,51.41,,Marina MASLENKO,03 JUL 1982,KAZ,1,,Korat (THA),26 JUN 2008,1149.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14288661,toplist
+45.0,51.41,,Joy EZE,23 APR 1988,NGR,2,,Abuja (NGR),03 JUL 2008,1149.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14292397,toplist
+48.0,51.42,,Olga ZAYTSEVA,10 NOV 1984,RUS,1h6,,Moskva (RUS) (i),08 FEB 2008,1183.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14299866,toplist
+49.0,51.43,,Gabriela Eilzabeth MEDINA,03 JUL 1985,MEX,1h1,,Cali (COL),04 JUL 2008,1149.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14291142,toplist
+50.0,51.44,,Tamsyn MANOU,20 JUL 1978,AUS,1,,Brisbane (AUS),29 FEB 2008,1148.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14271772,toplist
+51.0,51.47,,Moya THOMPSON,21 AUG 1982,JAM,3sf1,,Kingston (JAM),28 JUN 2008,1147.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285959,toplist
+52.0,51.48,,Kseniya ZADORINA,02 MAR 1987,RUS,,,Moskva (RUS),05 JUN 2008,1147.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14299841,toplist
+53.0,51.49,,Tsholofelo SELEMELA-THIPE,12 SEP 1986,RSA,4,,Addis Ababa (ETH),02 MAY 2008,1146.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14296850,toplist
+53.0,51.49,,Lee MCCONNELL,09 OCT 1978,GBR,2,,Lugano (SUI),04 JUL 2008,1146.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14275732,toplist
+55.0,51.50,,Ilona USOVICH,14 NOV 1982,BLR,1,,Ankara (TUR),13 JUN 2008,1146.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14269565,toplist
+56.0,51.54,,Francena MCCORORY,20 OCT 1988,USA,1,,"Baltimore, MD (USA)",03 MAY 2008,1144.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14316439,toplist
+57.0,51.55,,Kia DAVIS,23 MAY 1976,LBR,1,,Ponce (PUR),17 MAY 2008,1144.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14308695,toplist
+57.0,51.55,,Carline MUIR,01 OCT 1987,CAN,3h2,,"National Stadium, Beijing (CHN)",16 AUG 2008,1144.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14267466,toplist
+59.0,51.57,,Nataliya PYHYDA,30 JAN 1981,UKR,1f3,,Yalta (UKR),06 JUN 2008,1143.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14304022,toplist
+60.0,51.58,,Lashinda DEMUS,10 MAR 1983,USA,1,,"Coral Gables, FL (USA)",12 APR 2008,1143.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14308886,toplist
+61.0,51.61,,Melaine WALKER,01 MAR 1983,JAM,3f2,,Kingston (JAM),22 MAR 2008,1142.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285977,toplist
+62.0,51.63,,Olesya KRASNOMOVETS-FORSHEVA,08 JUL 1979,RUS,,,Moskva (RUS) (i),29 JAN 2008,1174.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298284,toplist
+62.0,51.63,,Monica HARGROVE,30 DEC 1982,USA,1f1,,"Fayetteville, AR (USA)",02 MAY 2008,1141.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14311954,toplist
+62.0,51.63,,Brandi CROSS,20 JAN 1988,USA,3h3,,"Eugene, OR (USA)",29 JUN 2008,1141.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14308334,toplist
+65.0,51.64,,Darya TEREKHOVA,21 MAR 1980,RUS,2h7,,Kazan (RUS),17 JUL 2008,1140.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14299143,toplist
+66.0,51.65,,Clora WILLIAMS,26 NOV 1983,JAM,2,,Ponce (PUR),17 MAY 2008,1140.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285996,toplist
+67.0,51.67,,Kenyata COLEMAN,1986,USA,1sf2,,"Des Moines, IA (USA)",13 JUN 2008,1139.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14307875,toplist
+68.0,51.69,,Nicole LEACH,18 JUL 1987,USA,2,,"Los Angeles, CA (USA)",03 MAY 2008,1139.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14315131,toplist
+69.0,51.70,,Oksana SHCHERBAK,24 FEB 1982,UKR,1,,Kyiv (UKR),02 JUL 2008,1138.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14304152,toplist
+70.0,51.72,,Anastasiya KOCHETOVA,18 SEP 1983,RUS,7sf2,,Kazan (RUS),17 JUL 2008,1137.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298150,toplist
+71.0,51.73,,Latosha WALLACE,25 MAR 1985,USA,1f2,,Shizuoka (JPN),03 MAY 2008,1137.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14323559,toplist
+71.0,51.73,,Monique HENNAGAN,26 MAY 1976,USA,4h3,,"Eugene, OR (USA)",29 JUN 2008,1137.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14312408,toplist
+73.0,51.75,,Asami TANNO,25 SEP 1985,JPN,2f2,,Shizuoka (JPN),03 MAY 2008,1136.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14288159,toplist
+74.0,51.77,,Kaltouma NADJINA,16 NOV 1976,CHA,1,,Burnaby (CAN),21 JUN 2008,1135.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14266890,toplist
+75.0,51.78,,Oksana SKOROBOGATKO,04 SEP 1984,RUS,3h3,,Kazan (RUS),17 JUL 2008,1135.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14299481,toplist
+76.0,51.80,,Mandeep KAUR,19 APR 1988,IND,2f2,,Yalta (UKR),06 JUN 2008,1134.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14282902,toplist
+76.0,51.80,,Solen DESERT,02 AUG 1982,FRA,1f1,,Albi (FRA),25 JUL 2008,1134.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14257800,toplist
+78.0,51.83,,Virginie MICHANOL,18 JUN 1985,FRA,2,,Reims (FRA),08 JUL 2008,1133.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14273156,toplist
+79.0,51.85,,Moushaumi ROBINSON,13 APR 1981,USA,3sf1,,"Velódromo Luis Puig, Valencia (ESP) (i)",08 MAR 2008,1166.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14320082,toplist
+80.0,51.87,,Phara ANACHARSIS,17 DEC 1983,FRA,2,,Patra (GRE),30 JUN 2008,1131.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14258762,toplist
+81.0,51.88,,Davita PRENDERGAST,16 DEC 1984,JAM,3,,Fort-de-France (FRA),08 MAY 2008,1131.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285860,toplist
+81.0,51.88,,Diosmely PEŃA,12 JUN 1985,CUB,3h1,,Cali (COL),04 JUL 2008,1131.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14263436,toplist
+83.0,51.89,,Esther AKINSULIE,22 APR 1984,CAN,2h1,,"Provo, UT (USA)",23 MAY 2008,1131.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14268465,toplist
+84.0,51.90,,Jonna TILGNER,18 NOV 1984,GER,1f1,,Regensburg (GER),08 JUN 2008,1130.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14280043,toplist
+85.0,51.93,,Nawal EL JACK,17 OCT 1988,SUD,5,,Addis Ababa (ETH),02 MAY 2008,1129.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14300571,toplist
+86.0,51.94,,Leslie COLE,16 FEB 1987,USA,2,,"Boulder, CO (USA)",18 MAY 2008,1129.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14307858,toplist
+87.0,51.95,,Krista SIMKINS,27 DEC 1986,USA,1h1,,"Fayetteville, AR (USA) (i)",14 MAR 2008,1162.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14321287,toplist
+87.0,51.95,,Zundike RODRIGUEZ,14 MAR 1987,MEX,2h2,,Cali (COL),04 JUL 2008,1128.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14291227,toplist
+89.0,51.98,,Joanne CUDDIHY,11 MAY 1984,IRL,2,,"FBK Stadium, Hengelo (NED)",24 MAY 2008,1127.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14283177,toplist
+90.0,51.99,,Svetlana FORSHEVA,,RUS,2h3,,Moskva (RUS) (i),08 FEB 2008,1161.0,women_400m,2008,https://worldathletics.org/athletes/russia/svetlana-forsheva-14297719,toplist
+90.0,51.99,,Anna JESIEŃ,10 DEC 1978,POL,1f1,,Warszawa (POL),15 JUN 2008,1127.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14294207,toplist
+92.0,52.00,,Ashlee KIDD,26 JUL 1985,USA,1,,"Provo, UT (USA)",24 MAY 2008,1126.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14314376,toplist
+92.0,52.00,,Jenna HARRIS,28 JAN 1985,USA,2,,"Fayetteville, AR (USA)",31 MAY 2008,1126.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14312041,toplist
+94.0,52.02,,Adrienne POWER,11 DEC 1981,CAN,3h1,,"Provo, UT (USA)",23 MAY 2008,1126.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14267353,toplist
+95.0,52.03,,Ginou ETIENNE,12 JAN 1985,HAI,4h1,,Cali (COL),04 JUL 2008,1125.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14281120,toplist
+96.0,52.05,,Alissa KALLINIKOU,24 MAY 1985,CYP,1,,Athina (GRE),13 JUN 2008,1124.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14263312,toplist
+96.0,52.05,,Patricia HALL,16 OCT 1982,JAM,5sf1,,Kingston (JAM),28 JUN 2008,1124.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285712,toplist
+96.0,52.05,,Claudia HOFFMANN,10 DEC 1982,GER,2,,"Wattenscheid, Bochum (GER)",01 AUG 2008,1124.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14278068,toplist
+99.0,52.06,,Yelena NOVIKOVA,27 OCT 1985,RUS,2h5,,Kazan (RUS),17 JUL 2008,1124.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14298771,toplist
+100.0,52.07,,Nadia DAVY,24 DEC 1980,JAM,3,,Ponce (PUR),17 MAY 2008,1124.0,women_400m,2008,https://worldathletics.org/athletes/athlete=14285640,toplist
+1.0,48.83,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1,,"Boudewijnstadion, Bruxelles (BEL)",04 SEP 2009,1253.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14319838,toplist
+2.0,49.29,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,1sf1,,Cheboksary (RUS),23 JUL 2009,1234.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14298308,toplist
+3.0,49.32,,Shericka WILLIAMS,17 SEP 1985,JAM,2,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1233.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14286003,toplist
+4.0,49.77,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,4,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1215.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14286000,toplist
+5.0,49.83,,Allyson FELIX,18 NOV 1985,USA,2,,"Letzigrund, Zürich (SUI)",28 AUG 2009,1212.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14309983,toplist
+6.0,49.89,,Amantle MONTSHO,04 JUL 1983,BOT,2sf1,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1210.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14269474,toplist
+7.0,49.95,,Debbie DUNN,26 MAR 1978,USA,3sf2,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1208.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14309386,toplist
+8.0,50.21,,Christine OHURUOGU,17 MAY 1984,GBR,5,,"Olympiastadion, Berlin (GER)",18 AUG 2009,1197.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14275963,toplist
+9.0,50.27,,Lyudmila LITVINOVA,08 JUN 1985,RUS,2,,Cheboksary (RUS),24 JUL 2009,1195.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14298462,toplist
+10.0,50.30,,Libania GRENOT,12 JUL 1983,ITA,1,,Pescara (ITA),02 JUL 2009,1193.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14263547,toplist
+11.0,50.39,,Joanna ATKINS,31 JAN 1989,USA,1,,"Fayetteville, AR (USA)",13 JUN 2009,1190.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14305059,toplist
+11.0,50.39,,Monica HARGROVE,30 DEC 1982,USA,2,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1190.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14311954,toplist
+13.0,50.45,,Nicola SANDERS,23 JUN 1982,GBR,4sf2,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1187.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14276271,toplist
+14.0,50.56,,Jessica BEARD,08 JAN 1989,USA,2,,"Fayetteville, AR (USA)",13 JUN 2009,1183.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14305526,toplist
+14.0,50.56,,Natalya NAZAROVA,26 MAY 1979,RUS,3,,Cheboksary (RUS),24 JUL 2009,1183.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14298707,toplist
+16.0,50.58,,Francena MCCORORY,20 OCT 1988,USA,3,,"Fayetteville, AR (USA)",13 JUN 2009,1182.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14316439,toplist
+17.0,50.71,,Amy Mbacké THIAM,10 NOV 1976,SEN,3,,"Stadio Olimpico, Roma (ITA)",10 JUL 2009,1177.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14300015,toplist
+17.0,50.71,,Aliann Tabitha POMPEY,09 MAR 1978,GUY,3sf1,,"Olympiastadion, Berlin (GER)",16 AUG 2009,1177.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14281116,toplist
+19.0,50.89,,Natasha HASTINGS,23 JUL 1986,USA,4,,"Eugene, OR (USA)",27 JUN 2009,1170.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14312172,toplist
+20.0,50.90,,Natalya ANTYUKH,26 JUN 1981,RUS,3sf1,,Cheboksary (RUS),23 JUL 2009,1170.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14297264,toplist
+21.0,50.91,,Bobby-Gaye WILKINS-GOODEN,10 SEP 1988,JAM,1,,"Mangueirão, Belém (BRA)",24 MAY 2009,1169.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285991,toplist
+22.0,51.04,,Kaltouma NADJINA,16 NOV 1976,CHA,1,,Beirut (LBN),03 OCT 2009,1164.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14266890,toplist
+23.0,51.05,,Shareese WOODS,20 FEB 1985,USA,5,,"Eugene, OR (USA)",27 JUN 2009,1164.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14324669,toplist
+24.0,51.06,,Yuliya GUSHCHINA,04 MAR 1983,RUS,1sf3,,Cheboksary (RUS),23 JUL 2009,1163.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14297898,toplist
+25.0,51.13,,Tsholofelo SELEMELA-THIPE,12 SEP 1986,RSA,1,,Stellenbosch (RSA),14 MAR 2009,1161.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14296850,toplist
+26.0,51.18,,Shereefa LLOYD,02 SEP 1982,JAM,5,,"Icahn Stadium, New York, NY (USA)",30 MAY 2009,1159.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285774,toplist
+27.0,51.20,,Leslie COLE,16 FEB 1987,USA,4,,"Fayetteville, AR (USA)",13 JUN 2009,1158.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14307858,toplist
+28.0,51.29,,Keshia KIRTZ,30 JAN 1988,USA,5,,"Fayetteville, AR (USA)",13 JUN 2009,1154.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14305210,toplist
+29.0,51.32,,Darya TEREKHOVA,21 MAR 1980,RUS,2sf2,,Cheboksary (RUS),23 JUL 2009,1153.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299143,toplist
+30.0,51.38,,Nataliya PYHYDA,30 JAN 1981,UKR,2f2,,Sofia (BUL),27 JUN 2009,1151.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14304022,toplist
+31.0,51.40,,Lashinda DEMUS,10 MAR 1983,USA,1f1,,"Santa Monica, CA (USA)",11 JUL 2009,1150.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14308886,toplist
+32.0,51.41,,Kseniya ZADORINA,02 MAR 1987,RUS,4,,Moskva (RUS),01 JUL 2009,1149.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299841,toplist
+33.0,51.42,,Tamsyn MANOU,20 JUL 1978,AUS,1,,Brisbane (AUS),20 MAR 2009,1149.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14271772,toplist
+34.0,51.43,,Christine AMERTIL,18 AUG 1979,BAH,5,,"Mangueirão, Belém (BRA)",24 MAY 2009,1149.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14270669,toplist
+35.0,51.44,,Shana COX,22 JAN 1985,USA,1,,Toronto (CAN),11 JUN 2009,1148.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14308212,toplist
+35.0,51.44,,Folashade ABUGAN,17 DEC 1990,NGR,1f1,,Abuja (NGR),18 JUL 2009,1148.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14292316,toplist
+37.0,51.45,,Kseniya AKSYONOVA,14 JAN 1988,RUS,1,,Kazan (RUS),17 JUN 2009,1148.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299650,toplist
+37.0,51.45,,Lee MCCONNELL,09 OCT 1978,GBR,6,,Shanghai (CHN),20 SEP 2009,1148.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14275732,toplist
+39.0,51.47,,Vanya STAMBOLOVA,28 NOV 1983,BUL,2,,Sofia (BUL),10 JUN 2009,1147.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14268563,toplist
+39.0,51.47,,Tatyana VESHKUROVA,23 SEP 1981,RUS,3sf2,,Cheboksary (RUS),23 JUL 2009,1147.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299702,toplist
+41.0,51.53,,Sorina NWACHUKWU,21 AUG 1987,GER,1h3,,Ulm (GER),04 JUL 2009,1145.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14279096,toplist
+41.0,51.53,,Yelena MIGUNOVA,04 JAN 1984,RUS,2sf3,,Cheboksary (RUS),23 JUL 2009,1145.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14298614,toplist
+43.0,51.54,,Christine DAY,23 AUG 1986,JAM,3,,Kingston (JAM),28 JUN 2009,1144.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285647,toplist
+44.0,51.55,,Rose-Mary WHYTE,08 SEP 1986,JAM,5,,Kingston (JAM),28 JUN 2009,1144.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285988,toplist
+45.0,51.56,,Indira TERRERO,29 NOV 1985,CUB,1,,La Habana (CUB),29 MAY 2009,1144.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14263364,toplist
+45.0,51.56,,Joyce SAKARI,06 JUN 1986,KEN,1f2,,Abuja (NGR),18 JUL 2009,1144.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14289541,toplist
+47.0,51.59,,Alexandria SPRUIEL,13 AUG 1987,USA,6,,"Fayetteville, AR (USA)",13 JUN 2009,1142.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14321845,toplist
+48.0,51.60,,Nawal EL JACK,17 OCT 1988,SUD,5,,Doha (QAT),08 MAY 2009,1142.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14300571,toplist
+48.0,51.60,,Ebonie FLOYD,21 OCT 1983,USA,1f2,,"Orlando, FL (USA)",13 JUN 2009,1142.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14310239,toplist
+50.0,51.63,,Solen DESERT,02 AUG 1982,FRA,3h3,,"Olympiastadion, Berlin (GER)",15 AUG 2009,1141.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14257800,toplist
+51.0,51.65,,Fatou Bintou FALL,23 AUG 1981,SEN,1,,Beograd (SRB),09 JUL 2009,1140.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299983,toplist
+52.0,51.66,,Valerie BROWN,18 FEB 1984,USA,1f2,,"Gainesville, FL (USA)",03 APR 2009,1140.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14306655,toplist
+53.0,51.69,,Tatyana LEVINA,28 FEB 1977,RUS,4sf1,,Cheboksary (RUS),23 JUL 2009,1139.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14298447,toplist
+54.0,51.70,,Esther AKINSULIE,22 APR 1984,CAN,2,,Beograd (SRB),09 JUL 2009,1138.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14268465,toplist
+55.0,51.75,,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,7,,Kingston (JAM),28 JUN 2009,1136.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285764,toplist
+56.0,51.81,,Daysurami BONNE,09 MAR 1988,CUB,2,,La Habana (CUB),29 MAY 2009,1134.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14263668,toplist
+56.0,51.81,,Perri SHAKES-DRAYTON,21 DEC 1988,GBR,2,,Birmingham (GBR),11 JUL 2009,1134.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14276312,toplist
+58.0,51.85,,Yelena VOYNOVA,10 MAR 1985,RUS,2,,Sochi (RUS),29 MAY 2009,1132.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299758,toplist
+59.0,51.86,,Norma GONZÁLEZ,11 AUG 1982,COL,4h5,,"Olympiastadion, Berlin (GER)",15 AUG 2009,1132.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14264003,toplist
+60.0,51.88,,Monique DELL,23 SEP 1985,NZL,2,,Brisbane (AUS),20 MAR 2009,1131.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14293209,toplist
+61.0,51.95,,LaJada BALDWIN,28 NOV 1988,USA,1,,"Gainesville, FL (USA)",17 MAY 2009,1128.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14305238,toplist
+61.0,51.95,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,5sf1,,Kingston (JAM),27 JUN 2009,1128.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285809,toplist
+63.0,51.98,,Emmily DA SILVA PINHEIRO,03 NOV 1985,BRA,1,,Rio de Janeiro (BRA),05 JUN 2009,1127.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14269269,toplist
+64.0,51.99,,Jailma SALES DE LIMA,31 DEC 1986,BRA,2,,Rio de Janeiro (BRA),05 JUN 2009,1127.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14268860,toplist
+65.0,52.00,,DeeDee TROTTER,08 DEC 1982,USA,7,,"Olympic Stadium, Athina (GRE)",13 JUL 2009,1126.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14322997,toplist
+66.0,52.01,,Dominique DARDEN,09 DEC 1983,USA,1f1,,"Coral Gables, FL (USA)",11 APR 2009,1126.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14308590,toplist
+66.0,52.01,,Trish BARTHOLOMEW,23 OCT 1986,GRN,3,,Baie Mahault (FRA),01 MAY 2009,1126.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14281027,toplist
+66.0,52.01,,Melaine WALKER,01 MAR 1983,JAM,6,,"Eugene, OR (USA)",07 JUN 2009,1126.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285977,toplist
+66.0,52.01,,Shelise WILLIAMS,15 AUG 1989,USA,7,,"Fayetteville, AR (USA)",13 JUN 2009,1126.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14324371,toplist
+70.0,52.02,,Latosha WALLACE,25 MAR 1985,USA,2,,Osaka (JPN),09 MAY 2009,1126.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14323559,toplist
+70.0,52.02,,Clora WILLIAMS,26 NOV 1983,JAM,1,,Reims (FRA),14 JUL 2009,1126.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285996,toplist
+72.0,52.04,,Nicole LEACH,18 JUL 1987,USA,1,,"Los Angeles, CA (USA)",02 MAY 2009,1125.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14315131,toplist
+73.0,52.07,,Ebony EUTSEY,03 MAY 1992,USA,1f5,,"Greensboro, NC (USA)",20 JUN 2009,1124.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14309794,toplist
+73.0,52.07,,Carline MUIR,01 OCT 1987,CAN,3,,Beograd (SRB),09 JUL 2009,1124.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14267466,toplist
+75.0,52.10,,Asami TANNO,25 SEP 1985,JPN,3,,Osaka (JPN),09 MAY 2009,1123.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14288159,toplist
+76.0,52.14,,Sheena JOHNSON-TOSTA,01 OCT 1982,USA,2,,"San Diego, CA (USA)",14 JUN 2009,1121.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14313803,toplist
+76.0,52.14,,Anna GORDEYEVA,20 SEP 1988,RUS,2h1,,Kazan (RUS),16 JUN 2009,1121.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299198,toplist
+78.0,52.15,,Robin REYNOLDS,22 FEB 1994,USA,1,,"Greensboro, NC (USA)",01 AUG 2009,1121.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14319782,toplist
+79.0,52.16,,Amaka OGOEGBUNAM,03 MAR 1990,NGR,3f1,,Abuja (NGR),18 JUL 2009,1120.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14941400,toplist
+80.0,52.18,,Cydonie MOTHERSILL,19 MAR 1978,CAY,1,,Ponce (PUR),16 MAY 2009,1119.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14266914,toplist
+81.0,52.22,,Kseniya RYZHOVA,19 APR 1987,RUS,4,,Kazan (RUS),17 JUN 2009,1118.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299689,toplist
+82.0,52.23,,Xiaoxiao HUANG,03 MAR 1983,CHN,1,,Jinan (CHN),22 OCT 2009,1118.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14266264,toplist
+83.0,52.24,,Anna JESIEŃ,10 DEC 1978,POL,1f1,,Biala Podlaska (POL),30 MAY 2009,1117.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14294207,toplist
+84.0,52.27,,Daniela REINA,15 MAY 1981,ITA,1f1,,Rieti (ITA),16 MAY 2009,1116.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285108,toplist
+85.0,52.28,,Nina GILBERT,17 OCT 1984,USA,1f1,,"Fayetteville, AR (USA) (i)",24 JAN 2009,1149.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14310936,toplist
+86.0,52.30,,Estie WITTSTOCK,15 SEP 1980,RSA,2,,Stellenbosch (RSA),14 MAR 2009,1115.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14297170,toplist
+87.0,52.34,,Marilyn OKORO,23 SEP 1984,GBR,1,,La Chaux-de-Fonds (SUI),28 JUN 2009,1113.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14275966,toplist
+88.0,52.35,,Aleksandra BULANOVA,10 JUN 1989,RUS,1f3,,Moskva (RUS),29 MAY 2009,1113.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299865,toplist
+88.0,52.35,,Lyudmila KIRILLOVA,09 AUG 1987,RUS,1f3,,Moskva (RUS),06 JUN 2009,1113.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14298659,toplist
+88.0,52.35,,Moushaumi ROBINSON,13 APR 1981,USA,5sf1,,"Eugene, OR (USA)",26 JUN 2009,1113.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14320082,toplist
+91.0,52.38,,Oksana SKOROBOGATKO,04 SEP 1984,RUS,1f1,,Moskva (RUS) (i),24 JAN 2009,1145.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14299481,toplist
+91.0,52.38,,LaVerne JONES-FERRETTE,16 SEP 1981,ISV,1f4,,"College Station, TX (USA) (i)",13 FEB 2009,1145.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14283604,toplist
+91.0,52.38,,Symphora BEHI,22 MAR 1986,FRA,2,,Strasbourg (FRA),03 JUN 2009,1112.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14258575,toplist
+91.0,52.38,,Brianna NELSON,02 JUL 1989,USA,2f5,,"Greensboro, NC (USA)",20 JUN 2009,1112.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14317781,toplist
+95.0,52.40,,Kerron STEWART,16 APR 1984,JAM,1f1,,"Auburn, AL (USA)",04 APR 2009,1111.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285938,toplist
+96.0,52.41,,Hazel-Ann REGIS,01 FEB 1981,GRN,2f1,,"Baton Rouge, LA (USA)",18 APR 2009,1111.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14281045,toplist
+97.0,52.43,,Kaliese SPENCER,06 MAY 1987,JAM,1,,Velenje (SLO),02 JUL 2009,1110.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14285929,toplist
+97.0,52.43,,Endurance ABINUWA,31 JUL 1987,NGR,2,,Abuja (NGR),24 JUL 2009,1110.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14292313,toplist
+97.0,52.43,,Claudia HOFFMANN,10 DEC 1982,GER,2,,"Wattenscheid, Bochum (GER)",02 AUG 2009,1110.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14278068,toplist
+100.0,52.44,,Ashlee KIDD,26 JUL 1985,USA,2,,"Boston, MA (USA) (i)",01 MAR 2009,1143.0,women_400m,2009,https://worldathletics.org/athletes/athlete=14314376,toplist
+1.0,49.64,,Debbie DUNN,26 MAR 1978,USA,1,,"Drake Stadium, Des Moines, IA (USA)",26 JUN 2010,1220.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14309386,toplist
+2.0,49.89,,Amantle MONTSHO,04 JUL 1983,BOT,1,,"Poljud Stadion, Split (CRO)",04 SEP 2010,1210.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14269474,toplist
+3.0,49.92,,Kseniya AKSYONOVA,14 JAN 1988,RUS,1,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1209.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14299650,toplist
+4.0,50.04,,Shericka WILLIAMS,17 SEP 1985,JAM,2,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1204.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14286003,toplist
+4.0,50.04,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,3,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1204.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14286000,toplist
+6.0,50.10,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,2,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1201.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14298308,toplist
+7.0,50.15,,Allyson FELIX,18 NOV 1985,USA,1,,"Suhaim bin Hamad Stadium, Doha (QAT)",14 MAY 2010,1199.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14309983,toplist
+8.0,50.43,,Libania GRENOT,12 JUL 1983,ITA,3,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1188.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14263547,toplist
+9.0,50.52,,Francena MCCORORY,20 OCT 1988,USA,2,,"Drake Stadium, Des Moines, IA (USA)",26 JUN 2010,1185.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14316439,toplist
+10.0,50.53,,Natasha HASTINGS,23 JUL 1986,USA,3,,"Drake Stadium, Des Moines, IA (USA)",26 JUN 2010,1184.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14312172,toplist
+11.0,50.64,,Kaliese SPENCER,06 MAY 1987,JAM,2,,"Olympiastadion, Berlin (GER)",22 AUG 2010,1180.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285929,toplist
+12.0,50.67,,Rose-Mary WHYTE,08 SEP 1986,JAM,5,,"Stade Olympique de la Pontaise, Lausanne (SUI)",08 JUL 2010,1179.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285988,toplist
+13.0,50.76,,Keshia KIRTZ,30 JAN 1988,USA,1,,"Berkeley, CA (USA)",16 MAY 2010,1175.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14305210,toplist
+14.0,50.81,,Antonina YEFREMOVA,19 JUL 1981,UKR,2,,Moskva (RUS),29 JUN 2010,1173.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14304342,toplist
+15.0,50.85,,Denisa ROSOLOVÁ,21 AUG 1986,CZE,1,,"Mestský Stadion, Ostrava (CZE)",27 MAY 2010,1172.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14262688,toplist
+16.0,50.87,,Kseniya ZADORINA,02 MAR 1987,RUS,3,,Moskva (RUS),29 JUN 2010,1171.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14299841,toplist
+17.0,50.88,,Christine OHURUOGU,17 MAY 1984,GBR,5,,"Suhaim bin Hamad Stadium, Doha (QAT)",14 MAY 2010,1170.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14275963,toplist
+17.0,50.88,,Vanya STAMBOLOVA,28 NOV 1983,BUL,1,,Kalamata (GRE),29 MAY 2010,1170.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14268563,toplist
+17.0,50.88,,Natalya NAZAROVA,26 MAY 1979,RUS,1sf2,,Saransk (RUS),12 JUL 2010,1170.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14298707,toplist
+20.0,51.02,,Jessica BEARD,08 JAN 1989,USA,2,,"Eugene, OR (USA)",11 JUN 2010,1165.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14305526,toplist
+21.0,51.09,,Lashinda DEMUS,10 MAR 1983,USA,5,,"Bislett Stadion, Oslo (NOR)",04 JUN 2010,1162.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14308886,toplist
+22.0,51.16,,Monica HARGROVE,30 DEC 1982,USA,4,,"Drake Stadium, Des Moines, IA (USA)",26 JUN 2010,1159.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14311954,toplist
+23.0,51.23,,DeeDee TROTTER,08 DEC 1982,USA,2f2,,"Albuquerque, NM (USA) (i)",28 FEB 2010,1190.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14322997,toplist
+24.0,51.24,,Margaret ETIM,28 NOV 1992,NGR,1,,Makurdi (NGR),22 MAY 2010,1156.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14941272,toplist
+25.0,51.32,,Amy Mbacké THIAM,10 NOV 1976,SEN,2,,"Nyayo National Stadium, Nairobi (KEN)",30 JUL 2010,1153.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14300015,toplist
+26.0,51.41,,Kseniya RYZHOVA,19 APR 1987,RUS,1sf1,,Saransk (RUS),12 JUL 2010,1149.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14299689,toplist
+26.0,51.41,,Muriel HURTIS,25 MAR 1979,FRA,1,,Castres (FRA),20 JUL 2010,1149.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14257078,toplist
+28.0,51.42,,Shana COX,22 JAN 1985,USA,1f1,,"Gainesville, FL (USA)",02 APR 2010,1149.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14308212,toplist
+29.0,51.48,,Shereefa LLOYD,02 SEP 1982,JAM,1,,Heusden-Zolder (BEL),10 JUL 2010,1147.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285774,toplist
+29.0,51.48,,Perri SHAKES-DRAYTON,21 DEC 1988,GBR,6,,"Crystal Palace, London (GBR)",14 AUG 2010,1147.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14276312,toplist
+31.0,51.49,,Moushaumi ROBINSON,13 APR 1981,USA,2,,Heusden-Zolder (BEL),10 JUL 2010,1146.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14320082,toplist
+32.0,51.51,,Ebonie FLOYD,21 OCT 1983,USA,3,,Barcelona (ESP),09 JUL 2010,1146.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14310239,toplist
+33.0,51.52,,Joanna ATKINS,31 JAN 1989,USA,1f3,,"Greensboro, NC (USA)",28 MAY 2010,1145.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14305059,toplist
+34.0,51.55,,Lee MCCONNELL,09 OCT 1978,GBR,1f1,,Birmingham (GBR),26 JUN 2010,1144.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14275732,toplist
+35.0,51.63,,Me'Lisa BARBER,04 OCT 1980,USA,1f1,,"Auburn, AL (USA)",17 APR 2010,1141.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14305304,toplist
+35.0,51.63,,Folashade ABUGAN,17 DEC 1990,NGR,3,,"Nyayo National Stadium, Nairobi (KEN)",30 JUL 2010,1141.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14292316,toplist
+37.0,51.64,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,3h1,,Kingston (JAM),26 JUN 2010,1140.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285809,toplist
+38.0,51.65,,Claudia HOFFMANN,10 DEC 1982,GER,1f1,,Regensburg (GER),05 JUN 2010,1140.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14278068,toplist
+38.0,51.65,,Aliann Tabitha POMPEY,09 MAR 1978,GUY,2,,New Delhi (IND),08 OCT 2010,1140.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14281116,toplist
+40.0,51.67,,Christine AMERTIL,18 AUG 1979,BAH,1,,Rio de Janeiro (BRA),23 MAY 2010,1139.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14270669,toplist
+41.0,51.71,,Shelise WILLIAMS,15 AUG 1989,USA,2f3,,"Austin, TX (USA)",28 MAY 2010,1138.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14324371,toplist
+42.0,51.73,,Angee NOTT,21 DEC 1975,USA,3sf2,,"Drake Stadium, Des Moines, IA (USA)",25 JUN 2010,1137.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14312416,toplist
+43.0,51.75,,Zundike RODRIGUEZ,14 MAR 1987,MEX,1,,San José del Cabo (MEX),22 MAY 2010,1136.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14291227,toplist
+44.0,51.79,,Yelena MIGUNOVA,04 JAN 1984,RUS,1h2,,Moskva (RUS) (i),26 FEB 2010,1168.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14298614,toplist
+45.0,51.80,,Tiandra PONTEEN,09 NOV 1984,SKN,1f1,,"Atlanta, GA (USA)",15 MAY 2010,1134.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14300056,toplist
+45.0,51.80,,Josephine EHIGIE,01 DEC 1985,NGR,2,,Makurdi (NGR),22 MAY 2010,1134.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14292382,toplist
+47.0,51.82,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,4sf2,,"Drake Stadium, Des Moines, IA (USA)",25 JUN 2010,1133.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14319838,toplist
+48.0,51.84,,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,1f1,,São Paulo (BRA),21 AUG 2010,1133.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14269361,toplist
+49.0,51.87,,Virginie MICHANOL,18 JUN 1985,FRA,2,,"Stade Raymond Petit, Tomblaine (FRA)",25 JUN 2010,1131.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14273156,toplist
+49.0,51.87,,Marta MILANI,09 MAR 1987,ITA,6,,"Estadio Olímpico, Barcelona (ESP)",30 JUL 2010,1131.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14284811,toplist
+51.0,51.90,,Darya TEREKHOVA,21 MAR 1980,RUS,1f2,,Moskva (RUS) (i),07 FEB 2010,1164.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14299143,toplist
+52.0,51.93,,Ndeye SOUMAH FATOU,06 APR 1986,SEN,4,,"Nyayo National Stadium, Nairobi (KEN)",30 JUL 2010,1129.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14300011,toplist
+53.0,51.94,,Joanne CUDDIHY,11 MAY 1984,IRL,1,,Perth (AUS),17 APR 2010,1129.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14283177,toplist
+54.0,51.97,,Olga TERESHKOVA,26 OCT 1984,KAZ,1,,Guangzhou (CHN),22 NOV 2010,1128.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14288728,toplist
+55.0,52.01,,Indira TERRERO,29 NOV 1985,CUB,4,,Baie Mahault (FRA),01 MAY 2010,1126.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14263364,toplist
+56.0,52.03,,Ebony COLLINS,11 MAR 1989,USA,2,,"Walnut, CA (USA)",17 APR 2010,1125.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14307915,toplist
+57.0,52.04,,Yuliya GUSHCHINA,04 MAR 1983,RUS,1f9,,Moskva (RUS) (i),13 FEB 2010,1159.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14297898,toplist
+58.0,52.05,,Mariya SAVINOVA,13 AUG 1985,RUS,2f9,,Moskva (RUS) (i),13 FEB 2010,1158.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14299184,toplist
+59.0,52.06,,Daryna PRYSTUPA,26 NOV 1987,UKR,2f2,,Yalta (UKR),28 MAY 2010,1124.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14304053,toplist
+60.0,52.09,,Alysia MONTAÑO,23 APR 1986,USA,2,,Nuoro (ITA),14 JUL 2010,1123.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14313660,toplist
+61.0,52.11,,Carline MUIR,01 OCT 1987,CAN,2,,Edmonton (CAN),12 JUN 2010,1122.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14267466,toplist
+62.0,52.13,,Yekaterina YEFIMOVA,28 JUN 1989,RUS,1,,Volgograd (RUS) (i),20 FEB 2010,1155.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14297657,toplist
+62.0,52.13,,Norma GONZÁLEZ,11 AUG 1982,COL,1,,Cali (COL),15 MAY 2010,1121.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14264003,toplist
+62.0,52.13,,Yekaterina VYSOTSKAYA,10 AUG 1987,RUS,4sf3,,Saransk (RUS),12 JUL 2010,1121.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14299761,toplist
+62.0,52.13,,Mandeep KAUR,19 APR 1988,IND,1,,Patiala (IND),05 AUG 2010,1121.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14282902,toplist
+66.0,52.16,,Shareese WOODS,20 FEB 1985,USA,2f1,,"Albuquerque, NM (USA) (i)",28 FEB 2010,1154.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14324669,toplist
+66.0,52.16,,Esther CREMER,29 MAR 1988,GER,2f2,,Rehlingen (GER),24 MAY 2010,1120.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14277297,toplist
+68.0,52.18,,Angele COOPER,03 NOV 1990,USA,1f1,,"Austin, TX (USA)",01 MAY 2010,1119.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14308048,toplist
+69.0,52.19,,Ajoke ODUMOSU,27 OCT 1987,NGR,1h1,,Calabar (NGR),25 JUN 2010,1119.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14292468,toplist
+70.0,52.20,,Jodie HENRY,01 APR 1985,AUS,2,,Perth (AUS),17 APR 2010,1119.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14271966,toplist
+70.0,52.20,,Janin LINDENBERG,20 JAN 1987,GER,7,,"Olympiastadion, Berlin (GER)",22 AUG 2010,1119.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14278698,toplist
+72.0,52.25,,Daysurami BONNE,09 MAR 1988,CUB,1,,San Fernando (ESP),05 JUN 2010,1117.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14263668,toplist
+73.0,52.27,,Natalya IVANOVA,25 JUN 1981,RUS,3,,Sochi (RUS),27 MAY 2010,1116.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14297952,toplist
+74.0,52.28,,Brandi CROSS,20 JAN 1988,USA,5sf2,,"Drake Stadium, Des Moines, IA (USA)",25 JUN 2010,1116.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14308334,toplist
+75.0,52.29,,Mary WINEBERG,03 JAN 1980,USA,6sf2,,"Drake Stadium, Des Moines, IA (USA)",25 JUN 2010,1115.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14308581,toplist
+76.0,52.30,,Fabienne KOHLMANN,06 NOV 1989,GER,2f1,,Regensburg (GER),05 JUN 2010,1115.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14278418,toplist
+77.0,52.34,,Marie LACORDELLE,19 JAN 1987,FRA,2,,Castres (FRA),20 JUL 2010,1113.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14256874,toplist
+78.0,52.35,,Chantel MALONE,02 DEC 1991,IVB,3f1,,"Austin, TX (USA)",01 MAY 2010,1113.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285523,toplist
+78.0,52.35,,Marina MASLENKO,03 JUL 1982,KAZ,1h1,,Guangzhou (CHN),21 NOV 2010,1113.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14288661,toplist
+80.0,52.36,,Ciara SHORT,11 MAR 1989,USA,1h2,,"Austin, TX (USA)",27 MAY 2010,1112.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14326011,toplist
+81.0,52.38,,Melocia CLARKE,03 APR 1979,JAM,1f3,,"Tampa, FL (USA)",14 MAY 2010,1112.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285613,toplist
+82.0,52.40,,Victoria BARR,14 APR 1982,GBR,2f1,,La Chaux-de-Fonds (SUI),04 JUL 2010,1111.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14274451,toplist
+83.0,52.41,,Tamsyn MANOU,20 JUL 1978,AUS,1,,Canberra (AUS),30 JAN 2010,1111.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14271772,toplist
+83.0,52.41,,Olesya KRASNOMOVETS-FORSHEVA,08 JUL 1979,RUS,5sf3,,Saransk (RUS),12 JUL 2010,1111.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14298284,toplist
+85.0,52.42,,Svetlana POSPELOVA,24 DEC 1979,RUS,1h4,,Moskva (RUS) (i),26 FEB 2010,1144.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14298992,toplist
+86.0,52.43,,Leslie COLE,16 FEB 1987,USA,1f1,,"College Station, TX (USA) (i)",16 JAN 2010,1144.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14307858,toplist
+86.0,52.43,,Clora WILLIAMS,26 NOV 1983,JAM,2,,"Clermont, FL (USA)",12 JUN 2010,1110.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285996,toplist
+86.0,52.43,,Christine DAY,23 AUG 1986,JAM,3h2,,Kingston (JAM),26 JUN 2010,1110.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285647,toplist
+89.0,52.45,,Jennifer PADILLA GONZALEZ,01 JAN 1990,COL,1f1,,Medellín (COL),24 APR 2010,1109.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14336067,toplist
+89.0,52.45,,Sharay HALE,21 APR 1989,USA,2f3,,"Greensboro, NC (USA)",28 MAY 2010,1109.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14362472,toplist
+89.0,52.45,,Adrienne POWER,11 DEC 1981,CAN,3,,Edmonton (CAN),12 JUN 2010,1109.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14267353,toplist
+89.0,52.45,,Shaunae MILLER,15 APR 1994,BAH,1h3,,"Croix-Bleue Medavie Stadium, Moncton (CAN)",20 JUL 2010,1109.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14368116,toplist
+93.0,52.46,,Bobby-Gaye WILKINS-GOODEN,10 SEP 1988,JAM,1f2,,"Lincoln, NE (USA) (i)",06 FEB 2010,1142.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285991,toplist
+93.0,52.46,,Marilyn OKORO,23 SEP 1984,GBR,3f1,,La Chaux-de-Fonds (SUI),04 JUL 2010,1109.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14275966,toplist
+95.0,52.47,,Susana CLEMENT,18 AUG 1989,CUB,2,,La Habana (CUB),21 MAY 2010,1108.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14263627,toplist
+96.0,52.48,,Kseniya KARANDYUK,21 JUN 1986,UKR,2f1,,Donetsk (UKR),02 JUL 2010,1108.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14303677,toplist
+97.0,52.49,,Bukola ABOGUNLOKO,18 AUG 1994,NGR,3h1,,Calabar (NGR),25 JUN 2010,1107.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14413784,toplist
+98.0,52.51,,Sheryl MORGAN,06 NOV 1983,JAM,2,,St-Martin (FRA),08 MAY 2010,1107.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14285823,toplist
+98.0,52.51,,Fawn DORR,19 APR 1987,USA,1,,"Bloomington, IN (USA)",16 MAY 2010,1107.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14309196,toplist
+100.0,52.52,,Roxana DÍAZ,17 MAY 1981,CUB,3,,La Habana (CUB),21 MAY 2010,1106.0,women_400m,2010,https://worldathletics.org/athletes/athlete=14263600,toplist
+1.0,49.56,,Amantle MONTSHO,04 JUL 1983,BOT,1,,"DS, Daegu (KOR)",29 AUG 2011,1223.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14269474,toplist
+2.0,49.59,,Allyson FELIX,18 NOV 1985,USA,2,,"DS, Daegu (KOR)",29 AUG 2011,1222.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14309983,toplist
+3.0,49.66,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1,,"Crystal Palace, London (GBR)",06 AUG 2011,1219.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14319838,toplist
+4.0,49.84,,Rose-Mary WHYTE,08 SEP 1986,JAM,2,,"Crystal Palace, London (GBR)",06 AUG 2011,1212.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14285988,toplist
+5.0,49.92,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,1,,Cheboksary (RUS),22 JUL 2011,1209.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14298308,toplist
+6.0,50.05,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,1,,Kingston (JAM),26 JUN 2011,1203.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14286000,toplist
+7.0,50.24,,Francena MCCORORY,20 OCT 1988,USA,1sf2,,"DS, Daegu (KOR)",28 AUG 2011,1196.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14316439,toplist
+8.0,50.45,,Shericka WILLIAMS,17 SEP 1985,JAM,2,,"Sports Park Mladost, Zagreb (CRO)",13 SEP 2011,1187.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14286003,toplist
+9.0,50.67,,Kseniya RYZHOVA,19 APR 1987,RUS,2,,Cheboksary (RUS),22 JUL 2011,1179.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14299689,toplist
+10.0,50.69,,Antonina YEFREMOVA,19 JUL 1981,UKR,1f2,,Yalta (UKR),31 MAY 2011,1178.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14304342,toplist
+11.0,50.70,,Debbie DUNN,26 MAR 1978,USA,3,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1178.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14309386,toplist
+12.0,50.71,,Kaliese SPENCER,06 MAY 1987,JAM,1sf1,,Kingston (JAM),25 JUN 2011,1177.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14285929,toplist
+13.0,50.73,,Natalya ANTYUKH,26 JUN 1981,RUS,1,,Moskva (RUS),06 AUG 2011,1176.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14297264,toplist
+14.0,50.79,,Jessica BEARD,08 JAN 1989,USA,1f2,,"College Station, TX (USA) (i)",12 MAR 2011,1207.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14305526,toplist
+15.0,50.83,,Natasha HASTINGS,23 JUL 1986,USA,1,,"Albuquerque, NM (USA) (i)",27 FEB 2011,1206.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14312172,toplist
+16.0,50.84,,Denisa ROSOLOVÁ,21 AUG 1986,CZE,2,,"Mestský Stadion, Ostrava (CZE)",31 MAY 2011,1172.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14262688,toplist
+17.0,50.85,,Christine OHURUOGU,17 MAY 1984,GBR,3,,"Sports Park Mladost, Zagreb (CRO)",13 SEP 2011,1172.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14275963,toplist
+18.0,50.86,,Davita PRENDERGAST,16 DEC 1984,JAM,4,,Kingston (JAM),26 JUN 2011,1171.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14285860,toplist
+19.0,50.92,,Lyudmila LITVINOVA,08 JUN 1985,RUS,3,,Cheboksary (RUS),22 JUL 2011,1169.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14298462,toplist
+19.0,50.92,,Kseniya ZADORINA,02 MAR 1987,RUS,4,,Cheboksary (RUS),22 JUL 2011,1169.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14299841,toplist
+21.0,50.98,,Vanya STAMBOLOVA,28 NOV 1983,BUL,1,,Novi Sad (SRB),18 JUN 2011,1166.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14268563,toplist
+22.0,51.01,,Lee MCCONNELL,09 OCT 1978,GBR,5,,"Crystal Palace, London (GBR)",06 AUG 2011,1165.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14275732,toplist
+23.0,51.08,,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,1,,Rio de Janeiro (BRA),22 JUL 2011,1162.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14269361,toplist
+24.0,51.10,,Olga TOPILSKAYA,04 OCT 1990,RUS,1,,Yerino (RUS),25 JUN 2011,1162.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14386657,toplist
+25.0,51.17,,DeeDee TROTTER,08 DEC 1982,USA,6,,"Hayward Field, Eugene, OR (USA)",25 JUN 2011,1159.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14322997,toplist
+26.0,51.20,,Svetlana USOVICH,14 OCT 1980,BLR,1f1,,Minsk (BLR),04 JUN 2011,1158.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14269562,toplist
+27.0,51.22,,Olesya KRASNOMOVETS-FORSHEVA,08 JUL 1979,RUS,1,,Moskva (RUS) (i),17 FEB 2011,1191.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14298284,toplist
+28.0,51.24,,Shana COX,22 JAN 1985,GBR,2f2,,Ponce (PUR),14 MAY 2011,1156.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14308212,toplist
+29.0,51.26,,Yelena MIGUNOVA,04 JAN 1984,RUS,1sf1,,Cheboksary (RUS),21 JUL 2011,1155.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14298614,toplist
+30.0,51.40,,Patricia HALL,16 OCT 1982,JAM,5,,Kingston (JAM),26 JUN 2011,1150.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14285712,toplist
+31.0,51.42,,Leslie COLE,16 FEB 1987,USA,1f1,,"Los Angeles, CA (USA)",07 MAY 2011,1149.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14307858,toplist
+32.0,51.43,,Nataliya PYHYDA,30 JAN 1981,UKR,1,,Vinnitsa (UKR),15 AUG 2011,1149.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14304022,toplist
+33.0,51.47,,Perri SHAKES-DRAYTON,21 DEC 1988,GBR,6,,"Stadio Olimpico, Roma (ITA)",26 MAY 2011,1147.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14276312,toplist
+34.0,51.49,,Marina KARNUSHCHENKO,02 OCT 1988,RUS,3sf3,,Cheboksary (RUS),21 JUL 2011,1146.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14298035,toplist
+35.0,51.50,,Joanna ATKINS,31 JAN 1989,USA,2,,"Des Moines, IA (USA)",10 JUN 2011,1146.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14305059,toplist
+36.0,51.52,,Natoya GOULE,30 MAR 1991,JAM,1f1,,"El Paso, TX (USA)",16 APR 2011,1145.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14285696,toplist
+37.0,51.53,,Jennifer PADILLA GONZALEZ,01 JAN 1990,COL,1,,Guadalajara (MEX),26 OCT 2011,1145.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14336067,toplist
+38.0,51.55,,Diamond DIXON,29 JUN 1992,USA,1,,"Norman, OK (USA)",15 MAY 2011,1144.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14335631,toplist
+39.0,51.58,,Norma GONZÁLEZ,11 AUG 1982,COL,2,,São Paulo (BRA),22 MAY 2011,1143.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14264003,toplist
+39.0,51.58,,Moa HJELMER,19 JUN 1990,SWE,1,,Gävle (SWE),13 AUG 2011,1143.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14301966,toplist
+41.0,51.61,,Keshia KIRTZ,30 JAN 1988,USA,1f1,,"Los Angeles, CA (USA)",23 APR 2011,1142.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14305210,toplist
+42.0,51.62,,Chrisann GORDON-POWELL,18 SEP 1994,JAM,1,,Kingston (JAM),02 APR 2011,1141.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14361183,toplist
+42.0,51.62,,Muriel HURTIS,25 MAR 1979,FRA,2,,Strasbourg (FRA),12 JUN 2011,1141.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14257078,toplist
+44.0,51.66,,Jailma SALES DE LIMA,31 DEC 1986,BRA,3,,São Paulo (BRA),22 MAY 2011,1140.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14268860,toplist
+44.0,51.66,,Aliann Tabitha POMPEY,09 MAR 1978,GUY,1f4,,"New York, NY (USA)",09 JUL 2011,1140.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14281116,toplist
+46.0,51.67,,Ndeye SOUMAH FATOU,06 APR 1986,SEN,1f3,,Celle Ligure (ITA),05 JUL 2011,1139.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14300011,toplist
+47.0,51.69,,Shereefa LLOYD,02 SEP 1982,JAM,1,,Mayagüez (PUR),15 JUL 2011,1139.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14285774,toplist
+47.0,51.69,,Daysurami BONNE,09 MAR 1988,CUB,2,,Guadalajara (MEX),26 OCT 2011,1139.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14263668,toplist
+49.0,51.71,,Mary WINEBERG,03 JAN 1980,USA,1f1,,Genève (SUI),28 MAY 2011,1138.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14308581,toplist
+50.0,51.73,,Joyce SAKARI,06 JUN 1986,KEN,1,,Nairobi (KEN),16 JUL 2011,1137.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14289541,toplist
+51.0,51.76,,Monica HARGROVE,30 DEC 1982,USA,2f1,,Uberlandia (BRA),18 MAY 2011,1136.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14311954,toplist
+52.0,51.77,,Amy Mbacké THIAM,10 NOV 1976,SEN,2,,Maputo (MOZ),13 SEP 2011,1135.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14300015,toplist
+53.0,51.79,,Hanna REISHAL,21 OCT 1987,BLR,2f1,,Minsk (BLR),04 JUN 2011,1135.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14269582,toplist
+54.0,51.82,,Joanne CUDDIHY,11 MAY 1984,IRL,3h1,,"DS, Daegu (KOR)",27 AUG 2011,1133.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14283177,toplist
+55.0,51.84,,Shelise WILLIAMS,15 AUG 1989,USA,2h3,,"Des Moines, IA (USA)",08 JUN 2011,1133.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14324371,toplist
+55.0,51.84,,Shaunae MILLER,15 APR 1994,BAH,1,,Lille (FRA),08 JUL 2011,1133.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14368116,toplist
+55.0,51.84,,Nicola SANDERS,23 JUN 1982,GBR,1f1,,Ninove (BEL),06 AUG 2011,1133.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14276271,toplist
+55.0,51.84,,Tjipekapora HERUNGA,01 JAN 1988,NAM,3,,Maputo (MOZ),13 SEP 2011,1133.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14291431,toplist
+59.0,51.85,,Ciara SHORT,11 MAR 1989,USA,2h1,,"Des Moines, IA (USA)",08 JUN 2011,1132.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14326011,toplist
+60.0,51.86,,Marta MILANI,09 MAR 1987,ITA,4sf2,,"DS, Daegu (KOR)",28 AUG 2011,1132.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14284811,toplist
+61.0,51.93,,Aymeé MARTÍNEZ,17 NOV 1988,CUB,1,,La Habana (CUB),26 MAY 2011,1129.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14263494,toplist
+62.0,51.94,,Aiesha GOGGINS,13 SEP 1991,USA,1,,"Houston, TX (USA)",15 MAY 2011,1129.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14374312,toplist
+63.0,51.95,,Ristananna TRACEY,09 MAY 1992,JAM,1f2,,Kingston (JAM),21 MAY 2011,1128.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14367593,toplist
+63.0,51.95,,Jenna MARTIN,31 MAR 1988,CAN,1,,Calgary (CAN),25 JUN 2011,1128.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14316105,toplist
+65.0,51.96,,Bianca Denisa RĂZOR,08 AUG 1994,ROU,1,,"Kadrioru staadion, Tallinn (EST)",22 JUL 2011,1128.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14373543,toplist
+66.0,51.97,,Janin LINDENBERG,20 JAN 1987,GER,1f1,,Regensburg (GER),04 JUN 2011,1128.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14278698,toplist
+67.0,52.03,,Alycia WILLIAMS,08 JAN 1985,USA,2,,"Clermont, FL (USA)",04 JUN 2011,1125.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14324220,toplist
+67.0,52.03,,Kseniya AKSYONOVA,14 JAN 1988,RUS,3sf2,,Cheboksary (RUS),21 JUL 2011,1125.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14299650,toplist
+69.0,52.08,,Christine DAY,23 AUG 1986,JAM,2f2,,Kingston (JAM),16 APR 2011,1123.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14285647,toplist
+69.0,52.08,,Esther CREMER,29 MAR 1988,GER,1f4,,Gladbeck (GER),10 JUL 2011,1123.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14277297,toplist
+71.0,52.09,,Fantu MAGISO,09 JUN 1992,ETH,1,,Gaborone (BOT),13 MAY 2011,1123.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14429098,toplist
+71.0,52.09,,Marilyn OKORO,23 SEP 1984,GBR,1f1,,La Chaux-de-Fonds (SUI),03 JUL 2011,1123.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14275966,toplist
+73.0,52.12,,Christina BRENNAN,27 MAR 1995,CAN,2,,Lille (FRA),08 JUL 2011,1122.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14381310,toplist
+74.0,52.14,,Olivia JAMES,01 JUN 1994,JAM,3,,Lille (FRA),08 JUL 2011,1121.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14413577,toplist
+75.0,52.15,,Tamsyn MANOU,20 JUL 1978,AUS,1f1,,Glendale (AUS),29 JAN 2011,1121.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14271772,toplist
+75.0,52.15,,Birsen ENGIN,18 OCT 1980,TUR,2f1,,Ankara (TUR),30 JUL 2011,1121.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14303218,toplist
+75.0,52.15,,Claudia HOFFMANN,10 DEC 1982,GER,2f1,,Mannheim (GER),13 AUG 2011,1121.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14278068,toplist
+78.0,52.17,,Libania GRENOT,12 JUL 1983,ITA,3,,"Stadio Guidobaldi, Rieti (ITA)",10 SEP 2011,1120.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14263547,toplist
+79.0,52.18,,Briana NELSON,18 JUL 1992,USA,1f2,,"Lincoln, NE (USA) (i)",26 FEB 2011,1153.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14366310,toplist
+79.0,52.18,,Yuliya GUSHCHINA,04 MAR 1983,RUS,1,,Yerino (RUS),30 JUL 2011,1119.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14297898,toplist
+81.0,52.19,,Yuliana YUSHCHANKA,14 AUG 1984,BLR,2,,Minsk (BLR),11 AUG 2011,1119.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14269511,toplist
+82.0,52.21,,Maris MÄGI,11 AUG 1987,EST,1,,Sydney (AUS),19 MAR 2011,1118.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14260077,toplist
+83.0,52.22,,Indira TERRERO,29 NOV 1985,CUB,7f1,,Barcelona (ESP),22 JUL 2011,1118.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14263364,toplist
+84.0,52.23,,Jasmine HYDER,25 AUG 1988,USA,1,,"Tucson, AZ (USA)",14 MAY 2011,1118.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14307467,toplist
+84.0,52.23,,Joelma DAS NEVES SOUZA,13 JUL 1984,BRA,5,,São Paulo (BRA),22 MAY 2011,1118.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14269255,toplist
+86.0,52.24,,Kseniya KARANDYUK,21 JUN 1986,UKR,2f2,,Yalta (UKR),31 MAY 2011,1117.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14303677,toplist
+87.0,52.25,,Veronica CAMPBELL-BROWN,15 MAY 1982,JAM,2f1,,"Orlando, FL (USA)",26 MAR 2011,1117.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14285598,toplist
+88.0,52.26,,Nadine OKYERE,29 NOV 1986,GBR,2f1,,Ninove (BEL),06 AUG 2011,1116.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14275967,toplist
+89.0,52.27,,Jessica YOUNG-WARREN,06 APR 1987,USA,1f1,,"Tempe, AZ (USA)",26 MAR 2011,1116.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14324854,toplist
+90.0,52.28,,Endurance ABINUWA,31 JUL 1987,NGR,1f1,,"Lubbock, TX (USA)",22 APR 2011,1116.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14292313,toplist
+90.0,52.28,,Marlena WESH,16 FEB 1991,HAI,1,,"Durham, NC (USA)",23 APR 2011,1116.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14323938,toplist
+90.0,52.28,,Eilidh DOYLE,20 FEB 1987,GBR,1,,Glasgow (GBR),17 JUL 2011,1116.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14274691,toplist
+93.0,52.29,,Yuliya KUZNETSOVA,20 FEB 1990,RUS,2,,Yerino (RUS),25 JUN 2011,1115.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14299541,toplist
+94.0,52.30,,Regina GEORGE,17 FEB 1991,USA,2f2,,"College Station, TX (USA) (i)",12 MAR 2011,1149.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14310865,toplist
+95.0,52.32,,Shareese WOODS,20 FEB 1985,USA,3,,"Des Moines, IA (USA)",30 APR 2011,1114.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14324669,toplist
+95.0,52.32,,Jessica COUSINS,10 APR 1985,USA,1f1,,"Clermont, FL (USA)",11 JUN 2011,1114.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14308179,toplist
+97.0,52.33,,Esther AKINSULIE,22 APR 1984,CAN,2,,Calgary (CAN),25 JUN 2011,1114.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14268465,toplist
+98.0,52.35,,Bukola ABOGUNLOKO,18 AUG 1994,NGR,1,,Calabar (NGR),25 JUN 2011,1113.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14413784,toplist
+99.0,52.39,,Barbara FARIAS DE OLIVEIRA,12 MAR 1991,BRA,4,,São Paulo (BRA),05 AUG 2011,1111.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14366027,toplist
+100.0,52.40,,Sharay HALE,21 APR 1989,USA,1,,"New Haven, CT (USA)",08 MAY 2011,1111.0,women_400m,2011,https://worldathletics.org/athletes/athlete=14362472,toplist
+1.0,49.16,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,1,,Cheboksary (RUS),05 JUL 2012,1240.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14298308,toplist
+2.0,49.28,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1,,"Hayward Field, Eugene, OR (USA)",24 JUN 2012,1235.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14319838,toplist
+3.0,49.54,,Amantle MONTSHO,04 JUL 1983,BOT,1,,Porto Novo (BEN),29 JUN 2012,1224.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14269474,toplist
+4.0,49.70,,Christine OHURUOGU,17 MAY 1984,GBR,2,,"Olympic Stadium, London (GBR)",05 AUG 2012,1218.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14275963,toplist
+5.0,49.72,,DeeDee TROTTER,08 DEC 1982,USA,3,,"Olympic Stadium, London (GBR)",05 AUG 2012,1217.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14322997,toplist
+6.0,49.78,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,3,,"Hayward Field, Eugene, OR (USA)",02 JUN 2012,1214.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14286000,toplist
+7.0,50.00,,Natalya NAZAROVA,26 MAY 1979,RUS,1sf3,,Cheboksary (RUS),04 JUL 2012,1206.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14298707,toplist
+8.0,50.06,,Francena MCCORORY,20 OCT 1988,USA,1,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1203.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14316439,toplist
+9.0,50.08,,Rose-Mary WHYTE,08 SEP 1986,JAM,1,,"Sports Park Mladost, Zagreb (CRO)",04 SEP 2012,1202.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285988,toplist
+10.0,50.34,,Shericka WILLIAMS,17 SEP 1985,JAM,1,,"Puskás Ferenc Stadion, Budapest (HUN)",20 AUG 2012,1192.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14286003,toplist
+11.0,50.43,,Kseniya RYZHOVA,19 APR 1987,RUS,1sf2,,Cheboksary (RUS),04 JUL 2012,1188.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14299689,toplist
+12.0,50.48,,Kseniya AKSYONOVA,14 JAN 1988,RUS,1,,Sochi (RUS),26 MAY 2012,1186.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14299650,toplist
+13.0,50.50,,Ashley SPENCER,08 JUN 1993,USA,1,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1185.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14476234,toplist
+14.0,50.55,,Libania GRENOT,12 JUL 1983,ITA,2,,"Puskás Ferenc Stadion, Budapest (HUN)",20 AUG 2012,1183.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14263547,toplist
+15.0,50.61,,Lyudmila LITVINOVA,08 JUN 1985,RUS,2sf3,,Cheboksary (RUS),04 JUL 2012,1181.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14298462,toplist
+16.0,50.63,,Kaliese SPENCER,06 MAY 1987,JAM,1,,"Stadio Guidobaldi, Rieti (ITA)",09 SEP 2012,1180.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285929,toplist
+17.0,50.71,,Patricia HALL,16 OCT 1982,JAM,2,,"Bislett Stadion, Oslo (NOR)",07 JUN 2012,1177.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285712,toplist
+18.0,50.72,,Natasha HASTINGS,23 JUL 1986,USA,1,,Ponce (PUR),12 MAY 2012,1177.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14312172,toplist
+19.0,50.85,,Christine DAY,23 AUG 1986,JAM,2sf1,,Kingston (JAM),30 JUN 2012,1172.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285647,toplist
+20.0,50.87,,Vanya STAMBOLOVA,28 NOV 1983,BUL,1,,Izmir (TUR),19 MAY 2012,1171.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14268563,toplist
+21.0,50.88,,Diamond DIXON,29 JUN 1992,USA,4,,"Hayward Field, Eugene, OR (USA)",24 JUN 2012,1170.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14335631,toplist
+22.0,50.91,,Yelena MIGUNOVA,04 JAN 1984,RUS,2sf2,,Cheboksary (RUS),04 JUL 2012,1169.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14298614,toplist
+23.0,51.00,,Svetlana USOVICH,14 OCT 1980,BLR,1f1,,Minsk (BLR),12 JUN 2012,1166.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14269562,toplist
+24.0,51.04,,Kadecia BAIRD,24 FEB 1995,GUY,2,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1164.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14425453,toplist
+25.0,51.06,,Ryan MCARTHUR,,USA,1,,"Yakima, WA (USA)",07 APR 2012,1163.0,women_400m,2012,https://worldathletics.org/athletes/united-states/ryan-mcarthur-014561793,toplist
+26.0,51.08,,Ignacio IBARRA,,USA,2,,"Yakima, WA (USA)",07 APR 2012,1162.0,women_400m,2012,https://worldathletics.org/athletes/united-states/ignacio-ibarra-014561795,toplist
+27.0,51.09,,Nataliya PYHYDA,30 JAN 1981,UKR,2h6,,"Olympic Stadium, London (GBR)",03 AUG 2012,1162.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14304022,toplist
+28.0,51.10,,Erika RUCKER,29 SEP 1993,USA,3,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1162.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14378185,toplist
+29.0,51.11,,Regina GEORGE,17 FEB 1991,NGR,2,,Porto Novo (BEN),29 JUN 2012,1161.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14310865,toplist
+30.0,51.12,,Joanna ATKINS,31 JAN 1989,USA,1f1,,"Atlanta, GA (USA)",12 MAY 2012,1161.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14305059,toplist
+31.0,51.13,,Moa HJELMER,19 JUN 1990,SWE,1,,"Olympiastadion, Helsinki (FIN)",29 JUN 2012,1161.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14301966,toplist
+31.0,51.13,,Rebecca ALEXANDER,02 MAY 1990,USA,1,,Irapuato (MEX),07 JUL 2012,1161.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14304636,toplist
+33.0,51.18,,Aleksandra FEDORIVA-SPAYER,13 SEP 1988,RUS,1,,Moskva (RUS) (i),23 FEB 2012,1192.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14297674,toplist
+34.0,51.19,,Jessica BEARD,08 JAN 1989,USA,6,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1158.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14305526,toplist
+34.0,51.19,,Alina LOHVYNENKO,18 JUL 1990,UKR,1h5,,Yalta (UKR),12 JUN 2012,1158.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14361178,toplist
+36.0,51.22,,Phyllis FRANCIS,04 MAY 1992,USA,1h1,,"Des Moines, IA (USA)",06 JUN 2012,1157.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14310414,toplist
+36.0,51.22,,Debbie DUNN,26 MAR 1978,USA,3,,"Bislett Stadion, Oslo (NOR)",07 JUN 2012,1157.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14309386,toplist
+38.0,51.23,,Keshia KIRTZ,30 JAN 1988,USA,5,,"Hayward Field, Eugene, OR (USA)",24 JUN 2012,1157.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14305210,toplist
+38.0,51.23,,Marlena WESH,16 FEB 1991,HAI,2,,Irapuato (MEX),07 JUL 2012,1157.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14323938,toplist
+40.0,51.24,,Tjipekapora HERUNGA,01 JAN 1988,NAM,1,,Pretoria (RSA),04 MAY 2012,1156.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14291431,toplist
+41.0,51.25,,Shaunae MILLER,15 APR 1994,BAH,1,,Freeport (BAH),27 MAY 2012,1156.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14368116,toplist
+42.0,51.26,,Perri SHAKES-DRAYTON,21 DEC 1988,GBR,1f2,,Bedford (GBR),10 JUN 2012,1155.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14276312,toplist
+42.0,51.26,,Kseniya ZADORINA,02 MAR 1987,RUS,2,,"Olympiastadion, Helsinki (FIN)",29 JUN 2012,1155.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14299841,toplist
+44.0,51.28,,Omolara OMOTOSHO,25 MAY 1993,NGR,2,,Calabar (NGR),23 JUN 2012,1155.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14335590,toplist
+45.0,51.31,,Ilona USOVICH,14 NOV 1982,BLR,4,,"Puskás Ferenc Stadion, Budapest (HUN)",20 AUG 2012,1153.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14269565,toplist
+46.0,51.33,,Indira TERRERO,29 NOV 1985,ESP,1,,Monachil (ESP),28 JUL 2012,1153.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14263364,toplist
+47.0,51.42,,Sherone SIMPSON,12 AUG 1984,JAM,1f1,,Kingston (JAM),28 JAN 2012,1149.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285909,toplist
+48.0,51.43,,Joanne CUDDIHY,11 MAY 1984,IRL,1f3,,Shizuoka (JPN),03 MAY 2012,1149.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14283177,toplist
+48.0,51.43,,Hanna REISHAL,21 OCT 1987,BLR,2f1,,Minsk (BLR),12 JUN 2012,1149.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14269582,toplist
+50.0,51.46,,Leslie COLE,16 FEB 1987,USA,1f1,,"Los Angeles, CA (USA)",05 MAY 2012,1148.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14307858,toplist
+50.0,51.46,,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,1,,São Paulo (BRA),29 JUN 2012,1148.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14269361,toplist
+52.0,51.47,,Tsholofelo SELEMELA-THIPE,12 SEP 1986,RSA,2,,Pretoria (RSA),04 MAY 2012,1147.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14296850,toplist
+53.0,51.51,,Natalya ANTYUKH,26 JUN 1981,RUS,4,,"Bislett Stadion, Oslo (NOR)",07 JUN 2012,1146.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14297264,toplist
+54.0,51.53,,Jenna MARTIN,31 MAR 1988,CAN,1,,Calgary (CAN),29 JUN 2012,1145.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14316105,toplist
+55.0,51.54,,Shana COX,22 JAN 1985,GBR,7,,"Icahn Stadium, New York, NY (USA)",09 JUN 2012,1144.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14308212,toplist
+55.0,51.54,,Joelma DAS NEVES SOUZA,13 JUL 1984,BRA,2,,São Paulo (BRA),29 JUN 2012,1144.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14269255,toplist
+57.0,51.57,,Bukola ABOGUNLOKO,18 AUG 1994,NGR,2f1,,"Atlanta, GA (USA)",12 MAY 2012,1143.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14413784,toplist
+58.0,51.60,,Marie GAYOT,18 DEC 1989,FRA,1f1,,Forbach (FRA),27 MAY 2012,1142.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14257376,toplist
+59.0,51.61,,Rorisang RAMONNYE,31 DEC 1990,RSA,1,,Potchefstroom (RSA),24 MAR 2012,1142.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14360058,toplist
+60.0,51.67,,Viktoriya ZYABKINA,04 SEP 1992,KAZ,1,,Almaty (KAZ),30 JUN 2012,1139.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14375464,toplist
+61.0,51.68,,Yuliya OLISHEVSKA,02 FEB 1989,UKR,3f2,,Yalta (UKR),13 JUN 2012,1139.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14304180,toplist
+61.0,51.68,,Amy Mbacké THIAM,10 NOV 1976,SEN,3,,Porto Novo (BEN),29 JUN 2012,1139.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14300015,toplist
+63.0,51.70,,Daryna PRYSTUPA,26 NOV 1987,UKR,4f2,,Yalta (UKR),13 JUN 2012,1138.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14304053,toplist
+63.0,51.70,,Shereefa LLOYD,02 SEP 1982,JAM,5,,Kingston (JAM),01 JUL 2012,1138.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285774,toplist
+65.0,51.72,,Kanika BECKLES,03 OCT 1991,GRN,1h1,,"Manhattan, KS (USA)",12 MAY 2012,1137.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14388567,toplist
+66.0,51.76,,Esther CREMER,29 MAR 1988,GER,1f2,,Rehlingen (GER),28 MAY 2012,1136.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14277297,toplist
+67.0,51.82,,Olha ZEMLYAK,16 JAN 1990,UKR,2h2,,Yalta (UKR),12 JUN 2012,1133.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14304366,toplist
+68.0,51.85,,Tatyana VESHKUROVA,23 SEP 1981,RUS,3,,Sochi (RUS),26 MAY 2012,1132.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14299702,toplist
+68.0,51.85,,Joyce SAKARI,06 JUN 1986,KEN,3h1,,"Olympic Stadium, London (GBR)",03 AUG 2012,1132.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14289541,toplist
+70.0,51.87,,Justine PALFRAMAN,04 NOV 1993,RSA,5,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1131.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14360057,toplist
+71.0,51.89,,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,2f1,,Kingston (JAM),28 JAN 2012,1131.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285805,toplist
+72.0,51.93,,Mary WINEBERG,03 JAN 1980,USA,2h4,,"Hayward Field, Eugene, OR (USA)",22 JUN 2012,1129.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14308581,toplist
+73.0,51.94,,Irina KOLESNICHENKO,27 MAY 1988,RUS,1h8,,Moskva (RUS) (i),22 FEB 2012,1162.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14297577,toplist
+74.0,51.96,,Floria GUEI,02 MAY 1990,FRA,1f3,,Liège (BEL),05 JUL 2012,1128.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14257210,toplist
+75.0,51.97,,Kristina MALVINOVA,16 JUL 1989,RUS,2h4,,Cheboksary (RUS),04 JUL 2012,1128.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14403427,toplist
+76.0,51.98,,Lee MCCONNELL,09 OCT 1978,GBR,3sf1,,"Olympiastadion, Helsinki (FIN)",28 JUN 2012,1127.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14275732,toplist
+77.0,52.00,,Jody Ann MUIR,01 JAN 1991,JAM,2sf3,,"Jacksonville, FL (USA)",25 MAY 2012,1126.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285828,toplist
+77.0,52.00,,Olesea COJUHARI,29 MAR 1990,MDA,1f1,,Bucureşti (ROU),15 JUN 2012,1126.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14290889,toplist
+79.0,52.02,,Phara ANACHARSIS,17 DEC 1983,FRA,2f3,,Liège (BEL),05 JUL 2012,1126.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14258762,toplist
+79.0,52.02,,Carol RODRÍGUEZ,16 DEC 1985,PUR,1f2,,Moncton (CAN),05 JUL 2012,1126.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14295349,toplist
+81.0,52.06,,Lanie WHITTAKER,21 MAY 1991,USA,1f2,,"Gainesville, FL (USA)",06 APR 2012,1124.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14329976,toplist
+82.0,52.07,,Ebony EUTSEY,03 MAY 1992,USA,2f2,,"Gainesville, FL (USA)",06 APR 2012,1124.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14309794,toplist
+82.0,52.07,,Denisa ROSOLOVÁ,21 AUG 1986,CZE,2,,"Sports Park Mladost, Zagreb (CRO)",04 SEP 2012,1124.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14262688,toplist
+84.0,52.09,,Florence UWAKWE,28 JUL 1994,NGR,3,,Warri (NGR),06 JUN 2012,1123.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14388652,toplist
+85.0,52.10,,Aliann Tabitha POMPEY,09 MAR 1978,GUY,1,,"Omaha, NE (USA)",06 JUL 2012,1123.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14281116,toplist
+86.0,52.11,,Jonique DAY,13 NOV 1988,JAM,2sf1,,"Jacksonville, FL (USA)",25 MAY 2012,1122.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14389768,toplist
+86.0,52.11,,Muriel HURTIS,25 MAR 1979,FRA,2h4,,"Olympiastadion, Helsinki (FIN)",27 JUN 2012,1122.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14257078,toplist
+86.0,52.11,,Davita PRENDERGAST,16 DEC 1984,JAM,4sf2,,Kingston (JAM),30 JUN 2012,1122.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14285860,toplist
+86.0,52.11,,Elena Mirela LAVRIC,17 FEB 1991,ROU,1f1,,Bucureşti (ROU),05 JUL 2012,1122.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14295709,toplist
+90.0,52.12,,Daysurami BONNE,09 MAR 1988,CUB,1,,La Habana (CUB),29 JUN 2012,1122.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14263668,toplist
+90.0,52.12,,Yuliana YUSHCHANKA,14 AUG 1984,BLR,2,,Grodno (BLR),06 JUL 2012,1122.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14269511,toplist
+92.0,52.14,,Moushaumi ROBINSON,13 APR 1981,USA,1,,Brazzaville (CGO),10 JUN 2012,1121.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14320082,toplist
+92.0,52.14,,Pamela JELIMO,05 DEC 1989,KEN,1h1,,Nairobi (KEN),14 JUN 2012,1121.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14289015,toplist
+94.0,52.15,,Samantha EDWARDS,14 JAN 1990,USA,1,,"Petersburg, VA (USA)",21 APR 2012,1121.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14375174,toplist
+95.0,52.16,,Alysia MONTAÑO,23 APR 1986,USA,1,,"Berkeley, CA (USA)",28 APR 2012,1120.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14313660,toplist
+96.0,52.19,,Robin REYNOLDS,22 FEB 1994,USA,1f2,,"Miramar, FL (USA)",18 APR 2012,1119.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14319782,toplist
+97.0,52.20,,Lenora GUION FIRMIN,07 AUG 1991,FRA,1,,"Princeton, NJ (USA)",13 MAY 2012,1119.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14257514,toplist
+97.0,52.20,,Bianca Denisa RĂZOR,08 AUG 1994,ROU,6,,"Estadio Olímpico, Barcelona (ESP)",13 JUL 2012,1119.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14373543,toplist
+99.0,52.22,,Marilyn OKORO,23 SEP 1984,GBR,5,,"Puskás Ferenc Stadion, Budapest (HUN)",20 AUG 2012,1118.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14275966,toplist
+100.0,52.23,,Aauri Lorena BOKESA,14 DEC 1988,ESP,5,,"Moratalaz, Madrid (ESP)",07 JUL 2012,1118.0,women_400m,2012,https://worldathletics.org/athletes/athlete=14373541,toplist
+1.0,49.33,,Amantle MONTSHO,04 JUL 1983,BOT,1,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1233.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14269474,toplist
+2.0,49.41,,Christine OHURUOGU,17 MAY 1984,GBR,1,,"Luzhniki Stadion, Moskva (RUS)",12 AUG 2013,1229.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14275963,toplist
+3.0,49.80,,Kseniya RYZHOVA,19 APR 1987,RUS,h1,,Cheboksary (RUS),24 JUN 2013,1214.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14299689,toplist
+4.0,49.86,,Francena MCCORORY,20 OCT 1988,USA,1sf3,,"Luzhniki Stadion, Moskva (RUS)",11 AUG 2013,1211.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14316439,toplist
+5.0,49.92,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,2,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1209.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285809,toplist
+6.0,49.94,,Natasha HASTINGS,23 JUL 1986,USA,1,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1208.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14312172,toplist
+7.0,50.01,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,1,,Kingston (JAM),23 JUN 2013,1205.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14286000,toplist
+8.0,50.19,,Allyson FELIX,18 NOV 1985,USA,2,,"Suhaim bin Hamad Stadium, Doha (QAT)",10 MAY 2013,1198.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14309983,toplist
+8.0,50.19,,Kaliese SPENCER,06 MAY 1987,JAM,2,,"Stadio Guidobaldi, Rieti (ITA)",08 SEP 2013,1198.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285929,toplist
+10.0,50.28,,Ashley SPENCER,08 JUN 1993,USA,1,,"Eugene, OR (USA)",07 JUN 2013,1194.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14476234,toplist
+11.0,50.47,,Libania GRENOT,12 JUL 1983,ITA,4sf2,,"Luzhniki Stadion, Moskva (RUS)",11 AUG 2013,1187.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14263547,toplist
+12.0,50.50,,Perri SHAKES-DRAYTON,21 DEC 1988,GBR,1f1,,"International Stadium, Gateshead (GBR)",22 JUN 2013,1185.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14276312,toplist
+13.0,50.55,,Kseniya ZADORINA,02 MAR 1987,RUS,1,,Moskva (RUS),24 JUL 2013,1183.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14299841,toplist
+14.0,50.60,,Kseniya AKSYONOVA,14 JAN 1988,RUS,1,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1182.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14299650,toplist
+15.0,50.70,,Shaunae MILLER,15 APR 1994,BAH,2,,"Eugene, OR (USA)",07 JUN 2013,1178.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14368116,toplist
+16.0,50.71,,Tatyana FIROVA,10 OCT 1982,RUS,2,,Moskva (RUS),24 JUL 2013,1177.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14297707,toplist
+17.0,50.77,,Joanna ATKINS,31 JAN 1989,USA,4,,"Drake Stadium, Des Moines, IA (USA)",22 JUN 2013,1175.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14305059,toplist
+18.0,50.84,,Regina GEORGE,17 FEB 1991,NGR,3sf1,,"Luzhniki Stadion, Moskva (RUS)",11 AUG 2013,1172.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14310865,toplist
+19.0,50.86,,Patricia HALL,16 OCT 1982,JAM,1,,"Mangueirão, Belém (BRA)",12 MAY 2013,1171.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285712,toplist
+19.0,50.86,,Phyllis FRANCIS,04 MAY 1992,USA,3,,"Eugene, OR (USA)",07 JUN 2013,1171.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14310414,toplist
+19.0,50.86,,Rose-Mary WHYTE,08 SEP 1986,JAM,4,,"Stade Louis II, Monaco (MON)",19 JUL 2013,1171.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285988,toplist
+19.0,50.86,,Nataliya PYHYDA,30 JAN 1981,UKR,2,,Valence (FRA),31 AUG 2013,1171.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14304022,toplist
+23.0,50.91,,Christine DAY,23 AUG 1986,JAM,2h1,,Kingston (JAM),22 JUN 2013,1169.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285647,toplist
+24.0,51.04,,Courtney OKOLO,15 MAR 1994,USA,1,,"Des Moines, IA (USA)",22 JUN 2013,1164.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14432036,toplist
+25.0,51.05,,Jessica BEARD,08 JAN 1989,USA,1,,Padova (ITA),01 SEP 2013,1164.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14305526,toplist
+26.0,51.10,,Ebonie FLOYD,21 OCT 1983,USA,3sf2,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1162.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14310239,toplist
+27.0,51.12,,Shana COX,22 JAN 1985,GBR,4,,"Olympic Stadium, London (GBR)",27 JUL 2013,1161.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14308212,toplist
+28.0,51.15,,Keshia KIRTZ,30 JAN 1988,USA,1f1,,"Los Angeles, CA (USA)",04 MAY 2013,1160.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14305210,toplist
+29.0,51.17,,Alyona MAMINA,30 MAY 1990,RUS,2,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1159.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14299515,toplist
+30.0,51.19,,Moushaumi ROBINSON,13 APR 1981,USA,2,,George Town (CAY),08 MAY 2013,1158.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14320082,toplist
+30.0,51.19,,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,4,,Kingston (JAM),23 JUN 2013,1158.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285764,toplist
+32.0,51.27,,Zuzana HEJNOVÁ,19 DEC 1986,CZE,2sf2,,"Scandinavium, Göteborg (SWE) (i)",02 MAR 2013,1189.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14263088,toplist
+33.0,51.32,,Kadecia BAIRD,24 FEB 1995,GUY,1,,Morelia (MEX),06 JUL 2013,1153.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14425453,toplist
+34.0,51.38,,Anyika ONUORA,28 OCT 1984,GBR,1,,"Stade Raymond Petit, Tomblaine (FRA)",02 JUL 2013,1151.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14275975,toplist
+35.0,51.42,,Floria GUEI,02 MAY 1990,FRA,5sf2,,"Luzhniki Stadion, Moskva (RUS)",11 AUG 2013,1149.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14257210,toplist
+36.0,51.43,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1h1,,"Drake Stadium, Des Moines, IA (USA)",20 JUN 2013,1149.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14319838,toplist
+37.0,51.45,,Eilidh DOYLE,20 FEB 1987,GBR,2,,"Scandinavium, Göteborg (SWE) (i)",03 MAR 2013,1182.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14274691,toplist
+38.0,51.49,,Bianca Denisa RĂZOR,08 AUG 1994,ROU,4sf1,,"Luzhniki Stadion, Moskva (RUS)",11 AUG 2013,1146.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14373543,toplist
+39.0,51.54,,Quanera HAYES,07 MAR 1992,USA,1,,"Pueblo, CO (USA)",25 MAY 2013,1144.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14509544,toplist
+39.0,51.54,,Marie GAYOT,18 DEC 1989,FRA,3f1,,"International Stadium, Gateshead (GBR)",22 JUN 2013,1144.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14257376,toplist
+41.0,51.56,,Patrycja WYCISZKIEWICZ,08 JAN 1994,POL,1,,"Stadio Guidobaldi, Rieti (ITA)",19 JUL 2013,1144.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14389670,toplist
+42.0,51.58,,Mary WINEBERG,03 JAN 1980,USA,1f1,,Burnaby (CAN),01 JUL 2013,1143.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14308581,toplist
+43.0,51.60,,Shericka JACKSON,16 JUL 1994,JAM,1,,Kingston (JAM),16 MAR 2013,1142.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14325599,toplist
+44.0,51.62,,Monica HARGROVE,30 DEC 1982,USA,1,,St-Martin (FRA),11 MAY 2013,1141.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14311954,toplist
+44.0,51.62,,Joelma DAS NEVES SOUZA,13 JUL 1984,BRA,2,,"Mangueirão, Belém (BRA)",12 MAY 2013,1141.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14269255,toplist
+44.0,51.62,,Esther CREMER,29 MAR 1988,GER,1h1,,Ulm (GER),06 JUL 2013,1141.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14277297,toplist
+44.0,51.62,,Kineke ALEXANDER,21 FEB 1986,VIN,2h1,,"Luzhniki Stadion, Moskva (RUS)",10 AUG 2013,1141.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14325306,toplist
+48.0,51.63,,Maureen Jelagat MAIYO,28 MAY 1985,KEN,1,,Nairobi (KEN),13 JUL 2013,1141.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14424837,toplist
+49.0,51.67,,DeeDee TROTTER,08 DEC 1982,USA,3,,Baie Mahault (FRA),08 MAY 2013,1139.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14322997,toplist
+49.0,51.67,,Omolara OMOTOSHO,25 MAY 1993,NGR,3,,"Mangueirão, Belém (BRA)",12 MAY 2013,1139.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14335590,toplist
+51.0,51.68,,Lenora GUION FIRMIN,07 AUG 1991,FRA,1,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1139.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14257514,toplist
+52.0,51.73,,Diamond DIXON,29 JUN 1992,USA,1,,"Waco, TX (USA)",05 MAY 2013,1137.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14335631,toplist
+53.0,51.77,,Aauri Lorena BOKESA,14 DEC 1988,ESP,1,,Alcobendas (ESP),28 JUL 2013,1135.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14373541,toplist
+54.0,51.78,,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,4,,"Mangueirão, Belém (BRA)",12 MAY 2013,1135.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14269361,toplist
+54.0,51.78,,Rebecca ALEXANDER,02 MAY 1990,USA,4sf1,,"Drake Stadium, Des Moines, IA (USA)",21 JUN 2013,1135.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14304636,toplist
+56.0,51.82,,Mikele BARBER,04 OCT 1980,USA,1f1,,"Claremont, CA (USA)",13 APR 2013,1133.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14305305,toplist
+57.0,51.83,,Kerron STEWART,16 APR 1984,JAM,1f1,,"Auburn, AL (USA)",06 APR 2013,1133.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285938,toplist
+57.0,51.83,,Natalya NAZAROVA,26 MAY 1979,RUS,2sf1,,Moskva (RUS),23 JUL 2013,1133.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14298707,toplist
+59.0,51.86,,Shericka WILLIAMS,17 SEP 1985,JAM,8,,Kingston (JAM),23 JUN 2013,1132.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14286003,toplist
+60.0,51.87,,Patience Okon GEORGE,25 NOV 1991,NGR,2,,Calabar (NGR),20 JUN 2013,1131.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14480009,toplist
+61.0,51.88,,Kayon ROBINSON,27 MAR 1989,JAM,2,,"Pueblo, CO (USA)",25 MAY 2013,1131.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285884,toplist
+62.0,51.93,,Margaret ADEOYE,22 APR 1985,GBR,3,,Birmingham (GBR),13 JUL 2013,1129.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14274348,toplist
+62.0,51.93,,Nadezhda KOTLYAROVA,12 JUN 1989,RUS,2sf2,,Moskva (RUS),23 JUL 2013,1129.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14377113,toplist
+64.0,51.94,,Nercely SOTO,23 AUG 1990,VEN,1,,Trujillo (PER),26 NOV 2013,1129.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14377437,toplist
+65.0,51.95,,Olha ZEMLYAK,16 JAN 1990,UKR,6,,"Stadio Olimpico, Roma (ITA)",06 JUN 2013,1128.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14304366,toplist
+66.0,51.97,,Indira TERRERO,29 NOV 1985,CUB,1,,Valencia (ESP),27 APR 2013,1128.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14263364,toplist
+67.0,51.98,,Alina LOHVYNENKO,18 JUL 1990,UKR,2,,Donetsk (UKR),25 JUL 2013,1127.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14361178,toplist
+68.0,52.01,,Kseniya KARANDYUK,21 JUN 1986,UKR,1f1,,Bar (MNE),01 MAY 2013,1126.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14303677,toplist
+68.0,52.01,,Sade SEALY,18 NOV 1991,BAR,1,,"Des Moines, IA (USA)",12 MAY 2013,1126.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14270547,toplist
+68.0,52.01,,Tjipekapora HERUNGA,01 JAN 1988,NAM,5h4,,"Luzhniki Stadion, Moskva (RUS)",10 AUG 2013,1126.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14291431,toplist
+71.0,52.02,,Jody Ann MUIR,01 JAN 1991,JAM,1f2,,"Greensboro, NC (USA)",24 MAY 2013,1126.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14285828,toplist
+71.0,52.02,,Muriel HURTIS,25 MAR 1979,FRA,2f2,,Ninove (BEL),27 JUL 2013,1126.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14257078,toplist
+73.0,52.03,,Kendall BAISDEN,05 MAR 1995,USA,2,,"Des Moines, IA (USA)",22 JUN 2013,1125.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14326466,toplist
+74.0,52.04,,Moa HJELMER,19 JUN 1990,SWE,3,,"Scandinavium, Göteborg (SWE) (i)",03 MAR 2013,1159.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14301966,toplist
+75.0,52.05,,Olha LYAKHOVA,18 MAR 1992,UKR,3,,Donetsk (UKR),25 JUL 2013,1124.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14325668,toplist
+76.0,52.06,,Chiara BAZZONI,05 JUL 1984,ITA,1,,Mersin (TUR),28 JUN 2013,1124.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14283745,toplist
+76.0,52.06,,Elena Mirela LAVRIC,17 FEB 1991,ROU,2,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1124.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14295709,toplist
+78.0,52.07,,Angela MOROŞANU,26 JUL 1986,ROU,1h2,,"Scandinavium, Göteborg (SWE) (i)",01 MAR 2013,1157.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14295767,toplist
+78.0,52.07,,Erika RUCKER,29 SEP 1993,USA,1h4,,"Greensboro, NC (USA)",23 MAY 2013,1124.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14378185,toplist
+80.0,52.08,,Alicia BROWN,21 JAN 1990,CAN,5,,"Central Stadium, Kazan (RUS)",09 JUL 2013,1123.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14377675,toplist
+81.0,52.09,,Georganne MOLINE,06 MAR 1990,USA,3f2,,"Fayetteville, AR (USA) (i)",09 MAR 2013,1157.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14362616,toplist
+82.0,52.10,,Kamaria BROWN,21 DEC 1992,USA,2,,"Columbia, SC (USA)",12 MAY 2013,1123.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14306592,toplist
+83.0,52.12,,Denisa ROSOLOVÁ,21 AUG 1986,CZE,3sf2,,"Scandinavium, Göteborg (SWE) (i)",02 MAR 2013,1156.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14262688,toplist
+84.0,52.13,,Olesea COJUHARI,29 MAR 1990,MDA,1,,Bucureşti (ROU),07 JUN 2013,1121.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14290889,toplist
+84.0,52.13,,Robin REYNOLDS,22 FEB 1994,USA,3,,"Des Moines, IA (USA)",22 JUN 2013,1121.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14319782,toplist
+86.0,52.14,,Kseniya GUSAROVA,29 MAR 1989,RUS,3f3,,Yerino (RUS),02 JUN 2013,1121.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14299031,toplist
+86.0,52.14,,Nicky VAN LEUVEREN,20 MAY 1990,NED,1,,Amsterdam (NED),21 JUL 2013,1121.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14292176,toplist
+88.0,52.15,,Yanmin ZHAO,26 JAN 1991,CHN,1,,Shenyang (CHN),08 SEP 2013,1121.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14264312,toplist
+89.0,52.16,,Chrisann GORDON-POWELL,18 SEP 1994,JAM,2,,Kingston (JAM),16 MAR 2013,1120.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14361183,toplist
+89.0,52.16,,Yekaterina RENZHINA,18 OCT 1994,RUS,2f3,,Yerino (RUS),15 JUN 2013,1120.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14421170,toplist
+89.0,52.16,,Caitlin SARGENT-JONES,14 JUN 1992,AUS,3sf1,,"Central Stadium, Kazan (RUS)",08 JUL 2013,1120.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14271351,toplist
+92.0,52.17,,Sparkle MC KNIGHT,21 DEC 1991,TTO,1,,"Tempe, AZ (USA)",06 APR 2013,1120.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14303028,toplist
+93.0,52.18,,Bukola ABOGUNLOKO,18 AUG 1994,NGR,3,,Warri (NGR),14 JUN 2013,1119.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14413784,toplist
+94.0,52.19,,Michelle BROWN,24 JAN 1992,USA,1,,"Piscataway, NJ (USA)",05 MAY 2013,1119.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14366316,toplist
+94.0,52.19,,Ilona USOVICH,14 NOV 1982,BLR,3,,"Puskás Ferenc Stadion, Budapest (HUN)",10 JUL 2013,1119.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14269565,toplist
+96.0,52.22,,Chizoba OKODOGBE,03 NOV 1992,NGR,2,,"Los Angeles, CA (USA)",12 MAY 2013,1118.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14329043,toplist
+96.0,52.22,,Justyna ŚWIĘTY-ERSETIC,03 DEC 1992,POL,3,,"Ratinan Stadion, Tampere (FIN)",13 JUL 2013,1118.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14361154,toplist
+98.0,52.24,,Amy Mbacké THIAM,10 NOV 1976,SEN,4h2,,"Luzhniki Stadion, Moskva (RUS)",10 AUG 2013,1117.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14300015,toplist
+99.0,52.25,,Margaret BAMGBOSE,19 OCT 1993,USA,2,,"Piscataway, NJ (USA)",05 MAY 2013,1117.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14486908,toplist
+99.0,52.25,,Ristananna TRACEY,09 MAY 1992,JAM,1f1,,Kingston (JAM),08 JUN 2013,1117.0,women_400m,2013,https://worldathletics.org/athletes/athlete=14367593,toplist
+1.0,49.48,,Francena MCCORORY,20 OCT 1988,USA,1,,"Sacramento, CA (USA)",28 JUN 2014,1226.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14316439,toplist
+2.0,49.66,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,2,,"Sacramento, CA (USA)",28 JUN 2014,1219.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14319838,toplist
+3.0,50.03,,Courtney OKOLO,15 MAR 1994,USA,1,,"Lubbock, TX (USA)",18 MAY 2014,1204.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14432036,toplist
+4.0,50.05,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,1,,Kingston (JAM),29 JUN 2014,1203.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14286000,toplist
+5.0,50.12,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,2,,"Boudewijnstadion, Bruxelles (BEL)",05 SEP 2014,1201.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14285809,toplist
+6.0,50.16,,Christine DAY,23 AUG 1986,JAM,2,,Kingston (JAM),29 JUN 2014,1199.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14285647,toplist
+7.0,50.37,,Amantle MONTSHO,04 JUL 1983,BOT,2,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2014,1191.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14269474,toplist
+8.0,50.46,,Phyllis FRANCIS,04 MAY 1992,USA,1f1,,"Albuquerque, NM (USA) (i)",15 MAR 2014,1220.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14310414,toplist
+8.0,50.46,,Kendall BAISDEN,05 MAR 1995,USA,2,,"Lubbock, TX (USA)",18 MAY 2014,1187.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14326466,toplist
+10.0,50.53,,Natasha HASTINGS,23 JUL 1986,USA,3,,"Sacramento, CA (USA)",28 JUN 2014,1184.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14312172,toplist
+11.0,50.55,,Libania GRENOT,12 JUL 1983,ITA,1,,Rovereto (ITA),19 JUL 2014,1183.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14263547,toplist
+12.0,50.74,,Joanna ATKINS,31 JAN 1989,USA,2,,Edmonton (CAN),06 JUL 2014,1176.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14305059,toplist
+13.0,50.81,,Allyson FELIX,18 NOV 1985,USA,5,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2014,1173.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14309983,toplist
+13.0,50.81,,Jessica BEARD,08 JAN 1989,USA,4,,"Sacramento, CA (USA)",28 JUN 2014,1173.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14305526,toplist
+15.0,50.84,,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,4,,Kingston (JAM),29 JUN 2014,1172.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14285764,toplist
+16.0,50.87,,Kabange MUPOPO,21 SEP 1992,ZAM,4,,"Le Grand Stade, Marrakech (MAR)",13 SEP 2014,1171.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14642670,toplist
+17.0,50.94,,Kamaria BROWN,21 DEC 1992,USA,1f2,,"College Station, TX (USA) (i)",01 MAR 2014,1202.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14306592,toplist
+18.0,50.98,,DeeDee TROTTER,08 DEC 1982,USA,1sf2,,"Sacramento, CA (USA)",27 JUN 2014,1166.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14322997,toplist
+19.0,51.00,,Kaliese SPENCER,06 MAY 1987,JAM,7,,"Shanghai Stadium, Shanghai (CHN)",18 MAY 2014,1166.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14285929,toplist
+19.0,51.00,,Olha ZEMLYAK,16 JAN 1990,UKR,5,,"Le Grand Stade, Marrakech (MAR)",13 SEP 2014,1166.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14304366,toplist
+21.0,51.03,,Kseniya RYZHOVA,19 APR 1987,RUS,1,,Moskva (RUS) (i),18 FEB 2014,1198.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14299689,toplist
+22.0,51.05,,Briana NELSON,18 JUL 1992,USA,4sf1,,"Sacramento, CA (USA)",27 JUN 2014,1164.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14366310,toplist
+23.0,51.06,,Shamier LITTLE,20 MAR 1995,USA,1,,"Lexington, KY (USA)",18 MAY 2014,1163.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14443767,toplist
+24.0,51.11,,Kemi ADEKOYA,16 JAN 1993,BRN,1h3,,Incheon (KOR),27 SEP 2014,1161.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14419510,toplist
+25.0,51.21,,Folashade ABUGAN,17 DEC 1990,NGR,1f1,,Loughborough (GBR),19 JUL 2014,1157.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14292316,toplist
+26.0,51.23,,Kineke ALEXANDER,21 FEB 1986,VIN,1f1,,"San Marcos, TX (USA)",26 APR 2014,1157.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14325306,toplist
+26.0,51.23,,Shericka WILLIAMS,17 SEP 1985,JAM,5,,Kingston (JAM),29 JUN 2014,1157.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14286003,toplist
+28.0,51.29,,Patience Okon GEORGE,25 NOV 1991,NGR,1f1,,Warri (NGR),13 JUN 2014,1154.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14480009,toplist
+29.0,51.30,,Regina GEORGE,17 FEB 1991,NGR,1h2,,Calabar (NGR),19 JUN 2014,1154.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14310865,toplist
+29.0,51.30,,Floria GUEI,02 MAY 1990,FRA,4,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1154.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14257210,toplist
+31.0,51.32,,Shericka JACKSON,16 JUL 1994,JAM,6,,Kingston (JAM),29 JUN 2014,1153.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14325599,toplist
+32.0,51.33,,Alyona MAMINA,30 MAY 1990,RUS,1f1,,Yerino (RUS),09 JUL 2014,1153.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14299515,toplist
+33.0,51.36,,Robin REYNOLDS,22 FEB 1994,USA,1h1,,"Eugene, OR (USA)",11 JUN 2014,1151.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14319782,toplist
+34.0,51.38,,Ashley SPENCER,08 JUN 1993,USA,1sf2,,"Fayetteville, AR (USA)",30 MAY 2014,1151.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14476234,toplist
+34.0,51.38,,Indira TERRERO,29 NOV 1985,ESP,3,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1151.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14263364,toplist
+34.0,51.38,,Christine OHURUOGU,17 MAY 1984,GBR,4,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1151.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14275963,toplist
+37.0,51.39,,Chrisann GORDON-POWELL,18 SEP 1994,JAM,7,,Kingston (JAM),29 JUN 2014,1150.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14361183,toplist
+38.0,51.41,,Tatyana VESHKUROVA,23 SEP 1981,RUS,1f2,,Sochi (RUS),29 MAY 2014,1149.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14299702,toplist
+39.0,51.44,,Genet LIRE,23 JAN 1997,ETH,1,,Addis Ababa (ETH),13 JUN 2014,1148.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14594663,toplist
+39.0,51.44,,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,1,,São Paulo (BRA),10 OCT 2014,1148.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14269361,toplist
+41.0,51.49,,Janieve RUSSELL,14 NOV 1993,JAM,1f2,,Kingston (JAM),07 JUN 2014,1146.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14334022,toplist
+42.0,51.55,,Patricia HALL,16 OCT 1982,JAM,1,,Ponce (PUR),17 MAY 2014,1144.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14285712,toplist
+43.0,51.56,,Omolara OMOTOSHO,25 MAY 1993,NGR,2,,Calabar (NGR),19 JUN 2014,1144.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14335590,toplist
+44.0,51.58,,Hrystyna STUY,03 FEB 1988,UKR,1,,Kirovograd (UKR),25 JUL 2014,1143.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14304242,toplist
+44.0,51.58,,Shaunae MILLER,15 APR 1994,BAH,2sf2,,"Hampden Park, Glasgow (GBR)",28 JUL 2014,1143.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14368116,toplist
+46.0,51.62,,Agnė ŠERKŠNIENĖ,18 FEB 1988,LTU,1f1,,La Chaux-de-Fonds (SUI),06 JUL 2014,1141.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14290336,toplist
+47.0,51.66,,Aauri Lorena BOKESA,14 DEC 1988,ESP,1f1,,Alcorcón (ESP),12 JUL 2014,1140.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14373541,toplist
+48.0,51.67,,Yekaterina RENZHINA,18 OCT 1994,RUS,2,,Kazan (RUS),24 JUL 2014,1139.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14421170,toplist
+49.0,51.68,,Shakima WIMBLEY,23 APR 1995,USA,1f1,,"Atlanta, GA (USA)",17 MAY 2014,1139.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14467626,toplist
+49.0,51.68,,Ada BENJAMIN,18 MAY 1994,NGR,2h3,,"Le Grand Stade, Marrakech (MAR)",11 AUG 2014,1139.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14479972,toplist
+51.0,51.69,,Kseniya ZADORINA,02 MAR 1987,RUS,2f1,,Yerino (RUS),09 JUL 2014,1139.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14299841,toplist
+52.0,51.70,,Michelle BROWN,24 JAN 1992,USA,5,,"Eugene, OR (USA)",13 JUN 2014,1138.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14366316,toplist
+53.0,51.72,,Kiara PORTER,22 OCT 1993,USA,2qf1,,"Jacksonville, FL (USA)",30 MAY 2014,1137.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14443645,toplist
+53.0,51.72,,Margaret BAMGBOSE,19 OCT 1993,USA,6,,"Eugene, OR (USA)",13 JUN 2014,1137.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14486908,toplist
+53.0,51.72,,Joelma DAS NEVES SOUZA,13 JUL 1984,BRA,2,,São Paulo (BRA),10 OCT 2014,1137.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14269255,toplist
+53.0,51.72,,Lisneidy VEITÍA,29 APR 1994,CUB,1,,Veracruz (MEX),26 NOV 2014,1137.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14412591,toplist
+57.0,51.73,,Poovamma Raju MACHETTIRA,05 JUN 1990,IND,1,,Lucknow (IND),08 JUN 2014,1137.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14282957,toplist
+57.0,51.73,,Daysurami BONNE,09 MAR 1988,CUB,1,,La Habana (CUB),20 JUN 2014,1137.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14263668,toplist
+59.0,51.76,,Anyika ONUORA,28 OCT 1984,GBR,5,,"Stadio Guidobaldi, Rieti (ITA)",07 SEP 2014,1136.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14275975,toplist
+60.0,51.77,,Bianca Denisa RĂZOR,08 AUG 1994,ROU,2h1,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1135.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14373543,toplist
+61.0,51.78,,Maureen Jelagat MAIYO,28 MAY 1985,KEN,1,,Nairobi (KEN),07 JUN 2014,1135.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14424837,toplist
+61.0,51.78,,Taylor WASHINGTON,06 MAY 1993,USA,7,,"Sacramento, CA (USA)",28 JUN 2014,1135.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14335321,toplist
+63.0,51.80,,Marie GAYOT,18 DEC 1989,FRA,3h1,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1134.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14257376,toplist
+64.0,51.83,,Janeil BELLILLE,18 JUN 1989,TTO,1f2,,Port-of-Spain (TTO),21 JUN 2014,1133.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14302977,toplist
+65.0,51.84,,Małgorzata HOŁUB-KOWALIK,30 OCT 1992,POL,5,,"Letzigrund, Zürich (SUI)",15 AUG 2014,1133.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14389461,toplist
+65.0,51.84,,Bobby-Gaye WILKINS-GOODEN,10 SEP 1988,JAM,3,,Ciudad de México (MEX),16 AUG 2014,1133.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14285991,toplist
+67.0,51.87,,Esther CREMER,29 MAR 1988,GER,2,,"FBK Stadium, Hengelo (NED)",08 JUN 2014,1131.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14277297,toplist
+67.0,51.87,,Kala FUNDERBURK,14 SEP 1992,USA,4h1,,"Sacramento, CA (USA)",26 JUN 2014,1131.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14419742,toplist
+69.0,51.91,,Quanera HAYES,07 MAR 1992,USA,1,,"Allendale, MI (USA)",24 MAY 2014,1130.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14509544,toplist
+70.0,51.92,,Allison PETER,14 JUL 1992,ISV,1,,Kamloops (CAN),09 AUG 2014,1130.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14283608,toplist
+71.0,51.94,,Florence UWAKWE,28 JUL 1994,NGR,1f1,,"Albuquerque, NM (USA)",02 MAY 2014,1129.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14388652,toplist
+72.0,51.95,,Emily DIAMOND,11 JUN 1991,GBR,1,,Rhede (GER),11 JUL 2014,1128.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14274886,toplist
+72.0,51.95,,Nataliya PYHYDA,30 JAN 1981,UKR,1h3,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1128.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14304022,toplist
+74.0,51.96,,Shapri ROMERO,13 NOV 1991,USA,1,,"Tucson, AZ (USA)",03 MAY 2014,1128.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14453641,toplist
+74.0,51.96,,Kelly MASSEY,11 JAN 1985,GBR,5,,"Alexander Stadium, Birmingham (GBR)",24 AUG 2014,1128.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14275702,toplist
+76.0,52.06,,Lyudmila LITVINOVA,08 JUN 1985,RUS,2f2,,"Waco, TX (USA)",19 APR 2014,1124.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14298462,toplist
+76.0,52.06,,Thi Lan QUACH,18 OCT 1995,VIE,2,,Incheon (KOR),28 SEP 2014,1124.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14483951,toplist
+78.0,52.08,,Tatyana FIROVA,10 OCT 1982,RUS,3f1,,Yerino (RUS),09 JUL 2014,1123.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14297707,toplist
+79.0,52.09,,Estelle PERROSSIER,12 JAN 1990,FRA,1f1,,Bron (FRA),03 JUL 2014,1123.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14426734,toplist
+80.0,52.10,,Olga TOVARNOVA,11 APR 1985,RUS,1,,Krasnodar (RUS),05 JUN 2014,1123.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14299328,toplist
+81.0,52.11,,Shana COX,22 JAN 1985,GBR,6,,"Icahn Stadium, New York, NY (USA)",14 JUN 2014,1122.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14308212,toplist
+81.0,52.11,,Anna RYZHYKOVA,24 NOV 1989,UKR,3,,Kirovograd (UKR),25 JUL 2014,1122.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14304336,toplist
+83.0,52.13,,Justyna ŚWIĘTY-ERSETIC,03 DEC 1992,POL,2h1,,"Ergo Arena, Sopot (POL) (i)",07 MAR 2014,1155.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14361154,toplist
+83.0,52.13,,Carline MUIR,01 OCT 1987,CAN,1,,Moncton (CAN),28 JUN 2014,1121.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14267466,toplist
+85.0,52.14,,Patrycja WYCISZKIEWICZ,08 JAN 1994,POL,2,,Huelva (ESP),12 JUN 2014,1121.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14389670,toplist
+86.0,52.15,,Vanessa JONES,01 JAN 1993,USA,2h3,,"Fayetteville, AR (USA)",29 MAY 2014,1121.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14423452,toplist
+87.0,52.16,,Rose-Marie WHYTE-ROBINSON,08 SEP 1986,JAM,8,,Kingston (JAM),29 JUN 2014,1120.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14285988,toplist
+88.0,52.17,,Muriel HURTIS,25 MAR 1979,FRA,2,,Castres (FRA),30 JUL 2014,1120.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14257078,toplist
+89.0,52.19,,Chiara BAZZONI,05 JUL 1984,ITA,5h1,,"Letzigrund, Zürich (SUI)",12 AUG 2014,1119.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14283745,toplist
+90.0,52.20,,Diamond DIXON,29 JUN 1992,USA,3,,"Ames, IA (USA) (i)",01 MAR 2014,0.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14335631,toplist
+90.0,52.20,,Chizoba OKODOGBE,03 NOV 1992,NGR,2,,"Pullman, WA (USA)",18 MAY 2014,1119.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14329043,toplist
+90.0,52.20,,Kristina MALVINOVA,16 JUL 1989,RUS,4f1,,Yerino (RUS),09 JUL 2014,1119.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14403427,toplist
+93.0,52.21,,Mariya MIKHAILYUK,29 JAN 1991,RUS,1f2,,Yerino (RUS),08 JUN 2014,1118.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14298617,toplist
+94.0,52.22,,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,3f1,,Kingston (JAM),22 FEB 2014,1118.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14285805,toplist
+94.0,52.22,,Morgan MITCHELL,03 OCT 1994,AUS,1,,"Albert Park, Melbourne (AUS)",05 APR 2014,1118.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14457910,toplist
+96.0,52.25,,Monica HARGROVE,30 DEC 1982,USA,4,,"Houston, TX (USA)",06 JUN 2014,1117.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14311954,toplist
+97.0,52.26,,Ebony EUTSEY,03 MAY 1992,USA,3h1,,"Eugene, OR (USA)",11 JUN 2014,1116.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14309794,toplist
+98.0,52.28,,Gilda CASANOVA,19 DEC 1995,CUB,1,,Port-of-Spain (TTO),02 MAY 2014,1116.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14518333,toplist
+99.0,52.30,,Nercely SOTO,23 AUG 1990,VEN,2,,Santiago de Chile (CHI),14 MAR 2014,1115.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14377437,toplist
+99.0,52.30,,Jessica Gonzaga DOS SANTOS,21 MAR 1991,BRA,3,,São Paulo (BRA),10 OCT 2014,1115.0,women_400m,2014,https://worldathletics.org/athletes/athlete=14366110,toplist
+1.0,49.26,,Allyson FELIX,18 NOV 1985,USA,1,,"National Stadium, Beijing (CHN)",27 AUG 2015,1235.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14309983,toplist
+2.0,49.67,,Shaunae MILLER,15 APR 1994,BAH,2,,"National Stadium, Beijing (CHN)",27 AUG 2015,1219.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14368116,toplist
+3.0,49.83,,Francena MCCORORY,20 OCT 1988,USA,1,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1212.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14316439,toplist
+4.0,49.95,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1f1,,"National Stadium, Kingston (JAM)",09 MAY 2015,1208.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14319838,toplist
+5.0,49.99,,Shericka JACKSON,16 JUL 1994,JAM,3,,"National Stadium, Beijing (CHN)",27 AUG 2015,1206.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14325599,toplist
+6.0,50.14,,Christine DAY,23 AUG 1986,JAM,4,,"National Stadium, Beijing (CHN)",27 AUG 2015,1200.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14285647,toplist
+7.0,50.16,,Christine OHURUOGU,17 MAY 1984,GBR,1sf2,,"National Stadium, Beijing (CHN)",25 AUG 2015,1199.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14275963,toplist
+8.0,50.22,,Kabange MUPOPO,21 SEP 1992,ZAM,1,,Brazzaville (CGO),15 SEP 2015,1197.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14642670,toplist
+9.0,50.24,,Natasha HASTINGS,23 JUL 1986,USA,1,,"Olympic Stadium, London (GBR)",24 JUL 2015,1196.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14312172,toplist
+10.0,50.32,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,2sf2,,"National Stadium, Beijing (CHN)",25 AUG 2015,1193.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14285809,toplist
+11.0,50.37,,Bianca Denisa RĂZOR,08 AUG 1994,ROU,1h5,,"National Stadium, Beijing (CHN)",24 AUG 2015,1191.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14373543,toplist
+12.0,50.47,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,3sf3,,"National Stadium, Beijing (CHN)",25 AUG 2015,1187.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14286000,toplist
+13.0,50.50,,Kendall BAISDEN,05 MAR 1995,USA,3sf2,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1185.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14326466,toplist
+13.0,50.50,,Phyllis FRANCIS,04 MAY 1992,USA,3sf2,,"National Stadium, Beijing (CHN)",25 AUG 2015,1185.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14310414,toplist
+15.0,50.62,,Nataliya PYHYDA,30 JAN 1981,UKR,4sf3,,"National Stadium, Beijing (CHN)",25 AUG 2015,1181.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14304022,toplist
+16.0,50.68,,Jessica BEARD,08 JAN 1989,USA,4sf2,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1178.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14305526,toplist
+17.0,50.71,,Patience Okon GEORGE,25 NOV 1991,NGR,2,,Brazzaville (CGO),15 SEP 2015,1177.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14480009,toplist
+18.0,50.82,,Courtney OKOLO,15 MAR 1994,USA,1h1,,San José (CRC),07 AUG 2015,1173.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14432036,toplist
+19.0,50.84,,Shakima WIMBLEY,23 APR 1995,USA,1,,"Tallahassee, FL (USA)",16 MAY 2015,1172.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14467626,toplist
+19.0,50.84,,Quanera HAYES,07 MAR 1992,USA,3sf1,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1172.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14509544,toplist
+21.0,50.86,,Kemi ADEKOYA,16 JAN 1993,BRN,2,,Luzern (SUI),14 JUL 2015,1171.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14419510,toplist
+22.0,50.87,,Anyika ONUORA,28 OCT 1984,GBR,5sf3,,"National Stadium, Beijing (CHN)",25 AUG 2015,1171.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14275975,toplist
+23.0,50.89,,Floria GUEI,02 MAY 1990,FRA,2h1,,"National Stadium, Beijing (CHN)",24 AUG 2015,1170.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14257210,toplist
+24.0,50.97,,Marie GAYOT,18 DEC 1989,FRA,5sf2,,"National Stadium, Beijing (CHN)",25 AUG 2015,1167.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14257376,toplist
+25.0,51.07,,Libania GRENOT,12 JUL 1983,ITA,6,,"Stade Louis II, Monaco (MON)",17 JUL 2015,1163.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14263547,toplist
+26.0,51.09,,Kala FUNDERBURK,14 SEP 1992,USA,1qf1,,"Jacksonville, FL (USA)",29 MAY 2015,1162.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14419742,toplist
+27.0,51.14,,Kaliese SPENCER,06 MAY 1987,JAM,1,,Kingston (JAM),30 MAY 2015,1160.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14285929,toplist
+27.0,51.14,,Joyce SAKARI,06 JUN 1986,KEN,1,,Nairobi (KEN),11 JUL 2015,1160.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14289541,toplist
+29.0,51.18,,Taylor WASHINGTON,06 MAY 1993,USA,1,,"Starkville, MS (USA)",16 MAY 2015,1159.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14335321,toplist
+30.0,51.24,,DeeDee TROTTER,08 DEC 1982,USA,6sf2,,"Hayward Field, Eugene, OR (USA)",26 JUN 2015,1156.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14322997,toplist
+31.0,51.27,,Justine PALFRAMAN,04 NOV 1993,RSA,1,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1155.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14360057,toplist
+32.0,51.28,,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,4,,Kingston (JAM),28 JUN 2015,1155.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14285764,toplist
+33.0,51.30,,Regina GEORGE,17 FEB 1991,NGR,1,,"Todoroki Stadium, Kawasaki (JPN)",10 MAY 2015,1154.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14310865,toplist
+34.0,51.31,,Patrycja WYCISZKIEWICZ,08 JAN 1994,POL,4h1,,"National Stadium, Beijing (CHN)",24 AUG 2015,1153.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14389670,toplist
+35.0,51.37,,Shamier LITTLE,20 MAR 1995,USA,1f2,,"Lexington, KY (USA) (i)",28 FEB 2015,0.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14443767,toplist
+35.0,51.37,,Margaret BAMGBOSE,19 OCT 1993,USA,1qf3,,"Jacksonville, FL (USA)",29 MAY 2015,1151.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14486908,toplist
+35.0,51.37,,Daye Shon ROBERSON,03 JUL 1995,USA,2qf1,,"Austin, TX (USA)",29 MAY 2015,1151.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14465761,toplist
+38.0,51.39,,Salwa Eid NASER,23 MAY 1998,BRN,1,,Mungyeong (KOR),07 OCT 2015,1150.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14643442,toplist
+39.0,51.40,,Maureen Jelagat MAIYO,28 MAY 1985,KEN,4h2,,"National Stadium, Beijing (CHN)",24 AUG 2015,1150.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14424837,toplist
+40.0,51.42,,Kiara PORTER,22 OCT 1993,USA,2qf1,,"Jacksonville, FL (USA)",29 MAY 2015,1149.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14443645,toplist
+40.0,51.42,,Nadezhda KOTLYAROVA,12 JUN 1989,RUS,3h4,,"National Stadium, Beijing (CHN)",24 AUG 2015,1149.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14377113,toplist
+42.0,51.43,,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,1,,Sao Bernardo do Campo (BRA),15 MAY 2015,1149.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14269361,toplist
+43.0,51.44,,Kseniya AKSYONOVA,14 JAN 1988,RUS,1,,Cheboksary (RUS),04 AUG 2015,1148.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14299650,toplist
+44.0,51.45,,Mariya MIKHAILYUK,29 JAN 1991,RUS,1f8,,Moskva (RUS),02 JUN 2015,1148.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14298617,toplist
+45.0,51.48,,Aiesha GOGGINS,13 SEP 1991,USA,1,,"Storrs, CT (USA)",16 MAY 2015,1147.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14374312,toplist
+45.0,51.48,,Seren BUNDY-DAVIES,30 DEC 1994,GBR,7,,"Olympic Stadium, London (GBR)",24 JUL 2015,1147.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14484386,toplist
+47.0,51.49,,Kineke ALEXANDER,21 FEB 1986,VIN,1,,Baie Mahault (FRA),02 MAY 2015,1146.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14325306,toplist
+47.0,51.49,,Yekaterina RENZHINA,18 OCT 1994,RUS,6sf2,,"National Stadium, Beijing (CHN)",25 AUG 2015,1146.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14421170,toplist
+49.0,51.50,,Kyra JEFFERSON,23 SEP 1994,USA,1f3,,"Gainesville, FL (USA)",03 APR 2015,1146.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14411312,toplist
+49.0,51.50,,Vanessa JONES,01 JAN 1993,USA,1,,"Los Angeles, CA (USA)",17 MAY 2015,1146.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14423452,toplist
+51.0,51.51,,Tjipekapora HERUNGA,01 JAN 1988,NAM,2sf2,,Brazzaville (CGO),14 SEP 2015,1146.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14291431,toplist
+52.0,51.52,,Chrisann GORDON-POWELL,18 SEP 1994,JAM,5,,Kingston (JAM),28 JUN 2015,1145.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14361183,toplist
+53.0,51.53,,Sonikqua WALKER,24 SEP 1994,USA,2qf3,,"Jacksonville, FL (USA)",29 MAY 2015,1145.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14437011,toplist
+54.0,51.61,,Olha ZEMLYAK,16 JAN 1990,UKR,5,,"Stadio Olimpico, Roma (ITA)",04 JUN 2015,1142.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14304366,toplist
+55.0,51.66,,Brianna TATE,01 JAN 1993,USA,2,,"Los Angeles, CA (USA)",17 MAY 2015,1140.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14438328,toplist
+56.0,51.67,,Maria Benedicta CHIGBOLU,27 JUL 1989,ITA,3f1,,La Chaux-de-Fonds (SUI),05 JUL 2015,1139.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14371567,toplist
+57.0,51.69,,Anneliese RUBIE-RENSHAW,22 APR 1992,AUS,5h1,,"National Stadium, Beijing (CHN)",24 AUG 2015,1139.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14370966,toplist
+58.0,51.70,,Carline MUIR,01 OCT 1987,CAN,5h5,,"National Stadium, Beijing (CHN)",24 AUG 2015,1138.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14267466,toplist
+59.0,51.72,,Ashley SPENCER,08 JUN 1993,USA,1sf3,,"Eugene, OR (USA)",11 JUN 2015,1137.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14476234,toplist
+60.0,51.74,,Małgorzata HOŁUB-KOWALIK,30 OCT 1992,POL,5h4,,"National Stadium, Beijing (CHN)",24 AUG 2015,1137.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14389461,toplist
+61.0,51.76,,Kamaria BROWN,21 DEC 1992,USA,3f6,,"Waco, TX (USA)",18 APR 2015,1136.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14306592,toplist
+62.0,51.78,,Kenya WOODALL,17 JUL 1994,USA,2,,"Storrs, CT (USA)",16 MAY 2015,1135.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14492494,toplist
+63.0,51.79,,Lynna IRBY,06 DEC 1998,USA,2,,"Pascual Guerrero Stadium, Cali (COL)",17 JUL 2015,1135.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14486888,toplist
+63.0,51.79,,Bobby-Gaye WILKINS-GOODEN,10 SEP 1988,JAM,1h2,,San José (CRC),07 AUG 2015,1135.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14285991,toplist
+65.0,51.83,,Carly MUSCARO,18 MAY 1995,USA,1,,"Boston, MA (USA)",09 MAY 2015,1133.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14539600,toplist
+66.0,51.85,,Kseniya ZADORINA,02 MAR 1987,RUS,1h1,,Cheboksary (RUS),03 AUG 2015,1132.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14299841,toplist
+67.0,51.86,,Lilla MCMILLAN,31 AUG 1994,USA,3,,"Storrs, CT (USA)",16 MAY 2015,1132.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14423529,toplist
+68.0,51.88,,Janieve RUSSELL,14 NOV 1993,JAM,1f3,,Kingston (JAM),14 MAR 2015,1131.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14334022,toplist
+69.0,51.93,,Robin REYNOLDS,22 FEB 1994,USA,2,,"Starkville, MS (USA)",16 MAY 2015,1129.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14319782,toplist
+69.0,51.93,,Shapri ROMERO,13 NOV 1991,USA,1,,George Town (CAY),16 MAY 2015,1129.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14453641,toplist
+69.0,51.93,,Audrey JEAN-BAPTISTE,15 JUL 1991,CAN,4,,"Storrs, CT (USA)",16 MAY 2015,1129.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14386379,toplist
+72.0,51.95,,Patricia HALL,16 OCT 1982,JAM,2f1,,"Austin, TX (USA)",11 APR 2015,1128.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14285712,toplist
+73.0,51.97,,Kseniya RYZHOVA,19 APR 1987,RUS,3f8,,Moskva (RUS),02 JUN 2015,1128.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14299689,toplist
+74.0,51.98,,Alyona MAMINA,30 MAY 1990,RUS,1f3,,Yerino (RUS),06 JUN 2015,1127.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14299515,toplist
+74.0,51.98,,Huizhen YANG,13 AUG 1992,CHN,3,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1127.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14635020,toplist
+76.0,52.00,,Thi Huyen NGUYEN,19 MAY 1993,VIE,1,,Singapore (SGP),12 JUN 2015,1126.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14524764,toplist
+77.0,52.01,,Destinee GAUSE,04 APR 1994,USA,1f2,,"Gainesville, FL (USA)",24 APR 2015,1126.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14373732,toplist
+78.0,52.02,,Iga BAUMGART-WITAN,11 APR 1989,POL,6h6,,"National Stadium, Beijing (CHN)",24 AUG 2015,1126.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14293415,toplist
+79.0,52.04,,Nicky VAN LEUVEREN,20 MAY 1990,NED,1f1,,"Pankritio Stadium, Herakleion (GRE)",20 JUN 2015,1125.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14292176,toplist
+79.0,52.04,,Ruth Sophia SPELMEYER,19 SEP 1990,GER,4,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1125.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14279849,toplist
+81.0,52.05,,Raena RHONE,27 SEP 1993,USA,3qf1,,"Austin, TX (USA)",29 MAY 2015,1124.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14411316,toplist
+82.0,52.07,,Margaret ADEOYE,22 APR 1985,GBR,1f2,,"Olympic Stadium, Cheboksary (RUS)",20 JUN 2015,1124.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14274348,toplist
+83.0,52.08,,Georganne MOLINE,06 MAR 1990,USA,1f2,,"Gainesville, FL (USA)",03 APR 2015,1123.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14362616,toplist
+84.0,52.09,,Wenda NEL,30 JUL 1988,RSA,1h1,,Potchefstroom (RSA),08 MAY 2015,1123.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14296960,toplist
+84.0,52.09,,Déborah SANANES,26 OCT 1995,FRA,1f1,,Valence (FRA),24 MAY 2015,1123.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14474268,toplist
+86.0,52.11,,Lisneidy VEITÍA,29 APR 1994,CUB,2h2,,San José (CRC),07 AUG 2015,1122.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14412591,toplist
+87.0,52.13,,Kirsten MCASLAN,01 SEP 1993,GBR,4h1,,"Kadrioru staadion, Tallinn (EST)",09 JUL 2015,1121.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14374849,toplist
+88.0,52.17,,Gunta VAIČULE,09 MAR 1995,LAT,4h3,,"National Stadium, Beijing (CHN)",24 AUG 2015,1120.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14475580,toplist
+89.0,52.18,,Iveta PUTALOVÁ,24 MAR 1988,SVK,5,,"Main Stadium, Gwangju (KOR)",10 JUL 2015,1119.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14301567,toplist
+90.0,52.19,,Elexis GUSTER,07 JUL 1994,USA,1,,"East Lansing, MI (USA)",17 MAY 2015,1119.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14487449,toplist
+91.0,52.20,,Aauri Lorena BOKESA,14 DEC 1988,ESP,1,,Monachil (ESP),08 AUG 2015,1119.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14373541,toplist
+92.0,52.21,,Montenae SPEIGHT,05 NOV 1992,USA,1f5,,"Waco, TX (USA)",18 APR 2015,1118.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14426000,toplist
+93.0,52.23,,Agnès RAHAROLAHY,07 NOV 1992,FRA,1f1,,Genève (SUI),06 JUN 2015,1118.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14376218,toplist
+93.0,52.23,,Martyna DABROWSKA,05 APR 1994,POL,1f1,,Bydgoszcz (POL),14 JUN 2015,1118.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14454877,toplist
+95.0,52.25,,Laviai NIELSEN,13 MAR 1996,GBR,1f1,,Namur (BEL),27 MAY 2015,1117.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14599229,toplist
+95.0,52.25,,Estelle PERROSSIER,12 JAN 1990,FRA,1f1,,St-Etienne (FRA),13 JUN 2015,1117.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14426734,toplist
+95.0,52.25,,Sharrika BARNETT,16 APR 1997,USA,1f5,,"Greensboro, NC (USA)",21 JUN 2015,1117.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14569381,toplist
+95.0,52.25,,Nicole SASSINE,24 NOV 1989,CAN,2h1,,Edmonton (CAN),03 JUL 2015,1117.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14267244,toplist
+95.0,52.25,,Catherine REID,21 APR 1998,GBR,3,,"Pascual Guerrero Stadium, Cali (COL)",17 JUL 2015,1117.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14584698,toplist
+100.0,52.28,,Daysurami BONNE,09 MAR 1988,CUB,7,,"CIBC, Toronto (CAN)",23 JUL 2015,1116.0,women_400m,2015,https://worldathletics.org/athletes/athlete=14263668,toplist
+1.0,49.44,,Shaunae MILLER,15 APR 1994,BAH,1,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1228.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14368116,toplist
+2.0,49.51,,Allyson FELIX,18 NOV 1985,USA,2,,"Estádio Olímpico, Rio de Janeiro (BRA)",15 AUG 2016,1225.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14309983,toplist
+3.0,49.71,,Courtney OKOLO,15 MAR 1994,USA,1f2,,"Baton Rouge, LA (USA)",23 APR 2016,1217.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14432036,toplist
+4.0,49.83,,Shericka JACKSON,16 JUL 1994,JAM,1sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",14 AUG 2016,1212.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14325599,toplist
+5.0,49.90,,Natasha HASTINGS,23 JUL 1986,USA,2sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",14 AUG 2016,1210.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14312172,toplist
+6.0,49.91,,Quanera HAYES,07 MAR 1992,USA,2,,Nassau (BAH),16 APR 2016,1209.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14509544,toplist
+7.0,49.94,,Phyllis FRANCIS,04 MAY 1992,USA,2,,"Hayward Field, Eugene, OR (USA)",03 JUL 2016,1208.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14310414,toplist
+8.0,50.04,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,1,,Kingston (JAM),03 JUL 2016,1204.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14285809,toplist
+9.0,50.23,,Francena MCCORORY,20 OCT 1988,USA,2,,"Hayward Field, Eugene, OR (USA)",28 MAY 2016,1196.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14316439,toplist
+10.0,50.25,,Taylor WASHINGTON,06 MAY 1993,USA,4,,"Hayward Field, Eugene, OR (USA)",03 JUL 2016,1195.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14335321,toplist
+11.0,50.29,,Christine DAY,23 AUG 1986,JAM,2,,Kingston (JAM),03 JUL 2016,1194.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14285647,toplist
+12.0,50.40,,Caster SEMENYA,07 JAN 1991,RSA,1,,"Boudewijnstadion, Bruxelles (BEL)",09 SEP 2016,1189.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14330057,toplist
+13.0,50.43,,Libania GRENOT,12 JUL 1983,ITA,1sf3,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1188.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14263547,toplist
+14.0,50.64,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,4,,Kingston (JAM),03 JUL 2016,1180.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14286000,toplist
+15.0,50.70,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,1,,Cheboksary (RUS),21 JUN 2016,1178.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14298308,toplist
+16.0,50.72,,Kemi ADEKOYA,16 JAN 1993,BRN,2h3,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1177.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14419510,toplist
+17.0,50.84,,Floria GUEI,02 MAY 1990,FRA,1,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1172.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14257210,toplist
+18.0,50.88,,Salwa Eid NASER,23 MAY 1998,BRN,3sf2,,"Estádio Olímpico, Rio de Janeiro (BRA)",14 AUG 2016,1170.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14643442,toplist
+19.0,50.90,,Shakima WIMBLEY,23 APR 1995,USA,1,,"Tallahassee, FL (USA)",15 MAY 2016,1170.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14467626,toplist
+20.0,50.91,,Jaide STEPTER BAYNES,25 SEP 1994,USA,1f1,,"Los Angeles, CA (USA)",26 MAR 2016,1169.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14378193,toplist
+21.0,51.02,,Chrisann GORDON-POWELL,18 SEP 1994,JAM,1,,San Salvador (ESA),16 JUL 2016,1165.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14361183,toplist
+22.0,51.03,,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,5,,Kingston (JAM),03 JUL 2016,1164.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14285805,toplist
+23.0,51.04,,Kabange MUPOPO,21 SEP 1992,ZAM,1,,Ndola (ZAM),05 MAR 2016,1164.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14642670,toplist
+24.0,51.05,,Carline MUIR,01 OCT 1987,CAN,1f1,,"Moratalaz, Madrid (ESP)",23 JUN 2016,1164.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14267466,toplist
+24.0,51.05,,Christine OHURUOGU,17 MAY 1984,GBR,5,,"Olympic Stadium, London (GBR)",22 JUL 2016,1164.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14275963,toplist
+26.0,51.06,,Patience Okon GEORGE,25 NOV 1991,NGR,1,,Akure (NGR),06 JUN 2016,1163.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14480009,toplist
+27.0,51.09,,Ashley SPENCER,08 JUN 1993,USA,7,,"Hayward Field, Eugene, OR (USA)",03 JUL 2016,1162.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14476234,toplist
+28.0,51.11,,Margaret BAMGBOSE,19 OCT 1993,NGR,2,,"Tallahassee, FL (USA)",15 MAY 2016,1161.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14486908,toplist
+29.0,51.17,,Janieve RUSSELL,14 NOV 1993,JAM,1,,Kingston (JAM),02 APR 2016,1159.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14334022,toplist
+29.0,51.17,,Carly MUSCARO,18 MAY 1995,USA,1,,"New Haven, CT (USA)",14 MAY 2016,1159.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14539600,toplist
+31.0,51.23,,Emily DIAMOND,11 JUN 1991,GBR,1f1,,Regensburg (GER),04 JUN 2016,1157.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14274886,toplist
+32.0,51.25,,Morgan MITCHELL,03 OCT 1994,AUS,3,,"Alexander Stadium, Birmingham (GBR)",05 JUN 2016,1156.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14457910,toplist
+33.0,51.26,,Seren BUNDY-DAVIES,30 DEC 1994,GBR,1f1,,Genève (SUI),11 JUN 2016,1155.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14484386,toplist
+34.0,51.29,,Felecia MAJORS,11 FEB 1995,USA,2,,"Tuscaloosa, AL (USA)",14 MAY 2016,1154.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14464049,toplist
+35.0,51.32,,Tiffany JAMES,31 JAN 1997,JAM,1,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",21 JUL 2016,1153.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14520417,toplist
+36.0,51.38,,Lilla MCMILLAN,31 AUG 1994,USA,1,,"Orlando, FL (USA)",15 MAY 2016,1151.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14423529,toplist
+37.0,51.39,,Margaret Nyairera WAMBUI,15 SEP 1995,KEN,1,,Nairobi (KEN),28 MAY 2016,1150.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14656975,toplist
+37.0,51.39,,Ebony EUTSEY,03 MAY 1992,USA,3,,Kingston (JAM),11 JUN 2016,1150.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14309794,toplist
+37.0,51.39,,Lynna IRBY,06 DEC 1998,USA,2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",21 JUL 2016,1150.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14486888,toplist
+40.0,51.42,,Daye Shon ROBERSON,03 JUL 1995,USA,1f1,,"Palo Alto, CA (USA)",01 MAY 2016,1149.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14465761,toplist
+41.0,51.43,,Ruth Sophia SPELMEYER,19 SEP 1990,GER,3h5,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1149.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14279849,toplist
+42.0,51.47,,Anyika ONUORA,28 OCT 1984,GBR,3,,"Olympisch Stadion, Amsterdam (NED)",08 JUL 2016,1147.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14275975,toplist
+43.0,51.48,,Sheoran NIRMLA,15 JUL 1995,IND,1,,Hyderabad (IND),01 JUL 2016,1147.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14497988,toplist
+44.0,51.50,,Lydia JELE,22 JUN 1990,BOT,1,,Gaborone (BOT),10 APR 2016,1146.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14643512,toplist
+44.0,51.50,,Alyona MAMINA,30 MAY 1990,RUS,1f2,,Sochi (RUS),26 MAY 2016,1146.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14299515,toplist
+46.0,51.54,,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,1,,Sao Bernardo do Campo (BRA),01 JUL 2016,1144.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14269361,toplist
+47.0,51.55,,Claudia FRANCIS,14 NOV 1993,USA,2f1,,"Baton Rouge, LA (USA)",30 APR 2016,1144.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14310407,toplist
+48.0,51.60,,Olha ZEMLYAK,16 JAN 1990,UKR,1f4,,Kirovograd (UKR),25 MAY 2016,1142.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14304366,toplist
+49.0,51.62,,Justyna ŚWIĘTY-ERSETIC,03 DEC 1992,POL,5sf3,,"Estádio Olímpico, Rio de Janeiro (BRA)",14 AUG 2016,1141.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14361154,toplist
+50.0,51.63,,Cátia AZEVEDO,09 MAR 1994,POR,2f1,,"Moratalaz, Madrid (ESP)",23 JUN 2016,1141.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14428268,toplist
+51.0,51.64,,Patricia HALL,16 OCT 1982,JAM,2f5,,"Waco, TX (USA)",23 APR 2016,1140.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14285712,toplist
+52.0,51.66,,Jasmine BLOCKER,09 JUN 1992,USA,2,,"Orlando, FL (USA)",15 MAY 2016,1140.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14457215,toplist
+53.0,51.67,,Małgorzata HOŁUB-KOWALIK,30 OCT 1992,POL,2sf3,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1139.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14389461,toplist
+54.0,51.69,,Olha BIBIK,05 FEB 1990,UKR,1,,Lutsk (UKR),17 JUN 2016,1139.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14303454,toplist
+54.0,51.69,,Laura MÜLLER,11 DEC 1995,GER,1,,Mannheim (GER),29 JUL 2016,1139.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14402867,toplist
+56.0,51.70,,Yuliya OLISHEVSKA,02 FEB 1989,UKR,2,,Lutsk (UKR),17 JUN 2016,1138.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14304180,toplist
+57.0,51.72,,Monica HARGROVE,30 DEC 1982,USA,2f1,,"Norwalk, CA (USA)",04 JUN 2016,1137.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14311954,toplist
+58.0,51.74,,Shamier LITTLE,20 MAR 1995,USA,3f2,,"Birmingham, AL (USA) (i)",12 MAR 2016,1170.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14443767,toplist
+58.0,51.74,,Junelle BROMFIELD,08 FEB 1998,JAM,1,,Kingston (JAM),19 MAR 2016,1137.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14530443,toplist
+58.0,51.74,,Kseniya AKSYONOVA,14 JAN 1988,RUS,3,,Cheboksary (RUS),21 JUN 2016,1137.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14299650,toplist
+61.0,51.75,,DeeDee TROTTER,08 DEC 1982,USA,2,,"Atlanta, GA (USA)",04 JUN 2016,1136.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14322997,toplist
+61.0,51.75,,Déborah SANANES,26 OCT 1995,FRA,1,,Aubagne (FRA),17 JUL 2016,1136.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14474268,toplist
+63.0,51.76,,Jessica BEARD,08 JAN 1989,USA,4,,Nassau (BAH),16 APR 2016,1136.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14305526,toplist
+64.0,51.82,,Kendall ELLIS,08 MAR 1996,USA,1f2,,"Walnut, CA (USA)",16 APR 2016,1133.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14443893,toplist
+65.0,51.83,,Kenya WOODALL,17 JUL 1994,USA,2qf1,,"Jacksonville, FL (USA)",27 MAY 2016,1133.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14492494,toplist
+66.0,51.84,,Sydney MCLAUGHLIN,07 AUG 1999,USA,1f2,,"New York, NY (USA) (i)",13 MAR 2016,1166.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14624749,toplist
+66.0,51.84,,Robin REYNOLDS,22 FEB 1994,USA,6,,"Eugene, OR (USA)",11 JUN 2016,1133.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14319782,toplist
+66.0,51.84,,Alicia BROWN,21 JAN 1990,CAN,2,,Edmonton (CAN),09 JUL 2016,1133.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14377675,toplist
+69.0,51.85,,Elexis GUSTER,07 JUL 1994,USA,1f1,,"Tucson, AZ (USA)",09 APR 2016,1132.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14487449,toplist
+70.0,51.88,,Omolara OMOTOSHO,25 MAY 1993,NGR,2h1,,Sapele (NGR),07 JUL 2016,1131.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14335590,toplist
+71.0,51.89,,Tamara SALAŠKI,16 OCT 1988,SRB,2f2,,Stara Zagora (BUL),09 JUN 2016,1131.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14300376,toplist
+72.0,51.92,,Tetiana MELNYK,02 APR 1995,UKR,4,,Lutsk (UKR),17 JUN 2016,1130.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14538786,toplist
+72.0,51.92,,Anneliese RUBIE-RENSHAW,22 APR 1992,AUS,3h1,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1130.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14370966,toplist
+74.0,51.93,,Sonikqua WALKER,24 SEP 1994,JAM,1qf2,,"Jacksonville, FL (USA)",27 MAY 2016,1129.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14437011,toplist
+75.0,51.95,,Kineke ALEXANDER,21 FEB 1986,VIN,2f1,,"San Marcos, TX (USA)",30 APR 2016,1128.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14325306,toplist
+76.0,51.96,,Tsholofelo SELEMELA-THIPE,12 SEP 1986,RSA,1,,Pretoria (RSA),05 MAR 2016,1128.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14296850,toplist
+77.0,51.97,,Micha POWELL,12 JAN 1995,CAN,2qf2,,"Jacksonville, FL (USA)",27 MAY 2016,1128.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14575482,toplist
+78.0,51.99,,Jailma SALES DE LIMA,31 DEC 1986,BRA,1,,Rio de Janeiro (BRA),15 MAY 2016,1127.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14268860,toplist
+79.0,52.00,,Kala FUNDERBURK,14 SEP 1992,USA,3,,"Atlanta, GA (USA)",04 JUN 2016,1126.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14419742,toplist
+79.0,52.00,,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,4,,Kingston (JAM),11 JUN 2016,1126.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14285764,toplist
+81.0,52.01,,Sage WATSON,20 JUN 1994,CAN,1,,"Tucson, AZ (USA)",30 APR 2016,1126.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14373955,toplist
+81.0,52.01,,Ekundayo SOGBESAN,29 MAR 1992,USA,1f2,,"Philadelphia, PA (USA)",25 JUN 2016,1126.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14448127,toplist
+81.0,52.01,,Maria Benedicta CHIGBOLU,27 JUL 1989,ITA,2,,Padova (ITA),17 JUL 2016,1126.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14371567,toplist
+84.0,52.02,,Nicky VAN LEUVEREN,20 MAY 1990,NED,3sf1,,"Olympisch Stadion, Amsterdam (NED)",07 JUL 2016,1126.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14292176,toplist
+84.0,52.02,,Patrycja WYCISZKIEWICZ,08 JAN 1994,POL,4h3,,"Estádio Olímpico, Rio de Janeiro (BRA)",13 AUG 2016,1126.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14389670,toplist
+86.0,52.03,,Tjipekapora HERUNGA,01 JAN 1988,NAM,2f3,,Kingston (JAM),09 APR 2016,1125.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14291431,toplist
+87.0,52.04,,Aliyah ABRAMS,03 APR 1997,GUY,4,,"Tuscaloosa, AL (USA)",14 MAY 2016,1125.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14447688,toplist
+88.0,52.05,,Jessica THORNTON,12 APR 1998,AUS,4,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",21 JUL 2016,1124.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14495685,toplist
+89.0,52.06,,Lisneidy VEITÍA,29 APR 1994,CUB,1,,La Habana (CUB),16 JUN 2016,1124.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14412591,toplist
+90.0,52.07,,Sada WILLIAMS,01 DEC 1997,BAR,1,,St. George's (GRN),26 MAR 2016,1124.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14592846,toplist
+91.0,52.08,,Jody Ann MUIR,01 JAN 1991,JAM,1,,"National Stadium, Kingston (JAM)",07 MAY 2016,1123.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14285828,toplist
+91.0,52.08,,Aiyanna STIVERNE,20 FEB 1995,CAN,3,,"Tallahassee, FL (USA)",15 MAY 2016,1123.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14464726,toplist
+93.0,52.09,,Kendall BAISDEN,05 MAR 1995,USA,4,,"Atlanta, GA (USA)",04 JUN 2016,1123.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14326466,toplist
+93.0,52.09,,Elina MIKHINA,16 JUL 1994,KAZ,1,,Almaty (KAZ),25 JUN 2016,1123.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14424019,toplist
+93.0,52.09,,Maureen Nyatichi THOMAS,29 DEC 1997,KEN,5,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",21 JUL 2016,1123.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14481127,toplist
+96.0,52.10,,Kiara PORTER,22 OCT 1993,USA,4h1,,"Hayward Field, Eugene, OR (USA)",01 JUL 2016,1123.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14443645,toplist
+97.0,52.11,,Kyra JEFFERSON,23 SEP 1994,USA,2f1,,"Gainesville, FL (USA)",01 APR 2016,1122.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14411312,toplist
+97.0,52.11,,Alex GHOLSTON,01 MAR 1995,USA,5,,"Tuscaloosa, AL (USA)",14 MAY 2016,1122.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14504542,toplist
+97.0,52.11,,Mariam KROMAH,1994,USA,1,,"Murfreesboro, TN (USA)",15 MAY 2016,1122.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14491332,toplist
+100.0,52.12,,Eirini VASILEIOU,18 MAR 1990,GRE,1h,,Patra (GRE),18 JUN 2016,1122.0,women_400m,2016,https://worldathletics.org/athletes/athlete=14707602,toplist
+1.0,49.46,,Shaunae MILLER,15 APR 1994,BAH,1,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1227.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14368116,toplist
+2.0,49.65,,Allyson FELIX,18 NOV 1985,USA,1,,"Olympic Stadium, London (GBR)",09 JUL 2017,1220.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14309983,toplist
+3.0,49.72,,Quanera HAYES,07 MAR 1992,USA,1,,"Sacramento, CA (USA)",24 JUN 2017,1217.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14509544,toplist
+4.0,49.88,,Salwa Eid NASER,23 MAY 1998,BRN,2,,"Boudewijnstadion, Bruxelles (BEL)",01 SEP 2017,1210.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14643442,toplist
+5.0,49.92,,Phyllis FRANCIS,04 MAY 1992,USA,1,,"Olympic Stadium, London (GBR)",09 AUG 2017,1209.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14310414,toplist
+6.0,50.00,,Kendall ELLIS,08 MAR 1996,USA,3,,"Sacramento, CA (USA)",24 JUN 2017,1206.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14443893,toplist
+7.0,50.05,,Shericka JACKSON,16 JUL 1994,JAM,1,,Kingston (JAM),25 JUN 2017,1203.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14325599,toplist
+8.0,50.13,,Chrisann GORDON-POWELL,18 SEP 1994,JAM,2,,Kingston (JAM),25 JUN 2017,1200.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14361183,toplist
+9.0,50.14,,Natasha HASTINGS,23 JUL 1986,USA,4,,"Sacramento, CA (USA)",24 JUN 2017,1200.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14312172,toplist
+9.0,50.14,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,3,,Kingston (JAM),25 JUN 2017,1200.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14286000,toplist
+11.0,50.29,,Courtney OKOLO,15 MAR 1994,USA,2,,"Olympic Stadium, London (GBR)",09 JUL 2017,1194.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14432036,toplist
+12.0,50.32,,Lydia JELE,22 JUN 1990,BOT,1,,Pretoria (RSA),25 MAR 2017,1193.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14643512,toplist
+13.0,50.36,,Shakima WIMBLEY,23 APR 1995,USA,5,,"Sacramento, CA (USA)",24 JUN 2017,1191.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14467626,toplist
+14.0,50.40,,Shamier LITTLE,20 MAR 1995,USA,3,,"Olympic Stadium, London (GBR)",09 JUL 2017,1189.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14443767,toplist
+15.0,50.56,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,2sf1,,"Olympic Stadium, London (GBR)",07 AUG 2017,1183.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14285809,toplist
+16.0,50.64,,Daina HARPER,26 JUN 1995,USA,6,,"Sacramento, CA (USA)",24 JUN 2017,1180.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14486599,toplist
+17.0,50.76,,Anneisha MCLAUGHLIN-WHILBY,06 JAN 1986,JAM,4,,Kingston (JAM),25 JUN 2017,1175.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14285805,toplist
+18.0,50.85,,Jessica BEARD,08 JAN 1989,USA,7,,"Sacramento, CA (USA)",24 JUN 2017,1172.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14305526,toplist
+19.0,51.06,,Patience Okon GEORGE,25 NOV 1991,NGR,1,,Abuja (NGR),14 JUL 2017,1163.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14480009,toplist
+20.0,51.09,,Lea SPRUNGER,05 MAR 1990,SUI,1f1,,La Chaux-de-Fonds (SUI),02 JUL 2017,1162.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14301240,toplist
+21.0,51.12,,Jaide STEPTER BAYNES,25 SEP 1994,USA,1f1,,"Los Angeles, CA (USA)",08 APR 2017,1161.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14378193,toplist
+22.0,51.15,,Justyna ŚWIĘTY-ERSETIC,03 DEC 1992,POL,1,,"FBK Stadium, Hengelo (NED)",11 JUN 2017,1160.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14361154,toplist
+23.0,51.18,,Maximila IMALI,08 FEB 1996,KEN,1,,Nairobi (KEN),10 JUN 2017,1159.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14530640,toplist
+24.0,51.21,,Yekaterina RENZHINA,18 OCT 1994,RUS,1f4,,Yerino (RUS),14 JUL 2017,1157.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14421170,toplist
+25.0,51.25,,Christine DAY,23 AUG 1986,JAM,2sf2,,Kingston (JAM),24 JUN 2017,1156.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14285647,toplist
+26.0,51.28,,Amantle MONTSHO,04 JUL 1983,BOT,3sf3,,"Olympic Stadium, London (GBR)",07 AUG 2017,1155.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14269474,toplist
+27.0,51.30,,Yinka AJAYI,11 AUG 1997,NGR,1,,Ozoro (NGR),18 JUL 2017,1154.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14636821,toplist
+28.0,51.32,,Elexis GUSTER,07 JUL 1994,USA,2,,"Eugene, OR (USA)",14 MAY 2017,1153.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14487449,toplist
+29.0,51.35,,Takyera ROBERSON,07 MAY 1998,USA,1,,"Sacramento, CA (USA)",24 JUN 2017,1152.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14527955,toplist
+30.0,51.37,,Gunta VAIČULE,09 MAR 1995,LAT,2h3,,"Olympic Stadium, London (GBR)",06 AUG 2017,1151.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14475580,toplist
+31.0,51.38,,Anastasia Natalie LE-ROY,11 SEP 1987,JAM,5,,Kingston (JAM),25 JUN 2017,1151.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14285764,toplist
+32.0,51.41,,Carly MUSCARO,18 MAY 1995,USA,1,,Halifax (CAN),10 JUN 2017,1149.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14539600,toplist
+33.0,51.42,,Makenzie DUNMORE,07 OCT 1997,USA,3h3,,"Sacramento, CA (USA)",22 JUN 2017,1149.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14536492,toplist
+34.0,51.46,,Kemi ADEKOYA,16 JAN 1993,BRN,1h3,,Baku (AZE),17 MAY 2017,1148.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14419510,toplist
+34.0,51.46,,Roxana GÓMEZ,07 JAN 1999,CUB,1,,Trujillo (PER),21 JUL 2017,1148.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14637147,toplist
+36.0,51.50,,Kabange MUPOPO,21 SEP 1992,ZAM,1,,Ndola (ZAM),11 MAR 2017,1146.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14642670,toplist
+37.0,51.51,,Floria GUEI,02 MAY 1990,FRA,3,,"Stadio Olimpico, Roma (ITA)",08 JUN 2017,1146.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14257210,toplist
+38.0,51.52,,Jaevin REED,05 FEB 1998,USA,2,,"Sacramento, CA (USA)",24 JUN 2017,1145.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14492781,toplist
+39.0,51.53,,Caster SEMENYA,07 JAN 1991,RSA,7,,"Complexe Sportif Prince Moulay Abdellah, Rabat (MAR)",16 JUL 2017,1145.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14330057,toplist
+40.0,51.57,,Margaret BAMGBOSE,19 OCT 1993,NGR,1,,"Arena Caixa, Sao Bernardo do Campo (BRA)",03 JUN 2017,1143.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14486908,toplist
+41.0,51.61,,Sydney MCLAUGHLIN,07 AUG 1999,USA,1f2,,"New York, NY (USA) (i)",12 MAR 2017,1175.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14624749,toplist
+41.0,51.61,,Cameron PETTIGREW,1995,USA,3,,"Eugene, OR (USA)",14 MAY 2017,1142.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14486891,toplist
+41.0,51.61,,Eleni ARTYMATA,16 MAY 1986,CYP,1f2,,Patra (GRE),01 JUL 2017,1142.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14263333,toplist
+44.0,51.62,,Bianca Denisa RĂZOR,08 AUG 1994,ROU,1f1,,Pitesti (ROU),07 JUL 2017,1141.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14373543,toplist
+44.0,51.62,,Carline MUIR,01 OCT 1987,CAN,2,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1141.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14267466,toplist
+44.0,51.62,,Kseniya AKSYONOVA,14 JAN 1988,ANA,1,,Zhukovskiy (RUS),29 JUL 2017,1141.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14299650,toplist
+47.0,51.63,,Travia JONES,12 JUL 1995,USA,1sf2,,"Lexington, KY (USA)",26 MAY 2017,1141.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14432051,toplist
+47.0,51.63,,Ashley KELLY,25 MAR 1991,IVB,1,,"Miami, FL (USA)",08 JUL 2017,1141.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14285520,toplist
+49.0,51.65,,Morgan MITCHELL,03 OCT 1994,AUS,1f1,,Canberra (AUS),11 MAR 2017,1140.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14457910,toplist
+50.0,51.66,,Brittny ELLIS,01 SEP 1997,USA,2,,"Atlanta, GA (USA)",14 MAY 2017,1140.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14430856,toplist
+51.0,51.67,,Sharrika BARNETT,16 APR 1997,USA,2sf2,,"Eugene, OR (USA)",08 JUN 2017,1139.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14569381,toplist
+51.0,51.67,,Emily DIAMOND,11 JUN 1991,GBR,7,,"Olympic Stadium, London (GBR)",09 JUL 2017,1139.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14274886,toplist
+53.0,51.70,,Verone CHAMBERS,16 DEC 1988,JAM,1,,Kingston (JAM),08 APR 2017,1138.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14285606,toplist
+54.0,51.71,,Lisanne DE WITTE,10 SEP 1992,NED,1,,"Stadium Lille Métropole, Villeneuve d'Ascq (FRA)",24 JUN 2017,1138.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14361462,toplist
+54.0,51.71,,Iga BAUMGART-WITAN,11 APR 1989,POL,1,,Białystok (POL),22 JUL 2017,1138.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14293415,toplist
+56.0,51.72,,Ruth Sophia SPELMEYER,19 SEP 1990,GER,1h2,,Erfurt (GER),08 JUL 2017,1137.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14279849,toplist
+57.0,51.76,,Małgorzata HOŁUB-KOWALIK,30 OCT 1992,POL,1,,"Taipei Municipal Stadium, Taipei City (TPE)",25 AUG 2017,1136.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14389461,toplist
+58.0,51.77,,Zuzana HEJNOVÁ,19 DEC 1986,CZE,1,,"Barclaycard Arena, Birmingham (GBR) (i)",18 FEB 2017,1169.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14263088,toplist
+59.0,51.80,,Huizhen YANG,13 AUG 1992,CHN,1,,Tianjin (CHN),03 SEP 2017,1134.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14635020,toplist
+60.0,51.81,,Amalie IUEL,17 APR 1994,NOR,1f1,,"Los Angeles, CA (USA)",18 MAR 2017,1134.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14481392,toplist
+60.0,51.81,,Ekundayo SOGBESAN,29 MAR 1992,USA,4h2,,"Sacramento, CA (USA)",22 JUN 2017,1134.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14448127,toplist
+60.0,51.81,,Anyika ONUORA,28 OCT 1984,GBR,3,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1134.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14275975,toplist
+60.0,51.81,,Zoey CLARK,25 OCT 1994,GBR,6sf3,,"Olympic Stadium, London (GBR)",07 AUG 2017,1134.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14449472,toplist
+64.0,51.82,,Christine BOTLOGETSWE,01 OCT 1995,BOT,2,,Francistown (BOT),13 MAY 2017,1133.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14472776,toplist
+65.0,51.83,,Justine PALFRAMAN,04 NOV 1993,RSA,2,,"Taipei Municipal Stadium, Taipei City (TPE)",25 AUG 2017,1133.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14360057,toplist
+66.0,51.84,,Sage WATSON,20 JUN 1994,CAN,1f1,,"College Station, TX (USA) (i)",11 MAR 2017,1166.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14373955,toplist
+67.0,51.86,,Eilidh DOYLE,20 FEB 1987,GBR,1f1,,Wien (AUT) (i),28 JAN 2017,1166.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14274691,toplist
+67.0,51.86,,Eirini VASILEIOU,18 MAR 1990,GRE,2f2,,Patra (GRE),01 JUL 2017,1132.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14707602,toplist
+69.0,51.87,,Maria Benedicta CHIGBOLU,27 JUL 1989,ITA,1f1,,Orvieto (ITA),28 MAY 2017,1131.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14371567,toplist
+70.0,51.89,,Anastasiya BRYZHINA,09 JAN 1998,UKR,1,,Lutsk (UKR),06 JUN 2017,1131.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14567775,toplist
+71.0,51.90,,Laviai NIELSEN,13 MAR 1996,GBR,2,,"Barclaycard Arena, Birmingham (GBR) (i)",18 FEB 2017,1164.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14599229,toplist
+71.0,51.90,,Dominique WILLIAMS,08 AUG 1994,TTO,2sf2,,"Lexington, KY (USA)",26 MAY 2017,1130.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14367034,toplist
+71.0,51.90,,Kendall BAISDEN,05 MAR 1995,USA,4,,"Portland, OR (USA)",02 JUL 2017,1130.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14326466,toplist
+71.0,51.90,,Cátia AZEVEDO,09 MAR 1994,POR,4,,"Moratalaz, Madrid (ESP)",14 JUL 2017,1130.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14428268,toplist
+75.0,51.91,,Geisa Aparecida COUTINHO,01 JUN 1980,BRA,2,,"Arena Caixa, Sao Bernardo do Campo (BRA)",03 JUN 2017,1130.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14269361,toplist
+75.0,51.91,,Déborah SANANES,26 OCT 1995,FRA,2f1,,Genève (SUI),10 JUN 2017,1130.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14474268,toplist
+77.0,51.92,,Elea Mariama DIARRA,08 MAR 1990,FRA,1,,Marseille (FRA),16 JUL 2017,1130.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14257759,toplist
+78.0,51.93,,Georganne MOLINE,06 MAR 1990,USA,1f1,,"Tucson, AZ (USA)",18 MAR 2017,1129.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14362616,toplist
+79.0,51.94,,Janieve RUSSELL,14 NOV 1993,JAM,1f2,,Kingston (JAM),15 APR 2017,1129.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14334022,toplist
+79.0,51.94,,Anita HORVAT,07 SEP 1996,SLO,1h2,,"Zdzisław Krzyszkowiak Stadium, Bydgoszcz (POL)",14 JUL 2017,1129.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14472475,toplist
+81.0,51.98,,Tamara SALAŠKI,16 OCT 1988,SRB,1,,Kragujevac (SRB),23 JUL 2017,1127.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14300376,toplist
+82.0,51.99,,Tovea JENKINS,27 OCT 1992,JAM,1f1,,"Charlotte, NC (USA)",08 APR 2017,1127.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14523559,toplist
+82.0,51.99,,Shae ANDERSON,07 APR 1999,USA,1,,"Torrance, CA (USA)",15 APR 2017,1127.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14691338,toplist
+82.0,51.99,,Emerald EGWIM,27 NOV 1995,USA,1h1,,"University Park, PA (USA)",13 MAY 2017,1127.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14493229,toplist
+85.0,52.00,,Claudia FRANCIS,14 NOV 1993,USA,1f1,,"Gainesville, FL (USA)",30 MAR 2017,1126.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14310407,toplist
+85.0,52.00,,Mikele BARBER,04 OCT 1980,USA,2f1,,"Los Angeles, CA (USA)",08 APR 2017,1126.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14305305,toplist
+85.0,52.00,,Aiyanna STIVERNE,20 FEB 1995,CAN,1sf1,,"Lexington, KY (USA)",26 MAY 2017,1126.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14464726,toplist
+85.0,52.00,,Na'Asha ROBINSON,23 JAN 1997,USA,3sf2,,"Lexington, KY (USA)",26 MAY 2017,1126.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14689825,toplist
+89.0,52.01,,Martyna DABROWSKA,05 APR 1994,POL,1f1,,Białystok (POL),18 JUN 2017,1126.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14454877,toplist
+90.0,52.02,,Chrishuna WILLIAMS,31 MAR 1993,USA,2f2,,"Fayetteville, AR (USA) (i)",10 FEB 2017,1159.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14369842,toplist
+90.0,52.02,,Zola GOLDEN,20 JUN 1997,USA,5h1,,"Sacramento, CA (USA)",22 JUN 2017,1126.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14529253,toplist
+92.0,52.03,,Wenda NEL,30 JUL 1988,RSA,1,,Pretoria (RSA),13 MAY 2017,1125.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14296960,toplist
+92.0,52.03,,Abike Funmilola EGBENIYI,23 OCT 1994,NGR,2,,Ozoro (NGR),18 JUL 2017,1125.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14423851,toplist
+94.0,52.04,,Laura MÜLLER,11 DEC 1995,GER,1h1,,"Stadium Lille Métropole, Villeneuve d'Ascq (FRA)",23 JUN 2017,1125.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14402867,toplist
+95.0,52.05,,Junelle BROMFIELD,08 FEB 1998,JAM,2,,"National Stadium, Kingston (JAM)",20 MAY 2017,1124.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14530443,toplist
+95.0,52.05,,Dawnalee LONEY,15 MAY 1996,JAM,1f2,,Kingston (JAM),10 JUN 2017,1124.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14540092,toplist
+95.0,52.05,,Arria MINOR,09 FEB 2001,USA,3,,"Sacramento, CA (USA)",24 JUN 2017,1124.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14716718,toplist
+98.0,52.07,,Rachel MISHER,04 FEB 1997,USA,4sf2,,"Lexington, KY (USA)",26 MAY 2017,1124.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14616474,toplist
+99.0,52.08,,Taylor WASHINGTON,06 MAY 1993,USA,4,,"Bregyó Athletic Center, Székesfehérvár (HUN)",04 JUL 2017,1123.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14335321,toplist
+100.0,52.11,,Yana GLOTOVA,17 JAN 1995,RUS,1,,Saransk (RUS),21 JUN 2017,1122.0,women_400m,2017,https://worldathletics.org/athletes/athlete=14513882,toplist
+,49.00,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,49.32,,Shericka WILLIAMS,17 SEP 1985,JAM,2.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,49.71,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,3.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,49.77,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,4.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,50.21,,Christine OHURUOGU,17 MAY 1984,GBR,5.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,50.35,,Debbie DUNN,26 MAR 1978,USA,6.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,50.65,,Amantle MONTSHO,04 JUL 1983,BOT,7.,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,DQ,,Anastasiya KAPACHINSKAYA,21 NOV 1979,RUS, - ,,IAAF World Championships,18 AUG 2009,,,2009,,major_meet
+,49.92,,Kseniya AKSYONOVA,14 JAN 1988,RUS,1.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,50.10,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,2.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,50.43,,Libania GRENOT,12 JUL 1983,ITA,3.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,50.90,,Denisa ROSOLOVÁ,21 AUG 1986,CZE,4.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,51.67,,Antonina YEFREMOVA,19 JUL 1981,UKR,5.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,51.87,,Marta MILANI,09 MAR 1987,ITA,6.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,52.05,,Muriel HURTIS,25 MAR 1979,FRA,7.,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,DQ,,Tatyana FIROVA,10 OCT 1982,RUS, - ,,Barcelona European Championships,30 JUL 2010,,,2010,,major_meet
+,49.56,,Amantle MONTSHO,04 JUL 1983,BOT,1.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,49.59,,Allyson FELIX,18 NOV 1985,USA,2.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,50.45,,Francena MCCORORY,20 OCT 1988,USA,3.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,50.66,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS,4.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,50.79,,Shericka WILLIAMS,17 SEP 1985,JAM,5.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,51.32,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,6.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,52.89,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,7.,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,DQ,,Anastasiya KAPACHINSKAYA,21 NOV 1979,RUS, - ,,IAAF World Championships,29 AUG 2011,,,2011,,major_meet
+,49.55,,Sanya RICHARDS-ROSS,26 FEB 1985,USA,1.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,49.70,,Christine OHURUOGU,17 MAY 1984,GBR,2.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,49.72,,DeeDee TROTTER,08 DEC 1982,USA,3.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,49.75,,Amantle MONTSHO,04 JUL 1983,BOT,4.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,50.11,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,5.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,50.33,,Francena MCCORORY,20 OCT 1988,USA,6.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,50.79,,Rose-Mary WHYTE,08 SEP 1986,JAM,7.,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,DQ,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS, - ,,The XXX Olympic Games,05 AUG 2012,,,2012,,major_meet
+,51.13,,Moa HJELMER,19 JUN 1990,SWE,1.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,51.26,,Kseniya ZADORINA,02 MAR 1987,RUS,2.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,51.94,,Ilona USOVICH,14 NOV 1982,BLR,3.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,52.01,,Olha ZEMLYAK,16 JAN 1990,UKR,4.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,52.20,,Lee MCCONNELL,09 OCT 1978,GBR,5.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,52.57,,Libania GRENOT,12 JUL 1983,ITA,6.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,53.03,,Daryna PRYSTUPA,26 NOV 1987,UKR,7.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,54.50,,Muriel HURTIS,25 MAR 1979,FRA,8.,,Helsinki European Championships,29 JUN 2012,,,2012,,major_meet
+,49.41,,Christine OHURUOGU,17 MAY 1984,GBR,1.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,49.41,,Amantle MONTSHO,04 JUL 1983,BOT,2.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,49.99,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,3.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,50.30,,Natasha HASTINGS,23 JUL 1986,USA,4.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,50.68,,Francena MCCORORY,20 OCT 1988,USA,5.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,50.98,,Kseniya RYZHOVA,19 APR 1987,RUS,6.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,51.49,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,7.,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,DQ,,Antonina KRIVOSHAPKA,21 JUL 1987,RUS, - ,,IAAF World Championships,12 AUG 2013,,,2013,,major_meet
+,51.10,,Libania GRENOT,12 JUL 1983,ITA,1.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,51.36,,Olha ZEMLYAK,16 JAN 1990,UKR,2.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,51.38,,Indira TERRERO,29 NOV 1985,ESP,3.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,51.38,,Christine OHURUOGU,17 MAY 1984,GBR,4.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,51.84,,Małgorzata HOŁUB-KOWALIK,30 OCT 1992,POL,5.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,51.95,,Bianca Denisa RĂZOR,08 AUG 1994,ROU,6.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,52.14,,Marie GAYOT,18 DEC 1989,FRA,7.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,52.39,,Aauri Lorena BOKESA,14 DEC 1988,ESP,8.,,Zürich European Championships,15 AUG 2014,,,2014,,major_meet
+,49.26,,Allyson FELIX,18 NOV 1985,USA,1.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,49.67,,Shaunae MILLER,15 APR 1994,BAH,2.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,49.99,,Shericka JACKSON,16 JUL 1994,JAM,3.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,50.14,,Christine DAY,23 AUG 1986,JAM,4.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,50.42,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,5.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,50.47,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,6.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,50.51,,Phyllis FRANCIS,04 MAY 1992,USA,7.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,50.63,,Christine OHURUOGU,17 MAY 1984,GBR,8.,,IAAF World Championships,27 AUG 2015,,,2015,,major_meet
+,49.44,,Shaunae MILLER,15 APR 1994,BAH,1.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,49.51,,Allyson FELIX,18 NOV 1985,USA,2.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,49.85,,Shericka JACKSON,16 JUL 1994,JAM,3.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,50.34,,Natasha HASTINGS,23 JUL 1986,USA,4.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,50.41,,Phyllis FRANCIS,04 MAY 1992,USA,5.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,50.97,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,6.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,51.25,,Libania GRENOT,12 JUL 1983,ITA,7.,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,DQ,,Olha ZEMLYAK,16 JAN 1990,UKR, - ,,The XXXI Olympic Games,15 AUG 2016,,,2016,,major_meet
+,50.73,,Libania GRENOT,12 JUL 1983,ITA,1.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,51.21,,Floria GUEI,02 MAY 1990,FRA,2.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,51.47,,Anyika ONUORA,28 OCT 1984,GBR,3.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,51.55,,Christine OHURUOGU,17 MAY 1984,GBR,4.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,51.89,,Małgorzata HOŁUB-KOWALIK,30 OCT 1992,POL,5.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,51.96,,Justyna ŚWIĘTY-ERSETIC,03 DEC 1992,POL,6.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,52.23,,Tamara SALAŠKI,16 OCT 1988,SRB,7.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,52.76,,Nicky VAN LEUVEREN,20 MAY 1990,NED,8.,,European Athletics Championships,08 JUL 2016,,,2016,,major_meet
+,49.92,,Phyllis FRANCIS,04 MAY 1992,USA,1.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,50.06,,Salwa Eid NASER,23 MAY 1998,BRN,2.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,50.08,,Allyson FELIX,18 NOV 1985,USA,3.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,50.49,,Shaunae MILLER,15 APR 1994,BAH,4.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,50.76,,Shericka JACKSON,16 JUL 1994,JAM,5.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,50.86,,Stephenie Ann MCPHERSON,25 NOV 1988,JAM,6.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,51.48,,Novlene WILLIAMS-MILLS,26 APR 1982,JAM,7.,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
+,DQ,,Kabange MUPOPO,21 SEP 1992,ZAM, - ,,IAAF World Championships in Athletics,09 AUG 2017,,,2017,,major_meet
 ,50.41,,Justyna ŚWIĘTY-ERSETIC,03 DEC 1992,POL,1.,,European Athletics Championships,11 AUG 2018,,,2018,,major_meet
 ,50.45,,Maria BELIMPASAKI,19 JUN 1991,GRE,2.,,European Athletics Championships,11 AUG 2018,,,2018,,major_meet
 ,50.77,,Lisanne DE WITTE,10 SEP 1992,NED,3.,,European Athletics Championships,11 AUG 2018,,,2018,,major_meet
@@ -1178,6 +2258,7 @@ Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Nat.1,Venue,Date,Results Score,discipline,
 ,49.97,,Jodie WILLIAMS,28 SEP 1993,GBR,6.,,The XXXII Olympic Games,06 AUG 2021,,,2021,,major_meet
 ,50.88,,Quanera HAYES,07 MAR 1992,USA,7.,,The XXXII Olympic Games,06 AUG 2021,,,2021,,major_meet
 ,DNF,,Roxana GÓMEZ,07 JAN 1999,CUB,,,The XXXII Olympic Games,06 AUG 2021,,,2021,,major_meet
+,54.96,,Maureen Nyatichi THOMAS,29 DEC 1997,KEN,1.,,Kip Keino Classic,18 SEP 2021,,,2021,,major_meet
 ,50.70,,Natalia KACZMAREK,17 JAN 1998,POL,1.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
 ,51.19,,Anna KIEŁBASIŃSKA,26 JUN 1990,POL,2.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
 ,51.88,,Candice MCLEOD,15 NOV 1996,JAM,3.,,LOTTO Silesia Kamila Skolimowska Memorial,05 SEP 2021,,,2021,,major_meet
