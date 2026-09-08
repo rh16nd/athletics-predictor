@@ -1048,6 +1048,43 @@ Tests: 398 → **412**. `tests/test_injury_checker.py` pins the widened field an
 `tests/test_api.py` pins the attach, the never-drop rule, the name normalisation, and both news
 feed merges.
 
+### A watch is not an out, and naming the competition is what tells them apart (2026-09-08)
+
+**Reported by the user, about Duplantis:** he had been pulled out of the pole vault projection on
+a report saying he withdrew from the **Diamond League final** — a meeting already run, saying
+nothing about Budapest. The two injury statuses have always meant different things and the table
+was treating them identically. **Five of the eight flagged athletes were in the wrong group.**
+
+**Only a reported withdrawal moves an athlete to the foot of the discipline now.** An injury
+mention that stops short of one keeps its place, its rank and its number, and carries a Watch
+badge. `isOut()` in `ultimate-projections.tsx` is the single test; the group heading became
+"Reported out" (FR "Annoncés forfaits") and the InfoTip states the rule.
+
+**Fixing the display exposed the other half, and it was the more serious one.** Two athletes who
+are genuinely out of Budapest were filed as doubts:
+
+- *"Injury holds back Cuban gem Jorge Hodelín: will not compete in the World Ultimate
+  Championship"* — capped at watch because a bare surname can never raise a withdrawal.
+- *"Sachin Yadav Undergoes Elbow Surgery, Misses World Athletics Ultimate Championships"* — only
+  `surgery` matched, a watch word. `misses` is not in REMOVE_KEYWORDS and should not be: on its
+  own it matches "misses the podium".
+
+**Naming the competition is the discriminator.** A headline that names the target event AND says
+the athlete is not in it is a withdrawal, whichever way the name matched — `names_target_event()`
+plus `OUT_OF_EVENT_WORDS`, which can be looser than REMOVE_KEYWORDS precisely because they are
+only ever consulted alongside the event's own name. Terms come from `data/ultimate/event.json`,
+not hard-coded, so this follows the site when the next championship takes the tab.
+
+**The test that matters is the one it leaves alone.** Duplantis's report names the Diamond League
+final and never mentions the Ultimate, so he stays a watch and stays at #1. Same for the three
+Brussels DNF recaps. Pinned by `test_withdrawing_from_a_different_meeting_is_not_an_out`.
+
+After the re-run: Lyles, Davis-Woodhall, Omanyala, Hodelín, Yadav, Chopra and Shericka Jackson
+are **out**; Duplantis, Haylom, Duguma and Ben Yazide are **watches** and keep their places.
+Hodgkinson stays cleared.
+
+Live as `01614ca6` / `560775e`.
+
 ### The Ultimate tab wears its own colour, and the numbering stopped having holes (2026-09-08)
 
 Two small things after the ship, both from use.
