@@ -414,6 +414,9 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 
 > ### READ THIS FIRST — SHIPPED 2026-09-08. The long-held update is live.
 >
+> **Picking this up cold? The open work is under NEXT STEPS below** (accuracy without
+> thinning the field, and dark mode). Everything in this block is done and deployed.
+>
 > It was held back deliberately for a day and a half; the user gave the word on 2026-09-08
 > and it went out. **`8d059e2b`** on athletics-predictor, **`bc76592`** on
 > track-insights-main, both on `main`, both pushed. Render redeployed the API and Vercel
@@ -482,6 +485,83 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 > wrong). Left alone deliberately -- `--fix` would rewrite whole files of untouched code and bury the real
 > diff. Lint the files you change, not the tree.
 
+
+## NEXT STEPS (set 2026-09-08, after the ship — start here)
+
+Everything before this is shipped and live. These two are the open work, both asked for
+directly, and neither has been started.
+
+### 1. Improve accuracy WITHOUT thinning the field — a brainstorm, not a retrain
+
+**This lifts a standing gate.** The rule has been *"accuracy is ceilinged, do not chase features,
+and ask before resuming accuracy work at all"* — five real levers were tried across earlier
+sessions and every one was reverted with an understood cause. **The user has now asked for it, so
+the gate is lifted for this piece of work and only this piece.** The other half of the rule still
+stands: **do not retrain and hope.** Measure with paired 10-seed deltas against a shuffled
+control (see the feedback memory); a single seed once said +1.7 where the truth was +0.68.
+
+**The constraint is the interesting part.** The ask was to improve accuracy *"in a way that we can
+still keep the athletes around"*, which came straight after the injury work, where the whole
+principle was that a flagged athlete keeps their place rather than being deleted. **Confirm which
+of these is meant before designing anything** — they lead to different work:
+
+- **(a) No gains bought by shrinking the field.** Several past experiments improved a number by
+  narrowing who was scored. That is off the table: the projection must keep showing everyone
+  World Athletics says has qualified.
+- **(b) The harder metric is the honest one.** `final_field_pct` is 62.4% and only ever scores the
+  eight to ten who reached a final; `toplist_pool_pct` is 45.5% and picks three from ~100. Raising
+  the second is the version of this that cannot be gamed by excluding anyone.
+- **(c) Keep athletes the model currently cannot score at all.** 3 of 28 Ultimate events are
+  unprojected and some qualified athletes carry no 2026 mark, so they are named but unranked.
+
+**Worth knowing before the brainstorm starts** (all measured, all in this file or in memory):
+
+- Accuracy is **not** raised by better injury detection, and cannot be. The metric is walk-forward
+  over historical finals and never reads `injury_flags.json`; it scores only athletes who
+  **actually contested** a final, so a withdrawal is invisible to it by construction. See the
+  paragraph now on the Help page.
+- Injury signal HAS already helped, indirectly: `gap_variability` reads irregular race spacing as
+  "an injury nobody logged" and measured **+0.68 pts over 10 seeds**. News-based injury data
+  cannot become a feature — there is no historical archive of it, only today's headlines.
+- The shipped 72.8% was **~1pt inflated by a 1-Sep cut-off leak** (see the pooled-finals memory).
+  Whatever is measured next, check the cut-off first.
+- Championship pooling works, but **the widest pool was worse on every tier**. Do not reach for
+  more data as the first move.
+
+### 2. Dark mode
+
+**Asked for by real users**, more than once: some of them simply do not like the off-white canvas.
+Nothing exists yet — `styles.css` has **zero** `prefers-color-scheme` or `.dark` rules.
+
+**Size it honestly before starting: this is not a palette swap.** There are **74 custom
+properties**, and **43 lines of `styles.css` cite a contrast ratio that was solved against this
+specific light canvas**. Several colours only exist because of what they sit on:
+
+- `--gold-on-canvas` exists solely because `--gold-light` measured 2.80:1 as text on terracotta.
+- `--violet-strong` (the new Ultimate tab) was darkened to clear 6.28:1 on the bar and 5.09:1 on
+  its own 12% wash.
+- **`scripts/make-flag-palette.py` is the hard one.** It generates all 137 country page themes by
+  clamping each nation's flag colours against the site canvas's own numbers, and its ground sits
+  at *exactly* 4.5:1 with no headroom — which is why those pages need a gradient scrim rather than
+  a flat veil. A dark canvas means regenerating that whole file against new numbers.
+- **14 files carry hard-coded colour values** outside the token system; those are the ones that
+  will silently stay light.
+
+**Two page grounds are already dark** and are the precedent worth reading first: the Ultimate's
+`theme="ultimate"` and the country pages' `PageGround`, both in `shell.tsx`. A dark site theme has
+to not collide with them — the Ultimate's near-black would stop being a signal if everything were
+near-black.
+
+**Method:** `DESIGN.md` at the root of `track-insights-main` is the visual authority and must be
+updated with whatever is decided, not just the code. Measure every ratio by **compositing through
+a canvas** — `getComputedStyle` returns `oklch()` strings here and parsing them as RGB once
+produced 121/121 false failures. And check the real composited stack, not the token: a token that
+passes in isolation can fail under the grain layer and the blooms.
+
+**One product question to settle first:** follow the OS (`prefers-color-scheme`), offer a manual
+toggle, or both? The language switcher in the top bar is the obvious precedent for a toggle, and
+`localStorage` under a `podiumcall:` key is how the language and the welcome modal already
+persist.
 
 ### Added 2026-09-07 (user-requested). B is closed; A is relabelled, with its modelling option left open.
 
