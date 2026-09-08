@@ -500,19 +500,21 @@ the gate is lifted for this piece of work and only this piece.** The other half 
 stands: **do not retrain and hope.** Measure with paired 10-seed deltas against a shuffled
 control (see the feedback memory); a single seed once said +1.7 where the truth was +0.68.
 
-**The constraint is the interesting part.** The ask was to improve accuracy *"in a way that we can
-still keep the athletes around"*, which came straight after the injury work, where the whole
-principle was that a flagged athlete keeps their place rather than being deleted. **Confirm which
-of these is meant before designing anything** — they lead to different work:
+**The constraint, settled with the user 2026-09-08: no gains bought by shrinking the field.**
+Several earlier experiments improved a number by narrowing who got scored. That is off the table.
+The projection keeps showing everyone World Athletics says has qualified, and any gain has to come
+from **better signal on the same full field** — not from a smaller, easier one.
 
-- **(a) No gains bought by shrinking the field.** Several past experiments improved a number by
-  narrowing who was scored. That is off the table: the projection must keep showing everyone
-  World Athletics says has qualified.
-- **(b) The harder metric is the honest one.** `final_field_pct` is 62.4% and only ever scores the
-  eight to ten who reached a final; `toplist_pool_pct` is 45.5% and picks three from ~100. Raising
-  the second is the version of this that cannot be gamed by excluding anyone.
-- **(c) Keep athletes the model currently cannot score at all.** 3 of 28 Ultimate events are
-  unprojected and some qualified athletes carry no 2026 mark, so they are named but unranked.
+That rules out a whole family of tempting moves, so name them now: dropping athletes with sparse
+data, restricting training to a "cleaner" subset, tightening the eligibility filter, or reporting
+a metric computed over fewer people. If an idea's gain disappears when the excluded athletes are
+put back, it is not a gain.
+
+Two related things that are NOT the ask but are worth knowing while thinking about it.
+`final_field_pct` (62.4%) only ever scores the eight to ten who reached a final, while
+`toplist_pool_pct` (45.5%) picks three from ~100 and cannot be gamed by excluding anyone — the
+second is the harder and more honest number. And 3 of 28 Ultimate events are unprojected, with
+some qualified athletes carrying no 2026 mark at all, so they are named but unranked.
 
 **Worth knowing before the brainstorm starts** (all measured, all in this file or in memory):
 
@@ -558,10 +560,12 @@ a canvas** — `getComputedStyle` returns `oklch()` strings here and parsing the
 produced 121/121 false failures. And check the real composited stack, not the token: a token that
 passes in isolation can fail under the grain layer and the blooms.
 
-**One product question to settle first:** follow the OS (`prefers-color-scheme`), offer a manual
-toggle, or both? The language switcher in the top bar is the obvious precedent for a toggle, and
-`localStorage` under a `podiumcall:` key is how the language and the welcome modal already
-persist.
+**Settled with the user 2026-09-08: follow the OS, and allow a manual override.** So
+`prefers-color-scheme` is the default and it works with no interaction, but someone whose OS
+setting does not match what they want can change it. The language switcher in the top bar is the
+precedent for where the control goes, and `localStorage` under a `podiumcall:` key is how the
+language and the welcome modal already persist — an explicit choice must survive a reload and win
+over the OS, an absent choice must fall back to it.
 
 ### Added 2026-09-07 (user-requested). B is closed; A is relabelled, with its modelling option left open.
 
