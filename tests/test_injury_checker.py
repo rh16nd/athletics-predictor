@@ -296,3 +296,62 @@ def test_an_athletes_own_surname_does_not_beat_their_full_name():
 def test_a_headline_with_no_return_phrase_is_not_a_return():
     assert not ic.returning_is_about(
         "keely hodgkinson withdraws from zurich diamond league", "keely hodgkinson", [])
+
+
+# --- Naming the competition is what makes an out an out (added 2026-09-08) ----
+#
+# Reported by the user, about Duplantis: he was pulled out of the pole vault
+# projection on a report saying he withdrew from the DIAMOND LEAGUE FINAL, a
+# meeting already run, which says nothing about Budapest. The surname cap keeps
+# a one-word name match from ever becoming a withdrawal -- right in general, and
+# wrong when the headline also names the competition.
+
+def _terms():
+    return {"budapest", "ultimate championship", "ultimate championships",
+            "world athletics ultimate championship"}
+
+
+def _is_out(headline):
+    n = ic.normalize_for_match(headline)
+    return (ic.names_target_event(n, _terms())
+            and any(w in n for w in ic.OUT_OF_EVENT_WORDS))
+
+
+def test_naming_the_championship_and_an_absence_is_an_out():
+    for headline in (
+        "Injury holds back Cuban gem Jorge Hodelin: will not compete in the World Ultimate Championship",
+        "Injured Omanyala pulls out of Diamond League final and World Ultimate Championships",
+        # Only "surgery" matched here, a watch word -- this athlete sat in the
+        # projection as a doubt while the headline said he was gone.
+        "Sachin Yadav Undergoes Elbow Surgery, Misses World Athletics Ultimate Championships",
+    ):
+        assert _is_out(headline), headline
+
+
+def test_withdrawing_from_a_different_meeting_is_not_an_out():
+    # The case that started this. It is a real withdrawal from a real meeting,
+    # and that meeting is not the one being projected.
+    assert not _is_out(
+        "Duplantis withdraws from Diamond League finals after thigh discomfort during warm-up")
+    assert not _is_out("Day 2 Brussels Diamond League Final Results")
+
+
+def test_naming_the_championship_without_an_absence_is_not_an_out():
+    assert not _is_out("Duplantis targets another world record at the Ultimate Championship")
+
+
+def test_the_event_terms_are_read_from_the_event_file(tmp_path, monkeypatch):
+    # Not hard-coded, so this follows the site when the next championship takes
+    # the tab.
+    monkeypatch.setattr(ic, "STANDINGS_PATH", "", raising=False)
+    _write(tmp_path, event={"name": "World Athletics Ultimate Championship",
+                            "shortName": "Budapest 26", "city": "Budapest"})
+    terms = ic.target_event_terms()
+    assert "ultimate championship" in terms
+    assert "budapest" in terms
+
+
+def test_a_missing_event_file_yields_no_terms_rather_than_crashing(tmp_path, monkeypatch):
+    monkeypatch.setattr(ic, "STANDINGS_PATH", "", raising=False)
+    _write(tmp_path)
+    assert ic.target_event_terms() == set()

@@ -1,14 +1,15 @@
 {
-  "checked_at": "2026-09-08T07:00:10.626373+00:00",
+  "checked_at": "2026-09-08T08:18:21.752303+00:00",
   "sources_ok": [
     "letsrun",
+    "athleticsweekly",
     "worldathletics",
     "googlenews"
   ],
   "days_to_final": 3,
   "athletes": {
     "Ferdinand Omanyala": {
-      "status": "watch",
+      "status": "remove",
       "disciplines": [
         "men_100m"
       ],
@@ -79,7 +80,7 @@
       ]
     },
     "Jorge A. Hodelín": {
-      "status": "watch",
+      "status": "remove",
       "disciplines": [
         "men_LJ"
       ],
@@ -197,7 +198,7 @@
         {
           "headline": "US Olympic champion Tara Davis-Woodhall ends season due to concussion",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNamNfZ25Pa0tvcmk5YThSbE90T3I5aHl3RWdmZFlQSDhNVUU5Z1ZEN2d4Y1lKOVp0WmlaTnB5Z1pvdHdrb0JyVENHb0tnVmF1NV9YZU55cFowRFVGN00zQ0g2akZkSVdaaXNHZTY3b19vREVyd2pQbG5pTHlHeVVVMTk2RGUtVUN3U0JWT2YzZnV5bDhBdTZwck0yZTF5djZYelVhMllfS1VmYU1xLXc?oc=5",
-          "source": "UA.NEWS",
+          "source": "ua.news",
           "keywords": [
             "ends season"
           ],
@@ -255,7 +256,7 @@
         {
           "headline": "Noah Lyles Gives Injury Update in New Video Ahead of World Athletics Ultimate Championship",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcnBXbk1xVE1BaWdfa1RTYXNfODJpYU1ka0R2T241eWEza0wzNTZZZWZjNmxhMldwbzRVNjlJSnBJWkNyLUdzU0tURjlRNzNsdmM5Q2NUb05DcFhxaHhEalFkaFoteWZ0Mk9nS3R1SEhDMGpodGdZR3h6ZmFrWlEtS2o4NFRHREhPZXMyQ2ZkMG5TTEwyMzFVSmxJbndZblJCZGtza0V6ZHJsVm81YUo5NXpPMmlsNmZCZnh5WEpkc2U5UVp3cGd4RA?oc=5",
-          "source": "Bleacher Report",
+          "source": "bleacherreport.com",
           "keywords": [
             "injury"
           ],
@@ -375,7 +376,7 @@
       ]
     },
     "Sachin Yadav": {
-      "status": "watch",
+      "status": "remove",
       "disciplines": [
         "men_JT"
       ],

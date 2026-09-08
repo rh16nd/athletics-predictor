@@ -241,6 +241,48 @@ SEVERITY_DOWN_WORDS = ["minor", "slight", "small", "tweak", "niggle", "precautio
 DL_FINAL_DATE = date(2026, 9, 4)  # Brussels DL Final — run, and now history
 
 
+# Ways of saying an athlete will not be at a named competition. Only ever
+# consulted alongside the competition's own name (see names_target_event), so
+# these can be looser than REMOVE_KEYWORDS -- "misses" on its own would match
+# "misses the podium", but "misses ... World Athletics Ultimate Championships"
+# is exactly what it looks like. That headline is why the list exists: Sachin
+# Yadav's withdrawal matched only "surgery", a watch word, and sat in the
+# projection as a doubt rather than an absence.
+OUT_OF_EVENT_WORDS = [
+    "misses", "miss", "will not compete", "wont compete", "won't compete",
+    "withdraws", "withdrawn", "withdrew", "pulls out", "pulled out",
+    "ruled out", "out of", "absent from", "not travel", "skip", "skips",
+]
+
+
+def target_event_terms():
+    """Normalised names for the competition being projected.
+
+    Read from the event file rather than hard-coded, so this follows the site
+    when the next championship takes the tab."""
+    terms = set()
+    try:
+        with open(ULTIMATE_EVENT_PATH, encoding="utf-8") as f:
+            event = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return terms
+    for key in ("name", "shortName", "city"):
+        value = normalize_for_match(event.get(key) or "")
+        if value:
+            terms.add(value)
+    # "World Athletics Ultimate Championship" is written a dozen ways; the two
+    # words that survive all of them are the ones worth matching on.
+    full = normalize_for_match(event.get("name") or "")
+    if "ultimate" in full:
+        terms.add("ultimate championship")
+        terms.add("ultimate championships")
+    return terms
+
+
+def names_target_event(headline_norm, terms):
+    return any(term in headline_norm for term in terms)
+
+
 def target_date():
     """The competition an injury is measured against.
 
@@ -734,6 +776,7 @@ def check_injuries():
     days_to_final = (target_date() - date.today()).days
 
     flags = {}
+    event_terms = target_event_terms()
     # name -> newest date on a story saying this athlete is BACK. Kept so a
     # withdrawal can be overtaken by later news rather than standing forever.
     returned = {}
@@ -788,6 +831,11 @@ def check_injuries():
             if not matched["remove"] and not matched["watch"]:
                 continue
             status = "watch" if surname_only else ("remove" if matched["remove"] else "watch")
+            # A headline that names the competition AND says the athlete is not
+            # in it is not a doubt, whichever way the name matched.
+            if (names_target_event(headline_norm, event_terms)
+                    and any(w in headline_norm for w in OUT_OF_EVENT_WORDS)):
+                status = "remove"
 
             recovery = estimate_recovery_weeks(headline_norm)
             likely_out_for_final = recovery is not None and (recovery[0] * 7 > days_to_final)
