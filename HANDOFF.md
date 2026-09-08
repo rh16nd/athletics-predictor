@@ -1048,6 +1048,47 @@ Tests: 398 → **412**. `tests/test_injury_checker.py` pins the widened field an
 `tests/test_api.py` pins the attach, the never-drop rule, the name normalisation, and both news
 feed merges.
 
+### The Ultimate tab wears its own colour, and the numbering stopped having holes (2026-09-08)
+
+Two small things after the ship, both from use.
+
+**The tab.** The Ultimate page has worn black-and-violet since it was built, the look World
+Athletics gives the event; the tab leading to it looked like every other tab, so the one thing
+worth clicking was the hardest to notice. `--violet-strong` in `styles.css`, registered as
+`--color-violet-strong` (a raw token that is never registered silently falls back to inherited
+`--foreground` — see the `--color-terracotta-strong` note there for the time that actually
+happened).
+
+**The page's own bloom could not be reused.** `rgb(150,74,224)` is built to sit on near-black and
+measures **3.86:1** against the header's real composited cream (240,228,218) — a failure for an
+11px label. The token is the same hue darkened until both nav states clear: **6.28:1** inactive,
+**5.09:1** on the active pill, where the 12% wash lifts the ground to (225,202,216). `L=0.50` was
+tried first and gave **4.53:1** active, which passes by 0.03; that is the kind of margin this
+project has been caught by before, so it went darker. All composited through a canvas, never
+eyeballed — `getComputedStyle` returns `oklch()` strings here.
+
+**The numbering.** Moving a flagged athlete to the foot of the discipline left a hole above it:
+the men's 100m read **2, 3, 4** and the women's 1500m **1, 2, 4**. Keeping each athlete's own
+model rank was deliberate — it stops whoever sits behind a flagged athlete inheriting a podium
+colour the model never gave them — but a list starting at 2 reads as broken, and the reader who
+reported it was right.
+
+The main list is numbered **1..N** now: it answers "who is expected on the start line, in the
+model's order", which is what that list is for. The flagged group still shows the place the
+MODEL gave the athlete, so the interesting fact about a flagged favourite survives — Lyles shows
+as its number one, Haylom as its number three. `ProjectionRow` takes a `place` prop for exactly
+this reason: two numberings share one column, and the group's InfoTip now says which is which.
+
+**Caught on the way past:** the French `flaggedHint` had a plain space before its colon. It was
+added AFTER the typography pass and so never went through it. The normaliser is idempotent;
+re-running it over the whole file fixed that one and left the other 122 alone. **Any French key
+added after 2026-09-08's typography pass needs the same treatment** — write the non-breaking
+space in by hand or re-run the pass.
+
+Live as `a70f295` and `b2a20ef`. Verified on production, not assumed: the deploy carries CSS
+before JS, so the violet appeared a full cycle before the renumbering did, and a first check
+that looked fine was actually reading a discipline with no flagged athlete in it.
+
 ### Widening the injury search, and the four ways that went wrong first (2026-09-08)
 
 **Reported by the user: "there are some big athletes that you're missing here." They were
