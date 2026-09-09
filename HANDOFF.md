@@ -814,6 +814,29 @@ All 32 disciplines now carry toplists back to 2008 (needed for `career_best`/`yo
 history improves the FEATURES of the existing 2021-2025 rows, and the pre-2018 finals add LABELS.
 `build_frame_v2.py` in the session scratchpad builds either.
 
+### /results — the model's own track record (2026-09-09)
+
+**60.4% actual against a 60.9% claim.** 58 of 96 podium places across the 32 contested events at
+the 2026 Diamond League Final, read against `outputs/predictions_prefinal.csv`, which is frozen
+before a Final and never regenerated after one.
+
+The page is worth having for the fourth figure on its head band, not the first. Every other accuracy
+number on this site is a backtest — walk-forward and honest, and still the model being marked on
+races it was scored against afterwards. A projection published beforehand and left alone is the
+other kind of evidence, and the two numbers only mean anything side by side. If they ever stop
+agreeing, the claim is the thing that is wrong.
+
+**Nothing was rebuilt.** `ResultComparison` has existed since 2026-09-05 and had lost its route:
+the Ultimate pivot rewrote Track and Field, leaving `DisciplineTable` **exported and imported by
+nothing**, so a finished Final's comparison was dead code behind a dead component. It moved to
+`src/components/dl/result-comparison.tsx` unchanged — a pure move, `discipline-table.tsx` imports
+it back and still compiles — so what ships is the version that already worked.
+
+**Before Budapest, and this is the one thing that will bite:** the page is framed around a single
+championship because only one has a frozen projection. `predictions_prefinal.csv` has to be frozen
+the same way for the Ultimate **before 11 September**, and the page then needs to hold more than one
+event. Freezing it afterwards is not possible — that is the whole point of the file.
+
 ### The official ENTRY list, and why qualification was never the field (2026-09-08)
 
 The user asked for the official start lists, saying they update hourly. `fetch_startlists()` asks
