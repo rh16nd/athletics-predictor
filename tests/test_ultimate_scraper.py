@@ -240,3 +240,53 @@ def test_published_entries_rebuild_the_event_file(monkeypatch, tmp_path, capsys)
     out = capsys.readouterr().out
     assert out.startswith("ENTRIES PUBLISHED: 2 athletes across 1 events")
     assert (tmp_path / "event.json").exists()
+
+
+# --- Which race is the Final? (2026-09-10) --------------------------------
+# Found by a dry run, not by review: fetch_results() had never been pointed at
+# a meeting that had actually happened, so "no rows" and "wrong rows" looked
+# the same. Pointed at the 2026 Diamond League Final it returned the BELGIAN
+# NATIONAL women's 100m -- 12.21, 12.39, 12.56 -- instead of the Diamond League
+# race won in 11.06. Both are labelled "Final" in the same feed, and taking the
+# first got the wrong one in 3 of 32 disciplines.
+
+def _race(label, *names):
+    return {"race": label,
+            "results": [{"competitor": {"name": n}, "place": str(i + 1), "mark": "10.0",
+                         "nationality": "XXX"}
+                        for i, n in enumerate(names)]}
+
+
+def test_entrants_by_key_reads_the_published_entry_list():
+    field = [{"discKey": "women_100m", "athletes": [{"name": "Julien ALFRED"}, {"name": None}]}]
+    assert us.entrants_by_key(field) == {"women_100m": {"julien alfred", ""}}
+
+
+def test_entrants_by_key_ignores_a_discipline_it_could_not_key():
+    assert us.entrants_by_key([{"discKey": None, "athletes": [{"name": "X"}]}]) == {}
+
+
+def test_a_single_final_is_taken_as_is():
+    race = _race("Final", "Anyone AT ALL")
+    assert us.pick_final([_race("Semi-Final", "Other"), race], set()) is race
+
+
+def test_no_final_yet_is_none_not_a_crash():
+    assert us.pick_final([_race("Semi-Final", "Someone")], {"someone"}) is None
+
+
+def test_the_entered_athletes_decide_between_two_finals():
+    """The real 2026 case, in miniature: a national final listed first and the
+    championship's own race second."""
+    national = _race("Final", "Ella HAUQUIER", "Fien PEETERS")
+    real = _race("Final", "Sha'Carri RICHARDSON", "Amy HUNT")
+    entrants = {"sha'carri richardson", "amy hunt", "julien alfred"}
+    assert us.pick_final([national, real], entrants) is real
+
+
+def test_with_no_entry_list_the_fuller_race_wins():
+    """Before the field is published there is nothing to compare against, so
+    fall back to something deterministic rather than to feed order."""
+    thin = _race("Final", "One PERSON")
+    full = _race("Final", "One PERSON", "Two PERSON", "Three PERSON")
+    assert us.pick_final([thin, full], set()) is full

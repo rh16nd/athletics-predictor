@@ -130,11 +130,63 @@ def fetch_timetable():
         return []
 
 
-def fetch_results():
+def entrants_by_key(field):
+    """{discipline key: {entrant names, lowercased}} from the qualified field,
+    used to tell the championship's own race apart from any other race sharing
+    the meeting. Empty when the field has not been published."""
+    out = {}
+    for disc in field or []:
+        key = disc.get("discKey")
+        if not key:
+            continue
+        out.setdefault(key, set()).update(
+            (a.get("name") or "").strip().lower() for a in disc.get("athletes") or []
+        )
+    return out
+
+
+def pick_final(races, entrants):
+    """Which of several races labelled "Final" is the one that decides the
+    championship?
+
+    Taking the first was wrong, and a dry run against a finished meeting proved
+    it rather than a review catching it: pointed at the 2026 Diamond League
+    Final, this returned the BELGIAN NATIONAL women's 100m -- 12.21, 12.39,
+    12.56 -- instead of the Diamond League race won in 11.06. Both are labelled
+    "Final" in the same feed, and the national one came first.
+
+    dl_final_results_scraper avoids that by keeping only groups whose
+    rankingCategory is "DF", which is a Diamond League concept and no use at a
+    championship. The discriminator that works anywhere is the entry list: the
+    real race is the one contested by the athletes who qualified. Falls back to
+    the fullest race, then the first, when there is no field to compare against.
+    """
+    finals = [r for r in races if r.get("race") == "Final"]
+    if len(finals) <= 1:
+        return finals[0] if finals else None
+
+    def score(race):
+        names = {
+            ((res.get("competitor") or {}).get("name") or "").strip().lower()
+            for res in race.get("results") or []
+        }
+        return (len(names & entrants), len(race.get("results") or []))
+
+    best = max(finals, key=score)
+    print(f"    {len(finals)} races labelled Final; kept the one with "
+          f"{score(best)[0]} of the entered athletes")
+    return best
+
+
+def fetch_results(field=None):
     """Final results per contested event, or [] until the meeting runs. Reuses
     the DL Final scraper's exact per-day/per-event walk (getCalendarCompetitionResults),
-    with the Mile counted as the 1500m the same way a championship Final needs."""
+    with the Mile counted as the 1500m the same way a championship Final needs.
+
+    `field` is fetch_qualified_field()'s output, used only to choose between
+    several races that all call themselves the Final -- see pick_final."""
     rows = []
+    entrants = entrants_by_key(field)
     try:
         day_data = dlr.graphql(
             "getCalendarCompetitionResults",
@@ -142,7 +194,10 @@ def fetch_results():
             dlr.RESULTS_QUERY,
         )["getCalendarCompetitionResults"]
         days = [d["day"] for d in day_data["options"]["days"]] or [None]
-        seen = set()
+        # Every candidate race first, then one choice per discipline. Deciding
+        # as we walk meant whichever group the feed happened to list first won,
+        # which is exactly how the national race got in.
+        candidates = {}
         for day in days:
             data = dlr.graphql(
                 "getCalendarCompetitionResults",
@@ -152,23 +207,24 @@ def fetch_results():
             for group in data["eventTitles"]:
                 for event in group["events"]:
                     key = dlr.resolve_discipline_key(event["gender"], event["event"], mile_as_1500=True)
-                    if key is None or key in seen:
+                    if key is None:
                         continue
-                    finals = [r for r in event["races"] if r["race"] == "Final"]
-                    if not finals:
-                        continue
-                    for res in finals[0]["results"]:
-                        name = (res.get("competitor") or {}).get("name")
-                        if not name:
-                            continue
-                        rows.append({
-                            "discipline": key,
-                            "athlete_name": name,
-                            "place": (res.get("place") or "").rstrip("."),
-                            "mark": res.get("mark"),
-                            "nationality": res.get("nationality"),
-                        })
-                    seen.add(key)
+                    candidates.setdefault(key, []).extend(event["races"])
+        for key, races in candidates.items():
+            final = pick_final(races, entrants.get(key, set()))
+            if final is None:
+                continue
+            for res in final["results"]:
+                name = (res.get("competitor") or {}).get("name")
+                if not name:
+                    continue
+                rows.append({
+                    "discipline": key,
+                    "athlete_name": name,
+                    "place": (res.get("place") or "").rstrip("."),
+                    "mark": res.get("mark"),
+                    "nationality": res.get("nationality"),
+                })
     except Exception as e:
         print(f"  results fetch failed ({str(e)[:60]}) -- treating as not run yet")
         return []
@@ -847,9 +903,12 @@ def fetch_qualified_field():
 
 def build_event():
     timetable = fetch_timetable()
-    results = fetch_results()
     startlists = fetch_startlists()
+    # The field is fetched BEFORE the results because the results need it: it
+    # is what tells the championship's own final apart from any other race in
+    # the same feed calling itself a Final. See pick_final.
     field = fetch_qualified_field()
+    results = fetch_results(field)
     # WA's own flag, from either feed. It is the thing that flips when they
     # populate the API, and it is currently false everywhere even though the
     # entry lists are announced -- see fetch_startlists.
