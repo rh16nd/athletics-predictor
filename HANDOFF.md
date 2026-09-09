@@ -347,7 +347,7 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 - `src/injury_checker.py`, injury/withdrawal detection + severity estimation (`data/injury_flags.json`)
 - `src/h2h_calculator.py` / `data/h2h/h2h_rates.csv`, head-to-head win rates, a trained feature
 - `tests/`, unit tests, `python -m pytest`
-- `src/build_static_api.py`, writes every snapshot-able API response to `track-insights-main/public/data/*.json` (~414 files, ~5.5 MB -- 8 payloads including the search index, 32 discipline reports, 137 country pages and ~237 athlete profiles) via Flask's test client, so the files are byte-identical to what the live API would return. **Re-run after every data refresh** or the deployed site serves stale numbers with nothing visibly broken. Paired with `track-insights-main/src/lib/api.ts`, which tries the CDN copy first and falls back to the live API
+- `src/build_static_api.py`, writes every snapshot-able API response to `track-insights-main/public/data/*.json` (~1,670 files, ~19 MB -- 9 payloads including the search index, 32 discipline reports, 137 country pages, ~233 athlete profiles and ~1,254 athlete-status pages at --profile-depth 50). It PRUNES what it no longer produces, so a withdrawn athlete's old profile cannot keep being served via Flask's test client, so the files are byte-identical to what the live API would return. **Re-run after every data refresh** or the deployed site serves stale numbers with nothing visibly broken. Paired with `track-insights-main/src/lib/api.ts`, which tries the CDN copy first and falls back to the live API
 - `src/components/dl/shell.tsx`, `src/lib/dl-data.ts` (track-insights-main), dashboard shell (page wrapper + `Panel`/`RankBadge`/`ProbabilityBar`/`WatchBadge` primitives, ambient background layer) + API data contract
 - `src/components/dl/topnav.tsx` (track-insights-main), the top navigation bar (centered links), replaced `sidebar.tsx` (deleted)
 - `src/routes/index.tsx` (track-insights-main), the "/" landing page; `src/routes/dashboard.tsx`, the actual dashboard (has its own hero banner), moved here from "/"
@@ -999,17 +999,44 @@ the index costs **54,008 bytes transferred / 171,794 decoded, fetched in 56ms**,
 to make here, because a cold start cannot be reproduced on demand: the argument is structural, not
 a stopwatch reading.
 
-**Clicking an athlete — STILL OPEN. The profile is static for 237 of 3,994.** Everyone else falls through to
-Render. Three options, sized today, and the choice is a trade-off rather than an obvious win:
+**Clicking an athlete — DONE 2026-09-10, and the click was worse than this note said.**
 
-| option | cost | leaves |
-|---|---|---|
-| snapshot ALL athletes | **~61 MB**, 3,994 files | nothing on the live API |
-| snapshot the top 20 per discipline + the Ultimate field (~900) | **~14 MB** | a long tail still slow |
-| keep-alive ping every ~10 min | free tier is **750 instance hours/month**, a month is 744 | nothing slow, but no headroom left at all |
+The estimate above costed storage and nothing else. The real constraint is BUILD time:
+`athlete_field_status` calls World Athletics for the season history and the headshot, so each page
+is **12.4 KB and 1.28s**, and that cost is paid again on every refresh. Measured, per depth:
 
-The middle option covers who people actually click and is the one to cost out first. The keep-alive
-is tempting and would consume essentially the entire free allowance, so it is not free in practice.
+| depth | new files | size | build | index covered |
+|---|---|---|---|---|
+| top 20 | 308 | 3.7 MB | 6.6 min | 17% |
+| **top 50 (shipped)** | **1,277** | **15.5 MB** | **27 min** | **41%** |
+| top 100 | 2,843 | 34.4 MB | 61 min | 80% |
+| all | 3,643 | 44.1 MB | 78 min | 100% |
+
+`--profile-depth` sets it and the table lives next to the default in `build_static_api.py`.
+
+**And the click cost TWO live requests, not one.** A name outside the projected field 404s on
+`/api/athlete/...` and the page then asks `/api/athlete-status/...` why — so snapshotting the status
+page alone would not have helped, because the first miss still went to a sleeping server. `apiFetch`
+falls through to the live API the moment a snapshot is missing, which is right for every other
+caller, so `staticFetch` is now split out of it: the CDN copy or null, without the API being asked.
+The athlete page checks both files first.
+
+**A live bug this turned up.** Four profiles written on 8 September were still being served —
+Omanyala, Shericka Jackson, Neeraj Chopra, Jorge A Hodelin — for athletes the injury check had since
+removed. The API 404s for all four, the status page gives the real reason, and the CDN copy was
+winning: the site showed withdrawn athletes as projected finalists. **The builder only ever wrote.**
+It prunes now, except when a pass wrote nothing, which is an API that was down rather than a field
+that emptied.
+
+**Still not snapshotted:** anyone ranked below 50 in their event. They reach Render, and `warmApi()`
+absorbs some of it. Raising the depth is one flag and a longer refresh.
+
+**A gap worth closing, NOT done:** the not-in-field page never renders `reason` / `reasonCode` /
+`injuryReason`, though `NotInField` in `athlete.$discKey.$name.tsx` says in its own docstring that it
+does. `grep` for those names over that file returns nothing — it was lost when the Ultimate pivot
+rewrote the page into the shared dossier head. So the whole `athlete_field_status` mechanism, which
+exists to answer "why isn't Lyles in the 100m?", computes the answer, ships it to the browser and
+throws it away. Key off `reasonCode`, not the English sentence, and add EN+FR together.
 
 **Verify by measuring, not by clicking.** The API is warm the moment you have touched it once, so a
 cold start cannot be reproduced on demand — leave it 15 minutes, then time the FIRST request.
@@ -1023,8 +1050,18 @@ client — the exact behaviour the user asked to be rid of.
 
 To finish it: sign up free at web3forms.com against the destination inbox, put the access key in the
 Vercel project as `VITE_WEB3FORMS_KEY`, redeploy. The key is designed to live in client code and
-only names the destination, so it is safe in a public repo; nothing else in the app needs to change.
+only names the destination, so it is safe in a public repo.
 **This needs the user — an account has to be created and only they can do that.**
+
+**Two things fixed 2026-09-10 that the key alone would NOT have.** Both would have looked like "the
+key doesn't work":
+
+- **CSP.** `vercel.json` allowed `connect-src` to our own origin and Render only, so the POST to
+  `api.web3forms.com` would have been blocked — silently, as a console error nobody sees. Added.
+- **A rejected key answers 200.** web3forms replies `{"success": false}` with an HTTP 200, and the
+  code checked `res.ok`, so a wrong key would have told the reader their message was sent while it
+  was being dropped. It reads the body now. That is the same reasoning as the mailto fallback: a
+  feedback box that silently swallows feedback is worse than no feedback box.
 
 The fallback is deliberate and should stay: with no key the form does not pretend to send. A
 feedback box that silently drops messages is worse than no feedback box.
@@ -1033,7 +1070,35 @@ Worth testing once the key is in: submit from the live site, confirm the mail ar
 `page` field rides along — most reports are about a specific page and that is the first thing you
 would ask.
 
-### C. Older items
+### C. The Ultimate results path was broken, and only a dry run could show it
+
+**Fixed 2026-09-10, the day before the meeting.** `ultimate_scraper.fetch_results()` had never been
+pointed at a competition that had actually happened — the Ultimate's results feed errors until the
+meeting runs, so "not run yet" and "parses wrongly" were indistinguishable.
+
+Pointed at the finished 2026 Diamond League Final it returned the **Belgian national women's 100m** —
+12.21, 12.39, 12.56 — where the Diamond League race was won in 11.06. Both are labelled `"Final"` in
+the same feed, the national one is listed first, and the code took the first. **Three of 32
+disciplines came back as an entirely different race.**
+
+`dl_final_results_scraper` avoids this by keeping only groups whose `rankingCategory` is `"DF"`,
+which is a Diamond League concept and no use at a championship. The discriminator that works
+anywhere is **the entry list**: the real race is the one contested by the athletes who qualified, and
+the Ultimate publishes exactly that (`qualifiedField`, 28 events). With no entry list it takes the
+fullest race rather than whichever the feed listed first. Candidates are now collected across every
+group and day BEFORE choosing, because deciding while walking is how feed order got a vote.
+
+Verified on the same finished meeting: **213 of 237 rows matched the known-good CSV before, 234
+after.** The last three were World Athletics moving a women's 800m disqualification since we scraped
+it, so `refresh_final_results.py` was re-run to take the correction. **The 60.4% headline does not
+move** — neither athlete was in the model's top three.
+
+Two things that resolve to nothing at the Ultimate, and are correct: the **two mixed relays** (a
+relay belongs to a nation, so it lives on the country pages) and **men's Hammer Throw**, which is not
+one of the 32 disciplines the model covers. That is why the frozen projection says 25 events against
+a 28-event programme.
+
+### D. Older items
 
 **Item 1 (accuracy) is ANSWERED — see the head-to-head section above. Item 2, dark mode, was
 explicitly deferred by the user on 2026-09-08 and should not be started until they say.**
