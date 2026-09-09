@@ -949,12 +949,73 @@ always), and Render plus Vercel redeploy on push.
 
 ---
 
-## NEXT STEPS (set 2026-09-08, after the ship — start here)
+## NEXT STEPS (updated 2026-09-10 — start here)
 
-Everything before this is shipped and live. These two are the open work, both asked for
-directly, and neither has been started.
+### A. Search takes 30 seconds. It is Render's cold start, AGAIN.
 
-**Item 1 is now ANSWERED — see the head-to-head section immediately above. Item 2, dark mode, was
+**Reported 2026-09-10:** searching for an athlete shows nothing for a long time, searching for a
+country is slow, and clicking through to an athlete takes about 30 seconds.
+
+**Diagnosed, not guessed, and it is the same fault the sixth-of-September session already fixed
+once.** `build_static_api.py` snapshots what it can, and its own docstring lists the two things it
+cannot:
+
+```
+  /api/search        -- depends on the query
+  /api/athlete/...   -- one response per athlete
+```
+
+So both slow paths are exactly the paths that still reach Render, and Render's free tier sleeps
+after about 15 minutes idle. Measured then: **32.7s cold against 1.3s warm.** Measured again today
+while warm: 0.95s for a search, against 0.56s for a file off Vercel. The code is not slow. The
+server is asleep, and a visitor arriving at a quiet moment pays the whole wake-up.
+
+**Two halves, and they want different fixes.**
+
+**Search — make it static, and stop asking the server at all.** `search_athletes` reads
+`data/raw/<disc>_2026.csv` and substring-matches names; `search_countries` matches
+`data/countries.json`, which is ALREADY a static file. Precomputing the athlete half as one index
+and matching in the browser removes Render from search entirely. Measured today: **4,000 rows, 167
+KB raw, 52 KB gzipped** — one fetch, cached, smaller than a photo. This is the same move that
+killed the 32.7s page load, applied to the endpoint that move could not cover.
+
+**Clicking an athlete — the profile is static for 237 of 3,994.** Everyone else falls through to
+Render. Three options, sized today, and the choice is a trade-off rather than an obvious win:
+
+| option | cost | leaves |
+|---|---|---|
+| snapshot ALL athletes | **~61 MB**, 3,994 files | nothing on the live API |
+| snapshot the top 20 per discipline + the Ultimate field (~900) | **~14 MB** | a long tail still slow |
+| keep-alive ping every ~10 min | free tier is **750 instance hours/month**, a month is 744 | nothing slow, but no headroom left at all |
+
+The middle option covers who people actually click and is the one to cost out first. The keep-alive
+is tempting and would consume essentially the entire free allowance, so it is not free in practice.
+
+**Verify by measuring, not by clicking.** The API is warm the moment you have touched it once, so a
+cold start cannot be reproduced on demand — leave it 15 minutes, then time the FIRST request.
+That is the trap that makes this look fixed when it is not.
+
+### B. The feedback form cannot send yet
+
+`FeedbackLink` is in the footer of every page and the form works, but
+**`VITE_WEB3FORMS_KEY` is not set**, so `feedback-modal.tsx` falls back to opening the reader's mail
+client — the exact behaviour the user asked to be rid of.
+
+To finish it: sign up free at web3forms.com against the destination inbox, put the access key in the
+Vercel project as `VITE_WEB3FORMS_KEY`, redeploy. The key is designed to live in client code and
+only names the destination, so it is safe in a public repo; nothing else in the app needs to change.
+**This needs the user — an account has to be created and only they can do that.**
+
+The fallback is deliberate and should stay: with no key the form does not pretend to send. A
+feedback box that silently drops messages is worse than no feedback box.
+
+Worth testing once the key is in: submit from the live site, confirm the mail arrives, and check the
+`page` field rides along — most reports are about a specific page and that is the first thing you
+would ask.
+
+### C. Older items
+
+**Item 1 (accuracy) is ANSWERED — see the head-to-head section above. Item 2, dark mode, was
 explicitly deferred by the user on 2026-09-08 and should not be started until they say.**
 
 ### 1. Improve accuracy WITHOUT thinning the field — a brainstorm, not a retrain
