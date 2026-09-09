@@ -65,6 +65,7 @@ def snapshot_paths():
     straight off the rankings, and are just as static as the rest."""
     pairs = [
         ("/api/predictions", "predictions.json"),
+        ("/api/results", "results.json"),
         ("/api/stats", "stats.json"),
         ("/api/ultimate", "ultimate.json"),
         ("/api/world-rankings", "world-rankings.json"),

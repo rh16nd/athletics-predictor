@@ -1164,6 +1164,142 @@ def build_result_comparisons(year=MEETS_YEAR, results=None, prefinal=None, topli
     return comps
 
 
+ULTIMATE_PREFINAL_PATH = os.path.join(
+    os.path.dirname(__file__), "data", "ultimate", "predictions_prefinal.json")
+
+
+def load_ultimate_results():
+    """{discipline key: [{place, name, nat, mark}]} once the Ultimate has been
+    run, {} before. Same shape load_final_results returns for the Diamond
+    League, so the comparison below is the same function for both."""
+    event = load_ultimate()
+    rows = (event or {}).get("results") or []
+    out = {}
+    for r in rows:
+        key = r.get("discipline")
+        if not key:
+            continue
+        out.setdefault(key, []).append({
+            "place": str(r.get("place") or "").strip(),
+            "name": r.get("athlete_name") or "",
+            "nat": r.get("nationality") or "",
+            "mark": r.get("mark") or "",
+        })
+    return out
+
+
+def load_ultimate_prefinal():
+    """The FROZEN pre-event projection, indexed the way _load_prefinal_index
+    indexes the Diamond League one.
+
+    There is deliberately NO fallback to the live projection here. The Diamond
+    League loader falls back so its comparison still renders without the freeze
+    guarantee; for a championship whose snapshot is taken by src/freeze_prefinal.py
+    the fallback would silently turn a missing freeze into a comparison against a
+    projection that has seen the results -- which is the one thing this whole
+    mechanism exists to prevent. No snapshot, no comparison."""
+    try:
+        with open(ULTIMATE_PREFINAL_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return {}, None
+    idx = {}
+    for event in data.get("projections") or []:
+        key = event.get("discKey")
+        if not key:
+            continue
+        for a in event.get("athletes") or []:
+            idx.setdefault(key, {})[normalize_athlete_name(a.get("name"))] = {
+                "rank": a.get("rank"),
+                "prob": int(round(float(a.get("podiumChance") or 0))),
+                "name": a.get("name"),
+                # The projection carries no profile URL, so the comparison
+                # resolves one from the toplist and falls back to a WA search.
+                "waUrl": None,
+            }
+    return idx, data.get("frozenAt")
+
+
+def build_championships():
+    """Every championship the site has both a FROZEN projection and results for.
+
+    One entry per meeting rather than one page per meeting: the Results page is
+    the model's track record, and a record is a list. A championship with a
+    snapshot but no results yet is still listed, marked pending, because "we
+    called it and it has not run" is a true and useful state -- it is also the
+    only way a reader can see that the call was made beforehand rather than
+    assembled afterwards.
+
+    Ordered oldest first, so the newest championship is the one at the bottom
+    of the page and the one that grows."""
+    out = []
+
+    dl_events = []
+    comps = build_result_comparisons()
+    if comps:
+        track, field = load_predictions()
+        for disc in (track or []) + (field or []):
+            if disc.get("result"):
+                dl_events.append({
+                    "id": disc["id"], "label": disc["label"], "result": disc["result"],
+                })
+    if dl_events:
+        out.append({
+            "id": "dl-final-2026",
+            "labelKey": "results.meet.dlFinal",
+            "venue": "Brussels",
+            "date": "2026-09-04",
+            "status": "complete",
+            "frozenAt": None,
+            "calledEvents": len(dl_events),
+            "events": dl_events,
+        })
+
+    ult_prefinal, frozen_at = load_ultimate_prefinal()
+    if ult_prefinal:
+        ult_results = load_ultimate_results()
+        events = []
+        if ult_results:
+            ult_comps = build_result_comparisons(
+                results=ult_results, prefinal=ult_prefinal)
+            labels = {e.get("discKey"): e.get("disciplineLabel")
+                      for e in ((load_ultimate_predictions() or {}).get("projections") or [])}
+            for key, comp in ult_comps.items():
+                events.append({
+                    "id": key,
+                    "label": labels.get(key) or DISC_LABELS.get(key, key),
+                    "result": comp,
+                })
+            events.sort(key=lambda e: e["label"])
+        out.append({
+            "id": "ultimate-2026",
+            "labelKey": "results.meet.ultimate",
+            "venue": "Budapest",
+            "date": "2026-09-11",
+            "status": "complete" if events else "pending",
+            "frozenAt": frozen_at,
+            # How many events the model CALLED, which is the only count that
+            # means anything before the meeting is run -- `events` holds
+            # comparisons and is empty until there are results to compare to.
+            "calledEvents": len(ult_prefinal),
+            "events": events,
+        })
+
+    return out
+
+
+@app.route("/api/results")
+def results_history():
+    """The model's track record: every championship it called in advance."""
+    champs = build_championships()
+    return jsonify({
+        "championships": champs,
+        # Repeated here so the page can put the claim beside the record without
+        # a second request. See the Results page for why that pairing matters.
+        "modelAccuracy": get_model_accuracy(),
+    })
+
+
 def load_predictions():
     """Load predictions_latest.csv and build discipline data."""
     path = os.path.join(OUTPUTS_DIR, "predictions_latest.csv")
