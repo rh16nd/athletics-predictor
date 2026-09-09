@@ -993,6 +993,12 @@ fire-and-forget `/api/health` wake-up, which failed harmlessly. Same for `bol`, 
 `duplantis`, `nunez` (no match, accents unchanged) and `zzzz`. Clicking a result still routes to
 the profile.
 
+**LIVE 2026-09-10** (`a7171946` / `81165f6`, both pushed to `main`). Measured on the deployed site:
+the index costs **54,008 bytes transferred / 171,794 decoded, fetched in 56ms**, and a search makes
+**zero requests to Render** — not a faster request, no request. That last part is the honest claim
+to make here, because a cold start cannot be reproduced on demand: the argument is structural, not
+a stopwatch reading.
+
 **Clicking an athlete — STILL OPEN. The profile is static for 237 of 3,994.** Everyone else falls through to
 Render. Three options, sized today, and the choice is a trade-off rather than an obvious win:
 
