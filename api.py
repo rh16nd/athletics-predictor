@@ -1960,15 +1960,25 @@ def build_news(limit=20):
     return items[:limit]
 
 
-def search_athletes(query, limit=25):
-    """Every athlete in this season's worldwide toplists, not just the ~230
-    in the projected field -- so "why isn't Lyles in the 100m?" is an
-    answerable question rather than a silent absence."""
-    q = (query or "").strip().lower()
-    if len(q) < 2:
-        return []
-    results = []
-    for disc_key, label in DISC_LABELS.items():
+def build_search_index():
+    """The searchable set, flattened once: every athlete in this season's
+    worldwide toplists, with the discipline each appears in.
+
+    This exists to be SNAPSHOTTED. /api/search cannot be, because its response
+    depends on the query -- and it is one of only two paths left on Render's
+    free tier, where the first request after an idle spell pays a ~32s
+    container start (see src/build_static_api.py). The index does not depend on
+    the query, so the browser can fetch it once from the CDN and do the
+    matching itself, with no server in the path at all. Measured 2026-09-10:
+    ~4,000 rows, 167 KB raw, 52 KB over the wire.
+
+    Rows are arrays rather than objects because the field names would otherwise
+    be repeated four thousand times; `columns` says what they are. Order is
+    load order (DISC_LABELS, then each toplist's own), which the sort in
+    search_athletes relies on being stable to break ties the same way here and
+    in the browser."""
+    rows = []
+    for disc_key in DISC_LABELS:
         path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}.csv")
         if not os.path.exists(path):
             continue
@@ -1976,17 +1986,45 @@ def search_athletes(query, limit=25):
             df = pd.read_csv(path, usecols=["Competitor", "Mark", "Rank"])
         except Exception:
             continue
-        names = df["Competitor"].astype(str)
-        hits = df[names.str.lower().str.contains(q, regex=False, na=False)]
-        for _, r in hits.iterrows():
+        for _, r in df.iterrows():
             rank = r.get("Rank")
-            results.append({
-                "name": str(r["Competitor"]),
-                "disc": label,
-                "discKey": disc_key,
-                "mark": str(r["Mark"]) if pd.notna(r.get("Mark")) else None,
-                "worldRank": int(rank) if pd.notna(rank) else None,
-            })
+            rows.append([
+                str(r["Competitor"]),
+                disc_key,
+                str(r["Mark"]) if pd.notna(r.get("Mark")) else None,
+                int(rank) if pd.notna(rank) else None,
+            ])
+    return {
+        "columns": ["name", "discKey", "mark", "worldRank"],
+        "disciplines": dict(DISC_LABELS),
+        "athletes": rows,
+    }
+
+
+def search_athletes(query, limit=25, index=None):
+    """Every athlete in this season's worldwide toplists, not just the ~230
+    in the projected field -- so "why isn't Lyles in the 100m?" is an
+    answerable question rather than a silent absence.
+
+    Matching lives here and in the frontend's searchIndex (src/lib/search.ts),
+    which runs the same rules against the same index file. The two must agree,
+    so keep this deliberately plain: a lowercase substring, nothing clever."""
+    q = (query or "").strip().lower()
+    if len(q) < 2:
+        return []
+    idx = index if index is not None else build_search_index()
+    labels = idx["disciplines"]
+    results = [
+        {
+            "name": name,
+            "disc": labels.get(disc_key, disc_key),
+            "discKey": disc_key,
+            "mark": mark,
+            "worldRank": rank,
+        }
+        for name, disc_key, mark, rank in idx["athletes"]
+        if q in name.lower()
+    ]
     # Best world rank first: the athlete someone is looking for is usually
     # the highest-ranked match, and a name can appear in several disciplines.
     results.sort(key=lambda x: (x["worldRank"] is None, x["worldRank"] or 9999))
@@ -3454,6 +3492,15 @@ def search():
     # Countries come back alongside rather than mixed in: they are a different
     # kind of result, and the UI shows them as their own row above the athletes.
     return jsonify({"results": search_athletes(q), "countries": search_countries(q)})
+
+
+@app.route("/api/search-index")
+def search_index():
+    """The whole searchable set in one response, for the frontend to match
+    against locally. This is what makes search survive a sleeping server: the
+    file is a snapshot, so it comes off the CDN, and /api/search is left as a
+    fallback rather than the thing every keystroke waits on."""
+    return jsonify(build_search_index())
 
 
 @app.route("/api/athlete-status/<disc_key>/<path:athlete_name>")

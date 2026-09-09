@@ -18,7 +18,10 @@ are then byte-identical to what the live API returns, and cannot drift from the
 route logic the way a re-implementation would.
 
 NOT snapshotted (genuinely dynamic, still served by Render):
-  /api/search        -- depends on the query
+  /api/search        -- depends on the query. Its *input* does not, though:
+                        /api/search-index is snapshotted below and the browser
+                        matches against it, so nothing waits on Render for a
+                        search. The route stays as a fallback.
   /api/athlete/...   -- one response per athlete, resolved photos and all
 
 Usage:
@@ -72,6 +75,7 @@ def snapshot_paths():
         ("/api/news", "news.json"),
         ("/api/qualification", "qualification.json"),
         ("/api/countries", "countries.json"),
+        ("/api/search-index", "search-index.json"),
     ]
     for key in api.DISC_LABELS:
         pairs.append((f"/api/discipline/{key}", f"discipline/{key}.json"))

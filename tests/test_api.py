@@ -402,6 +402,76 @@ def test_search_needs_at_least_two_characters():
     assert api.search_athletes("a") == []
 
 
+# --- The search index, and the browser that matches against it (2026-09-10) -
+# Search was the last thing on the site still waiting for Render's free tier to
+# wake up (~32s cold). It cannot be snapshotted -- the response depends on the
+# query -- but its INPUT can, so /api/search-index publishes the whole set and
+# the frontend matches locally (track-insights-main/src/lib/search.ts). These
+# pin the two halves of that: the index is written, and matching against it
+# gives what searching the API gave.
+
+def _index(*rows):
+    """An index of (name, discKey, mark, worldRank) rows, as build_search_index
+    lays them out."""
+    return {
+        "columns": ["name", "discKey", "mark", "worldRank"],
+        "disciplines": {"men_100m": "Men's 100m", "men_200m": "Men's 200m"},
+        "athletes": [list(r) for r in rows],
+    }
+
+
+def test_search_matches_a_lowercase_substring_anywhere_in_the_name():
+    idx = _index(("Noah LYLES", "men_100m", "9.79", 1))
+    assert [h["name"] for h in api.search_athletes("lyl", index=idx)] == ["Noah LYLES"]
+    assert [h["name"] for h in api.search_athletes("NOAH", index=idx)] == ["Noah LYLES"]
+    assert api.search_athletes("seville", index=idx) == []
+
+
+def test_search_puts_the_best_world_rank_first_and_the_unranked_last():
+    """A name can appear in several disciplines, and the athlete someone means
+    is usually the highest-ranked of them."""
+    idx = _index(
+        ("Unranked GUY", "men_100m", "10.9", None),
+        ("Fourth GUY", "men_100m", "9.99", 4),
+        ("Second GUY", "men_200m", "19.6", 2),
+    )
+    assert [h["worldRank"] for h in api.search_athletes("guy", index=idx)] == [2, 4, None]
+
+
+def test_search_labels_a_hit_with_its_discipline_name():
+    idx = _index(("Noah LYLES", "men_200m", "19.31", 1))
+    hit = api.search_athletes("lyles", index=idx)[0]
+    assert hit["discKey"] == "men_200m"
+    assert hit["disc"] == "Men's 200m"
+
+
+def test_search_returns_at_most_the_limit():
+    idx = _index(*[(f"Runner {i}", "men_100m", "10.0", i) for i in range(40)])
+    assert len(api.search_athletes("runner", index=idx)) == 25
+
+
+def test_the_search_index_is_json_safe_and_shaped_as_declared():
+    """A missing mark must be null, not the string "nan" -- this file is parsed
+    by a browser, so a pandas NaN leaking through would be rendered."""
+    idx = api.build_search_index()
+    assert idx["columns"] == ["name", "discKey", "mark", "worldRank"]
+    assert idx["athletes"], "no toplists on disk to index"
+    for name, disc_key, mark, rank in idx["athletes"]:
+        assert isinstance(name, str) and name
+        assert disc_key in idx["disciplines"]
+        assert mark is None or (isinstance(mark, str) and mark.lower() != "nan")
+        assert rank is None or isinstance(rank, int)
+
+
+def test_the_search_index_is_one_of_the_files_the_snapshot_builder_writes():
+    """Without this line in snapshot_paths(), everything above still passes and
+    the deployed site quietly falls back to the sleeping server for every
+    search -- the exact failure this whole change exists to remove."""
+    import build_static_api
+
+    assert ("/api/search-index", "search-index.json") in build_static_api.snapshot_paths()
+
+
 # --- Near-miss athletes must never contaminate the predictions ------------
 # run.py now exports athletes beyond the confirmed DL field with
 # dl_qualified = False so the site can show "who'd be a threat if they got

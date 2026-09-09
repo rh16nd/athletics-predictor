@@ -347,7 +347,7 @@ User asked to work on the Projections page specifically, wanting it "unique and 
 - `src/injury_checker.py`, injury/withdrawal detection + severity estimation (`data/injury_flags.json`)
 - `src/h2h_calculator.py` / `data/h2h/h2h_rates.csv`, head-to-head win rates, a trained feature
 - `tests/`, unit tests, `python -m pytest`
-- `src/build_static_api.py`, writes every snapshot-able API response to `track-insights-main/public/data/*.json` (~413 files, ~5.3 MB -- 7 payloads, 32 discipline reports, 137 country pages and ~237 athlete profiles) via Flask's test client, so the files are byte-identical to what the live API would return. **Re-run after every data refresh** or the deployed site serves stale numbers with nothing visibly broken. Paired with `track-insights-main/src/lib/api.ts`, which tries the CDN copy first and falls back to the live API
+- `src/build_static_api.py`, writes every snapshot-able API response to `track-insights-main/public/data/*.json` (~414 files, ~5.5 MB -- 8 payloads including the search index, 32 discipline reports, 137 country pages and ~237 athlete profiles) via Flask's test client, so the files are byte-identical to what the live API would return. **Re-run after every data refresh** or the deployed site serves stale numbers with nothing visibly broken. Paired with `track-insights-main/src/lib/api.ts`, which tries the CDN copy first and falls back to the live API
 - `src/components/dl/shell.tsx`, `src/lib/dl-data.ts` (track-insights-main), dashboard shell (page wrapper + `Panel`/`RankBadge`/`ProbabilityBar`/`WatchBadge` primitives, ambient background layer) + API data contract
 - `src/components/dl/topnav.tsx` (track-insights-main), the top navigation bar (centered links), replaced `sidebar.tsx` (deleted)
 - `src/routes/index.tsx` (track-insights-main), the "/" landing page; `src/routes/dashboard.tsx`, the actual dashboard (has its own hero banner), moved here from "/"
@@ -951,10 +951,11 @@ always), and Render plus Vercel redeploy on push.
 
 ## NEXT STEPS (updated 2026-09-10 — start here)
 
-### A. Search takes 30 seconds. It is Render's cold start, AGAIN.
+### A. Search takes 30 seconds. It is Render's cold start, AGAIN. (Search half FIXED 2026-09-10)
 
 **Reported 2026-09-10:** searching for an athlete shows nothing for a long time, searching for a
-country is slow, and clicking through to an athlete takes about 30 seconds.
+country is slow, and clicking through to an athlete takes about 30 seconds. **The first two are
+fixed; the third is not.**
 
 **Diagnosed, not guessed, and it is the same fault the sixth-of-September session already fixed
 once.** `build_static_api.py` snapshots what it can, and its own docstring lists the two things it
@@ -972,14 +973,27 @@ server is asleep, and a visitor arriving at a quiet moment pays the whole wake-u
 
 **Two halves, and they want different fixes.**
 
-**Search — make it static, and stop asking the server at all.** `search_athletes` reads
-`data/raw/<disc>_2026.csv` and substring-matches names; `search_countries` matches
-`data/countries.json`, which is ALREADY a static file. Precomputing the athlete half as one index
-and matching in the browser removes Render from search entirely. Measured today: **4,000 rows, 167
-KB raw, 52 KB gzipped** — one fetch, cached, smaller than a photo. This is the same move that
-killed the 32.7s page load, applied to the endpoint that move could not cover.
+**Search — DONE 2026-09-10. It no longer touches the server.** The response depends on the query;
+the input to it does not. So `build_search_index()` publishes the whole searchable set as one more
+snapshot (`/api/search-index` → `public/data/search-index.json`, **4,000 rows, 168 KB raw, 52 KB
+gzipped**) and `track-insights-main/src/lib/search.ts` does the matching in the browser. It is
+fetched once, lazily, the moment the search box takes focus, so it arrives under the first two
+characters rather than after them. `/api/search` stays as a fallback for a deploy with no snapshot.
 
-**Clicking an athlete — the profile is static for 237 of 3,994.** Everyone else falls through to
+Country search needed no new file at all: `search_countries` matches `data/countries.json`, and
+`/api/countries` was already a snapshot carrying every field it uses, `topScore` included.
+
+The matching rules now exist twice, in `api.py` and in `search.ts`, which is why both sides are
+deliberately dumb — a lowercase substring and a three-way rank, nothing that could drift.
+`search_athletes` was rewritten to filter the same index, so the live route and the browser cannot
+disagree about what a query means. **Verified**, with `api.py` NOT running: typing `jam` in the
+dev server returned Jamaica plus 25 athletes in the exact order and with the exact marks the
+Python side returns for the same query, and the only request to `localhost:5000` was the
+fire-and-forget `/api/health` wake-up, which failed harmlessly. Same for `bol`, `kerr`,
+`duplantis`, `nunez` (no match, accents unchanged) and `zzzz`. Clicking a result still routes to
+the profile.
+
+**Clicking an athlete — STILL OPEN. The profile is static for 237 of 3,994.** Everyone else falls through to
 Render. Three options, sized today, and the choice is a trade-off rather than an obvious win:
 
 | option | cost | leaves |
