@@ -102,7 +102,7 @@ def test_write_snapshots_names_files_by_the_frontend_s_slug(tmp_path):
     client = _Client(per_path={
         "/api/athlete-status/men_100m/Yeral%20NU%C3%91EZ": _Res({"name": "Yeral NUÑEZ"}),
     })
-    written, skipped, total = b.write_snapshots(
+    written, skipped, total, _kept = b.write_snapshots(
         client, str(tmp_path), "athlete-status", [("men_100m", "Yeral NUÑEZ")], "status",
     )
     dest = tmp_path / "athlete-status" / "men_100m" / "yeral-nunez.json"
@@ -118,7 +118,7 @@ def test_write_snapshots_writes_neither_side_of_a_slug_collision(tmp_path):
         "/api/athlete-status/men_100m/Jose%20GOMEZ": _Res({"name": "Jose GOMEZ"}),
         "/api/athlete-status/men_100m/Jos%C3%A9%20G%C3%B3mez": _Res({"name": "José Gómez"}),
     })
-    written, skipped, _total = b.write_snapshots(
+    written, skipped, _total, _kept = b.write_snapshots(
         client, str(tmp_path), "athlete-status",
         [("men_100m", "Jose GOMEZ"), ("men_100m", "José Gómez")], "status",
     )
@@ -130,8 +130,53 @@ def test_write_snapshots_skips_a_non_200_rather_than_freezing_an_error(tmp_path)
     """A 404 written to disk would be served as the athlete's page forever.
     Absent, the frontend falls through to the live API and can recover."""
     client = _Client()
-    written, skipped, _total = b.write_snapshots(
+    written, skipped, _total, _kept = b.write_snapshots(
         client, str(tmp_path), "athlete-status", [("men_100m", "Nobody HERE")], "status",
     )
     assert (written, skipped) == (0, 1)
     assert not os.path.exists(tmp_path / "athlete-status")
+
+
+# --- Pruning what the build stopped producing (2026-09-10) ----------------
+# Found live, not in review: four profiles written on 8 September were still
+# being served for athletes the injury check had since removed from the field.
+# The API answered 404 for all four, but the CDN copy is tried first and won,
+# so the site showed withdrawn athletes as projected finalists and never
+# showed the withdrawal.
+
+def _existing(tmp_path, subdir, key, slug):
+    p = tmp_path / subdir / key
+    p.mkdir(parents=True, exist_ok=True)
+    f = p / f"{slug}.json"
+    f.write_text('{"stale": true}', encoding="utf-8")
+    return f
+
+
+def test_prune_removes_a_snapshot_the_build_no_longer_writes(tmp_path):
+    gone = _existing(tmp_path, "athlete", "men_100m", "ferdinand-omanyala")
+    keeper = _existing(tmp_path, "athlete", "men_100m", "still-here")
+    removed = b.prune_stale(str(tmp_path), "athlete", {os.path.normpath(str(keeper))})
+    assert removed == 1
+    assert not gone.exists()
+    assert keeper.exists()
+
+
+def test_prune_does_nothing_when_the_build_wrote_nothing(tmp_path):
+    """An empty result set is an API that was down, not a field that emptied.
+    Pruning on it would delete every good file on the CDN."""
+    survivor = _existing(tmp_path, "athlete", "men_100m", "someone")
+    assert b.prune_stale(str(tmp_path), "athlete", set()) == 0
+    assert survivor.exists()
+
+
+def test_prune_leaves_files_that_are_not_snapshots(tmp_path):
+    _existing(tmp_path, "athlete", "men_100m", "kept")
+    other = tmp_path / "athlete" / "men_100m" / "README.txt"
+    other.write_text("not a snapshot", encoding="utf-8")
+    kept = {os.path.normpath(str(tmp_path / "athlete" / "men_100m" / "kept.json"))}
+    assert b.prune_stale(str(tmp_path), "athlete", kept) == 0
+    assert other.exists()
+
+
+def test_prune_is_a_no_op_before_the_directory_exists(tmp_path):
+    assert b.prune_stale(str(tmp_path), "athlete-status", {"anything"}) == 0

@@ -171,15 +171,48 @@ def status_pairs(client, depth, already):
     return pairs
 
 
+def prune_stale(out_dir, subdir, kept):
+    """Delete per-athlete snapshots this build no longer produces.
+
+    Found 2026-09-10, live on the site: four profiles written on 8 September
+    were still being served -- Ferdinand Omanyala, Shericka Jackson, Neeraj
+    Chopra, Jorge A Hodelin -- for athletes the injury check had since removed
+    from the projected field. The API answered 404 for all four and the status
+    page gave the real reason, but the CDN copy is tried first and won, so the
+    site presented withdrawn athletes as projected finalists and never showed
+    the withdrawal at all. A snapshot directory has to mirror the build, not
+    accumulate across builds.
+
+    `kept` empty means the pass wrote nothing -- an API that was down, not a
+    field that emptied -- and pruning then would delete every good file we
+    have. So it does nothing instead."""
+    root = os.path.join(out_dir, subdir)
+    if not kept or not os.path.isdir(root):
+        return 0
+    removed = 0
+    for dirpath, _dirs, files in os.walk(root):
+        for fn in files:
+            if not fn.endswith(".json"):
+                continue
+            path = os.path.join(dirpath, fn)
+            if os.path.normpath(path) in kept:
+                continue
+            print(f"  PRUNE {subdir}/{os.path.basename(dirpath)}/{fn} -> no longer produced")
+            os.remove(path)
+            removed += 1
+    return removed
+
+
 def write_snapshots(client, out_dir, subdir, pairs, label, quote_name=True):
     """Write one file per (discipline, athlete), named by the same slug the
-    frontend computes. Returns (written, skipped, bytes).
+    frontend computes. Returns (written, skipped, bytes, paths written).
 
     Two athletes in one discipline whose names fold to the same slug would
     serve one of them the other's page, so neither is written and both fall
     back to the live API -- correct by construction rather than by luck."""
     written = skipped = total = 0
     taken = {}
+    kept = set()
     for i, (key, name) in enumerate(pairs, 1):
         slug = athlete_slug(name)
         if not slug:
@@ -205,15 +238,17 @@ def write_snapshots(client, out_dir, subdir, pairs, label, quote_name=True):
             f.write(payload)
         total += len(payload.encode("utf-8"))
         written += 1
+        kept.add(os.path.normpath(dest))
         if i % 50 == 0:
             print(f"    ...{i}/{len(pairs)} {label}")
-    return written, skipped, total
+    return written, skipped, total, kept
 
 def build(out_dir, depth=DEFAULT_PROFILE_DEPTH):
     client = api.app.test_client()
     profiles = [0]
     countries = [0]
     statuses = [0]
+    pruned = [0]
     total = 0
     written = skipped = 0
     for path, name in snapshot_paths():
@@ -258,23 +293,28 @@ def build(out_dir, depth=DEFAULT_PROFILE_DEPTH):
     # call from every profile view, since load_athlete_photo() resolves the
     # headshot on each request.
     pairs = athlete_pairs(client)
-    w, s, t = write_snapshots(client, out_dir, "athlete", pairs, "profiles")
+    w, s, t, kept = write_snapshots(client, out_dir, "athlete", pairs, "profiles")
     written, skipped, total = written + w, skipped + s, total + t
     profiles[0] = w
+    pruned[0] += prune_stale(out_dir, "athlete", kept)
 
     # The other 3,700. Search reaches every ranked athlete, but only the
     # projected finalists above have a profile -- everyone else 404s there and
     # the page asks /api/athlete-status why they are not in the field. That
     # follow-up was the last click on the site that could still wait out
     # Render's cold start, so it is snapshotted too, down to `depth`.
-    w, s, t = write_snapshots(
+    w, s, t, kept = write_snapshots(
         client, out_dir, "athlete-status",
         status_pairs(client, depth, set(pairs)), "status pages",
     )
     written, skipped, total = written + w, skipped + s, total + t
     statuses[0] = w
+    # Lowering --profile-depth prunes here too, which is correct even though it
+    # throws away a deeper run's work: what is on the CDN should be what this
+    # build produced, not the high-water mark of every build there has ever been.
+    pruned[0] += prune_stale(out_dir, "athlete-status", kept)
 
-    return written, skipped, total, profiles[0], countries[0], statuses[0]
+    return written, skipped, total, profiles[0], countries[0], statuses[0], pruned[0]
 
 
 if __name__ == "__main__":
