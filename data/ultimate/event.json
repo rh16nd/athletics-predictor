@@ -14,7 +14,7 @@
   "fieldFieldSize": 8,
   "sessions": 3,
   "fieldPublished": true,
-  "resultsAvailable": false,
+  "resultsAvailable": true,
   "dlFinalQualifiers": [
     {
       "discipline": "men_100m",
@@ -1778,8 +1778,8 @@
       "sexName": "Mixed",
       "phaseDateAndTime": "2026-09-11T19:08:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "4x100 Metres Relay",
         "isTrack": true,
@@ -1791,8 +1791,8 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-11T19:13:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "High Jump",
         "isTrack": false,
@@ -1804,8 +1804,8 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-11T19:19:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "400 Metres",
         "isTrack": true,
@@ -1817,8 +1817,8 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-11T19:23:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "Hammer Throw",
         "isTrack": false,
@@ -1830,8 +1830,8 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-11T19:38:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "400 Metres",
         "isTrack": true,
@@ -1843,8 +1843,8 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-11T20:04:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "100 Metres Hurdles",
         "isTrack": true,
@@ -1856,8 +1856,8 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-11T20:08:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "Pole Vault",
         "isTrack": false,
@@ -1869,8 +1869,8 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-11T20:21:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "110 Metres Hurdles",
         "isTrack": true,
@@ -1882,8 +1882,8 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-11T20:36:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "5000 Metres",
         "isTrack": true,
@@ -1895,8 +1895,8 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-11T20:53:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "Long Jump",
         "isTrack": false,
@@ -1908,8 +1908,8 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-11T20:57:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "800 Metres",
         "isTrack": true,
@@ -1921,8 +1921,8 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-11T21:20:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "100 Metres Hurdles",
         "isTrack": true,
@@ -1934,8 +1934,8 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-11T21:49:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "110 Metres Hurdles",
         "isTrack": true,
@@ -1947,7 +1947,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-12T18:08:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "400 Metres",
@@ -1960,7 +1960,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-12T18:13:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "Javelin Throw",
@@ -1973,7 +1973,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-12T18:18:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "400 Metres",
@@ -1986,7 +1986,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-12T18:26:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "800 Metres",
@@ -1999,7 +1999,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-12T18:43:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "Pole Vault",
@@ -2012,7 +2012,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-12T18:46:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "400 Metres Hurdles",
@@ -2025,7 +2025,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-12T19:04:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "100 Metres",
@@ -2038,7 +2038,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-12T19:21:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "100 Metres",
@@ -2051,7 +2051,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-12T19:36:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "1500 Metres",
@@ -2064,7 +2064,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-12T19:44:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "Long Jump",
@@ -2077,7 +2077,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-12T19:57:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "400 Metres Hurdles",
@@ -2090,7 +2090,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-12T20:18:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "800 Metres",
@@ -2142,7 +2142,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-13T18:13:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "Javelin Throw",
@@ -2155,7 +2155,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-13T18:18:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "200 Metres",
@@ -2181,7 +2181,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-13T18:44:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "200 Metres",
@@ -2194,7 +2194,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-13T19:04:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "High Jump",
@@ -2207,7 +2207,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-13T19:10:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "5000 Metres",
@@ -2220,7 +2220,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-13T19:34:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "Triple Jump",
@@ -2246,7 +2246,7 @@
       "sexName": "Mixed",
       "phaseDateAndTime": "2026-09-13T19:53:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "4x400 Metres Relay",
@@ -2259,7 +2259,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-13T20:12:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "1500 Metres",
@@ -5301,5 +5301,370 @@
       ]
     }
   ],
-  "results": []
+  "results": [
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Jakob INGEBRIGTSEN",
+      "place": "1",
+      "mark": "12:59.24",
+      "nationality": "NOR"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Cole HOCKER",
+      "place": "2",
+      "mark": "13:00.05",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Parker WOLFE",
+      "place": "3",
+      "mark": "13:00.13",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Biniam MEHARY",
+      "place": "4",
+      "mark": "13:00.24",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Nico YOUNG",
+      "place": "5",
+      "mark": "13:00.26",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Grant FISHER",
+      "place": "6",
+      "mark": "13:00.34",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Graham BLANKS",
+      "place": "7",
+      "mark": "13:00.40",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Egide NTAKARUTIMANA",
+      "place": "8",
+      "mark": "13:01.91",
+      "nationality": "BDI"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Ky ROBINSON",
+      "place": "9",
+      "mark": "13:04.09",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Jacob KROP",
+      "place": "10",
+      "mark": "13:06.62",
+      "nationality": "KEN"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Cornelius KEMBOI",
+      "place": "11",
+      "mark": "13:07.68",
+      "nationality": "KEN"
+    },
+    {
+      "discipline": "men_5000m",
+      "athlete_name": "Addisu YIHUNE",
+      "place": "",
+      "mark": "DNF",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Ja'Kobe THARP",
+      "place": "1",
+      "mark": "12.94",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Cordell TINCH",
+      "place": "2",
+      "mark": "12.95",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Bradley FRANKLIN",
+      "place": "3",
+      "mark": "13.01",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Trey CUNNINGHAM",
+      "place": "4",
+      "mark": "13.08",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Tatsuki ABE",
+      "place": "5",
+      "mark": "13.24",
+      "nationality": "JPN"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Rachid MURATAKE",
+      "place": "6",
+      "mark": "13.71",
+      "nationality": "JPN"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Jason JOSEPH",
+      "place": "",
+      "mark": "DQ",
+      "nationality": "SUI"
+    },
+    {
+      "discipline": "men_110h",
+      "athlete_name": "Jamal BRITT",
+      "place": "",
+      "mark": "DQ",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Armand DUPLANTIS",
+      "place": "1",
+      "mark": "6.20",
+      "nationality": "SWE"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Emmanouil KARALIS",
+      "place": "2",
+      "mark": "6.15",
+      "nationality": "GRE"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Sondre GUTTORMSEN",
+      "place": "3",
+      "mark": "5.95",
+      "nationality": "NOR"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Kurtis MARSCHALL",
+      "place": "4",
+      "mark": "5.95",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Zachery BRADFORD",
+      "place": "5",
+      "mark": "5.95",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Baptiste THIERY",
+      "place": "6",
+      "mark": "5.80",
+      "nationality": "FRA"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Sam KENDRICKS",
+      "place": "6",
+      "mark": "5.80",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_PV",
+      "athlete_name": "Christopher NILSEN",
+      "place": "8",
+      "mark": "5.80",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Masai RUSSELL",
+      "place": "1",
+      "mark": "12.22",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Tobi AMUSAN",
+      "place": "2",
+      "mark": "12.34",
+      "nationality": "NGR"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Nadine VISSER",
+      "place": "3",
+      "mark": "12.39",
+      "nationality": "NED"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Devynne CHARLTON",
+      "place": "4",
+      "mark": "12.40",
+      "nationality": "BAH"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Megan SIMMONDS",
+      "place": "5",
+      "mark": "12.42",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Alaysha JOHNSON",
+      "place": "6",
+      "mark": "12.46",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Pia SKRZYSZOWSKA",
+      "place": "7",
+      "mark": "12.52",
+      "nationality": "POL"
+    },
+    {
+      "discipline": "women_100h",
+      "athlete_name": "Alia ARMSTRONG",
+      "place": "8",
+      "mark": "12.77",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Yaroslava MAHUCHIKH",
+      "place": "1",
+      "mark": "1.99",
+      "nationality": "UKR"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Nicola OLYSLAGERS",
+      "place": "2",
+      "mark": "1.95",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Eleanor PATTERSON",
+      "place": "3",
+      "mark": "1.91",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Angelina TOPIĆ",
+      "place": "3",
+      "mark": "1.91",
+      "nationality": "SRB"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Iryna GERASHCHENKO",
+      "place": "5",
+      "mark": "1.91",
+      "nationality": "UKR"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Lamara DISTIN",
+      "place": "6",
+      "mark": "1.86",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Maria ŻODZIK",
+      "place": "6",
+      "mark": "1.86",
+      "nationality": "POL"
+    },
+    {
+      "discipline": "women_HJ",
+      "athlete_name": "Yuliia LEVCHENKO",
+      "place": "6",
+      "mark": "1.86",
+      "nationality": "UKR"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Larissa IAPICHINO",
+      "place": "1",
+      "mark": "6.90",
+      "nationality": "ITA"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Jazmin SAWYERS",
+      "place": "2",
+      "mark": "6.78",
+      "nationality": "GBR"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Alyssa JONES",
+      "place": "3",
+      "mark": "6.77",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Hilary KPATCHA",
+      "place": "4",
+      "mark": "6.73",
+      "nationality": "FRA"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Claire BRYANT",
+      "place": "5",
+      "mark": "6.52",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Agate DE SOUSA",
+      "place": "6",
+      "mark": "6.47",
+      "nationality": "POR"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Monae' NICHOLS",
+      "place": "7",
+      "mark": "6.39",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_LJ",
+      "athlete_name": "Marthe KOALA",
+      "place": "8",
+      "mark": "6.21",
+      "nationality": "BUR"
+    }
+  ]
 }

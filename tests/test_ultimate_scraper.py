@@ -290,3 +290,22 @@ def test_with_no_entry_list_the_fuller_race_wins():
     thin = _race("Final", "One PERSON")
     full = _race("Final", "One PERSON", "Two PERSON", "Three PERSON")
     assert us.pick_final([thin, full], set()) is full
+
+
+def test_a_build_that_lost_published_data_is_not_saved():
+    """The September 2026 host change in miniature: every fetch failed, each one
+    returned empty as if nothing were published, and the build was about to be
+    saved over a file that had the whole timetable, field and relays."""
+    saved = {"timetable": [{"phaseName": "Final"}], "qualifiedField": [{"discKey": "men_PV"}],
+             "relays": [{"teams": []}]}
+    broken = {"timetable": [], "qualifiedField": [], "relays": [], "results": []}
+    assert us.lost_data(broken, saved) == "timetable, qualifiedField, relays"
+    assert us.lost_data(saved, saved) is None
+
+
+def test_a_first_build_before_anything_is_published_still_saves():
+    """Empty is a true answer before the meeting publishes, so a build with no
+    saved file to compare against, or one that was empty too, is kept."""
+    empty = {"timetable": [], "qualifiedField": [], "relays": []}
+    assert us.lost_data(empty, None) is None
+    assert us.lost_data(empty, empty) is None

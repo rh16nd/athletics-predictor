@@ -328,6 +328,7 @@ if __name__ == "__main__":
     print("=== Building static API snapshot for the CDN ===")
     print(f"  -> {out_dir}")
     print(f"  status pages down to world rank {depth} per discipline")
-    written, skipped, total, profiles, countries, statuses = build(out_dir, depth)
+    written, skipped, total, profiles, countries, statuses, pruned = build(out_dir, depth)
     print(f"\n  {written} files written ({profiles} athlete profiles, {statuses} status pages, "
-          f"{countries} countries), {skipped} skipped, {total/1024:.0f} KB total (uncompressed)")
+          f"{countries} countries), {skipped} skipped, {pruned} pruned, "
+          f"{total/1024:.0f} KB total (uncompressed)")

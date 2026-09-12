@@ -928,9 +928,34 @@ def build_event():
     }
 
 
+def lost_data(new, old):
+    """What a fresh build dropped that the saved file still has, or None.
+
+    Every fetch above swallows its own failure and returns empty, which is right
+    for a meeting that has not published yet and wrong for a network that is
+    down. When WA retired its GraphQL host in September 2026 every call failed
+    at once, and the build saved a file with no timetable, no field and no
+    relays over the real one -- the next static build would have emptied the
+    championship page. A published timetable or field does not un-publish, so
+    losing one means a fetch broke, not that the meeting changed."""
+    lost = [key for key in ("timetable", "qualifiedField", "relays")
+            if (old or {}).get(key) and not new.get(key)]
+    return ", ".join(lost) or None
+
+
 if __name__ == "__main__":
     print("=== Building World Athletics Ultimate Championship data ===")
     event = build_event()
+    try:
+        with open(OUT_PATH, encoding="utf-8") as f:
+            previous = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        previous = None
+    lost = lost_data(event, previous)
+    if lost:
+        print(f"  NOT SAVED: this build has no {lost}, which {os.path.abspath(OUT_PATH)} "
+              "still has. A fetch failed; the saved file is kept.")
+        raise SystemExit(1)
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(event, f, indent=2, ensure_ascii=False)

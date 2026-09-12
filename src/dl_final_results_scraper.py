@@ -56,8 +56,13 @@ import time
 import pandas as pd
 import requests
 
-GRAPHQL_URL = "https://graphql-prod-4881.edge.aws.worldathletics.org/graphql"
-API_KEY = "da2-wbnmtmvlpbhifh3uc2xaxsue5i"
+# WA retires this host and its keys without notice: 4881 stopped resolving in
+# September 2026, during the Ultimate Championship. When every fetch fails at
+# once, open worldathletics.org, find the _next/static chunk that contains
+# "graphql-prod-", and take that host plus one of its da2- keys that answers
+# {"query": "{__typename}"} with data rather than an HTML error page.
+GRAPHQL_URL = "https://graphql-prod-4888.edge.aws.worldathletics.org/graphql"
+API_KEY = "da2-ekwnowppnnahhp33zt7yzri77m"
 HEADERS = {"Content-Type": "application/json", "x-api-key": API_KEY}
 
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "dl_final_results.csv")
