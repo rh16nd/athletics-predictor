@@ -180,3 +180,26 @@ def test_prune_leaves_files_that_are_not_snapshots(tmp_path):
 
 def test_prune_is_a_no_op_before_the_directory_exists(tmp_path):
     assert b.prune_stale(str(tmp_path), "athlete-status", {"anything"}) == 0
+
+
+# --- The core pass on its own (2026-09-12) --------------------------------
+# refresh_results.py rebuilds only the page-level files between a
+# championship's sessions. The first attempt at splitting that pass out left
+# the full build() undefined, and every other test still passed.
+
+def test_write_core_writes_each_page_level_response(tmp_path, monkeypatch):
+    monkeypatch.setattr(b, "snapshot_paths", lambda: [
+        ("/api/results", "results.json"),
+        ("/api/news", "news.json"),
+    ])
+    client = _Client(per_path={"/api/results": _Res({"championships": []})})
+    written, skipped, total = b.write_core(client, str(tmp_path))
+    assert (written, skipped) == (1, 1)
+    assert total > 0
+    assert json.loads((tmp_path / "results.json").read_text(encoding="utf-8")) == {"championships": []}
+    assert not (tmp_path / "news.json").exists()
+
+
+def test_the_full_build_is_still_there_beside_the_core_pass():
+    assert callable(b.build)
+    assert callable(b.write_core)

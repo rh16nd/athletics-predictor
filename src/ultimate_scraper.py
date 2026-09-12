@@ -936,9 +936,9 @@ def lost_data(new, old):
     down. When WA retired its GraphQL host in September 2026 every call failed
     at once, and the build saved a file with no timetable, no field and no
     relays over the real one -- the next static build would have emptied the
-    championship page. A published timetable or field does not un-publish, so
-    losing one means a fetch broke, not that the meeting changed."""
-    lost = [key for key in ("timetable", "qualifiedField", "relays")
+    championship page. A published timetable, field or result does not
+    un-publish, so losing one means a fetch broke, not that the meeting changed."""
+    lost = [key for key in ("timetable", "qualifiedField", "relays", "results")
             if (old or {}).get(key) and not new.get(key)]
     return ", ".join(lost) or None
 

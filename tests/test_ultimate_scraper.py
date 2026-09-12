@@ -309,3 +309,12 @@ def test_a_first_build_before_anything_is_published_still_saves():
     empty = {"timetable": [], "qualifiedField": [], "relays": []}
     assert us.lost_data(empty, None) is None
     assert us.lost_data(empty, empty) is None
+
+
+def test_losing_only_the_results_is_caught_too():
+    """A results feed that errors while everything else answers would save a
+    championship with no results over one that had them, and the Results page
+    would go back to "Called in advance"."""
+    saved = {"timetable": [{}], "qualifiedField": [{}], "relays": [{}],
+             "results": [{"discipline": "men_PV"}]}
+    assert us.lost_data({**saved, "results": []}, saved) == "results"

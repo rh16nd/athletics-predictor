@@ -29,7 +29,7 @@ Snapshotted per athlete rather than as one payload, but no less static:
                              --profile-depth in each discipline's ranking
 
 Usage:
-    python src/build_static_api.py [output_dir] [--profile-depth N]
+    python src/build_static_api.py [output_dir] [--profile-depth N] [--core-only]
 Default output: ../track-insights-main/public/data
 Run it after any data refresh, then commit BOTH repos (see HANDOFF).
 """
@@ -243,14 +243,12 @@ def write_snapshots(client, out_dir, subdir, pairs, label, quote_name=True):
             print(f"    ...{i}/{len(pairs)} {label}")
     return written, skipped, total, kept
 
-def build(out_dir, depth=DEFAULT_PROFILE_DEPTH):
-    client = api.app.test_client()
-    profiles = [0]
-    countries = [0]
-    statuses = [0]
-    pruned = [0]
-    total = 0
-    written = skipped = 0
+def write_core(client, out_dir):
+    """The page-level responses every route reads: results, the championship,
+    predictions, rankings. No World Athletics round trips, so it takes seconds,
+    and between a championship's sessions it is all a results refresh needs
+    (--core-only, which refresh_results.py uses)."""
+    written = skipped = total = 0
     for path, name in snapshot_paths():
         res = client.get(path)
         if res.status_code != 200:
@@ -267,6 +265,16 @@ def build(out_dir, depth=DEFAULT_PROFILE_DEPTH):
             f.write(payload)
         total += len(payload.encode("utf-8"))
         written += 1
+    return written, skipped, total
+
+
+def build(out_dir, depth=DEFAULT_PROFILE_DEPTH):
+    client = api.app.test_client()
+    profiles = [0]
+    countries = [0]
+    statuses = [0]
+    pruned = [0]
+    written, skipped, total = write_core(client, out_dir)
 
     # Country pages. One per nation that has a ranked athlete this season --
     # the country view is what gives the Ultimate's two mixed relays somewhere
@@ -324,9 +332,17 @@ if __name__ == "__main__":
         i = args.index("--profile-depth")
         depth = int(args[i + 1])
         del args[i:i + 2]
+    core_only = "--core-only" in args
+    if core_only:
+        args.remove("--core-only")
     out_dir = os.path.abspath(args[0] if args else DEFAULT_OUT)
     print("=== Building static API snapshot for the CDN ===")
     print(f"  -> {out_dir}")
+    if core_only:
+        written, skipped, total = write_core(api.app.test_client(), out_dir)
+        print(f"\n  core only: {written} files written, {skipped} skipped, "
+              f"{total/1024:.0f} KB total (uncompressed)")
+        sys.exit(0)
     print(f"  status pages down to world rank {depth} per discipline")
     written, skipped, total, profiles, countries, statuses, pruned = build(out_dir, depth)
     print(f"\n  {written} files written ({profiles} athlete profiles, {statuses} status pages, "
