@@ -1948,7 +1948,7 @@
       "phaseDateAndTime": "2026-09-12T18:08:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "400 Metres",
         "isTrack": true,
@@ -1961,7 +1961,7 @@
       "phaseDateAndTime": "2026-09-12T18:13:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "Javelin Throw",
         "isTrack": false,
@@ -1974,7 +1974,7 @@
       "phaseDateAndTime": "2026-09-12T18:18:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "400 Metres",
         "isTrack": true,
@@ -1987,7 +1987,7 @@
       "phaseDateAndTime": "2026-09-12T18:26:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "800 Metres",
         "isTrack": true,
@@ -2000,7 +2000,7 @@
       "phaseDateAndTime": "2026-09-12T18:43:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "Pole Vault",
         "isTrack": false,
@@ -2013,7 +2013,7 @@
       "phaseDateAndTime": "2026-09-12T18:46:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "400 Metres Hurdles",
         "isTrack": true,
@@ -2026,7 +2026,7 @@
       "phaseDateAndTime": "2026-09-12T19:04:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "100 Metres",
         "isTrack": true,
@@ -2039,7 +2039,7 @@
       "phaseDateAndTime": "2026-09-12T19:21:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "100 Metres",
         "isTrack": true,
@@ -2052,7 +2052,7 @@
       "phaseDateAndTime": "2026-09-12T19:36:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "1500 Metres",
         "isTrack": true,
@@ -2065,7 +2065,7 @@
       "phaseDateAndTime": "2026-09-12T19:44:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "Long Jump",
         "isTrack": false,
@@ -2078,7 +2078,7 @@
       "phaseDateAndTime": "2026-09-12T19:57:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "400 Metres Hurdles",
         "isTrack": true,
@@ -2091,7 +2091,7 @@
       "phaseDateAndTime": "2026-09-12T20:18:00.000Z",
       "phaseSessionName": "Evening Session",
       "isStartlistPublished": true,
-      "isResultPublished": false,
+      "isResultPublished": true,
       "discipline": {
         "name": "800 Metres",
         "isTrack": true,
@@ -2103,8 +2103,8 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-12T20:38:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "100 Metres",
         "isTrack": true,
@@ -2116,8 +2116,8 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-12T20:49:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
-      "isResultPublished": false,
+      "isStartlistPublished": true,
+      "isResultPublished": true,
       "discipline": {
         "name": "100 Metres",
         "isTrack": true,
@@ -2129,7 +2129,7 @@
       "sexName": "Women",
       "phaseDateAndTime": "2026-09-13T18:08:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "400 Metres Hurdles",
@@ -2168,7 +2168,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-13T18:36:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "400 Metres Hurdles",
@@ -2233,7 +2233,7 @@
       "sexName": "Men",
       "phaseDateAndTime": "2026-09-13T19:41:00.000Z",
       "phaseSessionName": "Evening Session",
-      "isStartlistPublished": false,
+      "isStartlistPublished": true,
       "isResultPublished": false,
       "discipline": {
         "name": "800 Metres",
@@ -5303,6 +5303,62 @@
   ],
   "results": [
     {
+      "discipline": "men_400m",
+      "athlete_name": "Busang Collen KEBINATSHIPI",
+      "place": "1",
+      "mark": "43.39",
+      "nationality": "BOT"
+    },
+    {
+      "discipline": "men_400m",
+      "athlete_name": "Rai BENJAMIN",
+      "place": "2",
+      "mark": "44.15",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_400m",
+      "athlete_name": "Jereem RICHARDS",
+      "place": "3",
+      "mark": "44.23",
+      "nationality": "TTO"
+    },
+    {
+      "discipline": "men_400m",
+      "athlete_name": "Chris BAILEY",
+      "place": "4",
+      "mark": "44.27",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_400m",
+      "athlete_name": "Matthew HUDSON-SMITH",
+      "place": "5",
+      "mark": "44.28",
+      "nationality": "GBR"
+    },
+    {
+      "discipline": "men_400m",
+      "athlete_name": "Jacory PATTERSON",
+      "place": "6",
+      "mark": "44.59",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_400m",
+      "athlete_name": "Lee EPPIE",
+      "place": "7",
+      "mark": "44.66",
+      "nationality": "BOT"
+    },
+    {
+      "discipline": "men_400m",
+      "athlete_name": "Attila MOLNÁR",
+      "place": "8",
+      "mark": "45.10",
+      "nationality": "HUN"
+    },
+    {
       "discipline": "men_5000m",
       "athlete_name": "Jakob INGEBRIGTSEN",
       "place": "1",
@@ -5499,6 +5555,125 @@
       "nationality": "USA"
     },
     {
+      "discipline": "women_400m",
+      "athlete_name": "Marileidy PAULINO",
+      "place": "1",
+      "mark": "49.07",
+      "nationality": "DOM"
+    },
+    {
+      "discipline": "women_400m",
+      "athlete_name": "Henriette JÆGER",
+      "place": "2",
+      "mark": "49.28",
+      "nationality": "NOR"
+    },
+    {
+      "discipline": "women_400m",
+      "athlete_name": "Nickisha PRYCE",
+      "place": "3",
+      "mark": "49.56",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_400m",
+      "athlete_name": "Lieke KLAVER",
+      "place": "4",
+      "mark": "49.91",
+      "nationality": "NED"
+    },
+    {
+      "discipline": "women_400m",
+      "athlete_name": "Martina WEIL",
+      "place": "5",
+      "mark": "50.00",
+      "nationality": "CHI"
+    },
+    {
+      "discipline": "women_400m",
+      "athlete_name": "Aaliyah BUTLER",
+      "place": "6",
+      "mark": "50.12",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_400m",
+      "athlete_name": "Roxana GÓMEZ",
+      "place": "7",
+      "mark": "50.21",
+      "nationality": "CUB"
+    },
+    {
+      "discipline": "women_400m",
+      "athlete_name": "Salwa Eid NASER",
+      "place": "8",
+      "mark": "50.22",
+      "nationality": "BRN"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Audrey WERRO",
+      "place": "1",
+      "mark": "1:55.88",
+      "nationality": "SUI"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Keely HODGKINSON",
+      "place": "2",
+      "mark": "1:56.26",
+      "nationality": "GBR"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Femke BROEDERS-BOL",
+      "place": "3",
+      "mark": "1:56.74",
+      "nationality": "NED"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Addison WILEY",
+      "place": "4",
+      "mark": "1:57.54",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Valentina ROSAMILIA",
+      "place": "5",
+      "mark": "1:58.53",
+      "nationality": "SUI"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Eloisa COIRO",
+      "place": "6",
+      "mark": "1:58.59",
+      "nationality": "ITA"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Sarah BILLINGS",
+      "place": "7",
+      "mark": "1:58.89",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Nigist GETACHEW",
+      "place": "8",
+      "mark": "1:59.50",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "women_800m",
+      "athlete_name": "Veronica VANCARDO",
+      "place": "",
+      "mark": "DNS",
+      "nationality": "SUI"
+    },
+    {
       "discipline": "women_100h",
       "athlete_name": "Masai RUSSELL",
       "place": "1",
@@ -5665,6 +5840,370 @@
       "place": "8",
       "mark": "6.21",
       "nationality": "BUR"
+    },
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Kenneth BEDNAREK",
+      "place": "1",
+      "mark": "9.85",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Oblique SEVILLE",
+      "place": "2",
+      "mark": "9.90",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Ronnie BAKER",
+      "place": "3",
+      "mark": "9.93",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Kayinsola AJAYI",
+      "place": "4",
+      "mark": "9.93",
+      "nationality": "NGR"
+    },
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Christian COLEMAN",
+      "place": "5",
+      "mark": "9.94",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Gift LEOTLELA",
+      "place": "6",
+      "mark": "9.98",
+      "nationality": "RSA"
+    },
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Letsile TEBOGO",
+      "place": "7",
+      "mark": "10.07",
+      "nationality": "BOT"
+    },
+    {
+      "discipline": "men_100m",
+      "athlete_name": "Akani SIMBINE",
+      "place": "8",
+      "mark": "10.09",
+      "nationality": "RSA"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Miltiadis TENTOGLOU",
+      "place": "1",
+      "mark": "8.35",
+      "nationality": "GRE"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Bozhidar SARÂBOYUKOV",
+      "place": "2",
+      "mark": "8.34",
+      "nationality": "BUL"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Simon EHAMMER",
+      "place": "3",
+      "mark": "8.07",
+      "nationality": "SUI"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Anvar ANVAROV",
+      "place": "4",
+      "mark": "7.94",
+      "nationality": "UZB"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Tajay GAYLE",
+      "place": "5",
+      "mark": "7.90",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Gerson BALDÉ",
+      "place": "6",
+      "mark": "7.85",
+      "nationality": "POR"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Mingkun ZHANG",
+      "place": "7",
+      "mark": "7.67",
+      "nationality": "CHN"
+    },
+    {
+      "discipline": "men_LJ",
+      "athlete_name": "Luka BOŠKOVIĆ",
+      "place": "8",
+      "mark": "7.66",
+      "nationality": "SRB"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Melissa JEFFERSON-WOODEN",
+      "place": "1",
+      "mark": "10.62",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Julien ALFRED",
+      "place": "2",
+      "mark": "10.74",
+      "nationality": "LCA"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Sha'Carri RICHARDSON",
+      "place": "3",
+      "mark": "10.76",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Jonielle SMITH",
+      "place": "4",
+      "mark": "10.94",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Tina CLAYTON",
+      "place": "5",
+      "mark": "10.94",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Patrizia VAN DER WEKEN",
+      "place": "6",
+      "mark": "11.06",
+      "nationality": "LUX"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Lavanya WILLIAMS",
+      "place": "7",
+      "mark": "11.07",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_100m",
+      "athlete_name": "Amy HUNT",
+      "place": "8",
+      "mark": "11.09",
+      "nationality": "GBR"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Klaudia KAZIMIERSKA",
+      "place": "1",
+      "mark": "3:57.55",
+      "nationality": "POL"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Georgia HUNTER BELL",
+      "place": "2",
+      "mark": "3:57.72",
+      "nationality": "GBR"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Nikki HILTZ",
+      "place": "3",
+      "mark": "3:58.16",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Freweyni HAILU",
+      "place": "4",
+      "mark": "3:58.44",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Dorcus EWOI",
+      "place": "5",
+      "mark": "3:58.55",
+      "nationality": "KEN"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Abbey CALDWELL",
+      "place": "6",
+      "mark": "3:58.64",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Emily MACKAY",
+      "place": "7",
+      "mark": "3:59.16",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Agathe GUILLEMOT",
+      "place": "8",
+      "mark": "3:59.40",
+      "nationality": "FRA"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Jessica HULL",
+      "place": "9",
+      "mark": "3:59.97",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Saron BERHE",
+      "place": "10",
+      "mark": "4:00.28",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Birke HAYLOM",
+      "place": "11",
+      "mark": "4:03.75",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "women_1500m",
+      "athlete_name": "Haregeweyni KALAYU",
+      "place": "12",
+      "mark": "4:06.14",
+      "nationality": "ETH"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Sandi MORRIS",
+      "place": "1",
+      "mark": "4.90",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Hana MOLL",
+      "place": "2",
+      "mark": "4.90",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Angelica MOSER",
+      "place": "3",
+      "mark": "4.85",
+      "nationality": "SUI"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Imogen AYRIS",
+      "place": "4",
+      "mark": "4.80",
+      "nationality": "NZL"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Eliza MCCARTNEY",
+      "place": "5",
+      "mark": "4.80",
+      "nationality": "NZL"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Katie MOON",
+      "place": "6",
+      "mark": "4.70",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Tina ŠUTEJ",
+      "place": "7",
+      "mark": "4.70",
+      "nationality": "SLO"
+    },
+    {
+      "discipline": "women_PV",
+      "athlete_name": "Emily GROVE",
+      "place": "8",
+      "mark": "4.70",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Haruka KITAGUCHI",
+      "place": "1",
+      "mark": "68.92",
+      "nationality": "JPN"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Ziyi YAN",
+      "place": "2",
+      "mark": "68.05",
+      "nationality": "CHN"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Flor Denis RUIZ HURTADO",
+      "place": "3",
+      "mark": "64.84",
+      "nationality": "COL"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Mackenzie LITTLE",
+      "place": "4",
+      "mark": "63.37",
+      "nationality": "AUS"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Adriana VILAGOŠ",
+      "place": "5",
+      "mark": "61.37",
+      "nationality": "SRB"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Tori MOORBY",
+      "place": "6",
+      "mark": "58.95",
+      "nationality": "NZL"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Anete SIETIŅA",
+      "place": "7",
+      "mark": "58.17",
+      "nationality": "LAT"
+    },
+    {
+      "discipline": "women_JT",
+      "athlete_name": "Sigrid BORGE",
+      "place": "8",
+      "mark": "50.88",
+      "nationality": "NOR"
     }
   ]
 }
