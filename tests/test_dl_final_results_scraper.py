@@ -85,8 +85,14 @@ def test_resolve_discipline_key_returns_none_for_unmapped_events():
 
 
 def test_wa_event_to_key_covers_every_trained_discipline():
+    import feature_builder
+
     mapped_keys = set(scraper.WA_EVENT_TO_KEY.values())
-    assert set(tm.TRAIN_DISCIPLINES.keys()) == mapped_keys
+    trained = set(tm.TRAIN_DISCIPLINES.keys())
+    assert trained <= mapped_keys
+    # The only keys beyond the trained set are the points-only disciplines,
+    # mapped (2026-09-14) so a championship's results can be read for them.
+    assert mapped_keys - trained == set(feature_builder.POINTS_ONLY_DISCIPLINES)
 
 
 # ---- When World Athletics moves its data server ----------------------------

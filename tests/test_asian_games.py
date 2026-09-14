@@ -38,8 +38,10 @@ def test_a_plain_json_error_reply_still_reads():
     ("W.3000MST-----------", "women_3000sc"),
     ("M.PLEVAULT----------", "men_PV"),
     ("W.TRPLJUMP----------", "women_TJ"),
-    ("M.HAMMER------------", None),
-    ("M.10000M------------", None),
+    # Called on points since 2026-09-14; before that, "noData".
+    ("M.HAMMER------------", "men_HT"),
+    ("W.10000M------------", "women_10000m"),
+    ("M.MARATHON----------", None),
     ("W.HEPTATH-----------", None),
     ("X.4X400M------------", None),
 ])
@@ -234,6 +236,187 @@ def test_a_run_that_lost_the_field_or_results_is_not_saved():
     assert ags.lost_data({"field": [], "results": []}, None) is None
 
 
+# ---- entrants the Asian list does not place ----------------------------------
+
+def test_world_athletics_birth_dates_read_the_way_the_entry_list_writes_them():
+    assert ags.birth_date_iso("07 DEC 2001") == "2001-12-07"
+    assert ags.birth_date_iso("2004") == "2004"
+    assert ags.birth_date_iso("") is None
+
+
+def wa_candidate(wid, given, family, born, nat="LAO", gender="Men"):
+    return {"aaAthleteId": str(wid), "givenName": given, "familyName": family,
+            "birthDate": born, "gender": gender, "country": nat}
+
+
+def test_an_entry_without_an_id_is_found_by_its_date_of_birth_whatever_the_spelling():
+    """The real 2026 case: the entry list writes PHOMPHAKDI, World Athletics
+    PHOMPAKDI, and both say 7 December 2001."""
+    entrant = {"entryName": "PHOMPHAKDI Sorsy", "familyName": "PHOMPHAKDI", "givenName": "Sorsy",
+               "nat": "LAO", "birthDate": "2001-12-07", "waId": None}
+    queries = []
+
+    def search(query, nat):
+        queries.append((query, nat))
+        return [wa_candidate(14972201, "Sorsy", "PHOMPAKDI", "07 DEC 2001"),
+                wa_candidate(14714329, "Sengpheth", "PHOMPHADY", "30 MAY 1996")]
+
+    assert ags.find_wa_id(entrant, "M", search) == 14972201
+    assert queries[0] == ("PHOMPHAKDI", "LAO")
+
+
+def test_a_namesake_born_another_day_or_of_the_other_sex_is_not_the_entrant():
+    entrant = {"entryName": "SALEM Saeed", "familyName": "SALEM", "givenName": "Saeed",
+               "nat": "QAT", "birthDate": "2000-01-01", "waId": None}
+
+    def search(query, nat):
+        return [wa_candidate(1, "Saeed", "SALEM", "02 JAN 2000", nat="QAT"),
+                wa_candidate(2, "Saeed", "SALEM", "01 JAN 2000", nat="QAT", gender="Women")]
+
+    assert ags.find_wa_id(entrant, "M", search) is None
+
+
+def test_a_birth_year_alone_needs_both_names_and_a_shared_particle_is_not_a_name():
+    entrant = {"entryName": "AL GHALBAN Ahmed", "familyName": "AL GHALBAN", "givenName": "Ahmed",
+               "nat": "PLE", "birthDate": "2004-03-02", "waId": None}
+    assert ags.find_wa_id(entrant, "M", lambda q, nat: [wa_candidate(7, "Ahmed", "AL GHALBAN", "2004", nat="PLE")]) == 7
+    assert ags.find_wa_id(entrant, "M", lambda q, nat: [wa_candidate(8, "Ahmed", "AL HASSAN", "2004", nat="PLE")]) is None
+
+
+def test_the_two_lists_may_swap_which_name_is_the_family_name():
+    """Real 2026 shape: the entry list writes "DAVAANYAM Myagmarsuren" of
+    Mongolia, World Athletics has given name Dawaanyam and family name
+    MYAGMARSUREN, both born on 6 April 1999. (The id here is made up.)"""
+    entrant = {"entryName": "DAVAANYAM Myagmarsuren", "familyName": "DAVAANYAM", "givenName": "Myagmarsuren",
+               "nat": "MGL", "birthDate": "1999-04-06", "waId": None}
+
+    def search(query, nat):
+        return [wa_candidate(900001, "Dawaanyam", "MYAGMARSUREN", "06 APR 1999", nat="MGL")]
+
+    assert ags.find_wa_id(entrant, "M", search) == 900001
+
+
+def test_two_athletes_who_both_fit_is_no_match():
+    entrant = {"entryName": "ALI Abdul", "familyName": "ALI", "givenName": "Abdul",
+               "nat": "UAE", "birthDate": "1999-05-05", "waId": None}
+
+    def search(query, nat):
+        return [wa_candidate(1, "Abdul", "ALI", "05 MAY 1999", nat="UAE"),
+                wa_candidate(2, "Abdul Quddus", "ALI", "05 MAY 1999", nat="UAE")]
+
+    assert ags.find_wa_id(entrant, "M", search) is None
+
+
+def wa_profile(*groups, given="Ibadulla", family="ADAM", born="14 JAN 2002"):
+    return {"basicData": {"birthDate": born, "givenName": given, "familyName": family},
+            "resultsByYear": {"resultsByEvent": [
+                {"discipline": d, "indoor": indoor, "results": results} for d, indoor, results in groups]}}
+
+
+def wa_result(mark, score, date="27 JUN 2026", legal=True):
+    return {"date": date, "venue": "National Stadium, Gaborone (BOT)", "place": "1.", "mark": mark,
+            "wind": "+1.1", "resultScore": score, "notLegal": not legal}
+
+
+def test_a_season_best_is_the_best_legal_outdoor_score_this_season_in_that_event():
+    """Real shape: Ibadulla ADAM of the Maldives, 11.02 (880) in Gaborone and
+    below the top 300 in Asia."""
+    profile = wa_profile(
+        ("100 Metres", None, [wa_result("11.31", 797, "08 APR 2026"), wa_result("11.02", 880),
+                              wa_result("10.95", 901, legal=False), wa_result("10.90", 915, "20 JUL 2025")]),
+        ("100 Metres", True, [wa_result("10.80", 990)]),
+        ("200 Metres", None, [wa_result("21.90", 960)]),
+    )
+    best = ags.season_best(profile, "men_100m")
+    assert (best["mark"], best["resultScore"]) == ("11.02", 880)
+    assert ags.season_best(profile, "men_400m") is None
+
+
+def test_unplaced_entrants_are_looked_up_and_the_rest_say_why():
+    rows = [row(1, "10.00", "Shuhei TADA", "JPN", 1001, 1200),
+            row(250, "10.80", "Kin Wa CHAN", "MAC", 1003, 980)]
+    entrants = [
+        {"entryName": "TADA Shuhei", "nat": "JPN", "waId": 1001},
+        # No id, and a family name spelt differently from the list's.
+        {"entryName": "CHANG Kin Wa", "familyName": "CHANG", "givenName": "Kin Wa",
+         "nat": "MAC", "birthDate": "2001-02-03", "waId": None},
+        {"entryName": "ADAM Ibadulla", "familyName": "ADAM", "givenName": "Ibadulla",
+         "nat": "MDV", "waId": 14852443},
+        {"entryName": "NOOR ZAHI Sha", "familyName": "NOOR ZAHI", "givenName": "Sha",
+         "nat": "AFG", "birthDate": "1991-03-21", "waId": None},
+        {"entryName": "HASSAN Saaid", "familyName": "HASSAN", "givenName": "Saaid",
+         "nat": "MDV", "waId": 14427032},
+    ]
+
+    def search(query, nat):
+        return [wa_candidate(1003, "Kin Wa", "CHAN", "03 FEB 2001", nat="MAC")] if nat == "MAC" else []
+
+    profiles = {14852443: wa_profile(("100 Metres", None, [wa_result("11.02", 880)])),
+                14427032: wa_profile(("200 Metres", None, [wa_result("22.10", 900)]), given="Saaid", family="HASAN")}
+    fetched = []
+
+    def season(athlete_id):
+        fetched.append(athlete_id)
+        return profiles[athlete_id]
+
+    out = ags.complete_matches(ags.match_entrants(entrants, HEADER, rows), entrants, HEADER, rows,
+                               "men_100m", "M", search, season)
+    by = {a["entryName"]: (a, r) for a, r in out}
+
+    assert by["TADA Shuhei"][0]["unranked"] is None and by["TADA Shuhei"][1] is rows[0]
+    chan, chan_row = by["CHANG Kin Wa"]
+    assert chan_row is rows[1] and (chan["matchedBy"], chan["waId"], chan["score"]) == ("search", 1003, 980)
+    adam, adam_row = by["ADAM Ibadulla"]
+    assert (adam["matchedBy"], adam["mark"], adam["score"], adam["asiaRank"]) == ("profile", "11.02", 880, None)
+    # A row the snapshot, the model and the athlete pages read like any other,
+    # with no rank: this athlete is on no list.
+    assert adam_row[0] == "" and adam_row[3] == "Ibadulla ADAM" and adam_row[ags.NAT] == "MDV"
+    assert adam_row[HEADER.index("Results Score")] == "880" and adam_row[-1].endswith("athlete=14852443")
+    assert by["NOOR ZAHI Sha"][0]["unranked"] == "notFound"
+    # Unranked, and still under World Athletics' spelling of the name.
+    assert (by["HASSAN Saaid"][0]["unranked"], by["HASSAN Saaid"][0]["name"]) == ("noMark", "Saaid HASAN")
+    assert fetched == [14852443, 14427032]
+
+
+def test_an_athlete_entered_twice_is_searched_once_and_a_failed_lookup_says_so():
+    entrant = {"entryName": "CHAABAN Omar", "familyName": "CHAABAN", "givenName": "Omar",
+               "nat": "PLE", "birthDate": "2006-08-18", "waId": None}
+    unmatched = [({"name": "Omar CHAABAN", "entryName": "CHAABAN Omar", "waId": None, "profileUrl": None}, None)]
+    queries, cache = [], {}
+
+    def search(query, nat):
+        queries.append(query)
+        return []
+
+    for key in ("men_100m", "men_200m"):
+        ags.complete_matches(unmatched, [entrant], HEADER, [], key, "M", search, None, cache)
+    assert queries == ["CHAABAN", "Omar CHAABAN", "Omar"]
+
+    def down(query, nat):
+        raise requests.ConnectionError("down")
+
+    [(athlete, matched)] = ags.complete_matches(unmatched, [entrant], HEADER, [], "men_100m", "M", down, None)
+    assert matched is None and athlete["unranked"] == "lookupFailed"
+
+
+def test_an_athlete_takes_the_world_lists_spelling_where_their_id_is_on_it():
+    """Real 2026 case: "Taepoong NAM" on the Asian list and "Tae-poong NAM" on
+    the world list, one id. The snapshot keeps the world row, so under the Asian
+    spelling the model could not score him in a model event."""
+    world = [row(53, "80.35", "Tae-poong NAM", "KOR", 14910385, 1150)]
+    asian_row = row(12, "80.35", "Taepoong NAM", "KOR", 14910385, 1150)
+    matches = [({"name": "Taepoong NAM", "waId": 14910385}, asian_row),
+               ({"name": "Xin LI", "waId": 1002}, None)]
+    out = ags.world_spelling(matches, HEADER, world)
+    assert [a["name"] for a, _ in out] == ["Tae-poong NAM", "Xin LI"]
+    assert out[0][1] is asian_row
+
+
+def test_a_single_named_entrant_shows_no_placeholder_dot():
+    assert ags.display_name({"givenName": "Sangay", "familyName": ".", "entryName": "Sangay"}) == "Sangay"
+    assert ags.display_name({"givenName": "Shuhei", "familyName": "Tada"}) == "Shuhei TADA"
+
+
 # ---- the call: one method per event -----------------------------------------
 
 def athletes(*spec):
@@ -291,7 +474,7 @@ def test_no_event_mixes_a_model_chance_with_a_points_ranking(tmp_path):
     out = agp.build({"field": [model_event, points_event],
                      "notCalled": [{"label": "Men's Hammer Throw", "reason": "noData"}]},
                     None, None, [], snapshot_dir=str(tmp_path), known_for=known.get, project=project,
-                    world_for=lambda key: set())
+                    pages_for=lambda key: set())
     by_key = {p["discKey"]: p for p in out["projections"]}
 
     assert by_key["men_100m"]["method"] == "model"
@@ -328,12 +511,24 @@ def test_a_favourite_under_the_floor_sends_the_event_to_points(tmp_path):
 
     out = agp.build({"field": [event]}, None, None, [], snapshot_dir=str(tmp_path),
                     known_for=lambda key: {f"K{i}" for i in range(8)}, project=project,
-                    world_for=lambda key: set())
+                    pages_for=lambda key: set())
     [call] = out["projections"]
     assert call["method"] == "points"
     assert (call["methodEvidence"]["reason"], call["methodEvidence"]["topChance"]) == ("floor", 0.39)
     assert all(a["podiumChance"] is None for a in call["athletes"])
     assert out["rule"]["floor"] == agp.MODEL_FLOOR
+
+
+def test_every_entrant_a_call_cannot_rank_comes_with_the_reason():
+    event = {"discKey": "men_100m", "athletes": athletes(("Ranked ONE", 1200)) + [
+        {"name": "Not FOUND", "nat": "AFG", "score": None, "unranked": "notFound", "profileUrl": None},
+        {"name": "No MARK", "nat": "MDV", "score": None, "unranked": "noMark",
+         "profileUrl": "https://worldathletics.org/athletes/athlete=5"}]}
+    out = agp.points_call(event)
+    assert [(u["name"], u["reason"]) for u in out["unranked"]] == [("Not FOUND", "notFound"), ("No MARK", "noMark")]
+    assert out["unranked"][1]["profileUrl"].endswith("athlete=5")
+    # A mark the model could not score is a reason of its own.
+    assert agp.unranked_detail(event, ["Ranked ONE"])[0]["reason"] == "notScored"
 
 
 def test_a_model_event_the_model_cannot_score_stops_the_build():
@@ -357,6 +552,55 @@ def test_a_points_call_is_graded_without_inventing_a_chance(tmp_path, monkeypatc
     assert idx["men_JT"]["First One"]["prob"] is None
     assert idx["men_JT"]["First One"]["rank"] == 1
     assert frozen_at == "2026-09-22T00:00:00Z"
+
+
+def test_an_athlete_page_carries_the_call_until_the_championship_ends(monkeypatch):
+    import api
+    from datetime import date
+
+    preds = {"projections": [{
+        "discKey": "men_100m", "method": "points", "qualified": 3,
+        "athletes": [{"rank": 2, "name": "Sorsy PHOMPAKDI", "rankingScore": 877, "podiumChance": None}],
+        "unranked": [{"name": "Omar CHAABAN", "reason": "noMark"}]}]}
+    monkeypatch.setattr(api, "load_event_predictions", lambda champ_id: preds)
+    monkeypatch.setattr(api.championships, "current", lambda: {
+        "id": "asian-games-2026", "labelKey": "results.meet.asianGames", "theme": "asianGames",
+        "endDate": "2026-09-29"})
+    during = date(2026, 9, 20)
+
+    call = api.championship_call("men_100m", "sorsy phompakdi", today=during)
+    assert (call["method"], call["rank"], call["rankingScore"], call["ranked"], call["entered"]) == \
+        ("points", 2, 877, 1, 3)
+    assert api.championship_call("men_100m", "Omar CHAABAN", today=during)["unranked"] == "noMark"
+    assert api.championship_call("men_200m", "Sorsy PHOMPAKDI", today=during) is None
+    assert api.championship_call("men_100m", "Sorsy PHOMPAKDI", today=date(2026, 9, 30)) is None
+
+
+def test_an_entrant_on_no_world_toplist_is_read_from_the_championship_snapshot(monkeypatch, tmp_path):
+    """What gives the 281 ranked entrants who are on no world toplist a page."""
+    import api
+
+    header = "Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,ProfileURL\n"
+    lyles = "1,9.79,+0.8,Noah LYLES,18 JUL 1997,USA,1,,New York,24 JUL 2026,1280,men_100m,2026,u-lyles\n"
+    adam = (",11.02,+1.1,Ibadulla ADAM,14 JAN 2002,MDV,1,,Gaborone,27 JUN 2026,880,men_100m,2026,"
+            "https://worldathletics.org/athletes/athlete=14852443\n")
+    world = tmp_path / "raw"
+    world.mkdir()
+    (world / f"men_100m_{api.MEETS_YEAR}.csv").write_text(header + lyles, encoding="utf-8")
+    snap = tmp_path / "ag" / "raw"
+    snap.mkdir(parents=True)
+    (snap / f"men_100m_{api.MEETS_YEAR}.csv").write_text(header + lyles + adam, encoding="utf-8")
+    monkeypatch.setattr(api, "RAW_DIR", str(world))
+    monkeypatch.setattr(api.championships, "CHAMPIONSHIPS", [{"id": "x", "dataDir": str(tmp_path / "ag")}])
+
+    assert api.toplist_entry("men_100m", "Noah LYLES") == ("9.79", 1, "u-lyles")
+    assert api.toplist_entry("men_100m", "Ibadulla ADAM") == (
+        "11.02", None, "https://worldathletics.org/athletes/athlete=14852443")
+    assert api.toplist_bio("men_100m", "Ibadulla ADAM")["nat"] == "MDV"
+    rows = {(name, key, rank) for name, key, _mark, rank in api.build_search_index()["athletes"]}
+    assert ("Ibadulla ADAM", "men_100m", None) in rows
+    # Once each, though the snapshot repeats the world list.
+    assert sum(1 for name, key, _ in rows if name == "Noah LYLES") == 1
 
 
 def test_the_summary_carries_what_the_nav_needs_and_not_the_field(monkeypatch):

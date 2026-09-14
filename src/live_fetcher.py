@@ -59,6 +59,14 @@ DISCIPLINE_URLS = {
     "women_DT":    "https://worldathletics.org/records/toplists/throws/discus-throw/outdoor/women/senior/2026",
     "men_JT":      "https://worldathletics.org/records/toplists/throws/javelin-throw/outdoor/men/senior/2026",
     "women_JT":    "https://worldathletics.org/records/toplists/throws/javelin-throw/outdoor/women/senior/2026",
+    # Added 2026-09-14 for the Asian Games and kept site-wide, at the user's
+    # request. Neither is a Diamond League event, so we hold no race history
+    # and the model has never seen them: they are ranked on World Athletics
+    # points everywhere. See POINTS_ONLY_DISCIPLINES in feature_builder.py.
+    "men_HT":      "https://worldathletics.org/records/toplists/throws/hammer-throw/outdoor/men/senior/2026",
+    "women_HT":    "https://worldathletics.org/records/toplists/throws/hammer-throw/outdoor/women/senior/2026",
+    "men_10000m":  "https://worldathletics.org/records/toplists/middlelong/10000-metres/outdoor/men/senior/2026",
+    "women_10000m": "https://worldathletics.org/records/toplists/middlelong/10000-metres/outdoor/women/senior/2026",
 }
 
 MEN_TABLE_ORDER = [
@@ -78,8 +86,10 @@ WOMEN_TABLE_ORDER = [
 OUR_DISCIPLINES = set(DISCIPLINE_URLS.keys())
 
 FIELD_KEYS = {"men_PV", "women_PV", "men_LJ", "women_LJ", "men_TJ", "women_TJ",
-              "men_HJ", "women_HJ", "men_SP", "women_SP", "men_DT", "women_DT", "men_JT", "women_JT"}
-LONG_DISTANCE_KEYS = {"men_1500m", "women_1500m", "men_5000m", "women_5000m", "men_3000sc", "women_3000sc"}
+              "men_HJ", "women_HJ", "men_SP", "women_SP", "men_DT", "women_DT", "men_JT", "women_JT",
+              "men_HT", "women_HT"}
+LONG_DISTANCE_KEYS = {"men_1500m", "women_1500m", "men_5000m", "women_5000m", "men_3000sc", "women_3000sc",
+                      "men_10000m", "women_10000m"}
 
 
 def get_qual_limit(discipline_key):
@@ -348,17 +358,31 @@ def scrape_dl_standings(driver, year=2026, wait_seconds=8):
 MIDDLE_DISTANCE = {
     "men_800m", "women_800m", "men_1500m", "women_1500m",
     "women_200m", "men_5000m", "women_5000m",
-    "men_3000sc", "women_3000sc"
+    "men_3000sc", "women_3000sc", "men_10000m", "women_10000m",
 }
 
 if __name__ == "__main__":
-    driver = create_driver(headless=True)
-    print("=== Scraping DL standings ===")
-    standings = scrape_dl_standings(driver)
-    driver.quit()
+    # --only men_HT,women_HT fetches just those toplists and leaves the Diamond
+    # League standings untouched. Added for the points-only disciplines, which
+    # have no standings, so adding one does not mean re-scraping all 32.
+    only = None
+    if "--only" in sys.argv:
+        only = set(sys.argv[sys.argv.index("--only") + 1].split(","))
+        unknown = only - set(DISCIPLINE_URLS)
+        if unknown:
+            sys.exit(f"unknown discipline keys: {', '.join(sorted(unknown))}")
+
+    standings = {}
+    if only is None:
+        driver = create_driver(headless=True)
+        print("=== Scraping DL standings ===")
+        standings = scrape_dl_standings(driver)
+        driver.quit()
 
     print("\n=== Scraping 2026 top lists ===")
     for key, url in DISCIPLINE_URLS.items():
+        if only is not None and key not in only:
+            continue
         print(f"Fetching {key}...")
         use_headless = key not in MIDDLE_DISTANCE
         driver = create_driver(headless=use_headless)

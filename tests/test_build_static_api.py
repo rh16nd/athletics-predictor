@@ -43,6 +43,25 @@ class _Client:
         return _Res({"error": "not found"}, 404)
 
 
+def test_the_current_championships_entrants_get_status_pages_until_it_ends():
+    """Asian Games entrants on no world toplist have pages since 2026-09-14, and
+    the championship page links every one. The world-rank depth pass cannot
+    reach an athlete with no world rank."""
+    payload = {"championship": {"endDate": "2999-09-29"}, "projections": [
+        {"discKey": "men_100m", "athletes": [
+            {"name": "Has PAGE", "hasPage": True},
+            {"name": "No PAGE", "hasPage": False},
+            {"name": "Already DONE", "hasPage": True}]},
+        {"discKey": "men_200m", "athletes": [{"name": "Has PAGE", "hasPage": True}]},
+    ]}
+    client = _Client(per_path={"/api/championship": _Res(payload)})
+    assert b.championship_pairs(client, {("men_100m", "Already DONE")}) == [
+        ("men_100m", "Has PAGE"), ("men_200m", "Has PAGE")]
+
+    payload["championship"]["endDate"] = "2000-01-01"
+    assert b.championship_pairs(client, set()) == []
+
+
 def _index(*rows):
     return {"athletes": [list(r) for r in rows]}
 

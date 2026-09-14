@@ -103,6 +103,11 @@ def athletes_by_country():
                 "score": score,
                 "worldRank": int(rank) if pd.notna(rank) else None,
                 "profileUrl": str(r["ProfileURL"]) if pd.notna(r.get("ProfileURL")) else None,
+                "isField": disc_key in api.FIELD_EVENTS,
+                # The hammer and the 10,000m have no discipline page, since the
+                # model has no field for them, so the page links their Track or
+                # Field ranking instead. A link to /discipline would 404.
+                "hasDisciplinePage": disc_key not in api.POINTS_ONLY_DISCIPLINES,
             })
     for nat, rows in out.items():
         # Results Score across events; unscored athletes last rather than first.

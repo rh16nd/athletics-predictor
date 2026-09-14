@@ -89,10 +89,25 @@ def choose_method(athletes, known):
     }
 
 
+def unranked_detail(event, names):
+    """The entrants a call could not rank, each with the reason, for the rows at
+    the foot of the event's table. The reason is the scraper's ("notFound",
+    "noMark", "lookupFailed"), or "notScored" for an entrant with a 2026 mark
+    the model still could not score, which only a model event can have."""
+    by_name = {_key(a["name"]): a for a in event["athletes"]}
+    out = []
+    for name in names:
+        a = by_name.get(_key(name), {})
+        reason = a.get("unranked") or ("notScored" if a.get("score") is not None else "noMark")
+        out.append({"name": name, "nat": a.get("nat"), "reason": reason, "profileUrl": a.get("profileUrl")})
+    return out
+
+
 def points_call(event):
     """The field in Results Score order, in project_event's shape, with no
     podium chance anywhere: a ranking by points states an order, not odds."""
     scored = _by_points(event["athletes"])
+    unscored = [a["name"] for a in event["athletes"] if a.get("score") is None]
     return {
         "discKey": event["discKey"],
         "disciplineLabel": event.get("disciplineLabel"),
@@ -100,7 +115,8 @@ def points_call(event):
         "places": None,
         "qualified": len(event["athletes"]),
         "scored": len(scored),
-        "unscored": [a["name"] for a in event["athletes"] if a.get("score") is None],
+        "unscored": unscored,
+        "unranked": unranked_detail(event, unscored),
         "athletes": [{"rank": i, "name": a["name"], "nat": a.get("nat"), "qualifiedBy": None,
                       "rankingScore": a["score"], "mark": a.get("mark"), "podiumChance": None}
                      for i, a in enumerate(scored, 1)],
@@ -130,13 +146,18 @@ def model_call(event, model, scaler, feature_cols, snapshot_path, project=up.pro
     marks = {_key(a["name"]): a.get("mark") for a in event["athletes"]}
     for athlete in out["athletes"]:
         athlete["mark"] = marks.get(_key(athlete["name"]))
+    out["unranked"] = unranked_detail(event, out.get("unscored") or [])
     return out
 
 
-def world_toplist_names(key, raw_dir=None):
-    """Everyone on the discipline's world toplist, the athletes the site has a
-    page for."""
-    path = os.path.join(raw_dir or ags.WORLD_RAW_DIR, f"{key}_{ags.YEAR}.csv")
+def snapshot_names(key, snapshot_dir=None):
+    """Everyone in the discipline's merged snapshot: the world toplist plus the
+    entrants added to it. The athletes the site has a page for.
+
+    It was the world toplist alone until 2026-09-14, which left 281 of the 419
+    ranked entrants linking out to World Athletics. api.py's athlete pages now
+    read this snapshot too, so everyone in it has a page."""
+    path = os.path.join(snapshot_dir or ags.SNAPSHOT_DIR, f"{key}_{ags.YEAR}.csv")
     if not os.path.exists(path):
         return set()
     return {_key(n) for n in pd.read_csv(path, usecols=["Competitor"])["Competitor"].dropna()}
@@ -144,8 +165,8 @@ def world_toplist_names(key, raw_dir=None):
 
 def link_athletes(out, event, on_site):
     """Each ranked athlete's World Athletics profile, and whether the site has a
-    page for them. Athlete pages are built from the world toplists, so an Asian
-    entrant who is on none would otherwise be linked to a page that cannot load."""
+    page for them. An entrant with no row in the snapshot has no page, and is
+    linked to World Athletics rather than to a page that cannot load."""
     profiles = {_key(a["name"]): a.get("profileUrl") for a in event["athletes"]}
     for athlete in out["athletes"]:
         athlete["profileUrl"] = profiles.get(_key(athlete["name"]))
@@ -154,7 +175,7 @@ def link_athletes(out, event, on_site):
 
 
 def build(event, model, scaler, feature_cols, snapshot_dir=None, known_for=history_names,
-          project=up.project_event, world_for=world_toplist_names):
+          project=up.project_event, pages_for=snapshot_names):
     snapshot_dir = snapshot_dir or ags.SNAPSHOT_DIR
     projections = []
     for ev in event.get("field") or []:
@@ -173,7 +194,7 @@ def build(event, model, scaler, feature_cols, snapshot_dir=None, known_for=histo
             out = points_call(ev)
         out["method"] = method
         out["methodEvidence"] = evidence
-        projections.append(link_athletes(out, ev, world_for(key)))
+        projections.append(link_athletes(out, ev, pages_for(key)))
     return {
         "rule": {"needed": MODEL_NEEDED, "of": MODEL_OF, "floor": MODEL_FLOOR},
         "builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),

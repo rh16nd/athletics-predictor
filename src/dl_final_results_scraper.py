@@ -210,6 +210,13 @@ WA_EVENT_TO_KEY = {
     ("W", "Shot Put"): "women_SP",
     ("W", "Discus Throw"): "women_DT",
     ("W", "Javelin Throw"): "women_JT",
+    # Not Diamond League disciplines, so no DL Final ever carries them. Here
+    # for the championships that do (the Asian Games), whose results are read
+    # through this same map. WA spells the distance with a comma.
+    ("M", "Hammer Throw"): "men_HT",
+    ("W", "Hammer Throw"): "women_HT",
+    ("M", "10,000 Metres"): "men_10000m",
+    ("W", "10,000 Metres"): "women_10000m",
 }
 
 

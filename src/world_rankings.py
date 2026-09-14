@@ -41,7 +41,7 @@ import pandas as pd
 sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
-from feature_builder import FIELD_EVENTS, RAW_DIR, build_2026_features  # noqa: E402
+from feature_builder import FIELD_EVENTS, POINTS_ONLY_DISCIPLINES, RAW_DIR, build_2026_features  # noqa: E402
 from season_activity import races_on_record  # noqa: E402
 
 # Both overridable so an experimental model can be driven through the real
@@ -129,7 +129,50 @@ def has_meetings_log(key):
     return os.path.exists(os.path.join(RAW_DIR, f"{key}_{YEAR}_meetings.csv"))
 
 
+def ranked(rows, sort_key, reverse=True):
+    """The top TOP_N rows by one key, best first, with missing values last."""
+    ordered = sorted(rows, key=lambda x: (x[sort_key] is None, x[sort_key] or 0), reverse=reverse)
+    # None-last even when reverse=True: push missing values to the bottom
+    ordered = [x for x in ordered if x[sort_key] is not None] + [x for x in ordered if x[sort_key] is None]
+    out = []
+    for i, x in enumerate(ordered[:TOP_N], 1):
+        out.append({
+            "rank": i, "name": x["name"], "nat": x["nat"], "mark": x["mark"],
+            "score": x["score"], "ratingPct": x["ratingPct"],
+            "dlRaces": x["dlRaces"], "racesOnRecord": x["racesOnRecord"],
+            "profileUrl": x["profileUrl"],
+        })
+    return out
+
+
+def points_only_discipline(key):
+    """A discipline the model has never seen, ranked by points and nothing else.
+
+    `model` is empty and `modelAvailable` false, rather than a list of ratings.
+    Scoring the hammer would run the model on an athlete with no meetings log
+    and no history, every one of them on the same defaults, and the order that
+    came out would be the toplist's own order with a percentage beside it."""
+    meta = toplist_meta(key)
+    if not meta:
+        return None
+    activity = races_on_record(key, YEAR)
+    rows = [{
+        "name": name, "nat": m["nat"], "mark": m["mark"], "score": m["score"],
+        "ratingPct": None, "dlRaces": None,
+        "racesOnRecord": activity.get(str(name).upper().strip()),
+        "profileUrl": m["url"],
+    } for name, m in meta.items()]
+    return {
+        "isField": key in FIELD_EVENTS,
+        "modelAvailable": False,
+        "model": [],
+        "points": ranked(rows, "score"),
+    }
+
+
 def score_discipline(key):
+    if key in POINTS_ONLY_DISCIPLINES:
+        return points_only_discipline(key)
     df = build_2026_features(key)
     if df.empty:
         return None
@@ -169,24 +212,11 @@ def score_discipline(key):
             "profileUrl": m.get("url"),
         })
 
-    def ranked(sort_key, reverse=True):
-        ordered = sorted(rows, key=lambda x: (x[sort_key] is None, x[sort_key] or 0), reverse=reverse)
-        # None-last even when reverse=True: push missing values to the bottom
-        ordered = [x for x in ordered if x[sort_key] is not None] + [x for x in ordered if x[sort_key] is None]
-        out = []
-        for i, x in enumerate(ordered[:TOP_N], 1):
-            out.append({
-                "rank": i, "name": x["name"], "nat": x["nat"], "mark": x["mark"],
-                "score": x["score"], "ratingPct": x["ratingPct"],
-                "dlRaces": x["dlRaces"], "racesOnRecord": x["racesOnRecord"],
-                "profileUrl": x["profileUrl"],
-            })
-        return out
-
     return {
         "isField": key in FIELD_EVENTS,
-        "model": ranked("prob"),
-        "points": ranked("score"),
+        "modelAvailable": True,
+        "model": ranked(rows, "prob"),
+        "points": ranked(rows, "score"),
     }
 
 
@@ -197,7 +227,8 @@ if __name__ == "__main__":
         res = score_discipline(key)
         if res:
             out[key] = res
-            print(f"  {key}: model#1={res['model'][0]['name']}  points#1={res['points'][0]['name']}")
+            model_top = res["model"][0]["name"] if res["model"] else "(points only)"
+            print(f"  {key}: model#1={model_top}  points#1={res['points'][0]['name']}")
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)

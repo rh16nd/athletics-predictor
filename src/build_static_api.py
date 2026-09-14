@@ -38,6 +38,7 @@ import os
 import re
 import sys
 import unicodedata
+from datetime import date
 from urllib.parse import quote
 
 sys.path.insert(0, os.path.dirname(__file__))
@@ -84,6 +85,10 @@ def snapshot_paths():
         ("/api/search-index", "search-index.json"),
     ]
     for key in api.DISC_LABELS:
+        # No discipline page for the hammer or the 10,000m: the page is built
+        # on the model's field, and they have none. Asking would log a SKIP.
+        if key in api.POINTS_ONLY_DISCIPLINES:
+            continue
         pairs.append((f"/api/discipline/{key}", f"discipline/{key}.json"))
     return pairs
 
@@ -170,6 +175,31 @@ def status_pairs(client, depth, already):
             continue
         seen.add((disc_key, name))
         pairs.append((disc_key, name))
+    return pairs
+
+
+def championship_pairs(client, already):
+    """(discipline key, athlete name) for every entrant in the current
+    championship's call who has a page on the site.
+
+    The championship page links each of them, and most Asian Games entrants
+    are on no world toplist, so status_pairs() never reaches them. Nothing once
+    the championship has ended, when its page is a record rather than a call."""
+    res = client.get("/api/championship")
+    if res.status_code != 200:
+        return []
+    data = res.get_json() or {}
+    if ((data.get("championship") or {}).get("endDate") or "") < date.today().isoformat():
+        return []
+    pairs, seen = [], set()
+    for projection in data.get("projections") or []:
+        key = projection.get("discKey")
+        for athlete in projection.get("athletes") or []:
+            pair = (key, athlete.get("name"))
+            if not (key and pair[1] and athlete.get("hasPage")) or pair in already or pair in seen:
+                continue
+            seen.add(pair)
+            pairs.append(pair)
     return pairs
 
 
@@ -313,10 +343,11 @@ def build(out_dir, depth=DEFAULT_PROFILE_DEPTH):
     # the page asks /api/athlete-status why they are not in the field. That
     # follow-up was the last click on the site that could still wait out
     # Render's cold start, so it is snapshotted too, down to `depth`.
-    w, s, t, kept = write_snapshots(
-        client, out_dir, "athlete-status",
-        status_pairs(client, depth, set(pairs)), "status pages",
-    )
+    wanted = status_pairs(client, depth, set(pairs))
+    # The current championship's entrants: its page links every one of them,
+    # and the depth above stops at world rank, which most of them do not have.
+    wanted += championship_pairs(client, set(pairs) | set(wanted))
+    w, s, t, kept = write_snapshots(client, out_dir, "athlete-status", wanted, "status pages")
     written, skipped, total = written + w, skipped + s, total + t
     statuses[0] = w
     # Lowering --profile-depth prunes here too, which is correct even though it

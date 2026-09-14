@@ -10,15 +10,21 @@ import ultimate_scraper as us
 import ultimate_predictions as up
 
 
-def test_disciplines_we_hold_no_data_for_do_not_get_a_key():
-    """The Ultimate contests a men's hammer throw. We have no hammer toplist,
-    no history and no model for it. Mapping it to "men_HT" anyway would hand
-    the projector a discipline it cannot score and make an honest gap look
-    like a bug."""
-    assert us.disc_key_from_wa("Men's Hammer Throw") is None
+def test_disciplines_we_hold_no_data_for_do_not_get_a_key(monkeypatch):
+    """A name we can parse is not an event we hold data for. Mapping one anyway
+    would hand the projector a discipline it cannot score and make an honest
+    gap look like a bug. The hammer was the example until 2026-09-14, when its
+    toplist arrived; it maps exactly when that toplist is on disk."""
+    assert us.disc_key_from_wa("Men's Marathon") is None
     assert us.disc_key_from_wa("Mixed 4x400 Metres Relay") is None
     assert us.disc_key_from_wa("Men's 400 Metres Hurdles") == "men_400h"
     assert us.disc_key_from_wa("Women's Triple Jump") == "women_TJ"
+
+    monkeypatch.setattr(us, "_have_season_data", lambda key: False)
+    assert us.disc_key_from_wa("Men's Hammer Throw") is None
+    monkeypatch.setattr(us, "_have_season_data", lambda key: True)
+    assert us.disc_key_from_wa("Men's Hammer Throw") == "men_HT"
+    assert us.disc_key_from_wa("Women's 10,000 Metres") == "women_10000m"
 
 
 def test_only_athletes_wa_marks_qualified_are_kept(monkeypatch):

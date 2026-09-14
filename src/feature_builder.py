@@ -21,13 +21,22 @@ FIELD_EVENTS = {
     "men_PV", "women_PV", "men_LJ", "women_LJ",
     "men_TJ", "women_TJ", "men_HJ", "women_HJ",
     "men_SP", "women_SP", "men_DT", "women_DT",
-    "men_JT", "women_JT"
+    "men_JT", "women_JT", "men_HT", "women_HT",
 }
 
 LONG_DISTANCE_EVENTS = {
     "men_1500m", "women_1500m", "men_5000m", "women_5000m",
-    "men_3000sc", "women_3000sc",
+    "men_3000sc", "women_3000sc", "men_10000m", "women_10000m",
 }
+
+# Disciplines we hold a 2026 toplist for and nothing else. Neither the hammer
+# nor the 10,000m is a Diamond League event, so there is no meetings log, no
+# 2008-2025 history, and no row of them in the model's training set. Added on
+# 2026-09-14 for the Asian Games and kept site-wide at the user's request.
+# Wherever a discipline can be ranked two ways, these are ranked on World
+# Athletics points alone: a model rating for them would be the model scoring
+# its own defaults.
+POINTS_ONLY_DISCIPLINES = frozenset({"men_HT", "women_HT", "men_10000m", "women_10000m"})
 
 # How far back "recent form" looks. Wide enough to catch a mid-season athlete's
 # last two or three outings, narrow enough that a March mark is not called

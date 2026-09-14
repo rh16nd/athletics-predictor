@@ -501,6 +501,7 @@ def champion_qualifiers():
 EVENT_CODES = {
     "100M": "100m", "200M": "200m", "400M": "400m", "800M": "800m",
     "1500M": "1500m", "MILE": "1500m", "5000M": "5000m",
+    "10,000M": "10000m", "10000M": "10000m",
     "3000M STEEPLECHASE": "3000sc", "STEEPLECHASE": "3000sc",
     "110M HURDLES": "110h", "100M HURDLES": "100h", "400M HURDLES": "400h",
     "HIGH JUMP": "HJ", "POLE VAULT": "PV", "LONG JUMP": "LJ",

@@ -138,6 +138,30 @@ def predicted_athletes():
         return set()
 
 
+def championship_athletes(champ_id):
+    """{name: WA id} for every entrant in a championship's saved field who has
+    a 2026 mark, which is everyone its page links to a page on this site.
+
+    Most Asian Games entrants are on no world toplist, so athlete_ids() never
+    finds them, and their pages opened with no season form and no career block
+    (2026-09-14). Names are the field's, which asian_games_scraper.py writes in
+    the world toplist's spelling wherever the athlete is on it."""
+    import championships
+
+    path = championships.path(championships.get(champ_id), "event.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            event = json.load(f)
+    except (OSError, TypeError, ValueError):
+        return {}
+    found = {}
+    for ev in event.get("field") or []:
+        for athlete in ev.get("athletes") or []:
+            if athlete.get("waId") and athlete.get("score") is not None:
+                found.setdefault(athlete["name"], str(athlete["waId"]))
+    return found
+
+
 def load_index():
     try:
         with open(INDEX_PATH, encoding="utf-8") as f:
@@ -193,16 +217,21 @@ def main():
     parser.add_argument("--status", action="store_true")
     parser.add_argument("--refresh", action="store_true",
                         help="re-fetch athletes already on disk")
+    parser.add_argument("--championship", metavar="ID",
+                        help="the entrants in a championship's saved field, e.g. asian-games-2026")
     args = parser.parse_args()
 
     if args.status:
         status()
         return
 
-    ids = athlete_ids()
-    if not args.all:
-        wanted = predicted_athletes()
-        ids = {n: i for n, i in ids.items() if n in wanted}
+    if args.championship:
+        ids = championship_athletes(args.championship)
+    else:
+        ids = athlete_ids()
+        if not args.all:
+            wanted = predicted_athletes()
+            ids = {n: i for n, i in ids.items() if n in wanted}
     index = load_index()
     os.makedirs(OUT_DIR, exist_ok=True)
 

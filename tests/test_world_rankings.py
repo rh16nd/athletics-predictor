@@ -41,6 +41,24 @@ def test_dl_races_is_counted_when_the_log_exists(monkeypatch, tmp_path):
     assert wr.has_meetings_log("men_800m") is True
 
 
+def test_a_discipline_the_model_has_never_seen_is_ranked_on_points_alone(monkeypatch, tmp_path):
+    """The hammer and the 10,000m, added 2026-09-14. A rating for them would be
+    the model scoring its own defaults, so the model is never run on them."""
+    (tmp_path / f"men_HT_{wr.YEAR}.csv").write_text(
+        "Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,ProfileURL\n"
+        "2,80.10,,Second THROWER,01 JAN 2000,POL,1,,Somewhere,01 JUN 2026,1190,men_HT,2026,u2\n"
+        "1,82.00,,First THROWER,01 JAN 1999,CAN,1,,Somewhere,01 JUL 2026,1250,men_HT,2026,u1\n",
+        encoding="utf-8")
+    monkeypatch.setattr(wr, "RAW_DIR", str(tmp_path))
+    monkeypatch.setattr(wr, "races_on_record", lambda key, year: {})
+    monkeypatch.setattr(wr, "build_2026_features", lambda *a, **k: pytest.fail("the model path ran"))
+
+    out = wr.score_discipline("men_HT")
+    assert (out["modelAvailable"], out["model"], out["isField"]) == (False, [], True)
+    assert [r["name"] for r in out["points"]] == ["First THROWER", "Second THROWER"]
+    assert all(r["ratingPct"] is None and r["dlRaces"] is None for r in out["points"])
+
+
 def test_every_shipped_row_carries_a_meeting_count():
     """The column is the whole explanation for a low rating. A refresh that
     quietly drops it leaves the ratings looking like verdicts again."""

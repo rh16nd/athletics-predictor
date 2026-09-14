@@ -28,6 +28,14 @@ snapshot as it is, plus the Asian row of every ENTRANT the world list lacks.
 Entrants only, not the whole Asian list, because every added row enlarges the
 population that season_percentile and field_gap are measured against.
 
+ENTRANTS THE ASIAN LIST DOES NOT PLACE
+On the first real run 179 of 599 entries had no mark: 156 carried no World
+Athletics id, so could only be matched by name, and 23 had one but sat below the
+top 300 in Asia. complete_matches() looks each of them up at World Athletics
+directly: an id through WA's own athlete search, confirmed by date of birth, and
+a season best from the athlete's profile, whose resultScore is the toplist's
+Results Score. Whoever is still unranked carries the reason.
+
 Usage:
     python src/asian_games_scraper.py                  # entries, marks, snapshots, results
     python src/asian_games_scraper.py --results-only   # during the Games: results into the saved file
@@ -39,6 +47,8 @@ import json
 import os
 import re
 import sys
+import time
+import unicodedata
 import zlib
 from datetime import datetime, timezone
 
@@ -48,6 +58,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 import championships  # noqa: E402
+import dl_final_results_scraper as dlr  # noqa: E402
 import live_fetcher  # noqa: E402
 import ultimate_scraper as us  # noqa: E402
 
@@ -91,14 +102,16 @@ MAX_PAGES = 3
 # everywhere else that reads a toplist.
 NAT = 5
 
-# The portal's event codes ("M.110MHURD----------") for the 32 disciplines we
-# hold data for. Anything else is not called; see not_called_reason().
+# The portal's event codes ("M.110MHURD----------") for the disciplines we hold
+# a 2026 toplist for. Anything else is not called; see not_called_reason().
+# The 10,000m and the hammer joined on 2026-09-14. With no race history for
+# either, the 6-of-8 rule can only ever rank them on points.
 EVENT_CODES = {
     "100M": "100m", "200M": "200m", "400M": "400m", "800M": "800m",
-    "1500M": "1500m", "5000M": "5000m", "3000MST": "3000sc",
+    "1500M": "1500m", "5000M": "5000m", "10000M": "10000m", "3000MST": "3000sc",
     "110MHURD": "110h", "100MHURD": "100h", "400MHURD": "400h",
     "HIGHJUMP": "HJ", "PLEVAULT": "PV", "LONGJUMP": "LJ", "TRPLJUMP": "TJ",
-    "SHOTPUT": "SP", "DISCUS": "DT", "JAVELIN": "JT",
+    "SHOTPUT": "SP", "DISCUS": "DT", "JAVELIN": "JT", "HAMMER": "HT",
 }
 SEXES = {"M": "men", "W": "women"}
 
@@ -142,8 +155,8 @@ def disc_key(ev_key):
 
 def not_called_reason(event):
     """Why an event gets no call. A relay is a national team and the model is
-    built on individuals. The rest (10,000m, marathons, walks, hammer, combined
-    events) are events we hold no toplist, history or model for."""
+    built on individuals. The rest (marathons, walks, combined events) are
+    events we hold no toplist, history or model for."""
     return "relay" if event.get("IsTeam") else "noData"
 
 
@@ -192,12 +205,15 @@ def fetch_entries(get=portal_get):
 
 
 def display_name(entrant):
-    """"Shuhei TADA", the order World Athletics and the rest of the site use."""
-    given = (entrant.get("givenName") or "").strip()
-    family = (entrant.get("familyName") or "").strip()
+    """"Shuhei TADA", the order World Athletics and the rest of the site use.
+    A "." in either part holds the place of a name a single-named athlete does
+    not have: the entry list gives Sangay of Bhutan the family name ".", which
+    read "Sangay ." on the page."""
+    given = (entrant.get("givenName") or "").strip().strip(".").strip()
+    family = (entrant.get("familyName") or "").strip().strip(".").strip()
     if given and family:
         return f"{given} {family.upper()}"
-    return entrant.get("entryName") or ""
+    return given or family.upper() or (entrant.get("entryName") or "")
 
 
 def wa_id(url):
@@ -343,6 +359,248 @@ def match_entrants(entrants, header, rows):
     return out
 
 
+SEARCH_QUERY = """query SearchCompetitors($query: String, $countryCode: String) {
+  searchCompetitors(query: $query, countryCode: $countryCode) {
+    aaAthleteId familyName givenName birthDate gender country
+  }
+}"""
+
+SEASON_QUERY = """query SeasonResults($id: Int) {
+  getSingleCompetitor(id: $id) {
+    basicData { birthDate givenName familyName }
+    resultsByYear {
+      resultsByEvent {
+        discipline indoor
+        results { date venue place mark wind resultScore notLegal }
+      }
+    }
+  }
+}"""
+
+# World Athletics' own name for each discipline ("100 Metres", "10,000 Metres"),
+# for reading a profile. The inverse of the map their results are read through.
+WA_EVENT_NAMES = {key: name for (_sex, name), key in dlr.WA_EVENT_TO_KEY.items()}
+# The pause athlete_profile_scraper.py keeps between GraphQL requests. WA's
+# CloudFront answers a burst with an HTML error page.
+LOOKUP_PAUSE = 0.35
+_MONTHS = {m: i for i, m in enumerate(
+    ("JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"), 1)}
+
+
+def wa_search(query, nat):
+    time.sleep(LOOKUP_PAUSE)
+    data = dlr.graphql("SearchCompetitors", {"query": query, "countryCode": nat}, SEARCH_QUERY)
+    return data.get("searchCompetitors") or []
+
+
+def wa_season(athlete_id):
+    time.sleep(LOOKUP_PAUSE)
+    return dlr.graphql("SeasonResults", {"id": int(athlete_id)}, SEASON_QUERY).get("getSingleCompetitor")
+
+
+def birth_date_iso(text):
+    """'18 AUG 2006' -> '2006-08-18'. A year on its own stays a year: World
+    Athletics knows only the birth year of some athletes."""
+    parts = str(text or "").split()
+    if len(parts) == 3 and parts[0].isdigit() and parts[1].upper() in _MONTHS and parts[2].isdigit():
+        return f"{parts[2]}-{_MONTHS[parts[1].upper()]:02d}-{int(parts[0]):02d}"
+    if len(parts) == 1 and len(parts[0]) == 4 and parts[0].isdigit():
+        return parts[0]
+    return None
+
+
+# Name particles shared by unrelated people: "AL GHALBAN" and "AL HASSAN" agree
+# on "AL" and nothing else, which is no agreement at all.
+_NAME_PARTICLES = frozenset({"AL", "EL", "BIN", "BINT", "IBN", "ABU", "BEN", "DE", "DA", "DI", "VAN"})
+
+
+def _tokens(text):
+    s = unicodedata.normalize("NFD", str(text or ""))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return {w for w in re.split(r"[^A-Z0-9]+", s.upper()) if len(w) > 1 and w not in _NAME_PARTICLES}
+
+
+def find_wa_id(entrant, sex, search=wa_search):
+    """The World Athletics id of an entrant the entry list gave none, or None.
+
+    Looked up in WA's own athlete search within the entrant's nation, and taken
+    only when exactly one result is the same sex, was born on the same day and
+    shares a name with the entry. The date does the work. WA spells Sorsy
+    PHOMPHAKDI of Laos "PHOMPAKDI", and a search on the entry's spelling still
+    finds him, born on 7 December 2001 as the entry says. Where WA knows only a
+    birth year, two names must agree.
+
+    Which part is the family name is not compared. For Mongolia the two lists
+    swap them: the entry "DAVAANYAM Myagmarsuren" is given name Dawaanyam and
+    family name MYAGMARSUREN at WA, same birth date. Comparing part with part
+    turned that away on the first run with this lookup (2026-09-14)."""
+    birth = entrant.get("birthDate")
+    nat = entrant.get("nat")
+    if not birth or not nat:
+        return None
+    entry_words = (entrant.get("entryName") or "").split()
+    family = entrant.get("familyName") or (entry_words[0] if entry_words else "")
+    given = entrant.get("givenName") or " ".join(entry_words[1:])
+    wanted = _tokens(family) | _tokens(given)
+    for query in dict.fromkeys(q for q in (family, f"{given} {family}".strip(), given) if q):
+        fits = set()
+        for c in search(query, nat):
+            if c.get("country") != nat or not str(c.get("aaAthleteId") or "").isdigit():
+                continue
+            if sex and str(c.get("gender") or "")[:1].upper() != sex:
+                continue
+            born = birth_date_iso(c.get("birthDate"))
+            shared = wanted & (_tokens(c.get("familyName")) | _tokens(c.get("givenName")))
+            if born == birth and shared:
+                fits.add(int(c["aaAthleteId"]))
+            elif born and len(born) == 4 and birth.startswith(born) and len(shared) >= 2:
+                fits.add(int(c["aaAthleteId"]))
+        if len(fits) == 1:
+            return fits.pop()
+        if fits:
+            return None
+    return None
+
+
+def season_best(profile, key, year=YEAR):
+    """An athlete's best legal outdoor result this season in one discipline, as
+    their World Athletics profile has it, or None.
+
+    The profile's resultScore is the toplist's Results Score. Checked on
+    2026-09-14 on two men's 100m entrants who are on the Asian list: 1169 and
+    1066 in both places. So a mark found here ranks on the same scale."""
+    wanted = WA_EVENT_NAMES.get(key)
+    best = None
+    for group in ((profile or {}).get("resultsByYear") or {}).get("resultsByEvent") or []:
+        if group.get("discipline") != wanted or group.get("indoor"):
+            continue
+        for result in group.get("results") or []:
+            score = result.get("resultScore")
+            if result.get("notLegal") or not score or not str(result.get("date") or "").endswith(str(year)):
+                continue
+            if best is None or score > best["resultScore"]:
+                best = result
+    return best
+
+
+def profile_name(profile, fallback):
+    """The athlete's name as World Athletics writes it, "Sorsy PHOMPAKDI". Their
+    results carry this spelling, and the results are graded by name."""
+    basic = (profile or {}).get("basicData") or {}
+    given, family = (basic.get("givenName") or "").strip(), (basic.get("familyName") or "").strip()
+    return f"{given} {family.upper()}" if given and family else fallback
+
+
+def profile_row(header, key, name, nat, athlete_id, profile, result):
+    """A toplist-shaped row for a mark read off a profile, so the merged
+    snapshot, the model and the athlete pages treat it like any other row. The
+    rank stays blank: this athlete is on no list, Asian or world."""
+    cells = [""] * (len(header) - 3)
+    values = {
+        "Mark": result.get("mark"), "WIND": result.get("wind"), "Competitor": name,
+        "DOB": ((profile or {}).get("basicData") or {}).get("birthDate"),
+        "Pos": str(result.get("place") or "").rstrip("."), "Venue": result.get("venue"),
+        "Date": result.get("date"), "Results Score": str(result.get("resultScore")),
+    }
+    for col, value in values.items():
+        if col in header[:len(cells)]:
+            cells[header.index(col)] = value or ""
+    cells[NAT] = nat or ""
+    return cells + [key, str(YEAR), f"https://worldathletics.org/athletes/athlete={athlete_id}"]
+
+
+def complete_matches(matches, entrants, header, rows, key, sex, search=wa_search, season=wa_season, cache=None):
+    """match_entrants()'s [(athlete, row)], with each entrant the Asian list did
+    not place looked up at World Athletics directly:
+
+      1. no id: WA's athlete search, confirmed by date of birth (find_wa_id);
+      2. an id that is on the list after all, under a spelling the name match
+         missed: that toplist row;
+      3. otherwise the athlete's profile, their best legal outdoor result this
+         season, as a toplist-shaped row (profile_row).
+
+    Every athlete gets `unranked`: None when ranked, "notFound" when WA has no
+    athlete to match, "noMark" when their profile has no 2026 result in this
+    event, and "lookupFailed" when a request failed. `cache` is shared across
+    events, so an athlete entered twice is looked up once."""
+    cache = {} if cache is None else cache
+    comp, mark_col, score_col, rank_col = (header.index(c) for c in ("Competitor", "Mark", "Results Score", "Rank"))
+    by_id = {}
+    for r in rows:
+        rid = wa_id(r[-1])
+        if rid:
+            by_id.setdefault(rid, r)
+    claimed = {id(r) for _, r in matches if r is not None}
+
+    out = []
+    for (athlete, row), entrant in zip(matches, entrants):
+        athlete = {**athlete, "unranked": None}
+        if row is not None:
+            out.append((athlete, row))
+            continue
+        try:
+            athlete_id = athlete.get("waId")
+            if not athlete_id:
+                ident = ("search", sex, entrant.get("nat"), entrant.get("entryName"))
+                if ident not in cache:
+                    cache[ident] = find_wa_id(entrant, sex, search)
+                athlete_id = cache[ident]
+            if not athlete_id:
+                out.append(({**athlete, "unranked": "notFound"}, None))
+                continue
+            athlete["waId"] = athlete_id
+            athlete["profileUrl"] = athlete.get("profileUrl") or f"https://worldathletics.org/athletes/athlete={athlete_id}"
+
+            listed = by_id.get(athlete_id)
+            if listed is not None and id(listed) not in claimed:
+                claimed.add(id(listed))
+                athlete.update(name=listed[comp], mark=listed[mark_col], score=_int(listed[score_col]),
+                               asiaRank=_int(listed[rank_col]), matchedBy="search",
+                               profileUrl=listed[-1] or athlete["profileUrl"])
+                out.append((athlete, listed))
+                continue
+
+            if ("profile", athlete_id) not in cache:
+                cache[("profile", athlete_id)] = season(athlete_id)
+            profile = cache[("profile", athlete_id)]
+            best = season_best(profile, key)
+            if best is None:
+                # Under World Athletics' spelling, as wherever they are ranked.
+                # Otherwise one Mongolian entrant read as two people: "Dawaanyam
+                # MYAGMARSUREN" ranked in the 1500m, "Myagmarsuren DAVAANYAM"
+                # unranked in the 800m.
+                out.append(({**athlete, "name": profile_name(profile, athlete["name"]),
+                             "unranked": "noMark"}, None))
+                continue
+            name = profile_name(profile, athlete["name"])
+            athlete.update(name=name, mark=best.get("mark"), score=int(best["resultScore"]),
+                           asiaRank=None, matchedBy="profile")
+            out.append((athlete, profile_row(header, key, name, athlete.get("nat"), athlete_id, profile, best)))
+        except (requests.RequestException, RuntimeError, ValueError, KeyError, TypeError):
+            out.append(({**athlete, "unranked": "lookupFailed"}, None))
+    return out
+
+
+def world_spelling(matches, world_header, world_rows):
+    """[(athlete, row)] with each athlete under the world toplist's spelling of
+    their name, wherever their World Athletics id is on that list.
+
+    The two lists can spell one athlete two ways: "Taepoong NAM" in Asia and
+    "Tae-poong NAM" worldwide, "Yu sun JEONG" and "Yusun JEONG". merge_snapshot
+    keeps the world row, while the model, the athlete pages and the grading of
+    results all key on the name. Under the Asian spelling the men's javelin call,
+    a model event, could not score Taepoong NAM, and Yusun JEONG had no page
+    (found on the first run with lookups, 2026-09-14)."""
+    comp = world_header.index("Competitor")
+    by_id = {}
+    for r in world_rows:
+        rid = wa_id(r[-1])
+        if rid:
+            by_id.setdefault(rid, r[comp])
+    return [({**athlete, "name": by_id.get(athlete.get("waId"), athlete["name"])}, row)
+            for athlete, row in matches]
+
+
 def merge_snapshot(world_header, world_rows, asian_header, entrant_rows):
     """(merged rows, added rows): the world snapshot unchanged and first, then
     the Asian row of each entrant it lacks. Refuses toplists whose columns
@@ -384,7 +642,8 @@ def _now():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def build_event(get=portal_get, fetch=fetch_page, results=us.fetch_results, world_dir=None):
+def build_event(get=portal_get, fetch=fetch_page, results=us.fetch_results, world_dir=None,
+                search=wa_search, season=wa_season):
     """(event payload, {csv path: (header, rows)}). Nothing is written here, so
     a run that fails part-way leaves every saved file as it was."""
     world_dir = world_dir or WORLD_RAW_DIR
@@ -392,7 +651,7 @@ def build_event(get=portal_get, fetch=fetch_page, results=us.fetch_results, worl
     entries, failed = fetch_entries(get)
     allowed = ASIAN_NATIONS | {e["nat"] for group in entries.values() for e in group if e.get("nat")}
 
-    field, not_called, files = [], [], {}
+    field, not_called, files, lookups = [], [], {}, {}
     for ev in programme:
         ev_key = ev.get("EvKey")
         entrants = entries.get(ev_key) or []
@@ -406,8 +665,10 @@ def build_event(get=portal_get, fetch=fetch_page, results=us.fetch_results, worl
         header, rows = scrape_asian_toplist(key, entrants, allowed, fetch)
         if header is None:
             raise RuntimeError(f"{key}: World Athletics served no Asian toplist")
-        matches = match_entrants(entrants, header, rows)
+        matches = complete_matches(match_entrants(entrants, header, rows), entrants, header, rows,
+                                   key, ev_key[0], search, season, lookups)
         world_header, world_rows = read_rows(os.path.join(world_dir, f"{key}_{YEAR}.csv"))
+        matches = world_spelling(matches, world_header, world_rows)
         merged, added = merge_snapshot(world_header, world_rows, header,
                                        [row for _, row in matches if row is not None])
         files[os.path.join(ASIA_DIR, f"{key}_{YEAR}.csv")] = (header, rows)
@@ -422,6 +683,8 @@ def build_event(get=portal_get, fetch=fetch_page, results=us.fetch_results, worl
             "sex": ev_key[0],
             "athletes": athletes,
             "withSeasonMark": sum(1 for a in athletes if a["score"] is not None),
+            # Marks read off a World Athletics profile, not the Asian list.
+            "markFromProfile": sum(1 for a in athletes if a.get("matchedBy") == "profile"),
             "addedToSnapshot": [row[comp] for row in added],
             "fieldSource": "entries",
         })
@@ -438,6 +701,9 @@ def build_event(get=portal_get, fetch=fetch_page, results=us.fetch_results, worl
         # Federations whose athletes were matched by name because their page
         # with World Athletics ids did not load. Empty on a clean run.
         "federationsWithoutIds": failed,
+        # Entrants whose World Athletics lookup failed outright, so their
+        # "unranked" may be a network error rather than a fact. 0 on a clean run.
+        "lookupFailures": sum(1 for ev in field for a in ev["athletes"] if a.get("unranked") == "lookupFailed"),
         "fieldPublished": bool(field),
         "resultsAvailable": bool(found),
         "field": field,
@@ -500,7 +766,16 @@ def main(argv=None):
         print(f"  WARNING: no World Athletics ids for {', '.join(event['federationsWithoutIds'])}")
     for ev in field:
         print(f"    {ev['disciplineLabel']:<30} {len(ev['athletes']):>3} entered, "
-              f"{ev['withSeasonMark']:>3} with a 2026 mark, {len(ev['addedToSnapshot']):>2} added to the snapshot")
+              f"{ev['withSeasonMark']:>3} with a 2026 mark ({ev.get('markFromProfile', 0):>2} from a profile), "
+              f"{len(ev['addedToSnapshot']):>2} added to the snapshot")
+    reasons = {}
+    for ev in field:
+        for a in ev["athletes"]:
+            if a.get("unranked"):
+                reasons[a["unranked"]] = reasons.get(a["unranked"], 0) + 1
+    print(f"  unranked entries by reason: {reasons or 'none'}")
+    if event.get("lookupFailures"):
+        print(f"  WARNING: {event['lookupFailures']} World Athletics lookups failed; re-run before freezing")
     print(f"  results: {len(event.get('results') or [])} rows")
     print(f"  Saved -> {OUT_PATH}")
     return 0

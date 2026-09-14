@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse the same graphql()/HEADERS every other scraper does
 import championships  # noqa: E402 -- which championships exist, where their data lives, their themes
 from feature_builder import get_qual_limit  # noqa: E402 -- one definition of the field size, shared with run.py
+from feature_builder import POINTS_ONLY_DISCIPLINES  # noqa: E402
 import athlete_analytics  # noqa: E402 -- race-log statistics; reads data/worldwide, never feeds the model
 import athlete_career  # noqa: E402 -- honours/rankings/PBs as World Athletics states them; never feeds the model
 
@@ -199,11 +200,12 @@ FIELD_EVENTS = {
     "men_PV", "women_PV", "men_LJ", "women_LJ",
     "men_TJ", "women_TJ", "men_HJ", "women_HJ",
     "men_SP", "women_SP", "men_DT", "women_DT",
-    "men_JT", "women_JT"
+    "men_JT", "women_JT", "men_HT", "women_HT",
 }
 MIDDLE_DISTANCE = {
     "men_800m", "women_800m", "men_1500m", "women_1500m",
     "men_5000m", "women_5000m", "men_3000sc", "women_3000sc",
+    "men_10000m", "women_10000m",
 }
 
 DISC_LABELS = {
@@ -239,6 +241,13 @@ DISC_LABELS = {
     "women_DT":    "Women's Discus Throw",
     "men_JT":      "Men's Javelin Throw",
     "women_JT":    "Women's Javelin Throw",
+    # Ranked on points only: no Diamond League, so no race history and no
+    # model (feature_builder.POINTS_ONLY_DISCIPLINES). Last, so the 32 keep
+    # the order the search index breaks ties by.
+    "men_HT":      "Men's Hammer Throw",
+    "women_HT":    "Women's Hammer Throw",
+    "men_10000m":  "Men's 10,000m",
+    "women_10000m": "Women's 10,000m",
 }
 
 def parse_mark(m):
@@ -1443,20 +1452,45 @@ def load_standings():
         return {}
 
 
+def season_snapshot_paths(disc_key):
+    """Where this season's toplist rows for a discipline live: the world
+    toplist first, then each championship's merged snapshot.
+
+    A championship snapshot is the world list plus the entrants it lacks
+    (asian_games_scraper.py). Reading it second is what gives an Asian Games
+    entrant on no world toplist a page: before 2026-09-14, 281 of the 419
+    ranked entrants had none and linked out to World Athletics."""
+    paths = [os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}.csv")]
+    for champ in championships.CHAMPIONSHIPS:
+        snap = championships.path(champ, os.path.join("raw", f"{disc_key}_{MEETS_YEAR}.csv"))
+        if snap:
+            paths.append(snap)
+    return [p for p in paths if os.path.exists(p)]
+
+
+def season_toplist_row(disc_key, athlete_name):
+    """An athlete's first row across season_snapshot_paths(), or None. A world
+    toplist row wins, so a world-ranked athlete keeps their world rank."""
+    for path in season_snapshot_paths(disc_key):
+        try:
+            df = pd.read_csv(path)
+        except Exception:
+            continue
+        hit = df[df["Competitor"].astype(str).str.lower() == athlete_name.lower()]
+        if not hit.empty:
+            return hit.iloc[0]
+    return None
+
+
 def toplist_entry(disc_key, athlete_name):
     """An athlete's row in this season's worldwide toplist, whether or not
-    they are in the projected field. Returns (mark, world_rank, wa_url)."""
-    path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}.csv")
-    if not os.path.exists(path):
+    they are in the projected field. Returns (mark, world_rank, wa_url).
+
+    An entrant known only from a championship snapshot has a mark and no
+    world rank."""
+    r = season_toplist_row(disc_key, athlete_name)
+    if r is None:
         return None, None, None
-    try:
-        df = pd.read_csv(path)
-    except Exception:
-        return None, None, None
-    hit = df[df["Competitor"].astype(str).str.lower() == athlete_name.lower()]
-    if hit.empty:
-        return None, None, None
-    r = hit.iloc[0]
     rank = r.get("Rank")
     url = r.get("ProfileURL")
     return (
@@ -1474,17 +1508,9 @@ def toplist_bio(disc_key, athlete_name):
     standings, is the live example) has no prediction row at all -- and
     there is no reason their page should be blank on two facts the scrape
     already collected."""
-    path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}.csv")
-    if not os.path.exists(path):
+    row = season_toplist_row(disc_key, athlete_name)
+    if row is None:
         return {}
-    try:
-        df = pd.read_csv(path)
-    except Exception:
-        return {}
-    hit = df[df["Competitor"].astype(str).str.lower() == athlete_name.lower()]
-    if hit.empty:
-        return {}
-    row = hit.iloc[0]
 
     out = {}
     # WA's toplist export leaves the nationality column unnamed.
@@ -1553,6 +1579,37 @@ def dl_meetings_count(disc_key, athlete_name):
     if "Competitor" not in df.columns:
         return None
     return int((df["Competitor"].str.lower() == str(athlete_name).lower()).sum())
+
+
+def championship_call(disc_key, athlete_name, today=None):
+    """The current championship's call on this athlete in this event, or None
+    when they are not entered in it.
+
+    Only until the championship ends: an athlete page says where someone stands
+    now, and a finished call belongs to the Results page. `rank` is None for an
+    entrant the call could not rank, and `unranked` then says why."""
+    champ = championships.current()
+    if (today or date.today()).isoformat() > (champ.get("endDate") or ""):
+        return None
+    wanted = athlete_name.lower()
+    for p in (load_event_predictions(champ["id"]) or {}).get("projections") or []:
+        if p.get("discKey") != disc_key:
+            continue
+        base = {
+            "id": champ["id"], "labelKey": champ["labelKey"], "theme": champ["theme"],
+            "method": p.get("method"),
+            "entered": p.get("qualified") or len(p.get("athletes") or []),
+            "ranked": len(p.get("athletes") or []),
+        }
+        for a in p.get("athletes") or []:
+            if str(a.get("name") or "").lower() == wanted:
+                return {**base, "rank": a.get("rank"), "podiumChance": a.get("podiumChance"),
+                        "rankingScore": a.get("rankingScore"), "unranked": None}
+        for u in p.get("unranked") or []:
+            if str(u.get("name") or "").lower() == wanted:
+                return {**base, "rank": None, "podiumChance": None, "rankingScore": None,
+                        "unranked": u.get("reason")}
+    return None
 
 
 def athlete_field_status(disc_key, athlete_name):
@@ -1748,6 +1805,23 @@ def athlete_field_status(disc_key, athlete_name):
     # a reader came here for either way.
     dl = standings_position(disc_key, athlete_name)
     out["dl"] = dl
+
+    # Entered at the current championship. With the Diamond League over, that
+    # is what a reader opening this page wants to know, and the Diamond League
+    # reasons below mean nothing to an Asian Games entrant who never ran it.
+    out["championship"] = championship_call(disc_key, athlete_name)
+    if out["championship"]:
+        out["reasonCode"] = "championship_entrant"
+        out["reason"] = "Entered at the current championship."
+        return out
+
+    # The hammer and the 10,000m never had a Diamond League field to be left
+    # out of. Without this they fell through to "outside the projected top 6".
+    if disc_key in POINTS_ONLY_DISCIPLINES:
+        out["reasonCode"] = "points_only"
+        out["reason"] = (f"{label} is not a Diamond League discipline, so there is no "
+                         f"projected field: it is ranked on World Athletics points only.")
+        return out
 
     if standings and not in_standings:
         if dl:
@@ -2003,21 +2077,26 @@ def build_search_index():
     in the browser."""
     rows = []
     for disc_key in DISC_LABELS:
-        path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}.csv")
-        if not os.path.exists(path):
-            continue
-        try:
-            df = pd.read_csv(path, usecols=["Competitor", "Mark", "Rank"])
-        except Exception:
-            continue
-        for _, r in df.iterrows():
-            rank = r.get("Rank")
-            rows.append([
-                str(r["Competitor"]),
-                disc_key,
-                str(r["Mark"]) if pd.notna(r.get("Mark")) else None,
-                int(rank) if pd.notna(rank) else None,
-            ])
+        seen = set()
+        # The world toplist, then each championship snapshot's added entrants:
+        # they have pages too (season_snapshot_paths), and no world rank.
+        for path in season_snapshot_paths(disc_key):
+            try:
+                df = pd.read_csv(path, usecols=["Competitor", "Mark", "Rank"])
+            except Exception:
+                continue
+            for _, r in df.iterrows():
+                name = str(r["Competitor"])
+                if name.lower() in seen:
+                    continue
+                seen.add(name.lower())
+                rank = r.get("Rank")
+                rows.append([
+                    name,
+                    disc_key,
+                    str(r["Mark"]) if pd.notna(r.get("Mark")) else None,
+                    int(rank) if pd.notna(rank) else None,
+                ])
     return {
         "columns": ["name", "discKey", "mark", "worldRank"],
         "disciplines": dict(DISC_LABELS),
@@ -2251,6 +2330,8 @@ def build_athlete_profile(disc_key, athlete_name):
         # it ranks them. Read, not derived -- see athlete_career's docstring
         # for why that is kept in a separate module from the race-log stats.
         "career":          athlete_career.build_career(athlete_name),
+        # The current championship's call on them, when they are entered.
+        "championship":    championship_call(disc_key, row["athlete_name"]),
     }
 
 
