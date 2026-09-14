@@ -2,7 +2,7 @@
 
 ## Start here: the Asian Games 2026 (in progress, 2026-09-14)
 
-_Last updated: 2026-09-14, second session of the day. **Steps 2 and 3 are built, checked locally and committed in both repos. Nothing is pushed and the live site still shows the Ultimate, so the user can review the page first.**_
+_Last updated: 2026-09-14, end of the second session. **Steps 2 and 3 are built, checked locally and committed in both repos (backend `d5421302`, frontend `1a39e09`). Nothing is pushed and the live site still shows the Ultimate. The next session starts with the user's three items under "Next session" below: add the hammer throw and 10,000m, work out why some entered athletes get no prediction, and fix the colours.**_
 - **When and where:** athletics runs 23–29 September 2026 at Paloma Mizuho Stadium, Nagoya.
 - **World Athletics:** it lists the event as "20th Asian Games", competition `7176091`, category A.
 - **Decisions:** the three raised today are settled, under "Settled by the user" below. Everything else needed to resume is here and in memory `project_asian_games_pivot_2026_09_14`.
@@ -52,15 +52,36 @@ _Last updated: 2026-09-14, second session of the day. **Steps 2 and 3 are built,
 2. **Flags.** The 21 entered federations that had no flag now have one, from flag-icons 7.2.3 in 4:3, the same set as the rest (its `jp.svg` is byte-identical to ours), mapped in `src/lib/flags.ts`. They have no entry in the country-page palette (`scripts/make-flag-palette.py`) yet.
 3. **Commit, then review.** Both repos are committed locally and not pushed. `CURRENT` is still `ultimate-2026`, and `public/data` was rebuilt with it.
 
-**Next**
-1. The user reviews `/championship` locally: start the `predictor-api-next-championship` launch config and the dev server.
-2. Run `python src/injury_checker.py --championship asian-games-2026` (it needs a headful browser).
-3. **Step 4:** flip `CURRENT` to `asian-games-2026`, run `build_static_api.py`, commit and push both repos. Before 23 September, re-run the scraper and predictions, then `python src/freeze_prefinal.py --championship asian-games-2026`.
-4. Results come from World Athletics competition `7176091`, which may lag the organisers' portal. The portal has results routes too, but their format cannot be checked before the first session.
+**Next session: the user's three items, set on 2026-09-14 before clearing the chat**
+
+1. Add the hammer throw and the 10,000m, for men and for women.
+   - Both are on the Asian Games programme and today land under "Events without a call" as `noData`. Neither is a Diamond League event, so there are no meetings logs for them and the model has never been trained on them.
+   - World Athletics publishes 2026 toplists for all four, with the columns our scraper already reads (checked 2026-09-14): `records/toplists/throws/hammer-throw/outdoor/{men,women}/senior/2026` and `records/toplists/middlelong/10000-metres/outdoor/{men,women}/senior/2026`. The Asian area filter works on them too.
+   - The list of 32 disciplines is written out in `api.py`, `run.py`, `src/live_fetcher.py`, `src/feature_builder.py` (`FIELD_EVENTS`, `LONG_DISTANCE_EVENTS`), `src/historical_scraper.py`, `src/train_model.py`, `src/h2h_scraper.py`, `src/dl_final_results_scraper.py` (`WA_EVENT_TO_KEY`) and `EVENT_CODES` in `src/asian_games_scraper.py`. On the frontend it is in the two locale files and `routes/athlete.$discKey.$name.tsx`. Grep for `women_JT` to find them all. `MEN_TABLE_ORDER` and `WOMEN_TABLE_ORDER` in `live_fetcher.py` are the Diamond League standings order and should not gain them.
+   - Decide first with the user: the championship call only, or the whole site (Track and Field pages, world rankings, search)? Site-wide changes the "32 disciplines" the site prints, and the 6-of-8 rule can only ever pick the model once 2008–2025 history has been scraped for them. With no history, all four would be ranked on points.
+   - The decathlon and heptathlon are left for later, as the user said. Toplists exist (`combined-events/decathlon/outdoor/men/senior/2026` and `combined-events/heptathlon/outdoor/women/senior/2026`), but the mark is a points total, not a time or a distance.
+
+2. Work out, then fix, why some entered athletes get a prediction and others do not. Measured on 2026-09-14:
+   - The field has 599 entries, one per athlete per event. 419 are ranked. 179 have no 2026 mark we could find and appear only as names under the table, in the "Entered, with no 2026 mark we could find in this event" line. One more athlete, Taepoong NAM in the men's javelin, has a mark but the model dropped him for a missing feature.
+   - 156 of those 179 have no World Athletics id on the entry list, so they could only be matched by name against the Asian toplist. The other 23 have an id and are not in that event's Asian top 300 (`MAX_PAGES = 3` in `asian_games_scraper.py`).
+   - Worst events: men's 100m 17 of 47 unranked, men's 200m 16 of 43, men's 5000m 14 of 23, women's 200m 11 of 30.
+   - Two more things can read as athletes missing from the system. Only 138 of the 419 ranked athletes have a page on the site; the others link to World Athletics, because athlete pages are built from the world toplists. And 26 events show points while 6 show chances.
+   - Options to discuss: page deeper than 300; search World Athletics by name for entrants with no id; show unranked entrants as rows at the foot of the table instead of a sentence; build pages for athletes who are only on the Asian list.
+
+3. Fix the colours. The user says you can't see anything.
+   - Ask first which page and which parts: the Asian Games page, the dark Results boxes, the nav tab, or all of them.
+   - Every measured ratio clears AA (4.5:1), but several sit close to it: text on the green page ground 4.66, gold text in the head band 4.66, panels 5.18. Clearing the floor still left the page hard to read for the user, so aim well above it, around 7:1 for body text.
+   - The values and their ratios are in `track-insights-main/src/lib/championship-themes.ts`. Measure the way `track-insights-main/scripts/make-flag-palette.py` does: blooms at their peak, the grain tile, the head band's warm wash and translucent white text all composited before the ratio. The Asian Games box on the Results page only appears once its call is frozen.
+
+**Then**
+4. The user reviews `/championship` locally: start the `predictor-api-next-championship` launch config and the dev server.
+5. Run `python src/injury_checker.py --championship asian-games-2026` (it needs a headful browser).
+6. Step 4: flip `CURRENT` to `asian-games-2026`, run `build_static_api.py`, commit and push both repos. Before 23 September, re-run the scraper and predictions, then `python src/freeze_prefinal.py --championship asian-games-2026`.
+7. Results come from World Athletics competition `7176091`, which may lag the organisers' portal. The portal has results routes too, but their format cannot be checked before the first session.
 
 **Local preview without flipping:** start the `predictor-api-next-championship` launch config, which sets `PODIUMCALL_CHAMPIONSHIP=asian-games-2026`, and open `/championship` on the dev server.
 
-**Watch out:** `refresh-results.cmd` pushes every local commit. While `CURRENT` is the Ultimate, the button refreshes the Ultimate. `data/wikimedia_photo_cache.json` gained one entry from the local API during checks; it is not part of this work.
+**Watch out:** `refresh-results.cmd` pushes every local commit, and the backend is 3 commits ahead of GitHub (`91d2c275`, `e6092a69`, `d5421302`) with the frontend 1 ahead (`1a39e09`). While `CURRENT` is the Ultimate, the button refreshes the Ultimate. `data/wikimedia_photo_cache.json` and `data/photo_focus_cache.json` were touched by the local API during checks and are not part of this work.
 
 _Last updated: 2026-09-03 (later the same day). **The site is fully bilingual and live.** Every page body, the 404, every component and all 32 discipline names now read in French, 603 keys at exact EN/FR parity, merged to `main` and pushed. English is the default and byte-identical to what shipped before. **Arabic is the agreed next step and the hard half: see item 30.** Two real bugs were found and fixed on the way, both reported from actual use rather than found by review. The top bar overlapped its own controls in French, and the mobile nav had a chunk of itself parked where scrolling could not reach it, which is what Android users were seeing. Detail in memory `project_i18n_2026_09_03` and traps 4-6 of `feedback_browser_pane_measurement_traps`._
 
