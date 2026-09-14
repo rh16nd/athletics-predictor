@@ -26,3 +26,8 @@ data/worldwide/
 # data/worldwide/ is -- nothing in the modelling path may glob it up.
 data/athlete_profiles/
 data/_backup/
+
+# Each finalist's World Athletics profile season, from
+# src/field_data.py --seasons. Regenerable per-athlete data like the folder
+# above, one JSON per year, and tens of megabytes once filled.
+data/field/seasons/
