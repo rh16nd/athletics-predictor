@@ -12,6 +12,9 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 data/standings_detail.json
+# The World Athletics data server and key that last worked. Rewritten whenever
+# WA moves the server (see dl_final_results_scraper.discover_endpoint).
+data/wa_graphql.json
 
 # Scraped race log from src/worldwide_scraper.py -- regenerable, and
 # large. Deliberately kept OUT of data/raw/ so nothing in the modelling

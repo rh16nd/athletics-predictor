@@ -49,21 +49,100 @@ Usage:
 Writes data/dl_final_results.csv: discipline,year,athlete_name,place,mark,nationality
 """
 import csv
+import json
 import os
+import re
 import sys
 import time
 
 import pandas as pd
 import requests
 
-# WA retires this host and its keys without notice: 4881 stopped resolving in
-# September 2026, during the Ultimate Championship. When every fetch fails at
-# once, open worldathletics.org, find the _next/static chunk that contains
-# "graphql-prod-", and take that host plus one of its da2- keys that answers
-# {"query": "{__typename}"} with data rather than an HTML error page.
-GRAPHQL_URL = "https://graphql-prod-4888.edge.aws.worldathletics.org/graphql"
-API_KEY = "da2-ekwnowppnnahhp33zt7yzri77m"
+# World Athletics moves this host and rotates its keys without notice: 4881
+# went in September 2026 during the Ultimate Championship, and 4888 two days
+# later. graphql() recovers on its own through discover_endpoint() and keeps
+# the pair that worked in ENDPOINT_CACHE, so these two are only a starting point.
+GRAPHQL_URL = "https://graphql-prod-4892.edge.aws.worldathletics.org/graphql"
+API_KEY = "da2-qcbtpq2oifcclb773zdrfjsbsi"
+ENDPOINT_CACHE = os.path.join(os.path.dirname(__file__), "..", "data", "wa_graphql.json")
+try:
+    with open(ENDPOINT_CACHE, encoding="utf-8") as _f:
+        _cached = json.load(_f)
+    GRAPHQL_URL, API_KEY = _cached["url"], _cached["key"]
+except (OSError, ValueError, KeyError):
+    pass
 HEADERS = {"Content-Type": "application/json", "x-api-key": API_KEY}
+
+WA_HOME = "https://worldathletics.org/"
+BROWSER_HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+    "Accept-Language": "en-GB,en;q=0.9",
+}
+_HOST_RE = re.compile(r"graphql-prod-\d+\.edge\.aws\.worldathletics\.org")
+_KEY_RE = re.compile(r"da2-[a-z0-9]{26}")
+_discovery_tried = [False]
+
+
+def endpoints_in_script(text):
+    """The GraphQL hosts and public keys one of WA's page scripts ships. Their
+    own frontend reads the pair from the same bundle, so this is where a new one
+    appears first."""
+    return sorted(set(_HOST_RE.findall(text))), sorted(set(_KEY_RE.findall(text)))
+
+
+def _answers(url, key, tries=3):
+    """Whether a host and key return data. Only some of the keys in the bundle
+    work, and CloudFront answers a burst of requests with an HTML error page for
+    a few seconds, so an HTML reply is retried before the key is written off."""
+    for attempt in range(tries):
+        try:
+            r = requests.post(url, json={"query": "{__typename}"},
+                              headers={"Content-Type": "application/json", "x-api-key": key},
+                              timeout=20)
+            if r.text.lstrip().startswith("{"):
+                return "data" in r.json()
+        except (requests.RequestException, ValueError):
+            pass
+        if attempt < tries - 1:
+            time.sleep(2)
+    return False
+
+
+def discover_endpoint():
+    """Switch to the host and key WA's own site uses today, and remember them.
+    Returns whether a working pair was found. Runs at most once per process, so
+    an outage costs one lookup rather than one per request."""
+    global GRAPHQL_URL, API_KEY, HEADERS
+    if _discovery_tried[0]:
+        return False
+    _discovery_tried[0] = True
+    try:
+        home = requests.get(WA_HOME, headers=BROWSER_HEADERS, timeout=40).text
+    except requests.RequestException:
+        return False
+    for chunk in sorted(set(re.findall(r'/_next/static/chunks/[^"\'\s]+\.js', home))):
+        try:
+            text = requests.get("https://worldathletics.org" + chunk,
+                                headers=BROWSER_HEADERS, timeout=30).text
+        except requests.RequestException:
+            continue
+        hosts, keys = endpoints_in_script(text)
+        for host in hosts:
+            url = f"https://{host}/graphql"
+            for key in keys:
+                if not _answers(url, key):
+                    continue
+                GRAPHQL_URL, API_KEY = url, key
+                HEADERS = {"Content-Type": "application/json", "x-api-key": key}
+                try:
+                    with open(ENDPOINT_CACHE, "w", encoding="utf-8") as f:
+                        json.dump({"url": url, "key": key}, f)
+                except OSError:
+                    pass
+                print(f"  World Athletics moved its data server; now using {host}")
+                return True
+    return False
 
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "dl_final_results.csv")
 
@@ -196,6 +275,19 @@ def load_recognized_names(discipline_key, raw_dir):
 
 def graphql(operation_name, variables, query):
     payload = {"operationName": operation_name, "variables": variables, "query": query}
+    try:
+        return _post(payload)
+    except (requests.RequestException, ValueError):
+        # A host that no longer resolves, or an HTML error page where JSON
+        # belongs, is what WA moving its data server looks like from here.
+        # Look the server up once and retry; if nothing is found, the original
+        # error stands. A GraphQL error in a real reply is not retried.
+        if not discover_endpoint():
+            raise
+        return _post(payload)
+
+
+def _post(payload):
     r = requests.post(GRAPHQL_URL, json=payload, headers=HEADERS, timeout=20)
     r.raise_for_status()
     body = r.json()

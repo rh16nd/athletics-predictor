@@ -943,6 +943,23 @@ def lost_data(new, old):
     return ", ".join(lost) or None
 
 
+PRE_EVENT_FACTS = ("namedQualifiers",)
+
+
+def carry_forward(new, old):
+    """Keep facts that were only ever published before the event.
+
+    Once the Ultimate had been run, World Athletics replaced its page with the
+    results, and the Olympic and World champion modules champion_qualifiers()
+    reads were gone: 27 named qualifiers came back as 0. Who held a direct place
+    does not change after the event, so an empty list then means the page moved
+    on, not that the qualifiers did. Returns the keys it kept, or None."""
+    kept = [key for key in PRE_EVENT_FACTS if (old or {}).get(key) and not new.get(key)]
+    for key in kept:
+        new[key] = old[key]
+    return ", ".join(kept) or None
+
+
 if __name__ == "__main__":
     print("=== Building World Athletics Ultimate Championship data ===")
     event = build_event()
@@ -951,6 +968,9 @@ if __name__ == "__main__":
             previous = json.load(f)
     except (OSError, json.JSONDecodeError):
         previous = None
+    kept = carry_forward(event, previous)
+    if kept:
+        print(f"  kept {kept} from the saved file: the event page no longer lists them")
     lost = lost_data(event, previous)
     if lost:
         print(f"  NOT SAVED: this build has no {lost}, which {os.path.abspath(OUT_PATH)} "

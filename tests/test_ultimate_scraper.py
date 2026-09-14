@@ -318,3 +318,21 @@ def test_losing_only_the_results_is_caught_too():
     saved = {"timetable": [{}], "qualifiedField": [{}], "relays": [{}],
              "results": [{"discipline": "men_PV"}]}
     assert us.lost_data({**saved, "results": []}, saved) == "results"
+
+
+def test_named_qualifiers_are_kept_once_the_event_page_moves_on():
+    """After the Ultimate was run, WA's page dropped its champion modules and a
+    refresh read 0 named qualifiers where there had been 27. Pushing that would
+    have emptied a section of the live page for a fact that never changed."""
+    saved = {"namedQualifiers": [{"name": "Armand DUPLANTIS"}, {"name": "Sydney McLAUGHLIN-LEVRONE"}]}
+    fresh = {"namedQualifiers": [], "results": [{"discipline": "men_PV"}]}
+    assert us.carry_forward(fresh, saved) == "namedQualifiers"
+    assert fresh["namedQualifiers"] == saved["namedQualifiers"]
+    assert fresh["results"] == [{"discipline": "men_PV"}]
+
+
+def test_a_fresh_qualifier_list_is_not_overwritten_and_a_first_build_keeps_nothing():
+    newer = {"namedQualifiers": [{"name": "Someone NEW"}]}
+    assert us.carry_forward(newer, {"namedQualifiers": [{"name": "Someone OLD"}]}) is None
+    assert newer["namedQualifiers"] == [{"name": "Someone NEW"}]
+    assert us.carry_forward({"namedQualifiers": []}, None) is None

@@ -1,14 +1,18 @@
-"""Unit tests for src/dl_final_results_scraper.py's pure name-mapping logic.
+"""Unit tests for src/dl_final_results_scraper.py's pure name-mapping logic, and
+for graphql()'s recovery when World Athletics moves its data server.
 
-Doesn't test scrape_year()/graphql() -- those need a live network call to
-World Athletics' API. strip_gender_prefix/resolve_discipline_key were
-extracted specifically to make this real bug testable: the mapping table
-used to be keyed on the discipline name alone ("100 Metres") while the
-API's actual event field includes the "Men's "/"Women's " prefix
-("Men's 100 Metres"), so every single lookup silently missed until this
-was found and fixed.
+scrape_year() isn't tested -- it needs a live network call to World Athletics'
+API. strip_gender_prefix/resolve_discipline_key were extracted specifically to
+make this real bug testable: the mapping table used to be keyed on the
+discipline name alone ("100 Metres") while the API's actual event field includes
+the "Men's "/"Women's " prefix ("Men's 100 Metres"), so every single lookup
+silently missed until this was found and fixed. The server-move tests at the
+bottom run against a fake network.
 """
+import json
 import os
+
+import pytest
 
 import dl_final_results_scraper as scraper
 import train_model as tm
@@ -83,3 +87,130 @@ def test_resolve_discipline_key_returns_none_for_unmapped_events():
 def test_wa_event_to_key_covers_every_trained_discipline():
     mapped_keys = set(scraper.WA_EVENT_TO_KEY.values())
     assert set(tm.TRAIN_DISCIPLINES.keys()) == mapped_keys
+
+
+# ---- When World Athletics moves its data server ----------------------------
+# graphql-prod-4881 stopped resolving during the 2026 Ultimate Championship and
+# 4888 two days later. Every fetch failed, each failure looked like "nothing
+# published yet", and the refresh button stopped working without saying why.
+
+class _Reply:
+    def __init__(self, text="", body=None):
+        self.text = text
+        self._body = body
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        if self._body is None:
+            raise ValueError("not JSON")
+        return self._body
+
+
+def test_endpoints_in_script_reads_the_host_and_keys_from_a_page_bundle():
+    bundle = ('e="https://graphql-prod-4892.edge.aws.worldathletics.org/graphql",'
+              'k=["da2-rtp5hipy7bbkhab4h7k5xpjy5y","da2-qcbtpq2oifcclb773zdrfjsbsi"]')
+    hosts, keys = scraper.endpoints_in_script(bundle)
+    assert hosts == ["graphql-prod-4892.edge.aws.worldathletics.org"]
+    assert keys == ["da2-qcbtpq2oifcclb773zdrfjsbsi", "da2-rtp5hipy7bbkhab4h7k5xpjy5y"]
+
+
+def test_graphql_retries_on_the_new_server_after_a_move(monkeypatch):
+    asked = []
+
+    def fake_post(url, json=None, headers=None, timeout=None):
+        asked.append(url)
+        if "old-host" in url:
+            raise scraper.requests.ConnectionError("name does not resolve")
+        return _Reply(body={"data": {"ok": True}})
+
+    def fake_discover():
+        scraper.GRAPHQL_URL = "https://new-host/graphql"
+        return True
+
+    monkeypatch.setattr(scraper, "GRAPHQL_URL", "https://old-host/graphql")
+    monkeypatch.setattr(scraper.requests, "post", fake_post)
+    monkeypatch.setattr(scraper, "discover_endpoint", fake_discover)
+    assert scraper.graphql("op", {}, "query") == {"ok": True}
+    assert asked == ["https://old-host/graphql", "https://new-host/graphql"]
+
+
+def test_an_html_error_page_is_treated_like_a_moved_server(monkeypatch):
+    replies = iter([_Reply(text="<!DOCTYPE HTML>"), _Reply(body={"data": {"ok": True}})])
+    looked_up = []
+    monkeypatch.setattr(scraper.requests, "post", lambda *a, **k: next(replies))
+    monkeypatch.setattr(scraper, "discover_endpoint", lambda: looked_up.append(1) or True)
+    assert scraper.graphql("op", {}, "query") == {"ok": True}
+    assert looked_up == [1]
+
+
+def test_graphql_gives_up_when_no_new_server_is_found(monkeypatch):
+    def fake_post(*args, **kwargs):
+        raise scraper.requests.ConnectionError("down")
+
+    monkeypatch.setattr(scraper.requests, "post", fake_post)
+    monkeypatch.setattr(scraper, "discover_endpoint", lambda: False)
+    with pytest.raises(scraper.requests.ConnectionError):
+        scraper.graphql("op", {}, "query")
+
+
+def test_a_graphql_error_in_a_real_reply_is_not_retried(monkeypatch):
+    """A wrong query is our bug, not a moved server. Looking for a new server
+    would hide it behind a slow, pointless lookup."""
+    monkeypatch.setattr(scraper.requests, "post",
+                        lambda *a, **k: _Reply(body={"errors": [{"message": "bad field"}]}))
+    monkeypatch.setattr(scraper, "discover_endpoint",
+                        lambda: pytest.fail("a GraphQL error must not trigger a server lookup"))
+    with pytest.raises(RuntimeError):
+        scraper.graphql("op", {}, "query")
+
+
+def test_discovery_runs_once_per_process(monkeypatch):
+    """A scrape makes dozens of calls. When WA itself is down, one lookup is
+    enough; one per call would hammer the site for nothing."""
+    fetched = []
+
+    def fake_get(url, headers=None, timeout=None):
+        fetched.append(url)
+        raise scraper.requests.ConnectionError("site down")
+
+    monkeypatch.setattr(scraper, "_discovery_tried", [False])
+    monkeypatch.setattr(scraper.requests, "get", fake_get)
+    assert scraper.discover_endpoint() is False
+    assert scraper.discover_endpoint() is False
+    assert fetched == [scraper.WA_HOME]
+
+
+def test_a_key_answering_with_an_html_page_is_not_used(monkeypatch):
+    """Only some of the keys in WA's bundle work; the rest get an HTML error
+    page, which is retried briefly (CloudFront does that to bursts too) and
+    then written off."""
+    monkeypatch.setattr(scraper.requests, "post", lambda *a, **k: _Reply(text="<!DOCTYPE HTML>"))
+    monkeypatch.setattr(scraper.time, "sleep", lambda seconds: None)
+    assert scraper._answers("https://host/graphql", "da2-" + "a" * 26) is False
+
+
+def test_discovery_switches_to_a_working_pair_and_remembers_it(monkeypatch, tmp_path):
+    key = "da2-" + "b" * 26
+    home = _Reply(text='<script src="/_next/static/chunks/app-1.js"></script>')
+    bundle = _Reply(text=f'"graphql-prod-9999.edge.aws.worldathletics.org" "{key}"')
+    cache = tmp_path / "wa_graphql.json"
+
+    monkeypatch.setattr(scraper.requests, "get",
+                        lambda url, **kwargs: home if url == scraper.WA_HOME else bundle)
+    monkeypatch.setattr(scraper, "_answers", lambda url, k: True)
+    monkeypatch.setattr(scraper, "_discovery_tried", [False])
+    monkeypatch.setattr(scraper, "ENDPOINT_CACHE", str(cache))
+    # Recorded so the real values come back after the test, since a successful
+    # discovery rewrites all three module globals.
+    monkeypatch.setattr(scraper, "GRAPHQL_URL", scraper.GRAPHQL_URL)
+    monkeypatch.setattr(scraper, "API_KEY", scraper.API_KEY)
+    monkeypatch.setattr(scraper, "HEADERS", scraper.HEADERS)
+
+    assert scraper.discover_endpoint() is True
+    assert scraper.GRAPHQL_URL == "https://graphql-prod-9999.edge.aws.worldathletics.org/graphql"
+    assert scraper.HEADERS["x-api-key"] == key
+    assert json.loads(cache.read_text(encoding="utf-8")) == {
+        "url": "https://graphql-prod-9999.edge.aws.worldathletics.org/graphql", "key": key,
+    }

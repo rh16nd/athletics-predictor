@@ -18,8 +18,9 @@ before the push worked:
      commits exactly those files in both repos and pushes main. Vercel and
      Render redeploy on their own.
 
-If every event fails at once, World Athletics has probably moved its data server
-again: see the note beside GRAPHQL_URL in dl_final_results_scraper.py.
+World Athletics moves its data server now and then. The scrapers look the new
+one up by themselves (dl_final_results_scraper.discover_endpoint), so a run that
+still fails for every event at once should start there.
 """
 import json
 import os
