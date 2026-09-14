@@ -16,10 +16,10 @@ _Last updated: 2026-09-14, end of the fourth session. **The user asked why only 
 - Two features came out, also before any backtest ran: the z-score and rank divided by field size. The model learns on finals but is asked about entry lists (the Asian Games) and a world top 20 (Track/Field), both longer than a final, and those two would read the same athlete differently in each. The eight left (gap to the best, gap to the third best, career gap, any history, months since the season best, change on last season, age, the last-season flag) do not move when slower athletes are added, and a test pins that.
 - 25 field-model tests pass.
 
-**Where the downloads stood at this checkpoint:** Asia 36 of 36 and the finals re-download are done; the winner check printed 0 disagreements. Europe was at 27 of 36. `--ids` and then `--seasons` were running, with two season workers split by odd and even years (`--years`), each writing its own `data/field/seasons/{year}.json`. Every step resumes by running the same command again. After them, in order:
+**Where the downloads stood at this checkpoint:** Asia 36 of 36, Europe 36 of 36 and the finals re-download are done, and the winner check printed 0 disagreements. `--ids` found an id for all 12,476 finalists. `--seasons` was running: 5,101 finalists need a profile, which is 4,487 athlete-seasons, fetched by two workers split by odd years (2,422) and even years (2,065), each writing its own `data/field/seasons/{year}.json` (ignored by git, commit `480630a2`). Every step resumes by running the same command again. After them, in order:
 1. `--seasons` once more with no `--years`. It fetches only what is missing, including anything the finished Europe lists changed.
 2. `--report`. Check that the Asian competitions and the Europeans now clear 85%, and that few finalists are unscored for want of a profile.
-3. A spot check that a toplist best dated before the cut-off equals the profile's best before it.
+3. Done already: a toplist best dated before the cut-off equals the profile's best before it for 50 of 50 finalists sampled at random, so taking the toplist value first changes nothing.
 4. Then step 2 below.
 
 **For serving (step 4 below), from the leak fix:** training falls back to last season, flagged, when an athlete has no mark this season before the cut-off, but `field_model.serving_rows` drops such an entrant. Make serving fall back the same way, or training and serving will not match.

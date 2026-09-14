@@ -303,6 +303,17 @@ def test_a_shared_bronze_puts_both_medallists_on_the_podium():
     assert final["podium"] == {"A0", "A1", "A2", "A3"}
 
 
+def test_a_tie_on_points_is_not_broken_by_the_finishing_order_the_rows_arrive_in():
+    data = scored_final("World Championships", 2023, "100m", n=8)
+    data.loc[data["athlete_name"] == "A5", "sb_score"] = 1180  # level with A2, the bronze medallist
+    in_order = fm.build_finals(data)[0]
+    reversed_rows = fm.build_finals(data.iloc[::-1])[0]
+    assert in_order["names"] == reversed_rows["names"]
+    assert np.allclose(in_order["scores"], reversed_rows["scores"])
+    assert np.allclose(in_order["X"], reversed_rows["X"])
+    assert in_order["top_idx"] == reversed_rows["top_idx"]
+
+
 def test_the_seasons_ranked_names_pick_the_championship_final_over_a_fuller_masters_race():
     """The 2015 Worlds had two races labelled "Men's 800 Metres" Final. The
     masters one had 10 finishers to the real one's 8, and was kept."""

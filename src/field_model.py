@@ -235,7 +235,13 @@ def build_finals(scored):
         placed = g[g["place"].between(1, 3)].sort_values("place")
         if len(placed) < 3:
             continue
-        with_score = g[g["sb_score"].notna()].reset_index(drop=True)
+        # The rows arrive in finishing order. Sorted by name instead, so that
+        # when two athletes share a score, neither the points ranking nor the
+        # model breaks the tie with the result it is trying to predict.
+        with_score = (g[g["sb_score"].notna()]
+                      .assign(_by_name=lambda d: d["athlete_name"].map(fd.field_key))
+                      .sort_values("_by_name", kind="stable").drop(columns="_by_name")
+                      .reset_index(drop=True))
         if len(with_score) < MIN_SCORED:
             continue
         features = field_features(with_score, g["cutoff"].iloc[0])
