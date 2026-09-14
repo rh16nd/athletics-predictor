@@ -18,6 +18,7 @@ from datetime import date, datetime
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse the same graphql()/HEADERS every other scraper does
+import championships  # noqa: E402 -- which championships exist, where their data lives, their themes
 from feature_builder import get_qual_limit  # noqa: E402 -- one definition of the field size, shared with run.py
 import athlete_analytics  # noqa: E402 -- race-log statistics; reads data/worldwide, never feeds the model
 import athlete_career  # noqa: E402 -- honours/rankings/PBs as World Athletics states them; never feeds the model
@@ -1164,15 +1165,16 @@ def build_result_comparisons(year=MEETS_YEAR, results=None, prefinal=None, topli
     return comps
 
 
-ULTIMATE_PREFINAL_PATH = os.path.join(
-    os.path.dirname(__file__), "data", "ultimate", "predictions_prefinal.json")
+def championship_file(champ_id, filename):
+    """A championship's data file, from the registry. None for one that keeps none."""
+    return championships.path(championships.get(champ_id), filename)
 
 
-def load_ultimate_results():
-    """{discipline key: [{place, name, nat, mark}]} once the Ultimate has been
+def load_event_results(champ_id):
+    """{discipline key: [{place, name, nat, mark}]} once a championship has been
     run, {} before. Same shape load_final_results returns for the Diamond
-    League, so the comparison below is the same function for both."""
-    event = load_ultimate()
+    League, so the comparison below is the same function for every meeting."""
+    event = load_event(champ_id)
     rows = (event or {}).get("results") or []
     out = {}
     for r in rows:
@@ -1188,9 +1190,9 @@ def load_ultimate_results():
     return out
 
 
-def load_ultimate_prefinal():
-    """The FROZEN pre-event projection, indexed the way _load_prefinal_index
-    indexes the Diamond League one.
+def load_event_prefinal(champ_id):
+    """A championship's FROZEN pre-event projection, indexed the way
+    _load_prefinal_index indexes the Diamond League one.
 
     There is deliberately NO fallback to the live projection here. The Diamond
     League loader falls back so its comparison still renders without the freeze
@@ -1198,8 +1200,11 @@ def load_ultimate_prefinal():
     the fallback would silently turn a missing freeze into a comparison against a
     projection that has seen the results -- which is the one thing this whole
     mechanism exists to prevent. No snapshot, no comparison."""
+    path = championship_file(champ_id, "predictions_prefinal.json")
+    if not path:
+        return {}, None
     try:
-        with open(ULTIMATE_PREFINAL_PATH, encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             data = json.load(f)
     except (OSError, json.JSONDecodeError):
         return {}, None
@@ -1244,27 +1249,35 @@ def build_championships():
                     "id": disc["id"], "label": disc["label"], "result": disc["result"],
                 })
     if dl_events:
+        dl = championships.get("dl-final-2026")
         out.append({
-            "id": "dl-final-2026",
-            "labelKey": "results.meet.dlFinal",
-            "venue": "Brussels",
-            "date": "2026-09-04",
+            "id": dl["id"],
+            "labelKey": dl["labelKey"],
+            "venue": dl["venue"],
+            "date": dl["startDate"],
+            "theme": dl["theme"],
             "status": "complete",
             "frozenAt": None,
             "calledEvents": len(dl_events),
             "events": dl_events,
         })
 
-    ult_prefinal, frozen_at = load_ultimate_prefinal()
-    if ult_prefinal:
-        ult_results = load_ultimate_results()
+    # Every other championship comes from the registry, in its order, which is
+    # oldest first. One with no frozen projection is not listed at all: there
+    # is no call to show yet.
+    for champ in championships.CHAMPIONSHIPS:
+        if not champ.get("dataDir"):
+            continue
+        prefinal, frozen_at = load_event_prefinal(champ["id"])
+        if not prefinal:
+            continue
+        results = load_event_results(champ["id"])
         events = []
-        if ult_results:
-            ult_comps = build_result_comparisons(
-                results=ult_results, prefinal=ult_prefinal)
+        if results:
+            comps = build_result_comparisons(results=results, prefinal=prefinal)
             labels = {e.get("discKey"): e.get("disciplineLabel")
-                      for e in ((load_ultimate_predictions() or {}).get("projections") or [])}
-            for key, comp in ult_comps.items():
+                      for e in ((load_event_predictions(champ["id"]) or {}).get("projections") or [])}
+            for key, comp in comps.items():
                 events.append({
                     "id": key,
                     "label": labels.get(key) or DISC_LABELS.get(key, key),
@@ -1272,16 +1285,18 @@ def build_championships():
                 })
             events.sort(key=lambda e: e["label"])
         out.append({
-            "id": "ultimate-2026",
-            "labelKey": "results.meet.ultimate",
-            "venue": "Budapest",
-            "date": "2026-09-11",
+            "id": champ["id"],
+            "labelKey": champ["labelKey"],
+            "venue": champ["venue"],
+            "date": champ["startDate"],
+            # Each championship's box on the Results page wears its own theme.
+            "theme": champ["theme"],
             "status": "complete" if events else "pending",
             "frozenAt": frozen_at,
             # How many events the model CALLED, which is the only count that
             # means anything before the meeting is run -- `events` holds
             # comparisons and is empty until there are results to compare to.
-            "calledEvents": len(ult_prefinal),
+            "calledEvents": len(prefinal),
             "events": events,
         })
 
@@ -3258,33 +3273,28 @@ def qualification():
     return jsonify(payload)
 
 
-ULTIMATE_PATH = os.path.join(os.path.dirname(__file__), "data", "ultimate", "event.json")
-
-
-def load_ultimate():
-    """The World Athletics Ultimate Championship payload (src/ultimate_scraper.py):
-    the verified event facts, the direct qualifiers we already have (the 2026 DL
-    Final winners), and the timetable/field/results once WA publishes them.
-    `fieldPublished` is False until the official start lists go up."""
+def _load_json(path):
+    if not path:
+        return None
     try:
-        with open(ULTIMATE_PATH, encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
     except (OSError, json.JSONDecodeError):
         return None
 
 
-ULTIMATE_PREDICTIONS_PATH = os.path.join(
-    os.path.dirname(__file__), "data", "ultimate", "predictions.json")
+def load_event(champ_id):
+    """A championship's event payload (for the Ultimate, src/ultimate_scraper.py):
+    the verified event facts, what is known about who is in, and the
+    timetable/field/results once World Athletics publishes them. None until the
+    championship's scraper has run."""
+    return _load_json(championship_file(champ_id, "event.json"))
 
 
-def load_ultimate_predictions():
-    """The model's projected podium per Ultimate event
-    (src/ultimate_predictions.py). None until it has been built."""
-    try:
-        with open(ULTIMATE_PREDICTIONS_PATH, encoding="utf-8") as f:
-            return json.load(f)
-    except (OSError, json.JSONDecodeError):
-        return None
+def load_event_predictions(champ_id):
+    """A championship's call per event (for the Ultimate,
+    src/ultimate_predictions.py). None until it has been built."""
+    return _load_json(championship_file(champ_id, "predictions.json"))
 
 
 def attach_ultimate_injuries(projections):
@@ -3329,17 +3339,42 @@ def attach_ultimate_injuries(projections):
     return out
 
 
+def championship_payload(champ_id):
+    """The event, the call and the championship's registry entry (its theme
+    included) in one payload, or None before its scraper has run.
+
+    The call rides along rather than getting its own endpoint: the page shows
+    the field and the call together, and two requests would let one arrive
+    without the other."""
+    data = load_event(champ_id)
+    if data is None:
+        return None
+    champ = championships.get(champ_id)
+    preds = load_event_predictions(champ_id)
+    data = dict(data)
+    data["championship"] = {key: champ[key] for key in
+                            ("id", "labelKey", "venue", "startDate", "endDate", "theme")}
+    data["projections"] = attach_ultimate_injuries((preds or {}).get("projections") or [])
+    return data
+
+
+@app.route("/api/championship")
+def championship():
+    """Whichever championship is current (championships.CURRENT)."""
+    champ = championships.current()
+    data = championship_payload(champ["id"])
+    if data is None:
+        return jsonify({"error": f"{champ['id']} event data not found — run its scraper first"}), 404
+    return jsonify(data)
+
+
 @app.route("/api/ultimate")
 def ultimate():
-    data = load_ultimate()
+    # Still answering after /api/championship arrived, so a page cached before
+    # the switch keeps loading. Safe to remove once one deploy has gone out.
+    data = championship_payload("ultimate-2026")
     if data is None:
         return jsonify({"error": "ultimate event data not found — run python src/ultimate_scraper.py"}), 404
-    # Projections ride along on the same payload rather than getting their own
-    # endpoint: the page shows the field and the call together, and two
-    # requests would let one arrive without the other.
-    preds = load_ultimate_predictions()
-    data = dict(data)
-    data["projections"] = attach_ultimate_injuries((preds or {}).get("projections") or [])
     return jsonify(data)
 
 

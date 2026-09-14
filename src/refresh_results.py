@@ -5,12 +5,12 @@ Double-click refresh-results.cmd in the repo root, or run from the repo root:
     venv\\Scripts\\python.exe src\\refresh_results.py          (asks before pushing)
     venv\\Scripts\\python.exe src\\refresh_results.py --yes    (pushes without asking)
 
-It stops at the first step that fails, and pushes nothing unless every step
-before the push worked:
+It works on the current championship in src/championships.py, stops at the first
+step that fails, and pushes nothing unless every step before the push worked:
 
-  1. src/ultimate_scraper.py fetches the results from World Athletics into
-     data/ultimate/event.json. It refuses to save a run that lost data the saved
-     file already has, which is what a failed fetch looks like.
+  1. The championship's scraper fetches the results from World Athletics into its
+     event.json. It refuses to save a run that lost data the saved file already
+     has, which is what a failed fetch looks like.
   2. src/build_static_api.py --core-only rewrites the page-level JSON the site
      reads (results, the championship, predictions) in seconds, without the long
      athlete-profile pass.
@@ -27,9 +27,12 @@ import os
 import subprocess
 import sys
 
+import championships
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 FRONTEND = os.path.abspath(os.path.join(ROOT, "..", "track-insights-main"))
-EVENT_PATH = os.path.join(ROOT, "data", "ultimate", "event.json")
+CHAMP = championships.current()
+EVENT_PATH = championships.path(CHAMP, "event.json")
 
 
 def git(repo, *args):
@@ -46,7 +49,7 @@ def events_with_results():
     try:
         with open(EVENT_PATH, encoding="utf-8") as f:
             rows = json.load(f).get("results") or []
-    except (OSError, ValueError):
+    except (OSError, ValueError, TypeError):
         return []
     return sorted({r.get("discipline") for r in rows if r.get("discipline")})
 
@@ -64,6 +67,10 @@ def changed(repo, path, top_level_only=False):
 
 def main():
     ask = "--yes" not in sys.argv[1:]
+    if not CHAMP.get("scraper") or not EVENT_PATH:
+        sys.exit(f"Stopped: {CHAMP['id']} has no results scraper yet (see src/championships.py).")
+    print(f"Championship: {CHAMP['id']}")
+
     for repo in (ROOT, FRONTEND):
         name = os.path.basename(repo)
         if git(repo, "rev-parse", "--abbrev-ref", "HEAD").stdout.strip() != "main":
@@ -74,8 +81,7 @@ def main():
             sys.exit(f"Stopped: {name} is {behind} commit(s) behind GitHub. Run git pull there first.")
 
     before = events_with_results()
-    step("Fetching results from World Athletics",
-         [sys.executable, os.path.join("src", "ultimate_scraper.py")])
+    step("Fetching results from World Athletics", [sys.executable, CHAMP["scraper"]])
     after = events_with_results()
     step("Rebuilding the site's data files",
          [sys.executable, os.path.join("src", "build_static_api.py"), "--core-only"])
@@ -88,7 +94,8 @@ def main():
         print("  WARNING: fewer events have results than before this run. Check before pushing.")
         ask = True
 
-    backend = changed(ROOT, "data/ultimate/event.json")
+    event_rel = "/".join([*CHAMP["dataDir"].replace("\\", "/").split("/"), "event.json"])
+    backend = changed(ROOT, event_rel)
     frontend = changed(FRONTEND, "public/data", top_level_only=True)
     if not backend and not frontend:
         print("\nNothing changed, so there is nothing to push.")

@@ -10,8 +10,8 @@ a forecast and becomes the model describing what it has already seen.
 
 The Diamond League Final already has such a snapshot
 (outputs/predictions_prefinal.csv) and it was taken by hand. This does the same
-thing for the Ultimate Championship, and refuses in the two situations where a
-snapshot would be worthless:
+thing for any championship in src/championships.py, and refuses in the two
+situations where a snapshot would be worthless:
 
   * the file already exists -- overwriting it is exactly the mistake the freeze
     exists to prevent, so it needs --force and says so;
@@ -23,8 +23,9 @@ reconstruct it afterwards: the projection it captures no longer exists once the
 data behind it moves.
 
 Usage:
-    python src/freeze_prefinal.py            # freeze the Ultimate
-    python src/freeze_prefinal.py --status   # say what is frozen, change nothing
+    python src/freeze_prefinal.py                                   # the current championship
+    python src/freeze_prefinal.py --championship asian-games-2026
+    python src/freeze_prefinal.py --status                          # say what is frozen, change nothing
 """
 import argparse
 import json
@@ -35,18 +36,24 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
-BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-ULTIMATE_DIR = os.path.join(BASE_DIR, "data", "ultimate")
-LIVE_PATH = os.path.join(ULTIMATE_DIR, "predictions.json")
-FROZEN_PATH = os.path.join(ULTIMATE_DIR, "predictions_prefinal.json")
-EVENT_PATH = os.path.join(ULTIMATE_DIR, "event.json")
+import championships  # noqa: E402
 
 
-def results_exist():
+def paths(champ_id):
+    """(live projection, frozen snapshot, event file) for a championship."""
+    champ = championships.get(champ_id)
+    if not champ.get("dataDir"):
+        raise SystemExit(f"  {champ_id} keeps no championship data to freeze")
+    return (championships.path(champ, "predictions.json"),
+            championships.path(champ, "predictions_prefinal.json"),
+            championships.path(champ, "event.json"))
+
+
+def results_exist(event_path):
     """True once WA is serving results for the event, which is the moment a
     fresh snapshot stops being a forecast."""
     try:
-        with open(EVENT_PATH, encoding="utf-8") as f:
+        with open(event_path, encoding="utf-8") as f:
             event = json.load(f)
     except (OSError, json.JSONDecodeError):
         return False
@@ -69,15 +76,16 @@ def describe(path):
     }
 
 
-def freeze(force=False):
-    if not os.path.exists(LIVE_PATH):
-        print(f"  nothing to freeze: {LIVE_PATH} does not exist")
-        print("  run python src/ultimate_predictions.py first")
+def freeze(champ_id, force=False):
+    live_path, frozen_path, event_path = paths(champ_id)
+    if not os.path.exists(live_path):
+        print(f"  nothing to freeze: {live_path} does not exist")
+        print(f"  build {champ_id}'s call first")
         return 1
 
-    if os.path.exists(FROZEN_PATH) and not force:
-        have = describe(FROZEN_PATH)
-        print(f"  ALREADY FROZEN: {FROZEN_PATH}")
+    if os.path.exists(frozen_path) and not force:
+        have = describe(frozen_path)
+        print(f"  ALREADY FROZEN: {frozen_path}")
         print(f"    {have['events']} events, {have['athletes']} athletes"
               f"{', taken ' + have['frozenAt'] if have.get('frozenAt') else ''}")
         print("  Refusing to overwrite. A snapshot taken later is not the one the")
@@ -85,43 +93,46 @@ def freeze(force=False):
         print("  existing file was taken at the wrong time.")
         return 1
 
-    if results_exist() and not force:
+    if results_exist(event_path) and not force:
         print("  RESULTS ALREADY EXIST for this event.")
         print("  A projection frozen now has had the chance to see them, so it is")
         print("  not a forecast and the comparison would be meaningless.")
         return 1
 
-    with open(LIVE_PATH, encoding="utf-8") as f:
+    with open(live_path, encoding="utf-8") as f:
         data = json.load(f)
     # Stamped so the page can say WHEN the call was made, and so a snapshot
     # taken at the wrong moment is visible rather than having to be inferred.
     data["frozenAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    os.makedirs(os.path.dirname(FROZEN_PATH), exist_ok=True)
-    with open(FROZEN_PATH, "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(frozen_path), exist_ok=True)
+    with open(frozen_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
 
-    now = describe(FROZEN_PATH)
-    print(f"  FROZEN: {now['events']} events, {now['athletes']} athletes -> {FROZEN_PATH}")
+    now = describe(frozen_path)
+    print(f"  FROZEN: {now['events']} events, {now['athletes']} athletes -> {frozen_path}")
     print("  Commit this file. It cannot be reconstructed after the event runs.")
     return 0
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--championship", default=championships.CURRENT,
+                        help=f"Which championship to freeze (default: {championships.CURRENT}).")
     parser.add_argument("--status", action="store_true",
                         help="Report what is frozen and change nothing.")
     parser.add_argument("--force", action="store_true",
                         help="Overwrite an existing snapshot. Almost never right.")
     args = parser.parse_args()
 
-    print("=== Pre-event projection snapshot ===")
+    print(f"=== Pre-event projection snapshot: {args.championship} ===")
     if args.status:
-        live, frozen = describe(LIVE_PATH), describe(FROZEN_PATH)
-        print(f"  live    {LIVE_PATH}")
+        live_path, frozen_path, event_path = paths(args.championship)
+        live, frozen = describe(live_path), describe(frozen_path)
+        print(f"  live    {live_path}")
         print(f"          {live if live else 'absent'}")
-        print(f"  frozen  {FROZEN_PATH}")
+        print(f"  frozen  {frozen_path}")
         print(f"          {frozen if frozen else 'ABSENT -- nothing is frozen yet'}")
-        print(f"  results published: {results_exist()}")
+        print(f"  results published: {results_exist(event_path)}")
         sys.exit(0)
 
-    sys.exit(freeze(force=args.force))
+    sys.exit(freeze(args.championship, force=args.force))

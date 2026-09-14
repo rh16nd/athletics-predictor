@@ -43,10 +43,12 @@ sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 import dl_final_results_scraper as dlr  # noqa: E402 -- reuse graphql()/HEADERS
+import championships  # noqa: E402
 
-COMPETITION_ID = 7212925          # getCalendarCompetitionResults key (eventId_WA)
+ULTIMATE = championships.get("ultimate-2026")
+COMPETITION_ID = ULTIMATE["competitionId"]   # getCalendarCompetitionResults key (eventId_WA)
 WAW_EVENT_ID = 8592
-OUT_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "ultimate")
+OUT_DIR = os.path.join(championships.BASE_DIR, ULTIMATE["dataDir"])
 OUT_PATH = os.path.join(OUT_DIR, "event.json")
 DL_FINAL_RESULTS = os.path.join(os.path.dirname(__file__), "..", "data", "dl_final_2026_results.csv")
 
