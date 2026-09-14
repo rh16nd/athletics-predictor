@@ -751,7 +751,8 @@ def main(argv=None):
         print("  Where each season best came from: "
               + ", ".join(f"{k} {v}" for k, v in scored["sb_source"].fillna("unscored").value_counts().items()))
         undated = scored["needs_profile"] & scored["sb_score"].isna()
-        print(f"  {int(undated.sum())} finalists needed a profile and have none on file, so are unscored")
+        print(f"  {int(undated.sum())} finalists are unscored: no mark before their cut-off on any list or on "
+              f"their profile, and none on last season's lists (or no profile season on file)")
         print(f"  {len(scored)} rows -> {FINALS_PATH}")
     return 0
 

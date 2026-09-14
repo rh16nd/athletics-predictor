@@ -1,6 +1,34 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here: a model that can call every event (fourth session, 2026-09-14, IN PROGRESS)
+## Start here: a model that can call every event (fifth session, 2026-09-15: BACKTEST RUN, NO GROUP SHIPS)
+
+**Result, 2026-09-15: no event group beats points, so the call does not change.**
+
+The backtest ran on clean data. Every competition cleared the 85% gate (Asian 90-95% of finalists scored, Europeans 96-100%, Olympics and Worlds 97-100%), the winner check found 0 disagreements, and season bests came from toplists for 7,375 finalists, profiles for 4,458 and last season for 367, with 276 unscored.
+
+| held-out finals, 2021-2025 | finals | model | points |
+|---|---|---|---|
+| all | 511 | 64.9% | 64.1% |
+| Asian Games and Asian Championships | 108 | 64.8% | 67.0% |
+| European Championships | 72 | 64.4% | 62.0% |
+| Diamond League Finals | 151 | 70.9% | 69.1% |
+| Olympics and Worlds | 180 | 60.2% | 58.9% |
+
+The shuffled control scored 33.0%. Winners named first: model 261, points 248.
+
+| group | finals | model | points | mean d | 90% lower bound | Asian hits, model / points | verdict |
+|---|---|---|---|---|---|---|---|
+| sprints and hurdles | 150 | 69.1% | 68.0% | +0.033 | -0.033 | 58 / 63 | stays on points |
+| 800m upward | 132 | 58.8% | 56.8% | +0.061 | -0.008 | 56 / 59 | stays on points |
+| jumps | 120 | 66.9% | 66.7% | +0.008 | -0.058 | 48 / 48 | stays on points |
+| throws | 109 | 64.2% | 64.5% | -0.009 | -0.073 | 48 / 47 | stays on points |
+
+- The model learned mostly the points gap, to the best (+0.90 per standard deviation) and to the third best (+1.01), with smaller pulls from career best (+0.44), how old the season best is (-0.21), a big jump on last year (-0.21) and age (-0.16). In practice it is points with small adjustments, and its margin over points is inside the noise. Calibration is good: 0.35 predicted came out 0.36, 0.55 came out 0.58, 0.96 came out 0.92.
+- On the Asian finals, points is ahead in sprints and distance. The old model behind today's 8 model-called Asian Games events has never been tested on an Asian final.
+- The 276 unscored finalists all had their profile season fetched. They had no mark in their event before the championship and none on last season's lists: mostly 10,000m (86) and 5000m (65) runners, 7 of them medallists. The rule was fixed in advance, so this is not a reason to re-run.
+- As the plan set out for this case: the Asian Games keep today's call (8 by the model, 28 on points, 14 not called), Track/Field is unchanged, and nothing from `field_model.py` is served. Plan sections 5 and 6 were not built. The code, the data in `data/field/` and `outputs/field_model_report.json` stay as the record. In the "Next session, in order" list below, steps 1-3 are done and steps 4-7 are cancelled.
+
+**Next:** the Asian Games steps under "Then" in the section below: the user reviews `/championship`, injury check, flip `CURRENT`, profiles, static build, push by 21 September, then re-scrape and freeze before 23 September. One question for the user first: keep the 8 events on the old model, or put all 36 on points, since no model has shown it beats points on an Asian field.
 
 _Last updated: 2026-09-14, end of the fourth session. **The user asked why only 8 of the 36 Asian Games events get a model call ("that is not even prediction"). A plan was approved and saved at `C:\Users\rayen\.claude\plans\the-real-question-is-quizzical-thompson.md`; read it first. The data and model code are built and tested; nothing is served yet, and the go/no-go report has not been run.** Everything in the Asian Games section below still stands: its commits are local and not pushed, and `CURRENT` is still `ultimate-2026`._
 
@@ -14,7 +42,8 @@ _Last updated: 2026-09-14, end of the fourth session. **The user asked why only 
 - A leak, found before any backtest ran, and fixed. A toplist holds each athlete's best of the whole season. When that best came on or after a championship's first day, the first version fell back to last season's best and set `sb_prior_season`. But whether it came after depends on how the championship went: across 10,960 scored finalists, those flagged that way won a medal 37.9% of the time and the rest 23.4%, and the gap held in every tier. The flag told the model who peaked in the final, while the points ranking scored those same athletes on last year's mark.
 - World Athletics' toplists cannot be cut off at a date: the page ignores `firstDay`/`lastDay`, and GraphQL `getTopList` has no date fields. So `attach_scores` takes a toplist best only when it is dated before the cut-off (then it is the best before the cut-off). Otherwise it reads the athlete's own season from `getSingleCompetitorResultsDiscipline(id, resultsByYear)` and takes the best legal, outdoor, electronically timed mark before the cut-off. Last season is used only when that profile has no such mark. A finalist who needs a profile and has none stays unscored, so missing data cannot bring the leak back. Ids come from each competition's results feed, where `competitor { urlSlug }` ends in the id.
 - Two features came out, also before any backtest ran: the z-score and rank divided by field size. The model learns on finals but is asked about entry lists (the Asian Games) and a world top 20 (Track/Field), both longer than a final, and those two would read the same athlete differently in each. The eight left (gap to the best, gap to the third best, career gap, any history, months since the season best, change on last season, age, the last-season flag) do not move when slower athletes are added, and a test pins that.
-- 25 field-model tests pass.
+- The finals files list athletes in finishing order, and `build_finals` kept it, so a tie on season score was broken by who finished higher, in both the points top three and the winner pick. Each field is now ordered by name (`ebb809e6`).
+- 26 field-model tests pass, 612 in the backend suite.
 
 **Where the downloads stood at this checkpoint:** Asia 36 of 36, Europe 36 of 36 and the finals re-download are done, and the winner check printed 0 disagreements. `--ids` found an id for all 12,476 finalists. `--seasons` was running: 5,101 finalists need a profile, which is 4,487 athlete-seasons, fetched by two workers split by odd years (2,422) and even years (2,065), each writing its own `data/field/seasons/{year}.json` (ignored by git, commit `480630a2`). Every step resumes by running the same command again. After them, in order:
 1. `--seasons` once more with no `--years`. It fetches only what is missing, including anything the finished Europe lists changed.
