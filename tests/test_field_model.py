@@ -67,7 +67,16 @@ def test_features_depend_on_the_field_not_on_the_world_scale():
     low = fm.field_features(field([1000, 980, 950, 900, 880]), "2023-09-29")
     high = fm.field_features(field([1200, 1180, 1150, 1100, 1080]), "2023-09-29")
     assert np.allclose(low.to_numpy(), high.to_numpy())
-    assert low["gap_best"].iloc[0] == 0 and low["rank_frac"].iloc[0] == 0
+    assert low["gap_best"].iloc[0] == 0 and low["gap_third"].iloc[2] == 0
+
+
+def test_slower_entrants_beside_a_final_do_not_change_how_its_athletes_read():
+    """Trained on finals, asked about entry lists: the eight who would make a
+    final must read the same with twenty slower entrants beside them."""
+    top = [1200, 1190, 1180, 1150, 1140, 1120, 1110, 1100]
+    final = fm.field_features(field(top), "2023-09-29").to_numpy()
+    entry_list = fm.field_features(field(top + list(range(1000, 800, -10))), "2023-09-29").to_numpy()
+    assert np.allclose(final, entry_list[:8])
 
 
 def test_a_season_best_from_last_season_carries_no_improvement_and_is_flagged():

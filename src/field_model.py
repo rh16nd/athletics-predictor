@@ -12,11 +12,12 @@ field it is asked about.
 
 FEATURES (field_features; the same function trains and serves)
 From each athlete's season-best Results Score before the competition, measured
-against the rest of the field: gap to the best, gap to the third best, z-score,
-rank. From their own history: career best before this season, change on last
-season, how long ago the season best was set, age. Plus whether the season best
-had to come from last season, and whether they have any history at all. No
-Diamond League meetings, no head-to-head, no world rank.
+against the rest of the field: gap to the best and gap to the third best, which
+stay the same however many slower athletes are added. From their own history:
+career best before this season, change on last season, how long ago the season
+best was set, age. Plus whether they had no mark this season before the
+competition, so that last season's stands in, and whether they have any
+history at all. No Diamond League meetings, no head-to-head, no world rank.
 
 MODEL
 Plackett-Luce: a softmax over the field on a linear score of those features,
@@ -74,8 +75,12 @@ GROUPS = {
     "throws": {"SP", "DT", "JT", "HT"},
 }
 
-FEATURES = ["gap_best", "gap_third", "z", "rank_frac", "pb_gap", "no_history",
-            "sb_months", "yoy", "age", "sb_prior_season"]
+# No feature depends on how many weaker athletes share the field. The model
+# learns on finals but is asked about entry lists (the Asian Games) and a world
+# top 20 (Track/Field), both longer than a final, and a z-score or a rank divided
+# by field size would read the same athlete differently in each. Both were in
+# the first version and were taken out on 2026-09-14, before any backtest ran.
+FEATURES = ["gap_best", "gap_third", "pb_gap", "no_history", "sb_months", "yoy", "age", "sb_prior_season"]
 
 
 def group_of(disc_key):
@@ -98,14 +103,10 @@ def field_features(rows, cutoff):
     n = len(df)
     ordered = s.sort_values(ascending=False).to_numpy()
     third = ordered[2] if n >= 3 else (ordered[-1] if n else 0.0)
-    std = float(s.std(ddof=0)) if n > 1 else 0.0
 
     out = pd.DataFrame(index=df.index)
     out["gap_best"] = (s - (ordered[0] if n else 0.0)) / 100.0
     out["gap_third"] = (s - third) / 100.0
-    out["z"] = (s - s.mean()) / std if std > 0 else 0.0
-    ranks = s.rank(ascending=False, method="min")
-    out["rank_frac"] = (ranks - 1) / (n - 1) if n > 1 else 0.0
     career = pd.to_numeric(df["career_best"], errors="coerce")
     out["pb_gap"] = ((career - s) / 100.0).fillna(0.0)
     out["no_history"] = career.isna().astype(float)
