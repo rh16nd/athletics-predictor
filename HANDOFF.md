@@ -1,5 +1,57 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## Start here: a model that can call every event (fourth session, 2026-09-14, IN PROGRESS)
+
+_Last updated: 2026-09-14, end of the fourth session. **The user asked why only 8 of the 36 Asian Games events get a model call ("that is not even prediction"). A plan was approved and saved at `C:\Users\rayen\.claude\plans\the-real-question-is-quizzical-thompson.md`; read it first. The data and model code are built and tested; nothing is served yet, and the go/no-go report has not been run.** Everything in the Asian Games section below still stands: its commits are local and not pushed, and `CURRENT` is still `ultimate-2026`._
+
+**Why the existing model cannot call an Asian field**
+- It learned from 501 finals (Diamond League Finals, Olympics/Worlds, Europeans) whose candidates are the world top 100. No Asian competition, no hammer, no 10,000m.
+- Its strength features (`season_rank`, `season_percentile`, `field_gap`) rank athletes against the world list, not the field.
+- At serving, `meets_count`, `days_since_last`, `recent_trend` and `gap_variability` read only the 2026 Diamond League meetings file, so every other athlete gets 0 / 999 / 0 / 0, values training never held.
+- An Asian field's leader therefore reads as a world long shot, chances come out under 1%, and the 6-of-8 rule and 5% floor send the event to points.
+
+**Decided by the user on 2026-09-14**
+1. Scope: all 36 disciplines, at the Asian Games and on the Track/Field pages.
+2. Bar: the new model ships for an event group only where it beats taking the top 3 by points on held-out finals, Asian finals included. The rest stay on points, and the page says why.
+3. Timing: before the freeze. Push by 21 September, freeze before 23 September.
+
+**Built in the fourth session (committed locally, not pushed)**
+- `src/field_data.py`:
+  - `--asia-toplists`: past Asian area toplists 2015-2025, 3 pages each, into `data/field/asia/`. Resumable.
+  - `--finals`: every finalist of the Olympics, Worlds and Europeans 2009-2025 and the Asian Games 2018 (`7121814`) and 2023 (`7147637`) and Asian Championships 2019 (`7129855`), 2023 (`7185337`) and 2025 (`7216290`), read with `ultimate_scraper.fetch_results(field=None, ...)`, cut off at each competition's first day. Into `data/field/championship_finals.csv`.
+  - `--report`: adds the Diamond League Finals from disk (cut off at the first day of that year's Final, `dl_final_starts`), joins every finalist to their season-best Results Score before the cut-off (world toplists in `data/raw` plus the Asian history), and prints coverage per competition. Into `data/field/finals.csv`.
+- `src/field_model.py`: field-relative features (`field_features`), a Plackett-Luce fit with exact top-3 chances that add up to 3 (`fit`, `podium_chances`), a walk-forward backtest against points for 2021-2025 (`backtest`), a shuffled control, the pre-registered ship rule (`ship_decisions`), the report, and serving helpers (`serving_rows`, `score_field`, `shipped`). `--backtest` writes `outputs/field_model.json` and `outputs/field_model_report.json`.
+- `tests/test_field_model.py`: 16 tests, all passing.
+- World history for the hammer and 10,000m, 2008-2025, 1,800 rows each in `data/raw/{men,women}_{HT,10000m}.csv` (force-added: `data/raw` is ignored).
+- Checked live: past Asian lists come back (2019 men's 100m, 300 rows, 22 nations); the Asian Games started 2018-08-25 and 2023-09-29.
+
+**Where the downloads stood when this was written**
+- `data/field/asia/` holds 3 of 36 discipline files: re-run step 1a, it skips the ones on disk.
+- `data/field/championship_finals.csv` is NOT on disk yet: run step 1b.
+
+**The ship rule, fixed before any result: do not change it after seeing the numbers**
+Per event group (sprints and hurdles; 800m upward with steeplechase and 10,000m; jumps; throws), with d = model hits minus points hits per held-out final:
+- the one-sided 90% bootstrap lower bound of the mean d is above 0,
+- the mean d on the Asian finals alone is at least 0, and
+- the same model trained on features shuffled within each field does not pass.
+
+**Next session, in order**
+1. Finish the data:
+   - a. `python src/field_data.py --asia-toplists` (skips disciplines already on disk).
+   - b. `python src/field_data.py --finals` (refuses to save if an Asian competition returns nothing).
+   - c. `python src/field_data.py --report`, then read the coverage table.
+   - d. Not built yet: the plan's 85% gate. A competition with under 85% of finalists matched to a score must be left out of training and named in the report. Add it to `build_finals` or `--report`, with a test.
+   - e. Watch the Europeans: there is no European area history, so European finalists outside the world top 100 have no score. If their coverage is poor, fetch `regionType=area&region=europe` the same way before the backtest.
+2. `python src/field_model.py --backtest`. Check the shuffled control sits well below points and the calibration table is sane.
+3. Show the user the per-group table and get the go or no-go. If no group passes, the Asian Games keep today's call (8 model, 28 points).
+4. Asian Games serving (plan section 5): `asian_games_predictions.build()` drops `choose_method` and `MODEL_FLOOR` for `field_model.shipped()` and `score_field()`, using `serving_rows(key, athletes, data/asian_games_2026/raw/{key}_2026.csv, "2026-09-23", 2026)`. A shipped group gets `method: "model"`; the rest get `method: "points"` with `reason: "shipRule"` and the group's numbers in `methodEvidence`. Update the tests that pin the 6-of-8 rule.
+5. Track/Field (plan section 6): `world_rankings.py` builds the model view with the field model over the world top 20 by points ("if these 20 met in a final") for shipped groups, and `modelAvailable: false` with `modelReason: "shipRule"` otherwise. `POINTS_ONLY_DISCIPLINES` stops gating this view. Replace the test that pins the old Diamond League bias.
+6. Frontend: the why-sentence and "How each event is called" panel in `ultimate-projections.tsx`, the `methodEvidence` type, the Track/Field rating copy, dashboard favourites and landing text, in EN and FR (ux-copy and humanizer rules).
+7. Verify: full pytest, `tsc`, eslint on changed files, `npm run build`, EN/FR key parity, the local `predictor-api-next-championship` API, and the browser at `/championship`, `/field?disc=men_HT` and the dashboard.
+8. Commit locally for the user's review. Then the Asian Games steps under "Then" below: flip `CURRENT`, `athlete_profile_scraper.py --championship asian-games-2026`, `build_static_api.py`, push by 21 September; injury check; re-scrape, predictions and freeze before 23 September.
+
+**Not to change:** `run.py`'s Diamond League predictions, the `/discipline` pages, athlete pages' `hypotheticalProb`, the frozen Diamond League Final and Ultimate calls, and `outputs/model_rf.pkl`.
+
 ## Start here: the Asian Games 2026 (in progress, 2026-09-14)
 
 _Last updated: 2026-09-14, end of the third session. **The user's three items are done and committed locally (backend `91e91fe4`, frontend `7e6c9e1`), on top of the second session's commits. Nothing is pushed, `CURRENT` is still `ultimate-2026`, and `public/data` was not rebuilt. What changed is under "Done in the third session" below, and what is left to run is under "Then".**_
