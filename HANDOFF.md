@@ -1,5 +1,56 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## Start here: the Asian Games 2026 (in progress, paused 2026-09-14)
+
+_Last updated: 2026-09-14. **The site is moving from the finished Ultimate Championship to the Asian Games.**_
+- **When and where:** athletics runs 23–29 September 2026 at Paloma Mizuho Stadium, Nagoya.
+- **World Athletics:** it lists the event as "20th Asian Games", competition `7176091`, category A.
+- **Why this is paused:** the chat was cleared mid-plan. Everything needed to resume is below and in memory `project_asian_games_pivot_2026_09_14`.
+
+**Decisions the user made**
+- **The call:** the model, with points as the fallback, and one method per event.
+  - An event uses the model when at least 6 of its top 8 by points have real history, meaning a row in `data/raw/{key}.csv` or `data/raw/{key}_2026_meetings.csv`.
+  - Otherwise it ranks by World Athletics Results Score.
+  - Never mix the two in one ranking, and label each event with its method.
+- **Nav:** one championship tab replaces the Ultimate tab. The Ultimate's record stays on the Results page.
+- **Timing:** go live in one push by 21 September. Freeze the call before the first session on 23 September with `python src/freeze_prefinal.py --championship asian-games-2026`.
+- **Themes, a tradition:** every championship page gets its own theme, and its box on the Results page wears it.
+  - Diamond League: blue.
+  - Ultimate: black and purple with gold.
+  - Asian Games: from its emblem, a purple, gold and green line toward the OCA's red sun. Lead with the red sun and green so it looks nothing like the Ultimate.
+
+**Done**
+- **Step 0, live:**
+  - `graphql()` in `dl_final_results_scraper.py` finds World Athletics' new data server and key by itself. 4881 and then 4888 were retired within four days; it's 4892 now. The pair is cached in `data/wa_graphql.json`.
+  - The Ultimate record is complete: 25 of 25 events, 52 of 76 podium places.
+  - Its 27 named qualifiers survive World Athletics removing them from its page.
+- **Step 1, committed locally as `91d2c275` and not pushed:**
+  - `src/championships.py` is the registry: ids, dates, data directories, WA ids, themes, and `CURRENT` (still `ultimate-2026`).
+  - `api.py`, `freeze_prefinal.py`, `refresh_results.py` and the static build all read it.
+  - `/api/results` sends each championship's `theme`, `/api/championship` serves the current one, and `/api/ultimate` still answers.
+  - 521 tests pass.
+
+**Next**
+1. **Step 2, the Asian field and the call.**
+   - Scrape Asian area toplists with `live_fetcher.scrape_toplist` plus `regionType=area&region=asia`. First fix its `?page=` join for URLs that already carry parameters. Fail on any non-Asian nationality.
+   - Build a provisional field: the top athletes by season-best points, at most 2 per nation (confirm that rule). Swap in official entries when they're published.
+   - Write a merged world-plus-Asian snapshot to `data/asian_games_2026/raw/{key}_2026.csv`. Read it through a new optional `snapshot_path` on `feature_builder.build_2026_features`, with the default unchanged.
+   - Apply the per-event method rule, reusing the output shape of `ultimate_predictions.project_event`.
+   - Add an Asian Games scraper that reuses `fetch_results` and `pick_final` with competition `7176091`.
+   - Run `injury_checker.py` on the Asian field.
+2. **Step 3, the frontend.**
+   - Add `src/lib/championship-themes.ts` for the three themes; `Shell` already accepts a custom `PageGround`. Every theme's text contrast is measured at 4.5:1 or better.
+   - Theme each `ChampionshipBlock` on `/results` with CSS variables scoped to the block.
+   - Turn `routes/ultimate.tsx` into a championship route fed by `/api/championship`, with "The field", "How the call is made" and a method label on each event.
+   - The nav tab, dashboard band, landing countdown and schedule follow the current championship.
+   - Add `results.meet.asianGames`, with all copy in EN and FR.
+3. **Step 4.** Once the Asian Games scraper and call exist:
+   - flip `CURRENT` to `asian-games-2026`, which points the refresh button at it;
+   - freeze the call;
+   - push both repos.
+
+**Watch out:** `refresh-results.cmd` pushes every local commit, so pressing it now would also push Step 1. That's harmless, but know it. While `CURRENT` is the Ultimate, the button refreshes the Ultimate.
+
 _Last updated: 2026-09-03 (later the same day). **The site is fully bilingual and live.** Every page body, the 404, every component and all 32 discipline names now read in French, 603 keys at exact EN/FR parity, merged to `main` and pushed. English is the default and byte-identical to what shipped before. **Arabic is the agreed next step and the hard half: see item 30.** Two real bugs were found and fixed on the way, both reported from actual use rather than found by review. The top bar overlapped its own controls in French, and the mobile nav had a chunk of itself parked where scrolling could not reach it, which is what Android users were seeing. Detail in memory `project_i18n_2026_09_03` and traps 4-6 of `feedback_browser_pane_measurement_traps`._
 
 _Earlier on 2026-09-03: a run of post-launch frontend feedback rounds, all shipped and live. The four parked UI-polish items are done (tooltips, field-relative podium colour, 70 vendored SVG flags, stats-contrast confirmed fine); then a mobile round (first-run welcome modal + About button, tap-friendly tooltips, spacing), a **boxless How-it-works redesign** that also gained **mobile search** and left the top nav, a "make the explanations concrete" pass, athlete/discipline fixes (whole-number age, **PB-gap units**, **info buttons** on the confusing stats, head-to-head grid spacing), the **season-best bar recoloured** to stand out, and a **full-app humanizer sweep**. Detail in memory `project_mobile_onboarding_2026_09_02`, `project_ui_polish_batch_2026_09_02`._
