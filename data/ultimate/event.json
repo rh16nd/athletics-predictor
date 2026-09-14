@@ -6374,6 +6374,62 @@
       "nationality": "NOR"
     },
     {
+      "discipline": "men_200m",
+      "athlete_name": "Kenneth BEDNAREK",
+      "place": "1",
+      "mark": "19.52",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_200m",
+      "athlete_name": "Letsile TEBOGO",
+      "place": "2",
+      "mark": "19.76",
+      "nationality": "BOT"
+    },
+    {
+      "discipline": "men_200m",
+      "athlete_name": "Courtney LINDSEY",
+      "place": "3",
+      "mark": "19.79",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_200m",
+      "athlete_name": "Sinesipho DAMBILE",
+      "place": "4",
+      "mark": "19.91",
+      "nationality": "RSA"
+    },
+    {
+      "discipline": "men_200m",
+      "athlete_name": "Andre DE GRASSE",
+      "place": "5",
+      "mark": "19.92",
+      "nationality": "CAN"
+    },
+    {
+      "discipline": "men_200m",
+      "athlete_name": "Bryan LEVELL",
+      "place": "6",
+      "mark": "20.07",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "men_200m",
+      "athlete_name": "Aaron BROWN",
+      "place": "7",
+      "mark": "20.23",
+      "nationality": "CAN"
+    },
+    {
+      "discipline": "men_200m",
+      "athlete_name": "Udodi Chudi ONWUZURIKE",
+      "place": "8",
+      "mark": "20.45",
+      "nationality": "NGR"
+    },
+    {
       "discipline": "men_1500m",
       "athlete_name": "Josh KERR",
       "place": "1",
@@ -6465,6 +6521,62 @@
       "nationality": "NOR"
     },
     {
+      "discipline": "men_HJ",
+      "athlete_name": "Gianmarco TAMBERI",
+      "place": "1",
+      "mark": "2.37",
+      "nationality": "ITA"
+    },
+    {
+      "discipline": "men_HJ",
+      "athlete_name": "JuVaughn HARRISON",
+      "place": "2",
+      "mark": "2.30",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "men_HJ",
+      "athlete_name": "Erick PORTILLO",
+      "place": "3",
+      "mark": "2.26",
+      "nationality": "MEX"
+    },
+    {
+      "discipline": "men_HJ",
+      "athlete_name": "Oleh DOROSHCHUK",
+      "place": "4",
+      "mark": "2.26",
+      "nationality": "UKR"
+    },
+    {
+      "discipline": "men_HJ",
+      "athlete_name": "Romaine BECKFORD",
+      "place": "5",
+      "mark": "2.26",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "men_HJ",
+      "athlete_name": "Mateusz KOŁODZIEJSKI",
+      "place": "6",
+      "mark": "2.22",
+      "nationality": "POL"
+    },
+    {
+      "discipline": "men_HJ",
+      "athlete_name": "Jan ŠTEFELA",
+      "place": "7",
+      "mark": "2.17",
+      "nationality": "CZE"
+    },
+    {
+      "discipline": "men_HJ",
+      "athlete_name": "Tyus WILSON",
+      "place": "7",
+      "mark": "2.17",
+      "nationality": "USA"
+    },
+    {
       "discipline": "men_JT",
       "athlete_name": "Rumesh Tharanga PATHIRAGE",
       "place": "1",
@@ -6519,6 +6631,62 @@
       "place": "8",
       "mark": "75.80",
       "nationality": "USA"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Melissa JEFFERSON-WOODEN",
+      "place": "1",
+      "mark": "21.47",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Gabrielle THOMAS",
+      "place": "2",
+      "mark": "21.77",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Kayla WHITE",
+      "place": "3",
+      "mark": "21.93",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Amy HUNT",
+      "place": "4",
+      "mark": "22.10",
+      "nationality": "GBR"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Ashanti MOORE",
+      "place": "5",
+      "mark": "22.34",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Cambrea STURGIS",
+      "place": "6",
+      "mark": "22.46",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Anavia BATTLE",
+      "place": "7",
+      "mark": "22.54",
+      "nationality": "USA"
+    },
+    {
+      "discipline": "women_200m",
+      "athlete_name": "Fabienne HOENKE",
+      "place": "8",
+      "mark": "22.74",
+      "nationality": "SUI"
     },
     {
       "discipline": "women_5000m",
@@ -6603,6 +6771,62 @@
       "place": "12",
       "mark": "15:18.65",
       "nationality": "USA"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Saly SARR",
+      "place": "1",
+      "mark": "15.06",
+      "nationality": "SEN"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Davisleydi VELAZCO",
+      "place": "2",
+      "mark": "15.04",
+      "nationality": "CUB"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Leyanis PÉREZ HERNÁNDEZ",
+      "place": "3",
+      "mark": "14.90",
+      "nationality": "CUB"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Thea LAFOND",
+      "place": "4",
+      "mark": "14.47",
+      "nationality": "DMA"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Ackelia SMITH",
+      "place": "5",
+      "mark": "14.23",
+      "nationality": "JAM"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Dariya DERKACH",
+      "place": "6",
+      "mark": "13.82",
+      "nationality": "ITA"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Gabriele SANTOS",
+      "place": "7",
+      "mark": "13.06",
+      "nationality": "BRA"
+    },
+    {
+      "discipline": "women_TJ",
+      "athlete_name": "Liadagmis POVEA",
+      "place": "",
+      "mark": "NM",
+      "nationality": "CUB"
     }
   ]
 }
