@@ -11,9 +11,17 @@ _Last updated: 2026-09-14, end of the fourth session. **The user asked why only 
 - Europe: the world top 100 found only 78-84% of each European Championships' finalists, so all seven fell under the gate. As step 1e below says, the European area lists are being fetched (`--europe-toplists`, 2009-2024, into `data/field/europe/`).
 - If one season of an area list fails to download, that discipline's file is not saved, so a rerun fetches it again instead of skipping a file with a hole in it.
 - The report now also counts winners named first and lists each competition's match rate.
-- 20 field-model tests pass. The full backend suite had 605 passing and one failure, the tie test before its fix; run it again.
+- A leak, found before any backtest ran, and fixed. A toplist holds each athlete's best of the whole season. When that best came on or after a championship's first day, the first version fell back to last season's best and set `sb_prior_season`. But whether it came after depends on how the championship went: across 10,960 scored finalists, those flagged that way won a medal 37.9% of the time and the rest 23.4%, and the gap held in every tier. The flag told the model who peaked in the final, while the points ranking scored those same athletes on last year's mark.
+- World Athletics' toplists cannot be cut off at a date: the page ignores `firstDay`/`lastDay`, and GraphQL `getTopList` has no date fields. So `attach_scores` takes a toplist best only when it is dated before the cut-off (then it is the best before the cut-off). Otherwise it reads the athlete's own season from `getSingleCompetitorResultsDiscipline(id, resultsByYear)` and takes the best legal, outdoor, electronically timed mark before the cut-off. Last season is used only when that profile has no such mark. A finalist who needs a profile and has none stays unscored, so missing data cannot bring the leak back. Ids come from each competition's results feed, where `competitor { urlSlug }` ends in the id.
+- 24 field-model tests pass.
 
-**Where the downloads stood at this checkpoint:** Asia 26 of 36, Europe just started (about 90 minutes), finals re-download running. Each is resumable by running the same command again. After them: `python src/field_data.py --check-winners` must print 0 disagreements for the new finals file (the finals download also prints it at its end), then step 1c (`--report`), check that the Europeans now clear 85%, then step 2.
+**Where the downloads stood at this checkpoint:** Asia 36 of 36 and the finals re-download are done; the winner check printed 0 disagreements. Europe was at 27 of 36. `--ids` and then `--seasons` were running, with two season workers split by odd and even years (`--years`), each writing its own `data/field/seasons/{year}.json`. Every step resumes by running the same command again. After them, in order:
+1. `--seasons` once more with no `--years`. It fetches only what is missing, including anything the finished Europe lists changed.
+2. `--report`. Check that the Asian competitions and the Europeans now clear 85%, and that few finalists are unscored for want of a profile.
+3. A spot check that a toplist best dated before the cut-off equals the profile's best before it.
+4. Then step 2 below.
+
+**For serving (step 4 below), from the leak fix:** training falls back to last season, flagged, when an athlete has no mark this season before the cut-off, but `field_model.serving_rows` drops such an entrant. Make serving fall back the same way, or training and serving will not match.
 
 **Why the existing model cannot call an Asian field**
 - It learned from 501 finals (Diamond League Finals, Olympics/Worlds, Europeans) whose candidates are the world top 100. No Asian competition, no hammer, no 10,000m.

@@ -91,10 +91,88 @@ def history(*rows):
                          for k, n, y, s, d in rows])
 
 
-def test_a_mark_on_or_after_the_cut_off_does_not_count_and_last_season_stands_in():
-    h = history(("NAM", "KOR", 2023, 1150, "2023-09-29"), ("NAM", "KOR", 2022, 1120, "2022-07-01"))
-    assert fd.score_as_of(h, 2023, pd.Timestamp("2023-09-29")) == (1120.0, pd.Timestamp("2022-07-01"), 1)
-    assert fd.score_as_of(h, 2023, pd.Timestamp("2023-09-30"))[0] == 1150.0
+def test_a_season_best_the_toplist_cannot_date_before_the_cut_off_comes_from_the_profile_or_not_at_all():
+    """Sending these finalists straight to last season was a leak: whether a
+    toplist best came after the cut-off depends on the championship itself."""
+    cutoff = pd.Timestamp("2015-08-22")
+    h = history(("EARLY", "KEN", 2015, 1200, "2015-06-01"), ("EARLY", "KEN", 2014, 1180, "2014-06-01"),
+                ("PEAKED", "KEN", 2015, 1230, "2015-08-25"), ("PEAKED", "KEN", 2014, 1190, "2014-06-01"),
+                ("NOPROFILE", "KEN", 2015, 1225, "2015-08-25"), ("NOPROFILE", "KEN", 2014, 1195, "2014-06-01"),
+                ("INJURED", "KEN", 2015, 1210, "2015-09-05"), ("INJURED", "KEN", 2014, 1205, "2014-06-01"))
+    finals = pd.DataFrame({"discipline": "men_800m", "cutoff": cutoff, "year": 2015, "nationality": "KEN",
+                           "athlete_name": ["EARLY", "PEAKED", "NOPROFILE", "INJURED"],
+                           "athlete_id": [1, 2, None, 4]})
+    seasons = {2015: {"2": [{"discipline": "800 Metres", "indoor": False, "results": [
+                          {"date": "01 JUL 2015", "mark": "1:44.00", "notLegal": False, "resultScore": 1195},
+                          {"date": "25 AUG 2015", "mark": "1:42.90", "notLegal": False, "resultScore": 1230}]}],
+                      "4": []}}
+    out = fd.attach_scores(finals, scores_for=lambda key: h, seasons=seasons).set_index("athlete_name")
+    columns = ["sb_score", "sb_source", "sb_prior_season"]
+    assert out.loc["EARLY", columns].tolist() == [1200.0, "toplist", 0]
+    assert out.loc["PEAKED", columns].tolist() == [1195.0, "profile", 0]
+    assert pd.isna(out.loc["NOPROFILE", "sb_score"]) and bool(out.loc["NOPROFILE", "needs_profile"])
+    assert out.loc["INJURED", columns].tolist() == [1205.0, "lastSeason", 1]
+    assert not bool(out.loc["EARLY", "needs_profile"])
+
+
+def test_a_profile_mark_counts_only_before_the_cut_off_outdoors_legal_and_electronically_timed():
+    events = [
+        {"discipline": "800 Metres", "indoor": True, "results": [
+            {"date": "01 FEB 2015", "mark": "1:44.00", "notLegal": False, "resultScore": 1250}]},
+        {"discipline": "800 Metres", "indoor": False, "results": [
+            {"date": "13 JUN 2015", "mark": "1:43.58", "notLegal": False, "resultScore": 1217},
+            {"date": "31 JUL 2015", "mark": "1:43.2h", "notLegal": False, "resultScore": 1230},
+            {"date": "01 AUG 2015", "mark": "1:43.00", "notLegal": True, "resultScore": 1235},
+            {"date": "22 AUG 2015", "mark": "1:43.10", "notLegal": False, "resultScore": 1232},
+            {"date": "26 MAY 2015", "mark": "DNF", "notLegal": False, "resultScore": 0}]},
+        {"discipline": "600 Metres", "indoor": False, "results": [
+            {"date": "01 MAY 2015", "mark": "1:13.00", "notLegal": False, "resultScore": 1300}]},
+    ]
+    assert fd.profile_best(events, "men_800m", pd.Timestamp("2015-08-22")) == (1217.0, pd.Timestamp("2015-06-13"))
+    assert fd.profile_best(events, "men_800m", pd.Timestamp("2015-03-01")) is None
+
+
+def test_finalist_ids_come_from_each_competitions_results_feed(tmp_path):
+    assert "urlSlug" in fd.IDS_QUERY
+    assert fd.slug_id("islamic-republic-of-iran/hassan-taftian-14421587") == 14421587
+    assert fd.slug_id(None) is None and fd.slug_id("no-number-here") is None
+
+    def query(competition_id, day):
+        if day is None:
+            return {"options": {"days": [{"day": 1}]}}
+        return {"eventTitles": [{"events": [{"gender": "M", "event": "Men's 100 Metres", "races": [
+            {"race": "Final", "results": [{"competitor": {
+                "name": "Hassan TAFTIAN", "urlSlug": "islamic-republic-of-iran/hassan-taftian-14421587",
+                "birthDate": "04 MAY 1993"}}]}]}]}]}
+
+    taftian = (fd.field_key("Hassan TAFTIAN"))
+    assert fd.competition_athletes(7147637, query=query) == {
+        ("men_100m", taftian): (14421587, pd.Timestamp("1993-05-04"))}
+
+    finals = pd.DataFrame({"competition": ["Asian Games 2023", "Diamond League Final", "Diamond League Final"],
+                           "competition_id": [7147637, None, None], "year": [2023, 2019, 2019],
+                           "discipline": "men_100m", "athlete_name": ["Hassan TAFTIAN", "Early FINAL", "Late FINAL"]})
+    meetings = {7147637: {("men_100m", taftian): (14421587, None)},
+                1: {("men_100m", fd.field_key("Early FINAL")): (11, None)},
+                2: {("men_100m", fd.field_key("Late FINAL")): (22, None)}}
+    ids = fd.finalist_ids(finals, athletes_at=lambda m: meetings[m], dl_meetings=lambda year: [{"id": 1}, {"id": 2}])
+    assert ids.set_index("athlete_name")["athlete_id"].to_dict() == {
+        "Hassan TAFTIAN": 14421587, "Early FINAL": 11, "Late FINAL": 22}
+
+
+def test_a_season_that_fails_to_download_is_asked_for_again_and_an_empty_one_is_not(tmp_path):
+    calls = []
+
+    def fetch(athlete, year):
+        calls.append((athlete, year))
+        if athlete == 2:
+            raise ConnectionError("CloudFront error page")
+        return []
+
+    assert fd.fetch_seasons({(1, 2015), (2, 2015)}, fetch=fetch, seasons_dir=str(tmp_path)) == 1
+    assert fd.load_seasons(str(tmp_path)) == {2015: {"1": []}}
+    fd.fetch_seasons({(1, 2015), (2, 2015)}, fetch=fetch, seasons_dir=str(tmp_path))
+    assert calls == [(1, 2015), (2, 2015), (2, 2015)]
 
 
 def test_names_match_through_punctuation_and_by_nationality_first():

@@ -16,12 +16,12 @@ instead. It needs two things, and this file builds both:
      live rather than from the major_meet rows in data/raw, because those keep
      only athletes who were once in a world top 100, which is most of an Asian
      final's field gone.
-  2. SEASON SCORES: each athlete's best Results Score in each season, with its
-     date, from the world toplists (top 100, data/raw) and the area toplists
-     (up to 300 deep): Asia 2015-2025 in data/field/asia, Europe 2009-2024 in
-     data/field/europe. Europe is there because the world top 100 alone found
-     78-84% of each European Championships' finalists, which put all seven
-     under the MIN_MATCH gate.
+  2. SEASON SCORES: each finalist's best Results Score before the competition
+     started. From the toplists where they can say it (world top 100 in
+     data/raw; area lists up to 300 deep, Asia 2015-2025 in data/field/asia and
+     Europe 2009-2024 in data/field/europe), and from the athlete's own World
+     Athletics profile where they cannot (data/field/seasons). See
+     attach_scores for which is used when, and why the order matters.
 
 Nothing here writes to data/raw, so the existing model never sees these rows.
 
@@ -31,14 +31,17 @@ dated strictly before it count. A World Championships final is on day 8; a
 season best set in its heat on day 6 is not something anyone knew before the
 championship began, and the Asian Games call is frozen before its first day.
 
-Usage:
+Usage, in order:
     python src/field_data.py --asia-toplists [--only k1,k2] [--refresh]
     python src/field_data.py --europe-toplists [--only k1,k2] [--refresh]
     python src/field_data.py --finals          # championships, world and Asian
+    python src/field_data.py --ids             # every finalist's World Athletics id
+    python src/field_data.py --seasons [--years 2015,2017]   # profiles the toplists need
     python src/field_data.py --report          # join to season scores, print coverage
 """
 import argparse
 import csv
+import json
 import os
 import re
 import sys
@@ -59,7 +62,9 @@ RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 FIELD_DIR = os.path.join(BASE_DIR, "data", "field")
 ASIA_DIR = os.path.join(FIELD_DIR, "asia")
 EUROPE_DIR = os.path.join(FIELD_DIR, "europe")
+SEASONS_DIR = os.path.join(FIELD_DIR, "seasons")
 CHAMPIONSHIP_FINALS_PATH = os.path.join(FIELD_DIR, "championship_finals.csv")
+IDS_PATH = os.path.join(FIELD_DIR, "finalist_ids.csv")
 FINALS_PATH = os.path.join(FIELD_DIR, "finals.csv")
 DL_RESULTS = os.path.join(BASE_DIR, "data", "dl_final_results.csv")
 
@@ -113,6 +118,19 @@ DAYS_QUERY = """query getCalendarCompetitionResults($competitionId: Int, $day: I
   }
 }"""
 
+# The results feed with each competitor's profile slug, which ends in their id
+# ("islamic-republic-of-iran/hassan-taftian-14421587"), and date of birth.
+IDS_QUERY = dlr.RESULTS_QUERY.replace("competitor { name }", "competitor { name urlSlug birthDate }")
+
+# One athlete's results in one season, grouped by event. Checked live on
+# 2026-09-14: David Rudisha's 2015 800m came back with 11 dated, scored results,
+# 7 of them before the World Championships began.
+SEASON_RESULTS_QUERY = """query SeasonResults($id: Int, $year: Int) {
+  getSingleCompetitorResultsDiscipline(id: $id, resultsByYear: $year) {
+    resultsByEvent { discipline indoor results { date mark notLegal resultScore } }
+  }
+}"""
+
 FINAL_COLUMNS = ["competition", "competition_id", "tier", "year", "cutoff", "discipline",
                  "athlete_name", "nationality", "place", "mark"]
 
@@ -138,6 +156,12 @@ def _place(value):
         return int(value) if value.is_integer() else None
     text = str(value or "").strip().rstrip(".")
     return int(text) if text.isdigit() else None
+
+
+def competition_label(name, year):
+    """"European Athletics Championships 2018", without doubling the year for
+    names that already carry it ("Asian Games 2018")."""
+    return str(name) if str(year) in str(name) else f"{name} {year}"
 
 
 # ---- area toplists ------------------------------------------------------------
@@ -328,6 +352,163 @@ def dl_finals(starts=None):
     })[FINAL_COLUMNS]
 
 
+def all_finals(keys=None):
+    """Diamond League Finals and the championship finals on disk, together."""
+    finals = dl_finals()
+    if os.path.exists(CHAMPIONSHIP_FINALS_PATH):
+        champs = pd.read_csv(CHAMPIONSHIP_FINALS_PATH, parse_dates=["cutoff"])
+        finals = pd.concat([finals, champs], ignore_index=True)
+    return finals if keys is None else finals[finals["discipline"].isin(keys)]
+
+
+# ---- finalists' World Athletics ids --------------------------------------------
+
+def slug_id(slug):
+    """14421587 from "islamic-republic-of-iran/hassan-taftian-14421587"."""
+    tail = str(slug or "").rsplit("-", 1)[-1]
+    return int(tail) if tail.isdigit() else None
+
+
+def _results_day(competition_id, day):
+    time.sleep(REQUEST_PAUSE)
+    return dlr.graphql("getCalendarCompetitionResults",
+                       {"competitionId": competition_id, "day": day, "eventId": None},
+                       IDS_QUERY)["getCalendarCompetitionResults"]
+
+
+def competition_athletes(competition_id, query=_results_day):
+    """{(discipline key, field_key(name)): (athlete id, date of birth)} for
+    everyone with a result in any race at one competition."""
+    first = query(competition_id, None)
+    days = [d["day"] for d in (first.get("options") or {}).get("days") or []]
+    found = {}
+    for data in ([query(competition_id, day) for day in days] if days else [first]):
+        for group in data.get("eventTitles") or []:
+            for event in group.get("events") or []:
+                key = dlr.resolve_discipline_key(event.get("gender"), event.get("event"), mile_as_1500=True)
+                if key is None:
+                    continue
+                for race in event.get("races") or []:
+                    for result in race.get("results") or []:
+                        who = result.get("competitor") or {}
+                        athlete = slug_id(who.get("urlSlug"))
+                        if athlete and who.get("name"):
+                            found.setdefault((key, field_key(who["name"])), (athlete, parse_date(who.get("birthDate"))))
+    return found
+
+
+def finalist_ids(finals, athletes_at=competition_athletes, dl_meetings=dlr.find_final_competition_ids):
+    """One row per finalist: competition, year, discipline, athlete_name,
+    athlete_id and birth_date, read from that competition's own results feed.
+    A Diamond League Final is read from each of its meetings (two in 2018 and
+    2019)."""
+    rows = []
+    for (competition, year), group in finals.groupby(["competition", "year"]):
+        competition_id = group["competition_id"].iloc[0]
+        if pd.notna(competition_id):
+            meetings = [int(competition_id)]
+        else:
+            meetings = [int(m["id"]) for m in dl_meetings(int(year))]
+        found = {}
+        for meeting in meetings:
+            for who, value in athletes_at(meeting).items():
+                found.setdefault(who, value)
+        hits = 0
+        for row in group.itertuples():
+            athlete, born = found.get((row.discipline, field_key(row.athlete_name)), (None, None))
+            hits += athlete is not None
+            rows.append({"competition": competition, "year": int(year), "discipline": row.discipline,
+                         "athlete_name": row.athlete_name, "athlete_id": athlete, "birth_date": born})
+        print(f"  {competition_label(competition, year)}: {hits} of {len(group)} finalists have an id")
+    return pd.DataFrame(rows, columns=["competition", "year", "discipline", "athlete_name", "athlete_id", "birth_date"])
+
+
+def with_ids(finals, ids_path=IDS_PATH):
+    """`finals` with athlete_id and birth_date joined on, blank before --ids has run."""
+    if not os.path.exists(ids_path):
+        return finals.assign(athlete_id=None, birth_date=None)
+    keys = ["competition", "year", "discipline", "athlete_name"]
+    ids = pd.read_csv(ids_path).drop_duplicates(subset=keys)
+    return finals.merge(ids, on=keys, how="left")
+
+
+# ---- athletes' own season results ---------------------------------------------
+
+def load_seasons(seasons_dir=SEASONS_DIR):
+    """{year: {athlete id as text: that season's results by event}}."""
+    seasons = {}
+    if not os.path.isdir(seasons_dir):
+        return seasons
+    for name in os.listdir(seasons_dir):
+        if name.endswith(".json") and name[:-5].isdigit():
+            with open(os.path.join(seasons_dir, name), encoding="utf-8") as f:
+                seasons[int(name[:-5])] = json.load(f)
+    return seasons
+
+
+def _save_season(year, athletes, seasons_dir):
+    os.makedirs(seasons_dir, exist_ok=True)
+    path = os.path.join(seasons_dir, f"{year}.json")
+    with open(path + ".tmp", "w", encoding="utf-8") as f:
+        json.dump(athletes, f)
+    os.replace(path + ".tmp", path)
+
+
+def fetch_season(athlete_id, year):
+    time.sleep(ags.LOOKUP_PAUSE)
+    data = dlr.graphql("SeasonResults", {"id": int(athlete_id), "year": int(year)}, SEASON_RESULTS_QUERY)
+    return (data.get("getSingleCompetitorResultsDiscipline") or {}).get("resultsByEvent") or []
+
+
+def fetch_seasons(wanted, fetch=fetch_season, seasons_dir=SEASONS_DIR, save_every=100):
+    """Each (athlete id, year) in `wanted` that is not on disk, saved one file
+    per year so that workers given different years never write the same file.
+    A request that fails is not saved, so the next run asks again; a season
+    with no results is saved empty, so it is not asked twice. Returns the
+    number that failed."""
+    seasons = load_seasons(seasons_dir)
+    wanted = {(int(a), int(y)) for a, y in wanted}
+    todo = sorted(w for w in wanted if str(w[0]) not in seasons.get(w[1], {}))
+    print(f"  {len(wanted)} athlete-seasons wanted, {len(wanted) - len(todo)} on disk, {len(todo)} to fetch")
+    failed, dirty = 0, set()
+    for i, (athlete, year) in enumerate(todo, 1):
+        try:
+            seasons.setdefault(year, {})[str(athlete)] = fetch(athlete, year)
+            dirty.add(year)
+        except Exception as exc:  # one athlete must not end a run of thousands
+            failed += 1
+            if failed <= 10:
+                print(f"    {athlete} {year}: FAILED ({str(exc)[:80]})")
+        if i % save_every == 0 or i == len(todo):
+            for y in dirty:
+                _save_season(y, seasons[y], seasons_dir)
+            dirty.clear()
+        if i % 500 == 0 or i == len(todo):
+            print(f"  {i} of {len(todo)} fetched, {failed} failed")
+    return failed
+
+
+def profile_best(events, key, cutoff):
+    """(best Results Score, its date) among one season's results in one event
+    that were legal, outdoors, electronically timed and dated before the
+    cut-off; None when there are none. A profile's resultScore is the toplist's
+    Results Score (asian_games_scraper.season_best checked it), and toplists
+    take only electronic times, so a hand time ("1:44.2h") is left out."""
+    wanted = ags.WA_EVENT_NAMES.get(key)
+    best = None
+    for group in events or []:
+        if group.get("discipline") != wanted or group.get("indoor"):
+            continue
+        for result in group.get("results") or []:
+            score, when = result.get("resultScore"), parse_date(result.get("date"))
+            if (result.get("notLegal") or not score or when is None or when >= cutoff
+                    or str(result.get("mark") or "").strip().lower().endswith("h")):
+                continue
+            if best is None or score > best[0]:
+                best = (float(score), when)
+    return best
+
+
 # ---- season scores ------------------------------------------------------------
 
 def _toplist_rows(path, source):
@@ -384,46 +565,69 @@ def athlete_history(scores, key, nat):
     return by_name.iloc[0:0], None
 
 
-def score_as_of(history, year, cutoff):
-    """(season best score, its date, taken from the season before) as of the
-    cut-off, or (None, None, None).
-
-    A toplist holds one row per athlete per season, their best. When that best
-    came on or after the cut-off, what they had run before it is not on any
-    list, and the previous season's best stands in, flagged."""
-    this = history[(history["year"] == year) & (history["date"] < cutoff)]
-    if not this.empty:
-        best = this.loc[this["score"].idxmax()]
-        return float(best["score"]), best["date"], 0
-    prev = history[history["year"] == year - 1]
-    if not prev.empty:
-        best = prev.loc[prev["score"].idxmax()]
-        return float(best["score"]), best["date"], 1
-    return None, None, None
+def _season_for(seasons, athlete_id, year):
+    """One athlete's fetched season, or None when it was never fetched."""
+    try:
+        return seasons.get(int(year), {}).get(str(int(float(athlete_id))))
+    except (TypeError, ValueError):
+        return None
 
 
-def attach_scores(finals, scores_for=season_scores):
-    """The finals with each finalist's pre-competition numbers: season best,
-    its date, career best before this season, last season's best, date of
-    birth, and how the history was matched. Unmatched finalists keep NaNs."""
+def attach_scores(finals, scores_for=season_scores, seasons=None):
+    """The finals with each finalist's numbers as they stood when the
+    competition started.
+
+    The season best is, in this order:
+      1. the toplist's season best, when it is dated before the cut-off. A
+         toplist holds one best per athlete per season, so that mark IS their
+         best before the cut-off;
+      2. otherwise their profile's best legal outdoor mark in the event before
+         the cut-off (`seasons`, see fetch_seasons and profile_best);
+      3. otherwise, when the profile has no such mark, last season's best,
+         flagged sb_prior_season.
+    A finalist who needs step 2 and has no profile on file is left unscored.
+
+    Going straight from 1 to 3 was a leak, and the first version did it. Whether
+    a toplist best came after the cut-off, or whether an athlete made the
+    season's list at all, depends on how the championship itself went: on the
+    2026-09-14 data, finalists sent to last season that way won a medal 37.9% of
+    the time and the rest 23.4%. The flag told the model who peaked in the
+    final, and the points ranking scored those same athletes on last year.
+
+    Career best before this season, last season's best and date of birth come
+    from earlier seasons' toplists, all of it known before the competition.
+    `needs_profile` marks the finalists step 1 could not date."""
+    seasons = {} if seasons is None else seasons
     out = []
     for key, group in finals.groupby("discipline"):
         scores = scores_for(key)
-        rows = group.to_dict("records")
-        for row in rows:
+        for row in group.to_dict("records"):
             cutoff = pd.Timestamp(row["cutoff"])
             year = int(row["year"])
             history, how = athlete_history(scores, field_key(row["athlete_name"]), str(row["nationality"] or "").strip())
-            sb, sb_date, prior = score_as_of(history, year, cutoff)
+            before = history[(history["year"] == year) & (history["date"] < cutoff)]
             earlier = history[history["year"] < year]
             last = history[history["year"] == year - 1]
+            sb = sb_date = prior = source = None
+            if not before.empty:
+                best = before.loc[before["score"].idxmax()]
+                sb, sb_date, prior, source = float(best["score"]), best["date"], 0, "toplist"
+            else:
+                season = _season_for(seasons, row.get("athlete_id"), year)
+                found = profile_best(season, key, cutoff) if season is not None else None
+                if found is not None:
+                    (sb, sb_date), prior, source = found, 0, "profile"
+                elif season is not None and not last.empty:
+                    best = last.loc[last["score"].idxmax()]
+                    sb, sb_date, prior, source = float(best["score"]), best["date"], 1, "lastSeason"
             dob = history["dob"].dropna()
             row.update({
-                "sb_score": sb, "sb_date": sb_date, "sb_prior_season": prior,
+                "sb_score": sb, "sb_date": sb_date, "sb_prior_season": prior, "sb_source": source,
+                "needs_profile": before.empty,
                 "career_best": float(earlier["score"].max()) if not earlier.empty else None,
                 "prev_season_best": float(last["score"].max()) if not last.empty else None,
-                "dob": dob.iloc[0] if not dob.empty else None,
-                "matched_by": how if sb is not None else None,
+                "dob": dob.iloc[0] if not dob.empty else parse_date(row.get("birth_date")),
+                "matched_by": how,
             })
             out.append(row)
     return pd.DataFrame(out)
@@ -443,12 +647,6 @@ def coverage(scored):
     ).reset_index()
     table["trained"] = table["scored"] >= MIN_MATCH
     return table.sort_values(["tier", "year", "competition"])
-
-
-def competition_label(name, year):
-    """"European Athletics Championships 2018", without doubling the year for
-    names that already carry it ("Asian Games 2018")."""
-    return str(name) if str(year) in str(name) else f"{name} {year}"
 
 
 def winner_disagreements(champs, raw_dir=RAW_DIR):
@@ -486,6 +684,9 @@ def main(argv=None):
     parser.add_argument("--europe-toplists", action="store_true")
     parser.add_argument("--finals", action="store_true")
     parser.add_argument("--check-winners", action="store_true")
+    parser.add_argument("--ids", action="store_true")
+    parser.add_argument("--seasons", action="store_true")
+    parser.add_argument("--years", default=None, help="comma-separated seasons, for --seasons")
     parser.add_argument("--report", action="store_true")
     parser.add_argument("--only", default=None, help="comma-separated discipline keys")
     parser.add_argument("--refresh", action="store_true")
@@ -516,14 +717,26 @@ def main(argv=None):
         for d in disagree:
             print(f"    {d['competition']} {d['year']} {d['discipline']}: "
                   f"major_meet {d['majorMeet']}, saved {d['saved']}")
+    if args.ids:
+        print("=== Every finalist's World Athletics id, from each competition's results ===")
+        ids = finalist_ids(all_finals())
+        os.makedirs(FIELD_DIR, exist_ok=True)
+        ids.to_csv(IDS_PATH, index=False)
+        print(f"  {int(ids['athlete_id'].notna().sum())} of {len(ids)} finalists have an id -> {IDS_PATH}")
+    if args.seasons:
+        print("=== Profile seasons for finalists the toplists cannot date before their cut-off ===")
+        first_pass = attach_scores(with_ids(all_finals()))
+        need = first_pass[first_pass["needs_profile"]]
+        wanted = {(a, y) for a, y in zip(need["athlete_id"], need["year"]) if pd.notna(a)}
+        if args.years:
+            years = {int(y) for y in args.years.split(",")}
+            wanted = {w for w in wanted if int(w[1]) in years}
+        print(f"  {len(need)} of {len(first_pass)} finalists need a profile; "
+              f"{int(need['athlete_id'].isna().sum())} of those have no id and stay unscored")
+        fetch_seasons(wanted)
     if args.report:
         print("=== Finals joined to season scores ===")
-        finals = dl_finals()
-        if os.path.exists(CHAMPIONSHIP_FINALS_PATH):
-            champs = pd.read_csv(CHAMPIONSHIP_FINALS_PATH, parse_dates=["cutoff"])
-            finals = pd.concat([finals, champs], ignore_index=True)
-        finals = finals[finals["discipline"].isin(keys)]
-        scored = attach_scores(finals)
+        scored = attach_scores(with_ids(all_finals(keys)), seasons=load_seasons())
         os.makedirs(FIELD_DIR, exist_ok=True)
         scored.to_csv(FINALS_PATH, index=False)
         table = coverage(scored)
@@ -535,6 +748,10 @@ def main(argv=None):
             print(f"  Under {MIN_MATCH:.0%} found, scored but not trained on: "
                   + ", ".join(f"{competition_label(r.competition, r.year)} ({r.scored:.0%})"
                               for r in below.itertuples()))
+        print("  Where each season best came from: "
+              + ", ".join(f"{k} {v}" for k, v in scored["sb_source"].fillna("unscored").value_counts().items()))
+        undated = scored["needs_profile"] & scored["sb_score"].isna()
+        print(f"  {int(undated.sum())} finalists needed a profile and have none on file, so are unscored")
         print(f"  {len(scored)} rows -> {FINALS_PATH}")
     return 0
 
