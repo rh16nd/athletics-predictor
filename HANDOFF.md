@@ -30,6 +30,24 @@ The shuffled control scored 33.0%. Winners named first: model 261, points 248.
 
 **Next:** the Asian Games steps under "Then" in the section below: the user reviews `/championship`, injury check, flip `CURRENT`, profiles, static build, push by 21 September, then re-scrape and freeze before 23 September. One question for the user first: keep the 8 events on the old model, or put all 36 on points, since no model has shown it beats points on an Asian field.
 
+**Added 2026-09-15 at the user's request: past seasons for entrants with few or no marks this year.**
+
+The user asked for the hammer, the 10,000m and anyone short of 2026 marks to be judged from past seasons. Four ranking rules were tested first on the 1,115 finals in `data/field/finals.csv`, counting the podium places a top three by points named:
+
+| rule | all finals | 10,000m | 5000m | hammer | 1500m | javelin |
+|---|---|---|---|---|---|---|
+| this season only | 61.7% | 39.3% | 50.9% | 64.0% | 52.6% | 60.9% |
+| this season, else last season | 62.2% | 48.0% | 51.5% | 63.3% | 53.1% | 60.4% |
+| better of this season and last | 61.8% | 51.3% | 57.9% | 64.7% | 47.9% | 56.2% |
+| this season, else best of the three before | 61.8% | 49.3% | 52.6% | 64.0% | 52.1% | 59.4% |
+
+- Built: an entrant with no 2026 mark is ranked on their 2025 best from the 2025 Asian toplist (`data/asian_games_2026/asia/{key}_2025.csv`), and in the 5000m and 10,000m every entrant takes the better of 2025 and 2026 (`asian_games_predictions.last_season_rule`, `BETTER_OF_TWO`). Falling back to last season was the one rule that beat this season alone with its interval above zero (+0.013 a final, +0.002 to +0.024), and it left 7 medallists unrankable instead of 92. The two long-distance events were chosen after seeing every event's numbers, and the code says so.
+- A 2025 mark carries `markSeason` and shows a 2025 tag on the page. In a model event such an entrant is unranked with the reason `lastSeasonOnly`, because the model reads 2026 only. An entrant whose lookup failed is not given a 2025 mark.
+- The hammer did not need it: almost every hammer finalist had a mark in the season, and past seasons changed nothing inside the noise.
+- Result: the split is unchanged (8 by the model, 28 on points, 14 not called), and 34 entrants are now ranked on a 2025 mark, 7 of them in the women's 10,000m. Checked on the preview page: tags, hints and the how-each-event-is-called step in place, no console errors.
+- `asian_games_scraper.py` fetches last season's list during the full scrape, and `--last-season` fetches only those lists (about 5 minutes). Rebuild the call with `asian_games_predictions.py` afterwards.
+- Seen, not changed: World Athletics' own toplists write two single-named Indian athletes as ". SEEMA" (women's discus) and ". POOJA" (women's 800m and 1500m), and the page shows the dot.
+
 _Last updated: 2026-09-14, end of the fourth session. **The user asked why only 8 of the 36 Asian Games events get a model call ("that is not even prediction"). A plan was approved and saved at `C:\Users\rayen\.claude\plans\the-real-question-is-quizzical-thompson.md`; read it first. The data and model code are built and tested; nothing is served yet, and the go/no-go report has not been run.** Everything in the Asian Games section below still stands: its commits are local and not pushed, and `CURRENT` is still `ultimate-2026`._
 
 **Fifth session (2026-09-14, in progress): the downloads, and three bugs they turned up**

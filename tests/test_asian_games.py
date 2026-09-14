@@ -537,6 +537,103 @@ def test_a_model_event_the_model_cannot_score_stops_the_build():
         agp.model_call(event, None, None, [], "missing.csv", project=lambda *a, **k: None)
 
 
+# ---- the mark an entrant is ranked on -----------------------------------------
+
+def last_list(tmp_path, key, *entries):
+    """Last season's Asian list on disk, from (name, nat, mark, score, WA id)."""
+    rows = []
+    for i, (name, nat, mark, score, wid) in enumerate(entries, 1):
+        cells = row(i, mark, name, nat, wid, score)
+        cells[-3:-1] = [key, str(ags.LAST_YEAR)]
+        rows.append(cells)
+    ags.write_rows(str(tmp_path / f"{key}_{ags.LAST_YEAR}.csv"), HEADER, rows)
+    return agp.last_season_marks(key, asia_dir=str(tmp_path))
+
+
+def test_an_entrant_with_no_mark_this_season_is_ranked_on_last_seasons_best_and_says_so(tmp_path):
+    last = last_list(tmp_path, "men_JT", ("Out LASTYEAR", "IND", "84.00", 1210, 101),
+                     ("Ranked NOW", "PAK", "90.00", 1300, 102))
+    field = [{"name": "Ranked NOW", "nat": "PAK", "waId": 102, "score": 1150, "mark": "80.00"},
+             {"name": "Out LASTYEAR", "nat": "IND", "waId": 101, "score": None, "mark": None, "unranked": "noMark"},
+             {"name": "Nobody ANYWHERE", "nat": "SRI", "score": None, "unranked": "noMark"}]
+    out = {a["name"]: a for a in agp.last_season_rule(field, "men_JT", last)}
+    # Outside the 5000m and 10,000m, a better mark last season does not replace this season's.
+    assert (out["Ranked NOW"]["score"], out["Ranked NOW"]["markSeason"]) == (1150, None)
+    assert (out["Out LASTYEAR"]["score"], out["Out LASTYEAR"]["mark"], out["Out LASTYEAR"]["markSeason"]) \
+        == (1210, "84.00", ags.LAST_YEAR)
+    assert out["Out LASTYEAR"]["unranked"] is None and out["Out LASTYEAR"]["seasonScore"] is None
+    assert (out["Nobody ANYWHERE"]["score"], out["Nobody ANYWHERE"]["unranked"]) == (None, "noMark")
+    call = agp.points_call({"discKey": "men_JT", "athletes": list(out.values())})
+    assert [(a["name"], a["markSeason"]) for a in call["athletes"]] == [
+        ("Out LASTYEAR", ags.LAST_YEAR), ("Ranked NOW", None)]
+    assert [u["name"] for u in call["unranked"]] == ["Nobody ANYWHERE"]
+
+
+def test_in_the_5000m_and_10000m_everyone_takes_the_better_of_the_two_seasons(tmp_path):
+    last = last_list(tmp_path, "women_10000m", ("Raced ONCE", "BRN", "30:40.00", 1180, None),
+                     ("Better NOW", "JPN", "32:00.00", 1090, None))
+    field = [{"name": "Raced ONCE", "nat": "BRN", "score": 1050, "mark": "33:10.00"},
+             {"name": "Better NOW", "nat": "JPN", "score": 1120, "mark": "31:30.00"}]
+    out = {a["name"]: a for a in agp.last_season_rule(field, "women_10000m", last)}
+    assert (out["Raced ONCE"]["score"], out["Raced ONCE"]["markSeason"], out["Raced ONCE"]["seasonScore"]) \
+        == (1180, ags.LAST_YEAR, 1050)
+    assert (out["Better NOW"]["score"], out["Better NOW"]["markSeason"]) == (1120, None)
+
+
+def test_last_season_is_found_by_id_or_by_a_name_spelt_or_ordered_differently(tmp_path):
+    last = last_list(tmp_path, "men_JT", ("Tae-poong NAM", "KOR", "80.00", 1150, None),
+                     ("MYAGMARSUREN Dawaanyam", "MGL", "60.00", 900, None),
+                     ("Some NAME", "IND", "70.00", 1000, 555))
+    field = [{"name": "Taepoong NAM", "nat": "KOR", "score": None},
+             {"name": "Dawaanyam MYAGMARSUREN", "nat": "MGL", "score": None},
+             {"name": "Other SPELLING", "nat": "IND", "waId": 555, "score": None},
+             {"name": "Tae-poong NAM", "nat": "PRK", "score": None}]
+    assert [a["score"] for a in agp.last_season_rule(field, "men_JT", last)] == [1150, 900, 1000, None]
+
+
+def test_a_failed_lookup_is_not_papered_over_with_last_season(tmp_path):
+    last = last_list(tmp_path, "men_JT", ("Lookup FAILED", "IND", "80.00", 1150, 7))
+    [a] = agp.last_season_rule([{"name": "Lookup FAILED", "nat": "IND", "waId": 7, "score": None,
+                                 "unranked": "lookupFailed"}], "men_JT", last)
+    assert (a["score"], a["unranked"]) == (None, "lookupFailed")
+
+
+def test_in_a_model_event_an_entrant_with_only_last_seasons_mark_says_the_model_cannot_read_it(tmp_path):
+    last = last_list(tmp_path, "men_110h", ("Only LASTYEAR", "CHN", "13.40", 1180, 9))
+    field = athletes(*[(f"K{i}", 1300 - i) for i in range(8)]) + [
+        {"name": "Only LASTYEAR", "nat": "CHN", "waId": 9, "score": None, "unranked": "noMark"}]
+
+    def project(entry, model, scaler, cols, snapshot_path=None):
+        # The model is handed this season's score, never last season's.
+        assert [a["rankingScore"] for a in entry["athletes"] if a["name"] == "Only LASTYEAR"] == [None]
+        scored = [a for a in entry["athletes"] if a["name"].startswith("K")]
+        return {"discKey": entry["discKey"], "unscored": ["Only LASTYEAR"],
+                "athletes": [{"rank": i, "name": a["name"], "podiumChance": 40.0 - i}
+                             for i, a in enumerate(scored, 1)]}
+
+    out = agp.build({"field": [{"discKey": "men_110h", "athletes": field}]}, None, None, [],
+                    snapshot_dir=str(tmp_path), known_for=lambda key: {f"K{i}" for i in range(8)},
+                    project=project, pages_for=lambda key: set(), last_for=lambda key: last)
+    [call] = out["projections"]
+    assert call["method"] == "model"
+    assert [(u["name"], u["reason"]) for u in call["unranked"]] == [("Only LASTYEAR", "lastSeasonOnly")]
+    assert all(a["markSeason"] is None for a in call["athletes"])
+    assert out["rule"]["lastSeason"] == ags.LAST_YEAR
+
+
+def test_last_seasons_asian_list_is_read_from_its_own_page_down_to_the_last_page():
+    urls = []
+
+    def fetch(url):
+        urls.append(url)
+        return page((1, "13.40", "Only LASTYEAR", "CHN", 9, 1180))
+
+    header, rows = ags.scrape_asian_toplist("men_110h", None, ags.ASIAN_NATIONS, fetch=fetch, year=ags.LAST_YEAR)
+    assert len(urls) == ags.MAX_PAGES and all(f"/{ags.LAST_YEAR}?" in u for u in urls)
+    assert len(rows) == 1 and rows[0][-2] == str(ags.LAST_YEAR)
+    assert ags.asian_toplist_url("men_100m").endswith(f"/{ags.YEAR}?{ags.ASIA_QUERY}")
+
+
 # ---- grading ----------------------------------------------------------------
 
 def test_a_points_call_is_graded_without_inventing_a_chance(tmp_path, monkeypatch):

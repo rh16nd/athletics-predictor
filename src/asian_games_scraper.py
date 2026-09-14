@@ -239,18 +239,27 @@ def fetch_page(url):
     return r.text
 
 
-def asian_toplist_url(key):
-    return f"{live_fetcher.DISCIPLINE_URLS[key]}?{ASIA_QUERY}"
+# Last season's Asian list ranks an entrant with no mark this season. See
+# asian_games_predictions.last_season_rule.
+LAST_YEAR = YEAR - 1
 
 
-def scrape_asian_toplist(key, entrants, allowed, fetch=fetch_page, max_pages=MAX_PAGES):
-    """(header, rows) of one discipline's 2026 Asian list, in the world
+def asian_toplist_url(key, year=YEAR):
+    base = live_fetcher.DISCIPLINE_URLS[key].rsplit("/", 1)[0]
+    return f"{base}/{year}?{ASIA_QUERY}"
+
+
+def scrape_asian_toplist(key, entrants, allowed, fetch=fetch_page, max_pages=MAX_PAGES, year=YEAR):
+    """(header, rows) of one discipline's Asian list for `year`, in the world
     snapshot's own column layout, or (None, []) when WA serves no table.
 
-    Pages until every entrant is found or max_pages. Raises if any athlete on
-    the list is from outside Asia: that means WA ignored the area filter and
-    served the world list, which would silently rank the field against it."""
-    url = asian_toplist_url(key)
+    Pages until every entrant is found or max_pages. With no `entrants` (last
+    season's list, read for whoever is on it) it pages to max_pages. Raises if
+    any athlete on the list is from outside Asia: that means WA ignored the
+    area filter and served the world list, which would silently rank the field
+    against it."""
+    url = asian_toplist_url(key, year)
+    entrants = entrants or []
     wanted_ids = {e["waId"] for e in entrants if e.get("waId")}
     wanted_names = {us.entry_name_key(e.get("entryName") or "") for e in entrants if not e.get("waId")}
     header, rows, seen = None, [], set()
@@ -270,10 +279,10 @@ def scrape_asian_toplist(key, entrants, allowed, fetch=fetch_page, max_pages=MAX
             if ident in seen:
                 continue
             seen.add(ident)
-            rows.append(cells + [key, str(YEAR), profile or ""])
+            rows.append(cells + [key, str(year), profile or ""])
         found_ids = {wa_id(r[-1]) for r in rows}
         found_names = {us.entry_name_key(r[comp]) for r in rows}
-        if wanted_ids <= found_ids and wanted_names <= found_names:
+        if entrants and wanted_ids <= found_ids and wanted_names <= found_names:
             break
 
     foreign = sorted({r[NAT] for r in rows if r[NAT] and r[NAT] not in allowed})
@@ -665,6 +674,9 @@ def build_event(get=portal_get, fetch=fetch_page, results=us.fetch_results, worl
         header, rows = scrape_asian_toplist(key, entrants, allowed, fetch)
         if header is None:
             raise RuntimeError(f"{key}: World Athletics served no Asian toplist")
+        last_header, last_rows = scrape_asian_toplist(key, None, allowed, fetch, year=LAST_YEAR)
+        if last_header is not None:
+            files[os.path.join(ASIA_DIR, f"{key}_{LAST_YEAR}.csv")] = (last_header, last_rows)
         matches = complete_matches(match_entrants(entrants, header, rows), entrants, header, rows,
                                    key, ev_key[0], search, season, lookups)
         world_header, world_rows = read_rows(os.path.join(world_dir, f"{key}_{YEAR}.csv"))
@@ -732,6 +744,8 @@ def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--results-only", action="store_true",
                         help="Add results to the saved event.json and change nothing else.")
+    parser.add_argument("--last-season", action="store_true",
+                        help=f"Fetch only the {LAST_YEAR} Asian lists for the saved field's events.")
     args = parser.parse_args(argv)
 
     try:
@@ -739,6 +753,20 @@ def main(argv=None):
             saved = json.load(f)
     except (OSError, json.JSONDecodeError):
         saved = None
+
+    if args.last_season:
+        field = (saved or {}).get("field") or []
+        if not field:
+            sys.exit(f"  no saved field in {OUT_PATH}; run without --last-season first")
+        allowed = ASIAN_NATIONS | {a["nat"] for ev in field for a in ev["athletes"] if a.get("nat")}
+        for ev in field:
+            header, rows = scrape_asian_toplist(ev["discKey"], None, allowed, year=LAST_YEAR)
+            if header is None:
+                print(f"    {ev['discKey']}: World Athletics served no {LAST_YEAR} list")
+                continue
+            write_rows(os.path.join(ASIA_DIR, f"{ev['discKey']}_{LAST_YEAR}.csv"), header, rows)
+            print(f"    {ev['discKey']}: {len(rows)} athletes on the {LAST_YEAR} Asian list")
+        return 0
 
     if args.results_only:
         if not (saved or {}).get("field"):

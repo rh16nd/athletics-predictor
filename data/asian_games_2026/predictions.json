@@ -2,9 +2,14 @@
  "rule": {
   "needed": 6,
   "of": 8,
-  "floor": 5.0
+  "floor": 5.0,
+  "lastSeason": 2025,
+  "betterOfTwo": [
+   "10000m",
+   "5000m"
+  ]
  },
- "builtAt": "2026-09-14T15:47:12Z",
+ "builtAt": "2026-09-14T22:06:42Z",
  "projections": [
   {
    "discKey": "men_100m",
@@ -67,6 +72,7 @@
      "qualifiedBy": null,
      "rankingScore": 1210,
      "mark": "9.99",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14992965",
      "hasPage": true
@@ -78,6 +84,7 @@
      "qualifiedBy": null,
      "rankingScore": 1186,
      "mark": "10.06",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14547883",
      "hasPage": true
@@ -89,6 +96,7 @@
      "qualifiedBy": null,
      "rankingScore": 1182,
      "mark": "10.07",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14844149",
      "hasPage": true
@@ -100,6 +108,7 @@
      "qualifiedBy": null,
      "rankingScore": 1176,
      "mark": "10.09",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14792569",
      "hasPage": true
@@ -111,6 +120,7 @@
      "qualifiedBy": null,
      "rankingScore": 1176,
      "mark": "10.09",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843159",
      "hasPage": true
@@ -122,6 +132,7 @@
      "qualifiedBy": null,
      "rankingScore": 1172,
      "mark": "10.10",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14376449",
      "hasPage": true
@@ -133,6 +144,7 @@
      "qualifiedBy": null,
      "rankingScore": 1172,
      "mark": "10.10",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14707842",
      "hasPage": true
@@ -144,6 +156,7 @@
      "qualifiedBy": null,
      "rankingScore": 1169,
      "mark": "10.11",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/oman/malham-al-balushi-15229516",
      "hasPage": true
@@ -155,6 +168,7 @@
      "qualifiedBy": null,
      "rankingScore": 1169,
      "mark": "10.11",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14547735",
      "hasPage": true
@@ -166,6 +180,7 @@
      "qualifiedBy": null,
      "rankingScore": 1169,
      "mark": "10.13",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/korea/joeljin-nwamadi-15029892",
      "hasPage": true
@@ -177,6 +192,7 @@
      "qualifiedBy": null,
      "rankingScore": 1162,
      "mark": "10.13",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15023908",
      "hasPage": true
@@ -188,6 +204,7 @@
      "qualifiedBy": null,
      "rankingScore": 1159,
      "mark": "10.14",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/animesh-kujur-14971002",
      "hasPage": true
@@ -199,6 +216,7 @@
      "qualifiedBy": null,
      "rankingScore": 1145,
      "mark": "10.18",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/keli-zeng-15043475",
      "hasPage": true
@@ -210,6 +228,7 @@
      "qualifiedBy": null,
      "rankingScore": 1145,
      "mark": "10.18",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14791477",
      "hasPage": true
@@ -221,6 +240,7 @@
      "qualifiedBy": null,
      "rankingScore": 1139,
      "mark": "10.21",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14993176",
      "hasPage": true
@@ -232,6 +252,7 @@
      "qualifiedBy": null,
      "rankingScore": 1132,
      "mark": "10.22",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/ali-haji-15030343",
      "hasPage": true
@@ -243,6 +264,7 @@
      "qualifiedBy": null,
      "rankingScore": 1132,
      "mark": "10.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/salah-nur-ismail-yunis-15135764",
      "hasPage": true
@@ -254,6 +276,7 @@
      "qualifiedBy": null,
      "rankingScore": 1126,
      "mark": "10.26",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14421587",
      "hasPage": true
@@ -265,6 +288,7 @@
      "qualifiedBy": null,
      "rankingScore": 1118,
      "mark": "10.26",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14533254",
      "hasPage": true
@@ -276,6 +300,7 @@
      "qualifiedBy": null,
      "rankingScore": 1112,
      "mark": "10.28",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/saudi-arabia/abdulaziz-abdui-atafi-15017843",
      "hasPage": true
@@ -287,6 +312,7 @@
      "qualifiedBy": null,
      "rankingScore": 1099,
      "mark": "10.32",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/thailand/chutithat-pruksorranan-15089189",
      "hasPage": true
@@ -298,6 +324,7 @@
      "qualifiedBy": null,
      "rankingScore": 1092,
      "mark": "10.34",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14913278",
      "hasPage": true
@@ -309,6 +336,7 @@
      "qualifiedBy": null,
      "rankingScore": 1079,
      "mark": "10.38",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840507",
      "hasPage": true
@@ -320,6 +348,7 @@
      "qualifiedBy": null,
      "rankingScore": 1076,
      "mark": "10.39",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886782",
      "hasPage": true
@@ -331,6 +360,7 @@
      "qualifiedBy": null,
      "rankingScore": 1072,
      "mark": "10.40",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752176",
      "hasPage": true
@@ -342,6 +372,7 @@
      "qualifiedBy": null,
      "rankingScore": 1066,
      "mark": "10.42",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/sulton-gafurjonov-15020238",
      "hasPage": true
@@ -353,6 +384,7 @@
      "qualifiedBy": null,
      "rankingScore": 1059,
      "mark": "10.44",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/muhammad-umaira-15191876",
      "hasPage": true
@@ -364,6 +396,7 @@
      "qualifiedBy": null,
      "rankingScore": 1059,
      "mark": "10.44",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14549286",
      "hasPage": true
@@ -375,6 +408,7 @@
      "qualifiedBy": null,
      "rankingScore": 1059,
      "mark": "10.44",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14791539",
      "hasPage": true
@@ -386,6 +420,7 @@
      "qualifiedBy": null,
      "rankingScore": 1057,
      "mark": "10.45",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/king-wai-yip-15041239",
      "hasPage": true
@@ -397,6 +432,7 @@
      "qualifiedBy": null,
      "rankingScore": 1042,
      "mark": "10.54",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14976748",
      "hasPage": true
@@ -408,6 +444,7 @@
      "qualifiedBy": null,
      "rankingScore": 1037,
      "mark": "10.51",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15152686",
      "hasPage": true
@@ -419,6 +456,7 @@
      "qualifiedBy": null,
      "rankingScore": 1037,
      "mark": "10.51",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14808534",
      "hasPage": true
@@ -430,6 +468,7 @@
      "qualifiedBy": null,
      "rankingScore": 1031,
      "mark": "10.53",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14603447",
      "hasPage": true
@@ -441,6 +480,7 @@
      "qualifiedBy": null,
      "rankingScore": 1026,
      "mark": "10.57",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14881903",
      "hasPage": true
@@ -452,6 +492,7 @@
      "qualifiedBy": null,
      "rankingScore": 1014,
      "mark": "10.60",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15107854",
      "hasPage": true
@@ -463,6 +504,7 @@
      "qualifiedBy": null,
      "rankingScore": 975,
      "mark": "10.61",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14913976",
      "hasPage": true
@@ -474,6 +516,7 @@
      "qualifiedBy": null,
      "rankingScore": 965,
      "mark": "10.74",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14427032",
      "hasPage": true
@@ -485,6 +528,7 @@
      "qualifiedBy": null,
      "rankingScore": 922,
      "mark": "10.88",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886720",
      "hasPage": true
@@ -496,6 +540,7 @@
      "qualifiedBy": null,
      "rankingScore": 880,
      "mark": "11.02",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14852443",
      "hasPage": true
@@ -507,6 +552,7 @@
      "qualifiedBy": null,
      "rankingScore": 877,
      "mark": "11.03",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14972201",
      "hasPage": true
@@ -544,12 +590,11 @@
    "sex": "M",
    "places": null,
    "qualified": 43,
-   "scored": 33,
+   "scored": 34,
    "unscored": [
     "Abdullah Abkar M MOHAMMED",
     "Sorsy PHOMPHAKDI",
     "Ibrahim Naahil NIZAAR",
-    "Shajar ABBAS",
     "Omar CHAABAN",
     "Saeed SALEM",
     "Salah YUNIS",
@@ -575,12 +620,6 @@
      "nat": "MDV",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15037901"
-    },
-    {
-     "name": "Shajar ABBAS",
-     "nat": "PAK",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14929401"
     },
     {
      "name": "Omar CHAABAN",
@@ -627,6 +666,7 @@
      "qualifiedBy": null,
      "rankingScore": 1215,
      "mark": "20.03",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14992965",
      "hasPage": true
@@ -638,6 +678,7 @@
      "qualifiedBy": null,
      "rankingScore": 1209,
      "mark": "20.07",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14766547",
      "hasPage": true
@@ -649,6 +690,7 @@
      "qualifiedBy": null,
      "rankingScore": 1200,
      "mark": "20.15",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/youwen-huang-15210377",
      "hasPage": true
@@ -660,6 +702,7 @@
      "qualifiedBy": null,
      "rankingScore": 1164,
      "mark": "20.36",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/japan/akira-hayashi-14980747",
      "hasPage": true
@@ -671,6 +714,7 @@
      "qualifiedBy": null,
      "rankingScore": 1158,
      "mark": "20.40",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14844149",
      "hasPage": true
@@ -682,6 +726,7 @@
      "qualifiedBy": null,
      "rankingScore": 1149,
      "mark": "20.46",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/animesh-kujur-14971002",
      "hasPage": true
@@ -693,6 +738,7 @@
      "qualifiedBy": null,
      "rankingScore": 1143,
      "mark": "20.50",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/junhao-shi-15043948",
      "hasPage": true
@@ -704,6 +750,7 @@
      "qualifiedBy": null,
      "rankingScore": 1143,
      "mark": "20.50",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/korea/joeljin-nwamadi-15029892",
      "hasPage": true
@@ -715,6 +762,7 @@
      "qualifiedBy": null,
      "rankingScore": 1127,
      "mark": "20.64",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14815786",
      "hasPage": true
@@ -726,6 +774,7 @@
      "qualifiedBy": null,
      "rankingScore": 1120,
      "mark": "20.65",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14831887",
      "hasPage": true
@@ -737,6 +786,7 @@
      "qualifiedBy": null,
      "rankingScore": 1118,
      "mark": "20.66",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/king-wai-yip-15041239",
      "hasPage": true
@@ -748,6 +798,7 @@
      "qualifiedBy": null,
      "rankingScore": 1117,
      "mark": "20.67",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/united-arab-emirates/suleiman-abdulrahman-15122281",
      "hasPage": true
@@ -759,6 +810,7 @@
      "qualifiedBy": null,
      "rankingScore": 1112,
      "mark": "20.70",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/oman/malham-al-balushi-15229516",
      "hasPage": true
@@ -770,6 +822,7 @@
      "qualifiedBy": null,
      "rankingScore": 1103,
      "mark": "20.84",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15030340",
      "hasPage": true
@@ -781,6 +834,7 @@
      "qualifiedBy": null,
      "rankingScore": 1102,
      "mark": "20.77",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/saudi-arabia/abdulaziz-abdui-atafi-15017843",
      "hasPage": true
@@ -792,6 +846,7 @@
      "qualifiedBy": null,
      "rankingScore": 1091,
      "mark": "20.84",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14992968",
      "hasPage": true
@@ -803,6 +858,7 @@
      "qualifiedBy": null,
      "rankingScore": 1088,
      "mark": "20.86",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/magnus-johannsson-15063841",
      "hasPage": true
@@ -814,6 +870,7 @@
      "qualifiedBy": null,
      "rankingScore": 1078,
      "mark": "20.97",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14881903",
      "hasPage": true
@@ -825,6 +882,7 @@
      "qualifiedBy": null,
      "rankingScore": 1072,
      "mark": "20.97",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/philippines/neil-michael-catral-14952599",
      "hasPage": true
@@ -836,6 +894,7 @@
      "qualifiedBy": null,
      "rankingScore": 1072,
      "mark": "20.97",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840507",
      "hasPage": true
@@ -847,6 +906,7 @@
      "qualifiedBy": null,
      "rankingScore": 1063,
      "mark": "21.03",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14993176",
      "hasPage": true
@@ -858,6 +918,7 @@
      "qualifiedBy": null,
      "rankingScore": 1062,
      "mark": "21.04",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840444",
      "hasPage": true
@@ -869,6 +930,7 @@
      "qualifiedBy": null,
      "rankingScore": 1047,
      "mark": "21.14",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/macao/lok-io-leong-15152686",
      "hasPage": true
@@ -880,6 +942,7 @@
      "qualifiedBy": null,
      "rankingScore": 1046,
      "mark": "21.15",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/ali-haji-15030343",
      "hasPage": true
@@ -891,94 +954,115 @@
      "qualifiedBy": null,
      "rankingScore": 1046,
      "mark": "21.17",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14603447",
      "hasPage": true
     },
     {
      "rank": 26,
+     "name": "Shajar ABBAS",
+     "nat": "PAK",
+     "qualifiedBy": null,
+     "rankingScore": 1046,
+     "mark": "21.15",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14929401",
+     "hasPage": false
+    },
+    {
+     "rank": 27,
      "name": "Ildar AKHMADIEV",
      "nat": "TJK",
      "qualifiedBy": null,
      "rankingScore": 1034,
      "mark": "21.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14846091",
      "hasPage": true
     },
     {
-     "rank": 27,
+     "rank": 28,
      "name": "Danish Iftikhar MUHAMMAD ROSLEE",
      "nat": "MAS",
      "qualifiedBy": null,
      "rankingScore": 1028,
      "mark": "21.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/danish-iftikhar-muhammad-roslee-15115798",
      "hasPage": true
     },
     {
-     "rank": 28,
+     "rank": 29,
      "name": "Muhammad Haziq AKHIR",
      "nat": "MAS",
      "qualifiedBy": null,
      "rankingScore": 1018,
      "mark": "21.38",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15231748",
      "hasPage": true
     },
     {
-     "rank": 29,
+     "rank": 30,
      "name": "Sulton GAFURJONOV",
      "nat": "UZB",
      "qualifiedBy": null,
      "rankingScore": 1018,
      "mark": "21.34",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15020238",
      "hasPage": true
     },
     {
-     "rank": 30,
+     "rank": 31,
      "name": "Favoris MUZRAPOV",
      "nat": "TJK",
      "qualifiedBy": null,
      "rankingScore": 984,
      "mark": "21.58",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14808534",
      "hasPage": true
     },
     {
-     "rank": 31,
+     "rank": 32,
      "name": "Lukman GURBANDURDYYEV",
      "nat": "TKM",
      "qualifiedBy": null,
      "rankingScore": 945,
      "mark": "21.4h",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14913976",
      "hasPage": true
     },
     {
-     "rank": 32,
+     "rank": 33,
      "name": "Sha Mahmood NOOR ZAHI",
      "nat": "AFG",
      "qualifiedBy": null,
      "rankingScore": 877,
      "mark": "22.38",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14988552",
      "hasPage": true
     },
     {
-     "rank": 33,
+     "rank": 34,
      "name": "Zu Iz Mohamed SUAD",
      "nat": "MDV",
      "qualifiedBy": null,
      "rankingScore": 812,
      "mark": "22.85",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15089211",
      "hasPage": true
@@ -1015,11 +1099,10 @@
    "sex": "M",
    "places": null,
    "qualified": 30,
-   "scored": 27,
+   "scored": 28,
    "unscored": [
     "Elnor MUKHITDINOV",
-    "Basel SELMI",
-    "Ngoc Phuc LE"
+    "Basel SELMI"
    ],
    "unranked": [
     {
@@ -1033,12 +1116,6 @@
      "nat": "PLE",
      "reason": "notFound",
      "profileUrl": null
-    },
-    {
-     "name": "Ngoc Phuc LE",
-     "nat": "VIE",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14914488"
     }
    ],
    "athletes": [
@@ -1049,6 +1126,7 @@
      "qualifiedBy": null,
      "rankingScore": 1206,
      "mark": "44.62",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915400",
      "hasPage": true
@@ -1060,6 +1138,7 @@
      "qualifiedBy": null,
      "rankingScore": 1200,
      "mark": "44.71",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14951608",
      "hasPage": true
@@ -1071,6 +1150,7 @@
      "qualifiedBy": null,
      "rankingScore": 1190,
      "mark": "44.85",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/united-arab-emirates/suleiman-abdulrahman-15122281",
      "hasPage": true
@@ -1082,6 +1162,7 @@
      "qualifiedBy": null,
      "rankingScore": 1181,
      "mark": "44.98",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/vishal-thennarasu-kayalvizhi-15010693",
      "hasPage": true
@@ -1093,6 +1174,7 @@
      "qualifiedBy": null,
      "rankingScore": 1181,
      "mark": "44.98",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/japan/shinya-hayashi-14957327",
      "hasPage": true
@@ -1104,6 +1186,7 @@
      "qualifiedBy": null,
      "rankingScore": 1162,
      "mark": "45.26",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840992",
      "hasPage": true
@@ -1115,6 +1198,7 @@
      "qualifiedBy": null,
      "rankingScore": 1162,
      "mark": "45.26",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14550918",
      "hasPage": true
@@ -1126,6 +1210,7 @@
      "qualifiedBy": null,
      "rankingScore": 1162,
      "mark": "45.26",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14694441",
      "hasPage": true
@@ -1137,6 +1222,7 @@
      "qualifiedBy": null,
      "rankingScore": 1161,
      "mark": "45.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14882924",
      "hasPage": true
@@ -1148,6 +1234,7 @@
      "qualifiedBy": null,
      "rankingScore": 1145,
      "mark": "45.50",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/kalhara-idupa-kuruwitage-15100654",
      "hasPage": true
@@ -1159,6 +1246,7 @@
      "qualifiedBy": null,
      "rankingScore": 1145,
      "mark": "45.50",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/ngoc-tuong-ta-15083776",
      "hasPage": true
@@ -1170,6 +1258,7 @@
      "qualifiedBy": null,
      "rankingScore": 1135,
      "mark": "45.65",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14829976",
      "hasPage": true
@@ -1181,6 +1270,7 @@
      "qualifiedBy": null,
      "rankingScore": 1134,
      "mark": "45.66",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759657",
      "hasPage": true
@@ -1192,6 +1282,7 @@
      "qualifiedBy": null,
      "rankingScore": 1134,
      "mark": "45.67",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/kai-liu-15054835",
      "hasPage": true
@@ -1203,6 +1294,7 @@
      "qualifiedBy": null,
      "rankingScore": 1130,
      "mark": "45.73",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/umar-osman-15024852",
      "hasPage": true
@@ -1214,127 +1306,151 @@
      "qualifiedBy": null,
      "rankingScore": 1128,
      "mark": "45.76",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751017",
      "hasPage": true
     },
     {
      "rank": 17,
+     "name": "Ngoc Phuc LE",
+     "nat": "VIE",
+     "qualifiedBy": null,
+     "rankingScore": 1097,
+     "mark": "46.21",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14914488",
+     "hasPage": false
+    },
+    {
+     "rank": 18,
      "name": "Alaa SAMUEL",
      "nat": "BRN",
      "qualifiedBy": null,
      "rankingScore": 1088,
      "mark": "46.35",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/alaa-samuel-15318684",
      "hasPage": true
     },
     {
-     "rank": 18,
+     "rank": 19,
      "name": "Geonyul BAE",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 1079,
      "mark": "46.49",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/korea/geonyul-bae-14980490",
      "hasPage": true
     },
     {
-     "rank": 19,
+     "rank": 20,
      "name": "Chun Ho CHAN",
      "nat": "HKG",
      "qualifiedBy": null,
      "rankingScore": 1051,
      "mark": "46.91",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/chun-ho-chan-15007062",
      "hasPage": true
     },
     {
-     "rank": 20,
+     "rank": 21,
      "name": "Sarawut NUANSI",
      "nat": "THA",
      "qualifiedBy": null,
      "rankingScore": 1050,
      "mark": "46.93",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/thailand/sarawut-nuansi-15067762",
      "hasPage": true
     },
     {
-     "rank": 21,
+     "rank": 22,
      "name": "Gabriel Jean BORADO",
      "nat": "PHI",
      "qualifiedBy": null,
      "rankingScore": 1042,
      "mark": "47.05",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/philippines/gabriel-jean-borado-15334886",
      "hasPage": true
     },
     {
-     "rank": 22,
+     "rank": 23,
      "name": "Abbosbek TOSHTEMIROV",
      "nat": "UZB",
      "qualifiedBy": null,
      "rankingScore": 1036,
      "mark": "47.14",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/abbosbek-toshtemirov-15036505",
      "hasPage": true
     },
     {
-     "rank": 23,
+     "rank": 24,
      "name": "Michael DEL PRADO",
      "nat": "PHI",
      "qualifiedBy": null,
      "rankingScore": 1026,
      "mark": "47.29",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751948",
      "hasPage": true
     },
     {
-     "rank": 24,
+     "rank": 25,
      "name": "Meshal Abdullah HAZAZI",
      "nat": "KSA",
      "qualifiedBy": null,
      "rankingScore": 1005,
      "mark": "47.62",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15104269",
      "hasPage": true
     },
     {
-     "rank": 25,
+     "rank": 26,
      "name": "Andrey SOKOLOV",
      "nat": "KAZ",
      "qualifiedBy": null,
      "rankingScore": 1001,
      "mark": "47.68",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14591491",
      "hasPage": true
     },
     {
-     "rank": 26,
+     "rank": 27,
      "name": "Riffath ADAM",
      "nat": "MDV",
      "qualifiedBy": null,
      "rankingScore": 914,
      "mark": "49.07",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15084506",
      "hasPage": true
     },
     {
-     "rank": 27,
+     "rank": 28,
      "name": "Zeek Suad HUSSAIN",
      "nat": "MDV",
      "qualifiedBy": null,
      "rankingScore": 913,
      "mark": "49.09",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15049312",
      "hasPage": true
@@ -1372,10 +1488,9 @@
    "sex": "M",
    "places": null,
    "qualified": 25,
-   "scored": 18,
+   "scored": 19,
    "unscored": [
     "Abdisamad HIRSI",
-    "Wahyudi PUTRA",
     "Hossein NOURI",
     "Myagmarsuren DAVAANYAM",
     "Baasandash TUMENNASAN",
@@ -1388,12 +1503,6 @@
      "nat": "BRN",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15271604"
-    },
-    {
-     "name": "Wahyudi PUTRA",
-     "nat": "INA",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14697959"
     },
     {
      "name": "Hossein NOURI",
@@ -1434,6 +1543,7 @@
      "qualifiedBy": null,
      "rankingScore": 1221,
      "mark": "1:43.45",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/japan/ko-ochiai-15005773",
      "hasPage": true
@@ -1445,6 +1555,7 @@
      "qualifiedBy": null,
      "rankingScore": 1174,
      "mark": "1:44.99",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/hatim-ait-oulghazi-14953833",
      "hasPage": true
@@ -1456,6 +1567,7 @@
      "qualifiedBy": null,
      "rankingScore": 1164,
      "mark": "1:45.31",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/japan/nanaki-manno-15027305",
      "hasPage": true
@@ -1467,6 +1579,7 @@
      "qualifiedBy": null,
      "rankingScore": 1155,
      "mark": "1:45.62",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14750659",
      "hasPage": true
@@ -1478,6 +1591,7 @@
      "qualifiedBy": null,
      "rankingScore": 1154,
      "mark": "1:45.64",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886009",
      "hasPage": true
@@ -1489,6 +1603,7 @@
      "qualifiedBy": null,
      "rankingScore": 1131,
      "mark": "1:46.40",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14598247",
      "hasPage": true
@@ -1500,6 +1615,7 @@
      "qualifiedBy": null,
      "rankingScore": 1121,
      "mark": "1:46.73",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14882465",
      "hasPage": true
@@ -1511,6 +1627,7 @@
      "qualifiedBy": null,
      "rankingScore": 1115,
      "mark": "1:46.94",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14560030",
      "hasPage": true
@@ -1522,6 +1639,7 @@
      "qualifiedBy": null,
      "rankingScore": 1106,
      "mark": "1:47.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14988264",
      "hasPage": true
@@ -1533,6 +1651,7 @@
      "qualifiedBy": null,
      "rankingScore": 1094,
      "mark": "1:47.65",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/philippines/hussein-lorana-15054882",
      "hasPage": true
@@ -1544,6 +1663,7 @@
      "qualifiedBy": null,
      "rankingScore": 1090,
      "mark": "1:47.80",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14817695",
      "hasPage": true
@@ -1555,6 +1675,7 @@
      "qualifiedBy": null,
      "rankingScore": 1043,
      "mark": "1:49.40",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/umar-osman-15024852",
      "hasPage": true
@@ -1566,6 +1687,7 @@
      "qualifiedBy": null,
      "rankingScore": 1041,
      "mark": "1:49.49",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14849638",
      "hasPage": true
@@ -1577,6 +1699,7 @@
      "qualifiedBy": null,
      "rankingScore": 1039,
      "mark": "1:49.54",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/jyun-hsiang-huang-15007051",
      "hasPage": true
@@ -1588,6 +1711,7 @@
      "qualifiedBy": null,
      "rankingScore": 1039,
      "mark": "1:49.55",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14741155",
      "hasPage": true
@@ -1599,6 +1723,7 @@
      "qualifiedBy": null,
      "rankingScore": 1020,
      "mark": "1:50.20",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843109",
      "hasPage": true
@@ -1610,17 +1735,31 @@
      "qualifiedBy": null,
      "rankingScore": 1000,
      "mark": "1:50.92",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843141",
      "hasPage": true
     },
     {
      "rank": 18,
+     "name": "Wahyudi PUTRA",
+     "nat": "INA",
+     "qualifiedBy": null,
+     "rankingScore": 1000,
+     "mark": "1:50.93",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14697959",
+     "hasPage": false
+    },
+    {
+     "rank": 19,
      "name": "Thiruben THANA RAJAN",
      "nat": "SGP",
      "qualifiedBy": null,
      "rankingScore": 926,
      "mark": "1:53.59",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14755984",
      "hasPage": true
@@ -1656,37 +1795,16 @@
    "sex": "M",
    "places": null,
    "qualified": 24,
-   "scored": 18,
+   "scored": 21,
    "unscored": [
-    "Wahyudi PUTRA",
-    "Ali AMIRIAN",
     "Baasandash TUMENNASAN",
-    "Mukesh PAL",
     "Yacine GUERMALI",
     "Yahya MASHAQI"
    ],
    "unranked": [
     {
-     "name": "Wahyudi PUTRA",
-     "nat": "INA",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14697959"
-    },
-    {
-     "name": "Ali AMIRIAN",
-     "nat": "IRI",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14988264"
-    },
-    {
      "name": "Baasandash TUMENNASAN",
      "nat": "MGL",
-     "reason": "notFound",
-     "profileUrl": null
-    },
-    {
-     "name": "Mukesh PAL",
-     "nat": "NEP",
      "reason": "notFound",
      "profileUrl": null
     },
@@ -1711,6 +1829,7 @@
      "qualifiedBy": null,
      "rankingScore": 1162,
      "mark": "3:35.90",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14854857",
      "hasPage": true
@@ -1722,6 +1841,7 @@
      "qualifiedBy": null,
      "rankingScore": 1154,
      "mark": "3:36.53",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14841940",
      "hasPage": true
@@ -1733,6 +1853,7 @@
      "qualifiedBy": null,
      "rankingScore": 1148,
      "mark": "3:36.96",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/mohamed-wahid-torech-15080066",
      "hasPage": true
@@ -1744,6 +1865,7 @@
      "qualifiedBy": null,
      "rankingScore": 1146,
      "mark": "3:37.09",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/mubarik-abdi-said-15140395",
      "hasPage": true
@@ -1755,6 +1877,7 @@
      "qualifiedBy": null,
      "rankingScore": 1140,
      "mark": "3:37.55",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/yoonus-shah-15051256",
      "hasPage": true
@@ -1766,6 +1889,7 @@
      "qualifiedBy": null,
      "rankingScore": 1139,
      "mark": "3:37.61",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14811434",
      "hasPage": true
@@ -1777,6 +1901,7 @@
      "qualifiedBy": null,
      "rankingScore": 1135,
      "mark": "3:37.87",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839",
      "hasPage": true
@@ -1788,6 +1913,7 @@
      "qualifiedBy": null,
      "rankingScore": 1113,
      "mark": "3:39.48",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14849638",
      "hasPage": true
@@ -1799,6 +1925,7 @@
      "qualifiedBy": null,
      "rankingScore": 1079,
      "mark": "3:42.07",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/tzu-chieh-chien-15054600",
      "hasPage": true
@@ -1810,6 +1937,7 @@
      "qualifiedBy": null,
      "rankingScore": 1076,
      "mark": "3:42.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14815791",
      "hasPage": true
@@ -1821,6 +1949,7 @@
      "qualifiedBy": null,
      "rankingScore": 1073,
      "mark": "3:42.52",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/abdisamad-hirsi-15271604",
      "hasPage": true
@@ -1832,72 +1961,115 @@
      "qualifiedBy": null,
      "rankingScore": 1072,
      "mark": "3:42.62",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14750659",
      "hasPage": true
     },
     {
      "rank": 13,
+     "name": "Ali AMIRIAN",
+     "nat": "IRI",
+     "qualifiedBy": null,
+     "rankingScore": 1064,
+     "mark": "3:43.18",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14988264",
+     "hasPage": false
+    },
+    {
+     "rank": 14,
      "name": "Nursultan KENESHBEKOV",
      "nat": "KGZ",
      "qualifiedBy": null,
      "rankingScore": 1060,
      "mark": "3:43.51",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14847131",
      "hasPage": true
     },
     {
-     "rank": 14,
+     "rank": 15,
      "name": "Bader ALSWEED",
      "nat": "KUW",
      "qualifiedBy": null,
      "rankingScore": 1023,
      "mark": "3:46.31",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14989221",
      "hasPage": true
     },
     {
-     "rank": 15,
+     "rank": 16,
      "name": "Hossein NOURI",
      "nat": "IRI",
      "qualifiedBy": null,
      "rankingScore": 1017,
      "mark": "3:46.83",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/islamic-republic-of-iran/hossein-nouri-14993293",
      "hasPage": true
     },
     {
-     "rank": 16,
+     "rank": 17,
      "name": "Abdullah Abdulkareem AL-HASWALI",
      "nat": "YEM",
      "qualifiedBy": null,
      "rankingScore": 994,
      "mark": "3:48.60",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/republic-of-yemen/abdullah-abdulkareem-al-haswali-15089309",
      "hasPage": true
     },
     {
-     "rank": 17,
+     "rank": 18,
+     "name": "Wahyudi PUTRA",
+     "nat": "INA",
+     "qualifiedBy": null,
+     "rankingScore": 989,
+     "mark": "3:49.03",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14697959",
+     "hasPage": false
+    },
+    {
+     "rank": 19,
+     "name": "Mukesh PAL",
+     "nat": "NEP",
+     "qualifiedBy": null,
+     "rankingScore": 977,
+     "mark": "3:49.96",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": null,
+     "hasPage": false
+    },
+    {
+     "rank": 20,
      "name": "Zouhaïr AWAD",
      "nat": "BRN",
      "qualifiedBy": null,
      "rankingScore": 947,
      "mark": "3:52.36",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14389216",
      "hasPage": true
     },
     {
-     "rank": 18,
+     "rank": 21,
      "name": "Dawaanyam MYAGMARSUREN",
      "nat": "MGL",
      "qualifiedBy": null,
      "rankingScore": 931,
      "mark": "3:53.65",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15058477",
      "hasPage": true
@@ -2009,24 +2181,26 @@
    "athletes": [
     {
      "rank": 1,
+     "name": "Gulveer SINGH",
+     "nat": "IND",
+     "qualifiedBy": null,
+     "rankingScore": 1264,
+     "mark": "12:59.77",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839",
+     "hasPage": true
+    },
+    {
+     "rank": 2,
      "name": "Birhanu BALEW",
      "nat": "BRN",
      "qualifiedBy": null,
      "rankingScore": 1263,
      "mark": "12:45.70",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14695983",
-     "hasPage": true
-    },
-    {
-     "rank": 2,
-     "name": "Gulveer SINGH",
-     "nat": "IND",
-     "qualifiedBy": null,
-     "rankingScore": 1195,
-     "mark": "13:03.93",
-     "podiumChance": null,
-     "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839",
      "hasPage": true
     },
     {
@@ -2036,6 +2210,7 @@
      "qualifiedBy": null,
      "rankingScore": 1158,
      "mark": "13:14.18",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14841940",
      "hasPage": true
@@ -2047,6 +2222,7 @@
      "qualifiedBy": null,
      "rankingScore": 1150,
      "mark": "13:16.38",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/japan/tomonori-yamaguchi-14962831",
      "hasPage": true
@@ -2058,6 +2234,7 @@
      "qualifiedBy": null,
      "rankingScore": 1096,
      "mark": "13:31.85",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15022082",
      "hasPage": true
@@ -2067,8 +2244,9 @@
      "name": "Abhishek PAL",
      "nat": "IND",
      "qualifiedBy": null,
-     "rankingScore": 1088,
-     "mark": "13:33.95",
+     "rankingScore": 1090,
+     "mark": "13:33.51",
+     "markSeason": 2025,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14598248",
      "hasPage": true
@@ -2080,6 +2258,7 @@
      "qualifiedBy": null,
      "rankingScore": 1083,
      "mark": "13:35.58",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/wenjie-wang-15074930",
      "hasPage": true
@@ -2091,30 +2270,33 @@
      "qualifiedBy": null,
      "rankingScore": 1080,
      "mark": "13:36.43",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14697159",
      "hasPage": true
     },
     {
      "rank": 9,
+     "name": "Nursultan KENESHBEKOV",
+     "nat": "KGZ",
+     "qualifiedBy": null,
+     "rankingScore": 1058,
+     "mark": "13:42.70",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14847131",
+     "hasPage": true
+    },
+    {
+     "rank": 10,
      "name": "Jaewoo PARK",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 1007,
      "mark": "13:57.75",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/korea/jaewoo-park-15041277",
-     "hasPage": true
-    },
-    {
-     "rank": 10,
-     "name": "Nursultan KENESHBEKOV",
-     "nat": "KGZ",
-     "qualifiedBy": null,
-     "rankingScore": 987,
-     "mark": "14:03.70",
-     "podiumChance": null,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14847131",
      "hasPage": true
     },
     {
@@ -2124,6 +2306,7 @@
      "qualifiedBy": null,
      "rankingScore": 868,
      "mark": "14:40.97",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14933240",
      "hasPage": true
@@ -2135,6 +2318,7 @@
      "qualifiedBy": null,
      "rankingScore": 853,
      "mark": "14:45.59",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14918557",
      "hasPage": true
@@ -2146,6 +2330,7 @@
      "qualifiedBy": null,
      "rankingScore": 833,
      "mark": "14:52.19",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15089309",
      "hasPage": true
@@ -2156,8 +2341,8 @@
    "method": "points",
    "methodEvidence": {
     "considered": [
-     "Birhanu BALEW",
      "Gulveer SINGH",
+     "Birhanu BALEW",
      "Nagiya MORI",
      "Tomonori YAMAGUCHI",
      "Abdikani Mohamed HAMID",
@@ -2166,8 +2351,8 @@
      "Yacine GUERMALI"
     ],
     "withHistory": [
-     "Birhanu BALEW",
-     "Gulveer SINGH"
+     "Gulveer SINGH",
+     "Birhanu BALEW"
     ],
     "needed": 6,
     "of": 8,
@@ -2180,12 +2365,10 @@
    "sex": "M",
    "places": null,
    "qualified": 20,
-   "scored": 8,
+   "scored": 10,
    "unscored": [
     "Sangay",
     "Gawa ZANGPO",
-    "Birhanu BALEW",
-    "Albert KIPTOO",
     "Terence LAI",
     "Robi SYIANTURI",
     "Bat-erdene GANSUKH",
@@ -2207,18 +2390,6 @@
      "nat": "BHU",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14893146"
-    },
-    {
-     "name": "Birhanu BALEW",
-     "nat": "BRN",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14695983"
-    },
-    {
-     "name": "Albert KIPTOO",
-     "nat": "BRN",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14479153"
     },
     {
      "name": "Terence LAI",
@@ -2272,88 +2443,120 @@
    "athletes": [
     {
      "rank": 1,
-     "name": "Mebuki SUZUKI",
-     "nat": "JPN",
-     "qualifiedBy": null,
-     "rankingScore": 1194,
-     "mark": "27:20.11",
-     "podiumChance": null,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14854889",
-     "hasPage": true
-    },
-    {
-     "rank": 2,
      "name": "Gulveer SINGH",
      "nat": "IND",
      "qualifiedBy": null,
-     "rankingScore": 1188,
-     "mark": "27:24.18",
+     "rankingScore": 1226,
+     "mark": "27:00.22",
+     "markSeason": 2025,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839",
      "hasPage": true
     },
     {
-     "rank": 3,
-     "name": "Wenjie WANG",
-     "nat": "CHN",
+     "rank": 2,
+     "name": "Mebuki SUZUKI",
+     "nat": "JPN",
      "qualifiedBy": null,
-     "rankingScore": 1151,
-     "mark": "27:47.53",
+     "rankingScore": 1217,
+     "mark": "27:05.92",
+     "markSeason": 2025,
      "podiumChance": null,
-     "profileUrl": "https://worldathletics.org/athletes/pr-of-china/wenjie-wang-15074930",
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14854889",
      "hasPage": true
     },
     {
-     "rank": 4,
+     "rank": 3,
      "name": "Yamato YOSHII",
      "nat": "JPN",
      "qualifiedBy": null,
-     "rankingScore": 1072,
-     "mark": "28:39.22",
+     "rankingScore": 1192,
+     "mark": "27:21.45",
+     "markSeason": 2025,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14851972",
      "hasPage": true
     },
     {
+     "rank": 4,
+     "name": "Wenjie WANG",
+     "nat": "CHN",
+     "qualifiedBy": null,
+     "rankingScore": 1151,
+     "mark": "27:47.53",
+     "markSeason": null,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/pr-of-china/wenjie-wang-15074930",
+     "hasPage": true
+    },
+    {
      "rank": 5,
+     "name": "Albert KIPTOO",
+     "nat": "BRN",
+     "qualifiedBy": null,
+     "rankingScore": 1061,
+     "mark": "28:46.82",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14479153",
+     "hasPage": false
+    },
+    {
+     "rank": 6,
      "name": "Maxim FROLOVSKIY",
      "nat": "KAZ",
      "qualifiedBy": null,
      "rankingScore": 1055,
      "mark": "28:50.94",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14933240",
      "hasPage": true
     },
     {
-     "rank": 6,
+     "rank": 7,
+     "name": "Birhanu BALEW",
+     "nat": "BRN",
+     "qualifiedBy": null,
+     "rankingScore": 1032,
+     "mark": "29:06.58",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14695983",
+     "hasPage": false
+    },
+    {
+     "rank": 8,
      "name": "Jaewoo PARK",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 983,
      "mark": "29:39.80",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15041277",
      "hasPage": true
     },
     {
-     "rank": 7,
+     "rank": 9,
      "name": "Abhishek PAL",
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 954,
      "mark": "30:00.06",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14598248",
      "hasPage": true
     },
     {
-     "rank": 8,
+     "rank": 10,
      "name": "Shadrack Kimutai KOECH",
      "nat": "KAZ",
      "qualifiedBy": null,
      "rankingScore": 888,
      "mark": "30:48.08",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14747113",
      "hasPage": true
@@ -2364,16 +2567,22 @@
    "method": "points",
    "methodEvidence": {
     "considered": [
-     "Mebuki SUZUKI",
      "Gulveer SINGH",
-     "Wenjie WANG",
+     "Mebuki SUZUKI",
      "Yamato YOSHII",
+     "Wenjie WANG",
+     "Albert KIPTOO",
      "Maxim FROLOVSKIY",
-     "Jaewoo PARK",
-     "Abhishek PAL",
-     "Shadrack Kimutai KOECH"
+     "Birhanu BALEW",
+     "Jaewoo PARK"
     ],
-    "withHistory": [],
+    "withHistory": [
+     "Gulveer SINGH",
+     "Mebuki SUZUKI",
+     "Yamato YOSHII",
+     "Wenjie WANG",
+     "Birhanu BALEW"
+    ],
     "needed": 6,
     "of": 8,
     "reason": "history"
@@ -2412,6 +2621,7 @@
      "qualifiedBy": null,
      "rankingScore": 1210,
      "mark": "8:10.30",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14860379",
      "hasPage": true
@@ -2423,6 +2633,7 @@
      "qualifiedBy": null,
      "rankingScore": 1173,
      "mark": "8:18.63",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14780168",
      "hasPage": true
@@ -2434,6 +2645,7 @@
      "qualifiedBy": null,
      "rankingScore": 1140,
      "mark": "8:25.89",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15036546",
      "hasPage": true
@@ -2445,6 +2657,7 @@
      "qualifiedBy": null,
      "rankingScore": 1112,
      "mark": "8:32.39",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14778911",
      "hasPage": true
@@ -2456,6 +2669,7 @@
      "qualifiedBy": null,
      "rankingScore": 1077,
      "mark": "8:40.37",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14910430",
      "hasPage": true
@@ -2467,6 +2681,7 @@
      "qualifiedBy": null,
      "rankingScore": 957,
      "mark": "9:09.08",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14816348",
      "hasPage": true
@@ -2478,6 +2693,7 @@
      "qualifiedBy": null,
      "rankingScore": 906,
      "mark": "9:21.77",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14896345",
      "hasPage": true
@@ -2525,8 +2741,9 @@
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1246,
-     "podiumChance": 11.6,
+     "podiumChance": 11.4,
      "mark": "13.05",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14854913",
      "hasPage": true
     },
@@ -2538,6 +2755,7 @@
      "rankingScore": 1255,
      "podiumChance": 3.6,
      "mark": "13.00",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14815041",
      "hasPage": true
     },
@@ -2547,8 +2765,9 @@
      "nat": "CHN",
      "qualifiedBy": null,
      "rankingScore": 1229,
-     "podiumChance": 2.4,
+     "podiumChance": 2.5,
      "mark": "13.13",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yuanjiang-chen-15034337",
      "hasPage": true
     },
@@ -2560,6 +2779,7 @@
      "rankingScore": 1147,
      "podiumChance": 1.5,
      "mark": "13.56",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14953418",
      "hasPage": true
     },
@@ -2571,6 +2791,7 @@
      "rankingScore": 1212,
      "podiumChance": 1.0,
      "mark": "13.22",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/junxi-liu-14977766",
      "hasPage": true
     },
@@ -2582,6 +2803,7 @@
      "rankingScore": 1077,
      "podiumChance": 0.6,
      "mark": "13.94",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14738740",
      "hasPage": true
     },
@@ -2593,6 +2815,7 @@
      "rankingScore": 1159,
      "podiumChance": 0.4,
      "mark": "13.50",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532923",
      "hasPage": true
     },
@@ -2604,6 +2827,7 @@
      "rankingScore": 1095,
      "podiumChance": 0.1,
      "mark": "13.84",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14671152",
      "hasPage": true
     },
@@ -2615,6 +2839,7 @@
      "rankingScore": 1134,
      "podiumChance": 0.1,
      "mark": "13.63",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14800386",
      "hasPage": true
     },
@@ -2626,6 +2851,7 @@
      "rankingScore": 1093,
      "podiumChance": 0.0,
      "mark": "13.85",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14445804",
      "hasPage": true
     },
@@ -2637,6 +2863,7 @@
      "rankingScore": 1143,
      "podiumChance": 0.0,
      "mark": "13.58",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/mohamad-armin-zahryl-15166788",
      "hasPage": true
     },
@@ -2648,6 +2875,7 @@
      "rankingScore": 1202,
      "podiumChance": 0.0,
      "mark": "13.27",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14873420",
      "hasPage": true
     },
@@ -2659,6 +2887,7 @@
      "rankingScore": 1115,
      "podiumChance": 0.0,
      "mark": "13.73",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14671142",
      "hasPage": true
     },
@@ -2670,6 +2899,7 @@
      "rankingScore": 1112,
      "podiumChance": 0.0,
      "mark": "13.75",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/hiu-long-liu-14992806",
      "hasPage": true
     },
@@ -2681,6 +2911,7 @@
      "rankingScore": 1163,
      "podiumChance": 0.0,
      "mark": "13.48",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/yi-kai-lin-14964638",
      "hasPage": true
     },
@@ -2692,6 +2923,7 @@
      "rankingScore": 1184,
      "podiumChance": 0.0,
      "mark": "13.37",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15003845",
      "hasPage": true
     }
@@ -2741,7 +2973,7 @@
     "needed": 6,
     "of": 8,
     "reason": null,
-    "topChance": 11.6,
+    "topChance": 11.4,
     "floor": 5.0
    }
   },
@@ -2763,8 +2995,9 @@
      "nat": "QAT",
      "qualifiedBy": null,
      "rankingScore": 1243,
-     "podiumChance": 10.3,
+     "podiumChance": 10.4,
      "mark": "47.77",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752208",
      "hasPage": true
     },
@@ -2776,6 +3009,7 @@
      "rankingScore": 1254,
      "podiumChance": 3.5,
      "mark": "47.56",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14827001",
      "hasPage": true
     },
@@ -2787,6 +3021,7 @@
      "rankingScore": 1227,
      "podiumChance": 0.5,
      "mark": "48.09",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/japan/taiju-goto-15181238",
      "hasPage": true
     },
@@ -2798,6 +3033,7 @@
      "rankingScore": 950,
      "podiumChance": 0.2,
      "mark": "53.78",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15084404",
      "hasPage": true
     },
@@ -2809,6 +3045,7 @@
      "rankingScore": 1086,
      "podiumChance": 0.0,
      "mark": "50.90",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646767",
      "hasPage": true
     },
@@ -2820,6 +3057,7 @@
      "rankingScore": 1213,
      "podiumChance": 0.0,
      "mark": "48.35",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14854957",
      "hasPage": true
     },
@@ -2831,6 +3069,7 @@
      "rankingScore": 1012,
      "podiumChance": 0.0,
      "mark": "52.44",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15034516",
      "hasPage": true
     },
@@ -2842,6 +3081,7 @@
      "rankingScore": 1094,
      "podiumChance": 0.0,
      "mark": "50.73",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/chun-ho-chan-15007062",
      "hasPage": true
     },
@@ -2853,6 +3093,7 @@
      "rankingScore": 1179,
      "podiumChance": 0.0,
      "mark": "49.03",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/ayomal-akalanka-kuda-liyanage-15057792",
      "hasPage": true
     },
@@ -2864,6 +3105,7 @@
      "rankingScore": 1177,
      "podiumChance": 0.0,
      "mark": "49.06",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14675336",
      "hasPage": true
     },
@@ -2875,6 +3117,7 @@
      "rankingScore": 1111,
      "podiumChance": 0.0,
      "mark": "50.39",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/saudi-arabia/naif-rashid-alsubaie-15089301",
      "hasPage": true
     },
@@ -2886,6 +3129,7 @@
      "rankingScore": 1091,
      "podiumChance": 0.0,
      "mark": "50.79",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/philippines/jazzpeer-arcenal-15109959",
      "hasPage": true
     },
@@ -2897,6 +3141,7 @@
      "rankingScore": 1017,
      "podiumChance": 0.0,
      "mark": "52.34",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/macao/chi-chong-cheong-15052186",
      "hasPage": true
     },
@@ -2908,6 +3153,7 @@
      "rankingScore": 1074,
      "podiumChance": 0.0,
      "mark": "51.14",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14850878",
      "hasPage": true
     },
@@ -2919,6 +3165,7 @@
      "rankingScore": 1151,
      "podiumChance": 0.0,
      "mark": "49.57",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14954179",
      "hasPage": true
     },
@@ -2930,6 +3177,7 @@
      "rankingScore": 1192,
      "podiumChance": 0.0,
      "mark": "48.77",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14917229",
      "hasPage": true
     },
@@ -2941,6 +3189,7 @@
      "rankingScore": 1180,
      "podiumChance": 0.0,
      "mark": "49.00",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14881854",
      "hasPage": true
     }
@@ -2984,7 +3233,7 @@
     "needed": 6,
     "of": 8,
     "reason": null,
-    "topChance": 10.3,
+    "topChance": 10.4,
     "floor": 5.0
    }
   },
@@ -2994,19 +3243,12 @@
    "sex": "M",
    "places": null,
    "qualified": 16,
-   "scored": 13,
+   "scored": 14,
    "unscored": [
-    "Ryoichi AKAMATSU",
     "Fatak BAIT JABOOB",
     "Aman EBIDO"
    ],
    "unranked": [
-    {
-     "name": "Ryoichi AKAMATSU",
-     "nat": "JPN",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14663940"
-    },
     {
      "name": "Fatak BAIT JABOOB",
      "nat": "OMA",
@@ -3028,6 +3270,7 @@
      "qualifiedBy": null,
      "rankingScore": 1188,
      "mark": "2.31",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14675319",
      "hasPage": true
@@ -3039,127 +3282,151 @@
      "qualifiedBy": null,
      "rankingScore": 1179,
      "mark": "2.30",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532326",
      "hasPage": true
     },
     {
      "rank": 3,
+     "name": "Ryoichi AKAMATSU",
+     "nat": "JPN",
+     "qualifiedBy": null,
+     "rankingScore": 1170,
+     "mark": "2.29",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14663940",
+     "hasPage": false
+    },
+    {
+     "rank": 4,
      "name": "Aadarsh Ram JOTHI SHANKAR",
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1152,
      "mark": "2.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14768579",
      "hasPage": true
     },
     {
-     "rank": 4,
+     "rank": 5,
      "name": "Mutaz Essa BARSHIM",
      "nat": "QAT",
      "qualifiedBy": null,
      "rankingScore": 1152,
      "mark": "2.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14377312",
      "hasPage": true
     },
     {
-     "rank": 5,
+     "rank": 6,
      "name": "Hirokazu SAKAI",
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1135,
      "mark": "2.25",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855082",
      "hasPage": true
     },
     {
-     "rank": 6,
+     "rank": 7,
      "name": "Chao-Hsuan FU",
      "nat": "TPE",
      "qualifiedBy": null,
      "rankingScore": 1135,
      "mark": "2.25",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14845645",
      "hasPage": true
     },
     {
-     "rank": 7,
+     "rank": 8,
      "name": "Leonard GROSPE",
      "nat": "PHI",
      "qualifiedBy": null,
      "rankingScore": 1117,
      "mark": "2.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14914460",
      "hasPage": true
     },
     {
-     "rank": 8,
+     "rank": 9,
      "name": "Tharusha Dinushan AGAMPODI",
      "nat": "SRI",
      "qualifiedBy": null,
      "rankingScore": 1117,
      "mark": "2.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/tharusha-dinushan-agampodi-15150887",
      "hasPage": true
     },
     {
-     "rank": 9,
+     "rank": 10,
      "name": "Kampton KAM",
      "nat": "SGP",
      "qualifiedBy": null,
      "rankingScore": 1072,
      "mark": "2.18",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840450",
      "hasPage": true
     },
     {
-     "rank": 10,
+     "rank": 11,
      "name": "Tawan KAEWKAM",
      "nat": "THA",
      "qualifiedBy": null,
      "rankingScore": 1064,
      "mark": "2.17",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14845644",
      "hasPage": true
     },
     {
-     "rank": 11,
+     "rank": 12,
      "name": "Michael John KENNELLY",
      "nat": "HKG",
      "qualifiedBy": null,
      "rankingScore": 1037,
      "mark": "2.14",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14918559",
      "hasPage": true
     },
     {
-     "rank": 12,
+     "rank": 13,
      "name": "Ho Wai HO",
      "nat": "HKG",
      "qualifiedBy": null,
      "rankingScore": 1002,
      "mark": "2.10",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/ho-wai-ho-15142921",
      "hasPage": true
     },
     {
-     "rank": 13,
+     "rank": 14,
      "name": "Ahmed Sabry AHMED",
      "nat": "BRN",
      "qualifiedBy": null,
      "rankingScore": 975,
      "mark": "2.07",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/ahmed-sabry-ahmed-15155463",
      "hasPage": true
@@ -3172,16 +3439,17 @@
     "considered": [
      "Sarvesh Anil KUSHARE",
      "Sanghyeok WOO",
+     "Ryoichi AKAMATSU",
      "Aadarsh Ram JOTHI SHANKAR",
      "Mutaz Essa BARSHIM",
      "Hirokazu SAKAI",
      "Chao-Hsuan FU",
-     "Leonard GROSPE",
-     "Tharusha Dinushan AGAMPODI"
+     "Leonard GROSPE"
     ],
     "withHistory": [
      "Sarvesh Anil KUSHARE",
      "Sanghyeok WOO",
+     "Ryoichi AKAMATSU",
      "Mutaz Essa BARSHIM",
      "Chao-Hsuan FU"
     ],
@@ -3205,8 +3473,9 @@
      "nat": "PHI",
      "qualifiedBy": null,
      "rankingScore": 1242,
-     "podiumChance": 11.2,
+     "podiumChance": 11.7,
      "mark": "5.91",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14522941",
      "hasPage": true
     },
@@ -3216,8 +3485,9 @@
      "nat": "CHN",
      "qualifiedBy": null,
      "rankingScore": 1192,
-     "podiumChance": 2.1,
+     "podiumChance": 1.6,
      "mark": "5.73",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14462142",
      "hasPage": true
     },
@@ -3229,6 +3499,7 @@
      "rankingScore": 1239,
      "podiumChance": 1.5,
      "mark": "5.90",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/seifeldin-abdelsalam-15039267",
      "hasPage": true
     },
@@ -3240,6 +3511,7 @@
      "rankingScore": 1228,
      "podiumChance": 1.3,
      "mark": "5.86",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/chenyang-li-14974804",
      "hasPage": true
     },
@@ -3251,6 +3523,7 @@
      "rankingScore": 1157,
      "podiumChance": 0.0,
      "mark": "5.60",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714512",
      "hasPage": true
     },
@@ -3262,6 +3535,7 @@
      "rankingScore": 1157,
      "podiumChance": 0.0,
      "mark": "5.60",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646774",
      "hasPage": true
     },
@@ -3273,6 +3547,7 @@
      "rankingScore": 1119,
      "podiumChance": 0.0,
      "mark": "5.46",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/india/dev-kumar-meena-15036733",
      "hasPage": true
     },
@@ -3284,6 +3559,7 @@
      "rankingScore": 1184,
      "podiumChance": 0.0,
      "mark": "5.70",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14523471",
      "hasPage": true
     },
@@ -3295,6 +3571,7 @@
      "rankingScore": 1129,
      "podiumChance": 0.0,
      "mark": "5.50",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14763221",
      "hasPage": true
     },
@@ -3306,6 +3583,7 @@
      "rankingScore": 1116,
      "podiumChance": 0.0,
      "mark": "5.45",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/india/kuldeep-kumar-15046443",
      "hasPage": true
     },
@@ -3317,6 +3595,7 @@
      "rankingScore": 1132,
      "podiumChance": 0.0,
      "mark": "5.51",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/yan-han-wu-15009038",
      "hasPage": true
     },
@@ -3328,6 +3607,7 @@
      "rankingScore": 1173,
      "podiumChance": 0.0,
      "mark": "5.66",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855101",
      "hasPage": true
     }
@@ -3360,7 +3640,7 @@
     "needed": 6,
     "of": 8,
     "reason": null,
-    "topChance": 11.2,
+    "topChance": 11.7,
     "floor": 5.0
    }
   },
@@ -3385,6 +3665,7 @@
      "rankingScore": 1186,
      "podiumChance": 17.0,
      "mark": "8.22",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14719623",
      "hasPage": true
     },
@@ -3394,8 +3675,9 @@
      "nat": "UZB",
      "qualifiedBy": null,
      "rankingScore": 1201,
-     "podiumChance": 4.7,
+     "podiumChance": 4.3,
      "mark": "8.29",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14934300",
      "hasPage": true
     },
@@ -3407,6 +3689,7 @@
      "rankingScore": 1225,
      "podiumChance": 1.5,
      "mark": "8.38",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734673",
      "hasPage": true
     },
@@ -3418,6 +3701,7 @@
      "rankingScore": 1203,
      "podiumChance": 1.1,
      "mark": "8.30",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/india/shahnavaz-khan-15139285",
      "hasPage": true
     },
@@ -3429,6 +3713,7 @@
      "rankingScore": 1217,
      "podiumChance": 0.8,
      "mark": "8.33",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884026",
      "hasPage": true
     },
@@ -3440,62 +3725,68 @@
      "rankingScore": 1040,
      "podiumChance": 0.6,
      "mark": "7.55",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759769",
      "hasPage": true
     },
     {
      "rank": 7,
-     "name": "Janry UBAS",
-     "nat": "PHI",
-     "qualifiedBy": null,
-     "rankingScore": 1057,
-     "podiumChance": 0.4,
-     "mark": "7.63",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14530589",
-     "hasPage": true
-    },
-    {
-     "rank": 8,
-     "name": "Ildar AKHMADIEV",
-     "nat": "TJK",
-     "qualifiedBy": null,
-     "rankingScore": 1105,
-     "podiumChance": 0.3,
-     "mark": "7.85",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14846091",
-     "hasPage": true
-    },
-    {
-     "rank": 9,
      "name": "Yu-Tang LIN",
      "nat": "TPE",
      "qualifiedBy": null,
      "rankingScore": 1114,
      "podiumChance": 0.2,
      "mark": "7.89",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14831893",
      "hasPage": true
     },
     {
-     "rank": 10,
+     "rank": 8,
      "name": "Yuhao SHI",
      "nat": "CHN",
      "qualifiedBy": null,
      "rankingScore": 1175,
      "podiumChance": 0.2,
      "mark": "8.14",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714402",
      "hasPage": true
     },
     {
-     "rank": 11,
+     "rank": 9,
+     "name": "Ildar AKHMADIEV",
+     "nat": "TJK",
+     "qualifiedBy": null,
+     "rankingScore": 1105,
+     "podiumChance": 0.2,
+     "mark": "7.85",
+     "markSeason": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14846091",
+     "hasPage": true
+    },
+    {
+     "rank": 10,
      "name": "Andre Anura ANUAR",
      "nat": "MAS",
      "qualifiedBy": null,
      "rankingScore": 1025,
      "podiumChance": 0.1,
      "mark": "7.48",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714404",
+     "hasPage": true
+    },
+    {
+     "rank": 11,
+     "name": "Janry UBAS",
+     "nat": "PHI",
+     "qualifiedBy": null,
+     "rankingScore": 1057,
+     "podiumChance": 0.1,
+     "mark": "7.63",
+     "markSeason": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14530589",
      "hasPage": true
     },
     {
@@ -3506,6 +3797,7 @@
      "rankingScore": 1129,
      "podiumChance": 0.0,
      "mark": "7.96",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855118",
      "hasPage": true
     },
@@ -3517,6 +3809,7 @@
      "rankingScore": 935,
      "podiumChance": 0.0,
      "mark": "7.06",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15035349",
      "hasPage": true
     },
@@ -3528,6 +3821,7 @@
      "rankingScore": 1039,
      "podiumChance": 0.0,
      "mark": "7.53",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886721",
      "hasPage": true
     },
@@ -3539,6 +3833,7 @@
      "rankingScore": 1038,
      "podiumChance": 0.0,
      "mark": "7.54",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/abdul-basit-seidu-15172149",
      "hasPage": true
     },
@@ -3550,6 +3845,7 @@
      "rankingScore": 1014,
      "podiumChance": 0.0,
      "mark": "7.43",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/philippines/kent-francis-jardin-15107854",
      "hasPage": true
     },
@@ -3561,6 +3857,7 @@
      "rankingScore": 1081,
      "podiumChance": 0.0,
      "mark": "7.74",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15007066",
      "hasPage": true
     }
@@ -3663,6 +3960,7 @@
      "qualifiedBy": null,
      "rankingScore": 1207,
      "mark": "17.40",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14839808",
      "hasPage": true
@@ -3674,6 +3972,7 @@
      "qualifiedBy": null,
      "rankingScore": 1178,
      "mark": "17.08",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14841034",
      "hasPage": true
@@ -3685,6 +3984,7 @@
      "qualifiedBy": null,
      "rankingScore": 1176,
      "mark": "17.11",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yinglong-ma-14974783",
      "hasPage": true
@@ -3696,6 +3996,7 @@
      "qualifiedBy": null,
      "rankingScore": 1158,
      "mark": "16.94",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759670",
      "hasPage": true
@@ -3707,6 +4008,7 @@
      "qualifiedBy": null,
      "rankingScore": 1143,
      "mark": "16.80",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14672555",
      "hasPage": true
@@ -3718,6 +4020,7 @@
      "qualifiedBy": null,
      "rankingScore": 1136,
      "mark": "16.64",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/japan/manato-miyao-14962150",
      "hasPage": true
@@ -3729,6 +4032,7 @@
      "qualifiedBy": null,
      "rankingScore": 1087,
      "mark": "16.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/korea/donghyuk-kim-14951738",
      "hasPage": true
@@ -3740,6 +4044,7 @@
      "qualifiedBy": null,
      "rankingScore": 1087,
      "mark": "16.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14838032",
      "hasPage": true
@@ -3751,6 +4056,7 @@
      "qualifiedBy": null,
      "rankingScore": 1057,
      "mark": "15.97",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/manh-hung-ho-trong-15041250",
      "hasPage": true
@@ -3762,6 +4068,7 @@
      "qualifiedBy": null,
      "rankingScore": 1049,
      "mark": "15.89",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/singapore/gabriel-lee-14970362",
      "hasPage": true
@@ -3773,6 +4080,7 @@
      "qualifiedBy": null,
      "rankingScore": 991,
      "mark": "15.31",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14215966",
      "hasPage": true
@@ -3784,6 +4092,7 @@
      "qualifiedBy": null,
      "rankingScore": 969,
      "mark": "15.15",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714404",
      "hasPage": true
@@ -3859,6 +4168,7 @@
      "qualifiedBy": null,
      "rankingScore": 1182,
      "mark": "21.03",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14624702",
      "hasPage": true
@@ -3870,6 +4180,7 @@
      "qualifiedBy": null,
      "rankingScore": 1178,
      "mark": "20.95",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14820722",
      "hasPage": true
@@ -3881,6 +4192,7 @@
      "qualifiedBy": null,
      "rankingScore": 1150,
      "mark": "20.49",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734581",
      "hasPage": true
@@ -3892,6 +4204,7 @@
      "qualifiedBy": null,
      "rankingScore": 1114,
      "mark": "19.88",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14705946",
      "hasPage": true
@@ -3903,6 +4216,7 @@
      "qualifiedBy": null,
      "rankingScore": 1106,
      "mark": "19.75",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14847215",
      "hasPage": true
@@ -3914,6 +4228,7 @@
      "qualifiedBy": null,
      "rankingScore": 1098,
      "mark": "19.61",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14902548",
      "hasPage": true
@@ -3925,6 +4240,7 @@
      "qualifiedBy": null,
      "rankingScore": 1091,
      "mark": "19.50",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15007014",
      "hasPage": true
@@ -3936,6 +4252,7 @@
      "qualifiedBy": null,
      "rankingScore": 1086,
      "mark": "19.41",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14375337",
      "hasPage": true
@@ -3947,6 +4264,7 @@
      "qualifiedBy": null,
      "rankingScore": 1084,
      "mark": "19.39",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/islamic-republic-of-iran/hassan-ajamibakhtiarvand-15167657",
      "hasPage": true
@@ -3958,6 +4276,7 @@
      "qualifiedBy": null,
      "rankingScore": 1068,
      "mark": "19.12",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884897",
      "hasPage": true
@@ -3969,6 +4288,7 @@
      "qualifiedBy": null,
      "rankingScore": 1067,
      "mark": "19.10",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/korea/sihoon-park-14949060",
      "hasPage": true
@@ -4009,18 +4329,11 @@
    "sex": "M",
    "places": null,
    "qualified": 12,
-   "scored": 10,
+   "scored": 11,
    "unscored": [
-    "Mustafa Kadhim Dagher ALSAAMAH",
     "Eissa ZANKAWI"
    ],
    "unranked": [
-    {
-     "name": "Mustafa Kadhim Dagher ALSAAMAH",
-     "nat": "IRQ",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14498470"
-    },
     {
      "name": "Eissa ZANKAWI",
      "nat": "KUW",
@@ -4036,6 +4349,7 @@
      "qualifiedBy": null,
      "rankingScore": 1178,
      "mark": "66.39",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14638595",
      "hasPage": true
@@ -4047,6 +4361,7 @@
      "qualifiedBy": null,
      "rankingScore": 1159,
      "mark": "65.38",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14649141",
      "hasPage": true
@@ -4058,6 +4373,7 @@
      "qualifiedBy": null,
      "rankingScore": 1113,
      "mark": "62.87",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14553217",
      "hasPage": true
@@ -4069,6 +4385,7 @@
      "qualifiedBy": null,
      "rankingScore": 1094,
      "mark": "61.83",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14889073",
      "hasPage": true
@@ -4080,6 +4397,7 @@
      "qualifiedBy": null,
      "rankingScore": 1071,
      "mark": "60.60",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14329692",
      "hasPage": true
@@ -4091,6 +4409,7 @@
      "qualifiedBy": null,
      "rankingScore": 1043,
      "mark": "59.03",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752921",
      "hasPage": true
@@ -4102,6 +4421,7 @@
      "qualifiedBy": null,
      "rankingScore": 1037,
      "mark": "58.72",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/aziz-nurillaev-15001589",
      "hasPage": true
@@ -4113,6 +4433,7 @@
      "qualifiedBy": null,
      "rankingScore": 1020,
      "mark": "57.79",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14878452",
      "hasPage": true
@@ -4124,17 +4445,31 @@
      "qualifiedBy": null,
      "rankingScore": 1014,
      "mark": "57.49",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/mahamat-gueme-15027462",
      "hasPage": true
     },
     {
      "rank": 10,
+     "name": "Mustafa Kadhim Dagher ALSAAMAH",
+     "nat": "IRQ",
+     "qualifiedBy": null,
+     "rankingScore": 1009,
+     "mark": "57.19",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14498470",
+     "hasPage": false
+    },
+    {
+     "rank": 11,
      "name": "Abdullah Mohammad AL ZANKAWI",
      "nat": "KUW",
      "qualifiedBy": null,
      "rankingScore": 982,
      "mark": "55.71",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/kuwait/abdullah-mohammad-al-zankawi-14989219",
      "hasPage": true
@@ -4165,7 +4500,7 @@
     "needed": 6,
     "of": 8,
     "reason": "floor",
-    "topChance": 1.1,
+    "topChance": 0.9,
     "floor": 5.0
    }
   },
@@ -4175,169 +4510,186 @@
    "sex": "M",
    "places": null,
    "qualified": 15,
-   "scored": 14,
-   "unscored": [
-    "Sukhrob KHODJAEV"
-   ],
-   "unranked": [
-    {
-     "name": "Sukhrob KHODJAEV",
-     "nat": "UZB",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14427108"
-    }
-   ],
+   "scored": 15,
+   "unscored": [],
+   "unranked": [],
    "athletes": [
     {
      "rank": 1,
+     "name": "Sukhrob KHODJAEV",
+     "nat": "UZB",
+     "qualifiedBy": null,
+     "rankingScore": 1116,
+     "mark": "74.44",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14427108",
+     "hasPage": false
+    },
+    {
+     "rank": 2,
      "name": "Qi WANG",
      "nat": "CHN",
      "qualifiedBy": null,
      "rankingScore": 1108,
      "mark": "73.93",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14788582",
      "hasPage": true
     },
     {
-     "rank": 2,
+     "rank": 3,
      "name": "Tatsuto NAKAGAWA",
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1108,
      "mark": "73.93",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14750938",
      "hasPage": true
     },
     {
-     "rank": 3,
+     "rank": 4,
      "name": "Mohammed AL DUBAISI",
      "nat": "KSA",
      "qualifiedBy": null,
      "rankingScore": 1093,
      "mark": "72.93",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14720601",
      "hasPage": true
     },
     {
-     "rank": 4,
+     "rank": 5,
      "name": "Shota FUKUDA",
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1090,
      "mark": "72.77",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855216",
      "hasPage": true
     },
     {
-     "rank": 5,
+     "rank": 6,
      "name": "Ayubkhon FAYOZOV",
      "nat": "UZB",
      "qualifiedBy": null,
      "rankingScore": 1068,
      "mark": "71.33",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915947",
      "hasPage": true
     },
     {
-     "rank": 6,
+     "rank": 7,
      "name": "Ashraf ELSEIFY",
      "nat": "QAT",
      "qualifiedBy": null,
      "rankingScore": 1068,
      "mark": "71.31",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14523902",
      "hasPage": true
     },
     {
-     "rank": 7,
+     "rank": 8,
      "name": "Damneet SINGH",
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1057,
      "mark": "70.64",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734787",
      "hasPage": true
     },
     {
-     "rank": 8,
+     "rank": 9,
      "name": "Praveen KUMAR",
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1041,
      "mark": "69.58",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14861990",
      "hasPage": true
     },
     {
-     "rank": 9,
+     "rank": 10,
      "name": "Ywunchul LEE",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 1028,
      "mark": "68.72",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14210424",
      "hasPage": true
     },
     {
-     "rank": 10,
+     "rank": 11,
      "name": "Mubeen Rashid Ibrahim AL KINDI",
      "nat": "OMA",
      "qualifiedBy": null,
      "rankingScore": 1023,
      "mark": "68.39",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884241",
      "hasPage": true
     },
     {
-     "rank": 11,
+     "rank": 12,
      "name": "Talal ALRUSHOUD",
      "nat": "KUW",
      "qualifiedBy": null,
      "rankingScore": 999,
      "mark": "66.87",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/kuwait/talal-alrushoud-15049314",
      "hasPage": true
     },
     {
-     "rank": 12,
+     "rank": 13,
      "name": "Sadat Merzuqi AJISAN",
      "nat": "MAS",
      "qualifiedBy": null,
      "rankingScore": 974,
      "mark": "65.24",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840456",
      "hasPage": true
     },
     {
-     "rank": 13,
+     "rank": 14,
      "name": "Ibrahim ABDELRAHMAN",
      "nat": "QAT",
      "qualifiedBy": null,
      "rankingScore": 957,
      "mark": "64.12",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/ibrahim-abdelrahman-15102628",
      "hasPage": true
     },
     {
-     "rank": 14,
+     "rank": 15,
      "name": "Kittipong BOONMAWAN",
      "nat": "THA",
      "qualifiedBy": null,
      "rankingScore": 940,
      "mark": "63.02",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14621659",
      "hasPage": true
@@ -4348,19 +4700,28 @@
    "method": "points",
    "methodEvidence": {
     "considered": [
+     "Sukhrob KHODJAEV",
      "Qi WANG",
      "Tatsuto NAKAGAWA",
      "Mohammed AL DUBAISI",
      "Shota FUKUDA",
      "Ayubkhon FAYOZOV",
      "Ashraf ELSEIFY",
-     "Damneet SINGH",
-     "Praveen KUMAR"
+     "Damneet SINGH"
     ],
-    "withHistory": [],
+    "withHistory": [
+     "Sukhrob KHODJAEV",
+     "Qi WANG",
+     "Tatsuto NAKAGAWA",
+     "Shota FUKUDA",
+     "Ayubkhon FAYOZOV",
+     "Ashraf ELSEIFY"
+    ],
     "needed": 6,
     "of": 8,
-    "reason": "history"
+    "reason": "floor",
+    "topChance": 0.5,
+    "floor": 5.0
    }
   },
   {
@@ -4381,8 +4742,9 @@
      "nat": "SRI",
      "qualifiedBy": null,
      "rankingScore": 1281,
-     "podiumChance": 50.7,
+     "podiumChance": 50.6,
      "mark": "92.62",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886862",
      "hasPage": true
     },
@@ -4392,8 +4754,9 @@
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1211,
-     "podiumChance": 12.3,
+     "podiumChance": 12.0,
      "mark": "87.68",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14740932",
      "hasPage": true
     },
@@ -4405,6 +4768,7 @@
      "rankingScore": 1122,
      "podiumChance": 7.6,
      "mark": "81.49",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14698105",
      "hasPage": true
     },
@@ -4416,6 +4780,7 @@
      "rankingScore": 1178,
      "podiumChance": 2.0,
      "mark": "85.41",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818383",
      "hasPage": true
     },
@@ -4427,6 +4792,7 @@
      "rankingScore": 1021,
      "podiumChance": 1.1,
      "mark": "74.36",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14756011",
      "hasPage": true
     },
@@ -4438,6 +4804,7 @@
      "rankingScore": 1135,
      "podiumChance": 0.5,
      "mark": "82.40",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14671060",
      "hasPage": true
     },
@@ -4447,8 +4814,9 @@
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1130,
-     "podiumChance": 0.3,
+     "podiumChance": 0.4,
      "mark": "82.05",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14703266",
      "hasPage": true
     },
@@ -4460,6 +4828,7 @@
      "rankingScore": 1106,
      "podiumChance": 0.2,
      "mark": "80.35",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14910385",
      "hasPage": true
     },
@@ -4471,6 +4840,7 @@
      "rankingScore": 1031,
      "podiumChance": 0.1,
      "mark": "75.07",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/kazakhstan/alexey-khlystov-14971612",
      "hasPage": true
     },
@@ -4482,6 +4852,7 @@
      "rankingScore": 928,
      "podiumChance": 0.0,
      "mark": "67.81",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/indonesia/sifanus-ndiken-15105954",
      "hasPage": true
     },
@@ -4493,6 +4864,7 @@
      "rankingScore": 938,
      "podiumChance": 0.0,
      "mark": "68.49",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14651476",
      "hasPage": true
     },
@@ -4504,6 +4876,7 @@
      "rankingScore": 1064,
      "podiumChance": 0.0,
      "mark": "77.39",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843183",
      "hasPage": true
     },
@@ -4515,6 +4888,7 @@
      "rankingScore": 1094,
      "podiumChance": 0.0,
      "mark": "79.47",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14861006",
      "hasPage": true
     },
@@ -4526,6 +4900,7 @@
      "rankingScore": 935,
      "podiumChance": 0.0,
      "mark": "68.27",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14850905",
      "hasPage": true
     }
@@ -4570,7 +4945,7 @@
     "needed": 6,
     "of": 8,
     "reason": null,
-    "topChance": 50.7,
+    "topChance": 50.6,
     "floor": 5.0
    }
   },
@@ -4621,6 +4996,7 @@
      "qualifiedBy": null,
      "rankingScore": 1182,
      "mark": "11.08",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yujie-chen-15138450",
      "hasPage": true
@@ -4632,6 +5008,7 @@
      "qualifiedBy": null,
      "rankingScore": 1167,
      "mark": "11.15",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14541241",
      "hasPage": true
@@ -4643,6 +5020,7 @@
      "qualifiedBy": null,
      "rankingScore": 1159,
      "mark": "11.19",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14581580",
      "hasPage": true
@@ -4654,6 +5032,7 @@
      "qualifiedBy": null,
      "rankingScore": 1148,
      "mark": "11.24",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14472153",
      "hasPage": true
@@ -4665,6 +5044,7 @@
      "qualifiedBy": null,
      "rankingScore": 1135,
      "mark": "11.30",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14576460",
      "hasPage": true
@@ -4676,6 +5056,7 @@
      "qualifiedBy": null,
      "rankingScore": 1129,
      "mark": "11.33",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14806541",
      "hasPage": true
@@ -4687,6 +5068,7 @@
      "qualifiedBy": null,
      "rankingScore": 1120,
      "mark": "11.37",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14817771",
      "hasPage": true
@@ -4698,6 +5080,7 @@
      "qualifiedBy": null,
      "rankingScore": 1108,
      "mark": "11.43",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840478",
      "hasPage": true
@@ -4709,6 +5092,7 @@
      "qualifiedBy": null,
      "rankingScore": 1099,
      "mark": "11.47",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/dana-noor-salem-15210621",
      "hasPage": true
@@ -4720,6 +5104,7 @@
      "qualifiedBy": null,
      "rankingScore": 1095,
      "mark": "11.49",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14765816",
      "hasPage": true
@@ -4731,6 +5116,7 @@
      "qualifiedBy": null,
      "rankingScore": 1095,
      "mark": "11.49",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/thailand/jirapat-khanonta-15067765",
      "hasPage": true
@@ -4742,6 +5128,7 @@
      "qualifiedBy": null,
      "rankingScore": 1083,
      "mark": "11.55",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/raihanah-garoubah-15185137",
      "hasPage": true
@@ -4753,6 +5140,7 @@
      "qualifiedBy": null,
      "rankingScore": 1066,
      "mark": "11.63",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14747609",
      "hasPage": true
@@ -4764,6 +5152,7 @@
      "qualifiedBy": null,
      "rankingScore": 1062,
      "mark": "11.65",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14705631",
      "hasPage": true
@@ -4775,6 +5164,7 @@
      "qualifiedBy": null,
      "rankingScore": 1056,
      "mark": "11.68",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14845615",
      "hasPage": true
@@ -4786,6 +5176,7 @@
      "qualifiedBy": null,
      "rankingScore": 1052,
      "mark": "11.76",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/laylo-allaberganova-14972673",
      "hasPage": true
@@ -4797,6 +5188,7 @@
      "qualifiedBy": null,
      "rankingScore": 1050,
      "mark": "11.71",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14916006",
      "hasPage": true
@@ -4808,6 +5200,7 @@
      "qualifiedBy": null,
      "rankingScore": 1050,
      "mark": "11.71",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/izzatul-musfirah-ahmad-kamal-azira-15150412",
      "hasPage": true
@@ -4819,6 +5212,7 @@
      "qualifiedBy": null,
      "rankingScore": 1044,
      "mark": "11.74",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14651402",
      "hasPage": true
@@ -4830,6 +5224,7 @@
      "qualifiedBy": null,
      "rankingScore": 1042,
      "mark": "11.75",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/awatif-sabah-abdulrahman-15210622",
      "hasPage": true
@@ -4841,6 +5236,7 @@
      "qualifiedBy": null,
      "rankingScore": 1040,
      "mark": "11.76",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843862",
      "hasPage": true
@@ -4852,6 +5248,7 @@
      "qualifiedBy": null,
      "rankingScore": 1034,
      "mark": "11.79",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/pui-yi-yu-15079891",
      "hasPage": true
@@ -4863,6 +5260,7 @@
      "qualifiedBy": null,
      "rankingScore": 1032,
      "mark": "11.80",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14428539",
      "hasPage": true
@@ -4874,6 +5272,7 @@
      "qualifiedBy": null,
      "rankingScore": 1013,
      "mark": "11.89",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14597370",
      "hasPage": true
@@ -4885,6 +5284,7 @@
      "qualifiedBy": null,
      "rankingScore": 1001,
      "mark": "11.95",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14852430",
      "hasPage": true
@@ -4896,6 +5296,7 @@
      "qualifiedBy": null,
      "rankingScore": 1001,
      "mark": "11.95",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14594402",
      "hasPage": true
@@ -4907,6 +5308,7 @@
      "qualifiedBy": null,
      "rankingScore": 997,
      "mark": "11.97",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14302761",
      "hasPage": true
@@ -4918,6 +5320,7 @@
      "qualifiedBy": null,
      "rankingScore": 980,
      "mark": "12.12",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15226644",
      "hasPage": true
@@ -4929,6 +5332,7 @@
      "qualifiedBy": null,
      "rankingScore": 976,
      "mark": "12.08",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15073087",
      "hasPage": true
@@ -4964,14 +5368,12 @@
    "sex": "W",
    "places": null,
    "qualified": 30,
-   "scored": 24,
+   "scored": 26,
    "unscored": [
     "Marwa SALEEM",
-    "Zahra ZAREI MANOUJAN",
     "Solongo BATBOLD",
     "Khoula Omer KHAN",
-    "Levanita DA COSTA",
-    "Jonbibi HUKMOVA"
+    "Levanita DA COSTA"
    ],
    "unranked": [
     {
@@ -4979,12 +5381,6 @@
      "nat": "AFG",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14991426"
-    },
-    {
-     "name": "Zahra ZAREI MANOUJAN",
-     "nat": "IRI",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15110913"
     },
     {
      "name": "Solongo BATBOLD",
@@ -5003,12 +5399,6 @@
      "nat": "TLS",
      "reason": "notFound",
      "profileUrl": null
-    },
-    {
-     "name": "Jonbibi HUKMOVA",
-     "nat": "UZB",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15150425"
     }
    ],
    "athletes": [
@@ -5019,6 +5409,7 @@
      "qualifiedBy": null,
      "rankingScore": 1157,
      "mark": "22.78",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14472153",
      "hasPage": true
@@ -5030,6 +5421,7 @@
      "qualifiedBy": null,
      "rankingScore": 1154,
      "mark": "22.81",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14817771",
      "hasPage": true
@@ -5041,6 +5433,7 @@
      "qualifiedBy": null,
      "rankingScore": 1151,
      "mark": "22.84",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yujie-chen-15138450",
      "hasPage": true
@@ -5052,6 +5445,7 @@
      "qualifiedBy": null,
      "rankingScore": 1121,
      "mark": "23.14",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14873478",
      "hasPage": true
@@ -5063,6 +5457,7 @@
      "qualifiedBy": null,
      "rankingScore": 1111,
      "mark": "23.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14858889",
      "hasPage": true
@@ -5074,6 +5469,7 @@
      "qualifiedBy": null,
      "rankingScore": 1110,
      "mark": "23.24",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/junying-zhu-15084997",
      "hasPage": true
@@ -5085,6 +5481,7 @@
      "qualifiedBy": null,
      "rankingScore": 1107,
      "mark": "23.36",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/raihanah-garoubah-15185137",
      "hasPage": true
@@ -5096,6 +5493,7 @@
      "qualifiedBy": null,
      "rankingScore": 1101,
      "mark": "23.33",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/united-arab-emirates/aminat-kamarudeen-15152920",
      "hasPage": true
@@ -5107,6 +5505,7 @@
      "qualifiedBy": null,
      "rankingScore": 1098,
      "mark": "23.36",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14541241",
      "hasPage": true
@@ -5118,6 +5517,7 @@
      "qualifiedBy": null,
      "rankingScore": 1096,
      "mark": "23.40",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14971180",
      "hasPage": true
@@ -5129,6 +5529,7 @@
      "qualifiedBy": null,
      "rankingScore": 1094,
      "mark": "23.41",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14767044",
      "hasPage": true
@@ -5140,6 +5541,7 @@
      "qualifiedBy": null,
      "rankingScore": 1088,
      "mark": "23.47",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14581580",
      "hasPage": true
@@ -5151,6 +5553,7 @@
      "qualifiedBy": null,
      "rankingScore": 1085,
      "mark": "23.50",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-cam-tu-le-15110503",
      "hasPage": true
@@ -5162,6 +5565,7 @@
      "qualifiedBy": null,
      "rankingScore": 1075,
      "mark": "23.60",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/thailand/jirapat-khanonta-15067765",
      "hasPage": true
@@ -5173,6 +5577,7 @@
      "qualifiedBy": null,
      "rankingScore": 1070,
      "mark": "23.74",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840478",
      "hasPage": true
@@ -5184,94 +5589,127 @@
      "qualifiedBy": null,
      "rankingScore": 1056,
      "mark": "23.83",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/laylo-allaberganova-14972673",
      "hasPage": true
     },
     {
      "rank": 17,
+     "name": "Jonbibi HUKMOVA",
+     "nat": "UZB",
+     "qualifiedBy": null,
+     "rankingScore": 1056,
+     "mark": "23.79",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15150425",
+     "hasPage": false
+    },
+    {
+     "rank": 18,
      "name": "Awatif Sabah ABDULRAHMAN",
      "nat": "QAT",
      "qualifiedBy": null,
      "rankingScore": 1045,
      "mark": "23.91",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/awatif-sabah-abdulrahman-15210622",
      "hasPage": true
     },
     {
-     "rank": 18,
+     "rank": 19,
      "name": "Elizabeth-Ann Shee Ru TAN",
      "nat": "SGP",
      "qualifiedBy": null,
      "rankingScore": 1043,
      "mark": "23.93",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14845615",
      "hasPage": true
     },
     {
-     "rank": 19,
+     "rank": 20,
      "name": "Aziza SBAITY",
      "nat": "LBN",
      "qualifiedBy": null,
      "rankingScore": 1029,
      "mark": "24.07",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14428539",
      "hasPage": true
     },
     {
-     "rank": 20,
+     "rank": 21,
      "name": "Sin Ting YAU",
      "nat": "HKG",
      "qualifiedBy": null,
      "rankingScore": 1021,
      "mark": "24.15",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/sin-ting-yau-15063883",
      "hasPage": true
     },
     {
-     "rank": 21,
+     "rank": 22,
+     "name": "Zahra ZAREI MANOUJAN",
+     "nat": "IRI",
+     "qualifiedBy": null,
+     "rankingScore": 995,
+     "mark": "24.43",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15110913",
+     "hasPage": false
+    },
+    {
+     "rank": 23,
      "name": "Dana SALEM",
      "nat": "QAT",
      "qualifiedBy": null,
      "rankingScore": 992,
      "mark": "24.46",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/dana-salem-15284253",
      "hasPage": true
     },
     {
-     "rank": 22,
+     "rank": 24,
      "name": "Azza Sultan AL-YARUBI",
      "nat": "OMA",
      "qualifiedBy": null,
      "rankingScore": 945,
      "mark": "25.07",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15073087",
      "hasPage": true
     },
     {
-     "rank": 23,
+     "rank": 25,
      "name": "Nurul Wardatul HUWAIDA",
      "nat": "MAS",
      "qualifiedBy": null,
      "rankingScore": 936,
      "mark": "24.74",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15166804",
      "hasPage": true
     },
     {
-     "rank": 24,
+     "rank": 26,
      "name": "Enejan ESEDOVA",
      "nat": "TKM",
      "qualifiedBy": null,
      "rankingScore": 932,
      "mark": "25.11",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14934664",
      "hasPage": true
@@ -5306,15 +5744,13 @@
    "sex": "W",
    "places": null,
    "qualified": 24,
-   "scored": 17,
+   "scored": 19,
    "unscored": [
     "Solongo BATBOLD",
     "Khoula Omer KHAN",
     "Bakhita MARISIO",
-    "Shahd MOHAMED",
     "Levanita DA COSTA",
-    "Thi Minh Hanh HOANG",
-    "Thi Ngoc NGUYEN"
+    "Thi Minh Hanh HOANG"
    ],
    "unranked": [
     {
@@ -5336,12 +5772,6 @@
      "profileUrl": null
     },
     {
-     "name": "Shahd MOHAMED",
-     "nat": "QAT",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14817265"
-    },
-    {
      "name": "Levanita DA COSTA",
      "nat": "TLS",
      "reason": "notFound",
@@ -5352,12 +5782,6 @@
      "nat": "VIE",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751077"
-    },
-    {
-     "name": "Thi Ngoc NGUYEN",
-     "nat": "VIE",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14902553"
     }
    ],
    "athletes": [
@@ -5368,6 +5792,7 @@
      "qualifiedBy": null,
      "rankingScore": 1235,
      "mark": "49.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14643442",
      "hasPage": true
@@ -5379,6 +5804,7 @@
      "qualifiedBy": null,
      "rankingScore": 1194,
      "mark": "50.28",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14419510",
      "hasPage": true
@@ -5390,6 +5816,7 @@
      "qualifiedBy": null,
      "rankingScore": 1158,
      "mark": "51.19",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/jonbibi-hukmova-15150425",
      "hasPage": true
@@ -5401,6 +5828,7 @@
      "qualifiedBy": null,
      "rankingScore": 1128,
      "mark": "51.97",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/islamic-republic-of-iran/zahra-zarei-15110913",
      "hasPage": true
@@ -5412,6 +5840,7 @@
      "qualifiedBy": null,
      "rankingScore": 1123,
      "mark": "52.10",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14858889",
      "hasPage": true
@@ -5423,6 +5852,7 @@
      "qualifiedBy": null,
      "rankingScore": 1117,
      "mark": "52.24",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14547918",
      "hasPage": true
@@ -5434,6 +5864,7 @@
      "qualifiedBy": null,
      "rankingScore": 1104,
      "mark": "52.57",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14821639",
      "hasPage": true
@@ -5445,6 +5876,7 @@
      "qualifiedBy": null,
      "rankingScore": 1098,
      "mark": "52.73",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14651484",
      "hasPage": true
@@ -5456,6 +5888,7 @@
      "qualifiedBy": null,
      "rankingScore": 1095,
      "mark": "52.81",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14995337",
      "hasPage": true
@@ -5467,83 +5900,115 @@
      "qualifiedBy": null,
      "rankingScore": 1086,
      "mark": "53.05",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/kazakhstan/mariya-shuvalova-15019869",
      "hasPage": true
     },
     {
      "rank": 11,
+     "name": "Thi Ngoc NGUYEN",
+     "nat": "VIE",
+     "qualifiedBy": null,
+     "rankingScore": 1083,
+     "mark": "53.12",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14902553",
+     "hasPage": false
+    },
+    {
+     "rank": 12,
      "name": "Yi-Cen CHEN",
      "nat": "TPE",
      "qualifiedBy": null,
      "rankingScore": 1082,
      "mark": "53.16",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/yi-cen-chen-15097825",
      "hasPage": true
     },
     {
-     "rank": 12,
+     "rank": 13,
      "name": "Benny NONTANAM",
      "nat": "THA",
      "qualifiedBy": null,
      "rankingScore": 1048,
      "mark": "54.05",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14847223",
      "hasPage": true
     },
     {
-     "rank": 13,
+     "rank": 14,
      "name": "Seoyoon KIM",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 1038,
      "mark": "54.31",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14910441",
      "hasPage": true
     },
     {
-     "rank": 14,
+     "rank": 15,
      "name": "Jeralyn RODRIGUEZ",
      "nat": "PHI",
      "qualifiedBy": null,
      "rankingScore": 1019,
      "mark": "54.83",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/philippines/jeralyn-rodriguez-15154319",
      "hasPage": true
     },
     {
-     "rank": 15,
+     "rank": 16,
      "name": "Ayoung LEE",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 1013,
      "mark": "54.99",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14498200",
      "hasPage": true
     },
     {
-     "rank": 16,
+     "rank": 17,
+     "name": "Shahd MOHAMED",
+     "nat": "QAT",
+     "qualifiedBy": null,
+     "rankingScore": 1004,
+     "mark": "55.23",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14817265",
+     "hasPage": false
+    },
+    {
+     "rank": 18,
      "name": "Chi Ku CHOW",
      "nat": "HKG",
      "qualifiedBy": null,
      "rankingScore": 1001,
      "mark": "55.32",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/chi-ku-chow-15079890",
      "hasPage": true
     },
     {
-     "rank": 17,
+     "rank": 19,
      "name": "Alexandra ZALYUBOVSKAYA",
      "nat": "KAZ",
      "qualifiedBy": null,
      "rankingScore": 986,
      "mark": "55.73",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14832546",
      "hasPage": true
@@ -5578,18 +6043,9 @@
    "sex": "W",
    "places": null,
    "qualified": 17,
-   "scored": 16,
-   "unscored": [
-    "Chunhui LI"
-   ],
-   "unranked": [
-    {
-     "name": "Chunhui LI",
-     "nat": "CHN",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14803753"
-    }
-   ],
+   "scored": 17,
+   "unscored": [],
+   "unranked": [],
    "athletes": [
     {
      "rank": 1,
@@ -5598,6 +6054,7 @@
      "qualifiedBy": null,
      "rankingScore": 1194,
      "mark": "1:58.26",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14373314",
      "hasPage": true
@@ -5609,6 +6066,7 @@
      "qualifiedBy": null,
      "rankingScore": 1139,
      "mark": "2:01.33",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14823678",
      "hasPage": true
@@ -5620,6 +6078,7 @@
      "qualifiedBy": null,
      "rankingScore": 1135,
      "mark": "2:01.54",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/japan/rin-kubo-15005744",
      "hasPage": true
@@ -5631,6 +6090,7 @@
      "qualifiedBy": null,
      "rankingScore": 1133,
      "mark": "2:01.67",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14728006",
      "hasPage": true
@@ -5642,6 +6102,7 @@
      "qualifiedBy": null,
      "rankingScore": 1131,
      "mark": "2:01.74",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14885770",
      "hasPage": true
@@ -5653,6 +6114,7 @@
      "qualifiedBy": null,
      "rankingScore": 1119,
      "mark": "2:02.42",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818407",
      "hasPage": true
@@ -5664,105 +6126,127 @@
      "qualifiedBy": null,
      "rankingScore": 1089,
      "mark": "2:04.17",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14740938",
      "hasPage": true
     },
     {
      "rank": 8,
+     "name": "Chunhui LI",
+     "nat": "CHN",
+     "qualifiedBy": null,
+     "rankingScore": 1072,
+     "mark": "2:05.15",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14803753",
+     "hasPage": false
+    },
+    {
+     "rank": 9,
      "name": "Naomi Marjorie CESAR",
      "nat": "PHI",
      "qualifiedBy": null,
      "rankingScore": 1053,
      "mark": "2:06.24",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/philippines/naomi-marjorie-cesar-15225361",
      "hasPage": true
     },
     {
-     "rank": 9,
+     "rank": 10,
      "name": "K.Takshima NUHANSA",
      "nat": "SRI",
      "qualifiedBy": null,
      "rankingScore": 1053,
      "mark": "2:06.25",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/ktakshima-nuhansa-15057795",
      "hasPage": true
     },
     {
-     "rank": 10,
+     "rank": 11,
      "name": "Ayana BOLATBEKKYZY",
      "nat": "KAZ",
      "qualifiedBy": null,
      "rankingScore": 1036,
      "mark": "2:07.26",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/kazakhstan/ayana-bolatbekkyzy-15038098",
      "hasPage": true
     },
     {
-     "rank": 11,
+     "rank": 12,
      "name": "Sabokhat SAMIYONOVA",
      "nat": "UZB",
      "qualifiedBy": null,
      "rankingScore": 1036,
      "mark": "2:07.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/sabokhat-samiyonova-14984624",
      "hasPage": true
     },
     {
-     "rank": 12,
+     "rank": 13,
      "name": "Zenab MAHAMAT",
      "nat": "BRN",
      "qualifiedBy": null,
      "rankingScore": 1004,
      "mark": "2:09.18",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15036424",
      "hasPage": true
     },
     {
-     "rank": 13,
+     "rank": 14,
      "name": "Nayeon PARK",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 983,
      "mark": "2:10.43",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759683",
      "hasPage": true
     },
     {
-     "rank": 14,
+     "rank": 15,
      "name": "Anna KOROBOVTSEVA",
      "nat": "KGZ",
      "qualifiedBy": null,
      "rankingScore": 968,
      "mark": "2:11.34",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/kirghizistan/anna-korobovtseva-15252474",
      "hasPage": true
     },
     {
-     "rank": 15,
+     "rank": 16,
      "name": "Khongorzul ENKHMAA",
      "nat": "MGL",
      "qualifiedBy": null,
      "rankingScore": 850,
      "mark": "2:18.80",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15338750",
      "hasPage": true
     },
     {
-     "rank": 16,
+     "rank": 17,
      "name": "Meryem SALEK",
      "nat": "QAT",
      "qualifiedBy": null,
      "rankingScore": 829,
      "mark": "2:20.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15324359",
      "hasPage": true
@@ -5780,7 +6264,7 @@
      "Hongjiao WU",
      ". POOJA",
      "J. GOWTHAMI",
-     "Naomi Marjorie CESAR"
+     "Chunhui LI"
     ],
     "withHistory": [
      "Nelly JEPKOSGEI",
@@ -5833,6 +6317,7 @@
      "qualifiedBy": null,
      "rankingScore": 1225,
      "mark": "3:57.61",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14373314",
      "hasPage": true
@@ -5844,6 +6329,7 @@
      "qualifiedBy": null,
      "rankingScore": 1182,
      "mark": "4:03.00",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14632538",
      "hasPage": true
@@ -5855,6 +6341,7 @@
      "qualifiedBy": null,
      "rankingScore": 1147,
      "mark": "4:07.43",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/chunhui-li-14803753",
      "hasPage": true
@@ -5866,6 +6353,7 @@
      "qualifiedBy": null,
      "rankingScore": 1128,
      "mark": "4:09.84",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818407",
      "hasPage": true
@@ -5877,6 +6365,7 @@
      "qualifiedBy": null,
      "rankingScore": 1123,
      "mark": "4:10.48",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14887755",
      "hasPage": true
@@ -5888,6 +6377,7 @@
      "qualifiedBy": null,
      "rankingScore": 1097,
      "mark": "4:13.87",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759683",
      "hasPage": true
@@ -5899,6 +6389,7 @@
      "qualifiedBy": null,
      "rankingScore": 1062,
      "mark": "4:18.36",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/kazakhstan/ayana-bolatbekkyzy-15038098",
      "hasPage": true
@@ -5910,6 +6401,7 @@
      "qualifiedBy": null,
      "rankingScore": 1053,
      "mark": "4:19.65",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532349",
      "hasPage": true
@@ -5921,6 +6413,7 @@
      "qualifiedBy": null,
      "rankingScore": 1047,
      "mark": "4:20.45",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14497992",
      "hasPage": true
@@ -5932,6 +6425,7 @@
      "qualifiedBy": null,
      "rankingScore": 1045,
      "mark": "4:20.62",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14885770",
      "hasPage": true
@@ -5943,6 +6437,7 @@
      "qualifiedBy": null,
      "rankingScore": 1023,
      "mark": "4:23.67",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/sabokhat-samiyonova-14984624",
      "hasPage": true
@@ -5977,10 +6472,9 @@
    "sex": "W",
    "places": null,
    "qualified": 15,
-   "scored": 9,
+   "scored": 10,
    "unscored": [
     "Ruth JEBET",
-    "Norah Jeruto TANUI",
     "Mariia KOROBITSKAIA",
     "Khishigsaikhan GALBADRAKH",
     "Purna NEUPANE",
@@ -5992,12 +6486,6 @@
      "nat": "BRN",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14588310"
-    },
-    {
-     "name": "Norah Jeruto TANUI",
-     "nat": "KAZ",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14479154"
     },
     {
      "name": "Mariia KOROBITSKAIA",
@@ -6032,6 +6520,7 @@
      "qualifiedBy": null,
      "rankingScore": 1222,
      "mark": "14:30.06",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14695622",
      "hasPage": true
@@ -6041,85 +6530,105 @@
      "name": "Nozomi TANAKA",
      "nat": "JPN",
      "qualifiedBy": null,
-     "rankingScore": 1166,
-     "mark": "14:58.35",
+     "rankingScore": 1214,
+     "mark": "14:34.10",
+     "markSeason": 2025,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14632538",
      "hasPage": true
     },
     {
      "rank": 3,
+     "name": "Norah Jeruto TANUI",
+     "nat": "KAZ",
+     "qualifiedBy": null,
+     "rankingScore": 1166,
+     "mark": "14:58.71",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14479154",
+     "hasPage": false
+    },
+    {
+     "rank": 4,
      "name": "Yuma YAMAMOTO",
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1163,
      "mark": "14:59.89",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14899665",
      "hasPage": true
     },
     {
-     "rank": 4,
+     "rank": 5,
      "name": "Parul CHAUDHARY",
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1155,
      "mark": "15:04.26",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14497992",
      "hasPage": true
     },
     {
-     "rank": 5,
+     "rank": 6,
      "name": "SEEMA",
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1132,
      "mark": "15:16.20",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734780",
      "hasPage": true
     },
     {
-     "rank": 6,
+     "rank": 7,
      "name": "Yujin KIM",
      "nat": "KOR",
      "qualifiedBy": null,
-     "rankingScore": 1074,
-     "mark": "15:46.78",
+     "rankingScore": 1100,
+     "mark": "15:33.07",
+     "markSeason": 2025,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532349",
      "hasPage": true
     },
     {
-     "rank": 7,
+     "rank": 8,
      "name": "Daisy JEPKEMEI",
      "nat": "KAZ",
      "qualifiedBy": null,
      "rankingScore": 958,
      "mark": "16:50.88",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14530633",
      "hasPage": true
     },
     {
-     "rank": 8,
+     "rank": 9,
      "name": "Thi Tuyet LE",
      "nat": "VIE",
      "qualifiedBy": null,
      "rankingScore": 933,
      "mark": "17:05.30",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15022817",
      "hasPage": true
     },
     {
-     "rank": 9,
+     "rank": 10,
      "name": "Shantoshi SHRESTHA",
      "nat": "NEP",
      "qualifiedBy": null,
      "rankingScore": 887,
      "mark": "17:31.75",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14896381",
      "hasPage": true
@@ -6132,12 +6641,12 @@
     "considered": [
      "Winfred YAVI",
      "Nozomi TANAKA",
+     "Norah Jeruto TANUI",
      "Yuma YAMAMOTO",
      "Parul CHAUDHARY",
      "SEEMA",
      "Yujin KIM",
-     "Daisy JEPKEMEI",
-     "Thi Tuyet LE"
+     "Daisy JEPKEMEI"
     ],
     "withHistory": [
      "Winfred YAVI",
@@ -6156,24 +6665,14 @@
    "sex": "W",
    "places": null,
    "qualified": 14,
-   "scored": 6,
+   "scored": 10,
    "unscored": [
-    "Ruth JEBET",
     "Winfred YAVI",
     "Mariia KOROBITSKAIA",
     "Nomin-erdene BAYARTOGTOKH",
-    "Santoshi SHRESTHA",
-    "Medina KUMANDA",
-    "Vanessa Ying Zhuang LEE",
-    "Thi Oanh NGUYEN"
+    "Medina KUMANDA"
    ],
    "unranked": [
-    {
-     "name": "Ruth JEBET",
-     "nat": "BRN",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14588310"
-    },
     {
      "name": "Winfred YAVI",
      "nat": "BRN",
@@ -6193,93 +6692,129 @@
      "profileUrl": "https://worldathletics.org/athletes/athlete=15144566"
     },
     {
-     "name": "Santoshi SHRESTHA",
-     "nat": "NEP",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14896381"
-    },
-    {
      "name": "Medina KUMANDA",
      "nat": "QAT",
      "reason": "notFound",
      "profileUrl": null
-    },
-    {
-     "name": "Vanessa Ying Zhuang LEE",
-     "nat": "SGP",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14793688"
-    },
-    {
-     "name": "Thi Oanh NGUYEN",
-     "nat": "VIE",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14524770"
     }
    ],
    "athletes": [
     {
      "rank": 1,
-     "name": "Nozomi TANAKA",
-     "nat": "JPN",
-     "qualifiedBy": null,
-     "rankingScore": 1156,
-     "mark": "31:41.22",
-     "podiumChance": null,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14632538",
-     "hasPage": true
-    },
-    {
-     "rank": 2,
-     "name": "SEEMA",
-     "nat": "IND",
-     "qualifiedBy": null,
-     "rankingScore": 1137,
-     "mark": "32:02.43",
-     "podiumChance": null,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14734780",
-     "hasPage": true
-    },
-    {
-     "rank": 3,
      "name": "Daisy JEPKEMEI",
      "nat": "KAZ",
      "qualifiedBy": null,
-     "rankingScore": 1042,
-     "mark": "33:52.33",
+     "rankingScore": 1203,
+     "mark": "30:48.44",
+     "markSeason": 2025,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14530633",
      "hasPage": true
     },
     {
+     "rank": 2,
+     "name": "Nozomi TANAKA",
+     "nat": "JPN",
+     "qualifiedBy": null,
+     "rankingScore": 1198,
+     "mark": "30:54.40",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14632538",
+     "hasPage": true
+    },
+    {
+     "rank": 3,
+     "name": "SEEMA",
+     "nat": "IND",
+     "qualifiedBy": null,
+     "rankingScore": 1137,
+     "mark": "32:02.43",
+     "markSeason": null,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14734780",
+     "hasPage": true
+    },
+    {
      "rank": 4,
+     "name": "Ruth JEBET",
+     "nat": "BRN",
+     "qualifiedBy": null,
+     "rankingScore": 1078,
+     "mark": "33:10.63",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14588310",
+     "hasPage": false
+    },
+    {
+     "rank": 5,
      "name": "Harim JO",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 1012,
      "mark": "34:28.57",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532353",
      "hasPage": true
     },
     {
-     "rank": 5,
+     "rank": 6,
+     "name": "Thi Oanh NGUYEN",
+     "nat": "VIE",
+     "qualifiedBy": null,
+     "rankingScore": 1012,
+     "mark": "34:27.93",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14524770",
+     "hasPage": false
+    },
+    {
+     "rank": 7,
      "name": "Thi Tuyet LE",
      "nat": "VIE",
      "qualifiedBy": null,
-     "rankingScore": 996,
-     "mark": "34:47.53",
+     "rankingScore": 1006,
+     "mark": "34:35.26",
+     "markSeason": 2025,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-tuyet-le-15022817",
      "hasPage": true
     },
     {
-     "rank": 6,
+     "rank": 8,
+     "name": "Santoshi SHRESTHA",
+     "nat": "NEP",
+     "qualifiedBy": null,
+     "rankingScore": 996,
+     "mark": "34:47.77",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14896381",
+     "hasPage": false
+    },
+    {
+     "rank": 9,
+     "name": "Vanessa Ying Zhuang LEE",
+     "nat": "SGP",
+     "qualifiedBy": null,
+     "rankingScore": 896,
+     "mark": "36:51.55",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14793688",
+     "hasPage": false
+    },
+    {
+     "rank": 10,
      "name": "Nicole LOW",
      "nat": "SGP",
      "qualifiedBy": null,
      "rankingScore": 890,
      "mark": "36:59.41",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/singapore/nicole-low-15149222",
      "hasPage": true
@@ -6290,14 +6825,20 @@
    "method": "points",
    "methodEvidence": {
     "considered": [
+     "Daisy JEPKEMEI",
      "Nozomi TANAKA",
      "SEEMA",
-     "Daisy JEPKEMEI",
+     "Ruth JEBET",
      "Harim JO",
+     "Thi Oanh NGUYEN",
      "Thi Tuyet LE",
-     "Nicole LOW"
+     "Santoshi SHRESTHA"
     ],
-    "withHistory": [],
+    "withHistory": [
+     "Daisy JEPKEMEI",
+     "Nozomi TANAKA",
+     "SEEMA"
+    ],
     "needed": 6,
     "of": 8,
     "reason": "history"
@@ -6318,8 +6859,9 @@
      "nat": "BRN",
      "qualifiedBy": null,
      "rankingScore": 1266,
-     "podiumChance": 37.0,
+     "podiumChance": 36.7,
      "mark": "8:51.54",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14695622",
      "hasPage": true
     },
@@ -6331,6 +6873,7 @@
      "rankingScore": 1216,
      "podiumChance": 11.4,
      "mark": "9:10.90",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14479154",
      "hasPage": true
     },
@@ -6342,6 +6885,7 @@
      "rankingScore": 1212,
      "podiumChance": 5.8,
      "mark": "9:12.84",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14497992",
      "hasPage": true
     },
@@ -6353,6 +6897,7 @@
      "rankingScore": 1028,
      "podiumChance": 5.1,
      "mark": "10:28.09",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14429103",
      "hasPage": true
     },
@@ -6362,8 +6907,9 @@
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1139,
-     "podiumChance": 0.4,
+     "podiumChance": 0.3,
      "mark": "9:41.84",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14733877",
      "hasPage": true
     },
@@ -6375,6 +6921,7 @@
      "rankingScore": 1168,
      "podiumChance": 0.3,
      "mark": "9:30.30",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14931241",
      "hasPage": true
     },
@@ -6386,6 +6933,7 @@
      "rankingScore": 1174,
      "podiumChance": 0.3,
      "mark": "9:27.91",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818406",
      "hasPage": true
     },
@@ -6397,6 +6945,7 @@
      "rankingScore": 1054,
      "podiumChance": 0.0,
      "mark": "10:17.30",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532353",
      "hasPage": true
     }
@@ -6428,7 +6977,7 @@
     "needed": 6,
     "of": 8,
     "reason": null,
-    "topChance": 37.0,
+    "topChance": 36.7,
     "floor": 5.0
    }
   },
@@ -6465,6 +7014,7 @@
      "qualifiedBy": null,
      "rankingScore": 1204,
      "mark": "12.60",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14444487",
      "hasPage": true
@@ -6476,6 +7026,7 @@
      "qualifiedBy": null,
      "rankingScore": 1189,
      "mark": "12.72",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14521635",
      "hasPage": true
@@ -6487,6 +7038,7 @@
      "qualifiedBy": null,
      "rankingScore": 1170,
      "mark": "12.85",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734731",
      "hasPage": true
@@ -6498,6 +7050,7 @@
      "qualifiedBy": null,
      "rankingScore": 1158,
      "mark": "12.96",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14902578",
      "hasPage": true
@@ -6509,6 +7062,7 @@
      "qualifiedBy": null,
      "rankingScore": 1155,
      "mark": "12.99",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14585472",
      "hasPage": true
@@ -6520,6 +7074,7 @@
      "qualifiedBy": null,
      "rankingScore": 1154,
      "mark": "13.00",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14702465",
      "hasPage": true
@@ -6531,6 +7086,7 @@
      "qualifiedBy": null,
      "rankingScore": 1120,
      "mark": "13.22",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14841058",
      "hasPage": true
@@ -6542,6 +7098,7 @@
      "qualifiedBy": null,
      "rankingScore": 1117,
      "mark": "13.24",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/bo-an-yi-14976378",
      "hasPage": true
@@ -6553,6 +7110,7 @@
      "qualifiedBy": null,
      "rankingScore": 1083,
      "mark": "13.50",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752939",
      "hasPage": true
@@ -6564,6 +7122,7 @@
      "qualifiedBy": null,
      "rankingScore": 1078,
      "mark": "13.54",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/tsz-yan-lau-15038922",
      "hasPage": true
@@ -6575,6 +7134,7 @@
      "qualifiedBy": null,
      "rankingScore": 1069,
      "mark": "13.61",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/qatar/sara-shams-ali-15210619",
      "hasPage": true
@@ -6586,6 +7146,7 @@
      "qualifiedBy": null,
      "rankingScore": 1066,
      "mark": "13.63",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14898569",
      "hasPage": true
@@ -6597,6 +7158,7 @@
      "qualifiedBy": null,
      "rankingScore": 1015,
      "mark": "14.03",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14524054",
      "hasPage": true
@@ -6645,6 +7207,7 @@
      "qualifiedBy": null,
      "rankingScore": 1215,
      "mark": "53.67",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14419510",
      "hasPage": true
@@ -6656,6 +7219,7 @@
      "qualifiedBy": null,
      "rankingScore": 1164,
      "mark": "55.29",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884045",
      "hasPage": true
@@ -6667,6 +7231,7 @@
      "qualifiedBy": null,
      "rankingScore": 1151,
      "mark": "55.69",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714397",
      "hasPage": true
@@ -6678,6 +7243,7 @@
      "qualifiedBy": null,
      "rankingScore": 1144,
      "mark": "55.92",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855506",
      "hasPage": true
@@ -6689,6 +7255,7 @@
      "qualifiedBy": null,
      "rankingScore": 1139,
      "mark": "56.07",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14776046",
      "hasPage": true
@@ -6700,6 +7267,7 @@
      "qualifiedBy": null,
      "rankingScore": 1135,
      "mark": "56.22",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14444482",
      "hasPage": true
@@ -6711,6 +7279,7 @@
      "qualifiedBy": null,
      "rankingScore": 1133,
      "mark": "56.27",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/united-arab-emirates/mariam-kareem-15122282",
      "hasPage": true
@@ -6722,6 +7291,7 @@
      "qualifiedBy": null,
      "rankingScore": 1125,
      "mark": "56.54",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14436789",
      "hasPage": true
@@ -6733,6 +7303,7 @@
      "qualifiedBy": null,
      "rankingScore": 1116,
      "mark": "56.83",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14649944",
      "hasPage": true
@@ -6744,6 +7315,7 @@
      "qualifiedBy": null,
      "rankingScore": 1112,
      "mark": "56.98",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14483702",
      "hasPage": true
@@ -6755,6 +7327,7 @@
      "qualifiedBy": null,
      "rankingScore": 1099,
      "mark": "57.41",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/hsin-ju-chung-15007045",
      "hasPage": true
@@ -6766,6 +7339,7 @@
      "qualifiedBy": null,
      "rankingScore": 1012,
      "mark": "1:00.31",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-tuyet-mai-le-15042646",
      "hasPage": true
@@ -6777,6 +7351,7 @@
      "qualifiedBy": null,
      "rankingScore": 1000,
      "mark": "1:00.75",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886704",
      "hasPage": true
@@ -6825,6 +7400,7 @@
      "qualifiedBy": null,
      "rankingScore": 1150,
      "mark": "1.93",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/pooja-15053572",
      "hasPage": true
@@ -6836,6 +7412,7 @@
      "qualifiedBy": null,
      "rankingScore": 1140,
      "mark": "1.92",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14805472",
      "hasPage": true
@@ -6847,6 +7424,7 @@
      "qualifiedBy": null,
      "rankingScore": 1121,
      "mark": "1.90",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/ruoxuan-jin-15138392",
      "hasPage": true
@@ -6858,6 +7436,7 @@
      "qualifiedBy": null,
      "rankingScore": 1111,
      "mark": "1.89",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14924216",
      "hasPage": true
@@ -6869,6 +7448,7 @@
      "qualifiedBy": null,
      "rankingScore": 1101,
      "mark": "1.88",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14824486",
      "hasPage": true
@@ -6880,6 +7460,7 @@
      "qualifiedBy": null,
      "rankingScore": 1101,
      "mark": "1.88",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915946",
      "hasPage": true
@@ -6891,6 +7472,7 @@
      "qualifiedBy": null,
      "rankingScore": 1091,
      "mark": "1.87",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646807",
      "hasPage": true
@@ -6902,6 +7484,7 @@
      "qualifiedBy": null,
      "rankingScore": 1082,
      "mark": "1.86",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14671352",
      "hasPage": true
@@ -6913,6 +7496,7 @@
      "qualifiedBy": null,
      "rankingScore": 1082,
      "mark": "1.86",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14803138",
      "hasPage": true
@@ -6924,6 +7508,7 @@
      "qualifiedBy": null,
      "rankingScore": 1052,
      "mark": "1.83",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14857377",
      "hasPage": true
@@ -6935,6 +7520,7 @@
      "qualifiedBy": null,
      "rankingScore": 1023,
      "mark": "1.80",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14831029",
      "hasPage": true
@@ -6946,6 +7532,7 @@
      "qualifiedBy": null,
      "rankingScore": 1023,
      "mark": "1.80",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818363",
      "hasPage": true
@@ -6957,6 +7544,7 @@
      "qualifiedBy": null,
      "rankingScore": 1004,
      "mark": "1.78",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14746863",
      "hasPage": true
@@ -6968,6 +7556,7 @@
      "qualifiedBy": null,
      "rankingScore": 974,
      "mark": "1.75",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-thao-duong-15044838",
      "hasPage": true
@@ -6979,6 +7568,7 @@
      "qualifiedBy": null,
      "rankingScore": 965,
      "mark": "1.74",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884243",
      "hasPage": true
@@ -7016,18 +7606,9 @@
    "sex": "W",
    "places": null,
    "qualified": 10,
-   "scored": 9,
-   "unscored": [
-    "Noreen HUSSAIN"
-   ],
-   "unranked": [
-    {
-     "name": "Noreen HUSSAIN",
-     "nat": "PAK",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15124709"
-    }
-   ],
+   "scored": 10,
+   "unscored": [],
+   "unranked": [],
    "athletes": [
     {
      "rank": 1,
@@ -7036,6 +7617,7 @@
      "qualifiedBy": null,
      "rankingScore": 1186,
      "mark": "4.73",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14744719",
      "hasPage": true
@@ -7047,6 +7629,7 @@
      "qualifiedBy": null,
      "rankingScore": 1114,
      "mark": "4.50",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646808",
      "hasPage": true
@@ -7058,6 +7641,7 @@
      "qualifiedBy": null,
      "rankingScore": 1068,
      "mark": "4.35",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14821406",
      "hasPage": true
@@ -7069,6 +7653,7 @@
      "qualifiedBy": null,
      "rankingScore": 1037,
      "mark": "4.25",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/g-sindhushree-15023846",
      "hasPage": true
@@ -7080,6 +7665,7 @@
      "qualifiedBy": null,
      "rankingScore": 1037,
      "mark": "4.25",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915517",
      "hasPage": true
@@ -7091,6 +7677,7 @@
      "qualifiedBy": null,
      "rankingScore": 1031,
      "mark": "4.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14859017",
      "hasPage": true
@@ -7102,6 +7689,7 @@
      "qualifiedBy": null,
      "rankingScore": 1021,
      "mark": "4.20",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14791683",
      "hasPage": true
@@ -7113,6 +7701,7 @@
      "qualifiedBy": null,
      "rankingScore": 990,
      "mark": "4.10",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/kazakhstan/anna-cherkashina-15038089",
      "hasPage": true
@@ -7124,9 +7713,22 @@
      "qualifiedBy": null,
      "rankingScore": 960,
      "mark": "4.00",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14670904",
      "hasPage": true
+    },
+    {
+     "rank": 10,
+     "name": "Noreen HUSSAIN",
+     "nat": "PAK",
+     "qualifiedBy": null,
+     "rankingScore": 923,
+     "mark": "3.88",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15124709",
+     "hasPage": false
     }
    ],
    "notEntered": [],
@@ -7158,18 +7760,9 @@
    "sex": "W",
    "places": null,
    "qualified": 19,
-   "scored": 18,
-   "unscored": [
-    "Maria Natalia LONDA"
-   ],
-   "unranked": [
-    {
-     "name": "Maria Natalia LONDA",
-     "nat": "INA",
-     "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14282715"
-    }
-   ],
+   "scored": 19,
+   "unscored": [],
+   "unranked": [],
    "athletes": [
     {
      "rank": 1,
@@ -7178,6 +7771,7 @@
      "qualifiedBy": null,
      "rankingScore": 1191,
      "mark": "6.88",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14791355",
      "hasPage": true
@@ -7189,6 +7783,7 @@
      "qualifiedBy": null,
      "rankingScore": 1165,
      "mark": "6.76",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yingying-huang-14980007",
      "hasPage": true
@@ -7200,6 +7795,7 @@
      "qualifiedBy": null,
      "rankingScore": 1145,
      "mark": "6.67",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14862020",
      "hasPage": true
@@ -7211,6 +7807,7 @@
      "qualifiedBy": null,
      "rankingScore": 1136,
      "mark": "6.63",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14857849",
      "hasPage": true
@@ -7222,6 +7819,7 @@
      "qualifiedBy": null,
      "rankingScore": 1101,
      "mark": "6.47",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14760113",
      "hasPage": true
@@ -7233,6 +7831,7 @@
      "qualifiedBy": null,
      "rankingScore": 1095,
      "mark": "6.44",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14753584",
      "hasPage": true
@@ -7244,6 +7843,7 @@
      "qualifiedBy": null,
      "rankingScore": 1079,
      "mark": "6.37",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14803146",
      "hasPage": true
@@ -7255,116 +7855,139 @@
      "qualifiedBy": null,
      "rankingScore": 1068,
      "mark": "6.32",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/madushani-herath-15157596",
      "hasPage": true
     },
     {
      "rank": 9,
+     "name": "Maria Natalia LONDA",
+     "nat": "INA",
+     "qualifiedBy": null,
+     "rankingScore": 1057,
+     "mark": "6.27",
+     "markSeason": 2025,
+     "podiumChance": null,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14282715",
+     "hasPage": false
+    },
+    {
+     "rank": 10,
      "name": "Tran THI LOAN",
      "nat": "VIE",
      "qualifiedBy": null,
      "rankingScore": 1052,
      "mark": "6.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751083",
      "hasPage": true
     },
     {
-     "rank": 10,
+     "rank": 11,
      "name": "Ha Thi Thuy HANG",
      "nat": "VIE",
      "qualifiedBy": null,
      "rankingScore": 1027,
      "mark": "6.10",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/ha-thi-thuy-hang-15049249",
      "hasPage": true
     },
     {
-     "rank": 11,
+     "rank": 12,
      "name": "Anastassiya RYPAKOVA",
      "nat": "KAZ",
      "qualifiedBy": null,
      "rankingScore": 1023,
      "mark": "6.11",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14927297",
      "hasPage": true
     },
     {
-     "rank": 12,
+     "rank": 13,
      "name": "Wai Yin JIA",
      "nat": "HKG",
      "qualifiedBy": null,
      "rankingScore": 1018,
      "mark": "6.09",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/wai-yin-jia-15038923",
      "hasPage": true
     },
     {
-     "rank": 13,
+     "rank": 14,
      "name": "Tia Louise ROZARIO",
      "nat": "SGP",
      "qualifiedBy": null,
      "rankingScore": 1016,
      "mark": "6.08",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751082",
      "hasPage": true
     },
     {
-     "rank": 14,
+     "rank": 15,
      "name": "Tiffany YUE",
      "nat": "HKG",
      "qualifiedBy": null,
      "rankingScore": 965,
      "mark": "5.84",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/tiffany-yue-14651401",
      "hasPage": true
     },
     {
-     "rank": 15,
+     "rank": 16,
      "name": "Sharifa DAVRONOVA",
      "nat": "UZB",
      "qualifiedBy": null,
      "rankingScore": 964,
      "mark": "5.84",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14956284",
      "hasPage": true
     },
     {
-     "rank": 16,
+     "rank": 17,
      "name": "Mazoon AL-ALAOUI",
      "nat": "OMA",
      "qualifiedBy": null,
      "rankingScore": 938,
      "mark": "5.72",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14594402",
      "hasPage": true
     },
     {
-     "rank": 17,
+     "rank": 18,
      "name": "Enkhbat OYUNDARI",
      "nat": "MGL",
      "qualifiedBy": null,
      "rankingScore": 916,
      "mark": "5.62",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14916030",
      "hasPage": true
     },
     {
-     "rank": 18,
+     "rank": 19,
      "name": "Most Swapna KHATUN",
      "nat": "BAN",
      "qualifiedBy": null,
      "rankingScore": 875,
      "mark": "5.43",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15264910",
      "hasPage": true
@@ -7417,6 +8040,7 @@
      "qualifiedBy": null,
      "rankingScore": 1142,
      "mark": "14.24",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14956284",
      "hasPage": true
@@ -7428,6 +8052,7 @@
      "qualifiedBy": null,
      "rankingScore": 1134,
      "mark": "14.16",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yi-li-15052012",
      "hasPage": true
@@ -7439,6 +8064,7 @@
      "qualifiedBy": null,
      "rankingScore": 1133,
      "mark": "14.12",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yingying-huang-14980007",
      "hasPage": true
@@ -7450,6 +8076,7 @@
      "qualifiedBy": null,
      "rankingScore": 1107,
      "mark": "13.89",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14776087",
      "hasPage": true
@@ -7461,6 +8088,7 @@
      "qualifiedBy": null,
      "rankingScore": 1100,
      "mark": "13.83",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646811",
      "hasPage": true
@@ -7472,6 +8100,7 @@
      "qualifiedBy": null,
      "rankingScore": 1086,
      "mark": "13.69",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855859",
      "hasPage": true
@@ -7483,6 +8112,7 @@
      "qualifiedBy": null,
      "rankingScore": 1085,
      "mark": "13.68",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/madushani-herath-15157596",
      "hasPage": true
@@ -7494,6 +8124,7 @@
      "qualifiedBy": null,
      "rankingScore": 1081,
      "mark": "13.64",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14717127",
      "hasPage": true
@@ -7505,6 +8136,7 @@
      "qualifiedBy": null,
      "rankingScore": 1071,
      "mark": "13.55",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14794031",
      "hasPage": true
@@ -7516,6 +8148,7 @@
      "qualifiedBy": null,
      "rankingScore": 1062,
      "mark": "13.46",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843083",
      "hasPage": true
@@ -7527,6 +8160,7 @@
      "qualifiedBy": null,
      "rankingScore": 1037,
      "mark": "13.21",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751082",
      "hasPage": true
@@ -7538,6 +8172,7 @@
      "qualifiedBy": null,
      "rankingScore": 1034,
      "mark": "13.18",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14816367",
      "hasPage": true
@@ -7549,6 +8184,7 @@
      "qualifiedBy": null,
      "rankingScore": 1021,
      "mark": "13.05",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14603339",
      "hasPage": true
@@ -7560,6 +8196,7 @@
      "qualifiedBy": null,
      "rankingScore": 1009,
      "mark": "12.94",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14282715",
      "hasPage": true
@@ -7571,6 +8208,7 @@
      "qualifiedBy": null,
      "rankingScore": 972,
      "mark": "12.57",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14916030",
      "hasPage": true
@@ -7617,8 +8255,9 @@
      "nat": "CHN",
      "qualifiedBy": null,
      "rankingScore": 1184,
-     "podiumChance": 12.7,
+     "podiumChance": 12.9,
      "mark": "19.63",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14745178",
      "hasPage": true
     },
@@ -7630,6 +8269,7 @@
      "rankingScore": 1138,
      "podiumChance": 9.3,
      "mark": "18.89",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14668306",
      "hasPage": true
     },
@@ -7639,8 +8279,9 @@
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1067,
-     "podiumChance": 4.6,
+     "podiumChance": 4.8,
      "mark": "17.75",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14282904",
      "hasPage": true
     },
@@ -7650,8 +8291,9 @@
      "nat": "TPE",
      "qualifiedBy": null,
      "rankingScore": 1044,
-     "podiumChance": 2.3,
+     "podiumChance": 2.2,
      "mark": "17.39",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/ching-yuan-chiang-15020007",
      "hasPage": true
     },
@@ -7663,6 +8305,7 @@
      "rankingScore": 1042,
      "podiumChance": 1.1,
      "mark": "17.35",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14921114",
      "hasPage": true
     },
@@ -7674,6 +8317,7 @@
      "rankingScore": 990,
      "podiumChance": 0.9,
      "mark": "16.51",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14594949",
      "hasPage": true
     },
@@ -7685,6 +8329,7 @@
      "rankingScore": 914,
      "podiumChance": 0.8,
      "mark": "15.29",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14594947",
      "hasPage": true
     },
@@ -7696,6 +8341,7 @@
      "rankingScore": 991,
      "podiumChance": 0.5,
      "mark": "16.54",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14866217",
      "hasPage": true
     },
@@ -7707,6 +8353,7 @@
      "rankingScore": 885,
      "podiumChance": 0.0,
      "mark": "14.83",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14788483",
      "hasPage": true
     }
@@ -7737,7 +8384,7 @@
     "needed": 6,
     "of": 8,
     "reason": null,
-    "topChance": 12.7,
+    "topChance": 12.9,
     "floor": 5.0
    }
   },
@@ -7758,6 +8405,7 @@
      "qualifiedBy": null,
      "rankingScore": 1209,
      "mark": "67.46",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14430151",
      "hasPage": true
@@ -7769,6 +8417,7 @@
      "qualifiedBy": null,
      "rankingScore": 1105,
      "mark": "61.85",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/zhichao-jiang-15035642",
      "hasPage": true
@@ -7780,6 +8429,7 @@
      "qualifiedBy": null,
      "rankingScore": 1066,
      "mark": "59.73",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734752",
      "hasPage": true
@@ -7791,6 +8441,7 @@
      "qualifiedBy": null,
      "rankingScore": 1057,
      "mark": "59.23",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14649145",
      "hasPage": true
@@ -7802,6 +8453,7 @@
      "qualifiedBy": null,
      "rankingScore": 1041,
      "mark": "58.33",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14424032",
      "hasPage": true
@@ -7813,6 +8465,7 @@
      "qualifiedBy": null,
      "rankingScore": 1022,
      "mark": "57.34",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14431117",
      "hasPage": true
@@ -7824,6 +8477,7 @@
      "qualifiedBy": null,
      "rankingScore": 999,
      "mark": "56.05",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14873527",
      "hasPage": true
@@ -7835,6 +8489,7 @@
      "qualifiedBy": null,
      "rankingScore": 998,
      "mark": "56.04",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14857350",
      "hasPage": true
@@ -7883,6 +8538,7 @@
      "qualifiedBy": null,
      "rankingScore": 1233,
      "mark": "78.64",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/jiale-zhang-15034977",
      "hasPage": true
@@ -7894,6 +8550,7 @@
      "qualifiedBy": null,
      "rankingScore": 1226,
      "mark": "78.22",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14889043",
      "hasPage": true
@@ -7905,6 +8562,7 @@
      "qualifiedBy": null,
      "rankingScore": 1074,
      "mark": "68.83",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915550",
      "hasPage": true
@@ -7916,6 +8574,7 @@
      "qualifiedBy": null,
      "rankingScore": 1067,
      "mark": "68.35",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/tanya-chaudhary-14971011",
      "hasPage": true
@@ -7927,6 +8586,7 @@
      "qualifiedBy": null,
      "rankingScore": 1057,
      "mark": "67.76",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751695",
      "hasPage": true
@@ -7938,6 +8598,7 @@
      "qualifiedBy": null,
      "rankingScore": 1047,
      "mark": "67.16",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14791200",
      "hasPage": true
@@ -7949,6 +8610,7 @@
      "qualifiedBy": null,
      "rankingScore": 1045,
      "mark": "67.02",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/india/anushka-yadav-15139315",
      "hasPage": true
@@ -7960,6 +8622,7 @@
      "qualifiedBy": null,
      "rankingScore": 998,
      "mark": "64.10",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/korea/taehui-kim-15029890",
      "hasPage": true
@@ -7971,6 +8634,7 @@
      "qualifiedBy": null,
      "rankingScore": 967,
      "mark": "62.19",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14762416",
      "hasPage": true
@@ -7982,6 +8646,7 @@
      "qualifiedBy": null,
      "rankingScore": 964,
      "mark": "61.98",
+     "markSeason": null,
      "podiumChance": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14584681",
      "hasPage": true
@@ -8001,7 +8666,12 @@
      "Anushka YADAV",
      "Taehui KIM"
     ],
-    "withHistory": [],
+    "withHistory": [
+     "Jiale ZHANG",
+     "Jie ZHAO",
+     "Joy MCARTHUR",
+     "Ya-Chien YU"
+    ],
     "needed": 6,
     "of": 8,
     "reason": "history"
@@ -8022,8 +8692,9 @@
      "nat": "CHN",
      "qualifiedBy": null,
      "rankingScore": 1296,
-     "podiumChance": 31.0,
+     "podiumChance": 30.8,
      "mark": "71.74",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/ziyi-yan-15144603",
      "hasPage": true
     },
@@ -8035,6 +8706,7 @@
      "rankingScore": 1244,
      "podiumChance": 29.3,
      "mark": "68.92",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14649131",
      "hasPage": true
     },
@@ -8046,6 +8718,7 @@
      "rankingScore": 1123,
      "podiumChance": 6.9,
      "mark": "62.42",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14748837",
      "hasPage": true
     },
@@ -8055,8 +8728,9 @@
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1032,
-     "podiumChance": 3.9,
+     "podiumChance": 3.8,
      "mark": "57.50",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14422692",
      "hasPage": true
     },
@@ -8068,6 +8742,7 @@
      "rankingScore": 1110,
      "podiumChance": 1.6,
      "mark": "61.74",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14766655",
      "hasPage": true
     },
@@ -8079,6 +8754,7 @@
      "rankingScore": 1068,
      "podiumChance": 1.3,
      "mark": "59.46",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14300521",
      "hasPage": true
     },
@@ -8090,6 +8766,7 @@
      "rankingScore": 1002,
      "podiumChance": 0.0,
      "mark": "55.89",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14747646",
      "hasPage": true
     },
@@ -8101,6 +8778,7 @@
      "rankingScore": 1035,
      "podiumChance": 0.0,
      "mark": "57.66",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14705959",
      "hasPage": true
     },
@@ -8112,6 +8790,7 @@
      "rankingScore": 1028,
      "podiumChance": 0.0,
      "mark": "57.31",
+     "markSeason": null,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/pin-hsun-chu-14954193",
      "hasPage": true
     }
@@ -8143,7 +8822,7 @@
     "needed": 6,
     "of": 8,
     "reason": null,
-    "topChance": 31.0,
+    "topChance": 30.8,
     "floor": 5.0
    }
   }
