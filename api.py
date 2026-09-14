@@ -1216,7 +1216,10 @@ def load_event_prefinal(champ_id):
         for a in event.get("athletes") or []:
             idx.setdefault(key, {})[normalize_athlete_name(a.get("name"))] = {
                 "rank": a.get("rank"),
-                "prob": int(round(float(a.get("podiumChance") or 0))),
+                # None for an event called on points, which states an order and
+                # no chance. Reading it as 0 would show every athlete at 0%.
+                "prob": (int(round(float(a["podiumChance"])))
+                         if a.get("podiumChance") is not None else None),
                 "name": a.get("name"),
                 # The projection carries no profile URL, so the comparison
                 # resolves one from the toplist and falls back to a WA search.
@@ -1277,10 +1280,16 @@ def build_championships():
             comps = build_result_comparisons(results=results, prefinal=prefinal)
             labels = {e.get("discKey"): e.get("disciplineLabel")
                       for e in ((load_event_predictions(champ["id"]) or {}).get("projections") or [])}
+            # How each event was called, read from the frozen call itself. Only
+            # the Asian Games records one; every earlier call was the model's.
+            frozen = _load_json(championship_file(champ["id"], "predictions_prefinal.json")) or {}
+            methods = {e.get("discKey"): e.get("method") or "model"
+                       for e in frozen.get("projections") or []}
             for key, comp in comps.items():
                 events.append({
                     "id": key,
                     "label": labels.get(key) or DISC_LABELS.get(key, key),
+                    "method": methods.get(key, "model"),
                     "result": comp,
                 })
             events.sort(key=lambda e: e["label"])
@@ -3352,10 +3361,30 @@ def championship_payload(champ_id):
     champ = championships.get(champ_id)
     preds = load_event_predictions(champ_id)
     data = dict(data)
-    data["championship"] = {key: champ[key] for key in
-                            ("id", "labelKey", "venue", "startDate", "endDate", "theme")}
+    data["championship"] = {key: champ.get(key) for key in
+                            ("id", "labelKey", "navKey", "venue", "startDate", "endDate", "theme")}
     data["projections"] = attach_ultimate_injuries((preds or {}).get("projections") or [])
+    # The Asian Games call records its rule and the events it could not call;
+    # the Ultimate's predates both, so they are simply absent for it.
+    for key in ("rule", "notCalled"):
+        if (preds or {}).get(key) is not None:
+            data[key] = preds[key]
     return data
+
+
+def championship_summary(champ_id):
+    """The championship's name, place, dates and theme, without its field, its
+    call or its results. The nav tab, the landing countdown, the dashboard band
+    and the schedule marquee need only these, and the full payload runs to
+    hundreds of kilobytes. None before its scraper has run."""
+    event = load_event(champ_id)
+    if event is None:
+        return None
+    champ = championships.get(champ_id)
+    out = {key: champ.get(key) for key in ("id", "labelKey", "navKey", "startDate", "endDate", "theme")}
+    # From the event file, so `venue` is the stadium, as it is in the full payload.
+    out.update({key: event.get(key) for key in ("name", "shortName", "venue", "city", "country", "eventCount")})
+    return out
 
 
 @app.route("/api/championship")
@@ -3363,6 +3392,15 @@ def championship():
     """Whichever championship is current (championships.CURRENT)."""
     champ = championships.current()
     data = championship_payload(champ["id"])
+    if data is None:
+        return jsonify({"error": f"{champ['id']} event data not found — run its scraper first"}), 404
+    return jsonify(data)
+
+
+@app.route("/api/championship/summary")
+def championship_summary_route():
+    champ = championships.current()
+    data = championship_summary(champ["id"])
     if data is None:
         return jsonify({"error": f"{champ['id']} event data not found — run its scraper first"}), 404
     return jsonify(data)

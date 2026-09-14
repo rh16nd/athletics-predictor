@@ -153,8 +153,15 @@ def seconds_to_time(seconds, discipline):
         return f"{seconds:.2f}"
 
 
-def build_2026_features(key):
-    path = os.path.join(RAW_DIR, f"{key}_2026.csv")
+def build_2026_features(key, snapshot_path=None):
+    """Model features for everyone in a discipline's 2026 toplist snapshot.
+
+    `snapshot_path` swaps in a different snapshot and nothing else: history and
+    the per-meeting log are still read from RAW_DIR. The Asian Games passes a
+    merged snapshot (the world list plus the Asian entrants it lacks) so an
+    athlete outside the world top 100 is still ranked on the world scale the
+    model was trained on, not as the number one of a short Asian list."""
+    path = snapshot_path or os.path.join(RAW_DIR, f"{key}_2026.csv")
     if not os.path.exists(path):
         return pd.DataFrame()
 

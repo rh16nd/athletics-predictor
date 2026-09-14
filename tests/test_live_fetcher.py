@@ -141,3 +141,52 @@ def test_truncating_by_row_order_would_keep_the_wrong_athlete():
     by_rank = [r["name"] for r in sorted(rows, key=lambda r: r["rank"])][:3]
     assert "Robert FARKEN" in by_row and "Azeddine HABZ" not in by_row
     assert by_rank == ["Yared NUGUSE", "Azeddine HABZ", "Josh KERR"]
+
+
+# ---- toplist pages: paging a URL that already has a query string ----
+
+WORLD_URL = "https://worldathletics.org/records/toplists/sprints/100-metres/outdoor/men/senior/2026"
+ASIA_URL = WORLD_URL + "?regionType=area&region=asia"
+
+
+def test_page_one_is_the_url_itself():
+    assert lf.toplist_page_url(WORLD_URL, 1) == WORLD_URL
+    assert lf.toplist_page_url(ASIA_URL, 1) == ASIA_URL
+
+
+def test_later_pages_of_a_world_list_start_the_query_string():
+    assert lf.toplist_page_url(WORLD_URL, 2) == WORLD_URL + "?page=2"
+
+
+def test_later_pages_of_an_area_list_extend_its_query_string():
+    """Checked against the live site on 2026-09-14: "...region=asia&page=2" is
+    the Asian list's second hundred, while the old "...region=asia?page=2" is
+    served as a page with no table, so paging silently stopped at 100."""
+    assert lf.toplist_page_url(ASIA_URL, 2) == ASIA_URL + "&page=2"
+
+
+TOPLIST_HTML = """
+<table>
+  <tr><th>Rank</th><th>Mark</th><th>WIND</th><th>Competitor</th><th>DOB</th><th></th>
+      <th>Pos</th><th></th><th>Venue</th><th>Date</th><th>Results Score</th></tr>
+  <tr><td>1</td><td>9.99</td><td>+1.4</td><td><a href="/athletes/athlete=1">Alpha SPEEDY</a></td>
+      <td>13 JAN 2006</td><td>THA</td><td>f1</td><td></td><td>Litomysl (CZE)</td>
+      <td>01 AUG 2026</td><td>1210</td></tr>
+  <tr><td>2</td><td>10.00</td><td>+0.2</td><td>Beta NOLINK</td>
+      <td>01 JAN 2000</td><td>JPN</td><td>1</td><td></td><td>Tokyo (JPN)</td>
+      <td>10 MAY 2026</td><td>1200</td></tr>
+</table>
+"""
+
+
+def test_parses_a_toplist_page_and_its_profile_links():
+    headers, rows, urls = lf.parse_toplist_html(TOPLIST_HTML)
+    # Nationality sits under a blank header, and everything downstream reads it
+    # by position, so the blank has to survive.
+    assert headers[3] == "Competitor" and headers[5] == ""
+    assert rows[0][3] == "Alpha SPEEDY" and rows[0][5] == "THA"
+    assert urls == ["https://worldathletics.org/athletes/athlete=1", None]
+
+
+def test_a_page_without_a_table_reads_as_empty():
+    assert lf.parse_toplist_html("<html><body>No results</body></html>") == (None, [], [])

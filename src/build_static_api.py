@@ -75,6 +75,7 @@ def snapshot_paths():
         ("/api/results", "results.json"),
         ("/api/stats", "stats.json"),
         ("/api/championship", "championship.json"),
+        ("/api/championship/summary", "championship-summary.json"),
         ("/api/ultimate", "ultimate.json"),
         ("/api/world-rankings", "world-rankings.json"),
         ("/api/news", "news.json"),

@@ -72,17 +72,20 @@ def _key(name):
     return str(name).upper().strip()
 
 
-def project_event(event, model, scaler, feature_cols):
+def project_event(event, model, scaler, feature_cols, snapshot_path=None):
     """One event's projected podium, or None when it cannot be scored honestly.
 
     Returns the whole qualified field ranked, not just three: the podium is
     what the site leads with, but a reader looking at a 16-strong championship
-    field wants to see where everyone else landed."""
+    field wants to see where everyone else landed.
+
+    `snapshot_path` scores the field from another toplist snapshot. The Asian
+    Games passes its merged one: the world list plus the entrants it lacks."""
     key = event.get("discKey")
     if not key:
         return None
 
-    df = build_2026_features(key)
+    df = build_2026_features(key, snapshot_path=snapshot_path)
     if df.empty:
         return None
 

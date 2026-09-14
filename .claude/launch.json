@@ -11,6 +11,16 @@
       "autoPort": false
     },
     {
+      "name": "predictor-api-next-championship",
+      "runtimeExecutable": "cmd.exe",
+      "runtimeArgs": [
+        "/c",
+        "set PODIUMCALL_CHAMPIONSHIP=asian-games-2026&& C:\\Users\\rayen\\athletics-predictor\\venv\\Scripts\\python.exe C:\\Users\\rayen\\athletics-predictor\\api.py"
+      ],
+      "port": 5000,
+      "autoPort": false
+    },
+    {
       "name": "track-insights-dev",
       "runtimeExecutable": "npm",
       "runtimeArgs": [

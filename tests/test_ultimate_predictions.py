@@ -75,7 +75,7 @@ def test_qualified_athletes_with_no_mark_are_named_not_dropped(monkeypatch):
         ],
     }
     monkeypatch.setattr(up, "build_2026_features",
-                        lambda k: pd.DataFrame({"athlete_name": ["Has A Mark"], "x": [1.0]}))
+                        lambda k, snapshot_path=None: pd.DataFrame({"athlete_name": ["Has A Mark"], "x": [1.0]}))
     monkeypatch.setattr(up, "add_h2h", lambda df, k: df.assign(h2h_win_rate=0.5))
 
     import numpy as np

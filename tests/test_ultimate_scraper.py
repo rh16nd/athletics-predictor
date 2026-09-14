@@ -292,6 +292,24 @@ def test_with_no_entry_list_the_fuller_race_wins():
     assert us.pick_final([thin, full], set()) is full
 
 
+def test_results_are_fetched_for_the_competition_asked_for(monkeypatch):
+    """The Asian Games reuses this walk with its own World Athletics id. Without
+    the parameter it would quietly fetch the Ultimate's results a second time."""
+    seen = []
+
+    def fake_graphql(op, variables, query):
+        seen.append(variables["competitionId"])
+        return {"getCalendarCompetitionResults": {"options": {"days": []}, "eventTitles": []}}
+
+    monkeypatch.setattr(us.dlr, "graphql", fake_graphql)
+    assert us.fetch_results(competition_id=7176091) == []
+    assert seen and set(seen) == {7176091}
+
+    seen.clear()
+    us.fetch_results()
+    assert set(seen) == {us.COMPETITION_ID}
+
+
 def test_a_build_that_lost_published_data_is_not_saved():
     """The September 2026 host change in miniature: every fetch failed, each one
     returned empty as if nothing were published, and the build was about to be

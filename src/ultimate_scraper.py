@@ -180,19 +180,21 @@ def pick_final(races, entrants):
     return best
 
 
-def fetch_results(field=None):
+def fetch_results(field=None, competition_id=None):
     """Final results per contested event, or [] until the meeting runs. Reuses
     the DL Final scraper's exact per-day/per-event walk (getCalendarCompetitionResults),
     with the Mile counted as the 1500m the same way a championship Final needs.
 
     `field` is fetch_qualified_field()'s output, used only to choose between
-    several races that all call themselves the Final -- see pick_final."""
+    several races that all call themselves the Final -- see pick_final.
+    `competition_id` defaults to the Ultimate's; the Asian Games passes its own."""
     rows = []
     entrants = entrants_by_key(field)
+    competition_id = competition_id or COMPETITION_ID
     try:
         day_data = dlr.graphql(
             "getCalendarCompetitionResults",
-            {"competitionId": COMPETITION_ID, "day": None, "eventId": None},
+            {"competitionId": competition_id, "day": None, "eventId": None},
             dlr.RESULTS_QUERY,
         )["getCalendarCompetitionResults"]
         days = [d["day"] for d in day_data["options"]["days"]] or [None]
@@ -203,7 +205,7 @@ def fetch_results(field=None):
         for day in days:
             data = dlr.graphql(
                 "getCalendarCompetitionResults",
-                {"competitionId": COMPETITION_ID, "day": day, "eventId": None},
+                {"competitionId": competition_id, "day": day, "eventId": None},
                 dlr.RESULTS_QUERY,
             )["getCalendarCompetitionResults"]
             for group in data["eventTitles"]:

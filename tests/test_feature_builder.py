@@ -27,6 +27,7 @@ discipline that file doesn't exist for yet.
 import os
 from datetime import date
 
+import pandas as pd
 import pytest
 
 import feature_builder as fb
@@ -38,6 +39,41 @@ FIXTURES_DIR = os.path.join(os.path.dirname(__file__), "fixtures", "raw2026")
 def fixture_raw_dir(monkeypatch):
     monkeypatch.setattr(fb, "RAW_DIR", FIXTURES_DIR)
     return fb
+
+
+# ---- snapshot_path: a championship's merged snapshot ----
+
+# What an athlete's own record says. None of it depends on who else is in the
+# snapshot, so appending athletes must leave all of it exactly where it was.
+OWN_RECORD = ["season_best", "meets_count", "age", "consistency", "career_best", "pb_gap",
+              "yoy_improvement", "recent_trend", "days_since_last", "gap_variability",
+              "sb_age_days", "weighted_season_best", "wind_adj_season_best"]
+
+
+def test_a_merged_snapshot_adds_athletes_without_rewriting_anyone_elses_record(fixture_raw_dir, tmp_path):
+    """The Asian Games scores its field from the world toplist plus the Asian
+    entrants it lacks. The added athlete must appear, and the world athletes'
+    own records must not move. Rank must not move either, since the addition is
+    slower than both. season_percentile and field_gap are measured against the
+    whole snapshot, so a bigger snapshot moves them; they are left out on purpose."""
+    with open(os.path.join(FIXTURES_DIR, "men_100m_2026.csv"), encoding="utf-8") as f:
+        world_csv = f.read()
+    merged = tmp_path / "men_100m_2026.csv"
+    merged.write_text(
+        world_csv.rstrip("\n") + "\n"
+        + '3,10.30,+0.1,Gamma ASIAN,03 Mar 2001,"Test Stadium, Nagoya (JPN)",01 Jan 2026,men_100m,2026\n',
+        encoding="utf-8")
+
+    world = fb.build_2026_features("men_100m").set_index("athlete_name")
+    both = fb.build_2026_features("men_100m", snapshot_path=str(merged)).set_index("athlete_name")
+
+    assert "Gamma ASIAN" in both.index and "Gamma ASIAN" not in world.index
+    pd.testing.assert_frame_equal(both.loc[world.index, OWN_RECORD], world[OWN_RECORD], check_dtype=False)
+    assert (both.loc[world.index, "season_rank"] == world["season_rank"]).all()
+
+
+def test_the_default_snapshot_is_still_the_world_toplist(fixture_raw_dir):
+    assert sorted(fb.build_2026_features("men_100m")["athlete_name"]) == ["Alpha SPEEDY", "Beta NOMEETINGS"]
 
 
 # ---- get_qual_limit ----

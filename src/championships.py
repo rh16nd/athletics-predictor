@@ -41,6 +41,8 @@ CHAMPIONSHIPS = [
     {
         "id": "ultimate-2026",
         "labelKey": "results.meet.ultimate",
+        # The nav tab's label while this championship is current.
+        "navKey": "nav.ultimate",
         "venue": "Budapest",
         "startDate": "2026-09-11",
         "endDate": "2026-09-13",
@@ -49,12 +51,15 @@ CHAMPIONSHIPS = [
         "area": None,
         "dataDir": os.path.join("data", "ultimate"),
         "scraper": os.path.join("src", "ultimate_scraper.py"),
+        # How news headlines name it, for the injury checker.
+        "newsTerms": ["ultimate championship", "ultimate championships"],
     },
     {
         # World Athletics calendar, checked 2026-09-14: "20th Asian Games",
         # category A (Area Senior Games), Mizuho Stadium, Nagoya.
         "id": "asian-games-2026",
         "labelKey": "results.meet.asianGames",
+        "navKey": "nav.asianGames",
         "venue": "Nagoya",
         "startDate": "2026-09-23",
         "endDate": "2026-09-29",
@@ -62,14 +67,22 @@ CHAMPIONSHIPS = [
         "competitionId": 7176091,
         "area": "Asia",
         "dataDir": os.path.join("data", "asian_games_2026"),
-        "scraper": None,
+        "scraper": os.path.join("src", "asian_games_scraper.py"),
+        # The refresh button adds results to the saved field rather than
+        # re-reading the entry list and 32 toplists on every press.
+        "scraperArgs": ["--results-only"],
+        "newsTerms": ["asian games", "aichi-nagoya", "aichi nagoya"],
     },
 ]
 
 # The Ultimate stays current until the Asian Games has a field and a call to
 # show. Flipping this is what moves the championship page, the refresh button
 # and the freeze script on to the next competition.
-CURRENT = "ultimate-2026"
+#
+# PODIUMCALL_CHAMPIONSHIP overrides it for one process, to look at the next
+# championship locally (python api.py) without moving the live site on to it.
+# validate() still requires a registered id.
+CURRENT = os.environ.get("PODIUMCALL_CHAMPIONSHIP") or "ultimate-2026"
 
 
 def get(champ_id):

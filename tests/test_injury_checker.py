@@ -12,6 +12,8 @@ of the headline "Jakob Ingebrigtsen Is Back. His First Big 1500m Test: Cole
 Hocker" -- "back" matched as a body part, and the article was about someone
 else.
 """
+import pytest
+
 import injury_checker as ic
 
 REAL_FALSE_POSITIVE = (
@@ -112,8 +114,8 @@ def _write(tmp_path, standings=None, projections=None, event=None):
     if event is not None:
         (data / "ultimate" / "event.json").write_text(json.dumps(event), encoding="utf-8")
     ic.STANDINGS_PATH = str(data / "standings.json")
-    ic.ULTIMATE_PREDICTIONS_PATH = str(data / "ultimate" / "predictions.json")
-    ic.ULTIMATE_EVENT_PATH = str(data / "ultimate" / "event.json")
+    ic.CHAMPIONSHIP_PREDICTIONS_PATH = str(data / "ultimate" / "predictions.json")
+    ic.CHAMPIONSHIP_EVENT_PATH = str(data / "ultimate" / "event.json")
 
 
 def test_the_ultimate_field_is_watched_not_just_the_diamond_league(tmp_path, monkeypatch):
@@ -355,3 +357,33 @@ def test_a_missing_event_file_yields_no_terms_rather_than_crashing(tmp_path, mon
     monkeypatch.setattr(ic, "STANDINGS_PATH", "", raising=False)
     _write(tmp_path)
     assert ic.target_event_terms() == set()
+
+
+def test_headlines_name_the_asian_games_by_its_common_name(tmp_path, monkeypatch):
+    """Its event file calls it the "20th Asian Games"; no headline does."""
+    monkeypatch.setattr(ic, "STANDINGS_PATH", "", raising=False)
+    monkeypatch.setattr(ic, "CHAMPIONSHIP", ic.championships.get("asian-games-2026"))
+    _write(tmp_path, event={"name": "20th Asian Games", "shortName": "Aichi-Nagoya 2026",
+                            "city": "Nagoya"})
+    terms = ic.target_event_terms()
+    assert "asian games" in terms
+    assert "nagoya" in terms
+    headline = ic.normalize_for_match("Abdulla withdraws from the Asian Games with a hamstring injury")
+    assert ic.names_target_event(headline, terms)
+
+
+def test_the_checked_field_can_be_the_next_championship(monkeypatch):
+    """Checked before the site moves on, so an injured entrant is flagged
+    before the call is frozen, not after."""
+    monkeypatch.setattr(ic, "CHAMPIONSHIP", ic.CHAMPIONSHIP)
+    monkeypatch.setattr(ic, "CHAMPIONSHIP_EVENT_PATH", ic.CHAMPIONSHIP_EVENT_PATH)
+    monkeypatch.setattr(ic, "CHAMPIONSHIP_PREDICTIONS_PATH", ic.CHAMPIONSHIP_PREDICTIONS_PATH)
+    ic.use_championship("asian-games-2026")
+    assert ic.CHAMPIONSHIP_EVENT_PATH.replace("\\", "/").endswith("data/asian_games_2026/event.json")
+    assert ic.CHAMPIONSHIP_PREDICTIONS_PATH.replace("\\", "/").endswith(
+        "data/asian_games_2026/predictions.json")
+
+
+def test_a_championship_with_no_field_cannot_be_checked():
+    with pytest.raises(SystemExit):
+        ic.use_championship("dl-final-2026")

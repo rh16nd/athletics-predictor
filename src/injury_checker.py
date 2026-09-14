@@ -4,8 +4,8 @@ mentions of the athletes the site currently projects, and writes
 data/injury_flags.json.
 
 The field is BOTH competitions: World Athletics' Diamond League standings
-(data/standings.json) and the Ultimate Championship's qualified field
-(data/ultimate/predictions.json). It was the standings alone until 2026-09-08,
+(data/standings.json) and the current championship's field (its
+predictions.json, from src/championships.py). It was the standings alone until 2026-09-08,
 which was correct only while the Diamond League Final was the next event —
 after the pivot to Budapest it left 143 of the Ultimate's 306 athletes
 unwatched, so an injured athlete kept their projection with nothing to show
@@ -14,9 +14,10 @@ for it. See load_qualified_athletes().
 Sources: LetsRun.com, Athletics Weekly, World Athletics news. Two of the three
 need a HEADFUL browser, so this cannot run unattended.
 
-Run standalone, after live_fetcher.py and/or ultimate_predictions.py have
-produced the field:
+Run standalone, after live_fetcher.py and/or the championship's predictions
+have produced the field:
     python src/injury_checker.py
+    python src/injury_checker.py --championship asian-games-2026   # a field the site has not moved to yet
 """
 import io
 import json
@@ -63,11 +64,32 @@ def _force_utf8_stdout():
 if not (sys.stdout.encoding or "").lower().startswith("utf"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import championships  # noqa: E402
+
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 STANDINGS_PATH = os.path.join(DATA_DIR, "standings.json")
-ULTIMATE_PREDICTIONS_PATH = os.path.join(DATA_DIR, "ultimate", "predictions.json")
-ULTIMATE_EVENT_PATH = os.path.join(DATA_DIR, "ultimate", "event.json")
 OUTPUT_PATH = os.path.join(DATA_DIR, "injury_flags.json")
+
+# The championship whose field is watched. It was the Ultimate's paths, typed
+# out, which would have kept checking Budapest's field after the site moved to
+# Nagoya. Now the registry's current championship, or the one use_championship()
+# names.
+CHAMPIONSHIP = championships.current()
+CHAMPIONSHIP_PREDICTIONS_PATH = championships.path(CHAMPIONSHIP, "predictions.json")
+CHAMPIONSHIP_EVENT_PATH = championships.path(CHAMPIONSHIP, "event.json")
+
+
+def use_championship(champ_id):
+    """Watch another registered championship's field, e.g. the next one before
+    CURRENT moves to it."""
+    global CHAMPIONSHIP, CHAMPIONSHIP_PREDICTIONS_PATH, CHAMPIONSHIP_EVENT_PATH
+    champ = championships.get(champ_id)
+    if not champ.get("dataDir"):
+        raise SystemExit(f"{champ_id} keeps no field to check")
+    CHAMPIONSHIP = champ
+    CHAMPIONSHIP_PREDICTIONS_PATH = championships.path(champ, "predictions.json")
+    CHAMPIONSHIP_EVENT_PATH = championships.path(champ, "event.json")
 
 # LetsRun and Athletics Weekly both sit behind bot-detection that blocks
 # headless Chrome — they need a headful browser. World Athletics is fine
@@ -262,7 +284,7 @@ def target_event_terms():
     when the next championship takes the tab."""
     terms = set()
     try:
-        with open(ULTIMATE_EVENT_PATH, encoding="utf-8") as f:
+        with open(CHAMPIONSHIP_EVENT_PATH, encoding="utf-8") as f:
             event = json.load(f)
     except (OSError, json.JSONDecodeError):
         return terms
@@ -276,6 +298,10 @@ def target_event_terms():
     if "ultimate" in full:
         terms.add("ultimate championship")
         terms.add("ultimate championships")
+    # How headlines actually name the competition, which is rarely its
+    # official title: "Asian Games", never "20th Asian Games".
+    for term in CHAMPIONSHIP.get("newsTerms") or []:
+        terms.add(normalize_for_match(term))
     return terms
 
 
@@ -294,7 +320,7 @@ def target_date():
     any injury mention for. Reads the real next competition instead, and only
     falls back to the old constant if the file is missing."""
     try:
-        with open(ULTIMATE_EVENT_PATH, encoding="utf-8") as f:
+        with open(CHAMPIONSHIP_EVENT_PATH, encoding="utf-8") as f:
             start = json.load(f).get("startDate")
         if start:
             return date.fromisoformat(start)
@@ -360,8 +386,8 @@ def load_qualified_athletes():
     at, so an injured athlete simply kept their projection. Measured on
     2026-09-08, which is what sent this back for repair.
 
-    The Ultimate names come from data/ultimate/predictions.json rather than a
-    live call, because this already needs a headful browser for two of its
+    The championship names come from its predictions.json (for the Ultimate,
+    data/ultimate/predictions.json) rather than a live call, because this already needs a headful browser for two of its
     three sources and should not also depend on WA's API being up. Both files
     are optional: with neither, the caller skips rather than pretending."""
     athletes = {}
@@ -376,9 +402,9 @@ def load_qualified_athletes():
         except (OSError, json.JSONDecodeError):
             pass
 
-    if os.path.exists(ULTIMATE_PREDICTIONS_PATH):
+    if os.path.exists(CHAMPIONSHIP_PREDICTIONS_PATH):
         try:
-            with open(ULTIMATE_PREDICTIONS_PATH, encoding="utf-8") as f:
+            with open(CHAMPIONSHIP_PREDICTIONS_PATH, encoding="utf-8") as f:
                 projections = json.load(f).get("projections") or []
             for event in projections:
                 key = event.get("discKey")
@@ -937,8 +963,15 @@ def load_injury_flags():
 
 
 if __name__ == "__main__":
+    import argparse
+
     _force_utf8_stdout()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--championship", default=championships.CURRENT,
+                        help=f"Whose field to check (default: {championships.CURRENT}).")
+    use_championship(parser.parse_args().championship)
     print("=== Checking for athlete injuries / withdrawals ===")
+    print(f"  championship: {CHAMPIONSHIP['id']}")
     outcome = check_injuries()
     flagged = outcome["athletes"]
     if flagged:

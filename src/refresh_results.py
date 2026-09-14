@@ -81,7 +81,8 @@ def main():
             sys.exit(f"Stopped: {name} is {behind} commit(s) behind GitHub. Run git pull there first.")
 
     before = events_with_results()
-    step("Fetching results from World Athletics", [sys.executable, CHAMP["scraper"]])
+    step("Fetching results from World Athletics",
+         [sys.executable, CHAMP["scraper"], *CHAMP.get("scraperArgs", [])])
     after = events_with_results()
     step("Rebuilding the site's data files",
          [sys.executable, os.path.join("src", "build_static_api.py"), "--core-only"])

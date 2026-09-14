@@ -104,6 +104,41 @@ def create_driver(headless=True):
     )
 
 
+def toplist_page_url(url, page):
+    """The URL of one page of a toplist.
+
+    Paging used to append "?page=N" whatever the URL already carried, which is
+    right for the world lists and wrong for an area list: ".../2026?regionType=
+    area&region=asia?page=2" is served as a normal page with no table in it, so
+    the scrape stopped after page 1 and said nothing."""
+    if page == 1:
+        return url
+    return f"{url}{'&' if '?' in url else '?'}page={page}"
+
+
+def parse_toplist_html(html):
+    """(headers, rows, profile URLs) from one toplist page, or (None, [], [])
+    when the page has no table. Shared by the Selenium scrape below and the
+    Asian Games field, which reads the same pages without a browser."""
+    table = BeautifulSoup(html, "html.parser").find("table")
+    if not table:
+        return None, [], []
+    headers = [th.get_text(strip=True) for th in table.find_all("th")]
+    trs = [tr for tr in table.find_all("tr")[1:] if tr.find_all("td")]
+    rows = [[td.get_text(strip=True) for td in tr.find_all("td")] for tr in trs]
+    # The competitor-name cell links straight to their WA profile
+    # (/athletes/athlete={id}), which resolves directly to the real
+    # profile page -- no need to construct the "pretty" slug URL.
+    urls = []
+    for tr in trs:
+        link = tr.find("a", href=True)
+        urls.append(
+            "https://worldathletics.org" + link["href"] if link and link["href"].startswith("/")
+            else (link["href"] if link else None)
+        )
+    return headers, rows, urls
+
+
 def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8, required_athletes=None, max_pages=5):
     """Scrapes the top-100 page, then keeps paging (?page=2, 3, ...) only if
     required_athletes (DL-qualified names for this discipline) aren't all in
@@ -117,8 +152,7 @@ def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8, required_
     found = set()
 
     for page in range(1, max_pages + 1):
-        page_url = url if page == 1 else f"{url}?page={page}"
-        driver.get(page_url)
+        driver.get(toplist_page_url(url, page))
         try:
             WebDriverWait(driver, wait_seconds).until(
                 EC.presence_of_element_located((By.TAG_NAME, "table"))
@@ -127,29 +161,13 @@ def scrape_toplist(driver, url, discipline, year=2026, wait_seconds=8, required_
             driver.execute_script("window.scrollTo(0, 500)")
             time.sleep(3)
 
-        soup = BeautifulSoup(driver.page_source, "html.parser")
-        table = soup.find("table")
-        if not table:
-            break
-
+        page_headers, rows, urls = parse_toplist_html(driver.page_source)
         if headers is None:
-            headers = [th.get_text(strip=True) for th in table.find_all("th")]
-
-        trs = [tr for tr in table.find_all("tr")[1:] if tr.find_all("td")]
-        rows = [[td.get_text(strip=True) for td in tr.find_all("td")] for tr in trs]
+            headers = page_headers
         if not rows:
             break
 
-        # The competitor-name cell links straight to their WA profile
-        # (/athletes/athlete={id}), which resolves directly to the real
-        # profile page -- no need to construct the "pretty" slug URL.
-        for tr in trs:
-            link = tr.find("a", href=True)
-            all_profile_urls.append(
-                "https://worldathletics.org" + link["href"] if link and link["href"].startswith("/")
-                else (link["href"] if link else None)
-            )
-
+        all_profile_urls.extend(urls)
         all_rows.extend(rows)
 
         if headers and "Competitor" in headers:
