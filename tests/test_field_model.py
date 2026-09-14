@@ -15,6 +15,7 @@ import pytest
 
 import field_data as fd
 import field_model as fm
+import ultimate_scraper as us
 
 
 # ---- podium chances -----------------------------------------------------------
@@ -136,11 +137,28 @@ def toplist_page(nations):
     return f"<table>{TH}{body}</table>"
 
 
-def test_a_past_asian_list_that_is_really_the_world_list_is_refused():
+def test_a_past_area_list_that_is_really_the_world_list_is_refused():
     with pytest.raises(ValueError, match="area filter"):
-        fd.asia_toplist("men_100m", 2019, fetch=lambda url: toplist_page(["USA", "JAM", "KEN", "JPN"]), pause=0)
-    header, rows = fd.asia_toplist("men_100m", 2019, fetch=lambda url: toplist_page(["JPN", "CHN", "QAT"]), pause=0)
+        fd.area_toplist("men_100m", 2019, "asia", fetch=lambda url: toplist_page(["USA", "JAM", "KEN", "JPN"]), pause=0)
+    header, rows = fd.area_toplist("men_100m", 2019, "asia", fetch=lambda url: toplist_page(["JPN", "CHN", "QAT"]), pause=0)
     assert len(rows) == 3 and header[-3:] == ["discipline", "year", "ProfileURL"]
+    assert "region=europe" in fd.area_toplist_url("women_HT", 2012, "europe")
+    with pytest.raises(ValueError, match="outside europe"):
+        fd.area_toplist("men_100m", 2012, "europe", fetch=lambda url: toplist_page(["JPN", "CHN", "GBR"]), pause=0)
+    _, rows = fd.area_toplist("men_100m", 2012, "europe", fetch=lambda url: toplist_page(["GBR", "GER", "ANA"]), pause=0)
+    assert len(rows) == 3
+
+
+def test_a_discipline_with_a_season_that_failed_is_not_saved_so_a_rerun_fetches_it(tmp_path):
+    def fetch(url):
+        if "/2016?" in url:
+            raise ConnectionError("reset by peer")
+        return toplist_page(["GBR", "FRA"])
+
+    fd.scrape_area_toplists(["men_100m"], "europe", years=[2015, 2016], fetch=fetch, out_dir=str(tmp_path), pause=0)
+    assert not (tmp_path / "men_100m.csv").exists()
+    fd.scrape_area_toplists(["men_100m"], "europe", years=[2015], fetch=fetch, out_dir=str(tmp_path), pause=0)
+    assert len(pd.read_csv(tmp_path / "men_100m.csv")) == 2
 
 
 def scored_final(competition, year, group_event, n=6, podium=("A0", "A1", "A2"), unscored=()):
@@ -166,7 +184,76 @@ def test_an_unscored_medallist_is_still_a_place_to_find_and_thin_fields_are_skip
     [final] = fm.build_finals(data)
     assert final["discipline"] == "men_100m"
     assert "A0" in final["podium"] and "A0" not in final["names"]
+    assert final["winners"] == {"A0"}
     assert final["top_idx"] is None
+
+
+def test_a_competition_with_too_few_finalists_found_is_scored_but_not_trained_on():
+    found = scored_final("Asian Games", 2022, "100m", n=8)
+    # 6 of 8 found is 75%: under the gate, yet a field with a scored podium.
+    thin = scored_final("Asian Championships", 2022, "200m", n=8, unscored=("A6", "A7"))
+    # 17 of 20 is exactly the gate.
+    edge = scored_final("Asian Championships", 2023, "400m", n=20, unscored=("A17", "A18", "A19"))
+    data = pd.concat([found, thin, edge], ignore_index=True)
+    finals = {(f["competition"], f["year"]): f for f in fm.build_finals(data)}
+    assert finals[("Asian Games", 2022)]["trainable"] is True
+    assert finals[("Asian Championships", 2022)]["trainable"] is False
+    assert finals[("Asian Championships", 2022)]["top_idx"] is not None
+    assert finals[("Asian Championships", 2023)]["trainable"] is True
+    assert fm.fit(list(finals.values()))["finals"] == 2
+    with pytest.raises(ValueError, match="trainable"):
+        fm.fit([finals[("Asian Championships", 2022)]])
+    table = fd.coverage(data).set_index(["competition", "year"])
+    assert table["trained"].to_dict() == {("Asian Championships", 2022): False,
+                                          ("Asian Championships", 2023): True,
+                                          ("Asian Games", 2022): True}
+
+
+def test_a_shared_bronze_puts_both_medallists_on_the_podium():
+    data = scored_final("World Championships", 2015, "100m", n=8)
+    data.loc[data["athlete_name"] == "A3", "place"] = 3
+    [final] = fm.build_finals(data)
+    assert final["podium"] == {"A0", "A1", "A2", "A3"}
+
+
+def test_the_seasons_ranked_names_pick_the_championship_final_over_a_fuller_masters_race():
+    """The 2015 Worlds had two races labelled "Men's 800 Metres" Final. The
+    masters one had 10 finishers to the real one's 8, and was kept."""
+    histories = {"men_800m": pd.DataFrame({"name": ["David RUDISHA", "Nijel AMOS", "David RUDISHA"],
+                                           "year": [2015, 2014, 2014]})}
+    seen = {}
+
+    def fetch(field=None, competition_id=None):
+        seen[competition_id] = field
+        return [{"discipline": "men_800m", "athlete_name": "David RUDISHA", "place": "1.", "mark": "1:45.84"}]
+
+    comps = [{"id": 7078726, "competition": "IAAF World Championships", "year": 2015, "tier": "global"}]
+    fd.competition_finals(comps, fetch=fetch, start=lambda cid: pd.Timestamp("2015-08-22"),
+                          field_for=lambda year: fd.season_field(year, histories))
+    assert seen[7078726] == [{"discKey": "men_800m", "athletes": [{"name": "David RUDISHA"}]}]
+
+    masters = {"race": "Final", "results": [{"competitor": {"name": f"Masters {i}"}} for i in range(10)]}
+    real = {"race": "Final", "results": [{"competitor": {"name": "David RUDISHA"}}]
+            + [{"competitor": {"name": f"Finalist {i}"}} for i in range(7)]}
+    entrants = us.entrants_by_key(seen[7078726])["men_800m"]
+    assert us.pick_final([masters, real], entrants) is real
+
+
+def test_the_winner_check_names_a_final_whose_saved_winner_is_not_the_major_meet_winner(tmp_path):
+    (tmp_path / "men_800m.csv").write_text(
+        "Rank,Mark,WIND,Competitor,DOB,Nat,Pos,Unnamed: 7,Venue,Date,Results Score,discipline,year,ProfileURL,source\n"
+        ",1:45.84,,David RUDISHA,,KEN,1.,,IAAF World Championships,,,,2015,,major_meet\n"
+        ",1:46.08,,Adam KSZCZOT,,POL,2.,,IAAF World Championships,,,,2015,,major_meet\n",
+        encoding="utf-8")
+    saved = pd.DataFrame({"competition": "IAAF World Championships", "year": 2015, "tier": "global",
+                          "discipline": "men_800m", "athlete_name": ["David HEATH", "Michael SHERAR"],
+                          "place": [1, 2]})
+    checked, disagree = fd.winner_disagreements(saved, raw_dir=str(tmp_path))
+    assert checked == 1
+    assert disagree == [{"competition": "IAAF World Championships", "year": 2015, "discipline": "men_800m",
+                         "majorMeet": ["DAVIDRUDISHA"], "saved": ["DAVIDHEATH"]}]
+    fixed = saved.assign(athlete_name=["David RUDISHA", "Adam KSZCZOT"])
+    assert fd.winner_disagreements(fixed, raw_dir=str(tmp_path)) == (1, [])
 
 
 # ---- the ship rule ------------------------------------------------------------
@@ -243,7 +330,7 @@ def test_a_field_is_scored_from_this_seasons_list_and_its_chances_add_to_three(t
     athletes = [{"name": "Shuhei TADA", "nat": "JPN"}, {"name": "Xin LI", "nat": "CHN"},
                 {"name": "Ali AHMED", "nat": "QAT"}, {"name": "Late MARK", "nat": "KOR"},
                 {"name": "Not LISTED", "nat": "MGL"}]
-    empty = lambda key: fd.season_scores(key, raw_dir=str(tmp_path), asia_dir=str(tmp_path))  # noqa: E731
+    empty = lambda key: fd.season_scores(key, raw_dir=str(tmp_path), area_dirs={"asia": str(tmp_path)})  # noqa: E731
     rows = fm.serving_rows("men_100m", athletes, str(season), "2026-09-23", 2026, scores_for=empty)
     # A mark set after the cut-off, and an athlete on no list, are not in the field.
     assert rows["athlete_name"].tolist() == ["Shuhei TADA", "Xin LI", "Ali AHMED"]

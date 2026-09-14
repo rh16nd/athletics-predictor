@@ -17,8 +17,11 @@ instead. It needs two things, and this file builds both:
      only athletes who were once in a world top 100, which is most of an Asian
      final's field gone.
   2. SEASON SCORES: each athlete's best Results Score in each season, with its
-     date, from the world toplists (top 100, data/raw) and the Asian area
-     toplists (up to 300 deep, 2015-2025, data/field/asia).
+     date, from the world toplists (top 100, data/raw) and the area toplists
+     (up to 300 deep): Asia 2015-2025 in data/field/asia, Europe 2009-2024 in
+     data/field/europe. Europe is there because the world top 100 alone found
+     78-84% of each European Championships' finalists, which put all seven
+     under the MIN_MATCH gate.
 
 Nothing here writes to data/raw, so the existing model never sees these rows.
 
@@ -30,6 +33,7 @@ championship began, and the Asian Games call is frozen before its first day.
 
 Usage:
     python src/field_data.py --asia-toplists [--only k1,k2] [--refresh]
+    python src/field_data.py --europe-toplists [--only k1,k2] [--refresh]
     python src/field_data.py --finals          # championships, world and Asian
     python src/field_data.py --report          # join to season scores, print coverage
 """
@@ -54,16 +58,40 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__
 RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 FIELD_DIR = os.path.join(BASE_DIR, "data", "field")
 ASIA_DIR = os.path.join(FIELD_DIR, "asia")
+EUROPE_DIR = os.path.join(FIELD_DIR, "europe")
 CHAMPIONSHIP_FINALS_PATH = os.path.join(FIELD_DIR, "championship_finals.csv")
 FINALS_PATH = os.path.join(FIELD_DIR, "finals.csv")
 DL_RESULTS = os.path.join(BASE_DIR, "data", "dl_final_results.csv")
 
-ASIA_YEARS = range(2015, 2026)
-ASIA_PAGES = 3
+AREA_PAGES = 3
 REQUEST_PAUSE = 0.3
 # Nationality sits under a blank header, fifth column from zero, on every
 # World Athletics toplist, world or area, with or without wind.
 NAT = 5
+# A competition is trained on only when at least this share of its finalists
+# has a season score (the plan, 2026-09-14). Below it, "rank within the field"
+# is a rank among the few we found, not among the athletes who ran.
+MIN_MATCH = 0.85
+
+# European Athletics' 51 member federations, and ANA, the code World Athletics'
+# lists give authorised neutral athletes.
+EUROPEAN_NATIONS = frozenset({
+    "ALB", "AND", "ARM", "AUT", "AZE", "BEL", "BIH", "BLR", "BUL", "CRO", "CYP",
+    "CZE", "DEN", "ESP", "EST", "FIN", "FRA", "GBR", "GEO", "GER", "GIB", "GRE",
+    "HUN", "IRL", "ISL", "ISR", "ITA", "KOS", "LAT", "LIE", "LTU", "LUX", "MDA",
+    "MKD", "MLT", "MNE", "MON", "NED", "NOR", "POL", "POR", "ROU", "RUS", "SLO",
+    "SMR", "SRB", "SUI", "SVK", "SWE", "TUR", "UKR", "ANA",
+})
+
+# Each area list: its query, the nations it may hold, where it is saved, and
+# the seasons fetched. Every championship in the finals has its own season and
+# the one before it on file: Asia's from 2018, the Europeans' from 2010.
+AREAS = {
+    "asia": {"query": ags.ASIA_QUERY, "nations": ags.ASIAN_NATIONS, "dir": ASIA_DIR,
+             "years": range(2015, 2026)},
+    "europe": {"query": "regionType=area&region=europe", "nations": EUROPEAN_NATIONS, "dir": EUROPE_DIR,
+               "years": range(2009, 2025)},
+}
 
 # Checked live on 2026-09-14 with getCalendarEvents: each has API results.
 ASIAN_COMPETITIONS = [
@@ -104,25 +132,29 @@ def parse_date(value):
 
 
 def _place(value):
+    """A finishing place as an int, or None. pandas reads a place column that
+    holds only "1.", "2." and so on as floats, and str(1.0) is not digits."""
+    if isinstance(value, float):
+        return int(value) if value.is_integer() else None
     text = str(value or "").strip().rstrip(".")
     return int(text) if text.isdigit() else None
 
 
-# ---- Asian area toplists ------------------------------------------------------
+# ---- area toplists ------------------------------------------------------------
 
-def asia_toplist_url(key, year):
+def area_toplist_url(key, year, area):
     base = live_fetcher.DISCIPLINE_URLS[key].rsplit("/", 1)[0]
-    return f"{base}/{year}?{ags.ASIA_QUERY}"
+    return f"{base}/{year}?{AREAS[area]['query']}"
 
 
-def asia_toplist(key, year, fetch=ags.fetch_page, pages=ASIA_PAGES, pause=REQUEST_PAUSE):
-    """(header, rows) of one season's Asian list for one discipline, or
+def area_toplist(key, year, area, fetch=ags.fetch_page, pages=AREA_PAGES, pause=REQUEST_PAUSE):
+    """(header, rows) of one season's area list for one discipline, or
     (None, []) when World Athletics serves no table.
 
-    Raises when more than 5% of the rows are from outside Asia: that means the
-    area filter was ignored and the world list came back, which would quietly
-    fill the Asian history with everyone else."""
-    url = asia_toplist_url(key, year)
+    Raises when more than 5% of the rows are from outside the area: that means
+    the area filter was ignored and the world list came back, which would
+    quietly fill the area's history with everyone else."""
+    url = area_toplist_url(key, year, area)
     header, rows, seen = None, [], set()
     for page in range(1, pages + 1):
         page_headers, page_rows, urls = live_fetcher.parse_toplist_html(
@@ -144,28 +176,34 @@ def asia_toplist(key, year, fetch=ags.fetch_page, pages=ASIA_PAGES, pause=REQUES
             rows.append(cells + [key, str(year), profile or ""])
         if len(page_rows) < 100:
             break
-    outside = [r for r in rows if r[NAT] and r[NAT] not in ags.ASIAN_NATIONS]
+    outside = [r for r in rows if r[NAT] and r[NAT] not in AREAS[area]["nations"]]
     if rows and len(outside) > 0.05 * len(rows):
-        raise ValueError(f"{key} {year}: {len(outside)} of {len(rows)} rows are from outside Asia; "
+        raise ValueError(f"{key} {year}: {len(outside)} of {len(rows)} rows are from outside {area}; "
                          "World Athletics did not apply the area filter")
     return header, rows
 
 
-def scrape_asia_toplists(keys, years=ASIA_YEARS, refresh=False, fetch=ags.fetch_page):
+def scrape_area_toplists(keys, area, years=None, refresh=False, fetch=ags.fetch_page,
+                         out_dir=None, pause=REQUEST_PAUSE):
     """One file per discipline, every season in it. A discipline whose file
-    exists is skipped unless `refresh`, so a run that stops can be restarted."""
-    os.makedirs(ASIA_DIR, exist_ok=True)
+    exists is skipped unless `refresh`, so a run that stops can be restarted.
+    A discipline with a season that failed to download is not saved at all, so
+    the restart fetches it again rather than skipping a file with a hole in it."""
+    out_dir = out_dir or AREAS[area]["dir"]
+    years = AREAS[area]["years"] if years is None else years
+    os.makedirs(out_dir, exist_ok=True)
     for key in keys:
-        path = os.path.join(ASIA_DIR, f"{key}.csv")
+        path = os.path.join(out_dir, f"{key}.csv")
         if os.path.exists(path) and not refresh:
             print(f"  {key}: on disk, skipped")
             continue
-        header, rows = None, []
+        header, rows, failed = None, [], []
         for year in years:
             try:
-                year_header, year_rows = asia_toplist(key, year, fetch=fetch)
+                year_header, year_rows = area_toplist(key, year, area, fetch=fetch, pause=pause)
             except Exception as exc:  # one season must not end a 36-discipline run
                 print(f"  {key} {year}: FAILED ({str(exc)[:80]})")
+                failed.append(year)
                 continue
             if year_header is None:
                 print(f"  {key} {year}: no table")
@@ -173,9 +211,12 @@ def scrape_asia_toplists(keys, years=ASIA_YEARS, refresh=False, fetch=ags.fetch_
             if header is None:
                 header = year_header
             elif year_header != header:
-                print(f"  {key} {year}: columns differ from {years[0]}'s, season skipped")
+                print(f"  {key} {year}: columns differ from the first season's, season skipped")
                 continue
             rows.extend(year_rows)
+        if failed:
+            print(f"  {key}: NOT SAVED, {len(failed)} season(s) failed; run again to fetch it")
+            continue
         if header is None:
             print(f"  {key}: nothing fetched, no file written")
             continue
@@ -216,17 +257,33 @@ def world_competitions(years=WORLD_YEARS, find=None):
     return comps
 
 
-def competition_finals(competitions, fetch=us.fetch_results, start=competition_start):
+def season_field(year, histories):
+    """Each discipline's names on this season's toplists, in the shape
+    fetch_results takes as a qualified field. `histories` is {key: season_scores}.
+
+    Used only to tell a championship's own final from another race labelled
+    Final at the same meeting. Without it pick_final keeps the fuller race, and
+    at the 2015 Worlds that was a masters 800m won in 2:00.92 and a masters
+    400m won in 60.05, not Rudisha's and Felix's finals."""
+    field = []
+    for key, scores in histories.items():
+        names = [] if scores.empty else pd.unique(scores.loc[scores["year"] == year, "name"])
+        field.append({"discKey": key, "athletes": [{"name": name} for name in names]})
+    return field
+
+
+def competition_finals(competitions, fetch=us.fetch_results, start=competition_start, field_for=lambda year: None):
     """Every finalist of every discipline we hold, at each competition.
 
-    fetch_results with no field takes the fullest race called a Final, so this
-    is the whole finishing order, the athletes who did not finish included:
-    they were in the field, and a model that never sees them never learns how
-    often the favourite fails to. A competition that returns nothing is named
-    and skipped, not written as an empty field."""
+    This is the whole finishing order, the athletes who did not finish
+    included: they were in the field, and a model that never sees them never
+    learns how often the favourite fails to. `field_for(year)` gives the names
+    that pick the championship's race when two are labelled Final (see
+    season_field). A competition that returns nothing is named and skipped,
+    not written as an empty field."""
     rows, missing = [], []
     for comp in competitions:
-        found = fetch(field=None, competition_id=comp["id"])
+        found = fetch(field=field_for(comp["year"]), competition_id=comp["id"])
         if not found:
             missing.append(comp["competition"])
             print(f"  {comp['competition']} {comp['year']}: no results came back, skipped")
@@ -296,13 +353,15 @@ def _toplist_rows(path, source):
     return out.dropna(subset=["year", "score", "date"])
 
 
-def season_scores(key, raw_dir=RAW_DIR, asia_dir=ASIA_DIR, extra=()):
-    """Every toplist row we hold for one discipline: world history, Asian
-    history, and any `extra` (path, source) pairs, such as this season's lists.
-    One athlete can appear in both lists for one season; both rows are kept and
-    the reader takes the best."""
-    frames = [_toplist_rows(os.path.join(raw_dir, f"{key}.csv"), "world"),
-              _toplist_rows(os.path.join(asia_dir, f"{key}.csv"), "asia")]
+def season_scores(key, raw_dir=RAW_DIR, area_dirs=None, extra=()):
+    """Every toplist row we hold for one discipline: world history, each area's
+    history (`area_dirs`, {area: directory}, every area in AREAS by default),
+    and any `extra` (path, source) pairs, such as this season's lists. One
+    athlete can appear in more than one list for one season; every row is kept
+    and the reader takes the best."""
+    area_dirs = {area: spec["dir"] for area, spec in AREAS.items()} if area_dirs is None else area_dirs
+    frames = [_toplist_rows(os.path.join(raw_dir, f"{key}.csv"), "world")]
+    frames += [_toplist_rows(os.path.join(directory, f"{key}.csv"), area) for area, directory in area_dirs.items()]
     frames += [_toplist_rows(path, source) for path, source in extra]
     frames = [f for f in frames if not f.empty]
     if not frames:
@@ -371,8 +430,9 @@ def attach_scores(finals, scores_for=season_scores):
 
 
 def coverage(scored):
-    """Per competition: finals, finalists, the share with a season score, and
-    the share of podium places whose athlete has one."""
+    """Per competition: finals, finalists, the share with a season score, the
+    share of podium places whose athlete has one, and whether that clears the
+    MIN_MATCH gate for training."""
     df = scored.copy()
     df["scored"] = df["sb_score"].notna()
     df["podium"] = df["place"].between(1, 3)
@@ -381,25 +441,67 @@ def coverage(scored):
         scored=("scored", "mean"),
         podium_scored=("scored", lambda s: s[df.loc[s.index, "podium"]].mean()),
     ).reset_index()
+    table["trained"] = table["scored"] >= MIN_MATCH
     return table.sort_values(["tier", "year", "competition"])
+
+
+def competition_label(name, year):
+    """"European Athletics Championships 2018", without doubling the year for
+    names that already carry it ("Asian Games 2018")."""
+    return str(name) if str(year) in str(name) else f"{name} {year}"
+
+
+def winner_disagreements(champs, raw_dir=RAW_DIR):
+    """(finals checked, [disagreements]): each Olympics, Worlds and Europeans
+    winner in `champs` against the major_meet rows in data/raw, which
+    major_meets_scraper chose on its own. This check, not a test, caught the
+    2015 masters races; a disagreement is a race to look at by hand."""
+    world = champs[champs["tier"] != "asia"]
+    names = set(world["competition"])
+    checked, disagree = 0, []
+    for key in sorted(world["discipline"].unique()):
+        try:
+            raw = pd.read_csv(os.path.join(raw_dir, f"{key}.csv"), low_memory=False)
+        except OSError:
+            continue
+        if "source" not in raw.columns:
+            continue
+        meets = raw[(raw["source"] == "major_meet") & raw["Venue"].isin(names)]
+        for (venue, year), g in meets.groupby(["Venue", "year"]):
+            before = set(g.loc[g["Pos"].map(_place) == 1, "Competitor"].map(field_key))
+            if not before:
+                continue
+            final = world[(world["competition"] == venue) & (world["year"] == year) & (world["discipline"] == key)]
+            saved = set(final.loc[final["place"] == 1, "athlete_name"].map(field_key))
+            checked += 1
+            if not before & saved:
+                disagree.append({"competition": venue, "year": int(year), "discipline": key,
+                                 "majorMeet": sorted(before), "saved": sorted(saved)})
+    return checked, disagree
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--asia-toplists", action="store_true")
+    parser.add_argument("--europe-toplists", action="store_true")
     parser.add_argument("--finals", action="store_true")
+    parser.add_argument("--check-winners", action="store_true")
     parser.add_argument("--report", action="store_true")
     parser.add_argument("--only", default=None, help="comma-separated discipline keys")
     parser.add_argument("--refresh", action="store_true")
     args = parser.parse_args(argv)
     keys = args.only.split(",") if args.only else list(live_fetcher.DISCIPLINE_URLS)
 
-    if args.asia_toplists:
-        print("=== Asian area toplists, 2015-2025 ===")
-        scrape_asia_toplists(keys, refresh=args.refresh)
+    for area, flag in (("asia", args.asia_toplists), ("europe", args.europe_toplists)):
+        if flag:
+            years = AREAS[area]["years"]
+            print(f"=== {area.title()} area toplists, {years[0]}-{years[-1]} ===")
+            scrape_area_toplists(keys, area, refresh=args.refresh)
     if args.finals:
         print("=== Championship finals: Olympics, Worlds, Europeans, Asian Games, Asian Championships ===")
-        finals, missing = competition_finals(world_competitions() + ASIAN_COMPETITIONS)
+        histories = {key: season_scores(key) for key in live_fetcher.DISCIPLINE_URLS}
+        finals, missing = competition_finals(world_competitions() + ASIAN_COMPETITIONS,
+                                             field_for=lambda year: season_field(year, histories))
         asian_missing = [c["competition"] for c in ASIAN_COMPETITIONS if c["competition"] in missing]
         if asian_missing:
             print(f"  NOT SAVED: no results for {', '.join(asian_missing)}; the Asian finals are the point")
@@ -408,6 +510,12 @@ def main(argv=None):
         finals.to_csv(CHAMPIONSHIP_FINALS_PATH, index=False)
         print(f"  {len(finals)} rows, {finals.groupby(['competition', 'year', 'discipline']).ngroups} finals "
               f"-> {CHAMPIONSHIP_FINALS_PATH}")
+    if (args.finals or args.check_winners) and os.path.exists(CHAMPIONSHIP_FINALS_PATH):
+        checked, disagree = winner_disagreements(pd.read_csv(CHAMPIONSHIP_FINALS_PATH, low_memory=False))
+        print(f"  Winner check: {checked} world finals against the major_meet rows, {len(disagree)} disagree")
+        for d in disagree:
+            print(f"    {d['competition']} {d['year']} {d['discipline']}: "
+                  f"major_meet {d['majorMeet']}, saved {d['saved']}")
     if args.report:
         print("=== Finals joined to season scores ===")
         finals = dl_finals()
@@ -422,6 +530,11 @@ def main(argv=None):
         with pd.option_context("display.max_rows", 200, "display.width", 160):
             print(table.to_string(index=False, formatters={
                 "scored": "{:.0%}".format, "podium_scored": "{:.0%}".format}))
+        below = table[~table["trained"]]
+        if not below.empty:
+            print(f"  Under {MIN_MATCH:.0%} found, scored but not trained on: "
+                  + ", ".join(f"{competition_label(r.competition, r.year)} ({r.scored:.0%})"
+                              for r in below.itertuples()))
         print(f"  {len(scored)} rows -> {FINALS_PATH}")
     return 0
 

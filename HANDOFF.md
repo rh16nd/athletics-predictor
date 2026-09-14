@@ -4,6 +4,17 @@
 
 _Last updated: 2026-09-14, end of the fourth session. **The user asked why only 8 of the 36 Asian Games events get a model call ("that is not even prediction"). A plan was approved and saved at `C:\Users\rayen\.claude\plans\the-real-question-is-quizzical-thompson.md`; read it first. The data and model code are built and tested; nothing is served yet, and the go/no-go report has not been run.** Everything in the Asian Games section below still stands: its commits are local and not pushed, and `CURRENT` is still `ultimate-2026`._
 
+**Fifth session (2026-09-14, in progress): the downloads, and three bugs they turned up**
+- The finals download finished: 900 finals from 25 competitions, each with all 36 events. Every world final's winner was then checked against the independent `major_meet` rows in `data/raw`, and 2 of 640 were the wrong race. At the 2015 Worlds, the saved men's 800m and women's 400m were masters races held at the same meeting (won in 2:00.92 and 60.05). With no entry list, `pick_final` had kept whichever "Final" had more finishers. `competition_finals` now passes each season's toplist names (`season_field`), so the race run by ranked athletes is kept. The finals are being downloaded again with that fix. The Asian Games winners checked out (Chopra, Toor, Keyhani, Sable).
+- 23 finals have a tie on the podium, and `build_finals` kept only the first three names, dropping the later-listed of two tied medallists. The podium is now every medallist.
+- The 85% gate is built (`field_data.MIN_MATCH`). A competition under it is still scored in the backtest but is not fitted on, and the report names it.
+- Europe: the world top 100 found only 78-84% of each European Championships' finalists, so all seven fell under the gate. As step 1e below says, the European area lists are being fetched (`--europe-toplists`, 2009-2024, into `data/field/europe/`).
+- If one season of an area list fails to download, that discipline's file is not saved, so a rerun fetches it again instead of skipping a file with a hole in it.
+- The report now also counts winners named first and lists each competition's match rate.
+- 20 field-model tests pass. The full backend suite had 605 passing and one failure, the tie test before its fix; run it again.
+
+**Where the downloads stood at this checkpoint:** Asia 26 of 36, Europe just started (about 90 minutes), finals re-download running. Each is resumable by running the same command again. After them: `python src/field_data.py --check-winners` must print 0 disagreements for the new finals file (the finals download also prints it at its end), then step 1c (`--report`), check that the Europeans now clear 85%, then step 2.
+
 **Why the existing model cannot call an Asian field**
 - It learned from 501 finals (Diamond League Finals, Olympics/Worlds, Europeans) whose candidates are the world top 100. No Asian competition, no hammer, no 10,000m.
 - Its strength features (`season_rank`, `season_percentile`, `field_gap`) rank athletes against the world list, not the field.

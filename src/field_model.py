@@ -183,10 +183,10 @@ def _loss_and_grad(w, X, mask, top, l2):
 
 
 def fit(finals, l2=L2):
-    """Fit on every final whose top three all have a season score."""
-    usable = [f for f in finals if f["top_idx"] is not None]
+    """Fit on every trainable final whose top three all have a season score."""
+    usable = [f for f in finals if f["top_idx"] is not None and f.get("trainable", True)]
     if not usable:
-        raise ValueError("no final with a scored top three to fit on")
+        raise ValueError("no trainable final with a scored top three to fit on")
     stacked = np.vstack([f["X"] for f in usable])
     mean = stacked.mean(axis=0)
     std = stacked.std(axis=0)
@@ -219,8 +219,16 @@ def build_finals(scored):
 
     `podium` holds every medallist's name, scored or not: an unscored medallist
     is a place neither the model nor points could have named, and counting it
-    as possible keeps both honest. `top_idx` is the scored rows of first,
-    second and third, or None when any of the three is unscored."""
+    as possible keeps both honest. A shared bronze puts both names on it (23 of
+    the 900 championship finals have a tie on the podium). `top_idx` is the scored rows of first,
+    second and third, or None when any of the three is unscored.
+
+    `match` is the share of the whole competition's finalists with a score, and
+    `trainable` whether it clears field_data.MIN_MATCH. A final below the gate
+    is still scored in the backtest, where an athlete we could not find is a
+    miss for the model and for points alike. It is only kept out of fitting."""
+    has_score = scored["sb_score"].notna()
+    rates = has_score.groupby([scored["competition"], scored["year"]]).mean()
     finals = []
     for (competition, year, discipline), g in scored.groupby(["competition", "year", "discipline"]):
         placed = g[g["place"].between(1, 3)].sort_values("place")
@@ -235,12 +243,15 @@ def build_finals(scored):
         for place in (1, 2, 3):
             hit = with_score.index[with_score["place"] == place]
             order.append(int(hit[0]) if len(hit) else None)
+        match = float(rates.loc[(competition, year)])
         finals.append({
             "competition": competition, "year": int(year), "discipline": discipline,
             "group": group_of(discipline), "tier": g["tier"].iloc[0],
             "names": names, "scores": with_score["sb_score"].to_numpy(dtype=float),
-            "X": features.to_numpy(), "podium": set(placed["athlete_name"].head(3)),
+            "X": features.to_numpy(), "podium": set(placed["athlete_name"]),
+            "winners": set(placed.loc[placed["place"] == 1, "athlete_name"]),
             "top_idx": order if None not in order else None,
+            "match": match, "trainable": match >= fd.MIN_MATCH,
         })
     return finals
 
@@ -266,17 +277,20 @@ def backtest(finals, l2=L2, shuffle_seed=None):
     for year in TEST_YEARS:
         train = [f for f in finals if f["year"] < year]
         test = [f for f in finals if f["year"] == year]
-        if not test or not any(f["top_idx"] is not None for f in train):
+        if not test or not any(f["top_idx"] is not None and f.get("trainable", True) for f in train):
             continue
         model = fit(train, l2)
         for f in test:
             chances = predict(model, f["X"])
             model_pick = _top3(f["names"], chances)
             points_pick = _top3(f["names"], f["scores"])
+            winners = f.get("winners", set())
             results.append({
                 "competition": f["competition"], "year": year, "discipline": f["discipline"],
                 "group": f["group"], "tier": f["tier"],
                 "model_hits": len(model_pick & f["podium"]), "points_hits": len(points_pick & f["podium"]),
+                "model_winner": f["names"][int(np.argmax(chances))] in winners,
+                "points_winner": f["names"][int(np.argmax(f["scores"]))] in winners,
             })
             for name, chance in zip(f["names"], chances):
                 athletes.append({"chance": float(chance), "medal": name in f["podium"]})
@@ -325,12 +339,16 @@ def _pct(hits, possible):
     return round(100.0 * hits / possible, 1) if possible else None
 
 
-def summarise(results, athletes, control, decisions):
+def summarise(results, athletes, control, decisions, coverage=None):
     def block(df):
         possible = 3 * len(df)
-        return {"finals": int(len(df)),
-                "model": _pct(df["model_hits"].sum(), possible),
-                "points": _pct(df["points_hits"].sum(), possible)}
+        out = {"finals": int(len(df)),
+               "model": _pct(df["model_hits"].sum(), possible),
+               "points": _pct(df["points_hits"].sum(), possible)}
+        if "model_winner" in df.columns:
+            out["modelWinners"] = int(df["model_winner"].sum())
+            out["pointsWinners"] = int(df["points_winner"].sum())
+        return out
 
     calibration = []
     if not athletes.empty:
@@ -348,6 +366,8 @@ def summarise(results, athletes, control, decisions):
         "control": block(control),
         "groups": decisions,
         "calibration": calibration,
+        "minMatch": fd.MIN_MATCH,
+        "coverage": [] if coverage is None else json.loads(coverage.to_json(orient="records")),
     }
 
 
@@ -355,8 +375,15 @@ def print_report(report):
     o, c = report["overall"], report["control"]
     print(f"\n  {o['finals']} held-out finals, {report['testYears'][0]}-{report['testYears'][-1]}: "
           f"model {o['model']}%  points {o['points']}%   (shuffled control: model {c['model']}%)")
+    print(f"  winners named first: model {o.get('modelWinners')}, points {o.get('pointsWinners')}")
     for tier, b in report["byTier"].items():
-        print(f"    {tier:<12} {b['finals']:>4} finals  model {b['model']}%  points {b['points']}%")
+        print(f"    {tier:<12} {b['finals']:>4} finals  model {b['model']}%  points {b['points']}%  "
+              f"winners {b.get('modelWinners')} / {b.get('pointsWinners')}")
+    below = [row for row in report["coverage"] if not row["trained"]]
+    if below:
+        print(f"  Under {report['minMatch']:.0%} of finalists found, scored but not trained on: "
+              + ", ".join(f"{fd.competition_label(row['competition'], row['year'])} ({row['scored']:.0%})"
+                          for row in below))
     print("\n  group      finals  model  points  mean d  lower90  asia(m/p)   control  verdict")
     for group, g in report["groups"].items():
         print(f"  {group:<10} {g['finals']:>6} {_pct(g['modelHits'], g['possible']):>6} "
@@ -435,12 +462,14 @@ def main(argv=None):
         return 0
 
     print("=== Field model: walk-forward backtest against points ===")
-    finals = build_finals(load_scored_finals())
-    print(f"  {len(finals)} usable finals, {sum(f['top_idx'] is not None for f in finals)} with a scored podium")
+    scored = load_scored_finals()
+    finals = build_finals(scored)
+    print(f"  {len(finals)} usable finals, {sum(f['top_idx'] is not None for f in finals)} with a scored podium, "
+          f"{sum(f['top_idx'] is not None and f['trainable'] for f in finals)} of those trainable")
     results, athletes = backtest(finals)
     control, _ = backtest(finals, shuffle_seed=7)
     decisions = ship_decisions(results, control)
-    report = summarise(results, athletes, control, decisions)
+    report = summarise(results, athletes, control, decisions, fd.coverage(scored))
     print_report(report)
 
     model = fit(finals)
