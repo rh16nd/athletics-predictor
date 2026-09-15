@@ -192,13 +192,16 @@ ATHLETICS_CONTEXT = [
     "100m", "200m", "400m", "800m", "1500m", "5000m", "10000m", "3000m",
 ]
 
-# Keyword sets are matched as whole words against lowercased headlines.
-# REMOVE = athlete is confirmed out of competition -> drop from predictions.
-# WATCH  = injury-adjacent mention that isn't a confirmed withdrawal -> keep
-#          in predictions but surface a warning (may still get escalated to
-#          REMOVE below if the estimated recovery time won't clear in time
-#          for the final).
-REMOVE_KEYWORDS = [
+# Keyword sets are matched as whole words against normalised headlines. They
+# decide whether a headline is news about an athlete at all; classify() decides
+# what it means:
+# OUT ("remove") = a report that the athlete is out of the championship being
+#   called, or that their season is over.
+# WATCH = everything else: an injury mention, a DNF, and a withdrawal from a
+#   race. The athlete keeps their place. Pulling out of one meeting is not
+#   evidence of missing the championship, and on 2026-09-15 the user asked for
+#   exactly this after Keely Hodgkinson's Zurich withdrawal had marked her out.
+WITHDRAWAL_KEYWORDS = [
     "withdraw", "withdrawn", "withdraws", "withdrew", "pulls out", "pulled out",
     "ruled out", "out for the season", "out for the year", "will not compete",
     "will miss", "scratched", "did not start", "forced to withdraw",
@@ -265,7 +268,7 @@ DL_FINAL_DATE = date(2026, 9, 4)  # Brussels DL Final — run, and now history
 
 # Ways of saying an athlete will not be at a named competition. Only ever
 # consulted alongside the competition's own name (see names_target_event), so
-# these can be looser than REMOVE_KEYWORDS -- "misses" on its own would match
+# these can be looser than WITHDRAWAL_KEYWORDS -- "misses" on its own would match
 # "misses the podium", but "misses ... World Athletics Ultimate Championships"
 # is exactly what it looks like. That headline is why the list exists: Sachin
 # Yadav's withdrawal matched only "surgery", a watch word, and sat in the
@@ -310,15 +313,16 @@ def names_target_event(headline_norm, terms):
 
 
 def target_date():
-    """The competition an injury is measured against.
+    """The competition an injury is measured against, recorded in the output as
+    `days_to_final`.
 
     This used to be the Brussels Final, hard-coded. Once that was run the date
-    went NEGATIVE, and `days_to_final` drives the one decision that matters
-    here: a recovery estimate longer than the wait upgrades a "watch" to a
-    "remove". Against a date in the past every estimate is longer than the
-    wait, so a fresh check would have quietly removed every athlete it found
-    any injury mention for. Reads the real next competition instead, and only
-    falls back to the old constant if the file is missing."""
+    went NEGATIVE, and while a recovery estimate longer than the wait upgraded
+    a "watch" to a "remove", every estimate against a past date was longer: a
+    fresh check quietly removed every athlete it found an injury mention for.
+    An estimate no longer changes a status (see classify). This still reads
+    the real next competition, and only falls back to the old constant if the
+    file is missing."""
     try:
         with open(CHAMPIONSHIP_EVENT_PATH, encoding="utf-8") as f:
             start = json.load(f).get("startDate")
@@ -328,9 +332,18 @@ def target_date():
         pass
     return DL_FINAL_DATE
 
+
+# Ways a season is reported over: "ruled out of 2026 season", "ends his season",
+# "season-ending" (hyphens are spaces by the time this runs). On a full-name
+# match it is an Out whatever competition the headline names. See classify.
+SEASON_OVER_RE = re.compile(
+    r"\b(?:out for the (?:season|year)|season is over|season ending|retires|retirement"
+    r"|(?:ends|shuts down) (?:his |her |the )?(?:\d{4} )?(?:athletics )?season"
+    r"|ruled out (?:of|for) (?:the |his |her )?(?:\d{4} )?(?:athletics )?season)\b")
+
 _KEYWORD_RE = {
     kw: re.compile(r"\b" + re.escape(kw) + r"\b", re.IGNORECASE)
-    for kw in REMOVE_KEYWORDS + WATCH_KEYWORDS
+    for kw in WITHDRAWAL_KEYWORDS + WATCH_KEYWORDS
 }
 
 _RETURN_RE = {p: re.compile(r"\b" + re.escape(p) + r"\b") for p in RETURNING_PHRASES}
@@ -501,10 +514,10 @@ def fetch_headlines(source):
 
 
 def match_keywords(headline_lower):
-    matched = {"remove": [], "watch": []}
-    for kw in REMOVE_KEYWORDS:
+    matched = {"withdrawal": [], "watch": []}
+    for kw in WITHDRAWAL_KEYWORDS:
         if _KEYWORD_RE[kw].search(headline_lower):
-            matched["remove"].append(kw)
+            matched["withdrawal"].append(kw)
     for kw in WATCH_KEYWORDS:
         if _KEYWORD_RE[kw].search(headline_lower):
             matched["watch"].append(kw)
@@ -635,6 +648,26 @@ def names_in(headline_norm, aliases):
     return found
 
 
+def part_of_a_double_surname(headline, alias):
+    """Is this bare surname only half of a hyphenated surname in the headline?
+
+    normalize_for_match reads hyphens as spaces, which is right for a full name
+    ("Tara Davis Woodhall") and wrong for a bare surname: "Davis-Woodhall ends
+    season ... to miss World Athletics Ultimate" is Tara Davis-Woodhall, and
+    read as "davis" it marked Tamari Davis out (found 2026-09-15). A spaced
+    dash is punctuation, not a name, so only a hyphen with no space counts."""
+    folded = unicodedata.normalize("NFKD", str(headline))
+    folded = "".join(c for c in folded if not unicodedata.combining(c)).lower()
+    word = re.escape(alias)
+    return bool(re.search(rf"\b{word}[‐-―\-]\w|\w[‐-―\-]{word}\b", folded))
+
+
+# Words that tie an injury to the subject of the sentence rather than to the
+# athlete named nearest it. See keyword_is_about.
+SUBJECT_CONNECTORS = ("despite", "amid", "with", "after", "nursing", "carrying", "through")
+_CONNECTOR_RE = re.compile(r"\b(?:" + "|".join(SUBJECT_CONNECTORS) + r")\b")
+
+
 def keyword_is_about(headline_lower, target_lower, other_names_lower, keyword):
     """Is `keyword` plausibly describing `target_lower`, or someone else?
 
@@ -646,7 +679,14 @@ def keyword_is_about(headline_lower, target_lower, other_names_lower, keyword):
 
     Attribute the keyword to whichever known athlete is named closest to it.
     Ties and single-name headlines resolve to the target, so this only ever
-    rejects when some OTHER athlete is genuinely nearer."""
+    rejects when some OTHER athlete is genuinely nearer.
+
+    One construction overrides nearness. When every athlete named comes before
+    the keyword, and a connector such as "despite" stands between the last of
+    them and it, the keyword belongs to the athlete named first: the sentence's
+    subject. "Keely Hodgkinson second to Audrey Werro despite recent hamstring
+    tear" is Hodgkinson's tear, and nearness had flagged Werro, who won
+    (reported by the user, 2026-09-15)."""
     kw_match = _KEYWORD_RE[keyword].search(headline_lower) if keyword in _KEYWORD_RE else None
     if kw_match is None:
         return True
@@ -654,12 +694,20 @@ def keyword_is_about(headline_lower, target_lower, other_names_lower, keyword):
     target_pos = headline_lower.find(target_lower)
     if target_pos < 0:
         return False
-    target_dist = abs(kw_pos - target_pos)
+    named = [(target_pos, target_lower)]
     for other in other_names_lower:
         if other == target_lower:
             continue
         pos = headline_lower.find(other)
-        if pos >= 0 and abs(kw_pos - pos) < target_dist:
+        if pos >= 0:
+            named.append((pos, other))
+    if len(named) > 1 and all(pos + len(name) <= kw_pos for pos, name in named):
+        last_end = max(pos + len(name) for pos, name in named)
+        if _CONNECTOR_RE.search(headline_lower, last_end, kw_pos):
+            return target_pos == min(pos for pos, _ in named)
+    target_dist = abs(kw_pos - target_pos)
+    for pos, _ in named[1:]:
+        if abs(kw_pos - pos) < target_dist:
             return False
     return True
 
@@ -692,6 +740,23 @@ def upgrade_status(entry, new_status):
         entry["status"] = "remove"
     elif entry["status"] != "remove":
         entry["status"] = new_status
+
+
+def classify(headline_norm, surname_only, event_terms):
+    """"remove" (Out) or "watch" for a headline already attributed to one
+    athlete. Decided by the user on 2026-09-15:
+      - Out when the headline names the championship being called and says the
+        athlete will not be there, however the name matched ("Neeraj Chopra
+        out of Asian Games");
+      - Out when a full-name headline says their season is over (SEASON_OVER_RE);
+      - Watch for everything else, a withdrawal from a race included.
+    Keely Hodgkinson's withdrawal from the Zurich Diamond League had marked her
+    out of a championship she then ran."""
+    if names_target_event(headline_norm, event_terms) and any(w in headline_norm for w in OUT_OF_EVENT_WORDS):
+        return "remove"
+    if not surname_only and SEASON_OVER_RE.search(headline_norm):
+        return "remove"
+    return "watch"
 
 
 def find_results_articles(headlines, max_articles=3):
@@ -830,9 +895,13 @@ def check_injuries():
             # almost always somebody else with the same name.
             if aliases[hit][1] and not reads_like_athletics(headline_norm):
                 continue
-            # A surname on its own is weaker evidence than a full name, so it
-            # can raise a flag but never a removal. "Duplantis withdraws" is
-            # almost certainly the right Duplantis; it is still one word.
+            # Nor is a bare surname that is only half of a hyphenated one.
+            if aliases[hit][1] and part_of_a_double_surname(item["headline"], hit):
+                continue
+            # A surname on its own is weaker evidence than a full name: it can
+            # raise a Watch, and only a headline naming this championship can
+            # make it an Out. "Duplantis withdraws" is almost certainly the
+            # right Duplantis; it is still one word.
             surname_only = aliases[hit][1]
             matched = match_keywords(headline_norm)
             # A headline naming two athletes must not flag both. Keep only the
@@ -852,21 +921,16 @@ def check_injuries():
                 when = item.get("published")
                 if when and when > returned.get(name, ""):
                     returned[name] = when
-                if not matched["remove"]:
+                if not matched["withdrawal"]:
                     continue
-            if not matched["remove"] and not matched["watch"]:
+            if not matched["withdrawal"] and not matched["watch"]:
                 continue
-            status = "watch" if surname_only else ("remove" if matched["remove"] else "watch")
-            # A headline that names the competition AND says the athlete is not
-            # in it is not a doubt, whichever way the name matched.
-            if (names_target_event(headline_norm, event_terms)
-                    and any(w in headline_norm for w in OUT_OF_EVENT_WORDS)):
-                status = "remove"
-
+            status = classify(headline_norm, surname_only, event_terms)
+            # Recorded for the reader and never acted on: a rough estimate from
+            # a headline is not a report that the athlete will miss anything.
+            # Acted on, it marked Audrey Werro out on another athlete's
+            # hamstring tear.
             recovery = estimate_recovery_weeks(headline_norm)
-            likely_out_for_final = recovery is not None and (recovery[0] * 7 > days_to_final)
-            if likely_out_for_final and not surname_only and not is_returning_story(headline_norm):
-                status = "remove"
 
             entry = flags.setdefault(name, {
                 "status": "watch",
@@ -878,13 +942,12 @@ def check_injuries():
                 "headline": item["headline"],
                 "url": item["url"],
                 "source": item["source"],
-                "keywords": matched["remove"] + matched["watch"],
+                "keywords": matched["withdrawal"] + matched["watch"],
             }
             if item.get("published"):
                 match_record["published"] = item["published"]
             if recovery is not None:
                 match_record["estimated_recovery_weeks"] = list(recovery)
-                match_record["likely_out_for_final"] = likely_out_for_final
             entry["matches"].append(match_record)
 
     # Cross-check qualified athletes against recent full meet-results recaps
@@ -899,15 +962,14 @@ def check_injuries():
             print(f"    WARNING: failed to fetch results article ({e})")
             continue
         for name, recovery in find_dnf_athletes(text, athletes.keys()).items():
-            likely_out_for_final = recovery is not None and (recovery[0] * 7 > days_to_final)
-            status = "remove" if likely_out_for_final else "watch"
-
+            # A DNF is a Watch, never an Out: an athlete stops for many
+            # reasons, and one race is not the championship.
             entry = flags.setdefault(name, {
                 "status": "watch",
                 "disciplines": sorted(athletes[name]),
                 "matches": [],
             })
-            upgrade_status(entry, status)
+            upgrade_status(entry, "watch")
             match_record = {
                 "headline": article["headline"],
                 "url": article["url"],
@@ -916,7 +978,6 @@ def check_injuries():
             }
             if recovery is not None:
                 match_record["estimated_recovery_weeks"] = list(recovery)
-                match_record["likely_out_for_final"] = likely_out_for_final
             entry["matches"].append(match_record)
 
     # A flag stands only until the athlete is reported back. Compared on dates

@@ -438,6 +438,41 @@ def test_a_field_is_scored_from_this_seasons_list_and_its_chances_add_to_three(t
     assert chances == {name: 1.0 for name in rows["athlete_name"]}
 
 
+def test_an_entrant_with_no_mark_this_season_is_read_on_last_season_as_training_was(tmp_path):
+    header = "Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,ProfileURL\n"
+    season = tmp_path / "men_10000m_2026.csv"
+    season.write_text(header + "1,27:30.00,,Ran NOW,01 JAN 2000,JPN,1,,Tokyo,01 JUN 2026,1200,men_10000m,2026,u1\n",
+                      encoding="utf-8")
+    last = tmp_path / "men_10000m_2025.csv"
+    last.write_text(header + "1,27:10.00,,Ran LASTYEAR,01 JAN 1998,KEN,1,,Nairobi,01 JUL 2025,1230,men_10000m,2025,u2\n",
+                    encoding="utf-8")
+    nothing = lambda key: fd.season_scores(key, raw_dir=str(tmp_path / "none"), area_dirs={})  # noqa: E731
+    athletes = [{"name": "Ran NOW", "nat": "JPN"}, {"name": "Ran LASTYEAR", "nat": "KEN"},
+                {"name": "Never RAN", "nat": "QAT"}]
+    rows = fm.serving_rows("men_10000m", athletes, str(season), "2026-09-23", 2026,
+                           scores_for=nothing, extra=[(str(last), "asia")]).set_index("athlete_name")
+    assert list(rows.index) == ["Ran NOW", "Ran LASTYEAR"]
+    assert (rows.loc["Ran NOW", "sb_prior_season"], rows.loc["Ran NOW", "mark_season"]) == (0, 2026)
+    assert (rows.loc["Ran LASTYEAR", "sb_score"], rows.loc["Ran LASTYEAR", "sb_prior_season"],
+            rows.loc["Ran LASTYEAR", "mark_season"], rows.loc["Ran LASTYEAR", "mark"]) == (1230.0, 1, 2025, "27:10.00")
+
+
+def test_an_entrant_spelled_differently_on_the_list_is_found_by_their_world_athletics_id(tmp_path):
+    header = "Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,ProfileURL\n"
+    season = tmp_path / "women_5000m_2026.csv"
+    season.write_text(header, encoding="utf-8")
+    last = tmp_path / "women_5000m_2025.csv"
+    last.write_text(header + "1,14:40.00,,List SPELLING,01 JAN 1996,KAZ,1,,Almaty,01 JUN 2025,1180,women_5000m,2025,"
+                    "/athletes/kazakhstan/list-spelling-555\n", encoding="utf-8")
+    nothing = lambda key: fd.season_scores(key, raw_dir=str(tmp_path / "none"), area_dirs={})  # noqa: E731
+    by_id = fm.serving_rows("women_5000m", [{"name": "Entry NAME", "nat": "KAZ", "waId": 555}], str(season),
+                            "2026-09-23", 2026, scores_for=nothing, extra=[(str(last), "asia")])
+    assert by_id[["athlete_name", "sb_score", "sb_prior_season"]].values.tolist() == [["Entry NAME", 1180.0, 1]]
+    without = fm.serving_rows("women_5000m", [{"name": "Entry NAME", "nat": "KAZ"}], str(season),
+                              "2026-09-23", 2026, scores_for=nothing, extra=[(str(last), "asia")])
+    assert without.empty
+
+
 def test_the_scored_seasons_match_the_existing_model():
     import train_model as tm
 

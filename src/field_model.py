@@ -419,35 +419,56 @@ def shipped(model, disc_key):
     return bool(decision and decision.get("passed")), decision
 
 
-def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.season_scores):
-    """The rows field_features needs, for athletes about to compete.
+SERVING_COLUMNS = ["athlete_name", "sb_score", "sb_date", "sb_prior_season", "dob",
+                   "career_best", "prev_season_best", "mark", "mark_season"]
 
-    `athletes` is [{name, nat}]. Their season best, its date and date of birth
-    come from `season_path` (this season's toplist or a championship's merged
-    snapshot); career best and last season's best from the same history the
-    backtest read. Athletes not found in `season_path` are left out."""
+
+def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.season_scores, extra=()):
+    """The rows field_features needs, for athletes about to compete, read the
+    way field_data.attach_scores reads a past final.
+
+    `athletes` is [{name, nat, birthDate?}]. The season best is the best row in
+    `season_path` (this season's toplist or a championship's merged snapshot)
+    dated before the cut-off. An athlete with none takes last season's best
+    from their history, flagged sb_prior_season: training fell back the same
+    way, so serving must. History is `scores_for(disc_key)` plus the `extra`
+    (path, source) toplists, such as last season's Asian list, and gives the
+    career best and last season's best too. An athlete with neither mark is
+    left out. `mark` and `mark_season` say which mark was used, for the page."""
     season = fd._toplist_rows(season_path, "season")
     history = scores_for(disc_key)
+    frames = [f for f in [history] + [fd._toplist_rows(path, source) for path, source in extra] if not f.empty]
+    if frames:
+        history = pd.concat(frames, ignore_index=True)
+    cutoff = pd.Timestamp(cutoff)
     rows = []
     for a in athletes:
         key, nat = fd.field_key(a["name"]), str(a.get("nat") or "").strip()
-        mine, _how = fd.athlete_history(season, key, nat)
-        mine = mine[mine["date"] < pd.Timestamp(cutoff)] if not mine.empty else mine
-        if mine.empty:
+        wid = int(a["waId"]) if str(a.get("waId") or "").isdigit() else None
+        mine = fd.athlete_history(season, key, nat, wid)[0] if not season.empty else season
+        mine = mine[mine["date"] < cutoff] if not mine.empty else mine
+        past = fd.athlete_history(history, key, nat, wid)[0] if not history.empty else history
+        earlier = past[past["year"] < year] if not past.empty else past
+        last = past[past["year"] == year - 1] if not past.empty else past
+        if not mine.empty:
+            best, prior = mine.loc[mine["score"].idxmax()], 0
+        elif not last.empty:
+            best, prior = last.loc[last["score"].idxmax()], 1
+        else:
             continue
-        best = mine.loc[mine["score"].idxmax()]
-        past, _ = fd.athlete_history(history, key, nat)
-        earlier = past[past["year"] < year]
-        last = past[past["year"] == year - 1]
-        dob = best["dob"] if pd.notna(best["dob"]) else (past["dob"].dropna().iloc[0] if past["dob"].notna().any() else None)
+        dob = best["dob"] if pd.notna(best["dob"]) else None
+        if dob is None and not past.empty and past["dob"].notna().any():
+            dob = past["dob"].dropna().iloc[0]
+        if dob is None:
+            dob = fd.parse_date(a.get("birthDate"))
         rows.append({
             "athlete_name": a["name"], "sb_score": float(best["score"]), "sb_date": best["date"],
-            "sb_prior_season": 0, "dob": dob,
+            "sb_prior_season": prior, "dob": dob,
             "career_best": float(earlier["score"].max()) if not earlier.empty else None,
             "prev_season_best": float(last["score"].max()) if not last.empty else None,
+            "mark": best["mark"], "mark_season": int(best["year"]),
         })
-    return pd.DataFrame(rows, columns=["athlete_name", "sb_score", "sb_date", "sb_prior_season",
-                                       "dob", "career_best", "prev_season_best"])
+    return pd.DataFrame(rows, columns=SERVING_COLUMNS)
 
 
 def score_field(model, rows, cutoff):

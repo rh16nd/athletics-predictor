@@ -1,43 +1,38 @@
 """
-asian_games_predictions.py -- the call for each Asian Games event we can call,
-made one way per event.
+asian_games_predictions.py -- the call for each Asian Games event we can call.
 
-THE RULE (set by the user on 2026-09-14)
-An event is called by the model when at least 6 of its top 8 entrants by World
-Athletics Results Score have real history with us: a row in data/raw/{key}.csv
-(toplists and championship finals back to 2008) or in
-data/raw/{key}_2026_meetings.csv (this season's Diamond League meetings).
-Otherwise the whole event is ranked by Results Score.
+THE MODEL (set by the user on 2026-09-15)
+Every event is called by the field model (src/field_model.py). It rates each
+entrant against the others entered, on what was known before the Games: their
+best mark this season, or last season's when they have none this year, their
+career best, last season's best, how long ago the best mark was set, and their
+age. An athlete with one race this year is read on their record rather than
+written off. Each entrant gets a chance of a podium, and a field's chances add
+up to 300, one hundred for each medal.
 
-THE FLOOR (added by the user the same day)
-An event that passes on history still goes to points when the model's own
-favourite has less than a MODEL_FLOOR podium chance. With the history rule
-alone, 5 of the 12 model events had a favourite under 1.5%: the women's triple
-jump read 0.4%, 0.3% and 0.2%. The model learned on world-class finals and rates
-most of an Asian field as long shots, so numbers that small are an order with
-nothing to say about who is likely to medal.
+HOW IT TESTED, SAID PLAINLY ON THE PAGE
+On 511 held-out championship finals it named 64.9% of the medallists, and a
+ranking by World Athletics points named 64.1%: level, not better (+0.025 a
+final, 90% interval -0.018 to +0.068). On the Asian finals it was behind, 210
+podium places to 217, also inside the noise. The payload's `rule.backtest` is
+read from outputs/field_model_report.json, so the page states whatever the
+last backtest said.
 
-THE MARK AN ENTRANT IS RANKED ON (asked for by the user on 2026-09-15)
-Their best mark in the event this season. An entrant with no mark this season
-is ranked on last season's best instead, tagged with its year, and in the 5000m
-and 10,000m every entrant takes the better of the two seasons. Both were
-measured on past championship finals before they were built: see
-last_season_rule.
+It replaced, the same day, a call made two ways: the Diamond League model where
+6 of an event's top 8 had a record we hold and its favourite a 5% chance, and a
+ranking on points everywhere else, which was 28 of the 36 events.
 
-Why a rule: the model reads form from data we hold, and we hold little on most
-Asian athletes. One with no history is scored on defaults (no meetings,
-head-to-head 0.5), which is not a view of them. When most of an event's
-contenders are like that, a model ranking would be defaults sorted against
-defaults, and World Athletics' own scoring is the honest call.
-
-Why never mixed: a podium chance and a points ranking are different kinds of
-statement. In one list, a 41% would sit beside a 1190 and invite a comparison
-neither supports. Each event says which one it is.
+THE MARK SHOWN
+The mark the model read each entrant on: this season's best, or last season's
+tagged with its year (`markSeason`). An event with fewer than MIN_SCORED
+entrants to read has no podium to call, and is ranked on points instead, saying
+why.
 
 Usage:
     python src/asian_games_predictions.py
-Reads data/asian_games_2026/event.json and asia/{key}_2025.csv
-(asian_games_scraper.py) and writes data/asian_games_2026/predictions.json.
+Reads data/asian_games_2026/event.json, raw/{key}_2026.csv and asia/{key}_2025.csv
+(asian_games_scraper.py) and outputs/field_model.json (field_model.py), and
+writes data/asian_games_2026/predictions.json.
 """
 import json
 import os
@@ -52,15 +47,15 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 import asian_games_scraper as ags  # noqa: E402
-import ultimate_predictions as up  # noqa: E402
+import championships  # noqa: E402
+import field_model as fm  # noqa: E402
 
 OUT_PATH = os.path.join(ags.OUT_DIR, "predictions.json")
-MODEL_OF = 8
-MODEL_NEEDED = 6
-# Percent. See THE FLOOR above.
-MODEL_FLOOR = 5.0
-# Events where every entrant takes the better of this season's and last
-# season's best. See last_season_rule.
+CHAMP = championships.get("asian-games-2026")
+# Fewer entrants with a mark to read than this, and there is no podium to call.
+MIN_SCORED = 3
+# In a points fallback, events where every entrant takes the better of this
+# season's and last season's best. See last_season_rule.
 BETTER_OF_TWO = frozenset({"5000m", "10000m"})
 
 
@@ -68,19 +63,7 @@ def _key(name):
     return str(name or "").upper().strip()
 
 
-def history_names(key, raw_dir=None):
-    """Everyone with a row in the discipline's history or this season's
-    meetings log, as upper-cased toplist names."""
-    raw_dir = raw_dir or ags.WORLD_RAW_DIR
-    names = set()
-    for filename in (f"{key}.csv", f"{key}_{ags.YEAR}_meetings.csv"):
-        path = os.path.join(raw_dir, filename)
-        if os.path.exists(path):
-            names.update(_key(n) for n in pd.read_csv(path, usecols=["Competitor"])["Competitor"].dropna())
-    return names
-
-
-# ---- the mark each entrant is ranked on ------------------------------------------
+# ---- last season ------------------------------------------------------------------
 
 def name_keys(name, nat):
     """Ways to meet one athlete on another list, always with their nation: the
@@ -117,13 +100,13 @@ def last_season_marks(key, asia_dir=None):
 
 
 def last_season_rule(athletes, key, last):
-    """The entrants, each with the mark they are ranked on.
+    """The entrants, each with the mark a points ranking would rank them on.
 
     `score` and `mark` become that mark, `seasonScore` and `seasonMark` keep
     this season's, and `markSeason` is last season's year when the mark is from
     then (None otherwise). An entrant with no mark this season takes last
-    season's best from its Asian list. In BETTER_OF_TWO events every entrant
-    takes the better of the two.
+    season's best from its Asian list, which also clears their "no mark"
+    reason. In BETTER_OF_TWO events every entrant takes the better of the two.
 
     Measured on 1,115 past championship finals before it was built
     (2026-09-15), counting the podium places a top three by points named:
@@ -131,13 +114,14 @@ def last_season_rule(athletes, key, last):
         by. Falling back to last season left 7, and named more places: a mean
         +0.013 a final, 90% interval +0.002 to +0.024.
       - In the 10,000m the better of two seasons named 51.3% of places against
-        39.3% on this season alone, and in the 5000m 57.9% against 50.9%. A
-        distance runner may race the distance once a year.
+        39.3% on this season alone, and in the 5000m 57.9% against 50.9%.
       - Applied to every event it did worse in the 1500m (47.9% against 52.6%)
         and the javelin (56.2% against 60.9%), so it stops at those two. Those
         two were chosen after seeing every event's numbers.
-    An entrant whose lookup failed is left as it is: a failed request says
-    nothing about their season."""
+    The model reads last season through its own fallback (field_model.
+    serving_rows); this rule orders a points fallback and settles who is
+    unranked. An entrant whose lookup failed is left as it is: a failed
+    request says nothing about their season."""
     event = str(key).split("_", 1)[-1]
     out = []
     for athlete in athletes:
@@ -156,6 +140,8 @@ def last_season_rule(athletes, key, last):
     return out
 
 
+# ---- the call -----------------------------------------------------------------------
+
 def _by_points(athletes):
     """Entrants with a mark to rank them on, best Results Score first. Ties keep
     the Asian list's own order."""
@@ -163,42 +149,53 @@ def _by_points(athletes):
                   key=lambda a: (-a["score"], a.get("asiaRank") or 10 ** 6))
 
 
-def choose_method(athletes, known):
-    """("model" | "points", the evidence the page shows). An entrant with no
-    mark from either season has no Results Score, so cannot be among the top
-    eight."""
-    top = _by_points(athletes)[:MODEL_OF]
-    with_history = [a["name"] for a in top if _key(a["name"]) in known]
-    method = "model" if len(with_history) >= MODEL_NEEDED else "points"
-    return method, {
-        "considered": [a["name"] for a in top],
-        "withHistory": with_history,
-        "needed": MODEL_NEEDED,
-        "of": MODEL_OF,
-    }
-
-
 def unranked_detail(event, names):
     """The entrants a call could not rank, each with the reason, for the rows at
     the foot of the event's table. The reason is the scraper's ("notFound",
-    "noMark", "lookupFailed"), or, in a model event, "lastSeasonOnly" for an
-    entrant whose only mark is last season's, which the model cannot read, and
-    "notScored" for one with a mark this season the model still could not
-    score."""
+    "noMark", "lookupFailed"), or "notScored" for an entrant with a mark the
+    model still could not read."""
     by_name = {_key(a["name"]): a for a in event["athletes"]}
     out = []
     for name in names:
         a = by_name.get(_key(name), {})
-        if a.get("unranked"):
-            reason = a["unranked"]
-        elif a.get("markSeason") and a.get("seasonScore") is None:
-            reason = "lastSeasonOnly"
-        elif a.get("score") is not None:
-            reason = "notScored"
-        else:
-            reason = "noMark"
+        reason = a.get("unranked") or ("notScored" if a.get("score") is not None else "noMark")
         out.append({"name": name, "nat": a.get("nat"), "reason": reason, "profileUrl": a.get("profileUrl")})
     return out
+
+
+def field_call(event, model, snapshot_path, last_path, cutoff, year=ags.YEAR, rows_for=fm.serving_rows):
+    """One event called by the field model, in ultimate_predictions.project_event's
+    shape, or None when fewer than MIN_SCORED entrants have a mark to read."""
+    key = event["discKey"]
+    entrants = [{"name": a["name"], "nat": a.get("nat"), "waId": a.get("waId")} for a in event["athletes"]]
+    rows = rows_for(key, entrants, snapshot_path, cutoff, year, extra=[(last_path, "asiaLastSeason")])
+    rows = rows[rows["sb_score"].notna()].reset_index(drop=True)
+    if len(rows) < MIN_SCORED:
+        return None
+    chances = fm.predict(model, fm.field_features(rows, cutoff).to_numpy())
+    rows = rows.assign(chance=chances).sort_values(["chance", "sb_score"], ascending=False, kind="stable")
+    nats = {_key(a["name"]): a.get("nat") for a in event["athletes"]}
+    athletes = [{
+        "rank": rank, "name": r.athlete_name, "nat": nats.get(_key(r.athlete_name)), "qualifiedBy": None,
+        "rankingScore": int(r.sb_score), "mark": r.mark,
+        "markSeason": int(r.mark_season) if int(r.mark_season) != year else None,
+        "podiumChance": round(float(r.chance) * 100, 1),
+    } for rank, r in enumerate(rows.itertuples(), 1)]
+    scored = {_key(a["name"]) for a in athletes}
+    unscored = [a["name"] for a in event["athletes"] if _key(a["name"]) not in scored]
+    return {
+        "discKey": key,
+        "disciplineLabel": event.get("disciplineLabel"),
+        "sex": event.get("sex"),
+        "places": None,
+        "qualified": len(event["athletes"]),
+        "scored": len(athletes),
+        "unscored": unscored,
+        "unranked": unranked_detail(event, unscored),
+        "athletes": athletes,
+        "notEntered": [],
+        "fieldSource": "entries",
+    }
 
 
 def points_call(event):
@@ -222,33 +219,6 @@ def points_call(event):
         "notEntered": [],
         "fieldSource": "entries",
     }
-
-
-def model_call(event, model, scaler, feature_cols, snapshot_path, project=up.project_event):
-    """The Ultimate's projection, run on the merged snapshot. An entrant who is
-    not in it (no 2026 mark found) comes back in `unscored`, named. The model
-    reads this season only, so last season's marks play no part here."""
-    entry = {
-        "discKey": event["discKey"],
-        "disciplineLabel": event.get("disciplineLabel"),
-        "sex": event.get("sex"),
-        "places": None,
-        "athletes": [{"name": a["name"], "nat": a.get("nat"), "qualifiedBy": None,
-                      "rankingScore": a.get("seasonScore", a.get("score"))} for a in event["athletes"]],
-        "fieldSource": "entries",
-    }
-    out = project(entry, model, scaler, feature_cols, snapshot_path=snapshot_path)
-    if out is None:
-        # The rule gave this event to the model because six of its top eight
-        # have history, so there is always someone to score. None means the
-        # snapshot is missing, which is a broken run, not a points event.
-        raise RuntimeError(f"{event['discKey']}: the model scored nobody; is {snapshot_path} there?")
-    marks = {_key(a["name"]): a.get("seasonMark", a.get("mark")) for a in event["athletes"]}
-    for athlete in out["athletes"]:
-        athlete["mark"] = marks.get(_key(athlete["name"]))
-        athlete["markSeason"] = None
-    out["unranked"] = unranked_detail(event, out.get("unscored") or [])
-    return out
 
 
 def snapshot_names(key, snapshot_dir=None):
@@ -275,31 +245,40 @@ def link_athletes(out, event, on_site):
     return out
 
 
-def build(event, model, scaler, feature_cols, snapshot_dir=None, known_for=history_names,
-          project=up.project_event, pages_for=snapshot_names, last_for=last_season_marks):
+def backtest_summary(report_path=fm.REPORT_PATH):
+    """The field model's test against points, for the page to state, or None
+    when there is no report."""
+    try:
+        with open(report_path, encoding="utf-8") as f:
+            report = json.load(f)
+    except (OSError, ValueError):
+        return None
+    overall = report.get("overall") or {}
+    asia = (report.get("byTier") or {}).get("asia") or {}
+    return {"finals": overall.get("finals"), "model": overall.get("model"), "points": overall.get("points"),
+            "asiaFinals": asia.get("finals"), "asiaModel": asia.get("model"), "asiaPoints": asia.get("points"),
+            "years": report.get("testYears")}
+
+
+def build(event, model, snapshot_dir=None, asia_dir=None, cutoff=None, pages_for=snapshot_names,
+          last_for=last_season_marks, rows_for=fm.serving_rows, report_path=fm.REPORT_PATH):
     snapshot_dir = snapshot_dir or ags.SNAPSHOT_DIR
+    asia_dir = asia_dir or ags.ASIA_DIR
+    cutoff = cutoff or CHAMP["startDate"]
     projections = []
     for ev in event.get("field") or []:
         key = ev["discKey"]
         ev = {**ev, "athletes": last_season_rule(ev["athletes"], key, last_for(key))}
-        method, evidence = choose_method(ev["athletes"], known_for(key))
-        evidence["reason"] = None if method == "model" else "history"
-        if method == "model":
-            out = model_call(ev, model, scaler, feature_cols,
-                             os.path.join(snapshot_dir, f"{key}_{ags.YEAR}.csv"), project)
-            evidence["topChance"] = max((a["podiumChance"] for a in out["athletes"]), default=0.0)
-            evidence["floor"] = MODEL_FLOOR
-            if evidence["topChance"] < MODEL_FLOOR:
-                method, evidence["reason"] = "points", "floor"
-                out = points_call(ev)
-        else:
+        out = field_call(ev, model, os.path.join(snapshot_dir, f"{key}_{ags.YEAR}.csv"),
+                         os.path.join(asia_dir, f"{key}_{ags.LAST_YEAR}.csv"), cutoff, rows_for=rows_for)
+        if out is None:
             out = points_call(ev)
-        out["method"] = method
-        out["methodEvidence"] = evidence
+            out["method"], out["methodEvidence"] = "points", {"reason": "tooFew", "needed": MIN_SCORED}
+        else:
+            out["method"], out["methodEvidence"] = "model", {"reason": None}
         projections.append(link_athletes(out, ev, pages_for(key)))
     return {
-        "rule": {"needed": MODEL_NEEDED, "of": MODEL_OF, "floor": MODEL_FLOOR,
-                 "lastSeason": ags.LAST_YEAR, "betterOfTwo": sorted(BETTER_OF_TWO)},
+        "rule": {"method": "field", "cutoff": str(cutoff), "backtest": backtest_summary(report_path)},
         "builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "projections": projections,
         "notCalled": event.get("notCalled") or [],
@@ -310,23 +289,26 @@ if __name__ == "__main__":
     print("=== Calling the Asian Games ===")
     with open(ags.OUT_PATH, encoding="utf-8") as f:
         saved_event = json.load(f)
-    model, scaler, cols = up.load_model()
-    payload = build(saved_event, model, scaler, cols)
+    field_model = fm.load_model()
+    if field_model is None:
+        sys.exit(f"  no field model at {fm.MODEL_PATH}; run python src/field_model.py --backtest first")
+    payload = build(saved_event, field_model)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
 
     projections = payload["projections"]
     by_method = {m: [p for p in projections if p["method"] == m] for m in ("model", "points")}
     from_last = sum(1 for p in projections for a in p["athletes"] if a.get("markSeason"))
-    print(f"  {len(by_method['model'])} events by the model, {len(by_method['points'])} by points, "
-          f"{len(payload['notCalled'])} not called; {from_last} athletes ranked on a {ags.LAST_YEAR} mark")
+    print(f"  {len(by_method['model'])} events by the model, {len(by_method['points'])} on points "
+          f"(too few marks), {len(payload['notCalled'])} not called; "
+          f"{from_last} athletes read on a {ags.LAST_YEAR} mark")
     for p in projections:
-        ev = p["methodEvidence"]
-        top = ", ".join(
-            f"{a['name']} {a['podiumChance']}%" if p["method"] == "model" else f"{a['name']} {a['rankingScore']}"
-            for a in p["athletes"][:3])
+        if p["method"] == "model":
+            total = sum(a["podiumChance"] for a in p["athletes"])
+            top = ", ".join(f"{a['name']} {a['podiumChance']}%" for a in p["athletes"][:3])
+        else:
+            total, top = 0, ", ".join(f"{a['name']} {a['rankingScore']}" for a in p["athletes"][:3])
         last = sum(1 for a in p["athletes"] if a.get("markSeason"))
-        print(f"    {p['disciplineLabel']:<30} {p['method']:<6} "
-              f"{len(ev['withHistory'])}/{len(ev['considered'])} with history  "
-              f"{last:>2} on {ags.LAST_YEAR}  {len(p.get('unranked') or []):>2} unranked  {top}")
+        print(f"    {p['disciplineLabel']:<30} {p['method']:<6} {len(p['athletes']):>3} called  "
+              f"sum {total:6.1f}  {last:>2} on {ags.LAST_YEAR}  {len(p.get('unranked') or []):>2} unranked  {top}")
     print(f"\n  -> {OUT_PATH}")

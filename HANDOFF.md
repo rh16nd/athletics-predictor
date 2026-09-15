@@ -1,6 +1,35 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here: a model that can call every event (fifth session, 2026-09-15: BACKTEST RUN, NO GROUP SHIPS)
+## Start here: a model that can call every event (2026-09-15: NO GROUP BEAT POINTS, AND THE USER CHOSE THE MODEL FOR ALL 36 EVENTS)
+
+**Later on 2026-09-15: the field model calls every Asian Games event, and the injury check was fixed. Committed locally in both repos, not pushed. `CURRENT` is still `ultimate-2026`.**
+
+The user did not want 28 events ranked on points, and asked for athletes with thin seasons to be judged on their history. The field model does that and had tested level with points:
+- 511 finals: 64.9% against 64.1% (+0.025 a final, 90% interval −0.018 to +0.068).
+- 108 Asian finals: 210 podium places against 217 (−0.065, −0.157 to +0.037).
+- 2023 Asian Games: 69 against 66.
+
+Asked to choose, the user picked the model for all 36 events, with the page saying plainly that it matched points rather than beat it. The ship rule was not re-run or moved; this is the user's call on a tested tie.
+
+- **The call.** `asian_games_predictions.py` calls every event through `field_call`: 36 by the model, 0 on points, 14 not called. Each field's chances add up to 300 (checked: 299.7 to 300.2). An event with fewer than 3 entrants to read falls back to points with `methodEvidence.reason = "tooFew"`; none do. The RF model, the 6-of-8 rule and the 5% floor are gone from the Asian Games. `run.py`, `model_rf.pkl` and the Ultimate's frozen call are untouched. `rule.backtest` is read from `outputs/field_model_report.json` for the page.
+- **Serving reads entrants the way training did.** `field_model.serving_rows` takes this season's best before the cut-off (23 September), else last season's, flagged. 23 entrants are read on a 2025 mark and tagged 2025.
+- **Matching by id.** Seven entrants' 2025 marks were on the Asian list under another spelling, and name-and-nation matching missed them. `field_data.athlete_history` now matches by World Athletics id first when given one (toplist rows carry `wa_id` from their profile link). Serving passes ids; training is unchanged. What is left unranked is 48 with no mark and 47 with no World Athletics profile.
+- **The page.** The hero reads "36 by the model · 14 not called". The how panel says what the model reads and states the test numbers. Tables show chances and 2025 tags, and the chance hint says the column adds up to 300. English and French have 871 keys each. Checked in the preview in both languages, plus one athlete page's call ("1st of 10, 99.8%").
+- **Open question for the user.** Seven favourites show 100.0% and a few tail entrants 0%. In testing the model's top calibration band ran slightly hot (0.963 predicted, 0.915 observed), so it is worth asking whether the page should cap the display at something like ">99%" and "<1%".
+
+**Injury check, as the user decided on 2026-09-15.** An athlete is Out only when a report says they are out of this championship, or that their season is over. A withdrawal from a race, a DNF or an injury mention is Watch.
+- `classify()` decides the status. The recovery-estimate upgrade is gone: measured against a championship already run, it had marked Audrey Werro out on a hamstring tear. `REMOVE_KEYWORDS` is now `WITHDRAWAL_KEYWORDS`, and `SEASON_OVER_RE` is new.
+- **Attribution.** When every named athlete comes before the injury word and a connector ("despite", "amid", "with", "after" and so on) stands between, the injury belongs to the first-named athlete. "Keely Hodgkinson second to Audrey Werro despite recent hamstring tear" is Hodgkinson's.
+- **Hyphenated surnames.** A bare surname hyphenated to another name belongs to someone else (`part_of_a_double_surname`). Tara Davis-Woodhall's season-ending news had marked Tamari Davis out.
+- **Re-run for the current field.** 11 flagged. Werro and Tamari Davis are gone, and Hodgkinson and Shericka Jackson are now Watch. Out: Omanyala and Ingebrigtsen (reports naming the Ultimate) and Chopra (season over).
+
+**Next:** the user reviews, and answers the 100%/0% display question. Then the Asian Games steps under "Then" further down:
+1. `injury_checker.py --championship asian-games-2026`.
+2. Flip `CURRENT`.
+3. Profiles, then `build_static_api.py`, then push by 21 September.
+4. Before 23 September: re-scrape, `asian_games_scraper.py --last-season`, `asian_games_predictions.py`, freeze.
+
+---
 
 **Result, 2026-09-15: no event group beats points, so the call does not change.**
 
@@ -46,7 +75,7 @@ The user asked for the hammer, the 10,000m and anyone short of 2026 marks to be 
 - The hammer did not need it: almost every hammer finalist had a mark in the season, and past seasons changed nothing inside the noise.
 - Result: the split is unchanged (8 by the model, 28 on points, 14 not called), and 34 entrants are now ranked on a 2025 mark, 7 of them in the women's 10,000m. Checked on the preview page: tags, hints and the how-each-event-is-called step in place, no console errors.
 - `asian_games_scraper.py` fetches last season's list during the full scrape, and `--last-season` fetches only those lists (about 5 minutes). Rebuild the call with `asian_games_predictions.py` afterwards.
-- Seen, not changed: World Athletics' own toplists write two single-named Indian athletes as ". SEEMA" (women's discus) and ". POOJA" (women's 800m and 1500m), and the page shows the dot.
+- World Athletics' own toplists write two single-named Indian athletes as ". SEEMA" (women's discus) and ". POOJA" (women's 800m and 1500m). The page already drops the dot (`displayName` in `ultimate-projections.tsx`); only the build script's printout shows it.
 
 _Last updated: 2026-09-14, end of the fourth session. **The user asked why only 8 of the 36 Asian Games events get a model call ("that is not even prediction"). A plan was approved and saved at `C:\Users\rayen\.claude\plans\the-real-question-is-quizzical-thompson.md`; read it first. The data and model code are built and tested; nothing is served yet, and the go/no-go report has not been run.** Everything in the Asian Games section below still stands: its commits are local and not pushed, and `CURRENT` is still `ultimate-2026`._
 

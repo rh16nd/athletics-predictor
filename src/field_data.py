@@ -529,6 +529,7 @@ def _toplist_rows(path, source):
         "dob": df["DOB"].map(parse_date),
         "name": df["Competitor"],
         "mark": df["Mark"].astype(str),
+        "wa_id": df["ProfileURL"].map(ags.wa_id) if "ProfileURL" in df.columns else None,
         "source": source,
     })
     return out.dropna(subset=["year", "score", "date"])
@@ -546,16 +547,25 @@ def season_scores(key, raw_dir=RAW_DIR, area_dirs=None, extra=()):
     frames += [_toplist_rows(path, source) for path, source in extra]
     frames = [f for f in frames if not f.empty]
     if not frames:
-        return pd.DataFrame(columns=["key", "nat", "year", "score", "date", "dob", "name", "mark", "source"])
+        return pd.DataFrame(columns=["key", "nat", "year", "score", "date", "dob", "name", "mark", "wa_id", "source"])
     out = pd.concat(frames, ignore_index=True)
     out["year"] = out["year"].astype(int)
     return out
 
 
-def athlete_history(scores, key, nat):
-    """This athlete's toplist rows. By name and nationality first; by name
+def athlete_history(scores, key, nat, wa_id=None):
+    """This athlete's toplist rows. By World Athletics id first, when one is
+    given and the rows carry one; then by name and nationality; then by name
     alone only when the name belongs to one nationality, since a switch of
-    allegiance (to Bahrain or Qatar, say) otherwise loses every earlier season."""
+    allegiance (to Bahrain or Qatar, say) otherwise loses every earlier season.
+
+    The id comes first because the lists spell one athlete more than one way:
+    serving the Asian Games by name alone missed seven entrants' 2025 marks
+    that the entry list's ids found (2026-09-15)."""
+    if wa_id is not None and "wa_id" in scores.columns:
+        by_id = scores[scores["wa_id"] == wa_id]
+        if not by_id.empty:
+            return by_id, "id"
     same = scores[(scores["key"] == key) & (scores["nat"] == nat)]
     if not same.empty:
         return same, "nameNat"

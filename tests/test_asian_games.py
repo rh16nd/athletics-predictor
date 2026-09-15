@@ -425,26 +425,85 @@ def athletes(*spec):
             for i, (n, s) in enumerate(spec)]
 
 
-def test_six_of_the_top_eight_with_history_is_a_model_event():
-    field = athletes(*[(f"K{i}", 1300 - i) for i in range(6)], ("N1", 1200), ("N2", 1199))
-    method, evidence = agp.choose_method(field, {f"K{i}" for i in range(6)})
-    assert method == "model"
-    assert len(evidence["withHistory"]) == 6 and len(evidence["considered"]) == 8
+def unit_model():
+    """A field model that reads nothing but the gap to the best mark."""
+    import field_model as fm
+
+    width = len(fm.FEATURES)
+    return {"features": fm.FEATURES, "mean": [0.0] * width, "std": [1.0] * width,
+            "weights": [1.0] + [0.0] * (width - 1)}
 
 
-def test_five_of_the_top_eight_is_points_whoever_has_history_further_down():
-    field = athletes(*[(f"K{i}", 1300 - i) for i in range(5)],
-                     ("N1", 1200), ("N2", 1199), ("N3", 1198), ("K5", 1100), ("K6", 1099))
-    method, evidence = agp.choose_method(field, {f"K{i}" for i in range(7)})
-    assert method == "points"
-    assert "K5" not in evidence["considered"]
+def fake_rows(scores, mark_season=2026):
+    """field_model.serving_rows for the entrants named in `scores`."""
+    import field_model as fm
+    import pandas as pd
+
+    def rows_for(key, entrants, season_path, cutoff, year, extra=()):
+        rows = [{"athlete_name": a["name"], "sb_score": float(scores[a["name"]]),
+                 "sb_date": pd.Timestamp("2026-06-01"), "sb_prior_season": int(mark_season != year),
+                 "dob": pd.Timestamp("1998-01-01"), "career_best": scores[a["name"]] + 10.0,
+                 "prev_season_best": scores[a["name"]] - 10.0, "mark": "70.00", "mark_season": mark_season}
+                for a in entrants if a["name"] in scores]
+        return pd.DataFrame(rows, columns=fm.SERVING_COLUMNS)
+    return rows_for
 
 
-def test_an_entrant_with_no_season_mark_cannot_be_in_the_top_eight():
-    field = athletes(*[(f"K{i}", 1300 - i) for i in range(6)]) + [{"name": "NOMARK", "nat": "JPN", "score": None}]
-    method, evidence = agp.choose_method(field, {f"K{i}" for i in range(6)})
-    assert "NOMARK" not in evidence["considered"]
-    assert method == "model"
+def call_with(event, rows_for, tmp_path, report_path=None):
+    return agp.build(event, unit_model(), snapshot_dir=str(tmp_path), asia_dir=str(tmp_path), cutoff="2026-09-23",
+                     pages_for=lambda key: set(), last_for=lambda key: {"id": {}, "name": {}}, rows_for=rows_for,
+                     report_path=report_path or str(tmp_path / "no_report.json"))
+
+
+def test_every_event_with_three_marks_is_called_by_the_model_and_its_chances_add_to_300(tmp_path):
+    scores = {"First ONE": 1240, "Second ONE": 1150, "Third ONE": 1100, "Fourth ONE": 1050}
+    event = {"field": [{"discKey": "men_JT", "disciplineLabel": "Men's Javelin Throw", "sex": "M",
+                        "athletes": athletes(*scores.items())
+                        + [{"name": "No MARK", "nat": "PAK", "score": None, "unranked": "noMark"}]}],
+             "notCalled": [{"label": "Men's Marathon", "reason": "noData"}]}
+    out = call_with(event, fake_rows(scores), tmp_path)
+    [call] = out["projections"]
+    assert (call["method"], call["methodEvidence"]["reason"]) == ("model", None)
+    assert [a["name"] for a in call["athletes"]] == list(scores)
+    assert sum(a["podiumChance"] for a in call["athletes"]) == pytest.approx(300, abs=0.2)
+    assert [(u["name"], u["reason"]) for u in call["unranked"]] == [("No MARK", "noMark")]
+    assert (out["rule"]["method"], out["rule"]["cutoff"], out["rule"]["backtest"]) == ("field", "2026-09-23", None)
+    assert out["notCalled"][0]["reason"] == "noData"
+
+
+def test_an_entrant_read_on_last_seasons_mark_is_tagged_with_its_year(tmp_path):
+    import pandas as pd
+
+    def rows_for(key, entrants, season_path, cutoff, year, extra=()):
+        now = fake_rows({"Now ONE": 1100, "Now TWO": 1090})(key, entrants, season_path, cutoff, year)
+        then = fake_rows({"Last YEAR": 1180}, mark_season=2025)(key, entrants, season_path, cutoff, year)
+        return pd.concat([now, then], ignore_index=True)
+
+    event = {"field": [{"discKey": "women_10000m", "athletes": athletes(("Now ONE", 1100), ("Now TWO", 1090))
+                        + [{"name": "Last YEAR", "nat": "BRN", "score": None, "unranked": "noMark"}]}]}
+    [call] = call_with(event, rows_for, tmp_path)["projections"]
+    assert {a["name"]: a["markSeason"] for a in call["athletes"]} == {"Last YEAR": 2025, "Now ONE": None, "Now TWO": None}
+    assert call["unranked"] == []
+
+
+def test_an_event_with_fewer_than_three_marks_is_ranked_on_points_and_says_why(tmp_path):
+    scores = {"Only ONE": 1233, "Only TWO": 1226}
+    event = {"field": [{"discKey": "women_HT", "athletes": athletes(*scores.items())}]}
+    [call] = call_with(event, fake_rows(scores), tmp_path)["projections"]
+    assert (call["method"], call["methodEvidence"]["reason"]) == ("points", "tooFew")
+    assert all(a["podiumChance"] is None for a in call["athletes"])
+
+
+def test_the_page_states_the_models_test_from_the_report_file(tmp_path):
+    report = tmp_path / "field_model_report.json"
+    report.write_text(json.dumps({"testYears": [2021, 2022, 2023, 2024, 2025],
+                                  "overall": {"finals": 511, "model": 64.9, "points": 64.1},
+                                  "byTier": {"asia": {"finals": 108, "model": 64.8, "points": 67.0}}}),
+                      encoding="utf-8")
+    assert agp.backtest_summary(str(report)) == {
+        "finals": 511, "model": 64.9, "points": 64.1, "asiaFinals": 108, "asiaModel": 64.8, "asiaPoints": 67.0,
+        "years": [2021, 2022, 2023, 2024, 2025]}
+    assert agp.backtest_summary(str(tmp_path / "missing.json")) is None
 
 
 def test_a_points_event_states_an_order_and_no_chances():
@@ -457,37 +516,6 @@ def test_a_points_event_states_an_order_and_no_chances():
     assert out["unscored"] == ["No MARK"]
 
 
-def test_no_event_mixes_a_model_chance_with_a_points_ranking(tmp_path):
-    model_event = {"discKey": "men_100m", "disciplineLabel": "Men's 100m", "sex": "M",
-                   "athletes": athletes(*[(f"K{i}", 1300 - i) for i in range(8)])}
-    points_event = {"discKey": "men_JT", "disciplineLabel": "Men's Javelin Throw", "sex": "M",
-                    "athletes": athletes(*[(f"N{i}", 1200 - i) for i in range(8)])}
-    seen_snapshots = []
-
-    def project(entry, model, scaler, cols, snapshot_path=None):
-        seen_snapshots.append(snapshot_path)
-        return {"discKey": entry["discKey"], "unscored": [],
-                "athletes": [{"rank": i, "name": a["name"], "podiumChance": 50.0 - i}
-                             for i, a in enumerate(entry["athletes"], 1)]}
-
-    known = {"men_100m": {f"K{i}" for i in range(8)}, "men_JT": set()}
-    out = agp.build({"field": [model_event, points_event],
-                     "notCalled": [{"label": "Men's Hammer Throw", "reason": "noData"}]},
-                    None, None, [], snapshot_dir=str(tmp_path), known_for=known.get, project=project,
-                    pages_for=lambda key: set())
-    by_key = {p["discKey"]: p for p in out["projections"]}
-
-    assert by_key["men_100m"]["method"] == "model"
-    assert all(a["podiumChance"] is not None for a in by_key["men_100m"]["athletes"])
-    assert by_key["men_JT"]["method"] == "points"
-    assert by_key["men_JT"]["methodEvidence"]["reason"] == "history"
-    assert by_key["men_100m"]["methodEvidence"]["reason"] is None
-    assert all(a["podiumChance"] is None for a in by_key["men_JT"]["athletes"])
-    # The model reads the merged snapshot, never the world one.
-    assert seen_snapshots == [str(tmp_path / "men_100m_2026.csv")]
-    assert out["notCalled"][0]["reason"] == "noData"
-
-
 def test_an_athlete_with_no_page_here_links_to_world_athletics_instead():
     event = {"athletes": [
         {"name": "On LIST", "profileUrl": "https://worldathletics.org/athletes/athlete=1"},
@@ -498,27 +526,6 @@ def test_an_athlete_with_no_page_here_links_to_world_athletics_instead():
     assert out["athletes"][1]["profileUrl"].endswith("off-list-2")
 
 
-def test_a_favourite_under_the_floor_sends_the_event_to_points(tmp_path):
-    """The real 2026 case in miniature: the women's triple jump passed the
-    history rule and the model's favourite read 0.4%."""
-    event = {"discKey": "women_TJ", "disciplineLabel": "Women's Triple Jump", "sex": "W",
-             "athletes": athletes(*[(f"K{i}", 1150 - i) for i in range(8)])}
-
-    def project(entry, model, scaler, cols, snapshot_path=None):
-        return {"discKey": entry["discKey"], "unscored": [],
-                "athletes": [{"rank": i, "name": a["name"], "podiumChance": round(0.4 - i / 100, 2)}
-                             for i, a in enumerate(entry["athletes"], 1)]}
-
-    out = agp.build({"field": [event]}, None, None, [], snapshot_dir=str(tmp_path),
-                    known_for=lambda key: {f"K{i}" for i in range(8)}, project=project,
-                    pages_for=lambda key: set())
-    [call] = out["projections"]
-    assert call["method"] == "points"
-    assert (call["methodEvidence"]["reason"], call["methodEvidence"]["topChance"]) == ("floor", 0.39)
-    assert all(a["podiumChance"] is None for a in call["athletes"])
-    assert out["rule"]["floor"] == agp.MODEL_FLOOR
-
-
 def test_every_entrant_a_call_cannot_rank_comes_with_the_reason():
     event = {"discKey": "men_100m", "athletes": athletes(("Ranked ONE", 1200)) + [
         {"name": "Not FOUND", "nat": "AFG", "score": None, "unranked": "notFound", "profileUrl": None},
@@ -527,14 +534,8 @@ def test_every_entrant_a_call_cannot_rank_comes_with_the_reason():
     out = agp.points_call(event)
     assert [(u["name"], u["reason"]) for u in out["unranked"]] == [("Not FOUND", "notFound"), ("No MARK", "noMark")]
     assert out["unranked"][1]["profileUrl"].endswith("athlete=5")
-    # A mark the model could not score is a reason of its own.
+    # A mark the model could not read is a reason of its own.
     assert agp.unranked_detail(event, ["Ranked ONE"])[0]["reason"] == "notScored"
-
-
-def test_a_model_event_the_model_cannot_score_stops_the_build():
-    event = {"discKey": "men_100m", "athletes": athletes(("K0", 1300))}
-    with pytest.raises(RuntimeError):
-        agp.model_call(event, None, None, [], "missing.csv", project=lambda *a, **k: None)
 
 
 # ---- the mark an entrant is ranked on -----------------------------------------
@@ -596,29 +597,6 @@ def test_a_failed_lookup_is_not_papered_over_with_last_season(tmp_path):
     [a] = agp.last_season_rule([{"name": "Lookup FAILED", "nat": "IND", "waId": 7, "score": None,
                                  "unranked": "lookupFailed"}], "men_JT", last)
     assert (a["score"], a["unranked"]) == (None, "lookupFailed")
-
-
-def test_in_a_model_event_an_entrant_with_only_last_seasons_mark_says_the_model_cannot_read_it(tmp_path):
-    last = last_list(tmp_path, "men_110h", ("Only LASTYEAR", "CHN", "13.40", 1180, 9))
-    field = athletes(*[(f"K{i}", 1300 - i) for i in range(8)]) + [
-        {"name": "Only LASTYEAR", "nat": "CHN", "waId": 9, "score": None, "unranked": "noMark"}]
-
-    def project(entry, model, scaler, cols, snapshot_path=None):
-        # The model is handed this season's score, never last season's.
-        assert [a["rankingScore"] for a in entry["athletes"] if a["name"] == "Only LASTYEAR"] == [None]
-        scored = [a for a in entry["athletes"] if a["name"].startswith("K")]
-        return {"discKey": entry["discKey"], "unscored": ["Only LASTYEAR"],
-                "athletes": [{"rank": i, "name": a["name"], "podiumChance": 40.0 - i}
-                             for i, a in enumerate(scored, 1)]}
-
-    out = agp.build({"field": [{"discKey": "men_110h", "athletes": field}]}, None, None, [],
-                    snapshot_dir=str(tmp_path), known_for=lambda key: {f"K{i}" for i in range(8)},
-                    project=project, pages_for=lambda key: set(), last_for=lambda key: last)
-    [call] = out["projections"]
-    assert call["method"] == "model"
-    assert [(u["name"], u["reason"]) for u in call["unranked"]] == [("Only LASTYEAR", "lastSeasonOnly")]
-    assert all(a["markSeason"] is None for a in call["athletes"])
-    assert out["rule"]["lastSeason"] == ags.LAST_YEAR
 
 
 def test_last_seasons_asian_list_is_read_from_its_own_page_down_to_the_last_page():

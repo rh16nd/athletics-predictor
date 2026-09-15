@@ -23,7 +23,7 @@ REAL_FALSE_POSITIVE = (
 
 def test_the_headline_that_wrongly_removed_cole_hocker_matches_nothing():
     matched = ic.match_keywords(REAL_FALSE_POSITIVE)
-    assert matched["remove"] == []
+    assert matched["withdrawal"] == []
     assert matched["watch"] == []
     assert ic.estimate_recovery_weeks(REAL_FALSE_POSITIVE) is None
 
@@ -62,9 +62,71 @@ def test_severity_words_widen_and_narrow_the_estimate():
     assert milder[1] <= base[1]
 
 
-def test_remove_keywords_still_trigger_removal():
-    assert "withdraws" in ic.match_keywords("champion withdraws from brussels")["remove"]
-    assert "ruled out" in ic.match_keywords("ruled out for the season")["remove"]
+def test_a_withdrawal_is_still_registered_as_news():
+    assert "withdraws" in ic.match_keywords("champion withdraws from brussels")["withdrawal"]
+    assert "ruled out" in ic.match_keywords("ruled out for the season")["withdrawal"]
+
+
+# --- Out or watch (decided by the user, 2026-09-15) ---------------------------
+#
+# Out only when a report says the athlete is out of the championship being
+# called, or that their season is over. Pulling out of a race, a DNF or an
+# injury mention is Watch, and the athlete keeps their place.
+
+ASIAN_GAMES_TERMS = {"asian games", "nagoya", "20th asian games"}
+
+
+def _classify(headline, surname_only=False):
+    return ic.classify(ic.normalize_for_match(headline), surname_only, ASIAN_GAMES_TERMS)
+
+
+def test_pulling_out_of_a_race_is_watch_not_out():
+    assert _classify('Keely Hodgkinson withdraws from Zurich Diamond League as body "not quite ready"') == "watch"
+    assert _classify("Team GB hero Keely Hodgkinson pulls out of another race amid fitness concerns") == "watch"
+
+
+def test_an_injury_with_a_long_recovery_estimate_is_still_only_watch():
+    assert _classify("Keely Hodgkinson reveals hamstring tear after defeat") == "watch"
+
+
+def test_a_report_that_the_athlete_is_out_of_this_championship_is_out():
+    assert _classify("Neeraj Chopra out of Asian Games after ankle injury ends 2026 athletics season") == "remove"
+    assert _classify("Neeraj Chopra out of Asian Games", surname_only=True) == "remove"
+
+
+def test_a_season_that_is_over_is_out_but_only_on_a_full_name():
+    assert _classify("Neeraj Chopra ruled out of 2026 season after ankle ligament tear") == "remove"
+    assert _classify("Noah Lyles ends his season early") == "remove"
+    # A bare surname is weaker evidence: a doubt, not an absence.
+    assert _classify("Athletics-Chopra ends season early after ligament tear", surname_only=True) == "watch"
+
+
+def test_an_injury_after_despite_belongs_to_the_subject_not_the_nearest_name():
+    """Reported by the user, 2026-09-15: the winner was flagged out with the
+    runner-up's hamstring tear."""
+    headline = ic.normalize_for_match(
+        "World Athletics Ultimate Championship: Keely Hodgkinson second to Audrey Werro "
+        "despite recent hamstring tear")
+    names = ["keely hodgkinson", "audrey werro"]
+    assert not ic.keyword_is_about(headline, "audrey werro", names, "hamstring")
+    assert ic.keyword_is_about(headline, "keely hodgkinson", names, "hamstring")
+
+
+def test_a_bare_surname_that_is_half_of_a_hyphenated_one_is_someone_else():
+    """Found 2026-09-15: Tara Davis-Woodhall's season-ending news marked Tamari
+    Davis out, because "davis" was Tamari's surname alias."""
+    headline = "'I will be back': Davis-Woodhall ends season after car crash, to miss World Athletics Ultimate"
+    assert ic.part_of_a_double_surname(headline, "davis")
+    assert ic.part_of_a_double_surname(headline, "woodhall")
+    assert not ic.part_of_a_double_surname("Tamari Davis withdraws - hamstring", "davis")
+
+
+def test_an_injury_named_before_the_other_athlete_still_goes_to_the_nearest():
+    headline = ic.normalize_for_match(
+        "Keely Hodgkinson reveals hamstring injury after suffering another defeat to Audrey Werro")
+    names = ["keely hodgkinson", "audrey werro"]
+    assert ic.keyword_is_about(headline, "keely hodgkinson", names, "hamstring")
+    assert not ic.keyword_is_about(headline, "audrey werro", names, "hamstring")
 
 
 # --- attribution ---------------------------------------------------------
@@ -256,7 +318,7 @@ def test_a_withdrawal_still_counts_even_when_it_mentions_returning():
     # Suppression must never swallow a real one: this says he is injured AND out.
     norm = ic.normalize_for_match(
         "Injured Omanyala pulls out of Diamond League final and World Ultimate Championships")
-    assert ic.match_keywords(norm)["remove"], "the withdrawal must still register"
+    assert ic.match_keywords(norm)["withdrawal"], "the withdrawal must still register"
 
 
 def test_the_publisher_suffix_google_appends_is_not_matchable_text():
