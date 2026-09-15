@@ -277,14 +277,27 @@ def _read_json(path):
         return None
 
 
-def backtest_summary(report_path=fm.REPORT_PATH, model=None, holdout_path=fm.HOLDOUT_PATH):
+def backtest_summary(report_path=fm.REPORT_PATH, model=None, holdout_path=fm.HOLDOUT_PATH,
+                     all_seasons_path=fm.ALL_SEASONS_PATH):
     """How the served field model tested, for the page to state, or None.
 
-    For a model chosen as an experiment and tested once on the locked years
+    First, when the served model is the version field_model.py --all-seasons
+    kept, that test (`method` "allSeasons"): every past season, each called only
+    from the seasons before it, and how many versions it was chosen among. Then,
+    for a model chosen as an experiment and tested once on the locked years
     (field_model.py --holdout), that test: against the model it replaced
     (`previous`) and against points, on finals kept aside while it was built.
     Only when the report tested this model; otherwise the older backtest
     against points in `report_path`."""
+    served = (model or {}).get("experiment")
+    seasons = _read_json(all_seasons_path)
+    if seasons and served and seasons.get("chosen") == served:
+        row = next((r for r in seasons.get("candidates") or [] if r.get("name") == served), None)
+        if row:
+            return {"method": "allSeasons", "finals": row["finals"], "model": row["medallistsPct"],
+                    "points": row["pointsPct"], "asiaFinals": row.get("asiaFinals"),
+                    "asiaModel": row.get("asiaPct"), "asiaPoints": row.get("asiaPointsPct"),
+                    "years": seasons.get("years"), "versions": len(seasons.get("candidates") or [])}
     held = _read_json(holdout_path)
     if held and (model or {}).get("experiment") and held.get("candidateName") == model["experiment"]:
         overall, asia = held["overall"], (held.get("byTier") or {}).get("asia") or {}
@@ -307,7 +320,7 @@ def backtest_summary(report_path=fm.REPORT_PATH, model=None, holdout_path=fm.HOL
 
 def build(event, model, snapshot_dir=None, asia_dir=None, cutoff=None, pages_for=snapshot_names,
           last_for=last_season_marks, rows_for=fm.serving_rows, report_path=fm.REPORT_PATH, races=None,
-          holdout_path=fm.HOLDOUT_PATH):
+          holdout_path=fm.HOLDOUT_PATH, all_seasons_path=fm.ALL_SEASONS_PATH):
     snapshot_dir = snapshot_dir or ags.SNAPSHOT_DIR
     asia_dir = asia_dir or ags.ASIA_DIR
     cutoff = cutoff or CHAMP["startDate"]
@@ -326,7 +339,7 @@ def build(event, model, snapshot_dir=None, asia_dir=None, cutoff=None, pages_for
         projections.append(link_athletes(out, ev, pages_for(key)))
     return {
         "rule": {"method": "field", "cutoff": str(cutoff),
-                 "backtest": backtest_summary(report_path, model, holdout_path)},
+                 "backtest": backtest_summary(report_path, model, holdout_path, all_seasons_path)},
         "builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "projections": projections,
         "notCalled": event.get("notCalled") or [],

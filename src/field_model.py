@@ -39,6 +39,7 @@ Usage:
     python src/field_model.py --compare             # race by race against today, on DEV_YEARS
     python src/field_model.py --experiments [NAME]  # try EXPERIMENTS on DEV_YEARS, every run logged
     python src/field_model.py --holdout NAME        # the chosen experiment on HOLDOUT_YEARS, once
+    python src/field_model.py --all-seasons         # three ways old marks count, every season
     python src/field_model.py --refit [NAME]        # retrain the served experiment on every final on file
 Reads data/field/finals.csv (field_data.py --report). --backtest writes
 outputs/field_model.json and outputs/field_model_report.json. --compare,
@@ -69,6 +70,7 @@ V2_MODEL_PATH = os.path.join(BASE_DIR, "outputs", "field_model_v2.json")
 PREVIOUS_MODEL_PATH = os.path.join(BASE_DIR, "outputs", "field_model_previous.json")
 EXPERIMENTS_PATH = os.path.join(BASE_DIR, "outputs", "field_model_experiments.json")
 HOLDOUT_PATH = os.path.join(BASE_DIR, "outputs", "field_model_holdout.json")
+ALL_SEASONS_PATH = os.path.join(BASE_DIR, "outputs", "field_model_all_seasons.json")
 
 # The same scored seasons as train_model.FIRST_TEST_YEAR onwards, so the two
 # models' numbers cover the same years (tests/test_field_model.py pins it).
@@ -130,6 +132,12 @@ RECENCY_FEATURES = STRENGTH_FEATURES + ["no_history", "sb_months", "age", "sb_pr
 RECENCY_BOUNDS = {"strength_gap_best": (0.0, None), "strength_gap_third": (0.0, None),
                   "consistency": (0.0, None), "recent_delta": (0.0, None), "sb_prior_season": (None, 0.0)}
 ALL_FEATURES = list(dict.fromkeys(FEATURES_V2 + RECENCY_FEATURES))
+# The user's question on 2026-09-16: should old marks count at all? These read
+# an athlete's career best or last season's best. SEASON_ONLY_FEATURES is
+# FEATURES_V2 without them; sb_prior_season stays, so last season stands in
+# only for an athlete with no mark this season.
+OLD_MARK_FEATURES = ["pb_gap", "pb_gap_thin", "yoy", "breakout_backed", "no_history"]
+SEASON_ONLY_FEATURES = [name for name in FEATURES_V2 if name not in OLD_MARK_FEATURES]
 
 
 def group_of(disc_key):
@@ -604,8 +612,20 @@ EXPERIMENTS = {
                             "bounds": RECENCY_BOUNDS, "newOverOld": True},
     "recency_without_big_podiums": {"features": [f for f in RECENCY_FEATURES if f != "big_podiums"],
                                     "bounds": RECENCY_BOUNDS, "newOverOld": True},
+    # The three ways old marks can count, tested on every past season by
+    # run_all_seasons (2026-09-16): v2_form_best_5 as served, recent over old,
+    # and this season only, all reading races the same way.
+    "recency_form_best_5": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS,
+                            "race": {"form_marks": 5}, "newOverOld": True},
+    "season_only": {"features": SEASON_ONLY_FEATURES, "race": {"form_marks": 5}},
 }
 RESULT_KEY = ["year", "competition", "discipline"]
+# Every season with at least three seasons of finals before it to learn from
+# (2009-2011); 2020 held none. Each is called only from the seasons before it.
+ALL_SEASON_YEARS = [year for year in range(2012, 2027) if year != 2020]
+# Fixed on 2026-09-16 before any of them ran, today's model first: it is the
+# one the others are lined up against.
+ALL_SEASON_CANDIDATES = ["v2_form_best_5", "recency_form_best_5", "season_only"]
 
 
 def spec_scored(scored, spec, races=None):
@@ -704,6 +724,8 @@ def compare(scored, candidate="v2", baseline="today", years=DEV_YEARS, controls=
         "overall": pair(base, cand),
         "byTier": {t: pair(base[base["tier"] == t], cand[cand["tier"] == t]) for t in sorted(base["tier"].unique())},
         "byGroup": {g: pair(base[base["group"] == g], cand[cand["group"] == g]) for g in GROUPS},
+        "byYear": {int(y): pair(base[base["year"] == y], cand[cand["year"] == y])
+                   for y in sorted(base["year"].unique())},
         "decision": decision,
         "weights": _weights(model),
         "calibration": {"baseline": _calibration(base_athletes), "candidate": _calibration(cand_athletes)},
@@ -757,7 +779,7 @@ def _pct(hits, possible):
 def _block(df):
     """Podium places named, and winners named first, by the model and by points."""
     possible = 3 * len(df)
-    out = {"finals": int(len(df)),
+    out = {"finals": int(len(df)), "hits": int(df["model_hits"].sum()), "possible": int(possible),
            "model": _pct(df["model_hits"].sum(), possible),
            "points": _pct(df["points_hits"].sum(), possible)}
     if "model_winner" in df.columns:
@@ -1044,6 +1066,73 @@ def run_holdout(name, path=HOLDOUT_PATH):
     return 0
 
 
+def choose_all_seasons(rows):
+    """The version kept by run_all_seasons, the rule fixed on 2026-09-16 before
+    any version ran: the most medallists named, then the most winners named
+    first, then the larger mean top-three log-likelihood gain over today's
+    model (0 for today's model itself)."""
+    return max(rows, key=lambda r: (r["medallists"], r["winners"] or 0, r["meanLlGain"] or 0.0))["name"]
+
+
+def _all_seasons_row(name, report, side, ll_gain):
+    overall = report["overall"][side]
+    asia = (report["byTier"].get("asia") or {}).get(side) or {}
+    return {"name": name, "spec": json.loads(json.dumps(EXPERIMENTS[name])), "finals": overall["finals"],
+            "medallists": overall["hits"], "possible": overall["possible"], "medallistsPct": overall["model"],
+            "winners": overall.get("modelWinners"), "pointsPct": overall["points"],
+            "pointsWinners": overall.get("pointsWinners"), "meanLlGain": ll_gain,
+            "asiaFinals": asia.get("finals"), "asiaPct": asia.get("model"), "asiaPointsPct": asia.get("points"),
+            "bySeason": {str(year): pair[side]["model"] for year, pair in report["byYear"].items()}}
+
+
+def run_all_seasons(names=None, years=None, path=ALL_SEASONS_PATH):
+    """Today's model, recent over old and this season only
+    (ALL_SEASON_CANDIDATES), each walked forward over every season in
+    ALL_SEASON_YEARS on the same finals, and the one choose_all_seasons keeps.
+
+    The user's choice on 2026-09-16: test the ways old marks can count on every
+    past season and keep the most accurate, one model for every event. Every
+    one of these seasons had already been used for testing or training, so the
+    version kept is picked on results already seen; the Asian Games are the
+    next finals none of them has seen."""
+    names = list(names or ALL_SEASON_CANDIDATES)
+    years = list(years or ALL_SEASON_YEARS)
+    unknown = [name for name in names if name not in EXPERIMENTS]
+    if unknown:
+        print(f"  no such experiment: {', '.join(unknown)} (see EXPERIMENTS)")
+        return 1
+    print(f"=== Field model: {len(names)} versions on every season, {years[0]}-{years[-1]} ===")
+    scored = _scored_with_races()
+    if scored is None:
+        return 1
+    races = fd.load_seasons(fd.RACES_DIR) if any(EXPERIMENTS[n].get("race") for n in names) else None
+    baseline, rows = names[0], []
+    for name in names[1:]:
+        report, _ = compare(scored, candidate=name, baseline=baseline, years=years, controls=0, races=races)
+        if not rows:
+            rows.append(_all_seasons_row(baseline, report, "baseline", 0.0))
+        rows.append(_all_seasons_row(name, report, "candidate", report["decision"]["meanLlGain"]))
+    chosen = choose_all_seasons(rows)
+    _write_json(path, {
+        "builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "years": years,
+        "rule": "most medallists named, then most winners named first, then mean top-three "
+                "log-likelihood gain over today's model; fixed before any version ran",
+        "candidates": rows, "chosen": chosen})
+
+    print(f"\n  {'version':<22} {'medallists':>16} {'winners':>8} {'LL gain':>9} {'Asian finals':>13}")
+    for r in rows:
+        print(f"  {r['name']:<22} {r['medallists']:>6} ({r['medallistsPct']:>4}%) {r['winners']:>8} "
+              f"{_signed(r['meanLlGain']):>9} {r['asiaPct']:>12}%")
+    print(f"  points                 {rows[0]['pointsPct']:>15}% {rows[0]['pointsWinners']:>8}"
+          f"{'':>10} {rows[0]['asiaPointsPct']:>12}%")
+    print(f"\n  medallists by season: {'':<8}" + " ".join(f"{y:>5}" for y in years))
+    for r in rows:
+        print(f"  {r['name']:<30}" + " ".join(f"{r['bySeason'].get(str(y), ''):>5}" for y in years))
+    print(f"\n  {rows[0]['finals']} finals. Kept by the fixed rule: {chosen}")
+    print(f"  -> {path}")
+    return 0
+
+
 def run_refit(name=None, model_path=MODEL_PATH, previous_path=PREVIOUS_MODEL_PATH):
     """Retrain the served experiment on every final on file and save it as the
     served model, keeping the model it replaces at `previous_path`.
@@ -1087,9 +1176,13 @@ def main(argv=None):
                         help="score the chosen experiment on HOLDOUT_YEARS, once")
     parser.add_argument("--refit", nargs="?", const="", default=None, metavar="NAME",
                         help="retrain the served experiment (or NAME) on every final on file, after new finals are added")
+    parser.add_argument("--all-seasons", action="store_true",
+                        help="today's model, recent over old and this season only on every past season")
     args = parser.parse_args(argv)
     if args.refit is not None:
         return run_refit(args.refit or None)
+    if args.all_seasons:
+        return run_all_seasons()
     if args.compare:
         return run_compare()
     if args.experiments is not None:

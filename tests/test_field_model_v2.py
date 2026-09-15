@@ -394,6 +394,54 @@ def test_the_experiments_marked_new_over_old_are_built_on_the_rule():
     assert not any(fm.EXPERIMENTS[name].get("newOverOld") for name in ("today", "v2"))
 
 
+def test_the_three_versions_tested_on_every_season_differ_only_in_how_old_marks_count():
+    """The user's choice on 2026-09-16: today's model, recent over old and this
+    season only, each reading races the same way as one model for every event."""
+    assert fm.ALL_SEASON_CANDIDATES[0] == "v2_form_best_5"
+    today, recent, season_only = (fm.EXPERIMENTS[name] for name in fm.ALL_SEASON_CANDIDATES)
+    for spec in (today, recent, season_only):
+        assert spec["race"] == {"form_marks": 5} and not spec.get("by_group") and "l2" not in spec
+    assert not set(fm.OLD_MARK_FEATURES) & set(season_only["features"])
+    assert set(season_only["features"]) | set(fm.OLD_MARK_FEATURES) == set(fm.FEATURES_V2)
+    assert "sb_prior_season" in season_only["features"]   # last season only when there is no mark this season
+    assert recent.get("newOverOld") and recent["bounds"] == fm.RECENCY_BOUNDS
+    assert fm.ALL_SEASON_YEARS[0] == 2012 and fm.ALL_SEASON_YEARS[-1] == 2026 and 2020 not in fm.ALL_SEASON_YEARS
+
+
+def test_the_version_kept_names_the_most_medallists_then_the_most_winners_then_reads_the_order_best():
+    rows = [{"name": "v2_form_best_5", "medallists": 2400, "winners": 700, "meanLlGain": 0.0},
+            {"name": "recency_form_best_5", "medallists": 2390, "winners": 720, "meanLlGain": 0.05},
+            {"name": "season_only", "medallists": 2400, "winners": 690, "meanLlGain": 0.2}]
+    assert fm.choose_all_seasons(rows) == "v2_form_best_5"
+    rows[2]["winners"] = 700
+    assert fm.choose_all_seasons(rows) == "season_only"
+
+
+def test_every_version_is_recorded_on_the_same_finals_with_the_one_kept(tmp_path, monkeypatch):
+    import json
+
+    def block(hits):
+        return {"finals": 10, "hits": hits, "possible": 30, "model": round(100 * hits / 30, 1), "points": 60.0,
+                "modelWinners": 6, "pointsWinners": 5}
+
+    def fake_compare(scored, candidate, baseline, years, controls, races):
+        assert (baseline, controls) == ("v2_form_best_5", 0)
+        pair = {"baseline": block(20), "candidate": block({"recency_form_best_5": 19, "season_only": 21}[candidate])}
+        return {"overall": pair, "byTier": {"asia": pair}, "byYear": {2025: pair},
+                "decision": {"meanLlGain": 0.1}}, None
+
+    monkeypatch.setattr(fm, "_scored_with_races", lambda: pd.DataFrame())
+    monkeypatch.setattr(fm, "compare", fake_compare)
+    monkeypatch.setattr(fd, "load_seasons", lambda *args, **kwargs: {})
+    path = tmp_path / "all_seasons.json"
+    assert fm.run_all_seasons(years=[2025], path=str(path)) == 0
+    report = json.loads(path.read_text(encoding="utf-8"))
+    assert [r["name"] for r in report["candidates"]] == fm.ALL_SEASON_CANDIDATES
+    assert [r["medallists"] for r in report["candidates"]] == [20, 19, 21]
+    assert report["candidates"][0]["meanLlGain"] == 0.0 and report["candidates"][2]["bySeason"] == {"2025": 70.0}
+    assert (report["chosen"], report["years"]) == ("season_only", [2025])
+
+
 def test_a_refit_retrains_the_served_experiment_and_keeps_its_test_record_and_the_model_it_replaces(
         tmp_path, monkeypatch):
     import json

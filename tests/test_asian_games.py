@@ -527,12 +527,29 @@ def test_the_page_states_the_locked_year_test_only_for_the_model_that_took_it(tm
         "byTier": {"asia": {"baseline": {"finals": 36, "model": 65.7, "points": 70.4},
                             "candidate": {"finals": 36, "model": 67.6, "points": 70.4}}}}), encoding="utf-8")
     missing = str(tmp_path / "missing.json")
-    assert agp.backtest_summary(missing, {"experiment": "v2_form_best_5"}, str(held)) == {
+    assert agp.backtest_summary(missing, {"experiment": "v2_form_best_5"}, str(held), missing) == {
         "finals": 206, "model": 64.4, "previous": 62.9, "points": 62.0,
         "asiaFinals": 36, "asiaModel": 67.6, "asiaPrevious": 65.7, "asiaPoints": 70.4, "years": [2024, 2025]}
     # Another model, or one saved by --backtest, is never described by that test.
-    assert agp.backtest_summary(missing, {"experiment": "recency"}, str(held)) is None
-    assert agp.backtest_summary(missing, None, str(held)) is None
+    assert agp.backtest_summary(missing, {"experiment": "recency"}, str(held), missing) is None
+    assert agp.backtest_summary(missing, None, str(held), missing) is None
+
+
+def test_the_page_states_the_all_seasons_test_only_for_the_version_it_kept(tmp_path):
+    """field_model.py --all-seasons (2026-09-16): the versions tested on every past
+    season, and the one kept. It comes before the locked-year test when it
+    describes the served model."""
+    seasons = tmp_path / "all_seasons.json"
+    seasons.write_text(json.dumps({"years": [2012, 2013, 2026], "chosen": "season_only", "candidates": [
+        {"name": "v2_form_best_5", "finals": 1100, "medallistsPct": 66.0, "pointsPct": 63.0},
+        {"name": "season_only", "finals": 1100, "medallistsPct": 66.5, "pointsPct": 63.0,
+         "asiaFinals": 180, "asiaPct": 68.0, "asiaPointsPct": 69.0}]}), encoding="utf-8")
+    missing = str(tmp_path / "missing.json")
+    assert agp.backtest_summary(missing, {"experiment": "season_only"}, missing, str(seasons)) == {
+        "method": "allSeasons", "finals": 1100, "model": 66.5, "points": 63.0, "asiaFinals": 180,
+        "asiaModel": 68.0, "asiaPoints": 69.0, "years": [2012, 2013, 2026], "versions": 2}
+    # A version the test did not keep is not described by it.
+    assert agp.backtest_summary(missing, {"experiment": "v2_form_best_5"}, missing, str(seasons)) is None
 
 
 def test_a_model_that_reads_races_is_served_them_the_way_it_was_chosen_and_scored_on_its_features():
