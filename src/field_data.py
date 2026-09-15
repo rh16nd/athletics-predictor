@@ -557,9 +557,11 @@ _FINAL_ROUND = re.compile(r"^F\d*$")
 RACE_COLUMNS = ["form_score", "recent_score", "races", "big_podiums", "h2h_top", "has_races"]
 
 
-def race_summary(events, key, cutoff):
+def race_summary(events, key, cutoff, recent_days=RECENT_DAYS, form_marks=FORM_MARKS,
+                 big_categories=BIG_CATEGORIES):
     """One athlete's season in one event before the cut-off, race by race, or
-    None when it holds nothing there.
+    None when it holds nothing there. The window, the number of marks in form
+    and the big categories can be varied for an experiment (field_model.EXPERIMENTS).
 
     Only outdoor results dated strictly before the cut-off count, and for the
     scores only legal, electronically timed ones, as in profile_best:
@@ -584,18 +586,18 @@ def race_summary(events, key, cutoff):
             place, round_ = _place(result.get("place")), str(result.get("race") or "")
             if place is not None and _FINAL_ROUND.match(round_):
                 finals[(str(result.get("competition") or ""), when, round_)] = place
-                if place <= 3 and result.get("category") in BIG_CATEGORIES:
+                if place <= 3 and result.get("category") in big_categories:
                     podiums += 1
             score = result.get("resultScore")
             if (result.get("notLegal") or not score
                     or str(result.get("mark") or "").strip().lower().endswith("h")):
                 continue
             scores.append(float(score))
-            if (cutoff - when).days <= RECENT_DAYS:
+            if (cutoff - when).days <= recent_days:
                 recent = float(score) if recent is None else max(recent, float(score))
     if not scores and not finals:
         return None
-    best = sorted(scores, reverse=True)[:FORM_MARKS]
+    best = sorted(scores, reverse=True)[:form_marks]
     return {"form_score": sum(best) / len(best) if best else None, "recent_score": recent,
             "races": len(scores), "big_podiums": min(podiums, BIG_PODIUM_CAP), "finals": finals}
 
@@ -625,15 +627,17 @@ def h2h_top(finals_by_athlete, scores):
     return out
 
 
-def race_columns(field, season_for):
+def race_columns(field, season_for, **how):
     """RACE_COLUMNS for one field, a final or an entry list: a DataFrame with
     discipline, cutoff and sb_score. `season_for(row)` gives that athlete's
     season race by race (fetch_races), or None. Training and serving both read
-    races through here, so the two cannot drift apart."""
+    races through here, so the two cannot drift apart. `how` goes to
+    race_summary."""
     summaries = {}
     for idx, row in field.iterrows():
         events = season_for(row)
-        summaries[idx] = race_summary(events, row["discipline"], row["cutoff"]) if events is not None else None
+        summaries[idx] = (race_summary(events, row["discipline"], row["cutoff"], **how)
+                          if events is not None else None)
     h2h = h2h_top({i: (s or {}).get("finals") or {} for i, s in summaries.items()},
                   {i: field.at[i, "sb_score"] for i in field.index})
 
@@ -650,14 +654,15 @@ def race_columns(field, season_for):
     }, index=field.index)
 
 
-def attach_races(scored, races=None):
+def attach_races(scored, races=None, **how):
     """The scored finals with RACE_COLUMNS, each final read on its own, so
-    head-to-head stays inside it. `races` is load_seasons(RACES_DIR)."""
+    head-to-head stays inside it. `races` is load_seasons(RACES_DIR), and `how`
+    goes to race_summary."""
     races = {} if races is None else races
     scored = scored.drop(columns=[c for c in RACE_COLUMNS if c in scored.columns])
     if scored.empty:
         return scored.assign(**{c: None for c in RACE_COLUMNS})
-    parts = [race_columns(final, lambda row: _season_for(races, row.get("athlete_id"), row["year"]))
+    parts = [race_columns(final, lambda row: _season_for(races, row.get("athlete_id"), row["year"]), **how)
              for _, final in scored.groupby(["competition", "year", "discipline"], sort=False)]
     return scored.join(pd.concat(parts))
 

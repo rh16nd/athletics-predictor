@@ -17,7 +17,7 @@ and the points ranking and the old Diamond League model's frozen call are
 scored beside them.
 
 Usage, after field_data.py --races and --report:
-    python src/field_model_check_2026.py
+    python src/field_model_check_2026.py [EXPERIMENT]   # field_model.EXPERIMENTS, v2 by default
 Fetches the Ultimate finalists' 2026 seasons into data/field/races_2026/ and
 writes outputs/field_model_check_2026.json.
 """
@@ -65,7 +65,7 @@ def score(model, finals):
     sure the model was of them, and the top-three log-likelihood."""
     out = []
     for f in finals:
-        u = fm.utilities(model, f["X"])
+        u = fm.utilities(fm.model_for(model, f["group"]), f["X"])
         chances = fm.podium_chances(u)
         favourite = f["names"][int(np.argmax(chances))]
         out.append({"discipline": f["discipline"],
@@ -99,7 +99,12 @@ def totals(rows):
             "meanLl": round(float(np.mean(ll)), 4) if ll else None, "llFinals": len(ll)}
 
 
-def main():
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    name = argv[0] if argv else "v2"
+    if name not in fm.EXPERIMENTS:
+        print(f"  no such experiment: {name} (see field_model.EXPERIMENTS)")
+        return 1
     with open(EVENT_PATH, encoding="utf-8") as f:
         event = json.load(f)
     finals = ultimate_finals(event)
@@ -118,21 +123,23 @@ def main():
         print(f"  {fd.FINALS_PATH} has no {', '.join(missing)}: run field_data.py --races, then --report")
         return 1
     report = {"builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-              "competition": COMPETITION, "cutoff": event["startDate"]}
-    for label, features in (("today", fm.FEATURES), ("raceByRace", fm.FEATURES_V2)):
-        model = fm.fit(fm.build_finals(history, features))
-        rows = score(model, fm.build_finals(scored, features))
-        report[label] = {"totals": totals(rows), "finals": rows}
+              "competition": COMPETITION, "cutoff": event["startDate"], "experiment": name}
+    history_races = fd.load_seasons(fd.RACES_DIR) if fm.EXPERIMENTS[name].get("race") else None
+    for label, spec_name in (("today", "today"), ("candidate", name)):
+        spec = fm.EXPERIMENTS[spec_name]
+        model = fm.fit_spec(fm.build_finals(fm.spec_scored(history, spec, history_races), spec["features"]), spec)
+        rows = score(model, fm.build_finals(fm.spec_scored(scored, spec, races), spec["features"]))
+        report[label] = {"experiment": spec_name, "totals": totals(rows), "finals": rows}
     report["frozenCall"] = frozen_call(fm.build_finals(scored, fm.FEATURES))
 
-    t, r = report["today"]["totals"], report["raceByRace"]["totals"]
+    t, r = report["today"]["totals"], report["candidate"]["totals"]
     print(f"\n  {t['finals']} finals, {t['possible']} podium places")
-    print(f"    today's features   {t['hits']} medallists, {t['winners']} winners, mean log-likelihood {t['meanLl']}")
-    print(f"    race by race       {r['hits']} medallists, {r['winners']} winners, mean log-likelihood {r['meanLl']}")
+    print(f"    today's model      {t['hits']} medallists, {t['winners']} winners, mean log-likelihood {t['meanLl']}")
+    print(f"    {name:<18} {r['hits']} medallists, {r['winners']} winners, mean log-likelihood {r['meanLl']}")
     print(f"    points             {t['pointsHits']} medallists")
     print(f"    old frozen call    {report['frozenCall']['hits']} medallists, {report['frozenCall']['winners']} winners")
-    print("\n  event            winner named first (today | race by race), favourite's win chance")
-    for a, b in zip(report["today"]["finals"], report["raceByRace"]["finals"]):
+    print(f"\n  event            winner named first (today | {name}), favourite's win chance")
+    for a, b in zip(report["today"]["finals"], report["candidate"]["finals"]):
         print(f"    {a['discipline']:<14} {a['favourite'][:22]:<22} {'Y' if a['winner'] else 'n'} {a['favouriteWin']:.2f}"
               f"  |  {b['favourite'][:22]:<22} {'Y' if b['winner'] else 'n'} {b['favouriteWin']:.2f}")
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)

@@ -35,12 +35,15 @@ trained on features shuffled within each field must NOT pass. A group that
 fails stays on points.
 
 Usage:
-    python src/field_model.py --backtest    # report + ship decisions, fits and saves the model
-    python src/field_model.py --compare     # today's features against race by race (compare_decision)
+    python src/field_model.py --backtest            # report + ship decisions, fits and saves the model
+    python src/field_model.py --compare             # race by race against today, on DEV_YEARS
+    python src/field_model.py --experiments [NAME]  # try EXPERIMENTS on DEV_YEARS, every run logged
+    python src/field_model.py --holdout NAME        # the chosen experiment on HOLDOUT_YEARS, once
 Reads data/field/finals.csv (field_data.py --report). --backtest writes
-outputs/field_model.json and outputs/field_model_report.json; --compare writes
-outputs/field_model_compare.json and outputs/field_model_v2.json, and leaves
-the served model alone.
+outputs/field_model.json and outputs/field_model_report.json. --compare,
+--experiments and --holdout write field_model_compare.json,
+field_model_experiments.json and field_model_holdout.json (the holdout also
+saves its candidate to field_model_v2.json), and never the served model.
 """
 import argparse
 import json
@@ -62,10 +65,20 @@ MODEL_PATH = os.path.join(BASE_DIR, "outputs", "field_model.json")
 REPORT_PATH = os.path.join(BASE_DIR, "outputs", "field_model_report.json")
 COMPARE_PATH = os.path.join(BASE_DIR, "outputs", "field_model_compare.json")
 V2_MODEL_PATH = os.path.join(BASE_DIR, "outputs", "field_model_v2.json")
+EXPERIMENTS_PATH = os.path.join(BASE_DIR, "outputs", "field_model_experiments.json")
+HOLDOUT_PATH = os.path.join(BASE_DIR, "outputs", "field_model_holdout.json")
 
 # The same scored seasons as train_model.FIRST_TEST_YEAR onwards, so the two
 # models' numbers cover the same years (tests/test_field_model.py pins it).
 TEST_YEARS = [2021, 2022, 2023, 2024, 2025]
+# Improving a model on the finals it is scored on measures the improving, not
+# the model. From 2026-09-15, when the user asked to keep improving the model
+# against past results, candidates are tried and compared on the first three
+# test years only. The last two stay locked until one candidate has been chosen
+# (choose_experiment), which is then scored on them once (run_holdout). Fixed
+# before any candidate's number existed.
+DEV_YEARS = [2021, 2022, 2023]
+HOLDOUT_YEARS = [2024, 2025]
 # A final is used only when this many of its finalists have a season score.
 # Fewer, and "rank within the field" describes a handful of names, not a field.
 MIN_SCORED = 5
@@ -333,10 +346,12 @@ def _top3(names, values):
     return {names[i] for i in order[:3]}
 
 
-def backtest(finals, l2=L2, shuffle_seed=None):
-    """Walk forward over TEST_YEARS. Returns (per-final results, per-athlete
-    chances). With `shuffle_seed`, every final's feature rows are shuffled, for
-    training and testing alike: the control, which should find nothing."""
+def backtest(finals, l2=L2, shuffle_seed=None, years=None, by_group=False):
+    """Walk forward over `years`, TEST_YEARS unless given. Returns (per-final
+    results, per-athlete chances). With `shuffle_seed`, every final's feature
+    rows are shuffled, for training and testing alike: the control, which
+    should find nothing. With `by_group`, each event group in GROUPS is fitted
+    on its own finals only."""
     rng = np.random.default_rng(shuffle_seed)
     if shuffle_seed is not None:
         shuffled = []
@@ -346,31 +361,35 @@ def backtest(finals, l2=L2, shuffle_seed=None):
         finals = shuffled
 
     results, athletes = [], []
-    for year in TEST_YEARS:
-        train = [f for f in finals if f["year"] < year]
+    for year in TEST_YEARS if years is None else years:
         test = [f for f in finals if f["year"] == year]
-        if not test or not any(f["top_idx"] is not None and f.get("trainable", True) for f in train):
-            continue
-        model = fit(train, l2)
-        for f in test:
-            u = utilities(model, f["X"])
-            chances = podium_chances(u)
-            model_pick = _top3(f["names"], chances)
-            points_pick = _top3(f["names"], f["scores"])
-            winners = f.get("winners", set())
-            results.append({
-                "competition": f["competition"], "year": year, "discipline": f["discipline"],
-                "group": f["group"], "tier": f["tier"],
-                "model_hits": len(model_pick & f["podium"]), "points_hits": len(points_pick & f["podium"]),
-                "model_winner": f["names"][int(np.argmax(chances))] in winners,
-                "points_winner": f["names"][int(np.argmax(f["scores"]))] in winners,
-                # For compare(): how well the model read the order of the top
-                # three, and how sure it was of its favourite.
-                "ll": top3_log_likelihood(u, f["top_idx"]) if f.get("top_idx") is not None else np.nan,
-                "favourite_win": float(win_chances(u).max()),
-            })
-            for name, chance in zip(f["names"], chances):
-                athletes.append({"chance": float(chance), "medal": name in f["podium"]})
+        earlier = [f for f in finals if f["year"] < year]
+        pools = ({group: [f for f in earlier if f["group"] == group] for group in GROUPS}
+                 if by_group else {None: earlier})
+        for group, train in pools.items():
+            chunk = [f for f in test if group is None or f["group"] == group]
+            if not chunk or not any(f["top_idx"] is not None and f.get("trainable", True) for f in train):
+                continue
+            model = fit(train, l2)
+            for f in chunk:
+                u = utilities(model, f["X"])
+                chances = podium_chances(u)
+                model_pick = _top3(f["names"], chances)
+                points_pick = _top3(f["names"], f["scores"])
+                winners = f.get("winners", set())
+                results.append({
+                    "competition": f["competition"], "year": year, "discipline": f["discipline"],
+                    "group": f["group"], "tier": f["tier"],
+                    "model_hits": len(model_pick & f["podium"]), "points_hits": len(points_pick & f["podium"]),
+                    "model_winner": f["names"][int(np.argmax(chances))] in winners,
+                    "points_winner": f["names"][int(np.argmax(f["scores"]))] in winners,
+                    # For compare(): how well the model read the order of the top
+                    # three, and how sure it was of its favourite.
+                    "ll": top3_log_likelihood(u, f["top_idx"]) if f.get("top_idx") is not None else np.nan,
+                    "favourite_win": float(win_chances(u).max()),
+                })
+                for name, chance in zip(f["names"], chances):
+                    athletes.append({"chance": float(chance), "medal": name in f["podium"]})
     return pd.DataFrame(results), pd.DataFrame(athletes)
 
 
@@ -487,18 +506,108 @@ def _favourites(results):
     return out
 
 
-def compare(scored, l2=L2, controls=CONTROLS):
-    """Today's FEATURES against FEATURES_V2 on the same held-out finals.
-    Returns (the report, the candidate fitted on every final)."""
-    base_finals, cand_finals = build_finals(scored, FEATURES), build_finals(scored, FEATURES_V2)
-    keys = [(f["competition"], f["year"], f["discipline"]) for f in base_finals]
-    if keys != [(f["competition"], f["year"], f["discipline"]) for f in cand_finals]:
-        raise ValueError("the two feature sets were built on different finals")
-    base, base_athletes = backtest(base_finals, l2)
-    cand, cand_athletes = backtest(cand_finals, l2)
-    new = [FEATURES_V2.index(name) for name in NEW_FEATURES]
-    runs = [backtest(shuffle_columns(cand_finals, new, seed), l2)[0] for seed in range(controls)]
-    model = fit(cand_finals, l2)
+def _without(*names):
+    return [name for name in FEATURES_V2 if name not in names]
+
+
+# The candidates tried on DEV_YEARS by --experiments, each against today's
+# model. Declared here so the record says what was tried. A new idea is added
+# to this list and tried on DEV_YEARS; nothing is tried on HOLDOUT_YEARS.
+EXPERIMENTS = {
+    "today": {"features": FEATURES},
+    "today_l2_strong": {"features": FEATURES, "l2": 0.1},
+    "today_by_group": {"features": FEATURES, "by_group": True},
+    "v2": {"features": FEATURES_V2},
+    "v2_l2_strong": {"features": FEATURES_V2, "l2": 0.1},
+    "v2_l2_weak": {"features": FEATURES_V2, "l2": 0.001},
+    "v2_by_group": {"features": FEATURES_V2, "by_group": True},
+    "v2_recent_28d": {"features": FEATURES_V2, "race": {"recent_days": 28}},
+    "v2_recent_70d": {"features": FEATURES_V2, "race": {"recent_days": 70}},
+    "v2_form_best_2": {"features": FEATURES_V2, "race": {"form_marks": 2}},
+    "v2_form_best_5": {"features": FEATURES_V2, "race": {"form_marks": 5}},
+    "v2_big_with_A": {"features": FEATURES_V2, "race": {"big_categories": ["OW", "DF", "GW", "GL", "A"]}},
+    "v2_without_h2h": {"features": _without("h2h_top")},
+    "v2_without_big_podiums": {"features": _without("big_podiums")},
+    "v2_without_form": {"features": _without("form_gap", "breakout_backed")},
+    "v2_without_recent": {"features": _without("recent_delta", "no_recent")},
+    "v2_without_history_blend": {"features": _without("pb_gap_thin")},
+}
+RESULT_KEY = ["year", "competition", "discipline"]
+
+
+def spec_scored(scored, spec, races=None):
+    """`scored` with its race columns read again when an experiment reads races
+    its own way (spec["race"], passed to field_data.race_summary), from `races`,
+    which is field_data.load_seasons(RACES_DIR) unless given."""
+    if not spec.get("race"):
+        return scored
+    return fd.attach_races(scored, fd.load_seasons(fd.RACES_DIR) if races is None else races, **spec["race"])
+
+
+def fit_spec(finals, spec):
+    """An experiment's model on `finals`: one model, or one per event group."""
+    l2 = spec.get("l2", L2)
+    if not spec.get("by_group"):
+        return fit(finals, l2)
+    return {"features": list(spec["features"]), "byGroup": {
+        group: fit([f for f in finals if f["group"] == group], l2) for group in GROUPS
+        if any(f["group"] == group and f["top_idx"] is not None and f.get("trainable", True) for f in finals)}}
+
+
+def model_for(model, group):
+    """The model that scores an event in `group`: that group's own when the
+    model was fitted by group."""
+    return model["byGroup"][group] if "byGroup" in model else model
+
+
+def _weights(model):
+    if "byGroup" in model:
+        return {group: dict(zip(m["features"], m["weights"])) for group, m in model["byGroup"].items()}
+    return dict(zip(model["features"], model["weights"]))
+
+
+def choose_experiment(rows):
+    """The candidate for HOLDOUT_YEARS, by the rule fixed on 2026-09-15 before
+    any experiment ran: the largest mean top-three log-likelihood gain on
+    DEV_YEARS among the candidates that name at least as many medallists per
+    final as today's model. None when none gains."""
+    eligible = [r for r in rows if r["name"] != "today" and r.get("meanLlGain") is not None
+                and r["meanLlGain"] > 0 and r.get("meanHitsDiff") is not None and r["meanHitsDiff"] >= 0]
+    return max(eligible, key=lambda r: r["meanLlGain"])["name"] if eligible else None
+
+
+def compare(scored, candidate="v2", baseline="today", years=DEV_YEARS, controls=CONTROLS, races=None):
+    """A candidate from EXPERIMENTS against a baseline on the same held-out
+    finals: DEV_YEARS while trying candidates, HOLDOUT_YEARS once for the chosen
+    one. Returns (the report, the candidate fitted on every final).
+
+    The controls shuffle the candidate's columns that the baseline lacks, or
+    all of them when it adds none. With controls=0 they are skipped and the
+    report carries no verdict, as for a first look at an experiment."""
+    specs = {"baseline": EXPERIMENTS[baseline], "candidate": EXPERIMENTS[candidate]}
+    built = {side: build_finals(spec_scored(scored, spec, races), spec["features"]) for side, spec in specs.items()}
+
+    def run(side, finals):
+        spec = specs[side]
+        return backtest(finals, spec.get("l2", L2), years=years, by_group=spec.get("by_group", False))
+
+    (base, base_athletes), (cand, cand_athletes) = run("baseline", built["baseline"]), run("candidate", built["candidate"])
+    features = specs["candidate"]["features"]
+    new = [i for i, name in enumerate(features) if name not in specs["baseline"]["features"]]
+    runs = [run("candidate", shuffle_columns(built["candidate"], new or list(range(len(features))), seed))[0]
+            for seed in range(controls)]
+    # Lined up final by final, since a model fitted by group scores the finals in another order.
+    shared = base[RESULT_KEY].merge(cand[RESULT_KEY], on=RESULT_KEY)
+
+    def aligned(results):
+        return results.merge(shared, on=RESULT_KEY).sort_values(RESULT_KEY).reset_index(drop=True)
+
+    base, cand, runs = aligned(base), aligned(cand), [aligned(r) for r in runs]
+    decision = compare_decision(base, cand, runs)
+    if not controls:
+        decision["conditions"].pop("controlsFail")
+        decision["ships"] = None
+    model = fit_spec(built["candidate"], specs["candidate"])
     has_races = (scored["has_races"].fillna(False).astype(bool)[scored["sb_score"].notna()]
                  if "has_races" in scored.columns else None)
 
@@ -507,13 +616,15 @@ def compare(scored, l2=L2, controls=CONTROLS):
 
     report = {
         "builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "testYears": TEST_YEARS, "features": FEATURES_V2, "newFeatures": NEW_FEATURES,
+        "testYears": list(years), "baselineName": baseline, "candidateName": candidate,
+        "features": list(features), "newFeatures": [features[i] for i in new],
+        "spec": json.loads(json.dumps(specs["candidate"])),
         "bigCategories": sorted(fd.BIG_CATEGORIES), "recentDays": fd.RECENT_DAYS, "thinSeason": THIN_SEASON,
         "overall": pair(base, cand),
         "byTier": {t: pair(base[base["tier"] == t], cand[cand["tier"] == t]) for t in sorted(base["tier"].unique())},
         "byGroup": {g: pair(base[base["group"] == g], cand[cand["group"] == g]) for g in GROUPS},
-        "decision": compare_decision(base, cand, runs),
-        "weights": dict(zip(model["features"], model["weights"])),
+        "decision": decision,
+        "weights": _weights(model),
         "calibration": {"baseline": _calibration(base_athletes), "candidate": _calibration(cand_athletes)},
         "favourites": {"baseline": _favourites(base), "candidate": _favourites(cand)},
         "raceCoverage": None if has_races is None else round(float(has_races.mean()), 3),
@@ -521,28 +632,36 @@ def compare(scored, l2=L2, controls=CONTROLS):
     return report, model
 
 
-def print_compare(report):
-    def signed(x, places=4):
-        return "n/a" if x is None else f"{x:+.{places}f}"
+def _signed(x, places=4):
+    return "n/a" if x is None else f"{x:+.{places}f}"
 
+
+def print_compare(report):
     d, o = report["decision"], report["overall"]
     b, c = o["baseline"], o["candidate"]
+    base, cand = report["baselineName"], report["candidateName"]
     print(f"\n  {b['finals']} held-out finals, {report['testYears'][0]}-{report['testYears'][-1]}: "
-          f"today {b['model']}%, race by race {c['model']}% (points {b['points']}%)")
-    print(f"  winners named first: today {b.get('modelWinners')}, race by race {c.get('modelWinners')}")
+          f"{base} {b['model']}%, {cand} {c['model']}% (points {b['points']}%)")
+    print(f"  winners named first: {base} {b.get('modelWinners')}, {cand} {c.get('modelWinners')}")
     for label, table in (("tier", report["byTier"]), ("group", report["byGroup"])):
         for name, p in table.items():
-            print(f"    {label} {name:<12} {p['baseline']['finals']:>4} finals  today {p['baseline']['model']}%  "
-                  f"race by race {p['candidate']['model']}%")
-    print(f"\n  top-three log-likelihood gain per final: mean {signed(d['meanLlGain'])}, 90% lower bound "
-          f"{signed(d['llLower90'])} ({d['llFinals']} finals); Asian finals mean {signed(d['asiaMeanLlGain'])} "
-          f"({d['asiaFinals']}); medallists per final {signed(d['meanHitsDiff'], 3)}")
-    print("  shuffled controls' lower bounds: " + ", ".join(signed(x) for x in d["controlLower90"]))
+            print(f"    {label} {name:<12} {p['baseline']['finals']:>4} finals  {base} {p['baseline']['model']}%  "
+                  f"{cand} {p['candidate']['model']}%")
+    print(f"\n  top-three log-likelihood gain per final: mean {_signed(d['meanLlGain'])}, 90% lower bound "
+          f"{_signed(d['llLower90'])} ({d['llFinals']} finals); Asian finals mean {_signed(d['asiaMeanLlGain'])} "
+          f"({d['asiaFinals']}); medallists per final {_signed(d['meanHitsDiff'], 3)}")
+    if d["controlLower90"]:
+        print("  shuffled controls' lower bounds: " + ", ".join(_signed(x) for x in d["controlLower90"]))
     for name, ok in d["conditions"].items():
         print(f"    {'pass' if ok else 'FAIL'}  {name}")
-    print(f"  verdict: {'SHIPS' if d['ships'] else 'does not ship, so the call stays as it is'}")
-    print("\n  weights: " + ", ".join(f"{k} {signed(v, 3)}" for k, v in report["weights"].items()))
-    print("  the favourite's win chance -> how often they won (today | race by race):")
+    verdict = {True: "SHIPS", False: "does not ship, so the call stays as it is",
+               None: "no verdict: a first look on the tuning years"}
+    print(f"  verdict: {verdict[d['ships']]}")
+    weights = report["weights"]
+    grouped = weights and all(isinstance(v, dict) for v in weights.values())
+    for group, w in (weights.items() if grouped else [("all events", weights)]):
+        print(f"\n  weights ({group}): " + ", ".join(f"{k} {_signed(v, 3)}" for k, v in w.items()))
+    print(f"  the favourite's win chance -> how often they won ({base} | {cand}):")
     for fb, fc in zip(report["favourites"]["baseline"], report["favourites"]["candidate"]):
         print(f"    {fb['from']:.1f}-{fb['to']:.1f}  {fb['finals']:>4} finals {fb['predicted']} -> {fb['observed']}"
               f"  |  {fc['finals']:>4} finals {fc['predicted']} -> {fc['observed']}")
@@ -716,26 +835,113 @@ def score_field(model, rows, cutoff):
     return {name: podium for name, (podium, _) in field_chances(model, rows, cutoff).items()}
 
 
-def run_compare():
-    """compare() on data/field/finals.csv, printed and saved beside the served
-    model, never over it: promoting the candidate is a separate step, taken
-    only after its result has been read."""
-    print("=== Field model: today's features against race by race, on the same held-out finals ===")
+def _scored_with_races():
     scored = load_scored_finals()
     missing = [c for c in fd.RACE_COLUMNS if c not in scored.columns]
     if missing:
         print(f"  {fd.FINALS_PATH} has no {', '.join(missing)}: run field_data.py --races, then --report")
+        return None
+    return scored
+
+
+def _write_json(path, payload):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=1)
+
+
+def run_compare():
+    """The race-by-race features against today's on DEV_YEARS, with the
+    shuffled controls, printed and saved. Never touches the served model."""
+    print(f"=== Field model: race by race against today, on {DEV_YEARS[0]}-{DEV_YEARS[-1]} ===")
+    scored = _scored_with_races()
+    if scored is None:
         return 1
-    report, model = compare(scored)
+    report, _ = compare(scored)
     print_compare(report)
-    model["fitAt"] = report["builtAt"]
-    model["compare"] = report["decision"]
-    os.makedirs(os.path.dirname(COMPARE_PATH), exist_ok=True)
-    with open(COMPARE_PATH, "w", encoding="utf-8") as f:
-        json.dump(report, f, indent=1)
-    with open(V2_MODEL_PATH, "w", encoding="utf-8") as f:
-        json.dump(model, f, indent=1)
-    print(f"\n  -> {COMPARE_PATH}\n  -> {V2_MODEL_PATH}\n  The served model, {MODEL_PATH}, is unchanged.")
+    _write_json(COMPARE_PATH, report)
+    print(f"\n  -> {COMPARE_PATH}")
+    return 0
+
+
+def load_experiments(path=EXPERIMENTS_PATH):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return []
+
+
+def _experiment_row(report):
+    d, o = report["decision"], report["overall"]
+    return {"name": report["candidateName"], "ranAt": report["builtAt"], "years": report["testYears"],
+            "spec": report["spec"], "finals": o["candidate"]["finals"],
+            "candidatePct": o["candidate"]["model"], "baselinePct": o["baseline"]["model"],
+            "candidateWinners": o["candidate"].get("modelWinners"),
+            "baselineWinners": o["baseline"].get("modelWinners"),
+            "meanLlGain": d["meanLlGain"], "llLower90": d["llLower90"], "meanHitsDiff": d["meanHitsDiff"],
+            "asiaMeanLlGain": d["asiaMeanLlGain"]}
+
+
+def run_experiments(names):
+    """Each named experiment against today's model on DEV_YEARS. Every run is
+    appended to EXPERIMENTS_PATH and kept, so the record says how many things
+    were tried before the locked years were used."""
+    unknown = [name for name in names if name not in EXPERIMENTS]
+    if unknown:
+        print(f"  no such experiment: {', '.join(unknown)} (see EXPERIMENTS)")
+        return 1
+    print(f"=== Field model: experiments against today, on {DEV_YEARS[0]}-{DEV_YEARS[-1]} ===")
+    scored = _scored_with_races()
+    if scored is None:
+        return 1
+    races = fd.load_seasons(fd.RACES_DIR) if any(EXPERIMENTS[n].get("race") for n in names) else None
+    log = load_experiments()
+    print(f"  {'experiment':<26} {'medallists':>10} {'winners':>8} {'LL gain':>9} {'lower90':>9} {'Asia LL':>9}")
+    row = None
+    for name in names:
+        report, _ = compare(scored, candidate=name, controls=0, races=races)
+        row = _experiment_row(report)
+        log.append(row)
+        _write_json(EXPERIMENTS_PATH, log)
+        print(f"  {name:<26} {row['candidatePct']:>9}% {row['candidateWinners']:>8} {_signed(row['meanLlGain']):>9} "
+              f"{_signed(row['llLower90']):>9} {_signed(row['asiaMeanLlGain']):>9}")
+    latest = {r["name"]: r for r in log}
+    chosen = choose_experiment(list(latest.values()))
+    print(f"\n  today's model on these years: {row['baselinePct']}% of medallists, {row['baselineWinners']} winners")
+    print(f"  {len(latest)} experiments on record. By the fixed rule, the candidate for the locked years is "
+          f"{chosen or 'none: no experiment gained on the tuning years'}.")
+    print(f"  -> {EXPERIMENTS_PATH}")
+    return 0
+
+
+def run_holdout(name, path=HOLDOUT_PATH):
+    """The chosen experiment against today's model on HOLDOUT_YEARS, once,
+    under compare_decision, with the candidate fitted on every final saved to
+    V2_MODEL_PATH. It will not run twice: another look at the locked years,
+    after changing anything, would turn them into tuning data as well."""
+    if os.path.exists(path):
+        print(f"  {path} exists: the locked years have been used and cannot decide anything again")
+        return 1
+    if name not in EXPERIMENTS:
+        print(f"  no such experiment: {name} (see EXPERIMENTS)")
+        return 1
+    print(f"=== Field model: {name} against today, on the locked years {HOLDOUT_YEARS[0]}-{HOLDOUT_YEARS[-1]} ===")
+    scored = _scored_with_races()
+    if scored is None:
+        return 1
+    races = fd.load_seasons(fd.RACES_DIR) if EXPERIMENTS[name].get("race") else None
+    report, model = compare(scored, candidate=name, years=HOLDOUT_YEARS, races=races)
+    latest = {r["name"]: r for r in load_experiments()}
+    report["experimentsTried"] = sorted(latest)
+    report["chosenByRule"] = choose_experiment(list(latest.values()))
+    print_compare(report)
+    print(f"  experiments tried on the tuning years first: {len(latest)}; the rule chose "
+          f"{report['chosenByRule']}, and this run scored {name}")
+    model.update({"fitAt": report["builtAt"], "experiment": name, "holdout": report["decision"]})
+    _write_json(path, report)
+    _write_json(V2_MODEL_PATH, model)
+    print(f"\n  -> {path}\n  -> {V2_MODEL_PATH}\n  The served model, {MODEL_PATH}, is unchanged.")
     return 0
 
 
@@ -743,10 +949,18 @@ def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--backtest", action="store_true")
     parser.add_argument("--compare", action="store_true",
-                        help="today's features against the race-by-race ones, on the same held-out finals")
+                        help="the race-by-race features against today's on DEV_YEARS, with shuffled controls")
+    parser.add_argument("--experiments", nargs="*", default=None, metavar="NAME",
+                        help="try EXPERIMENTS (all of them when none is named) on DEV_YEARS against today's model")
+    parser.add_argument("--holdout", default=None, metavar="NAME",
+                        help="score the chosen experiment on HOLDOUT_YEARS, once")
     args = parser.parse_args(argv)
     if args.compare:
         return run_compare()
+    if args.experiments is not None:
+        return run_experiments(args.experiments or list(EXPERIMENTS))
+    if args.holdout:
+        return run_holdout(args.holdout)
     if not args.backtest:
         parser.print_help()
         return 0

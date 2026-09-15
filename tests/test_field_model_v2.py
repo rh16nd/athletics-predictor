@@ -263,3 +263,85 @@ def test_a_refresh_fetches_a_season_again_for_a_field_still_competing(tmp_path):
     fd.fetch_seasons({(1, 2026)}, fetch=fetch, seasons_dir=str(tmp_path))
     fd.fetch_seasons({(1, 2026)}, fetch=fetch, seasons_dir=str(tmp_path), refresh=True)
     assert calls == [(1, 2026), (1, 2026)]
+
+
+# ---- trying candidates on the tuning years, and the locked years -----------------
+
+def test_the_tuning_years_and_the_locked_years_are_apart_and_cover_the_test_years():
+    assert not set(fm.DEV_YEARS) & set(fm.HOLDOUT_YEARS)
+    assert sorted(fm.DEV_YEARS + fm.HOLDOUT_YEARS) == fm.TEST_YEARS
+    assert max(fm.DEV_YEARS) < min(fm.HOLDOUT_YEARS)
+
+
+def opposing_finals(years, per_year=30, seed=0):
+    """Finals of six decided by one feature: the higher value wins in sprints,
+    the lower in throws. One pooled model cannot read both."""
+    rng = np.random.default_rng(seed)
+    finals = []
+    for year in years:
+        for group in ("sprints", "throws"):
+            for i in range(per_year):
+                x = rng.normal(size=(6, 1))
+                order = np.argsort(-x[:, 0] if group == "sprints" else x[:, 0])
+                names = [f"a{j}" for j in range(6)]
+                finals.append({"competition": f"C{i}", "year": year, "discipline": f"{group}_{i}", "group": group,
+                               "tier": "global", "names": names, "scores": x[:, 0], "X": x, "features": ["x"],
+                               "podium": {names[j] for j in order[:3]}, "winners": {names[order[0]]},
+                               "top_idx": [int(j) for j in order[:3]], "trainable": True})
+    return finals
+
+
+def test_a_backtest_scores_only_the_years_it_is_given():
+    results, _ = fm.backtest(opposing_finals([2019, 2020, 2021, 2022]), years=[2021])
+    assert set(results["year"]) == {2021}
+
+
+def test_a_model_fitted_by_group_reads_events_that_pull_opposite_ways():
+    finals = opposing_finals([2019, 2020, 2021])
+    pooled, _ = fm.backtest(finals, years=[2021])
+    grouped, _ = fm.backtest(finals, years=[2021], by_group=True)
+    assert len(grouped) == len(pooled)
+    assert grouped["model_hits"].mean() > pooled["model_hits"].mean() + 0.5
+
+
+def test_how_races_are_read_can_be_varied_for_an_experiment():
+    s = season(result("01 JUN 2015", 1250), result("15 JUL 2015", 1190), result("08 AUG 2015", 1210, category="A"))
+    assert fd.race_summary(s, "men_800m", CUTOFF, recent_days=20)["recent_score"] == 1210
+    assert fd.race_summary(s, "men_800m", CUTOFF, recent_days=90)["recent_score"] == 1250
+    assert fd.race_summary(s, "men_800m", CUTOFF, form_marks=1)["form_score"] == 1250
+    assert fd.race_summary(s, "men_800m", CUTOFF)["big_podiums"] == 2
+    assert fd.race_summary(s, "men_800m", CUTOFF, big_categories=("GW", "A"))["big_podiums"] == 3
+
+
+def test_an_experiment_that_reads_races_its_own_way_recomputes_the_race_columns():
+    scored = pd.DataFrame({
+        "competition": "Worlds", "year": 2015, "discipline": "men_800m", "cutoff": CUTOFF, "tier": "global",
+        "athlete_name": ["A", "B"], "athlete_id": [1, 2], "sb_score": [1250.0, 1240.0]})
+    races = {2015: {"1": season(result("01 JUN 2015", 1250)), "2": season(result("02 JUN 2015", 1240))}}
+    usual = fd.attach_races(scored, races)
+    varied = fm.spec_scored(usual, {"features": fm.FEATURES_V2, "race": {"recent_days": 90}}, races)
+    assert pd.isna(usual.loc[0, "recent_score"]) and varied.loc[0, "recent_score"] == 1250
+    assert fm.spec_scored(usual, {"features": fm.FEATURES_V2}, races) is usual
+
+
+def test_every_experiment_uses_known_features_and_known_ways_of_reading_races():
+    assert fm.EXPERIMENTS["today"]["features"] == fm.FEATURES
+    for name, spec in fm.EXPERIMENTS.items():
+        assert set(spec["features"]) <= set(fm.FEATURES_V2), name
+        assert set(spec.get("race", {})) <= {"recent_days", "form_marks", "big_categories"}, name
+
+
+def test_the_candidate_for_the_locked_years_gains_on_the_tuning_years_without_naming_fewer_medallists():
+    rows = [{"name": "today", "meanLlGain": 0.0, "meanHitsDiff": 0.0},
+            {"name": "biggest_gain_fewer_medallists", "meanLlGain": 0.09, "meanHitsDiff": -0.01},
+            {"name": "gains", "meanLlGain": 0.05, "meanHitsDiff": 0.0},
+            {"name": "gains_less", "meanLlGain": 0.02, "meanHitsDiff": 0.04}]
+    assert fm.choose_experiment(rows) == "gains"
+    assert fm.choose_experiment([{"name": "worse", "meanLlGain": -0.01, "meanHitsDiff": 0.1}]) is None
+
+
+def test_the_locked_years_are_scored_once(tmp_path, monkeypatch):
+    used = tmp_path / "holdout.json"
+    used.write_text("{}", encoding="utf-8")
+    monkeypatch.setattr(fm, "load_scored_finals", lambda: pytest.fail("the locked years were read a second time"))
+    assert fm.run_holdout("v2", path=str(used)) == 1
