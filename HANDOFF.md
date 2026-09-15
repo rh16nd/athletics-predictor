@@ -1,5 +1,65 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## Start here (read first): where things stand on 2026-09-15, and what to do next
+
+_This section is the map. The sections below it hold the detail of each piece of work, newest first._
+
+**What is live and what is not**
+- The site is at `https://www.podiumcall.cc` (Vercel). `podiumcall.cc` and `podiumcall.vercel.app` redirect to it. The API is still `https://podiumcall.onrender.com`.
+- Live is the Ultimate-era build plus one change: the sitemap and `robots.txt` for the new domain (frontend `deab918`).
+- Committed locally, not pushed:
+  - Backend: 22 commits, from `91d2c275` (2026-09-14, the championship registry) to `778566e8` (the domain note). They hold the Asian Games work, the field model and its call, the injury-check fixes, pages and photos for Asian Games entrants, the country pages, the hammer and 10,000m pages and model pick, and the deleted-photo fix.
+  - Frontend: 8 commits (`1a39e09` to `3dbe346`). Local `main` is also 1 commit behind `origin/main` (`deab918`). Merge `origin/main` before pushing; a rebase would change the commit hashes this file cites.
+- `CURRENT` in `src/championships.py` is still `ultimate-2026`.
+- Uncommitted in the backend, left for the user to decide:
+  - 27 `data/raw/*_2026.csv` toplists, rewritten by an outside refresh on 2026-09-15 at 06:21–06:26. The committed `data/countries.json` was built from them, so commit them together, or rebuild `countries.json` from the committed toplists.
+  - `data/standings_detail.json` and `outputs/predictions_latest.csv` (the same refresh), and `data/photo_focus_cache.json` (touched by the local API during browser checks).
+  - Untracked `data/field/championship_finals.csv`, `finalist_ids.csv`, `finals.csv` and `data/field/europe/`: the field model's training data, needed only to retrain.
+
+**Waiting on the user (their accounts)**
+- Render: add `https://www.podiumcall.cc` to `PODIUMCALL_CORS_ORIGINS`. When checked, the API allowed only the vercel.app origin, so any API fallback fails on the new domain.
+- Vercel: set `VITE_SITE_URL` to `https://www.podiumcall.cc` if it still names vercel.app. Upload `public/favicon-512.png` as the project logo if Vercel still shows Lovable's.
+- Search Console: the sitemap showed "could not be read" right after it was submitted. Checked as Googlebot, the file is fine (200, `application/xml`, valid XML, 272 URLs on the new domain), so give it a day, then remove and resubmit `https://www.podiumcall.cc/sitemap.xml` if it still fails. Run Change of address from the old `podiumcall.vercel.app` property.
+- Review the Asian Games work locally before the flip: start the `predictor-api-next-championship` launch config and the dev server, then open `/championship`.
+
+**Run order to launch the Asian Games (athletics 23–29 September, Nagoya)**
+1. After the user's review: `python src/injury_checker.py --championship asian-games-2026` (it needs a headful browser).
+2. Flip `CURRENT` to `asian-games-2026` in `src/championships.py`.
+3. Re-scrape and rebuild the call: `python src/asian_games_scraper.py` (about 20 minutes, and it also fetches last season's lists; its printout must not warn about failed lookups), then `python src/asian_games_predictions.py`.
+4. Profiles and derived files: `python src/athlete_profile_scraper.py --championship asian-games-2026`, `python src/country_index.py` (adds the 70 call-built pages), `python src/world_rankings.py` (a full run, so all 36 events use the new race source), `python src/warm_card_photos.py`, `python src/warm_photo_focus.py`.
+5. `python src/build_static_api.py`. Allow about 13 minutes more than before, for the 610 championship status pages and the 36 event pages.
+6. Frontend: merge `origin/main`, regenerate the sitemap with `PODIUMCALL_BASE_URL=https://www.podiumcall.cc PODIUMCALL_API=http://localhost:5000/api python scripts/make-sitemap.py`, then `tsc`, eslint on changed files and `npm run build`.
+7. Commit both repos (with the refreshed toplists, if the user agrees) and push both by 21 September. Check the live site about a minute later, since Vercel briefly serves stale assets after a push.
+8. Before the first session on 23 September: re-run step 3, then `python src/freeze_prefinal.py --championship asian-games-2026`, rebuild, and push again.
+9. During the Games, results come from World Athletics competition `7176091`. `refresh-results.cmd` pushes every local commit, so use it only once everything above is pushed.
+
+**Ideas for next steps (a brainstorm, nothing decided)**
+
+Launch polish, before or just after the Asian Games push:
+- The share image `public/og.png` and `public/site.webmanifest` still describe "the 2026 Diamond League Final, Brussels". Make them about the site, or about the current championship.
+- `scripts/make-sitemap.py` lists 7 fixed routes plus the 32 Diamond League events and their athletes. It misses `/championship`, `/results`, `/how-it-works`, the country pages, the hammer and 10,000m event pages and the Asian Games athlete pages. It could read the routes the static build writes instead.
+- The live pages render no canonical or `og:url` tag, although `src/lib/seo.ts` builds them from `VITE_SITE_URL`. Find out why; those tags tell Google which domain is the real one.
+- Lovable leftovers: the block in `AGENTS.md`, `src/lib/lovable-error-reporting.ts` and the `@lovable.dev/vite-tanstack-config` build preset. Check what depends on each before removing it.
+- A small smoke test over the main routes in EN and FR (landing, dashboard, Track and Field with the hammer selected, an event page, a country page, an athlete page, `/championship`, `/results`). It would have caught the hammer event page failing to load.
+
+During and after the Games:
+- Grade the field model's Asian Games call on the Results page, as the Ultimate was graded. It is that model's first real test on an Asian field, so state beforehand what counts as a hit, the way the backtest did.
+- Choose the next championship and register it in `src/championships.py`, with its own theme.
+
+Data and model:
+- Head-to-head and field analysis for the hammer and 10,000m event pages. Neither event has a race log, and `worldwide_scraper.py` skips every 2026 meeting recorded in `data/worldwide/_state.json`, so it needs a targeted re-scrape for those events.
+- Offer the field model's "podium chance if the top 20 met in one final" for all 36 events on Track and Field, beside the Diamond League rating. It tested level with points, so this is the user's call.
+- 424 of the 524 Asian Games entrants with a profile have no free photo anywhere. Initials are the honest fallback; scraping federation sites stays ruled out.
+
+Bigger items already on the list:
+- Dark mode. It is not a palette swap: the measured contrast ratios and the generated country themes are solved against the light background.
+- Arabic, after French.
+- A scheduled refresh (scrape, build, commit, push) that stops on an empty scrape, since World Athletics rotates its data server and keys.
+- Fan funding (parked): a paid data-depth tier, with predictions staying free.
+- Privacy-friendly analytics, to see which pages people use. The CSP in `vercel.json` would need the analytics host.
+
+---
+
 ## The site moved to www.podiumcall.cc (2026-09-15)
 
 - The user bought `podiumcall.cc`. DNS is at Cloudflare: the apex points at Vercel, and `www` is a CNAME to `4d75abf133eb1911.vercel-dns-017.com` with the proxy off. `www.podiumcall.cc` is the production domain, and `podiumcall.cc` and `podiumcall.vercel.app` redirect to it (308).
