@@ -394,6 +394,23 @@ def test_the_experiments_marked_new_over_old_are_built_on_the_rule():
     assert not any(fm.EXPERIMENTS[name].get("newOverOld") for name in ("today", "v2"))
 
 
+def test_a_refit_retrains_the_served_experiment_and_keeps_its_test_record_and_the_model_it_replaces(
+        tmp_path, monkeypatch):
+    import json
+
+    served, previous = tmp_path / "field_model.json", tmp_path / "field_model_previous.json"
+    served.write_text(json.dumps({"experiment": "today", "holdout": {"ships": True}}), encoding="utf-8")
+    sprints = [f for f in opposing_finals([2019, 2020]) if f["group"] == "sprints"]
+    monkeypatch.setattr(fm, "_scored_with_races", lambda: pd.DataFrame())
+    monkeypatch.setattr(fm, "build_finals", lambda scored, features: sprints)
+
+    assert fm.run_refit(model_path=str(served), previous_path=str(previous)) == 0
+    model = json.loads(served.read_text(encoding="utf-8"))
+    assert (model["experiment"], model["holdout"], model["finals"]) == ("today", {"ships": True}, len(sprints))
+    assert json.loads(previous.read_text(encoding="utf-8")) == {"experiment": "today", "holdout": {"ships": True}}
+    assert fm.run_refit("no_such_experiment", model_path=str(served), previous_path=str(previous)) == 1
+
+
 def test_the_locked_years_are_scored_once(tmp_path, monkeypatch):
     used = tmp_path / "holdout.json"
     used.write_text("{}", encoding="utf-8")

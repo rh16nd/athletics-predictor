@@ -39,6 +39,7 @@ Usage:
     python src/field_model.py --compare             # race by race against today, on DEV_YEARS
     python src/field_model.py --experiments [NAME]  # try EXPERIMENTS on DEV_YEARS, every run logged
     python src/field_model.py --holdout NAME        # the chosen experiment on HOLDOUT_YEARS, once
+    python src/field_model.py --refit [NAME]        # retrain the served experiment on every final on file
 Reads data/field/finals.csv (field_data.py --report). --backtest writes
 outputs/field_model.json and outputs/field_model_report.json. --compare,
 --experiments and --holdout write field_model_compare.json,
@@ -65,6 +66,7 @@ MODEL_PATH = os.path.join(BASE_DIR, "outputs", "field_model.json")
 REPORT_PATH = os.path.join(BASE_DIR, "outputs", "field_model_report.json")
 COMPARE_PATH = os.path.join(BASE_DIR, "outputs", "field_model_compare.json")
 V2_MODEL_PATH = os.path.join(BASE_DIR, "outputs", "field_model_v2.json")
+PREVIOUS_MODEL_PATH = os.path.join(BASE_DIR, "outputs", "field_model_previous.json")
 EXPERIMENTS_PATH = os.path.join(BASE_DIR, "outputs", "field_model_experiments.json")
 HOLDOUT_PATH = os.path.join(BASE_DIR, "outputs", "field_model_holdout.json")
 
@@ -1042,6 +1044,38 @@ def run_holdout(name, path=HOLDOUT_PATH):
     return 0
 
 
+def run_refit(name=None, model_path=MODEL_PATH, previous_path=PREVIOUS_MODEL_PATH):
+    """Retrain the served experiment on every final on file and save it as the
+    served model, keeping the model it replaces at `previous_path`.
+
+    For after new finals have joined the history (field_data.py --finals, --ids,
+    --races and --report): the model learns from them, and the experiment and
+    its locked-year record (`holdout`) carry over. It is not a new test. A change
+    of experiment or features is one, and goes through --experiments on finals
+    the model has not been tested on."""
+    current = load_model(model_path) or {}
+    name = name or current.get("experiment")
+    if name not in EXPERIMENTS:
+        print(f"  no such experiment: {name} (see EXPERIMENTS)")
+        return 1
+    print(f"=== Field model: retraining {name} on every final on file ===")
+    scored = _scored_with_races()
+    if scored is None:
+        return 1
+    spec = EXPERIMENTS[name]
+    finals = build_finals(spec_scored(scored, spec), spec["features"])
+    model = fit_spec(finals, spec)
+    model.update({"fitAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "experiment": name,
+                  "holdout": current.get("holdout") if current.get("experiment") == name else None})
+    if current:
+        _write_json(previous_path, current)
+    _write_json(model_path, model)
+    years = [f["year"] for f in finals]
+    print(f"  {len(finals)} finals from {min(years)} to {max(years)}")
+    print(f"  -> {model_path}\n  the model it replaces -> {previous_path}")
+    return 0
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--backtest", action="store_true")
@@ -1051,7 +1085,11 @@ def main(argv=None):
                         help="try EXPERIMENTS (all of them when none is named) on DEV_YEARS against today's model")
     parser.add_argument("--holdout", default=None, metavar="NAME",
                         help="score the chosen experiment on HOLDOUT_YEARS, once")
+    parser.add_argument("--refit", nargs="?", const="", default=None, metavar="NAME",
+                        help="retrain the served experiment (or NAME) on every final on file, after new finals are added")
     args = parser.parse_args(argv)
+    if args.refit is not None:
+        return run_refit(args.refit or None)
     if args.compare:
         return run_compare()
     if args.experiments is not None:
