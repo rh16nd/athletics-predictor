@@ -2,26 +2,37 @@
 
 ## Start here first: where the session stopped (2026-09-15, late night)
 
-The user reached their usage limit and asked to save and continue in a new chat. Read this section, then the map below it.
+The user reached their usage limit and asked to save and continue in a new chat. The chat that followed, the same night, committed the locale fixes, installed the playwright-cli skill and finished the UI pass, fixing the two Ultimate leftovers it found. Read this section, then the map below it.
 
 **Saved**
-- Backend (athletics-predictor): everything is committed locally, 34 commits ahead of origin. The last three are `ea8fc2c8` (the race-by-race model in service, with the call and rankings rebuilt), `4b02fed1` (the morning's 27 toplists, `standings_detail.json`, `predictions_latest.csv` and the photo focus cache, committed with the rest as the user agreed) and `d3cdd5ea` (`field_model.py --refit`). Only the untracked training data in `data/field/` is left out, as intended.
-- Frontend (track-insights-main): 12 commits ahead of origin, up to `10da90a`, and still 1 behind `origin/main` (merge it, don't rebase).
+- Backend (athletics-predictor): 36 commits ahead of origin, plus the commit that records this section. The newest before it is `4a0fa4e9` (country pages leave out the Ultimate's places and relays once the Ultimate is over or no longer current). Before that come `a878c19a` (the note that recorded where the session stopped), `d3cdd5ea` (`field_model.py --refit`), `4b02fed1` (the morning's 27 toplists, `standings_detail.json`, `predictions_latest.csv` and the photo focus cache) and `ea8fc2c8` (the race-by-race model in service, with the call and rankings rebuilt).
+- Frontend (track-insights-main): 14 commits ahead of origin, up to `a98a799`, and still 1 behind `origin/main` (merge it, don't rebase).
 - Nothing is pushed in either repo, and `CURRENT` is still `ultimate-2026`.
+- Left uncommitted on purpose: `data/countries.json`, rebuilt with `PODIUMCALL_CHAMPIONSHIP=asian-games-2026` to check the country fix. It has 158 nations and 4,867 athletes, none with an Ultimate panel; the committed copy is an older build with 154, 4,797 and 29 nations carrying Ultimate qualifiers. Run order step 4 rebuilds it after the flip, so it belongs in the launch commit. The untracked training data in `data/field/` stays out, as before.
 
-**Not committed: the UI pass, stopped part way** (frontend `src/lib/locales/en.ts` and `fr.ts` only)
-- Fixed in EN and FR:
+**The UI pass, finished**
+- Locale fixes, committed as frontend `23a8122` once `npx tsc --noEmit`, eslint on the two files, 900 keys in each language with the same set, `npm run build` and `scripts/smoke-routes.py` (20 of 20 pages in EN and FR) had passed:
   - `rankings.subtitle.field` (the Track and Field field-model view) and `disc.top.disagreeNote` (the hammer and 10,000m event pages) said the field model reads season bests only and "picked about as many medallists as a points ranking, not more". They now say it judges this season first and named more medallists than points on finals it had not seen.
   - `ath.model` and `ath.modelBefore`: the athlete hero's "PodiumCall model 12%" read as contradicting the Asian Games call's 97.9% on the same page. It is the Diamond League model's chance at a Diamond League Final, and now says so ("Diamond League model").
-  - How it works: `howItWorks.description`, `s1.p1`, `s5.b2` and `s6.p2` no longer describe "the 2026 Diamond League Final", claim the site never gives a chance of winning, or name the Ultimate.
-- Still to do, in order:
-  1. `howItWorks.s1.p2` is new in English but still old in French. Its French line has a non-breaking space before the colon ("ligne :"), which is why the edit failed. The new French text: "Le top trois passe en premier, et c’est voulu. Le jour J, l’athlète le plus rapide peut faire un faux départ, se faire enfermer ou être repris sur la ligne, si bien que le vainqueur exact se joue souvent entre trois ou quatre noms. Savoir qui monte sur le podium est une question plus juste, et que l’on peut vérifier face au résultat ensuite. La chance de victoire dit à quel point la course est ouverte, pas qui va gagner."
-  2. `npx tsc --noEmit`, eslint on the two locale files, EN/FR key parity (900 each), `npm run build`, and `scripts/smoke-routes.py` with the predictor's venv against the dev server (20 pages).
-  3. Commit the frontend.
-- Seen and not yet settled: after the locale files were edited, the dev server's console logged "useT must be used inside <I18nProvider>" in DisciplinePage. The page rendered normally after a reload, so it looks like Vite hot reload swapping the i18n context. The smoke test in a fresh browser is the check.
-- Checked and fine: the Asian Games call table on a phone (720px wide in its own sideways scroll, six columns, unranked rows spanning all of them), no sideways page scroll on `/championship` or athlete pages at 375px, the new method panel and win column in EN and FR, and the hammer event page's note.
-- Not yet gone through: the landing page, dashboard, Track, Qualifying, Performance, Schedule, country pages, search, the 404 page and the welcome modal. In the Browser pane the emulated 1280px view renders as a thumbnail, and wheel or Page Down scrolls do not move a mobile page, so measure with JavaScript (element sizes, `scrollX` after scrolling right) rather than rely on screenshots.
-- How it works still explains only the Diamond League model (how it learns and how accurate it is). The championship field model is explained only on `/championship`, so a section on it would help.
+  - How it works: `howItWorks.description`, `s1.p1`, `s1.p2`, `s5.b2` and `s6.p2` no longer describe "the 2026 Diamond League Final", claim the site never gives a chance of winning, or name the Ultimate.
+- The "useT must be used inside <I18nProvider>" message did not come back in the smoke test's fresh browser, so it was Vite hot reload.
+- French typography puts a non-breaking space (U+00A0) before a colon, so an exact-match edit typed with an ordinary space fails on those lines. A short script that replaces the whole line by its key works.
+- The pages still to go through were swept with playwright-cli at 1280px and on an emulated Pixel 10 (360px wide), in EN and FR: `/`, `/dashboard`, `/track`, `/field`, `/qualification`, `/stats`, `/schedule`, `/country/HUN`, `/country/JPN`, `/how-it-works`, `/results`, `/projections`, `/ultimate`, a 404, the welcome modal and search. No page scrolls sideways at either width. The only console error is the 404 page's own 404. The welcome modal fits, and the French one scrolls inside its panel on a phone with its buttons on screen. Search finds "Japan" and "Kipyegon" and says so when nothing matches. The only English on French pages is the dashboard's news headlines, quoted as published.
+- Fixed from the sweep:
+  - Country pages showed "At the Ultimate Championship: places already held in Budapest, 11–13 September" with the Asian Games current, because `country_index.py` read `data/ultimate/event.json` whatever the championship. `ultimate_by_country()` now returns nothing unless the Ultimate is current and not over, gated like `api.championship_page_entrants` (backend `4a0fa4e9`, with a test; the suite passes, 673 tests).
+  - `schedule.season.subtitle` called the season "The Diamond League road that led to the Ultimate". It now describes the season alone (frontend `a98a799`).
+- Found and left for the user to decide:
+  - The landing's hero figures are the Diamond League model's. "60.9% podium hit rate" is the API's `modelAccuracy`, and "Browse all 32 events" and "32 disciplines tracked" count the Track and Field lists. The Asian Games call comes from the field model, which named 64.4% of medallists on the locked 2024-2025 finals.
+  - French country names are English. `/country/JPN` is headed "Japan" in French, and a French search for "Japon" finds nothing. `IOC_TO_ISO2` in `src/lib/flags.ts` with `Intl.DisplayNames` would translate most names, but some need the IOC's wording set by hand (Chinese Taipei for TPE, Hong Kong), and search would have to match the French name too.
+  - City names from the data stay English in French: "Brussels — Final" on the schedule (from `MEETS` in api.py) and "BRUSSELS" on `/results`.
+  - The championship page has two `h1`s, the Shell title and the hero line in `asian-games-body.tsx`, as the Ultimate page did.
+  - The dashboard's injury list is still the Ultimate's (Ingebrigtsen, Omanyala, Hodgkinson). Run order step 1 replaces it.
+  - How it works explains only the Diamond League model. The championship field model is explained only on `/championship`, so a section on it would help.
+
+**Browser testing with playwright-cli**
+- `@playwright/cli` 0.1.20 (Microsoft's, from npm) is installed globally, and its skill is at `~/.claude/skills/playwright-cli`. It was installed with `playwright-cli install --skills -g`, so both repos have it.
+- Run it from the scratchpad: every command writes a console log and a page snapshot into `.playwright-cli/` in the current folder. `playwright-cli open <url>` is headless Chrome at 1280×720, and `playwright-cli -s=mobile open --mobile <url>` is a second session emulating a Pixel 10 at 360×732 with touch.
+- `playwright-cli --raw run-code --filename=x.js` runs one `async page => {...}` function and prints what it returns. Its sandbox has no `URL` and no `require`, so parse URLs with a regex and return the findings. Tonight's sweep script lived in that chat's scratchpad and is gone with it; it waited for loading the way `scripts/smoke-routes.py` does and read sideways scroll from `scrollX` after scrolling right.
 
 **Retraining, as the user asked**
 - The served model does not need retraining now: it was fitted on every final from 2009 to 2025, on the data corrected for the indoor bug.
