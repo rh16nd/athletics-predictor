@@ -66,16 +66,16 @@ def test_an_event_the_diamond_league_model_has_never_seen_gets_the_field_models_
         return "rows"
 
     monkeypatch.setattr(wr.fm, "serving_rows", serving_rows)
-    monkeypatch.setattr(wr.fm, "score_field", lambda model, rows, cutoff: {
-        "First THROWER": 0.97, "Second THROWER": 0.94, "Third THROWER": 0.99})
+    monkeypatch.setattr(wr.fm, "field_chances", lambda model, rows, cutoff: {
+        "First THROWER": (0.97, 0.30), "Second THROWER": (0.94, 0.25), "Third THROWER": (0.99, 0.45)})
 
     out = wr.score_discipline("men_HT")
     assert (out["modelAvailable"], out["modelKind"], out["isField"]) == (True, "field", True)
     assert [r["name"] for r in out["points"]] == ["First THROWER", "Second THROWER", "Third THROWER"]
     # The field is the top by points, in that order, matched by id.
     assert seen["field"] == [("First THROWER", 1), ("Second THROWER", 2), ("Third THROWER", 3)]
-    assert [(r["name"], r["ratingPct"]) for r in out["model"]] == [
-        ("Third THROWER", 99.0), ("First THROWER", 97.0), ("Second THROWER", 94.0)]
+    assert [(r["name"], r["ratingPct"], r["winPct"]) for r in out["model"]] == [
+        ("Third THROWER", 99.0, 45.0), ("First THROWER", 97.0, 30.0), ("Second THROWER", 94.0, 25.0)]
     assert all(r["dlRaces"] is None for r in out["model"] + out["points"])
 
     monkeypatch.setattr(wr.fm, "load_model", lambda: None)

@@ -172,14 +172,16 @@ def field_call(event, model, snapshot_path, last_path, cutoff, year=ags.YEAR, ro
     rows = rows[rows["sb_score"].notna()].reset_index(drop=True)
     if len(rows) < MIN_SCORED:
         return None
-    chances = fm.predict(model, fm.field_features(rows, cutoff).to_numpy())
-    rows = rows.assign(chance=chances).sort_values(["chance", "sb_score"], ascending=False, kind="stable")
+    u = fm.utilities(model, fm.field_features(rows, cutoff).to_numpy())
+    rows = (rows.assign(chance=fm.podium_chances(u), win=fm.win_chances(u))
+            .sort_values(["chance", "sb_score"], ascending=False, kind="stable"))
     nats = {_key(a["name"]): a.get("nat") for a in event["athletes"]}
     athletes = [{
         "rank": rank, "name": r.athlete_name, "nat": nats.get(_key(r.athlete_name)), "qualifiedBy": None,
         "rankingScore": int(r.sb_score), "mark": r.mark,
         "markSeason": int(r.mark_season) if int(r.mark_season) != year else None,
         "podiumChance": round(float(r.chance) * 100, 1),
+        "winChance": round(float(r.win) * 100, 1),
     } for rank, r in enumerate(rows.itertuples(), 1)]
     scored = {_key(a["name"]) for a in athletes}
     unscored = [a["name"] for a in event["athletes"] if _key(a["name"]) not in scored]

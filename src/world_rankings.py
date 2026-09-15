@@ -150,7 +150,7 @@ def ranked(rows, sort_key, reverse=True):
     for i, x in enumerate(ordered[:TOP_N], 1):
         out.append({
             "rank": i, "name": x["name"], "nat": x["nat"], "mark": x["mark"],
-            "score": x["score"], "ratingPct": x["ratingPct"],
+            "score": x["score"], "ratingPct": x["ratingPct"], "winPct": x.get("winPct"),
             "dlRaces": x["dlRaces"], "racesOnRecord": x["racesOnRecord"],
             "profileUrl": x["profileUrl"],
         })
@@ -176,9 +176,9 @@ def field_model_rows(key, rows, today=None, model=None):
     cutoff = pd.Timestamp(today or date.today()) + pd.Timedelta(days=1)
     athletes = [{"name": r["name"], "nat": r["nat"], "waId": ags.wa_id(r["profileUrl"])} for r in field]
     served = fm.serving_rows(key, athletes, os.path.join(RAW_DIR, f"{key}_{YEAR}.csv"), cutoff, YEAR)
-    chances = fm.score_field(model, served, cutoff)
-    scored = [{**by_name[name], "ratingPct": round(chance * 100, 1), "prob": chance}
-              for name, chance in chances.items() if name in by_name]
+    chances = fm.field_chances(model, served, cutoff)
+    scored = [{**by_name[name], "ratingPct": round(podium * 100, 1), "winPct": round(win * 100, 1), "prob": podium}
+              for name, (podium, win) in chances.items() if name in by_name]
     return ranked(scored, "prob")
 
 
