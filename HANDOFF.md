@@ -1,5 +1,36 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## Start here first: where the session stopped (2026-09-15, late night)
+
+The user reached their usage limit and asked to save and continue in a new chat. Read this section, then the map below it.
+
+**Saved**
+- Backend (athletics-predictor): everything is committed locally, 34 commits ahead of origin. The last three are `ea8fc2c8` (the race-by-race model in service, with the call and rankings rebuilt), `4b02fed1` (the morning's 27 toplists, `standings_detail.json`, `predictions_latest.csv` and the photo focus cache, committed with the rest as the user agreed) and `d3cdd5ea` (`field_model.py --refit`). Only the untracked training data in `data/field/` is left out, as intended.
+- Frontend (track-insights-main): 12 commits ahead of origin, up to `10da90a`, and still 1 behind `origin/main` (merge it, don't rebase).
+- Nothing is pushed in either repo, and `CURRENT` is still `ultimate-2026`.
+
+**Not committed: the UI pass, stopped part way** (frontend `src/lib/locales/en.ts` and `fr.ts` only)
+- Fixed in EN and FR:
+  - `rankings.subtitle.field` (the Track and Field field-model view) and `disc.top.disagreeNote` (the hammer and 10,000m event pages) said the field model reads season bests only and "picked about as many medallists as a points ranking, not more". They now say it judges this season first and named more medallists than points on finals it had not seen.
+  - `ath.model` and `ath.modelBefore`: the athlete hero's "PodiumCall model 12%" read as contradicting the Asian Games call's 97.9% on the same page. It is the Diamond League model's chance at a Diamond League Final, and now says so ("Diamond League model").
+  - How it works: `howItWorks.description`, `s1.p1`, `s5.b2` and `s6.p2` no longer describe "the 2026 Diamond League Final", claim the site never gives a chance of winning, or name the Ultimate.
+- Still to do, in order:
+  1. `howItWorks.s1.p2` is new in English but still old in French. Its French line has a non-breaking space before the colon ("ligne :"), which is why the edit failed. The new French text: "Le top trois passe en premier, et c’est voulu. Le jour J, l’athlète le plus rapide peut faire un faux départ, se faire enfermer ou être repris sur la ligne, si bien que le vainqueur exact se joue souvent entre trois ou quatre noms. Savoir qui monte sur le podium est une question plus juste, et que l’on peut vérifier face au résultat ensuite. La chance de victoire dit à quel point la course est ouverte, pas qui va gagner."
+  2. `npx tsc --noEmit`, eslint on the two locale files, EN/FR key parity (900 each), `npm run build`, and `scripts/smoke-routes.py` with the predictor's venv against the dev server (20 pages).
+  3. Commit the frontend.
+- Seen and not yet settled: after the locale files were edited, the dev server's console logged "useT must be used inside <I18nProvider>" in DisciplinePage. The page rendered normally after a reload, so it looks like Vite hot reload swapping the i18n context. The smoke test in a fresh browser is the check.
+- Checked and fine: the Asian Games call table on a phone (720px wide in its own sideways scroll, six columns, unranked rows spanning all of them), no sideways page scroll on `/championship` or athlete pages at 375px, the new method panel and win column in EN and FR, and the hammer event page's note.
+- Not yet gone through: the landing page, dashboard, Track, Qualifying, Performance, Schedule, country pages, search, the 404 page and the welcome modal. In the Browser pane the emulated 1280px view renders as a thumbnail, and wheel or Page Down scrolls do not move a mobile page, so measure with JavaScript (element sizes, `scrollX` after scrolling right) rather than rely on screenshots.
+- How it works still explains only the Diamond League model (how it learns and how accurate it is). The championship field model is explained only on `/championship`, so a section on it would help.
+
+**Retraining, as the user asked**
+- The served model does not need retraining now: it was fitted on every final from 2009 to 2025, on the data corrected for the indoor bug.
+- Retrain when new finals join the history (the 2026 Ultimate, the 2026 Diamond League Final, the Asian Games once over): add them with `field_data.py --finals`, `--ids`, `--races` and `--report`, then run `python src/field_model.py --refit`. It keeps the model it replaces as `outputs/field_model_previous.json` and carries the locked-year record over. A new experiment or feature set needs finals the model has not been tested on.
+
+**Then** the launch run order in the map below, unchanged.
+
+---
+
 ## Start here (read first): where things stand on the night of 2026-09-15, and what to do next
 
 _This section is the map. The section below it records the evening's work in detail; the older sections follow, newest first._
