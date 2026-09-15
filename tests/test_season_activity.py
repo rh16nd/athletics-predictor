@@ -79,6 +79,38 @@ def test_other_seasons_in_the_worldwide_log_are_ignored(sources):
     assert sa.races_on_record("men_800m", 2026)["A"] == 2
 
 
+def test_a_saved_world_athletics_profile_counts_the_rest_of_the_season(sources, tmp_path, monkeypatch):
+    """The hammer and the 10,000m have no Diamond League log and no race log, so
+    before 2026-09-15 only the toplist's season best counted and the Field page
+    read 1 for nearly every thrower. A profile carries the whole season. Its copy
+    of the season-best meeting counts once, and another event or season on it
+    counts not at all."""
+    import json
+
+    raw, _ = sources
+    profiles = tmp_path / "profiles"
+    profiles.mkdir()
+    monkeypatch.setattr(sa, "PROFILES_DIR", str(profiles))
+    _csv(raw / "men_HT_2026.csv", [
+        {"Competitor": "Bence HALASZ", "Date": "01 AUG 2026", "Venue": "Szombathely (HUN)",
+         "ProfileURL": "https://worldathletics.org/athletes/athlete=14504372"},
+        {"Competitor": "No PROFILE", "Date": "02 AUG 2026", "Venue": "Elsewhere (POL)",
+         "ProfileURL": "https://worldathletics.org/athletes/athlete=1"},
+    ])
+    (profiles / "14504372.json").write_text(json.dumps({"profile": {"resultsByYear": {"resultsByEvent": [
+        {"discipline": "Hammer Throw", "results": [
+            {"date": "01 AUG 2026", "venue": "Szombathely (HUN)"},
+            {"date": "20 JUN 2026", "venue": "Turku (FIN)"},
+            {"date": "05 MAY 2026", "venue": "Nairobi (KEN)"},
+            {"date": "10 AUG 2025", "venue": "Tokyo (JPN)"}]},
+        {"discipline": "Shot Put", "results": [{"date": "01 MAY 2026", "venue": "Budapest (HUN)"}]},
+    ]}}}), encoding="utf-8")
+
+    counts = sa.races_on_record("men_HT", 2026)
+    assert counts["BENCE HALASZ"] == 3
+    assert counts["NO PROFILE"] == 1
+
+
 def test_a_discipline_with_no_files_returns_nothing_rather_than_zeros(sources):
     """An empty dict leaves the UI showing an em dash. A dict of zeros would
     claim every athlete sat the season out."""

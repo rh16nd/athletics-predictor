@@ -25,9 +25,16 @@ The union of every source that carries a date and a venue for a performance:
   data/worldwide/<disc>.csv           the wider race log, which carries the
                                       meetings the other two do not (European
                                       Championships, CAC Games, ISTAF...)
+  data/athlete_profiles/<id>.json     the athlete's World Athletics results
+                                      page, their whole season, for the
+                                      athletes we hold a profile for
 
 Counted as distinct (date, venue) pairs, so the same race appearing in two
 sources counts once.
+
+The profiles came in on 2026-09-15 for the hammer and the 10,000m. Neither has
+a Diamond League log or a race log, so the toplist's season best was the only
+race counted and the Field page read "1" for nearly every thrower.
 
 THIS IS A FLOOR, NOT A CENSUS
 None of the three covers every meeting on earth, and the worldwide log stops
@@ -36,13 +43,29 @@ not "they ran once". The UI must say so -- the number is there to stop a rating
 built on a single visible race from looking like a rating built on a season,
 which is a real thing it can do, not to claim a complete record.
 """
+import json
 import os
+import re
 
 import pandas as pd
 
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
 WORLDWIDE_DIR = os.path.join(BASE_DIR, "data", "worldwide")
+PROFILES_DIR = os.path.join(BASE_DIR, "data", "athlete_profiles")
+
+# How World Athletics names each event on an athlete's results page, by the
+# event half of our discipline key. Checked 2026-09-15 against the 821 saved
+# profiles, which use exactly these names.
+PROFILE_EVENTS = {
+    "100m": "100 Metres", "200m": "200 Metres", "400m": "400 Metres", "800m": "800 Metres",
+    "1500m": "1500 Metres", "5000m": "5000 Metres", "10000m": "10,000 Metres",
+    "3000sc": "3000 Metres Steeplechase", "110h": "110 Metres Hurdles", "100h": "100 Metres Hurdles",
+    "400h": "400 Metres Hurdles", "HJ": "High Jump", "PV": "Pole Vault", "LJ": "Long Jump",
+    "TJ": "Triple Jump", "SP": "Shot Put", "DT": "Discus Throw", "HT": "Hammer Throw",
+    "JT": "Javelin Throw",
+}
+ATHLETE_ID = re.compile(r"athlete=(\d+)|-(\d+)/?$")
 
 
 def _pairs(df, name_col="Competitor", date_col="Date", venue_col="Venue"):
@@ -68,18 +91,58 @@ def _pairs(df, name_col="Competitor", date_col="Date", venue_col="Venue"):
     return out[~out["date"].str.lower().isin(blank)]
 
 
+def _profile_pairs(toplist, discipline, year, profiles_dir=None):
+    """(name, date, venue) for every result in this event and season on the
+    World Athletics profiles we hold for the toplist's athletes.
+
+    Names are the toplist's, matched by the id in each athlete's profile link,
+    so they join the other sources exactly. A profile writes dates and venues
+    the way the toplist does ("27 JUL 2026", "Scotstoun Stadium, Glasgow
+    (GBR)"), so its copy of the season-best meeting is the same pair and counts
+    once."""
+    event = PROFILE_EVENTS.get(discipline.split("_", 1)[-1])
+    if toplist is None or toplist.empty or not event or "ProfileURL" not in toplist.columns:
+        return _pairs(None)
+    profiles_dir = profiles_dir or PROFILES_DIR
+    rows = []
+    for name, url in zip(toplist["Competitor"], toplist["ProfileURL"]):
+        match = ATHLETE_ID.search(str(url))
+        if not match or pd.isna(name):
+            continue
+        path = os.path.join(profiles_dir, f"{match.group(1) or match.group(2)}.json")
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                blob = json.load(f)
+        except (OSError, ValueError):
+            continue
+        by_event = (((blob.get("profile") or {}).get("resultsByYear") or {}).get("resultsByEvent")) or []
+        for ev in by_event:
+            if ev.get("discipline") != event:
+                continue
+            for result in ev.get("results") or []:
+                when = str(result.get("date") or "").strip()
+                if when.endswith(str(year)):
+                    rows.append({"Competitor": name, "Date": when,
+                                 "Venue": result.get("venue") or result.get("competition")})
+    return _pairs(pd.DataFrame(rows, columns=["Competitor", "Date", "Venue"]))
+
+
 def races_on_record(discipline, year):
     """{UPPERCASED NAME: distinct races we can see} for one discipline-season.
 
     Names are upper-cased rather than run through train_model.normalize_name:
-    all three sources here are World Athletics' own exports, which already
+    all the sources here are World Athletics' own exports, which already
     agree on spelling and diacritics. The label files need that stricter fold
     because they join scraped results to a different scrape."""
     frames = []
 
     toplist = os.path.join(RAW_DIR, f"{discipline}_{year}.csv")
     if os.path.exists(toplist):
-        frames.append(_pairs(pd.read_csv(toplist, low_memory=False)))
+        top = pd.read_csv(toplist, low_memory=False)
+        frames.append(_pairs(top))
+        frames.append(_profile_pairs(top, discipline, year))
 
     meetings = os.path.join(RAW_DIR, f"{discipline}_{year}_meetings.csv")
     if os.path.exists(meetings):

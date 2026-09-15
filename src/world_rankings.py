@@ -21,26 +21,38 @@ Field pages, in two orderings the UI toggles between:
            count is shipped next to the rating so a low number explains
            itself instead of looking like a verdict on the athlete.
 
+           The hammer and the 10,000m are not Diamond League events, so that
+           model has never seen them. Their model view comes from the field
+           model instead (src/field_model.py, 2026-09-15): each of the top 20
+           by points gets a podium chance, as if the 20 met in one final.
+           `modelKind` says which model made a list.
+
 Both are built from data we already scrape (the season toplists), so this runs
 in the normal refresh with no new sources. Writes data/world_rankings.json:
-  { "<disc_key>": { "isField": bool, "model": [rows...], "points": [rows...] } }
+  { "<disc_key>": { "isField": bool, "modelAvailable": bool, "modelKind": str,
+                    "model": [rows...], "points": [rows...] } }
 each row: { rank, name, nat, mark, score, ratingPct, dlRaces,
             racesOnRecord, profileUrl }.
 
 Usage:
     python src/world_rankings.py
+    python src/world_rankings.py --only men_HT women_HT   # rewrite just these
 """
+import argparse
 import glob
 import json
 import os
 import pickle
 import sys
+from datetime import date
 
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
+import asian_games_scraper as ags  # noqa: E402
+import field_model as fm  # noqa: E402
 from feature_builder import FIELD_EVENTS, POINTS_ONLY_DISCIPLINES, RAW_DIR, build_2026_features  # noqa: E402
 from season_activity import races_on_record  # noqa: E402
 
@@ -145,13 +157,41 @@ def ranked(rows, sort_key, reverse=True):
     return out
 
 
-def points_only_discipline(key):
-    """A discipline the model has never seen, ranked by points and nothing else.
+def field_model_rows(key, rows, today=None, model=None):
+    """The field model's view of one event: its top 20 by points, each with a
+    podium chance as if the 20 met in one final, best first. Empty without a
+    saved field model, or with fewer than three athletes it can read.
 
-    `model` is empty and `modelAvailable` false, rather than a list of ratings.
-    Scoring the hammer would run the model on an athlete with no meetings log
-    and no history, every one of them on the same defaults, and the order that
-    came out would be the toplist's own order with a percentage beside it."""
+    `ratingPct` is that chance, so the 20 add up to 300: one hundred for each
+    podium place. The model reads each athlete's season best, career best, last
+    season and age against the rest of the field (field_model.FEATURES). In its
+    backtest it named about as many medallists as a points ranking, not more,
+    and the page says so."""
+    model = model if model is not None else fm.load_model()
+    if not model:
+        return []
+    field = ranked(rows, "score")
+    by_name = {r["name"]: r for r in rows}
+    # The end of today, so a mark set today still counts as this season's.
+    cutoff = pd.Timestamp(today or date.today()) + pd.Timedelta(days=1)
+    athletes = [{"name": r["name"], "nat": r["nat"], "waId": ags.wa_id(r["profileUrl"])} for r in field]
+    served = fm.serving_rows(key, athletes, os.path.join(RAW_DIR, f"{key}_{YEAR}.csv"), cutoff, YEAR)
+    chances = fm.score_field(model, served, cutoff)
+    scored = [{**by_name[name], "ratingPct": round(chance * 100, 1), "prob": chance}
+              for name, chance in chances.items() if name in by_name]
+    return ranked(scored, "prob")
+
+
+def field_model_discipline(key, today=None, model=None):
+    """An event the Diamond League model has never seen: the hammer and the
+    10,000m, added 2026-09-14. Ranked on points, with the field model's view
+    beside it since 2026-09-15.
+
+    The Diamond League model is still never run on them. It would score athletes
+    with no meetings log and no history, every one on the same defaults, and the
+    order that came out would be the toplist's own order with a percentage
+    beside it. `modelAvailable` is false only when the field model has nothing
+    to say."""
     meta = toplist_meta(key)
     if not meta:
         return None
@@ -162,17 +202,19 @@ def points_only_discipline(key):
         "racesOnRecord": activity.get(str(name).upper().strip()),
         "profileUrl": m["url"],
     } for name, m in meta.items()]
+    field = field_model_rows(key, rows, today, model)
     return {
         "isField": key in FIELD_EVENTS,
-        "modelAvailable": False,
-        "model": [],
+        "modelAvailable": bool(field),
+        "modelKind": "field" if field else None,
+        "model": field,
         "points": ranked(rows, "score"),
     }
 
 
 def score_discipline(key):
     if key in POINTS_ONLY_DISCIPLINES:
-        return points_only_discipline(key)
+        return field_model_discipline(key)
     df = build_2026_features(key)
     if df.empty:
         return None
@@ -215,21 +257,38 @@ def score_discipline(key):
     return {
         "isField": key in FIELD_EVENTS,
         "modelAvailable": True,
+        "modelKind": "form",
         "model": ranked(rows, "prob"),
         "points": ranked(rows, "score"),
     }
 
 
-if __name__ == "__main__":
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Per-discipline top-20 lists for the Track and Field pages.")
+    parser.add_argument("--only", nargs="+", metavar="KEY",
+                        help="rebuild just these disciplines and keep the rest of the saved file as it is")
+    args = parser.parse_args(argv)
+
     print("=== Building world rankings (points + model) per discipline ===")
     out = {}
-    for key in discipline_keys():
+    if args.only:
+        try:
+            with open(OUT_PATH, encoding="utf-8") as f:
+                out = json.load(f)
+        except (OSError, ValueError):
+            out = {}
+    for key in args.only or discipline_keys():
         res = score_discipline(key)
         if res:
             out[key] = res
             model_top = res["model"][0]["name"] if res["model"] else "(points only)"
-            print(f"  {key}: model#1={model_top}  points#1={res['points'][0]['name']}")
+            print(f"  {key}: model#1={model_top} ({res.get('modelKind')})  points#1={res['points'][0]['name']}")
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"\n  {len(out)} disciplines -> {os.path.abspath(OUT_PATH)}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

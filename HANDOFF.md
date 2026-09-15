@@ -1,5 +1,52 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## Start here: country pages, and the hammer and 10,000m on Track and Field (2026-09-15, latest)
+
+**Committed locally, not pushed. `CURRENT` is still `ultimate-2026`.**
+
+The user asked four things:
+- why some athletes were missing from their country's page;
+- why hammer throwers showed "1 meet" on the Field page;
+- for the model to pick a favourite in the hammer, and the 10,000m, on the Track and Field pages, separate from the Asian Games;
+- to rename the Stats tab, and why the Performance Index's links to the hammer and the 10,000m did not load.
+
+**Country pages** (`08ddf896`).
+- The cause: `country_index.athletes_by_country` read the world toplist alone, which is the world top 100 in most events. 362 of the 518 Asian Games entrants with a page were on no country page. 20 of their nations had no page at all: Hong Kong, Vietnam, Singapore, Mongolia, Indonesia and others. Separately, 30 world-ranked athletes were missing because `countries.json` was built before the morning's toplist refresh.
+- The fix: it reads `api.season_snapshot_paths` (a world row wins), then the current championship's entrants whose page is built from the call (`api.championship_page_entrants`), with no mark.
+- Rebuilt: 154 countries and 4,797 athletes, up from 138 countries. Pakistan lists 3 athletes, Hong Kong 25. Checked on the Hong Kong page.
+- Two things to know:
+  - This build ran with the Ultimate current, so the 70 call-built pages are not in it. Re-run `python src/country_index.py` after the flip, before `build_static_api.py`.
+  - It read this morning's refreshed toplists, which are still uncommitted (27 files in `data/raw`, left for the user). Commit them together with `countries.json`, or rebuild it from the committed ones.
+
+**Performance Index and the discipline links.**
+- `/discipline/<key>` has no page for the hammer or the 10,000m, so the Performance Index ladder, the dashboard and old links led to a page that could not load.
+- The route now redirects those four keys to `/field?disc=` or `/track?disc=` (`RANKING_ONLY_DISCIPLINES` in `dl-data.ts`). Checked: the ladder's hammer link lands on the Field page, and `/discipline/women_10000m` on the Track page.
+- The nav tab reads "Performance" (French "Performances"). The page keeps its title, "Performance Index".
+
+**Meets on the Track and Field pages.**
+- The cause: `season_activity.races_on_record` counts the toplist, the Diamond League log and `data/worldwide/`. Neither event has the last two, so only the season best counted. Re-running `worldwide_scraper.py` would not help without re-fetching every 2026 meeting, since `_state.json` marks them done.
+- The fix: saved World Athletics profiles are a fourth source (`_profile_pairs`, with events named as in `PROFILE_EVENTS`, checked against the saved profiles). `python src/athlete_profile_scraper.py --disciplines men_HT women_HT men_10000m women_10000m` fetched profiles for their toplists: 274 new, none failed.
+- Result on the top 20s. The men's hammer now reads 1 to 17 meets, with 2 athletes still on 1, and the women's 1 to 17 with 1 on 1. The 10,000m reads 1 to 3, with 10 men and 11 women on 1. That fits an event most athletes run once or twice a season.
+- The profiles also give those athletes' pages a season chart and a career block.
+- The other 32 events pick up the new source at the next full `world_rankings.py` run.
+
+**A model pick for the hammer and the 10,000m.**
+- The Diamond League model has never seen either event and is still not run on them.
+- `world_rankings.field_model_rows` gives the top 20 by points a podium chance each from the field model, as if they met in one final. It is the same model that calls the Asian Games.
+- The payload says `modelKind: "field"`. The table labels the column "Podium chance", shows >99% and <1% at the ends, and its subtitle says the model tested level with points, not better.
+- The dashboard's favourites and disagreements leave these events out, since a podium chance and the Diamond League rating are different measures.
+- `python src/world_rankings.py --only men_HT women_HT men_10000m women_10000m` rewrote just those four, so the other 32 were not rebuilt from the uncommitted toplists.
+- The picks, checked on the Field page:
+  - Men's hammer: Ethan KATZBERG 68.4%, while points leads with Bence HALÁSZ (58.8%).
+  - Women's hammer: Camryn ROGERS 69.0%, who also leads on points.
+  - Men's 10,000m: Hagos EYOB 25.0% (points: Mohamed ABDILAAHI).
+  - Women's 10,000m: Caroline KARIBA 40.7% (points: Janeth Nyiva MUTUNGI).
+  - Each field adds up to 300. The dashboard shows none of the four.
+
+**Checks.** 632 backend tests pass. `tsc`, eslint on the changed files and `npm run build` pass. EN and FR have 877 keys each.
+
+---
+
 ## Start here: pages for every Asian Games entrant, and the loading title (2026-09-15, later)
 
 **Committed locally: backend `bde2aa9a` plus the commit after it (the deleted-photo fix, the warmed photo caches and this note), frontend `f0ea1ae`. Nothing is pushed, and `CURRENT` is still `ultimate-2026`.**

@@ -165,6 +165,30 @@ def championship_athletes(champ_id):
     return found
 
 
+def discipline_athletes(keys):
+    """{name: WA id} for everyone on these disciplines' season toplists.
+
+    For the hammer and the 10,000m (2026-09-15). No model ever selected their
+    athletes, so only 4 to 9 of each event's top 100 had a profile, and the
+    Field page read "1 meet" for nearly all of them: a profile holds the
+    athlete's whole season, and without one only the toplist's season best
+    could be counted."""
+    found = {}
+    for key in keys:
+        path = os.path.join(RAW_DIR, f"{key}_2026.csv")
+        try:
+            df = pd.read_csv(path)
+        except (OSError, ValueError):
+            continue
+        if "ProfileURL" not in df.columns:
+            continue
+        for name, url in zip(df["Competitor"], df["ProfileURL"]):
+            match = ATHLETE_ID.search(str(url))
+            if match and pd.notna(name):
+                found.setdefault(str(name), match.group(1))
+    return found
+
+
 def load_index():
     try:
         with open(INDEX_PATH, encoding="utf-8") as f:
@@ -222,6 +246,8 @@ def main():
                         help="re-fetch athletes already on disk")
     parser.add_argument("--championship", metavar="ID",
                         help="the entrants in a championship's saved field, e.g. asian-games-2026")
+    parser.add_argument("--disciplines", nargs="+", metavar="KEY",
+                        help="everyone on these disciplines' season toplists, e.g. men_HT women_10000m")
     args = parser.parse_args()
 
     if args.status:
@@ -230,6 +256,8 @@ def main():
 
     if args.championship:
         ids = championship_athletes(args.championship)
+    elif args.disciplines:
+        ids = discipline_athletes(args.disciplines)
     else:
         ids = athlete_ids()
         if not args.all:

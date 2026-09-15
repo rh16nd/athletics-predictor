@@ -1,8 +1,230 @@
 {
  "men_10000m": {
   "isField": false,
-  "modelAvailable": false,
-  "model": [],
+  "modelAvailable": true,
+  "modelKind": "field",
+  "model": [
+   {
+    "rank": 1,
+    "name": "Hagos EYOB",
+    "nat": "ETH",
+    "mark": "27:17.84",
+    "score": 1198,
+    "ratingPct": 25.0,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/ethiopia/hagos-eyob-15141858"
+   },
+   {
+    "rank": 2,
+    "name": "Kevin Chepsergon CHESANG",
+    "nat": "KEN",
+    "mark": "27:17.80",
+    "score": 1198,
+    "ratingPct": 23.7,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/kevin-chepsergon-chesang-15265526"
+   },
+   {
+    "rank": 3,
+    "name": "Ky ROBINSON",
+    "nat": "AUS",
+    "mark": "26:57.07",
+    "score": 1231,
+    "ratingPct": 23.0,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14865727"
+   },
+   {
+    "rank": 4,
+    "name": "Habtom SAMUEL",
+    "nat": "ERI",
+    "mark": "27:30.51",
+    "score": 1178,
+    "ratingPct": 20.8,
+    "dlRaces": null,
+    "racesOnRecord": 3,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14919315"
+   },
+   {
+    "rank": 5,
+    "name": "Andreas ALMGREN",
+    "nat": "SWE",
+    "mark": "27:23.44",
+    "score": 1189,
+    "ratingPct": 20.4,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14460738"
+   },
+   {
+    "rank": 6,
+    "name": "Mebuki SUZUKI",
+    "nat": "JPN",
+    "mark": "27:20.11",
+    "score": 1194,
+    "ratingPct": 20.3,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14854889"
+   },
+   {
+    "rank": 7,
+    "name": "Charles KIBOINO",
+    "nat": "KEN",
+    "mark": "27:22.80",
+    "score": 1190,
+    "ratingPct": 19.1,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/charles-kiboino-15247725"
+   },
+   {
+    "rank": 8,
+    "name": "Gulveer SINGH",
+    "nat": "IND",
+    "mark": "27:24.18",
+    "score": 1188,
+    "ratingPct": 16.4,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839"
+   },
+   {
+    "rank": 9,
+    "name": "Ahmed MUHUMED",
+    "nat": "USA",
+    "mark": "27:22.93",
+    "score": 1190,
+    "ratingPct": 15.6,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14643341"
+   },
+   {
+    "rank": 10,
+    "name": "Mohamed ABDILAAHI",
+    "nat": "GER",
+    "mark": "26:56.58",
+    "score": 1232,
+    "ratingPct": 13.8,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14753471"
+   },
+   {
+    "rank": 11,
+    "name": "Emmanuel Korir KIPLAGAT",
+    "nat": "KEN",
+    "mark": "27:32.33",
+    "score": 1175,
+    "ratingPct": 13.0,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14892214"
+   },
+   {
+    "rank": 12,
+    "name": "William KINCAID",
+    "nat": "USA",
+    "mark": "27:20.84",
+    "score": 1193,
+    "ratingPct": 12.9,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14493258"
+   },
+   {
+    "rank": 13,
+    "name": "Dennis KIPKEMOI KIPKOGEI",
+    "nat": "KEN",
+    "mark": "27:25.70",
+    "score": 1185,
+    "ratingPct": 12.9,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/dennis-kipkemoi-kipkogei-15198208"
+   },
+   {
+    "rank": 14,
+    "name": "Gideon Kipkertich RONO",
+    "nat": "KEN",
+    "mark": "27:35.04",
+    "score": 1171,
+    "ratingPct": 12.7,
+    "dlRaces": null,
+    "racesOnRecord": 3,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14858600"
+   },
+   {
+    "rank": 15,
+    "name": "Elsingi KIPRUTO",
+    "nat": "KEN",
+    "mark": "27:29.83",
+    "score": 1179,
+    "ratingPct": 10.5,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/elsingi-kipruto-15169283"
+   },
+   {
+    "rank": 16,
+    "name": "David MULLARKEY",
+    "nat": "GBR",
+    "mark": "27:26.58",
+    "score": 1184,
+    "ratingPct": 9.7,
+    "dlRaces": null,
+    "racesOnRecord": 3,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14769889"
+   },
+   {
+    "rank": 17,
+    "name": "Frederik RUPPERT",
+    "nat": "GER",
+    "mark": "27:24.53",
+    "score": 1187,
+    "ratingPct": 9.6,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14627121"
+   },
+   {
+    "rank": 18,
+    "name": "Richard KIMAYAT",
+    "nat": "KEN",
+    "mark": "27:34.24",
+    "score": 1172,
+    "ratingPct": 9.3,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/richard-kimayat-15187547"
+   },
+   {
+    "rank": 19,
+    "name": "Mike FOPPEN",
+    "nat": "NED",
+    "mark": "27:20.52",
+    "score": 1193,
+    "ratingPct": 5.8,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14631296"
+   },
+   {
+    "rank": 20,
+    "name": "Scott BEATTIE",
+    "nat": "GBR",
+    "mark": "27:23.20",
+    "score": 1189,
+    "ratingPct": 5.6,
+    "dlRaces": null,
+    "racesOnRecord": 3,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14706588"
+   }
+  ],
   "points": [
    {
     "rank": 1,
@@ -23,7 +245,7 @@
     "score": 1231,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14865727"
    },
    {
@@ -67,7 +289,7 @@
     "score": 1193,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14631296"
    },
    {
@@ -78,7 +300,7 @@
     "score": 1193,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14493258"
    },
    {
@@ -111,7 +333,7 @@
     "score": 1189,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 3,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14706588"
    },
    {
@@ -122,7 +344,7 @@
     "score": 1189,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14460738"
    },
    {
@@ -133,7 +355,7 @@
     "score": 1188,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839"
    },
    {
@@ -166,7 +388,7 @@
     "score": 1184,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 3,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14769889"
    },
    {
@@ -188,7 +410,7 @@
     "score": 1178,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 3,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14919315"
    },
    {
@@ -199,7 +421,7 @@
     "score": 1175,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14892214"
    },
    {
@@ -221,7 +443,7 @@
     "score": 1171,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 3,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14858600"
    }
   ]
@@ -5156,8 +5378,230 @@
  },
  "men_HT": {
   "isField": true,
-  "modelAvailable": false,
-  "model": [],
+  "modelAvailable": true,
+  "modelKind": "field",
+  "model": [
+   {
+    "rank": 1,
+    "name": "Ethan KATZBERG",
+    "nat": "CAN",
+    "mark": "83.64",
+    "score": 1259,
+    "ratingPct": 68.4,
+    "dlRaces": null,
+    "racesOnRecord": 7,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14809348"
+   },
+   {
+    "rank": 2,
+    "name": "Bence HALÁSZ",
+    "nat": "HUN",
+    "mark": "84.25",
+    "score": 1269,
+    "ratingPct": 58.8,
+    "dlRaces": null,
+    "racesOnRecord": 13,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14424480"
+   },
+   {
+    "rank": 3,
+    "name": "Merlin HUMMEL",
+    "nat": "GER",
+    "mark": "81.74",
+    "score": 1230,
+    "ratingPct": 31.1,
+    "dlRaces": null,
+    "racesOnRecord": 12,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14753981"
+   },
+   {
+    "rank": 4,
+    "name": "Mykhaylo KOKHAN",
+    "nat": "UKR",
+    "mark": "82.38",
+    "score": 1240,
+    "ratingPct": 28.4,
+    "dlRaces": null,
+    "racesOnRecord": 16,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14686964"
+   },
+   {
+    "rank": 5,
+    "name": "Yann CHAUSSINAND",
+    "nat": "FRA",
+    "mark": "82.44",
+    "score": 1241,
+    "ratingPct": 25.5,
+    "dlRaces": null,
+    "racesOnRecord": 15,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14632689"
+   },
+   {
+    "rank": 6,
+    "name": "Rudy WINKLER",
+    "nat": "USA",
+    "mark": "81.12",
+    "score": 1220,
+    "ratingPct": 21.2,
+    "dlRaces": null,
+    "racesOnRecord": 9,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14436941"
+   },
+   {
+    "rank": 7,
+    "name": "Paweł FAJDEK",
+    "nat": "POL",
+    "mark": "82.09",
+    "score": 1235,
+    "ratingPct": 18.9,
+    "dlRaces": null,
+    "racesOnRecord": 11,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14329266"
+   },
+   {
+    "rank": 8,
+    "name": "Valeriy PRONKIN",
+    "nat": "RUS",
+    "mark": "80.95",
+    "score": 1217,
+    "ratingPct": 10.7,
+    "dlRaces": null,
+    "racesOnRecord": 8,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14408884"
+   },
+   {
+    "rank": 9,
+    "name": "Ármin SZABADOS",
+    "nat": "HUN",
+    "mark": "80.95",
+    "score": 1217,
+    "ratingPct": 7.5,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/hungary/armin-szabados-14944879"
+   },
+   {
+    "rank": 10,
+    "name": "Trey KNIGHT",
+    "nat": "USA",
+    "mark": "79.33",
+    "score": 1192,
+    "ratingPct": 4.2,
+    "dlRaces": null,
+    "racesOnRecord": 10,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14874868"
+   },
+   {
+    "rank": 11,
+    "name": "Volodymyr MYSLYVČUK",
+    "nat": "CZE",
+    "mark": "80.69",
+    "score": 1213,
+    "ratingPct": 4.2,
+    "dlRaces": null,
+    "racesOnRecord": 17,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14524329"
+   },
+   {
+    "rank": 12,
+    "name": "Sören KLOSE",
+    "nat": "GER",
+    "mark": "78.18",
+    "score": 1174,
+    "ratingPct": 3.2,
+    "dlRaces": null,
+    "racesOnRecord": 11,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14763090"
+   },
+   {
+    "rank": 13,
+    "name": "Christos FRANTZESKAKIS",
+    "nat": "GRE",
+    "mark": "79.09",
+    "score": 1188,
+    "ratingPct": 3.1,
+    "dlRaces": null,
+    "racesOnRecord": 16,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14751824"
+   },
+   {
+    "rank": 14,
+    "name": "Thomas MARDAL",
+    "nat": "NOR",
+    "mark": "78.66",
+    "score": 1182,
+    "ratingPct": 3.1,
+    "dlRaces": null,
+    "racesOnRecord": 6,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14533736"
+   },
+   {
+    "rank": 15,
+    "name": "Rowan HAMILTON",
+    "nat": "CAN",
+    "mark": "78.67",
+    "score": 1182,
+    "ratingPct": 2.8,
+    "dlRaces": null,
+    "racesOnRecord": 11,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14760215"
+   },
+   {
+    "rank": 16,
+    "name": "Texas TANNER",
+    "nat": "USA",
+    "mark": "78.87",
+    "score": 1185,
+    "ratingPct": 2.1,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/united-states/texas-tanner-15039815"
+   },
+   {
+    "rank": 17,
+    "name": "Ronald MENCIA ZAYAS",
+    "nat": "CUB",
+    "mark": "77.97",
+    "score": 1171,
+    "ratingPct": 2.0,
+    "dlRaces": null,
+    "racesOnRecord": 9,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14826732"
+   },
+   {
+    "rank": 18,
+    "name": "Iosif KESIDIS",
+    "nat": "CYP",
+    "mark": "78.61",
+    "score": 1181,
+    "ratingPct": 2.0,
+    "dlRaces": null,
+    "racesOnRecord": 13,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14953034"
+   },
+   {
+    "rank": 19,
+    "name": "Kieran MCKEAG",
+    "nat": "USA",
+    "mark": "77.92",
+    "score": 1170,
+    "ratingPct": 1.4,
+    "dlRaces": null,
+    "racesOnRecord": 4,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14775437"
+   },
+   {
+    "rank": 20,
+    "name": "Hilmar Örn JÓNSSON",
+    "nat": "ISL",
+    "mark": "78.03",
+    "score": 1172,
+    "ratingPct": 1.4,
+    "dlRaces": null,
+    "racesOnRecord": 13,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14486453"
+   }
+  ],
   "points": [
    {
     "rank": 1,
@@ -5167,7 +5611,7 @@
     "score": 1269,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 13,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14424480"
    },
    {
@@ -5178,7 +5622,7 @@
     "score": 1259,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 7,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14809348"
    },
    {
@@ -5189,7 +5633,7 @@
     "score": 1241,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 15,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14632689"
    },
    {
@@ -5200,7 +5644,7 @@
     "score": 1240,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 16,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14686964"
    },
    {
@@ -5211,7 +5655,7 @@
     "score": 1235,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 11,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14329266"
    },
    {
@@ -5222,7 +5666,7 @@
     "score": 1230,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 12,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14753981"
    },
    {
@@ -5233,7 +5677,7 @@
     "score": 1220,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 9,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14436941"
    },
    {
@@ -5255,7 +5699,7 @@
     "score": 1217,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 8,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14408884"
    },
    {
@@ -5266,7 +5710,7 @@
     "score": 1213,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 17,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14524329"
    },
    {
@@ -5277,7 +5721,7 @@
     "score": 1192,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 10,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14874868"
    },
    {
@@ -5288,7 +5732,7 @@
     "score": 1188,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 16,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14751824"
    },
    {
@@ -5310,7 +5754,7 @@
     "score": 1182,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 11,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14760215"
    },
    {
@@ -5321,7 +5765,7 @@
     "score": 1182,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 6,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14533736"
    },
    {
@@ -5332,7 +5776,7 @@
     "score": 1181,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 13,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14953034"
    },
    {
@@ -5343,7 +5787,7 @@
     "score": 1174,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 11,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14763090"
    },
    {
@@ -5354,7 +5798,7 @@
     "score": 1172,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 13,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14486453"
    },
    {
@@ -5365,7 +5809,7 @@
     "score": 1171,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 9,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14826732"
    },
    {
@@ -5376,7 +5820,7 @@
     "score": 1170,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 4,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14775437"
    }
   ]
@@ -7623,8 +8067,230 @@
  },
  "women_10000m": {
   "isField": false,
-  "modelAvailable": false,
-  "model": [],
+  "modelAvailable": true,
+  "modelKind": "field",
+  "model": [
+   {
+    "rank": 1,
+    "name": "Caroline KARIBA",
+    "nat": "KEN",
+    "mark": "30:31.39",
+    "score": 1219,
+    "ratingPct": 40.7,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/caroline-kariba-14965231"
+   },
+   {
+    "rank": 2,
+    "name": "Jane HEDENGREN",
+    "nat": "USA",
+    "mark": "30:46.80",
+    "score": 1205,
+    "ratingPct": 29.1,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/united-states/jane-hedengren-15090151"
+   },
+   {
+    "rank": 3,
+    "name": "Agnes Mwikali MUTUKU",
+    "nat": "KEN",
+    "mark": "30:34.33",
+    "score": 1216,
+    "ratingPct": 28.5,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14915503"
+   },
+   {
+    "rank": 4,
+    "name": "Tabithanjeri KAMAU",
+    "nat": "KEN",
+    "mark": "30:49.87",
+    "score": 1202,
+    "ratingPct": 24.0,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14767078"
+   },
+   {
+    "rank": 5,
+    "name": "Janeth Nyiva MUTUNGI",
+    "nat": "KEN",
+    "mark": "30:29.16",
+    "score": 1221,
+    "ratingPct": 23.3,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14849583"
+   },
+   {
+    "rank": 6,
+    "name": "Dolphine Nyaboke OMARE",
+    "nat": "KEN",
+    "mark": "30:34.96",
+    "score": 1215,
+    "ratingPct": 19.4,
+    "dlRaces": null,
+    "racesOnRecord": 3,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14758190"
+   },
+   {
+    "rank": 7,
+    "name": "Maureen KOSTER",
+    "nat": "NED",
+    "mark": "30:50.31",
+    "score": 1201,
+    "ratingPct": 18.7,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14372338"
+   },
+   {
+    "rank": 8,
+    "name": "Pamela KOSGEI",
+    "nat": "KEN",
+    "mark": "30:49.99",
+    "score": 1202,
+    "ratingPct": 18.4,
+    "dlRaces": null,
+    "racesOnRecord": 3,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=15041996"
+   },
+   {
+    "rank": 9,
+    "name": "Jana VAN LENT",
+    "nat": "BEL",
+    "mark": "30:51.18",
+    "score": 1201,
+    "ratingPct": 16.6,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14704113"
+   },
+   {
+    "rank": 10,
+    "name": "Shelby HOULIHAN",
+    "nat": "USA",
+    "mark": "30:50.10",
+    "score": 1202,
+    "ratingPct": 15.9,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14368938"
+   },
+   {
+    "rank": 11,
+    "name": "Rose DAVIES",
+    "nat": "AUS",
+    "mark": "31:39.32",
+    "score": 1157,
+    "ratingPct": 12.8,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14517594"
+   },
+   {
+    "rank": 12,
+    "name": "Esther MUTHONI",
+    "nat": "KEN",
+    "mark": "31:34.75",
+    "score": 1161,
+    "ratingPct": 9.3,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/esther-muthoni-14962711"
+   },
+   {
+    "rank": 13,
+    "name": "Diane VAN ES",
+    "nat": "NED",
+    "mark": "31:39.28",
+    "score": 1157,
+    "ratingPct": 7.6,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14625026"
+   },
+   {
+    "rank": 14,
+    "name": "Jessica MCCLAIN",
+    "nat": "USA",
+    "mark": "31:15.49",
+    "score": 1179,
+    "ratingPct": 7.5,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14335825"
+   },
+   {
+    "rank": 15,
+    "name": "Sarah WANJIRU",
+    "nat": "KEN",
+    "mark": "31:23.69",
+    "score": 1171,
+    "ratingPct": 6.1,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/sarah-wanjiru-14957601"
+   },
+   {
+    "rank": 16,
+    "name": "Diana WANZA",
+    "nat": "KEN",
+    "mark": "31:33.26",
+    "score": 1163,
+    "ratingPct": 5.7,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/diana-wanza-14974968"
+   },
+   {
+    "rank": 17,
+    "name": "Edna CHELULEI",
+    "nat": "KEN",
+    "mark": "31:33.57",
+    "score": 1163,
+    "ratingPct": 5.5,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/kenya/edna-chelulei-15211010"
+   },
+   {
+    "rank": 18,
+    "name": "Lisa MERKEL",
+    "nat": "GER",
+    "mark": "31:32.25",
+    "score": 1164,
+    "ratingPct": 4.4,
+    "dlRaces": null,
+    "racesOnRecord": 3,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14878272"
+   },
+   {
+    "rank": 19,
+    "name": "Allie BUCHALSKI",
+    "nat": "USA",
+    "mark": "31:29.06",
+    "score": 1167,
+    "ratingPct": 3.2,
+    "dlRaces": null,
+    "racesOnRecord": 2,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14588599"
+   },
+   {
+    "rank": 20,
+    "name": "Nanaka IZAWA",
+    "nat": "JPN",
+    "mark": "31:37.27",
+    "score": 1159,
+    "ratingPct": 3.1,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14335034"
+   }
+  ],
   "points": [
    {
     "rank": 1,
@@ -7634,7 +8300,7 @@
     "score": 1221,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14849583"
    },
    {
@@ -7656,7 +8322,7 @@
     "score": 1216,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14915503"
    },
    {
@@ -7667,7 +8333,7 @@
     "score": 1215,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 3,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14758190"
    },
    {
@@ -7700,7 +8366,7 @@
     "score": 1202,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 3,
     "profileUrl": "https://worldathletics.org/athletes/athlete=15041996"
    },
    {
@@ -7722,7 +8388,7 @@
     "score": 1201,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14372338"
    },
    {
@@ -7733,7 +8399,7 @@
     "score": 1201,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14704113"
    },
    {
@@ -7766,7 +8432,7 @@
     "score": 1167,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14588599"
    },
    {
@@ -7777,7 +8443,7 @@
     "score": 1164,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 3,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14878272"
    },
    {
@@ -7832,7 +8498,7 @@
     "score": 1157,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 2,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14625026"
    },
    {
@@ -12778,8 +13444,230 @@
  },
  "women_HT": {
   "isField": true,
-  "modelAvailable": false,
-  "model": [],
+  "modelAvailable": true,
+  "modelKind": "field",
+  "model": [
+   {
+    "rank": 1,
+    "name": "Camryn ROGERS",
+    "nat": "CAN",
+    "mark": "81.13",
+    "score": 1273,
+    "ratingPct": 69.0,
+    "dlRaces": null,
+    "racesOnRecord": 13,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14607142"
+   },
+   {
+    "rank": 2,
+    "name": "Brooke ANDERSEN",
+    "nat": "USA",
+    "mark": "79.09",
+    "score": 1240,
+    "ratingPct": 40.9,
+    "dlRaces": null,
+    "racesOnRecord": 5,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14577492"
+   },
+   {
+    "rank": 3,
+    "name": "Rachel RICHESON",
+    "nat": "USA",
+    "mark": "79.33",
+    "score": 1244,
+    "ratingPct": 39.4,
+    "dlRaces": null,
+    "racesOnRecord": 11,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14802080"
+   },
+   {
+    "rank": 4,
+    "name": "Jiale ZHANG",
+    "nat": "CHN",
+    "mark": "78.64",
+    "score": 1233,
+    "ratingPct": 34.7,
+    "dlRaces": null,
+    "racesOnRecord": 12,
+    "profileUrl": "https://worldathletics.org/athletes/pr-of-china/jiale-zhang-15034977"
+   },
+   {
+    "rank": 5,
+    "name": "DeAnna PRICE",
+    "nat": "USA",
+    "mark": "77.71",
+    "score": 1218,
+    "ratingPct": 24.3,
+    "dlRaces": null,
+    "racesOnRecord": 9,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14491584"
+   },
+   {
+    "rank": 6,
+    "name": "Jie ZHAO",
+    "nat": "CHN",
+    "mark": "78.22",
+    "score": 1226,
+    "ratingPct": 20.1,
+    "dlRaces": null,
+    "racesOnRecord": 12,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14889043"
+   },
+   {
+    "rank": 7,
+    "name": "Krista TERVO",
+    "nat": "FIN",
+    "mark": "77.35",
+    "score": 1212,
+    "ratingPct": 13.4,
+    "dlRaces": null,
+    "racesOnRecord": 9,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14592895"
+   },
+   {
+    "rank": 8,
+    "name": "Silja KOSONEN",
+    "nat": "FIN",
+    "mark": "76.41",
+    "score": 1197,
+    "ratingPct": 11.9,
+    "dlRaces": null,
+    "racesOnRecord": 11,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14763144"
+   },
+   {
+    "rank": 9,
+    "name": "Anita WŁODARCZYK",
+    "nat": "POL",
+    "mark": "75.01",
+    "score": 1174,
+    "ratingPct": 9.1,
+    "dlRaces": null,
+    "racesOnRecord": 9,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14294652"
+   },
+   {
+    "rank": 10,
+    "name": "Anastasiya MASLOVA",
+    "nat": "BLR",
+    "mark": "77.67",
+    "score": 1217,
+    "ratingPct": 6.1,
+    "dlRaces": null,
+    "racesOnRecord": 5,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14677647"
+   },
+   {
+    "rank": 11,
+    "name": "Sofiya PALKINA",
+    "nat": "RUS",
+    "mark": "75.36",
+    "score": 1180,
+    "ratingPct": 5.6,
+    "dlRaces": null,
+    "racesOnRecord": 9,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14513668"
+   },
+   {
+    "rank": 12,
+    "name": "Sara FANTINI",
+    "nat": "ITA",
+    "mark": "75.62",
+    "score": 1184,
+    "ratingPct": 4.9,
+    "dlRaces": null,
+    "racesOnRecord": 17,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14593885"
+   },
+   {
+    "rank": 13,
+    "name": "Annette Nneka ECHIKUNWOKE",
+    "nat": "USA",
+    "mark": "75.51",
+    "score": 1182,
+    "ratingPct": 4.1,
+    "dlRaces": null,
+    "racesOnRecord": 7,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14589891"
+   },
+   {
+    "rank": 14,
+    "name": "Erin REESE",
+    "nat": "USA",
+    "mark": "76.76",
+    "score": 1203,
+    "ratingPct": 3.7,
+    "dlRaces": null,
+    "racesOnRecord": 9,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14586650"
+   },
+   {
+    "rank": 15,
+    "name": "Katrine Koch JACOBSEN",
+    "nat": "DEN",
+    "mark": "75.52",
+    "score": 1182,
+    "ratingPct": 3.0,
+    "dlRaces": null,
+    "racesOnRecord": 17,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14577396"
+   },
+   {
+    "rank": 16,
+    "name": "Anthonett NABWE",
+    "nat": "LBR",
+    "mark": "77.64",
+    "score": 1217,
+    "ratingPct": 2.8,
+    "dlRaces": null,
+    "racesOnRecord": 1,
+    "profileUrl": "https://worldathletics.org/athletes/liberia/anthonett-nabwe-15057062"
+   },
+   {
+    "rank": 17,
+    "name": "Rose LOGA",
+    "nat": "FRA",
+    "mark": "75.19",
+    "score": 1177,
+    "ratingPct": 2.6,
+    "dlRaces": null,
+    "racesOnRecord": 13,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14752018"
+   },
+   {
+    "rank": 18,
+    "name": "Anastasiya GRIGORYEVA",
+    "nat": "RUS",
+    "mark": "74.4",
+    "score": 1164,
+    "ratingPct": 2.5,
+    "dlRaces": null,
+    "racesOnRecord": 6,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14784662"
+   },
+   {
+    "rank": 19,
+    "name": "Guðrún Karítas HALLGRÍMSDÓTTIR",
+    "nat": "ISL",
+    "mark": "73.88",
+    "score": 1156,
+    "ratingPct": 1.1,
+    "dlRaces": null,
+    "racesOnRecord": 17,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14857735"
+   },
+   {
+    "rank": 20,
+    "name": "Madison MALONE",
+    "nat": "USA",
+    "mark": "73.91",
+    "score": 1156,
+    "ratingPct": 0.9,
+    "dlRaces": null,
+    "racesOnRecord": 5,
+    "profileUrl": "https://worldathletics.org/athletes/athlete=14761712"
+   }
+  ],
   "points": [
    {
     "rank": 1,
@@ -12789,7 +13677,7 @@
     "score": 1273,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 13,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14607142"
    },
    {
@@ -12800,7 +13688,7 @@
     "score": 1244,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 11,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14802080"
    },
    {
@@ -12811,7 +13699,7 @@
     "score": 1240,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 5,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14577492"
    },
    {
@@ -12822,7 +13710,7 @@
     "score": 1233,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 12,
     "profileUrl": "https://worldathletics.org/athletes/pr-of-china/jiale-zhang-15034977"
    },
    {
@@ -12833,7 +13721,7 @@
     "score": 1226,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 12,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14889043"
    },
    {
@@ -12844,7 +13732,7 @@
     "score": 1218,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 9,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14491584"
    },
    {
@@ -12855,7 +13743,7 @@
     "score": 1217,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 5,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14677647"
    },
    {
@@ -12877,7 +13765,7 @@
     "score": 1212,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 9,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14592895"
    },
    {
@@ -12888,7 +13776,7 @@
     "score": 1203,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 9,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14586650"
    },
    {
@@ -12899,7 +13787,7 @@
     "score": 1197,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 11,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14763144"
    },
    {
@@ -12910,7 +13798,7 @@
     "score": 1184,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 17,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14593885"
    },
    {
@@ -12921,7 +13809,7 @@
     "score": 1182,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 17,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14577396"
    },
    {
@@ -12932,7 +13820,7 @@
     "score": 1182,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 7,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14589891"
    },
    {
@@ -12943,7 +13831,7 @@
     "score": 1180,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 9,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14513668"
    },
    {
@@ -12954,7 +13842,7 @@
     "score": 1177,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 13,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14752018"
    },
    {
@@ -12965,7 +13853,7 @@
     "score": 1174,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 9,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14294652"
    },
    {
@@ -12976,7 +13864,7 @@
     "score": 1164,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 6,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14784662"
    },
    {
@@ -12987,7 +13875,7 @@
     "score": 1156,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 5,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14761712"
    },
    {
@@ -12998,7 +13886,7 @@
     "score": 1156,
     "ratingPct": null,
     "dlRaces": null,
-    "racesOnRecord": 1,
+    "racesOnRecord": 17,
     "profileUrl": "https://worldathletics.org/athletes/athlete=14857735"
    }
   ]
