@@ -180,7 +180,7 @@ def status_pairs(client, depth, already):
 
 def championship_pairs(client, already):
     """(discipline key, athlete name) for every entrant in the current
-    championship's call who has a page on the site.
+    championship's call who has a page on the site, ranked or not.
 
     The championship page links each of them, and most Asian Games entrants
     are on no world toplist, so status_pairs() never reaches them. Nothing once
@@ -194,7 +194,7 @@ def championship_pairs(client, already):
     pairs, seen = [], set()
     for projection in data.get("projections") or []:
         key = projection.get("discKey")
-        for athlete in projection.get("athletes") or []:
+        for athlete in (projection.get("athletes") or []) + (projection.get("unranked") or []):
             pair = (key, athlete.get("name"))
             if not (key and pair[1] and athlete.get("hasPage")) or pair in already or pair in seen:
                 continue

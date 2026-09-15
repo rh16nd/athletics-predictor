@@ -516,14 +516,22 @@ def test_a_points_event_states_an_order_and_no_chances():
     assert out["unscored"] == ["No MARK"]
 
 
-def test_an_athlete_with_no_page_here_links_to_world_athletics_instead():
+def test_every_entrant_with_a_world_athletics_profile_has_a_page():
+    """Ranked or not, and on the snapshot or not: the page is built from the
+    call and the profile. Only an entrant matched to no profile has none."""
     event = {"athletes": [
         {"name": "On LIST", "profileUrl": "https://worldathletics.org/athletes/athlete=1"},
         {"name": "Off LIST", "profileUrl": "https://worldathletics.org/athletes/japan/off-list-2"},
+        {"name": "No PROFILE", "profileUrl": None},
     ]}
-    out = agp.link_athletes({"athletes": [{"name": "On LIST"}, {"name": "Off LIST"}]}, event, {"ON LIST"})
-    assert [a["hasPage"] for a in out["athletes"]] == [True, False]
+    out = agp.link_athletes({
+        "athletes": [{"name": "On LIST"}, {"name": "Off LIST"}, {"name": "No PROFILE"}],
+        "unranked": [{"name": "No MARK", "profileUrl": "https://worldathletics.org/athletes/athlete=5"},
+                     {"name": "Not FOUND", "profileUrl": None}],
+    }, event, {"ON LIST"})
+    assert [a["hasPage"] for a in out["athletes"]] == [True, True, False]
     assert out["athletes"][1]["profileUrl"].endswith("off-list-2")
+    assert [u["hasPage"] for u in out["unranked"]] == [True, False]
 
 
 def test_every_entrant_a_call_cannot_rank_comes_with_the_reason():
@@ -635,8 +643,9 @@ def test_an_athlete_page_carries_the_call_until_the_championship_ends(monkeypatc
 
     preds = {"projections": [{
         "discKey": "men_100m", "method": "points", "qualified": 3,
-        "athletes": [{"rank": 2, "name": "Sorsy PHOMPAKDI", "rankingScore": 877, "podiumChance": None}],
-        "unranked": [{"name": "Omar CHAABAN", "reason": "noMark"}]}]}
+        "athletes": [{"rank": 2, "name": "Sorsy PHOMPAKDI", "rankingScore": 877, "podiumChance": None,
+                      "mark": "10.61", "markSeason": 2025, "nat": "LAO", "profileUrl": "u-sorsy"}],
+        "unranked": [{"name": "Omar CHAABAN", "reason": "noMark", "nat": "PLE", "profileUrl": "u-omar"}]}]}
     monkeypatch.setattr(api, "load_event_predictions", lambda champ_id: preds)
     monkeypatch.setattr(api.championships, "current", lambda: {
         "id": "asian-games-2026", "labelKey": "results.meet.asianGames", "theme": "asianGames",
@@ -646,9 +655,53 @@ def test_an_athlete_page_carries_the_call_until_the_championship_ends(monkeypatc
     call = api.championship_call("men_100m", "sorsy phompakdi", today=during)
     assert (call["method"], call["rank"], call["rankingScore"], call["ranked"], call["entered"]) == \
         ("points", 2, 877, 1, 3)
-    assert api.championship_call("men_100m", "Omar CHAABAN", today=during)["unranked"] == "noMark"
+    assert (call["mark"], call["markSeason"], call["nat"], call["profileUrl"]) == ("10.61", 2025, "LAO", "u-sorsy")
+    unranked = api.championship_call("men_100m", "Omar CHAABAN", today=during)
+    assert (unranked["unranked"], unranked["mark"], unranked["profileUrl"]) == ("noMark", None, "u-omar")
     assert api.championship_call("men_200m", "Sorsy PHOMPAKDI", today=during) is None
     assert api.championship_call("men_100m", "Sorsy PHOMPAKDI", today=date(2026, 9, 30)) is None
+
+
+def test_an_entrant_with_no_row_this_season_gets_a_page_built_from_the_call(monkeypatch):
+    """The 23 entrants ranked on a 2025 mark and the unranked ones with a World
+    Athletics profile had no page until 2026-09-15. Their results and photo come
+    from the profile the call carries, and the mark is labelled with its year."""
+    import api
+
+    call = {"id": "asian-games-2026", "labelKey": "results.meet.asianGames", "theme": "asianGames",
+            "method": "model", "entered": 12, "ranked": 10, "rank": 9, "podiumChance": 2.1,
+            "rankingScore": 1040, "unranked": None, "mark": "46.10", "markSeason": 2025,
+            "nat": "PAK", "profileUrl": "https://worldathletics.org/athletes/athlete=14800001"}
+    seen = {}
+
+    def history(disc_key, name, url):
+        seen["history"] = url
+        return [], None, False, 0
+
+    def photo(url):
+        seen["photo"] = url
+        return None, None
+
+    monkeypatch.setattr(api, "toplist_entry", lambda disc_key, name: (None, None, None))
+    monkeypatch.setattr(api, "toplist_bio", lambda disc_key, name: {})
+    monkeypatch.setattr(api, "championship_call", lambda disc_key, name: call)
+    monkeypatch.setattr(api, "load_predictions", lambda: ([], []))
+    monkeypatch.setattr(api, "scored_prediction_row", lambda disc_key, name: None)
+    monkeypatch.setattr(api, "load_career_progression", lambda disc_key, name: [{"year": 2024, "best": 45.8}])
+    monkeypatch.setattr(api, "load_athlete_history", history)
+    monkeypatch.setattr(api, "resolve_athlete_photo", photo)
+    monkeypatch.setattr(api, "athlete_score_context", lambda disc_key, name: None)
+    monkeypatch.setattr(api, "projected_field_names", lambda disc_key: [])
+    monkeypatch.setattr(api.athlete_analytics, "build_analytics", lambda *args: None)
+    monkeypatch.setattr(api.athlete_career, "build_career", lambda name: None)
+
+    out = api.athlete_field_status("men_400m", "Shajar ABBAS")
+    assert (out["seasonBest"], out["seasonBestYear"], out["nat"]) == ("46.10", 2025, "PAK")
+    assert out["waUrl"] == call["profileUrl"]
+    assert seen == {"history": call["profileUrl"], "photo": call["profileUrl"]}
+    # A 2025 mark is no season best to measure the gap to a career best from.
+    assert out["careerBest"] is not None and out["pbGap"] is None
+    assert out["reasonCode"] == "championship_entrant" and out["championship"] is call
 
 
 def test_an_entrant_on_no_world_toplist_is_read_from_the_championship_snapshot(monkeypatch, tmp_path):
@@ -676,6 +729,44 @@ def test_an_entrant_on_no_world_toplist_is_read_from_the_championship_snapshot(m
     assert ("Ibadulla ADAM", "men_100m", None) in rows
     # Once each, though the snapshot repeats the world list.
     assert sum(1 for name, key, _ in rows if name == "Noah LYLES") == 1
+
+
+def test_the_profile_fetch_takes_every_entrant_with_an_id(monkeypatch, tmp_path):
+    """Entrants on a 2025 mark or none have pages since 2026-09-15, so their
+    profiles are fetched too."""
+    import athlete_profile_scraper as aps
+    import championships
+
+    event = tmp_path / "event.json"
+    event.write_text(json.dumps({"field": [{"athletes": [
+        {"name": "With MARK", "waId": 1, "score": 1100},
+        {"name": "No MARK", "waId": 2, "score": None},
+        {"name": "No ID", "waId": None, "score": None}]}]}), encoding="utf-8")
+    monkeypatch.setattr(championships, "get", lambda champ_id: {"id": champ_id})
+    monkeypatch.setattr(championships, "path", lambda champ, filename: str(event))
+    assert aps.championship_athletes("asian-games-2026") == {"With MARK": "1", "No MARK": "2"}
+
+
+def test_search_finds_an_entrant_whose_page_is_built_from_the_call(monkeypatch, tmp_path):
+    """Pages for entrants in no snapshot came on 2026-09-15; search holds them
+    for as long as the page is built, and with no mark."""
+    import api
+    from datetime import date
+
+    monkeypatch.setattr(api.championships, "current", lambda: {"id": "asian-games-2026", "endDate": "2026-09-29"})
+    monkeypatch.setattr(api, "load_event_predictions", lambda champ_id: {"projections": [{
+        "discKey": "men_200m",
+        "athletes": [{"name": "Shajar ABBAS", "hasPage": True}, {"name": "No PROFILE", "hasPage": False}],
+        "unranked": [{"name": "Omar CHAABAN", "hasPage": True}]}]})
+    assert api.championship_page_names(today=date(2026, 9, 20)) == {"men_200m": ["Shajar ABBAS", "Omar CHAABAN"]}
+    assert api.championship_page_names(today=date(2026, 9, 30)) == {}
+
+    monkeypatch.setattr(api, "RAW_DIR", str(tmp_path))
+    monkeypatch.setattr(api.championships, "CHAMPIONSHIPS", [])
+    monkeypatch.setattr(api, "championship_page_names", lambda: {"men_200m": ["Shajar ABBAS", "Omar CHAABAN"]})
+    rows = api.build_search_index()["athletes"]
+    assert ["Shajar ABBAS", "men_200m", None, None] in rows
+    assert ["Omar CHAABAN", "men_200m", None, None] in rows
 
 
 def test_the_summary_carries_what_the_nav_needs_and_not_the_field(monkeypatch):

@@ -51,12 +51,14 @@ def test_the_current_championships_entrants_get_status_pages_until_it_ends():
         {"discKey": "men_100m", "athletes": [
             {"name": "Has PAGE", "hasPage": True},
             {"name": "No PAGE", "hasPage": False},
-            {"name": "Already DONE", "hasPage": True}]},
+            {"name": "Already DONE", "hasPage": True}],
+         "unranked": [{"name": "Unranked PAGE", "hasPage": True},
+                      {"name": "Unranked NOPAGE", "hasPage": False}]},
         {"discKey": "men_200m", "athletes": [{"name": "Has PAGE", "hasPage": True}]},
     ]}
     client = _Client(per_path={"/api/championship": _Res(payload)})
     assert b.championship_pairs(client, {("men_100m", "Already DONE")}) == [
-        ("men_100m", "Has PAGE"), ("men_200m", "Has PAGE")]
+        ("men_100m", "Has PAGE"), ("men_100m", "Unranked PAGE"), ("men_200m", "Has PAGE")]
 
     payload["championship"]["endDate"] = "2000-01-01"
     assert b.championship_pairs(client, set()) == []

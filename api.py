@@ -1587,7 +1587,11 @@ def championship_call(disc_key, athlete_name, today=None):
 
     Only until the championship ends: an athlete page says where someone stands
     now, and a finished call belongs to the Results page. `rank` is None for an
-    entrant the call could not rank, and `unranked` then says why."""
+    entrant the call could not rank, and `unranked` then says why.
+
+    `mark` is the mark the call read, with `markSeason` set when it is from an
+    earlier season. `nat` and `profileUrl` are there for an entrant with no row
+    in any toplist this season, whose page is built from the call alone."""
     champ = championships.current()
     if (today or date.today()).isoformat() > (champ.get("endDate") or ""):
         return None
@@ -1604,12 +1608,33 @@ def championship_call(disc_key, athlete_name, today=None):
         for a in p.get("athletes") or []:
             if str(a.get("name") or "").lower() == wanted:
                 return {**base, "rank": a.get("rank"), "podiumChance": a.get("podiumChance"),
-                        "rankingScore": a.get("rankingScore"), "unranked": None}
+                        "rankingScore": a.get("rankingScore"), "unranked": None,
+                        "mark": a.get("mark"), "markSeason": a.get("markSeason"),
+                        "nat": a.get("nat"), "profileUrl": a.get("profileUrl")}
         for u in p.get("unranked") or []:
             if str(u.get("name") or "").lower() == wanted:
                 return {**base, "rank": None, "podiumChance": None, "rankingScore": None,
-                        "unranked": u.get("reason")}
+                        "unranked": u.get("reason"), "mark": None, "markSeason": None,
+                        "nat": u.get("nat"), "profileUrl": u.get("profileUrl")}
     return None
+
+
+def championship_page_names(today=None):
+    """{discipline key: [name]} for the current championship's entrants with a
+    page, ranked or not, for as long as championship_call() builds their page:
+    until the championship ends. Empty for a championship with no call."""
+    try:
+        champ = championships.current()
+    except KeyError:
+        return {}
+    if (today or date.today()).isoformat() > (champ.get("endDate") or ""):
+        return {}
+    out = {}
+    for p in (load_event_predictions(champ["id"]) or {}).get("projections") or []:
+        for a in (p.get("athletes") or []) + (p.get("unranked") or []):
+            if a.get("hasPage") and a.get("name") and p.get("discKey"):
+                out.setdefault(p["discKey"], []).append(a["name"])
+    return out
 
 
 def athlete_field_status(disc_key, athlete_name):
@@ -1626,11 +1651,22 @@ def athlete_field_status(disc_key, athlete_name):
     the athlete IS in the field."""
     label = DISC_LABELS.get(disc_key)
     mark, world_rank, wa_url = toplist_entry(disc_key, athlete_name)
+    # An entrant at the current championship with no row in any toplist this
+    # season still gets a page (2026-09-15). The call carries their World
+    # Athletics profile, their nation and the mark it read, which for 23 Asian
+    # Games entrants is a 2025 mark and is labelled with its year.
+    call = championship_call(disc_key, athlete_name)
+    season_best_year = MEETS_YEAR if mark is not None else None
+    if call:
+        wa_url = wa_url or call.get("profileUrl")
+        if mark is None and call.get("mark"):
+            mark, season_best_year = call["mark"], call.get("markSeason") or MEETS_YEAR
     out = {
         "discKey": disc_key,
         "disc": label,
         "name": athlete_name,
         "seasonBest": mark,
+        "seasonBestYear": season_best_year,
         "worldRank": world_rank,
         "waUrl": wa_url,
         "inField": False,
@@ -1720,10 +1756,13 @@ def athlete_field_status(disc_key, athlete_name):
         if career:
             values = [s["best"] for s in career]
             career_best_val = max(values) if disc_key in FIELD_EVENTS else min(values)
-        season_val = safe_parse_mark(out.get("seasonBest"))
+        # A mark from an earlier season is not a season best to measure a gap
+        # from, so an entrant ranked on a 2025 mark shows no gap.
+        season_val = (safe_parse_mark(out.get("seasonBest"))
+                      if out.get("seasonBestYear") == MEETS_YEAR else None)
 
         out.update({
-            "nat":              bio.get("nat"),
+            "nat":              bio.get("nat") or (call or {}).get("nat"),
             "age":              bio.get("age"),
             "careerBest":       (format_mark(career_best_val, disc_key)
                                  if career_best_val is not None else None),
@@ -1809,7 +1848,7 @@ def athlete_field_status(disc_key, athlete_name):
     # Entered at the current championship. With the Diamond League over, that
     # is what a reader opening this page wants to know, and the Diamond League
     # reasons below mean nothing to an Asian Games entrant who never ran it.
-    out["championship"] = championship_call(disc_key, athlete_name)
+    out["championship"] = call
     if out["championship"]:
         out["reasonCode"] = "championship_entrant"
         out["reason"] = "Entered at the current championship."
@@ -2076,6 +2115,7 @@ def build_search_index():
     search_athletes relies on being stable to break ties the same way here and
     in the browser."""
     rows = []
+    call_pages = championship_page_names()
     for disc_key in DISC_LABELS:
         seen = set()
         # The world toplist, then each championship snapshot's added entrants:
@@ -2097,6 +2137,13 @@ def build_search_index():
                     str(r["Mark"]) if pd.notna(r.get("Mark")) else None,
                     int(rank) if pd.notna(rank) else None,
                 ])
+        # Then the entrants whose page is built from the championship's call,
+        # who are in no snapshot. Listed with no mark: a 2025 mark in a search
+        # result would read as this season's.
+        for name in call_pages.get(disc_key, []):
+            if name.lower() not in seen:
+                seen.add(name.lower())
+                rows.append([name, disc_key, None, None])
     return {
         "columns": ["name", "discKey", "mark", "worldRank"],
         "disciplines": dict(DISC_LABELS),

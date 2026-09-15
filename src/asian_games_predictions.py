@@ -235,13 +235,19 @@ def snapshot_names(key, snapshot_dir=None):
 
 
 def link_athletes(out, event, on_site):
-    """Each ranked athlete's World Athletics profile, and whether the site has a
-    page for them. An entrant with no row in the snapshot has no page, and is
-    linked to World Athletics rather than to a page that cannot load."""
+    """Each entrant's World Athletics profile, and whether the site has a page
+    for them, for the ranked rows and the unranked rows alike.
+
+    A page needs a row in the snapshot or a World Athletics profile. Since
+    2026-09-15 api.py builds a page from the call for an entrant with no row
+    this season (a 2025 mark, or no mark at all) and reads their results, photo
+    and career from the profile. Before that, 23 ranked entrants and every
+    unranked one linked out to World Athletics. An entrant matched to no profile
+    has nothing to put on a page and links nowhere."""
     profiles = {_key(a["name"]): a.get("profileUrl") for a in event["athletes"]}
-    for athlete in out["athletes"]:
-        athlete["profileUrl"] = profiles.get(_key(athlete["name"]))
-        athlete["hasPage"] = _key(athlete["name"]) in on_site
+    for athlete in out["athletes"] + (out.get("unranked") or []):
+        athlete["profileUrl"] = athlete.get("profileUrl") or profiles.get(_key(athlete["name"]))
+        athlete["hasPage"] = _key(athlete["name"]) in on_site or bool(athlete["profileUrl"])
     return out
 
 

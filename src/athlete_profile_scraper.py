@@ -140,12 +140,15 @@ def predicted_athletes():
 
 def championship_athletes(champ_id):
     """{name: WA id} for every entrant in a championship's saved field who has
-    a 2026 mark, which is everyone its page links to a page on this site.
+    a World Athletics id, which is everyone its page links to a page on this
+    site.
 
     Most Asian Games entrants are on no world toplist, so athlete_ids() never
     finds them, and their pages opened with no season form and no career block
     (2026-09-14). Names are the field's, which asian_games_scraper.py writes in
-    the world toplist's spelling wherever the athlete is on it."""
+    the world toplist's spelling wherever the athlete is on it. Until 2026-09-15
+    this took only entrants with a 2026 mark; those on a 2025 mark or none have
+    pages now too (asian_games_predictions.link_athletes)."""
     import championships
 
     path = championships.path(championships.get(champ_id), "event.json")
@@ -157,7 +160,7 @@ def championship_athletes(champ_id):
     found = {}
     for ev in event.get("field") or []:
         for athlete in ev.get("athletes") or []:
-            if athlete.get("waId") and athlete.get("score") is not None:
+            if athlete.get("waId"):
                 found.setdefault(athlete["name"], str(athlete["waId"]))
     return found
 

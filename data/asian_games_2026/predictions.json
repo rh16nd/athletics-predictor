@@ -18,7 +18,7 @@
    ]
   }
  },
- "builtAt": "2026-09-15T06:33:55Z",
+ "builtAt": "2026-09-15T07:11:09Z",
  "projections": [
   {
    "discKey": "men_100m",
@@ -40,37 +40,43 @@
      "name": "Sha Mahmood NOOR ZAHI",
      "nat": "AFG",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14988552"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14988552",
+     "hasPage": true
     },
     {
      "name": "Omar CHAABAN",
      "nat": "PLE",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15041581"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15041581",
+     "hasPage": true
     },
     {
      "name": "Saeed SALEM",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Manuel BELO AMARAL ATAIDE",
      "nat": "TLS",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14850871"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14850871",
+     "hasPage": true
     },
     {
      "name": "Mouzinho BELO DA COSTA AMARAL",
      "nat": "TLS",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Abobakr BAGHOOT",
      "nat": "YEM",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -597,55 +603,64 @@
      "name": "Abdullah Abkar M MOHAMMED",
      "nat": "KSA",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14752176"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14752176",
+     "hasPage": true
     },
     {
      "name": "Sorsy PHOMPHAKDI",
      "nat": "LAO",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14972201"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14972201",
+     "hasPage": true
     },
     {
      "name": "Ibrahim Naahil NIZAAR",
      "nat": "MDV",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15037901"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15037901",
+     "hasPage": true
     },
     {
      "name": "Omar CHAABAN",
      "nat": "PLE",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15041581"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15041581",
+     "hasPage": true
     },
     {
      "name": "Saeed SALEM",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Salah YUNIS",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15135764"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15135764",
+     "hasPage": true
     },
     {
      "name": "Mouzinho BELO DA COSTA AMARAL",
      "nat": "TLS",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Abdul Quddus ALI",
      "nat": "UAE",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Abobakr BAGHOOT",
      "nat": "YEM",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -983,7 +998,7 @@
      "markSeason": 2025,
      "podiumChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14929401",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 29,
@@ -1081,13 +1096,15 @@
      "name": "Elnor MUKHITDINOV",
      "nat": "KAZ",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Basel SELMI",
      "nat": "PLE",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -1305,7 +1322,7 @@
      "markSeason": 2025,
      "podiumChance": 1.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14914488",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 19,
@@ -1455,37 +1472,43 @@
      "name": "Abdisamad HIRSI",
      "nat": "BRN",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15271604"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15271604",
+     "hasPage": true
     },
     {
      "name": "Hossein NOURI",
      "nat": "IRI",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14993293"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14993293",
+     "hasPage": true
     },
     {
      "name": "Myagmarsuren DAVAANYAM",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15058477"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15058477",
+     "hasPage": true
     },
     {
      "name": "Baasandash TUMENNASAN",
      "nat": "MGL",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Yahya MASHAQI",
      "nat": "PLE",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Manuel BELO AMARAL ATAIDE",
      "nat": "TLS",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14850871"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14850871",
+     "hasPage": true
     }
    ],
    "athletes": [
@@ -1715,7 +1738,7 @@
      "markSeason": 2025,
      "podiumChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14697959",
-     "hasPage": false
+     "hasPage": true
     }
    ],
    "notEntered": [],
@@ -1742,19 +1765,22 @@
      "name": "Baasandash TUMENNASAN",
      "nat": "MGL",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Yacine GUERMALI",
      "nat": "PHI",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Yahya MASHAQI",
      "nat": "PLE",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -1924,7 +1950,7 @@
      "markSeason": 2025,
      "podiumChance": 1.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14988264",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 15,
@@ -1984,7 +2010,7 @@
      "markSeason": 2025,
      "podiumChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14697959",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 20,
@@ -2042,61 +2068,71 @@
      "name": "Sangay",
      "nat": "BHU",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Gawa ZANGPO",
      "nat": "BHU",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14893146"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14893146",
+     "hasPage": true
     },
     {
      "name": "Terence LAI",
      "nat": "CAM",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Pandu SUKARYA",
      "nat": "INA",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14896345"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14896345",
+     "hasPage": true
     },
     {
      "name": "Ser-od BAT-OCHIR",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14867157"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14867157",
+     "hasPage": true
     },
     {
      "name": "Bat-erdene GANSUKH",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14894029"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14894029",
+     "hasPage": true
     },
     {
      "name": "Mukesh PAL",
      "nat": "NEP",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Ahmed WRIDAT",
      "nat": "PLE",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Khala MAHAMAT",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15203982"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15203982",
+     "hasPage": true
     },
     {
      "name": "Mohamed TORECH",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15080066"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15080066",
+     "hasPage": true
     }
    ],
    "athletes": [
@@ -2288,61 +2324,71 @@
      "name": "Sangay",
      "nat": "BHU",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Gawa ZANGPO",
      "nat": "BHU",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14893146"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14893146",
+     "hasPage": true
     },
     {
      "name": "Terence LAI",
      "nat": "CAM",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Robi SYIANTURI",
      "nat": "INA",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14853916"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14853916",
+     "hasPage": true
     },
     {
      "name": "Bat-erdene GANSUKH",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14894029"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14894029",
+     "hasPage": true
     },
     {
      "name": "Myagmarsuren JAVAA",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15183518"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15183518",
+     "hasPage": true
     },
     {
      "name": "Rajan ROKKYA",
      "nat": "NEP",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14922600"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14922600",
+     "hasPage": true
     },
     {
      "name": "Ahmed WRIDAT",
      "nat": "PLE",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Youssouf DJIBRINE",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15076371"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15076371",
+     "hasPage": true
     },
     {
      "name": "Sami THIEL",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -2404,7 +2450,7 @@
      "markSeason": 2025,
      "podiumChance": 3.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14695983",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 6,
@@ -2428,7 +2474,7 @@
      "markSeason": 2025,
      "podiumChance": 1.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14479153",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 8,
@@ -2490,13 +2536,15 @@
      "name": "Musaab ALI",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14478763"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14478763",
+     "hasPage": true
     },
     {
      "name": "Hamad ALSULTAN",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -2609,19 +2657,22 @@
      "name": "Salem BAKHEET",
      "nat": "BRN",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15153913"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15153913",
+     "hasPage": true
     },
     {
      "name": "Deuanpheang XAYYAPHEAT",
      "nat": "LAO",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15034063"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15034063",
+     "hasPage": true
     },
     {
      "name": "Kendry FUENTES",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -2841,13 +2892,15 @@
      "name": "Deuanpheang XAYYAPHEAT",
      "nat": "LAO",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15034063"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15034063",
+     "hasPage": true
     },
     {
      "name": "Basel SELMI",
      "nat": "PLE",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -3079,13 +3132,15 @@
      "name": "Fatak BAIT JABOOB",
      "nat": "OMA",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Aman EBIDO",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15236461"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15236461",
+     "hasPage": true
     }
    ],
    "athletes": [
@@ -3135,7 +3190,7 @@
      "markSeason": 2025,
      "podiumChance": 36.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14663940",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 5,
@@ -3444,19 +3499,22 @@
      "name": "Kai Leong O",
      "nat": "MAC",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Salim AL RAWAHI",
      "nat": "OMA",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Ismail ABAKAR",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14973411"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14973411",
+     "hasPage": true
     }
    ],
    "athletes": [
@@ -3690,25 +3748,29 @@
      "name": "Ansar ABBAS",
      "nat": "PAK",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15035349"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15035349",
+     "hasPage": true
     },
     {
      "name": "Abubaker ABDALLA",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14581680"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14581680",
+     "hasPage": true
     },
     {
      "name": "Mahamat ABDELSADICK",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15291992"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15291992",
+     "hasPage": true
     },
     {
      "name": "Ibrohim MAKHKAMOV",
      "nat": "UZB",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -3881,19 +3943,22 @@
      "name": "Samedy SIM",
      "nat": "CAM",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15034068"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15034068",
+     "hasPage": true
     },
     {
      "name": "Mohammadreza TAYEBISEIFKOTI",
      "nat": "IRI",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Yousef AHMAD",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -4052,7 +4117,8 @@
      "name": "Eissa ZANKAWI",
      "nat": "KUW",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -4174,7 +4240,7 @@
      "markSeason": 2025,
      "podiumChance": 1.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14498470",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 11,
@@ -4228,7 +4294,7 @@
      "markSeason": 2025,
      "podiumChance": 52.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14427108",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 3,
@@ -4410,13 +4476,15 @@
      "name": "Ahmed ELSAYED",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Hamza SOUISSI",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14884239"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14884239",
+     "hasPage": true
     }
    ],
    "athletes": [
@@ -4614,25 +4682,29 @@
      "name": "Marwa SALEEM",
      "nat": "AFG",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14991426"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14991426",
+     "hasPage": true
     },
     {
      "name": "Mayyasah Abdullah A AL THIKR ALLAH",
      "nat": "KSA",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15224923"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15224923",
+     "hasPage": true
     },
     {
      "name": "Nomin-od SER-OD",
      "nat": "MGL",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Faiqa RIAZ",
      "nat": "PAK",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15122280"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15122280",
+     "hasPage": true
     }
    ],
    "athletes": [
@@ -5010,25 +5082,29 @@
      "name": "Marwa SALEEM",
      "nat": "AFG",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14991426"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14991426",
+     "hasPage": true
     },
     {
      "name": "Solongo BATBOLD",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14514064"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14514064",
+     "hasPage": true
     },
     {
      "name": "Khoula Omer KHAN",
      "nat": "PAK",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Levanita DA COSTA",
      "nat": "TLS",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -5258,7 +5334,7 @@
      "markSeason": 2025,
      "podiumChance": 0.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15150425",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 20,
@@ -5306,7 +5382,7 @@
      "markSeason": 2025,
      "podiumChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15110913",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 24,
@@ -5371,31 +5447,36 @@
      "name": "Solongo BATBOLD",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14514064"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14514064",
+     "hasPage": true
     },
     {
      "name": "Khoula Omer KHAN",
      "nat": "PAK",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Bakhita MARISIO",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Levanita DA COSTA",
      "nat": "TLS",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Thi Minh Hanh HOANG",
      "nat": "VIE",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14751077"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14751077",
+     "hasPage": true
     }
    ],
    "athletes": [
@@ -5553,7 +5634,7 @@
      "markSeason": 2025,
      "podiumChance": 1.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14902553",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 14,
@@ -5625,7 +5706,7 @@
      "markSeason": 2025,
      "podiumChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14817265",
-     "hasPage": false
+     "hasPage": true
     }
    ],
    "notEntered": [],
@@ -5763,7 +5844,7 @@
      "markSeason": 2025,
      "podiumChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14803753",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 11,
@@ -5874,19 +5955,22 @@
      "name": "Purna NEUPANE",
      "nat": "NEP",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Naomi Marjorie CESAR",
      "nat": "PHI",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15225361"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15225361",
+     "hasPage": true
     },
     {
      "name": "Meryem SALEK",
      "nat": "QAT",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15324359"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15324359",
+     "hasPage": true
     }
    ],
    "athletes": [
@@ -6049,31 +6133,36 @@
      "name": "Ruth JEBET",
      "nat": "BRN",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14588310"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14588310",
+     "hasPage": true
     },
     {
      "name": "Mariia KOROBITSKAIA",
      "nat": "KGZ",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Khishigsaikhan GALBADRAKH",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14608367"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14608367",
+     "hasPage": true
     },
     {
      "name": "Purna NEUPANE",
      "nat": "NEP",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Medina KUMANDA",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -6135,7 +6224,7 @@
      "markSeason": 2025,
      "podiumChance": 27.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14479154",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 6,
@@ -6223,25 +6312,29 @@
      "name": "Winfred YAVI",
      "nat": "BRN",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14695622"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14695622",
+     "hasPage": true
     },
     {
      "name": "Mariia KOROBITSKAIA",
      "nat": "KGZ",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Nomin-erdene BAYARTOGTOKH",
      "nat": "MGL",
      "reason": "noMark",
-     "profileUrl": "https://worldathletics.org/athletes/athlete=15144566"
+     "profileUrl": "https://worldathletics.org/athletes/athlete=15144566",
+     "hasPage": true
     },
     {
      "name": "Medina KUMANDA",
      "nat": "QAT",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -6291,7 +6384,7 @@
      "markSeason": 2025,
      "podiumChance": 16.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14588310",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 5,
@@ -6315,7 +6408,7 @@
      "markSeason": 2025,
      "podiumChance": 2.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14524770",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 7,
@@ -6339,7 +6432,7 @@
      "markSeason": 2025,
      "podiumChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14896381",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 9,
@@ -6363,7 +6456,7 @@
      "markSeason": 2025,
      "podiumChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14793688",
-     "hasPage": false
+     "hasPage": true
     }
    ],
    "notEntered": [],
@@ -6503,13 +6596,15 @@
      "name": "Khanmalaiphone BOUNYAVEUN",
      "nat": "LAO",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     },
     {
      "name": "Nomin-od SER-OD",
      "nat": "MGL",
      "reason": "notFound",
-     "profileUrl": null
+     "profileUrl": null,
+     "hasPage": false
     }
    ],
    "athletes": [
@@ -7177,7 +7272,7 @@
      "markSeason": 2025,
      "podiumChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15124709",
-     "hasPage": false
+     "hasPage": true
     }
    ],
    "notEntered": [],
@@ -7315,7 +7410,7 @@
      "markSeason": 2025,
      "podiumChance": 2.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14282715",
-     "hasPage": false
+     "hasPage": true
     },
     {
      "rank": 11,
