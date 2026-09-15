@@ -15,7 +15,7 @@ Asked to choose, the user picked the model for all 36 events, with the page sayi
 - **Serving reads entrants the way training did.** `field_model.serving_rows` takes this season's best before the cut-off (23 September), else last season's, flagged. 23 entrants are read on a 2025 mark and tagged 2025.
 - **Matching by id.** Seven entrants' 2025 marks were on the Asian list under another spelling, and name-and-nation matching missed them. `field_data.athlete_history` now matches by World Athletics id first when given one (toplist rows carry `wa_id` from their profile link). Serving passes ids; training is unchanged. What is left unranked is 48 with no mark and 47 with no World Athletics profile.
 - **The page.** The hero reads "36 by the model · 14 not called". The how panel says what the model reads and states the test numbers. Tables show chances and 2025 tags, and the chance hint says the column adds up to 300. English and French have 871 keys each. Checked in the preview in both languages, plus one athlete page's call ("1st of 10, 99.8%").
-- **Open question for the user.** Seven favourites show 100.0% and a few tail entrants 0%. In testing the model's top calibration band ran slightly hot (0.963 predicted, 0.915 observed), so it is worth asking whether the page should cap the display at something like ">99%" and "<1%".
+- **Display cap, decided by the user.** A chance above 99% shows as ">99%" and one below 1% as "<1%" (`chanceLabel` in `dl-data.ts`, used by the call table, the athlete page's call and the Results page's graded calls). In testing the model's top calibration band ran slightly hot (0.963 predicted, 0.915 observed), so a flat 100% or 0% claimed more than it has earned.
 
 **Injury check, as the user decided on 2026-09-15.** An athlete is Out only when a report says they are out of this championship, or that their season is over. A withdrawal from a race, a DNF or an injury mention is Watch.
 - `classify()` decides the status. The recovery-estimate upgrade is gone: measured against a championship already run, it had marked Audrey Werro out on a hamstring tear. `REMOVE_KEYWORDS` is now `WITHDRAWAL_KEYWORDS`, and `SEASON_OVER_RE` is new.
@@ -23,7 +23,7 @@ Asked to choose, the user picked the model for all 36 events, with the page sayi
 - **Hyphenated surnames.** A bare surname hyphenated to another name belongs to someone else (`part_of_a_double_surname`). Tara Davis-Woodhall's season-ending news had marked Tamari Davis out.
 - **Re-run for the current field.** 11 flagged. Werro and Tamari Davis are gone, and Hodgkinson and Shericka Jackson are now Watch. Out: Omanyala and Ingebrigtsen (reports naming the Ultimate) and Chopra (season over).
 
-**Next:** the user reviews, and answers the 100%/0% display question. Then the Asian Games steps under "Then" further down:
+**Next:** the user reviews. Then the Asian Games steps under "Then" further down:
 1. `injury_checker.py --championship asian-games-2026`.
 2. Flip `CURRENT`.
 3. Profiles, then `build_static_api.py`, then push by 21 September.
