@@ -1,5 +1,15 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## The site moved to www.podiumcall.cc (2026-09-15)
+
+- The user bought `podiumcall.cc`. DNS is at Cloudflare: the apex points at Vercel, and `www` is a CNAME to `4d75abf133eb1911.vercel-dns-017.com` with the proxy off. `www.podiumcall.cc` is the production domain, and `podiumcall.cc` and `podiumcall.vercel.app` redirect to it (308).
+- The sitemap and `robots.txt` now use the new domain: `PODIUMCALL_BASE_URL=https://www.podiumcall.cc PODIUMCALL_API=https://podiumcall.onrender.com/api python scripts/make-sitemap.py` (272 URLs). It was built from `origin/main` in a separate worktree and pushed on its own as frontend `deab918`, with the user's yes, so none of the 8 unreviewed local commits shipped. Checked live.
+- **Local frontend `main` is now 1 commit behind `origin/main`.** Merge before the next frontend push; a rebase would change the commit hashes this file cites.
+- Left to the user: add `https://www.podiumcall.cc` to Render's `PODIUMCALL_CORS_ORIGINS` (the API only allowed the vercel.app origin when checked), update `VITE_SITE_URL` in Vercel if it still names vercel.app, submit the sitemap in the Search Console domain property, and run Change of address from the old vercel.app property.
+- The live pages carry no canonical tag, so Google still showing the vercel.app address is only because that is the address it indexed first.
+
+---
+
 ## Start here: country pages, and the hammer and 10,000m on Track and Field (2026-09-15, latest)
 
 **Committed locally, not pushed. `CURRENT` is still `ultimate-2026`.**
