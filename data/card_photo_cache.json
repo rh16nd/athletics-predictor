@@ -22,6 +22,11 @@
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/9f91daf5-68c6-48c7-90e9-7720d9c6fc8d.jpg"
  },
+ "https://worldathletics.org/athletes/athlete=14263462": {
+  "credit": null,
+  "source": "wa",
+  "url": "https://assets.aws.worldathletics.org/66c05403-dd78-4013-bd0e-8648a67ff55e.jpg"
+ },
  "https://worldathletics.org/athletes/athlete=14264106": {
   "credit": null,
   "source": "none",
@@ -54,6 +59,11 @@
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/64e90a5b5d3818775b5e8b75.jpg"
  },
+ "https://worldathletics.org/athletes/athlete=14329266": {
+  "credit": null,
+  "source": "wa",
+  "url": "https://assets.aws.worldathletics.org/40f3b67a-23d2-4611-a0df-d2e6fa237425.jpg"
+ },
  "https://worldathletics.org/athletes/athlete=14329304": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/4c11e33d-bcb1-4e76-aa78-f6fe1aa1a449.jpg"
@@ -70,10 +80,6 @@
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/135fdc54-602e-4972-95c4-c50e66155afb.jpg"
  },
- "https://worldathletics.org/athletes/athlete=14373498": {
-  "credit": null,
-  "url": "https://assets.aws.worldathletics.org/e90967e6-b204-46c9-9317-b80042711d88.jpg"
- },
  "https://worldathletics.org/athletes/athlete=14374159": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/25a0c987-d88a-4915-9da7-b943a3695957.jpg"
@@ -81,6 +87,11 @@
  "https://worldathletics.org/athletes/athlete=14375325": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/4df145c4-e4ec-4be1-8225-3b5208b52865.jpg"
+ },
+ "https://worldathletics.org/athletes/athlete=14376894": {
+  "credit": null,
+  "source": "none",
+  "url": null
  },
  "https://worldathletics.org/athletes/athlete=14377494": {
   "credit": null,
@@ -162,6 +173,11 @@
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/1c21572a-dbe9-498c-9ba6-848c14802135.jpg"
  },
+ "https://worldathletics.org/athletes/athlete=14424480": {
+  "credit": null,
+  "source": "wa",
+  "url": "https://assets.aws.worldathletics.org/c653b3c6-338a-4868-b838-38cd6e36cf1a.jpg"
+ },
  "https://worldathletics.org/athletes/athlete=14425340": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/ac52f865-24d8-4fdb-b7e2-e1fc801bf3b5.jpg"
@@ -196,6 +212,11 @@
  "https://worldathletics.org/athletes/athlete=14436890": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/92f50a67-6b7b-481a-9bd3-f83741f655ed.jpg"
+ },
+ "https://worldathletics.org/athletes/athlete=14444291": {
+  "credit": null,
+  "source": "none",
+  "url": null
  },
  "https://worldathletics.org/athletes/athlete=14459996": {
   "credit": null,
@@ -261,6 +282,17 @@
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/2b99652a-35e9-4b62-9a4f-d93511eb9c03.jpg"
  },
+ "https://worldathletics.org/athletes/athlete=14486453": {
+  "credit": {
+   "author": "Løken",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHilmar_Jonsson.jpg"
+  },
+  "source": "wikimedia",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Hilmar_Jonsson.jpg/1280px-Hilmar_Jonsson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
  "https://worldathletics.org/athletes/athlete=14486887": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/86df45f4-61d0-485f-9a3e-2697faf5a22b.jpg"
@@ -314,6 +346,11 @@
    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHussain_Al_Hizam_-_T%C3%A4by_Stavhoppsgala_-_Sweden_-_May_2024.jpg"
   },
   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Hussain_Al_Hizam_-_T%C3%A4by_Stavhoppsgala_-_Sweden_-_May_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+ },
+ "https://worldathletics.org/athletes/athlete=14524329": {
+  "credit": null,
+  "source": "none",
+  "url": null
  },
  "https://worldathletics.org/athletes/athlete=14532326": {
   "credit": null,
@@ -380,14 +417,15 @@
   },
   "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Shafiqua_Maloney_Paris_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
+ "https://worldathletics.org/athletes/athlete=14577396": {
+  "credit": null,
+  "source": "wa",
+  "url": "https://assets.aws.worldathletics.org/c2b3e22b-e483-4694-9961-7169982bbfe8.jpg"
+ },
  "https://worldathletics.org/athletes/athlete=14579246": {
   "credit": null,
   "source": "none",
   "url": null
- },
- "https://worldathletics.org/athletes/athlete=14579526": {
-  "credit": null,
-  "url": "https://assets.aws.worldathletics.org/efab74b9-16dd-4d9e-8565-d62a2fc8e894.jpg"
  },
  "https://worldathletics.org/athletes/athlete=14587444": {
   "credit": null,
@@ -404,6 +442,11 @@
  "https://worldathletics.org/athletes/athlete=14592846": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/52267c0f-5624-4440-b3f0-1d75850b8752.jpg"
+ },
+ "https://worldathletics.org/athletes/athlete=14592895": {
+  "credit": null,
+  "source": "wa",
+  "url": "https://assets.aws.worldathletics.org/63f64f69-fc3c-4744-bcb3-2271370c9543.jpg"
  },
  "https://worldathletics.org/athletes/athlete=14593049": {
   "credit": null,
@@ -466,6 +509,11 @@
  "https://worldathletics.org/athletes/athlete=14607093": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/c09e791c-989d-4927-90e5-95cd295c0cdc.jpg"
+ },
+ "https://worldathletics.org/athletes/athlete=14607142": {
+  "credit": null,
+  "source": "wa",
+  "url": "https://assets.aws.worldathletics.org/9ff0f299-efd7-48bf-8878-750c971b898d.jpg"
  },
  "https://worldathletics.org/athletes/athlete=14608602": {
   "credit": null,
@@ -660,6 +708,11 @@
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/817d80c5-5c37-46cc-8824-e9828f8196d6.jpg"
  },
+ "https://worldathletics.org/athletes/athlete=14677647": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
  "https://worldathletics.org/athletes/athlete=14679384": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/681b62f2e4318200277c1798.jpg"
@@ -686,6 +739,11 @@
  "https://worldathletics.org/athletes/athlete=14681630": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/de04b8e9-7105-460f-88f0-3c50dd516e10.jpg"
+ },
+ "https://worldathletics.org/athletes/athlete=14686964": {
+  "credit": null,
+  "source": "wa",
+  "url": "https://assets.aws.worldathletics.org/21450ff7-96d1-47d8-90c6-d083fb13afcd.jpg"
  },
  "https://worldathletics.org/athletes/athlete=14687604": {
   "credit": {
@@ -897,6 +955,11 @@
   },
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/2019_Millrose_Games_%2840078467873%29.jpg/1280px-2019_Millrose_Games_%2840078467873%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
+ "https://worldathletics.org/athletes/athlete=14746479": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
  "https://worldathletics.org/athletes/athlete=14748703": {
   "credit": {
    "author": "Chilean Olympic Committee",
@@ -1085,6 +1148,11 @@
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/67dad286b70a7965ed41f4ba.jpg"
  },
+ "https://worldathletics.org/athletes/athlete=14804786": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
  "https://worldathletics.org/athletes/athlete=14805601": {
   "credit": null,
   "source": "none",
@@ -1107,6 +1175,17 @@
   "credit": null,
   "source": "none",
   "url": null
+ },
+ "https://worldathletics.org/athletes/athlete=14809348": {
+  "credit": {
+   "author": "Sebleouf",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AEthan_Katzberg_%28CAN%29_2024.jpg"
+  },
+  "source": "wikimedia",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ethan_Katzberg_%28CAN%29_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
  "https://worldathletics.org/athletes/athlete=14813689": {
   "credit": {
@@ -1184,6 +1263,11 @@
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/67dc962cac13f3792fcae02c.jpg"
  },
+ "https://worldathletics.org/athletes/athlete=14842469": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
  "https://worldathletics.org/athletes/athlete=14844149": {
   "credit": null,
   "source": "none",
@@ -1219,6 +1303,11 @@
   },
   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Fu_Chao-hsuan_%28born_2002%29_at_the_Rhine-Ruhr_2025_FISU_World_University_Games.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
  },
+ "https://worldathletics.org/athletes/athlete=14848464": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
  "https://worldathletics.org/athletes/athlete=14849411": {
   "credit": null,
   "source": "none",
@@ -1227,6 +1316,11 @@
  "https://worldathletics.org/athletes/athlete=14849980": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/67db2e1c7c47e099643ceda6.jpg"
+ },
+ "https://worldathletics.org/athletes/athlete=14850840": {
+  "credit": null,
+  "source": "none",
+  "url": null
  },
  "https://worldathletics.org/athletes/athlete=14852149": {
   "credit": null,
@@ -1250,6 +1344,17 @@
  "https://worldathletics.org/athletes/athlete=14856078": {
   "credit": null,
   "url": "https://assets.aws.worldathletics.org/67dc4641550ad9e8db8c541e.jpg"
+ },
+ "https://worldathletics.org/athletes/athlete=14857735": {
+  "credit": {
+   "author": "Løken",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGudrun_Hallgrimsdottir.jpg"
+  },
+  "source": "wikimedia",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Gudrun_Hallgrimsdottir.jpg/1280px-Gudrun_Hallgrimsdottir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
  },
  "https://worldathletics.org/athletes/athlete=14858033": {
   "credit": null,
@@ -1291,6 +1396,11 @@
   },
   "source": "wikimedia",
   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bislett_Games_2026_-_3000m_kvinner_%28Amebaw%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+ },
+ "https://worldathletics.org/athletes/athlete=14878719": {
+  "credit": null,
+  "source": "none",
+  "url": null
  },
  "https://worldathletics.org/athletes/athlete=14879721": {
   "credit": {
@@ -1587,6 +1697,11 @@
   "url": null
  },
  "https://worldathletics.org/athletes/athlete=14952641": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
+ "https://worldathletics.org/athletes/athlete=14953034": {
   "credit": null,
   "source": "none",
   "url": null
@@ -1898,7 +2013,28 @@
   "source": "none",
   "url": null
  },
+ "https://worldathletics.org/athletes/hungary/armin-szabados-14944879": {
+  "credit": {
+   "author": "Løken",
+   "license": "CC BY-SA 4.0",
+   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source": "Wikimedia Commons",
+   "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AArmin_Szabalos.jpg"
+  },
+  "source": "wikimedia",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Armin_Szabalos.jpg/1280px-Armin_Szabalos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+ },
  "https://worldathletics.org/athletes/latvia/brenda-dziliana-apsite-15020280": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
+ "https://worldathletics.org/athletes/lesotho/kamohelo-mofolo-15155359": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
+ "https://worldathletics.org/athletes/liberia/anthonett-nabwe-15057062": {
   "credit": null,
   "source": "none",
   "url": null
@@ -1933,6 +2069,11 @@
   "source": "none",
   "url": null
  },
+ "https://worldathletics.org/athletes/pr-of-china/jiale-zhang-15034977": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
  "https://worldathletics.org/athletes/pr-of-china/yuanjiang-chen-15034337": {
   "credit": null,
   "source": "none",
@@ -1949,6 +2090,11 @@
   "url": null
  },
  "https://worldathletics.org/athletes/rwanda/emeline-imanizabayo-15022571": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
+ "https://worldathletics.org/athletes/rwanda/florence-niyonkuru-15098714": {
   "credit": null,
   "source": "none",
   "url": null
@@ -1978,6 +2124,11 @@
   "url": null
  },
  "https://worldathletics.org/athletes/sri-lanka/tharusha-dinushan-agampodi-15150887": {
+  "credit": null,
+  "source": "none",
+  "url": null
+ },
+ "https://worldathletics.org/athletes/tanzania/benjamin-fernandi-ratsim-15248963": {
   "credit": null,
   "source": "none",
   "url": null

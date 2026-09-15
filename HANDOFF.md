@@ -1,5 +1,55 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## Start here: pages for every Asian Games entrant, and the loading title (2026-09-15, later)
+
+**Committed locally: backend `bde2aa9a` plus the commit after it (the deleted-photo fix, the warmed photo caches and this note), frontend `f0ea1ae`. Nothing is pushed, and `CURRENT` is still `ultimate-2026`.**
+
+The user asked for four things. Pages for the entrants who had none. Photos for them. A check for a "World Cup logo" appearing in athletes' photos. And a fix for the championship loading screen, which still said "The Ultimate Championship".
+
+**Pages.** 70 more Asian Games entrants have a page: 22 ranked on a 2025 mark and 48 unranked with a World Athletics profile. One ranked and 47 unranked entrants match no profile and still link nowhere, because there is nothing to put on a page.
+- `asian_games_predictions.link_athletes` sets `hasPage` on ranked and unranked rows alike. A page needs a snapshot row or a profile link.
+- `api.championship_call` now carries `mark`, `markSeason`, `nat` and `profileUrl`.
+- `athlete_field_status` uses them when the athlete has no toplist row this season. Results, photo and career come from the profile, and the season best is the call's mark with `seasonBestYear`. A 2025 mark shows no gap to the career best.
+- The page labels that mark "2025 season best" (`ath.seasonBestIn`). Unranked rows in the call table link to the page.
+- `build_static_api.championship_pairs` writes status pages for the unranked rows too.
+- `api.championship_page_names` adds these entrants to the search index with no mark. It stops when the championship ends, which is also when their pages stop being built from the call.
+- `athlete_profile_scraper.championship_athletes` takes every entrant with an id (518 names; it took only those with a 2026 mark). The run fetched the 40 profiles that were missing. World Athletics returned nothing for Mayyasah Abdullah A AL THIKR ALLAH.
+- My first edit changed only that function's docstring, so the first run fetched nothing. The new scope test caught it.
+- Checked on the local API:
+  - Shajar ABBAS (men's 200m) reads "2025 season best 21.15" and "The model's 28th pick of 34 ranked entrants, with a <1% chance of a podium", with his honours and personal bests.
+  - Omar CHAABAN (men's 100m, unranked) shows his 2025 season of 6 races and his personal bests.
+
+**Photos.** Resolved the way a page does, for all 524 entrants with a World Athletics profile. World Athletics has a photo for 31, and Wikimedia Commons (matched by World Athletics id) for 69 more, so 100 have one and 424 show initials.
+- World Athletics' photo query itself works. For Jyothi YARRAJI and Puripol BOONSON it returns an empty `primaryMediaId`, meaning it holds no photo of them.
+- The run warmed `data/wikimedia_photo_cache.json` and `data/photo_focus_cache.json` for every one of them, so the static build won't look them up again.
+
+**The "World Cup logo".** Not found. A logo would have no face in it, so I looked at every photo the site uses where face detection found none: 270 of them. 265 are real athlete photos (jumps, throws, races, podiums). The other five:
+- Three World Athletics photo ids answer with `{}` as JSON, meaning World Athletics deleted the photo and still hands out its id. Two belong to Tobi AMUSAN and Sandi MORRIS, whose pages showed a blank photo.
+  - `api.load_athlete_photo` now checks the content type (`photo_is_image`) and returns nothing for a deleted photo, so the Wikimedia fallback takes over. Both pages now show a Commons photo. A failed check keeps the photo, so a slow CDN can't strip photos.
+  - Their stale entries came out of `card_photo_cache.json`; neither is on a card any more. The static build picks up the new photos next time it runs.
+  - The third id is only in `photo_focus_cache.json`, and no cache names its athlete.
+- Two Wikimedia downloads were refused with 429 (too many requests). A first, faster pass had 22 more refusals, so the check fetched 250px thumbnails 1.5 seconds apart.
+- Two Wikimedia photos are poor picks, though not logos. Akari FUNADA's is a podium group shot from Limoges (cache key `14855859`). One Paris Olympics file is cached at two sizes for athlete `14972866`.
+- The only image shared by two athletes is a Zürich steeplechase race photo (Cara FEAIN-RYAN and Flavie RENOUARD).
+- If the user saw the logo on a particular page, the athlete's name is what's needed to look again.
+
+**The loading title.**
+- The cause: `routes/championship.tsx` titled the page from a theme it remembered from the last visit, and any theme it did not know fell back to the Ultimate's title.
+- The fix: it now takes the title from `/api/championship/summary` while the call loads, and says "Championship" until either arrives.
+- Checked with the call's request held back and the Ultimate theme remembered: the skeleton sat under "The Asian Games".
+
+**The same bug in two other places.**
+- The welcome modal said "Next up: the Ultimate Championship in Budapest". It now names the championship and its tab from the summary (`welcome.nextUp`, and `{{tab}}` in `welcome.point2`), and drops "Next up" once the championship is over. Checked in English and French.
+- The landing page's meta description no longer names a championship.
+
+**Checks.**
+- Backend: 627 passed. With the repo's `-s` option the saved output has no summary line, so run it with `-o addopts=""` to see the count.
+- Frontend: `tsc`, eslint on the changed files and `npm run build` pass. EN and FR have 873 keys each.
+
+**Next:** unchanged. The user reviews, then the Asian Games steps under "Then" below. The static build now also writes status pages for the 70 new pages.
+
+---
+
 ## Start here: a model that can call every event (2026-09-15: NO GROUP BEAT POINTS, AND THE USER CHOSE THE MODEL FOR ALL 36 EVENTS)
 
 **Later on 2026-09-15: the field model calls every Asian Games event, and the injury check was fixed. Committed locally in both repos, not pushed. `CURRENT` is still `ultimate-2026`.**
@@ -235,7 +285,7 @@ At the start the user settled three questions: the hammer and the 10,000m go on 
 **Then**
 4. The user reviews `/championship` locally: start the `predictor-api-next-championship` launch config and the dev server.
 5. Run `python src/injury_checker.py --championship asian-games-2026` (it needs a headful browser).
-6. Step 4: flip `CURRENT` to `asian-games-2026`, then run `python src/athlete_profile_scraper.py --championship asian-games-2026` and `build_static_api.py`, and commit and push both repos. The static build now also writes a status page for each of the 540 entrants with a page, about 11 minutes more at 1.28s each. Before 23 September, re-run `asian_games_scraper.py` (about 20 minutes with the lookups; its printout must not warn about failed lookups) and `asian_games_predictions.py`, then `python src/freeze_prefinal.py --championship asian-games-2026`.
+6. Step 4: flip `CURRENT` to `asian-games-2026`, then run `python src/athlete_profile_scraper.py --championship asian-games-2026` and `build_static_api.py`, and commit and push both repos. The static build now also writes a status page for each of the 610 entrants with a page (562 ranked, 48 unranked, counted 2026-09-15), about 13 minutes more at 1.28s each. Before 23 September, re-run `asian_games_scraper.py` (about 20 minutes with the lookups; its printout must not warn about failed lookups) and `asian_games_predictions.py`, then `python src/freeze_prefinal.py --championship asian-games-2026`.
 7. Results come from World Athletics competition `7176091`, which may lag the organisers' portal. The portal has results routes too, but their format cannot be checked before the first session.
 
 **Local preview without flipping:** start the `predictor-api-next-championship` launch config, which sets `PODIUMCALL_CHAMPIONSHIP=asian-games-2026`, and open `/championship` on the dev server.

@@ -97,6 +97,7 @@ def test_load_athlete_photo_resolves_common_url_format(monkeypatch):
         assert variables == {"ids": [14536762]}
         return {"getAthleteActionPictureByIds": [{"id": 14536762, "primaryMediaId": "abc123"}]}
     monkeypatch.setattr(dlr, "graphql", fake_graphql)
+    monkeypatch.setattr(api, "photo_is_image", lambda url: True)
 
     url = api.load_athlete_photo("https://worldathletics.org/athletes/athlete=14536762")
     assert url == "https://assets.aws.worldathletics.org/abc123"
@@ -110,9 +111,46 @@ def test_load_athlete_photo_resolves_country_slug_url_format(monkeypatch):
         assert variables == {"ids": [14707010]}
         return {"getAthleteActionPictureByIds": [{"id": 14707010, "primaryMediaId": "xyz789"}]}
     monkeypatch.setattr(dlr, "graphql", fake_graphql)
+    monkeypatch.setattr(api, "photo_is_image", lambda url: True)
 
     url = api.load_athlete_photo("https://worldathletics.org/athletes/netherlands/femke-bol-14707010")
     assert url == "https://assets.aws.worldathletics.org/xyz789"
+
+
+def test_load_athlete_photo_skips_a_photo_world_athletics_has_deleted(monkeypatch):
+    """World Athletics kept Tobi Amusan and Sandi Morris pointed at deleted
+    photos (2026-09-15). Returning None lets the Wikimedia fallback supply one."""
+    monkeypatch.setattr(dlr, "graphql", lambda *a, **k: {
+        "getAthleteActionPictureByIds": [{"id": 1, "primaryMediaId": "gone.jpg"}]})
+    monkeypatch.setattr(api, "photo_is_image", lambda url: False)
+    assert api.load_athlete_photo("https://worldathletics.org/athletes/athlete=1") is None
+
+
+def test_photo_is_image_reads_the_content_type_and_keeps_a_photo_when_the_check_fails(monkeypatch):
+    class Res:
+        def __init__(self, status, content_type):
+            self.status_code = status
+            self.ok = 200 <= status < 400
+            self.headers = {"content-type": content_type}
+
+    answers = {
+        "https://cdn/good.jpg": Res(200, "image/jpeg"),
+        "https://cdn/deleted.jpg": Res(200, "application/json"),
+        "https://cdn/missing.jpg": Res(404, "text/html"),
+        "https://cdn/busy.jpg": Res(503, "text/html"),
+    }
+
+    def head(url, **kwargs):
+        if url == "https://cdn/down.jpg":
+            raise api.requests.ConnectionError("down")
+        return answers[url]
+
+    monkeypatch.setattr(api.requests, "head", head)
+    assert api.photo_is_image("https://cdn/good.jpg") is True
+    assert api.photo_is_image("https://cdn/deleted.jpg") is False
+    assert api.photo_is_image("https://cdn/missing.jpg") is False
+    assert api.photo_is_image("https://cdn/busy.jpg") is True
+    assert api.photo_is_image("https://cdn/down.jpg") is True
 
 
 def test_load_athlete_photo_unmatched_url_returns_none_without_network(monkeypatch):

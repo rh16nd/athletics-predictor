@@ -696,7 +696,26 @@ def load_athlete_photo(profile_url):
     results = data.get("getAthleteActionPictureByIds") or []
     if not results or not results[0].get("primaryMediaId"):
         return None
-    return f"https://assets.aws.worldathletics.org/{results[0]['primaryMediaId']}"
+    url = f"https://assets.aws.worldathletics.org/{results[0]['primaryMediaId']}"
+    # World Athletics can keep an athlete pointed at a photo it has deleted. On
+    # 2026-09-15 Tobi Amusan's and Sandi Morris's photo ids answered with "{}"
+    # as JSON, so their cards and pages showed a blank photo and never reached
+    # the Wikimedia fallback, which has a photo of each.
+    return url if photo_is_image(url) else None
+
+
+def photo_is_image(url):
+    """Whether a photo URL still serves an image. A deleted World Athletics
+    asset answers 200 with a JSON body, so the content type decides. A failed
+    check, or a server error, counts as an image: a slow or unreachable CDN
+    must not strip every photo off the site."""
+    try:
+        res = requests.head(url, timeout=10, allow_redirects=True)
+    except Exception:
+        return True
+    if res.status_code in (404, 410):
+        return False
+    return not res.ok or res.headers.get("content-type", "").startswith("image/")
 
 
 # --- Wikimedia Commons photo fallback ------------------------------------
