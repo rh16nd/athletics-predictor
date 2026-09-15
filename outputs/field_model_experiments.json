@@ -1,0 +1,968 @@
+[
+ {
+  "name": "today",
+  "ranAt": "2026-09-15T16:52:17Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season"
+   ]
+  },
+  "finals": 305,
+  "candidatePct": 67.2,
+  "baselinePct": 67.2,
+  "candidateWinners": 159,
+  "baselineWinners": 159,
+  "meanLlGain": 0.0,
+  "llLower90": 0.0,
+  "meanHitsDiff": 0.0,
+  "asiaMeanLlGain": 0.0
+ },
+ {
+  "name": "today_l2_strong",
+  "ranAt": "2026-09-15T16:52:35Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season"
+   ],
+   "l2": 0.1
+  },
+  "finals": 305,
+  "candidatePct": 67.0,
+  "baselinePct": 67.2,
+  "candidateWinners": 161,
+  "baselineWinners": 159,
+  "meanLlGain": -0.01622908961185403,
+  "llLower90": -0.03513041421653919,
+  "meanHitsDiff": -0.006557377049180328,
+  "asiaMeanLlGain": 0.09922200092411335
+ },
+ {
+  "name": "today_by_group",
+  "ranAt": "2026-09-15T16:52:55Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season"
+   ],
+   "by_group": true
+  },
+  "finals": 305,
+  "candidatePct": 65.8,
+  "baselinePct": 67.2,
+  "candidateWinners": 163,
+  "baselineWinners": 159,
+  "meanLlGain": 0.005739483215994976,
+  "llLower90": -0.022098476841589155,
+  "meanHitsDiff": -0.04262295081967213,
+  "asiaMeanLlGain": -0.057387498026270405
+ },
+ {
+  "name": "v2",
+  "ranAt": "2026-09-15T16:53:17Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ]
+  },
+  "finals": 305,
+  "candidatePct": 67.8,
+  "baselinePct": 67.2,
+  "candidateWinners": 175,
+  "baselineWinners": 159,
+  "meanLlGain": 0.21659405470354892,
+  "llLower90": 0.1551964880490142,
+  "meanHitsDiff": 0.01639344262295082,
+  "asiaMeanLlGain": 0.1920607903386537
+ },
+ {
+  "name": "v2_l2_strong",
+  "ranAt": "2026-09-15T16:53:38Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ],
+   "l2": 0.1
+  },
+  "finals": 305,
+  "candidatePct": 67.3,
+  "baselinePct": 67.2,
+  "candidateWinners": 171,
+  "baselineWinners": 159,
+  "meanLlGain": 0.20619226013820122,
+  "llLower90": 0.1451683709704009,
+  "meanHitsDiff": 0.003278688524590164,
+  "asiaMeanLlGain": 0.2395108165545795
+ },
+ {
+  "name": "v2_l2_weak",
+  "ranAt": "2026-09-15T16:53:59Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ],
+   "l2": 0.001
+  },
+  "finals": 305,
+  "candidatePct": 67.8,
+  "baselinePct": 67.2,
+  "candidateWinners": 175,
+  "baselineWinners": 159,
+  "meanLlGain": 0.21597048509439118,
+  "llLower90": 0.15402601537262717,
+  "meanHitsDiff": 0.01639344262295082,
+  "asiaMeanLlGain": 0.18474387387725913
+ },
+ {
+  "name": "v2_by_group",
+  "ranAt": "2026-09-15T16:54:20Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ],
+   "by_group": true
+  },
+  "finals": 305,
+  "candidatePct": 66.6,
+  "baselinePct": 67.2,
+  "candidateWinners": 179,
+  "baselineWinners": 159,
+  "meanLlGain": 0.19673017496445114,
+  "llLower90": 0.1268609248692258,
+  "meanHitsDiff": -0.019672131147540985,
+  "asiaMeanLlGain": 0.1014589834052838
+ },
+ {
+  "name": "v2_recent_28d",
+  "ranAt": "2026-09-15T16:54:58Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ],
+   "race": {
+    "recent_days": 28
+   }
+  },
+  "finals": 305,
+  "candidatePct": 67.2,
+  "baselinePct": 67.2,
+  "candidateWinners": 167,
+  "baselineWinners": 159,
+  "meanLlGain": 0.1999239948157235,
+  "llLower90": 0.14042592696538428,
+  "meanHitsDiff": 0.0,
+  "asiaMeanLlGain": 0.16521305785495888
+ },
+ {
+  "name": "v2_recent_70d",
+  "ranAt": "2026-09-15T16:55:35Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ],
+   "race": {
+    "recent_days": 70
+   }
+  },
+  "finals": 305,
+  "candidatePct": 67.2,
+  "baselinePct": 67.2,
+  "candidateWinners": 172,
+  "baselineWinners": 159,
+  "meanLlGain": 0.20708222746815558,
+  "llLower90": 0.14488018721794493,
+  "meanHitsDiff": 0.0,
+  "asiaMeanLlGain": 0.21253300725731572
+ },
+ {
+  "name": "v2_form_best_2",
+  "ranAt": "2026-09-15T16:56:13Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ],
+   "race": {
+    "form_marks": 2
+   }
+  },
+  "finals": 305,
+  "candidatePct": 67.5,
+  "baselinePct": 67.2,
+  "candidateWinners": 174,
+  "baselineWinners": 159,
+  "meanLlGain": 0.2033780247190381,
+  "llLower90": 0.14272578434370944,
+  "meanHitsDiff": 0.009836065573770493,
+  "asiaMeanLlGain": 0.17666317747517543
+ },
+ {
+  "name": "v2_form_best_5",
+  "ranAt": "2026-09-15T16:56:50Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ],
+   "race": {
+    "form_marks": 5
+   }
+  },
+  "finals": 305,
+  "candidatePct": 67.9,
+  "baselinePct": 67.2,
+  "candidateWinners": 178,
+  "baselineWinners": 159,
+  "meanLlGain": 0.2287217792768398,
+  "llLower90": 0.16889228316083138,
+  "meanHitsDiff": 0.019672131147540985,
+  "asiaMeanLlGain": 0.21408550721616565
+ },
+ {
+  "name": "v2_big_with_A",
+  "ranAt": "2026-09-15T16:57:28Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ],
+   "race": {
+    "big_categories": [
+     "OW",
+     "DF",
+     "GW",
+     "GL",
+     "A"
+    ]
+   }
+  },
+  "finals": 305,
+  "candidatePct": 67.2,
+  "baselinePct": 67.2,
+  "candidateWinners": 172,
+  "baselineWinners": 159,
+  "meanLlGain": 0.20366252489960723,
+  "llLower90": 0.14191730700584962,
+  "meanHitsDiff": 0.0,
+  "asiaMeanLlGain": 0.18465275833605235
+ },
+ {
+  "name": "v2_without_h2h",
+  "ranAt": "2026-09-15T16:57:49Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "pb_gap_thin",
+    "breakout_backed"
+   ]
+  },
+  "finals": 305,
+  "candidatePct": 67.5,
+  "baselinePct": 67.2,
+  "candidateWinners": 179,
+  "baselineWinners": 159,
+  "meanLlGain": 0.19916709102613347,
+  "llLower90": 0.14837264555647076,
+  "meanHitsDiff": 0.009836065573770493,
+  "asiaMeanLlGain": 0.20853837180247273
+ },
+ {
+  "name": "v2_without_big_podiums",
+  "ranAt": "2026-09-15T16:58:10Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ]
+  },
+  "finals": 305,
+  "candidatePct": 67.3,
+  "baselinePct": 67.2,
+  "candidateWinners": 174,
+  "baselineWinners": 159,
+  "meanLlGain": 0.17833865545995964,
+  "llLower90": 0.11897312903627438,
+  "meanHitsDiff": 0.003278688524590164,
+  "asiaMeanLlGain": 0.1533794629824499
+ },
+ {
+  "name": "v2_without_form",
+  "ranAt": "2026-09-15T16:58:31Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin"
+   ]
+  },
+  "finals": 305,
+  "candidatePct": 66.9,
+  "baselinePct": 67.2,
+  "candidateWinners": 172,
+  "baselineWinners": 159,
+  "meanLlGain": 0.14755319828899807,
+  "llLower90": 0.09762540744336569,
+  "meanHitsDiff": -0.009836065573770493,
+  "asiaMeanLlGain": 0.05932620721607701
+ },
+ {
+  "name": "v2_without_recent",
+  "ranAt": "2026-09-15T16:58:51Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "big_podiums",
+    "h2h_top",
+    "pb_gap_thin",
+    "breakout_backed"
+   ]
+  },
+  "finals": 305,
+  "candidatePct": 66.9,
+  "baselinePct": 67.2,
+  "candidateWinners": 171,
+  "baselineWinners": 159,
+  "meanLlGain": 0.18604906567772228,
+  "llLower90": 0.12696895418890716,
+  "meanHitsDiff": -0.009836065573770493,
+  "asiaMeanLlGain": 0.15532982211063887
+ },
+ {
+  "name": "v2_without_history_blend",
+  "ranAt": "2026-09-15T16:59:13Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "gap_best",
+    "gap_third",
+    "pb_gap",
+    "no_history",
+    "sb_months",
+    "yoy",
+    "age",
+    "sb_prior_season",
+    "form_gap",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top",
+    "breakout_backed"
+   ]
+  },
+  "finals": 305,
+  "candidatePct": 67.2,
+  "baselinePct": 67.2,
+  "candidateWinners": 173,
+  "baselineWinners": 159,
+  "meanLlGain": 0.19938429887500406,
+  "llLower90": 0.1424768296070387,
+  "meanHitsDiff": 0.0,
+  "asiaMeanLlGain": 0.23591313641685788
+ },
+ {
+  "name": "recency",
+  "ranAt": "2026-09-15T16:59:36Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "strength_gap_best",
+    "strength_gap_third",
+    "consistency",
+    "no_history",
+    "sb_months",
+    "age",
+    "sb_prior_season",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top"
+   ],
+   "bounds": {
+    "strength_gap_best": [
+     0.0,
+     null
+    ],
+    "strength_gap_third": [
+     0.0,
+     null
+    ],
+    "consistency": [
+     0.0,
+     null
+    ],
+    "recent_delta": [
+     0.0,
+     null
+    ],
+    "sb_prior_season": [
+     null,
+     0.0
+    ]
+   },
+   "newOverOld": true
+  },
+  "finals": 305,
+  "candidatePct": 66.8,
+  "baselinePct": 67.2,
+  "candidateWinners": 167,
+  "baselineWinners": 159,
+  "meanLlGain": 0.176211004428806,
+  "llLower90": 0.11162229243222793,
+  "meanHitsDiff": -0.013114754098360656,
+  "asiaMeanLlGain": 0.26679601995314006
+ },
+ {
+  "name": "recency_l2_strong",
+  "ranAt": "2026-09-15T17:00:00Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "strength_gap_best",
+    "strength_gap_third",
+    "consistency",
+    "no_history",
+    "sb_months",
+    "age",
+    "sb_prior_season",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top"
+   ],
+   "bounds": {
+    "strength_gap_best": [
+     0.0,
+     null
+    ],
+    "strength_gap_third": [
+     0.0,
+     null
+    ],
+    "consistency": [
+     0.0,
+     null
+    ],
+    "recent_delta": [
+     0.0,
+     null
+    ],
+    "sb_prior_season": [
+     null,
+     0.0
+    ]
+   },
+   "l2": 0.1,
+   "newOverOld": true
+  },
+  "finals": 305,
+  "candidatePct": 67.1,
+  "baselinePct": 67.2,
+  "candidateWinners": 161,
+  "baselineWinners": 159,
+  "meanLlGain": 0.16792825861820349,
+  "llLower90": 0.09981683091378046,
+  "meanHitsDiff": -0.003278688524590164,
+  "asiaMeanLlGain": 0.3013820585012192
+ },
+ {
+  "name": "recency_by_group",
+  "ranAt": "2026-09-15T17:00:24Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "strength_gap_best",
+    "strength_gap_third",
+    "consistency",
+    "no_history",
+    "sb_months",
+    "age",
+    "sb_prior_season",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top"
+   ],
+   "bounds": {
+    "strength_gap_best": [
+     0.0,
+     null
+    ],
+    "strength_gap_third": [
+     0.0,
+     null
+    ],
+    "consistency": [
+     0.0,
+     null
+    ],
+    "recent_delta": [
+     0.0,
+     null
+    ],
+    "sb_prior_season": [
+     null,
+     0.0
+    ]
+   },
+   "by_group": true,
+   "newOverOld": true
+  },
+  "finals": 305,
+  "candidatePct": 66.2,
+  "baselinePct": 67.2,
+  "candidateWinners": 172,
+  "baselineWinners": 159,
+  "meanLlGain": 0.15323286353818188,
+  "llLower90": 0.08231731057891367,
+  "meanHitsDiff": -0.029508196721311476,
+  "asiaMeanLlGain": 0.21722629153363862
+ },
+ {
+  "name": "recency_recent_70d",
+  "ranAt": "2026-09-15T17:01:04Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "strength_gap_best",
+    "strength_gap_third",
+    "consistency",
+    "no_history",
+    "sb_months",
+    "age",
+    "sb_prior_season",
+    "recent_delta",
+    "no_recent",
+    "big_podiums",
+    "h2h_top"
+   ],
+   "bounds": {
+    "strength_gap_best": [
+     0.0,
+     null
+    ],
+    "strength_gap_third": [
+     0.0,
+     null
+    ],
+    "consistency": [
+     0.0,
+     null
+    ],
+    "recent_delta": [
+     0.0,
+     null
+    ],
+    "sb_prior_season": [
+     null,
+     0.0
+    ]
+   },
+   "race": {
+    "recent_days": 70
+   },
+   "newOverOld": true
+  },
+  "finals": 305,
+  "candidatePct": 67.2,
+  "baselinePct": 67.2,
+  "candidateWinners": 168,
+  "baselineWinners": 159,
+  "meanLlGain": 0.1682426002943765,
+  "llLower90": 0.10219590707412538,
+  "meanHitsDiff": 0.0,
+  "asiaMeanLlGain": 0.2850696086376544
+ },
+ {
+  "name": "recency_without_h2h",
+  "ranAt": "2026-09-15T17:01:28Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "strength_gap_best",
+    "strength_gap_third",
+    "consistency",
+    "no_history",
+    "sb_months",
+    "age",
+    "sb_prior_season",
+    "recent_delta",
+    "no_recent",
+    "big_podiums"
+   ],
+   "bounds": {
+    "strength_gap_best": [
+     0.0,
+     null
+    ],
+    "strength_gap_third": [
+     0.0,
+     null
+    ],
+    "consistency": [
+     0.0,
+     null
+    ],
+    "recent_delta": [
+     0.0,
+     null
+    ],
+    "sb_prior_season": [
+     null,
+     0.0
+    ]
+   },
+   "newOverOld": true
+  },
+  "finals": 305,
+  "candidatePct": 67.5,
+  "baselinePct": 67.2,
+  "candidateWinners": 160,
+  "baselineWinners": 159,
+  "meanLlGain": 0.15976198778523693,
+  "llLower90": 0.10108643262337319,
+  "meanHitsDiff": 0.009836065573770493,
+  "asiaMeanLlGain": 0.27709135989565803
+ },
+ {
+  "name": "recency_without_big_podiums",
+  "ranAt": "2026-09-15T17:01:54Z",
+  "years": [
+   2021,
+   2022,
+   2023
+  ],
+  "spec": {
+   "features": [
+    "strength_gap_best",
+    "strength_gap_third",
+    "consistency",
+    "no_history",
+    "sb_months",
+    "age",
+    "sb_prior_season",
+    "recent_delta",
+    "no_recent",
+    "h2h_top"
+   ],
+   "bounds": {
+    "strength_gap_best": [
+     0.0,
+     null
+    ],
+    "strength_gap_third": [
+     0.0,
+     null
+    ],
+    "consistency": [
+     0.0,
+     null
+    ],
+    "recent_delta": [
+     0.0,
+     null
+    ],
+    "sb_prior_season": [
+     null,
+     0.0
+    ]
+   },
+   "newOverOld": true
+  },
+  "finals": 305,
+  "candidatePct": 66.3,
+  "baselinePct": 67.2,
+  "candidateWinners": 171,
+  "baselineWinners": 159,
+  "meanLlGain": 0.1372066741458543,
+  "llLower90": 0.07232169900705934,
+  "meanHitsDiff": -0.02622950819672131,
+  "asiaMeanLlGain": 0.2214955075627
+ }
+]

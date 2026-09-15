@@ -1,0 +1,499 @@
+{
+ "builtAt": "2026-09-15T17:03:24Z",
+ "testYears": [
+  2024,
+  2025
+ ],
+ "baselineName": "today",
+ "candidateName": "recency_recent_70d",
+ "features": [
+  "strength_gap_best",
+  "strength_gap_third",
+  "consistency",
+  "no_history",
+  "sb_months",
+  "age",
+  "sb_prior_season",
+  "recent_delta",
+  "no_recent",
+  "big_podiums",
+  "h2h_top"
+ ],
+ "newFeatures": [
+  "strength_gap_best",
+  "strength_gap_third",
+  "consistency",
+  "recent_delta",
+  "no_recent",
+  "big_podiums",
+  "h2h_top"
+ ],
+ "spec": {
+  "features": [
+   "strength_gap_best",
+   "strength_gap_third",
+   "consistency",
+   "no_history",
+   "sb_months",
+   "age",
+   "sb_prior_season",
+   "recent_delta",
+   "no_recent",
+   "big_podiums",
+   "h2h_top"
+  ],
+  "bounds": {
+   "strength_gap_best": [
+    0.0,
+    null
+   ],
+   "strength_gap_third": [
+    0.0,
+    null
+   ],
+   "consistency": [
+    0.0,
+    null
+   ],
+   "recent_delta": [
+    0.0,
+    null
+   ],
+   "sb_prior_season": [
+    null,
+    0.0
+   ]
+  },
+  "race": {
+   "recent_days": 70
+  },
+  "newOverOld": true
+ },
+ "bigCategories": [
+  "DF",
+  "GL",
+  "GW",
+  "OW"
+ ],
+ "recentDays": 42,
+ "thinSeason": 2,
+ "overall": {
+  "baseline": {
+   "finals": 206,
+   "model": 62.9,
+   "points": 62.0,
+   "modelWinners": 105,
+   "pointsWinners": 96
+  },
+  "candidate": {
+   "finals": 206,
+   "model": 63.9,
+   "points": 62.0,
+   "modelWinners": 99,
+   "pointsWinners": 96
+  }
+ },
+ "byTier": {
+  "asia": {
+   "baseline": {
+    "finals": 36,
+    "model": 65.7,
+    "points": 70.4,
+    "modelWinners": 19,
+    "pointsWinners": 18
+   },
+   "candidate": {
+    "finals": 36,
+    "model": 66.7,
+    "points": 70.4,
+    "modelWinners": 16,
+    "pointsWinners": 18
+   }
+  },
+  "continental": {
+   "baseline": {
+    "finals": 36,
+    "model": 66.7,
+    "points": 62.0,
+    "modelWinners": 18,
+    "pointsWinners": 16
+   },
+   "candidate": {
+    "finals": 36,
+    "model": 64.8,
+    "points": 62.0,
+    "modelWinners": 17,
+    "pointsWinners": 16
+   }
+  },
+  "dl_final": {
+   "baseline": {
+    "finals": 62,
+    "model": 67.7,
+    "points": 65.1,
+    "modelWinners": 31,
+    "pointsWinners": 32
+   },
+   "candidate": {
+    "finals": 62,
+    "model": 73.1,
+    "points": 65.1,
+    "modelWinners": 34,
+    "pointsWinners": 32
+   }
+  },
+  "global": {
+   "baseline": {
+    "finals": 72,
+    "model": 55.6,
+    "points": 55.1,
+    "modelWinners": 37,
+    "pointsWinners": 30
+   },
+   "candidate": {
+    "finals": 72,
+    "model": 54.2,
+    "points": 55.1,
+    "modelWinners": 32,
+    "pointsWinners": 30
+   }
+  }
+ },
+ "byGroup": {
+  "sprints": {
+   "baseline": {
+    "finals": 60,
+    "model": 68.3,
+    "points": 67.2,
+    "modelWinners": 32,
+    "pointsWinners": 33
+   },
+   "candidate": {
+    "finals": 60,
+    "model": 70.6,
+    "points": 67.2,
+    "modelWinners": 32,
+    "pointsWinners": 33
+   }
+  },
+  "distance": {
+   "baseline": {
+    "finals": 54,
+    "model": 55.6,
+    "points": 54.3,
+    "modelWinners": 22,
+    "pointsWinners": 22
+   },
+   "candidate": {
+    "finals": 54,
+    "model": 56.2,
+    "points": 54.3,
+    "modelWinners": 19,
+    "pointsWinners": 22
+   }
+  },
+  "jumps": {
+   "baseline": {
+    "finals": 48,
+    "model": 70.1,
+    "points": 66.0,
+    "modelWinners": 31,
+    "pointsWinners": 23
+   },
+   "candidate": {
+    "finals": 48,
+    "model": 66.7,
+    "points": 66.0,
+    "modelWinners": 29,
+    "pointsWinners": 23
+   }
+  },
+  "throws": {
+   "baseline": {
+    "finals": 44,
+    "model": 56.8,
+    "points": 59.8,
+    "modelWinners": 20,
+    "pointsWinners": 18
+   },
+   "candidate": {
+    "finals": 44,
+    "model": 61.4,
+    "points": 59.8,
+    "modelWinners": 19,
+    "pointsWinners": 18
+   }
+  }
+ },
+ "decision": {
+  "finals": 206,
+  "llFinals": 203,
+  "asiaFinals": 34,
+  "meanLlGain": 0.14522838239467464,
+  "llLower90": 0.08402713282827833,
+  "meanHitsDiff": 0.02912621359223301,
+  "asiaMeanLlGain": 0.08624646654426997,
+  "controlLower90": [
+   -1.777170362184345,
+   -1.7844416598747672,
+   -1.7885410669231054,
+   -1.7759682478338221,
+   -1.77702773680753
+  ],
+  "conditions": {
+   "llLower90": true,
+   "hitsNotWorse": true,
+   "asiaNotWorse": true,
+   "controlsFail": true
+  },
+  "ships": true
+ },
+ "weights": {
+  "strength_gap_best": 0.7434144075252862,
+  "strength_gap_third": 0.8374961329374048,
+  "consistency": 0.12399910471100187,
+  "no_history": 0.10234947303297275,
+  "sb_months": -0.10041447415786442,
+  "age": -0.09020247748627007,
+  "sb_prior_season": 0.0,
+  "recent_delta": 0.18517171885621972,
+  "no_recent": -0.07104366549315853,
+  "big_podiums": 0.17394625869817137,
+  "h2h_top": 0.24037562465523676
+ },
+ "calibration": {
+  "baseline": [
+   {
+    "from": 0.0,
+    "to": 0.1,
+    "athletes": 741,
+    "predicted": 0.044,
+    "observed": 0.05
+   },
+   {
+    "from": 0.1,
+    "to": 0.2,
+    "athletes": 377,
+    "predicted": 0.147,
+    "observed": 0.133
+   },
+   {
+    "from": 0.2,
+    "to": 0.3,
+    "athletes": 295,
+    "predicted": 0.247,
+    "observed": 0.261
+   },
+   {
+    "from": 0.3,
+    "to": 0.4,
+    "athletes": 195,
+    "predicted": 0.348,
+    "observed": 0.344
+   },
+   {
+    "from": 0.4,
+    "to": 0.5,
+    "athletes": 145,
+    "predicted": 0.451,
+    "observed": 0.462
+   },
+   {
+    "from": 0.5,
+    "to": 0.6,
+    "athletes": 111,
+    "predicted": 0.547,
+    "observed": 0.586
+   },
+   {
+    "from": 0.6,
+    "to": 0.7,
+    "athletes": 99,
+    "predicted": 0.648,
+    "observed": 0.616
+   },
+   {
+    "from": 0.7,
+    "to": 0.8,
+    "athletes": 81,
+    "predicted": 0.751,
+    "observed": 0.778
+   },
+   {
+    "from": 0.8,
+    "to": 0.9,
+    "athletes": 76,
+    "predicted": 0.846,
+    "observed": 0.776
+   },
+   {
+    "from": 0.9,
+    "to": 1.0,
+    "athletes": 77,
+    "predicted": 0.964,
+    "observed": 0.961
+   }
+  ],
+  "candidate": [
+   {
+    "from": 0.0,
+    "to": 0.1,
+    "athletes": 768,
+    "predicted": 0.044,
+    "observed": 0.044
+   },
+   {
+    "from": 0.1,
+    "to": 0.2,
+    "athletes": 412,
+    "predicted": 0.147,
+    "observed": 0.155
+   },
+   {
+    "from": 0.2,
+    "to": 0.3,
+    "athletes": 261,
+    "predicted": 0.242,
+    "observed": 0.245
+   },
+   {
+    "from": 0.3,
+    "to": 0.4,
+    "athletes": 177,
+    "predicted": 0.347,
+    "observed": 0.418
+   },
+   {
+    "from": 0.4,
+    "to": 0.5,
+    "athletes": 121,
+    "predicted": 0.446,
+    "observed": 0.455
+   },
+   {
+    "from": 0.5,
+    "to": 0.6,
+    "athletes": 105,
+    "predicted": 0.546,
+    "observed": 0.514
+   },
+   {
+    "from": 0.6,
+    "to": 0.7,
+    "athletes": 84,
+    "predicted": 0.652,
+    "observed": 0.631
+   },
+   {
+    "from": 0.7,
+    "to": 0.8,
+    "athletes": 79,
+    "predicted": 0.749,
+    "observed": 0.658
+   },
+   {
+    "from": 0.8,
+    "to": 0.9,
+    "athletes": 79,
+    "predicted": 0.85,
+    "observed": 0.823
+   },
+   {
+    "from": 0.9,
+    "to": 1.0,
+    "athletes": 111,
+    "predicted": 0.957,
+    "observed": 0.946
+   }
+  ]
+ },
+ "favourites": {
+  "baseline": [
+   {
+    "from": 0.0,
+    "to": 0.3,
+    "finals": 53,
+    "predicted": 0.235,
+    "observed": 0.283
+   },
+   {
+    "from": 0.3,
+    "to": 0.5,
+    "finals": 99,
+    "predicted": 0.385,
+    "observed": 0.535
+   },
+   {
+    "from": 0.5,
+    "to": 0.7,
+    "finals": 33,
+    "predicted": 0.587,
+    "observed": 0.545
+   },
+   {
+    "from": 0.7,
+    "to": 1.0,
+    "finals": 21,
+    "predicted": 0.805,
+    "observed": 0.905
+   }
+  ],
+  "candidate": [
+   {
+    "from": 0.0,
+    "to": 0.3,
+    "finals": 34,
+    "predicted": 0.25,
+    "observed": 0.118
+   },
+   {
+    "from": 0.3,
+    "to": 0.5,
+    "finals": 102,
+    "predicted": 0.404,
+    "observed": 0.451
+   },
+   {
+    "from": 0.5,
+    "to": 0.7,
+    "finals": 47,
+    "predicted": 0.578,
+    "observed": 0.596
+   },
+   {
+    "from": 0.7,
+    "to": 1.0,
+    "finals": 23,
+    "predicted": 0.811,
+    "observed": 0.913
+   }
+  ]
+ },
+ "raceCoverage": 0.967,
+ "experimentsTried": [
+  "recency",
+  "recency_by_group",
+  "recency_l2_strong",
+  "recency_recent_70d",
+  "recency_without_big_podiums",
+  "recency_without_h2h",
+  "today",
+  "today_by_group",
+  "today_l2_strong",
+  "v2",
+  "v2_big_with_A",
+  "v2_by_group",
+  "v2_form_best_2",
+  "v2_form_best_5",
+  "v2_l2_strong",
+  "v2_l2_weak",
+  "v2_recent_28d",
+  "v2_recent_70d",
+  "v2_without_big_podiums",
+  "v2_without_form",
+  "v2_without_h2h",
+  "v2_without_history_blend",
+  "v2_without_recent"
+ ],
+ "chosenByRule": "recency_recent_70d"
+}
