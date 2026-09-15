@@ -3383,6 +3383,75 @@ def depth_index():
                     "toplistDepth": TOPLIST_DEPTH})
 
 
+def ranking_only_report(disc_key):
+    """The discipline page for an event with no Diamond League Final: the
+    hammer and the 10,000m (2026-09-15, at the user's request).
+
+    The field is the world's top N on points from the Track and Field list, N
+    being a Final's size in that kind of event, so its spread is measured over
+    as many athletes as a Final's. Its tightness is set against the 32 Finals'
+    spreads without joining them, so their pages keep their ranks:
+    `finalsWider` counts the Finals with a wider spread. The chance beside each
+    athlete is the field model's podium chance from the same list, where the
+    world's top 20 meet in one final. Storylines are left out, since every one
+    of them reads Diamond League Final history. None without that list."""
+    listed = (load_world_rankings() or {}).get(disc_key)
+    if not listed or not listed.get("points"):
+        return None
+    chances = {r["name"]: r.get("ratingPct") for r in listed.get("model") or []}
+    athletes = [{
+        "rank": r["rank"], "name": r["name"], "nat": r.get("nat"), "mark": r.get("mark"),
+        "score": r.get("score"), "prob": chances.get(r["name"]),
+    } for r in listed["points"][:get_qual_limit(disc_key)]]
+    full = load_season_scores()
+    scored = _field_scores(full, disc_key, athletes) if not full.empty else []
+
+    depth = None
+    if len(scored) >= 2:
+        index = build_depth_index()
+        spread = scored[0]["score"] - scored[-1]["score"]
+        uniform = to_uniform_depth(full)
+        same = uniform[uniform["discKey"] == disc_key]["Results Score"]
+        probs = sorted((a["prob"] for a in athletes if a["prob"] is not None), reverse=True)
+        rank = 1 + sum(1 for r in index if r["spread"] < spread)
+        depth = {
+            "discKey":       disc_key,
+            "disc":          DISC_LABELS.get(disc_key, disc_key),
+            "isField":       disc_key in FIELD_EVENTS,
+            "fieldSize":     len(athletes),
+            "scored":        len(scored),
+            "spread":        spread,
+            "bestScore":     scored[0]["score"],
+            "bestAthlete":   scored[0]["name"],
+            "worstScore":    scored[-1]["score"],
+            "toplistMedian": int(same.median()) if len(same) else None,
+            "favouriteProb": probs[0] if probs else None,
+            "probGap":       round(probs[0] - probs[1], 1) if len(probs) > 1 else None,
+            "spreadRank":    rank,
+            "finalsWider":   sum(1 for r in index if r["spread"] > spread),
+            "verdict":       depth_verdict(rank, len(index)),
+            "of":            len(index),
+        }
+
+    names = [a["name"] for a in athletes]
+    return {
+        "discKey":     disc_key,
+        "disc":        DISC_LABELS.get(disc_key, disc_key),
+        "isField":     disc_key in FIELD_EVENTS,
+        "season":      MEETS_YEAR,
+        "fieldSource": "toplist",
+        "modelKind":   "field" if chances else None,
+        "athletes":    athletes,
+        "depth":       depth,
+        "scores":      scored,
+        "trajectories": build_discipline_trajectories(disc_key, athletes),
+        "storylines":  [],
+        "fieldAnalysis": athlete_analytics.build_field_analysis(
+            disc_key, names, disc_key in FIELD_EVENTS,
+        ),
+    }
+
+
 @app.route("/api/discipline/<disc_key>")
 def discipline_report(disc_key):
     """One discipline read as a field: how level it is against the other 31,
@@ -3391,6 +3460,13 @@ def discipline_report(disc_key):
     Composed from the existing pieces rather than recomputed -- the matrix
     and the per-athlete comparison are the same ones the Projections page
     uses, so the two pages cannot drift apart."""
+    # The hammer and the 10,000m have no Final, so no predicted field: their
+    # page reads the world's top athletes instead (ranking_only_report).
+    if disc_key in POINTS_ONLY_DISCIPLINES:
+        report = ranking_only_report(disc_key)
+        if report is None:
+            return jsonify({"error": "discipline not found"}), 404
+        return jsonify(report)
     track, field = load_predictions()
     if track is None:
         return jsonify({"error": "Predictions are not available yet."}), 404

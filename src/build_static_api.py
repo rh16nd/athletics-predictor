@@ -84,11 +84,10 @@ def snapshot_paths():
         ("/api/countries", "countries.json"),
         ("/api/search-index", "search-index.json"),
     ]
+    # Every event, the hammer and the 10,000m included since 2026-09-15: their
+    # page reads the world's top athletes instead of a Final's field
+    # (api.ranking_only_report).
     for key in api.DISC_LABELS:
-        # No discipline page for the hammer or the 10,000m: the page is built
-        # on the model's field, and they have none. Asking would log a SKIP.
-        if key in api.POINTS_ONLY_DISCIPLINES:
-            continue
         pairs.append((f"/api/discipline/{key}", f"discipline/{key}.json"))
     return pairs
 

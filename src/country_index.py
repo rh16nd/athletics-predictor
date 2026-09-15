@@ -80,10 +80,6 @@ def _athlete(disc_key, label, name, mark, score, world_rank, profile_url):
         "worldRank": world_rank,
         "profileUrl": profile_url,
         "isField": disc_key in api.FIELD_EVENTS,
-        # The hammer and the 10,000m have no discipline page, since the
-        # model has no field for them, so the page links their Track or
-        # Field ranking instead. A link to /discipline would 404.
-        "hasDisciplinePage": disc_key not in api.POINTS_ONLY_DISCIPLINES,
     }
 
 

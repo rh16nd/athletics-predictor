@@ -142,3 +142,36 @@ def test_unknown_discipline_is_a_404(client):
 def test_discipline_payload_is_json_serialisable(client, index):
     import json
     json.dumps(client.get(f"/api/discipline/{index[0]['discKey']}").get_json())
+
+
+def test_an_event_with_no_final_gets_a_page_from_the_worlds_top_athletes(client, monkeypatch):
+    """The hammer and the 10,000m (2026-09-15). The field is the world's top N
+    on points, N being a Final's size in that kind of event. Its spread is set
+    against the Finals' without joining them, the chance beside each athlete is
+    the field model's from the Track and Field list, and no storyline reads a
+    Diamond League Final the event never had."""
+    points = [{"rank": i, "name": f"Thrower {i}", "nat": "POL", "mark": f"{80 - i}.00",
+               "score": 1260 - 10 * i} for i in range(1, 9)]
+    monkeypatch.setattr(api, "load_world_rankings", lambda: {"men_HT": {
+        "points": points,
+        "model": [{"name": "Thrower 2", "ratingPct": 71.0}, {"name": "Thrower 1", "ratingPct": 64.5}]}})
+    monkeypatch.setattr(api, "load_season_scores", lambda year=None: pd.DataFrame([
+        {"Competitor": p["name"], "Mark": p["mark"], "Results Score": p["score"], "Venue": "Somewhere",
+         "Date": "01 JUN 2026", "Rank": p["rank"], "discKey": "men_HT", "indoor": False}
+        for p in points]))
+    monkeypatch.setattr(api, "build_depth_index", lambda year=None: [{"spread": s} for s in (20, 40, 80, 120)])
+    monkeypatch.setattr(api, "build_discipline_trajectories", lambda disc_key, athletes: [])
+    monkeypatch.setattr(api.athlete_analytics, "build_field_analysis", lambda *args: None)
+
+    res = client.get("/api/discipline/men_HT")
+    assert res.status_code == 200
+    payload = res.get_json()
+    assert (payload["fieldSource"], payload["modelKind"], payload["storylines"]) == ("toplist", "field", [])
+    assert [a["name"] for a in payload["athletes"]] == [f"Thrower {i}" for i in range(1, 7)]
+    depth = payload["depth"]
+    # Six throwers from 1250 down to 1200: a 50-point spread, wider than two of
+    # the four finals and tighter than the other two.
+    assert (depth["fieldSize"], depth["spread"], depth["spreadRank"], depth["finalsWider"], depth["of"]) == \
+        (6, 50, 3, 2, 4)
+    assert depth["favouriteProb"] == 71.0
+    assert {s["name"]: s["prob"] for s in payload["scores"]}["Thrower 3"] is None

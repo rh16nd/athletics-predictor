@@ -18,9 +18,13 @@ The user asked four things:
   - This build ran with the Ultimate current, so the 70 call-built pages are not in it. Re-run `python src/country_index.py` after the flip, before `build_static_api.py`.
   - It read this morning's refreshed toplists, which are still uncommitted (27 files in `data/raw`, left for the user). Commit them together with `countries.json`, or rebuild it from the committed ones.
 
-**Performance Index and the discipline links.**
-- `/discipline/<key>` has no page for the hammer or the 10,000m, so the Performance Index ladder, the dashboard and old links led to a page that could not load.
-- The route now redirects those four keys to `/field?disc=` or `/track?disc=` (`RANKING_ONLY_DISCIPLINES` in `dl-data.ts`). Checked: the ladder's hammer link lands on the Field page, and `/discipline/women_10000m` on the Track page.
+**Event pages for the hammer and the 10,000m.**
+- They had no event page, so the Performance Index ladder, the dashboard and country pages linked to a page that could not load. A first fix redirected those links to the Track or Field ranking. The user wanted the event page itself, like every other event, so the redirect is gone.
+- `api.ranking_only_report` builds their page. The field is the world's top N on points from the Track and Field list, N being a Final's size (6 in the hammer, 10 in the 10,000m). The page shows how level that field is, the world top-100 median, each athlete's score beside the field model's podium chance, and season form from the saved profiles.
+- Its spread is set against the 32 finals' (`finalsWider`) without joining them, so the other pages keep their ranks. There are no storylines, which read Diamond League Final history, and no head-to-head block, since there is no race log for these events.
+- Their wording is under `disc.top.*` in EN and FR: "the world's top 6" rather than "finalists", "tighter than 28 of the 32 finals", and the chance labelled as the field model's, which tested level with points.
+- The static build now writes their event pages, and country pages link every event to its event page.
+- Checked in the browser: the Performance Index hammer link opens the men's hammer page ("Level field. As tight as the tightest third of the 32 finals. 39 points from Halász down to the weakest of the 6 scored"), with its season chart and the chance list (Halász 1269, 58.8%). The women's 10,000m page loads (20 points across the top 10), and Hungary's country page links its throwers to the hammer page.
 - The nav tab reads "Performance" (French "Performances"). The page keeps its title, "Performance Index".
 
 **Meets on the Track and Field pages.**
@@ -43,7 +47,7 @@ The user asked four things:
   - Women's 10,000m: Caroline KARIBA 40.7% (points: Janeth Nyiva MUTUNGI).
   - Each field adds up to 300. The dashboard shows none of the four.
 
-**Checks.** 632 backend tests pass. `tsc`, eslint on the changed files and `npm run build` pass. EN and FR have 877 keys each.
+**Checks.** 633 backend tests pass. `tsc`, eslint on the changed files and `npm run build` pass. EN and FR have 896 keys each.
 
 ---
 
