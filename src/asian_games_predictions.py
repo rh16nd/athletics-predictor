@@ -1,26 +1,34 @@
 """
 asian_games_predictions.py -- the call for each Asian Games event we can call.
 
-THE MODEL (set by the user on 2026-09-15)
-Every event is called by the field model (src/field_model.py). It rates each
-entrant against the others entered, on what was known before the Games: their
-best mark this season, or last season's when they have none this year, their
-career best, last season's best, how long ago the best mark was set, and their
-age. An athlete with one race this year is read on their record rather than
-written off. Each entrant gets a chance of a podium, and a field's chances add
-up to 300, one hundred for each medal.
+THE MODEL (set by the user on 2026-09-15, and replaced that evening)
+Every event is called by the field model (src/field_model.py) in its
+race-by-race form, the experiment v2_form_best_5. It rates each entrant against
+the others entered, on what was known before the Games: this season's form
+(the mean of their best five marks), how they have raced in the last six weeks,
+podiums in finals at the biggest meetings, their record against the field's
+three strongest in finals they shared, and, as before, their season best (last
+season's when they have none this year), career best, last season and age.
+Each entrant gets a chance of a podium, the field's adding up to 300, and a
+chance of winning, adding up to 100.
+
+It reads each entrant's season race by race, fetched into
+data/asian_games_2026/races (field_data.fetch_races) before the call is built.
+Run with --refresh-races before the freeze, so the meetings since the last
+fetch count.
 
 HOW IT TESTED, SAID PLAINLY ON THE PAGE
-On 511 held-out championship finals it named 64.9% of the medallists, and a
-ranking by World Athletics points named 64.1%: level, not better (+0.025 a
-final, 90% interval -0.018 to +0.068). On the Asian finals it was behind, 210
-podium places to 217, also inside the noise. The payload's `rule.backtest` is
-read from outputs/field_model_report.json, so the page states whatever the
-last backtest said.
+Chosen from 23 candidates on the finals of 2021-2023, then tested once on the
+206 finals of 2024-2025, kept aside while it was built: 64.4% of the medallists
+against 62.9% for the model it replaced and 62.0% for points. On the 36 Asian
+finals, 67.6% against 65.7%, though points named 70.4% there. The payload's
+`rule.backtest` is read from outputs/field_model_holdout.json when the served
+model is the one that report tested (backtest_summary).
 
-It replaced, the same day, a call made two ways: the Diamond League model where
-6 of an event's top 8 had a record we hold and its favourite a 5% chance, and a
-ranking on points everywhere else, which was 28 of the 36 events.
+Earlier on 2026-09-15 the field model read season bests alone and tested level
+with points (511 finals, 64.9% against 64.1%). Before that, the Diamond League
+model called the 8 events where 6 of the top 8 had a record we hold, and points
+the other 28.
 
 THE MARK SHOWN
 The mark the model read each entrant on: this season's best, or last season's
@@ -29,7 +37,7 @@ entrants to read has no podium to call, and is ranked on points instead, saying
 why.
 
 Usage:
-    python src/asian_games_predictions.py
+    python src/asian_games_predictions.py [--refresh-races]
 Reads data/asian_games_2026/event.json, raw/{key}_2026.csv and asia/{key}_2025.csv
 (asian_games_scraper.py) and outputs/field_model.json (field_model.py), and
 writes data/asian_games_2026/predictions.json.
@@ -48,9 +56,11 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 
 import asian_games_scraper as ags  # noqa: E402
 import championships  # noqa: E402
+import field_data as fd  # noqa: E402
 import field_model as fm  # noqa: E402
 
 OUT_PATH = os.path.join(ags.OUT_DIR, "predictions.json")
+RACES_DIR = os.path.join(ags.OUT_DIR, "races")
 CHAMP = championships.get("asian-games-2026")
 # Fewer entrants with a mark to read than this, and there is no podium to call.
 MIN_SCORED = 3
@@ -163,16 +173,22 @@ def unranked_detail(event, names):
     return out
 
 
-def field_call(event, model, snapshot_path, last_path, cutoff, year=ags.YEAR, rows_for=fm.serving_rows):
+def field_call(event, model, snapshot_path, last_path, cutoff, year=ags.YEAR, rows_for=fm.serving_rows,
+               races=None):
     """One event called by the field model, in ultimate_predictions.project_event's
-    shape, or None when fewer than MIN_SCORED entrants have a mark to read."""
+    shape, or None when fewer than MIN_SCORED entrants have a mark to read.
+
+    `races` is {World Athletics id: this season race by race}, for a model that
+    reads races (field_model.needs_races), read the way its experiment reads them."""
     key = event["discKey"]
     entrants = [{"name": a["name"], "nat": a.get("nat"), "waId": a.get("waId")} for a in event["athletes"]]
-    rows = rows_for(key, entrants, snapshot_path, cutoff, year, extra=[(last_path, "asiaLastSeason")])
+    how = {"races": races, "race_how": fm.spec_of(model).get("race")} if races is not None else {}
+    rows = rows_for(key, entrants, snapshot_path, cutoff, year, extra=[(last_path, "asiaLastSeason")], **how)
     rows = rows[rows["sb_score"].notna()].reset_index(drop=True)
     if len(rows) < MIN_SCORED:
         return None
-    u = fm.utilities(model, fm.field_features(rows, cutoff).to_numpy())
+    features = fm.field_features(rows, cutoff, model.get("features") or fm.FEATURES)
+    u = fm.utilities(fm.model_for(model, fm.group_of(key)), features.to_numpy())
     rows = (rows.assign(chance=fm.podium_chances(u), win=fm.win_chances(u))
             .sort_values(["chance", "sb_score"], ascending=False, kind="stable"))
     nats = {_key(a["name"]): a.get("nat") for a in event["athletes"]}
@@ -253,13 +269,34 @@ def link_athletes(out, event, on_site):
     return out
 
 
-def backtest_summary(report_path=fm.REPORT_PATH):
-    """The field model's test against points, for the page to state, or None
-    when there is no report."""
+def _read_json(path):
     try:
-        with open(report_path, encoding="utf-8") as f:
-            report = json.load(f)
+        with open(path, encoding="utf-8") as f:
+            return json.load(f)
     except (OSError, ValueError):
+        return None
+
+
+def backtest_summary(report_path=fm.REPORT_PATH, model=None, holdout_path=fm.HOLDOUT_PATH):
+    """How the served field model tested, for the page to state, or None.
+
+    For a model chosen as an experiment and tested once on the locked years
+    (field_model.py --holdout), that test: against the model it replaced
+    (`previous`) and against points, on finals kept aside while it was built.
+    Only when the report tested this model; otherwise the older backtest
+    against points in `report_path`."""
+    held = _read_json(holdout_path)
+    if held and (model or {}).get("experiment") and held.get("candidateName") == model["experiment"]:
+        overall, asia = held["overall"], (held.get("byTier") or {}).get("asia") or {}
+        return {"finals": overall["candidate"]["finals"], "model": overall["candidate"]["model"],
+                "previous": overall["baseline"]["model"], "points": overall["baseline"]["points"],
+                "asiaFinals": (asia.get("candidate") or {}).get("finals"),
+                "asiaModel": (asia.get("candidate") or {}).get("model"),
+                "asiaPrevious": (asia.get("baseline") or {}).get("model"),
+                "asiaPoints": (asia.get("baseline") or {}).get("points"),
+                "years": held.get("testYears")}
+    report = _read_json(report_path)
+    if report is None:
         return None
     overall = report.get("overall") or {}
     asia = (report.get("byTier") or {}).get("asia") or {}
@@ -269,7 +306,8 @@ def backtest_summary(report_path=fm.REPORT_PATH):
 
 
 def build(event, model, snapshot_dir=None, asia_dir=None, cutoff=None, pages_for=snapshot_names,
-          last_for=last_season_marks, rows_for=fm.serving_rows, report_path=fm.REPORT_PATH):
+          last_for=last_season_marks, rows_for=fm.serving_rows, report_path=fm.REPORT_PATH, races=None,
+          holdout_path=fm.HOLDOUT_PATH):
     snapshot_dir = snapshot_dir or ags.SNAPSHOT_DIR
     asia_dir = asia_dir or ags.ASIA_DIR
     cutoff = cutoff or CHAMP["startDate"]
@@ -278,7 +316,8 @@ def build(event, model, snapshot_dir=None, asia_dir=None, cutoff=None, pages_for
         key = ev["discKey"]
         ev = {**ev, "athletes": last_season_rule(ev["athletes"], key, last_for(key))}
         out = field_call(ev, model, os.path.join(snapshot_dir, f"{key}_{ags.YEAR}.csv"),
-                         os.path.join(asia_dir, f"{key}_{ags.LAST_YEAR}.csv"), cutoff, rows_for=rows_for)
+                         os.path.join(asia_dir, f"{key}_{ags.LAST_YEAR}.csv"), cutoff, rows_for=rows_for,
+                         races=races)
         if out is None:
             out = points_call(ev)
             out["method"], out["methodEvidence"] = "points", {"reason": "tooFew", "needed": MIN_SCORED}
@@ -286,7 +325,8 @@ def build(event, model, snapshot_dir=None, asia_dir=None, cutoff=None, pages_for
             out["method"], out["methodEvidence"] = "model", {"reason": None}
         projections.append(link_athletes(out, ev, pages_for(key)))
     return {
-        "rule": {"method": "field", "cutoff": str(cutoff), "backtest": backtest_summary(report_path)},
+        "rule": {"method": "field", "cutoff": str(cutoff),
+                 "backtest": backtest_summary(report_path, model, holdout_path)},
         "builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "projections": projections,
         "notCalled": event.get("notCalled") or [],
@@ -300,7 +340,16 @@ if __name__ == "__main__":
     field_model = fm.load_model()
     if field_model is None:
         sys.exit(f"  no field model at {fm.MODEL_PATH}; run python src/field_model.py --backtest first")
-    payload = build(saved_event, field_model)
+    races = None
+    if fm.needs_races(field_model):
+        wanted = {(int(i), ags.YEAR) for ev in saved_event.get("field") or [] for a in ev["athletes"]
+                  for i in [a.get("waId") or ags.wa_id(a.get("profileUrl"))] if str(i or "").isdigit()}
+        print(f"  The model reads races: {len(wanted)} entrants' {ags.YEAR} seasons in {RACES_DIR}")
+        if fd.fetch_seasons(wanted, fetch=fd.fetch_races, seasons_dir=RACES_DIR,
+                            refresh="--refresh-races" in sys.argv):
+            sys.exit("  some seasons failed to download: run again, since a call missing races is a weaker call")
+        races = fd.load_seasons(RACES_DIR).get(ags.YEAR, {})
+    payload = build(saved_event, field_model, races=races)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
 

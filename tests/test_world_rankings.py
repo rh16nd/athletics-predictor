@@ -66,7 +66,7 @@ def test_an_event_the_diamond_league_model_has_never_seen_gets_the_field_models_
         return "rows"
 
     monkeypatch.setattr(wr.fm, "serving_rows", serving_rows)
-    monkeypatch.setattr(wr.fm, "field_chances", lambda model, rows, cutoff: {
+    monkeypatch.setattr(wr.fm, "field_chances", lambda model, rows, cutoff, disc_key=None: {
         "First THROWER": (0.97, 0.30), "Second THROWER": (0.94, 0.25), "Third THROWER": (0.99, 0.45)})
 
     out = wr.score_discipline("men_HT")
@@ -81,6 +81,35 @@ def test_an_event_the_diamond_league_model_has_never_seen_gets_the_field_models_
     monkeypatch.setattr(wr.fm, "load_model", lambda: None)
     out = wr.score_discipline("men_HT")
     assert (out["modelAvailable"], out["modelKind"], out["model"]) == (False, None, [])
+
+
+def test_a_field_model_that_reads_races_gets_the_top_twentys_seasons_read_the_way_it_was_chosen(monkeypatch, tmp_path):
+    (tmp_path / f"men_HT_{wr.YEAR}.csv").write_text(
+        "Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,ProfileURL\n"
+        "1,82.00,,First THROWER,01 JAN 1999,CAN,1,,Somewhere,01 JUL 2026,1250,men_HT,2026,"
+        "https://worldathletics.org/athletes/athlete=1\n"
+        "2,80.10,,Second THROWER,01 JAN 2000,POL,1,,Somewhere,01 JUN 2026,1190,men_HT,2026,"
+        "https://worldathletics.org/athletes/athlete=2\n",
+        encoding="utf-8")
+    monkeypatch.setattr(wr, "RAW_DIR", str(tmp_path))
+    monkeypatch.setattr(wr, "races_on_record", lambda key, year: {})
+    fetched, seen = {}, {}
+
+    def current_races(athletes, refresh=False):
+        fetched["ids"] = [a["waId"] for a in athletes]
+        return {"1": []}
+
+    def serving_rows(key, athletes, season_path, cutoff, year, races=None, race_how=None):
+        seen.update(races=races, race_how=race_how)
+        return "rows"
+
+    monkeypatch.setattr(wr, "current_races", current_races)
+    monkeypatch.setattr(wr.fm, "serving_rows", serving_rows)
+    monkeypatch.setattr(wr.fm, "field_chances", lambda model, rows, cutoff, disc_key=None: {
+        "First THROWER": (0.9, 0.6), "Second THROWER": (0.8, 0.4)})
+    wr.field_model_discipline("men_HT", model={"features": wr.fm.FEATURES_V2, "experiment": "v2_form_best_5"})
+    assert fetched["ids"] == [1, 2]
+    assert seen == {"races": {"1": []}, "race_how": {"form_marks": 5}}
 
 
 def test_every_shipped_row_carries_a_meeting_count():

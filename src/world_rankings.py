@@ -37,6 +37,7 @@ each row: { rank, name, nat, mark, score, ratingPct, dlRaces,
 Usage:
     python src/world_rankings.py
     python src/world_rankings.py --only men_HT women_HT   # rewrite just these
+    python src/world_rankings.py --refresh-races          # fetch the field model's top 20s' seasons again
 """
 import argparse
 import glob
@@ -52,9 +53,14 @@ sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 import asian_games_scraper as ags  # noqa: E402
+import field_data as fd  # noqa: E402
 import field_model as fm  # noqa: E402
 from feature_builder import FIELD_EVENTS, POINTS_ONLY_DISCIPLINES, RAW_DIR, build_2026_features  # noqa: E402
 from season_activity import races_on_record  # noqa: E402
+
+# The field model's top 20s, their seasons race by race, for a model that reads
+# races (field_model.needs_races). Fetched when missing, or again with --refresh-races.
+CURRENT_RACES_DIR = os.path.join(fd.FIELD_DIR, "current")
 
 # Both overridable so an experimental model can be driven through the real
 # site without displacing the deployed one. A pooled model written over
@@ -157,16 +163,24 @@ def ranked(rows, sort_key, reverse=True):
     return out
 
 
-def field_model_rows(key, rows, today=None, model=None):
+def current_races(athletes, refresh=False):
+    """{World Athletics id: this season race by race} for these athletes,
+    fetched into CURRENT_RACES_DIR when missing, or all again with `refresh`."""
+    wanted = {(int(a["waId"]), YEAR) for a in athletes if str(a.get("waId") or "").isdigit()}
+    fd.fetch_seasons(wanted, fetch=fd.fetch_races, seasons_dir=CURRENT_RACES_DIR, refresh=refresh)
+    return fd.load_seasons(CURRENT_RACES_DIR).get(YEAR, {})
+
+
+def field_model_rows(key, rows, today=None, model=None, races=None, refresh_races=False):
     """The field model's view of one event: its top 20 by points, each with a
     podium chance as if the 20 met in one final, best first. Empty without a
     saved field model, or with fewer than three athletes it can read.
 
     `ratingPct` is that chance, so the 20 add up to 300: one hundred for each
-    podium place. The model reads each athlete's season best, career best, last
-    season and age against the rest of the field (field_model.FEATURES). In its
-    backtest it named about as many medallists as a points ranking, not more,
-    and the page says so."""
+    podium place. The model reads the field the way it was chosen to
+    (field_model.spec_of): since 2026-09-15 each athlete's season race by race
+    as well as their season best, career best, last season and age, with
+    `races` fetched by current_races when not given."""
     model = model if model is not None else fm.load_model()
     if not model:
         return []
@@ -175,14 +189,18 @@ def field_model_rows(key, rows, today=None, model=None):
     # The end of today, so a mark set today still counts as this season's.
     cutoff = pd.Timestamp(today or date.today()) + pd.Timedelta(days=1)
     athletes = [{"name": r["name"], "nat": r["nat"], "waId": ags.wa_id(r["profileUrl"])} for r in field]
-    served = fm.serving_rows(key, athletes, os.path.join(RAW_DIR, f"{key}_{YEAR}.csv"), cutoff, YEAR)
-    chances = fm.field_chances(model, served, cutoff)
+    how = {}
+    if fm.needs_races(model):
+        how = {"races": current_races(athletes, refresh_races) if races is None else races,
+               "race_how": fm.spec_of(model).get("race")}
+    served = fm.serving_rows(key, athletes, os.path.join(RAW_DIR, f"{key}_{YEAR}.csv"), cutoff, YEAR, **how)
+    chances = fm.field_chances(model, served, cutoff, key)
     scored = [{**by_name[name], "ratingPct": round(podium * 100, 1), "winPct": round(win * 100, 1), "prob": podium}
               for name, (podium, win) in chances.items() if name in by_name]
     return ranked(scored, "prob")
 
 
-def field_model_discipline(key, today=None, model=None):
+def field_model_discipline(key, today=None, model=None, refresh_races=False):
     """An event the Diamond League model has never seen: the hammer and the
     10,000m, added 2026-09-14. Ranked on points, with the field model's view
     beside it since 2026-09-15.
@@ -202,7 +220,7 @@ def field_model_discipline(key, today=None, model=None):
         "racesOnRecord": activity.get(str(name).upper().strip()),
         "profileUrl": m["url"],
     } for name, m in meta.items()]
-    field = field_model_rows(key, rows, today, model)
+    field = field_model_rows(key, rows, today, model, refresh_races=refresh_races)
     return {
         "isField": key in FIELD_EVENTS,
         "modelAvailable": bool(field),
@@ -212,9 +230,9 @@ def field_model_discipline(key, today=None, model=None):
     }
 
 
-def score_discipline(key):
+def score_discipline(key, refresh_races=False):
     if key in POINTS_ONLY_DISCIPLINES:
-        return field_model_discipline(key)
+        return field_model_discipline(key, refresh_races=refresh_races)
     df = build_2026_features(key)
     if df.empty:
         return None
@@ -267,6 +285,8 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="Per-discipline top-20 lists for the Track and Field pages.")
     parser.add_argument("--only", nargs="+", metavar="KEY",
                         help="rebuild just these disciplines and keep the rest of the saved file as it is")
+    parser.add_argument("--refresh-races", action="store_true",
+                        help="fetch the field model's top 20s' seasons again, for meetings since the last fetch")
     args = parser.parse_args(argv)
 
     print("=== Building world rankings (points + model) per discipline ===")
@@ -278,7 +298,7 @@ def main(argv=None):
         except (OSError, ValueError):
             out = {}
     for key in args.only or discipline_keys():
-        res = score_discipline(key)
+        res = score_discipline(key, args.refresh_races)
         if res:
             out[key] = res
             model_top = res["model"][0]["name"] if res["model"] else "(points only)"

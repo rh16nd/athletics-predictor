@@ -37,3 +37,7 @@ data/field/seasons/
 # and the 2026 Ultimate finalists' seasons, from src/field_model_check_2026.py.
 data/field/races/
 data/field/races_2026/
+# The Asian Games entrants' seasons race by race, for the call (asian_games_predictions.py),
+# and the Track and Field top 20s' for the field model's view (world_rankings.py).
+data/asian_games_2026/races/
+data/field/current/

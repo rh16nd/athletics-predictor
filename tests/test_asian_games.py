@@ -518,6 +518,48 @@ def test_the_page_states_the_models_test_from_the_report_file(tmp_path):
     assert agp.backtest_summary(str(tmp_path / "missing.json")) is None
 
 
+def test_the_page_states_the_locked_year_test_only_for_the_model_that_took_it(tmp_path):
+    held = tmp_path / "holdout.json"
+    held.write_text(json.dumps({
+        "candidateName": "v2_form_best_5", "testYears": [2024, 2025],
+        "overall": {"baseline": {"finals": 206, "model": 62.9, "points": 62.0},
+                    "candidate": {"finals": 206, "model": 64.4, "points": 62.0}},
+        "byTier": {"asia": {"baseline": {"finals": 36, "model": 65.7, "points": 70.4},
+                            "candidate": {"finals": 36, "model": 67.6, "points": 70.4}}}}), encoding="utf-8")
+    missing = str(tmp_path / "missing.json")
+    assert agp.backtest_summary(missing, {"experiment": "v2_form_best_5"}, str(held)) == {
+        "finals": 206, "model": 64.4, "previous": 62.9, "points": 62.0,
+        "asiaFinals": 36, "asiaModel": 67.6, "asiaPrevious": 65.7, "asiaPoints": 70.4, "years": [2024, 2025]}
+    # Another model, or one saved by --backtest, is never described by that test.
+    assert agp.backtest_summary(missing, {"experiment": "recency"}, str(held)) is None
+    assert agp.backtest_summary(missing, None, str(held)) is None
+
+
+def test_a_model_that_reads_races_is_served_them_the_way_it_was_chosen_and_scored_on_its_features():
+    import pandas as pd
+
+    seen = {}
+
+    def rows_for(key, entrants, season_path, cutoff, year, extra=(), races=None, race_how=None):
+        seen.update(races=races, race_how=race_how)
+        return pd.DataFrame({
+            "athlete_name": ["A", "B", "C"], "sb_score": [1200.0, 1150.0, 1100.0],
+            "sb_date": pd.Timestamp("2026-06-01"), "sb_prior_season": 0, "dob": pd.Timestamp("1998-01-01"),
+            "career_best": [1210.0, 1160.0, 1110.0], "prev_season_best": [1190.0, 1140.0, 1090.0],
+            "mark": ["1:44.0", "1:45.0", "1:46.0"], "mark_season": 2026, "wa_id": [1, 2, 3],
+            "form_score": [1190.0, 1150.0, 1080.0], "form_spread": 10.0, "recent_score": [1195.0, None, 1090.0],
+            "races": 6, "big_podiums": [2, 0, 0], "h2h_top": [1.0, 0.0, -1.0], "has_races": True})
+
+    features = agp.fm.FEATURES_V2
+    model = {"features": features, "experiment": "v2_form_best_5",
+             "mean": [0.0] * len(features), "std": [1.0] * len(features), "weights": [0.0] * len(features)}
+    model["weights"][features.index("form_gap")] = 1.0
+    event = {"discKey": "men_800m", "athletes": [{"name": n, "nat": "KEN", "waId": i} for i, n in enumerate("ABC", 1)]}
+    out = agp.field_call(event, model, "snapshot.csv", "last.csv", "2026-09-23", rows_for=rows_for, races={"1": []})
+    assert seen == {"races": {"1": []}, "race_how": {"form_marks": 5}}
+    assert [a["name"] for a in out["athletes"]] == ["A", "B", "C"]
+
+
 def test_a_points_event_states_an_order_and_no_chances():
     event = {"discKey": "men_JT", "disciplineLabel": "Men's Javelin Throw", "sex": "M",
              "athletes": athletes(("Second ONE", 1150), ("First ONE", 1240))

@@ -826,6 +826,17 @@ def load_model(path=MODEL_PATH):
         return None
 
 
+def spec_of(model):
+    """The experiment a saved model was chosen as (EXPERIMENTS), which says how
+    it reads races; empty for a model saved by --backtest."""
+    return EXPERIMENTS.get((model or {}).get("experiment"), {})
+
+
+def needs_races(model):
+    """Whether a saved model reads each athlete's season race by race."""
+    return bool(set((model or {}).get("features") or []) - set(FEATURES))
+
+
 def shipped(model, disc_key):
     """(whether this discipline's group passed the ship rule, its evidence)."""
     decision = ((model or {}).get("ship") or {}).get(group_of(disc_key))
@@ -837,7 +848,7 @@ SERVING_COLUMNS = ["athlete_name", "sb_score", "sb_date", "sb_prior_season", "do
 
 
 def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.season_scores, extra=(),
-                 races=None):
+                 races=None, race_how=None):
     """The rows field_features needs, for athletes about to compete, read the
     way field_data.attach_scores reads a past final.
 
@@ -854,7 +865,9 @@ def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.se
     field_data.fetch_races}, the rows also carry field_data.RACE_COLUMNS, read
     through field_data.race_columns as training reads them, head-to-head
     included: what FEATURES_V2 needs. `wa_id` is the entrant's id, or the one on
-    the toplist row their mark came from."""
+    the toplist row their mark came from. `race_how` goes to
+    field_data.race_summary, for a model chosen as an experiment that reads
+    races its own way (EXPERIMENTS[...]["race"])."""
     season = fd._toplist_rows(season_path, "season")
     history = scores_for(disc_key)
     frames = [f for f in [history] + [fd._toplist_rows(path, source) for path, source in extra] if not f.empty]
@@ -895,16 +908,20 @@ def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.se
         return out
     field = out.assign(discipline=disc_key, cutoff=cutoff)
     return out.join(fd.race_columns(
-        field, lambda row: races.get(str(int(row["wa_id"]))) if pd.notna(row["wa_id"]) else None))
+        field, lambda row: races.get(str(int(row["wa_id"]))) if pd.notna(row["wa_id"]) else None,
+        **(race_how or {})))
 
 
-def field_chances(model, rows, cutoff):
-    """{athlete name: (podium chance, win chance)} for one field. Empty for a
-    field of fewer than three scored athletes, where there is no podium to call."""
+def field_chances(model, rows, cutoff, disc_key=None):
+    """{athlete name: (podium chance, win chance)} for one field, read with the
+    model's own features, and with the model for the event's group when it was
+    fitted by group. Empty for a field of fewer than three scored athletes,
+    where there is no podium to call."""
     rows = rows[rows["sb_score"].notna()].reset_index(drop=True)
     if len(rows) < 3:
         return {}
-    u = utilities(model, field_features(rows, cutoff).to_numpy())
+    features = field_features(rows, cutoff, model.get("features") or FEATURES)
+    u = utilities(model_for(model, group_of(disc_key)), features.to_numpy())
     return {name: (float(p), float(w))
             for name, p, w in zip(rows["athlete_name"], podium_chances(u), win_chances(u))}
 
