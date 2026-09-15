@@ -17,7 +17,7 @@
    ]
   }
  },
- "builtAt": "2026-09-15T17:29:22Z",
+ "builtAt": "2026-09-15T21:30:07Z",
  "projections": [
   {
    "discKey": "men_100m",
@@ -87,8 +87,8 @@
      "rankingScore": 1210,
      "mark": "9.99",
      "markSeason": null,
-     "podiumChance": 52.0,
-     "winChance": 20.1,
+     "podiumChance": 50.8,
+     "winChance": 19.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14992965",
      "hasPage": true
     },
@@ -100,8 +100,8 @@
      "rankingScore": 1182,
      "mark": "10.07",
      "markSeason": null,
-     "podiumChance": 47.2,
-     "winChance": 17.5,
+     "podiumChance": 47.8,
+     "winChance": 17.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14844149",
      "hasPage": true
     },
@@ -113,8 +113,8 @@
      "rankingScore": 1172,
      "mark": "10.1",
      "markSeason": null,
-     "podiumChance": 27.6,
-     "winChance": 9.1,
+     "podiumChance": 27.8,
+     "winChance": 9.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14376449",
      "hasPage": true
     },
@@ -139,35 +139,35 @@
      "rankingScore": 1169,
      "mark": "10.13",
      "markSeason": null,
-     "podiumChance": 16.9,
-     "winChance": 5.3,
+     "podiumChance": 17.2,
+     "winChance": 5.4,
      "profileUrl": "https://worldathletics.org/athletes/korea/joeljin-nwamadi-15029892",
      "hasPage": true
     },
     {
      "rank": 6,
-     "name": "Shuhei TADA",
-     "nat": "JPN",
-     "qualifiedBy": null,
-     "rankingScore": 1172,
-     "mark": "10.1",
-     "markSeason": null,
-     "podiumChance": 12.8,
-     "winChance": 4.0,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14707842",
-     "hasPage": true
-    },
-    {
-     "rank": 7,
      "name": "Chun-Han YANG",
      "nat": "TPE",
      "qualifiedBy": null,
      "rankingScore": 1169,
      "mark": "10.11",
      "markSeason": null,
-     "podiumChance": 12.7,
-     "winChance": 3.9,
+     "podiumChance": 13.1,
+     "winChance": 4.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14547735",
+     "hasPage": true
+    },
+    {
+     "rank": 7,
+     "name": "Shuhei TADA",
+     "nat": "JPN",
+     "qualifiedBy": null,
+     "rankingScore": 1172,
+     "mark": "10.1",
+     "markSeason": null,
+     "podiumChance": 12.6,
+     "winChance": 3.9,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14707842",
      "hasPage": true
     },
     {
@@ -178,8 +178,8 @@
      "rankingScore": 1162,
      "mark": "10.13",
      "markSeason": null,
-     "podiumChance": 11.8,
-     "winChance": 3.6,
+     "podiumChance": 12.2,
+     "winChance": 3.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15023908",
      "hasPage": true
     },
@@ -204,7 +204,7 @@
      "rankingScore": 1176,
      "mark": "10.09",
      "markSeason": null,
-     "podiumChance": 11.1,
+     "podiumChance": 10.9,
      "winChance": 3.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843159",
      "hasPage": true
@@ -217,7 +217,7 @@
      "rankingScore": 1159,
      "mark": "10.14",
      "markSeason": null,
-     "podiumChance": 9.6,
+     "podiumChance": 9.5,
      "winChance": 2.9,
      "profileUrl": "https://worldathletics.org/athletes/india/animesh-kujur-14971002",
      "hasPage": true
@@ -230,7 +230,7 @@
      "rankingScore": 1139,
      "mark": "10.21",
      "markSeason": null,
-     "podiumChance": 7.6,
+     "podiumChance": 7.5,
      "winChance": 2.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14993176",
      "hasPage": true
@@ -256,7 +256,7 @@
      "rankingScore": 1169,
      "mark": "10.11",
      "markSeason": null,
-     "podiumChance": 7.3,
+     "podiumChance": 7.4,
      "winChance": 2.2,
      "profileUrl": "https://worldathletics.org/athletes/oman/malham-al-balushi-15229516",
      "hasPage": true
@@ -308,7 +308,7 @@
      "rankingScore": 1112,
      "mark": "10.28",
      "markSeason": null,
-     "podiumChance": 4.4,
+     "podiumChance": 4.3,
      "winChance": 1.3,
      "profileUrl": "https://worldathletics.org/athletes/saudi-arabia/abdulaziz-abdui-atafi-15017843",
      "hasPage": true
@@ -334,7 +334,7 @@
      "rankingScore": 1072,
      "mark": "10.4",
      "markSeason": null,
-     "podiumChance": 2.8,
+     "podiumChance": 2.7,
      "winChance": 0.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752176",
      "hasPage": true
@@ -386,8 +386,8 @@
      "rankingScore": 1132,
      "mark": "10.23",
      "markSeason": null,
-     "podiumChance": 1.8,
-     "winChance": 0.5,
+     "podiumChance": 1.9,
+     "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/qatar/salah-nur-ismail-yunis-15135764",
      "hasPage": true
     },
@@ -399,7 +399,7 @@
      "rankingScore": 1079,
      "mark": "10.38",
      "markSeason": null,
-     "podiumChance": 1.7,
+     "podiumChance": 1.6,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840507",
      "hasPage": true
@@ -425,7 +425,7 @@
      "rankingScore": 1092,
      "mark": "10.34",
      "markSeason": null,
-     "podiumChance": 1.0,
+     "podiumChance": 1.1,
      "winChance": 0.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14913278",
      "hasPage": true
@@ -503,7 +503,7 @@
      "rankingScore": 1099,
      "mark": "10.32",
      "markSeason": null,
-     "podiumChance": 0.4,
+     "podiumChance": 0.3,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/thailand/chutithat-pruksorranan-15089189",
      "hasPage": true
@@ -712,8 +712,8 @@
      "rankingScore": 1215,
      "mark": "20.03",
      "markSeason": null,
-     "podiumChance": 85.6,
-     "winChance": 45.0,
+     "podiumChance": 85.7,
+     "winChance": 45.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14992965",
      "hasPage": true
     },
@@ -725,8 +725,8 @@
      "rankingScore": 1200,
      "mark": "20.15",
      "markSeason": null,
-     "podiumChance": 34.2,
-     "winChance": 9.3,
+     "podiumChance": 34.8,
+     "winChance": 9.5,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/youwen-huang-15210377",
      "hasPage": true
     },
@@ -738,35 +738,35 @@
      "rankingScore": 1143,
      "mark": "20.50",
      "markSeason": null,
-     "podiumChance": 29.8,
-     "winChance": 7.9,
+     "podiumChance": 29.1,
+     "winChance": 7.7,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/junhao-shi-15043948",
      "hasPage": true
     },
     {
      "rank": 4,
-     "name": "Animesh KUJUR",
-     "nat": "IND",
-     "qualifiedBy": null,
-     "rankingScore": 1149,
-     "mark": "20.46",
-     "markSeason": null,
-     "podiumChance": 25.9,
-     "winChance": 6.8,
-     "profileUrl": "https://worldathletics.org/athletes/india/animesh-kujur-14971002",
-     "hasPage": true
-    },
-    {
-     "rank": 5,
      "name": "Soshi MIZUKUBO",
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1209,
      "mark": "20.07",
      "markSeason": null,
-     "podiumChance": 25.7,
-     "winChance": 6.7,
+     "podiumChance": 26.5,
+     "winChance": 6.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14766547",
+     "hasPage": true
+    },
+    {
+     "rank": 5,
+     "name": "Animesh KUJUR",
+     "nat": "IND",
+     "qualifiedBy": null,
+     "rankingScore": 1149,
+     "mark": "20.46",
+     "markSeason": null,
+     "podiumChance": 25.4,
+     "winChance": 6.6,
+     "profileUrl": "https://worldathletics.org/athletes/india/animesh-kujur-14971002",
      "hasPage": true
     },
     {
@@ -777,8 +777,8 @@
      "rankingScore": 1102,
      "mark": "20.77",
      "markSeason": null,
-     "podiumChance": 12.9,
-     "winChance": 3.2,
+     "podiumChance": 12.3,
+     "winChance": 3.1,
      "profileUrl": "https://worldathletics.org/athletes/saudi-arabia/abdulaziz-abdui-atafi-15017843",
      "hasPage": true
     },
@@ -803,8 +803,8 @@
      "rankingScore": 1120,
      "mark": "20.65",
      "markSeason": null,
-     "podiumChance": 10.2,
-     "winChance": 2.5,
+     "podiumChance": 10.4,
+     "winChance": 2.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14831887",
      "hasPage": true
     },
@@ -816,8 +816,8 @@
      "rankingScore": 1164,
      "mark": "20.36",
      "markSeason": null,
-     "podiumChance": 9.8,
-     "winChance": 2.4,
+     "podiumChance": 10.0,
+     "winChance": 2.5,
      "profileUrl": "https://worldathletics.org/athletes/japan/akira-hayashi-14980747",
      "hasPage": true
     },
@@ -829,8 +829,8 @@
      "rankingScore": 1127,
      "mark": "20.64",
      "markSeason": null,
-     "podiumChance": 8.3,
-     "winChance": 2.0,
+     "podiumChance": 8.4,
+     "winChance": 2.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14815786",
      "hasPage": true
     },
@@ -842,7 +842,7 @@
      "rankingScore": 1112,
      "mark": "20.70",
      "markSeason": null,
-     "podiumChance": 7.5,
+     "podiumChance": 7.3,
      "winChance": 1.8,
      "profileUrl": "https://worldathletics.org/athletes/oman/malham-al-balushi-15229516",
      "hasPage": true
@@ -855,7 +855,7 @@
      "rankingScore": 1143,
      "mark": "20.50",
      "markSeason": null,
-     "podiumChance": 6.4,
+     "podiumChance": 6.5,
      "winChance": 1.6,
      "profileUrl": "https://worldathletics.org/athletes/korea/joeljin-nwamadi-15029892",
      "hasPage": true
@@ -868,7 +868,7 @@
      "rankingScore": 1103,
      "mark": "20.84",
      "markSeason": null,
-     "podiumChance": 6.1,
+     "podiumChance": 6.2,
      "winChance": 1.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15030340",
      "hasPage": true
@@ -894,8 +894,8 @@
      "rankingScore": 1118,
      "mark": "20.66",
      "markSeason": null,
-     "podiumChance": 3.4,
-     "winChance": 0.8,
+     "podiumChance": 3.5,
+     "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/king-wai-yip-15041239",
      "hasPage": true
     },
@@ -907,7 +907,7 @@
      "rankingScore": 1117,
      "mark": "20.67",
      "markSeason": null,
-     "podiumChance": 3.0,
+     "podiumChance": 3.1,
      "winChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/united-arab-emirates/suleiman-abdulrahman-15122281",
      "hasPage": true
@@ -946,7 +946,7 @@
      "rankingScore": 1046,
      "mark": "21.17",
      "markSeason": null,
-     "podiumChance": 2.1,
+     "podiumChance": 2.0,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14603447",
      "hasPage": true
@@ -959,8 +959,8 @@
      "rankingScore": 1063,
      "mark": "21.03",
      "markSeason": null,
-     "podiumChance": 1.9,
-     "winChance": 0.5,
+     "podiumChance": 1.8,
+     "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14993176",
      "hasPage": true
     },
@@ -1011,8 +1011,8 @@
      "rankingScore": 1028,
      "mark": "21.27",
      "markSeason": null,
-     "podiumChance": 1.1,
-     "winChance": 0.3,
+     "podiumChance": 1.0,
+     "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/danish-iftikhar-muhammad-roslee-15115798",
      "hasPage": true
     },
@@ -1024,7 +1024,7 @@
      "rankingScore": 1047,
      "mark": "21.14",
      "markSeason": null,
-     "podiumChance": 1.0,
+     "podiumChance": 0.9,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/macao/lok-io-leong-15152686",
      "hasPage": true
@@ -1190,8 +1190,8 @@
      "rankingScore": 1206,
      "mark": "44.62",
      "markSeason": null,
-     "podiumChance": 71.7,
-     "winChance": 31.1,
+     "podiumChance": 71.6,
+     "winChance": 31.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915400",
      "hasPage": true
     },
@@ -1203,8 +1203,8 @@
      "rankingScore": 1200,
      "mark": "44.71",
      "markSeason": null,
-     "podiumChance": 53.2,
-     "winChance": 18.5,
+     "podiumChance": 53.6,
+     "winChance": 18.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14951608",
      "hasPage": true
     },
@@ -1216,8 +1216,8 @@
      "rankingScore": 1162,
      "mark": "45.26",
      "markSeason": null,
-     "podiumChance": 33.2,
-     "winChance": 10.2,
+     "podiumChance": 32.9,
+     "winChance": 10.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14694441",
      "hasPage": true
     },
@@ -1229,7 +1229,7 @@
      "rankingScore": 1181,
      "mark": "44.98",
      "markSeason": null,
-     "podiumChance": 25.9,
+     "podiumChance": 26.0,
      "winChance": 7.7,
      "profileUrl": "https://worldathletics.org/athletes/india/vishal-thennarasu-kayalvizhi-15010693",
      "hasPage": true
@@ -1242,8 +1242,8 @@
      "rankingScore": 1134,
      "mark": "45.67",
      "markSeason": null,
-     "podiumChance": 18.1,
-     "winChance": 5.2,
+     "podiumChance": 17.6,
+     "winChance": 5.1,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/kai-liu-15054835",
      "hasPage": true
     },
@@ -1255,7 +1255,7 @@
      "rankingScore": 1181,
      "mark": "44.98",
      "markSeason": null,
-     "podiumChance": 15.0,
+     "podiumChance": 15.1,
      "winChance": 4.3,
      "profileUrl": "https://worldathletics.org/athletes/japan/shinya-hayashi-14957327",
      "hasPage": true
@@ -1268,8 +1268,8 @@
      "rankingScore": 1162,
      "mark": "45.26",
      "markSeason": null,
-     "podiumChance": 12.5,
-     "winChance": 3.5,
+     "podiumChance": 12.8,
+     "winChance": 3.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14550918",
      "hasPage": true
     },
@@ -1281,8 +1281,8 @@
      "rankingScore": 1190,
      "mark": "44.85",
      "markSeason": null,
-     "podiumChance": 11.8,
-     "winChance": 3.3,
+     "podiumChance": 12.0,
+     "winChance": 3.4,
      "profileUrl": "https://worldathletics.org/athletes/united-arab-emirates/suleiman-abdulrahman-15122281",
      "hasPage": true
     },
@@ -1294,8 +1294,8 @@
      "rankingScore": 1135,
      "mark": "45.65",
      "markSeason": null,
-     "podiumChance": 10.7,
-     "winChance": 3.0,
+     "podiumChance": 10.4,
+     "winChance": 2.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14829976",
      "hasPage": true
     },
@@ -1320,8 +1320,8 @@
      "rankingScore": 1162,
      "mark": "45.26",
      "markSeason": null,
-     "podiumChance": 8.6,
-     "winChance": 2.4,
+     "podiumChance": 8.9,
+     "winChance": 2.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840992",
      "hasPage": true
     },
@@ -1333,8 +1333,8 @@
      "rankingScore": 1161,
      "mark": "45.27",
      "markSeason": null,
-     "podiumChance": 8.2,
-     "winChance": 2.3,
+     "podiumChance": 8.1,
+     "winChance": 2.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14882924",
      "hasPage": true
     },
@@ -1359,7 +1359,7 @@
      "rankingScore": 1130,
      "mark": "45.73",
      "markSeason": null,
-     "podiumChance": 4.1,
+     "podiumChance": 4.2,
      "winChance": 1.1,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/umar-osman-15024852",
      "hasPage": true
@@ -1372,8 +1372,8 @@
      "rankingScore": 1128,
      "mark": "45.76",
      "markSeason": null,
-     "podiumChance": 3.4,
-     "winChance": 0.9,
+     "podiumChance": 3.5,
+     "winChance": 1.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751017",
      "hasPage": true
     },
@@ -1385,7 +1385,7 @@
      "rankingScore": 1145,
      "mark": "45.5",
      "markSeason": null,
-     "podiumChance": 2.2,
+     "podiumChance": 2.3,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/kalhara-idupa-kuruwitage-15100654",
      "hasPage": true
@@ -1411,7 +1411,7 @@
      "rankingScore": 1088,
      "mark": "46.35",
      "markSeason": null,
-     "podiumChance": 1.8,
+     "podiumChance": 1.7,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/alaa-samuel-15318684",
      "hasPage": true
@@ -1622,8 +1622,8 @@
      "rankingScore": 1221,
      "mark": "1:43.45",
      "markSeason": null,
-     "podiumChance": 83.1,
-     "winChance": 40.3,
+     "podiumChance": 84.2,
+     "winChance": 41.6,
      "profileUrl": "https://worldathletics.org/athletes/japan/ko-ochiai-15005773",
      "hasPage": true
     },
@@ -1635,8 +1635,8 @@
      "rankingScore": 1174,
      "mark": "1:44.99",
      "markSeason": null,
-     "podiumChance": 48.0,
-     "winChance": 14.3,
+     "podiumChance": 47.9,
+     "winChance": 14.1,
      "profileUrl": "https://worldathletics.org/athletes/qatar/hatim-ait-oulghazi-14953833",
      "hasPage": true
     },
@@ -1648,8 +1648,8 @@
      "rankingScore": 1154,
      "mark": "1:45.64",
      "markSeason": null,
-     "podiumChance": 42.5,
-     "winChance": 12.3,
+     "podiumChance": 41.2,
+     "winChance": 11.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886009",
      "hasPage": true
     },
@@ -1661,8 +1661,8 @@
      "rankingScore": 1131,
      "mark": "1:46.40",
      "markSeason": null,
-     "podiumChance": 29.5,
-     "winChance": 8.0,
+     "podiumChance": 29.2,
+     "winChance": 7.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14598247",
      "hasPage": true
     },
@@ -1675,7 +1675,7 @@
      "mark": "1:47.23",
      "markSeason": null,
      "podiumChance": 26.0,
-     "winChance": 6.9,
+     "winChance": 6.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14988264",
      "hasPage": true
     },
@@ -1687,8 +1687,8 @@
      "rankingScore": 1115,
      "mark": "1:46.94",
      "markSeason": null,
-     "podiumChance": 21.9,
-     "winChance": 5.8,
+     "podiumChance": 22.1,
+     "winChance": 5.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14560030",
      "hasPage": true
     },
@@ -1700,7 +1700,7 @@
      "rankingScore": 1121,
      "mark": "1:46.73",
      "markSeason": null,
-     "podiumChance": 15.5,
+     "podiumChance": 15.6,
      "winChance": 4.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14882465",
      "hasPage": true
@@ -1713,7 +1713,7 @@
      "rankingScore": 1164,
      "mark": "1:45.31",
      "markSeason": null,
-     "podiumChance": 12.5,
+     "podiumChance": 12.7,
      "winChance": 3.2,
      "profileUrl": "https://worldathletics.org/athletes/japan/nanaki-manno-15027305",
      "hasPage": true
@@ -1726,8 +1726,8 @@
      "rankingScore": 1155,
      "mark": "1:45.62",
      "markSeason": null,
-     "podiumChance": 12.0,
-     "winChance": 3.1,
+     "podiumChance": 12.1,
+     "winChance": 3.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14750659",
      "hasPage": true
     },
@@ -1792,7 +1792,7 @@
      "mark": "1:50.92",
      "markSeason": null,
      "podiumChance": 0.6,
-     "winChance": 0.2,
+     "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843141",
      "hasPage": true
     },
@@ -1913,8 +1913,8 @@
      "rankingScore": 1162,
      "mark": "3:35.90",
      "markSeason": null,
-     "podiumChance": 69.2,
-     "winChance": 28.5,
+     "podiumChance": 70.0,
+     "winChance": 29.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14854857",
      "hasPage": true
     },
@@ -1926,8 +1926,8 @@
      "rankingScore": 1148,
      "mark": "3:36.96",
      "markSeason": null,
-     "podiumChance": 55.8,
-     "winChance": 19.7,
+     "podiumChance": 54.0,
+     "winChance": 18.8,
      "profileUrl": "https://worldathletics.org/athletes/qatar/mohamed-wahid-torech-15080066",
      "hasPage": true
     },
@@ -1939,8 +1939,8 @@
      "rankingScore": 1146,
      "mark": "3:37.09",
      "markSeason": null,
-     "podiumChance": 36.5,
-     "winChance": 11.3,
+     "podiumChance": 37.4,
+     "winChance": 11.6,
      "profileUrl": "https://worldathletics.org/athletes/qatar/mubarik-abdi-said-15140395",
      "hasPage": true
     },
@@ -1952,8 +1952,8 @@
      "rankingScore": 1113,
      "mark": "3:39.48",
      "markSeason": null,
-     "podiumChance": 34.5,
-     "winChance": 10.6,
+     "podiumChance": 33.9,
+     "winChance": 10.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14849638",
      "hasPage": true
     },
@@ -1965,7 +1965,7 @@
      "rankingScore": 1154,
      "mark": "3:36.53",
      "markSeason": null,
-     "podiumChance": 29.5,
+     "podiumChance": 29.6,
      "winChance": 8.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14841940",
      "hasPage": true
@@ -1978,7 +1978,7 @@
      "rankingScore": 1135,
      "mark": "3:37.87",
      "markSeason": null,
-     "podiumChance": 23.2,
+     "podiumChance": 23.3,
      "winChance": 6.8,
      "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839",
      "hasPage": true
@@ -1991,8 +1991,8 @@
      "rankingScore": 1140,
      "mark": "3:37.55",
      "markSeason": null,
-     "podiumChance": 16.4,
-     "winChance": 4.7,
+     "podiumChance": 16.9,
+     "winChance": 4.8,
      "profileUrl": "https://worldathletics.org/athletes/india/yoonus-shah-15051256",
      "hasPage": true
     },
@@ -2004,8 +2004,8 @@
      "rankingScore": 1139,
      "mark": "3:37.61",
      "markSeason": null,
-     "podiumChance": 10.8,
-     "winChance": 3.0,
+     "podiumChance": 10.9,
+     "winChance": 3.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14811434",
      "hasPage": true
     },
@@ -2017,7 +2017,7 @@
      "rankingScore": 1060,
      "mark": "3:43.51",
      "markSeason": null,
-     "podiumChance": 6.6,
+     "podiumChance": 6.5,
      "winChance": 1.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14847131",
      "hasPage": true
@@ -2030,7 +2030,7 @@
      "rankingScore": 1079,
      "mark": "3:42.07",
      "markSeason": null,
-     "podiumChance": 4.2,
+     "podiumChance": 4.3,
      "winChance": 1.2,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/tzu-chieh-chien-15054600",
      "hasPage": true
@@ -2056,7 +2056,7 @@
      "rankingScore": 1073,
      "mark": "3:42.52",
      "markSeason": null,
-     "podiumChance": 2.6,
+     "podiumChance": 2.5,
      "winChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/abdisamad-hirsi-15271604",
      "hasPage": true
@@ -2096,7 +2096,7 @@
      "mark": "3:46.83",
      "markSeason": null,
      "podiumChance": 1.3,
-     "winChance": 0.4,
+     "winChance": 0.3,
      "profileUrl": "https://worldathletics.org/athletes/islamic-republic-of-iran/hossein-nouri-14993293",
      "hasPage": true
     },
@@ -2287,7 +2287,7 @@
      "mark": "12:47.73",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 88.5,
+     "winChance": 88.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14695983",
      "hasPage": true
     },
@@ -2299,8 +2299,8 @@
      "rankingScore": 1195,
      "mark": "13:03.93",
      "markSeason": null,
-     "podiumChance": 91.4,
-     "winChance": 7.5,
+     "podiumChance": 91.0,
+     "winChance": 7.4,
      "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839",
      "hasPage": true
     },
@@ -2312,7 +2312,7 @@
      "rankingScore": 1150,
      "mark": "13:16.38",
      "markSeason": null,
-     "podiumChance": 48.3,
+     "podiumChance": 48.7,
      "winChance": 1.8,
      "profileUrl": "https://worldathletics.org/athletes/japan/tomonori-yamaguchi-14962831",
      "hasPage": true
@@ -2325,7 +2325,7 @@
      "rankingScore": 1158,
      "mark": "13:14.18",
      "markSeason": null,
-     "podiumChance": 42.4,
+     "podiumChance": 42.8,
      "winChance": 1.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14841940",
      "hasPage": true
@@ -2338,7 +2338,7 @@
      "rankingScore": 1083,
      "mark": "13:35.58",
      "markSeason": null,
-     "podiumChance": 8.8,
+     "podiumChance": 8.6,
      "winChance": 0.3,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/wenjie-wang-15074930",
      "hasPage": true
@@ -2390,7 +2390,7 @@
      "rankingScore": 987,
      "mark": "14:03.70",
      "markSeason": null,
-     "podiumChance": 0.9,
+     "podiumChance": 0.8,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14847131",
      "hasPage": true
@@ -2403,7 +2403,7 @@
      "rankingScore": 1007,
      "mark": "13:57.75",
      "markSeason": null,
-     "podiumChance": 0.4,
+     "podiumChance": 0.3,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/korea/jaewoo-park-15041277",
      "hasPage": true
@@ -2556,7 +2556,7 @@
      "mark": "27:20.11",
      "markSeason": null,
      "podiumChance": 98.9,
-     "winChance": 59.2,
+     "winChance": 59.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14854889",
      "hasPage": true
     },
@@ -2568,7 +2568,7 @@
      "rankingScore": 1188,
      "mark": "27:24.18",
      "markSeason": null,
-     "podiumChance": 95.3,
+     "podiumChance": 95.5,
      "winChance": 30.3,
      "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839",
      "hasPage": true
@@ -2581,8 +2581,8 @@
      "rankingScore": 1072,
      "mark": "28:39.22",
      "markSeason": null,
-     "podiumChance": 45.6,
-     "winChance": 4.6,
+     "podiumChance": 44.9,
+     "winChance": 4.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14851972",
      "hasPage": true
     },
@@ -2594,7 +2594,7 @@
      "rankingScore": 1151,
      "mark": "27:47.53",
      "markSeason": null,
-     "podiumChance": 32.4,
+     "podiumChance": 32.6,
      "winChance": 3.2,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/wenjie-wang-15074930",
      "hasPage": true
@@ -2607,7 +2607,7 @@
      "rankingScore": 1032,
      "mark": "29:06.58",
      "markSeason": 2025,
-     "podiumChance": 20.0,
+     "podiumChance": 20.2,
      "winChance": 2.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14695983",
      "hasPage": true
@@ -2620,7 +2620,7 @@
      "rankingScore": 1055,
      "mark": "28:50.94",
      "markSeason": null,
-     "podiumChance": 4.4,
+     "podiumChance": 4.3,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14933240",
      "hasPage": true
@@ -2633,8 +2633,8 @@
      "rankingScore": 1061,
      "mark": "28:46.82",
      "markSeason": 2025,
-     "podiumChance": 2.5,
-     "winChance": 0.2,
+     "podiumChance": 2.6,
+     "winChance": 0.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14479153",
      "hasPage": true
     },
@@ -2721,8 +2721,8 @@
      "rankingScore": 1210,
      "mark": "8:10.30",
      "markSeason": null,
-     "podiumChance": 99.7,
-     "winChance": 74.4,
+     "podiumChance": 99.6,
+     "winChance": 74.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14860379",
      "hasPage": true
     },
@@ -2734,8 +2734,8 @@
      "rankingScore": 1112,
      "mark": "8:32.39",
      "markSeason": null,
-     "podiumChance": 87.6,
-     "winChance": 13.4,
+     "podiumChance": 87.5,
+     "winChance": 13.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14778911",
      "hasPage": true
     },
@@ -2747,8 +2747,8 @@
      "rankingScore": 1173,
      "mark": "8:18.63",
      "markSeason": null,
-     "podiumChance": 77.3,
-     "winChance": 8.8,
+     "podiumChance": 77.9,
+     "winChance": 9.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14780168",
      "hasPage": true
     },
@@ -2760,7 +2760,7 @@
      "rankingScore": 1140,
      "mark": "8:25.89",
      "markSeason": null,
-     "podiumChance": 31.8,
+     "podiumChance": 31.2,
      "winChance": 3.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15036546",
      "hasPage": true
@@ -2786,7 +2786,7 @@
      "rankingScore": 1077,
      "mark": "8:40.37",
      "markSeason": null,
-     "podiumChance": 1.3,
+     "podiumChance": 1.4,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14910430",
      "hasPage": true
@@ -2856,8 +2856,8 @@
      "rankingScore": 1246,
      "mark": "13.05",
      "markSeason": null,
-     "podiumChance": 86.2,
-     "winChance": 38.4,
+     "podiumChance": 85.8,
+     "winChance": 38.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14854913",
      "hasPage": true
     },
@@ -2869,8 +2869,8 @@
      "rankingScore": 1255,
      "mark": "13.0",
      "markSeason": null,
-     "podiumChance": 75.2,
-     "winChance": 25.6,
+     "podiumChance": 75.1,
+     "winChance": 25.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14815041",
      "hasPage": true
     },
@@ -2882,8 +2882,8 @@
      "rankingScore": 1229,
      "mark": "13.13",
      "markSeason": null,
-     "podiumChance": 64.4,
-     "winChance": 18.8,
+     "podiumChance": 64.5,
+     "winChance": 18.9,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yuanjiang-chen-15034337",
      "hasPage": true
     },
@@ -2895,7 +2895,7 @@
      "rankingScore": 1212,
      "mark": "13.22",
      "markSeason": null,
-     "podiumChance": 22.5,
+     "podiumChance": 22.2,
      "winChance": 5.3,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/junxi-liu-14977766",
      "hasPage": true
@@ -2908,8 +2908,8 @@
      "rankingScore": 1202,
      "mark": "13.27",
      "markSeason": null,
-     "podiumChance": 13.6,
-     "winChance": 3.1,
+     "podiumChance": 14.0,
+     "winChance": 3.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14873420",
      "hasPage": true
     },
@@ -2921,8 +2921,8 @@
      "rankingScore": 1184,
      "mark": "13.37",
      "markSeason": null,
-     "podiumChance": 9.6,
-     "winChance": 2.2,
+     "podiumChance": 9.8,
+     "winChance": 2.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15003845",
      "hasPage": true
     },
@@ -2934,7 +2934,7 @@
      "rankingScore": 1147,
      "mark": "13.56",
      "markSeason": null,
-     "podiumChance": 8.7,
+     "podiumChance": 8.6,
      "winChance": 2.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14953418",
      "hasPage": true
@@ -2947,7 +2947,7 @@
      "rankingScore": 1159,
      "mark": "13.5",
      "markSeason": null,
-     "podiumChance": 6.7,
+     "podiumChance": 6.8,
      "winChance": 1.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532923",
      "hasPage": true
@@ -2960,7 +2960,7 @@
      "rankingScore": 1163,
      "mark": "13.48",
      "markSeason": null,
-     "podiumChance": 3.6,
+     "podiumChance": 3.7,
      "winChance": 0.8,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/yi-kai-lin-14964638",
      "hasPage": true
@@ -2973,7 +2973,7 @@
      "rankingScore": 1134,
      "mark": "13.63",
      "markSeason": null,
-     "podiumChance": 3.1,
+     "podiumChance": 3.2,
      "winChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14800386",
      "hasPage": true
@@ -3100,8 +3100,8 @@
      "rankingScore": 1243,
      "mark": "47.77",
      "markSeason": null,
-     "podiumChance": 97.9,
-     "winChance": 62.5,
+     "podiumChance": 97.7,
+     "winChance": 61.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752208",
      "hasPage": true
     },
@@ -3113,8 +3113,8 @@
      "rankingScore": 1254,
      "mark": "47.56",
      "markSeason": null,
-     "podiumChance": 81.3,
-     "winChance": 19.2,
+     "podiumChance": 81.4,
+     "winChance": 19.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14827001",
      "hasPage": true
     },
@@ -3126,8 +3126,8 @@
      "rankingScore": 1227,
      "mark": "48.09",
      "markSeason": null,
-     "podiumChance": 56.4,
-     "winChance": 9.1,
+     "podiumChance": 57.4,
+     "winChance": 9.4,
      "profileUrl": "https://worldathletics.org/athletes/japan/taiju-goto-15181238",
      "hasPage": true
     },
@@ -3139,8 +3139,8 @@
      "rankingScore": 1192,
      "mark": "48.77",
      "markSeason": null,
-     "podiumChance": 15.0,
-     "winChance": 2.1,
+     "podiumChance": 14.9,
+     "winChance": 2.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14917229",
      "hasPage": true
     },
@@ -3152,7 +3152,7 @@
      "rankingScore": 1213,
      "mark": "48.35",
      "markSeason": null,
-     "podiumChance": 12.8,
+     "podiumChance": 12.3,
      "winChance": 1.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14854957",
      "hasPage": true
@@ -3178,7 +3178,7 @@
      "rankingScore": 1177,
      "mark": "49.06",
      "markSeason": null,
-     "podiumChance": 10.0,
+     "podiumChance": 9.8,
      "winChance": 1.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14675336",
      "hasPage": true
@@ -3191,7 +3191,7 @@
      "rankingScore": 1179,
      "mark": "49.03",
      "markSeason": null,
-     "podiumChance": 7.8,
+     "podiumChance": 7.7,
      "winChance": 1.1,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/ayomal-akalanka-kuda-liyanage-15057792",
      "hasPage": true
@@ -3256,7 +3256,7 @@
      "rankingScore": 1091,
      "mark": "50.79",
      "markSeason": null,
-     "podiumChance": 0.6,
+     "podiumChance": 0.5,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/philippines/jazzpeer-arcenal-15109959",
      "hasPage": true
@@ -3357,8 +3357,8 @@
      "rankingScore": 1188,
      "mark": "2.31",
      "markSeason": null,
-     "podiumChance": 67.9,
-     "winChance": 26.7,
+     "podiumChance": 69.0,
+     "winChance": 27.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14675319",
      "hasPage": true
     },
@@ -3370,8 +3370,8 @@
      "rankingScore": 1152,
      "mark": "2.27",
      "markSeason": null,
-     "podiumChance": 52.5,
-     "winChance": 17.6,
+     "podiumChance": 52.1,
+     "winChance": 17.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14377312",
      "hasPage": true
     },
@@ -3383,8 +3383,8 @@
      "rankingScore": 1179,
      "mark": "2.3",
      "markSeason": null,
-     "podiumChance": 52.1,
-     "winChance": 17.5,
+     "podiumChance": 51.7,
+     "winChance": 17.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532326",
      "hasPage": true
     },
@@ -3396,8 +3396,8 @@
      "rankingScore": 1170,
      "mark": "2.29",
      "markSeason": 2025,
-     "podiumChance": 49.2,
-     "winChance": 16.1,
+     "podiumChance": 49.5,
+     "winChance": 16.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14663940",
      "hasPage": true
     },
@@ -3409,8 +3409,8 @@
      "rankingScore": 1135,
      "mark": "2.25",
      "markSeason": null,
-     "podiumChance": 25.2,
-     "winChance": 7.3,
+     "podiumChance": 25.0,
+     "winChance": 7.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14845645",
      "hasPage": true
     },
@@ -3422,8 +3422,8 @@
      "rankingScore": 1064,
      "mark": "2.17",
      "markSeason": null,
-     "podiumChance": 18.6,
-     "winChance": 5.3,
+     "podiumChance": 18.2,
+     "winChance": 5.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14845644",
      "hasPage": true
     },
@@ -3435,7 +3435,7 @@
      "rankingScore": 1135,
      "mark": "2.25",
      "markSeason": null,
-     "podiumChance": 12.5,
+     "podiumChance": 12.6,
      "winChance": 3.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855082",
      "hasPage": true
@@ -3448,7 +3448,7 @@
      "rankingScore": 1152,
      "mark": "2.27",
      "markSeason": null,
-     "podiumChance": 12.0,
+     "podiumChance": 12.1,
      "winChance": 3.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14768579",
      "hasPage": true
@@ -3461,7 +3461,7 @@
      "rankingScore": 1117,
      "mark": "2.23",
      "markSeason": null,
-     "podiumChance": 4.1,
+     "podiumChance": 4.0,
      "winChance": 1.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14914460",
      "hasPage": true
@@ -3474,8 +3474,8 @@
      "rankingScore": 1072,
      "mark": "2.18",
      "markSeason": null,
-     "podiumChance": 2.8,
-     "winChance": 0.8,
+     "podiumChance": 2.7,
+     "winChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840450",
      "hasPage": true
     },
@@ -3487,7 +3487,7 @@
      "rankingScore": 1117,
      "mark": "2.23",
      "markSeason": null,
-     "podiumChance": 2.3,
+     "podiumChance": 2.4,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/tharusha-dinushan-agampodi-15150887",
      "hasPage": true
@@ -3570,8 +3570,8 @@
      "rankingScore": 1239,
      "mark": "5.9",
      "markSeason": null,
-     "podiumChance": 68.2,
-     "winChance": 19.0,
+     "podiumChance": 68.1,
+     "winChance": 18.9,
      "profileUrl": "https://worldathletics.org/athletes/qatar/seifeldin-abdelsalam-15039267",
      "hasPage": true
     },
@@ -3583,8 +3583,8 @@
      "rankingScore": 1228,
      "mark": "5.86",
      "markSeason": null,
-     "podiumChance": 61.7,
-     "winChance": 16.0,
+     "podiumChance": 62.1,
+     "winChance": 16.1,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/chenyang-li-14974804",
      "hasPage": true
     },
@@ -3596,7 +3596,7 @@
      "rankingScore": 1192,
      "mark": "5.73",
      "markSeason": null,
-     "podiumChance": 29.3,
+     "podiumChance": 29.4,
      "winChance": 6.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14462142",
      "hasPage": true
@@ -3609,7 +3609,7 @@
      "rankingScore": 1157,
      "mark": "5.6",
      "markSeason": null,
-     "podiumChance": 15.5,
+     "podiumChance": 15.6,
      "winChance": 3.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646774",
      "hasPage": true
@@ -3622,7 +3622,7 @@
      "rankingScore": 1184,
      "mark": "5.7",
      "markSeason": null,
-     "podiumChance": 15.4,
+     "podiumChance": 15.3,
      "winChance": 3.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14523471",
      "hasPage": true
@@ -3635,7 +3635,7 @@
      "rankingScore": 1157,
      "mark": "5.6",
      "markSeason": null,
-     "podiumChance": 6.5,
+     "podiumChance": 6.3,
      "winChance": 1.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714512",
      "hasPage": true
@@ -3655,19 +3655,6 @@
     },
     {
      "rank": 9,
-     "name": "Dev Kumar MEENA",
-     "nat": "IND",
-     "qualifiedBy": null,
-     "rankingScore": 1119,
-     "mark": "5.46",
-     "markSeason": null,
-     "podiumChance": 2.7,
-     "winChance": 0.5,
-     "profileUrl": "https://worldathletics.org/athletes/india/dev-kumar-meena-15036733",
-     "hasPage": true
-    },
-    {
-     "rank": 10,
      "name": "Yan-Han WU",
      "nat": "TPE",
      "qualifiedBy": null,
@@ -3677,6 +3664,19 @@
      "podiumChance": 2.7,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/yan-han-wu-15009038",
+     "hasPage": true
+    },
+    {
+     "rank": 10,
+     "name": "Dev Kumar MEENA",
+     "nat": "IND",
+     "qualifiedBy": null,
+     "rankingScore": 1119,
+     "mark": "5.46",
+     "markSeason": null,
+     "podiumChance": 2.6,
+     "winChance": 0.5,
+     "profileUrl": "https://worldathletics.org/athletes/india/dev-kumar-meena-15036733",
      "hasPage": true
     },
     {
@@ -3757,8 +3757,8 @@
      "rankingScore": 1225,
      "mark": "8.38",
      "markSeason": null,
-     "podiumChance": 81.8,
-     "winChance": 38.0,
+     "podiumChance": 82.3,
+     "winChance": 38.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734673",
      "hasPage": true
     },
@@ -3770,8 +3770,8 @@
      "rankingScore": 1201,
      "mark": "8.29",
      "markSeason": null,
-     "podiumChance": 49.1,
-     "winChance": 14.8,
+     "podiumChance": 48.8,
+     "winChance": 14.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14934300",
      "hasPage": true
     },
@@ -3783,8 +3783,8 @@
      "rankingScore": 1186,
      "mark": "8.22",
      "markSeason": null,
-     "podiumChance": 47.0,
-     "winChance": 13.9,
+     "podiumChance": 47.5,
+     "winChance": 14.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14719623",
      "hasPage": true
     },
@@ -3796,8 +3796,8 @@
      "rankingScore": 1175,
      "mark": "8.14",
      "markSeason": null,
-     "podiumChance": 45.4,
-     "winChance": 13.3,
+     "podiumChance": 45.2,
+     "winChance": 13.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714402",
      "hasPage": true
     },
@@ -3809,8 +3809,8 @@
      "rankingScore": 1217,
      "mark": "8.33",
      "markSeason": null,
-     "podiumChance": 24.7,
-     "winChance": 6.6,
+     "podiumChance": 25.2,
+     "winChance": 6.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884026",
      "hasPage": true
     },
@@ -3822,7 +3822,7 @@
      "rankingScore": 1129,
      "mark": "7.96",
      "markSeason": null,
-     "podiumChance": 20.9,
+     "podiumChance": 21.1,
      "winChance": 5.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855118",
      "hasPage": true
@@ -3835,8 +3835,8 @@
      "rankingScore": 1203,
      "mark": "8.3",
      "markSeason": null,
-     "podiumChance": 13.2,
-     "winChance": 3.4,
+     "podiumChance": 12.7,
+     "winChance": 3.2,
      "profileUrl": "https://worldathletics.org/athletes/india/shahnavaz-khan-15139285",
      "hasPage": true
     },
@@ -3848,8 +3848,8 @@
      "rankingScore": 1114,
      "mark": "7.89",
      "markSeason": null,
-     "podiumChance": 10.5,
-     "winChance": 2.7,
+     "podiumChance": 10.1,
+     "winChance": 2.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14831893",
      "hasPage": true
     },
@@ -3894,19 +3894,6 @@
     },
     {
      "rank": 12,
-     "name": "Pak Hang WONG",
-     "nat": "HKG",
-     "qualifiedBy": null,
-     "rankingScore": 1039,
-     "mark": "7.53",
-     "markSeason": null,
-     "podiumChance": 0.8,
-     "winChance": 0.2,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14886721",
-     "hasPage": true
-    },
-    {
-     "rank": 13,
      "name": "Janry UBAS",
      "nat": "PHI",
      "qualifiedBy": null,
@@ -3919,6 +3906,19 @@
      "hasPage": true
     },
     {
+     "rank": 13,
+     "name": "Pak Hang WONG",
+     "nat": "HKG",
+     "qualifiedBy": null,
+     "rankingScore": 1039,
+     "mark": "7.53",
+     "markSeason": null,
+     "podiumChance": 0.7,
+     "winChance": 0.2,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14886721",
+     "hasPage": true
+    },
+    {
      "rank": 14,
      "name": "J.H.G. SAMPATH",
      "nat": "SRI",
@@ -3926,7 +3926,7 @@
      "rankingScore": 1040,
      "mark": "7.55",
      "markSeason": null,
-     "podiumChance": 0.5,
+     "podiumChance": 0.6,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759769",
      "hasPage": true
@@ -4030,8 +4030,8 @@
      "rankingScore": 1207,
      "mark": "17.4",
      "markSeason": null,
-     "podiumChance": 91.5,
-     "winChance": 45.1,
+     "podiumChance": 92.0,
+     "winChance": 46.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14839808",
      "hasPage": true
     },
@@ -4043,8 +4043,8 @@
      "rankingScore": 1178,
      "mark": "17.08",
      "markSeason": null,
-     "podiumChance": 79.8,
-     "winChance": 26.5,
+     "podiumChance": 79.7,
+     "winChance": 26.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14841034",
      "hasPage": true
     },
@@ -4056,8 +4056,8 @@
      "rankingScore": 1158,
      "mark": "16.94",
      "markSeason": null,
-     "podiumChance": 48.8,
-     "winChance": 11.2,
+     "podiumChance": 48.6,
+     "winChance": 11.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759670",
      "hasPage": true
     },
@@ -4069,8 +4069,8 @@
      "rankingScore": 1176,
      "mark": "17.11",
      "markSeason": null,
-     "podiumChance": 42.9,
-     "winChance": 9.6,
+     "podiumChance": 42.8,
+     "winChance": 9.4,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yinglong-ma-14974783",
      "hasPage": true
     },
@@ -4121,7 +4121,7 @@
      "rankingScore": 1057,
      "mark": "15.97",
      "markSeason": null,
-     "podiumChance": 3.7,
+     "podiumChance": 3.6,
      "winChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/manh-hung-ho-trong-15041250",
      "hasPage": true
@@ -4173,7 +4173,7 @@
      "rankingScore": 991,
      "mark": "15.31",
      "markSeason": null,
-     "podiumChance": 0.3,
+     "podiumChance": 0.4,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14215966",
      "hasPage": true
@@ -4230,8 +4230,8 @@
      "rankingScore": 1182,
      "mark": "21.03",
      "markSeason": null,
-     "podiumChance": 89.6,
-     "winChance": 47.1,
+     "podiumChance": 90.0,
+     "winChance": 47.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14624702",
      "hasPage": true
     },
@@ -4243,8 +4243,8 @@
      "rankingScore": 1098,
      "mark": "19.61",
      "markSeason": null,
-     "podiumChance": 57.2,
-     "winChance": 16.0,
+     "podiumChance": 55.0,
+     "winChance": 15.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14902548",
      "hasPage": true
     },
@@ -4256,8 +4256,8 @@
      "rankingScore": 1178,
      "mark": "20.95",
      "markSeason": null,
-     "podiumChance": 51.6,
-     "winChance": 13.7,
+     "podiumChance": 52.1,
+     "winChance": 13.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14820722",
      "hasPage": true
     },
@@ -4269,8 +4269,8 @@
      "rankingScore": 1150,
      "mark": "20.49",
      "markSeason": null,
-     "podiumChance": 23.7,
-     "winChance": 5.5,
+     "podiumChance": 24.4,
+     "winChance": 5.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734581",
      "hasPage": true
     },
@@ -4282,8 +4282,8 @@
      "rankingScore": 1106,
      "mark": "19.75",
      "markSeason": null,
-     "podiumChance": 20.0,
-     "winChance": 4.6,
+     "podiumChance": 19.8,
+     "winChance": 4.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14847215",
      "hasPage": true
     },
@@ -4295,7 +4295,7 @@
      "rankingScore": 1086,
      "mark": "19.41",
      "markSeason": null,
-     "podiumChance": 16.8,
+     "podiumChance": 16.7,
      "winChance": 3.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14375337",
      "hasPage": true
@@ -4308,7 +4308,7 @@
      "rankingScore": 1091,
      "mark": "19.5",
      "markSeason": null,
-     "podiumChance": 11.4,
+     "podiumChance": 11.6,
      "winChance": 2.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15007014",
      "hasPage": true
@@ -4321,8 +4321,8 @@
      "rankingScore": 1084,
      "mark": "19.39",
      "markSeason": null,
-     "podiumChance": 11.3,
-     "winChance": 2.5,
+     "podiumChance": 11.5,
+     "winChance": 2.6,
      "profileUrl": "https://worldathletics.org/athletes/islamic-republic-of-iran/hassan-ajamibakhtiarvand-15167657",
      "hasPage": true
     },
@@ -4334,7 +4334,7 @@
      "rankingScore": 1114,
      "mark": "19.88",
      "markSeason": null,
-     "podiumChance": 10.3,
+     "podiumChance": 10.5,
      "winChance": 2.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14705946",
      "hasPage": true
@@ -4360,7 +4360,7 @@
      "rankingScore": 1067,
      "mark": "19.1",
      "markSeason": null,
-     "podiumChance": 3.9,
+     "podiumChance": 4.0,
      "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/korea/sihoon-park-14949060",
      "hasPage": true
@@ -4402,7 +4402,7 @@
      "mark": "66.39",
      "markSeason": null,
      "podiumChance": 99.8,
-     "winChance": 83.6,
+     "winChance": 83.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14638595",
      "hasPage": true
     },
@@ -4414,8 +4414,8 @@
      "rankingScore": 1159,
      "mark": "65.38",
      "markSeason": null,
-     "podiumChance": 54.5,
-     "winChance": 4.7,
+     "podiumChance": 54.0,
+     "winChance": 4.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14649141",
      "hasPage": true
     },
@@ -4427,8 +4427,8 @@
      "rankingScore": 1094,
      "mark": "61.83",
      "markSeason": null,
-     "podiumChance": 54.4,
-     "winChance": 4.7,
+     "podiumChance": 53.6,
+     "winChance": 4.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14889073",
      "hasPage": true
     },
@@ -4440,8 +4440,8 @@
      "rankingScore": 1113,
      "mark": "62.87",
      "markSeason": null,
-     "podiumChance": 44.9,
-     "winChance": 3.6,
+     "podiumChance": 46.0,
+     "winChance": 3.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14553217",
      "hasPage": true
     },
@@ -4466,7 +4466,7 @@
      "rankingScore": 1043,
      "mark": "59.03",
      "markSeason": null,
-     "podiumChance": 8.3,
+     "podiumChance": 8.1,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752921",
      "hasPage": true
@@ -4479,7 +4479,7 @@
      "rankingScore": 1037,
      "mark": "58.72",
      "markSeason": null,
-     "podiumChance": 7.4,
+     "podiumChance": 7.6,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/aziz-nurillaev-15001589",
      "hasPage": true
@@ -4492,7 +4492,7 @@
      "rankingScore": 1009,
      "mark": "57.19",
      "markSeason": 2025,
-     "podiumChance": 7.0,
+     "podiumChance": 7.1,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14498470",
      "hasPage": true
@@ -4505,7 +4505,7 @@
      "rankingScore": 1020,
      "mark": "57.79",
      "markSeason": null,
-     "podiumChance": 5.2,
+     "podiumChance": 5.3,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14878452",
      "hasPage": true
@@ -4518,7 +4518,7 @@
      "rankingScore": 1014,
      "mark": "57.49",
      "markSeason": null,
-     "podiumChance": 2.8,
+     "podiumChance": 2.6,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/qatar/mahamat-gueme-15027462",
      "hasPage": true
@@ -4562,8 +4562,8 @@
      "rankingScore": 1116,
      "mark": "74.44",
      "markSeason": 2025,
-     "podiumChance": 69.8,
-     "winChance": 27.6,
+     "podiumChance": 70.1,
+     "winChance": 27.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14427108",
      "hasPage": true
     },
@@ -4575,8 +4575,8 @@
      "rankingScore": 1108,
      "mark": "73.93",
      "markSeason": null,
-     "podiumChance": 63.8,
-     "winChance": 23.4,
+     "podiumChance": 63.4,
+     "winChance": 23.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14788582",
      "hasPage": true
     },
@@ -4588,8 +4588,8 @@
      "rankingScore": 1108,
      "mark": "73.93",
      "markSeason": null,
-     "podiumChance": 46.4,
-     "winChance": 14.6,
+     "podiumChance": 47.1,
+     "winChance": 14.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14750938",
      "hasPage": true
     },
@@ -4601,8 +4601,8 @@
      "rankingScore": 1068,
      "mark": "71.31",
      "markSeason": null,
-     "podiumChance": 34.2,
-     "winChance": 10.1,
+     "podiumChance": 33.6,
+     "winChance": 9.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14523902",
      "hasPage": true
     },
@@ -4614,8 +4614,8 @@
      "rankingScore": 1090,
      "mark": "72.77",
      "markSeason": null,
-     "podiumChance": 30.0,
-     "winChance": 8.7,
+     "podiumChance": 29.7,
+     "winChance": 8.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855216",
      "hasPage": true
     },
@@ -4627,8 +4627,8 @@
      "rankingScore": 1068,
      "mark": "71.33",
      "markSeason": null,
-     "podiumChance": 27.0,
-     "winChance": 7.8,
+     "podiumChance": 26.8,
+     "winChance": 7.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915947",
      "hasPage": true
     },
@@ -4640,7 +4640,7 @@
      "rankingScore": 1093,
      "mark": "72.93",
      "markSeason": null,
-     "podiumChance": 13.4,
+     "podiumChance": 13.7,
      "winChance": 3.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14720601",
      "hasPage": true
@@ -4653,8 +4653,8 @@
      "rankingScore": 1057,
      "mark": "70.64",
      "markSeason": null,
-     "podiumChance": 5.8,
-     "winChance": 1.5,
+     "podiumChance": 5.9,
+     "winChance": 1.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734787",
      "hasPage": true
     },
@@ -4712,19 +4712,6 @@
     },
     {
      "rank": 13,
-     "name": "Ibrahim ABDELRAHMAN",
-     "nat": "QAT",
-     "qualifiedBy": null,
-     "rankingScore": 957,
-     "mark": "64.12",
-     "markSeason": null,
-     "podiumChance": 0.3,
-     "winChance": 0.1,
-     "profileUrl": "https://worldathletics.org/athletes/qatar/ibrahim-abdelrahman-15102628",
-     "hasPage": true
-    },
-    {
-     "rank": 14,
      "name": "Sadat Merzuqi AJISAN",
      "nat": "MAS",
      "qualifiedBy": null,
@@ -4734,6 +4721,19 @@
      "podiumChance": 0.3,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840456",
+     "hasPage": true
+    },
+    {
+     "rank": 14,
+     "name": "Ibrahim ABDELRAHMAN",
+     "nat": "QAT",
+     "qualifiedBy": null,
+     "rankingScore": 957,
+     "mark": "64.12",
+     "markSeason": null,
+     "podiumChance": 0.3,
+     "winChance": 0.1,
+     "profileUrl": "https://worldathletics.org/athletes/qatar/ibrahim-abdelrahman-15102628",
      "hasPage": true
     },
     {
@@ -4806,8 +4806,8 @@
      "rankingScore": 1211,
      "mark": "87.68",
      "markSeason": null,
-     "podiumChance": 81.9,
-     "winChance": 2.8,
+     "podiumChance": 83.1,
+     "winChance": 2.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14740932",
      "hasPage": true
     },
@@ -4819,7 +4819,7 @@
      "rankingScore": 1178,
      "mark": "85.41",
      "markSeason": null,
-     "podiumChance": 35.6,
+     "podiumChance": 36.3,
      "winChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818383",
      "hasPage": true
@@ -4832,8 +4832,8 @@
      "rankingScore": 1082,
      "mark": "78.63",
      "markSeason": null,
-     "podiumChance": 33.2,
-     "winChance": 0.7,
+     "podiumChance": 31.2,
+     "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14698105",
      "hasPage": true
     },
@@ -4845,7 +4845,7 @@
      "rankingScore": 1130,
      "mark": "82.05",
      "markSeason": null,
-     "podiumChance": 25.0,
+     "podiumChance": 24.9,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14703266",
      "hasPage": true
@@ -4858,8 +4858,8 @@
      "rankingScore": 1111,
      "mark": "80.66",
      "markSeason": null,
-     "podiumChance": 12.8,
-     "winChance": 0.3,
+     "podiumChance": 12.9,
+     "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14671060",
      "hasPage": true
     },
@@ -4884,7 +4884,7 @@
      "rankingScore": 1106,
      "mark": "80.35",
      "markSeason": null,
-     "podiumChance": 3.7,
+     "podiumChance": 3.8,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14910385",
      "hasPage": true
@@ -4923,26 +4923,13 @@
      "rankingScore": 1031,
      "mark": "75.07",
      "markSeason": null,
-     "podiumChance": 0.1,
+     "podiumChance": 0.2,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/kazakhstan/alexey-khlystov-14971612",
      "hasPage": true
     },
     {
      "rank": 12,
-     "name": "Abdulrahman AL AZEMI",
-     "nat": "KUW",
-     "qualifiedBy": null,
-     "rankingScore": 935,
-     "mark": "68.27",
-     "markSeason": null,
-     "podiumChance": 0.1,
-     "winChance": 0.0,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14850905",
-     "hasPage": true
-    },
-    {
-     "rank": 13,
      "name": "Abdul HAFIZ",
      "nat": "INA",
      "qualifiedBy": null,
@@ -4952,6 +4939,19 @@
      "podiumChance": 0.1,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14651476",
+     "hasPage": true
+    },
+    {
+     "rank": 13,
+     "name": "Abdulrahman AL AZEMI",
+     "nat": "KUW",
+     "qualifiedBy": null,
+     "rankingScore": 935,
+     "mark": "68.27",
+     "markSeason": null,
+     "podiumChance": 0.1,
+     "winChance": 0.0,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14850905",
      "hasPage": true
     },
     {
@@ -5027,8 +5027,8 @@
      "rankingScore": 1182,
      "mark": "11.08",
      "markSeason": null,
-     "podiumChance": 85.3,
-     "winChance": 43.9,
+     "podiumChance": 85.0,
+     "winChance": 43.6,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yujie-chen-15138450",
      "hasPage": true
     },
@@ -5040,8 +5040,8 @@
      "rankingScore": 1167,
      "mark": "11.15",
      "markSeason": null,
-     "podiumChance": 45.0,
-     "winChance": 13.0,
+     "podiumChance": 45.2,
+     "winChance": 13.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14541241",
      "hasPage": true
     },
@@ -5053,8 +5053,8 @@
      "rankingScore": 1148,
      "mark": "11.24",
      "markSeason": null,
-     "podiumChance": 32.3,
-     "winChance": 8.6,
+     "podiumChance": 32.4,
+     "winChance": 8.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14472153",
      "hasPage": true
     },
@@ -5066,35 +5066,35 @@
      "rankingScore": 1135,
      "mark": "11.3",
      "markSeason": null,
-     "podiumChance": 28.7,
-     "winChance": 7.6,
+     "podiumChance": 28.2,
+     "winChance": 7.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14576460",
      "hasPage": true
     },
     {
      "rank": 5,
-     "name": "Midori MIKASE",
-     "nat": "JPN",
-     "qualifiedBy": null,
-     "rankingScore": 1129,
-     "mark": "11.33",
-     "markSeason": null,
-     "podiumChance": 17.8,
-     "winChance": 4.5,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14806541",
-     "hasPage": true
-    },
-    {
-     "rank": 6,
      "name": "Zion CORRALES-NELSON",
      "nat": "PHI",
      "qualifiedBy": null,
      "rankingScore": 1159,
      "mark": "11.19",
      "markSeason": null,
-     "podiumChance": 17.0,
-     "winChance": 4.3,
+     "podiumChance": 17.8,
+     "winChance": 4.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14581580",
+     "hasPage": true
+    },
+    {
+     "rank": 6,
+     "name": "Midori MIKASE",
+     "nat": "JPN",
+     "qualifiedBy": null,
+     "rankingScore": 1129,
+     "mark": "11.33",
+     "markSeason": null,
+     "podiumChance": 17.7,
+     "winChance": 4.5,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14806541",
      "hasPage": true
     },
     {
@@ -5105,7 +5105,7 @@
      "rankingScore": 1120,
      "mark": "11.37",
      "markSeason": null,
-     "podiumChance": 14.9,
+     "podiumChance": 14.8,
      "winChance": 3.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14817771",
      "hasPage": true
@@ -5118,8 +5118,8 @@
      "rankingScore": 1099,
      "mark": "11.47",
      "markSeason": null,
-     "podiumChance": 9.5,
-     "winChance": 2.3,
+     "podiumChance": 9.6,
+     "winChance": 2.4,
      "profileUrl": "https://worldathletics.org/athletes/qatar/dana-noor-salem-15210621",
      "hasPage": true
     },
@@ -5131,8 +5131,8 @@
      "rankingScore": 1095,
      "mark": "11.49",
      "markSeason": null,
-     "podiumChance": 8.8,
-     "winChance": 2.2,
+     "podiumChance": 8.7,
+     "winChance": 2.1,
      "profileUrl": "https://worldathletics.org/athletes/thailand/jirapat-khanonta-15067765",
      "hasPage": true
     },
@@ -5157,8 +5157,8 @@
      "rankingScore": 1108,
      "mark": "11.43",
      "markSeason": null,
-     "podiumChance": 7.1,
-     "winChance": 1.7,
+     "podiumChance": 7.3,
+     "winChance": 1.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840478",
      "hasPage": true
     },
@@ -5170,8 +5170,8 @@
      "rankingScore": 1083,
      "mark": "11.55",
      "markSeason": null,
-     "podiumChance": 5.5,
-     "winChance": 1.4,
+     "podiumChance": 5.4,
+     "winChance": 1.3,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/raihanah-garoubah-15185137",
      "hasPage": true
     },
@@ -5190,19 +5190,6 @@
     },
     {
      "rank": 14,
-     "name": "Awatif Sabah ABDULRAHMAN",
-     "nat": "QAT",
-     "qualifiedBy": null,
-     "rankingScore": 1042,
-     "mark": "11.75",
-     "markSeason": null,
-     "podiumChance": 2.3,
-     "winChance": 0.6,
-     "profileUrl": "https://worldathletics.org/athletes/qatar/awatif-sabah-abdulrahman-15210622",
-     "hasPage": true
-    },
-    {
-     "rank": 15,
      "name": "Elizabeth-Ann Shee Ru TAN",
      "nat": "SGP",
      "qualifiedBy": null,
@@ -5210,21 +5197,34 @@
      "mark": "11.68",
      "markSeason": null,
      "podiumChance": 2.3,
-     "winChance": 0.5,
+     "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14845615",
      "hasPage": true
     },
     {
-     "rank": 16,
+     "rank": 15,
      "name": "Yanjun LIAO",
      "nat": "TPE",
      "qualifiedBy": null,
      "rankingScore": 1066,
      "mark": "11.63",
      "markSeason": null,
-     "podiumChance": 2.2,
+     "podiumChance": 2.3,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14747609",
+     "hasPage": true
+    },
+    {
+     "rank": 16,
+     "name": "Awatif Sabah ABDULRAHMAN",
+     "nat": "QAT",
+     "qualifiedBy": null,
+     "rankingScore": 1042,
+     "mark": "11.75",
+     "markSeason": null,
+     "podiumChance": 2.2,
+     "winChance": 0.5,
+     "profileUrl": "https://worldathletics.org/athletes/qatar/awatif-sabah-abdulrahman-15210622",
      "hasPage": true
     },
     {
@@ -5235,7 +5235,7 @@
      "rankingScore": 1050,
      "mark": "11.71",
      "markSeason": null,
-     "podiumChance": 2.1,
+     "podiumChance": 2.0,
      "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/malaysia/izzatul-musfirah-ahmad-kamal-azira-15150412",
      "hasPage": true
@@ -5281,19 +5281,6 @@
     },
     {
      "rank": 21,
-     "name": "Mudhawi ALSHAMMARI",
-     "nat": "KUW",
-     "qualifiedBy": null,
-     "rankingScore": 1013,
-     "mark": "11.89",
-     "markSeason": null,
-     "podiumChance": 1.0,
-     "winChance": 0.2,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14597370",
-     "hasPage": true
-    },
-    {
-     "rank": 22,
      "name": "Nur Aishah Rofina ALING",
      "nat": "MAS",
      "qualifiedBy": null,
@@ -5306,7 +5293,7 @@
      "hasPage": true
     },
     {
-     "rank": 23,
+     "rank": 22,
      "name": "Pui Yi YU",
      "nat": "HKG",
      "qualifiedBy": null,
@@ -5319,6 +5306,19 @@
      "hasPage": true
     },
     {
+     "rank": 23,
+     "name": "Mudhawi ALSHAMMARI",
+     "nat": "KUW",
+     "qualifiedBy": null,
+     "rankingScore": 1013,
+     "mark": "11.89",
+     "markSeason": null,
+     "podiumChance": 1.0,
+     "winChance": 0.2,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14597370",
+     "hasPage": true
+    },
+    {
      "rank": 24,
      "name": "Laylo ALLABERGANOVA",
      "nat": "UZB",
@@ -5326,7 +5326,7 @@
      "rankingScore": 1052,
      "mark": "11.76",
      "markSeason": null,
-     "podiumChance": 0.7,
+     "podiumChance": 0.8,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/laylo-allaberganova-14972673",
      "hasPage": true
@@ -5456,8 +5456,8 @@
      "rankingScore": 1157,
      "mark": "22.78",
      "markSeason": null,
-     "podiumChance": 81.4,
-     "winChance": 38.9,
+     "podiumChance": 81.7,
+     "winChance": 39.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14472153",
      "hasPage": true
     },
@@ -5469,8 +5469,8 @@
      "rankingScore": 1098,
      "mark": "23.36",
      "markSeason": null,
-     "podiumChance": 55.1,
-     "winChance": 17.8,
+     "podiumChance": 55.6,
+     "winChance": 18.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14541241",
      "hasPage": true
     },
@@ -5482,8 +5482,8 @@
      "rankingScore": 1154,
      "mark": "22.81",
      "markSeason": null,
-     "podiumChance": 34.4,
-     "winChance": 9.7,
+     "podiumChance": 33.8,
+     "winChance": 9.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14817771",
      "hasPage": true
     },
@@ -5495,7 +5495,7 @@
      "rankingScore": 1111,
      "mark": "23.23",
      "markSeason": null,
-     "podiumChance": 21.5,
+     "podiumChance": 21.3,
      "winChance": 5.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14858889",
      "hasPage": true
@@ -5521,8 +5521,8 @@
      "rankingScore": 1107,
      "mark": "23.36",
      "markSeason": null,
-     "podiumChance": 16.9,
-     "winChance": 4.4,
+     "podiumChance": 16.6,
+     "winChance": 4.3,
      "profileUrl": "https://worldathletics.org/athletes/bahrain/raihanah-garoubah-15185137",
      "hasPage": true
     },
@@ -5534,8 +5534,8 @@
      "rankingScore": 1121,
      "mark": "23.14",
      "markSeason": null,
-     "podiumChance": 15.8,
-     "winChance": 4.1,
+     "podiumChance": 16.1,
+     "winChance": 4.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14873478",
      "hasPage": true
     },
@@ -5547,7 +5547,7 @@
      "rankingScore": 1085,
      "mark": "23.5",
      "markSeason": null,
-     "podiumChance": 10.9,
+     "podiumChance": 10.8,
      "winChance": 2.8,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-cam-tu-le-15110503",
      "hasPage": true
@@ -5560,8 +5560,8 @@
      "rankingScore": 1088,
      "mark": "23.47",
      "markSeason": null,
-     "podiumChance": 8.7,
-     "winChance": 2.2,
+     "podiumChance": 8.8,
+     "winChance": 2.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14581580",
      "hasPage": true
     },
@@ -5586,8 +5586,8 @@
      "rankingScore": 1096,
      "mark": "23.4",
      "markSeason": null,
-     "podiumChance": 6.0,
-     "winChance": 1.5,
+     "podiumChance": 6.1,
+     "winChance": 1.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14971180",
      "hasPage": true
     },
@@ -5599,7 +5599,7 @@
      "rankingScore": 1070,
      "mark": "23.74",
      "markSeason": null,
-     "podiumChance": 5.2,
+     "podiumChance": 5.1,
      "winChance": 1.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840478",
      "hasPage": true
@@ -5664,7 +5664,7 @@
      "rankingScore": 1056,
      "mark": "23.79",
      "markSeason": 2025,
-     "podiumChance": 1.7,
+     "podiumChance": 1.8,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15150425",
      "hasPage": true
@@ -5703,7 +5703,7 @@
      "rankingScore": 1045,
      "mark": "23.91",
      "markSeason": null,
-     "podiumChance": 0.9,
+     "podiumChance": 1.0,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/qatar/awatif-sabah-abdulrahman-15210622",
      "hasPage": true
@@ -5855,7 +5855,7 @@
      "mark": "49.27",
      "markSeason": null,
      "podiumChance": 99.9,
-     "winChance": 88.6,
+     "winChance": 88.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14643442",
      "hasPage": true
     },
@@ -5867,8 +5867,8 @@
      "rankingScore": 1194,
      "mark": "50.28",
      "markSeason": null,
-     "podiumChance": 69.5,
-     "winChance": 4.8,
+     "podiumChance": 70.3,
+     "winChance": 5.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14419510",
      "hasPage": true
     },
@@ -5880,8 +5880,8 @@
      "rankingScore": 1158,
      "mark": "51.19",
      "markSeason": null,
-     "podiumChance": 33.6,
-     "winChance": 1.7,
+     "podiumChance": 33.9,
+     "winChance": 1.8,
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/jonbibi-hukmova-15150425",
      "hasPage": true
     },
@@ -5893,7 +5893,7 @@
      "rankingScore": 1123,
      "mark": "52.1",
      "markSeason": null,
-     "podiumChance": 23.9,
+     "podiumChance": 22.8,
      "winChance": 1.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14858889",
      "hasPage": true
@@ -5906,8 +5906,8 @@
      "rankingScore": 1128,
      "mark": "51.97",
      "markSeason": null,
-     "podiumChance": 16.1,
-     "winChance": 0.8,
+     "podiumChance": 16.6,
+     "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/islamic-republic-of-iran/zahra-zarei-15110913",
      "hasPage": true
     },
@@ -5919,7 +5919,7 @@
      "rankingScore": 1095,
      "mark": "52.81",
      "markSeason": null,
-     "podiumChance": 13.6,
+     "podiumChance": 13.3,
      "winChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14995337",
      "hasPage": true
@@ -5932,7 +5932,7 @@
      "rankingScore": 1117,
      "mark": "52.24",
      "markSeason": null,
-     "podiumChance": 12.2,
+     "podiumChance": 12.1,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14547918",
      "hasPage": true
@@ -5945,7 +5945,7 @@
      "rankingScore": 1104,
      "mark": "52.57",
      "markSeason": null,
-     "podiumChance": 8.4,
+     "podiumChance": 8.5,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14821639",
      "hasPage": true
@@ -6030,19 +6030,6 @@
     },
     {
      "rank": 15,
-     "name": "Alexandra ZALYUBOVSKAYA",
-     "nat": "KAZ",
-     "qualifiedBy": null,
-     "rankingScore": 986,
-     "mark": "55.73",
-     "markSeason": null,
-     "podiumChance": 0.6,
-     "winChance": 0.0,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14832546",
-     "hasPage": true
-    },
-    {
-     "rank": 16,
      "name": "Ayoung LEE",
      "nat": "KOR",
      "qualifiedBy": null,
@@ -6055,6 +6042,19 @@
      "hasPage": true
     },
     {
+     "rank": 16,
+     "name": "Alexandra ZALYUBOVSKAYA",
+     "nat": "KAZ",
+     "qualifiedBy": null,
+     "rankingScore": 986,
+     "mark": "55.73",
+     "markSeason": null,
+     "podiumChance": 0.6,
+     "winChance": 0.0,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14832546",
+     "hasPage": true
+    },
+    {
      "rank": 17,
      "name": "Jeralyn RODRIGUEZ",
      "nat": "PHI",
@@ -6062,7 +6062,7 @@
      "rankingScore": 1019,
      "mark": "54.83",
      "markSeason": null,
-     "podiumChance": 0.6,
+     "podiumChance": 0.5,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/philippines/jeralyn-rodriguez-15154319",
      "hasPage": true
@@ -6075,7 +6075,7 @@
      "rankingScore": 1001,
      "mark": "55.32",
      "markSeason": null,
-     "podiumChance": 0.5,
+     "podiumChance": 0.4,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/chi-ku-chow-15079890",
      "hasPage": true
@@ -6119,8 +6119,8 @@
      "rankingScore": 1194,
      "mark": "1:58.26",
      "markSeason": null,
-     "podiumChance": 73.8,
-     "winChance": 28.7,
+     "podiumChance": 74.5,
+     "winChance": 29.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14373314",
      "hasPage": true
     },
@@ -6132,8 +6132,8 @@
      "rankingScore": 1189,
      "mark": "1:58.52",
      "markSeason": null,
-     "podiumChance": 73.0,
-     "winChance": 28.1,
+     "podiumChance": 73.1,
+     "winChance": 28.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14823678",
      "hasPage": true
     },
@@ -6145,8 +6145,8 @@
      "rankingScore": 1135,
      "mark": "2:01.54",
      "markSeason": null,
-     "podiumChance": 49.0,
-     "winChance": 14.7,
+     "podiumChance": 48.3,
+     "winChance": 14.4,
      "profileUrl": "https://worldathletics.org/athletes/japan/rin-kubo-15005744",
      "hasPage": true
     },
@@ -6158,8 +6158,8 @@
      "rankingScore": 1131,
      "mark": "2:01.74",
      "markSeason": null,
-     "podiumChance": 39.5,
-     "winChance": 11.2,
+     "podiumChance": 39.2,
+     "winChance": 11.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14885770",
      "hasPage": true
     },
@@ -6185,7 +6185,7 @@
      "mark": "2:02.42",
      "markSeason": null,
      "podiumChance": 19.9,
-     "winChance": 5.3,
+     "winChance": 5.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818407",
      "hasPage": true
     },
@@ -6197,22 +6197,22 @@
      "rankingScore": 1089,
      "mark": "2:04.17",
      "markSeason": null,
-     "podiumChance": 2.4,
+     "podiumChance": 2.5,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14740938",
      "hasPage": true
     },
     {
      "rank": 8,
-     "name": "Naomi Marjorie CESAR",
-     "nat": "PHI",
+     "name": "Chunhui LI",
+     "nat": "CHN",
      "qualifiedBy": null,
-     "rankingScore": 1053,
-     "mark": "2:06.24",
-     "markSeason": null,
-     "podiumChance": 2.3,
+     "rankingScore": 1072,
+     "mark": "2:05.15",
+     "markSeason": 2025,
+     "podiumChance": 2.2,
      "winChance": 0.6,
-     "profileUrl": "https://worldathletics.org/athletes/philippines/naomi-marjorie-cesar-15225361",
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14803753",
      "hasPage": true
     },
     {
@@ -6230,15 +6230,15 @@
     },
     {
      "rank": 10,
-     "name": "Chunhui LI",
-     "nat": "CHN",
+     "name": "Naomi Marjorie CESAR",
+     "nat": "PHI",
      "qualifiedBy": null,
-     "rankingScore": 1072,
-     "mark": "2:05.15",
-     "markSeason": 2025,
+     "rankingScore": 1053,
+     "mark": "2:06.24",
+     "markSeason": null,
      "podiumChance": 2.2,
      "winChance": 0.5,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14803753",
+     "profileUrl": "https://worldathletics.org/athletes/philippines/naomi-marjorie-cesar-15225361",
      "hasPage": true
     },
     {
@@ -6275,7 +6275,7 @@
      "rankingScore": 1004,
      "mark": "2:09.18",
      "markSeason": null,
-     "podiumChance": 0.5,
+     "podiumChance": 0.4,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=15036424",
      "hasPage": true
@@ -6384,8 +6384,8 @@
      "rankingScore": 1182,
      "mark": "4:03.00",
      "markSeason": null,
-     "podiumChance": 95.3,
-     "winChance": 44.8,
+     "podiumChance": 95.2,
+     "winChance": 44.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14632538",
      "hasPage": true
     },
@@ -6397,8 +6397,8 @@
      "rankingScore": 1225,
      "mark": "3:57.61",
      "markSeason": null,
-     "podiumChance": 93.5,
-     "winChance": 37.7,
+     "podiumChance": 93.7,
+     "winChance": 38.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14373314",
      "hasPage": true
     },
@@ -6410,7 +6410,7 @@
      "rankingScore": 1147,
      "mark": "4:07.43",
      "markSeason": null,
-     "podiumChance": 56.2,
+     "podiumChance": 56.3,
      "winChance": 9.2,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/chunhui-li-14803753",
      "hasPage": true
@@ -6423,7 +6423,7 @@
      "rankingScore": 1128,
      "mark": "4:09.84",
      "markSeason": null,
-     "podiumChance": 21.6,
+     "podiumChance": 21.4,
      "winChance": 3.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818407",
      "hasPage": true
@@ -6449,7 +6449,7 @@
      "rankingScore": 1097,
      "mark": "4:13.87",
      "markSeason": null,
-     "podiumChance": 6.6,
+     "podiumChance": 6.5,
      "winChance": 1.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759683",
      "hasPage": true
@@ -6462,7 +6462,7 @@
      "rankingScore": 1045,
      "mark": "4:20.62",
      "markSeason": null,
-     "podiumChance": 5.9,
+     "podiumChance": 5.8,
      "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14885770",
      "hasPage": true
@@ -6476,7 +6476,7 @@
      "mark": "4:20.45",
      "markSeason": null,
      "podiumChance": 3.0,
-     "winChance": 0.4,
+     "winChance": 0.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14497992",
      "hasPage": true
     },
@@ -6587,8 +6587,8 @@
      "rankingScore": 1222,
      "mark": "14:30.06",
      "markSeason": null,
-     "podiumChance": 93.9,
-     "winChance": 50.8,
+     "podiumChance": 94.3,
+     "winChance": 52.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14695622",
      "hasPage": true
     },
@@ -6600,8 +6600,8 @@
      "rankingScore": 1166,
      "mark": "14:58.35",
      "markSeason": null,
-     "podiumChance": 74.3,
-     "winChance": 20.9,
+     "podiumChance": 72.5,
+     "winChance": 19.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14632538",
      "hasPage": true
     },
@@ -6613,7 +6613,7 @@
      "rankingScore": 1163,
      "mark": "14:59.89",
      "markSeason": null,
-     "podiumChance": 58.9,
+     "podiumChance": 59.2,
      "winChance": 13.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14899665",
      "hasPage": true
@@ -6626,7 +6626,7 @@
      "rankingScore": 1166,
      "mark": "14:58.71",
      "markSeason": 2025,
-     "podiumChance": 31.5,
+     "podiumChance": 32.1,
      "winChance": 6.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14479154",
      "hasPage": true
@@ -6639,7 +6639,7 @@
      "rankingScore": 1155,
      "mark": "15:04.26",
      "markSeason": null,
-     "podiumChance": 28.4,
+     "podiumChance": 28.7,
      "winChance": 5.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14497992",
      "hasPage": true
@@ -6652,7 +6652,7 @@
      "rankingScore": 1132,
      "mark": "15:16.20",
      "markSeason": null,
-     "podiumChance": 6.3,
+     "podiumChance": 6.4,
      "winChance": 1.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734780",
      "hasPage": true
@@ -6770,7 +6770,7 @@
      "mark": "31:41.22",
      "markSeason": null,
      "podiumChance": 99.6,
-     "winChance": 66.0,
+     "winChance": 66.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14632538",
      "hasPage": true
     },
@@ -6782,8 +6782,8 @@
      "rankingScore": 1042,
      "mark": "33:52.33",
      "markSeason": null,
-     "podiumChance": 96.5,
-     "winChance": 25.1,
+     "podiumChance": 96.3,
+     "winChance": 24.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14530633",
      "hasPage": true
     },
@@ -6795,8 +6795,8 @@
      "rankingScore": 1137,
      "mark": "32:02.43",
      "markSeason": null,
-     "podiumChance": 72.1,
-     "winChance": 6.3,
+     "podiumChance": 72.5,
+     "winChance": 6.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734780",
      "hasPage": true
     },
@@ -6808,7 +6808,7 @@
      "rankingScore": 1078,
      "mark": "33:10.63",
      "markSeason": 2025,
-     "podiumChance": 17.4,
+     "podiumChance": 17.3,
      "winChance": 1.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14588310",
      "hasPage": true
@@ -6834,7 +6834,7 @@
      "rankingScore": 996,
      "mark": "34:47.53",
      "markSeason": null,
-     "podiumChance": 4.8,
+     "podiumChance": 4.7,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-tuyet-le-15022817",
      "hasPage": true
@@ -6918,7 +6918,7 @@
      "mark": "8:51.54",
      "markSeason": null,
      "podiumChance": 99.9,
-     "winChance": 85.1,
+     "winChance": 84.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14695622",
      "hasPage": true
     },
@@ -6930,8 +6930,8 @@
      "rankingScore": 1216,
      "mark": "9:10.90",
      "markSeason": null,
-     "podiumChance": 93.6,
-     "winChance": 10.6,
+     "podiumChance": 93.7,
+     "winChance": 10.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14479154",
      "hasPage": true
     },
@@ -6943,7 +6943,7 @@
      "rankingScore": 1212,
      "mark": "9:12.84",
      "markSeason": null,
-     "podiumChance": 49.9,
+     "podiumChance": 49.7,
      "winChance": 2.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14497992",
      "hasPage": true
@@ -6956,8 +6956,8 @@
      "rankingScore": 1168,
      "mark": "9:30.30",
      "markSeason": null,
-     "podiumChance": 21.1,
-     "winChance": 0.9,
+     "podiumChance": 20.7,
+     "winChance": 0.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14931241",
      "hasPage": true
     },
@@ -6969,7 +6969,7 @@
      "rankingScore": 1174,
      "mark": "9:27.91",
      "markSeason": null,
-     "podiumChance": 20.1,
+     "podiumChance": 20.4,
      "winChance": 0.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818406",
      "hasPage": true
@@ -7008,7 +7008,7 @@
      "rankingScore": 1054,
      "mark": "10:17.30",
      "markSeason": null,
-     "podiumChance": 1.6,
+     "podiumChance": 1.7,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532353",
      "hasPage": true
@@ -7057,8 +7057,8 @@
      "rankingScore": 1204,
      "mark": "12.6",
      "markSeason": null,
-     "podiumChance": 84.5,
-     "winChance": 39.5,
+     "podiumChance": 84.7,
+     "winChance": 39.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14444487",
      "hasPage": true
     },
@@ -7070,8 +7070,8 @@
      "rankingScore": 1189,
      "mark": "12.72",
      "markSeason": null,
-     "podiumChance": 67.9,
-     "winChance": 22.9,
+     "podiumChance": 68.3,
+     "winChance": 23.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14521635",
      "hasPage": true
     },
@@ -7083,8 +7083,8 @@
      "rankingScore": 1155,
      "mark": "12.99",
      "markSeason": null,
-     "podiumChance": 37.5,
-     "winChance": 9.9,
+     "podiumChance": 37.3,
+     "winChance": 9.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14585472",
      "hasPage": true
     },
@@ -7096,8 +7096,8 @@
      "rankingScore": 1170,
      "mark": "12.85",
      "markSeason": null,
-     "podiumChance": 36.7,
-     "winChance": 9.6,
+     "podiumChance": 36.3,
+     "winChance": 9.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734731",
      "hasPage": true
     },
@@ -7110,7 +7110,7 @@
      "mark": "13.0",
      "markSeason": null,
      "podiumChance": 29.9,
-     "winChance": 7.7,
+     "winChance": 7.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14702465",
      "hasPage": true
     },
@@ -7122,7 +7122,7 @@
      "rankingScore": 1158,
      "mark": "12.96",
      "markSeason": null,
-     "podiumChance": 16.4,
+     "podiumChance": 16.5,
      "winChance": 4.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14902578",
      "hasPage": true
@@ -7135,8 +7135,8 @@
      "rankingScore": 1117,
      "mark": "13.24",
      "markSeason": null,
-     "podiumChance": 7.7,
-     "winChance": 1.8,
+     "podiumChance": 7.8,
+     "winChance": 1.9,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/bo-an-yi-14976378",
      "hasPage": true
     },
@@ -7161,8 +7161,8 @@
      "rankingScore": 1066,
      "mark": "13.63",
      "markSeason": null,
-     "podiumChance": 3.7,
-     "winChance": 0.9,
+     "podiumChance": 3.6,
+     "winChance": 0.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14898569",
      "hasPage": true
     },
@@ -7174,8 +7174,8 @@
      "rankingScore": 1069,
      "mark": "13.61",
      "markSeason": null,
-     "podiumChance": 3.7,
-     "winChance": 0.9,
+     "podiumChance": 3.5,
+     "winChance": 0.8,
      "profileUrl": "https://worldathletics.org/athletes/qatar/sara-shams-ali-15210619",
      "hasPage": true
     },
@@ -7187,7 +7187,7 @@
      "rankingScore": 1083,
      "mark": "13.5",
      "markSeason": null,
-     "podiumChance": 2.6,
+     "podiumChance": 2.7,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752939",
      "hasPage": true
@@ -7200,7 +7200,7 @@
      "rankingScore": 1078,
      "mark": "13.54",
      "markSeason": null,
-     "podiumChance": 1.5,
+     "podiumChance": 1.6,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/tsz-yan-lau-15038922",
      "hasPage": true
@@ -7213,7 +7213,7 @@
      "rankingScore": 1015,
      "mark": "14.03",
      "markSeason": null,
-     "podiumChance": 1.5,
+     "podiumChance": 1.6,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14524054",
      "hasPage": true
@@ -7244,8 +7244,8 @@
      "rankingScore": 1215,
      "mark": "53.67",
      "markSeason": null,
-     "podiumChance": 94.2,
-     "winChance": 57.5,
+     "podiumChance": 94.1,
+     "winChance": 57.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14419510",
      "hasPage": true
     },
@@ -7257,8 +7257,8 @@
      "rankingScore": 1164,
      "mark": "55.29",
      "markSeason": null,
-     "podiumChance": 46.3,
-     "winChance": 10.4,
+     "podiumChance": 46.1,
+     "winChance": 10.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884045",
      "hasPage": true
     },
@@ -7270,7 +7270,7 @@
      "rankingScore": 1139,
      "mark": "56.07",
      "markSeason": null,
-     "podiumChance": 31.1,
+     "podiumChance": 31.0,
      "winChance": 6.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14776046",
      "hasPage": true
@@ -7283,7 +7283,7 @@
      "rankingScore": 1144,
      "mark": "55.92",
      "markSeason": null,
-     "podiumChance": 24.6,
+     "podiumChance": 24.7,
      "winChance": 5.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855506",
      "hasPage": true
@@ -7296,7 +7296,7 @@
      "rankingScore": 1133,
      "mark": "56.27",
      "markSeason": null,
-     "podiumChance": 23.7,
+     "podiumChance": 23.5,
      "winChance": 4.8,
      "profileUrl": "https://worldathletics.org/athletes/united-arab-emirates/mariam-kareem-15122282",
      "hasPage": true
@@ -7309,7 +7309,7 @@
      "rankingScore": 1135,
      "mark": "56.22",
      "markSeason": null,
-     "podiumChance": 21.7,
+     "podiumChance": 22.0,
      "winChance": 4.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14444482",
      "hasPage": true
@@ -7322,7 +7322,7 @@
      "rankingScore": 1151,
      "mark": "55.69",
      "markSeason": null,
-     "podiumChance": 17.2,
+     "podiumChance": 17.3,
      "winChance": 3.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714397",
      "hasPage": true
@@ -7336,7 +7336,7 @@
      "mark": "56.83",
      "markSeason": null,
      "podiumChance": 16.0,
-     "winChance": 3.1,
+     "winChance": 3.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14649944",
      "hasPage": true
     },
@@ -7348,8 +7348,8 @@
      "rankingScore": 1125,
      "mark": "56.54",
      "markSeason": null,
-     "podiumChance": 13.0,
-     "winChance": 2.5,
+     "podiumChance": 13.1,
+     "winChance": 2.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14436789",
      "hasPage": true
     },
@@ -7361,8 +7361,8 @@
      "rankingScore": 1112,
      "mark": "56.98",
      "markSeason": null,
-     "podiumChance": 4.4,
-     "winChance": 0.8,
+     "podiumChance": 4.5,
+     "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14483702",
      "hasPage": true
     },
@@ -7375,7 +7375,7 @@
      "mark": "57.41",
      "markSeason": null,
      "podiumChance": 4.4,
-     "winChance": 0.8,
+     "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/hsin-ju-chung-15007045",
      "hasPage": true
     },
@@ -7387,7 +7387,7 @@
      "rankingScore": 1012,
      "mark": "1:00.31",
      "markSeason": null,
-     "podiumChance": 3.2,
+     "podiumChance": 3.1,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-tuyet-mai-le-15042646",
      "hasPage": true
@@ -7431,8 +7431,8 @@
      "rankingScore": 1140,
      "mark": "1.92",
      "markSeason": null,
-     "podiumChance": 59.0,
-     "winChance": 22.4,
+     "podiumChance": 59.5,
+     "winChance": 22.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14805472",
      "hasPage": true
     },
@@ -7444,8 +7444,8 @@
      "rankingScore": 1101,
      "mark": "1.88",
      "markSeason": null,
-     "podiumChance": 51.6,
-     "winChance": 18.3,
+     "podiumChance": 50.5,
+     "winChance": 17.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14824486",
      "hasPage": true
     },
@@ -7457,8 +7457,8 @@
      "rankingScore": 1101,
      "mark": "1.88",
      "markSeason": null,
-     "podiumChance": 41.3,
-     "winChance": 13.6,
+     "podiumChance": 41.7,
+     "winChance": 13.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915946",
      "hasPage": true
     },
@@ -7470,8 +7470,8 @@
      "rankingScore": 1150,
      "mark": "1.93",
      "markSeason": null,
-     "podiumChance": 35.3,
-     "winChance": 11.3,
+     "podiumChance": 35.1,
+     "winChance": 11.2,
      "profileUrl": "https://worldathletics.org/athletes/india/pooja-15053572",
      "hasPage": true
     },
@@ -7483,8 +7483,8 @@
      "rankingScore": 1111,
      "mark": "1.89",
      "markSeason": null,
-     "podiumChance": 33.2,
-     "winChance": 10.5,
+     "podiumChance": 33.9,
+     "winChance": 10.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14924216",
      "hasPage": true
     },
@@ -7496,8 +7496,8 @@
      "rankingScore": 1082,
      "mark": "1.86",
      "markSeason": null,
-     "podiumChance": 32.3,
-     "winChance": 10.2,
+     "podiumChance": 31.5,
+     "winChance": 9.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14803138",
      "hasPage": true
     },
@@ -7509,8 +7509,8 @@
      "rankingScore": 1091,
      "mark": "1.87",
      "markSeason": null,
-     "podiumChance": 17.8,
-     "winChance": 5.3,
+     "podiumChance": 17.6,
+     "winChance": 5.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646807",
      "hasPage": true
     },
@@ -7535,8 +7535,8 @@
      "rankingScore": 1082,
      "mark": "1.86",
      "markSeason": null,
-     "podiumChance": 10.7,
-     "winChance": 3.1,
+     "podiumChance": 11.1,
+     "winChance": 3.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14671352",
      "hasPage": true
     },
@@ -7562,7 +7562,7 @@
      "mark": "1.78",
      "markSeason": null,
      "podiumChance": 1.6,
-     "winChance": 0.5,
+     "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14746863",
      "hasPage": true
     },
@@ -7574,7 +7574,7 @@
      "rankingScore": 1023,
      "mark": "1.8",
      "markSeason": null,
-     "podiumChance": 1.5,
+     "podiumChance": 1.4,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14831029",
      "hasPage": true
@@ -7657,7 +7657,7 @@
      "rankingScore": 1114,
      "mark": "4.5",
      "markSeason": null,
-     "podiumChance": 91.6,
+     "podiumChance": 91.7,
      "winChance": 5.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646808",
      "hasPage": true
@@ -7683,7 +7683,7 @@
      "rankingScore": 1037,
      "mark": "4.25",
      "markSeason": null,
-     "podiumChance": 14.9,
+     "podiumChance": 14.6,
      "winChance": 0.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915517",
      "hasPage": true
@@ -7722,7 +7722,7 @@
      "rankingScore": 1021,
      "mark": "4.2",
      "markSeason": null,
-     "podiumChance": 6.1,
+     "podiumChance": 6.2,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14791683",
      "hasPage": true
@@ -7735,7 +7735,7 @@
      "rankingScore": 1037,
      "mark": "4.25",
      "markSeason": null,
-     "podiumChance": 5.6,
+     "podiumChance": 5.8,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/india/g-sindhushree-15023846",
      "hasPage": true
@@ -7748,7 +7748,7 @@
      "rankingScore": 960,
      "mark": "4.0",
      "markSeason": null,
-     "podiumChance": 1.2,
+     "podiumChance": 1.3,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14670904",
      "hasPage": true
@@ -7792,8 +7792,8 @@
      "rankingScore": 1191,
      "mark": "6.88",
      "markSeason": null,
-     "podiumChance": 86.1,
-     "winChance": 40.4,
+     "podiumChance": 87.0,
+     "winChance": 41.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14791355",
      "hasPage": true
     },
@@ -7805,8 +7805,8 @@
      "rankingScore": 1165,
      "mark": "6.76",
      "markSeason": null,
-     "podiumChance": 73.5,
-     "winChance": 25.6,
+     "podiumChance": 74.5,
+     "winChance": 25.9,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yingying-huang-14980007",
      "hasPage": true
     },
@@ -7818,8 +7818,8 @@
      "rankingScore": 1145,
      "mark": "6.67",
      "markSeason": null,
-     "podiumChance": 47.0,
-     "winChance": 12.3,
+     "podiumChance": 46.4,
+     "winChance": 11.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14862020",
      "hasPage": true
     },
@@ -7831,8 +7831,8 @@
      "rankingScore": 1136,
      "mark": "6.63",
      "markSeason": null,
-     "podiumChance": 21.0,
-     "winChance": 5.0,
+     "podiumChance": 20.9,
+     "winChance": 4.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14857849",
      "hasPage": true
     },
@@ -7844,8 +7844,8 @@
      "rankingScore": 1095,
      "mark": "6.44",
      "markSeason": null,
-     "podiumChance": 19.8,
-     "winChance": 4.7,
+     "podiumChance": 19.2,
+     "winChance": 4.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14753584",
      "hasPage": true
     },
@@ -7870,7 +7870,7 @@
      "rankingScore": 1057,
      "mark": "6.27",
      "markSeason": 2025,
-     "podiumChance": 10.3,
+     "podiumChance": 10.4,
      "winChance": 2.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14282715",
      "hasPage": true
@@ -7883,7 +7883,7 @@
      "rankingScore": 1052,
      "mark": "6.23",
      "markSeason": null,
-     "podiumChance": 6.7,
+     "podiumChance": 6.6,
      "winChance": 1.5,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751083",
      "hasPage": true
@@ -7896,7 +7896,7 @@
      "rankingScore": 1079,
      "mark": "6.37",
      "markSeason": null,
-     "podiumChance": 4.2,
+     "podiumChance": 4.1,
      "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14803146",
      "hasPage": true
@@ -7909,7 +7909,7 @@
      "rankingScore": 965,
      "mark": "5.84",
      "markSeason": null,
-     "podiumChance": 4.1,
+     "podiumChance": 4.0,
      "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/tiffany-yue-14651401",
      "hasPage": true
@@ -7922,8 +7922,8 @@
      "rankingScore": 964,
      "mark": "5.84",
      "markSeason": null,
-     "podiumChance": 3.4,
-     "winChance": 0.8,
+     "podiumChance": 3.3,
+     "winChance": 0.7,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14956284",
      "hasPage": true
     },
@@ -7935,7 +7935,7 @@
      "rankingScore": 1068,
      "mark": "6.32",
      "markSeason": null,
-     "podiumChance": 2.6,
+     "podiumChance": 2.5,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/madushani-herath-15157596",
      "hasPage": true
@@ -7961,8 +7961,8 @@
      "rankingScore": 1023,
      "mark": "6.11",
      "markSeason": null,
-     "podiumChance": 1.6,
-     "winChance": 0.4,
+     "podiumChance": 1.5,
+     "winChance": 0.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14927297",
      "hasPage": true
     },
@@ -7987,7 +7987,7 @@
      "rankingScore": 1016,
      "mark": "6.08",
      "markSeason": null,
-     "podiumChance": 0.9,
+     "podiumChance": 0.8,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751082",
      "hasPage": true
@@ -8058,7 +8058,7 @@
      "mark": "14.24",
      "markSeason": null,
      "podiumChance": 90.3,
-     "winChance": 50.0,
+     "winChance": 49.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14956284",
      "hasPage": true
     },
@@ -8070,8 +8070,8 @@
      "rankingScore": 1134,
      "mark": "14.16",
      "markSeason": null,
-     "podiumChance": 53.3,
-     "winChance": 14.5,
+     "podiumChance": 53.4,
+     "winChance": 14.6,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/yi-li-15052012",
      "hasPage": true
     },
@@ -8096,8 +8096,8 @@
      "rankingScore": 1100,
      "mark": "13.83",
      "markSeason": null,
-     "podiumChance": 20.6,
-     "winChance": 4.7,
+     "podiumChance": 20.0,
+     "winChance": 4.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646811",
      "hasPage": true
     },
@@ -8109,8 +8109,8 @@
      "rankingScore": 1107,
      "mark": "13.89",
      "markSeason": null,
-     "podiumChance": 18.4,
-     "winChance": 4.2,
+     "podiumChance": 19.1,
+     "winChance": 4.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14776087",
      "hasPage": true
     },
@@ -8122,7 +8122,7 @@
      "rankingScore": 1086,
      "mark": "13.69",
      "markSeason": null,
-     "podiumChance": 16.9,
+     "podiumChance": 16.7,
      "winChance": 3.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14855859",
      "hasPage": true
@@ -8135,8 +8135,8 @@
      "rankingScore": 1009,
      "mark": "12.94",
      "markSeason": null,
-     "podiumChance": 14.8,
-     "winChance": 3.3,
+     "podiumChance": 14.9,
+     "winChance": 3.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14282715",
      "hasPage": true
     },
@@ -8148,7 +8148,7 @@
      "rankingScore": 1021,
      "mark": "13.05",
      "markSeason": null,
-     "podiumChance": 13.4,
+     "podiumChance": 13.3,
      "winChance": 3.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14603339",
      "hasPage": true
@@ -8161,7 +8161,7 @@
      "rankingScore": 1085,
      "mark": "13.68",
      "markSeason": null,
-     "podiumChance": 10.0,
+     "podiumChance": 10.1,
      "winChance": 2.2,
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/madushani-herath-15157596",
      "hasPage": true
@@ -8187,7 +8187,7 @@
      "rankingScore": 1081,
      "mark": "13.64",
      "markSeason": null,
-     "podiumChance": 8.6,
+     "podiumChance": 8.7,
      "winChance": 1.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14717127",
      "hasPage": true
@@ -8213,7 +8213,7 @@
      "rankingScore": 1062,
      "mark": "13.46",
      "markSeason": null,
-     "podiumChance": 4.1,
+     "podiumChance": 4.2,
      "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843083",
      "hasPage": true
@@ -8271,7 +8271,7 @@
      "mark": "19.63",
      "markSeason": null,
      "podiumChance": 99.9,
-     "winChance": 71.4,
+     "winChance": 71.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14745178",
      "hasPage": true
     },
@@ -8284,7 +8284,7 @@
      "mark": "18.89",
      "markSeason": null,
      "podiumChance": 99.2,
-     "winChance": 25.7,
+     "winChance": 25.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14668306",
      "hasPage": true
     },
@@ -8296,7 +8296,7 @@
      "rankingScore": 1067,
      "mark": "17.75",
      "markSeason": null,
-     "podiumChance": 41.6,
+     "podiumChance": 41.9,
      "winChance": 1.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14282904",
      "hasPage": true
@@ -8309,7 +8309,7 @@
      "rankingScore": 1044,
      "mark": "17.39",
      "markSeason": null,
-     "podiumChance": 30.9,
+     "podiumChance": 30.4,
      "winChance": 0.9,
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/ching-yuan-chiang-15020007",
      "hasPage": true
@@ -8322,7 +8322,7 @@
      "rankingScore": 1042,
      "mark": "17.35",
      "markSeason": null,
-     "podiumChance": 9.4,
+     "podiumChance": 9.5,
      "winChance": 0.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14921114",
      "hasPage": true
@@ -8335,7 +8335,7 @@
      "rankingScore": 914,
      "mark": "15.29",
      "markSeason": null,
-     "podiumChance": 8.4,
+     "podiumChance": 8.5,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14594947",
      "hasPage": true
@@ -8406,7 +8406,7 @@
      "mark": "67.46",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 96.8,
+     "winChance": 96.9,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14430151",
      "hasPage": true
     },
@@ -8418,7 +8418,7 @@
      "rankingScore": 1105,
      "mark": "61.85",
      "markSeason": null,
-     "podiumChance": 89.7,
+     "podiumChance": 89.2,
      "winChance": 2.0,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/zhichao-jiang-15035642",
      "hasPage": true
@@ -8431,7 +8431,7 @@
      "rankingScore": 1041,
      "mark": "58.33",
      "markSeason": null,
-     "podiumChance": 51.3,
+     "podiumChance": 51.2,
      "winChance": 0.6,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14424032",
      "hasPage": true
@@ -8444,7 +8444,7 @@
      "rankingScore": 1066,
      "mark": "59.73",
      "markSeason": null,
-     "podiumChance": 27.0,
+     "podiumChance": 27.3,
      "winChance": 0.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14734752",
      "hasPage": true
@@ -8457,7 +8457,7 @@
      "rankingScore": 1057,
      "mark": "59.23",
      "markSeason": null,
-     "podiumChance": 19.5,
+     "podiumChance": 19.4,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14649145",
      "hasPage": true
@@ -8470,7 +8470,7 @@
      "rankingScore": 1022,
      "mark": "57.34",
      "markSeason": null,
-     "podiumChance": 6.4,
+     "podiumChance": 6.6,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14431117",
      "hasPage": true
@@ -8496,7 +8496,7 @@
      "rankingScore": 999,
      "mark": "56.05",
      "markSeason": null,
-     "podiumChance": 1.7,
+     "podiumChance": 1.8,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14873527",
      "hasPage": true
@@ -8528,7 +8528,7 @@
      "mark": "78.64",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 64.1,
+     "winChance": 64.0,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/jiale-zhang-15034977",
      "hasPage": true
     },
@@ -8541,7 +8541,7 @@
      "mark": "78.22",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 35.3,
+     "winChance": 35.4,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14889043",
      "hasPage": true
     },
@@ -8553,7 +8553,7 @@
      "rankingScore": 1074,
      "mark": "68.83",
      "markSeason": null,
-     "podiumChance": 28.0,
+     "podiumChance": 27.4,
      "winChance": 0.2,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14915550",
      "hasPage": true
@@ -8573,28 +8573,28 @@
     },
     {
      "rank": 5,
-     "name": "Ya-Chien YU",
-     "nat": "TPE",
-     "qualifiedBy": null,
-     "rankingScore": 1047,
-     "mark": "67.16",
-     "markSeason": null,
-     "podiumChance": 16.7,
-     "winChance": 0.1,
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14791200",
-     "hasPage": true
-    },
-    {
-     "rank": 6,
      "name": "Tanya CHAUDHARY",
      "nat": "IND",
      "qualifiedBy": null,
      "rankingScore": 1067,
      "mark": "68.35",
      "markSeason": null,
-     "podiumChance": 16.3,
+     "podiumChance": 16.8,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/india/tanya-chaudhary-14971011",
+     "hasPage": true
+    },
+    {
+     "rank": 6,
+     "name": "Ya-Chien YU",
+     "nat": "TPE",
+     "qualifiedBy": null,
+     "rankingScore": 1047,
+     "mark": "67.16",
+     "markSeason": null,
+     "podiumChance": 16.6,
+     "winChance": 0.1,
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14791200",
      "hasPage": true
     },
     {
@@ -8605,7 +8605,7 @@
      "rankingScore": 1045,
      "mark": "67.02",
      "markSeason": null,
-     "podiumChance": 11.8,
+     "podiumChance": 12.0,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/india/anushka-yadav-15139315",
      "hasPage": true
@@ -8676,7 +8676,7 @@
      "mark": "71.74",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 90.5,
+     "winChance": 90.7,
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/ziyi-yan-15144603",
      "hasPage": true
     },
@@ -8688,8 +8688,8 @@
      "rankingScore": 1169,
      "mark": "64.9",
      "markSeason": null,
-     "podiumChance": 99.7,
-     "winChance": 9.0,
+     "podiumChance": 99.8,
+     "winChance": 8.8,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14649131",
      "hasPage": true
     },
@@ -8701,7 +8701,7 @@
      "rankingScore": 1123,
      "mark": "62.42",
      "markSeason": null,
-     "podiumChance": 46.9,
+     "podiumChance": 46.5,
      "winChance": 0.3,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14748837",
      "hasPage": true
@@ -8714,7 +8714,7 @@
      "rankingScore": 1110,
      "mark": "61.74",
      "markSeason": null,
-     "podiumChance": 20.7,
+     "podiumChance": 20.9,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14766655",
      "hasPage": true
@@ -8727,7 +8727,7 @@
      "rankingScore": 1022,
      "mark": "56.96",
      "markSeason": null,
-     "podiumChance": 13.3,
+     "podiumChance": 12.9,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14422692",
      "hasPage": true
@@ -8740,7 +8740,7 @@
      "rankingScore": 1059,
      "mark": "58.98",
      "markSeason": null,
-     "podiumChance": 11.7,
+     "podiumChance": 12.1,
      "winChance": 0.1,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14300521",
      "hasPage": true
@@ -8753,7 +8753,7 @@
      "rankingScore": 1002,
      "mark": "55.89",
      "markSeason": null,
-     "podiumChance": 5.0,
+     "podiumChance": 5.1,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14747646",
      "hasPage": true
@@ -8779,7 +8779,7 @@
      "rankingScore": 1035,
      "mark": "57.66",
      "markSeason": null,
-     "podiumChance": 1.2,
+     "podiumChance": 1.3,
      "winChance": 0.0,
      "profileUrl": "https://worldathletics.org/athletes/athlete=14705959",
      "hasPage": true
