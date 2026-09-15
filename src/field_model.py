@@ -589,8 +589,9 @@ EXPERIMENTS = {
     "v2_without_form": {"features": _without("form_gap", "breakout_backed")},
     "v2_without_recent": {"features": _without("recent_delta", "no_recent")},
     "v2_without_history_blend": {"features": _without("pb_gap_thin")},
-    # The user's rule, new marks over old (strength, RECENCY_BOUNDS). Only these
-    # can be chosen for the locked years; the rest are for information.
+    # The user's rule, new marks over old (strength, RECENCY_BOUNDS). They compete
+    # with the rest on accuracy alone: the user wants the most accurate call, and
+    # the rule counts in a candidate's favour only when it is also that.
     "recency": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS, "newOverOld": True},
     "recency_l2_strong": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS, "l2": 0.1, "newOverOld": True},
     "recency_by_group": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS, "by_group": True,
@@ -637,12 +638,17 @@ def _weights(model):
 
 
 def choose_experiment(rows):
-    """The candidate for HOLDOUT_YEARS, by the rule fixed on 2026-09-15 before
-    any experiment ran: among the experiments that follow the user's rule of new
-    marks over old (`newOverOld`), the largest mean top-three log-likelihood gain
-    on DEV_YEARS that names at least as many medallists per final as today's
-    model. None when none gains."""
-    eligible = [r for r in rows if EXPERIMENTS.get(r["name"], {}).get("newOverOld")
+    """The candidate for HOLDOUT_YEARS: the largest mean top-three
+    log-likelihood gain on DEV_YEARS among the experiments that name at least as
+    many medallists per final as today's model. None when none gains.
+
+    Accuracy alone, as the user asked on 2026-09-15 ("what I want is for the
+    accuracy to be the best it can be"), after the experiments had run and
+    before any locked-year result was read. It is the rule first committed,
+    before any experiment ran. For a short while before that message the choice
+    was limited to the newOverOld family, and the locked-year run that produced
+    finished before the message arrived; it was set aside unopened (HANDOFF.md)."""
+    eligible = [r for r in rows if r["name"] != "today"
                 and r.get("meanLlGain") is not None and r["meanLlGain"] > 0
                 and r.get("meanHitsDiff") is not None and r["meanHitsDiff"] >= 0]
     return max(eligible, key=lambda r: r["meanLlGain"])["name"] if eligible else None
@@ -1008,6 +1014,7 @@ def run_holdout(name, path=HOLDOUT_PATH):
     latest = {r["name"]: r for r in load_experiments()}
     report["experimentsTried"] = sorted(latest)
     report["chosenByRule"] = choose_experiment(list(latest.values()))
+    report["followsNewOverOld"] = bool(EXPERIMENTS[name].get("newOverOld"))
     print_compare(report)
     print(f"  experiments tried on the tuning years first: {len(latest)}; the rule chose "
           f"{report['chosenByRule']}, and this run scored {name}")

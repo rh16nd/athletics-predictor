@@ -332,14 +332,15 @@ def test_every_experiment_uses_known_features_and_known_ways_of_reading_races():
         assert set(spec.get("race", {})) <= {"recent_days", "form_marks", "big_categories"}, name
 
 
-def test_the_candidate_for_the_locked_years_follows_the_rule_gains_and_names_no_fewer_medallists():
+def test_the_candidate_for_the_locked_years_is_the_most_accurate_that_names_no_fewer_medallists():
+    """Accuracy alone decides (the user, 2026-09-15): a candidate built on the
+    new-over-old rule wins only by also being the most accurate."""
     rows = [{"name": "today", "meanLlGain": 0.0, "meanHitsDiff": 0.0},
-            {"name": "v2", "meanLlGain": 0.20, "meanHitsDiff": 0.10},   # lets old marks outweigh new: never chosen
-            {"name": "recency_by_group", "meanLlGain": 0.09, "meanHitsDiff": -0.01},
-            {"name": "recency", "meanLlGain": 0.05, "meanHitsDiff": 0.0},
-            {"name": "recency_l2_strong", "meanLlGain": 0.02, "meanHitsDiff": 0.04}]
-    assert fm.choose_experiment(rows) == "recency"
-    assert fm.choose_experiment([{"name": "recency", "meanLlGain": -0.01, "meanHitsDiff": 0.1}]) is None
+            {"name": "recency_by_group", "meanLlGain": 0.30, "meanHitsDiff": -0.01},   # names fewer medallists
+            {"name": "v2", "meanLlGain": 0.20, "meanHitsDiff": 0.10},
+            {"name": "recency", "meanLlGain": 0.05, "meanHitsDiff": 0.0}]
+    assert fm.choose_experiment(rows) == "v2"
+    assert fm.choose_experiment([rows[0], {"name": "recency", "meanLlGain": -0.01, "meanHitsDiff": 0.1}]) is None
 
 
 # ---- the user's rule: new marks over old ------------------------------------------
@@ -383,11 +384,11 @@ def test_the_recency_features_do_not_move_when_weaker_entrants_are_added():
     assert list(entry.columns) == fm.RECENCY_FEATURES
 
 
-def test_only_candidates_built_on_the_rule_can_be_chosen():
+def test_the_experiments_marked_new_over_old_are_built_on_the_rule():
     history_first = {"pb_gap", "yoy", "pb_gap_thin", "breakout_backed"}
-    eligible = {name: spec for name, spec in fm.EXPERIMENTS.items() if spec.get("newOverOld")}
-    assert "recency" in eligible
-    for name, spec in eligible.items():
+    marked = {name: spec for name, spec in fm.EXPERIMENTS.items() if spec.get("newOverOld")}
+    assert "recency" in marked
+    for name, spec in marked.items():
         assert not history_first & set(spec["features"]), name
         assert spec["bounds"] == fm.RECENCY_BOUNDS, name
     assert not any(fm.EXPERIMENTS[name].get("newOverOld") for name in ("today", "v2"))
