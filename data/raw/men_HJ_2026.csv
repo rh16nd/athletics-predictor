@@ -1,9 +1,9 @@
 Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,ProfileURL
-1,2.34,,JuVaughn HARRISON,30 APR 1999,USA,1,,"Quai Albert 1er, Monaco (MON)",05 AUG 2026,1215,men_HJ,2026,https://worldathletics.org/athletes/athlete=14785286
-2,2.33,,Danil LYSENKO,19 MAY 1997,RUS,1,,"Ural GUFK, Chelyabinsk (RUS) (i)",16 JAN 2026,1206,men_HJ,2026,https://worldathletics.org/athletes/athlete=14576019
-2,2.33,,Oleh DOROSHCHUK,04 JUL 2001,UKR,1,,Berdichev (UKR),27 JUN 2026,1206,men_HJ,2026,https://worldathletics.org/athletes/athlete=14803002
-4,2.32,,Jan ŠTEFELA,20 APR 2001,CZE,1,,"Športová hala Dukla, Banská Bystrica (SVK) (i)",24 FEB 2026,1197,men_HJ,2026,https://worldathletics.org/athletes/athlete=14761148
-4,2.32,,Gianmarco TAMBERI,01 JUN 1992,ITA,1,,"Alexander Stadium, Birmingham (GBR)",14 AUG 2026,1197,men_HJ,2026,https://worldathletics.org/athletes/athlete=14375750
+1,2.37,,Gianmarco TAMBERI,01 JUN 1992,ITA,1f1,,"Nemzeti Atlétikai Központ, Budapest (HUN)",13 SEP 2026,1242,men_HJ,2026,https://worldathletics.org/athletes/athlete=14375750
+2,2.34,,JuVaughn HARRISON,30 APR 1999,USA,1,,"Quai Albert 1er, Monaco (MON)",05 AUG 2026,1215,men_HJ,2026,https://worldathletics.org/athletes/athlete=14785286
+3,2.33,,Danil LYSENKO,19 MAY 1997,RUS,1,,"Ural GUFK, Chelyabinsk (RUS) (i)",16 JAN 2026,1206,men_HJ,2026,https://worldathletics.org/athletes/athlete=14576019
+3,2.33,,Oleh DOROSHCHUK,04 JUL 2001,UKR,1,,Berdichev (UKR),27 JUN 2026,1206,men_HJ,2026,https://worldathletics.org/athletes/athlete=14803002
+5,2.32,,Jan ŠTEFELA,20 APR 2001,CZE,1,,"Športová hala Dukla, Banská Bystrica (SVK) (i)",24 FEB 2026,1197,men_HJ,2026,https://worldathletics.org/athletes/athlete=14761148
 6,2.31,,Kimani JACK,31 JAN 2004,GBR,1f1,,"Spec Towns Track, Athens, GA (USA)",02 MAY 2026,1188,men_HJ,2026,https://worldathletics.org/athletes/great-britain-ni/kimani-jack-14984793
 6,2.31,,Sarvesh Anil KUSHARE,17 JUN 1995,IND,1,,"Kalinga Stadium, Bhubaneshwar (IND)",27 JUN 2026,1188,men_HJ,2026,https://worldathletics.org/athletes/athlete=14675319
 6,2.31,,Stepan VETKIN,16 JAN 2006,RUS,1,,"Yelena Yelesina Stadium, Chelyabinsk (RUS)",23 AUG 2026,1188,men_HJ,2026,https://worldathletics.org/athletes/russia/stepan-vetkin-14972996
@@ -51,23 +51,23 @@ Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,Pro
 40,2.25,,Grant CAMPBELL,15 APR 2005,USA,3,,"Hayward Field, Eugene, OR (USA)",12 JUN 2026,1135,men_HJ,2026,https://worldathletics.org/athletes/united-states/grant-campbell-15105296
 40,2.25,,Jordan WENGER,,USA,4,,"Hayward Field, Eugene, OR (USA)",12 JUN 2026,1135,men_HJ,2026,https://worldathletics.org/athletes/united-states/jordan-wenger-15189505
 40,2.25,,Samuel JAMES,09 AUG 2009,GBR,1f1,,"Stadio Guidobaldi, Rieti (ITA)",18 JUL 2026,1135,men_HJ,2026,https://worldathletics.org/athletes/great-britain-ni/samuel-james-15158356
-53,2.24,,Omamuyovwi ERHIRE,16 AUG 2002,NGR,1f1,,"Sports Performance Center, Lubbock, TX (USA) (i)",17 JAN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14828038
-53,2.24,,Jef VERMEIREN,20 DEC 2000,BEL,1,,"Sätrahallen, Stockholm (SWE) (i)",22 JAN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14783926
-53,2.24,,Hao ZHANG,26 MAR 1999,CHN,1f1,,"Xipu Training Base Indoor Athletics Stadium, Chengdu (CHN) (i)",11 MAR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14800513
-53,2.24,,Zhen WANG,07 OCT 2001,CHN,2f1,,"Xipu Training Base Indoor Athletics Stadium, Chengdu (CHN) (i)",11 MAR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14811595
-53,2.24,,Tito ALOFE,04 APR 2005,USA,1f1,,"Randal Tyson Indoor Center, Fayetteville, AR (USA) (i)",13 MAR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/united-states/tito-alofe-15119980
-53,2.24,,Roman ANASTASIOS,09 JUN 2002,AUS,1,,"Performance Centre, Gold Coast (AUS)",23 APR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14769979
-53,2.24,,Aiden HAYES,23 JUL 2004,USA,1,,"Rice University Ley Track/Holloway Field, Houston, TX (USA)",25 APR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/united-states/aiden-hayes-14993814
-53,2.24,,Yuhang DUAN,16 NOV 2000,CHN,1,,"Guoxin Sports Center, Qingdao (CHN)",16 MAY 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14843213
-53,2.24,,Sou SHIBUYA,30 JUN 1998,JPN,1,,"National Stadium, Tokyo (JPN)",17 MAY 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14907817
-53,2.24,,Pavel SELIVERSTAU,02 SEP 1996,BLR,1,,"Regional Sport Complex, Brest (BLR)",04 JUN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14579358
-53,2.24,,Manuel LANDO,04 AUG 2000,ITA,1,,"Stadio Guidobaldi, Rieti (ITA)",21 JUN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14737204
-53,2.24,,Dmytro NIKITIN,31 JUL 1999,UKR,2,,Berdichev (UKR),27 JUN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14606579
-53,2.24,,Kason O'RILEY,05 MAR 2002,USA,1,,"Miejski Stadion, Opole (POL)",05 JUL 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14888676
-53,2.24,,Marek BAHNÍK,10 MAY 1999,CZE,2,,"Atletický stadion města Plzně, Plzeň (CZE)",25 JUL 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14756502
-53,2.24,,Long CHEN,13 NOV 2002,CHN,1,,"the plaza adjacent to National Stadium, Beijing (CHN)",08 AUG 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14850888
-53,2.24,,Thomas CARMOY,16 FEB 2000,BEL,6,,"Stadio Comunale, Bellinzona (SUI)",30 AUG 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14709531
-53,2.24,,Yuto SEKO,16 MAR 1998,JPN,6,,"Stadio Comunale, Bellinzona (SUI)",30 AUG 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14766775
+40,2.25,,Manuel LANDO,04 AUG 2000,ITA,1,,"Stadio Quercia, Rovereto (ITA)",08 SEP 2026,1135,men_HJ,2026,https://worldathletics.org/athletes/athlete=14737204
+54,2.24,,Omamuyovwi ERHIRE,16 AUG 2002,NGR,1f1,,"Sports Performance Center, Lubbock, TX (USA) (i)",17 JAN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14828038
+54,2.24,,Jef VERMEIREN,20 DEC 2000,BEL,1,,"Sätrahallen, Stockholm (SWE) (i)",22 JAN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14783926
+54,2.24,,Hao ZHANG,26 MAR 1999,CHN,1f1,,"Xipu Training Base Indoor Athletics Stadium, Chengdu (CHN) (i)",11 MAR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14800513
+54,2.24,,Zhen WANG,07 OCT 2001,CHN,2f1,,"Xipu Training Base Indoor Athletics Stadium, Chengdu (CHN) (i)",11 MAR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14811595
+54,2.24,,Tito ALOFE,04 APR 2005,USA,1f1,,"Randal Tyson Indoor Center, Fayetteville, AR (USA) (i)",13 MAR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/united-states/tito-alofe-15119980
+54,2.24,,Roman ANASTASIOS,09 JUN 2002,AUS,1,,"Performance Centre, Gold Coast (AUS)",23 APR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14769979
+54,2.24,,Aiden HAYES,23 JUL 2004,USA,1,,"Rice University Ley Track/Holloway Field, Houston, TX (USA)",25 APR 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/united-states/aiden-hayes-14993814
+54,2.24,,Yuhang DUAN,16 NOV 2000,CHN,1,,"Guoxin Sports Center, Qingdao (CHN)",16 MAY 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14843213
+54,2.24,,Sou SHIBUYA,30 JUN 1998,JPN,1,,"National Stadium, Tokyo (JPN)",17 MAY 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14907817
+54,2.24,,Pavel SELIVERSTAU,02 SEP 1996,BLR,1,,"Regional Sport Complex, Brest (BLR)",04 JUN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14579358
+54,2.24,,Dmytro NIKITIN,31 JUL 1999,UKR,2,,Berdichev (UKR),27 JUN 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14606579
+54,2.24,,Kason O'RILEY,05 MAR 2002,USA,1,,"Miejski Stadion, Opole (POL)",05 JUL 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14888676
+54,2.24,,Marek BAHNÍK,10 MAY 1999,CZE,2,,"Atletický stadion města Plzně, Plzeň (CZE)",25 JUL 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14756502
+54,2.24,,Long CHEN,13 NOV 2002,CHN,1,,"the plaza adjacent to National Stadium, Beijing (CHN)",08 AUG 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14850888
+54,2.24,,Thomas CARMOY,16 FEB 2000,BEL,6,,"Stadio Comunale, Bellinzona (SUI)",30 AUG 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14709531
+54,2.24,,Yuto SEKO,16 MAR 1998,JPN,6,,"Stadio Comunale, Bellinzona (SUI)",30 AUG 2026,1126,men_HJ,2026,https://worldathletics.org/athletes/athlete=14766775
 70,2.23,,Arvesta TROUPE,05 JUN 2004,USA,1,,"Norton Sports Center, Louisville, KY (USA) (i)",09 JAN 2026,1117,men_HJ,2026,https://worldathletics.org/athletes/united-states/arvesta-troupe-15063814
 70,2.23,,Alperen ACET,02 APR 1998,TUR,1,,"Sportovní Hala, Nehvizdy (CZE) (i)",25 FEB 2026,1117,men_HJ,2026,https://worldathletics.org/athletes/athlete=14614922
 70,2.23,,Tharusha Dinushan AGAMPODI,24 MAR 2008,SRI,1,,"Diyagama Stadium, Diyagama (SRI)",28 FEB 2026,1117,men_HJ,2026,https://worldathletics.org/athletes/sri-lanka/tharusha-dinushan-agampodi-15150887
