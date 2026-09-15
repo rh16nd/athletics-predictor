@@ -1,8 +1,104 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here (read first): where things stand on 2026-09-15, and what to do next
+## Start here (read first): where things stand on the night of 2026-09-15, and what to do next
 
-_This section is the map. The sections below it hold the detail of each piece of work, newest first._
+_This section is the map. The section below it records the evening's work in detail; the older sections follow, newest first._
+
+**What is live and what is not**
+- The site is at `https://www.podiumcall.cc` (Vercel), the API at `https://podiumcall.onrender.com`. Live is still the Ultimate-era build plus the sitemap and `robots.txt` (frontend `deab918`).
+- Committed locally, not pushed:
+  - Backend: every commit from `91d2c275` (2026-09-14) on. The evening added `052142b4`, `672f2dc4`, `d0de0876`, `4410ad30`, `4892ca98`, `e8e72268`, `0a56e83a`, `038a03fb`, and the data commit made with this note.
+  - Frontend: `1a39e09` to `10da90a`. The evening added `b56d32c`, `feb227f`, `f4be8ed` and `10da90a`. Local `main` is still 1 commit behind `origin/main` (`deab918`): merge it before pushing, since a rebase would change the hashes this file cites.
+- `CURRENT` in `src/championships.py` is still `ultimate-2026`.
+- The served field model is now the race-by-race one: `outputs/field_model.json` is `v2_form_best_5`, and the season-best-only model is kept as `outputs/field_model_v1.json`. The Asian Games call (`data/asian_games_2026/predictions.json`) and the hammer and 10,000m view (`data/world_rankings.json`) were rebuilt with it. `public/data` was not rebuilt, so the static site still carries the old call.
+- Uncommitted in the backend, for the launch commit as the user agreed: the 27 refreshed `data/raw/*_2026.csv` toplists, `data/standings_detail.json`, `outputs/predictions_latest.csv` and `data/photo_focus_cache.json`. Untracked: the field model's training data in `data/field/` (`finals.csv` now rebuilt with the indoor fix, `finals_before_indoor_fix.csv`, `championship_finals.csv`, `finalist_ids.csv`, `europe/`). Git-ignored race folders: `data/field/races`, `data/field/races_2026`, `data/field/current`, `data/asian_games_2026/races`.
+
+**Waiting on the user**
+- Render: add `https://www.podiumcall.cc` to `PODIUMCALL_CORS_ORIGINS`.
+- Vercel: `VITE_SITE_URL` is already right (the live structured data names `https://www.podiumcall.cc/`). Upload `public/favicon-512.png` as the project logo if Vercel still shows Lovable's.
+- Search Console: if the sitemap still shows "could not be read", remove and resubmit `https://www.podiumcall.cc/sitemap.xml`; run Change of address from the `podiumcall.vercel.app` property.
+- Review `/championship` locally (the `predictor-api-next-championship` launch config and the dev server). The call is now the race-by-race model's, with a win chance column and the new "How each event is called" panel. Then the yes for the flip and the push.
+
+**Run order to launch the Asian Games (athletics 23–29 September, Nagoya)**
+1. After the review: `python src/injury_checker.py --championship asian-games-2026` (it needs a headful browser).
+2. Flip `CURRENT` to `asian-games-2026` in `src/championships.py`.
+3. `python src/asian_games_scraper.py` (about 20 minutes; its printout must not warn about failed lookups; it now leaves indoor marks out), then `python src/asian_games_predictions.py --refresh-races` (about 10 minutes: it fetches every entrant's 2026 season again, and stops if a download fails).
+4. `python src/athlete_profile_scraper.py --championship asian-games-2026`, `python src/country_index.py`, `python src/world_rankings.py --refresh-races` (a full run), `python src/warm_card_photos.py`, `python src/warm_photo_focus.py`.
+5. `python src/build_static_api.py`.
+6. Frontend: merge `origin/main`; regenerate the sitemap with `PODIUMCALL_BASE_URL=https://www.podiumcall.cc PODIUMCALL_API=http://localhost:5000/api python scripts/make-sitemap.py`; `tsc`, eslint on changed files and `npm run build`; then `scripts/smoke-routes.py` against the dev server with the predictor's venv (20 pages, EN and FR).
+7. Commit both repos, with the refreshed toplists, and push by 21 September. Check the live site about a minute later.
+8. Before the first session on 23 September: re-run step 3, then `python src/freeze_prefinal.py --championship asian-games-2026`, rebuild, and push.
+9. During the Games, results come from World Athletics competition `7176091`. `refresh-results.cmd` pushes every local commit, so use it only once everything above is pushed.
+- The local API runs under waitress and never reloads: restart the preview after changing backend code, or pages show the old code.
+
+**Ideas for next steps (a brainstorm, nothing decided)**
+
+Launch polish:
+- `scripts/make-sitemap.py` lists 7 fixed routes plus the Diamond League events and their athletes. It misses `/championship`, `/results`, `/how-it-works`, the country pages, the hammer and 10,000m event pages and the Asian Games athlete pages, and could read the routes the static build writes.
+- Lovable leftovers: the block in `AGENTS.md`, `src/lib/lovable-error-reporting.ts` and the `@lovable.dev/vite-tanstack-config` build preset. Check what depends on each first.
+- The French country page shows the English country name ("Hungary").
+- Track and Field's field-model table could show the win chance; `winPct` is already in `data/world_rankings.json`.
+
+The model:
+- The locked years 2024-2025 are used. Any further change to the field model needs finals it has not been tested on: the 2026 Ultimate, the 2026 Diamond League Final and, once graded, the Asian Games.
+- On the locked years the new model named fewer jumps medallists than the old one (67.4% against 70.1%, 48 finals), and on the 36 Asian finals a plain ranking by points still named more (70.4% against 67.6%). Both are worth watching at the Games.
+- Grade the Asian Games call on the Results page, as the Ultimate was.
+- Head-to-head and field analysis for the hammer and 10,000m event pages, which have no race log.
+
+Bigger items already on the list: dark mode (not a palette swap: the contrast ratios and country themes are solved against the light background), Arabic, a scheduled refresh that stops on an empty scrape, fan funding (parked), and privacy-friendly analytics (the CSP in `vercel.json` would need the host).
+
+---
+
+## The race-by-race field model, the win chance and the launch polish (2026-09-15, evening)
+
+**What the user asked, in order.** A better calculation before the launch: predictions that change after big meets, a clear leader rated clearly (their example was the Ultimate men's 400m hurdles, where the old Diamond League model put Warholm first and Dos Santos, 58 ranking points clear, won), and history counting when a season is thin. Then: test the accuracy against historical results and keep improving; weigh new performances over old ones when an athlete is consistent; and finally "what I want is for the accuracy to be the best it can be", their ideas counting only when they are also that. They chose that a new model calls the Asian Games only if it tests better, and that a win chance column ships either way.
+
+**Launch polish (frontend `b56d32c`, `feb227f`, `f4be8ed`).**
+- `pageHead(title, description, path)` builds a canonical link and `og:url` on every page, and `og:image` is absolute. The share card (`scripts/make-og.py`), `site.webmanifest`, the root title and the structured data describe the site instead of the Brussels Final.
+- The win chance (Plackett-Luce's chance of finishing first, adding up to 100) sits beside the podium chance on the call table and in the athlete page's sentence, in EN and FR. It shows what a podium chance cannot: the men's 10,000m had Suzuki and Singh both near-certain of a medal.
+- `scripts/smoke-routes.py` opens 20 pages in EN and FR in headless Chrome (the predictor's venv) and fails on an error panel, the not-found page, a missing heading, the wrong language or a console error. 20 of 20 passed.
+
+**A data bug in shipped numbers (backend `052142b4`, `672f2dc4`).** World Athletics never sets a profile's `indoor` flag: every event group came back empty. An indoor result carries only "(i)" after its venue, sometimes followed by a series label ("Madrid (i) - World Athletics Indoor Tour"). `field_data.profile_best` and `asian_games_scraper.season_best` trusted the flag, so an indoor mark could become an outdoor season best. `asian_games_scraper.is_indoor` reads the "(i)" as a token. On the rebuilt finals, 243 of 12,476 season bests changed, all from the profile route: 28 fell back to last season, 3 lost their score, and 114 of the 243 were medallists. The Asian Games call picks the fix up at the next scrape.
+
+**The data (`672f2dc4`).** `field_data.py --races` fetched every finalist's season before their final with meeting, category, round and place: 10,143 athlete-seasons in `data/field/races`. `race_summary`, `h2h_top` and `race_columns` (one path for training and serving) turn a season into form (the mean of the best marks), its spread, recent form (the best score in the 42 days before the cut-off), podiums in finals at OW, DF, GW and GL meetings, and a net record against the field's three strongest in finals both ran. 96.7% of scored finalists have a season on file.
+
+**How it was tested, fixed before any candidate had a number (`4410ad30`, `4892ca98`, `e8e72268`).**
+- The harness first reproduced the shipped model exactly (511 finals, 64.9%, 261 winners). Then the walk-forward years were split: candidates were tried on 2021-2023 only (`field_model.py --experiments`), and one chosen candidate was scored once on 2024-2025 (`--holdout`, which refuses a second run).
+- The rule on the locked years: the 90% bootstrap lower bound of the top-three log-likelihood gain above 0, no fewer medallists, the Asian finals not worse, and none of five controls (the new columns shuffled within each final) meeting the first condition.
+- The 23 experiments are declared in `field_model.EXPERIMENTS`: today's features, the race-by-race ones (`v2`), regularisation, a model per event group, form and recent-form windows, big-meet categories, each new signal left out in turn, and a family built on the user's new-over-old rule (`strength()`: new marks weigh 0.5 + 0.5 × consistency, and the fit is bounded so being read on last season cannot help; `recency_*`).
+- `choose_experiment` takes the largest log-likelihood gain on 2021-2023 among candidates naming no fewer medallists. For a short while it was limited to the new-over-old family. The user then said accuracy comes first, and it went back to the rule first committed. A locked-year run of the earlier pick (`recency_recent_70d`) had already finished. Its files were renamed `*_recency_recent_70d_UNOPENED` without being read, committed, and opened only after the chosen model's result was recorded.
+
+**Tuning years, 2021-2023 (305 finals).** Today's model named 67.2% of medallists and 159 winners. `v2` named 67.8% and 175, with +0.217 log-likelihood a final; `v2_form_best_5` (form from the best five marks) 67.9% and 178, with +0.229 (lower bound +0.169). The new-over-old family gained +0.14 to +0.18, most on the Asian finals, with about as many medallists. Leaving out form cost the most, then big-meet podiums and recent form; head-to-head added little.
+
+**Locked years, 2024-2025 (206 finals): `v2_form_best_5` passed every condition (`0a56e83a`).**
+
+| | today's model | `v2_form_best_5` | points |
+|---|---|---|---|
+| medallists named | 62.9% | 64.4% | 62.0% |
+| winners named first | 105 | 105 | 96 |
+| Asian finals (36) | 65.7% | 67.6% | 70.4% |
+| Diamond League Finals (62) | 67.7% | 69.4% | 65.1% |
+| Olympics and Worlds (72) | 55.6% | 57.4% | 55.1% |
+
+- Top-three log-likelihood +0.210 a final (90% lower bound +0.150), and all five controls below zero. By group: sprints +2.3 points, distance +1.8, throws +4.6, jumps −2.7.
+- For information, the unopened rule-limited run named 63.9% of medallists and 99 winners.
+- Fitted on every final, the model puts about three times the weight on this season's signals (form_gap +0.62, gap_third +0.59, gap_best +0.52, h2h_top +0.24, recent_delta +0.21, breakout_backed +0.19, big_podiums +0.18) as on history (pb_gap +0.38, pb_gap_thin +0.22, yoy −0.19).
+
+**The 2026 Ultimate, reported only (`src/field_model_check_2026.py`).** On 25 finals `v2_form_best_5` named 54 medallists and 15 winners, today's model 54 and 12, the old frozen call 52 and 12, and points 55 medallists. It gained Tamberi, Pathirage, Mahuchikh and Sarr, lost Jefferson-Wooden's 200m, and gave Dos Santos a 58% chance to win.
+
+**Serving (`038a03fb`, `10da90a`, and the data commit with this note).**
+- `field_model.spec_of` says how a saved model reads races, and `field_chances` scores with the model's own features.
+- `asian_games_predictions.py` fetches every entrant's season into `data/asian_games_2026/races` before building (510 fetched, none failed); `--refresh-races` fetches them again. Rebuilt: 36 events by the model, podium chances adding to 300 and win chances to 100 in each. The favourite changed in 7: the men's 1500m (Iizawa), high jump (Kushare) and hammer (Khodjaev), and the women's 800m (Jepkosgei), 1500m (Tanaka), 5000m (Yavi) and high jump (Lu). Samba reads 97.9% for a medal and 62.5% to win.
+- `world_rankings.py` fetches the hammer and 10,000m top 20s' seasons into `data/field/current` (80 fetched). The hammer picks stay Katzberg and Rogers; the 10,000m picks move to Abdilaahi (who also leads on points) and Agnes Mwikali Mutuku.
+- The page's method panel describes what the model reads and states the locked test, including that points named more medallists on the Asian finals (`asianGames.how.testHeld`). `backtest_summary` feeds it from `outputs/field_model_holdout.json` only when the served model is the one that report tested.
+
+**Checks.** 671 backend tests pass. Frontend `tsc`, eslint on the changed files and `npm run build` pass, and EN and FR have 900 keys each. After the rebuild, with the local API restarted: the smoke test loaded 20 of 20 pages in EN and FR, and the browser showed the new panel in both languages (206 finals, 64.4% against 62.9% and 62%, and points' 70.4% on the Asian finals), the win column (men's 10,000m: Suzuki 98.9% and 59.2%), Samba's sentence (97.9% and 62.5%), and the men's hammer page, with no console errors.
+
+---
+
+## Earlier map (2026-09-15, before the evening's work; superseded by the two sections above)
+
+_Kept for its detail. Where it disagrees with the sections above, they are right._
 
 **What is live and what is not**
 - The site is at `https://www.podiumcall.cc` (Vercel). `podiumcall.cc` and `podiumcall.vercel.app` redirect to it. The API is still `https://podiumcall.onrender.com`.

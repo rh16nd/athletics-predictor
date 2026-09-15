@@ -1,0 +1,108 @@
+{
+ "features": [
+  "gap_best",
+  "gap_third",
+  "pb_gap",
+  "no_history",
+  "sb_months",
+  "yoy",
+  "age",
+  "sb_prior_season"
+ ],
+ "mean": [
+  -0.6594838979506482,
+  -0.30570974487662067,
+  0.07688665830196571,
+  0.04951902969468842,
+  2.3800322167391843,
+  0.06913007109995817,
+  26.664111568278376,
+  0.028523630280217482
+ ],
+ "std": [
+  0.5555912006480909,
+  0.4914832025820444,
+  0.4320311149302069,
+  0.21694906174672654,
+  2.296289320203261,
+  0.3944532136322757,
+  4.069380282480007,
+  0.1664633076562368
+ ],
+ "weights": [
+  0.8965763837776176,
+  1.0135238537528037,
+  0.44163880297257696,
+  0.025918514320394673,
+  -0.20471445043558115,
+  -0.2140078085066224,
+  -0.15903080754965654,
+  0.022897692872680283
+ ],
+ "l2": 0.01,
+ "finals": 1099,
+ "converged": true,
+ "ship": {
+  "sprints": {
+   "finals": 150,
+   "possible": 450,
+   "modelHits": 311,
+   "pointsHits": 306,
+   "meanDiff": 0.03333333333333333,
+   "lower90": -0.03333333333333333,
+   "asiaFinals": 30,
+   "asiaModelHits": 58,
+   "asiaPointsHits": 63,
+   "asiaMeanDiff": -0.16666666666666666,
+   "controlModelHits": 178,
+   "controlLower90": -0.9666666666666667,
+   "passed": false
+  },
+  "distance": {
+   "finals": 132,
+   "possible": 396,
+   "modelHits": 233,
+   "pointsHits": 225,
+   "meanDiff": 0.06060606060606061,
+   "lower90": -0.007575757575757576,
+   "asiaFinals": 30,
+   "asiaModelHits": 56,
+   "asiaPointsHits": 59,
+   "asiaMeanDiff": -0.1,
+   "controlModelHits": 94,
+   "controlLower90": -1.0909090909090908,
+   "passed": false
+  },
+  "jumps": {
+   "finals": 120,
+   "possible": 360,
+   "modelHits": 241,
+   "pointsHits": 240,
+   "meanDiff": 0.008333333333333333,
+   "lower90": -0.058333333333333334,
+   "asiaFinals": 24,
+   "asiaModelHits": 48,
+   "asiaPointsHits": 48,
+   "asiaMeanDiff": 0.0,
+   "controlModelHits": 125,
+   "controlLower90": -1.0583333333333333,
+   "passed": false
+  },
+  "throws": {
+   "finals": 109,
+   "possible": 327,
+   "modelHits": 210,
+   "pointsHits": 211,
+   "meanDiff": -0.009174311926605505,
+   "lower90": -0.07339449541284404,
+   "asiaFinals": 24,
+   "asiaModelHits": 48,
+   "asiaPointsHits": 47,
+   "asiaMeanDiff": 0.041666666666666664,
+   "controlModelHits": 109,
+   "controlLower90": -1.055045871559633,
+   "passed": false
+  }
+ },
+ "fitAt": "2026-09-14T21:38:32Z"
+}
