@@ -554,7 +554,7 @@ BIG_PODIUM_CAP = 5
 # A final's round is "F", or "F1", "F2" when it is run in sections. Heats are
 # "H1", qualifying rounds "Q1", semi-finals "SF1".
 _FINAL_ROUND = re.compile(r"^F\d*$")
-RACE_COLUMNS = ["form_score", "recent_score", "races", "big_podiums", "h2h_top", "has_races"]
+RACE_COLUMNS = ["form_score", "form_spread", "recent_score", "races", "big_podiums", "h2h_top", "has_races"]
 
 
 def race_summary(events, key, cutoff, recent_days=RECENT_DAYS, form_marks=FORM_MARKS,
@@ -567,6 +567,7 @@ def race_summary(events, key, cutoff, recent_days=RECENT_DAYS, form_marks=FORM_M
     scores only legal, electronically timed ones, as in profile_best:
       form_score    the mean of the best FORM_MARKS scores, so one outlying mark
                     moves it less than it moves the season best;
+      form_spread   how many points those best scores span, 0 for a single mark;
       recent_score  the best score in the RECENT_DAYS before the cut-off, or None;
       races         how many scores there are.
     A place counts whether or not its mark does:
@@ -598,7 +599,8 @@ def race_summary(events, key, cutoff, recent_days=RECENT_DAYS, form_marks=FORM_M
     if not scores and not finals:
         return None
     best = sorted(scores, reverse=True)[:form_marks]
-    return {"form_score": sum(best) / len(best) if best else None, "recent_score": recent,
+    return {"form_score": sum(best) / len(best) if best else None,
+            "form_spread": max(best) - min(best) if best else None, "recent_score": recent,
             "races": len(scores), "big_podiums": min(podiums, BIG_PODIUM_CAP), "finals": finals}
 
 
@@ -646,6 +648,7 @@ def race_columns(field, season_for, **how):
 
     return pd.DataFrame({
         "form_score": [value(i, "form_score") for i in field.index],
+        "form_spread": [value(i, "form_spread") for i in field.index],
         "recent_score": [value(i, "recent_score") for i in field.index],
         "races": [value(i, "races") for i in field.index],
         "big_podiums": [value(i, "big_podiums") for i in field.index],

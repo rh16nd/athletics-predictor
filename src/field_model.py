@@ -110,6 +110,25 @@ FEATURES_V2 = FEATURES + NEW_FEATURES
 THIN_SEASON = 2
 CONTROLS = 5
 
+# The user's rule (2026-09-15): an athlete's new marks are never outweighed by
+# their old ones, and the more consistent their season, the more they are
+# judged on it alone. strength() blends this season's form with the career best
+# before it, the new marks weighing at least half: all of it for an athlete with
+# CONSISTENT_RACES marks inside CONSISTENT_SPREAD points, and all of it for an
+# athlete who is better now than before. The pb_gap, yoy, pb_gap_thin and
+# breakout_backed features, which let history outweigh the season, are left out.
+CONSISTENT_RACES = 5
+CONSISTENT_SPREAD = 50.0
+STRENGTH_FEATURES = ["strength_gap_best", "strength_gap_third", "consistency"]
+RECENCY_FEATURES = STRENGTH_FEATURES + ["no_history", "sb_months", "age", "sb_prior_season",
+                                        "recent_delta", "no_recent", "big_podiums", "h2h_top"]
+# Signs the rule fixes, held as bounds on the fit: a stronger, more consistent
+# or more in-form athlete can only gain, and being read on last season's mark
+# for want of one this season can only count against them.
+RECENCY_BOUNDS = {"strength_gap_best": (0.0, None), "strength_gap_third": (0.0, None),
+                  "consistency": (0.0, None), "recent_delta": (0.0, None), "sb_prior_season": (None, 0.0)}
+ALL_FEATURES = list(dict.fromkeys(FEATURES_V2 + RECENCY_FEATURES))
+
 
 def group_of(disc_key):
     event = str(disc_key).split("_", 1)[-1]
@@ -140,7 +159,12 @@ def field_features(rows, cutoff, features=FEATURES):
       pb_gap_thin      pb_gap in a season of THIN_SEASON marks or fewer, else 0:
                        history counts for more when the season says little
       breakout_backed  how far form sits above the career best: a breakout the
-                       races back up, where one big mark barely moves form"""
+                       races back up, where one big mark barely moves form
+
+    The recency family (RECENCY_FEATURES) reads strength() instead:
+      strength_gap_best, strength_gap_third  strength below the field's best
+                       and its third best
+      consistency      how many marks and how tightly the best of them sit"""
     df = rows[pd.notna(rows["sb_score"])].copy()
     cutoff = pd.Timestamp(cutoff)
     s = df["sb_score"].astype(float)
@@ -163,21 +187,50 @@ def field_features(rows, cutoff, features=FEATURES):
     out["age"] = ages.fillna(ages.median() if ages.notna().any() else 25.0)
     out["sb_prior_season"] = prior
     if any(name in NEW_FEATURES for name in features):
-        def column(name):
-            if name not in df.columns:
-                return pd.Series(np.nan, index=df.index)
-            return pd.to_numeric(df[name], errors="coerce")
-
-        form = column("form_score").fillna(s)
-        recent = column("recent_score")
+        form = _column(df, "form_score").fillna(s)
+        recent = _column(df, "recent_score")
         out["form_gap"] = (form - (ordered[0] if n else 0.0)) / 100.0
         out["recent_delta"] = ((recent - form) / 100.0).fillna(0.0)
         out["no_recent"] = recent.isna().astype(float)
-        out["big_podiums"] = column("big_podiums").fillna(0.0)
-        out["h2h_top"] = column("h2h_top").fillna(0.0)
-        out["pb_gap_thin"] = out["pb_gap"] * (column("races").fillna(0.0) <= THIN_SEASON)
+        out["big_podiums"] = _column(df, "big_podiums").fillna(0.0)
+        out["h2h_top"] = _column(df, "h2h_top").fillna(0.0)
+        out["pb_gap_thin"] = out["pb_gap"] * (_column(df, "races").fillna(0.0) <= THIN_SEASON)
         out["breakout_backed"] = ((form - career).clip(lower=0) / 100.0).fillna(0.0)
+    if any(name in STRENGTH_FEATURES for name in features):
+        value, consistency, _ = strength(df)
+        by_strength = value.sort_values(ascending=False).to_numpy()
+        third_strength = by_strength[2] if n >= 3 else (by_strength[-1] if n else 0.0)
+        out["strength_gap_best"] = (value - (by_strength[0] if n else 0.0)) / 100.0
+        out["strength_gap_third"] = (value - third_strength) / 100.0
+        out["consistency"] = consistency
     return out[list(features)].astype(float)
+
+
+def _column(df, name):
+    if name not in df.columns:
+        return pd.Series(np.nan, index=df.index)
+    return pd.to_numeric(df[name], errors="coerce")
+
+
+def strength(df):
+    """(strength, consistency, the weight on the new marks) for each athlete, in
+    World Athletics points: the user's rule that new marks count for more.
+
+    The new level is form_score, the mean of the season's best marks, or the
+    season best with no races on file. The old level is career_best, the best
+    before this season. Consistency is how many marks there are, up to
+    CONSISTENT_RACES, times how tightly the best of them sit: 1 when they are
+    level, 0 at CONSISTENT_SPREAD points apart. The new marks weigh
+    0.5 + 0.5 x consistency, so the old never weigh more than half, and an
+    athlete at or above their old level is read on the new marks alone."""
+    new = _column(df, "form_score").fillna(pd.to_numeric(df["sb_score"], errors="coerce"))
+    old = _column(df, "career_best")
+    races = _column(df, "races").fillna(1.0).clip(lower=1.0, upper=CONSISTENT_RACES)
+    tight = (1.0 - _column(df, "form_spread").fillna(0.0).clip(lower=0.0) / CONSISTENT_SPREAD).clip(lower=0.0)
+    consistency = races / CONSISTENT_RACES * tight
+    weight = 0.5 + 0.5 * consistency
+    value = new.where(old.isna() | (new >= old), weight * new + (1.0 - weight) * old)
+    return value, consistency, weight
 
 
 # ---- the model ----------------------------------------------------------------
@@ -242,8 +295,11 @@ def _loss_and_grad(w, X, mask, top, l2):
     return loss, grad
 
 
-def fit(finals, l2=L2):
-    """Fit on every trainable final whose top three all have a season score."""
+def fit(finals, l2=L2, bounds=None):
+    """Fit on every trainable final whose top three all have a season score.
+    `bounds` is {feature: (low, high)} on that feature's weight, for the signs
+    the recency family's rule fixes (RECENCY_BOUNDS). Features are standardised
+    by a positive scale, so a sign held on the fitted weight holds on the raw one."""
     usable = [f for f in finals if f["top_idx"] is not None and f.get("trainable", True)]
     if not usable:
         raise ValueError("no trainable final with a scored top three to fit on")
@@ -252,9 +308,11 @@ def fit(finals, l2=L2):
     std = stacked.std(axis=0)
     std[std == 0] = 1.0
     X, mask, top = _pack(usable, mean, std)
+    names = list(usable[0].get("features", FEATURES))
+    box = [(bounds or {}).get(name, (None, None)) for name in names] if bounds else None
     result = minimize(_loss_and_grad, np.zeros(stacked.shape[1]), args=(X, mask, top, l2),
-                      jac=True, method="L-BFGS-B")
-    return {"features": list(usable[0].get("features", FEATURES)), "mean": mean.tolist(), "std": std.tolist(),
+                      jac=True, method="L-BFGS-B", bounds=box)
+    return {"features": names, "mean": mean.tolist(), "std": std.tolist(),
             "weights": result.x.tolist(), "l2": l2, "finals": len(usable),
             "converged": bool(result.success)}
 
@@ -346,7 +404,7 @@ def _top3(names, values):
     return {names[i] for i in order[:3]}
 
 
-def backtest(finals, l2=L2, shuffle_seed=None, years=None, by_group=False):
+def backtest(finals, l2=L2, shuffle_seed=None, years=None, by_group=False, bounds=None):
     """Walk forward over `years`, TEST_YEARS unless given. Returns (per-final
     results, per-athlete chances). With `shuffle_seed`, every final's feature
     rows are shuffled, for training and testing alike: the control, which
@@ -370,7 +428,7 @@ def backtest(finals, l2=L2, shuffle_seed=None, years=None, by_group=False):
             chunk = [f for f in test if group is None or f["group"] == group]
             if not chunk or not any(f["top_idx"] is not None and f.get("trainable", True) for f in train):
                 continue
-            model = fit(train, l2)
+            model = fit(train, l2, bounds)
             for f in chunk:
                 u = utilities(model, f["X"])
                 chances = podium_chances(u)
@@ -531,6 +589,18 @@ EXPERIMENTS = {
     "v2_without_form": {"features": _without("form_gap", "breakout_backed")},
     "v2_without_recent": {"features": _without("recent_delta", "no_recent")},
     "v2_without_history_blend": {"features": _without("pb_gap_thin")},
+    # The user's rule, new marks over old (strength, RECENCY_BOUNDS). Only these
+    # can be chosen for the locked years; the rest are for information.
+    "recency": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS, "newOverOld": True},
+    "recency_l2_strong": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS, "l2": 0.1, "newOverOld": True},
+    "recency_by_group": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS, "by_group": True,
+                         "newOverOld": True},
+    "recency_recent_70d": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS,
+                           "race": {"recent_days": 70}, "newOverOld": True},
+    "recency_without_h2h": {"features": [f for f in RECENCY_FEATURES if f != "h2h_top"],
+                            "bounds": RECENCY_BOUNDS, "newOverOld": True},
+    "recency_without_big_podiums": {"features": [f for f in RECENCY_FEATURES if f != "big_podiums"],
+                                    "bounds": RECENCY_BOUNDS, "newOverOld": True},
 }
 RESULT_KEY = ["year", "competition", "discipline"]
 
@@ -546,11 +616,11 @@ def spec_scored(scored, spec, races=None):
 
 def fit_spec(finals, spec):
     """An experiment's model on `finals`: one model, or one per event group."""
-    l2 = spec.get("l2", L2)
+    l2, bounds = spec.get("l2", L2), spec.get("bounds")
     if not spec.get("by_group"):
-        return fit(finals, l2)
+        return fit(finals, l2, bounds)
     return {"features": list(spec["features"]), "byGroup": {
-        group: fit([f for f in finals if f["group"] == group], l2) for group in GROUPS
+        group: fit([f for f in finals if f["group"] == group], l2, bounds) for group in GROUPS
         if any(f["group"] == group and f["top_idx"] is not None and f.get("trainable", True) for f in finals)}}
 
 
@@ -568,11 +638,13 @@ def _weights(model):
 
 def choose_experiment(rows):
     """The candidate for HOLDOUT_YEARS, by the rule fixed on 2026-09-15 before
-    any experiment ran: the largest mean top-three log-likelihood gain on
-    DEV_YEARS among the candidates that name at least as many medallists per
-    final as today's model. None when none gains."""
-    eligible = [r for r in rows if r["name"] != "today" and r.get("meanLlGain") is not None
-                and r["meanLlGain"] > 0 and r.get("meanHitsDiff") is not None and r["meanHitsDiff"] >= 0]
+    any experiment ran: among the experiments that follow the user's rule of new
+    marks over old (`newOverOld`), the largest mean top-three log-likelihood gain
+    on DEV_YEARS that names at least as many medallists per final as today's
+    model. None when none gains."""
+    eligible = [r for r in rows if EXPERIMENTS.get(r["name"], {}).get("newOverOld")
+                and r.get("meanLlGain") is not None and r["meanLlGain"] > 0
+                and r.get("meanHitsDiff") is not None and r["meanHitsDiff"] >= 0]
     return max(eligible, key=lambda r: r["meanLlGain"])["name"] if eligible else None
 
 
@@ -589,7 +661,8 @@ def compare(scored, candidate="v2", baseline="today", years=DEV_YEARS, controls=
 
     def run(side, finals):
         spec = specs[side]
-        return backtest(finals, spec.get("l2", L2), years=years, by_group=spec.get("by_group", False))
+        return backtest(finals, spec.get("l2", L2), years=years, by_group=spec.get("by_group", False),
+                        bounds=spec.get("bounds"))
 
     (base, base_athletes), (cand, cand_athletes) = run("baseline", built["baseline"]), run("candidate", built["candidate"])
     features = specs["candidate"]["features"]

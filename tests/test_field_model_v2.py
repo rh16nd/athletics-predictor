@@ -46,6 +46,7 @@ def test_form_is_the_mean_of_the_best_three_so_one_outlying_mark_moves_it_less_t
                result("20 JUL 2015", 1260))
     summary = fd.race_summary(s, "men_800m", CUTOFF)
     assert summary["form_score"] == pytest.approx((1260 + 1180 + 1175) / 3)
+    assert summary["form_spread"] == 1260 - 1175
     assert summary["races"] == 4
 
 
@@ -327,17 +328,69 @@ def test_an_experiment_that_reads_races_its_own_way_recomputes_the_race_columns(
 def test_every_experiment_uses_known_features_and_known_ways_of_reading_races():
     assert fm.EXPERIMENTS["today"]["features"] == fm.FEATURES
     for name, spec in fm.EXPERIMENTS.items():
-        assert set(spec["features"]) <= set(fm.FEATURES_V2), name
+        assert set(spec["features"]) <= set(fm.ALL_FEATURES), name
         assert set(spec.get("race", {})) <= {"recent_days", "form_marks", "big_categories"}, name
 
 
-def test_the_candidate_for_the_locked_years_gains_on_the_tuning_years_without_naming_fewer_medallists():
+def test_the_candidate_for_the_locked_years_follows_the_rule_gains_and_names_no_fewer_medallists():
     rows = [{"name": "today", "meanLlGain": 0.0, "meanHitsDiff": 0.0},
-            {"name": "biggest_gain_fewer_medallists", "meanLlGain": 0.09, "meanHitsDiff": -0.01},
-            {"name": "gains", "meanLlGain": 0.05, "meanHitsDiff": 0.0},
-            {"name": "gains_less", "meanLlGain": 0.02, "meanHitsDiff": 0.04}]
-    assert fm.choose_experiment(rows) == "gains"
-    assert fm.choose_experiment([{"name": "worse", "meanLlGain": -0.01, "meanHitsDiff": 0.1}]) is None
+            {"name": "v2", "meanLlGain": 0.20, "meanHitsDiff": 0.10},   # lets old marks outweigh new: never chosen
+            {"name": "recency_by_group", "meanLlGain": 0.09, "meanHitsDiff": -0.01},
+            {"name": "recency", "meanLlGain": 0.05, "meanHitsDiff": 0.0},
+            {"name": "recency_l2_strong", "meanLlGain": 0.02, "meanHitsDiff": 0.04}]
+    assert fm.choose_experiment(rows) == "recency"
+    assert fm.choose_experiment([{"name": "recency", "meanLlGain": -0.01, "meanHitsDiff": 0.1}]) is None
+
+
+# ---- the user's rule: new marks over old ------------------------------------------
+
+def test_old_marks_never_outweigh_new_ones_and_a_consistent_season_is_judged_on_itself():
+    rows = pd.DataFrame({
+        "sb_score": [1200.0] * 5,
+        "form_score": [1180.0, 1180.0, 1180.0, 1250.0, 1180.0],
+        "form_spread": [10.0, 10.0, 80.0, 10.0, 10.0],
+        "races": [5, 1, 5, 5, 5],
+        "career_best": [1300.0, 1300.0, 1300.0, 1210.0, None],
+    })
+    value, consistency, weight = fm.strength(rows)
+    # Five marks ten points apart: consistency 0.8, and the new marks weigh 0.9.
+    assert consistency[0] == pytest.approx(0.8) and weight[0] == pytest.approx(0.9)
+    assert value[0] == pytest.approx(0.9 * 1180 + 0.1 * 1300)
+    # One mark: consistency 0.16, and the new marks still weigh more than half.
+    assert weight[1] == pytest.approx(0.58)
+    # Best marks eighty points apart: the old marks count, but only as much as the new.
+    assert weight[2] == pytest.approx(0.5) and value[2] == pytest.approx((1180 + 1300) / 2)
+    # Better now than before, or no past at all: read on the new marks alone.
+    assert value[3] == 1250.0 and value[4] == 1180.0
+    assert (weight >= 0.5).all()
+
+
+def test_the_rule_holds_the_signs_the_fit_is_not_allowed_to_cross():
+    """Being read on last season's mark predicts a podium in these finals, and a
+    free fit rewards it; held by the rule, its weight cannot rise above zero."""
+    sprints = [f for f in opposing_finals([2019, 2020], per_year=40) if f["group"] == "sprints"]
+    tempting = [dict(f, X=np.hstack([f["X"], (f["X"] > 0).astype(float)]), features=["x", "sb_prior_season"])
+                for f in sprints]
+    assert fm.fit(tempting)["weights"][1] > 0
+    assert fm.fit(tempting, bounds=fm.RECENCY_BOUNDS)["weights"][1] <= 1e-9
+
+
+def test_the_recency_features_do_not_move_when_weaker_entrants_are_added():
+    top = [1200, 1190, 1180, 1150, 1140, 1120, 1110, 1100]
+    final = fm.field_features(v2_field(top), "2023-09-29", fm.RECENCY_FEATURES).to_numpy()
+    entry = fm.field_features(v2_field(top + list(range(1000, 800, -10))), "2023-09-29", fm.RECENCY_FEATURES)
+    assert np.allclose(final, entry.to_numpy()[:8])
+    assert list(entry.columns) == fm.RECENCY_FEATURES
+
+
+def test_only_candidates_built_on_the_rule_can_be_chosen():
+    history_first = {"pb_gap", "yoy", "pb_gap_thin", "breakout_backed"}
+    eligible = {name: spec for name, spec in fm.EXPERIMENTS.items() if spec.get("newOverOld")}
+    assert "recency" in eligible
+    for name, spec in eligible.items():
+        assert not history_first & set(spec["features"]), name
+        assert spec["bounds"] == fm.RECENCY_BOUNDS, name
+    assert not any(fm.EXPERIMENTS[name].get("newOverOld") for name in ("today", "v2"))
 
 
 def test_the_locked_years_are_scored_once(tmp_path, monkeypatch):
