@@ -31,3 +31,9 @@ data/_backup/
 # src/field_data.py --seasons. Regenerable per-athlete data like the folder
 # above, one JSON per year, and tens of megabytes once filled.
 data/field/seasons/
+
+# The same finalists' seasons race by race, with meeting, category, round and
+# place, from src/field_data.py --races, for the field model's form features,
+# and the 2026 Ultimate finalists' seasons, from src/field_model_check_2026.py.
+data/field/races/
+data/field/races_2026/

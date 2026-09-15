@@ -37,6 +37,7 @@ Usage, in order:
     python src/field_data.py --finals          # championships, world and Asian
     python src/field_data.py --ids             # every finalist's World Athletics id
     python src/field_data.py --seasons [--years 2015,2017]   # profiles the toplists need
+    python src/field_data.py --races [--years 2015,2017]     # every finalist's races, with places
     python src/field_data.py --report          # join to season scores, print coverage
 """
 import argparse
@@ -63,6 +64,7 @@ FIELD_DIR = os.path.join(BASE_DIR, "data", "field")
 ASIA_DIR = os.path.join(FIELD_DIR, "asia")
 EUROPE_DIR = os.path.join(FIELD_DIR, "europe")
 SEASONS_DIR = os.path.join(FIELD_DIR, "seasons")
+RACES_DIR = os.path.join(FIELD_DIR, "races")
 CHAMPIONSHIP_FINALS_PATH = os.path.join(FIELD_DIR, "championship_finals.csv")
 IDS_PATH = os.path.join(FIELD_DIR, "finalist_ids.csv")
 FINALS_PATH = os.path.join(FIELD_DIR, "finals.csv")
@@ -130,6 +132,15 @@ SEASON_RESULTS_QUERY = """query SeasonResults($id: Int, $year: Int) {
     resultsByEvent { discipline indoor results { date mark notLegal resultScore } }
   }
 }"""
+
+# The same season with each result's meeting, its World Athletics category (OW,
+# DF, GW, GL, then A to F), its round ("F" for a final) and the place, for the
+# field model's form, big-meet and head-to-head features. Checked live on
+# 2026-09-15: Abderrahman Samba's 2026 400m hurdles came back as "GCC Games",
+# category D, race F, place "1.", and Xiamen as GW, F, "5.".
+RACES_QUERY = SEASON_RESULTS_QUERY.replace(
+    "results { date mark notLegal resultScore }",
+    "results { date competition category race place mark notLegal resultScore }")
 
 FINAL_COLUMNS = ["competition", "competition_id", "tier", "year", "cutoff", "discipline",
                  "athlete_name", "nationality", "place", "mark"]
@@ -454,21 +465,30 @@ def _save_season(year, athletes, seasons_dir):
     os.replace(path + ".tmp", path)
 
 
-def fetch_season(athlete_id, year):
+def fetch_season(athlete_id, year, query=SEASON_RESULTS_QUERY):
     time.sleep(ags.LOOKUP_PAUSE)
-    data = dlr.graphql("SeasonResults", {"id": int(athlete_id), "year": int(year)}, SEASON_RESULTS_QUERY)
+    data = dlr.graphql("SeasonResults", {"id": int(athlete_id), "year": int(year)}, query)
     return (data.get("getSingleCompetitorResultsDiscipline") or {}).get("resultsByEvent") or []
 
 
-def fetch_seasons(wanted, fetch=fetch_season, seasons_dir=SEASONS_DIR, save_every=100):
+def fetch_races(athlete_id, year):
+    """One season with each result's meeting, category, round and place."""
+    return fetch_season(athlete_id, year, RACES_QUERY)
+
+
+def fetch_seasons(wanted, fetch=fetch_season, seasons_dir=SEASONS_DIR, save_every=100, refresh=False):
     """Each (athlete id, year) in `wanted` that is not on disk, saved one file
     per year so that workers given different years never write the same file.
     A request that fails is not saved, so the next run asks again; a season
     with no results is saved empty, so it is not asked twice. Returns the
-    number that failed."""
+    number that failed.
+
+    With `refresh`, every season in `wanted` is fetched again: an entry list's
+    season is still going on, and the call before a championship must see the
+    meetings run since the last fetch."""
     seasons = load_seasons(seasons_dir)
     wanted = {(int(a), int(y)) for a, y in wanted}
-    todo = sorted(w for w in wanted if str(w[0]) not in seasons.get(w[1], {}))
+    todo = sorted(w for w in wanted if refresh or str(w[0]) not in seasons.get(w[1], {}))
     print(f"  {len(wanted)} athlete-seasons wanted, {len(wanted) - len(todo)} on disk, {len(todo)} to fetch")
     failed, dirty = 0, set()
     for i, (athlete, year) in enumerate(todo, 1):
@@ -493,20 +513,153 @@ def profile_best(events, key, cutoff):
     that were legal, outdoors, electronically timed and dated before the
     cut-off; None when there are none. A profile's resultScore is the toplist's
     Results Score (asian_games_scraper.season_best checked it), and toplists
-    take only electronic times, so a hand time ("1:44.2h") is left out."""
+    take only electronic times, so a hand time ("1:44.2h") is left out.
+
+    Indoors comes from the "(i)" World Athletics puts at the end of a meeting's
+    name (ags.is_indoor), because the profile's own flag is always empty. The
+    seasons in data/field/seasons were fetched without meeting names, so only a
+    season from --races (data/field/races) can be filtered (found 2026-09-15)."""
     wanted = ags.WA_EVENT_NAMES.get(key)
     best = None
     for group in events or []:
-        if group.get("discipline") != wanted or group.get("indoor"):
+        if group.get("discipline") != wanted:
             continue
         for result in group.get("results") or []:
             score, when = result.get("resultScore"), parse_date(result.get("date"))
             if (result.get("notLegal") or not score or when is None or when >= cutoff
+                    or ags.is_indoor(result, group)
                     or str(result.get("mark") or "").strip().lower().endswith("h")):
                 continue
             if best is None or score > best[0]:
                 best = (float(score), when)
     return best
+
+
+# ---- race by race: form, big meetings and head-to-head --------------------------
+
+# World Athletics' meeting categories, top tier first: OW is the Olympics and the
+# World Championships, DF the Diamond League Final meetings, and GW and GL hold
+# the Diamond League meetings and area championships such as the Europeans
+# (2012's GL results open with the European Championships, Zurich, Eugene,
+# Lausanne and Monaco). A, the tier below, holds the Commonwealth Games, the 2018
+# Asian Games and Continental Tour Silver meetings. Fixed on 2026-09-15 from the
+# category counts of the first 29,472 results fetched, before any comparison
+# was run, and not to be changed after one has been.
+BIG_CATEGORIES = frozenset({"OW", "DF", "GW", "GL"})
+# Recent form is the six weeks before the cut-off: a championship's lead-in
+# (the Diamond League Final and the Ultimate, before the 2026 Asian Games).
+RECENT_DAYS = 42
+FORM_MARKS = 3
+BIG_PODIUM_CAP = 5
+# A final's round is "F", or "F1", "F2" when it is run in sections. Heats are
+# "H1", qualifying rounds "Q1", semi-finals "SF1".
+_FINAL_ROUND = re.compile(r"^F\d*$")
+RACE_COLUMNS = ["form_score", "recent_score", "races", "big_podiums", "h2h_top", "has_races"]
+
+
+def race_summary(events, key, cutoff):
+    """One athlete's season in one event before the cut-off, race by race, or
+    None when it holds nothing there.
+
+    Only outdoor results dated strictly before the cut-off count, and for the
+    scores only legal, electronically timed ones, as in profile_best:
+      form_score    the mean of the best FORM_MARKS scores, so one outlying mark
+                    moves it less than it moves the season best;
+      recent_score  the best score in the RECENT_DAYS before the cut-off, or None;
+      races         how many scores there are.
+    A place counts whether or not its mark does:
+      big_podiums   places 1 to 3 in a final at a BIG_CATEGORIES meeting,
+                    capped at BIG_PODIUM_CAP;
+      finals        {(meeting, date, round): place} for every final, for h2h_top."""
+    wanted = ags.WA_EVENT_NAMES.get(key)
+    cutoff = pd.Timestamp(cutoff)
+    scores, recent, podiums, finals = [], None, 0, {}
+    for group in events or []:
+        if group.get("discipline") != wanted:
+            continue
+        for result in group.get("results") or []:
+            when = parse_date(result.get("date"))
+            if when is None or when >= cutoff or ags.is_indoor(result, group):
+                continue
+            place, round_ = _place(result.get("place")), str(result.get("race") or "")
+            if place is not None and _FINAL_ROUND.match(round_):
+                finals[(str(result.get("competition") or ""), when, round_)] = place
+                if place <= 3 and result.get("category") in BIG_CATEGORIES:
+                    podiums += 1
+            score = result.get("resultScore")
+            if (result.get("notLegal") or not score
+                    or str(result.get("mark") or "").strip().lower().endswith("h")):
+                continue
+            scores.append(float(score))
+            if (cutoff - when).days <= RECENT_DAYS:
+                recent = float(score) if recent is None else max(recent, float(score))
+    if not scores and not finals:
+        return None
+    best = sorted(scores, reverse=True)[:FORM_MARKS]
+    return {"form_score": sum(best) / len(best) if best else None, "recent_score": recent,
+            "races": len(scores), "big_podiums": min(podiums, BIG_PODIUM_CAP), "finals": finals}
+
+
+def h2h_top(finals_by_athlete, scores):
+    """{athlete: net head-to-head record against the field's strongest}.
+
+    `finals_by_athlete` is {athlete: race_summary's finals} and `scores`
+    {athlete: season score or None}, for one field. Each athlete is set against
+    the three highest season scores in the field other than their own, in the
+    finals both ran: (wins - losses) / meetings, and 0 when they never met.
+    Against those three alone, so adding slower entrants changes nobody's
+    number. A final counts once for each pair, and a shared place is neither a
+    win nor a loss."""
+    ranked = sorted((a for a, s in scores.items() if s is not None and not pd.isna(s)),
+                    key=lambda a: (-float(scores[a]), str(a)))
+    out = {}
+    for athlete in scores:
+        mine = finals_by_athlete.get(athlete) or {}
+        wins = losses = 0
+        for rival in [r for r in ranked if r != athlete][:3]:
+            theirs = finals_by_athlete.get(rival) or {}
+            for race in mine.keys() & theirs.keys():
+                wins += mine[race] < theirs[race]
+                losses += mine[race] > theirs[race]
+        out[athlete] = (wins - losses) / (wins + losses) if wins + losses else 0.0
+    return out
+
+
+def race_columns(field, season_for):
+    """RACE_COLUMNS for one field, a final or an entry list: a DataFrame with
+    discipline, cutoff and sb_score. `season_for(row)` gives that athlete's
+    season race by race (fetch_races), or None. Training and serving both read
+    races through here, so the two cannot drift apart."""
+    summaries = {}
+    for idx, row in field.iterrows():
+        events = season_for(row)
+        summaries[idx] = race_summary(events, row["discipline"], row["cutoff"]) if events is not None else None
+    h2h = h2h_top({i: (s or {}).get("finals") or {} for i, s in summaries.items()},
+                  {i: field.at[i, "sb_score"] for i in field.index})
+
+    def value(i, name):
+        return (summaries[i] or {}).get(name)
+
+    return pd.DataFrame({
+        "form_score": [value(i, "form_score") for i in field.index],
+        "recent_score": [value(i, "recent_score") for i in field.index],
+        "races": [value(i, "races") for i in field.index],
+        "big_podiums": [value(i, "big_podiums") for i in field.index],
+        "h2h_top": [h2h[i] for i in field.index],
+        "has_races": [summaries[i] is not None for i in field.index],
+    }, index=field.index)
+
+
+def attach_races(scored, races=None):
+    """The scored finals with RACE_COLUMNS, each final read on its own, so
+    head-to-head stays inside it. `races` is load_seasons(RACES_DIR)."""
+    races = {} if races is None else races
+    scored = scored.drop(columns=[c for c in RACE_COLUMNS if c in scored.columns])
+    if scored.empty:
+        return scored.assign(**{c: None for c in RACE_COLUMNS})
+    parts = [race_columns(final, lambda row: _season_for(races, row.get("athlete_id"), row["year"]))
+             for _, final in scored.groupby(["competition", "year", "discipline"], sort=False)]
+    return scored.join(pd.concat(parts))
 
 
 # ---- season scores ------------------------------------------------------------
@@ -696,7 +849,8 @@ def main(argv=None):
     parser.add_argument("--check-winners", action="store_true")
     parser.add_argument("--ids", action="store_true")
     parser.add_argument("--seasons", action="store_true")
-    parser.add_argument("--years", default=None, help="comma-separated seasons, for --seasons")
+    parser.add_argument("--races", action="store_true")
+    parser.add_argument("--years", default=None, help="comma-separated seasons, for --seasons and --races")
     parser.add_argument("--report", action="store_true")
     parser.add_argument("--only", default=None, help="comma-separated discipline keys")
     parser.add_argument("--refresh", action="store_true")
@@ -744,9 +898,25 @@ def main(argv=None):
         print(f"  {len(need)} of {len(first_pass)} finalists need a profile; "
               f"{int(need['athlete_id'].isna().sum())} of those have no id and stay unscored")
         fetch_seasons(wanted)
+    if args.races:
+        print("=== Every finalist's season before their final, race by race ===")
+        finals = with_ids(all_finals())
+        wanted = {(a, y) for a, y in zip(finals["athlete_id"], finals["year"]) if pd.notna(a)}
+        if args.years:
+            years = {int(y) for y in args.years.split(",")}
+            wanted = {w for w in wanted if int(w[1]) in years}
+        print(f"  {len(finals)} finalists, {int(finals['athlete_id'].isna().sum())} with no id")
+        fetch_seasons(wanted, fetch=fetch_races, seasons_dir=RACES_DIR)
     if args.report:
         print("=== Finals joined to season scores ===")
-        scored = attach_scores(with_ids(all_finals(keys)), seasons=load_seasons())
+        races = load_seasons(RACES_DIR)
+        # A season fetched race by race carries the meeting names that tell an
+        # indoor mark apart (ags.is_indoor), so it replaces the same season from
+        # --seasons, which cannot be filtered.
+        seasons = load_seasons()
+        for year, athletes in races.items():
+            seasons.setdefault(year, {}).update(athletes)
+        scored = attach_races(attach_scores(with_ids(all_finals(keys)), seasons=seasons), races)
         os.makedirs(FIELD_DIR, exist_ok=True)
         scored.to_csv(FINALS_PATH, index=False)
         table = coverage(scored)
@@ -763,6 +933,8 @@ def main(argv=None):
         undated = scored["needs_profile"] & scored["sb_score"].isna()
         print(f"  {int(undated.sum())} finalists are unscored: no mark before their cut-off on any list or on "
               f"their profile, and none on last season's lists (or no profile season on file)")
+        print(f"  Race by race: {int(scored['has_races'].sum())} of {len(scored)} finalists have a season "
+              f"in their event on file ({RACES_DIR})")
         print(f"  {len(scored)} rows -> {FINALS_PATH}")
     return 0
 

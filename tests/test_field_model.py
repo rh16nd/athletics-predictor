@@ -46,6 +46,21 @@ def test_a_field_of_three_or_fewer_is_certain():
     assert list(fm.podium_chances([0.3, -1.0, 2.0])) == [1.0, 1.0, 1.0]
 
 
+def test_win_chances_add_to_one_follow_the_podium_order_and_show_a_clear_leader():
+    """Three close athletes all near-certain of a medal split the win; a leader
+    clear of the rest takes most of it, though their podium chances look alike."""
+    u = [2.0, 1.2, 0.5, 0.0, -0.7, -1.5]
+    win = fm.win_chances(u)
+    assert win.sum() == pytest.approx(1.0)
+    assert win[0] == pytest.approx(np.exp(2.0) / np.exp(u).sum())
+    assert list(np.argsort(-win)) == list(np.argsort(-fm.podium_chances(u)))
+
+    close = [3.0, 2.9, 2.8] + [-2.0] * 5
+    clear = [4.5, 2.9, 2.8] + [-2.0] * 5
+    assert fm.podium_chances(close)[0] > 0.9 and fm.podium_chances(clear)[0] > 0.9
+    assert fm.win_chances(close)[0] < 0.4 < 0.7 < fm.win_chances(clear)[0]
+
+
 # ---- features -----------------------------------------------------------------
 
 def field(scores, cutoff="2023-09-29", **extra):
@@ -128,6 +143,12 @@ def test_a_profile_mark_counts_only_before_the_cut_off_outdoors_legal_and_electr
     events = [
         {"discipline": "800 Metres", "indoor": True, "results": [
             {"date": "01 FEB 2015", "mark": "1:44.00", "notLegal": False, "resultScore": 1250}]},
+        # What World Athletics actually sends: the flag empty, "(i)" on the meeting.
+        {"discipline": "800 Metres", "indoor": None, "results": [
+            {"date": "20 FEB 2015", "competition": "Birmingham Indoor Grand Prix (i)", "mark": "1:43.90",
+             "notLegal": False, "resultScore": 1260},
+            {"date": "27 FEB 2015", "competition": "Madrid Indoor Meeting, Gallur, Madrid (i) - IAAF World Indoor Tour",
+             "mark": "1:43.80", "notLegal": False, "resultScore": 1265}]},
         {"discipline": "800 Metres", "indoor": False, "results": [
             {"date": "13 JUN 2015", "mark": "1:43.58", "notLegal": False, "resultScore": 1217},
             {"date": "31 JUL 2015", "mark": "1:43.2h", "notLegal": False, "resultScore": 1230},
@@ -182,6 +203,14 @@ def test_a_season_that_fails_to_download_is_asked_for_again_and_an_empty_one_is_
     assert fd.load_seasons(str(tmp_path)) == {2015: {"1": []}}
     fd.fetch_seasons({(1, 2015), (2, 2015)}, fetch=fetch, seasons_dir=str(tmp_path))
     assert calls == [(1, 2015), (2, 2015), (2, 2015)]
+
+
+def test_the_race_query_is_the_season_query_with_each_results_meeting_category_round_and_place():
+    """Built by replacing text in the season query, so a replace that matches
+    nothing would quietly fetch the old fields into the new folder."""
+    assert "results { date competition category race place mark notLegal resultScore }" in fd.RACES_QUERY
+    assert fd.RACES_QUERY != fd.SEASON_RESULTS_QUERY
+    assert fd.RACES_DIR != fd.SEASONS_DIR
 
 
 def test_names_match_through_punctuation_and_by_nationality_first():
