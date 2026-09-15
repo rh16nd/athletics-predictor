@@ -471,9 +471,27 @@ def find_wa_id(entrant, sex, search=wa_search):
     return None
 
 
+# World Athletics leaves a profile's `indoor` flag empty on every event group
+# (all 3,293 groups fetched on 2026-09-15, and all 14,897 in data/field/seasons)
+# and lists indoor results beside outdoor ones, marked only by "(i)" after the
+# venue: "Antequera (i)", but also "Madrid Indoor Meeting, Gallur, Madrid (i) -
+# World Athletics Indoor Tour", where a series label follows it. 112 of the
+# first 29,472 fetched results were that second kind, so "(i)" is read as a
+# token anywhere, not only at the end. athlete_career.py reads the "(i)" too.
+_INDOOR_MARK = re.compile(r"(?:^|\s)\(i\)(?=\s|$)")
+
+
+def is_indoor(result, group=None):
+    """Whether one profile result was set indoors."""
+    if group is not None and group.get("indoor"):
+        return True
+    return any(_INDOOR_MARK.search(str(result.get(field) or "")) for field in ("venue", "competition"))
+
+
 def season_best(profile, key, year=YEAR):
     """An athlete's best legal outdoor result this season in one discipline, as
-    their World Athletics profile has it, or None.
+    their World Athletics profile has it, or None. Indoors is read by
+    is_indoor, not by the profile's flag.
 
     The profile's resultScore is the toplist's Results Score. Checked on
     2026-09-14 on two men's 100m entrants who are on the Asian list: 1169 and
@@ -481,11 +499,12 @@ def season_best(profile, key, year=YEAR):
     wanted = WA_EVENT_NAMES.get(key)
     best = None
     for group in ((profile or {}).get("resultsByYear") or {}).get("resultsByEvent") or []:
-        if group.get("discipline") != wanted or group.get("indoor"):
+        if group.get("discipline") != wanted:
             continue
         for result in group.get("results") or []:
             score = result.get("resultScore")
-            if result.get("notLegal") or not score or not str(result.get("date") or "").endswith(str(year)):
+            if (result.get("notLegal") or not score or is_indoor(result, group)
+                    or not str(result.get("date") or "").endswith(str(year))):
                 continue
             if best is None or score > best["resultScore"]:
                 best = result

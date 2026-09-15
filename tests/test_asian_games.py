@@ -332,6 +332,18 @@ def test_a_season_best_is_the_best_legal_outdoor_score_this_season_in_that_event
     assert ags.season_best(profile, "men_400m") is None
 
 
+def test_an_indoor_mark_is_left_out_though_world_athletics_never_sets_the_indoor_flag():
+    """Every event group World Athletics sent on 2026-09-15 had `indoor` empty.
+    An indoor result says so only with "(i)" after its venue, sometimes with a
+    series label after that."""
+    indoor = {**wa_result("46.10", 1180, "14 FEB 2026"), "venue": "Tianjin (CHN) (i)"}
+    tour = {**wa_result("46.00", 1190, "21 FEB 2026"),
+            "venue": "Gallur, Madrid (ESP) (i) - World Athletics Indoor Tour"}
+    profile = wa_profile(("400 Metres", None, [indoor, tour, wa_result("46.50", 1150)]))
+    assert ags.season_best(profile, "men_400m")["resultScore"] == 1150
+    assert not ags.is_indoor({"venue": "Stade Louis II, Fontvieille (MON)", "competition": "Herculis (ind.)"})
+
+
 def test_unplaced_entrants_are_looked_up_and_the_rest_say_why():
     rows = [row(1, "10.00", "Shuhei TADA", "JPN", 1001, 1200),
             row(250, "10.80", "Kin Wa CHAN", "MAC", 1003, 980)]
