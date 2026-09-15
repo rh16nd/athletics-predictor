@@ -1,488 +1,1106 @@
 {
- "builtAt": "2026-09-15T17:07:47Z",
- "competition": "World Athletics Ultimate Championship",
- "cutoff": "2026-09-11",
+ "builtAt": "2026-09-15T21:18:56Z",
  "experiment": "v2_form_best_5",
- "today": {
-  "experiment": "today",
-  "totals": {
-   "finals": 25,
-   "hits": 54,
-   "possible": 75,
-   "winners": 12,
-   "pointsHits": 55,
-   "meanLl": -4.4775,
-   "llFinals": 25
-  },
-  "finals": [
-   {
-    "discipline": "men_100m",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "Oblique SEVILLE",
-    "favouriteWin": 0.255,
-    "ll": -4.590692050789126
+ "trainedOn": [
+  2009,
+  2025
+ ],
+ "competitions": {
+  "dlFinal": {
+   "competition": "Diamond League Final",
+   "cutoff": "2026-09-04",
+   "today": {
+    "experiment": "today",
+    "totals": {
+     "finals": 31,
+     "hits": 61,
+     "possible": 93,
+     "winners": 18,
+     "pointsHits": 63,
+     "meanLl": -4.5692,
+     "llFinals": 31
+    },
+    "finals": [
+     {
+      "discipline": "men_100m",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Oblique SEVILLE",
+      "favouriteWin": 0.276,
+      "ll": -5.121727309738351
+     },
+     {
+      "discipline": "men_110h",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Ja'Kobe THARP",
+      "favouriteWin": 0.343,
+      "ll": -4.146931060834447
+     },
+     {
+      "discipline": "men_1500m",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Jakob INGEBRIGTSEN",
+      "favouriteWin": 0.178,
+      "ll": -5.864831296495588
+     },
+     {
+      "discipline": "men_200m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Kenneth BEDNAREK",
+      "favouriteWin": 0.474,
+      "ll": -4.487041941601904
+     },
+     {
+      "discipline": "men_3000sc",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Gemechu GODANA",
+      "favouriteWin": 0.183,
+      "ll": -4.903043414271368
+     },
+     {
+      "discipline": "men_400h",
+      "hits": 1,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Alison DOS SANTOS",
+      "favouriteWin": 0.746,
+      "ll": -4.191828036403629
+     },
+     {
+      "discipline": "men_400m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Busang Collen KEBINATSHIPI",
+      "favouriteWin": 0.464,
+      "ll": -4.384213990450191
+     },
+     {
+      "discipline": "men_5000m",
+      "hits": 0,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Grant FISHER",
+      "favouriteWin": 0.296,
+      "ll": -8.844141312279486
+     },
+     {
+      "discipline": "men_800m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Emmanuel WANYONYI",
+      "favouriteWin": 0.395,
+      "ll": -4.676402599278236
+     },
+     {
+      "discipline": "men_DT",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Mykolas ALEKNA",
+      "favouriteWin": 0.496,
+      "ll": -5.655007512855275
+     },
+     {
+      "discipline": "men_HJ",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "JuVaughn HARRISON",
+      "favouriteWin": 0.325,
+      "ll": -5.831003097296692
+     },
+     {
+      "discipline": "men_JT",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": true,
+      "favourite": "Rumesh Tharanga PATHIRAGE",
+      "favouriteWin": 0.424,
+      "ll": -5.47988520675065
+     },
+     {
+      "discipline": "men_LJ",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Miltiadis TENTOGLOU",
+      "favouriteWin": 0.466,
+      "ll": -3.5552684530504943
+     },
+     {
+      "discipline": "men_PV",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Emmanouil KARALIS",
+      "favouriteWin": 0.727,
+      "ll": -2.869165866289164
+     },
+     {
+      "discipline": "men_SP",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Leonardo FABBRI",
+      "favouriteWin": 0.373,
+      "ll": -4.411314994374717
+     },
+     {
+      "discipline": "men_TJ",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Andy DÍAZ HERNÁNDEZ",
+      "favouriteWin": 0.499,
+      "ll": -2.261731162802032
+     },
+     {
+      "discipline": "women_100h",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": true,
+      "favourite": "Masai RUSSELL",
+      "favouriteWin": 0.403,
+      "ll": -6.28339848179774
+     },
+     {
+      "discipline": "women_100m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Sha'Carri RICHARDSON",
+      "favouriteWin": 0.384,
+      "ll": -4.328961884419474
+     },
+     {
+      "discipline": "women_1500m",
+      "hits": 2,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Jessica HULL",
+      "favouriteWin": 0.192,
+      "ll": -5.812586110642212
+     },
+     {
+      "discipline": "women_200m",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Julien ALFRED",
+      "favouriteWin": 0.613,
+      "ll": -2.9241688028606356
+     },
+     {
+      "discipline": "women_3000sc",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Winfred YAVI",
+      "favouriteWin": 0.196,
+      "ll": -4.514711654497837
+     },
+     {
+      "discipline": "women_400m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Marileidy PAULINO",
+      "favouriteWin": 0.349,
+      "ll": -3.8032393319895426
+     },
+     {
+      "discipline": "women_5000m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Freweyni HAILU",
+      "favouriteWin": 0.193,
+      "ll": -5.166857598430427
+     },
+     {
+      "discipline": "women_800m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Audrey WERRO",
+      "favouriteWin": 0.37,
+      "ll": -4.258970477015044
+     },
+     {
+      "discipline": "women_DT",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Valarie SION",
+      "favouriteWin": 0.69,
+      "ll": -6.3367608041235925
+     },
+     {
+      "discipline": "women_HJ",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Nicola OLYSLAGERS",
+      "favouriteWin": 0.323,
+      "ll": -3.2031908642275226
+     },
+     {
+      "discipline": "women_JT",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Ziyi YAN",
+      "favouriteWin": 0.684,
+      "ll": -3.340751009934738
+     },
+     {
+      "discipline": "women_LJ",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Larissa IAPICHINO",
+      "favouriteWin": 0.366,
+      "ll": -5.307332966038909
+     },
+     {
+      "discipline": "women_PV",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Hana MOLL",
+      "favouriteWin": 0.416,
+      "ll": -3.5316417220691587
+     },
+     {
+      "discipline": "women_SP",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Chase JACKSON",
+      "favouriteWin": 0.459,
+      "ll": -2.020173714750001
+     },
+     {
+      "discipline": "women_TJ",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Thea LAFOND",
+      "favouriteWin": 0.273,
+      "ll": -4.129652247674094
+     }
+    ]
    },
-   {
-    "discipline": "men_110h",
-    "hits": 2,
-    "pointsHits": 1,
-    "winner": true,
-    "favourite": "Ja'Kobe THARP",
-    "favouriteWin": 0.329,
-    "ll": -4.842832819524741
-   },
-   {
-    "discipline": "men_1500m",
-    "hits": 1,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "Jakob INGEBRIGTSEN",
-    "favouriteWin": 0.145,
-    "ll": -6.631841812573075
-   },
-   {
-    "discipline": "men_200m",
-    "hits": 2,
-    "pointsHits": 1,
-    "winner": true,
-    "favourite": "Kenneth BEDNAREK",
-    "favouriteWin": 0.456,
-    "ll": -3.4941191461301075
-   },
-   {
-    "discipline": "men_400h",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Alison DOS SANTOS",
-    "favouriteWin": 0.476,
-    "ll": -2.2535424034226264
-   },
-   {
-    "discipline": "men_400m",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Busang Collen KEBINATSHIPI",
-    "favouriteWin": 0.427,
-    "ll": -3.8956031890393703
-   },
-   {
-    "discipline": "men_5000m",
-    "hits": 0,
-    "pointsHits": 1,
-    "winner": false,
-    "favourite": "Grant FISHER",
-    "favouriteWin": 0.165,
-    "ll": -11.258139462051508
-   },
-   {
-    "discipline": "men_800m",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": false,
-    "favourite": "Emmanuel WANYONYI",
-    "favouriteWin": 0.371,
-    "ll": -3.2890998554677875
-   },
-   {
-    "discipline": "men_HJ",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "JuVaughn HARRISON",
-    "favouriteWin": 0.271,
-    "ll": -5.296650525116338
-   },
-   {
-    "discipline": "men_JT",
-    "hits": 3,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "Julian WEBER",
-    "favouriteWin": 0.384,
-    "ll": -3.2701443368149743
-   },
-   {
-    "discipline": "men_LJ",
-    "hits": 2,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Miltiadis TENTOGLOU",
-    "favouriteWin": 0.502,
-    "ll": -3.8401432858628435
-   },
-   {
-    "discipline": "men_PV",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Armand DUPLANTIS",
-    "favouriteWin": 0.589,
-    "ll": -2.5448665198856917
-   },
-   {
-    "discipline": "women_100h",
-    "hits": 3,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Masai RUSSELL",
-    "favouriteWin": 0.344,
-    "ll": -3.699749179012981
-   },
-   {
-    "discipline": "women_100m",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Melissa JEFFERSON-WOODEN",
-    "favouriteWin": 0.406,
-    "ll": -2.7166842615104887
-   },
-   {
-    "discipline": "women_1500m",
-    "hits": 1,
-    "pointsHits": 1,
-    "winner": false,
-    "favourite": "Jessica HULL",
-    "favouriteWin": 0.193,
-    "ll": -7.112305536554527
-   },
-   {
-    "discipline": "women_200m",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Melissa JEFFERSON-WOODEN",
-    "favouriteWin": 0.41,
-    "ll": -3.0073307032203047
-   },
-   {
-    "discipline": "women_400h",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": false,
-    "favourite": "Anna COCKRELL",
-    "favouriteWin": 0.308,
-    "ll": -4.14260014817797
-   },
-   {
-    "discipline": "women_400m",
-    "hits": 1,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Marileidy PAULINO",
-    "favouriteWin": 0.295,
-    "ll": -4.5170736151795765
-   },
-   {
-    "discipline": "women_5000m",
-    "hits": 0,
-    "pointsHits": 1,
-    "winner": false,
-    "favourite": "Freweyni HAILU",
-    "favouriteWin": 0.172,
-    "ll": -7.9950485439467665
-   },
-   {
-    "discipline": "women_800m",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Audrey WERRO",
-    "favouriteWin": 0.318,
-    "ll": -2.7353324489914277
-   },
-   {
-    "discipline": "women_HJ",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": false,
-    "favourite": "Nicola OLYSLAGERS",
-    "favouriteWin": 0.298,
-    "ll": -4.678974124478563
-   },
-   {
-    "discipline": "women_JT",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "Ziyi YAN",
-    "favouriteWin": 0.66,
-    "ll": -4.2622673044827994
-   },
-   {
-    "discipline": "women_LJ",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Larissa IAPICHINO",
-    "favouriteWin": 0.323,
-    "ll": -4.4108723929817435
-   },
-   {
-    "discipline": "women_PV",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": false,
-    "favourite": "Hana MOLL",
-    "favouriteWin": 0.297,
-    "ll": -3.049602684840185
-   },
-   {
-    "discipline": "women_TJ",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "Thea LAFOND",
-    "favouriteWin": 0.264,
-    "ll": -4.401738381893971
+   "candidate": {
+    "experiment": "v2_form_best_5",
+    "totals": {
+     "finals": 31,
+     "hits": 64,
+     "possible": 93,
+     "winners": 19,
+     "pointsHits": 63,
+     "meanLl": -4.3101,
+     "llFinals": 31
+    },
+    "finals": [
+     {
+      "discipline": "men_100m",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Oblique SEVILLE",
+      "favouriteWin": 0.375,
+      "ll": -4.195639919616878
+     },
+     {
+      "discipline": "men_110h",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Ja'Kobe THARP",
+      "favouriteWin": 0.404,
+      "ll": -3.07740024077402
+     },
+     {
+      "discipline": "men_1500m",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Jakob INGEBRIGTSEN",
+      "favouriteWin": 0.229,
+      "ll": -6.563957715423104
+     },
+     {
+      "discipline": "men_200m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Kenneth BEDNAREK",
+      "favouriteWin": 0.502,
+      "ll": -4.206399802762645
+     },
+     {
+      "discipline": "men_3000sc",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Gemechu GODANA",
+      "favouriteWin": 0.286,
+      "ll": -4.128129371894835
+     },
+     {
+      "discipline": "men_400h",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Alison DOS SANTOS",
+      "favouriteWin": 0.821,
+      "ll": -4.561806701674505
+     },
+     {
+      "discipline": "men_400m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Busang Collen KEBINATSHIPI",
+      "favouriteWin": 0.634,
+      "ll": -4.457604980222257
+     },
+     {
+      "discipline": "men_5000m",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Nico YOUNG",
+      "favouriteWin": 0.25,
+      "ll": -8.505172574025828
+     },
+     {
+      "discipline": "men_800m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Emmanuel WANYONYI",
+      "favouriteWin": 0.598,
+      "ll": -4.452868702697065
+     },
+     {
+      "discipline": "men_DT",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Mykolas ALEKNA",
+      "favouriteWin": 0.598,
+      "ll": -4.353052755708299
+     },
+     {
+      "discipline": "men_HJ",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Gianmarco TAMBERI",
+      "favouriteWin": 0.321,
+      "ll": -5.808678519169986
+     },
+     {
+      "discipline": "men_JT",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": true,
+      "favourite": "Rumesh Tharanga PATHIRAGE",
+      "favouriteWin": 0.733,
+      "ll": -6.04635993440311
+     },
+     {
+      "discipline": "men_LJ",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Miltiadis TENTOGLOU",
+      "favouriteWin": 0.653,
+      "ll": -4.300882683287204
+     },
+     {
+      "discipline": "men_PV",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Emmanouil KARALIS",
+      "favouriteWin": 0.719,
+      "ll": -2.10757387324053
+     },
+     {
+      "discipline": "men_SP",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Leonardo FABBRI",
+      "favouriteWin": 0.432,
+      "ll": -4.631822000351583
+     },
+     {
+      "discipline": "men_TJ",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Andy DÍAZ HERNÁNDEZ",
+      "favouriteWin": 0.527,
+      "ll": -1.9112426323571963
+     },
+     {
+      "discipline": "women_100h",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": true,
+      "favourite": "Masai RUSSELL",
+      "favouriteWin": 0.531,
+      "ll": -5.951466678793311
+     },
+     {
+      "discipline": "women_100m",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Sha'Carri RICHARDSON",
+      "favouriteWin": 0.558,
+      "ll": -4.323696461511139
+     },
+     {
+      "discipline": "women_1500m",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Tsige DUGUMA",
+      "favouriteWin": 0.284,
+      "ll": -6.836268255584238
+     },
+     {
+      "discipline": "women_200m",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Julien ALFRED",
+      "favouriteWin": 0.691,
+      "ll": -2.506950023228483
+     },
+     {
+      "discipline": "women_3000sc",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Faith CHEROTICH",
+      "favouriteWin": 0.309,
+      "ll": -4.1640345928634535
+     },
+     {
+      "discipline": "women_400m",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Marileidy PAULINO",
+      "favouriteWin": 0.524,
+      "ll": -2.86010423349244
+     },
+     {
+      "discipline": "women_5000m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Freweyni HAILU",
+      "favouriteWin": 0.26,
+      "ll": -4.7283907995631775
+     },
+     {
+      "discipline": "women_800m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Audrey WERRO",
+      "favouriteWin": 0.626,
+      "ll": -3.2244675005294696
+     },
+     {
+      "discipline": "women_DT",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Valarie SION",
+      "favouriteWin": 0.797,
+      "ll": -5.795978516169847
+     },
+     {
+      "discipline": "women_HJ",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Yaroslava MAHUCHIKH",
+      "favouriteWin": 0.406,
+      "ll": -2.896963007562593
+     },
+     {
+      "discipline": "women_JT",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Ziyi YAN",
+      "favouriteWin": 0.83,
+      "ll": -3.8165695230651595
+     },
+     {
+      "discipline": "women_LJ",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Larissa IAPICHINO",
+      "favouriteWin": 0.36,
+      "ll": -5.191284365289215
+     },
+     {
+      "discipline": "women_PV",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Angelica MOSER",
+      "favouriteWin": 0.406,
+      "ll": -3.593639001551314
+     },
+     {
+      "discipline": "women_SP",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Chase JACKSON",
+      "favouriteWin": 0.491,
+      "ll": -2.014542295182111
+     },
+     {
+      "discipline": "women_TJ",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Saly SARR",
+      "favouriteWin": 0.359,
+      "ll": -2.3990579545782893
+     }
+    ]
    }
-  ]
- },
- "candidate": {
-  "experiment": "v2_form_best_5",
-  "totals": {
-   "finals": 25,
-   "hits": 54,
-   "possible": 75,
-   "winners": 15,
-   "pointsHits": 55,
-   "meanLl": -4.1648,
-   "llFinals": 25
   },
-  "finals": [
-   {
-    "discipline": "men_100m",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "Oblique SEVILLE",
-    "favouriteWin": 0.426,
-    "ll": -4.701083426454356
+  "ultimate": {
+   "competition": "World Athletics Ultimate Championship",
+   "cutoff": "2026-09-11",
+   "today": {
+    "experiment": "today",
+    "totals": {
+     "finals": 25,
+     "hits": 54,
+     "possible": 75,
+     "winners": 12,
+     "pointsHits": 55,
+     "meanLl": -4.4775,
+     "llFinals": 25
+    },
+    "finals": [
+     {
+      "discipline": "men_100m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Oblique SEVILLE",
+      "favouriteWin": 0.255,
+      "ll": -4.590692050789126
+     },
+     {
+      "discipline": "men_110h",
+      "hits": 2,
+      "pointsHits": 1,
+      "winner": true,
+      "favourite": "Ja'Kobe THARP",
+      "favouriteWin": 0.329,
+      "ll": -4.842832819524741
+     },
+     {
+      "discipline": "men_1500m",
+      "hits": 1,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Jakob INGEBRIGTSEN",
+      "favouriteWin": 0.145,
+      "ll": -6.631841812573075
+     },
+     {
+      "discipline": "men_200m",
+      "hits": 2,
+      "pointsHits": 1,
+      "winner": true,
+      "favourite": "Kenneth BEDNAREK",
+      "favouriteWin": 0.456,
+      "ll": -3.4941191461301075
+     },
+     {
+      "discipline": "men_400h",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Alison DOS SANTOS",
+      "favouriteWin": 0.476,
+      "ll": -2.2535424034226264
+     },
+     {
+      "discipline": "men_400m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Busang Collen KEBINATSHIPI",
+      "favouriteWin": 0.427,
+      "ll": -3.8956031890393703
+     },
+     {
+      "discipline": "men_5000m",
+      "hits": 0,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Grant FISHER",
+      "favouriteWin": 0.165,
+      "ll": -11.258139462051508
+     },
+     {
+      "discipline": "men_800m",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Emmanuel WANYONYI",
+      "favouriteWin": 0.371,
+      "ll": -3.2890998554677875
+     },
+     {
+      "discipline": "men_HJ",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "JuVaughn HARRISON",
+      "favouriteWin": 0.271,
+      "ll": -5.296650525116338
+     },
+     {
+      "discipline": "men_JT",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Julian WEBER",
+      "favouriteWin": 0.384,
+      "ll": -3.2701443368149743
+     },
+     {
+      "discipline": "men_LJ",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Miltiadis TENTOGLOU",
+      "favouriteWin": 0.502,
+      "ll": -3.8401432858628435
+     },
+     {
+      "discipline": "men_PV",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Armand DUPLANTIS",
+      "favouriteWin": 0.589,
+      "ll": -2.5448665198856917
+     },
+     {
+      "discipline": "women_100h",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Masai RUSSELL",
+      "favouriteWin": 0.344,
+      "ll": -3.699749179012981
+     },
+     {
+      "discipline": "women_100m",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Melissa JEFFERSON-WOODEN",
+      "favouriteWin": 0.406,
+      "ll": -2.7166842615104887
+     },
+     {
+      "discipline": "women_1500m",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Jessica HULL",
+      "favouriteWin": 0.193,
+      "ll": -7.112305536554527
+     },
+     {
+      "discipline": "women_200m",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Melissa JEFFERSON-WOODEN",
+      "favouriteWin": 0.41,
+      "ll": -3.0073307032203047
+     },
+     {
+      "discipline": "women_400h",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Anna COCKRELL",
+      "favouriteWin": 0.308,
+      "ll": -4.14260014817797
+     },
+     {
+      "discipline": "women_400m",
+      "hits": 1,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Marileidy PAULINO",
+      "favouriteWin": 0.295,
+      "ll": -4.5170736151795765
+     },
+     {
+      "discipline": "women_5000m",
+      "hits": 0,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Freweyni HAILU",
+      "favouriteWin": 0.172,
+      "ll": -7.9950485439467665
+     },
+     {
+      "discipline": "women_800m",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Audrey WERRO",
+      "favouriteWin": 0.318,
+      "ll": -2.7353324489914277
+     },
+     {
+      "discipline": "women_HJ",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Nicola OLYSLAGERS",
+      "favouriteWin": 0.298,
+      "ll": -4.678974124478563
+     },
+     {
+      "discipline": "women_JT",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Ziyi YAN",
+      "favouriteWin": 0.66,
+      "ll": -4.2622673044827994
+     },
+     {
+      "discipline": "women_LJ",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Larissa IAPICHINO",
+      "favouriteWin": 0.323,
+      "ll": -4.4108723929817435
+     },
+     {
+      "discipline": "women_PV",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Hana MOLL",
+      "favouriteWin": 0.297,
+      "ll": -3.049602684840185
+     },
+     {
+      "discipline": "women_TJ",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Thea LAFOND",
+      "favouriteWin": 0.264,
+      "ll": -4.401738381893971
+     }
+    ]
    },
-   {
-    "discipline": "men_110h",
-    "hits": 1,
-    "pointsHits": 1,
-    "winner": true,
-    "favourite": "Ja'Kobe THARP",
-    "favouriteWin": 0.448,
-    "ll": -4.857531769786825
+   "candidate": {
+    "experiment": "v2_form_best_5",
+    "totals": {
+     "finals": 25,
+     "hits": 54,
+     "possible": 75,
+     "winners": 15,
+     "pointsHits": 55,
+     "meanLl": -4.1648,
+     "llFinals": 25
+    },
+    "finals": [
+     {
+      "discipline": "men_100m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Oblique SEVILLE",
+      "favouriteWin": 0.426,
+      "ll": -4.701083426454356
+     },
+     {
+      "discipline": "men_110h",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": true,
+      "favourite": "Ja'Kobe THARP",
+      "favouriteWin": 0.448,
+      "ll": -4.857531769786825
+     },
+     {
+      "discipline": "men_1500m",
+      "hits": 1,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Phanuel Kipkosgei KOECH",
+      "favouriteWin": 0.185,
+      "ll": -6.864980471550406
+     },
+     {
+      "discipline": "men_200m",
+      "hits": 2,
+      "pointsHits": 1,
+      "winner": true,
+      "favourite": "Kenneth BEDNAREK",
+      "favouriteWin": 0.565,
+      "ll": -3.3655127244563117
+     },
+     {
+      "discipline": "men_400h",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Alison DOS SANTOS",
+      "favouriteWin": 0.578,
+      "ll": -2.1219832323189927
+     },
+     {
+      "discipline": "men_400m",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Busang Collen KEBINATSHIPI",
+      "favouriteWin": 0.582,
+      "ll": -3.6421101230855326
+     },
+     {
+      "discipline": "men_5000m",
+      "hits": 0,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Nico YOUNG",
+      "favouriteWin": 0.166,
+      "ll": -9.110867184964476
+     },
+     {
+      "discipline": "men_800m",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Emmanuel WANYONYI",
+      "favouriteWin": 0.559,
+      "ll": -4.083195114814521
+     },
+     {
+      "discipline": "men_HJ",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Gianmarco TAMBERI",
+      "favouriteWin": 0.277,
+      "ll": -5.384883255699849
+     },
+     {
+      "discipline": "men_JT",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Rumesh Tharanga PATHIRAGE",
+      "favouriteWin": 0.608,
+      "ll": -1.8819319314957523
+     },
+     {
+      "discipline": "men_LJ",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Miltiadis TENTOGLOU",
+      "favouriteWin": 0.603,
+      "ll": -3.1641172285979358
+     },
+     {
+      "discipline": "men_PV",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Armand DUPLANTIS",
+      "favouriteWin": 0.687,
+      "ll": -1.9096926644275634
+     },
+     {
+      "discipline": "women_100h",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Masai RUSSELL",
+      "favouriteWin": 0.487,
+      "ll": -3.01689311232217
+     },
+     {
+      "discipline": "women_100m",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Melissa JEFFERSON-WOODEN",
+      "favouriteWin": 0.47,
+      "ll": -2.384945747970149
+     },
+     {
+      "discipline": "women_1500m",
+      "hits": 0,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Jessica HULL",
+      "favouriteWin": 0.162,
+      "ll": -7.370876269953875
+     },
+     {
+      "discipline": "women_200m",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Gabrielle THOMAS",
+      "favouriteWin": 0.366,
+      "ll": -2.7440979707671405
+     },
+     {
+      "discipline": "women_400h",
+      "hits": 2,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Anna COCKRELL",
+      "favouriteWin": 0.388,
+      "ll": -4.505363286527981
+     },
+     {
+      "discipline": "women_400m",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Marileidy PAULINO",
+      "favouriteWin": 0.495,
+      "ll": -2.8918286360815015
+     },
+     {
+      "discipline": "women_5000m",
+      "hits": 1,
+      "pointsHits": 1,
+      "winner": false,
+      "favourite": "Freweyni HAILU",
+      "favouriteWin": 0.283,
+      "ll": -8.164675287033788
+     },
+     {
+      "discipline": "women_800m",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Audrey WERRO",
+      "favouriteWin": 0.556,
+      "ll": -1.839127971182959
+     },
+     {
+      "discipline": "women_HJ",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": true,
+      "favourite": "Yaroslava MAHUCHIKH",
+      "favouriteWin": 0.4,
+      "ll": -4.6154409950963124
+     },
+     {
+      "discipline": "women_JT",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": false,
+      "favourite": "Ziyi YAN",
+      "favouriteWin": 0.835,
+      "ll": -5.030537953034545
+     },
+     {
+      "discipline": "women_LJ",
+      "hits": 2,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Larissa IAPICHINO",
+      "favouriteWin": 0.381,
+      "ll": -4.371981623510378
+     },
+     {
+      "discipline": "women_PV",
+      "hits": 3,
+      "pointsHits": 3,
+      "winner": false,
+      "favourite": "Hana MOLL",
+      "favouriteWin": 0.378,
+      "ll": -3.4722291726585874
+     },
+     {
+      "discipline": "women_TJ",
+      "hits": 3,
+      "pointsHits": 2,
+      "winner": true,
+      "favourite": "Saly SARR",
+      "favouriteWin": 0.373,
+      "ll": -2.6239085674162026
+     }
+    ]
    },
-   {
-    "discipline": "men_1500m",
-    "hits": 1,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "Phanuel Kipkosgei KOECH",
-    "favouriteWin": 0.185,
-    "ll": -6.864980471550406
-   },
-   {
-    "discipline": "men_200m",
-    "hits": 2,
-    "pointsHits": 1,
-    "winner": true,
-    "favourite": "Kenneth BEDNAREK",
-    "favouriteWin": 0.565,
-    "ll": -3.3655127244563117
-   },
-   {
-    "discipline": "men_400h",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Alison DOS SANTOS",
-    "favouriteWin": 0.578,
-    "ll": -2.1219832323189927
-   },
-   {
-    "discipline": "men_400m",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Busang Collen KEBINATSHIPI",
-    "favouriteWin": 0.582,
-    "ll": -3.6421101230855326
-   },
-   {
-    "discipline": "men_5000m",
-    "hits": 0,
-    "pointsHits": 1,
-    "winner": false,
-    "favourite": "Nico YOUNG",
-    "favouriteWin": 0.166,
-    "ll": -9.110867184964476
-   },
-   {
-    "discipline": "men_800m",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": false,
-    "favourite": "Emmanuel WANYONYI",
-    "favouriteWin": 0.559,
-    "ll": -4.083195114814521
-   },
-   {
-    "discipline": "men_HJ",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Gianmarco TAMBERI",
-    "favouriteWin": 0.277,
-    "ll": -5.384883255699849
-   },
-   {
-    "discipline": "men_JT",
-    "hits": 3,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Rumesh Tharanga PATHIRAGE",
-    "favouriteWin": 0.608,
-    "ll": -1.8819319314957523
-   },
-   {
-    "discipline": "men_LJ",
-    "hits": 2,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Miltiadis TENTOGLOU",
-    "favouriteWin": 0.603,
-    "ll": -3.1641172285979358
-   },
-   {
-    "discipline": "men_PV",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Armand DUPLANTIS",
-    "favouriteWin": 0.687,
-    "ll": -1.9096926644275634
-   },
-   {
-    "discipline": "women_100h",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Masai RUSSELL",
-    "favouriteWin": 0.487,
-    "ll": -3.01689311232217
-   },
-   {
-    "discipline": "women_100m",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Melissa JEFFERSON-WOODEN",
-    "favouriteWin": 0.47,
-    "ll": -2.384945747970149
-   },
-   {
-    "discipline": "women_1500m",
-    "hits": 0,
-    "pointsHits": 1,
-    "winner": false,
-    "favourite": "Jessica HULL",
-    "favouriteWin": 0.162,
-    "ll": -7.370876269953875
-   },
-   {
-    "discipline": "women_200m",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": false,
-    "favourite": "Gabrielle THOMAS",
-    "favouriteWin": 0.366,
-    "ll": -2.7440979707671405
-   },
-   {
-    "discipline": "women_400h",
-    "hits": 2,
-    "pointsHits": 3,
-    "winner": false,
-    "favourite": "Anna COCKRELL",
-    "favouriteWin": 0.388,
-    "ll": -4.505363286527981
-   },
-   {
-    "discipline": "women_400m",
-    "hits": 3,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Marileidy PAULINO",
-    "favouriteWin": 0.495,
-    "ll": -2.8918286360815015
-   },
-   {
-    "discipline": "women_5000m",
-    "hits": 1,
-    "pointsHits": 1,
-    "winner": false,
-    "favourite": "Freweyni HAILU",
-    "favouriteWin": 0.283,
-    "ll": -8.164675287033788
-   },
-   {
-    "discipline": "women_800m",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Audrey WERRO",
-    "favouriteWin": 0.556,
-    "ll": -1.839127971182959
-   },
-   {
-    "discipline": "women_HJ",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": true,
-    "favourite": "Yaroslava MAHUCHIKH",
-    "favouriteWin": 0.4,
-    "ll": -4.6154409950963124
-   },
-   {
-    "discipline": "women_JT",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": false,
-    "favourite": "Ziyi YAN",
-    "favouriteWin": 0.835,
-    "ll": -5.030537953034545
-   },
-   {
-    "discipline": "women_LJ",
-    "hits": 2,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Larissa IAPICHINO",
-    "favouriteWin": 0.381,
-    "ll": -4.371981623510378
-   },
-   {
-    "discipline": "women_PV",
-    "hits": 3,
-    "pointsHits": 3,
-    "winner": false,
-    "favourite": "Hana MOLL",
-    "favouriteWin": 0.378,
-    "ll": -3.4722291726585874
-   },
-   {
-    "discipline": "women_TJ",
-    "hits": 3,
-    "pointsHits": 2,
-    "winner": true,
-    "favourite": "Saly SARR",
-    "favouriteWin": 0.373,
-    "ll": -2.6239085674162026
+   "frozenCall": {
+    "hits": 52,
+    "winners": 12
    }
-  ]
+  }
  },
- "frozenCall": {
-  "hits": 52,
-  "winners": 12
+ "both": {
+  "today": {
+   "finals": 56,
+   "hits": 115,
+   "possible": 168,
+   "winners": 30,
+   "pointsHits": 118,
+   "meanLl": -4.5283,
+   "llFinals": 56
+  },
+  "candidate": {
+   "finals": 56,
+   "hits": 118,
+   "possible": 168,
+   "winners": 34,
+   "pointsHits": 118,
+   "meanLl": -4.2452,
+   "llFinals": 56
+  }
  }
 }

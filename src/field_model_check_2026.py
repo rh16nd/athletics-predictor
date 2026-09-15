@@ -1,25 +1,31 @@
 """
-field_model_check_2026.py -- today's field model and the race-by-race one on the
-2026 World Athletics Ultimate Championship, which neither was fitted on.
+field_model_check_2026.py -- the field model on the 2026 championships it was
+not fitted on: the Diamond League Final (Brussels, 4 September) and the World
+Athletics Ultimate Championship (Budapest, 11-13 September).
 
-Reported beside field_model.compare(), and not part of its rule: 25 finals are
-too few to decide anything, and the rule was fixed before either number
-existed. The Ultimate's finals are read the way field_data reads every past
-final: ids from the competition's own results feed, season bests dated before
-its first day (the toplist, then the athlete's profile, then last season),
-and races before that day. So an athlete whose season best came in Budapest
-is read on their best before it, not sent to last season, which is what a
-toplist refreshed after the Ultimate did to the first look at these finals
-on 2026-09-15.
+Reported beside field_model.compare(), and not part of its rule: 57 finals are
+too few to decide anything, and the rule was fixed before any of these numbers
+existed. Each final is read the way field_data reads every past final: ids
+from the competition's own results feed, season bests dated before its first
+day (the toplist, then the athlete's profile, then last season), and races
+before that day. So an athlete whose season best came at the championship is
+read on their best before it, not sent to last season, which is what a toplist
+refreshed after the Ultimate did to the first look at those finals on
+2026-09-15.
 
-Both feature sets are fitted on every 2009-2025 final in data/field/finals.csv,
-and the points ranking and the old Diamond League model's frozen call are
-scored beside them.
+Today's feature set and the experiment (the served one unless another is named)
+are fitted only on the finals before 2026 in data/field/finals.csv, so the
+check means the same after these championships join the history. The points
+ranking is scored beside them, and on the Ultimate the old Diamond League
+model's frozen call (the Diamond League Final's is graded on the Results page).
+
+Run on 2026-09-15 for the Ultimate, and on 2026-09-16 with the Diamond League
+Final added, before either joined the history.
 
 Usage, after field_data.py --races and --report:
-    python src/field_model_check_2026.py [EXPERIMENT]   # field_model.EXPERIMENTS, v2 by default
-Fetches the Ultimate finalists' 2026 seasons into data/field/races_2026/ and
-writes outputs/field_model_check_2026.json.
+    python src/field_model_check_2026.py [EXPERIMENT]
+Fetches the finalists' 2026 seasons into data/field/races_2026/ and writes
+outputs/field_model_check_2026.json.
 """
 import json
 import os
@@ -35,29 +41,30 @@ import field_data as fd  # noqa: E402
 import field_model as fm  # noqa: E402
 
 YEAR = 2026
-COMPETITION = "World Athletics Ultimate Championship"
-EVENT_PATH = os.path.join(fd.BASE_DIR, "data", "ultimate", "event.json")
 FROZEN_CALL_PATH = os.path.join(fd.BASE_DIR, "data", "ultimate", "predictions_prefinal.json")
 RACES_DIR = os.path.join(fd.FIELD_DIR, "races_2026")
 OUT_PATH = os.path.join(fd.BASE_DIR, "outputs", "field_model_check_2026.json")
 
 
-def ultimate_finals(event):
-    """The Ultimate's results as finals rows, cut off at its first day."""
-    results = pd.DataFrame(event.get("results") or [])
-    return pd.DataFrame({
-        "competition": COMPETITION, "competition_id": event["competitionId"], "tier": "global",
-        "year": YEAR, "cutoff": pd.Timestamp(event["startDate"]),
-        "discipline": results["discipline"], "athlete_name": results["athlete_name"],
-        "nationality": results["nationality"], "place": pd.to_numeric(results["place"], errors="coerce"),
-        "mark": results["mark"],
-    })
+def championships(dl_finals=fd.dl_finals, event_path=None):
+    """[(key, competition, finals)] for each YEAR championship with results on disk."""
+    out = []
+    dl = dl_finals()
+    dl = dl[dl["year"] == YEAR]
+    if not dl.empty:
+        out.append(("dlFinal", "Diamond League Final", dl))
+    event_path = event_path or fd.ULTIMATE_EVENT_PATH
+    if os.path.exists(event_path):
+        with open(event_path, encoding="utf-8") as f:
+            ultimate = fd.ultimate_finals(json.load(f))
+        if not ultimate.empty:
+            out.append(("ultimate", fd.ULTIMATE_COMPETITION, ultimate))
+    return out
 
 
-def this_season_scores(key):
-    """Toplist history plus this season's world list, which season_scores
-    leaves out because every past final had its season in the history."""
-    return fd.season_scores(key, extra=[(os.path.join(fd.RAW_DIR, f"{key}_{YEAR}.csv"), "world")])
+def training_history(history, year=YEAR):
+    """The finals a model checked on `year` may learn from: every season before it."""
+    return history[history["year"] < year]
 
 
 def score(model, finals):
@@ -99,49 +106,74 @@ def totals(rows):
             "meanLl": round(float(np.mean(ll)), 4) if ll else None, "llFinals": len(ll)}
 
 
+def print_block(block, name):
+    t, r = block["today"]["totals"], block["candidate"]["totals"]
+    print(f"\n  {t['finals']} finals, {t['possible']} podium places")
+    print(f"    today's model      {t['hits']} medallists, {t['winners']} winners, mean log-likelihood {t['meanLl']}")
+    print(f"    {name:<18} {r['hits']} medallists, {r['winners']} winners, mean log-likelihood {r['meanLl']}")
+    print(f"    points             {t['pointsHits']} medallists")
+    if "frozenCall" in block:
+        print(f"    old frozen call    {block['frozenCall']['hits']} medallists, "
+              f"{block['frozenCall']['winners']} winners")
+    print(f"\n  event            winner named first (today | {name}), favourite's win chance")
+    for a, b in zip(block["today"]["finals"], block["candidate"]["finals"]):
+        print(f"    {a['discipline']:<14} {a['favourite'][:22]:<22} {'Y' if a['winner'] else 'n'} {a['favouriteWin']:.2f}"
+              f"  |  {b['favourite'][:22]:<22} {'Y' if b['winner'] else 'n'} {b['favouriteWin']:.2f}")
+
+
 def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
-    name = argv[0] if argv else "v2"
+    name = argv[0] if argv else (fm.load_model() or {}).get("experiment") or "v2"
     if name not in fm.EXPERIMENTS:
         print(f"  no such experiment: {name} (see field_model.EXPERIMENTS)")
         return 1
-    with open(EVENT_PATH, encoding="utf-8") as f:
-        event = json.load(f)
-    finals = ultimate_finals(event)
-    print(f"=== The {YEAR} Ultimate: {finals['discipline'].nunique()} finals, {len(finals)} finalists ===")
-    ids = fd.finalist_ids(finals)
-    finals = finals.merge(ids, on=["competition", "year", "discipline", "athlete_name"], how="left")
-    fd.fetch_seasons({(a, YEAR) for a in finals["athlete_id"].dropna()}, fetch=fd.fetch_races, seasons_dir=RACES_DIR)
-    races = fd.load_seasons(RACES_DIR)
-    scored = fd.attach_races(fd.attach_scores(finals, scores_for=this_season_scores, seasons=races), races)
-    print("  Where each season best came from: "
-          + ", ".join(f"{k} {v}" for k, v in scored["sb_source"].fillna("unscored").value_counts().items()))
-
     history = fm.load_scored_finals()
     missing = [c for c in fd.RACE_COLUMNS if c not in history.columns]
     if missing:
         print(f"  {fd.FINALS_PATH} has no {', '.join(missing)}: run field_data.py --races, then --report")
         return 1
-    report = {"builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-              "competition": COMPETITION, "cutoff": event["startDate"], "experiment": name}
+    history = training_history(history)
     history_races = fd.load_seasons(fd.RACES_DIR) if fm.EXPERIMENTS[name].get("race") else None
+    models = {}
     for label, spec_name in (("today", "today"), ("candidate", name)):
         spec = fm.EXPERIMENTS[spec_name]
-        model = fm.fit_spec(fm.build_finals(fm.spec_scored(history, spec, history_races), spec["features"]), spec)
-        rows = score(model, fm.build_finals(fm.spec_scored(scored, spec, races), spec["features"]))
-        report[label] = {"experiment": spec_name, "totals": totals(rows), "finals": rows}
-    report["frozenCall"] = frozen_call(fm.build_finals(scored, fm.FEATURES))
+        finals = fm.build_finals(fm.spec_scored(history, spec, history_races), spec["features"])
+        models[label] = (spec_name, spec, fm.fit_spec(finals, spec))
+    first, last = int(history["year"].min()), int(history["year"].max())
+    print(f"=== Today's features and {name}, both fitted on the finals of {first}-{last} ===")
 
-    t, r = report["today"]["totals"], report["candidate"]["totals"]
-    print(f"\n  {t['finals']} finals, {t['possible']} podium places")
+    report = {"builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "experiment": name,
+              "trainedOn": [first, last], "competitions": {}}
+    both = {"today": [], "candidate": []}
+    for key, competition, finals in championships():
+        cutoff = pd.Timestamp(finals["cutoff"].iloc[0])
+        print(f"\n=== {competition} {YEAR}: {finals['discipline'].nunique()} finals, {len(finals)} finalists, "
+              f"cut off {cutoff.date()} ===")
+        ids = fd.finalist_ids(finals)
+        finals = finals.merge(ids, on=["competition", "year", "discipline", "athlete_name"], how="left")
+        fd.fetch_seasons({(a, YEAR) for a in finals["athlete_id"].dropna()}, fetch=fd.fetch_races,
+                         seasons_dir=RACES_DIR)
+        races = fd.load_seasons(RACES_DIR)
+        scored = fd.attach_races(fd.attach_scores(finals, scores_for=fd.season_scores_with(YEAR), seasons=races),
+                                 races)
+        print("  Where each season best came from: "
+              + ", ".join(f"{k} {v}" for k, v in scored["sb_source"].fillna("unscored").value_counts().items()))
+        block = {"competition": competition, "cutoff": str(cutoff.date())}
+        for label, (spec_name, spec, model) in models.items():
+            rows = score(model, fm.build_finals(fm.spec_scored(scored, spec, races), spec["features"]))
+            block[label] = {"experiment": spec_name, "totals": totals(rows), "finals": rows}
+            both[label] += rows
+        if key == "ultimate" and os.path.exists(FROZEN_CALL_PATH):
+            block["frozenCall"] = frozen_call(fm.build_finals(scored, fm.FEATURES))
+        report["competitions"][key] = block
+        print_block(block, name)
+
+    report["both"] = {label: totals(rows) for label, rows in both.items()}
+    t, r = report["both"]["today"], report["both"]["candidate"]
+    print(f"\n=== Both championships: {t['finals']} finals, {t['possible']} podium places ===")
     print(f"    today's model      {t['hits']} medallists, {t['winners']} winners, mean log-likelihood {t['meanLl']}")
     print(f"    {name:<18} {r['hits']} medallists, {r['winners']} winners, mean log-likelihood {r['meanLl']}")
     print(f"    points             {t['pointsHits']} medallists")
-    print(f"    old frozen call    {report['frozenCall']['hits']} medallists, {report['frozenCall']['winners']} winners")
-    print(f"\n  event            winner named first (today | {name}), favourite's win chance")
-    for a, b in zip(report["today"]["finals"], report["candidate"]["finals"]):
-        print(f"    {a['discipline']:<14} {a['favourite'][:22]:<22} {'Y' if a['winner'] else 'n'} {a['favouriteWin']:.2f}"
-              f"  |  {b['favourite'][:22]:<22} {'Y' if b['winner'] else 'n'} {b['favouriteWin']:.2f}")
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=1)

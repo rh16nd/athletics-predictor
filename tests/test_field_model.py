@@ -190,6 +190,108 @@ def test_finalist_ids_come_from_each_competitions_results_feed(tmp_path):
         "Hassan TAFTIAN": 14421587, "Early FINAL": 11, "Late FINAL": 22}
 
 
+def test_a_later_diamond_league_final_joins_from_its_own_file_with_its_own_cut_off(tmp_path, monkeypatch):
+    """data/dl_final_results.csv is also the Diamond League model's label file, so
+    the 2026 Final has its own and joins only the field model's history. Its
+    cut-off is looked up although final_labels has no 2026 meeting file, and a
+    season held in both files is read from the main one."""
+    header = "discipline,year,athlete_name,place,mark,nationality\n"
+    main = tmp_path / "dl_final_results.csv"
+    main.write_text(header + "men_100m,2025,Old WINNER,1.0,9.80,USA\n", encoding="utf-8")
+    later = tmp_path / "dl_final_2026_results.csv"
+    later.write_text(header + "men_100m,2025,Twice READ,1.0,9.90,USA\n"
+                     "men_100m,2026,New WINNER,1.0,9.85,JAM\n", encoding="utf-8")
+    monkeypatch.setattr(fd.final_labels, "dl_final_dates", lambda: {2025: pd.Timestamp("2025-08-28")})
+    starts = fd.dl_final_starts(find=lambda year: [{"startDate": f"{year}-09-04"}], years=[2026])
+    assert {y: pd.Timestamp(d) for y, d in starts.items()} == {
+        2025: pd.Timestamp("2025-09-04"), 2026: pd.Timestamp("2026-09-04")}
+
+    finals = fd.dl_finals(starts=starts, paths=[str(main), str(later)])
+    assert finals.set_index("athlete_name")["year"].to_dict() == {"Old WINNER": 2025, "New WINNER": 2026}
+    assert pd.Timestamp(finals.set_index("athlete_name").loc["New WINNER", "cutoff"]) == pd.Timestamp("2026-09-04")
+
+    # Only the later file's seasons are looked up beyond final_labels' dates.
+    looked_up = {}
+
+    def starts_for(years=()):
+        looked_up["years"] = set(years)
+        return starts
+
+    monkeypatch.setattr(fd, "dl_final_starts", starts_for)
+    fd.dl_finals(paths=[str(main), str(later)])
+    assert looked_up["years"] == {2026}
+
+
+def test_the_ultimate_is_read_from_its_saved_results_and_cut_off_at_its_first_day():
+    event = {"competitionId": 7212925, "startDate": "2026-09-11", "results": [
+        {"discipline": "men_400h", "athlete_name": "Alison DOS SANTOS", "place": "1", "mark": "46.29",
+         "nationality": "BRA"},
+        {"discipline": "men_400h", "athlete_name": "Did NOTFINISH", "place": "", "mark": "DNF",
+         "nationality": "NOR"}]}
+    finals = fd.ultimate_finals(event)
+    assert list(finals.columns) == fd.FINAL_COLUMNS
+    assert set(finals["year"]) == {2026} and set(finals["tier"]) == {"global"}
+    assert set(finals["cutoff"]) == {pd.Timestamp("2026-09-11")}
+    assert finals["place"].iloc[0] == 1 and pd.isna(finals["place"].iloc[1])
+    assert fd.ultimate_finals({"results": []}).empty
+
+
+def test_a_season_past_the_toplist_history_is_scored_with_its_own_list_and_earlier_finals_are_not():
+    """The 2026 championships are scored with this season's world list, as the
+    2026 check scored them, and every earlier final exactly as it was."""
+    asked = []
+
+    def history_scores(key):
+        asked.append(("history", key))
+        return history(("OLD", "USA", 2025, 1200, "2025-06-01"))
+
+    def with_season(year):
+        def scores(key):
+            asked.append((year, key))
+            return history(("NEW", "JAM", year, 1250, f"{year}-06-01"))
+        return scores
+
+    finals = pd.DataFrame({"competition": "C", "competition_id": 1, "tier": "global", "year": [2025, 2026],
+                           "cutoff": [pd.Timestamp("2025-09-01"), pd.Timestamp("2026-09-01")],
+                           "discipline": "men_100m", "athlete_name": ["OLD", "NEW"], "nationality": ["USA", "JAM"],
+                           "place": [1, 1], "mark": ["10.0", "9.9"]})
+    scored = fd.attach_all_scores(finals, scores_for=history_scores, with_season=with_season)
+    assert asked == [("history", "men_100m"), (2026, "men_100m")]
+    assert scored.set_index("athlete_name")["sb_score"].to_dict() == {"OLD": 1200.0, "NEW": 1250.0}
+
+
+def test_ids_for_chosen_seasons_are_read_alone_and_every_other_seasons_ids_are_kept(tmp_path, monkeypatch):
+    ids_path = tmp_path / "finalist_ids.csv"
+    pd.DataFrame({"competition": "Diamond League Final", "year": [2025, 2026], "discipline": "men_100m",
+                  "athlete_name": ["Kept ONE", "Stale TWO"], "athlete_id": [1, 2],
+                  "birth_date": ["2000-01-01", None]}).to_csv(ids_path, index=False)
+    finals = pd.DataFrame({"competition": "Diamond League Final", "competition_id": None, "year": [2025, 2026],
+                           "discipline": "men_100m", "athlete_name": ["Kept ONE", "Fresh TWO"]})
+    asked = []
+
+    def ids_for(frame):
+        asked.append(sorted(int(y) for y in frame["year"]))
+        return frame[["competition", "year", "discipline", "athlete_name"]].assign(athlete_id=22, birth_date=None)
+
+    monkeypatch.setattr(fd, "IDS_PATH", str(ids_path))
+    monkeypatch.setattr(fd, "FIELD_DIR", str(tmp_path))
+    monkeypatch.setattr(fd, "all_finals", lambda keys=None: finals)
+    monkeypatch.setattr(fd, "finalist_ids", ids_for)
+    assert fd.main(["--ids", "--years", "2026"]) == 0
+    assert asked == [[2026]]
+    saved = pd.read_csv(ids_path).set_index("athlete_name")["athlete_id"].to_dict()
+    assert saved == {"Kept ONE": 1, "Fresh TWO": 22}
+
+
+def test_the_2026_check_learns_only_from_the_seasons_before_2026():
+    """Once the 2026 championships join data/field/finals.csv, a check that also
+    trained on them would score finals it had learned from."""
+    import field_model_check_2026 as check
+
+    finals = pd.DataFrame({"year": [2024, 2025, 2026], "competition": ["A", "B", "C"]})
+    assert check.training_history(finals)["year"].tolist() == [2024, 2025]
+
+
 def test_a_season_that_fails_to_download_is_asked_for_again_and_an_empty_one_is_not(tmp_path):
     calls = []
 

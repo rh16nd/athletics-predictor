@@ -69,6 +69,15 @@ CHAMPIONSHIP_FINALS_PATH = os.path.join(FIELD_DIR, "championship_finals.csv")
 IDS_PATH = os.path.join(FIELD_DIR, "finalist_ids.csv")
 FINALS_PATH = os.path.join(FIELD_DIR, "finals.csv")
 DL_RESULTS = os.path.join(BASE_DIR, "data", "dl_final_results.csv")
+# Diamond League Finals after DL_RESULTS, each in its own file. train_model and
+# final_labels read DL_RESULTS as the Diamond League model's labels, so a later
+# Final joins the field model's history here without changing theirs.
+DL_RESULTS_LATER = [os.path.join(BASE_DIR, "data", "dl_final_2026_results.csv")]
+ULTIMATE_EVENT_PATH = os.path.join(BASE_DIR, "data", "ultimate", "event.json")
+ULTIMATE_COMPETITION = "World Athletics Ultimate Championship"
+# The first season whose world toplist is only in data/raw/{key}_{year}.csv,
+# the list run.py refreshes: the history files end the season before it.
+SEASON_LISTS_FROM = 2026
 
 AREA_PAGES = 3
 REQUEST_PAUSE = 0.3
@@ -335,11 +344,13 @@ def competition_finals(competitions, fetch=us.fetch_results, start=competition_s
     return pd.DataFrame(rows, columns=FINAL_COLUMNS), missing
 
 
-def dl_final_starts(find=dlr.find_final_competition_ids):
+def dl_final_starts(find=dlr.find_final_competition_ids, years=()):
     """{year: first day of that year's Diamond League Final}. 2018 and 2019 held
-    it in two cities two weeks apart, so the earlier one is the cut-off."""
+    it in two cities two weeks apart, so the earlier one is the cut-off. `years`
+    adds seasons final_labels has no meeting file for yet, such as 2026, whose
+    Final World Athletics still lists."""
     starts = {}
-    for year in final_labels.dl_final_dates():
+    for year in sorted(set(final_labels.dl_final_dates()) | {int(y) for y in years}):
         meetings = find(int(year))
         dates = [parse_date(m.get("startDate")) for m in meetings]
         dates = [d for d in dates if d is not None]
@@ -348,11 +359,25 @@ def dl_final_starts(find=dlr.find_final_competition_ids):
     return starts
 
 
-def dl_finals(starts=None):
-    """Diamond League Finals from data/dl_final_results.csv, which already holds
-    each whole field, cut off at the first day of that year's Final."""
-    starts = dl_final_starts() if starts is None else starts
-    dl = pd.read_csv(DL_RESULTS)
+def dl_finals(starts=None, paths=None):
+    """Diamond League Finals from data/dl_final_results.csv and the later Finals'
+    own files (DL_RESULTS_LATER), each whole field, cut off at the first day of
+    that year's Final. A season is read from the first file that holds it."""
+    if paths is None:
+        paths = [DL_RESULTS] + [path for path in DL_RESULTS_LATER if os.path.exists(path)]
+    frames, seen, later = [], set(), set()
+    for i, path in enumerate(paths):
+        frame = pd.read_csv(path)
+        frame = frame[~frame["year"].isin(seen)]
+        years = {int(y) for y in frame["year"]}
+        later |= years if i else set()
+        seen |= years
+        frames.append(frame)
+    dl = pd.concat(frames, ignore_index=True)
+    # Only the later files' seasons are looked up beyond final_labels' dates, so
+    # no season in the main file gains a cut-off, and a place in training, it did
+    # not have before.
+    starts = dl_final_starts(years=later) if starts is None else starts
     dl["cutoff"] = dl["year"].map(lambda y: starts.get(int(y)))
     dl = dl.dropna(subset=["cutoff"])
     return pd.DataFrame({
@@ -363,12 +388,32 @@ def dl_finals(starts=None):
     })[FINAL_COLUMNS]
 
 
+def ultimate_finals(event):
+    """The Ultimate Championship's results as finals rows, cut off at its first
+    day. Read from data/ultimate/event.json, which ultimate_scraper writes, as
+    field_model_check_2026 read it before the Ultimate joined the history."""
+    results = pd.DataFrame(event.get("results") or [])
+    if results.empty:
+        return pd.DataFrame(columns=FINAL_COLUMNS)
+    start = pd.Timestamp(event["startDate"])
+    return pd.DataFrame({
+        "competition": ULTIMATE_COMPETITION, "competition_id": event["competitionId"], "tier": "global",
+        "year": start.year, "cutoff": start, "discipline": results["discipline"],
+        "athlete_name": results["athlete_name"], "nationality": results["nationality"],
+        "place": results["place"].map(_place), "mark": results["mark"],
+    })[FINAL_COLUMNS]
+
+
 def all_finals(keys=None):
-    """Diamond League Finals and the championship finals on disk, together."""
+    """Diamond League Finals, the championship finals on disk and the Ultimate
+    Championship, together."""
     finals = dl_finals()
     if os.path.exists(CHAMPIONSHIP_FINALS_PATH):
         champs = pd.read_csv(CHAMPIONSHIP_FINALS_PATH, parse_dates=["cutoff"])
         finals = pd.concat([finals, champs], ignore_index=True)
+    if os.path.exists(ULTIMATE_EVENT_PATH):
+        with open(ULTIMATE_EVENT_PATH, encoding="utf-8") as f:
+            finals = pd.concat([finals, ultimate_finals(json.load(f))], ignore_index=True)
     return finals if keys is None else finals[finals["discipline"].isin(keys)]
 
 
@@ -804,6 +849,27 @@ def attach_scores(finals, scores_for=season_scores, seasons=None):
     return pd.DataFrame(out)
 
 
+def season_scores_with(year, raw_dir=RAW_DIR):
+    """season_scores plus one season's own world list, data/raw/{key}_{year}.csv,
+    for a season the toplist history does not reach yet."""
+    def scores(key):
+        path = os.path.join(raw_dir, f"{key}_{year}.csv")
+        return season_scores(key, raw_dir=raw_dir, extra=[(path, "world")] if os.path.exists(path) else [])
+    return scores
+
+
+def attach_all_scores(finals, seasons=None, scores_for=season_scores, with_season=season_scores_with):
+    """attach_scores for every final: each one before SEASON_LISTS_FROM exactly as
+    before, and each later season with its own world list added, which is how
+    field_model_check_2026 scored the 2026 championships before they joined."""
+    earlier = finals["year"] < SEASON_LISTS_FROM
+    parts = [attach_scores(finals[earlier], scores_for=scores_for, seasons=seasons)]
+    for year in sorted({int(y) for y in finals.loc[~earlier, "year"]}):
+        parts.append(attach_scores(finals[finals["year"] == year], scores_for=with_season(year), seasons=seasons))
+    parts = [part for part in parts if not part.empty]
+    return pd.concat(parts, ignore_index=True) if parts else pd.DataFrame()
+
+
 def coverage(scored):
     """Per competition: finals, finalists, the share with a season score, the
     share of podium places whose athlete has one, and whether that clears the
@@ -858,7 +924,7 @@ def main(argv=None):
     parser.add_argument("--ids", action="store_true")
     parser.add_argument("--seasons", action="store_true")
     parser.add_argument("--races", action="store_true")
-    parser.add_argument("--years", default=None, help="comma-separated seasons, for --seasons and --races")
+    parser.add_argument("--years", default=None, help="comma-separated seasons, for --ids, --seasons and --races")
     parser.add_argument("--report", action="store_true")
     parser.add_argument("--only", default=None, help="comma-separated discipline keys")
     parser.add_argument("--refresh", action="store_true")
@@ -891,7 +957,15 @@ def main(argv=None):
                   f"major_meet {d['majorMeet']}, saved {d['saved']}")
     if args.ids:
         print("=== Every finalist's World Athletics id, from each competition's results ===")
-        ids = finalist_ids(all_finals())
+        finals = all_finals()
+        years = {int(y) for y in args.years.split(",")} if args.years else None
+        if years:
+            # Only these seasons' results feeds are read; every other season's ids are kept.
+            finals = finals[finals["year"].isin(years)]
+        ids = finalist_ids(finals)
+        if years and os.path.exists(IDS_PATH):
+            kept = pd.read_csv(IDS_PATH, parse_dates=["birth_date"])
+            ids = pd.concat([kept[~kept["year"].isin(years)], ids], ignore_index=True)
         os.makedirs(FIELD_DIR, exist_ok=True)
         ids.to_csv(IDS_PATH, index=False)
         print(f"  {int(ids['athlete_id'].notna().sum())} of {len(ids)} finalists have an id -> {IDS_PATH}")
@@ -924,7 +998,7 @@ def main(argv=None):
         seasons = load_seasons()
         for year, athletes in races.items():
             seasons.setdefault(year, {}).update(athletes)
-        scored = attach_races(attach_scores(with_ids(all_finals(keys)), seasons=seasons), races)
+        scored = attach_races(attach_all_scores(with_ids(all_finals(keys)), seasons=seasons), races)
         os.makedirs(FIELD_DIR, exist_ok=True)
         scored.to_csv(FINALS_PATH, index=False)
         table = coverage(scored)
