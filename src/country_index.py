@@ -70,45 +70,70 @@ def country_names():
     }
 
 
+def _athlete(disc_key, label, name, mark, score, world_rank, profile_url):
+    return {
+        "name": name,
+        "discKey": disc_key,
+        "disc": label,
+        "mark": mark,
+        "score": score,
+        "worldRank": world_rank,
+        "profileUrl": profile_url,
+        "isField": disc_key in api.FIELD_EVENTS,
+        # The hammer and the 10,000m have no discipline page, since the
+        # model has no field for them, so the page links their Track or
+        # Field ranking instead. A link to /discipline would 404.
+        "hasDisciplinePage": disc_key not in api.POINTS_ONLY_DISCIPLINES,
+    }
+
+
 def athletes_by_country():
-    """{IOC code: [athlete, ...]} from this season's toplists -- every ranked
-    athlete, not just the ones in a projected field."""
+    """{IOC code: [athlete, ...]}: everyone with a page on the site this season,
+    grouped by nationality, not just the ones in a projected field.
+
+    That is each discipline's world toplist, then the entrants a championship
+    snapshot adds (api.season_snapshot_paths, where a world row wins), then the
+    current championship's entrants whose page is built from its call
+    (api.championship_page_entrants), who have no mark this season to show.
+    Until 2026-09-15 this read the world toplist alone, the world top 100 in
+    most events, so 362 of the 518 Asian Games entrants with a page were on no
+    country page and 20 of their nations had no page at all."""
+    call_pages = {}
+    for entrant in api.championship_page_entrants():
+        call_pages.setdefault(entrant["discKey"], []).append(entrant)
     out = {}
     for disc_key, label in api.DISC_LABELS.items():
-        path = os.path.join(api.RAW_DIR, f"{disc_key}_{api.MEETS_YEAR}.csv")
-        if not os.path.exists(path):
-            continue
-        raw = pd.read_csv(path).dropna(subset=["Competitor"])
         seen = set()
-        for _, r in raw.iterrows():
-            name = str(r["Competitor"])
-            if name in seen:            # an athlete's best row only
+        for path in api.season_snapshot_paths(disc_key):
+            raw = pd.read_csv(path).dropna(subset=["Competitor"])
+            for _, r in raw.iterrows():
+                name = str(r["Competitor"])
+                if name.lower() in seen:    # an athlete's best row only, a world row first
+                    continue
+                seen.add(name.lower())
+                # WA's export leaves the nationality header blank; read by position,
+                # the same way toplist_meta and live_fetcher do.
+                nat = str(r.iloc[5]).strip() if pd.notna(r.iloc[5]) else None
+                if not nat:
+                    continue
+                try:
+                    score = int(r["Results Score"]) if pd.notna(r.get("Results Score")) else None
+                except (ValueError, TypeError):
+                    score = None
+                rank = r.get("Rank")
+                out.setdefault(nat, []).append(_athlete(
+                    disc_key, label, name,
+                    str(r["Mark"]) if pd.notna(r.get("Mark")) else None,
+                    score,
+                    int(rank) if pd.notna(rank) else None,
+                    str(r["ProfileURL"]) if pd.notna(r.get("ProfileURL")) else None,
+                ))
+        for entrant in call_pages.get(disc_key, []):
+            if entrant["name"].lower() in seen or not entrant.get("nat"):
                 continue
-            seen.add(name)
-            # WA's export leaves the nationality header blank; read by position,
-            # the same way toplist_meta and live_fetcher do.
-            nat = str(r.iloc[5]).strip() if pd.notna(r.iloc[5]) else None
-            if not nat:
-                continue
-            try:
-                score = int(r["Results Score"]) if pd.notna(r.get("Results Score")) else None
-            except (ValueError, TypeError):
-                score = None
-            rank = r.get("Rank")
-            out.setdefault(nat, []).append({
-                "name": name,
-                "discKey": disc_key,
-                "disc": label,
-                "mark": str(r["Mark"]) if pd.notna(r.get("Mark")) else None,
-                "score": score,
-                "worldRank": int(rank) if pd.notna(rank) else None,
-                "profileUrl": str(r["ProfileURL"]) if pd.notna(r.get("ProfileURL")) else None,
-                "isField": disc_key in api.FIELD_EVENTS,
-                # The hammer and the 10,000m have no discipline page, since the
-                # model has no field for them, so the page links their Track or
-                # Field ranking instead. A link to /discipline would 404.
-                "hasDisciplinePage": disc_key not in api.POINTS_ONLY_DISCIPLINES,
-            })
+            seen.add(entrant["name"].lower())
+            out.setdefault(entrant["nat"], []).append(_athlete(
+                disc_key, label, entrant["name"], None, None, None, entrant.get("profileUrl")))
     for nat, rows in out.items():
         # Results Score across events; unscored athletes last rather than first.
         rows.sort(key=lambda a: (a["score"] is None, -(a["score"] or 0), a["disc"]))

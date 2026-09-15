@@ -89,6 +89,44 @@ def test_country_athletes_are_ordered_by_results_score(monkeypatch):
     assert out["JAM"]["topScore"] == 1276
 
 
+def test_a_country_lists_everyone_with_a_page_not_only_its_world_top_100(monkeypatch, tmp_path):
+    """Until 2026-09-15 a nation's page read the world toplist alone, so 362 of
+    the 518 Asian Games entrants with a page were on no country page and 20 of
+    their nations had no page. The championship snapshot adds the rest, a world
+    row wins, and an entrant whose page is built from the call comes last with
+    no mark."""
+    header = "Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,ProfileURL\n"
+    lyles = "1,9.79,+0.8,Noah LYLES,18 JUL 1997,USA,1,,New York,24 JUL 2026,1280,men_100m,2026,u-lyles\n"
+    adam = ",11.02,+1.1,Ibadulla ADAM,14 JAN 2002,MDV,1,,Gaborone,27 JUN 2026,880,men_100m,2026,u-adam\n"
+    world = tmp_path / "world.csv"
+    world.write_text(header + lyles, encoding="utf-8")
+    snapshot = tmp_path / "snapshot.csv"
+    snapshot.write_text(header + lyles + adam, encoding="utf-8")
+    monkeypatch.setattr(api, "DISC_LABELS", {"men_100m": "Men's 100m"})
+    monkeypatch.setattr(api, "season_snapshot_paths", lambda disc_key: [str(world), str(snapshot)])
+    monkeypatch.setattr(api, "championship_page_entrants", lambda: [
+        {"name": "Hassan SAEED", "discKey": "men_100m", "nat": "MDV", "profileUrl": "u-saeed"},
+        {"name": "Ibadulla ADAM", "discKey": "men_100m", "nat": "MDV", "profileUrl": "u-adam"}])
+
+    out = ci.athletes_by_country()
+    assert [(a["name"], a["worldRank"]) for a in out["USA"]] == [("Noah LYLES", 1)]
+    assert [(a["name"], a["mark"], a["score"], a["worldRank"], a["profileUrl"]) for a in out["MDV"]] == [
+        ("Ibadulla ADAM", "11.02", 880, None, "u-adam"), ("Hassan SAEED", None, None, None, "u-saeed")]
+
+
+def test_the_championship_entrants_with_a_page_carry_their_nation_until_it_ends(monkeypatch):
+    from datetime import date
+
+    monkeypatch.setattr(api.championships, "current", lambda: {"id": "asian-games-2026", "endDate": "2026-09-29"})
+    monkeypatch.setattr(api, "load_event_predictions", lambda champ_id: {"projections": [{
+        "discKey": "men_100m",
+        "athletes": [{"name": "Ranked ONE", "nat": "PAK", "profileUrl": "u-1", "hasPage": True}],
+        "unranked": [{"name": "No PAGE", "nat": "AFG", "profileUrl": None, "hasPage": False}]}]})
+    assert api.championship_page_entrants(today=date(2026, 9, 20)) == [
+        {"name": "Ranked ONE", "discKey": "men_100m", "nat": "PAK", "profileUrl": "u-1"}]
+    assert api.championship_page_entrants(today=date(2026, 9, 30)) == []
+
+
 def test_country_falls_back_to_its_code_when_the_name_lookup_fails(monkeypatch):
     """WA's country list is a live call. If it fails the page must still work,
     showing the 3-letter code rather than failing the whole build."""

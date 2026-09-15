@@ -1638,21 +1638,31 @@ def championship_call(disc_key, athlete_name, today=None):
     return None
 
 
-def championship_page_names(today=None):
-    """{discipline key: [name]} for the current championship's entrants with a
-    page, ranked or not, for as long as championship_call() builds their page:
-    until the championship ends. Empty for a championship with no call."""
+def championship_page_entrants(today=None):
+    """[{name, discKey, nat, profileUrl}] for the current championship's
+    entrants with a page, ranked or not, for as long as championship_call()
+    builds their page: until the championship ends. Empty for a championship
+    with no call."""
     try:
         champ = championships.current()
     except KeyError:
-        return {}
+        return []
     if (today or date.today()).isoformat() > (champ.get("endDate") or ""):
-        return {}
-    out = {}
+        return []
+    out = []
     for p in (load_event_predictions(champ["id"]) or {}).get("projections") or []:
         for a in (p.get("athletes") or []) + (p.get("unranked") or []):
             if a.get("hasPage") and a.get("name") and p.get("discKey"):
-                out.setdefault(p["discKey"], []).append(a["name"])
+                out.append({"name": a["name"], "discKey": p["discKey"],
+                            "nat": a.get("nat"), "profileUrl": a.get("profileUrl")})
+    return out
+
+
+def championship_page_names(today=None):
+    """{discipline key: [name]} from championship_page_entrants(), for search."""
+    out = {}
+    for entrant in championship_page_entrants(today):
+        out.setdefault(entrant["discKey"], []).append(entrant["name"])
     return out
 
 
