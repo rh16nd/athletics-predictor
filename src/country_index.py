@@ -10,9 +10,10 @@ national teams rather than individuals.
 What it contains, per country:
   * every athlete of that nationality in this season's toplists, with their
     event, mark and World Athletics Results Score
-  * their direct places at the Ultimate (Olympic/World champions, Diamond
-    League Final winners), read from data/ultimate/event.json
-  * that nation's mixed relay teams and whether they qualified
+  * while the Ultimate is the current championship and not yet over: their
+    direct places there (Olympic/World champions, Diamond League Final
+    winners), read from data/ultimate/event.json, and that nation's mixed
+    relay teams and whether they qualified
 
 Ordering, deliberately: athletes are sorted by **Results Score**, never by the
 model's podium probability. Those probabilities are per-discipline -- they sum
@@ -31,6 +32,7 @@ Writes data/countries.json.
 import json
 import os
 import sys
+from datetime import date
 
 import pandas as pd
 
@@ -136,8 +138,17 @@ def athletes_by_country():
     return out
 
 
-def ultimate_by_country():
-    """{IOC code: {qualifiers: [...], relays: [...]}} from the Ultimate build."""
+def ultimate_by_country(today=None):
+    """{IOC code: {qualifiers: [...], relays: [...]}} from the Ultimate build,
+    only while the Ultimate is the current championship and not yet over.
+
+    The panel is about places at that one meeting. On 2026-09-15, with the
+    Asian Games current, every nation with an Ultimate qualifier still showed
+    "At the Ultimate Championship" and its places in Budapest, two days after
+    the meeting was run. Gated like api.championship_page_entrants."""
+    champ = api.championships.current()
+    if champ["id"] != "ultimate-2026" or (today or date.today()).isoformat() > champ["endDate"]:
+        return {}
     if not os.path.exists(ULTIMATE_PATH):
         return {}
     with open(ULTIMATE_PATH, encoding="utf-8") as f:

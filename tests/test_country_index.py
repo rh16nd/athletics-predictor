@@ -127,6 +127,26 @@ def test_the_championship_entrants_with_a_page_carry_their_nation_until_it_ends(
     assert api.championship_page_entrants(today=date(2026, 9, 30)) == []
 
 
+def test_the_ultimate_panel_is_left_out_once_the_site_has_moved_on(monkeypatch, tmp_path):
+    """On 2026-09-15, with the Asian Games current, every nation with an Ultimate
+    qualifier still showed "At the Ultimate Championship" and its places in
+    Budapest. The panel's data is built only while the Ultimate is current and
+    not over."""
+    import json
+    from datetime import date
+
+    event = tmp_path / "event.json"
+    event.write_text(json.dumps({"namedQualifiers": [
+        {"nationality": "JPN", "route": "olympic", "name": "Haruka KITAGUCHI", "discKey": "women_JT"}]}),
+        encoding="utf-8")
+    monkeypatch.setattr(ci, "ULTIMATE_PATH", str(event))
+    monkeypatch.setattr(api.championships, "current", lambda: {"id": "ultimate-2026", "endDate": "2026-09-13"})
+    assert list(ci.ultimate_by_country(today=date(2026, 9, 13))) == ["JPN"]
+    assert ci.ultimate_by_country(today=date(2026, 9, 14)) == {}
+    monkeypatch.setattr(api.championships, "current", lambda: {"id": "asian-games-2026", "endDate": "2026-09-29"})
+    assert ci.ultimate_by_country(today=date(2026, 9, 10)) == {}
+
+
 def test_country_falls_back_to_its_code_when_the_name_lookup_fails(monkeypatch):
     """WA's country list is a live call. If it fails the page must still work,
     showing the 3-letter code rather than failing the whole build."""
