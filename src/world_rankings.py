@@ -4,35 +4,30 @@ Field pages, in two orderings the UI toggles between:
 
   points : World Athletics performance points (the Results Score of each
            athlete's season best) -- an objective ranking by what they've run.
-  model  : the trained model's own view. The model rates podium probability
-           WITHIN a field, so this is computed by scoring the whole discipline
-           pool with the same model+features run.py uses and ranking by that
-           probability.
+  model  : the championship model's rating (src/field_model.py), from the model
+           that calls the championships. The top 20 by points are read as if
+           they met in one final, and `ratingPct` is the chance it gives each of
+           finishing in the top three, so an event's 20 add up to 300. Both
+           lists carry it. The site calls it the model rating and never a
+           podium chance, which it names only for a real competition, where the
+           athletes are actually entered (the user's rule, 2026-09-17).
 
-           It is NOT a ranking of who is strongest in the world, and the UI
-           must not present it as one. The model was trained on Diamond League
-           Final podiums and its form features are all computed from
-           DL-circuit data, so an athlete who skipped the circuit rates near
-           zero however fast they have run. Measured over the 32 model top-20s
-           (2026-09-07): mean rating rises 1.2% -> 28.8% going from 0 to 5 DL
-           meetings while mean WA score barely moves (1172 -> 1231), and the
-           rating correlates better with meetings contested (Spearman 0.75)
-           than with the marks themselves (0.65). Hence dlRaces below: the
-           count is shipped next to the rating so a low number explains
-           itself instead of looking like a verdict on the athlete.
+Every event is read this way since 2026-09-17. Until then the 32 Diamond League
+events were rated by the Diamond League model (src/train_model.py, a random
+forest), and only the hammer and the 10,000m, which it has never seen, had the
+field model. That rating followed meetings raced more than marks (measured
+2026-09-07: 1.2% at no Diamond League meetings against 28.8% at five, on almost
+the same World Athletics score), and on the same 373 past finals the field model
+named more medallists (67.4% against 60.9%; src/model_head_to_head.py), so by
+the rule fixed before that test it replaced the forest everywhere.
 
-           The hammer and the 10,000m are not Diamond League events, so that
-           model has never seen them. Their model view comes from the field
-           model instead (src/field_model.py, 2026-09-15): each of the top 20
-           by points gets a podium chance, as if the 20 met in one final.
-           `modelKind` says which model made a list.
-
-Both are built from data we already scrape (the season toplists), so this runs
-in the normal refresh with no new sources. Writes data/world_rankings.json:
+Both are built from data we already scrape (the season toplists and the top
+20s' seasons race by race), so this runs in the normal refresh with no new
+sources. Writes data/world_rankings.json:
   { "<disc_key>": { "isField": bool, "modelAvailable": bool, "modelKind": str,
                     "model": [rows...], "points": [rows...] } }
-each row: { rank, name, nat, mark, score, ratingPct, dlRaces,
-            racesOnRecord, profileUrl }.
+each row: { rank, name, nat, mark, score, ratingPct, racesOnRecord,
+            profileUrl }.
 
 Usage:
     python src/world_rankings.py
@@ -43,7 +38,6 @@ import argparse
 import glob
 import json
 import os
-import pickle
 import sys
 from datetime import date
 
@@ -55,33 +49,20 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 import asian_games_scraper as ags  # noqa: E402
 import field_data as fd  # noqa: E402
 import field_model as fm  # noqa: E402
-from feature_builder import FIELD_EVENTS, POINTS_ONLY_DISCIPLINES, RAW_DIR, build_2026_features  # noqa: E402
+from feature_builder import FIELD_EVENTS, RAW_DIR  # noqa: E402
 from season_activity import races_on_record  # noqa: E402
 
 # The field model's top 20s, their seasons race by race, for a model that reads
 # races (field_model.needs_races). Fetched when missing, or again with --refresh-races.
 CURRENT_RACES_DIR = os.path.join(fd.FIELD_DIR, "current")
 
-# Both overridable so an experimental model can be driven through the real
-# site without displacing the deployed one. A pooled model written over
-# outputs/ would silently become the live model at the next refresh, which is
-# not a thing to discover afterwards.
-#   PODIUMCALL_MODEL_DIR     where to load model_rf/scaler/feature_cols from
+# Overridable so an experimental build can be written beside the served one.
 #   PODIUMCALL_RANKINGS_OUT  where to write the rankings JSON
-OUTPUTS_DIR = os.environ.get(
-    "PODIUMCALL_MODEL_DIR", os.path.join(os.path.dirname(__file__), "..", "outputs"))
 OUT_PATH = os.environ.get(
     "PODIUMCALL_RANKINGS_OUT",
     os.path.join(os.path.dirname(__file__), "..", "data", "world_rankings.json"))
 YEAR = 2026
 TOP_N = 20
-
-with open(os.path.join(OUTPUTS_DIR, "model_rf.pkl"), "rb") as f:
-    MODEL = pickle.load(f)
-with open(os.path.join(OUTPUTS_DIR, "scaler.pkl"), "rb") as f:
-    SCALER = pickle.load(f)
-with open(os.path.join(OUTPUTS_DIR, "feature_cols.pkl"), "rb") as f:
-    FEAT_COLS = pickle.load(f)
 
 
 def discipline_keys():
@@ -119,7 +100,8 @@ def toplist_meta(key):
 def add_h2h(df, key):
     """h2h_win_rate as a model input, computed over this pool -- the same
     case-insensitive lookup run.py uses (h2h_rates.csv is normal-case, the
-    toplist is ALL-CAPS-surname)."""
+    toplist is ALL-CAPS-surname). No longer used here since the rankings left
+    the Diamond League model; kept for ultimate_predictions.py, which imports it."""
     h2h_path = os.path.join(os.path.dirname(__file__), "..", "data", "h2h", "h2h_rates.csv")
     if not os.path.exists(h2h_path):
         df["h2h_win_rate"] = 0.5
@@ -139,14 +121,6 @@ def add_h2h(df, key):
     return df
 
 
-def has_meetings_log(key):
-    """Whether this discipline has a real per-meeting file. Without one,
-    feature_builder falls back to the toplist's row count, which is
-    structurally 1 for every athlete -- a number that says nothing. dlRaces
-    is None in that case rather than a confident-looking 1."""
-    return os.path.exists(os.path.join(RAW_DIR, f"{key}_{YEAR}_meetings.csv"))
-
-
 def ranked(rows, sort_key, reverse=True):
     """The top TOP_N rows by one key, best first, with missing values last."""
     ordered = sorted(rows, key=lambda x: (x[sort_key] is None, x[sort_key] or 0), reverse=reverse)
@@ -156,9 +130,8 @@ def ranked(rows, sort_key, reverse=True):
     for i, x in enumerate(ordered[:TOP_N], 1):
         out.append({
             "rank": i, "name": x["name"], "nat": x["nat"], "mark": x["mark"],
-            "score": x["score"], "ratingPct": x["ratingPct"], "winPct": x.get("winPct"),
-            "dlRaces": x["dlRaces"], "racesOnRecord": x["racesOnRecord"],
-            "profileUrl": x["profileUrl"],
+            "score": x["score"], "ratingPct": x.get("ratingPct"),
+            "racesOnRecord": x["racesOnRecord"], "profileUrl": x["profileUrl"],
         })
     return out
 
@@ -172,13 +145,14 @@ def current_races(athletes, refresh=False):
 
 
 def field_model_rows(key, rows, today=None, model=None, races=None, refresh_races=False):
-    """The field model's view of one event: its top 20 by points, each with a
-    podium chance as if the 20 met in one final, best first. Empty without a
-    saved field model, or with fewer than three athletes it can read.
+    """The field model's view of one event: its top 20 by points, each with the
+    model rating, best first. Empty without a saved field model, or with fewer
+    than three athletes it can read.
 
-    `ratingPct` is that chance, so the 20 add up to 300: one hundred for each
-    podium place. The model reads the field the way it was chosen to
-    (field_model.spec_of): since 2026-09-15 each athlete's season race by race
+    `ratingPct` is the chance of a top three as if the 20 met in one final, so
+    the 20 add up to 300: one hundred for each podium place. The model reads
+    the field the way it was chosen to (field_model.spec_of): since 2026-09-15
+    each athlete's season race by race
     as well as their season best, career best, last season and age, with
     `races` fetched by current_races when not given."""
     model = model if model is not None else fm.load_model()
@@ -195,90 +169,46 @@ def field_model_rows(key, rows, today=None, model=None, races=None, refresh_race
                "race_how": fm.spec_of(model).get("race")}
     served = fm.serving_rows(key, athletes, os.path.join(RAW_DIR, f"{key}_{YEAR}.csv"), cutoff, YEAR, **how)
     chances = fm.field_chances(model, served, cutoff, key)
-    scored = [{**by_name[name], "ratingPct": round(podium * 100, 1), "winPct": round(win * 100, 1), "prob": podium}
+    scored = [{**by_name[name], "ratingPct": round(podium * 100, 1), "prob": podium, "win": win}
               for name, (podium, win) in chances.items() if name in by_name]
-    return ranked(scored, "prob")
+    # Ties go to the likelier winner, then the better score; ranked() keeps
+    # that order among equal ratings because Python's sort is stable.
+    order = sorted(scored, key=lambda r: (-r["win"], -(r["score"] or 0)))
+    return ranked(order, "prob")
 
 
 def field_model_discipline(key, today=None, model=None, refresh_races=False):
-    """An event the Diamond League model has never seen: the hammer and the
-    10,000m, added 2026-09-14. Ranked on points, with the field model's view
-    beside it since 2026-09-15.
+    """One event's two lists: the world's top 20 by points, and the same 20
+    ranked by the championship model's rating. Every event since 2026-09-17;
+    the hammer and the 10,000m since 2026-09-15.
 
-    The Diamond League model is still never run on them. It would score athletes
-    with no meetings log and no history, every one on the same defaults, and the
-    order that came out would be the toplist's own order with a percentage
-    beside it. `modelAvailable` is false only when the field model has nothing
-    to say."""
+    The rating travels on the points list too, so the Track and Field table
+    shows it whichever order the reader picks. `modelAvailable` is false only
+    when the field model has nothing to say, and then both lists carry None."""
     meta = toplist_meta(key)
     if not meta:
         return None
     activity = races_on_record(key, YEAR)
     rows = [{
         "name": name, "nat": m["nat"], "mark": m["mark"], "score": m["score"],
-        "ratingPct": None, "dlRaces": None,
+        "ratingPct": None,
         "racesOnRecord": activity.get(str(name).upper().strip()),
         "profileUrl": m["url"],
     } for name, m in meta.items()]
     field = field_model_rows(key, rows, today, model, refresh_races=refresh_races)
+    rating = {r["name"]: r["ratingPct"] for r in field}
+    points = [{**r, "ratingPct": rating.get(r["name"])} for r in ranked(rows, "score")]
     return {
         "isField": key in FIELD_EVENTS,
         "modelAvailable": bool(field),
         "modelKind": "field" if field else None,
         "model": field,
-        "points": ranked(rows, "score"),
+        "points": points,
     }
 
 
 def score_discipline(key, refresh_races=False):
-    if key in POINTS_ONLY_DISCIPLINES:
-        return field_model_discipline(key, refresh_races=refresh_races)
-    df = build_2026_features(key)
-    if df.empty:
-        return None
-    df = add_h2h(df, key)
-    df = df.dropna(subset=FEAT_COLS)
-    if df.empty:
-        return None
-    df["prob"] = MODEL.predict_proba(SCALER.transform(df[FEAT_COLS]))[:, 1]
-
-    real_meets = has_meetings_log(key)
-    # How many times we can SEE this athlete contest the discipline, across
-    # the toplist, the Diamond League per-meeting log and the worldwide race
-    # log. A floor rather than a census -- see season_activity.py.
-    activity = races_on_record(key, YEAR)
-    meta = toplist_meta(key)
-    rows = []
-    for _, r in df.iterrows():
-        m = meta.get(r["athlete_name"], {})
-        rows.append({
-            "name": r["athlete_name"],
-            "nat": m.get("nat"),
-            "mark": m.get("mark"),
-            "score": m.get("score"),
-            "ratingPct": round(float(r["prob"]) * 100, 1),
-            "prob": float(r["prob"]),
-            # Diamond League meetings contested. Kept in the payload because
-            # it is what the model's meets_count feature actually reads, but
-            # NOT what the site shows: the Diamond League contests each
-            # discipline at only a few of its meetings, so a 0 here means "no
-            # Diamond League 400mH", not "did not run".
-            "dlRaces": int(r["meets_count"]) if real_meets else None,
-            # What the site shows instead: every race we can see, from all
-            # three sources. Rai Benjamin reads 0 above and 1 here, and the
-            # second number is the one that tells a reader his third place is
-            # built on a single run.
-            "racesOnRecord": activity.get(str(r["athlete_name"]).upper().strip()),
-            "profileUrl": m.get("url"),
-        })
-
-    return {
-        "isField": key in FIELD_EVENTS,
-        "modelAvailable": True,
-        "modelKind": "form",
-        "model": ranked(rows, "prob"),
-        "points": ranked(rows, "score"),
-    }
+    return field_model_discipline(key, refresh_races=refresh_races)
 
 
 def main(argv=None):

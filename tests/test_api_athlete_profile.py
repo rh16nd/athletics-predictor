@@ -32,6 +32,11 @@ def fixture_api(monkeypatch):
     # test_load_athlete_photo_*; keep build_athlete_profile's own tests
     # focused on the profile-assembly logic.
     monkeypatch.setattr(api, "load_athlete_photo", lambda url: None)
+    # The rating comes from the championship model's world top 20, not the
+    # prediction row's Diamond League figure (45% in the fixture).
+    monkeypatch.setattr(api, "load_world_rankings", lambda: {
+        "men_100m": {"model": [{"name": "Beta MIDPACK", "ratingPct": 70.1},
+                               {"name": "Alpha SPEEDY", "ratingPct": 62.5}]}})
     return api
 
 
@@ -52,7 +57,7 @@ def test_build_athlete_profile_returns_real_stats_and_history(fixture_api):
     assert profile["disc"] == "Men's 100m"
     assert profile["rank"] == 1
     assert profile["mark"] == pytest.approx(9.85)
-    assert profile["prob"] == 45
+    assert profile["prob"] == 62.5 and "modelRank" not in profile
     assert profile["photoUrl"] is None  # monkeypatched load_athlete_photo
     assert profile["photoFocus"] is None  # get_photo_focus(None) short-circuits, no network
 

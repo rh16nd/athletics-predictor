@@ -115,16 +115,6 @@ def test_depth_endpoint_ranks_all_of_them(client, index):
     assert all(d["verdict"] for d in payload["disciplines"])
 
 
-def test_discipline_endpoint_agrees_with_the_index(client, index):
-    """The page's own verdict has to be the one the index gives it --
-    recomputing depth per route is how two pages start disagreeing."""
-    target = index[0]
-    payload = client.get(f"/api/discipline/{target['discKey']}").get_json()
-    assert payload["depth"]["spreadRank"] == target["spreadRank"]
-    assert payload["depth"]["spread"] == target["spread"]
-    assert payload["depth"]["of"] == len(index)
-
-
 def test_discipline_endpoint_exposes_the_scores_behind_the_spread(client, index):
     """The spread is inspectable, not asserted: the per-athlete scores are
     returned so a reader can see where it comes from."""
@@ -132,7 +122,7 @@ def test_discipline_endpoint_exposes_the_scores_behind_the_spread(client, index)
     payload = client.get(f"/api/discipline/{target['discKey']}").get_json()
     scores = [s["score"] for s in payload["scores"]]
     assert scores == sorted(scores, reverse=True)
-    assert scores[0] - scores[-1] == target["spread"]
+    assert scores[0] - scores[-1] == payload["depth"]["spread"]
 
 
 def test_unknown_discipline_is_a_404(client):
@@ -159,7 +149,8 @@ def test_an_event_with_no_final_gets_a_page_from_the_worlds_top_athletes(client,
         {"Competitor": p["name"], "Mark": p["mark"], "Results Score": p["score"], "Venue": "Somewhere",
          "Date": "01 JUN 2026", "Rank": p["rank"], "discKey": "men_HT", "indoor": False}
         for p in points]))
-    monkeypatch.setattr(api, "build_depth_index", lambda year=None: [{"spread": s} for s in (20, 40, 80, 120)])
+    monkeypatch.setattr(api, "build_depth_index", lambda year=None: [
+        {"discKey": f"final_{s}", "spread": s} for s in (20, 40, 80, 120)])
     monkeypatch.setattr(api, "build_discipline_trajectories", lambda disc_key, athletes: [])
     monkeypatch.setattr(api.athlete_analytics, "build_field_analysis", lambda *args: None)
 
@@ -175,3 +166,32 @@ def test_an_event_with_no_final_gets_a_page_from_the_worlds_top_athletes(client,
         (6, 50, 3, 2, 4)
     assert depth["favouriteProb"] == 71.0
     assert {s["name"]: s["prob"] for s in payload["scores"]}["Thrower 3"] is None
+
+
+def test_a_diamond_league_event_page_reads_the_worlds_top_athletes_and_leaves_its_own_final_out(client, monkeypatch):
+    """Every event page since 2026-09-17, when the site moved to the championship
+    model: the men's 100m reads the world's top athletes like the hammer does,
+    with no storylines. Its own Final is left out of the Finals it is set
+    against, so it is never ranked against itself."""
+    points = [{"rank": i, "name": f"Sprinter {i}", "nat": "USA", "mark": f"9.{80 + i}",
+               "score": 1290 - 10 * i} for i in range(1, 11)]
+    monkeypatch.setattr(api, "load_world_rankings", lambda: {"men_100m": {
+        "points": points, "model": [{"name": "Sprinter 1", "ratingPct": 48.0}]}})
+    monkeypatch.setattr(api, "load_season_scores", lambda year=None: pd.DataFrame([
+        {"Competitor": p["name"], "Mark": p["mark"], "Results Score": p["score"], "Venue": "Somewhere",
+         "Date": "01 JUN 2026", "Rank": p["rank"], "discKey": "men_100m", "indoor": False}
+        for p in points]))
+    monkeypatch.setattr(api, "build_depth_index", lambda year=None: [
+        {"discKey": "men_100m", "spread": 5}, {"discKey": "men_200m", "spread": 20},
+        {"discKey": "men_400m", "spread": 90}, {"discKey": "women_100m", "spread": 120}])
+    monkeypatch.setattr(api, "load_predictions", lambda: pytest.fail("read the Final's projected field"))
+    monkeypatch.setattr(api, "build_discipline_trajectories", lambda disc_key, athletes: [])
+    monkeypatch.setattr(api.athlete_analytics, "build_field_analysis", lambda *args: None)
+
+    payload = client.get("/api/discipline/men_100m").get_json()
+    assert (payload["fieldSource"], payload["modelKind"], payload["storylines"]) == ("toplist", "field", [])
+    assert [a["name"] for a in payload["athletes"]] == [f"Sprinter {i}" for i in range(1, 9)]
+    depth = payload["depth"]
+    # Eight sprinters from 1280 down to 1210: 70 points, wider than one of the
+    # other three Finals and tighter than two. The 100m's own 5 is not counted.
+    assert (depth["spread"], depth["spreadRank"], depth["finalsWider"], depth["of"]) == (70, 2, 2, 3)

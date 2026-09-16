@@ -299,8 +299,9 @@ def test_confidence_survives_a_discipline_with_no_id():
 
 def _status_env(monkeypatch, *, in_field=False, standings=None, injury=None,
                 toplist=("9.79", 1), detail=None, bio=None, scored=None,
-                field_names=None, h2h=None):
+                field_names=None, h2h=None, rankings=None):
     monkeypatch.setattr(api, "load_standings", lambda: standings or {})
+    monkeypatch.setattr(api, "load_world_rankings", lambda: rankings or {})
     # The FULL standings table, which knows the difference between "has no
     # Diamond League points" and "has points but is below the cut". Stubbed
     # empty by default so each test states its own case rather than
@@ -566,20 +567,22 @@ def test_a_scored_near_miss_athlete_gets_the_full_season_stats(monkeypatch):
     assert out["nat"] == "USA"
 
 
-def test_a_scored_near_miss_athletes_probability_is_marked_hypothetical(monkeypatch):
-    """run.py really does score this athlete with the same forest, so the
-    number is real -- but it is a conditional one. It travels under a name
-    the finalist payload doesn't use, so it cannot be rendered as `prob`
-    and read as a forecast about the Final."""
+def test_an_athlete_outside_the_field_gets_the_championship_models_rating_not_the_forests(monkeypatch):
+    """Since 2026-09-17 every athlete page shows the championship model's rating
+    in the world's top 20 (world_rankings.json), the same one Track and Field
+    show. The Diamond League forest's "if they had qualified" figure in the
+    prediction row is no longer read, and there is no predicted rank."""
     import pandas as pd
     row = pd.Series({"athlete_name": "Noah LYLES", "nationality": "USA",
                      "win_probability": "7%", "career_best": 9.79, "pb_gap": 0.0,
                      "age": 29.1, "meets_count": 2, "days_since_last": 58.0})
-    _status_env(monkeypatch, standings={"men_100m": ["Oblique SEVILLE"]}, scored=row)
+    rankings = {"men_100m": {"model": [{"name": "Oblique SEVILLE", "ratingPct": 51.2},
+                                       {"name": "Noah LYLES", "ratingPct": 38.4}]}}
+    _status_env(monkeypatch, standings={"men_100m": ["Oblique SEVILLE"]}, scored=row,
+                rankings=rankings)
     out = api.athlete_field_status("men_100m", "Noah LYLES")
-    assert out["hypotheticalProb"] == 7
-    assert "prob" not in out
-    assert "rank" not in out
+    assert out["prob"] == 38.4
+    assert not {"hypotheticalProb", "rank", "modelRank"} & set(out)
 
 
 def test_an_unscored_athlete_still_gets_name_and_age_from_the_toplist(monkeypatch):
@@ -591,7 +594,7 @@ def test_an_unscored_athlete_still_gets_name_and_age_from_the_toplist(monkeypatc
     behaviour: no prediction row meant no career best. That was reported as
     a bug against Dina Asher-Smith, who is not in predictions_latest.csv at
     all yet has 41 races and eight seasons on record. Only the SCORE needs
-    the model, so `hypotheticalProb` stays None while career best is now
+    the model, so the chance stays None while career best is now
     derived from the race log. Career best is asserted to be either a real
     mark or None (the fixture here has no race log to read), never to be
     absent by construction."""
@@ -601,8 +604,8 @@ def test_an_unscored_athlete_still_gets_name_and_age_from_the_toplist(monkeypatc
     assert out["nat"] == "NOR"
     assert out["age"] == 25.9
     assert out["careerBest"] is None or isinstance(out["careerBest"], str)
-    # The one thing that genuinely cannot exist without a prediction row.
-    assert out["hypotheticalProb"] is None
+    # Outside the world's top 20 there is no rating to show.
+    assert out["prob"] is None
 
 
 def test_head_to_head_is_measured_against_the_athletes_who_qualified(monkeypatch):
@@ -921,3 +924,28 @@ def test_the_flags_file_records_why_a_flag_was_cleared(monkeypatch):
     # should choke on it being there, or on it being missing.
     monkeypatch.setattr(api, "load_injury_flags", lambda: {})
     assert api.build_news(limit=20) == []
+
+
+def test_the_model_comparison_is_read_from_its_saved_report(monkeypatch, tmp_path):
+    """How it works quotes the head-to-head that moved the site to the
+    championship model. The figures come from the run's own report, and a
+    missing or broken report shows nothing rather than a typed number."""
+    import json
+    monkeypatch.setattr(api, "OUTPUTS_DIR", str(tmp_path))
+    assert api.load_model_comparison() is None
+
+    def group(finals, dl, champ, points):
+        return {"finals": finals, "dl": {"medallistsPct": dl},
+                "championship": {"medallistsPct": champ}, "points": {"medallistsPct": points}}
+
+    (tmp_path / "model_head_to_head.json").write_text(json.dumps({
+        "years": [2022, 2021, 2025], "tunedOnTheseSeasons": True,
+        "groups": {"all": group(373, 60.9, 67.4, 64.0), "championship": group(222, 54.8, 62.0, 60.5),
+                   "dlFinal": group(151, 69.8, 75.3, 69.1)}}), encoding="utf-8")
+    out = api.load_model_comparison()
+    assert (out["finals"], out["model"], out["previous"], out["points"], out["from"], out["to"]) ==         (373, 67.4, 60.9, 64.0, 2021, 2025)
+    assert out["championships"] == {"finals": 222, "model": 62.0, "previous": 54.8, "points": 60.5}
+    assert out["dlFinals"]["model"] == 75.3 and out["tunedOnTheseSeasons"] is True
+
+    (tmp_path / "model_head_to_head.json").write_text("{}", encoding="utf-8")
+    assert api.load_model_comparison() is None

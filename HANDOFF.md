@@ -1,6 +1,33 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here first: the very next step (saved 2026-09-17)
+## Start here first: the whole site on the championship model (2026-09-17)
+
+The session after the chat was cleared did the switch planned in the section below, with two turns in what the pages show. Read this, then the section below for the test and the plan it followed.
+
+**What the user decided, in order**
+1. The 32 Diamond League event pages switch too (asked first, as planned). They now read the world's top athletes on points, like the hammer and 10,000m pages, and lost their Diamond League Final storylines.
+2. After the first build showed a "podium chance" beside every favourite, the user said the podium chance is only for real competitions, like the Asian Games call, and that what they wanted was the model's favourite coming from how the championship model thinks, not from the Diamond League model.
+3. Offered a rank or a score in place of the percentage, they first chose the rank, then said they would rather have the percentage. Asked what to call it, they chose **"Model rating"**. So the rule now: outside a real competition's call the number is the model rating (EN "Model rating", FR "Évaluation du modèle"), and "podium chance" is used only for a real competition (the Asian Games call, the call panel on an athlete page, the Results page).
+4. The Asian Games page lists its events like Track: track events men's then women's, shortest race to longest, then the field events (field order left free by the user).
+
+**What changed**
+- Backend (athletics-predictor): `src/world_rankings.py` runs only the championship model (`field_model_discipline` for all 36 events; the random forest, its pickles and `has_meetings_log` are gone from it; `add_h2h` stays for `ultimate_predictions.py`). Each row carries `ratingPct` on both lists (the model's chance of a top three if the top 20 met in one final, so an event's 20 add up to 300); `dlRaces` and `winPct` are gone. `data/world_rankings.json` rebuilt with `--refresh-races` (720 seasons, none failed). Favourite changed in 14 of 36 events against the Diamond League model; Josh Hoey went from 17.8% to 59.1% (second in the 800m).
+- `api.py`: `discipline_report` is `ranking_only_report` for every event, which leaves the event's own Final out of the Finals it is compared with (`of` is 31 for a Diamond League event, 32 for the hammer and 10,000m). `world_model_rating()` feeds `prob` on the athlete profile and on `athlete_field_status` (which replaced the Diamond League "if they had qualified" figure). The profile also carries `worldRank`, shown instead of the old projected-field rank. `/api/stats` gained `modelComparison`, read from `outputs/model_head_to_head.json` for How it works. `get_model_accuracy` is untouched (Results page).
+- Frontend (track-insights-main): Track and Field, the event pages, the dashboard favourites and disagreements, the landing (ticker, three-athlete podium, demo card, preview), the athlete page figure and How it works all use the championship model's rating, labelled as a rating. The event page has one set of copy (`disc.top.*` folded into `disc.*`), no storylines panel, and `storyline-cards.tsx` is deleted. How it works is rebuilt around the reader's questions: what the numbers mean (podium chance for real competitions, model rating elsewhere), what the model looks at, how well it works (the 65.3% test and the head-to-head, both read from data), what it can't do, data, search. `eventOrder`/`compareEvents` in `dl-data.ts` order events on Track and on the championship page.
+
+**Checked**: 700 backend tests; `npx tsc --noEmit`; eslint on every changed file; EN and FR locale keys 883 each with the same set and every key the code asks for present; `npm run build`; `scripts/smoke-routes.py` 20 of 20 in EN and FR; a playwright-cli sweep of the landing, dashboard, Track, Field, How it works, two event pages and three athlete pages at 1280px and 360px in both languages (no sideways scroll, no console errors besides the known profile 404 for non-finalists in dev, "podium chance" only in the rating tooltip that says the number is not one); one athlete's rating agrees across the rankings, the event page and the athlete page (checked for five athletes through the API).
+
+**State**: all of it is local and uncommitted in both repos, with `build_static_api.py` (full build) run for the new snapshot. Nothing is pushed: the user was to confirm before commit and push. Then run `PODIUMCALL_BASE_URL=https://www.podiumcall.cc python scripts/make-sitemap.py`, commit both repos (backend with `git add -f` for `data/world_rankings.json`), push, and check the live site.
+
+**Traps from this session**
+- Say "podium chance" only for a real competition. The rating on the world top 20 is the same arithmetic, but the user wants it called the model rating.
+- Heredocs through the Bash tool mangle backslashes and quotes in Python patch scripts. Write the script to the scratchpad and run the file.
+- The playwright sweep reads label-caps text in capitals ("MODEL RATING"), so match case-insensitively.
+
+---
+
+
+## Before the switch: the very next step (saved 2026-09-17, done in the section above)
 
 The user reached the chat limit on 2026-09-17 and asked to save the day's work and the next steps before clearing the chat. This section is the whole picture: what is live, the next step (agreed in principle, one question open), what was done on 2026-09-16 and 17, what comes after, and the traps worth knowing. The sections below keep the detail.
 

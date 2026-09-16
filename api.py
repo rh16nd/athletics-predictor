@@ -1751,7 +1751,6 @@ def athlete_field_status(disc_key, athlete_name):
         return val.item() if hasattr(val, "item") else val
 
     if row is not None:
-        prob = row.get("win_probability")
         out.update({
             "name":          row["athlete_name"],
             "nat":           str(row.get("nationality")) if pd.notna(row.get("nationality")) else bio.get("nat"),
@@ -1760,12 +1759,6 @@ def athlete_field_status(disc_key, athlete_name):
             "age":           clean(row.get("age")),
             "meetsCount":    clean(row.get("meets_count")),
             "daysSinceLast": clean(row.get("days_since_last")),
-            # The model DID score this athlete -- run.py scores the near-miss
-            # group with the same features and the same forest. It is a real
-            # number, but a conditional one, so the frontend has to label it
-            # "if they qualified" rather than as a prediction about the Final.
-            "hypotheticalProb": int(str(prob).replace("%", "")) if isinstance(prob, str)
-                                else (None if pd.isna(prob) else int(float(prob) * 100)),
         })
     else:
         # Not scored by run.py, so there is no predictions_latest.csv row to
@@ -1803,8 +1796,12 @@ def athlete_field_status(disc_key, athlete_name):
                                  else None),
             "meetsCount":       dl_meetings_count(disc_key, athlete_name),
             "daysSinceLast":    None,
-            "hypotheticalProb": None,
         })
+
+    # The championship model's rating in the world's top 20, as on the finalist
+    # page (2026-09-17). It replaced the Diamond League model's "if they had
+    # qualified" figure, which answered a question about a Final already run.
+    out["prob"] = world_model_rating(disc_key, out["name"])
 
     # Head-to-head against the athletes who DID qualify. Same function and
     # same >=2-meetings threshold the in-field profile uses -- only the
@@ -2303,8 +2300,9 @@ def build_athlete_profile(disc_key, athlete_name):
         if injury_watch else (None, None)
     )
 
-    prob = row.get("win_probability", "0%")
-    prob = int(str(prob).replace("%", "")) if isinstance(prob, str) else int(float(prob) * 100)
+    # The championship model's rating, the one Track, Field, the event page
+    # and the dashboard show (2026-09-17). None outside the world's top 20.
+    prob = world_model_rating(disc_key, row["athlete_name"])
 
     wa_url = row.get("profile_url")
     if not isinstance(wa_url, str) or not wa_url or wa_url == "nan":
@@ -2353,6 +2351,7 @@ def build_athlete_profile(disc_key, athlete_name):
         "disc":            label,
         "nat":             str(row.get("nationality", "—")),
         "rank":            int(row["predicted_rank"]),
+        "worldRank":       toplist_entry(disc_key, row["athlete_name"])[1],
         "mark":            row["season_best"],
         "careerBest":      clean(row.get("career_best")),
         "pbGap":           clean(row.get("pb_gap")),
@@ -2569,7 +2568,7 @@ def build_discipline_trajectories(disc_key, athletes, limit=4):
         trajectories.append({
             "name":        a["name"],
             "rank":        a["rank"],
-            "prob":        a["prob"],
+            "prob":        a.get("prob"),
             "historyYear": history_year,
             "history":     history,
         })
@@ -3170,7 +3169,8 @@ def build_stats(top_n=40):
     df = to_uniform_depth(load_season_scores())
     if df.empty:
         return {"topPerformances": [], "disciplineDepth": [], "scoreScale": None,
-                "indoor": None, "corpus": build_training_corpus()}
+                "indoor": None, "corpus": build_training_corpus(),
+                "modelComparison": load_model_comparison()}
 
     scores = df["Results Score"]
     depth = []
@@ -3206,8 +3206,34 @@ def build_stats(top_n=40):
         },
         # What the model learned from, counted rather than typed.
         "corpus": build_training_corpus(),
+        "modelComparison": load_model_comparison(),
         "season": MEETS_YEAR,
     }
+
+
+def load_model_comparison():
+    """The test that moved the whole site to the championship model
+    (src/model_head_to_head.py, 2026-09-16): it and the Diamond League model
+    on the same past finals, each season called only from the seasons before
+    it, as the share of medallists each named. Read from its saved report, so
+    How it works quotes the run rather than a typed number. None until that
+    report exists."""
+    try:
+        with open(os.path.join(OUTPUTS_DIR, "model_head_to_head.json"), encoding="utf-8") as f:
+            report = json.load(f)
+        groups = report["groups"]
+
+        def group(name):
+            g = groups[name]
+            return {"finals": g["finals"], "model": g["championship"]["medallistsPct"],
+                    "previous": g["dl"]["medallistsPct"], "points": g["points"]["medallistsPct"]}
+
+        years = report["years"]
+        return {**group("all"), "from": min(years), "to": max(years),
+                "championships": group("championship"), "dlFinals": group("dlFinal"),
+                "tunedOnTheseSeasons": bool(report.get("tunedOnTheseSeasons"))}
+    except (OSError, ValueError, KeyError, TypeError):
+        return None
 
 
 def athlete_score_context(disc_key, athlete_name):
@@ -3286,7 +3312,7 @@ def _field_scores(scores_df, disc_key, athletes):
     for a in athletes:
         mine = same[same["Competitor"] == a["name"]]["Results Score"]
         if len(mine):
-            out.append({"name": a["name"], "score": int(mine.max()), "prob": a["prob"]})
+            out.append({"name": a["name"], "score": int(mine.max()), "prob": a.get("prob")})
     return sorted(out, key=lambda r: -r["score"])
 
 
@@ -3386,32 +3412,49 @@ def depth_index():
                     "toplistDepth": TOPLIST_DEPTH})
 
 
+def world_model_rating(disc_key, athlete_name):
+    """An athlete's model rating in this event (data/world_rankings.json): the
+    championship model's chance of a top three if the world's top 20 by points
+    met in one final. The one rating Track, Field, the event page, the
+    dashboard and the athlete page show. Called a rating and never a podium
+    chance, which the site names only for a real competition (the user's rule,
+    2026-09-17). None outside that top 20."""
+    listed = (load_world_rankings() or {}).get(disc_key) or {}
+    wanted = str(athlete_name).lower()
+    return next((r.get("ratingPct") for r in listed.get("model") or []
+                 if str(r.get("name")).lower() == wanted), None)
+
+
 def ranking_only_report(disc_key):
-    """The discipline page for an event with no Diamond League Final: the
-    hammer and the 10,000m (2026-09-15, at the user's request).
+    """The discipline page: every event since 2026-09-17, the hammer and the
+    10,000m since 2026-09-15.
 
     The field is the world's top N on points from the Track and Field list, N
     being a Final's size in that kind of event, so its spread is measured over
-    as many athletes as a Final's. Its tightness is set against the 32 Finals'
-    spreads without joining them, so their pages keep their ranks:
-    `finalsWider` counts the Finals with a wider spread. The chance beside each
-    athlete is the field model's podium chance from the same list, where the
-    world's top 20 meet in one final. Storylines are left out, since every one
-    of them reads Diamond League Final history. None without that list."""
+    as many athletes as a Final's. Its tightness is set against the spreads of
+    the 2026 Diamond League Finals without joining them, and never against the
+    event's own Final, so `finalsWider` counts the other Finals with a wider
+    spread. The percentage beside each athlete is the championship model's
+    rating from the same list, where the world's top 20 meet in one final.
+    Storylines are left out, since every one of them reads Diamond League Final
+    history. None without that list.
+
+    `prob` is that rating. The site calls it the model rating, never a podium
+    chance, which it names only for a real competition."""
     listed = (load_world_rankings() or {}).get(disc_key)
     if not listed or not listed.get("points"):
         return None
-    chances = {r["name"]: r.get("ratingPct") for r in listed.get("model") or []}
+    rating = {r["name"]: r.get("ratingPct") for r in listed.get("model") or []}
     athletes = [{
         "rank": r["rank"], "name": r["name"], "nat": r.get("nat"), "mark": r.get("mark"),
-        "score": r.get("score"), "prob": chances.get(r["name"]),
+        "score": r.get("score"), "prob": rating.get(r["name"]),
     } for r in listed["points"][:get_qual_limit(disc_key)]]
     full = load_season_scores()
     scored = _field_scores(full, disc_key, athletes) if not full.empty else []
 
     depth = None
     if len(scored) >= 2:
-        index = build_depth_index()
+        index = [r for r in build_depth_index() if r["discKey"] != disc_key]
         spread = scored[0]["score"] - scored[-1]["score"]
         uniform = to_uniform_depth(full)
         same = uniform[uniform["discKey"] == disc_key]["Results Score"]
@@ -3443,7 +3486,7 @@ def ranking_only_report(disc_key):
         "isField":     disc_key in FIELD_EVENTS,
         "season":      MEETS_YEAR,
         "fieldSource": "toplist",
-        "modelKind":   "field" if chances else None,
+        "modelKind":   "field" if rating else None,
         "athletes":    athletes,
         "depth":       depth,
         "scores":      scored,
@@ -3457,54 +3500,18 @@ def ranking_only_report(disc_key):
 
 @app.route("/api/discipline/<disc_key>")
 def discipline_report(disc_key):
-    """One discipline read as a field: how level it is against the other 31,
-    who is in it, and who has actually raced whom.
+    """One discipline read as a field: the world's top athletes on points, how
+    level they are against the Diamond League Finals, their season form, and
+    who has actually raced whom (ranking_only_report).
 
-    Composed from the existing pieces rather than recomputed -- the matrix
-    and the per-athlete comparison are the same ones the Projections page
-    uses, so the two pages cannot drift apart."""
-    # The hammer and the 10,000m have no Final, so no predicted field: their
-    # page reads the world's top athletes instead (ranking_only_report).
-    if disc_key in POINTS_ONLY_DISCIPLINES:
-        report = ranking_only_report(disc_key)
-        if report is None:
-            return jsonify({"error": "discipline not found"}), 404
-        return jsonify(report)
-    track, field = load_predictions()
-    if track is None:
-        return jsonify({"error": "Predictions are not available yet."}), 404
-    disc = next((d for d in track + field if d["id"] == disc_key), None)
-    if disc is None:
+    Every event since 2026-09-17, when the site moved to the championship
+    model. Until then the 32 Diamond League events read their Final's
+    projected field, with the Diamond League model's chances and storylines;
+    that Final ran on 4 September."""
+    report = ranking_only_report(disc_key)
+    if report is None:
         return jsonify({"error": "discipline not found"}), 404
-
-    index = build_depth_index()
-    mine = next((r for r in index if r["discKey"] == disc_key), None)
-    if mine is not None:
-        mine = {**mine, "verdict": depth_verdict(mine["spreadRank"], len(index)),
-                "of": len(index)}
-
-    names = [a["name"] for a in disc["athletes"]]
-    return jsonify({
-        "discKey": disc_key,
-        "disc":    disc["label"],
-        "isField": disc_key in FIELD_EVENTS,
-        "season":  MEETS_YEAR,
-        "athletes": disc["athletes"],
-        "depth":    mine,
-        # Each finalist's own WA score, so the spread above is inspectable
-        # rather than asserted.
-        "scores":   _field_scores(load_season_scores(), disc_key, disc["athletes"]),
-        # Absorbed from /api/projections/<key> when the two pages merged:
-        # Projections and this page were both "everything about one event",
-        # and rendered the same matrix and the same ranked field. These two
-        # blocks were the only things unique to Projections, so they moved
-        # here rather than being lost with the route.
-        "trajectories": build_discipline_trajectories(disc_key, disc["athletes"]),
-        "storylines":   build_storylines(disc_key, disc["label"], disc["athletes"]),
-        "fieldAnalysis": athlete_analytics.build_field_analysis(
-            disc_key, names, disc_key in FIELD_EVENTS,
-        ),
-    })
+    return jsonify(report)
 
 
 @app.route("/api/qualification")
