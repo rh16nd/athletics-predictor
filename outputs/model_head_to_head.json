@@ -1,0 +1,7550 @@
+{
+ "builtAt": "2026-09-16T21:01:23Z",
+ "years": [
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "rule": "switch if the championship model names at least as many medallists on the championship finals and across all finals; if only the first, the user decides; fixed before the first run",
+ "tunedOnTheseSeasons": true,
+ "groups": {
+  "championship": {
+   "finals": 222,
+   "possible": 666,
+   "dl": {
+    "medallists": 365,
+    "medallistsPct": 54.8,
+    "winners": 87
+   },
+   "championship": {
+    "medallists": 413,
+    "medallistsPct": 62.0,
+    "winners": 111
+   },
+   "points": {
+    "medallists": 403,
+    "medallistsPct": 60.5,
+    "winners": 93
+   },
+   "notCalled": {
+    "dl": 0,
+    "championship": 0
+   }
+  },
+  "dlFinal": {
+   "finals": 151,
+   "possible": 453,
+   "dl": {
+    "medallists": 316,
+    "medallistsPct": 69.8,
+    "winners": 84
+   },
+   "championship": {
+    "medallists": 341,
+    "medallistsPct": 75.3,
+    "winners": 96
+   },
+   "points": {
+    "medallists": 313,
+    "medallistsPct": 69.1,
+    "winners": 87
+   },
+   "notCalled": {
+    "dl": 0,
+    "championship": 0
+   }
+  },
+  "all": {
+   "finals": 373,
+   "possible": 1119,
+   "dl": {
+    "medallists": 681,
+    "medallistsPct": 60.9,
+    "winners": 171
+   },
+   "championship": {
+    "medallists": 754,
+    "medallistsPct": 67.4,
+    "winners": 207
+   },
+   "points": {
+    "medallists": 716,
+    "medallistsPct": 64.0,
+    "winners": 180
+   },
+   "notCalled": {
+    "dl": 0,
+    "championship": 0
+   }
+  }
+ },
+ "decision": {
+  "verdict": "switch",
+  "championshipFinalsNotWorse": true,
+  "allFinalsNotWorse": true
+ },
+ "finals": [
+  {
+   "year": 2021,
+   "discipline": "men_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_100m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_110h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_110h",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_1500m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_200m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_3000sc",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_400h",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_400m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_5000m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_800m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_DT",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_JT",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_LJ",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_PV",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_SP",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "men_TJ",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_100h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_100h",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_100m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_1500m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_200m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_3000sc",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_400h",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_400m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_5000m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_800m",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_DT",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_HJ",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_JT",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_LJ",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_PV",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_SP",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2021,
+   "discipline": "women_TJ",
+   "competition": "The XXXII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_100m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_100m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_110h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_110h",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_110h",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_1500m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_1500m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_200m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_200m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_3000sc",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_3000sc",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_400h",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_400h",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_400m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_400m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_5000m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_5000m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    0,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_800m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_800m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_DT",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_DT",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_HJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_HJ",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_JT",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_JT",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_LJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_LJ",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_PV",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_PV",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_SP",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_SP",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_TJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "men_TJ",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_100h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_100h",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_100h",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_100m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_100m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_1500m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_1500m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_200m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_200m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_3000sc",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_3000sc",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_400h",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_400h",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_400m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_400m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_5000m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_5000m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_800m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_800m",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_DT",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_DT",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_HJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_HJ",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_JT",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_JT",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_LJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_LJ",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_PV",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_PV",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_SP",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_SP",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_TJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2022,
+   "discipline": "women_TJ",
+   "competition": "World Athletics Championships, Oregon 2022",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_100m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_110h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_110h",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_1500m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_200m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_3000sc",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_400h",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_400m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    0,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_5000m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_800m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_DT",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_HJ",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_JT",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_LJ",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_PV",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_SP",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "men_TJ",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_100h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_100h",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_100m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_1500m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_200m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_3000sc",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_400h",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_400m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_5000m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_5000m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_800m",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_DT",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_HJ",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_JT",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_LJ",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_SP",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2023,
+   "discipline": "women_TJ",
+   "competition": "World Athletics Championships, Budapest 2023",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_100m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_100m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_110h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_110h",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_110h",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_1500m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_1500m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    0,
+    false
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_200m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_200m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_3000sc",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_3000sc",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_400h",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_400h",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_400m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_400m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_5000m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_5000m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_5000m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    0,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_800m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_800m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_DT",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_DT",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_HJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_HJ",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_JT",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_JT",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_LJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_LJ",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_PV",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_PV",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_SP",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_SP",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_TJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "men_TJ",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_100h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_100h",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_100h",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_100m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_100m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_1500m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_1500m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_200m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_200m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_3000sc",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_3000sc",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_400h",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_400h",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_400m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_400m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_5000m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_5000m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_5000m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_800m",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_800m",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_DT",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_DT",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_HJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_HJ",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_JT",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_JT",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_LJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_LJ",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_PV",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_PV",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_SP",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_SP",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    0,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_TJ",
+   "competition": "European Athletics Championships",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2024,
+   "discipline": "women_TJ",
+   "competition": "The XXXIII Olympic Games",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_100m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_110h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_110h",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_1500m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_200m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_3000sc",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_400h",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_400m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_5000m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    0,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_800m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_DT",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_HJ",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_JT",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    0,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_LJ",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_PV",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_SP",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "men_TJ",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_100h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    1,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_100h",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_100m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_100m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_1500m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_1500m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_200m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_200m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_3000sc",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_3000sc",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_400h",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_400h",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_400m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_400m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_5000m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    1,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_800m",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_800m",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_DT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_DT",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_HJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_HJ",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_JT",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_JT",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    0,
+    false
+   ],
+   "points": [
+    0,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_LJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    true
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_LJ",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_PV",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_PV",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    true
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_SP",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    3,
+    false
+   ],
+   "championship": [
+    3,
+    false
+   ],
+   "points": [
+    3,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_SP",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    false
+   ],
+   "points": [
+    2,
+    false
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_TJ",
+   "competition": "Diamond League Final",
+   "kind": "dlFinal",
+   "dl": [
+    2,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    3,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  },
+  {
+   "year": 2025,
+   "discipline": "women_TJ",
+   "competition": "World Athletics Championships, Tokyo 2025",
+   "kind": "championship",
+   "dl": [
+    1,
+    false
+   ],
+   "championship": [
+    2,
+    true
+   ],
+   "points": [
+    1,
+    true
+   ],
+   "dlCalled": true,
+   "championshipCalled": true
+  }
+ ]
+}
