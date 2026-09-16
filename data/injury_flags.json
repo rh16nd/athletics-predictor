@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-09-15T06:36:48.528158+00:00",
+  "checked_at": "2026-09-16T03:08:56.566841+00:00",
   "sources_ok": [
     "letsrun",
     "worldathletics",
     "googlenews"
   ],
-  "days_to_final": -4,
+  "days_to_final": -5,
   "athletes": {
     "Ferdinand Omanyala": {
       "status": "remove",
@@ -185,12 +185,12 @@
             "pulls out",
             "injury"
           ],
-          "published": "2026-09-03"
+          "published": "2026-09-02"
         },
         {
           "headline": "Keely Hodgkinson reveals hamstring injury after suffering another defeat to Audrey Werro",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWnd5TXNRSjNtWkVfbGh1WlJKcFUxTzlnb1lqaXdZemZjdG1xUzR4Y194aXIyRVNoNl8wR0hsMFdWNVl2bS1UYnp3QzJ0eGZwYjEwVGZkME9mam01bXBKSTRHOUd4bC1LdlFyLU1YQlhsZXg3VjRmbU80WThhQnUxYlNyM2p6d21oUVE?oc=5",
-          "source": "Yahoo News Canada",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeG5NcGkwV1A4LXZmLWROVU1SNXk5TmdHWXVSYzlhTWNFTURlZF9oOVB0emlUdUY0QVJjdnZBTnF1UV9fbHc3ZjNOaE1aTzFVMnBpUzlOa0N5aHNvZERhZnFpMThMNmMycW14dzFMR2REM3RQeEVDWHNjeDVqa254dVYyTWYyaXlmdUE?oc=5",
+          "source": "Yahoo News New Zealand",
           "keywords": [
             "injury",
             "hamstring"
@@ -212,7 +212,7 @@
         {
           "headline": "'I never want to go through that again': Sharlene Mawdsley reflects on injury ordeal",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBRMmp4R2ktazJwZUZodGlpMnhXX0NMNktEck40UW1lWjNDNVpuSHVEd0RhdnYweGprOVZ2em04aU5qMDhhMGtBcnVWVGVyNVVDOE9IY181NHQ3UDlrNHUxUnI2VTdsVnJGTnNPYjJqRkt4cE0?oc=5",
-          "source": "Irish Examiner",
+          "source": "irishexaminer.com",
           "keywords": [
             "injury"
           ],
