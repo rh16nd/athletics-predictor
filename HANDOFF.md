@@ -1,6 +1,77 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here first: where the session stopped (2026-09-15, late night)
+## Start here first: the very next step (saved 2026-09-17)
+
+The user reached the chat limit on 2026-09-17 and asked to save the day's work and the next steps before clearing the chat. This section is the whole picture: what is live, the next step (agreed in principle, one question open), what was done on 2026-09-16 and 17, what comes after, and the traps worth knowing. The sections below keep the detail.
+
+**What is live** (www.podiumcall.cc, API podiumcall.onrender.com)
+- The site's championship is the Asian Games (Nagoya, athletics 23 to 29 September), launched a week early at the user's decision once the Ultimate was over. `CURRENT = "asian-games-2026"` in `src/championships.py`.
+- The Asian Games call comes from the championship model (`src/field_model.py`, experiment `old_marks`), all 36 events, with a line per athlete saying how their older marks counted. It is frozen: 36 events and 563 athletes at 2026-09-16T19:15Z (`data/asian_games_2026/predictions_prefinal.json`). The Results page shows the Games as "not run yet · called in advance" and tells readers the frozen call cannot be edited, so **never re-freeze it with `--force`**. The live call on `/championship` can still be refreshed.
+- The landing and the dashboard both show 65.3% as the podium hit rate: the championship model's test, read from `callTest` in the championship summary.
+- Track, Field, the dashboard favourites, the athlete page figure and the 32 Diamond League event pages still show the old Diamond League model (`src/train_model.py`, a random forest). The next step replaces it.
+- Both repos are pushed, backend up to the commit that adds this note and frontend up to `cb9e1fd`.
+
+**THE NEXT STEP: switch the whole site to the championship model, before the Games**
+
+Why. The Diamond League model learned that athletes who race the circuit reach Diamond League Finals, so its rating follows meetings raced more than marks: measured on 2026-09-07, 1.2% for athletes with no Diamond League meetings against 28.8% for those with five, at almost the same World Athletics score, and Josh Hoey, the best 800m score in the world, rated 1.5%. The user wants "a full-on meet predictor, like championship meets", not a Diamond League one.
+
+The test, run on 2026-09-16 at the user's request: `src/model_head_to_head.py`, its rule committed before it ran (`81f7059e`), the result in `a1bffb61` and `outputs/model_head_to_head.json`. Both models on the same 373 finals from 2021 to 2025, each season called only from the seasons before it, both able to call every final:
+
+| Finals | Diamond League model | Championship model | Ranking by points |
+|---|---|---|---|
+| Olympics, Worlds, Europeans (222) | 54.8% | 62.0% | 60.5% |
+| Diamond League Finals (151) | 69.8% | 75.3% | 69.1% |
+| All of them (373) | 60.9% | 67.4% | 64.0% |
+
+Winners named: 171, 207 and 180. The Diamond League model was reproduced exactly (681 of 1,119, its own published 60.9%). By the rule fixed beforehand the verdict is **switch**. The limits: both models were tuned on these seasons, so this is a fair comparison and not a test on unseen finals; the Asian finals cannot be compared, because the Diamond League model never trained on them, and on those finals points edges the championship model, 65.6% against 64.1%.
+
+Agreed, with one question open. The user asked for the test so that the switch could launch before the Games if it worked, and it did. One question was put to them and was still unanswered when the chat was cleared: **should the 32 Diamond League event pages switch too?** Those pages are built around the Diamond League Final projection, and that Final ran on 4 September. Switched, they show the world's top athletes with the championship model's podium chance, as the hammer and 10,000m pages already do, and they lose their Diamond League Final storylines. Recommended: yes, because otherwise one athlete's percentage differs between the event page and Track. Ask, then build.
+
+The plan (Phase B of `C:\Users\rayen\.claude\plans\do-you-agree-that-vast-moore.md`, brought forward from after the Games):
+1. `src/world_rankings.py`: `score_discipline` returns `field_model_discipline` for every event and stops running the random forest; update the docstrings that call the hammer and 10,000m the exception. Then `python src/world_rankings.py --refresh-races`, which fetches about 640 more top-20 seasons into `data/field/current`. In `tests/test_world_rankings.py`, `test_the_low_ratings_really_are_the_athletes_who_skipped_the_circuit`, `test_every_shipped_row_carries_a_meeting_count` and the two `test_dl_races_*` tests pin the old model's behaviour on purpose; replace them with a test that every event's list has `modelKind: "field"`.
+2. `api.py`:
+   - `discipline_report` uses `ranking_only_report` for every discipline, not only `POINTS_ONLY_DISCIPLINES`, and `ranking_only_report` leaves the event's own Final out of `build_depth_index` when it counts how many Finals are wider.
+   - `build_athlete_profile`: `prob` becomes the athlete's `ratingPct` in `world_rankings.json[disc]["model"]`, and None when they are not in that top 20.
+   - `get_model_accuracy` stays the Diamond League figure for `/api/results` only, because the calls graded there so far (the 2026 Diamond League Final and the Ultimate) were that model's.
+3. Frontend (track-insights-main):
+   - `src/routes/dashboard.tsx`: remove the two `modelKind === "field"` skips in `buildFavourites` and `buildDisagreements`. Each top 20's chances add up to 300, so they compare across events.
+   - `src/routes/athlete.$discKey.$name.tsx`: hide the figure when `prob` is null. `ath.model` becomes "PodiumCall model", and `ath.modelBefore` says it is the chance of a podium if the world's top 20 met in one final (EN and FR).
+   - `src/components/dl/world-ranking-table.tsx`: every event now takes the `fieldModel` branch. Remove the "form" branch and the keys only it uses (`rankings.colRating`, `rankings.ratingHint`, `rankings.subtitle.model`).
+   - `disc.top.disagreeNote`: drop the sentence saying the event has no Diamond League model rating.
+   - `src/routes/how-it-works.tsx` and `howItWorks.*`: one plain explanation in the structure recommended on 2026-09-16: what the numbers mean, what it looks at (this season first, older marks fade, a record-breaker is never passed), how well it works (the 65.3% test with its caveats, and the head-to-head), what it can't know, where the data comes from, searching by country. Drop the two Diamond League sections. Load `design:ux-copy` before writing.
+   - The landing's favourites already read the world rankings and its hit rate already reads `callTest`. The Results page stays as it is.
+4. Check: pytest, `npx tsc --noEmit`, eslint on the changed files, EN and FR key parity, `npm run build`, `scripts/smoke-routes.py` (20 of 20), and a browser pass over Track, Field, the dashboard, athlete pages, event pages and the landing at 1280 and 360px in both languages. No "Diamond League model" label may remain, and one athlete's percentage must agree on Track, the event page, the athlete page and the dashboard.
+5. Publish: `python src/build_static_api.py` (the full build, over ten minutes), `PODIUMCALL_BASE_URL=https://www.podiumcall.cc python scripts/make-sitemap.py`, commit both repos, push, and check the live site.
+
+Kept on purpose: `run.py` and `train_model.py`, for the Qualifying page and the frozen history.
+
+**Done on 2026-09-16 and 17, in order**
+1. The old-marks rule, all seven steps (detailed in the next section): backend `62424524`, frontend `c766e6c`. 30 settings were tried on every season from 2012 to 2026, and the one kept (last season counts 0.35, times 0.3 for each further year, capped at 0.75 of the gap to the leader) named 65.3% of medallists, against 66.0% for the model it replaced and 62.8% for points. The user chose the rule over that 0.7-point cost.
+2. Pushed with the static snapshot rebuilt first, so the pages' wording and their numbers match (backend `f2d4b765`, frontend `f30bd09`). The retrain the user asked for was a no-op: the morning's refreshed toplists moved no row of `finals.csv`.
+3. Pre-launch fixes (backend `37d617dd`, frontend `e692830`): the landing's hit rate follows the model that made the current championship's call (`callTest` in `/api/championship/summary`); How it works gained "How a championship is called"; `scripts/make-sitemap.py` reads `public/data` instead of a local API.
+4. The Asian Games launch (backend `8a0349b4`, frontend `c4c072b`): the injury check (Neeraj Chopra out, reported by olympics.com on 29 August, and not entered anyway), the flip, the entry list (774 entrants from 41 federations, 36 events called and 14 not), every entrant's season fetched again (510 of 510, and no favourite or podium top three moved), profiles, countries (158), a full rankings run, photos, the static snapshot (2,415 files) and the sitemap (1,115 URLs).
+5. The freeze (backend `51d12014`, frontend `cba8c05`), published with `build_static_api.py --core-only`.
+6. The dashboard's hit rate now matches the landing's (65.3%, one decimal, with a hint that describes that test honestly), and Track lists events from 100m to 10,000m, men's then women's, with the flat race before the hurdles (frontend `cb9e1fd`).
+7. The head-to-head test above (backend `81f7059e`, `a1bffb61`).
+
+**After the next step**
+- During the Games (23 to 29 September): results come from World Athletics competition `7176091`. `refresh-results.cmd` pushes every local commit, so use it only when everything is already pushed. The Results page grades the frozen call.
+- After the Games: retrain the championship model with the Asian Games finals (add them as finals rows through `field_data.all_finals`, then `python src/field_model.py --refit`). The Results page shows a single "what the model claims" figure; once the Asian Games are graded beside the Diamond League model's past calls, give each championship its own claim.
+- Still open from before: French storylines (the API would have to send each story's numbers as fields), and French country names and search (a French search for "Japon" finds nothing).
+
+**Traps from this session**
+- The Bash tool runs `bash -c`, so a long heredoc containing apostrophes breaks. Write patch scripts with the file tool and run them with bash.
+- In a Python patch script, `\n` inside a plain triple-quoted string becomes a real newline in the patched source and splits an f-string. Use raw strings for code that contains escapes.
+- French locale values carry a non-breaking space before `:`, `?` and `%`. Replace French values by key, never by matching their text.
+- `api.py` has mixed line endings; edit it line by line.
+- The landing and dashboard figures count up with requestAnimationFrame, which does not run in the browser pane until a screenshot forces a paint. A reading of "0.0" there is not a bug.
+- `build_static_api.py --core-only` rewrites only the page-level files (results, championship, predictions, rankings) in seconds and never prunes. A change that touches athlete or country pages still needs the full build.
+- The local API does not reload. The `predictor-api` launch config now serves the Asian Games by default; restart it after any backend or data change.
+
+---
+
+
+## The 2026-09-16 session in detail: the old-marks rule, the launch and the freeze
 
 The user reached their usage limit and asked to save and continue in a new chat. The chat that followed, the same night, committed the locale fixes, installed the playwright-cli skill and finished the UI pass, fixing the two Ultimate leftovers it found. It then crawled the whole site with playwright-cli and fixed the small bugs that turned up (the bug pass below). After the usage limit reset on 2026-09-16 it retrained the field model with the 2026 finals and tested three ways old marks can count. The user then set the rule the model must follow for old marks, and asked for all of it to be finished: it is built, tuned, served and on the page, all local and unpushed. Read this section, then the map below it.
 
@@ -91,7 +162,7 @@ After the Games, from 30 September: Phase B of `C:\Users\rayen\.claude\plans\do-
 
 ---
 
-## Start here (read first): where things stand on the night of 2026-09-15, and what to do next
+## The map as it stood on the night of 2026-09-15 (superseded by the sections above)
 
 _This section is the map. The section below it records the evening's work in detail; the older sections follow, newest first._
 
