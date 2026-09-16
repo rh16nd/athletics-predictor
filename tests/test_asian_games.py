@@ -849,6 +849,7 @@ def test_the_summary_carries_what_the_nav_needs_and_not_the_field(monkeypatch):
              "city": "Nagoya", "country": "JPN", "eventCount": 50,
              "field": [{"discKey": "men_100m"}], "results": []}
     monkeypatch.setattr(api, "load_event", lambda champ_id: event)
+    monkeypatch.setattr(api, "load_event_predictions", lambda champ_id: None)
     out = api.championship_summary("asian-games-2026")
     assert (out["theme"], out["navKey"]) == ("asianGames", "nav.asianGames")
     assert (out["city"], out["venue"], out["eventCount"]) == ("Nagoya", "Paloma Mizuho Stadium", 50)
@@ -881,3 +882,25 @@ def test_the_page_states_the_old_marks_test_that_chose_the_served_model(tmp_path
                                  holdout_path=str(tmp_path / "missing.json"),
                                  all_seasons_path=str(tmp_path / "missing.json"))
     assert other is None
+
+
+def test_the_summary_carries_the_test_of_the_model_that_made_the_call(monkeypatch):
+    """The landing's headline figure reads it, so the number beside the
+    countdown belongs to the model calling that championship. A call with no
+    test, like the Ultimate's frozen one, carries none, and the landing keeps
+    the Diamond League model's figure."""
+    import api
+
+    event = {"name": "20th Asian Games", "shortName": "Aichi-Nagoya 2026", "venue": "Paloma Mizuho Stadium",
+             "city": "Nagoya", "country": "JPN", "eventCount": 50}
+    monkeypatch.setattr(api, "load_event", lambda champ_id: event)
+    saved = {"rule": {"method": "field", "backtest": {
+        "method": "oldMarks", "finals": 1063, "model": 65.3, "points": 62.8, "previous": 66.0,
+        "asiaModel": 64.1, "years": [2012, 2013, 2026], "versions": 30}}}
+    monkeypatch.setattr(api, "load_event_predictions", lambda champ_id: saved)
+    assert api.championship_summary("asian-games-2026")["callTest"] == {
+        "method": "oldMarks", "model": 65.3, "points": 62.8, "finals": 1063, "versions": 30,
+        "from": 2012, "to": 2026}
+
+    monkeypatch.setattr(api, "load_event_predictions", lambda champ_id: {"projections": []})
+    assert api.championship_summary("asian-games-2026")["callTest"] is None

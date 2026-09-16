@@ -3620,6 +3620,18 @@ def championship_summary(champ_id):
     out = {key: champ.get(key) for key in ("id", "labelKey", "navKey", "startDate", "endDate", "theme")}
     # From the event file, so `venue` is the stadium, as it is in the full payload.
     out.update({key: event.get(key) for key in ("name", "shortName", "venue", "city", "country", "eventCount")})
+    # How the model that made this championship's call was tested, when its
+    # saved call says so. The landing's headline figure and How it works read
+    # it here, so they describe the model that made the call the site is
+    # counting down to, not another one. None for a call with no test, such as
+    # the Ultimate's, which the Diamond League model made.
+    test = ((load_event_predictions(champ_id) or {}).get("rule") or {}).get("backtest") or {}
+    years = test.get("years") or []
+    out["callTest"] = {
+        "method": test.get("method"), "model": test.get("model"), "points": test.get("points"),
+        "finals": test.get("finals"), "versions": test.get("versions"),
+        "from": years[0] if years else None, "to": years[-1] if years else None,
+    } if test.get("model") is not None else None
     return out
 
 
