@@ -19,6 +19,17 @@ best was set, age. Plus whether they had no mark this season before the
 competition, so that last season's stands in, and whether they have any
 history at all. No Diamond League meetings, no head-to-head, no world rank.
 
+OLD MARKS (the user's rule, 2026-09-16)
+Recent performances outweigh old ones, and a mark counts for less the older it
+is. faded_level() reads an athlete's level as this season in full, lifted by at
+most a faded share of an older best that still stands above it, and never by
+enough to pass whoever is ahead of them on this season's marks: so an athlete
+breaking records this season is not beaten by a mark that was good two years
+ago, whatever that mark was. The rule is structure rather than a fitted weight,
+and FADE_BOUNDS holds the signs it needs. How much last season counts and how
+fast older seasons fade (FADE_LAST_SEASON, FADE_PER_YEAR, FADE_CAP_SHARE) are
+tuned on past seasons.
+
 MODEL
 Plackett-Luce: a softmax over the field on a linear score of those features,
 fitted by maximum likelihood on the order of each final's top three. A podium
@@ -40,6 +51,8 @@ Usage:
     python src/field_model.py --experiments [NAME]  # try EXPERIMENTS on DEV_YEARS, every run logged
     python src/field_model.py --holdout NAME        # the chosen experiment on HOLDOUT_YEARS, once
     python src/field_model.py --all-seasons         # three ways old marks count, every season
+    python src/field_model.py --rule-test [NAME]    # the rule for old marks, on made-up finals
+    python src/field_model.py --old-marks           # trial and error on the old-marks settings, every season
     python src/field_model.py --refit [NAME]        # retrain the served experiment on every final on file
 Reads data/field/finals.csv (field_data.py --report). --backtest writes
 outputs/field_model.json and outputs/field_model_report.json. --compare,
@@ -71,6 +84,7 @@ PREVIOUS_MODEL_PATH = os.path.join(BASE_DIR, "outputs", "field_model_previous.js
 EXPERIMENTS_PATH = os.path.join(BASE_DIR, "outputs", "field_model_experiments.json")
 HOLDOUT_PATH = os.path.join(BASE_DIR, "outputs", "field_model_holdout.json")
 ALL_SEASONS_PATH = os.path.join(BASE_DIR, "outputs", "field_model_all_seasons.json")
+OLD_MARKS_PATH = os.path.join(BASE_DIR, "outputs", "field_model_old_marks.json")
 
 # The same scored seasons as train_model.FIRST_TEST_YEAR onwards, so the two
 # models' numbers cover the same years (tests/test_field_model.py pins it).
@@ -123,7 +137,8 @@ CONTROLS = 5
 # breakout_backed features, which let history outweigh the season, are left out.
 CONSISTENT_RACES = 5
 CONSISTENT_SPREAD = 50.0
-STRENGTH_FEATURES = ["strength_gap_best", "strength_gap_third", "consistency"]
+STRENGTH_GAP_FEATURES = ["strength_gap_best", "strength_gap_third"]
+STRENGTH_FEATURES = STRENGTH_GAP_FEATURES + ["consistency"]
 RECENCY_FEATURES = STRENGTH_FEATURES + ["no_history", "sb_months", "age", "sb_prior_season",
                                         "recent_delta", "no_recent", "big_podiums", "h2h_top"]
 # Signs the rule fixes, held as bounds on the fit: a stronger, more consistent
@@ -131,7 +146,31 @@ RECENCY_FEATURES = STRENGTH_FEATURES + ["no_history", "sb_months", "age", "sb_pr
 # for want of one this season can only count against them.
 RECENCY_BOUNDS = {"strength_gap_best": (0.0, None), "strength_gap_third": (0.0, None),
                   "consistency": (0.0, None), "recent_delta": (0.0, None), "sb_prior_season": (None, 0.0)}
-ALL_FEATURES = list(dict.fromkeys(FEATURES_V2 + RECENCY_FEATURES))
+# The user's rule for old marks (2026-09-16), and why it is structure and not a
+# fitted weight: they asked that recent performances outweigh old ones, that a
+# mark count for less the older it is, and that an athlete breaking records this
+# season never be beaten by a mark that was good two years ago. faded_level()
+# reads this season in full, lifted by at most a faded share of an older best
+# that still stands above it, and never by enough to pass the athlete leading on
+# this season's marks. The features that let history outweigh the season
+# (pb_gap, pb_gap_thin, yoy, breakout_backed) are left out, as in the recency
+# family. These three numbers are what the grid on past seasons tunes; a spec's
+# "fade" replaces them.
+# Chosen by run_old_marks on 2026-09-16: every one of 30 settings walked
+# forward over every season from 2012 to 2026, and the most accurate of those
+# the rule allows (outputs/field_model_old_marks.json).
+FADE_LAST_SEASON = 0.35
+FADE_PER_YEAR = 0.3
+FADE_CAP_SHARE = 0.75
+FADE_GAP_FEATURES = ["fade_gap_best", "fade_gap_third"]
+FADE_FEATURES = FADE_GAP_FEATURES + ["consistency", "no_history", "sb_months", "age", "sb_prior_season",
+                                     "recent_delta", "no_recent", "big_podiums", "h2h_top"]
+# The signs the rule fixes, as RECENCY_BOUNDS does for the recency family: a
+# higher level, a steadier season or better recent form can only help, and being
+# read on last season's mark for want of one this season can only count against.
+FADE_BOUNDS = {"fade_gap_best": (0.0, None), "fade_gap_third": (0.0, None), "consistency": (0.0, None),
+               "recent_delta": (0.0, None), "sb_prior_season": (None, 0.0)}
+ALL_FEATURES = list(dict.fromkeys(FEATURES_V2 + RECENCY_FEATURES + FADE_FEATURES))
 # The user's question on 2026-09-16: should old marks count at all? These read
 # an athlete's career best or last season's best. SEASON_ONLY_FEATURES is
 # FEATURES_V2 without them; sb_prior_season stays, so last season stands in
@@ -147,7 +186,7 @@ def group_of(disc_key):
 
 # ---- features -----------------------------------------------------------------
 
-def field_features(rows, cutoff, features=FEATURES):
+def field_features(rows, cutoff, features=FEATURES, fade=None):
     """`features` for every row of one field that has a season score: today's
     FEATURES unless asked for FEATURES_V2.
 
@@ -174,7 +213,13 @@ def field_features(rows, cutoff, features=FEATURES):
     The recency family (RECENCY_FEATURES) reads strength() instead:
       strength_gap_best, strength_gap_third  strength below the field's best
                        and its third best
-      consistency      how many marks and how tightly the best of them sit"""
+      consistency      how many marks and how tightly the best of them sit
+
+    The old-marks family (FADE_FEATURES) reads faded_level() instead, whose
+    three settings come from `fade` ({last_season, per_year, cap_share}), the
+    module's defaults when it is None:
+      fade_gap_best, fade_gap_third  the faded level below the field's best
+                       level and its third best"""
     df = rows[pd.notna(rows["sb_score"])].copy()
     cutoff = pd.Timestamp(cutoff)
     s = df["sb_score"].astype(float)
@@ -206,13 +251,20 @@ def field_features(rows, cutoff, features=FEATURES):
         out["h2h_top"] = _column(df, "h2h_top").fillna(0.0)
         out["pb_gap_thin"] = out["pb_gap"] * (_column(df, "races").fillna(0.0) <= THIN_SEASON)
         out["breakout_backed"] = ((form - career).clip(lower=0) / 100.0).fillna(0.0)
-    if any(name in STRENGTH_FEATURES for name in features):
-        value, consistency, _ = strength(df)
+    if "consistency" in features:
+        out["consistency"] = consistency_of(df)
+    if any(name in STRENGTH_GAP_FEATURES for name in features):
+        value, _, _ = strength(df)
         by_strength = value.sort_values(ascending=False).to_numpy()
         third_strength = by_strength[2] if n >= 3 else (by_strength[-1] if n else 0.0)
         out["strength_gap_best"] = (value - (by_strength[0] if n else 0.0)) / 100.0
         out["strength_gap_third"] = (value - third_strength) / 100.0
-        out["consistency"] = consistency
+    if any(name in FADE_GAP_FEATURES for name in features):
+        level, _ = faded_level(df, cutoff, **(fade or {}))
+        by_level = level.sort_values(ascending=False).to_numpy()
+        third_level = by_level[2] if n >= 3 else (by_level[-1] if n else 0.0)
+        out["fade_gap_best"] = (level - (by_level[0] if n else 0.0)) / 100.0
+        out["fade_gap_third"] = (level - third_level) / 100.0
     return out[list(features)].astype(float)
 
 
@@ -220,6 +272,16 @@ def _column(df, name):
     if name not in df.columns:
         return pd.Series(np.nan, index=df.index)
     return pd.to_numeric(df[name], errors="coerce")
+
+
+def consistency_of(df):
+    """How settled a season is: how many marks there are, up to CONSISTENT_RACES,
+    times how tightly the best of them sit, 1 when they are level and 0 at
+    CONSISTENT_SPREAD points apart. Read by strength() and by the old-marks
+    family, so both mean the same thing by a steady season."""
+    races = _column(df, "races").fillna(1.0).clip(lower=1.0, upper=CONSISTENT_RACES)
+    tight = (1.0 - _column(df, "form_spread").fillna(0.0).clip(lower=0.0) / CONSISTENT_SPREAD).clip(lower=0.0)
+    return races / CONSISTENT_RACES * tight
 
 
 def strength(df):
@@ -235,12 +297,243 @@ def strength(df):
     athlete at or above their old level is read on the new marks alone."""
     new = _column(df, "form_score").fillna(pd.to_numeric(df["sb_score"], errors="coerce"))
     old = _column(df, "career_best")
-    races = _column(df, "races").fillna(1.0).clip(lower=1.0, upper=CONSISTENT_RACES)
-    tight = (1.0 - _column(df, "form_spread").fillna(0.0).clip(lower=0.0) / CONSISTENT_SPREAD).clip(lower=0.0)
-    consistency = races / CONSISTENT_RACES * tight
+    consistency = consistency_of(df)
     weight = 0.5 + 0.5 * consistency
     value = new.where(old.isna() | (new >= old), weight * new + (1.0 - weight) * old)
     return value, consistency, weight
+
+
+def fade_weight(ago, last_season=FADE_LAST_SEASON, per_year=FADE_PER_YEAR):
+    """How much a best from `ago` seasons back counts: `last_season` for last
+    season, times `per_year` for every further year back. Below 1 at every age
+    with the defaults, so an old mark never counts as fully as this season."""
+    return last_season * per_year ** (np.asarray(ago, dtype=float) - 1.0)
+
+
+def faded_level(df, cutoff, last_season=FADE_LAST_SEASON, per_year=FADE_PER_YEAR, cap_share=FADE_CAP_SHARE):
+    """(level, the parts it is made of) for each athlete in World Athletics
+    points: the user's rule for old marks (2026-09-16).
+
+    This season counts in full. The level starts at form_score, the mean of the
+    season's best marks, or the season best for an athlete with no races on
+    file. An earlier season's best counts only where it stands above that, and
+    only at fade_weight() of the distance above it, so the older the mark the
+    less it lifts them. The largest of those lifts is the one that counts: they
+    do not stack, or three ordinary old seasons would add up to a good one. An
+    athlete at or above all of their earlier bests is read on this season alone.
+
+    The lift is then capped at `cap_share` of the distance to the best level in
+    the field on this season's marks. That is what holds the user's rule whatever
+    the old mark: an old best can close a gap but never carry an athlete past
+    someone who is ahead of them this season, so the record-breaker stays in
+    front. `parts` carries the season level, the lift, the season it came from
+    and its weight, for the reasons shown per athlete."""
+    season_year = pd.Timestamp(cutoff).year
+    now = _column(df, "form_score").fillna(pd.to_numeric(df["sb_score"], errors="coerce"))
+    ones = pd.Series(1.0, index=df.index)
+    older_year = _column(df, "older_seasons_best_year")
+    buckets = [(ones, _column(df, "prev_season_best")),
+               (ones * 2.0, _column(df, "two_seasons_ago_best")),
+               ((season_year - older_year).clip(lower=3.0), _column(df, "older_seasons_best"))]
+    lift = pd.Series(0.0, index=df.index)
+    weight = pd.Series(0.0, index=df.index)
+    from_season = pd.Series(np.nan, index=df.index)
+    from_best = pd.Series(np.nan, index=df.index)
+    for ago, old in buckets:
+        w = pd.Series(fade_weight(ago, last_season, per_year), index=df.index)
+        gain = (w * (old - now).clip(lower=0.0)).where(ago.notna() & old.notna(), 0.0).fillna(0.0)
+        take = gain > lift
+        lift, weight = lift.where(~take, gain), weight.where(~take, w)
+        from_season = from_season.where(~take, season_year - ago)
+        from_best = from_best.where(~take, old)
+    room = ((now.max() - now).clip(lower=0.0) * cap_share) if len(now) else lift
+    parts = pd.DataFrame({"seasonLevel": now, "lift": lift.clip(upper=room), "fromSeason": from_season,
+                          "oldBest": from_best, "weight": weight, "capped": lift > room}, index=df.index)
+    return now + parts["lift"], parts
+
+
+def old_mark_reasons(rows, cutoff, model):
+    """How each athlete's old marks counted, in the order of `rows`, for the line
+    the page shows them: [{personalBest, fromSeason, percent}], or None for a
+    model that does not read old marks this way.
+
+    `percent` is the share of the distance between the old mark and this season
+    that actually counted, after the cap, so the page never claims more than the
+    model used. `fromSeason` is None for an athlete read on this season alone,
+    and `personalBest` says their season best is at or above anything earlier."""
+    fade = fade_of(model)
+    features = (model or {}).get("features") or []
+    if fade is None or not any(name in FADE_GAP_FEATURES for name in features):
+        return None
+    scored = rows[pd.notna(rows["sb_score"])]
+    if scored.empty:
+        return []
+    _, parts = faded_level(scored, cutoff, **fade)
+    career = _column(scored, "career_best")
+    season = pd.to_numeric(scored["sb_score"], errors="coerce")
+    out = []
+    for i in scored.index:
+        lift, old = float(parts["lift"].loc[i]), parts["oldBest"].loc[i]
+        level = float(parts["seasonLevel"].loc[i])
+        counted = lift > 0.05 and pd.notna(old) and float(old) > level
+        out.append({
+            "personalBest": bool(pd.isna(career.loc[i]) or season.loc[i] >= career.loc[i]),
+            "fromSeason": int(parts["fromSeason"].loc[i]) if counted else None,
+            "percent": int(round(100 * lift / (float(old) - level))) if counted else 0,
+        })
+    return out
+
+
+# ---- the rule test, on made-up finals -----------------------------------------
+
+# The user's rule has two halves, and a setting has to keep both: old marks
+# still count, and they never count for as much as recent ones. A test of the
+# second half alone would be passed by a setting that ignores old marks
+# altogether, which is not what they asked for, so both are checked here.
+RULE_YEAR = 2026
+RULE_CUTOFF = f"{RULE_YEAR}-09-23"
+# The made-up field: A leads on this season's marks, B is 20 points behind with
+# an older mark, D is 5 points ahead of B with nothing older to call on.
+RULE_A, RULE_B, RULE_D = 0, 1, 2
+RULE_SEASON = [1250.0, 1230.0, 1235.0, 1220.0, 1210.0, 1190.0]
+RULE_WEIGHT_SETS = 20
+
+
+def rule_field(old_best, ago=2, races=5, season=None):
+    """One made-up final for the rule test.
+
+    A sets a personal best this season and leads the field on 1250. B is on 1230
+    but holds `old_best` from `ago` seasons back, in a season of `races` races. D
+    is on 1235 with nothing older above their season. Everything else is equal:
+    same date, same age, same recent form, no big-meet podiums, nobody has met
+    anybody. Only the old mark and B's race count differ, which is what lets the
+    test say the old mark alone did it."""
+    season = list(season or RULE_SEASON)
+    n = len(season)
+    prev = [1240.0, 1220.0, 1225.0] + [s - 20 for s in season[3:]]
+    two = [1200.0, 1200.0, 1200.0] + [s - 40 for s in season[3:]]
+    older = [None, 1180.0, None] + [None] * (n - 3)
+    older_year = [None, RULE_YEAR - 4, None] + [None] * (n - 3)
+    if ago == 1:
+        prev[RULE_B] = old_best
+    elif ago == 2:
+        two[RULE_B] = old_best
+    else:
+        older[RULE_B], older_year[RULE_B] = old_best, RULE_YEAR - ago
+    career = [1240.0, max(old_best, 1220.0), 1225.0] + [s - 10 for s in season[3:]]
+    return pd.DataFrame({
+        "athlete_name": ["A breaks records", "B has an old mark", "D has no old mark"]
+                        + [f"C{i}" for i in range(n - 3)],
+        "sb_score": season, "form_score": season, "recent_score": season,
+        "form_spread": [10.0] * n, "races": [5, races] + [5] * (n - 2),
+        "big_podiums": [0] * n, "h2h_top": [0.0] * n,
+        "sb_date": [pd.Timestamp(f"{RULE_YEAR}-06-01")] * n,
+        "sb_prior_season": [0] * n, "dob": [pd.Timestamp("1998-01-01")] * n,
+        "career_best": career, "prev_season_best": prev,
+        "two_seasons_ago_best": two, "older_seasons_best": older, "older_seasons_best_year": older_year,
+    })
+
+
+# `counts` marks the cases where a big, recent-enough old mark must still be
+# worth something: B has to pass D, who is 5 points ahead this season. Without
+# them a setting could pass by never counting an old mark at all.
+RULE_CASES = (
+    [{"label": f"{old:.0f} two seasons ago", "old_best": float(old), "ago": 2, "counts": old >= 1330}
+     for old in (1240, 1260, 1280, 1300, 1330, 1400, 1500)]
+    + [{"label": f"1330 from {ago} season{'s' if ago > 1 else ''} ago", "old_best": 1330.0, "ago": ago,
+        "counts": ago <= 2} for ago in (1, 3, 5, 8)]
+    + [{"label": "1330 two seasons ago, one race this season", "old_best": 1330.0, "ago": 2, "races": 1},
+       {"label": "1330 two seasons ago, two races this season", "old_best": 1330.0, "ago": 2, "races": 2},
+       {"label": "an old best level with the leader", "old_best": 1250.0, "ago": 2},
+       {"label": "an old best far above the whole field", "old_best": 1600.0, "ago": 1}]
+)
+
+
+def _bounded_weights(features, bounds, seed):
+    """Random weights that respect `bounds`, so the rule is tested against every
+    fit the bounds allow rather than against one fitted model."""
+    rng = np.random.default_rng(seed)
+    weights = []
+    for name, value in zip(features, rng.normal(size=len(features))):
+        low, high = bounds.get(name, (None, None))
+        if high is not None:
+            value = -abs(value)
+        elif low is not None:
+            value = abs(value)
+        weights.append(float(value))
+    return {"features": list(features), "mean": [0.0] * len(features), "std": [1.0] * len(features),
+            "weights": weights}
+
+
+def _rule_models(model, fade):
+    """The models the rule is checked under: the one given, each group's own when
+    it was fitted by group, or else every bounds-respecting fit, sampled."""
+    if model is None:
+        return [_bounded_weights(FADE_FEATURES, FADE_BOUNDS, seed) for seed in range(RULE_WEIGHT_SETS)], fade
+    fade = fade if fade is not None else fade_of(model)
+    if "byGroup" in model:
+        return list(model["byGroup"].values()), fade
+    return [model], fade
+
+
+def check_old_marks_rule(fade=None, model=None, cases=None):
+    """Whether the user's rule holds on the made-up finals (RULE_CASES), with the
+    old-marks settings `fade`.
+
+    Both halves of what they asked for, on every case:
+      * the athlete leading on this season's marks is never passed by an older,
+        bigger mark, whatever that mark is and however few races their rival has
+        run this season;
+      * an old mark that is big and recent enough still counts, so B passes the
+        athlete 5 points ahead of them on this season alone.
+    Checked on the level faded_level() reads and on the win chances themselves,
+    under `model` when one is given and otherwise under RULE_WEIGHT_SETS random
+    fits that respect FADE_BOUNDS: a setting passes only if no fit the rule
+    allows could break it. This is the gate a tuned setting has to pass before it
+    can be kept, whatever it scores."""
+    cases = list(cases or RULE_CASES)
+    models, fade = _rule_models(model, fade)
+    rows_out, passed = [], True
+    for case in cases:
+        rows = rule_field(case["old_best"], case.get("ago", 2), case.get("races", 5))
+        level, parts = faded_level(rows, RULE_CUTOFF, **(fade or {}))
+        leader = float(level.iloc[RULE_A] - level.iloc[RULE_B])
+        over_d = float(level.iloc[RULE_B] - level.iloc[RULE_D])
+        win_leader, win_over_d = [], []
+        for m in models:
+            X = field_features(rows, RULE_CUTOFF, m.get("features") or FADE_FEATURES, fade).to_numpy()
+            win = win_chances(utilities(m, X))
+            win_leader.append(float(win[RULE_A] - win[RULE_B]))
+            win_over_d.append(float(win[RULE_B] - win[RULE_D]))
+        held = leader > 0 and min(win_leader) > 0
+        counted = (over_d > 0 and min(win_over_d) > 0) if case.get("counts") else None
+        passed = passed and held and (counted is not False)
+        rows_out.append({
+            "label": case["label"], "oldBest": case["old_best"], "ago": case.get("ago", 2),
+            "races": case.get("races", 5), "leaderLevel": round(float(level.iloc[RULE_A]), 1),
+            "rivalLevel": round(float(level.iloc[RULE_B]), 1), "lift": round(float(parts["lift"].iloc[RULE_B]), 1),
+            "fromSeason": None if pd.isna(parts["fromSeason"].iloc[RULE_B]) else int(parts["fromSeason"].iloc[RULE_B]),
+            "weight": round(float(parts["weight"].iloc[RULE_B]), 3),
+            "capped": bool(parts["capped"].iloc[RULE_B]),
+            "worstWinGap": round(min(win_leader), 4), "leaderStaysAhead": bool(held),
+            "oldMarkCounts": None if counted is None else bool(counted),
+            "worstCountsGap": None if counted is None else round(min(win_over_d), 4)})
+    return {"passed": bool(passed), "fade": dict(fade or {}), "cases": rows_out,
+            "fits": len(models),
+            "fitsAre": "model given" if model is not None else "random fits inside FADE_BOUNDS"}
+
+
+def print_rule_test(report):
+    print(f"  settings: {report['fade'] or 'the module defaults'}; checked under {report['fits']} "
+          f"{report['fitsAre']}")
+    print(f"\n  {'case':<44} {'leader':>7} {'rival':>7} {'lift':>6} {'from':>6} {'weight':>7} "
+          f"{'ahead':>6} {'counts':>7}")
+    for c in report["cases"]:
+        counts = "-" if c["oldMarkCounts"] is None else ("yes" if c["oldMarkCounts"] else "NO")
+        print(f"  {c['label']:<44} {c['leaderLevel']:>7.1f} {c['rivalLevel']:>7.1f} {c['lift']:>6.1f} "
+              f"{c['fromSeason'] or '':>6} {c['weight']:>7.3f} "
+              f"{'yes' if c['leaderStaysAhead'] else 'NO':>6} {counts:>7}")
+    print(f"\n  the rule held on every case: {report['passed']}")
 
 
 # ---- the model ----------------------------------------------------------------
@@ -361,7 +654,7 @@ def load_scored_finals(path=None):
     return df
 
 
-def build_finals(scored, features=FEATURES):
+def build_finals(scored, features=FEATURES, fade=None):
     """One dict per final with at least MIN_SCORED scored finalists.
 
     `podium` holds every medallist's name, scored or not: an unscored medallist
@@ -390,7 +683,7 @@ def build_finals(scored, features=FEATURES):
                       .reset_index(drop=True))
         if len(with_score) < MIN_SCORED:
             continue
-        X = field_features(with_score, g["cutoff"].iloc[0], features)
+        X = field_features(with_score, g["cutoff"].iloc[0], features, fade)
         names = with_score["athlete_name"].tolist()
         order = []
         for place in (1, 2, 3):
@@ -618,6 +911,15 @@ EXPERIMENTS = {
     "recency_form_best_5": {"features": RECENCY_FEATURES, "bounds": RECENCY_BOUNDS,
                             "race": {"form_marks": 5}, "newOverOld": True},
     "season_only": {"features": SEASON_ONLY_FEATURES, "race": {"form_marks": 5}},
+    # The user's rule for old marks (2026-09-16), which they chose over raw
+    # accuracy: this season in full, an older best only where it still stands
+    # above it, faded by its age, and never by enough to pass the athlete ahead
+    # this season. The grid over the three settings is tuned on past seasons;
+    # the rule holds whichever setting it picks.
+    "old_marks": {"features": FADE_FEATURES, "bounds": FADE_BOUNDS, "race": {"form_marks": 5},
+                  "fade": {"last_season": FADE_LAST_SEASON, "per_year": FADE_PER_YEAR,
+                           "cap_share": FADE_CAP_SHARE},
+                  "oldMarks": True},
 }
 RESULT_KEY = ["year", "competition", "discipline"]
 # Every season with at least three seasons of finals before it to learn from
@@ -685,7 +987,8 @@ def compare(scored, candidate="v2", baseline="today", years=DEV_YEARS, controls=
     all of them when it adds none. With controls=0 they are skipped and the
     report carries no verdict, as for a first look at an experiment."""
     specs = {"baseline": EXPERIMENTS[baseline], "candidate": EXPERIMENTS[candidate]}
-    built = {side: build_finals(spec_scored(scored, spec, races), spec["features"]) for side, spec in specs.items()}
+    built = {side: build_finals(spec_scored(scored, spec, races), spec["features"], spec.get("fade"))
+             for side, spec in specs.items()}
 
     def run(side, finals):
         spec = specs[side]
@@ -861,6 +1164,13 @@ def needs_races(model):
     return bool(set((model or {}).get("features") or []) - set(FEATURES))
 
 
+def fade_of(model):
+    """The old-marks settings a saved model was fitted with, from its experiment,
+    so an entrant's old mark fades on the call exactly as it did in the backtest.
+    None for a model whose family does not read old marks that way."""
+    return spec_of(model).get("fade")
+
+
 def shipped(model, disc_key):
     """(whether this discipline's group passed the ship rule, its evidence)."""
     decision = ((model or {}).get("ship") or {}).get(group_of(disc_key))
@@ -869,6 +1179,7 @@ def shipped(model, disc_key):
 
 SERVING_COLUMNS = ["athlete_name", "sb_score", "sb_date", "sb_prior_season", "dob",
                    "career_best", "prev_season_best", "mark", "mark_season", "wa_id"]
+SERVING_COLUMNS += [c for c in fd.EARLIER_BEST_COLUMNS if c not in SERVING_COLUMNS]
 
 
 def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.season_scores, extra=(),
@@ -882,7 +1193,8 @@ def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.se
     from their history, flagged sb_prior_season: training fell back the same
     way, so serving must. History is `scores_for(disc_key)` plus the `extra`
     (path, source) toplists, such as last season's Asian list, and gives the
-    career best and last season's best too. An athlete with neither mark is
+    bests from earlier seasons too, by how long ago they came
+    (field_data.earlier_bests). An athlete with no mark this season or last is
     left out. `mark` and `mark_season` say which mark was used, for the page.
 
     With `races`, {World Athletics id as text: this season race by race, from
@@ -905,7 +1217,6 @@ def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.se
         mine = fd.athlete_history(season, key, nat, wid)[0] if not season.empty else season
         mine = mine[mine["date"] < cutoff] if not mine.empty else mine
         past = fd.athlete_history(history, key, nat, wid)[0] if not history.empty else history
-        earlier = past[past["year"] < year] if not past.empty else past
         last = past[past["year"] == year - 1] if not past.empty else past
         if not mine.empty:
             best, prior = mine.loc[mine["score"].idxmax()], 0
@@ -923,9 +1234,8 @@ def serving_rows(disc_key, athletes, season_path, cutoff, year, scores_for=fd.se
         rows.append({
             "athlete_name": a["name"], "sb_score": float(best["score"]), "sb_date": best["date"],
             "sb_prior_season": prior, "dob": dob,
-            "career_best": float(earlier["score"].max()) if not earlier.empty else None,
-            "prev_season_best": float(last["score"].max()) if not last.empty else None,
             "mark": best["mark"], "mark_season": int(best["year"]), "wa_id": wid,
+            **fd.earlier_bests(past, year),
         })
     out = pd.DataFrame(rows, columns=SERVING_COLUMNS)
     if races is None or out.empty:
@@ -944,7 +1254,7 @@ def field_chances(model, rows, cutoff, disc_key=None):
     rows = rows[rows["sb_score"].notna()].reset_index(drop=True)
     if len(rows) < 3:
         return {}
-    features = field_features(rows, cutoff, model.get("features") or FEATURES)
+    features = field_features(rows, cutoff, model.get("features") or FEATURES, fade_of(model))
     u = utilities(model_for(model, group_of(disc_key)), features.to_numpy())
     return {name: (float(p), float(w))
             for name, p, w in zip(rows["athlete_name"], podium_chances(u), win_chances(u))}
@@ -1133,6 +1443,163 @@ def run_all_seasons(names=None, years=None, path=ALL_SEASONS_PATH):
     return 0
 
 
+def run_rule_test(name="old_marks"):
+    """Print the rule test for an experiment's old-marks settings, and for
+    information what the served model does with the same made-up finals."""
+    if name not in EXPERIMENTS:
+        print(f"  no such experiment: {name} (see EXPERIMENTS)")
+        return 1
+    print(f"=== Field model: the rule for old marks, on made-up finals ({name}) ===")
+    report = check_old_marks_rule(EXPERIMENTS[name].get("fade"))
+    print_rule_test(report)
+    served = load_model()
+    if served:
+        same = check_old_marks_rule(fade=fade_of(served), model=served)
+        broken = [c["label"] for c in same["cases"] if not c["leaderStaysAhead"]]
+        print(f"\n  for information, the served model ({served.get('experiment')}): "
+              f"{'holds the rule' if same['passed'] else 'breaks it'}"
+              + (f" on {len(broken)} of {len(same['cases'])} cases, first at {broken[0]}" if broken else ""))
+    return 0 if report["passed"] else 1
+
+
+# ---- trial and error on the old-marks settings --------------------------------
+
+# How much last season counts, how fast older seasons fade, and how much of the
+# gap to the leader an old mark may close. The user asked for these to be found
+# by trial and error on past seasons, so every combination below is walked
+# forward over every season and recorded. The last three are outside the rule on
+# purpose: they say in the record what the rule costs, and choose_old_marks
+# cannot keep them.
+OLD_MARK_GRID = [{"last_season": last, "per_year": per_year, "cap_share": cap}
+                 for last in (0.2, 0.35, 0.5)
+                 for per_year in (0.3, 0.5, 0.7)
+                 for cap in (0.5, 0.75, 0.9)]
+OLD_MARK_OUT_OF_RULE = [
+    # Old marks in full, uncapped: closest to the model the user objected to.
+    {"last_season": 1.0, "per_year": 1.0, "cap_share": 5.0},
+    # Nearly in full, barely fading.
+    {"last_season": 0.7, "per_year": 0.9, "cap_share": 2.0},
+    # Old marks ignored altogether, which is not the rule either.
+    {"last_season": 0.0, "per_year": 0.5, "cap_share": 0.75},
+]
+
+
+def fade_name(fade):
+    """A setting's name in the record: last season, the fade per year and the cap."""
+    return (f"last{round(fade['last_season'] * 100):d}"
+            f"_per{round(fade['per_year'] * 100):d}"
+            f"_cap{round(fade['cap_share'] * 100):d}")
+
+
+def choose_old_marks(rows):
+    """The setting kept, by the rule fixed before the grid ran: among those that
+    pass the rule test, the most medallists named, then the most winners, then
+    the largest mean top-three log-likelihood. None when none passes.
+
+    The rule test comes first by the user's decision of 2026-09-16: the rule for
+    old marks holds even at a cost in medallists, so a setting that breaks it
+    cannot be kept however accurate it is."""
+    passed = [r for r in rows if r["rulePassed"]]
+    if not passed:
+        return None
+    return max(passed, key=lambda r: (r["medallists"], r["winners"], r["meanLl"]))["name"]
+
+
+def _season_row(name, fade, results, rule_passed):
+    """One setting's line in the record: medallists and winners named over every
+    season it was walked through, and how sure it was of the order."""
+    finals = len(results)
+    asia = results[results["tier"] == "asia"]
+    return {
+        "name": name, "fade": dict(fade), "rulePassed": bool(rule_passed), "finals": finals,
+        "medallists": int(results["model_hits"].sum()), "possible": 3 * finals,
+        "medallistsPct": round(100 * results["model_hits"].sum() / (3 * finals), 1) if finals else None,
+        "winners": int(results["model_winner"].sum()),
+        "meanLl": round(float(results["ll"].mean()), 4),
+        "pointsPct": round(100 * results["points_hits"].sum() / (3 * finals), 1) if finals else None,
+        "pointsWinners": int(results["points_winner"].sum()),
+        "asiaFinals": len(asia),
+        "asiaPct": round(100 * asia["model_hits"].sum() / (3 * len(asia)), 1) if len(asia) else None,
+        "asiaPointsPct": round(100 * asia["points_hits"].sum() / (3 * len(asia)), 1) if len(asia) else None,
+        "bySeason": {str(int(year)): round(100 * g["model_hits"].sum() / (3 * len(g)), 1)
+                     for year, g in results.groupby("year")},
+    }
+
+
+def run_old_marks(grid=None, years=None, path=OLD_MARKS_PATH, baseline="v2_form_best_5"):
+    """Every old-marks setting walked forward over every season in
+    ALL_SEASON_YEARS, and the one choose_old_marks keeps.
+
+    The user's rule comes first here, not accuracy: each setting has to pass
+    check_old_marks_rule before it can be kept, and the most accurate of those
+    that do is the one served, even if it names fewer medallists than the model
+    that broke the rule. Every setting tried is written to `path`, the ones
+    outside the rule included, so the record says what the rule cost.
+
+    These seasons have all been used for testing or training before, so this
+    tunes on results already seen. The Asian Games are the first finals no
+    version of the model has seen, and the page says so."""
+    grid = list(grid or (OLD_MARK_GRID + OLD_MARK_OUT_OF_RULE))
+    years = list(years or ALL_SEASON_YEARS)
+    spec = EXPERIMENTS["old_marks"]
+    print(f"=== Field model: {len(grid)} old-marks settings on every season, {years[0]}-{years[-1]} ===")
+    scored = _scored_with_races()
+    if scored is None:
+        return 1
+    with_races = spec_scored(scored, spec, fd.load_seasons(fd.RACES_DIR))
+
+    base_spec = EXPERIMENTS[baseline]
+    base_finals = build_finals(spec_scored(scored, base_spec, None), base_spec["features"],
+                               base_spec.get("fade"))
+    base = backtest(base_finals, base_spec.get("l2", L2), years=years,
+                    by_group=base_spec.get("by_group", False), bounds=base_spec.get("bounds"))[0]
+    # Whether the model being replaced keeps the rule, read under the model
+    # itself rather than under the new family's settings.
+    base_rule = check_old_marks_rule(model=fit_spec(base_finals, base_spec))["passed"]
+    base_row = _season_row(baseline, {}, base, base_rule)
+    print(f"  the served model, {baseline}, over the same seasons: {base_row['medallistsPct']}% of medallists, "
+          f"{base_row['winners']} winners; a points ranking {base_row['pointsPct']}%")
+
+    rows = []
+    for i, fade in enumerate(grid, 1):
+        name = fade_name(fade)
+        rule = check_old_marks_rule(fade)
+        results = backtest(build_finals(with_races, spec["features"], fade), spec.get("l2", L2),
+                           years=years, bounds=spec["bounds"])[0]
+        row = _season_row(name, fade, results, rule["passed"])
+        rows.append(row)
+        print(f"  {i:>3}/{len(grid)} {name:<24} {row['medallistsPct']:>5}% of medallists, "
+              f"{row['winners']:>3} winners, mean LL {row['meanLl']:>8}"
+              f"{'' if rule['passed'] else '   OUTSIDE THE RULE, cannot be kept'}")
+    chosen = choose_old_marks(rows)
+    best_overall = max(rows, key=lambda r: (r["medallists"], r["winners"], r["meanLl"]))["name"]
+    _write_json(path, {
+        "builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "years": years,
+        "rule": "the rule for old marks first (check_old_marks_rule), then the most medallists named, "
+                "then the most winners, then the mean top-three log-likelihood; fixed before the grid ran",
+        "seasonsAlreadyUsed": True, "baseline": base_row, "settings": rows,
+        "chosen": chosen, "mostAccurateOfAll": best_overall})
+
+    kept = next((r for r in rows if r["name"] == chosen), None)
+    print(f"\n  {len(rows)} settings tried, {sum(r['rulePassed'] for r in rows)} inside the rule.")
+    print(f"  kept: {chosen}" + (f" ({kept['fade']})" if kept else ""))
+    if kept:
+        print(f"    {kept['medallists']} of {kept['possible']} medallists ({kept['medallistsPct']}%), "
+              f"{kept['winners']} winners, mean LL {kept['meanLl']}")
+        print(f"    against the served model's {base_row['medallistsPct']}% and {base_row['winners']} winners, "
+              f"and a points ranking's {base_row['pointsPct']}%")
+        print(f"    on the Asian finals: {kept['asiaPct']}% against the served model's {base_row['asiaPct']}%")
+    if best_overall != chosen:
+        best = next(r for r in rows if r["name"] == best_overall)
+        print(f"  the most accurate setting of all was {best_overall} ({best['medallistsPct']}%, "
+              f"{best['winners']} winners), and it is outside the rule, so it was not kept: "
+              f"the user chose the rule over the numbers.")
+    print(f"  every season here had already been used for testing or training; the Asian Games are the "
+          f"first finals no version has seen.")
+    print(f"  -> {path}")
+    return 0
+
+
 def run_refit(name=None, model_path=MODEL_PATH, previous_path=PREVIOUS_MODEL_PATH):
     """Retrain the served experiment on every final on file and save it as the
     served model, keeping the model it replaces at `previous_path`.
@@ -1152,7 +1619,7 @@ def run_refit(name=None, model_path=MODEL_PATH, previous_path=PREVIOUS_MODEL_PAT
     if scored is None:
         return 1
     spec = EXPERIMENTS[name]
-    finals = build_finals(spec_scored(scored, spec), spec["features"])
+    finals = build_finals(spec_scored(scored, spec), spec["features"], spec.get("fade"))
     model = fit_spec(finals, spec)
     model.update({"fitAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "experiment": name,
                   "holdout": current.get("holdout") if current.get("experiment") == name else None})
@@ -1178,11 +1645,19 @@ def main(argv=None):
                         help="retrain the served experiment (or NAME) on every final on file, after new finals are added")
     parser.add_argument("--all-seasons", action="store_true",
                         help="today's model, recent over old and this season only on every past season")
+    parser.add_argument("--rule-test", nargs="?", const="old_marks", default=None, metavar="NAME",
+                        help="check the rule for old marks on made-up finals, the gate a tuned setting must pass")
+    parser.add_argument("--old-marks", action="store_true",
+                        help="try every old-marks setting on every past season and keep the one the rule allows")
     args = parser.parse_args(argv)
     if args.refit is not None:
         return run_refit(args.refit or None)
     if args.all_seasons:
         return run_all_seasons()
+    if args.rule_test is not None:
+        return run_rule_test(args.rule_test or "old_marks")
+    if args.old_marks:
+        return run_old_marks()
     if args.compare:
         return run_compare()
     if args.experiments is not None:

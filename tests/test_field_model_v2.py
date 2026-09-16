@@ -132,6 +132,9 @@ def v2_field(scores, **extra):
         "races": extra.get("races", [6] * n),
         "big_podiums": extra.get("podiums", [0] * n),
         "h2h_top": extra.get("h2h", [0.0] * n),
+        "two_seasons_ago_best": extra.get("two", [None] * n),
+        "older_seasons_best": extra.get("older", [None] * n),
+        "older_seasons_best_year": extra.get("older_year", [None] * n),
     })
 
 
@@ -450,7 +453,7 @@ def test_a_refit_retrains_the_served_experiment_and_keeps_its_test_record_and_th
     served.write_text(json.dumps({"experiment": "today", "holdout": {"ships": True}}), encoding="utf-8")
     sprints = [f for f in opposing_finals([2019, 2020]) if f["group"] == "sprints"]
     monkeypatch.setattr(fm, "_scored_with_races", lambda: pd.DataFrame())
-    monkeypatch.setattr(fm, "build_finals", lambda scored, features: sprints)
+    monkeypatch.setattr(fm, "build_finals", lambda scored, features, fade=None: sprints)
 
     assert fm.run_refit(model_path=str(served), previous_path=str(previous)) == 0
     model = json.loads(served.read_text(encoding="utf-8"))
@@ -464,3 +467,203 @@ def test_the_locked_years_are_scored_once(tmp_path, monkeypatch):
     used.write_text("{}", encoding="utf-8")
     monkeypatch.setattr(fm, "load_scored_finals", lambda: pytest.fail("the locked years were read a second time"))
     assert fm.run_holdout("v2", path=str(used)) == 1
+
+
+# ---- the user's rule for old marks: this season first, and old marks fade ---------
+
+def levels_field(**columns):
+    """A leader on 1300 and one athlete on 1200 this season, with whatever
+    earlier bests the case needs. The gap to the leader is wide, so the cap on
+    how far an old mark may lift an athlete does not come into these numbers."""
+    rows = {"sb_score": [1300.0, 1200.0], "form_score": [1300.0, 1200.0], "races": [5, 5],
+            "form_spread": [0.0, 0.0], "prev_season_best": [None, None], "two_seasons_ago_best": [None, None],
+            "older_seasons_best": [None, None], "older_seasons_best_year": [None, None]}
+    rows.update(columns)
+    return pd.DataFrame(rows)
+
+
+def test_this_season_counts_in_full_and_an_older_best_counts_for_less_the_older_it_is():
+    """The user's rule (2026-09-16), at the settings the grid chose: the same
+    1240 best lifts an athlete on 1200 by 14 points from last season, 4.2 from
+    two seasons ago and 0.38 from four."""
+    last, parts = fm.faded_level(levels_field(prev_season_best=[None, 1240.0]), "2026-09-23")
+    assert last.iloc[1] == pytest.approx(1214.0)
+    assert (parts["fromSeason"].iloc[1], parts["weight"].iloc[1]) == (2025, pytest.approx(0.35))
+    two, _ = fm.faded_level(levels_field(two_seasons_ago_best=[None, 1240.0]), "2026-09-23")
+    assert two.iloc[1] == pytest.approx(1204.2)
+    four, parts = fm.faded_level(levels_field(older_seasons_best=[None, 1240.0],
+                                              older_seasons_best_year=[None, 2022]), "2026-09-23")
+    assert four.iloc[1] == pytest.approx(1200.378)
+    assert parts["fromSeason"].iloc[1] == 2022
+    # Nothing older stands above this season: read on this season alone.
+    below, parts = fm.faded_level(levels_field(prev_season_best=[None, 1150.0],
+                                              two_seasons_ago_best=[None, 1100.0]), "2026-09-23")
+    assert below.iloc[1] == pytest.approx(1200.0) and pd.isna(parts["fromSeason"].iloc[1])
+    # Old seasons do not stack: the largest lift counts, not the sum of them.
+    stacked, parts = fm.faded_level(levels_field(prev_season_best=[None, 1240.0],
+                                                two_seasons_ago_best=[None, 1400.0]), "2026-09-23")
+    assert stacked.iloc[1] == pytest.approx(1221.0) and parts["fromSeason"].iloc[1] == 2024
+
+
+def test_an_old_mark_can_close_a_gap_but_never_pass_the_leader_on_this_seasons_marks():
+    """The user's case, and the reason the rule is structure and not a weight: an
+    athlete breaking records this season is not beaten by a mark from two years
+    ago, whatever that mark was. The served model reverses this pair once the old
+    best passes about 1280 (HANDOFF.md)."""
+    season = [1250.0, 1230.0, 1220.0, 1210.0, 1200.0, 1190.0]
+    for old_best in (1260.0, 1300.0, 1330.0, 1500.0):
+        rows = v2_field(season, form=season, two=[1200.0, old_best] + [None] * 4)
+        level, parts = fm.faded_level(rows, "2026-09-23")
+        assert level.iloc[0] > level.iloc[1], old_best
+        # The lift stops at three quarters of the 20 points between them.
+        assert parts["lift"].iloc[1] <= 15.0 + 1e-9
+        f = fm.field_features(rows, "2026-09-23", fm.FADE_FEATURES)
+        assert f["fade_gap_best"].iloc[0] == 0.0 and f["fade_gap_best"].iloc[1] < 0.0
+
+    # An athlete with one race and a big old mark: what strength() read the other
+    # way round, since it capped old marks at half but never by their age.
+    thin = v2_field(season, form=season, races=[5, 1] + [5] * 4, two=[1200.0, 1330.0] + [None] * 4,
+                    career=[1250.0, 1330.0] + [s + 10 for s in season[2:]])
+    faded = fm.faded_level(thin, "2026-09-23")[0]
+    assert faded.iloc[0] > faded.iloc[1] and faded.iloc[1] == pytest.approx(1240.5)
+    strength = fm.strength(thin)[0]
+    assert strength.iloc[1] > strength.iloc[0] and strength.iloc[1] == pytest.approx(1270.0)
+
+
+def test_the_old_marks_features_do_not_move_when_weaker_entrants_are_added():
+    top = [1200, 1190, 1180, 1150, 1140, 1120, 1110, 1100]
+    old = [s + 100 for s in top]
+    final = fm.field_features(v2_field(top, two=old), "2023-09-29", fm.FADE_FEATURES).to_numpy()
+    slower = list(range(1000, 800, -10))
+    entry = fm.field_features(v2_field(top + slower, two=old + [None] * len(slower)),
+                              "2023-09-29", fm.FADE_FEATURES)
+    assert np.allclose(final, entry.to_numpy()[:8])
+    assert list(entry.columns) == fm.FADE_FEATURES
+
+
+def test_the_old_marks_experiment_is_built_on_the_rule_and_not_on_the_fit():
+    spec = fm.EXPERIMENTS["old_marks"]
+    history_first = {"pb_gap", "yoy", "pb_gap_thin", "breakout_backed"}
+    assert not history_first & set(spec["features"])
+    assert spec["bounds"] == fm.FADE_BOUNDS and spec.get("oldMarks")
+    assert set(spec["fade"]) == {"last_season", "per_year", "cap_share"}
+    # The signs the rule needs, and every one of them on a feature it reads.
+    assert fm.FADE_BOUNDS["fade_gap_best"] == (0.0, None) and fm.FADE_BOUNDS["sb_prior_season"] == (None, 0.0)
+    assert set(fm.FADE_BOUNDS) <= set(fm.FADE_FEATURES)
+    assert set(fm.FADE_FEATURES) <= set(fm.ALL_FEATURES)
+    assert fm.fade_weight(1) > fm.fade_weight(2) > fm.fade_weight(5) and fm.fade_weight(1) < 1.0
+
+
+def test_the_old_marks_rule_holds_the_sign_the_fit_is_not_allowed_to_cross():
+    """As RECENCY_BOUNDS does: a free fit rewards being read on last season's
+    mark, and the rule will not let that weight rise above zero."""
+    sprints = [f for f in opposing_finals([2019, 2020], per_year=40) if f["group"] == "sprints"]
+    tempting = [dict(f, X=np.hstack([f["X"], (f["X"] > 0).astype(float)]), features=["x", "sb_prior_season"])
+                for f in sprints]
+    assert fm.fit(tempting)["weights"][1] > 0
+    assert fm.fit(tempting, bounds=fm.FADE_BOUNDS)["weights"][1] <= 1e-9
+
+
+def test_the_call_fades_an_old_mark_exactly_as_the_backtest_did():
+    """The settings travel with the model, so serving cannot read an old mark
+    one way while the backtest read it another."""
+    assert fm.fade_of({"experiment": "old_marks"}) == fm.EXPERIMENTS["old_marks"]["fade"]
+    assert fm.fade_of({"experiment": "v2_form_best_5"}) is None and fm.fade_of({}) is None
+    season = [1250.0, 1230.0, 1220.0, 1210.0, 1200.0, 1190.0]
+    rows = v2_field(season, form=season, two=[1200.0, 1300.0] + [None] * 4)
+    default = fm.field_features(rows, "2026-09-23", fm.FADE_FEATURES)
+    nothing = fm.field_features(rows, "2026-09-23", fm.FADE_FEATURES,
+                               {"last_season": 0.0, "per_year": 0.5, "cap_share": 0.75})
+    assert default["fade_gap_best"].iloc[1] > nothing["fade_gap_best"].iloc[1]
+    assert nothing["fade_gap_best"].iloc[1] == pytest.approx(-0.20)
+
+
+def test_the_rule_test_passes_with_the_settings_the_family_ships_with():
+    """Both halves of what the user asked for, on every made-up case: the leader
+    on this season's marks is never passed, and a big recent-enough old mark
+    still counts. Checked under every fit FADE_BOUNDS allows, sampled."""
+    report = fm.check_old_marks_rule(fm.EXPERIMENTS["old_marks"]["fade"])
+    assert report["passed"] and report["fits"] == fm.RULE_WEIGHT_SETS
+    assert all(c["leaderStaysAhead"] for c in report["cases"])
+    counted = [c for c in report["cases"] if c["oldMarkCounts"] is not None]
+    assert len(counted) >= 4 and all(c["oldMarkCounts"] for c in counted)
+    # The lift fades with age: the same 1330 mark is worth less the older it is.
+    by_age = {c["ago"]: c["lift"] for c in report["cases"] if c["oldBest"] == 1330.0 and c["races"] == 5}
+    assert by_age[3] > by_age[5] > by_age[8] and by_age[8] < 1.0
+
+
+def test_a_setting_that_would_let_an_old_mark_win_fails_the_rule_test():
+    """The gate, not a description: a cap loose enough to carry an athlete past
+    the leader, or a weight above 1, cannot be kept however accurate it is."""
+    loose = fm.check_old_marks_rule({"last_season": 0.35, "per_year": 0.5, "cap_share": 5.0})
+    assert not loose["passed"]
+    assert [c["label"] for c in loose["cases"] if not c["leaderStaysAhead"]]
+    assert not fm.check_old_marks_rule({"last_season": 1.2, "per_year": 0.9, "cap_share": 5.0})["passed"]
+
+
+def test_a_setting_that_ignores_old_marks_fails_the_rule_test():
+    """The other half of the rule. Old performances still count, so a setting
+    that never lets them count is not the rule either, however safe it looks."""
+    ignored = fm.check_old_marks_rule({"last_season": 0.0})
+    assert not ignored["passed"]
+    assert all(c["lift"] == 0.0 for c in ignored["cases"])
+    assert all(c["oldMarkCounts"] is False for c in ignored["cases"] if c["oldMarkCounts"] is not None)
+
+
+def test_the_rule_test_catches_the_reading_the_user_objected_to():
+    """A model that rewards a career best far above the season, which is what
+    put a 1230 athlete with a 1330 from two years ago ahead of a 1250 personal
+    best (HANDOFF.md), is caught by the same gate."""
+    weights = [1.0 if name == "pb_gap" else 0.0 for name in fm.FEATURES_V2]
+    old_way = {"features": fm.FEATURES_V2, "mean": [0.0] * len(weights), "std": [1.0] * len(weights),
+               "weights": weights}
+    report = fm.check_old_marks_rule(model=old_way)
+    assert not report["passed"] and report["fitsAre"] == "model given"
+    beaten = [c["label"] for c in report["cases"] if not c["leaderStaysAhead"]]
+    assert "1330 two seasons ago" in beaten
+
+
+def test_the_made_up_final_differs_only_in_the_old_mark():
+    """What lets the test blame the old mark: A, B and D share every other
+    number, so nothing else can explain a change of order."""
+    rows = fm.rule_field(1330.0)
+    same = ["sb_date", "sb_prior_season", "dob", "big_podiums", "h2h_top", "form_spread", "races"]
+    assert all(rows[col].nunique() == 1 for col in same)
+    assert (rows["form_score"] == rows["sb_score"]).all() and (rows["recent_score"] == rows["sb_score"]).all()
+    assert rows["sb_score"].iloc[fm.RULE_A] == max(rows["sb_score"])
+    assert rows["two_seasons_ago_best"].iloc[fm.RULE_B] == 1330.0
+    # The rival is behind this season and the third athlete sits between them.
+    assert rows["sb_score"].iloc[fm.RULE_B] < rows["sb_score"].iloc[fm.RULE_D] < rows["sb_score"].iloc[fm.RULE_A]
+    # A thin season changes the race count and nothing else about the field.
+    thin = fm.rule_field(1330.0, races=1)
+    assert thin["races"].iloc[fm.RULE_B] == 1
+    assert thin.drop(columns="races").equals(rows.drop(columns="races"))
+
+
+def test_the_reason_says_which_old_mark_counted_and_how_much_of_it():
+    """The line the page shows, as fields rather than a sentence, so it can be
+    said in English and in French. The share is the one that survived the cap,
+    so the page never claims more of an old mark than the model used."""
+    rows = fm.rule_field(1330.0)
+    reasons = fm.old_mark_reasons(rows, fm.RULE_CUTOFF, {"features": fm.FADE_FEATURES,
+                                                         "experiment": "old_marks"})
+    assert reasons[fm.RULE_A] == {"personalBest": True, "fromSeason": None, "percent": 0}
+    # A best from two seasons back counts at 10.5% of the 100 points between it
+    # and this season, under the cap, and the reason says 10.
+    assert reasons[fm.RULE_B] == {"personalBest": False, "fromSeason": 2024, "percent": 10}
+    assert reasons[fm.RULE_D]["fromSeason"] is None
+    # A model that does not read old marks this way has no such reason to give.
+    assert fm.old_mark_reasons(rows, fm.RULE_CUTOFF,
+                               {"features": fm.FEATURES_V2, "experiment": "v2_form_best_5"}) is None
+
+
+def test_the_reason_is_in_the_order_of_the_rows_it_was_asked_about():
+    """The call sorts its rows by chance before writing them out, so a reason
+    read back by position has to follow that order, not the order they arrived."""
+    rows = fm.rule_field(1330.0)
+    flipped = rows.iloc[::-1]
+    forward = fm.old_mark_reasons(rows, fm.RULE_CUTOFF, {"features": fm.FADE_FEATURES,
+                                                         "experiment": "old_marks"})
+    backward = fm.old_mark_reasons(flipped, fm.RULE_CUTOFF, {"features": fm.FADE_FEATURES,
+                                                             "experiment": "old_marks"})
+    assert backward == forward[::-1]

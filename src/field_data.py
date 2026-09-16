@@ -789,6 +789,40 @@ def _season_for(seasons, athlete_id, year):
         return None
 
 
+EARLIER_BEST_COLUMNS = ["career_best", "prev_season_best", "two_seasons_ago_best",
+                        "older_seasons_best", "older_seasons_best_year"]
+
+
+def earlier_bests(history, year):
+    """An athlete's bests from before `year`, by how long ago they came: the
+    career best before this season, last season's best, the best two seasons
+    ago, and the best from three or more seasons ago with the season it came
+    from (the latest, when two seasons share it). None where there is no mark.
+
+    The old-marks rule fades an old best by its age, so it needs more than the
+    career best. attach_scores and field_model.serving_rows both read these, so
+    a past final and an entrant about to compete are read the same way."""
+    out = dict.fromkeys(EARLIER_BEST_COLUMNS)
+    earlier = history[history["year"] < year] if not history.empty else history
+    if earlier.empty:
+        return out
+
+    def best(part):
+        return float(part["score"].max()) if not part.empty else None
+
+    ago = year - earlier["year"]
+    older = earlier[ago >= 3]
+    out.update({
+        "career_best": best(earlier),
+        "prev_season_best": best(earlier[ago == 1]),
+        "two_seasons_ago_best": best(earlier[ago == 2]),
+        "older_seasons_best": best(older),
+    })
+    if not older.empty:
+        out["older_seasons_best_year"] = int(older.loc[older["score"] == older["score"].max(), "year"].max())
+    return out
+
+
 def attach_scores(finals, scores_for=season_scores, seasons=None):
     """The finals with each finalist's numbers as they stood when the
     competition started.
@@ -810,9 +844,10 @@ def attach_scores(finals, scores_for=season_scores, seasons=None):
     the time and the rest 23.4%. The flag told the model who peaked in the
     final, and the points ranking scored those same athletes on last year.
 
-    Career best before this season, last season's best and date of birth come
-    from earlier seasons' toplists, all of it known before the competition.
-    `needs_profile` marks the finalists step 1 could not date."""
+    The bests from earlier seasons (earlier_bests, by how long ago they came)
+    and date of birth come from earlier seasons' toplists, all of it known
+    before the competition. `needs_profile` marks the finalists step 1 could not
+    date."""
     seasons = {} if seasons is None else seasons
     out = []
     for key, group in finals.groupby("discipline"):
@@ -822,8 +857,8 @@ def attach_scores(finals, scores_for=season_scores, seasons=None):
             year = int(row["year"])
             history, how = athlete_history(scores, field_key(row["athlete_name"]), str(row["nationality"] or "").strip())
             before = history[(history["year"] == year) & (history["date"] < cutoff)]
-            earlier = history[history["year"] < year]
             last = history[history["year"] == year - 1]
+            bests = earlier_bests(history, year)
             sb = sb_date = prior = source = None
             if not before.empty:
                 best = before.loc[before["score"].idxmax()]
@@ -840,11 +875,13 @@ def attach_scores(finals, scores_for=season_scores, seasons=None):
             row.update({
                 "sb_score": sb, "sb_date": sb_date, "sb_prior_season": prior, "sb_source": source,
                 "needs_profile": before.empty,
-                "career_best": float(earlier["score"].max()) if not earlier.empty else None,
-                "prev_season_best": float(last["score"].max()) if not last.empty else None,
+                "career_best": bests["career_best"], "prev_season_best": bests["prev_season_best"],
                 "dob": dob.iloc[0] if not dob.empty else parse_date(row.get("birth_date")),
                 "matched_by": how,
             })
+            # The rest of the bests by season age go after the columns finals.csv
+            # already had, so every earlier column keeps its place in the file.
+            row.update(bests)
             out.append(row)
     return pd.DataFrame(out)
 

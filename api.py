@@ -1630,11 +1630,13 @@ def championship_call(disc_key, athlete_name, today=None):
                         "winChance": a.get("winChance"),
                         "rankingScore": a.get("rankingScore"), "unranked": None,
                         "mark": a.get("mark"), "markSeason": a.get("markSeason"),
+                        "oldMarks": a.get("oldMarks"),
                         "nat": a.get("nat"), "profileUrl": a.get("profileUrl")}
         for u in p.get("unranked") or []:
             if str(u.get("name") or "").lower() == wanted:
                 return {**base, "rank": None, "podiumChance": None, "winChance": None, "rankingScore": None,
                         "unranked": u.get("reason"), "mark": None, "markSeason": None,
+                        "oldMarks": None,
                         "nat": u.get("nat"), "profileUrl": u.get("profileUrl")}
     return None
 

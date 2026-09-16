@@ -187,18 +187,22 @@ def field_call(event, model, snapshot_path, last_path, cutoff, year=ags.YEAR, ro
     rows = rows[rows["sb_score"].notna()].reset_index(drop=True)
     if len(rows) < MIN_SCORED:
         return None
-    features = fm.field_features(rows, cutoff, model.get("features") or fm.FEATURES)
+    features = fm.field_features(rows, cutoff, model.get("features") or fm.FEATURES, fm.fade_of(model))
     u = fm.utilities(fm.model_for(model, fm.group_of(key)), features.to_numpy())
     rows = (rows.assign(chance=fm.podium_chances(u), win=fm.win_chances(u))
             .sort_values(["chance", "sb_score"], ascending=False, kind="stable"))
     nats = {_key(a["name"]): a.get("nat") for a in event["athletes"]}
+    # Why the model read each athlete the way it did, for the line on the call
+    # and on their page: which older mark counted, and how much of it.
+    reasons = fm.old_mark_reasons(rows, cutoff, model) or [None] * len(rows)
     athletes = [{
         "rank": rank, "name": r.athlete_name, "nat": nats.get(_key(r.athlete_name)), "qualifiedBy": None,
         "rankingScore": int(r.sb_score), "mark": r.mark,
         "markSeason": int(r.mark_season) if int(r.mark_season) != year else None,
         "podiumChance": round(float(r.chance) * 100, 1),
         "winChance": round(float(r.win) * 100, 1),
-    } for rank, r in enumerate(rows.itertuples(), 1)]
+        "oldMarks": reason,
+    } for rank, (r, reason) in enumerate(zip(rows.itertuples(), reasons), 1)]
     scored = {_key(a["name"]) for a in athletes}
     unscored = [a["name"] for a in event["athletes"] if _key(a["name"]) not in scored]
     return {
@@ -278,7 +282,7 @@ def _read_json(path):
 
 
 def backtest_summary(report_path=fm.REPORT_PATH, model=None, holdout_path=fm.HOLDOUT_PATH,
-                     all_seasons_path=fm.ALL_SEASONS_PATH):
+                     all_seasons_path=fm.ALL_SEASONS_PATH, old_marks_path=fm.OLD_MARKS_PATH):
     """How the served field model tested, for the page to state, or None.
 
     First, when the served model is the version field_model.py --all-seasons
@@ -290,6 +294,19 @@ def backtest_summary(report_path=fm.REPORT_PATH, model=None, holdout_path=fm.HOL
     Only when the report tested this model; otherwise the older backtest
     against points in `report_path`."""
     served = (model or {}).get("experiment")
+    # The old-marks family: the settings tried on every past season and the most
+    # accurate one the user's rule allows, with what the model it replaced scored
+    # on the same finals, since the rule was chosen knowing it costs a little.
+    old_marks = _read_json(old_marks_path)
+    if served == "old_marks" and old_marks and old_marks.get("chosen"):
+        row = next((r for r in old_marks.get("settings") or [] if r.get("name") == old_marks["chosen"]), None)
+        base = old_marks.get("baseline") or {}
+        if row:
+            return {"method": "oldMarks", "finals": row["finals"], "model": row["medallistsPct"],
+                    "points": row["pointsPct"], "previous": base.get("medallistsPct"),
+                    "asiaFinals": row.get("asiaFinals"), "asiaModel": row.get("asiaPct"),
+                    "asiaPoints": row.get("asiaPointsPct"), "asiaPrevious": base.get("asiaPct"),
+                    "years": old_marks.get("years"), "versions": len(old_marks.get("settings") or [])}
     seasons = _read_json(all_seasons_path)
     if seasons and served and seasons.get("chosen") == served:
         row = next((r for r in seasons.get("candidates") or [] if r.get("name") == served), None)
@@ -320,7 +337,8 @@ def backtest_summary(report_path=fm.REPORT_PATH, model=None, holdout_path=fm.HOL
 
 def build(event, model, snapshot_dir=None, asia_dir=None, cutoff=None, pages_for=snapshot_names,
           last_for=last_season_marks, rows_for=fm.serving_rows, report_path=fm.REPORT_PATH, races=None,
-          holdout_path=fm.HOLDOUT_PATH, all_seasons_path=fm.ALL_SEASONS_PATH):
+          holdout_path=fm.HOLDOUT_PATH, all_seasons_path=fm.ALL_SEASONS_PATH,
+          old_marks_path=fm.OLD_MARKS_PATH):
     snapshot_dir = snapshot_dir or ags.SNAPSHOT_DIR
     asia_dir = asia_dir or ags.ASIA_DIR
     cutoff = cutoff or CHAMP["startDate"]
@@ -339,7 +357,8 @@ def build(event, model, snapshot_dir=None, asia_dir=None, cutoff=None, pages_for
         projections.append(link_athletes(out, ev, pages_for(key)))
     return {
         "rule": {"method": "field", "cutoff": str(cutoff),
-                 "backtest": backtest_summary(report_path, model, holdout_path, all_seasons_path)},
+                 "backtest": backtest_summary(report_path, model, holdout_path, all_seasons_path,
+                                              old_marks_path)},
         "builtAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "projections": projections,
         "notCalled": event.get("notCalled") or [],

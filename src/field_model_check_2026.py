@@ -137,7 +137,8 @@ def main(argv=None):
     models = {}
     for label, spec_name in (("today", "today"), ("candidate", name)):
         spec = fm.EXPERIMENTS[spec_name]
-        finals = fm.build_finals(fm.spec_scored(history, spec, history_races), spec["features"])
+        finals = fm.build_finals(fm.spec_scored(history, spec, history_races), spec["features"],
+                                 spec.get("fade"))
         models[label] = (spec_name, spec, fm.fit_spec(finals, spec))
     first, last = int(history["year"].min()), int(history["year"].max())
     print(f"=== Today's features and {name}, both fitted on the finals of {first}-{last} ===")
@@ -160,7 +161,8 @@ def main(argv=None):
               + ", ".join(f"{k} {v}" for k, v in scored["sb_source"].fillna("unscored").value_counts().items()))
         block = {"competition": competition, "cutoff": str(cutoff.date())}
         for label, (spec_name, spec, model) in models.items():
-            rows = score(model, fm.build_finals(fm.spec_scored(scored, spec, races), spec["features"]))
+            rows = score(model, fm.build_finals(fm.spec_scored(scored, spec, races), spec["features"],
+                                               spec.get("fade")))
             block[label] = {"experiment": spec_name, "totals": totals(rows), "finals": rows}
             both[label] += rows
         if key == "ultimate" and os.path.exists(FROZEN_CALL_PATH):

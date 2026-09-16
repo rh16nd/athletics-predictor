@@ -853,3 +853,31 @@ def test_the_summary_carries_what_the_nav_needs_and_not_the_field(monkeypatch):
     assert (out["theme"], out["navKey"]) == ("asianGames", "nav.asianGames")
     assert (out["city"], out["venue"], out["eventCount"]) == ("Nagoya", "Paloma Mizuho Stadium", 50)
     assert "field" not in out and "results" not in out
+
+
+def test_the_page_states_the_old_marks_test_that_chose_the_served_model(tmp_path):
+    """The served model is the setting the old-marks grid kept, so the page says
+    that test: how many ways of counting old marks were tried, what the kept one
+    named, and what the model it replaces named on the same finals."""
+    import json
+
+    path = tmp_path / "old_marks.json"
+    path.write_text(json.dumps({
+        "years": [2012, 2026], "chosen": "last35_per30_cap75",
+        "baseline": {"name": "v2_form_best_5", "medallistsPct": 66.0, "asiaPct": 65.2},
+        "settings": [{"name": "last35_per30_cap75", "finals": 1063, "medallistsPct": 65.3,
+                      "pointsPct": 62.8, "asiaFinals": 180, "asiaPct": 64.1, "asiaPointsPct": 65.6},
+                     {"name": "last20_per30_cap50", "finals": 1063, "medallistsPct": 64.9}],
+    }), encoding="utf-8")
+    summary = agp.backtest_summary(model={"experiment": "old_marks"}, old_marks_path=str(path))
+    assert summary["method"] == "oldMarks" and summary["versions"] == 2
+    assert (summary["model"], summary["previous"], summary["points"]) == (65.3, 66.0, 62.8)
+    assert (summary["asiaModel"], summary["asiaPoints"]) == (64.1, 65.6)
+    assert summary["years"] == [2012, 2026]
+
+    # A model from another family does not claim this test.
+    other = agp.backtest_summary(model={"experiment": "v2_form_best_5"}, old_marks_path=str(path),
+                                 report_path=str(tmp_path / "missing.json"),
+                                 holdout_path=str(tmp_path / "missing.json"),
+                                 all_seasons_path=str(tmp_path / "missing.json"))
+    assert other is None

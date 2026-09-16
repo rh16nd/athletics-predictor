@@ -139,6 +139,26 @@ def test_a_season_best_the_toplist_cannot_date_before_the_cut_off_comes_from_the
     assert not bool(out.loc["EARLY", "needs_profile"])
 
 
+def test_each_earlier_seasons_best_is_kept_by_how_long_ago_it_came():
+    """The old-marks rule fades a best by its age, so a finalist carries last
+    season's best, the best two seasons ago, and the best from three or more
+    seasons ago with its season. A mark from the championship's own season is in
+    none of them."""
+    h = history(("VETERAN", "USA", 2024, 1250, "2024-06-01"),
+                ("VETERAN", "USA", 2023, 1230, "2023-06-01"), ("VETERAN", "USA", 2023, 1210, "2023-07-01"),
+                ("VETERAN", "USA", 2022, 1330, "2022-06-01"), ("VETERAN", "USA", 2021, 1290, "2021-06-01"),
+                ("VETERAN", "USA", 2019, 1300, "2019-06-01"), ("VETERAN", "USA", 2018, 1300, "2018-06-01"),
+                ("ROOKIE", "USA", 2024, 1240, "2024-06-01"), ("ROOKIE", "USA", 2023, 1200, "2023-06-01"))
+    finals = pd.DataFrame({"discipline": "men_400m", "cutoff": pd.Timestamp("2024-08-10"), "year": 2024,
+                           "nationality": "USA", "athlete_name": ["VETERAN", "ROOKIE"], "athlete_id": [None, None]})
+    out = fd.attach_scores(finals, scores_for=lambda key: h).set_index("athlete_name")
+    # 2019 and 2018 share the best of the older seasons; the later one is kept.
+    assert out.loc["VETERAN", fd.EARLIER_BEST_COLUMNS].tolist() == [1330.0, 1230.0, 1330.0, 1300.0, 2019]
+    rookie = out.loc["ROOKIE", fd.EARLIER_BEST_COLUMNS]
+    assert (rookie["career_best"], rookie["prev_season_best"]) == (1200.0, 1200.0)
+    assert rookie[["two_seasons_ago_best", "older_seasons_best", "older_seasons_best_year"]].isna().all()
+
+
 def test_a_profile_mark_counts_only_before_the_cut_off_outdoors_legal_and_electronically_timed():
     events = [
         {"discipline": "800 Metres", "indoor": True, "results": [
@@ -602,6 +622,29 @@ def test_an_entrant_spelled_differently_on_the_list_is_found_by_their_world_athl
     without = fm.serving_rows("women_5000m", [{"name": "Entry NAME", "nat": "KAZ"}], str(season),
                               "2026-09-23", 2026, scores_for=nothing, extra=[(str(last), "asia")])
     assert without.empty
+
+
+def test_an_entrant_carries_the_same_earlier_bests_a_past_final_would(tmp_path):
+    """Training and serving must read old marks alike, or the rule that fades
+    them would mean one thing in the backtest and another on the call: the same
+    history gives an entrant the bests attach_scores gives a finalist."""
+    season = tmp_path / "men_400m_2026.csv"
+    season.write_text(
+        "Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,ProfileURL\n"
+        "1,44.00,,Record BREAKER,01 JAN 2002,BOT,1,,Gaborone,01 JUN 2026,1250,men_400m,2026,u1\n",
+        encoding="utf-8")
+    h = history(("RECORDBREAKER", "BOT", 2025, 1200, "2025-06-01"),
+                ("RECORDBREAKER", "BOT", 2024, 1330, "2024-06-01"),
+                ("RECORDBREAKER", "BOT", 2021, 1280, "2021-06-01"))
+    served = fm.serving_rows("men_400m", [{"name": "Record BREAKER", "nat": "BOT"}], str(season),
+                             "2026-09-23", 2026, scores_for=lambda key: h).set_index("athlete_name")
+    finals = pd.DataFrame({"discipline": "men_400m", "cutoff": pd.Timestamp("2026-09-23"), "year": 2026,
+                           "nationality": "BOT", "athlete_name": ["Record BREAKER"], "athlete_id": [None]})
+    scored = fd.attach_scores(finals, scores_for=lambda key: h).set_index("athlete_name")
+    assert list(fd.EARLIER_BEST_COLUMNS) == [c for c in fm.SERVING_COLUMNS if c in fd.EARLIER_BEST_COLUMNS]
+    expected = [1330.0, 1200.0, 1330.0, 1280.0, 2021]
+    assert served.loc["Record BREAKER", fd.EARLIER_BEST_COLUMNS].tolist() == expected
+    assert scored.loc["Record BREAKER", fd.EARLIER_BEST_COLUMNS].tolist() == expected
 
 
 def test_the_scored_seasons_match_the_existing_model():
