@@ -20,7 +20,9 @@ All seven steps are done. What each one produced:
 
 Checked: 698 backend tests, `npx tsc --noEmit`, eslint (no new problems), `npm run build`, `scripts/smoke-routes.py` 20 of 20 pages in EN and FR, and the browser at 1280px and 360px in both languages, where the call table, the athlete page line, the method panel and the two reworded subtitles all read correctly and nothing scrolls sideways.
 
-Not done, on purpose: nothing is pushed, `CURRENT` is still `ultimate-2026`, and `build_static_api.py` has not been run, so the static site still carries the old call. Those wait on the user's review of `/championship`, then the launch run order below.
+**Pushed on 2026-09-16**, at the user's word ("just retrain the model now and just push everything"): backend `f2d4b765`, frontend `f30bd09`. `field_data.py --report` was re-run first with the morning's refreshed toplists and moved no row of `finals.csv` at all, so the served model was already fitted on exactly that data and was not refitted. `build_static_api.py` was run before the push, so the published numbers come from the model the pages now describe: the live hammer top rating reads 75.2%, the old-marks model's own. `data/countries.json` was rebuilt for the championship that is current rather than the Asian Games build that was in the tree.
+
+Still not done, and still waiting on the user: `CURRENT` is `ultimate-2026`, so the Asian Games call is not published. The flip needs the injury check and the re-scrape in the launch run order below, and the user has not reviewed `/championship` yet.
 
 After the Games, from 30 September: Phase B of `C:\Users\rayen\.claude\plans\do-you-agree-that-vast-moore.md`, with whichever version is then served. One model for the whole site replaces the Diamond League model's numbers on Track and Field, the athlete page figure, dashboard favourites and the landing's hit rate, and How it works explains that one model in plain words. Phase A of that plan (the three-way test) is done.
 
@@ -90,7 +92,7 @@ After the Games, from 30 September: Phase B of `C:\Users\rayen\.claude\plans\do-
 _This section is the map. The section below it records the evening's work in detail; the older sections follow, newest first._
 
 **What is live and what is not**
-- The site is at `https://www.podiumcall.cc` (Vercel), the API at `https://podiumcall.onrender.com`. Live is still the Ultimate-era build plus the sitemap and `robots.txt` (frontend `deab918`).
+- The site is at `https://www.podiumcall.cc` (Vercel), the API at `https://podiumcall.onrender.com`. Live since 2026-09-16 is the old-marks model, with the static snapshot rebuilt from it: backend `f2d4b765`, frontend `f30bd09`. The championship on the site is still the Ultimate, which is over.
 - Committed locally, not pushed:
   - Backend: every commit from `91d2c275` (2026-09-14) on. The evening added `052142b4`, `672f2dc4`, `d0de0876`, `4410ad30`, `4892ca98`, `e8e72268`, `0a56e83a`, `038a03fb`, and the data commit made with this note.
   - Frontend: `1a39e09` to `10da90a`. The evening added `b56d32c`, `feb227f`, `f4be8ed` and `10da90a`. Local `main` is still 1 commit behind `origin/main` (`deab918`): merge it before pushing, since a rebase would change the hashes this file cites.
