@@ -10,7 +10,7 @@
  "timezone": "Asia/Tokyo",
  "eventCount": 50,
  "entriesSource": "https://results.asiangames2026.org",
- "entriesFetchedAt": "2026-09-14T15:47:07Z",
+ "entriesFetchedAt": "2026-09-16T17:48:16Z",
  "entrants": 774,
  "federations": 41,
  "federationsWithoutIds": [],
@@ -67,7 +67,7 @@
      "waId": 14913278,
      "mark": "10.34",
      "score": 1092,
-     "asiaRank": 150,
+     "asiaRank": 153,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14913278",
      "unranked": null
@@ -103,7 +103,7 @@
      "waId": 14886782,
      "mark": "10.39",
      "score": 1076,
-     "asiaRank": 211,
+     "asiaRank": 213,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886782",
      "unranked": null
@@ -115,7 +115,7 @@
      "waId": 15041239,
      "mark": "10.45",
      "score": 1057,
-     "asiaRank": 286,
+     "asiaRank": 289,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/king-wai-yip-15041239",
      "unranked": null
@@ -247,7 +247,7 @@
      "waId": 14752176,
      "mark": "10.40",
      "score": 1072,
-     "asiaRank": 223,
+     "asiaRank": 225,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752176",
      "unranked": null
@@ -331,7 +331,7 @@
      "waId": 15191876,
      "mark": "10.44",
      "score": 1059,
-     "asiaRank": 264,
+     "asiaRank": 267,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/malaysia/muhammad-umaira-15191876",
      "unranked": null
@@ -403,7 +403,7 @@
      "waId": 14549286,
      "mark": "10.44",
      "score": 1059,
-     "asiaRank": 264,
+     "asiaRank": 267,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14549286",
      "unranked": null
@@ -427,7 +427,7 @@
      "waId": 14791539,
      "mark": "10.44",
      "score": 1059,
-     "asiaRank": 264,
+     "asiaRank": 267,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14791539",
      "unranked": null
@@ -463,7 +463,7 @@
      "waId": 14840507,
      "mark": "10.38",
      "score": 1079,
-     "asiaRank": 195,
+     "asiaRank": 197,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840507",
      "unranked": null
@@ -487,7 +487,7 @@
      "waId": 15089189,
      "mark": "10.32",
      "score": 1099,
-     "asiaRank": 133,
+     "asiaRank": 134,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/thailand/chutithat-pruksorranan-15089189",
      "unranked": null
@@ -517,7 +517,7 @@
      "unranked": null
     },
     {
-     "name": "Manuel BELO AMARAL ATAIDE",
+     "name": "Manuel ATAIDE",
      "entryName": "BELO AMARAL ATAIDE Manuel",
      "nat": "TLS",
      "waId": 14850871,
@@ -571,7 +571,7 @@
      "waId": 15020238,
      "mark": "10.42",
      "score": 1066,
-     "asiaRank": 240,
+     "asiaRank": 242,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/sulton-gafurjonov-15020238",
      "unranked": null
@@ -658,7 +658,7 @@
      "waId": 15030340,
      "mark": "20.84",
      "score": 1103,
-     "asiaRank": 75,
+     "asiaRank": 76,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15030340",
      "unranked": null
@@ -670,7 +670,7 @@
      "waId": 15030343,
      "mark": "21.15",
      "score": 1046,
-     "asiaRank": 212,
+     "asiaRank": 214,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/bahrain/ali-haji-15030343",
      "unranked": null
@@ -706,7 +706,7 @@
      "waId": 15063841,
      "mark": "20.86",
      "score": 1088,
-     "asiaRank": 81,
+     "asiaRank": 82,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/magnus-johannsson-15063841",
      "unranked": null
@@ -718,7 +718,7 @@
      "waId": 15041239,
      "mark": "20.66",
      "score": 1118,
-     "asiaRank": 33,
+     "asiaRank": 34,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/king-wai-yip-15041239",
      "unranked": null
@@ -742,7 +742,7 @@
      "waId": 14881903,
      "mark": "20.97",
      "score": 1078,
-     "asiaRank": 119,
+     "asiaRank": 120,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14881903",
      "unranked": null
@@ -754,7 +754,7 @@
      "waId": 14993176,
      "mark": "21.03",
      "score": 1063,
-     "asiaRank": 143,
+     "asiaRank": 144,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14993176",
      "unranked": null
@@ -814,13 +814,13 @@
      "waId": 15017843,
      "mark": "20.77",
      "score": 1102,
-     "asiaRank": 53,
+     "asiaRank": 54,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/saudi-arabia/abdulaziz-abdui-atafi-15017843",
      "unranked": null
     },
     {
-     "name": "Abdullah Abkar M MOHAMMED",
+     "name": "Abdullah Abkar MOHAMMED",
      "entryName": "MOHAMMED Abdullah Abkar M",
      "nat": "KSA",
      "waId": 14752176,
@@ -832,7 +832,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Sorsy PHOMPHAKDI",
+     "name": "Sorsy PHOMPAKDI",
      "entryName": "PHOMPHAKDI Sorsy",
      "nat": "LAO",
      "waId": 14972201,
@@ -850,7 +850,7 @@
      "waId": 14603447,
      "mark": "21.17",
      "score": 1046,
-     "asiaRank": 230,
+     "asiaRank": 232,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14603447",
      "unranked": null
@@ -862,7 +862,7 @@
      "waId": 15152686,
      "mark": "21.14",
      "score": 1047,
-     "asiaRank": 205,
+     "asiaRank": 207,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/macao/lok-io-leong-15152686",
      "unranked": null
@@ -886,7 +886,7 @@
      "waId": 15115798,
      "mark": "21.27",
      "score": 1028,
-     "asiaRank": 285,
+     "asiaRank": 288,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/malaysia/danish-iftikhar-muhammad-roslee-15115798",
      "unranked": null
@@ -934,7 +934,7 @@
      "waId": 15229516,
      "mark": "20.70",
      "score": 1112,
-     "asiaRank": 41,
+     "asiaRank": 42,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/oman/malham-al-balushi-15229516",
      "unranked": null
@@ -958,7 +958,7 @@
      "waId": 14952599,
      "mark": "20.97",
      "score": 1072,
-     "asiaRank": 119,
+     "asiaRank": 120,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/philippines/neil-michael-catral-14952599",
      "unranked": null
@@ -988,7 +988,7 @@
      "unranked": "notFound"
     },
     {
-     "name": "Salah YUNIS",
+     "name": "Salah Nur Ismail YUNIS",
      "entryName": "YUNIS Salah",
      "nat": "QAT",
      "waId": 15135764,
@@ -1006,7 +1006,7 @@
      "waId": 14840444,
      "mark": "21.04",
      "score": 1062,
-     "asiaRank": 152,
+     "asiaRank": 153,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840444",
      "unranked": null
@@ -1018,7 +1018,7 @@
      "waId": 14840507,
      "mark": "20.97",
      "score": 1072,
-     "asiaRank": 119,
+     "asiaRank": 120,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840507",
      "unranked": null
@@ -1042,7 +1042,7 @@
      "waId": 14992968,
      "mark": "20.84",
      "score": 1091,
-     "asiaRank": 75,
+     "asiaRank": 76,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14992968",
      "unranked": null
@@ -1054,7 +1054,7 @@
      "waId": 14846091,
      "mark": "21.23",
      "score": 1034,
-     "asiaRank": 262,
+     "asiaRank": 264,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14846091",
      "unranked": null
@@ -1114,7 +1114,7 @@
      "waId": 15122281,
      "mark": "20.67",
      "score": 1117,
-     "asiaRank": 36,
+     "asiaRank": 37,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/united-arab-emirates/suleiman-abdulrahman-15122281",
      "unranked": null
@@ -1241,7 +1241,7 @@
      "waId": 15007062,
      "mark": "46.91",
      "score": 1051,
-     "asiaRank": 185,
+     "asiaRank": 187,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/chun-ho-chan-15007062",
      "unranked": null
@@ -1397,7 +1397,7 @@
      "waId": 15334886,
      "mark": "47.05",
      "score": 1042,
-     "asiaRank": 221,
+     "asiaRank": 223,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/philippines/gabriel-jean-borado-15334886",
      "unranked": null
@@ -1409,7 +1409,7 @@
      "waId": 14751948,
      "mark": "47.29",
      "score": 1026,
-     "asiaRank": 270,
+     "asiaRank": 271,
      "matchedBy": "nameParts",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751948",
      "unranked": null
@@ -1493,7 +1493,7 @@
      "waId": 15067762,
      "mark": "46.93",
      "score": 1050,
-     "asiaRank": 191,
+     "asiaRank": 193,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/thailand/sarawut-nuansi-15067762",
      "unranked": null
@@ -1529,13 +1529,13 @@
      "waId": 15036505,
      "mark": "47.14",
      "score": 1036,
-     "asiaRank": 233,
+     "asiaRank": 235,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/abbosbek-toshtemirov-15036505",
      "unranked": null
     },
     {
-     "name": "Ngoc Phuc LE",
+     "name": "Phuc LE NGOC",
      "entryName": "LE Ngoc Phuc",
      "nat": "VIE",
      "waId": 14914488,
@@ -1624,7 +1624,7 @@
      "waId": 14843109,
      "mark": "1:50.20",
      "score": 1020,
-     "asiaRank": 145,
+     "asiaRank": 147,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843109",
      "unranked": null
@@ -1648,7 +1648,7 @@
      "waId": 14882465,
      "mark": "1:46.73",
      "score": 1121,
-     "asiaRank": 19,
+     "asiaRank": 20,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14882465",
      "unranked": null
@@ -1720,7 +1720,7 @@
      "waId": 14849638,
      "mark": "1:49.49",
      "score": 1041,
-     "asiaRank": 91,
+     "asiaRank": 96,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14849638",
      "unranked": null
@@ -1744,7 +1744,7 @@
      "waId": 15024852,
      "mark": "1:49.40",
      "score": 1043,
-     "asiaRank": 88,
+     "asiaRank": 93,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/malaysia/umar-osman-15024852",
      "unranked": null
@@ -1756,13 +1756,13 @@
      "waId": 14843141,
      "mark": "1:50.92",
      "score": 1000,
-     "asiaRank": 186,
+     "asiaRank": 190,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843141",
      "unranked": null
     },
     {
-     "name": "Myagmarsuren DAVAANYAM",
+     "name": "Dawaanyam MYAGMARSUREN",
      "entryName": "DAVAANYAM Myagmarsuren",
      "nat": "MGL",
      "waId": 15058477,
@@ -1792,7 +1792,7 @@
      "waId": 14741155,
      "mark": "1:49.55",
      "score": 1039,
-     "asiaRank": 98,
+     "asiaRank": 103,
      "matchedBy": "nameParts",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14741155",
      "unranked": null
@@ -1870,7 +1870,7 @@
      "unranked": null
     },
     {
-     "name": "Manuel BELO AMARAL ATAIDE",
+     "name": "Manuel ATAIDE",
      "entryName": "BELO AMARAL ATAIDE Manuel",
      "nat": "TLS",
      "waId": 14850871,
@@ -1888,7 +1888,7 @@
      "waId": 15007051,
      "mark": "1:49.54",
      "score": 1039,
-     "asiaRank": 97,
+     "asiaRank": 102,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/jyun-hsiang-huang-15007051",
      "unranked": null
@@ -1941,7 +1941,7 @@
      "waId": 15271604,
      "mark": "3:42.52",
      "score": 1073,
-     "asiaRank": 54,
+     "asiaRank": 55,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/bahrain/abdisamad-hirsi-15271604",
      "unranked": null
@@ -1965,7 +1965,7 @@
      "waId": 14750659,
      "mark": "3:42.62",
      "score": 1072,
-     "asiaRank": 57,
+     "asiaRank": 58,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14750659",
      "unranked": null
@@ -2001,7 +2001,7 @@
      "waId": 15023839,
      "mark": "3:37.87",
      "score": 1135,
-     "asiaRank": 11,
+     "asiaRank": 12,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/india/gulveer-singh-15023839",
      "unranked": null
@@ -2025,7 +2025,7 @@
      "waId": 14993293,
      "mark": "3:46.83",
      "score": 1017,
-     "asiaRank": 146,
+     "asiaRank": 153,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/islamic-republic-of-iran/hossein-nouri-14993293",
      "unranked": null
@@ -2061,7 +2061,7 @@
      "waId": 14847131,
      "mark": "3:43.51",
      "score": 1060,
-     "asiaRank": 68,
+     "asiaRank": 72,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14847131",
      "unranked": null
@@ -2071,9 +2071,9 @@
      "entryName": "LEE Jaeung",
      "nat": "KOR",
      "waId": 14849638,
-     "mark": "3:39.48",
-     "score": 1113,
-     "asiaRank": 22,
+     "mark": "3:37.75",
+     "score": 1137,
+     "asiaRank": 9,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14849638",
      "unranked": null
@@ -2085,7 +2085,7 @@
      "waId": 14815791,
      "mark": "3:42.27",
      "score": 1076,
-     "asiaRank": 51,
+     "asiaRank": 52,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14815791",
      "unranked": null
@@ -2097,7 +2097,7 @@
      "waId": 14989221,
      "mark": "3:46.31",
      "score": 1023,
-     "asiaRank": 131,
+     "asiaRank": 137,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14989221",
      "unranked": null
@@ -2193,7 +2193,7 @@
      "waId": 15054600,
      "mark": "3:42.07",
      "score": 1079,
-     "asiaRank": 46,
+     "asiaRank": 47,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/chinese-taipei/tzu-chieh-chien-15054600",
      "unranked": null
@@ -2205,7 +2205,7 @@
      "waId": 15089309,
      "mark": "3:48.60",
      "score": 994,
-     "asiaRank": 203,
+     "asiaRank": 212,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/republic-of-yemen/abdullah-abdulkareem-al-haswali-15089309",
      "unranked": null
@@ -2284,7 +2284,7 @@
      "waId": 15022082,
      "mark": "13:31.85",
      "score": 1096,
-     "asiaRank": 43,
+     "asiaRank": 48,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15022082",
      "unranked": null
@@ -2308,7 +2308,7 @@
      "waId": 15074930,
      "mark": "13:35.58",
      "score": 1083,
-     "asiaRank": 63,
+     "asiaRank": 71,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/pr-of-china/wenjie-wang-15074930",
      "unranked": null
@@ -2332,7 +2332,7 @@
      "waId": 14598248,
      "mark": "13:33.95",
      "score": 1088,
-     "asiaRank": 51,
+     "asiaRank": 59,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14598248",
      "unranked": null
@@ -2404,13 +2404,13 @@
      "waId": 15041277,
      "mark": "13:57.75",
      "score": 1007,
-     "asiaRank": 265,
+     "asiaRank": 277,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/korea/jaewoo-park-15041277",
      "unranked": null
     },
     {
-     "name": "Ser-od BAT-OCHIR",
+     "name": "Ser-Od BAT-OCHIR",
      "entryName": "BAT-OCHIR Ser-od",
      "nat": "MGL",
      "waId": 14867157,
@@ -2422,7 +2422,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Bat-erdene GANSUKH",
+     "name": "Gansukh BAT-ERDENE",
      "entryName": "GANSUKH Bat-erdene",
      "nat": "MGL",
      "waId": 14894029,
@@ -2452,7 +2452,7 @@
      "waId": 14697159,
      "mark": "13:36.43",
      "score": 1080,
-     "asiaRank": 71,
+     "asiaRank": 80,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14697159",
      "unranked": null
@@ -2482,7 +2482,7 @@
      "unranked": "notFound"
     },
     {
-     "name": "Khala MAHAMAT",
+     "name": "Khala Ngare MAHAMAT",
      "entryName": "MAHAMAT Khala",
      "nat": "QAT",
      "waId": 15203982,
@@ -2494,7 +2494,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Mohamed TORECH",
+     "name": "Mohamed Wahid TORECH",
      "entryName": "TORECH Mohamed",
      "nat": "QAT",
      "waId": 15080066,
@@ -2576,7 +2576,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Albert KIPTOO",
+     "name": "Albert ROP",
      "entryName": "KIPTOO Albert",
      "nat": "BRN",
      "waId": 14479153,
@@ -2708,7 +2708,7 @@
      "unranked": null
     },
     {
-     "name": "Bat-erdene GANSUKH",
+     "name": "Gansukh BAT-ERDENE",
      "entryName": "GANSUKH Bat-erdene",
      "nat": "MGL",
      "waId": 14894029,
@@ -2720,7 +2720,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Myagmarsuren JAVAA",
+     "name": "Javaa MYAGMARSUREN",
      "entryName": "JAVAA Myagmarsuren",
      "nat": "MGL",
      "waId": 15183518,
@@ -2732,7 +2732,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Rajan ROKKYA",
+     "name": "Rajan ROKAYA",
      "entryName": "ROKKYA Rajan",
      "nat": "NEP",
      "waId": 14922600,
@@ -2756,7 +2756,7 @@
      "unranked": "notFound"
     },
     {
-     "name": "Youssouf DJIBRINE",
+     "name": "Youssouf Abdelaziz DJIBRINE",
      "entryName": "DJIBRINE Youssouf",
      "nat": "QAT",
      "waId": 15076371,
@@ -2870,7 +2870,7 @@
      "unranked": null
     },
     {
-     "name": "Musaab ALI",
+     "name": "Adam Ali MUSAB",
      "entryName": "ALI Musaab",
      "nat": "QAT",
      "waId": 14478763,
@@ -3025,7 +3025,7 @@
      "waId": 14738740,
      "mark": "13.94",
      "score": 1077,
-     "asiaRank": 81,
+     "asiaRank": 82,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14738740",
      "unranked": null
@@ -3180,7 +3180,7 @@
      "waId": 15007062,
      "mark": "50.73",
      "score": 1094,
-     "asiaRank": 86,
+     "asiaRank": 88,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/chun-ho-chan-15007062",
      "unranked": null
@@ -3204,7 +3204,7 @@
      "waId": 14881854,
      "mark": "49.00",
      "score": 1180,
-     "asiaRank": 12,
+     "asiaRank": 13,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14881854",
      "unranked": null
@@ -3216,7 +3216,7 @@
      "waId": 14675336,
      "mark": "49.06",
      "score": 1177,
-     "asiaRank": 15,
+     "asiaRank": 17,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14675336",
      "unranked": null
@@ -3252,7 +3252,7 @@
      "waId": 14646767,
      "mark": "50.90",
      "score": 1086,
-     "asiaRank": 99,
+     "asiaRank": 100,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646767",
      "unranked": null
@@ -3276,7 +3276,7 @@
      "waId": 15089301,
      "mark": "50.39",
      "score": 1111,
-     "asiaRank": 63,
+     "asiaRank": 65,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/saudi-arabia/naif-rashid-alsubaie-15089301",
      "unranked": null
@@ -3312,7 +3312,7 @@
      "waId": 15109959,
      "mark": "50.79",
      "score": 1091,
-     "asiaRank": 90,
+     "asiaRank": 91,
      "matchedBy": "nameParts",
      "profileUrl": "https://worldathletics.org/athletes/philippines/jazzpeer-arcenal-15109959",
      "unranked": null
@@ -3360,7 +3360,7 @@
      "waId": 15057792,
      "mark": "49.03",
      "score": 1179,
-     "asiaRank": 14,
+     "asiaRank": 15,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/ayomal-akalanka-kuda-liyanage-15057792",
      "unranked": null
@@ -3384,7 +3384,7 @@
      "waId": 14954179,
      "mark": "49.57",
      "score": 1151,
-     "asiaRank": 30,
+     "asiaRank": 31,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14954179",
      "unranked": null
@@ -3430,7 +3430,7 @@
      "waId": 15155463,
      "mark": "2.07",
      "score": 975,
-     "asiaRank": 157,
+     "asiaRank": 158,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/bahrain/ahmed-sabry-ahmed-15155463",
      "unranked": null
@@ -3556,7 +3556,7 @@
      "unranked": null
     },
     {
-     "name": "Aman EBIDO",
+     "name": "Aman Khalid EBIDO",
      "entryName": "EBIDO Aman",
      "nat": "QAT",
      "waId": 15236461,
@@ -3945,7 +3945,7 @@
      "waId": 15107854,
      "mark": "7.43",
      "score": 1014,
-     "asiaRank": 222,
+     "asiaRank": 223,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/philippines/kent-francis-jardin-15107854",
      "unranked": null
@@ -3963,7 +3963,7 @@
      "unranked": null
     },
     {
-     "name": "Ismail ABAKAR",
+     "name": "Ismail Doudai ABAKAR",
      "entryName": "ABAKAR Ismail",
      "nat": "QAT",
      "waId": 14973411,
@@ -4125,7 +4125,7 @@
      "waId": 14951738,
      "mark": "16.27",
      "score": 1087,
-     "asiaRank": 25,
+     "asiaRank": 26,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/korea/donghyuk-kim-14951738",
      "unranked": null
@@ -4149,7 +4149,7 @@
      "waId": 14714404,
      "mark": "15.15",
      "score": 969,
-     "asiaRank": 205,
+     "asiaRank": 207,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14714404",
      "unranked": null
@@ -4161,7 +4161,7 @@
      "waId": 14215966,
      "mark": "15.31",
      "score": 991,
-     "asiaRank": 161,
+     "asiaRank": 163,
      "matchedBy": "nameParts",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14215966",
      "unranked": null
@@ -4179,7 +4179,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Abubaker ABDALLA",
+     "name": "Abubaker Haydar ABDALLA",
      "entryName": "ABDALLA Abubaker",
      "nat": "QAT",
      "waId": 14581680,
@@ -4191,7 +4191,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Mahamat ABDELSADICK",
+     "name": "Abdelsadick MAHAMAT",
      "entryName": "ABDELSADICK Mahamat",
      "nat": "QAT",
      "waId": 15291992,
@@ -4209,7 +4209,7 @@
      "waId": 14970362,
      "mark": "15.89",
      "score": 1049,
-     "asiaRank": 59,
+     "asiaRank": 60,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/singapore/gabriel-lee-14970362",
      "unranked": null
@@ -4221,7 +4221,7 @@
      "waId": 14838032,
      "mark": "16.27",
      "score": 1087,
-     "asiaRank": 25,
+     "asiaRank": 26,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14838032",
      "unranked": null
@@ -4245,7 +4245,7 @@
      "waId": 15041250,
      "mark": "15.97",
      "score": 1057,
-     "asiaRank": 49,
+     "asiaRank": 50,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/vietnam/manh-hung-ho-trong-15041250",
      "unranked": null
@@ -4282,7 +4282,7 @@
      "unranked": null
     },
     {
-     "name": "Samedy SIM",
+     "name": "Sim SAMEDY",
      "entryName": "SIM Samedy",
      "nat": "CAM",
      "waId": 15034068,
@@ -4492,7 +4492,7 @@
      "unranked": null
     },
     {
-     "name": "Mustafa Kadhim Dagher ALSAAMAH",
+     "name": "Mustafa AL SAAMAH",
      "entryName": "ALSAAMAH Mustafa Kadhim Dagher",
      "nat": "IRQ",
      "waId": 14498470,
@@ -4720,7 +4720,7 @@
      "waId": 14840456,
      "mark": "65.24",
      "score": 974,
-     "asiaRank": 41,
+     "asiaRank": 43,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840456",
      "unranked": null
@@ -4756,7 +4756,7 @@
      "waId": 15102628,
      "mark": "64.12",
      "score": 957,
-     "asiaRank": 56,
+     "asiaRank": 57,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/qatar/ibrahim-abdelrahman-15102628",
      "unranked": null
@@ -4768,7 +4768,7 @@
      "waId": 14621659,
      "mark": "63.02",
      "score": 940,
-     "asiaRank": 66,
+     "asiaRank": 67,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14621659",
      "unranked": null
@@ -4905,7 +4905,7 @@
      "unranked": null
     },
     {
-     "name": "Tae-poong NAM",
+     "name": "Taepoong NAM",
      "entryName": "NAM Taepoong",
      "nat": "KOR",
      "waId": 14910385,
@@ -4965,7 +4965,7 @@
      "unranked": "notFound"
     },
     {
-     "name": "Hamza SOUISSI",
+     "name": "Hamza SOUSSI",
      "entryName": "SOUISSI Hamza",
      "nat": "QAT",
      "waId": 14884239,
@@ -5098,7 +5098,7 @@
      "waId": 14705631,
      "mark": "11.65",
      "score": 1062,
-     "asiaRank": 64,
+     "asiaRank": 65,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14705631",
      "unranked": null
@@ -5110,7 +5110,7 @@
      "waId": 15079891,
      "mark": "11.79",
      "score": 1034,
-     "asiaRank": 126,
+     "asiaRank": 128,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/pui-yi-yu-15079891",
      "unranked": null
@@ -5146,7 +5146,7 @@
      "waId": 14843862,
      "mark": "11.76",
      "score": 1040,
-     "asiaRank": 107,
+     "asiaRank": 110,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14843862",
      "unranked": null
@@ -5158,7 +5158,7 @@
      "waId": 14852430,
      "mark": "11.95",
      "score": 1001,
-     "asiaRank": 246,
+     "asiaRank": 248,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14852430",
      "unranked": null
@@ -5194,7 +5194,7 @@
      "waId": 14597370,
      "mark": "11.89",
      "score": 1013,
-     "asiaRank": 191,
+     "asiaRank": 196,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14597370",
      "unranked": null
@@ -5206,7 +5206,7 @@
      "waId": 14428539,
      "mark": "11.80",
      "score": 1032,
-     "asiaRank": 131,
+     "asiaRank": 133,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14428539",
      "unranked": null
@@ -5218,7 +5218,7 @@
      "waId": 14651402,
      "mark": "11.74",
      "score": 1044,
-     "asiaRank": 101,
+     "asiaRank": 103,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14651402",
      "unranked": null
@@ -5230,7 +5230,7 @@
      "waId": 14916006,
      "mark": "11.71",
      "score": 1050,
-     "asiaRank": 90,
+     "asiaRank": 91,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14916006",
      "unranked": null
@@ -5242,7 +5242,7 @@
      "waId": 15150412,
      "mark": "11.71",
      "score": 1050,
-     "asiaRank": 90,
+     "asiaRank": 91,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/malaysia/izzatul-musfirah-ahmad-kamal-azira-15150412",
      "unranked": null
@@ -5266,7 +5266,7 @@
      "waId": 14594402,
      "mark": "11.95",
      "score": 1001,
-     "asiaRank": 246,
+     "asiaRank": 248,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14594402",
      "unranked": null
@@ -5302,7 +5302,7 @@
      "waId": 14765816,
      "mark": "11.49",
      "score": 1095,
-     "asiaRank": 30,
+     "asiaRank": 31,
      "matchedBy": "nameParts",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14765816",
      "unranked": null
@@ -5326,7 +5326,7 @@
      "waId": 15210622,
      "mark": "11.75",
      "score": 1042,
-     "asiaRank": 105,
+     "asiaRank": 108,
      "matchedBy": "nameParts",
      "profileUrl": "https://worldathletics.org/athletes/qatar/awatif-sabah-abdulrahman-15210622",
      "unranked": null
@@ -5338,7 +5338,7 @@
      "waId": 15210621,
      "mark": "11.47",
      "score": 1099,
-     "asiaRank": 24,
+     "asiaRank": 25,
      "matchedBy": "nameParts",
      "profileUrl": "https://worldathletics.org/athletes/qatar/dana-noor-salem-15210621",
      "unranked": null
@@ -5362,7 +5362,7 @@
      "waId": 14845615,
      "mark": "11.68",
      "score": 1056,
-     "asiaRank": 74,
+     "asiaRank": 75,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14845615",
      "unranked": null
@@ -5374,7 +5374,7 @@
      "waId": 15067765,
      "mark": "11.49",
      "score": 1095,
-     "asiaRank": 30,
+     "asiaRank": 31,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/thailand/jirapat-khanonta-15067765",
      "unranked": null
@@ -5386,7 +5386,7 @@
      "waId": 14840478,
      "mark": "11.43",
      "score": 1108,
-     "asiaRank": 19,
+     "asiaRank": 20,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14840478",
      "unranked": null
@@ -5398,7 +5398,7 @@
      "waId": 14302761,
      "mark": "11.97",
      "score": 997,
-     "asiaRank": 259,
+     "asiaRank": 261,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14302761",
      "unranked": null
@@ -5410,7 +5410,7 @@
      "waId": 14747609,
      "mark": "11.63",
      "score": 1066,
-     "asiaRank": 60,
+     "asiaRank": 61,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14747609",
      "unranked": null
@@ -5422,7 +5422,7 @@
      "waId": 14972673,
      "mark": "11.76",
      "score": 1052,
-     "asiaRank": 107,
+     "asiaRank": 110,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/laylo-allaberganova-14972673",
      "unranked": null
@@ -5565,7 +5565,7 @@
      "unranked": null
     },
     {
-     "name": "Zahra ZAREI MANOUJAN",
+     "name": "Zahra ZAREI",
      "entryName": "ZAREI MANOUJAN Zahra",
      "nat": "IRI",
      "waId": 15110913,
@@ -5739,7 +5739,7 @@
      "waId": 15067765,
      "mark": "23.60",
      "score": 1075,
-     "asiaRank": 28,
+     "asiaRank": 29,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/thailand/jirapat-khanonta-15067765",
      "unranked": null
@@ -5823,7 +5823,7 @@
      "waId": 15110503,
      "mark": "23.50",
      "score": 1085,
-     "asiaRank": 19,
+     "asiaRank": 20,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-cam-tu-le-15110503",
      "unranked": null
@@ -5848,7 +5848,6 @@
     "Zion CORRALES-NELSON",
     "Awatif Sabah ABDULRAHMAN",
     "Dana SALEM",
-    "Veronica Shanti PEREIRA",
     "Elizabeth-Ann Shee Ru TAN",
     "Jirapat KHANONTA",
     "Sukanda PETRAKSA",
@@ -5896,7 +5895,7 @@
      "waId": 15079890,
      "mark": "55.32",
      "score": 1001,
-     "asiaRank": 159,
+     "asiaRank": 160,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/chi-ku-chow-15079890",
      "unranked": null
@@ -6070,7 +6069,7 @@
      "unranked": "notFound"
     },
     {
-     "name": "Shahd MOHAMED",
+     "name": "Shahd ASHRAF",
      "entryName": "MOHAMED Shahd",
      "nat": "QAT",
      "waId": 14817265,
@@ -6130,7 +6129,7 @@
      "unranked": null
     },
     {
-     "name": "Thi Minh Hanh HOANG",
+     "name": "Hoang Thi MINH HANH",
      "entryName": "HOANG Thi Minh Hanh",
      "nat": "VIE",
      "waId": 14751077,
@@ -6199,7 +6198,7 @@
      "waId": 15036424,
      "mark": "2:09.18",
      "score": 1004,
-     "asiaRank": 90,
+     "asiaRank": 93,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15036424",
      "unranked": null
@@ -6235,7 +6234,7 @@
      "waId": 14740938,
      "mark": "2:04.17",
      "score": 1089,
-     "asiaRank": 11,
+     "asiaRank": 12,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14740938",
      "unranked": null
@@ -6247,7 +6246,7 @@
      "waId": 14818407,
      "mark": "2:02.42",
      "score": 1119,
-     "asiaRank": 6,
+     "asiaRank": 7,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14818407",
      "unranked": null
@@ -6283,7 +6282,7 @@
      "waId": 15038098,
      "mark": "2:07.26",
      "score": 1036,
-     "asiaRank": 50,
+     "asiaRank": 51,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/kazakhstan/ayana-bolatbekkyzy-15038098",
      "unranked": null
@@ -6295,7 +6294,7 @@
      "waId": 15252474,
      "mark": "2:11.34",
      "score": 968,
-     "asiaRank": 153,
+     "asiaRank": 156,
      "matchedBy": "nameParts",
      "profileUrl": "https://worldathletics.org/athletes/kirghizistan/anna-korobovtseva-15252474",
      "unranked": null
@@ -6307,7 +6306,7 @@
      "waId": 14759683,
      "mark": "2:10.43",
      "score": 983,
-     "asiaRank": 122,
+     "asiaRank": 127,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759683",
      "unranked": null
@@ -6343,7 +6342,7 @@
      "waId": 15225361,
      "mark": "2:06.24",
      "score": 1053,
-     "asiaRank": 36,
+     "asiaRank": 37,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/philippines/naomi-marjorie-cesar-15225361",
      "unranked": null
@@ -6367,7 +6366,7 @@
      "waId": 15057795,
      "mark": "2:06.25",
      "score": 1053,
-     "asiaRank": 37,
+     "asiaRank": 38,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/sri-lanka/ktakshima-nuhansa-15057795",
      "unranked": null
@@ -6379,7 +6378,7 @@
      "waId": 14984624,
      "mark": "2:07.27",
      "score": 1036,
-     "asiaRank": 51,
+     "asiaRank": 52,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/sabokhat-samiyonova-14984624",
      "unranked": null
@@ -6442,7 +6441,7 @@
      "waId": 14885770,
      "mark": "4:20.62",
      "score": 1045,
-     "asiaRank": 54,
+     "asiaRank": 58,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14885770",
      "unranked": null
@@ -6454,7 +6453,7 @@
      "waId": 14497992,
      "mark": "4:20.45",
      "score": 1047,
-     "asiaRank": 51,
+     "asiaRank": 56,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14497992",
      "unranked": null
@@ -6502,7 +6501,7 @@
      "waId": 15038098,
      "mark": "4:18.36",
      "score": 1062,
-     "asiaRank": 35,
+     "asiaRank": 38,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/kazakhstan/ayana-bolatbekkyzy-15038098",
      "unranked": null
@@ -6514,7 +6513,7 @@
      "waId": 14532349,
      "mark": "4:19.65",
      "score": 1053,
-     "asiaRank": 45,
+     "asiaRank": 50,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532349",
      "unranked": null
@@ -6526,7 +6525,7 @@
      "waId": 14759683,
      "mark": "4:13.87",
      "score": 1097,
-     "asiaRank": 10,
+     "asiaRank": 14,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14759683",
      "unranked": null
@@ -6574,7 +6573,7 @@
      "waId": 14984624,
      "mark": "4:23.67",
      "score": 1023,
-     "asiaRank": 92,
+     "asiaRank": 101,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/uzbekistan/sabokhat-samiyonova-14984624",
      "unranked": null
@@ -6588,7 +6587,6 @@
     "Parul CHAUDHARY",
     ". POOJA",
     "Mizuki MICHISHITA",
-    "Nozomi TANAKA",
     "Ayana BOLATBEKKYZY",
     "Yujin KIM",
     "Nayeon PARK",
@@ -6633,7 +6631,7 @@
      "waId": 14497992,
      "mark": "15:04.26",
      "score": 1155,
-     "asiaRank": 5,
+     "asiaRank": 6,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14497992",
      "unranked": null
@@ -6687,7 +6685,7 @@
      "unranked": null
     },
     {
-     "name": "Norah Jeruto TANUI",
+     "name": "Norah JERUTO",
      "entryName": "TANUI Norah Jeruto",
      "nat": "KAZ",
      "waId": 14479154,
@@ -6717,7 +6715,7 @@
      "waId": 14532349,
      "mark": "15:46.78",
      "score": 1074,
-     "asiaRank": 53,
+     "asiaRank": 58,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532349",
      "unranked": null
@@ -6883,7 +6881,7 @@
      "unranked": null
     },
     {
-     "name": "Nomin-erdene BAYARTOGTOKH",
+     "name": "Nomin-Erdene BAYARTOGTOKH",
      "entryName": "BAYARTOGTOKH Nomin-erdene",
      "nat": "MGL",
      "waId": 15144566,
@@ -6895,7 +6893,7 @@
      "unranked": "noMark"
     },
     {
-     "name": "Santoshi SHRESTHA",
+     "name": "Shantoshi SHRESTHA",
      "entryName": "SHRESTHA Santoshi",
      "nat": "NEP",
      "waId": 14896381,
@@ -6990,7 +6988,7 @@
      "waId": 14429103,
      "mark": "10:28.09",
      "score": 1028,
-     "asiaRank": 48,
+     "asiaRank": 50,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14429103",
      "unranked": null
@@ -7074,7 +7072,7 @@
      "waId": 14532353,
      "mark": "10:17.30",
      "score": 1054,
-     "asiaRank": 34,
+     "asiaRank": 36,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14532353",
      "unranked": null
@@ -7161,7 +7159,7 @@
      "waId": 14524054,
      "mark": "14.03",
      "score": 1015,
-     "asiaRank": 191,
+     "asiaRank": 192,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14524054",
      "unranked": null
@@ -7328,7 +7326,7 @@
      "waId": 14886704,
      "mark": "1:00.75",
      "score": 1000,
-     "asiaRank": 108,
+     "asiaRank": 109,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14886704",
      "unranked": null
@@ -7340,7 +7338,7 @@
      "waId": 14436789,
      "mark": "56.54",
      "score": 1125,
-     "asiaRank": 9,
+     "asiaRank": 10,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14436789",
      "unranked": null
@@ -7374,7 +7372,7 @@
      "entryName": "UMEHARA Satsuki",
      "nat": "JPN",
      "waId": 14444482,
-     "mark": "56.22",
+     "mark": "56.21",
      "score": 1135,
      "asiaRank": 7,
      "matchedBy": "waId",
@@ -7448,7 +7446,7 @@
      "waId": 15042646,
      "mark": "1:00.31",
      "score": 1012,
-     "asiaRank": 84,
+     "asiaRank": 85,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-tuyet-mai-le-15042646",
      "unranked": null
@@ -7601,7 +7599,7 @@
      "waId": 14884243,
      "mark": "1.74",
      "score": 965,
-     "asiaRank": 84,
+     "asiaRank": 85,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884243",
      "unranked": null
@@ -7649,7 +7647,7 @@
      "waId": 15044838,
      "mark": "1.75",
      "score": 974,
-     "asiaRank": 60,
+     "asiaRank": 62,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/vietnam/thi-thao-duong-15044838",
      "unranked": null
@@ -7728,8 +7726,8 @@
      "entryName": "MOROTA Misaki",
      "nat": "JPN",
      "waId": 14646808,
-     "mark": "4.50",
-     "score": 1114,
+     "mark": "4.51",
+     "score": 1117,
      "asiaRank": 2,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14646808",
@@ -7858,7 +7856,7 @@
      "waId": 15038923,
      "mark": "6.09",
      "score": 1018,
-     "asiaRank": 65,
+     "asiaRank": 66,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/hong-kong-china/wai-yin-jia-15038923",
      "unranked": null
@@ -7954,7 +7952,7 @@
      "waId": 14927297,
      "mark": "6.11",
      "score": 1023,
-     "asiaRank": 55,
+     "asiaRank": 56,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14927297",
      "unranked": null
@@ -7990,7 +7988,7 @@
      "waId": 14751082,
      "mark": "6.08",
      "score": 1016,
-     "asiaRank": 68,
+     "asiaRank": 69,
      "matchedBy": "waId",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751082",
      "unranked": null
@@ -8026,7 +8024,7 @@
      "waId": 15049249,
      "mark": "6.10",
      "score": 1027,
-     "asiaRank": 61,
+     "asiaRank": 62,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/vietnam/ha-thi-thuy-hang-15049249",
      "unranked": null
@@ -8101,7 +8099,7 @@
      "waId": 14282715,
      "mark": "12.94",
      "score": 1009,
-     "asiaRank": 59,
+     "asiaRank": 60,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14282715",
      "unranked": null
@@ -8173,7 +8171,7 @@
      "waId": 14916030,
      "mark": "12.57",
      "score": 972,
-     "asiaRank": 105,
+     "asiaRank": 107,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14916030",
      "unranked": null
@@ -8245,7 +8243,7 @@
      "waId": 14794031,
      "mark": "13.55",
      "score": 1071,
-     "asiaRank": 15,
+     "asiaRank": 16,
      "matchedBy": "name",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14794031",
      "unranked": null
@@ -8331,7 +8329,7 @@
      "unranked": null
     },
     {
-     "name": "Yusun JEONG",
+     "name": "Yu sun JEONG",
      "entryName": "JEONG Yu Sun",
      "nat": "KOR",
      "waId": 14594949,
@@ -8743,7 +8741,7 @@
      "waId": 14747646,
      "mark": "55.89",
      "score": 1002,
-     "asiaRank": 28,
+     "asiaRank": 29,
      "matchedBy": "search",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14747646",
      "unranked": null

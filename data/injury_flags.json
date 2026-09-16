@@ -1,14 +1,15 @@
 {
-  "checked_at": "2026-09-16T03:08:56.566841+00:00",
+  "checked_at": "2026-09-16T17:41:48.549220+00:00",
   "sources_ok": [
     "letsrun",
+    "athleticsweekly",
     "worldathletics",
     "googlenews"
   ],
-  "days_to_final": -5,
+  "days_to_final": 7,
   "athletes": {
     "Ferdinand Omanyala": {
-      "status": "remove",
+      "status": "watch",
       "disciplines": [
         "men_100m"
       ],
@@ -25,6 +26,28 @@
         }
       ]
     },
+    "Emmanuel Wanyonyi": {
+      "status": "watch",
+      "disciplines": [
+        "men_800m"
+      ],
+      "matches": [
+        {
+          "headline": "Emmanuel Wanyonyi Reveals Back Injury Nearly Forced Him Out of Ultimate Championships 800m Final",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOcW1HaFZLLVg0c252bkRfaVBHT3AzZWw4dzVFY0pFelNhNm1obmItUmJnQXJILXhBNWVBN0RNUkxaZzJmTGEwS2JzM09zZG5zOE9vSVpiRFh1Z01RMkpoN0hZNXIzc3pDM016OXFNdG5jdnAzVzdSd0x2cGZHeGg1NGVNOXJwRldDY3d1cFUyN0lydE1LOE5DemxzTldIeXFlMm9nUE9VTGZlbEZDckVReHhmZkcyZjhuMEZ3NG1ZWi1FRjNYM1dFWXEtNFZ1M0pxdGt6amU1ZXZHTWZhanJ6anlBUG1IM0E?oc=5",
+          "source": "Pulse Sports Kenya",
+          "keywords": [
+            "injury",
+            "back injury"
+          ],
+          "published": "2026-09-14",
+          "estimated_recovery_weeks": [
+            2,
+            8
+          ]
+        }
+      ]
+    },
     "Max Burgin": {
       "status": "watch",
       "disciplines": [
@@ -34,7 +57,7 @@
         {
           "headline": "Burgin has resigned himself to the fact that he is an injury-prone athlete",
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcE91QzhTOFBTR21jaTdEaTlxOC12Ql92ODB1MmxNbVVVUm1vMzBDWl9UTXBsS2EyeUlfQ1VoRndKOUNCM3YtZ3NZQ1pyTFlWYXlIX0tISERGN3FiVmxZZm5MODhyZGpSeHEzcmk4Tmk5cjlGV0laWDNXVXBrRVBxYmFUZjRsYm1LUjVVQVhGWTBEMF9MNk1GeQ?oc=5",
-          "source": "Largs and Millport",
+          "source": "Largs and Millport News",
           "keywords": [
             "injury"
           ],
@@ -43,10 +66,9 @@
       ]
     },
     "Jakob Ingebrigtsen": {
-      "status": "remove",
+      "status": "watch",
       "disciplines": [
-        "men_1500m",
-        "men_5000m"
+        "men_1500m"
       ],
       "matches": [
         {
@@ -56,6 +78,15 @@
           "keywords": [
             "will not race"
           ]
+        },
+        {
+          "headline": "World Athletics Ultimate Championship: Jakob Ingebrigtsen withdraws from Josh Kerr showdown",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBOZXlueVAyQ1JFeHFGSU5raUQ4amNEdXJkTmNSbXFRcFVYX1o2VHIxb1B1M01RRE1UTHBCQjFLVXIwWUFzaWtBOFVuN0taNS1lVXVaS1o3NTdWVWxKZl9KZWNGV3I2aVll?oc=5",
+          "source": "bbc.com",
+          "keywords": [
+            "withdraws"
+          ],
+          "published": "2026-09-12"
         },
         {
           "headline": "Jakob Ingebrigtsen Withdraws From 1500m Final At World Ultimate Championships",
@@ -100,7 +131,7 @@
         {
           "headline": "Neeraj Chopra ruled out of 2026 season! 🚨 The 2-time Olympic medallist suffers an ankle ligament tear in training, days after his SB throw of 88.05m in Lausanne. To miss 3 major events.",
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNT2lrZUNURzcxZ09BV0E3OVhPRjk2WnNTRWFaVklSTk8ycjVXNndSV2paRE05bFE3aVVDbGZQcU1abjBuT3dOeC1vNWc4R0ZjWnVMVU9KRmtxRjc5T252OEpkU1VnWkZxM0dhdTVpYUZIQlFXQmxfTS1ZTm42dXhVMWRFWWUtTWRFVHVpdzg2QVQzQnhEeldhOHhfQzJuWDZJZWo5UllDUWh2WDZtZHJPNmt1bnZxSUZHYlpfZGV3dENzNFpCT0dxelRRY3J0Z0ozUXVv?oc=5",
-          "source": "facebook.com",
+          "source": "Facebook",
           "keywords": [
             "ruled out",
             "ankle"
@@ -138,31 +169,9 @@
       ],
       "matches": [
         {
-          "headline": "Keely Hodgkinson forced into BBC apology as she reveals shock injury truth after defeat",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPU0Yzb1lJXy1JV0lvbS1sLWxEYWxlbTJPS0kwem0yWGlRQmtEVEhyTzJvQTVPSFQ2MWNIRThWMmd5RTNpa2psLWVEb3VsaWtEaUZ4cnp4Nkd6enhZMkFPRjBuRnQ2dzN4anVlaUJvRjN5UFlvR1dWdXo3RHZEUHljMll6Q0NTWDRYU0ZvSVl5Q0lQUjJjdExKYk1hN3RrTUtxbVJHLUtKeHI1ZzjSAbABQVVfeXFMUFZQeWd3QVhpZWpiVlB4MTRjRGFkNHAyUGhHTjBvZkRtb3dZbF91WkxPb3NZZXROQWdfNlU5S0ZvTWZuSUxzV3hSTWpocFJkUUwyMnVxdm9VNEJSNEVwWWtXLXhnNEhodEoyOWNVWGJJZXFKY1JjQ0RmWnhiUEJpMWdoNzlxRVptakMybVlQVzVwYm5QZ3hiZFd4bGVqVFhCaHhiUFI2MnZ2bDBNU1RmSEw?oc=5",
-          "source": "The Mirror",
-          "keywords": [
-            "injury"
-          ],
-          "published": "2026-09-12"
-        },
-        {
-          "headline": "World Athletics Ultimate Championship: Keely Hodgkinson second to Audrey Werro despite recent hamstring tear",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VNVBnb1VWU0RxaFRwMVpIQlBsYmJuTFVPR2lwYjlkcFR4MGpleU93c0h4UF9Jc016VjZZbUMzTnRxS2V2SHhRQlpPVm8yd0liaEJ5VmtXcTZiVmNWVmtsUmVSN0duLVlQ?oc=5",
-          "source": "BBC",
-          "keywords": [
-            "hamstring"
-          ],
-          "published": "2026-09-12",
-          "estimated_recovery_weeks": [
-            12,
-            26
-          ]
-        },
-        {
           "headline": "Keely Hodgkinson withdraws from Zurich Diamond League as body \"not quite ready\"",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA5eVRjT2xSenVEVlpVM0pNb21oTFVEVkdPRDUyY0Naa2x1VW1rcDlIeTNLcmFQd1dJd2NRM19DbTRkSnU2eVY0SGE0X1ZIbElFYndza3JTUjhNaW02NjFkQ0tXZ0UwUFdF?oc=5",
-          "source": "BBC",
+          "source": "bbc.com",
           "keywords": [
             "withdraws"
           ],
@@ -178,19 +187,31 @@
           "published": "2026-08-24"
         },
         {
-          "headline": "Team GB hero Keely Hodgkinson pulls out of another race amid fitness concerns as injury woes continue",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVEg2dEUtZkl0aktZVVoyaW9fVl9QQjJJbkszWWdpVVowcV8xLTJoZUZwcU9HRW15c0t6M0JhSFNkcEc3MGVHY2VqQmRzT3NwajhHZ3Zrbm1yLWV3TThJMVlpQlc2VWZHZVRQZXVUY0NBbkxPazFBTFN1QTF3bF8zcTE0a0djQWx2SkIwN01xbFgyTHlkRUZhVw?oc=5",
-          "source": "The Sun",
+          "headline": "World Athletics Ultimate Championship: Keely Hodgkinson second to Audrey Werro despite recent hamstring tear",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VNVBnb1VWU0RxaFRwMVpIQlBsYmJuTFVPR2lwYjlkcFR4MGpleU93c0h4UF9Jc016VjZZbUMzTnRxS2V2SHhRQlpPVm8yd0liaEJ5VmtXcTZiVmNWVmtsUmVSN0duLVlQ?oc=5",
+          "source": "bbc.com",
           "keywords": [
-            "pulls out",
+            "hamstring"
+          ],
+          "published": "2026-09-12",
+          "estimated_recovery_weeks": [
+            12,
+            26
+          ]
+        },
+        {
+          "headline": "Keely Hodgkinson forced into BBC apology as she reveals shock injury truth after defeat",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPU0Yzb1lJXy1JV0lvbS1sLWxEYWxlbTJPS0kwem0yWGlRQmtEVEhyTzJvQTVPSFQ2MWNIRThWMmd5RTNpa2psLWVEb3VsaWtEaUZ4cnp4Nkd6enhZMkFPRjBuRnQ2dzN4anVlaUJvRjN5UFlvR1dWdXo3RHZEUHljMll6Q0NTWDRYU0ZvSVl5Q0lQUjJjdExKYk1hN3RrTUtxbVJHLUtKeHI1ZzjSAbABQVVfeXFMUFZQeWd3QVhpZWpiVlB4MTRjRGFkNHAyUGhHTjBvZkRtb3dZbF91WkxPb3NZZXROQWdfNlU5S0ZvTWZuSUxzV3hSTWpocFJkUUwyMnVxdm9VNEJSNEVwWWtXLXhnNEhodEoyOWNVWGJJZXFKY1JjQ0RmWnhiUEJpMWdoNzlxRVptakMybVlQVzVwYm5QZ3hiZFd4bGVqVFhCaHhiUFI2MnZ2bDBNU1RmSEw?oc=5",
+          "source": "The Mirror",
+          "keywords": [
             "injury"
           ],
-          "published": "2026-09-02"
+          "published": "2026-09-12"
         },
         {
           "headline": "Keely Hodgkinson reveals hamstring injury after suffering another defeat to Audrey Werro",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeG5NcGkwV1A4LXZmLWROVU1SNXk5TmdHWXVSYzlhTWNFTURlZF9oOVB0emlUdUY0QVJjdnZBTnF1UV9fbHc3ZjNOaE1aTzFVMnBpUzlOa0N5aHNvZERhZnFpMThMNmMycW14dzFMR2REM3RQeEVDWHNjeDVqa254dVYyTWYyaXlmdUE?oc=5",
-          "source": "Yahoo News New Zealand",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeHNvNFZaTTF1R2w4RjhkV1JqdTlVUFJyUU1nT0kzenZrZEhKWjVFcWRydlJJMnJDZDQ0LXFPU1BCUUFBS3AzSTM2dXl2cUdVeWFVNnhYWmlkS3lkS3lpWUxUQ2RLaW9NY3VCSVhtbDFqUWlmRjlZYnc2OHM1SW5md3lpeFhQOU5rZklXWjh1Q3lUU0R4VzVHZ3ZxdGtKNGJJMThPVmVEYTJFT3h5NzA1S3dUdV8?oc=5",
+          "source": "inkl",
           "keywords": [
             "injury",
             "hamstring"
@@ -200,40 +221,6 @@
             2,
             10
           ]
-        }
-      ]
-    },
-    "Sharlene Mawdsley": {
-      "status": "watch",
-      "disciplines": [
-        "women_400m"
-      ],
-      "matches": [
-        {
-          "headline": "'I never want to go through that again': Sharlene Mawdsley reflects on injury ordeal",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBRMmp4R2ktazJwZUZodGlpMnhXX0NMNktEck40UW1lWjNDNVpuSHVEd0RhdnYweGprOVZ2em04aU5qMDhhMGtBcnVWVGVyNVVDOE9IY181NHQ3UDlrNHUxUnI2VTdsVnJGTnNPYjJqRkt4cE0?oc=5",
-          "source": "irishexaminer.com",
-          "keywords": [
-            "injury"
-          ],
-          "published": "2026-09-11"
-        }
-      ]
-    },
-    "Jake Wightman": {
-      "status": "watch",
-      "disciplines": [
-        "men_1500m"
-      ],
-      "matches": [
-        {
-          "headline": "Jake Wightman ready for injury redemption at World Athletics Ultimate Championship",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPT1FhVnhEMy1CY0V2N2I0dGJ5S2NpSEhndE1La2FmQ1ZNYWYteXRKQkF5TXRNYjBLbWd4aXhDYk8wNWxFUi1lVUxRdGFiRERzU0hIUVlkYVplZ0Njd0Jva3ZLc04tZ2NJRzRDWmV3MmFEUFBZbWhtNmItZEt4UjBvQU5GY194bXVpQ004cFFn?oc=5",
-          "source": "Yahoo Sports UK",
-          "keywords": [
-            "injury"
-          ],
-          "published": "2026-09-11"
         }
       ]
     },

@@ -75,14 +75,16 @@ CHAMPIONSHIPS = [
     },
 ]
 
-# The Ultimate stays current until the Asian Games has a field and a call to
-# show. Flipping this is what moves the championship page, the refresh button
-# and the freeze script on to the next competition.
+# The Asian Games, since 2026-09-16: the Ultimate finished on 13 September, and
+# the user chose to launch the Games a week early so readers have the call
+# before the first session on the 23rd. Flipping this is what moves the
+# championship page, the refresh button and the freeze script on to the next
+# competition.
 #
 # PODIUMCALL_CHAMPIONSHIP overrides it for one process, to look at the next
 # championship locally (python api.py) without moving the live site on to it.
 # validate() still requires a registered id.
-CURRENT = os.environ.get("PODIUMCALL_CHAMPIONSHIP") or "ultimate-2026"
+CURRENT = os.environ.get("PODIUMCALL_CHAMPIONSHIP") or "asian-games-2026"
 
 
 def get(champ_id):

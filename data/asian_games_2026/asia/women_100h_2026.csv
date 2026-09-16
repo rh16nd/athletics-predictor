@@ -12,10 +12,10 @@ Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,Pro
 11,13.01,-0.9,Chisato KIYOYAMA,24 JUL 1991,JPN,7,,"National Stadium, Tokyo (JPN)",17 MAY 2026,1153,women_100h,2026,https://worldathletics.org/athletes/athlete=14334529
 11,13.01,+1.4,Rei HONDA,25 NOV 2001,JPN,2h4,,"Municipal Mizuho Stadium, Nagoya (JPN)",12 JUN 2026,1148,women_100h,2026,https://worldathletics.org/athletes/athlete=14899565
 13,13.04,-0.7,Yunzhe JIANGLI,10 FEB 2002,CHN,3,,"Kuishan Sports Center, Rizhao (CHN)",27 JUN 2026,1148,women_100h,2026,https://worldathletics.org/athletes/athlete=14857827
-14,13.07,-0.7,Jingyang LIU,12 AUG 1997,CHN,4,,"Kuishan Sports Center, Rizhao (CHN)",27 JUN 2026,1144,women_100h,2026,https://worldathletics.org/athletes/athlete=14635021
-15,13.08,+0.7,Jiadie MO,06 JAN 2000,CHN,1,,"Zhaoqing Sports Center, Zhaoqing (CHN)",26 APR 2026,1139,women_100h,2026,https://worldathletics.org/athletes/athlete=14744957
-16,13.09,+1.5,Ayumi KOBAYASHI,25 MAR 2001,JPN,5,,"Southwestern University Track Stadium, Georgetown, TX (USA)",20 JUN 2026,1138,women_100h,2026,https://worldathletics.org/athletes/athlete=14819275
-16,13.09,+0.7,Mao SHIMANO,02 OCT 2001,JPN,4,,"Prefectural Stadium, Fukui (JPN)",15 AUG 2026,1138,women_100h,2026,https://worldathletics.org/athletes/athlete=14855647
+14,13.05,0.0,Mao SHIMANO,02 OCT 2001,JPN,1f1,,"Takebishi Stadium, Kyoto (JPN)",13 SEP 2026,1143,women_100h,2026,https://worldathletics.org/athletes/athlete=14855647
+15,13.07,-0.7,Jingyang LIU,12 AUG 1997,CHN,4,,"Kuishan Sports Center, Rizhao (CHN)",27 JUN 2026,1144,women_100h,2026,https://worldathletics.org/athletes/athlete=14635021
+16,13.08,+0.7,Jiadie MO,06 JAN 2000,CHN,1,,"Zhaoqing Sports Center, Zhaoqing (CHN)",26 APR 2026,1139,women_100h,2026,https://worldathletics.org/athletes/athlete=14744957
+17,13.09,+1.5,Ayumi KOBAYASHI,25 MAR 2001,JPN,5,,"Southwestern University Track Stadium, Georgetown, TX (USA)",20 JUN 2026,1138,women_100h,2026,https://worldathletics.org/athletes/athlete=14819275
 18,13.14,-0.7,Anqi WU,01 OCT 2004,CHN,5,,"Kuishan Sports Center, Rizhao (CHN)",27 JUN 2026,1135,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/anqi-wu-15206620
 19,13.17,+0.7,Manaka SHIBATA,02 MAR 2001,JPN,7,,"Prefectural Stadium, Fukui (JPN)",15 AUG 2026,1127,women_100h,2026,https://worldathletics.org/athletes/athlete=14849058
 20,13.20,+1.8,Saki FUJITA,20 FEB 2010,JPN,1,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,1123,women_100h,2026,https://worldathletics.org/athletes/japan/saki-fujita-15181204
@@ -23,7 +23,7 @@ Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,Pro
 21,13.22,+1.0,Nandhini KONGAN,13 JUL 1999,IND,2,,"Kalinga Stadium, Bhubaneshwar (IND)",24 JUN 2026,1120,women_100h,2026,https://worldathletics.org/athletes/athlete=14841058
 23,13.23,+0.4,Yuka FUKUI,26 AUG 2005,JPN,1,,"Yanmar Stadium Nagai, Osaka (JPN)",15 MAY 2026,1119,women_100h,2026,https://worldathletics.org/athletes/athlete=14904656
 24,13.24,-0.1,Bo-An YI,04 JUL 2006,TPE,2h2,,"Banqiao Stadium, New Taipei City (TPE)",06 JUN 2026,1117,women_100h,2026,https://worldathletics.org/athletes/chinese-taipei/bo-an-yi-14976378
-25,13.28,+1.0,Ayumi NAKAO,14 DEC 2000,JPN,2,,"Prefectural Yamanokuchi Athletics Stadium, Miyakonojo (JPN)",23 AUG 2026,1112,women_100h,2026,https://worldathletics.org/athletes/athlete=14855629
+25,13.27,+1.5,Ayumi NAKAO,14 DEC 2000,JPN,2h3,,"Takebishi Stadium, Kyoto (JPN)",13 SEP 2026,1113,women_100h,2026,https://worldathletics.org/athletes/athlete=14855629
 26,13.30,+1.5,Saki KODERA,11 JUN 2005,JPN,1,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUL 2026,1109,women_100h,2026,https://worldathletics.org/athletes/japan/saki-kodera-14960573
 27,13.31,+0.1,Ami TAKAHASHI,20 MAR 2005,JPN,2,,"Sport Development Center Stadium, Ordos (CHN)",11 JUL 2026,1108,women_100h,2026,https://worldathletics.org/athletes/japan/ami-takahashi-14957944
 28,13.32,+1.4,Nanaka KAJIKI,07 DEC 2000,JPN,1ce3,,"Nagaragawa Stadium, Gifu (JPN)",06 JUN 2026,1107,women_100h,2026,https://worldathletics.org/athletes/athlete=14855370
@@ -171,107 +171,107 @@ Rank,Mark,WIND,Competitor,DOB,,Pos,,Venue,Date,Results Score,discipline,year,Pro
 166,13.95,+1.1,Yua TAKAHASHI,12 SEP 2007,JPN,4f1,,"Okura Sports Park Athletics Field, Tokyo (JPN)",08 AUG 2026,1025,women_100h,2026,https://worldathletics.org/athletes/japan/yua-takahashi-15114746
 166,13.95,+0.1,Yuyang CHEN,22 DEC 2002,CHN,5h1,,"Sports Center, Quzhou (CHN)",15 AUG 2026,1025,women_100h,2026,https://worldathletics.org/athletes/athlete=14857839
 172,13.96,+1.5,Mayu TAGUCHI,16 MAY 2003,JPN,5h6,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1023,women_100h,2026,https://worldathletics.org/athletes/japan/mayu-taguchi-14950229
-173,13.97,+0.6,Natsu HONDA,17 APR 2007,JPN,2,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",03 MAY 2026,1022,women_100h,2026,https://worldathletics.org/athletes/japan/natsu-honda-15047526
-173,13.97,+1.5,Anzu TAKEI,21 JUN 2004,JPN,1ce1,,"Yanmar Stadium Nagai, Osaka (JPN)",16 MAY 2026,1022,women_100h,2026,https://worldathletics.org/athletes/japan/anzu-takei-14958860
-173,13.97,-1.9,Zi Jie LIN,06 FEB 2011,TPE,7h1,,"Banqiao Stadium, New Taipei City (TPE)",06 JUN 2026,1033,women_100h,2026,https://worldathletics.org/athletes/chinese-taipei/zi-jie-lin-15113329
-173,13.97,+0.3,Yanqi CHEN,01 NOV 2006,CHN,1ce1,,"Sports Center, Quzhou (CHN)",12 AUG 2026,1022,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yanqi-chen-15041144
-173,13.97,+0.1,Xinzhu CHEN,10 MAR 2007,CHN,6h1,,"Sports Center, Quzhou (CHN)",15 AUG 2026,1022,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/xinzhu-chen-15144528
-173,13.97,+0.3,Junyu LI,15 MAY 2004,CHN,4h2,,"Sports Center, Quzhou (CHN)",15 AUG 2026,1022,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/junyu-li-14942347
-173,13.97,-0.7,Mitsuki MAEDA,18 DEC 2004,JPN,3h5,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1026,women_100h,2026,https://worldathletics.org/athletes/japan/mitsuki-maeda-14946057
-173,13.97,-1.1,Riko OIKAWA,03 JUL 2005,JPN,5sf1,,"International Stadium, Yokohama (JPN)",06 SEP 2026,1028,women_100h,2026,https://worldathletics.org/athletes/japan/riko-oikawa-15048076
-181,13.98,+0.3,Sumika MIYOSHI,04 DEC 2007,JPN,7h1,,"Municipal Mizuho Stadium, Nagoya (JPN)",19 JUL 2026,1021,women_100h,2026,https://worldathletics.org/athletes/japan/sumika-miyoshi-15101170
-181,13.98,+0.3,Ao KINJYO,07 OCT 2008,JPN,1f3,,"Prefectural Yamanokuchi Athletics Stadium, Miyakonojo (JPN)",21 AUG 2026,1021,women_100h,2026,https://worldathletics.org/athletes/japan/ao-kinjyo-15176633
-181,13.98,-1.3,Haruka KUMAKAWA,18 DEC 2004,JPN,2h2,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1028,women_100h,2026,https://worldathletics.org/athletes/japan/haruka-kumakawa-14961612
-184,14.00,-0.7,Momoha NAKAZATO,27 AUG 2004,JPN,5sf1,,"Yanmar Stadium Nagai, Osaka (JPN)",19 JUN 2026,1022,women_100h,2026,https://worldathletics.org/athletes/athlete=14921678
-185,14.01,+0.4,Dan WANG,16 MAY 2006,CHN,2,,"Olympic Sports Center, Chongqing (CHN)",14 MAY 2026,1017,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/dan-wang-15035634
-185,14.01,+0.1,Xingyu HU,12 MAR 2005,CHN,2ce,,"Sport Development Center Stadium, Ordos (CHN)",11 JUL 2026,1017,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/xingyu-hu-15031058
-187,14.02,+0.7,Miku DAIGO,27 NOV 2005,JPN,3h7,,"Lemon Gas Stadium, Hiratsuka (JPN)",24 APR 2026,1016,women_100h,2026,https://worldathletics.org/athletes/japan/miku-daigo-14996097
-187,14.02,+0.8,Nono KAMETAKI,04 JUL 2008,JPN,3h1,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,1016,women_100h,2026,https://worldathletics.org/athletes/japan/nono-kametaki-15184814
-187,14.02,+1.1,Saya NODA,21 MAY 2008,JPN,3h8,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,1016,women_100h,2026,https://worldathletics.org/athletes/japan/saya-noda-15253382
-187,14.02,+1.2,Yuika SATO,18 APR 2005,JPN,2,,"NITTAIDAI Athletic Stadium, Yokohama (JPN)",14 AUG 2026,1016,women_100h,2026,https://worldathletics.org/athletes/japan/yuika-sato-14995617
-191,14.03,+0.3,Tianqi XU,17 MAY 2008,CHN,3,,"Sports Center, Nanping (CHN)",03 JUN 2026,1015,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/tianqi-xu-15331050
-191,14.03,-0.1,Emilia NOVA,20 AUG 1995,INA,ce,,"New Clark City Stadium, New Clark City (PHI)",10 JUN 2026,1015,women_100h,2026,https://worldathletics.org/athletes/athlete=14524054
-191,14.03,-0.1,Zheng WU,05 JAN 2001,CHN,2ce2,,"Sports Center, Quzhou (CHN)",12 AUG 2026,1015,women_100h,2026,https://worldathletics.org/athletes/athlete=14782311
-194,14.04,-0.3,Jiaxin WANG,21 DEC 2003,CHN,1ce1,,"Kuishan Sports Center, Rizhao (CHN)",26 JUN 2026,1014,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/jiaxin-wang-15072982
-194,14.04,+1.2,Umi KASHIWAGURA,18 MAY 2004,JPN,2,,"ND Soft Stadium, Tendo (JPN)",11 JUL 2026,1013,women_100h,2026,https://worldathletics.org/athletes/athlete=14921671
-196,14.05,+0.4,Jingyun ZHANG,25 OCT 2008,CHN,4,,"Kai Tak Youth Sports Ground, Hong Kong (HKG)",29 MAY 2026,1012,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/jingyun-zhang-15206621
-196,14.05,+1.8,Sayu TAKAGI,19 APR 2008,JPN,4,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,1012,women_100h,2026,https://worldathletics.org/athletes/japan/sayu-takagi-15046753
-196,14.05,+0.6,Nana HORIUCHI,30 MAR 2010,JPN,3,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,1012,women_100h,2026,https://worldathletics.org/athletes/japan/nana-horiuchi-15176801
-196,14.05,-0.3,Ai NAKABAYASHI,08 MAY 2010,JPN,4,,"Showa Denko Stadium, Oita (JPN)",22 JUN 2026,1013,women_100h,2026,https://worldathletics.org/athletes/japan/ai-nakabayashi-15230778
-196,14.05,+1.4,Mika ARIKAWA,15 FEB 2006,JPN,1h1,,"Prefectural Stadium, Kagoshima (JPN)",05 JUL 2026,1012,women_100h,2026,https://worldathletics.org/athletes/japan/mika-arikawa-14995658
-196,14.05,-0.2,Yuexin CHENG,26 AUG 2009,CHN,4,,"Olympic Sports Center, Huangshi (CHN)",05 JUL 2026,1013,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yuexin-cheng-15339959
-196,14.05,+0.1,Alina CHISTYAKOVA,30 APR 2005,KAZ,3ce,,"Sport Development Center Stadium, Ordos (CHN)",11 JUL 2026,1012,women_100h,2026,https://worldathletics.org/athletes/athlete=14934440
-203,14.06,-1.2,Minagi NAGASHIGI,15 MAR 2007,JPN,1f2,,"Nagai Stadium No. 2, Osaka (JPN)",21 MAR 2026,1018,women_100h,2026,https://worldathletics.org/athletes/japan/minagi-nagashigi-14954539
-203,14.06,+1.8,Kaho MIZUTANI,05 DEC 2000,JPN,4,,"Nagaragawa Stadium, Gifu (JPN)",10 MAY 2026,1011,women_100h,2026,https://worldathletics.org/athletes/athlete=14819300
-205,14.07,-0.4,G. BHAVANA,06 MAR 2007,IND,2,,"Sree Kanteerava Outdoor Stadium, Bengaluru (IND)",25 APR 2026,1011,women_100h,2026,https://worldathletics.org/athletes/india/g-bhavana-15045009
-205,14.07,+0.6,Hana SAKAI,10 SEP 2009,JPN,5,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,1009,women_100h,2026,https://worldathletics.org/athletes/japan/hana-sakai-15254511
-207,14.08,0.0,Yiyan XIONG,26 JUL 2009,CHN,2h2,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,1008,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yiyan-xiong-15172665
-207,14.08,-0.2,Michi KANEMITSU,03 JAN 2010,JPN,2,,"Hakatanomori Athletic Stadium, Fukuoka (JPN)",11 JUL 2026,1009,women_100h,2026,https://worldathletics.org/athletes/japan/michi-kanemitsu-15257256
-209,14.09,+1.0,Rina KOJIMA,29 APR 1994,JPN,2f1,,"Nihon University Stadium, Tokyo (JPN)",31 MAY 2026,1007,women_100h,2026,https://worldathletics.org/athletes/athlete=14854618
-209,14.09,+0.6,Sawa KURAI,14 JUL 2008,JPN,6,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,1007,women_100h,2026,https://worldathletics.org/athletes/japan/sawa-kurai-14997283
-211,14.10,+0.5,Chandrasekar KANIMOZHI,08 NOV 1997,IND,5f2,,"Sree Kanteerava Outdoor Stadium, Bengaluru (IND)",04 APR 2026,1006,women_100h,2026,https://worldathletics.org/athletes/athlete=14734592
-211,14.10,+0.7,Airi OKAMOTO,03 OCT 2007,JPN,6sf3,,"Yanmar Stadium Nagai, Osaka (JPN)",19 JUN 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/airi-okamoto-15113038
-211,14.10,-0.2,Qingqing LI,30 MAY 2010,CHN,2h1,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,1007,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/qingqing-li-15339960
-211,14.10,+0.6,Yukina INAMURA,15 MAY 2008,JPN,1h2,,"Athletic Stadium, Hikone (JPN)",11 JUL 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/yukina-inamura-15162217
-211,14.10,+1.5,Airi KODA,11 OCT 2007,JPN,3,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUL 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/airi-koda-15103221
-211,14.10,+1.1,Uta MIURA,12 JUL 2007,JPN,6f1,,"Okura Sports Park Athletics Field, Tokyo (JPN)",08 AUG 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/uta-miura-15009902
-211,14.10,-0.4,Mona GOTO,26 MAY 2006,JPN,1f1,,"Nansho Gakuen Stadium, Osaka (JPN)",22 AUG 2026,1008,women_100h,2026,https://worldathletics.org/athletes/japan/mona-goto-15184961
-211,14.10,-1.3,Kokona KATAYAMA,10 NOV 2005,JPN,5h2,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1013,women_100h,2026,https://worldathletics.org/athletes/japan/kokona-katayama-14958789
-219,14.11,+1.8,Rena OGIHARA,06 APR 2010,JPN,5,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,1004,women_100h,2026,https://worldathletics.org/athletes/japan/rena-ogihara-15177711
-219,14.11,-0.3,Ayane ABE,28 AUG 2008,JPN,5,,"Showa Denko Stadium, Oita (JPN)",22 JUN 2026,1005,women_100h,2026,https://worldathletics.org/athletes/japan/ayane-abe-15176631
-219,14.11,+0.2,. KHUSHI,26 NOV 2002,IND,2ce2,,"Kalinga Stadium, Bhubaneshwar (IND)",27 JUN 2026,1004,women_100h,2026,https://worldathletics.org/athletes/athlete=14884160
-219,14.11,-1.2,Shizuka MITSUYAMA,04 OCT 2007,JPN,3h4,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1011,women_100h,2026,https://worldathletics.org/athletes/japan/shizuka-mitsuyama-15090621
-223,14.12,+1.8,Tamana FUJIWARA,30 OCT 2005,JPN,3f2,,"NITTAIDAI Athletic Stadium, Yokohama (JPN)",02 MAY 2026,1003,women_100h,2026,https://worldathletics.org/athletes/japan/tamana-fujiwara-14967465
-223,14.12,-0.4,Misaki OKAZAKI,28 JUL 2007,JPN,7sf2,,"Yanmar Stadium Nagai, Osaka (JPN)",19 JUN 2026,1005,women_100h,2026,https://worldathletics.org/athletes/japan/misaki-okazaki-15151648
-223,14.12,+1.2,Sol-gi KIM,20 NOV 2003,KOR,2,,"Seocheon Sports Complex, Seocheon (KOR)",30 JUN 2026,1003,women_100h,2026,https://worldathletics.org/athletes/athlete=14886703
-223,14.12,+0.1,Ugiloy NORBOYEVA,30 JAN 2004,UZB,4ce,,"Sport Development Center Stadium, Ordos (CHN)",11 JUL 2026,1003,women_100h,2026,https://worldathletics.org/athletes/uzbekistan/ugiloy-norboyeva-14972684
-227,14.13,-0.7,Rena KISHIMOTO,24 JUN 2006,JPN,6sf1,,"Yanmar Stadium Nagai, Osaka (JPN)",19 JUN 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/rena-kishimoto-14957322
-227,14.13,+0.3,Anamika KOZHINJAPARAMBIL ANEESH,21 JAN 2004,IND,1ce1,,"Kalinga Stadium, Bhubaneshwar (IND)",27 JUN 2026,1002,women_100h,2026,https://worldathletics.org/athletes/india/anamika-kozhinjaparambil-aneesh-15033979
-229,14.14,+0.7,Kokoro GANDA,20 NOV 2007,JPN,2h2,,"Yanmar Stadium Nagai, Osaka (JPN)",15 MAY 2026,1001,women_100h,2026,https://worldathletics.org/athletes/japan/kokoro-ganda-15102583
-229,14.14,-0.3,Yukiko TAKAHASHI,01 SEP 1996,JPN,5h3,,"ND Soft Stadium, Tendo (JPN)",16 MAY 2026,1002,women_100h,2026,https://worldathletics.org/athletes/japan/yukiko-takahashi-15001819
-229,14.14,+1.1,Komachi UMEZAWA,17 MAY 2007,JPN,7f1,,"Okura Sports Park Athletics Field, Tokyo (JPN)",08 AUG 2026,1001,women_100h,2026,https://worldathletics.org/athletes/japan/komachi-umezawa-15069365
-232,14.15,+0.8,Ivy HOI,28 SEP 1999,HKG,1,,"Wan Chai Sports Ground, Hong Kong (HKG)",07 MAR 2026,999,women_100h,2026,https://worldathletics.org/athletes/hong-kong-china/ivy-hoi-15145275
-232,14.15,-1.4,Jiamin CHEN,01 MAY 1996,CHN,1h2,,"Olympic Sports Center, Chongqing (CHN)",14 MAY 2026,1007,women_100h,2026,https://worldathletics.org/athletes/athlete=14663884
-232,14.15,+1.8,Jelly Dianne PARAGILE,12 DEC 1997,PHI,1,,"Rizal Memorial Stadium, Manila (PHI)",01 AUG 2026,999,women_100h,2026,https://worldathletics.org/athletes/athlete=14830803
-232,14.15,+1.3,Seira SHIMAMURA,04 MAY 2003,JPN,1f3,,"Universiade Commemorative Stadium, Kobe (JPN)",08 AUG 2026,999,women_100h,2026,https://worldathletics.org/athletes/athlete=14860648
-236,14.16,-0.5,Chieh HSIAO,08 JUL 2008,TPE,1f2,,"National Stadium, Kaohsiung (TPE)",03 MAR 2026,1001,women_100h,2026,https://worldathletics.org/athletes/chinese-taipei/chieh-hsiao-15052179
-236,14.16,+1.0,Remi TAKAHASHI,10 JAN 2008,JPN,5h2,,"Lemon Gas Stadium, Hiratsuka (JPN)",24 APR 2026,998,women_100h,2026,https://worldathletics.org/athletes/japan/remi-takahashi-15101293
-236,14.16,+0.7,Aona TANI,03 JUL 2004,JPN,1ce,,"Municipal Mizuho Stadium, Nagoya (JPN)",07 MAY 2026,998,women_100h,2026,https://worldathletics.org/athletes/japan/aona-tani-14961649
-236,14.16,+0.8,Yingxin TIAN,20 MAR 2009,CHN,3h3,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,998,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yingxin-tian-15248116
-236,14.16,+1.1,Hiyori AKIBA,08 FEB 2005,JPN,1h1,,"ND Soft Stadium, Tendo (JPN)",11 JUL 2026,998,women_100h,2026,https://worldathletics.org/athletes/japan/hiyori-akiba-14998788
-236,14.16,+0.1,Hanayo KURODA,12 APR 2005,JPN,3f1,,"Universiade Commemorative Stadium, Kobe (JPN)",08 AUG 2026,998,women_100h,2026,https://worldathletics.org/athletes/japan/hanayo-kuroda-15046315
-242,14.17,+0.9,Sachi GANDA,26 NOV 2009,JPN,3h3,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,997,women_100h,2026,https://worldathletics.org/athletes/japan/sachi-ganda-15181249
-243,14.18,+0.4,Yan WANG,19 SEP 2000,CHN,3,,"Olympic Sports Center, Chongqing (CHN)",14 MAY 2026,996,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yan-wang-14942576
-243,14.18,+1.1,Mizuna ONO,09 DEC 2002,JPN,4h1,,"ND Soft Stadium, Tendo (JPN)",16 MAY 2026,996,women_100h,2026,https://worldathletics.org/athletes/athlete=14855450
-243,14.18,+0.6,Kokomi HARADA,20 AUG 2009,JPN,7,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,996,women_100h,2026,https://worldathletics.org/athletes/japan/kokomi-harada-15256954
-246,14.19,+0.1,Saki TORIMARU,28 JUN 2005,JPN,5h3,,"Lemon Gas Stadium, Hiratsuka (JPN)",24 APR 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/saki-torimaru-15001297
-246,14.19,+1.8,Rin SUZUKI,18 DEC 2004,JPN,4f2,,"NITTAIDAI Athletic Stadium, Yokohama (JPN)",02 MAY 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/rin-suzuki-14977885
-246,14.19,0.0,Yilin LIU,16 MAY 2000,CHN,2,,"Shanxi Athletics Administrative Center, Xi'an (CHN)",19 JUN 2026,994,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yilin-liu-15334409
-246,14.19,+0.6,Mona MIZUNO,30 APR 2010,JPN,8,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/mona-mizuno-15335921
-246,14.19,+1.3,Aoi NOMA,25 AUG 2004,JPN,2f3,,"Universiade Commemorative Stadium, Kobe (JPN)",08 AUG 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/aoi-noma-14962141
-251,14.20,+1.8,Mashiro UENOYAMA,15 JUL 2004,JPN,1ce,,"Amashin Stadium, Amakusa (JPN)",09 MAY 2026,993,women_100h,2026,https://worldathletics.org/athletes/japan/mashiro-uenoyama-14958550
-251,14.20,-0.1,Mio KATO,13 AUG 2010,JPN,3,,"Municipal Mizuho Stadium, Nagoya (JPN)",22 MAY 2026,993,women_100h,2026,https://worldathletics.org/athletes/japan/mio-kato-15304753
-251,14.20,+1.1,Ritwika SINGH,11 DEC 1998,IND,2,,"Savitribai Phule University Sports Complex, Pune (IND)",07 JUN 2026,993,women_100h,2026,https://worldathletics.org/athletes/athlete=14734727
-251,14.20,-0.2,Miyu KANEMOTO,07 OCT 2008,JPN,3,,"Hakatanomori Athletic Stadium, Fukuoka (JPN)",11 JUL 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/miyu-kanemoto-15175171
-251,14.20,+1.4,Niko AKAMATSU,17 DEC 2008,JPN,5h5,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,993,women_100h,2026,https://worldathletics.org/athletes/japan/niko-akamatsu-15177884
-256,14.21,-0.3,Manqi SUN,09 NOV 2007,CHN,4,,"Taizhou Yuhuan Olympic Sports Center Stadium, Taizhou (CHN)",24 MAY 2026,993,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/manqi-sun-15327797
-256,14.21,+1.9,Reia FURUSE,17 MAR 2010,JPN,1h1,,"Athletics Stadium, Toyama (JPN)",18 JUL 2026,992,women_100h,2026,https://worldathletics.org/athletes/japan/reia-furuse-15253617
-258,14.22,-0.4,Nupura HOLLA,01 DEC 2009,IND,3,,"Sree Kanteerava Outdoor Stadium, Bengaluru (IND)",25 APR 2026,993,women_100h,2026,https://worldathletics.org/athletes/india/nupura-holla-15262942
-258,14.22,+0.7,Karin SHIMOMOTO,26 AUG 2005,JPN,1ce2,,"Nagaragawa Stadium, Gifu (JPN)",06 JUN 2026,991,women_100h,2026,https://worldathletics.org/athletes/japan/karin-shimomoto-14947906
-258,14.22,+0.1,Mana HIROSE,18 AUG 2010,JPN,7,,"Athletic Stadium, Hikone (JPN)",21 JUN 2026,991,women_100h,2026,https://worldathletics.org/athletes/japan/mana-hirose-15340367
-261,14.23,-0.4,Adithya AJI,03 MAY 2007,IND,4,,"Sree Kanteerava Outdoor Stadium, Bengaluru (IND)",25 APR 2026,991,women_100h,2026,https://worldathletics.org/athletes/india/adithya-aji-15116046
-261,14.23,+1.8,Honoka KANEKO,10 DEC 2008,JPN,6,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,989,women_100h,2026,https://worldathletics.org/athletes/japan/honoka-kaneko-15257131
-261,14.23,0.0,Xinmei ZHANG,30 SEP 2009,CHN,4h2,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,989,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/xinmei-zhang-15339963
-261,14.23,-0.2,Seina TABE,19 DEC 2008,JPN,4,,"Hakatanomori Athletic Stadium, Fukuoka (JPN)",11 JUL 2026,990,women_100h,2026,https://worldathletics.org/athletes/japan/seina-tabe-15255629
-261,14.23,+1.4,Yuuko TERACHI,02 DEC 2009,JPN,6h5,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,989,women_100h,2026,https://worldathletics.org/athletes/japan/yuuko-terachi-15256493
-261,14.23,-0.1,Meng WANG,02 JAN 2006,CHN,4ce2,,"Sports Center, Quzhou (CHN)",12 AUG 2026,989,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/meng-wang-15323029
-267,14.24,+0.4,Ting-xuan HO,22 AUG 2009,TPE,1,,"Banqiao Stadium, New Taipei City (TPE)",12 MAR 2026,988,women_100h,2026,https://worldathletics.org/athletes/chinese-taipei/ting-xuan-ho-15113281
-267,14.24,+0.7,Liwei WEI,10 FEB 2007,CHN,6,,"Zhaoqing Sports Center, Zhaoqing (CHN)",26 APR 2026,988,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/liwei-wei-15144526
-267,14.24,+0.3,Jinghan ZHANG,29 SEP 2007,CHN,4,,"Sports Center, Nanping (CHN)",03 JUN 2026,988,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/jinghan-zhang-15155553
-267,14.24,+1.3,Yua SAWASE,20 DEC 2010,JPN,1h4,,"Irie Stadium, Muroran (JPN)",16 AUG 2026,988,women_100h,2026,https://worldathletics.org/athletes/japan/yua-sawase-15342637
-271,14.25,+1.8,Itsuki EGAWA,31 MAR 2009,JPN,7,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,987,women_100h,2026,https://worldathletics.org/athletes/japan/itsuki-egawa-15230332
-272,14.26,+1.1,Yuri YOSHIDA,28 OCT 2008,JPN,4h8,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,986,women_100h,2026,https://worldathletics.org/athletes/japan/yuri-yoshida-15249625
-272,14.26,-2.8,Yume OKADA,17 AUG 2003,JPN,3f2,,"Universiade Commemorative Stadium, Kobe (JPN)",08 AUG 2026,1002,women_100h,2026,https://worldathletics.org/athletes/japan/yume-okada-14958629
+172,13.96,+1.5,Yume OKADA,17 AUG 2003,JPN,5h3,,"Takebishi Stadium, Kyoto (JPN)",13 SEP 2026,1023,women_100h,2026,https://worldathletics.org/athletes/japan/yume-okada-14958629
+174,13.97,+0.6,Natsu HONDA,17 APR 2007,JPN,2,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",03 MAY 2026,1022,women_100h,2026,https://worldathletics.org/athletes/japan/natsu-honda-15047526
+174,13.97,+1.5,Anzu TAKEI,21 JUN 2004,JPN,1ce1,,"Yanmar Stadium Nagai, Osaka (JPN)",16 MAY 2026,1022,women_100h,2026,https://worldathletics.org/athletes/japan/anzu-takei-14958860
+174,13.97,-1.9,Zi Jie LIN,06 FEB 2011,TPE,7h1,,"Banqiao Stadium, New Taipei City (TPE)",06 JUN 2026,1033,women_100h,2026,https://worldathletics.org/athletes/chinese-taipei/zi-jie-lin-15113329
+174,13.97,+0.3,Yanqi CHEN,01 NOV 2006,CHN,1ce1,,"Sports Center, Quzhou (CHN)",12 AUG 2026,1022,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yanqi-chen-15041144
+174,13.97,+0.1,Xinzhu CHEN,10 MAR 2007,CHN,6h1,,"Sports Center, Quzhou (CHN)",15 AUG 2026,1022,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/xinzhu-chen-15144528
+174,13.97,+0.3,Junyu LI,15 MAY 2004,CHN,4h2,,"Sports Center, Quzhou (CHN)",15 AUG 2026,1022,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/junyu-li-14942347
+174,13.97,-0.7,Mitsuki MAEDA,18 DEC 2004,JPN,3h5,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1026,women_100h,2026,https://worldathletics.org/athletes/japan/mitsuki-maeda-14946057
+174,13.97,-1.1,Riko OIKAWA,03 JUL 2005,JPN,5sf1,,"International Stadium, Yokohama (JPN)",06 SEP 2026,1028,women_100h,2026,https://worldathletics.org/athletes/japan/riko-oikawa-15048076
+182,13.98,+0.3,Sumika MIYOSHI,04 DEC 2007,JPN,7h1,,"Municipal Mizuho Stadium, Nagoya (JPN)",19 JUL 2026,1021,women_100h,2026,https://worldathletics.org/athletes/japan/sumika-miyoshi-15101170
+182,13.98,+0.3,Ao KINJYO,07 OCT 2008,JPN,1f3,,"Prefectural Yamanokuchi Athletics Stadium, Miyakonojo (JPN)",21 AUG 2026,1021,women_100h,2026,https://worldathletics.org/athletes/japan/ao-kinjyo-15176633
+182,13.98,-1.3,Haruka KUMAKAWA,18 DEC 2004,JPN,2h2,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1028,women_100h,2026,https://worldathletics.org/athletes/japan/haruka-kumakawa-14961612
+185,14.00,-0.7,Momoha NAKAZATO,27 AUG 2004,JPN,5sf1,,"Yanmar Stadium Nagai, Osaka (JPN)",19 JUN 2026,1022,women_100h,2026,https://worldathletics.org/athletes/athlete=14921678
+186,14.01,+0.4,Dan WANG,16 MAY 2006,CHN,2,,"Olympic Sports Center, Chongqing (CHN)",14 MAY 2026,1017,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/dan-wang-15035634
+186,14.01,+0.1,Xingyu HU,12 MAR 2005,CHN,2ce,,"Sport Development Center Stadium, Ordos (CHN)",11 JUL 2026,1017,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/xingyu-hu-15031058
+188,14.02,+0.7,Miku DAIGO,27 NOV 2005,JPN,3h7,,"Lemon Gas Stadium, Hiratsuka (JPN)",24 APR 2026,1016,women_100h,2026,https://worldathletics.org/athletes/japan/miku-daigo-14996097
+188,14.02,+0.8,Nono KAMETAKI,04 JUL 2008,JPN,3h1,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,1016,women_100h,2026,https://worldathletics.org/athletes/japan/nono-kametaki-15184814
+188,14.02,+1.1,Saya NODA,21 MAY 2008,JPN,3h8,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,1016,women_100h,2026,https://worldathletics.org/athletes/japan/saya-noda-15253382
+188,14.02,+1.2,Yuika SATO,18 APR 2005,JPN,2,,"NITTAIDAI Athletic Stadium, Yokohama (JPN)",14 AUG 2026,1016,women_100h,2026,https://worldathletics.org/athletes/japan/yuika-sato-14995617
+192,14.03,+0.3,Tianqi XU,17 MAY 2008,CHN,3,,"Sports Center, Nanping (CHN)",03 JUN 2026,1015,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/tianqi-xu-15331050
+192,14.03,-0.1,Emilia NOVA,20 AUG 1995,INA,ce,,"New Clark City Stadium, New Clark City (PHI)",10 JUN 2026,1015,women_100h,2026,https://worldathletics.org/athletes/athlete=14524054
+192,14.03,-0.1,Zheng WU,05 JAN 2001,CHN,2ce2,,"Sports Center, Quzhou (CHN)",12 AUG 2026,1015,women_100h,2026,https://worldathletics.org/athletes/athlete=14782311
+195,14.04,-0.3,Jiaxin WANG,21 DEC 2003,CHN,1ce1,,"Kuishan Sports Center, Rizhao (CHN)",26 JUN 2026,1014,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/jiaxin-wang-15072982
+195,14.04,+1.2,Umi KASHIWAGURA,18 MAY 2004,JPN,2,,"ND Soft Stadium, Tendo (JPN)",11 JUL 2026,1013,women_100h,2026,https://worldathletics.org/athletes/athlete=14921671
+197,14.05,+0.4,Jingyun ZHANG,25 OCT 2008,CHN,4,,"Kai Tak Youth Sports Ground, Hong Kong (HKG)",29 MAY 2026,1012,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/jingyun-zhang-15206621
+197,14.05,+1.8,Sayu TAKAGI,19 APR 2008,JPN,4,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,1012,women_100h,2026,https://worldathletics.org/athletes/japan/sayu-takagi-15046753
+197,14.05,+0.6,Nana HORIUCHI,30 MAR 2010,JPN,3,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,1012,women_100h,2026,https://worldathletics.org/athletes/japan/nana-horiuchi-15176801
+197,14.05,-0.3,Ai NAKABAYASHI,08 MAY 2010,JPN,4,,"Showa Denko Stadium, Oita (JPN)",22 JUN 2026,1013,women_100h,2026,https://worldathletics.org/athletes/japan/ai-nakabayashi-15230778
+197,14.05,+1.4,Mika ARIKAWA,15 FEB 2006,JPN,1h1,,"Prefectural Stadium, Kagoshima (JPN)",05 JUL 2026,1012,women_100h,2026,https://worldathletics.org/athletes/japan/mika-arikawa-14995658
+197,14.05,-0.2,Yuexin CHENG,26 AUG 2009,CHN,4,,"Olympic Sports Center, Huangshi (CHN)",05 JUL 2026,1013,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yuexin-cheng-15339959
+197,14.05,+0.1,Alina CHISTYAKOVA,30 APR 2005,KAZ,3ce,,"Sport Development Center Stadium, Ordos (CHN)",11 JUL 2026,1012,women_100h,2026,https://worldathletics.org/athletes/athlete=14934440
+204,14.06,-1.2,Minagi NAGASHIGI,15 MAR 2007,JPN,1f2,,"Nagai Stadium No. 2, Osaka (JPN)",21 MAR 2026,1018,women_100h,2026,https://worldathletics.org/athletes/japan/minagi-nagashigi-14954539
+204,14.06,+1.8,Kaho MIZUTANI,05 DEC 2000,JPN,4,,"Nagaragawa Stadium, Gifu (JPN)",10 MAY 2026,1011,women_100h,2026,https://worldathletics.org/athletes/athlete=14819300
+206,14.07,-0.4,G. BHAVANA,06 MAR 2007,IND,2,,"Sree Kanteerava Outdoor Stadium, Bengaluru (IND)",25 APR 2026,1011,women_100h,2026,https://worldathletics.org/athletes/india/g-bhavana-15045009
+206,14.07,+0.6,Hana SAKAI,10 SEP 2009,JPN,5,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,1009,women_100h,2026,https://worldathletics.org/athletes/japan/hana-sakai-15254511
+208,14.08,0.0,Yiyan XIONG,26 JUL 2009,CHN,2h2,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,1008,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yiyan-xiong-15172665
+208,14.08,-0.2,Michi KANEMITSU,03 JAN 2010,JPN,2,,"Hakatanomori Athletic Stadium, Fukuoka (JPN)",11 JUL 2026,1009,women_100h,2026,https://worldathletics.org/athletes/japan/michi-kanemitsu-15257256
+210,14.09,+1.0,Rina KOJIMA,29 APR 1994,JPN,2f1,,"Nihon University Stadium, Tokyo (JPN)",31 MAY 2026,1007,women_100h,2026,https://worldathletics.org/athletes/athlete=14854618
+210,14.09,+0.6,Sawa KURAI,14 JUL 2008,JPN,6,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,1007,women_100h,2026,https://worldathletics.org/athletes/japan/sawa-kurai-14997283
+212,14.10,+0.5,Chandrasekar KANIMOZHI,08 NOV 1997,IND,5f2,,"Sree Kanteerava Outdoor Stadium, Bengaluru (IND)",04 APR 2026,1006,women_100h,2026,https://worldathletics.org/athletes/athlete=14734592
+212,14.10,+0.7,Airi OKAMOTO,03 OCT 2007,JPN,6sf3,,"Yanmar Stadium Nagai, Osaka (JPN)",19 JUN 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/airi-okamoto-15113038
+212,14.10,-0.2,Qingqing LI,30 MAY 2010,CHN,2h1,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,1007,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/qingqing-li-15339960
+212,14.10,+0.6,Yukina INAMURA,15 MAY 2008,JPN,1h2,,"Athletic Stadium, Hikone (JPN)",11 JUL 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/yukina-inamura-15162217
+212,14.10,+1.5,Airi KODA,11 OCT 2007,JPN,3,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUL 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/airi-koda-15103221
+212,14.10,+1.1,Uta MIURA,12 JUL 2007,JPN,6f1,,"Okura Sports Park Athletics Field, Tokyo (JPN)",08 AUG 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/uta-miura-15009902
+212,14.10,-0.4,Mona GOTO,26 MAY 2006,JPN,1f1,,"Nansho Gakuen Stadium, Osaka (JPN)",22 AUG 2026,1008,women_100h,2026,https://worldathletics.org/athletes/japan/mona-goto-15184961
+212,14.10,-1.3,Kokona KATAYAMA,10 NOV 2005,JPN,5h2,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1013,women_100h,2026,https://worldathletics.org/athletes/japan/kokona-katayama-14958789
+220,14.11,+1.8,Rena OGIHARA,06 APR 2010,JPN,5,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,1004,women_100h,2026,https://worldathletics.org/athletes/japan/rena-ogihara-15177711
+220,14.11,-0.3,Ayane ABE,28 AUG 2008,JPN,5,,"Showa Denko Stadium, Oita (JPN)",22 JUN 2026,1005,women_100h,2026,https://worldathletics.org/athletes/japan/ayane-abe-15176631
+220,14.11,+0.2,. KHUSHI,26 NOV 2002,IND,2ce2,,"Kalinga Stadium, Bhubaneshwar (IND)",27 JUN 2026,1004,women_100h,2026,https://worldathletics.org/athletes/athlete=14884160
+220,14.11,-1.2,Shizuka MITSUYAMA,04 OCT 2007,JPN,3h4,,"International Stadium, Yokohama (JPN)",05 SEP 2026,1011,women_100h,2026,https://worldathletics.org/athletes/japan/shizuka-mitsuyama-15090621
+224,14.12,+1.8,Tamana FUJIWARA,30 OCT 2005,JPN,3f2,,"NITTAIDAI Athletic Stadium, Yokohama (JPN)",02 MAY 2026,1003,women_100h,2026,https://worldathletics.org/athletes/japan/tamana-fujiwara-14967465
+224,14.12,-0.4,Misaki OKAZAKI,28 JUL 2007,JPN,7sf2,,"Yanmar Stadium Nagai, Osaka (JPN)",19 JUN 2026,1005,women_100h,2026,https://worldathletics.org/athletes/japan/misaki-okazaki-15151648
+224,14.12,+1.2,Sol-gi KIM,20 NOV 2003,KOR,2,,"Seocheon Sports Complex, Seocheon (KOR)",30 JUN 2026,1003,women_100h,2026,https://worldathletics.org/athletes/athlete=14886703
+224,14.12,+0.1,Ugiloy NORBOYEVA,30 JAN 2004,UZB,4ce,,"Sport Development Center Stadium, Ordos (CHN)",11 JUL 2026,1003,women_100h,2026,https://worldathletics.org/athletes/uzbekistan/ugiloy-norboyeva-14972684
+228,14.13,-0.7,Rena KISHIMOTO,24 JUN 2006,JPN,6sf1,,"Yanmar Stadium Nagai, Osaka (JPN)",19 JUN 2026,1006,women_100h,2026,https://worldathletics.org/athletes/japan/rena-kishimoto-14957322
+228,14.13,+0.3,Anamika KOZHINJAPARAMBIL ANEESH,21 JAN 2004,IND,1ce1,,"Kalinga Stadium, Bhubaneshwar (IND)",27 JUN 2026,1002,women_100h,2026,https://worldathletics.org/athletes/india/anamika-kozhinjaparambil-aneesh-15033979
+230,14.14,+0.7,Kokoro GANDA,20 NOV 2007,JPN,2h2,,"Yanmar Stadium Nagai, Osaka (JPN)",15 MAY 2026,1001,women_100h,2026,https://worldathletics.org/athletes/japan/kokoro-ganda-15102583
+230,14.14,-0.3,Yukiko TAKAHASHI,01 SEP 1996,JPN,5h3,,"ND Soft Stadium, Tendo (JPN)",16 MAY 2026,1002,women_100h,2026,https://worldathletics.org/athletes/japan/yukiko-takahashi-15001819
+230,14.14,+1.1,Komachi UMEZAWA,17 MAY 2007,JPN,7f1,,"Okura Sports Park Athletics Field, Tokyo (JPN)",08 AUG 2026,1001,women_100h,2026,https://worldathletics.org/athletes/japan/komachi-umezawa-15069365
+233,14.15,+0.8,Ivy HOI,28 SEP 1999,HKG,1,,"Wan Chai Sports Ground, Hong Kong (HKG)",07 MAR 2026,999,women_100h,2026,https://worldathletics.org/athletes/hong-kong-china/ivy-hoi-15145275
+233,14.15,-1.4,Jiamin CHEN,01 MAY 1996,CHN,1h2,,"Olympic Sports Center, Chongqing (CHN)",14 MAY 2026,1007,women_100h,2026,https://worldathletics.org/athletes/athlete=14663884
+233,14.15,+1.8,Jelly Dianne PARAGILE,12 DEC 1997,PHI,1,,"Rizal Memorial Stadium, Manila (PHI)",01 AUG 2026,999,women_100h,2026,https://worldathletics.org/athletes/athlete=14830803
+233,14.15,+1.3,Seira SHIMAMURA,04 MAY 2003,JPN,1f3,,"Universiade Commemorative Stadium, Kobe (JPN)",08 AUG 2026,999,women_100h,2026,https://worldathletics.org/athletes/athlete=14860648
+237,14.16,-0.5,Chieh HSIAO,08 JUL 2008,TPE,1f2,,"National Stadium, Kaohsiung (TPE)",03 MAR 2026,1001,women_100h,2026,https://worldathletics.org/athletes/chinese-taipei/chieh-hsiao-15052179
+237,14.16,+1.0,Remi TAKAHASHI,10 JAN 2008,JPN,5h2,,"Lemon Gas Stadium, Hiratsuka (JPN)",24 APR 2026,998,women_100h,2026,https://worldathletics.org/athletes/japan/remi-takahashi-15101293
+237,14.16,+0.7,Aona TANI,03 JUL 2004,JPN,1ce,,"Municipal Mizuho Stadium, Nagoya (JPN)",07 MAY 2026,998,women_100h,2026,https://worldathletics.org/athletes/japan/aona-tani-14961649
+237,14.16,+0.8,Yingxin TIAN,20 MAR 2009,CHN,3h3,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,998,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yingxin-tian-15248116
+237,14.16,+1.1,Hiyori AKIBA,08 FEB 2005,JPN,1h1,,"ND Soft Stadium, Tendo (JPN)",11 JUL 2026,998,women_100h,2026,https://worldathletics.org/athletes/japan/hiyori-akiba-14998788
+237,14.16,+0.1,Hanayo KURODA,12 APR 2005,JPN,3f1,,"Universiade Commemorative Stadium, Kobe (JPN)",08 AUG 2026,998,women_100h,2026,https://worldathletics.org/athletes/japan/hanayo-kuroda-15046315
+243,14.17,+0.9,Sachi GANDA,26 NOV 2009,JPN,3h3,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,997,women_100h,2026,https://worldathletics.org/athletes/japan/sachi-ganda-15181249
+244,14.18,+0.4,Yan WANG,19 SEP 2000,CHN,3,,"Olympic Sports Center, Chongqing (CHN)",14 MAY 2026,996,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yan-wang-14942576
+244,14.18,+1.1,Mizuna ONO,09 DEC 2002,JPN,4h1,,"ND Soft Stadium, Tendo (JPN)",16 MAY 2026,996,women_100h,2026,https://worldathletics.org/athletes/athlete=14855450
+244,14.18,+0.6,Kokomi HARADA,20 AUG 2009,JPN,7,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,996,women_100h,2026,https://worldathletics.org/athletes/japan/kokomi-harada-15256954
+247,14.19,+0.1,Saki TORIMARU,28 JUN 2005,JPN,5h3,,"Lemon Gas Stadium, Hiratsuka (JPN)",24 APR 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/saki-torimaru-15001297
+247,14.19,+1.8,Rin SUZUKI,18 DEC 2004,JPN,4f2,,"NITTAIDAI Athletic Stadium, Yokohama (JPN)",02 MAY 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/rin-suzuki-14977885
+247,14.19,0.0,Yilin LIU,16 MAY 2000,CHN,2,,"Shanxi Athletics Administrative Center, Xi'an (CHN)",19 JUN 2026,994,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/yilin-liu-15334409
+247,14.19,+0.6,Mona MIZUNO,30 APR 2010,JPN,8,,"Nagaragawa Stadium, Gifu (JPN)",19 JUN 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/mona-mizuno-15335921
+247,14.19,+1.3,Aoi NOMA,25 AUG 2004,JPN,2f3,,"Universiade Commemorative Stadium, Kobe (JPN)",08 AUG 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/aoi-noma-14962141
+252,14.20,+1.8,Mashiro UENOYAMA,15 JUL 2004,JPN,1ce,,"Amashin Stadium, Amakusa (JPN)",09 MAY 2026,993,women_100h,2026,https://worldathletics.org/athletes/japan/mashiro-uenoyama-14958550
+252,14.20,-0.1,Mio KATO,13 AUG 2010,JPN,3,,"Municipal Mizuho Stadium, Nagoya (JPN)",22 MAY 2026,993,women_100h,2026,https://worldathletics.org/athletes/japan/mio-kato-15304753
+252,14.20,+1.1,Ritwika SINGH,11 DEC 1998,IND,2,,"Savitribai Phule University Sports Complex, Pune (IND)",07 JUN 2026,993,women_100h,2026,https://worldathletics.org/athletes/athlete=14734727
+252,14.20,-0.2,Miyu KANEMOTO,07 OCT 2008,JPN,3,,"Hakatanomori Athletic Stadium, Fukuoka (JPN)",11 JUL 2026,994,women_100h,2026,https://worldathletics.org/athletes/japan/miyu-kanemoto-15175171
+252,14.20,+1.4,Niko AKAMATSU,17 DEC 2008,JPN,5h5,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,993,women_100h,2026,https://worldathletics.org/athletes/japan/niko-akamatsu-15177884
+257,14.21,-0.3,Manqi SUN,09 NOV 2007,CHN,4,,"Taizhou Yuhuan Olympic Sports Center Stadium, Taizhou (CHN)",24 MAY 2026,993,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/manqi-sun-15327797
+257,14.21,+1.9,Reia FURUSE,17 MAR 2010,JPN,1h1,,"Athletics Stadium, Toyama (JPN)",18 JUL 2026,992,women_100h,2026,https://worldathletics.org/athletes/japan/reia-furuse-15253617
+259,14.22,-0.4,Nupura HOLLA,01 DEC 2009,IND,3,,"Sree Kanteerava Outdoor Stadium, Bengaluru (IND)",25 APR 2026,993,women_100h,2026,https://worldathletics.org/athletes/india/nupura-holla-15262942
+259,14.22,+0.7,Karin SHIMOMOTO,26 AUG 2005,JPN,1ce2,,"Nagaragawa Stadium, Gifu (JPN)",06 JUN 2026,991,women_100h,2026,https://worldathletics.org/athletes/japan/karin-shimomoto-14947906
+259,14.22,+0.1,Mana HIROSE,18 AUG 2010,JPN,7,,"Athletic Stadium, Hikone (JPN)",21 JUN 2026,991,women_100h,2026,https://worldathletics.org/athletes/japan/mana-hirose-15340367
+262,14.23,-0.4,Adithya AJI,03 MAY 2007,IND,4,,"Sree Kanteerava Outdoor Stadium, Bengaluru (IND)",25 APR 2026,991,women_100h,2026,https://worldathletics.org/athletes/india/adithya-aji-15116046
+262,14.23,+1.8,Honoka KANEKO,10 DEC 2008,JPN,6,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,989,women_100h,2026,https://worldathletics.org/athletes/japan/honoka-kaneko-15257131
+262,14.23,0.0,Xinmei ZHANG,30 SEP 2009,CHN,4h2,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,989,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/xinmei-zhang-15339963
+262,14.23,-0.2,Seina TABE,19 DEC 2008,JPN,4,,"Hakatanomori Athletic Stadium, Fukuoka (JPN)",11 JUL 2026,990,women_100h,2026,https://worldathletics.org/athletes/japan/seina-tabe-15255629
+262,14.23,+1.4,Yuuko TERACHI,02 DEC 2009,JPN,6h5,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,989,women_100h,2026,https://worldathletics.org/athletes/japan/yuuko-terachi-15256493
+262,14.23,-0.1,Meng WANG,02 JAN 2006,CHN,4ce2,,"Sports Center, Quzhou (CHN)",12 AUG 2026,989,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/meng-wang-15323029
+268,14.24,+0.4,Ting-xuan HO,22 AUG 2009,TPE,1,,"Banqiao Stadium, New Taipei City (TPE)",12 MAR 2026,988,women_100h,2026,https://worldathletics.org/athletes/chinese-taipei/ting-xuan-ho-15113281
+268,14.24,+0.7,Liwei WEI,10 FEB 2007,CHN,6,,"Zhaoqing Sports Center, Zhaoqing (CHN)",26 APR 2026,988,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/liwei-wei-15144526
+268,14.24,+0.3,Jinghan ZHANG,29 SEP 2007,CHN,4,,"Sports Center, Nanping (CHN)",03 JUN 2026,988,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/jinghan-zhang-15155553
+268,14.24,+1.3,Yua SAWASE,20 DEC 2010,JPN,1h4,,"Irie Stadium, Muroran (JPN)",16 AUG 2026,988,women_100h,2026,https://worldathletics.org/athletes/japan/yua-sawase-15342637
+272,14.25,+1.8,Itsuki EGAWA,31 MAR 2009,JPN,7,,"Seibu Ryokuchi Park Athletics Stadium, Kanazawa (JPN)",19 JUN 2026,987,women_100h,2026,https://worldathletics.org/athletes/japan/itsuki-egawa-15230332
+273,14.26,+1.1,Yuri YOSHIDA,28 OCT 2008,JPN,4h8,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,986,women_100h,2026,https://worldathletics.org/athletes/japan/yuri-yoshida-15249625
 274,14.27,+0.3,Ann Rose TOMY,25 MAY 2002,IND,6f3,,"Jawaharlal Nehru Stadium, Chennai (IND)",10 MAY 2026,984,women_100h,2026,https://worldathletics.org/athletes/athlete=14818594
 274,14.27,+0.8,Anrong ZHENG,17 JAN 2009,CHN,4h3,,"Olympic Sports Center, Huangshi (CHN)",04 JUL 2026,984,women_100h,2026,https://worldathletics.org/athletes/pr-of-china/anrong-zheng-15303597
 274,14.27,+1.1,Huuka KATASHIMA,11 OCT 2009,JPN,5h8,,"Athletic Stadium, Hikone (JPN)",04 AUG 2026,984,women_100h,2026,https://worldathletics.org/athletes/japan/huuka-katashima-15256457

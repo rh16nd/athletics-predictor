@@ -31,7 +31,7 @@
    "versions": 30
   }
  },
- "builtAt": "2026-09-16T06:42:02Z",
+ "builtAt": "2026-09-16T17:58:40Z",
  "projections": [
   {
    "discKey": "men_100m",
@@ -44,7 +44,7 @@
     "Sha Mahmood NOOR ZAHI",
     "Omar CHAABAN",
     "Saeed SALEM",
-    "Manuel BELO AMARAL ATAIDE",
+    "Manuel ATAIDE",
     "Mouzinho BELO DA COSTA AMARAL",
     "Abobakr BAGHOOT"
    ],
@@ -71,7 +71,7 @@
      "hasPage": false
     },
     {
-     "name": "Manuel BELO AMARAL ATAIDE",
+     "name": "Manuel ATAIDE",
      "nat": "TLS",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14850871",
@@ -847,26 +847,26 @@
    "qualified": 43,
    "scored": 34,
    "unscored": [
-    "Abdullah Abkar M MOHAMMED",
-    "Sorsy PHOMPHAKDI",
+    "Abdullah Abkar MOHAMMED",
+    "Sorsy PHOMPAKDI",
     "Ibrahim Naahil NIZAAR",
     "Omar CHAABAN",
     "Saeed SALEM",
-    "Salah YUNIS",
+    "Salah Nur Ismail YUNIS",
     "Mouzinho BELO DA COSTA AMARAL",
     "Abdul Quddus ALI",
     "Abobakr BAGHOOT"
    ],
    "unranked": [
     {
-     "name": "Abdullah Abkar M MOHAMMED",
+     "name": "Abdullah Abkar MOHAMMED",
      "nat": "KSA",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14752176",
      "hasPage": true
     },
     {
-     "name": "Sorsy PHOMPHAKDI",
+     "name": "Sorsy PHOMPAKDI",
      "nat": "LAO",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14972201",
@@ -894,7 +894,7 @@
      "hasPage": false
     },
     {
-     "name": "Salah YUNIS",
+     "name": "Salah Nur Ismail YUNIS",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15135764",
@@ -1843,7 +1843,7 @@
     },
     {
      "rank": 16,
-     "name": "Ngoc Phuc LE",
+     "name": "Phuc LE NGOC",
      "nat": "VIE",
      "qualifiedBy": null,
      "rankingScore": 1097,
@@ -2093,10 +2093,10 @@
    "unscored": [
     "Abdisamad HIRSI",
     "Hossein NOURI",
-    "Myagmarsuren DAVAANYAM",
+    "Dawaanyam MYAGMARSUREN",
     "Baasandash TUMENNASAN",
     "Yahya MASHAQI",
-    "Manuel BELO AMARAL ATAIDE"
+    "Manuel ATAIDE"
    ],
    "unranked": [
     {
@@ -2114,7 +2114,7 @@
      "hasPage": true
     },
     {
-     "name": "Myagmarsuren DAVAANYAM",
+     "name": "Dawaanyam MYAGMARSUREN",
      "nat": "MGL",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15058477",
@@ -2135,7 +2135,7 @@
      "hasPage": false
     },
     {
-     "name": "Manuel BELO AMARAL ATAIDE",
+     "name": "Manuel ATAIDE",
      "nat": "TLS",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14850871",
@@ -2537,7 +2537,7 @@
      "rankingScore": 1162,
      "mark": "3:35.90",
      "markSeason": null,
-     "podiumChance": 66.8,
+     "podiumChance": 66.7,
      "winChance": 26.3,
      "oldMarks": {
       "personalBest": false,
@@ -2573,7 +2573,7 @@
      "rankingScore": 1148,
      "mark": "3:36.96",
      "markSeason": null,
-     "podiumChance": 50.6,
+     "podiumChance": 50.5,
      "winChance": 17.0,
      "oldMarks": {
       "personalBest": true,
@@ -2588,11 +2588,11 @@
      "name": "Jaeung LEE",
      "nat": "KOR",
      "qualifiedBy": null,
-     "rankingScore": 1113,
-     "mark": "3:39.48",
+     "rankingScore": 1137,
+     "mark": "3:37.75",
      "markSeason": null,
-     "podiumChance": 34.0,
-     "winChance": 10.3,
+     "podiumChance": 34.3,
+     "winChance": 10.5,
      "oldMarks": {
       "personalBest": false,
       "fromSeason": 2025,
@@ -2627,8 +2627,8 @@
      "rankingScore": 1135,
      "mark": "3:37.87",
      "markSeason": null,
-     "podiumChance": 18.1,
-     "winChance": 5.2,
+     "podiumChance": 18.0,
+     "winChance": 5.1,
      "oldMarks": {
       "personalBest": false,
       "fromSeason": 2025,
@@ -2645,7 +2645,7 @@
      "rankingScore": 1140,
      "mark": "3:37.55",
      "markSeason": null,
-     "podiumChance": 14.5,
+     "podiumChance": 14.4,
      "winChance": 4.1,
      "oldMarks": {
       "personalBest": true,
@@ -2927,12 +2927,12 @@
     "Gawa ZANGPO",
     "Terence LAI",
     "Pandu SUKARYA",
-    "Ser-od BAT-OCHIR",
-    "Bat-erdene GANSUKH",
+    "Ser-Od BAT-OCHIR",
+    "Gansukh BAT-ERDENE",
     "Mukesh PAL",
     "Ahmed WRIDAT",
-    "Khala MAHAMAT",
-    "Mohamed TORECH"
+    "Khala Ngare MAHAMAT",
+    "Mohamed Wahid TORECH"
    ],
    "unranked": [
     {
@@ -2964,14 +2964,14 @@
      "hasPage": true
     },
     {
-     "name": "Ser-od BAT-OCHIR",
+     "name": "Ser-Od BAT-OCHIR",
      "nat": "MGL",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14867157",
      "hasPage": true
     },
     {
-     "name": "Bat-erdene GANSUKH",
+     "name": "Gansukh BAT-ERDENE",
      "nat": "MGL",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14894029",
@@ -2992,14 +2992,14 @@
      "hasPage": false
     },
     {
-     "name": "Khala MAHAMAT",
+     "name": "Khala Ngare MAHAMAT",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15203982",
      "hasPage": true
     },
     {
-     "name": "Mohamed TORECH",
+     "name": "Mohamed Wahid TORECH",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15080066",
@@ -3012,11 +3012,11 @@
      "name": "Birhanu BALEW",
      "nat": "BRN",
      "qualifiedBy": null,
-     "rankingScore": 1255,
-     "mark": "12:47.73",
+     "rankingScore": 1263,
+     "mark": "12:45.70",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 91.5,
+     "winChance": 92.4,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -3034,7 +3034,7 @@
      "mark": "13:03.93",
      "markSeason": null,
      "podiumChance": 76.9,
-     "winChance": 3.8,
+     "winChance": 3.4,
      "oldMarks": {
       "personalBest": false,
       "fromSeason": 2025,
@@ -3052,7 +3052,7 @@
      "mark": "13:16.38",
      "markSeason": null,
      "podiumChance": 58.5,
-     "winChance": 2.3,
+     "winChance": 2.1,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -3070,7 +3070,7 @@
      "mark": "13:14.18",
      "markSeason": null,
      "podiumChance": 45.4,
-     "winChance": 1.7,
+     "winChance": 1.5,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": 2025,
@@ -3088,7 +3088,7 @@
      "mark": "13:35.58",
      "markSeason": null,
      "podiumChance": 13.3,
-     "winChance": 0.5,
+     "winChance": 0.4,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -3261,11 +3261,11 @@
     "Gawa ZANGPO",
     "Terence LAI",
     "Robi SYIANTURI",
-    "Bat-erdene GANSUKH",
-    "Myagmarsuren JAVAA",
-    "Rajan ROKKYA",
+    "Gansukh BAT-ERDENE",
+    "Javaa MYAGMARSUREN",
+    "Rajan ROKAYA",
     "Ahmed WRIDAT",
-    "Youssouf DJIBRINE",
+    "Youssouf Abdelaziz DJIBRINE",
     "Sami THIEL"
    ],
    "unranked": [
@@ -3298,21 +3298,21 @@
      "hasPage": true
     },
     {
-     "name": "Bat-erdene GANSUKH",
+     "name": "Gansukh BAT-ERDENE",
      "nat": "MGL",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14894029",
      "hasPage": true
     },
     {
-     "name": "Myagmarsuren JAVAA",
+     "name": "Javaa MYAGMARSUREN",
      "nat": "MGL",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15183518",
      "hasPage": true
     },
     {
-     "name": "Rajan ROKKYA",
+     "name": "Rajan ROKAYA",
      "nat": "NEP",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14922600",
@@ -3326,7 +3326,7 @@
      "hasPage": false
     },
     {
-     "name": "Youssouf DJIBRINE",
+     "name": "Youssouf Abdelaziz DJIBRINE",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15076371",
@@ -3433,7 +3433,7 @@
     },
     {
      "rank": 6,
-     "name": "Albert KIPTOO",
+     "name": "Albert ROP",
      "nat": "BRN",
      "qualifiedBy": null,
      "rankingScore": 1061,
@@ -3537,12 +3537,12 @@
    "qualified": 9,
    "scored": 7,
    "unscored": [
-    "Musaab ALI",
+    "Adam Ali MUSAB",
     "Hamad ALSULTAN"
    ],
    "unranked": [
     {
-     "name": "Musaab ALI",
+     "name": "Adam Ali MUSAB",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14478763",
@@ -4374,7 +4374,7 @@
    "scored": 14,
    "unscored": [
     "Fatak BAIT JABOOB",
-    "Aman EBIDO"
+    "Aman Khalid EBIDO"
    ],
    "unranked": [
     {
@@ -4385,7 +4385,7 @@
      "hasPage": false
     },
     {
-     "name": "Aman EBIDO",
+     "name": "Aman Khalid EBIDO",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15236461",
@@ -4897,7 +4897,7 @@
    "unscored": [
     "Kai Leong O",
     "Salim AL RAWAHI",
-    "Ismail ABAKAR"
+    "Ismail Doudai ABAKAR"
    ],
    "unranked": [
     {
@@ -4915,7 +4915,7 @@
      "hasPage": false
     },
     {
-     "name": "Ismail ABAKAR",
+     "name": "Ismail Doudai ABAKAR",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14973411",
@@ -5246,8 +5246,8 @@
    "scored": 12,
    "unscored": [
     "Ansar ABBAS",
-    "Abubaker ABDALLA",
-    "Mahamat ABDELSADICK",
+    "Abubaker Haydar ABDALLA",
+    "Abdelsadick MAHAMAT",
     "Ibrohim MAKHKAMOV"
    ],
    "unranked": [
@@ -5259,14 +5259,14 @@
      "hasPage": true
     },
     {
-     "name": "Abubaker ABDALLA",
+     "name": "Abubaker Haydar ABDALLA",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14581680",
      "hasPage": true
     },
     {
-     "name": "Mahamat ABDELSADICK",
+     "name": "Abdelsadick MAHAMAT",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15291992",
@@ -5513,13 +5513,13 @@
    "qualified": 14,
    "scored": 11,
    "unscored": [
-    "Samedy SIM",
+    "Sim SAMEDY",
     "Mohammadreza TAYEBISEIFKOTI",
     "Yousef AHMAD"
    ],
    "unranked": [
     {
-     "name": "Samedy SIM",
+     "name": "Sim SAMEDY",
      "nat": "CAM",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15034068",
@@ -5895,7 +5895,7 @@
     },
     {
      "rank": 8,
-     "name": "Mustafa Kadhim Dagher ALSAAMAH",
+     "name": "Mustafa AL SAAMAH",
      "nat": "IRQ",
      "qualifiedBy": null,
      "rankingScore": 1009,
@@ -6270,7 +6270,7 @@
    "scored": 14,
    "unscored": [
     "Ahmed ELSAYED",
-    "Hamza SOUISSI"
+    "Hamza SOUSSI"
    ],
    "unranked": [
     {
@@ -6281,7 +6281,7 @@
      "hasPage": false
     },
     {
-     "name": "Hamza SOUISSI",
+     "name": "Hamza SOUSSI",
      "nat": "QAT",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14884239",
@@ -6298,7 +6298,7 @@
      "mark": "92.62",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 95.2,
+     "winChance": 94.9,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -6315,8 +6315,8 @@
      "rankingScore": 1211,
      "mark": "87.68",
      "markSeason": null,
-     "podiumChance": 84.8,
-     "winChance": 2.8,
+     "podiumChance": 84.4,
+     "winChance": 2.9,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -6333,7 +6333,7 @@
      "rankingScore": 1178,
      "mark": "85.41",
      "markSeason": null,
-     "podiumChance": 37.8,
+     "podiumChance": 38.4,
      "winChance": 0.7,
      "oldMarks": {
       "personalBest": true,
@@ -6351,7 +6351,7 @@
      "rankingScore": 1130,
      "mark": "82.05",
      "markSeason": null,
-     "podiumChance": 24.5,
+     "podiumChance": 23.1,
      "winChance": 0.4,
      "oldMarks": {
       "personalBest": false,
@@ -6363,13 +6363,31 @@
     },
     {
      "rank": 5,
+     "name": "Sumedha RANASINGHE",
+     "nat": "SRI",
+     "qualifiedBy": null,
+     "rankingScore": 1135,
+     "mark": "82.4",
+     "markSeason": null,
+     "podiumChance": 21.5,
+     "winChance": 0.4,
+     "oldMarks": {
+      "personalBest": false,
+      "fromSeason": 2025,
+      "percent": 35
+     },
+     "profileUrl": "https://worldathletics.org/athletes/athlete=14671060",
+     "hasPage": true
+    },
+    {
+     "rank": 6,
      "name": "Arshad NADEEM",
      "nat": "PAK",
      "qualifiedBy": null,
-     "rankingScore": 1082,
-     "mark": "78.63",
+     "rankingScore": 1122,
+     "mark": "81.49",
      "markSeason": null,
-     "podiumChance": 21.1,
+     "podiumChance": 21.2,
      "winChance": 0.4,
      "oldMarks": {
       "personalBest": false,
@@ -6380,32 +6398,14 @@
      "hasPage": true
     },
     {
-     "rank": 6,
-     "name": "Sumedha RANASINGHE",
-     "nat": "SRI",
-     "qualifiedBy": null,
-     "rankingScore": 1111,
-     "mark": "80.66",
-     "markSeason": null,
-     "podiumChance": 19.6,
-     "winChance": 0.3,
-     "oldMarks": {
-      "personalBest": false,
-      "fromSeason": 2025,
-      "percent": 35
-     },
-     "profileUrl": "https://worldathletics.org/athletes/athlete=14671060",
-     "hasPage": true
-    },
-    {
      "rank": 7,
-     "name": "Tae-poong NAM",
+     "name": "Taepoong NAM",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 1106,
      "mark": "80.35",
      "markSeason": null,
-     "podiumChance": 5.2,
+     "podiumChance": 4.9,
      "winChance": 0.1,
      "oldMarks": {
       "personalBest": true,
@@ -6423,7 +6423,7 @@
      "rankingScore": 1094,
      "mark": "79.47",
      "markSeason": null,
-     "podiumChance": 4.2,
+     "podiumChance": 4.0,
      "winChance": 0.1,
      "oldMarks": {
       "personalBest": false,
@@ -6441,7 +6441,7 @@
      "rankingScore": 1021,
      "mark": "74.36",
      "markSeason": null,
-     "podiumChance": 1.6,
+     "podiumChance": 1.5,
      "winChance": 0.0,
      "oldMarks": {
       "personalBest": false,
@@ -6477,7 +6477,7 @@
      "rankingScore": 1031,
      "mark": "75.07",
      "markSeason": null,
-     "podiumChance": 0.2,
+     "podiumChance": 0.1,
      "winChance": 0.0,
      "oldMarks": {
       "personalBest": true,
@@ -7547,7 +7547,7 @@
     },
     {
      "rank": 22,
-     "name": "Zahra ZAREI MANOUJAN",
+     "name": "Zahra ZAREI",
      "nat": "IRI",
      "qualifiedBy": null,
      "rankingScore": 995,
@@ -7655,7 +7655,7 @@
     "Khoula Omer KHAN",
     "Bakhita MARISIO",
     "Levanita DA COSTA",
-    "Thi Minh Hanh HOANG"
+    "Hoang Thi MINH HANH"
    ],
    "unranked": [
     {
@@ -7687,7 +7687,7 @@
      "hasPage": false
     },
     {
-     "name": "Thi Minh Hanh HOANG",
+     "name": "Hoang Thi MINH HANH",
      "nat": "VIE",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=14751077",
@@ -8021,7 +8021,7 @@
     },
     {
      "rank": 19,
-     "name": "Shahd MOHAMED",
+     "name": "Shahd ASHRAF",
      "nat": "QAT",
      "qualifiedBy": null,
      "rankingScore": 1004,
@@ -8737,7 +8737,7 @@
     },
     {
      "rank": 5,
-     "name": "Norah Jeruto TANUI",
+     "name": "Norah JERUTO",
      "nat": "KAZ",
      "qualifiedBy": null,
      "rankingScore": 1166,
@@ -8861,7 +8861,7 @@
    "unscored": [
     "Winfred YAVI",
     "Mariia KOROBITSKAIA",
-    "Nomin-erdene BAYARTOGTOKH",
+    "Nomin-Erdene BAYARTOGTOKH",
     "Medina KUMANDA"
    ],
    "unranked": [
@@ -8880,7 +8880,7 @@
      "hasPage": false
     },
     {
-     "name": "Nomin-erdene BAYARTOGTOKH",
+     "name": "Nomin-Erdene BAYARTOGTOKH",
      "nat": "MGL",
      "reason": "noMark",
      "profileUrl": "https://worldathletics.org/athletes/athlete=15144566",
@@ -9023,7 +9023,7 @@
     },
     {
      "rank": 8,
-     "name": "Santoshi SHRESTHA",
+     "name": "Shantoshi SHRESTHA",
      "nat": "NEP",
      "qualifiedBy": null,
      "rankingScore": 996,
@@ -9533,8 +9533,8 @@
      "rankingScore": 1215,
      "mark": "53.67",
      "markSeason": null,
-     "podiumChance": 90.4,
-     "winChance": 50.6,
+     "podiumChance": 90.1,
+     "winChance": 50.1,
      "oldMarks": {
       "personalBest": false,
       "fromSeason": null,
@@ -9551,8 +9551,8 @@
      "rankingScore": 1164,
      "mark": "55.29",
      "markSeason": null,
-     "podiumChance": 41.0,
-     "winChance": 10.3,
+     "podiumChance": 40.4,
+     "winChance": 10.2,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": 2025,
@@ -9567,10 +9567,10 @@
      "nat": "JPN",
      "qualifiedBy": null,
      "rankingScore": 1135,
-     "mark": "56.22",
+     "mark": "56.21",
      "markSeason": null,
-     "podiumChance": 28.5,
-     "winChance": 6.7,
+     "podiumChance": 31.4,
+     "winChance": 7.6,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": 2025,
@@ -9587,8 +9587,8 @@
      "rankingScore": 1139,
      "mark": "56.07",
      "markSeason": null,
-     "podiumChance": 28.2,
-     "winChance": 6.7,
+     "podiumChance": 27.8,
+     "winChance": 6.6,
      "oldMarks": {
       "personalBest": false,
       "fromSeason": 2025,
@@ -9605,7 +9605,7 @@
      "rankingScore": 1144,
      "mark": "55.92",
      "markSeason": null,
-     "podiumChance": 25.7,
+     "podiumChance": 25.3,
      "winChance": 6.0,
      "oldMarks": {
       "personalBest": true,
@@ -9623,8 +9623,8 @@
      "rankingScore": 1151,
      "mark": "55.69",
      "markSeason": null,
-     "podiumChance": 22.7,
-     "winChance": 5.3,
+     "podiumChance": 22.3,
+     "winChance": 5.2,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -9641,7 +9641,7 @@
      "rankingScore": 1133,
      "mark": "56.27",
      "markSeason": null,
-     "podiumChance": 20.6,
+     "podiumChance": 20.3,
      "winChance": 4.7,
      "oldMarks": {
       "personalBest": true,
@@ -9659,8 +9659,8 @@
      "rankingScore": 1125,
      "mark": "56.54",
      "markSeason": null,
-     "podiumChance": 17.5,
-     "winChance": 4.0,
+     "podiumChance": 17.2,
+     "winChance": 3.9,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -9677,8 +9677,8 @@
      "rankingScore": 1116,
      "mark": "56.83",
      "markSeason": null,
-     "podiumChance": 15.3,
-     "winChance": 3.5,
+     "podiumChance": 15.0,
+     "winChance": 3.4,
      "oldMarks": {
       "personalBest": false,
       "fromSeason": 2024,
@@ -9695,7 +9695,7 @@
      "rankingScore": 1099,
      "mark": "57.41",
      "markSeason": null,
-     "podiumChance": 4.0,
+     "podiumChance": 3.9,
      "winChance": 0.9,
      "oldMarks": {
       "personalBest": true,
@@ -9713,7 +9713,7 @@
      "rankingScore": 1112,
      "mark": "56.98",
      "markSeason": null,
-     "podiumChance": 4.0,
+     "podiumChance": 3.9,
      "winChance": 0.9,
      "oldMarks": {
       "personalBest": true,
@@ -10074,7 +10074,7 @@
      "mark": "4.73",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 91.3,
+     "winChance": 90.4,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -10088,11 +10088,11 @@
      "name": "Misaki MOROTA",
      "nat": "JPN",
      "qualifiedBy": null,
-     "rankingScore": 1114,
-     "mark": "4.5",
+     "rankingScore": 1117,
+     "mark": "4.51",
      "markSeason": null,
-     "podiumChance": 90.7,
-     "winChance": 5.5,
+     "podiumChance": 92.7,
+     "winChance": 6.4,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": 2023,
@@ -10109,7 +10109,7 @@
      "rankingScore": 1068,
      "mark": "4.35",
      "markSeason": null,
-     "podiumChance": 64.7,
+     "podiumChance": 64.0,
      "winChance": 2.0,
      "oldMarks": {
       "personalBest": true,
@@ -10127,8 +10127,8 @@
      "rankingScore": 1037,
      "mark": "4.25",
      "markSeason": null,
-     "podiumChance": 16.0,
-     "winChance": 0.5,
+     "podiumChance": 15.6,
+     "winChance": 0.4,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -10145,7 +10145,7 @@
      "rankingScore": 1031,
      "mark": "4.23",
      "markSeason": null,
-     "podiumChance": 9.1,
+     "podiumChance": 8.8,
      "winChance": 0.3,
      "oldMarks": {
       "personalBest": true,
@@ -10163,7 +10163,7 @@
      "rankingScore": 990,
      "mark": "4.1",
      "markSeason": null,
-     "podiumChance": 6.7,
+     "podiumChance": 6.5,
      "winChance": 0.2,
      "oldMarks": {
       "personalBest": true,
@@ -10181,7 +10181,7 @@
      "rankingScore": 1021,
      "mark": "4.2",
      "markSeason": null,
-     "podiumChance": 6.1,
+     "podiumChance": 5.9,
      "winChance": 0.2,
      "oldMarks": {
       "personalBest": true,
@@ -10199,7 +10199,7 @@
      "rankingScore": 1037,
      "mark": "4.25",
      "markSeason": null,
-     "podiumChance": 4.8,
+     "podiumChance": 4.7,
      "winChance": 0.1,
      "oldMarks": {
       "personalBest": true,
@@ -10235,7 +10235,7 @@
      "rankingScore": 923,
      "mark": "3.88",
      "markSeason": 2025,
-     "podiumChance": 0.7,
+     "podiumChance": 0.6,
      "winChance": 0.0,
      "oldMarks": {
       "personalBest": true,
@@ -11003,7 +11003,7 @@
     },
     {
      "rank": 6,
-     "name": "Yusun JEONG",
+     "name": "Yu sun JEONG",
      "nat": "KOR",
      "qualifiedBy": null,
      "rankingScore": 990,
@@ -11460,7 +11460,7 @@
      "mark": "71.74",
      "markSeason": null,
      "podiumChance": 100.0,
-     "winChance": 83.1,
+     "winChance": 82.7,
      "oldMarks": {
       "personalBest": true,
       "fromSeason": null,
@@ -11474,13 +11474,13 @@
      "name": "Haruka KITAGUCHI",
      "nat": "JPN",
      "qualifiedBy": null,
-     "rankingScore": 1169,
-     "mark": "64.9",
+     "rankingScore": 1244,
+     "mark": "68.92",
      "markSeason": null,
      "podiumChance": 99.9,
-     "winChance": 16.2,
+     "winChance": 16.6,
      "oldMarks": {
-      "personalBest": false,
+      "personalBest": true,
       "fromSeason": 2024,
       "percent": 10
      },
@@ -11495,7 +11495,7 @@
      "rankingScore": 1123,
      "mark": "62.42",
      "markSeason": null,
-     "podiumChance": 39.5,
+     "podiumChance": 39.2,
      "winChance": 0.3,
      "oldMarks": {
       "personalBest": false,
@@ -11510,10 +11510,10 @@
      "name": "Dilhani LEKAMGE",
      "nat": "SRI",
      "qualifiedBy": null,
-     "rankingScore": 1059,
-     "mark": "58.98",
+     "rankingScore": 1068,
+     "mark": "59.46",
      "markSeason": null,
-     "podiumChance": 19.0,
+     "podiumChance": 19.2,
      "winChance": 0.1,
      "oldMarks": {
       "personalBest": false,
@@ -11528,10 +11528,10 @@
      "name": "Annu RANI",
      "nat": "IND",
      "qualifiedBy": null,
-     "rankingScore": 1022,
-     "mark": "56.96",
+     "rankingScore": 1032,
+     "mark": "57.5",
      "markSeason": null,
-     "podiumChance": 17.1,
+     "podiumChance": 17.4,
      "winChance": 0.1,
      "oldMarks": {
       "personalBest": false,
@@ -11549,7 +11549,7 @@
      "rankingScore": 1110,
      "mark": "61.74",
      "markSeason": null,
-     "podiumChance": 16.9,
+     "podiumChance": 16.8,
      "winChance": 0.1,
      "oldMarks": {
       "personalBest": false,
@@ -11567,7 +11567,7 @@
      "rankingScore": 1002,
      "mark": "55.89",
      "markSeason": null,
-     "podiumChance": 4.8,
+     "podiumChance": 4.7,
      "winChance": 0.0,
      "oldMarks": {
       "personalBest": false,
@@ -11585,7 +11585,7 @@
      "rankingScore": 1028,
      "mark": "57.31",
      "markSeason": null,
-     "podiumChance": 1.6,
+     "podiumChance": 1.5,
      "winChance": 0.0,
      "oldMarks": {
       "personalBest": true,
