@@ -24,6 +24,8 @@ Checked: 698 backend tests, `npx tsc --noEmit`, eslint (no new problems), `npm r
 
 Still not done, and still waiting on the user: `CURRENT` is `ultimate-2026`, so the Asian Games call is not published. The flip needs the injury check and the re-scrape in the launch run order below, and the user has not reviewed `/championship` yet.
 
+Also pushed on 2026-09-16, before the launch (backend `37d617dd`, frontend `e692830`): the landing's headline figure reads `callTest` from the championship summary, so it shows the test of the model that made the current call (the Diamond League model's 60.9% while the Ultimate is current, 65.3% once the Asian Games are); How it works has a section on the championship model, whose test figures appear once the current call carries them; and `make-sitemap.py` reads the published snapshot and lists 514 URLs, each checked against a published page. Recommended to the user and not done: rewrite How it works around the reader's questions (what the numbers mean, what it looks at, how well it works, what it can't know) instead of one section per model, dropping the jargon and the second accuracy figure.
+
 After the Games, from 30 September: Phase B of `C:\Users\rayen\.claude\plans\do-you-agree-that-vast-moore.md`, with whichever version is then served. One model for the whole site replaces the Diamond League model's numbers on Track and Field, the athlete page figure, dashboard favourites and the landing's hit rate, and How it works explains that one model in plain words. Phase A of that plan (the three-way test) is done.
 
 **Saved**
