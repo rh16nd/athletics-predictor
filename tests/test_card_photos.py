@@ -8,6 +8,9 @@ that quietly falls back to a live lookup would reintroduce exactly the
 hundreds-of-round-trips problem it was built to remove.
 """
 import json
+import os
+
+import pytest
 
 import api
 import warm_card_photos as w
@@ -111,3 +114,29 @@ def test_no_photo_anywhere_is_not_an_error(monkeypatch):
     monkeypatch.setattr(w.api, "load_athlete_photo", lambda url: None)
     monkeypatch.setattr(w.api, "load_wikimedia_photo", lambda url: None)
     assert w.best_photo("https://wa/athlete=3") == (None, None, "none")
+
+
+def test_every_favourite_on_a_card_has_had_its_photo_looked_up():
+    """The cache is keyed by athlete, not by event, so when a favourite changes
+    the new one has no entry and the card quietly falls back to initials.
+
+    That happened on 2026-09-17: the switch to the championship model changed
+    the favourite in 14 of 36 events, and six cards (Tamberi, Cockrell, Hailu,
+    Patterson, Moll, Jackson) showed initials although World Athletics or
+    Commons had a photo. A photo audit found it, not a test. This fails on the
+    shipped data until src/warm_card_photos.py has been run."""
+    data = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+    rankings_path = os.path.join(data, "world_rankings.json")
+    cache_path = os.path.join(data, "card_photo_cache.json")
+    if not (os.path.exists(rankings_path) and os.path.exists(cache_path)):
+        pytest.skip("rankings or card photo cache not built yet")
+    with open(rankings_path, encoding="utf-8") as f:
+        rankings = json.load(f)
+    with open(cache_path, encoding="utf-8") as f:
+        cache = json.load(f)
+    missing = [f"{disc}: {lists['model'][0]['name']}"
+               for disc, lists in rankings.items()
+               if lists.get("model") and lists["model"][0].get("profileUrl")
+               and lists["model"][0]["profileUrl"] not in cache]
+    assert not missing, ("favourites never looked up for a photo, run python src/warm_card_photos.py: "
+                         + ", ".join(missing))
