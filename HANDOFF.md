@@ -1,6 +1,86 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here first: the Asian Games page as its own place, "Night in Nagoya" (BUILT 2026-09-21 on redesign/terra, pushed, waiting for the user's review)
+## Start here first (2026-09-22): finish the athlete-page data rebuild, then make a new animated intro video that looks like the new site
+
+The user closed this chat to continue in a new one and asked for everything to be saved here. There are two jobs, in this order.
+
+### 1. Finish the athlete-page data rebuild (IN FLIGHT when the chat ended; do this first, before the Games refresh on the 23rd)
+
+When the chat ended, a full static rebuild was running in the background (`python src/build_static_api.py`, at 550 of 4,603 status pages), writing into `track-insights-main/public/data`. A priority crawl was running too. Both may have died with the chat.
+
+**Critical, and easy to miss.** The backend holds a partial data refresh that ran on 2026-09-21 at 06:00 and was never committed: `data/injury_flags.json`, eight `data/raw/*_2026.csv` toplists, `data/standings_detail.json` and `outputs/predictions_latest.csv`. It was set aside with `git stash` (`stash@{0}`, "Partial refresh of 2026-09-21 06:00 (run.py), set aside for the static rebuild"). That way the rebuild uses the same committed 16 September data the live site was built from. Mixing a half refresh in would make pages disagree, since the rankings were not rebuilt. **After the rebuild, restore it with `git stash pop` in `athletics-predictor`.** Its files go back to uncommitted, as they were. Whether that refresh should ever be committed is a separate question for the user.
+
+Steps:
+1. Check whether the rebuild finished. Count `track-insights-main/public/data/athlete-status/*/*.json`: about 4,600 or more means done; it was 1,976 before. If it died, run it again from `athletics-predictor` **with the stash still set aside**: `venv\Scripts\python.exe src\build_static_api.py` (about 2 hours; default depth is now every athlete). Run it as a background job.
+2. `git stash pop` in `athletics-predictor`. Check `git status` shows the eleven refresh files modified again.
+3. Re-run the audit and compare it with the before numbers: `venv\Scripts\python.exe ..\track-insights-terra\scripts\qa\audit-athletes.py --out after.csv`. Before (live data, 2026-09-21): 4,837 linked athlete pages, 1,606 clean, 2,627 with no file, 535 stats contradicting the chart, 69 career blocks missing, 7 charts missing. Expected after: no missing files, and few or no contradictions.
+4. Commit the backend's photo caches, which the build updates (`data/photo_focus_cache.json`, `data/wikimedia_photo_cache.json`). In `track-insights-main`, `git add -f public/data` and commit.
+5. **Ask the user once, then push both repos** (they chose "push to live once the audit passes"). Aim to land before the Games refresh on the 23rd. `refresh_results.py` commits only its own files, so an uncommitted `public/data` does not break it. The backend is 7 commits ahead of GitHub, which is fine.
+6. Optional: re-run the Playwright crawl on the priority set, and the full set if there is time: `python ..\track-insights-terra\scripts\qa\make-crawl.py --set priority --out crawl.js`, then `playwright-cli -s=desk --raw run-code --filename=crawl.js > crawl.json`. Run it from a scratch folder, against terra-dev on :8081 with `predictor-api` running. Restart the API after backend edits.
+7. Before shipping the redesign, merge main into `redesign/terra`, since `public/data` will have moved.
+
+### 2. Next job: a new intro video, animated, that looks like the new site (NOT STARTED)
+
+The user's words (2026-09-22): the old video "is good, but it's not that good". The site now works and has its new look, so the video should look like the site and be **animated**, not bland.
+
+What exists:
+- The old video lives on the landing under the hero buttons: `src/components/dl/intro-video.tsx`, files in `public/video/intro-{en,fr}.{mp4,jpg}`, and `landing.video.*` keys. It is a one-minute English and French walkthrough made from real screenshots with zooms, pointer clicks and page transitions. Its pipeline and lessons are in `track-insights-main/design/intro-video/` (README) and the memory note on the intro video. Narration voice Alexey (Higgsfield), on its free route.
+- An 80-second script is approved but never recorded. It covers the championship page, the country and team pages, and Stats, and needed 8.85 Higgsfield credits when the account had 1.
+- The honesty rules, which still hold: real screens of the real site only. No AI-generated people, fabricated testimonials or invented imagery. The narration claims only what the screens show. Describe the championship page generically ("the page for the big championship on right now"), because it changes with each competition.
+- The new site to film is the redesign branch (`track-insights-terra`, `terra-dev` on :8081). It is not shipped yet, so the video ships with it.
+- Useful pieces already built this session: playwright-cli records video (`video-start`/`video-stop`), and `scripts/qa/record-tour.js` on the redesign branch is the scripted tour with eased scrolling used for the Night in Nagoya video. The Night in Nagoya arrival, the page transitions and the site's own motion are the look to match.
+
+Decisions to ask the user at the start, with concrete options, since their free-text notes on AskUserQuestion never arrive:
+- how it is animated: motion graphics built from the real site (kinetic type, the site's colours and serif, cards and figures animating in, recorded from HTML), a recorded live walkthrough with animated overlays, or the old Higgsfield pipeline redone on the new screens;
+- narration: reuse Alexey, a new script, or music with on-screen captions only;
+- length and scope: 60 or 80 seconds, English and French;
+- where it goes: the landing as now, and whether the How it works page gets it too.
+
+Load the relevant skills before building (animate, and any video or motion skill the user names), and follow the user's rules: humanized copy, French by meaning, measured contrast.
+
+### What this session did (2026-09-21 to 22), for the record
+
+**Night in Nagoya** (the Asian Games page as its own place): built and pushed on `redesign/terra` (`6b19fb1`); details in the next section. The user's verdict: "The whole look is good."
+
+**Athlete and event pages**, the user's complaint: many athletes have results on record but their page does not show them. Their rule: **a section appears when the athlete has the data for it, and is left out when they don't** (for example, no head-to-head section without a head-to-head record).
+- Measured first, with `scripts/qa/audit-athletes.py` (redesign branch), which checks every linked athlete page against what we hold. The causes found and fixed, in backend `03327182` (local, not pushed):
+  - `build_static_api.py` gave near misses and Diamond League Final finishers no page at all (Lyles, Kerr, Kipyegon). They were refused a full profile, then skipped for a status page. Fixed.
+  - 2,627 ranked athletes had no file. Every ranked athlete gets one now, as the user chose; `--profile-depth all` is the default. The Games refresh is unaffected, since it runs `--core-only`.
+  - Races this season and last competed read only the race log while the chart read World Athletics' own season (Boonson: "0 races" above a chart of two). `season_activity()` reads both.
+  - The career block was looked up by name (Albert ROP is Albert KIPTOO on World Athletics). Now by World Athletics id.
+  - The chart ignored the worldwide race log (Chapple showed 2025 beside two 2026 races). Now read.
+  - World Athletics profiles were cached for 1,094 athletes. `athlete_profile_scraper.py --all` brought it to 3,183.
+  - The hammer and the 10,000m had no race log, because their meetings were marked done before the resolver learned them. `worldwide_scraper.py --disciplines` re-reads them (1,015 rows).
+  - Tests: 712 pass.
+- A wrong lead, worth knowing: 190 athletes looked like "races on record, no analytics", but they had only one-per-season toplist rows, not races. The analytics were right.
+- Pages, on `redesign/terra` (`922d635`):
+  - Stat tiles render only with a value; the season chart only with races; no empty head-to-head panel or "not known" notes; no Diamond League-era "In field" wording.
+  - Top-20 tables and event pages sit with no box, through a shared `BareFrame` and Shell's new `layout="open"`, which keeps a bare page's first heading off the header seam.
+  - Each event page lists all 20 of the world's top 20 through `WorldRankingTable`'s single-event mode.
+  - Eight season-form lines in colours validated with the dataviz skill's six checks on the page ground (`--series-1..8`), with the line being read brought forward.
+  - Field analysis hides a pairing grid no pair ever met (the 10,000m met in 0 of 45).
+  - Also fixed on the way: the championship table's podium bars divided by 100 twice. The live site keeps that bug until the redesign ships.
+- Also on `redesign/terra` (`2ae8b54`), the user's choices:
+  - The dashboard's favourites are one sideways row of the big photo cards: all 36, swipe or arrows, no box.
+  - How it works sits with no box and ends on "What's next", read off the current championship, and a closing band ("See the call", "Send feedback") on the landing's stadium photo (`lib/closing-photo.ts`).
+- Checked: tsc; eslint on the changed files; 969 EN/FR keys matching; `npm run build`; a Playwright crawl of all 240 routes, event pages and country pages (no failures, console errors, empty sections, old wording or sideways scroll); no sideways scroll at 360.
+
+**Limits found, not fixed:**
+- `useApi` has no cache, so Back on any data page restores scroll against the loading layout and lands short.
+- Photos stay at the known ceiling.
+- Past seasons for athletes on no earlier toplist.
+- Win/loss records from World Athletics' own results list (no round, so a heat win can't be told from a final win).
+
+**Traps from this session:**
+- A Bash heredoc broke a Python patch script again. Write scripts to files.
+- A test that calls `build_static_api.build()` must pass a fake `client`, or it builds the whole site for real.
+- Playwright full-page screenshots paint `position: fixed` grounds only at the top, so a themed page looks wrong lower down. Check the ground in the viewport.
+- The site's global `scroll-behavior: smooth` makes a scripted `scrollIntoView` followed by `scrollBy` cancel itself. Pass `behavior: 'instant'`.
+- `data/worldwide/` is gitignored and needs `git add -f`, the state file included.
+
+---
+
+## Earlier (2026-09-21): the Asian Games page as its own place, "Night in Nagoya" (BUILT on redesign/terra, pushed; the user, 2026-09-22: "The whole look is good")
 
 **Built (2026-09-21, commit `6b19fb1` on `redesign/terra`, pushed, preview updated, live site untouched)**
 - Everything in the plan below is built: the arrival, the full-screen cover with the countdown, the emblem-line dividers, the "how" steps, one tile per called event that opens it in the full table, the full field, the events without a call, and the sunset at the foot. Files: `src/components/dl/championship-arrival.tsx`, `src/components/dl/nagoya/` (cover, page, tiles, emblem line), `Shell`'s new `cover` and `layout="bleed"`, the `PLACES` map in `src/routes/championship.tsx`, the `arrival` colours on each theme in `championship-themes.ts`, `zonedMidnight()` in `championship-dates.ts`, and the keyframes at the end of `styles.css`. `asian-games-body.tsx` is deleted.
@@ -96,7 +176,7 @@ The user reviews the preview. On their word, merge main into `redesign/terra` (t
 ---
 
 
-## Start here first: re-theming the whole site in the landing's Terra style (2026-09-21, BUILT on branch redesign/terra, not shipped)
+## Earlier: re-theming the whole site in the landing's Terra style (2026-09-21, BUILT on branch redesign/terra, not shipped)
 
 After seeing the finished Terra landing, the user said going from it to the dashboard "looks very different", and asked for the whole site to be re-themed in the landing's style. Not just recoloured: the glass menu, a short photo header with a serif title, dark glass panels, gold, the landing's buttons, footer and motion. What each page contains stays the same, and so do the athlete photo cards. The full plan is `C:\Users\rayen\.claude\plans\continue-with-handoff-crispy-rivest.md` (phases 0 to 8).
 
@@ -135,7 +215,7 @@ Traps:
 ---
 
 
-## Start here first: the landing page redesign after Terra (2026-09-21, BUILT AND CHECKED, waiting for the user's word to commit and push)
+## Earlier: the landing page redesign after Terra (2026-09-21, BUILT AND CHECKED, waiting for the user's word to commit and push)
 
 The user hit the chat limit mid-build on 2026-09-21 and asked to save everything here. The next chat, the same day, checked it in a browser, took the user's review (below, "The user's changes after seeing it"), built those changes and checked them. Nothing is committed yet: the user has screenshots and decides whether it ships. The sections below still hold (the championship-model switch is live).
 
@@ -187,7 +267,7 @@ The user hit the chat limit mid-build on 2026-09-21 and asked to save everything
 ---
 
 
-## Start here first: the whole site on the championship model (2026-09-17)
+## Earlier: the whole site on the championship model (2026-09-17)
 
 The session after the chat was cleared did the switch planned in the section below, with two turns in what the pages show. Read this, then the section below for the test and the plan it followed.
 
