@@ -88,12 +88,17 @@ def _index():
         return {}
 
 
-def _load_profile(athlete_name):
-    """Profiles are keyed by World Athletics id on disk, so the index is the
-    only way from a name to a file. Cached on the index's mtime so a
-    re-fetch is picked up without a restart -- the same reason
-    api.load_season_scores keys its cache on file state rather than on a
-    name."""
+def _load_profile(athlete_name, athlete_id=None):
+    """Profiles are keyed by World Athletics id on disk. The id, when the
+    caller has it, goes straight to the file; otherwise the index is the way
+    from a name to a file. Cached on the index's mtime so a re-fetch is picked
+    up without a restart -- the same reason api.load_season_scores keys its
+    cache on file state rather than on a name.
+
+    By id first because names drift between sources: the 10,000m toplist has
+    Albert ROP where World Athletics' own page, fetched by the same id, says
+    Albert KIPTOO, and a name-only lookup left 69 athletes with a cached
+    profile and no career block (measured 2026-09-21)."""
     try:
         stamp = os.path.getmtime(INDEX_PATH)
     except OSError:
@@ -103,7 +108,12 @@ def _load_profile(athlete_name):
         _cache["_stamp"] = stamp
         _cache["_byname"] = {v.get("name"): k for k, v in _index().items()}
 
-    athlete_id = (_cache.get("_byname") or {}).get(athlete_name)
+    if athlete_id is not None and not os.path.exists(
+        os.path.join(PROFILE_DIR, f"{athlete_id}.json")
+    ):
+        athlete_id = None
+    if athlete_id is None:
+        athlete_id = (_cache.get("_byname") or {}).get(athlete_name)
     if athlete_id is None:
         return None
     if athlete_id in _cache:
@@ -240,11 +250,12 @@ def personal_bests(profile, limit=None):
     return bests if limit is None else bests[:limit]
 
 
-def build_career(athlete_name):
+def build_career(athlete_name, athlete_id=None):
     """The whole read-from-WA block for one athlete, or None when no profile
     has been fetched for them (src/athlete_profile_scraper.py covers the
-    athletes the site renders pages for, not all 7,628 in the race log)."""
-    profile = _load_profile(athlete_name)
+    athletes the site renders pages for, not all 7,628 in the race log).
+    `athlete_id` is their World Athletics id, preferred over the name."""
+    profile = _load_profile(athlete_name, str(athlete_id) if athlete_id else None)
     if not profile:
         return None
     groups = honours(profile)

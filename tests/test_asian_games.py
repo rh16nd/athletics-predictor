@@ -764,7 +764,7 @@ def test_an_entrant_with_no_row_this_season_gets_a_page_built_from_the_call(monk
     monkeypatch.setattr(api, "athlete_score_context", lambda disc_key, name: None)
     monkeypatch.setattr(api, "projected_field_names", lambda disc_key: [])
     monkeypatch.setattr(api.athlete_analytics, "build_analytics", lambda *args: None)
-    monkeypatch.setattr(api.athlete_career, "build_career", lambda name: None)
+    monkeypatch.setattr(api.athlete_career, "build_career", lambda name, athlete_id=None: None)
 
     out = api.athlete_field_status("men_400m", "Shajar ABBAS")
     assert (out["seasonBest"], out["seasonBestYear"], out["nat"]) == ("46.10", 2025, "PAK")

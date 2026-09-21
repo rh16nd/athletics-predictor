@@ -51,6 +51,9 @@ Usage:
     python src/worldwide_scraper.py --years 2026 2025
     python src/worldwide_scraper.py --limit 25       # stop after 25 meetings
     python src/worldwide_scraper.py --status         # what's done so far
+    python src/worldwide_scraper.py --years 2026 --disciplines men_HT women_HT
+                                                     # re-read done meetings for events
+                                                     # added after they were scraped
 """
 import argparse
 import calendar
@@ -222,12 +225,13 @@ def find_year_meetings(year, failures=None):
     return meetings
 
 
-def scrape_meeting(meeting, year, label, keep_names):
+def scrape_meeting(meeting, year, label, keep_names, only=None):
     """Final-round results for every senior T&F event at one meeting.
 
     Only races WA labels "Final" are read, so `place` is always a real
     final placing rather than a heat position -- the same contract
-    major_meets_scraper.py relies on."""
+    major_meets_scraper.py relies on. `only`, a set of discipline keys,
+    keeps just those events."""
     rows = []
     probe = dlr.graphql(
         "getCalendarCompetitionResults",
@@ -255,7 +259,7 @@ def scrape_meeting(meeting, year, label, keep_names):
                 # No mile_as_1500: these rows are a per-meeting time series,
                 # where a Mile is genuinely not a 1500m. See HANDOFF 0c.
                 key = dlr.resolve_discipline_key(event["gender"], event["event"])
-                if key is None:
+                if key is None or (only is not None and key not in only):
                     continue
                 event_key = (key, event["event"])
                 if event_key in seen_events:
@@ -336,6 +340,8 @@ def main():
     parser.add_argument("--limit", type=int, default=None,
                         help="stop after this many meetings (for a cheap trial run)")
     parser.add_argument("--status", action="store_true")
+    parser.add_argument("--disciplines", nargs="+", metavar="KEY", default=None,
+                        help="re-read meetings already done, keeping only these events")
     args = parser.parse_args()
 
     if args.status:
@@ -345,6 +351,15 @@ def main():
     years = args.years or sorted(YEARS, reverse=True)  # newest first
     state = load_state()
     done = set(state["done"])
+    # An event the resolver learned after its meetings were scraped: the
+    # hammer and the 10,000m, added on 2026-09-15, had no rows at all, since
+    # every meeting already carried a "done" mark (2026-09-21). Those meetings
+    # are read again for just these events, with their own progress kept per
+    # event, so the main pass's record is untouched.
+    only = set(args.disciplines) if args.disciplines else None
+    if only:
+        redone = state.setdefault("redone", {})
+        done = set.intersection(*(set(redone.get(k, [])) for k in only))
     keep_names = recognized_everywhere()
     print(f"Filtering to {len(keep_names):,} athletes the site recognises.")
     print(f"Output: {os.path.abspath(OUT_DIR)} (quarantined from data/raw)\n")
@@ -362,33 +377,39 @@ def main():
             if args.limit is not None and scraped >= args.limit:
                 print(f"\nStopping at --limit {args.limit}.")
                 kept += flush(buffered)
-                state["done"] = sorted(done)
+                if not only:
+                    state["done"] = sorted(done)
                 save_state(state)
                 print(f"Kept {kept:,} rows from {scraped} meetings.")
                 return
             try:
-                rows = scrape_meeting(meeting, year, label, keep_names)
+                rows = scrape_meeting(meeting, year, label, keep_names, only)
             except Exception as exc:
                 print(f"    ! {meeting['name'][:44]}: {exc}")
                 continue
             scraped += 1
             done.add(meeting["id"])
+            if only:
+                for k in only:
+                    state["redone"].setdefault(k, []).append(meeting["id"])
             if rows:
                 for row in rows:
                     buffered[row["discipline"]].append(row)
-            else:
+            elif not only:
                 state["empty"].append(meeting["id"])
             print(f"  [{year}] {meeting.get('startDate', '')[:10]} {label:<26} "
                   f"{meeting['name'][:40]:<40} {len(rows):>4} rows")
 
             if scraped % FLUSH_EVERY == 0:
                 kept += flush(buffered)
-                state["done"] = sorted(done)
+                if not only:
+                    state["done"] = sorted(done)
                 save_state(state)
                 print(f"  -- checkpoint: {scraped} meetings, {kept:,} rows kept")
 
     kept += flush(buffered)
-    state["done"] = sorted(done)
+    if not only:
+        state["done"] = sorted(done)
     save_state(state)
     print(f"\nDone. {scraped} meetings scraped this run, {kept:,} rows kept.")
 

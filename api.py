@@ -462,23 +462,11 @@ def load_full_season_history(disc_key, athlete_name, profile_url=None):
     Returns (history, year, condensed, total). `condensed` is True when the
     season was long enough that only each month's best is shown, so the page
     can say so rather than quietly dropping races."""
-    wa_id = _wa_id_from_url(profile_url) if profile_url else None
-    if not wa_id:
-        _mark, _rank, url = toplist_entry(disc_key, athlete_name)
-        wa_id = _wa_id_from_url(url)
-    if not wa_id:
-        return [], None, False, 0
-    path = os.path.join(ATHLETE_PROFILES_DIR, f"{wa_id}.json")
-    if not os.path.exists(path):
-        return [], None, False, 0
-    try:
-        with open(path, encoding="utf-8") as f:
-            blob = json.load(f)
-    except (OSError, json.JSONDecodeError):
+    profile = _cached_wa_profile(disc_key, athlete_name, profile_url)
+    if profile is None:
         return [], None, False, 0
 
-    by_event = (((blob.get("profile") or {}).get("resultsByYear") or {})
-                .get("resultsByEvent")) or []
+    by_event = ((profile.get("resultsByYear") or {}).get("resultsByEvent")) or []
     rows = []
     for ev in by_event:
         if not _profile_event_matches(ev.get("discipline"), disc_key):
@@ -535,6 +523,72 @@ def load_full_season_history(disc_key, athlete_name, profile_url=None):
     return unique, year, condensed, total
 
 
+def _cached_wa_profile(disc_key, athlete_name, profile_url=None):
+    """The athlete's World Athletics results page as src/athlete_profile_scraper.py
+    saved it (data/athlete_profiles/<id>.json), or None when it was never
+    fetched. The id comes from the profile URL, or from the toplist."""
+    wa_id = _wa_id_from_url(profile_url) if profile_url else None
+    if not wa_id:
+        _mark, _rank, url = toplist_entry(disc_key, athlete_name)
+        wa_id = _wa_id_from_url(url)
+    if not wa_id:
+        return None
+    path = os.path.join(ATHLETE_PROFILES_DIR, f"{wa_id}.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, encoding="utf-8") as f:
+            return json.load(f).get("profile") or None
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def wa_last_competed(disc_key, athlete_name, profile_url=None, year=MEETS_YEAR):
+    """The latest day this season the athlete's World Athletics results page
+    shows them competing, in any event, or None. A DNS is not competing; a
+    DNF is."""
+    profile = _cached_wa_profile(disc_key, athlete_name, profile_url)
+    if profile is None:
+        return None
+    today = pd.Timestamp(date.today())
+    latest = None
+    for ev in ((profile.get("resultsByYear") or {}).get("resultsByEvent")) or []:
+        for r in ev.get("results") or []:
+            if str(r.get("mark", "")).strip().upper() == "DNS":
+                continue
+            when = pd.to_datetime(r.get("date"), format="%d %b %Y", errors="coerce")
+            if pd.isna(when) or when.year != year or when > today:
+                continue
+            if latest is None or when > latest:
+                latest = when
+    return latest
+
+
+def season_activity(disc_key, athlete_name, season_rows, history_year, history_races,
+                    profile_url=None):
+    """(races this season in this event, the last day they competed anywhere,
+    days since then): the race log and the athlete's World Athletics season
+    read together, so the season tiles agree with the season chart beside them.
+
+    They did not. The chart reads World Athletics' own season
+    (load_full_season_history) and the tiles read only the race log, so
+    Puripol Boonson, third pick in the Asian Games 100m, read "0 races, last
+    competed" with a dash above a chart of his two 2026 races, and 535 linked
+    pages disagreed with themselves the same way (measured 2026-09-21). Each
+    count is a floor, so the larger one is the truer one, and the later date."""
+    races = int(len(season_rows))
+    if history_year == MEETS_YEAR and history_races:
+        races = max(races, int(history_races))
+    last = None
+    if not season_rows.empty and season_rows["date"].notna().any():
+        last = season_rows["date"].max()
+    wa_last = wa_last_competed(disc_key, athlete_name, profile_url)
+    if wa_last is not None and (last is None or wa_last > last):
+        last = wa_last
+    days = int((pd.Timestamp(date.today()) - last).days) if last is not None else None
+    return races, last, days
+
+
 def load_athlete_history(disc_key, athlete_name, profile_url=None):
     """Real per-meet marks for an athlete -- the current, in-progress
     season if src/current_season_scraper.py has real meeting data for them
@@ -572,14 +626,31 @@ def load_athlete_history(disc_key, athlete_name, profile_url=None):
     if full:
         return full, full_year, condensed, total
 
-    current_path = os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}_meetings.csv")
-    if os.path.exists(current_path):
-        current_df = pd.read_csv(current_path)
-        if not current_df.empty:
-            mine = current_df[current_df["Competitor"].str.lower() == athlete_name.lower()]
-            if not mine.empty:
-                rows = _season_rows_to_history(mine, disc_key)
-                return rows, MEETS_YEAR, False, len(rows)
+    # This season from the Diamond League file and the worldwide race log
+    # together. The race log carries the meetings the Diamond League file does
+    # not, and it was not read here: Samuel Chapple's chart showed his 2025
+    # season while the tiles beside it counted two 2026 races from the race log
+    # (2026-09-21).
+    current = []
+    for path in (os.path.join(RAW_DIR, f"{disc_key}_{MEETS_YEAR}_meetings.csv"),
+                 os.path.join(athlete_analytics.WORLDWIDE_DIR, f"{disc_key}.csv")):
+        if not os.path.exists(path):
+            continue
+        try:
+            df = pd.read_csv(path)
+        except Exception:
+            continue
+        if df.empty or "Competitor" not in df.columns:
+            continue
+        mine = df[df["Competitor"].str.lower() == athlete_name.lower()]
+        if "year" in mine.columns:
+            mine = mine[mine["year"] == MEETS_YEAR]
+        if not mine.empty:
+            current.append(mine)
+    if current:
+        rows = _season_rows_to_history(pd.concat(current, ignore_index=True), disc_key)
+        if rows:
+            return rows, MEETS_YEAR, False, len(rows)
 
     path = os.path.join(RAW_DIR, f"{disc_key}.csv")
     if not os.path.exists(path):
@@ -1828,12 +1899,13 @@ def athlete_field_status(disc_key, athlete_name):
         athlete_analytics.load_race_log(disc_key), athlete_name,
     )
     season_rows = log_rows[log_rows["year"] == MEETS_YEAR] if not log_rows.empty else log_rows
-    out["racesThisSeason"] = int(len(season_rows))
+    races, last_race, days = season_activity(
+        disc_key, athlete_name, season_rows, history_year, history_races, wa_url,
+    )
+    out["racesThisSeason"] = races
     out["racesOnRecord"] = int(len(log_rows))
 
-    if not season_rows.empty and season_rows["date"].notna().any():
-        last_race = season_rows["date"].max()
-        days = int((pd.Timestamp(date.today()) - last_race).days)
+    if last_race is not None:
         # The race log WINS here, it does not merely fill a blank. The tile
         # says "Last competed" with no qualifier, and run.py's figure counts
         # only Diamond League meetings: Noah Lyles read "62d ago" (his last
@@ -1862,7 +1934,7 @@ def athlete_field_status(disc_key, athlete_name):
     # Here the "in field" marker means the opponents who DID qualify, which
     # is the more pointed reading of the same badge.
     out["rivalNames"] = field_names
-    out["career"] = athlete_career.build_career(athlete_name)
+    out["career"] = athlete_career.build_career(athlete_name, _wa_id_from_url(wa_url))
 
     standings = load_standings().get(disc_key, [])
     in_standings = any(n.lower() == athlete_name.lower() for n in standings)
@@ -2338,9 +2410,10 @@ def build_athlete_profile(disc_key, athlete_name):
         athlete_analytics.load_race_log(disc_key), athlete_name,
     )
     season_rows = log_rows[log_rows["year"] == MEETS_YEAR] if not log_rows.empty else log_rows
-    if not season_rows.empty and season_rows["date"].notna().any():
-        last_race = season_rows["date"].max()
-        days = int((pd.Timestamp(date.today()) - last_race).days)
+    races_this_season, last_race, days = season_activity(
+        disc_key, athlete_name, season_rows, history_year, history_races, wa_url,
+    )
+    if last_race is not None:
         if days_since_last is None or days < days_since_last:
             days_since_last = days
         last_race_date = last_race.strftime("%d %b %Y")
@@ -2359,7 +2432,7 @@ def build_athlete_profile(disc_key, athlete_name):
         "meetsCount":      clean(row.get("meets_count")),
         "daysSinceLast":   days_since_last,
         "lastRaceDate":    last_race_date,
-        "racesThisSeason": int(len(season_rows)),
+        "racesThisSeason": races_this_season,
         "prob":            prob,
         "waUrl":           wa_url,
         "photoUrl":        photo_url,
@@ -2407,7 +2480,7 @@ def build_athlete_profile(disc_key, athlete_name):
         # What World Athletics says this athlete has already won, and where
         # it ranks them. Read, not derived -- see athlete_career's docstring
         # for why that is kept in a separate module from the race-log stats.
-        "career":          athlete_career.build_career(athlete_name),
+        "career":          athlete_career.build_career(athlete_name, _wa_id_from_url(wa_url)),
         # The current championship's call on them, when they are entered.
         "championship":    championship_call(disc_key, row["athlete_name"]),
     }
@@ -2552,7 +2625,7 @@ def get_model_accuracy_basis():
     return "walk-forward '23-'25"
 
 
-def build_discipline_trajectories(disc_key, athletes, limit=4):
+def build_discipline_trajectories(disc_key, athletes, limit=8):
     """Real per-meet season form for a discipline's top contenders, reusing
     the exact same real data + logic as the athlete profile page's chart
     (load_athlete_history) -- this is what replaces the Projections page's
@@ -2562,7 +2635,9 @@ def build_discipline_trajectories(disc_key, athletes, limit=4):
     docstring) -- never synthesized between real points."""
     trajectories = []
     for a in athletes[:limit]:
-        history, history_year, _cond, _races = load_athlete_history(disc_key, a["name"])
+        history, history_year, _cond, _races = load_athlete_history(
+            disc_key, a["name"], a.get("profileUrl"),
+        )
         if not history:
             continue
         trajectories.append({
@@ -3449,6 +3524,13 @@ def ranking_only_report(disc_key):
         "rank": r["rank"], "name": r["name"], "nat": r.get("nat"), "mark": r.get("mark"),
         "score": r.get("score"), "prob": rating.get(r["name"]),
     } for r in listed["points"][:get_qual_limit(disc_key)]]
+    # The season form reads the eight best on points (the user, 2026-09-21),
+    # more than the Final-sized field above in the field events, and each
+    # from their own World Athletics season, found by their profile URL.
+    formed = [{
+        "rank": r["rank"], "name": r["name"], "prob": rating.get(r["name"]),
+        "profileUrl": r.get("profileUrl"),
+    } for r in listed["points"][:8]]
     full = load_season_scores()
     scored = _field_scores(full, disc_key, athletes) if not full.empty else []
 
@@ -3490,7 +3572,7 @@ def ranking_only_report(disc_key):
         "athletes":    athletes,
         "depth":       depth,
         "scores":      scored,
-        "trajectories": build_discipline_trajectories(disc_key, athletes),
+        "trajectories": build_discipline_trajectories(disc_key, formed),
         "storylines":  [],
         "fieldAnalysis": athlete_analytics.build_field_analysis(
             disc_key, names, disc_key in FIELD_EVENTS,

@@ -1,0 +1,435 @@
+discipline,Competitor,DOB,Mark,WIND,Nat,Venue,Meeting,Date,year,Pos,tier,group,competitionId,source
+women_HT,Lauren BRUCE,23 MAR 1997,70.93,,NZL,"Cooks Gardens, Whanganui (NZL)",Pak'n Save Cooks International Classic,24 JAN 2026,2026,1.0,C,Continental Tour,7230813,worldwide
+women_HT,Yipsi MORENO,19 NOV 1980,64.78,,ALB,"Suez Canal Authority Stadium, Ismailia (EGY)",Egypt Winter Cup,23 FEB 2026,2026,1.0,D,Continental Tour,7237631,worldwide
+women_HT,Zsanett NÉMETH,19 DEC 2000,64.7,,HUN,"Suez Canal Authority Stadium, Ismailia (EGY)",Egypt Winter Cup,23 FEB 2026,2026,2.0,D,Continental Tour,7237631,worldwide
+women_HT,Rawan AYMAN IBRAHIM BARAKAT,17 JUL 2001,61.11,,EGY,"Suez Canal Authority Stadium, Ismailia (EGY)",Egypt Winter Cup,23 FEB 2026,2026,3.0,D,Continental Tour,7237631,worldwide
+women_HT,Lauren BRUCE,23 MAR 1997,69.12,,NZL,"Domain Athletic Centre, Hobart (AUS)",Hobart Track Classic,28 FEB 2026,2026,1.0,C,Continental Tour,7232365,worldwide
+women_HT,Stephanie RATCLIFFE,29 DEC 2000,67.1,,AUS,"Domain Athletic Centre, Hobart (AUS)",Hobart Track Classic,28 FEB 2026,2026,2.0,C,Continental Tour,7232365,worldwide
+women_HT,Lauren BRUCE,23 MAR 1997,68.95,,NZL,"Douglas Track & Field, Auckland (NZL)",New Zealand Track & Field Championships,05 MAR 2026,2026,1.0,B,National Championships,7235518,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,81.13,,CAN,"Mike A. Myers Stadium, Austin, TX (USA)",Clyde Littlefield Texas Relays presented by Truist,02 APR 2026,2026,1.0,D,Continental Tour,7237530,worldwide
+women_HT,Anna PURCHASE,15 SEP 1999,72.63,,GBR,"Mike A. Myers Stadium, Austin, TX (USA)",Clyde Littlefield Texas Relays presented by Truist,02 APR 2026,2026,2.0,D,Continental Tour,7237530,worldwide
+women_HT,Elísabet Rut RÚNARSDÓTTIR,28 NOV 2002,69.89,,ISL,"Mike A. Myers Stadium, Austin, TX (USA)",Clyde Littlefield Texas Relays presented by Truist,02 APR 2026,2026,3.0,D,Continental Tour,7237530,worldwide
+women_HT,Giavonna MEEKS,28 JUL 2004,67.42,,USA,"Mike A. Myers Stadium, Austin, TX (USA)",Clyde Littlefield Texas Relays presented by Truist,02 APR 2026,2026,4.0,D,Continental Tour,7237530,worldwide
+women_HT,Stephanie RATCLIFFE,29 DEC 2000,67.71,,AUS,"Olympic Park, Sydney (AUS)",Australian Championships,10 APR 2026,2026,1.0,B,National Championships,7232772,worldwide
+women_HT,Lara ROBERTS,07 NOV 2003,65.51,,AUS,"Olympic Park, Sydney (AUS)",Australian Championships,10 APR 2026,2026,2.0,B,National Championships,7232772,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,79.63,,CAN,"Millican Field at Throw Town, Ramona, OK (USA)",Oklahoma Throws Series World Invitational,10 APR 2026,2026,1.0,C,Continental Tour,7236488,worldwide
+women_HT,Rachel RICHESON,27 SEP 1999,78.3,,USA,"Millican Field at Throw Town, Ramona, OK (USA)",Oklahoma Throws Series World Invitational,10 APR 2026,2026,2.0,C,Continental Tour,7236488,worldwide
+women_HT,Jalani DAVIS,23 MAY 2001,70.06,,USA,"Millican Field at Throw Town, Ramona, OK (USA)",Oklahoma Throws Series World Invitational,10 APR 2026,2026,3.0,C,Continental Tour,7236488,worldwide
+women_HT,Anna PURCHASE,15 SEP 1999,68.41,,GBR,"Millican Field at Throw Town, Ramona, OK (USA)",Oklahoma Throws Series World Invitational,10 APR 2026,2026,4.0,C,Continental Tour,7236488,worldwide
+women_HT,Emma ROBBINS,13 DEC 2000,65.89,,USA,"Millican Field at Throw Town, Ramona, OK (USA)",Oklahoma Throws Series World Invitational,10 APR 2026,2026,5.0,C,Continental Tour,7236488,worldwide
+women_HT,Mariana WALKER,19 MAR 1999,65.16,,CHI,"Pista Atlética Mario Recordón, Santiago de Chile (CHI)",Chilean Championships,10 APR 2026,2026,1.0,B,National Championships,7236143,worldwide
+women_HT,Ya-Chien YU,20 APR 1999,66.89,,TPE,"Home of Athletics, Singapore (SGP)",86th Singaporean Championships - Shot Put & Hammer Throw,17 APR 2026,2026,OC,B,National Championships,7240716,worldwide
+women_HT,Leandri HOLTZHAUSEN,14 JUL 1997,67.70,,RSA,"Coetzenburg Stadium, Stellenbosch (RSA)",South African Championships,17 APR 2026,2026,1.,B,National Championships,7237289,worldwide
+women_HT,Colette UYS,20 APR 2000,63.53,,RSA,"Coetzenburg Stadium, Stellenbosch (RSA)",South African Championships,17 APR 2026,2026,2.,B,National Championships,7237289,worldwide
+women_HT,Zeliha UZUNBILEK,10 JUN 1991,56.56,,TUR,"Atatürk Stadyumu, Izmir (TUR)",Nurullah Ivak Throwing Cup,19 APR 2026,2026,2.,D,Continental Tour,7236739,worldwide
+women_HT,Ximena ZORRILLA,02 NOV 2000,67.57,,PER,"Pista Atlética Mario Recordón, Santiago de Chile (CHI)",Continental Tour Orlando Guaita,19 APR 2026,2026,1.,C,Continental Tour,7239057,worldwide
+women_HT,Mariana WALKER,19 MAR 1999,65.22,,CHI,"Pista Atlética Mario Recordón, Santiago de Chile (CHI)",Continental Tour Orlando Guaita,19 APR 2026,2026,2.,C,Continental Tour,7239057,worldwide
+women_HT,Ana Caroline SILVA,12 FEB 1999,51.46,,BRA,"Pista Atlética Mario Recordón, Santiago de Chile (CHI)",Continental Tour Orlando Guaita,19 APR 2026,2026,3.,C,Continental Tour,7239057,worldwide
+women_HT,Brooke ANDERSEN,23 AUG 1995,78.56,,USA,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,1.,B,Continental Tour,7237033,worldwide
+women_HT,Anthonett NABWE,22 JAN 2004,77.64,,LBR,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,2.,B,Continental Tour,7237033,worldwide
+women_HT,Rachel RICHESON,27 SEP 1999,76.99,,USA,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,3.,B,Continental Tour,7237033,worldwide
+women_HT,Jiale ZHANG,22 OCT 2006,75.82,,CHN,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,4.,B,Continental Tour,7237033,worldwide
+women_HT,Annette Nneka ECHIKUNWOKE,29 JUL 1996,75.51,,USA,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,5.,B,Continental Tour,7237033,worldwide
+women_HT,Jie ZHAO,13 OCT 2002,73.19,,CHN,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,6.,B,Continental Tour,7237033,worldwide
+women_HT,Erin REESE,04 DEC 1995,72.90,,USA,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,7.,B,Continental Tour,7237033,worldwide
+women_HT,Anna PURCHASE,15 SEP 1999,71.58,,GBR,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,8.,B,Continental Tour,7237033,worldwide
+women_HT,Nayoka CLUNIS,07 OCT 1995,68.72,,JAM,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,9.,B,Continental Tour,7237033,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,68.57,,GRE,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,10.,B,Continental Tour,7237033,worldwide
+women_HT,Jillian WEIR,09 FEB 1993,NM,,CAN,"Drake Stadium, Des Moines, IA (USA)",116th Drake Relays,23 APR 2026,2026,,B,Continental Tour,7237033,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,80.03,,CAN,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,1.,A,Continental Tour,7233226,worldwide
+women_HT,Rose LOGA,27 JUL 2002,75.19,,FRA,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,2.,A,Continental Tour,7233226,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,73.88,,ISL,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,3.,A,Continental Tour,7233226,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,71.55,,DEN,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,4.,A,Continental Tour,7233226,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,69.06,,NOR,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,5.,A,Continental Tour,7233226,worldwide
+women_HT,Janee' KASSANAVOID,19 JAN 1995,68.78,,USA,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,6.,A,Continental Tour,7233226,worldwide
+women_HT,Iryna KLYMETS,04 OCT 1994,66.90,,UKR,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,7.,A,Continental Tour,7233226,worldwide
+women_HT,Vanessa STERCKENDRIES,15 SEP 1995,61.44,,BEL,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,8.,A,Continental Tour,7233226,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,NM,,SVK,"Nyayo National Stadium, Nairobi (KEN)",Kip Keino Classic,24 APR 2026,2026,,A,Continental Tour,7233226,worldwide
+women_HT,Jiangyan LI,22 MAY 1999,68.50,,CHN,"Zhaoqing Sports Center, Zhaoqing (CHN)",National Athletics Grand Prix 1,25 APR 2026,2026,1.,D,Continental Tour,7239297,worldwide
+women_HT,Jinyao GAO,30 APR 2004,67.59,,CHN,"Zhaoqing Sports Center, Zhaoqing (CHN)",National Athletics Grand Prix 1,25 APR 2026,2026,2.,D,Continental Tour,7239297,worldwide
+women_HT,Yiyao LIU,17 SEP 2003,63.15,,CHN,"Zhaoqing Sports Center, Zhaoqing (CHN)",National Athletics Grand Prix 1,25 APR 2026,2026,3.,D,Continental Tour,7239297,worldwide
+women_HT,Weilu HUANG,20 JUL 1999,59.47,,CHN,"Zhaoqing Sports Center, Zhaoqing (CHN)",National Athletics Grand Prix 1,25 APR 2026,2026,4.,D,Continental Tour,7239297,worldwide
+women_HT,Ximena ZORRILLA,02 NOV 2000,65.61,,PER,"Estadio Atlético de la VIDENA, Lima (PER)",Peruvian Championships,03 MAY 2026,2026,1.,B,National Championships,7234749,worldwide
+women_HT,Akaoma ODELUGA,14 MAY 2005,64.92,,USA,"LSU Bernie Moore Stadium, Baton Rouge, LA (USA)",LSU Invitational,02 MAY 2026,2026,1.,D,Continental Tour,7239723,worldwide
+women_HT,Lauren BRUCE,23 MAR 1997,67.44,,NZL,"Prefectural Shizuoka Stadium, Fukuroi (JPN)",41st Shizuoka International Athletics Meet,03 MAY 2026,2026,1.,C,Continental Tour,7238867,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,73.40,,ITA,"Centro di Atletica, Busto Arsizio (ITA)",ESET WMD-Night,03 MAY 2026,2026,1.,D,Continental Tour,7234844,worldwide
+women_HT,Jillian WEIR,09 FEB 1993,69.65,,CAN,"Centro di Atletica, Busto Arsizio (ITA)",ESET WMD-Night,03 MAY 2026,2026,2.,D,Continental Tour,7234844,worldwide
+women_HT,Aleksandra ŚMIECH,02 OCT 1997,69.84,,POL,"Stadio Luigi Ridolfi, Firenze (ITA)",International Pegaso Meeting,09 MAY 2026,2026,1.,D,Continental Tour,7234843,worldwide
+women_HT,Ewa RÓŻAŃSKA,22 DEC 2000,68.70,,POL,"Stadio Luigi Ridolfi, Firenze (ITA)",International Pegaso Meeting,09 MAY 2026,2026,2.,D,Continental Tour,7234843,worldwide
+women_HT,Florella FREYCHE,13 DEC 2004,68.06,,FRA,"Stadio Luigi Ridolfi, Firenze (ITA)",International Pegaso Meeting,09 MAY 2026,2026,3.,D,Continental Tour,7234843,worldwide
+women_HT,Zahra TATAR,10 NOV 1992,69.82,,ALG,"University of Ghana Sports Stadium, Accra (GHA)",African Athletics Championships,13 MAY 2026,2026,1.,GL,Area Champs,7238651,worldwide
+women_HT,Oyesade OLATOYE,25 JAN 1997,69.60,,NGR,"University of Ghana Sports Stadium, Accra (GHA)",African Athletics Championships,13 MAY 2026,2026,2.,GL,Area Champs,7238651,worldwide
+women_HT,Leandri HOLTZHAUSEN,14 JUL 1997,66.99,,RSA,"University of Ghana Sports Stadium, Accra (GHA)",African Athletics Championships,13 MAY 2026,2026,3.,GL,Area Champs,7238651,worldwide
+women_HT,Colette UYS,20 APR 2000,64.17,,RSA,"University of Ghana Sports Stadium, Accra (GHA)",African Athletics Championships,13 MAY 2026,2026,4.,GL,Area Champs,7238651,worldwide
+women_HT,Rawan AYMAN IBRAHIM BARAKAT,17 JUL 2001,61.23,,EGY,"University of Ghana Sports Stadium, Accra (GHA)",African Athletics Championships,13 MAY 2026,2026,5.,GL,Area Champs,7238651,worldwide
+women_HT,Nicola TUTHILL,22 DEC 2003,71.98,,IRL,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,1.,D,Continental Tour,7234127,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,71.81,,ISL,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,2.,D,Continental Tour,7234127,worldwide
+women_HT,Aileen KUHN,27 NOV 2003,71.08,,GER,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,3.,D,Continental Tour,7234127,worldwide
+women_HT,Rebecka HALLERTH,04 JAN 1996,70.29,,SWE,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,4.,D,Continental Tour,7234127,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,70.28,,DEN,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,5.,D,Continental Tour,7234127,worldwide
+women_HT,Jillian WEIR,09 FEB 1993,69.86,,CAN,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,6.,D,Continental Tour,7234127,worldwide
+women_HT,Samantha BORUTTA,07 AUG 2000,69.08,,GER,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,7.,D,Continental Tour,7234127,worldwide
+women_HT,Suvi NIIRANEN,24 APR 1997,66.23,,FIN,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,8.,D,Continental Tour,7234127,worldwide
+women_HT,Charlotte PAYNE,20 MAR 2002,NM,,GBR,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,,D,Continental Tour,7234127,worldwide
+women_HT,Thea LÖFMAN,08 SEP 2003,NM,,SWE,"Werferzentrum Brandberge, Halle (GER)",51. Halplus Werfertage,16 MAY 2026,2026,,D,Continental Tour,7234127,worldwide
+women_HT,Axi ZHANG,06 MAR 2002,69.87,,CHN,"Changshou Sports Center, Chongqing (CHN)",The 4th Belt and Road Athletics Invitational Meeting & National Athletics Grand Prix Series-3rd Leg,18 MAY 2026,2026,1.,B,Continental Tour,7240981,worldwide
+women_HT,Jiangyan LI,22 MAY 1999,69.79,,CHN,"Changshou Sports Center, Chongqing (CHN)",The 4th Belt and Road Athletics Invitational Meeting & National Athletics Grand Prix Series-3rd Leg,18 MAY 2026,2026,2.,B,Continental Tour,7240981,worldwide
+women_HT,Ling FANG,24 OCT 2005,69.01,,CHN,"Changshou Sports Center, Chongqing (CHN)",The 4th Belt and Road Athletics Invitational Meeting & National Athletics Grand Prix Series-3rd Leg,18 MAY 2026,2026,3.,B,Continental Tour,7240981,worldwide
+women_HT,Jinyao GAO,30 APR 2004,68.16,,CHN,"Changshou Sports Center, Chongqing (CHN)",The 4th Belt and Road Athletics Invitational Meeting & National Athletics Grand Prix Series-3rd Leg,18 MAY 2026,2026,4.,B,Continental Tour,7240981,worldwide
+women_HT,Weilu HUANG,20 JUL 1999,60.93,,CHN,"Changshou Sports Center, Chongqing (CHN)",The 4th Belt and Road Athletics Invitational Meeting & National Athletics Grand Prix Series-3rd Leg,18 MAY 2026,2026,7.,B,Continental Tour,7240981,worldwide
+women_HT,Lauren BRUCE,23 MAR 1997,70.64,,NZL,"Arafura Stadium, Darwin (AUS)",Oceania Athletics Championships,20 MAY 2026,2026,1.,GL,Area Champs,7216660,worldwide
+women_HT,Stephanie RATCLIFFE,29 DEC 2000,68.12,,AUS,"Arafura Stadium, Darwin (AUS)",Oceania Athletics Championships,20 MAY 2026,2026,2.,GL,Area Champs,7216660,worldwide
+women_HT,Yaritza MARTÍNEZ,03 FEB 2000,65.13,,CUB,"Estadio Panamericano, La Habana (CUB)",Cuban Championships,22 MAY 2026,2026,1.,B,National Championships,7241784,worldwide
+women_HT,Rawan AYMAN IBRAHIM BARAKAT,17 JUL 2001,63.50,,EGY,"The Olympic Center For Training National Teams, Cairo (EGY)","Egyptian Championships - Shot Put, Discus Throw, Hammer Throw",23 MAY 2026,2026,1.,B,National Championships,7242930,worldwide
+women_HT,Florella FREYCHE,13 DEC 2004,69.14,,FRA,"Betty Heidler Arena, Fränkisch-Crumbach (GER)",22. Int. Sparkassen Hammerwurf-Meeting 2026,23 MAY 2026,2026,1.,D,Continental Tour,7235084,worldwide
+women_HT,Malin GARBELL,04 OCT 2005,65.12,,SWE,"Betty Heidler Arena, Fränkisch-Crumbach (GER)",22. Int. Sparkassen Hammerwurf-Meeting 2026,23 MAY 2026,2026,3.,D,Continental Tour,7235084,worldwide
+women_HT,Nova KIENAST,24 JUL 2007,62.00,,GER,"Betty Heidler Arena, Fränkisch-Crumbach (GER)",22. Int. Sparkassen Hammerwurf-Meeting 2026,23 MAY 2026,2026,7.,D,Continental Tour,7235084,worldwide
+women_HT,Rachel RICHESON,27 SEP 1999,78.95,,USA,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,1.,B,Continental Tour,7236526,worldwide
+women_HT,Jiale ZHANG,22 OCT 2006,76.47,,CHN,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,2.,B,Continental Tour,7236526,worldwide
+women_HT,Jie ZHAO,13 OCT 2002,75.62,,CHN,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,3.,B,Continental Tour,7236526,worldwide
+women_HT,Brooke ANDERSEN,23 AUG 1995,75.37,,USA,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,4.,B,Continental Tour,7236526,worldwide
+women_HT,Annette Nneka ECHIKUNWOKE,29 JUL 1996,74.46,,USA,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,5.,B,Continental Tour,7236526,worldwide
+women_HT,Erin REESE,04 DEC 1995,74.18,,USA,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,6.,B,Continental Tour,7236526,worldwide
+women_HT,Shelby MORAN,03 APR 2000,72.38,,USA,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,7.,B,Continental Tour,7236526,worldwide
+women_HT,Nayoka CLUNIS,07 OCT 1995,69.78,,JAM,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,8.,B,Continental Tour,7236526,worldwide
+women_HT,Janeah STEWART,21 JUL 1996,67.49,,USA,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,9.,B,Continental Tour,7236526,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,67.14,,GRE,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,10.,B,Continental Tour,7236526,worldwide
+women_HT,Jalani DAVIS,23 MAY 2001,66.85,,USA,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,11.,B,Continental Tour,7236526,worldwide
+women_HT,Jillian SHIPPEE,19 APR 1999,NM,,USA,"Univ. of Arizona Roy P. Drachman Stadium, Tucson, AZ (USA)",USATF Throws Festival,23 MAY 2026,2026,,B,Continental Tour,7236526,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,65.03,,SVK,"Atletický štadión, Martin (SVK)",TIPOS Challenge Slovakia,23 MAY 2026,2026,1.,D,Continental Tour,7235035,worldwide
+women_HT,Zsanett NÉMETH,19 DEC 2000,61.85,,HUN,"Atletický štadión, Martin (SVK)",TIPOS Challenge Slovakia,23 MAY 2026,2026,3.,D,Continental Tour,7235035,worldwide
+women_HT,Krista TERVO,15 NOV 1997,77.35,,FIN,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,1.,B,Continental Tour,7235125,worldwide
+women_HT,Silja KOSONEN,16 DEC 2002,75.90,,FIN,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,2.,B,Continental Tour,7235125,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,73.74,,DEN,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,3.,B,Continental Tour,7235125,worldwide
+women_HT,Aileen KUHN,27 NOV 2003,71.55,,GER,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,4.,B,Continental Tour,7235125,worldwide
+women_HT,Rose LOGA,27 JUL 2002,71.50,,FRA,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,5.,B,Continental Tour,7235125,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,70.79,,NOR,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,6.,B,Continental Tour,7235125,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,70.55,,ISL,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,7.,B,Continental Tour,7235125,worldwide
+women_HT,Janee' KASSANAVOID,19 JAN 1995,68.96,,USA,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,8.,B,Continental Tour,7235125,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,67.89,,ITA,"Fana Stadion, Bergen (NOR)",Trond Mohn Games,28 MAY 2026,2026,9.,B,Continental Tour,7235125,worldwide
+women_HT,Axi ZHANG,06 MAR 2002,73.00,,CHN,"Sports Center, Bengbu (CHN)",National Athletics Grand Prix 4,31 MAY 2026,2026,1.,D,Continental Tour,7241789,worldwide
+women_HT,Ling FANG,24 OCT 2005,70.46,,CHN,"Sports Center, Bengbu (CHN)",National Athletics Grand Prix 4,31 MAY 2026,2026,2.,D,Continental Tour,7241789,worldwide
+women_HT,Yiyao LIU,17 SEP 2003,62.99,,CHN,"Sports Center, Bengbu (CHN)",National Athletics Grand Prix 4,31 MAY 2026,2026,5.,D,Continental Tour,7241789,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,74.79,,DEN,"Østerbro Stadium, Copenhagen (DEN)",Nordic Senior Championships,31 MAY 2026,2026,1.,C,Area Regional Champs,7237523,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,72.92,,ISL,"Østerbro Stadium, Copenhagen (DEN)",Nordic Senior Championships,31 MAY 2026,2026,2.,C,Area Regional Champs,7237523,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,72.01,,NOR,"Østerbro Stadium, Copenhagen (DEN)",Nordic Senior Championships,31 MAY 2026,2026,3.,C,Area Regional Champs,7237523,worldwide
+women_HT,Malin GARBELL,04 OCT 2005,69.58,,SWE,"Østerbro Stadium, Copenhagen (DEN)",Nordic Senior Championships,31 MAY 2026,2026,4.,C,Area Regional Champs,7237523,worldwide
+women_HT,Thea LÖFMAN,08 SEP 2003,66.88,,SWE,"Østerbro Stadium, Copenhagen (DEN)",Nordic Senior Championships,31 MAY 2026,2026,5.,C,Area Regional Champs,7237523,worldwide
+women_HT,Patricia KAMGA,27 JUL 2006,65.87,,SWE,"Østerbro Stadium, Copenhagen (DEN)",Nordic Senior Championships,31 MAY 2026,2026,6.,C,Area Regional Champs,7237523,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,66.99,,SVK,"Mestni stadion, Ptuj (SLO)",Mednarodni Atletski Miting Ptuj in 6. Memorial Roberta Preloga,31 MAY 2026,2026,1.,D,Continental Tour,7235039,worldwide
+women_HT,Rose LOGA,27 JUL 2002,70.24,,FRA,"Stade Omnisports Schlossberg, Forbach (FRA)",Meeting International de Forbach,31 MAY 2026,2026,1.,C,Continental Tour,7234907,worldwide
+women_HT,Grete AHLBERG,29 MAY 1998,67.50,,SWE,"Stade Omnisports Schlossberg, Forbach (FRA)",Meeting International de Forbach,31 MAY 2026,2026,2.,C,Continental Tour,7234907,worldwide
+women_HT,Aleksandra ŚMIECH,02 OCT 1997,67.16,,POL,"Stade Omnisports Schlossberg, Forbach (FRA)",Meeting International de Forbach,31 MAY 2026,2026,3.,C,Continental Tour,7234907,worldwide
+women_HT,Ewa RÓŻAŃSKA,22 DEC 2000,67.13,,POL,"Stade Omnisports Schlossberg, Forbach (FRA)",Meeting International de Forbach,31 MAY 2026,2026,4.,C,Continental Tour,7234907,worldwide
+women_HT,Florella FREYCHE,13 DEC 2004,65.08,,FRA,"Stade Omnisports Schlossberg, Forbach (FRA)",Meeting International de Forbach,31 MAY 2026,2026,5.,C,Continental Tour,7234907,worldwide
+women_HT,Zahra TATAR,10 NOV 1992,60.68,,ALG,"Stade Omnisports Schlossberg, Forbach (FRA)",Meeting International de Forbach,31 MAY 2026,2026,6.,C,Continental Tour,7234907,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,80.09,,CAN,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,1.,A,Continental Tour,7230225,worldwide
+women_HT,Silja KOSONEN,16 DEC 2002,76.41,,FIN,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,2.,A,Continental Tour,7230225,worldwide
+women_HT,Krista TERVO,15 NOV 1997,75.55,,FIN,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,3.,A,Continental Tour,7230225,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,74.01,,ITA,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,4.,A,Continental Tour,7230225,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,73.77,,DEN,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,5.,A,Continental Tour,7230225,worldwide
+women_HT,Rose LOGA,27 JUL 2002,73.68,,FRA,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,6.,A,Continental Tour,7230225,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,72.44,,ISL,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,7.,A,Continental Tour,7230225,worldwide
+women_HT,Janee' KASSANAVOID,19 JAN 1995,68.60,,USA,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,8.,A,Continental Tour,7230225,worldwide
+women_HT,Aileen KUHN,27 NOV 2003,66.70,,GER,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,9.,A,Continental Tour,7230225,worldwide
+women_HT,Suvi NIIRANEN,24 APR 1997,65.91,,FIN,"Paavo Nurmen Stadion, Turku (FIN)",Paavo Nurmi Games,03 JUN 2026,2026,10.,A,Continental Tour,7230225,worldwide
+women_HT,Yaritza MARTÍNEZ,03 FEB 2000,67.24,,CUB,"Estadio Panamericano, La Habana (CUB)",Memorial José Barrientos,05 JUN 2026,2026,1.,D,Continental Tour,7241786,worldwide
+women_HT,Anita WŁODARCZYK,08 AUG 1985,71.01,,POL,"Banqiao Stadium, New Taipei City (TPE)",New Taipei City Athletics Open,06 JUN 2026,2026,1.,B,Continental Tour,7241997,worldwide
+women_HT,Lauren BRUCE,23 MAR 1997,70.27,,NZL,"Banqiao Stadium, New Taipei City (TPE)",New Taipei City Athletics Open,06 JUN 2026,2026,2.,B,Continental Tour,7241997,worldwide
+women_HT,Ya-Chien YU,20 APR 1999,65.24,,TPE,"Banqiao Stadium, New Taipei City (TPE)",New Taipei City Athletics Open,06 JUN 2026,2026,5.,B,Continental Tour,7241997,worldwide
+women_HT,Stephanie RATCLIFFE,29 DEC 2000,65.10,,AUS,"Banqiao Stadium, New Taipei City (TPE)",New Taipei City Athletics Open,06 JUN 2026,2026,6.,B,Continental Tour,7241997,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,79.36,,CAN,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,1.,A,Continental Tour,7233088,worldwide
+women_HT,Rachel RICHESON,27 SEP 1999,79.33,,USA,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,2.,A,Continental Tour,7233088,worldwide
+women_HT,Jie ZHAO,13 OCT 2002,76.25,,CHN,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,3.,A,Continental Tour,7233088,worldwide
+women_HT,Brooke ANDERSEN,23 AUG 1995,75.80,,USA,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,4.,A,Continental Tour,7233088,worldwide
+women_HT,DeAnna PRICE,08 JUN 1993,75.31,,USA,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,5.,A,Continental Tour,7233088,worldwide
+women_HT,Annette Nneka ECHIKUNWOKE,29 JUL 1996,74.71,,USA,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,6.,A,Continental Tour,7233088,worldwide
+women_HT,Jiale ZHANG,22 OCT 2006,73.76,,CHN,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,7.,A,Continental Tour,7233088,worldwide
+women_HT,Erin REESE,04 DEC 1995,72.58,,USA,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,8.,A,Continental Tour,7233088,worldwide
+women_HT,Janee' KASSANAVOID,19 JAN 1995,68.90,,USA,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,9.,A,Continental Tour,7233088,worldwide
+women_HT,Janeah STEWART,21 JUL 1996,65.33,,USA,"Cushing Stadium, College Station, TX (USA)",USATF Lone Star Grand Prix,06 JUN 2026,2026,10.,A,Continental Tour,7233088,worldwide
+women_HT,Yipsi MORENO,19 NOV 1980,62.66,,ALB,"Stadion Topolica, Bar (MNE)",Montenegro Championships,06 JUN 2026,2026,OC,B,National Championships,7242425,worldwide
+women_HT,Samantha BORUTTA,07 AUG 2000,70.28,,GER,"Stadion Erzgebirgsblick, Gelenau (GER)",23. Sparkassen Werfertag,07 JUN 2026,2026,1.,C,Continental Tour,7235081,worldwide
+women_HT,Rose LOGA,27 JUL 2002,70.08,,FRA,"Stadion Erzgebirgsblick, Gelenau (GER)",23. Sparkassen Werfertag,07 JUN 2026,2026,2.,C,Continental Tour,7235081,worldwide
+women_HT,Jillian SHIPPEE,19 APR 1999,68.48,,USA,"Stadion Erzgebirgsblick, Gelenau (GER)",23. Sparkassen Werfertag,07 JUN 2026,2026,3.,C,Continental Tour,7235081,worldwide
+women_HT,Grete AHLBERG,29 MAY 1998,66.93,,SWE,"Stadion Erzgebirgsblick, Gelenau (GER)",23. Sparkassen Werfertag,07 JUN 2026,2026,5.,C,Continental Tour,7235081,worldwide
+women_HT,Mayra GAVIRIA,26 MAY 1997,65.08,,COL,"Stadion Erzgebirgsblick, Gelenau (GER)",23. Sparkassen Werfertag,07 JUN 2026,2026,7.,C,Continental Tour,7235081,worldwide
+women_HT,Jada JULIEN,23 JUN 2004,63.07,,GER,"Stadion Erzgebirgsblick, Gelenau (GER)",23. Sparkassen Werfertag,07 JUN 2026,2026,9.,C,Continental Tour,7235081,worldwide
+women_HT,Aileen KUHN,27 NOV 2003,62.46,,GER,"Stadion Erzgebirgsblick, Gelenau (GER)",23. Sparkassen Werfertag,07 JUN 2026,2026,10.,C,Continental Tour,7235081,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,73.73,,DEN,"Mestský Stadion Sletište, Kladno (CZE)",Kladno hází a Kladenské Memoriály,09 JUN 2026,2026,1.,C,Continental Tour,7234808,worldwide
+women_HT,Charlotte PAYNE,20 MAR 2002,72.18,,GBR,"Mestský Stadion Sletište, Kladno (CZE)",Kladno hází a Kladenské Memoriály,09 JUN 2026,2026,2.,C,Continental Tour,7234808,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,70.89,,ISL,"Mestský Stadion Sletište, Kladno (CZE)",Kladno hází a Kladenské Memoriály,09 JUN 2026,2026,3.,C,Continental Tour,7234808,worldwide
+women_HT,Ewa RÓŻAŃSKA,22 DEC 2000,69.31,,POL,"Mestský Stadion Sletište, Kladno (CZE)",Kladno hází a Kladenské Memoriály,09 JUN 2026,2026,4.,C,Continental Tour,7234808,worldwide
+women_HT,Jillian SHIPPEE,19 APR 1999,68.96,,USA,"Mestský Stadion Sletište, Kladno (CZE)",Kladno hází a Kladenské Memoriály,09 JUN 2026,2026,5.,C,Continental Tour,7234808,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,66.85,,SVK,"Mestský Stadion Sletište, Kladno (CZE)",Kladno hází a Kladenské Memoriály,09 JUN 2026,2026,6.,C,Continental Tour,7234808,worldwide
+women_HT,Krista TERVO,15 NOV 1997,72.45,,FIN,"Stadion, Lahti (FIN)",Motonet GP Lahti,10 JUN 2026,2026,1.,C,Continental Tour,7234403,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,71.75,,ITA,"Stadion, Lahti (FIN)",Motonet GP Lahti,10 JUN 2026,2026,2.,C,Continental Tour,7234403,worldwide
+women_HT,Nicola TUTHILL,22 DEC 2003,71.37,,IRL,"Stadion, Lahti (FIN)",Motonet GP Lahti,10 JUN 2026,2026,3.,C,Continental Tour,7234403,worldwide
+women_HT,Suvi NIIRANEN,24 APR 1997,65.42,,FIN,"Stadion, Lahti (FIN)",Motonet GP Lahti,10 JUN 2026,2026,5.,C,Continental Tour,7234403,worldwide
+women_HT,Rebecka HALLERTH,04 JAN 1996,64.24,,SWE,"Stadion, Lahti (FIN)",Motonet GP Lahti,10 JUN 2026,2026,6.,C,Continental Tour,7234403,worldwide
+women_HT,Aada KOPPELI,19 MAY 2002,62.35,,FIN,"Stadion, Lahti (FIN)",Motonet GP Lahti,10 JUN 2026,2026,7.,C,Continental Tour,7234403,worldwide
+women_HT,Kiira VÄÄNÄNEN,06 JAN 1999,59.83,,FIN,"Stadion, Lahti (FIN)",Motonet GP Lahti,10 JUN 2026,2026,8.,C,Continental Tour,7234403,worldwide
+women_HT,Joy MCARTHUR,05 JUL 1999,64.14,,JPN,"Municipal Mizuho Stadium, Nagoya (JPN)",Japanese Championships,13 JUN 2026,2026,2.,B,National Championships,7237909,worldwide
+women_HT,Brooke ANDERSEN,23 AUG 1995,79.09,,USA,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,1.,A,Continental Tour,7233063,worldwide
+women_HT,DeAnna PRICE,08 JUN 1993,77.71,,USA,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,2.,A,Continental Tour,7233063,worldwide
+women_HT,Rachel RICHESON,27 SEP 1999,76.65,,USA,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,3.,A,Continental Tour,7233063,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,76.50,,CAN,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,4.,A,Continental Tour,7233063,worldwide
+women_HT,Jiale ZHANG,22 OCT 2006,75.72,,CHN,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,5.,A,Continental Tour,7233063,worldwide
+women_HT,Jie ZHAO,13 OCT 2002,75.21,,CHN,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,6.,A,Continental Tour,7233063,worldwide
+women_HT,Annette Nneka ECHIKUNWOKE,29 JUL 1996,74.99,,USA,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,7.,A,Continental Tour,7233063,worldwide
+women_HT,Erin REESE,04 DEC 1995,73.29,,USA,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,8.,A,Continental Tour,7233063,worldwide
+women_HT,Janee' KASSANAVOID,19 JAN 1995,70.29,,USA,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,9.,A,Continental Tour,7233063,worldwide
+women_HT,Janeah STEWART,21 JUL 1996,68.71,,USA,"USC Allyson Felix at Loker Track Stadium, Los Angeles, CA (USA)",USATF LA Grand Prix,13 JUN 2026,2026,10.,A,Continental Tour,7233063,worldwide
+women_HT,Anna PURCHASE,15 SEP 1999,68.13,,GBR,"Heino Lipp Stadium, Jöhvi (EST)",JÕHVI 2026 Heino Lipp memorial,16 JUN 2026,2026,2.,C,Continental Tour,7235049,worldwide
+women_HT,Suvi NIIRANEN,24 APR 1997,67.93,,FIN,"Heino Lipp Stadium, Jöhvi (EST)",JÕHVI 2026 Heino Lipp memorial,16 JUN 2026,2026,3.,C,Continental Tour,7235049,worldwide
+women_HT,Rebecka HALLERTH,04 JAN 1996,66.65,,SWE,"Heino Lipp Stadium, Jöhvi (EST)",JÕHVI 2026 Heino Lipp memorial,16 JUN 2026,2026,4.,C,Continental Tour,7235049,worldwide
+women_HT,Kiira VÄÄNÄNEN,06 JAN 1999,62.05,,FIN,"Heino Lipp Stadium, Jöhvi (EST)",JÕHVI 2026 Heino Lipp memorial,16 JUN 2026,2026,6.,C,Continental Tour,7235049,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,76.17,,CAN,"Terry Fox AF, Ottawa (CAN)",Canadian Championships,18 JUN 2026,2026,1.,B,National Championships,7237652,worldwide
+women_HT,Jillian WEIR,09 FEB 1993,69.50,,CAN,"Terry Fox AF, Ottawa (CAN)",Canadian Championships,18 JUN 2026,2026,2.,B,National Championships,7237652,worldwide
+women_HT,Shelby MORAN,03 APR 2000,70.05,,USA,"Iron Wood Throwers Center, Rathdrum, ID (USA)",Iron Wood Classic,18 JUN 2026,2026,1.,C,Continental Tour,7236530,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,67.74,,GRE,"Iron Wood Throwers Center, Rathdrum, ID (USA)",Iron Wood Classic,18 JUN 2026,2026,2.,C,Continental Tour,7236530,worldwide
+women_HT,Aleksandra ŚMIECH,02 OCT 1997,70.84,,POL,"Estadio Ciudad de Málaga, Málaga (ESP)",Meeting Internacional Ciudad de Málaga,18 JUN 2026,2026,1.,D,Continental Tour,7234117,worldwide
+women_HT,Laura REDONDO,03 JUL 1988,62.72,,ESP,"Estadio Ciudad de Málaga, Málaga (ESP)",Meeting Internacional Ciudad de Málaga,18 JUN 2026,2026,3.,D,Continental Tour,7234117,worldwide
+women_HT,Nayoka CLUNIS,07 OCT 1995,68.93,,JAM,"National Stadium, Kingston (JAM)",Jamaican Championships,21 JUN 2026,2026,1.,B,National Championships,7239107,worldwide
+women_HT,Rose LOGA,27 JUL 2002,72.38,,FRA,"Stade d'Honneur Marcel Roustan, Salon-de-Provence (FRA)",Festival Lancers,20 JUN 2026,2026,1.,D,Continental Tour,7234245,worldwide
+women_HT,Florella FREYCHE,13 DEC 2004,64.51,,FRA,"Stade d'Honneur Marcel Roustan, Salon-de-Provence (FRA)",Festival Lancers,20 JUN 2026,2026,2.,D,Continental Tour,7234245,worldwide
+women_HT,Mariana PESTANA,18 APR 2001,61.85,,POR,"Stade d'Honneur Marcel Roustan, Salon-de-Provence (FRA)",Festival Lancers,20 JUN 2026,2026,4.,D,Continental Tour,7234245,worldwide
+women_HT,Aileen KUHN,27 NOV 2003,70.87,,GER,"UNION-Stadion, Schönebeck (GER)",20. Schönebecker SoleCup,20 JUN 2026,2026,1.,C,Continental Tour,7235086,worldwide
+women_HT,Samantha BORUTTA,07 AUG 2000,69.72,,GER,"UNION-Stadion, Schönebeck (GER)",20. Schönebecker SoleCup,20 JUN 2026,2026,2.,C,Continental Tour,7235086,worldwide
+women_HT,Jada JULIEN,23 JUN 2004,68.92,,GER,"UNION-Stadion, Schönebeck (GER)",20. Schönebecker SoleCup,20 JUN 2026,2026,3.,C,Continental Tour,7235086,worldwide
+women_HT,Ya-Chien YU,20 APR 1999,66.75,,TPE,"Yecheon Stadium, Yecheon (KOR)",Korea Athletics Open,20 JUN 2026,2026,2.,C,Continental Tour,7239571,worldwide
+women_HT,Krista TERVO,15 NOV 1997,76.56,,FIN,"Kuortaneen keskusurheilukenttä, Kuortane (FIN)",Motonet GP Kuortane,20 JUN 2026,2026,1.,C,Continental Tour,7234675,worldwide
+women_HT,Silja KOSONEN,16 DEC 2002,76.23,,FIN,"Kuortaneen keskusurheilukenttä, Kuortane (FIN)",Motonet GP Kuortane,20 JUN 2026,2026,2.,C,Continental Tour,7234675,worldwide
+women_HT,Jillian SHIPPEE,19 APR 1999,69.81,,USA,"Kuortaneen keskusurheilukenttä, Kuortane (FIN)",Motonet GP Kuortane,20 JUN 2026,2026,3.,C,Continental Tour,7234675,worldwide
+women_HT,Grete AHLBERG,29 MAY 1998,69.09,,SWE,"Kuortaneen keskusurheilukenttä, Kuortane (FIN)",Motonet GP Kuortane,20 JUN 2026,2026,4.,C,Continental Tour,7234675,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,68.63,,ISL,"Kuortaneen keskusurheilukenttä, Kuortane (FIN)",Motonet GP Kuortane,20 JUN 2026,2026,5.,C,Continental Tour,7234675,worldwide
+women_HT,Suvi NIIRANEN,24 APR 1997,67.19,,FIN,"Kuortaneen keskusurheilukenttä, Kuortane (FIN)",Motonet GP Kuortane,20 JUN 2026,2026,6.,C,Continental Tour,7234675,worldwide
+women_HT,Oyesade OLATOYE,25 JAN 1997,65.07,,NGR,"Godswill Akpabio International Stadium, Uyo (NGR)",Nigerian Championships - Commonwealth Games Trials,21 JUN 2026,2026,1.,B,National Championships,7237477,worldwide
+women_HT,Anna PURCHASE,15 SEP 1999,71.88,,GBR,"Alexander Stadium, Birmingham (GBR)",Novuna UK Athletics Championships,20 JUN 2026,2026,1.,B,National Championships,7243090,worldwide
+women_HT,Charlotte PAYNE,20 MAR 2002,70.25,,GBR,"Alexander Stadium, Birmingham (GBR)",Novuna UK Athletics Championships,20 JUN 2026,2026,2.,B,National Championships,7243090,worldwide
+women_HT,Tara SIMPSON-SULLIVAN,02 DEC 2000,63.90,,GBR,"Alexander Stadium, Birmingham (GBR)",Novuna UK Athletics Championships,20 JUN 2026,2026,3.,B,National Championships,7243090,worldwide
+women_HT,Kayleigh PRESSWELL,14 MAR 1995,61.97,,GBR,"Alexander Stadium, Birmingham (GBR)",Novuna UK Athletics Championships,20 JUN 2026,2026,4.,B,National Championships,7243090,worldwide
+women_HT,Katie HEAD,09 DEC 1999,60.98,,GBR,"Alexander Stadium, Birmingham (GBR)",Novuna UK Athletics Championships,20 JUN 2026,2026,5.,B,National Championships,7243090,worldwide
+women_HT,Iryna KLYMETS,04 OCT 1994,68.50,,UKR,"Panthessaliko Stadium, Volos (GRE)",Balkan Championships,21 JUN 2026,2026,1.,B,Area Regional Champs,7240556,worldwide
+women_HT,Yipsi MORENO,19 NOV 1980,67.85,,ALB,"Panthessaliko Stadium, Volos (GRE)",Balkan Championships,21 JUN 2026,2026,2.,B,Area Regional Champs,7240556,worldwide
+women_HT,Hanna SKYDAN,14 MAY 1992,64.55,,AZE,"Panthessaliko Stadium, Volos (GRE)",Balkan Championships,21 JUN 2026,2026,3.,B,Area Regional Champs,7240556,worldwide
+women_HT,Stavroula KOSMIDOU,14 SEP 2001,63.79,,GRE,"Panthessaliko Stadium, Volos (GRE)",Balkan Championships,21 JUN 2026,2026,4.,B,Area Regional Champs,7240556,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,73.12,,ISL,"Østerbro Stadium, Copenhagen (DEN)",Copenhagen Athletics Games,22 JUN 2026,2026,1.,C,Continental Tour,7235973,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,72.64,,ITA,"Østerbro Stadium, Copenhagen (DEN)",Copenhagen Athletics Games,22 JUN 2026,2026,2.,C,Continental Tour,7235973,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,71.13,,DEN,"Østerbro Stadium, Copenhagen (DEN)",Copenhagen Athletics Games,22 JUN 2026,2026,3.,C,Continental Tour,7235973,worldwide
+women_HT,Aileen KUHN,27 NOV 2003,67.42,,GER,"Østerbro Stadium, Copenhagen (DEN)",Copenhagen Athletics Games,22 JUN 2026,2026,4.,C,Continental Tour,7235973,worldwide
+women_HT,Rebecka HALLERTH,04 JAN 1996,67.42,,SWE,"Østerbro Stadium, Copenhagen (DEN)",Copenhagen Athletics Games,22 JUN 2026,2026,5.,C,Continental Tour,7235973,worldwide
+women_HT,Grete AHLBERG,29 MAY 1998,66.61,,SWE,"Østerbro Stadium, Copenhagen (DEN)",Copenhagen Athletics Games,22 JUN 2026,2026,6.,C,Continental Tour,7235973,worldwide
+women_HT,Thea LÖFMAN,08 SEP 2003,62.95,,SWE,"Østerbro Stadium, Copenhagen (DEN)",Copenhagen Athletics Games,22 JUN 2026,2026,7.,C,Continental Tour,7235973,worldwide
+women_HT,Jillian SHIPPEE,19 APR 1999,62.66,,USA,"Østerbro Stadium, Copenhagen (DEN)",Copenhagen Athletics Games,22 JUN 2026,2026,8.,C,Continental Tour,7235973,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,66.31,,SVK,"Štadión SNP, Banská Bystrica (SVK)",TIPOS Atletické Kritérium SNP,24 JUN 2026,2026,3.,C,Continental Tour,7234813,worldwide
+women_HT,Zsanett NÉMETH,19 DEC 2000,66.16,,HUN,"Štadión SNP, Banská Bystrica (SVK)",TIPOS Atletické Kritérium SNP,24 JUN 2026,2026,4.,C,Continental Tour,7234813,worldwide
+women_HT,Réka GYURÁTZ,31 MAY 1996,64.81,,HUN,"Štadión SNP, Banská Bystrica (SVK)",TIPOS Atletické Kritérium SNP,24 JUN 2026,2026,5.,C,Continental Tour,7234813,worldwide
+women_HT,Manpreet KAUR,19 AUG 1998,60.14,,IND,"Kalinga Stadium, Bhubaneshwar (IND)",65th Indian Championships,24 JUN 2026,2026,4.,B,National Championships,7243206,worldwide
+women_HT,Zarina NOSIRJONOVA,23 MAR 2002,59.91,,UZB,"AFU Athletics Stadium, Tashkent (UZB)",Uzbek Championships,25 JUN 2026,2026,1.,B,National Championships,7240759,worldwide
+women_HT,Elina SILYAMIYEVA,21 OCT 2004,56.15,,UZB,"AFU Athletics Stadium, Tashkent (UZB)",Uzbek Championships,25 JUN 2026,2026,2.,B,National Championships,7240759,worldwide
+women_HT,Jie ZHAO,13 OCT 2002,73.99,,CHN,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,1.,C,Continental Tour,7236688,worldwide
+women_HT,Jiale ZHANG,22 OCT 2006,73.56,,CHN,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,2.,C,Continental Tour,7236688,worldwide
+women_HT,Janee' KASSANAVOID,19 JAN 1995,69.24,,USA,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,3.,C,Continental Tour,7236688,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,69.08,,GRE,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,4.,C,Continental Tour,7236688,worldwide
+women_HT,Elísabet Rut RÚNARSDÓTTIR,28 NOV 2002,68.31,,ISL,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,5.,C,Continental Tour,7236688,worldwide
+women_HT,Shelby MORAN,03 APR 2000,67.97,,USA,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,6.,C,Continental Tour,7236688,worldwide
+women_HT,Monique HARDY,28 DEC 2001,62.60,,USA,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,8.,C,Continental Tour,7236688,worldwide
+women_HT,Joy MCARTHUR,05 JUL 1999,61.41,,JPN,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,9.,C,Continental Tour,7236688,worldwide
+women_HT,Oyesade OLATOYE,25 JAN 1997,60.11,,NGR,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,10.,C,Continental Tour,7236688,worldwide
+women_HT,Rachel RICHESON,27 SEP 1999,NM,,USA,"Colich Throws Center, Wilmington, CA (USA)",LA Throws Cup,27 JUN 2026,2026,,C,Continental Tour,7236688,worldwide
+women_HT,Valentina SAVVA,17 MAY 2005,66.26,,CYP,"GPS Stadium, Nicosia (CYP)",Cyprus Championships,28 JUN 2026,2026,1.,B,National Championships,7234456,worldwide
+women_HT,Emilia KOLOKOTRONI,30 SEP 2005,60.10,,CYP,"GPS Stadium, Nicosia (CYP)",Cyprus Championships,28 JUN 2026,2026,2.,B,National Championships,7234456,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,72.97,,NOR,"Stade d'Athletisme Pierre Voillequin, Troyes (FRA)",Meeting International Troyes Aube,28 JUN 2026,2026,1.,C,Continental Tour,7234179,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,71.93,,DEN,"Stade d'Athletisme Pierre Voillequin, Troyes (FRA)",Meeting International Troyes Aube,28 JUN 2026,2026,2.,C,Continental Tour,7234179,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,70.30,,ISL,"Stade d'Athletisme Pierre Voillequin, Troyes (FRA)",Meeting International Troyes Aube,28 JUN 2026,2026,3.,C,Continental Tour,7234179,worldwide
+women_HT,Zahra TATAR,10 NOV 1992,66.19,,ALG,"Stade d'Athletisme Pierre Voillequin, Troyes (FRA)",Meeting International Troyes Aube,28 JUN 2026,2026,4.,C,Continental Tour,7234179,worldwide
+women_HT,Florella FREYCHE,13 DEC 2004,64.38,,FRA,"Stade d'Athletisme Pierre Voillequin, Troyes (FRA)",Meeting International Troyes Aube,28 JUN 2026,2026,5.,C,Continental Tour,7234179,worldwide
+women_HT,Nicola TUTHILL,22 DEC 2003,72.73,,IRL,"Golęcin Stadion, Poznan (POL)",Czesław Cybulski Memorial,28 JUN 2026,2026,1.,B,Continental Tour,7235341,worldwide
+women_HT,Anita WŁODARCZYK,08 AUG 1985,71.53,,POL,"Golęcin Stadion, Poznan (POL)",Czesław Cybulski Memorial,28 JUN 2026,2026,2.,B,Continental Tour,7235341,worldwide
+women_HT,Ewa RÓŻAŃSKA,22 DEC 2000,70.23,,POL,"Golęcin Stadion, Poznan (POL)",Czesław Cybulski Memorial,28 JUN 2026,2026,3.,B,Continental Tour,7235341,worldwide
+women_HT,Aleksandra ŚMIECH,02 OCT 1997,66.83,,POL,"Golęcin Stadion, Poznan (POL)",Czesław Cybulski Memorial,28 JUN 2026,2026,4.,B,Continental Tour,7235341,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,64.59,,SVK,"Golęcin Stadion, Poznan (POL)",Czesław Cybulski Memorial,28 JUN 2026,2026,5.,B,Continental Tour,7235341,worldwide
+women_HT,Florella FREYCHE,13 DEC 2004,67.08,,FRA,"Pistes d'atletisme Gaetà Huguet, Castellón (ESP)",GP Diputacion Castellon - Memorial Jose Antonio Cansino,01 JUL 2026,2026,2.,D,Continental Tour,7236732,worldwide
+women_HT,Yipsi MORENO,19 NOV 1980,63.55,,ALB,"Pistes d'atletisme Gaetà Huguet, Castellón (ESP)",GP Diputacion Castellon - Memorial Jose Antonio Cansino,01 JUL 2026,2026,3.,D,Continental Tour,7236732,worldwide
+women_HT,Jillian SHIPPEE,19 APR 1999,70.68,,USA,"PEPS de l'Université Laval, Quebec City (CAN)",Classique d'Athlétisme de Québec,03 JUL 2026,2026,1.,D,Continental Tour,7236638,worldwide
+women_HT,Tuğçe ŞAHUTOĞLU,01 MAY 1988,57.86,,TUR,"Atatürk Stadyumu, Izmir (TUR)",Turkish Championships,03 JUL 2026,2026,1.,B,National Championships,7231686,worldwide
+women_HT,Zeliha UZUNBILEK,10 JUN 1991,54.73,,TUR,"Atatürk Stadyumu, Izmir (TUR)",Turkish Championships,03 JUL 2026,2026,5.,B,National Championships,7231686,worldwide
+women_HT,Samantha BORUTTA,07 AUG 2000,66.38,,GER,"Atletiek Arena Gaston Roelants Kessel-Lo, Oude Markt, Leuven (BEL)",Meeting voor Mon - Polsstokgala,04 JUL 2026,2026,2.,D,Continental Tour,7234454,worldwide
+women_HT,Soukaina ZAKKOUR,13 OCT 1993,53.02,,MAR,Sale (MAR),Moroccan Championships,04 JUL 2026,2026,1.,B,National Championships,7239227,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,76.16,,CAN,"Munster Technological University Track, Cork (IRL)",Cork City Sports,08 JUL 2026,2026,1.,C,Continental Tour,7233918,worldwide
+women_HT,Nicola TUTHILL,22 DEC 2003,72.35,,IRL,"Munster Technological University Track, Cork (IRL)",Cork City Sports,08 JUL 2026,2026,2.,C,Continental Tour,7233918,worldwide
+women_HT,Charlotte PAYNE,20 MAR 2002,70.90,,GBR,"Munster Technological University Track, Cork (IRL)",Cork City Sports,08 JUL 2026,2026,3.,C,Continental Tour,7233918,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,70.90,,NOR,"Munster Technological University Track, Cork (IRL)",Cork City Sports,08 JUL 2026,2026,4.,C,Continental Tour,7233918,worldwide
+women_HT,Valentina SAVVA,17 MAY 2005,67.67,,CYP,"Munster Technological University Track, Cork (IRL)",Cork City Sports,08 JUL 2026,2026,5.,C,Continental Tour,7233918,worldwide
+women_HT,Tara SIMPSON-SULLIVAN,02 DEC 2000,64.33,,GBR,"Munster Technological University Track, Cork (IRL)",Cork City Sports,08 JUL 2026,2026,6.,C,Continental Tour,7233918,worldwide
+women_HT,Mariana WALKER,19 MAR 1999,63.53,,CHI,"Munster Technological University Track, Cork (IRL)",Cork City Sports,08 JUL 2026,2026,7.,C,Continental Tour,7233918,worldwide
+women_HT,Camryn ROGERS,07 JUN 1999,75.97,,CAN,"Morton Stadium, Santry, Dublin (IRL)",Morton Games,10 JUL 2026,2026,1.,C,Continental Tour,7233919,worldwide
+women_HT,Nicola TUTHILL,22 DEC 2003,71.07,,IRL,"Morton Stadium, Santry, Dublin (IRL)",Morton Games,10 JUL 2026,2026,2.,C,Continental Tour,7233919,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,69.48,,NOR,"Morton Stadium, Santry, Dublin (IRL)",Morton Games,10 JUL 2026,2026,3.,C,Continental Tour,7233919,worldwide
+women_HT,Charlotte PAYNE,20 MAR 2002,68.24,,GBR,"Morton Stadium, Santry, Dublin (IRL)",Morton Games,10 JUL 2026,2026,4.,C,Continental Tour,7233919,worldwide
+women_HT,Samantha BORUTTA,07 AUG 2000,68.10,,GER,"Morton Stadium, Santry, Dublin (IRL)",Morton Games,10 JUL 2026,2026,5.,C,Continental Tour,7233919,worldwide
+women_HT,Aleksandra ŚMIECH,02 OCT 1997,67.11,,POL,"Morton Stadium, Santry, Dublin (IRL)",Morton Games,10 JUL 2026,2026,6.,C,Continental Tour,7233919,worldwide
+women_HT,Valentina SAVVA,17 MAY 2005,64.33,,CYP,"Morton Stadium, Santry, Dublin (IRL)",Morton Games,10 JUL 2026,2026,7.,C,Continental Tour,7233919,worldwide
+women_HT,Mariana WALKER,19 MAR 1999,62.67,,CHI,"Morton Stadium, Santry, Dublin (IRL)",Morton Games,10 JUL 2026,2026,8.,C,Continental Tour,7233919,worldwide
+women_HT,Iryna KLYMETS,04 OCT 1994,68.81,,UKR,"Stadion SKIF, Lviv (UKR)",Ukrainian Championships,10 JUL 2026,2026,1.,B,National Championships,7241472,worldwide
+women_HT,Rymma FILIMOSHKINA,15 APR 1986,55.91,,UKR,"Stadion SKIF, Lviv (UKR)",Ukrainian Championships,10 JUL 2026,2026,3.,B,National Championships,7241472,worldwide
+women_HT,Maris NIIT,17 MAR 1984,50.65,,EST,"Kalevi Keskstaadion, Tallinn (EST)",Aleksander Lohu Memorial,11 JUL 2026,2026,2.,D,Continental Tour,7235052,worldwide
+women_HT,Zsanett NÉMETH,19 DEC 2000,66.96,,HUN,"General Klapálek ́s stadium, Nové Město nad Metují (CZE)",48th Grand Prix Nove Mesto nad Metuji,11 JUL 2026,2026,1.,C,Continental Tour,7234815,worldwide
+women_HT,Krista TERVO,15 NOV 1997,76.28,,FIN,"Ratinan Stadion, Tampere (FIN)",Tampere Meeting,12 JUL 2026,2026,1.,C,Continental Tour,7235087,worldwide
+women_HT,Silja KOSONEN,16 DEC 2002,74.32,,FIN,"Ratinan Stadion, Tampere (FIN)",Tampere Meeting,12 JUL 2026,2026,2.,C,Continental Tour,7235087,worldwide
+women_HT,Ewa RÓŻAŃSKA,22 DEC 2000,67.28,,POL,"Ratinan Stadion, Tampere (FIN)",Tampere Meeting,12 JUL 2026,2026,4.,C,Continental Tour,7235087,worldwide
+women_HT,Charlotta SANDKULLA,14 APR 2004,66.31,,FIN,"Ratinan Stadion, Tampere (FIN)",Tampere Meeting,12 JUL 2026,2026,6.,C,Continental Tour,7235087,worldwide
+women_HT,Suvi NIIRANEN,24 APR 1997,65.54,,FIN,"Ratinan Stadion, Tampere (FIN)",Tampere Meeting,12 JUL 2026,2026,7.,C,Continental Tour,7235087,worldwide
+women_HT,Aada KOPPELI,19 MAY 2002,60.40,,FIN,"Ratinan Stadion, Tampere (FIN)",Tampere Meeting,12 JUL 2026,2026,8.,C,Continental Tour,7235087,worldwide
+women_HT,Anthonett NABWE,22 JAN 2004,76.25,,LBR,"Foote Field, Edmonton (CAN)",Edmonton Athletics Invitational,12 JUL 2026,2026,1.,B,Continental Tour,7236639,worldwide
+women_HT,Rachel RICHESON,27 SEP 1999,75.33,,USA,"Foote Field, Edmonton (CAN)",Edmonton Athletics Invitational,12 JUL 2026,2026,2.,B,Continental Tour,7236639,worldwide
+women_HT,Nayoka CLUNIS,07 OCT 1995,71.99,,JAM,"Foote Field, Edmonton (CAN)",Edmonton Athletics Invitational,12 JUL 2026,2026,3.,B,Continental Tour,7236639,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,68.48,,GRE,"Foote Field, Edmonton (CAN)",Edmonton Athletics Invitational,12 JUL 2026,2026,4.,B,Continental Tour,7236639,worldwide
+women_HT,Nayoka CLUNIS,07 OCT 1995,71.15,,JAM,"Swangard Stadium, Burnaby (CAN)",The Jerome Classic,14 JUL 2026,2026,1.,C,Continental Tour,7229527,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,67.42,,GRE,"Swangard Stadium, Burnaby (CAN)",The Jerome Classic,14 JUL 2026,2026,3.,C,Continental Tour,7229527,worldwide
+women_HT,Yipsi MORENO,19 NOV 1980,66.84,,ALB,"Kaftanzoglio Stadium, Thessaloniki (GRE)","Athletics Meeting ""Kostas Spanidis""",15 JUL 2026,2026,1.,D,Continental Tour,7238587,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,63.22,,SVK,"Kaftanzoglio Stadium, Thessaloniki (GRE)","Athletics Meeting ""Kostas Spanidis""",15 JUL 2026,2026,2.,D,Continental Tour,7238587,worldwide
+women_HT,Stavroula KOSMIDOU,14 SEP 2001,61.86,,GRE,"Kaftanzoglio Stadium, Thessaloniki (GRE)","Athletics Meeting ""Kostas Spanidis""",15 JUL 2026,2026,4.,D,Continental Tour,7238587,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,75.62,,ITA,"Estadio Vallehermoso, Madrid (ESP)",Meeting Madrid,16 JUL 2026,2026,1.,B,Continental Tour,7236602,worldwide
+women_HT,Anita WŁODARCZYK,08 AUG 1985,75.01,,POL,"Estadio Vallehermoso, Madrid (ESP)",Meeting Madrid,16 JUL 2026,2026,2.,B,Continental Tour,7236602,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,72.61,,NOR,"Estadio Vallehermoso, Madrid (ESP)",Meeting Madrid,16 JUL 2026,2026,3.,B,Continental Tour,7236602,worldwide
+women_HT,Lauren BRUCE,23 MAR 1997,72.44,,NZL,"Estadio Vallehermoso, Madrid (ESP)",Meeting Madrid,16 JUL 2026,2026,4.,B,Continental Tour,7236602,worldwide
+women_HT,Laura REDONDO,03 JUL 1988,70.89,,ESP,"Estadio Vallehermoso, Madrid (ESP)",Meeting Madrid,16 JUL 2026,2026,5.,B,Continental Tour,7236602,worldwide
+women_HT,Rose LOGA,27 JUL 2002,70.37,,FRA,"Estadio Vallehermoso, Madrid (ESP)",Meeting Madrid,16 JUL 2026,2026,6.,B,Continental Tour,7236602,worldwide
+women_HT,Stephanie RATCLIFFE,29 DEC 2000,69.77,,AUS,"Estadio Vallehermoso, Madrid (ESP)",Meeting Madrid,16 JUL 2026,2026,7.,B,Continental Tour,7236602,worldwide
+women_HT,Jinyao GAO,30 APR 2004,69.29,,CHN,"Sports Center, Yulin (CHN)",National Athletics Grand Prix - Final,19 JUL 2026,2026,1.,D,Continental Tour,7241798,worldwide
+women_HT,Ling FANG,24 OCT 2005,66.86,,CHN,"Sports Center, Yulin (CHN)",National Athletics Grand Prix - Final,19 JUL 2026,2026,2.,D,Continental Tour,7241798,worldwide
+women_HT,Estel VALEANU,01 AUG 1999,50.40,,ISR,"Givat Ram Stadium, Jerusalem (ISR)",Israeli Championships,21 JUL 2026,2026,1.,B,National Championships,7236179,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,70.21,,DEN,"Štadión SNP, Banská Bystrica (SVK)",TIPOS P-T-S Meeting,21 JUL 2026,2026,1.,B,Continental Tour,7235101,worldwide
+women_HT,Anita WŁODARCZYK,08 AUG 1985,69.60,,POL,"Štadión SNP, Banská Bystrica (SVK)",TIPOS P-T-S Meeting,21 JUL 2026,2026,2.,B,Continental Tour,7235101,worldwide
+women_HT,Zsanett NÉMETH,19 DEC 2000,65.81,,HUN,"Štadión SNP, Banská Bystrica (SVK)",TIPOS P-T-S Meeting,21 JUL 2026,2026,3.,B,Continental Tour,7235101,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,62.86,,SVK,"Štadión SNP, Banská Bystrica (SVK)",TIPOS P-T-S Meeting,21 JUL 2026,2026,5.,B,Continental Tour,7235101,worldwide
+women_HT,Réka GYURÁTZ,31 MAY 1996,62.68,,HUN,"Štadión SNP, Banská Bystrica (SVK)",TIPOS P-T-S Meeting,21 JUL 2026,2026,6.,B,Continental Tour,7235101,worldwide
+women_HT,Anastasiya KALAMOYETS,15 JUL 1994,65.83,,BLR,"Dinamo National Olympic Stadium, Minsk (BLR)",Belarus Championships,22 JUL 2026,2026,2.,B,National Championships,7244584,worldwide
+women_HT,Maryola BUKEL,09 JAN 2002,63.57,,BLR,"Dinamo National Olympic Stadium, Minsk (BLR)",Belarus Championships,22 JUL 2026,2026,3.,B,National Championships,7244584,worldwide
+women_HT,Hanna SALAVEI,18 FEB 2001,62.70,,BLR,"Dinamo National Olympic Stadium, Minsk (BLR)",Belarus Championships,22 JUL 2026,2026,4.,B,National Championships,7244584,worldwide
+women_HT,Tatsiana RAMANOVICH,26 MAR 2000,59.90,,BLR,"Dinamo National Olympic Stadium, Minsk (BLR)",Belarus Championships,22 JUL 2026,2026,6.,B,National Championships,7244584,worldwide
+women_HT,Anastasiya MASLOVA,16 OCT 1997,NM,,BLR,"Dinamo National Olympic Stadium, Minsk (BLR)",Belarus Championships,22 JUL 2026,2026,,B,National Championships,7244584,worldwide
+women_HT,Sofiya PALKINA,09 JUN 1998,73.77,,RUS,"Kalininets Stadium, Yekaterinburg (RUS)",Russian Championships,26 JUL 2026,2026,1.,B,National Championships,7243535,worldwide
+women_HT,Anastasiya SHKURATOVA,29 DEC 1999,67.20,,RUS,"Kalininets Stadium, Yekaterinburg (RUS)",Russian Championships,26 JUL 2026,2026,2.,B,National Championships,7243535,worldwide
+women_HT,Alisiya NAUMOVA,27 MAY 2002,66.82,,RUS,"Kalininets Stadium, Yekaterinburg (RUS)",Russian Championships,26 JUL 2026,2026,3.,B,National Championships,7243535,worldwide
+women_HT,Kristina ZAGORNAYA,26 JUL 2004,63.03,,RUS,"Kalininets Stadium, Yekaterinburg (RUS)",Russian Championships,26 JUL 2026,2026,7.,B,National Championships,7243535,worldwide
+women_HT,Yelizaveta TSAREVA,26 MAR 1993,59.73,,RUS,"Kalininets Stadium, Yekaterinburg (RUS)",Russian Championships,26 JUL 2026,2026,9.,B,National Championships,7243535,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,67.25,,NOR,"Trondheim Stadion, Trondheim (NOR)",Norwegian Championships,24 JUL 2026,2026,1.,B,National Championships,7233455,worldwide
+women_HT,Helene Sofie INGVALDSEN,22 JUN 1996,56.64,,NOR,"Trondheim Stadion, Trondheim (NOR)",Norwegian Championships,24 JUL 2026,2026,3.,B,National Championships,7233455,worldwide
+women_HT,Annette Nneka ECHIKUNWOKE,29 JUL 1996,75.47,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,1.,B,National Championships,7243123,worldwide
+women_HT,Rachel RICHESON,27 SEP 1999,73.02,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,2.,B,National Championships,7243123,worldwide
+women_HT,Erin REESE,04 DEC 1995,72.94,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,3.,B,National Championships,7243123,worldwide
+women_HT,Shelby MORAN,03 APR 2000,71.07,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,4.,B,National Championships,7243123,worldwide
+women_HT,Janee' KASSANAVOID,19 JAN 1995,70.98,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,5.,B,National Championships,7243123,worldwide
+women_HT,Madison MALONE,31 MAY 1999,69.63,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,6.,B,National Championships,7243123,worldwide
+women_HT,Jillian SHIPPEE,19 APR 1999,69.56,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,7.,B,National Championships,7243123,worldwide
+women_HT,Giavonna MEEKS,28 JUL 2004,66.38,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,8.,B,National Championships,7243123,worldwide
+women_HT,Elisia LANCASTER,19 AUG 1998,65.91,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,9.,B,National Championships,7243123,worldwide
+women_HT,Monique HARDY,28 DEC 2001,64.70,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,11.,B,National Championships,7243123,worldwide
+women_HT,Jalani DAVIS,23 MAY 2001,56.60,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,14.,B,National Championships,7243123,worldwide
+women_HT,DeAnna PRICE,08 JUN 1993,NM,,USA,"Icahn Stadium, New York, NY (USA)",USA Championships,24 JUL 2026,2026,,B,National Championships,7243123,worldwide
+women_HT,Mariana PESTANA,18 APR 2001,63.22,,POR,"Estadio Universitario, Lisboa (POR)",Portuguese Championships,25 JUL 2026,2026,1.,B,National Championships,7232876,worldwide
+women_HT,Anita WŁODARCZYK,08 AUG 1985,71.25,,POL,"Stadion BOSiR, Białystok (POL)",Polish Championships,25 JUL 2026,2026,1.,B,National Championships,7231706,worldwide
+women_HT,Aleksandra ŚMIECH,02 OCT 1997,69.60,,POL,"Stadion BOSiR, Białystok (POL)",Polish Championships,25 JUL 2026,2026,2.,B,National Championships,7231706,worldwide
+women_HT,Ewa RÓŻAŃSKA,22 DEC 2000,68.07,,POL,"Stadion BOSiR, Białystok (POL)",Polish Championships,25 JUL 2026,2026,3.,B,National Championships,7231706,worldwide
+women_HT,Katarzyna FURMANEK,19 FEB 1996,67.46,,POL,"Stadion BOSiR, Białystok (POL)",Polish Championships,25 JUL 2026,2026,4.,B,National Championships,7231706,worldwide
+women_HT,Laura REDONDO,03 JUL 1988,65.88,,ESP,"Estadio Ciudad de Málaga, Málaga (ESP)",Spanish Championships,25 JUL 2026,2026,2.,B,National Championships,7239429,worldwide
+women_HT,Silja KOSONEN,16 DEC 2002,72.86,,FIN,"Harjun stadion, Jyväskylä (FIN)",Finnish Championships,26 JUL 2026,2026,1.,B,National Championships,7237667,worldwide
+women_HT,Aada KOPPELI,19 MAY 2002,65.23,,FIN,"Harjun stadion, Jyväskylä (FIN)",Finnish Championships,26 JUL 2026,2026,4.,B,National Championships,7237667,worldwide
+women_HT,Suvi NIIRANEN,24 APR 1997,65.06,,FIN,"Harjun stadion, Jyväskylä (FIN)",Finnish Championships,26 JUL 2026,2026,5.,B,National Championships,7237667,worldwide
+women_HT,Charlotta SANDKULLA,14 APR 2004,64.55,,FIN,"Harjun stadion, Jyväskylä (FIN)",Finnish Championships,26 JUL 2026,2026,6.,B,National Championships,7237667,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,62.01,,SVK,"Štadión SNP, Banská Bystrica (SVK)",Slovak Championships,25 JUL 2026,2026,1.,B,National Championships,7244435,worldwide
+women_HT,Rose LOGA,27 JUL 2002,70.98,,FRA,"Stadium Municipal, Albi (FRA)",French Championships,26 JUL 2026,2026,1.,B,National Championships,7236362,worldwide
+women_HT,Marie ROUGETET,07 JAN 2006,65.12,,FRA,"Stadium Municipal, Albi (FRA)",French Championships,26 JUL 2026,2026,2.,B,National Championships,7236362,worldwide
+women_HT,Florella FREYCHE,13 DEC 2004,63.13,,FRA,"Stadium Municipal, Albi (FRA)",French Championships,26 JUL 2026,2026,3.,B,National Championships,7236362,worldwide
+women_HT,Laetitia BAMBARA,30 MAR 1984,52.76,,BUR,"Stadium Municipal, Albi (FRA)",French Championships,26 JUL 2026,2026,OC,B,National Championships,7236362,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,70.09,,ISL,"Frjálsíþróttavöllur ÍR, Reykjavík (ISL)",Islandic Championships,25 JUL 2026,2026,1.,B,National Championships,7243192,worldwide
+women_HT,Elísabet Rut RÚNARSDÓTTIR,28 NOV 2002,67.75,,ISL,"Frjálsíþróttavöllur ÍR, Reykjavík (ISL)",Islandic Championships,25 JUL 2026,2026,2.,B,National Championships,7243192,worldwide
+women_HT,Malin GARBELL,04 OCT 2005,69.16,,SWE,"Uppsala Friidrottsarena, Uppsala (SWE)",Swedish Championships,26 JUL 2026,2026,1.,B,National Championships,7237432,worldwide
+women_HT,Rebecka HALLERTH,04 JAN 1996,67.35,,SWE,"Uppsala Friidrottsarena, Uppsala (SWE)",Swedish Championships,26 JUL 2026,2026,2.,B,National Championships,7237432,worldwide
+women_HT,Grete AHLBERG,29 MAY 1998,67.30,,SWE,"Uppsala Friidrottsarena, Uppsala (SWE)",Swedish Championships,26 JUL 2026,2026,3.,B,National Championships,7237432,worldwide
+women_HT,Sara FORSSELL,19 NOV 2000,63.73,,SWE,"Uppsala Friidrottsarena, Uppsala (SWE)",Swedish Championships,26 JUL 2026,2026,6.,B,National Championships,7237432,worldwide
+women_HT,Patricia KAMGA,27 JUL 2006,58.79,,SWE,"Uppsala Friidrottsarena, Uppsala (SWE)",Swedish Championships,26 JUL 2026,2026,10.,B,National Championships,7237432,worldwide
+women_HT,Zsanett NÉMETH,19 DEC 2000,70.46,,HUN,"Nemzeti Atlétikai Központ, Budapest (HUN)",Hungarian Championships,26 JUL 2026,2026,1.,B,National Championships,7243637,worldwide
+women_HT,Réka GYURÁTZ,31 MAY 1996,67.63,,HUN,"Nemzeti Atlétikai Központ, Budapest (HUN)",Hungarian Championships,26 JUL 2026,2026,3.,B,National Championships,7243637,worldwide
+women_HT,Nicola TUTHILL,22 DEC 2003,70.16,,IRL,"Morton Stadium, Santry, Dublin (IRL)",Irish Championships,26 JUL 2026,2026,1.,B,National Championships,7242784,worldwide
+women_HT,Aileen KUHN,27 NOV 2003,71.38,,GER,"Lohrheidestadion, Wattenscheid, Bochum (GER)",German Championships,25 JUL 2026,2026,1.,B,National Championships,7243645,worldwide
+women_HT,Samantha BORUTTA,07 AUG 2000,69.71,,GER,"Lohrheidestadion, Wattenscheid, Bochum (GER)",German Championships,25 JUL 2026,2026,2.,B,National Championships,7243645,worldwide
+women_HT,Jada JULIEN,23 JUN 2004,65.40,,GER,"Lohrheidestadion, Wattenscheid, Bochum (GER)",German Championships,25 JUL 2026,2026,4.,B,National Championships,7243645,worldwide
+women_HT,Esther IMARIAGBEE,25 FEB 2002,57.84,,GER,"Lohrheidestadion, Wattenscheid, Bochum (GER)",German Championships,25 JUL 2026,2026,9.,B,National Championships,7243645,worldwide
+women_HT,Vanessa STERCKENDRIES,15 SEP 1995,56.13,,BEL,"Atletiekarena Gaston Roelants, Kessel-Lo (BEL)",Belgian Championships,25 JUL 2026,2026,2.,B,National Championships,7242376,worldwide
+women_HT,Kati OJALOO,31 JAN 1990,60.53,,EST,"Rannastaadion, Pärnu (EST)",Estonian Championships,26 JUL 2026,2026,2.,B,National Championships,7234516,worldwide
+women_HT,Maris NIIT,17 MAR 1984,54.48,,EST,"Rannastaadion, Pärnu (EST)",Estonian Championships,26 JUL 2026,2026,3.,B,National Championships,7234516,worldwide
+women_HT,Ana Adela STANCIU,13 JUN 2000,50.21,,ROU,"Stadionul de atletism ""Nicolae Mărășescu"", Craiova (ROU)",Romanian Championships,25 JUL 2026,2026,2.,B,National Championships,7244355,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,73.33,,ITA,"Stadio Luigi Ridolfi, Firenze (ITA)",Italian Championships,26 JUL 2026,2026,1.,B,National Championships,7239956,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,70.96,,DEN,"Østerbro Stadium, Copenhagen (DEN)",Danish Championships,25 JUL 2026,2026,1.,B,National Championships,7238912,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,69.11,,GRE,"Panthessaliko Stadium, Volos (GRE)",Greek Championships,26 JUL 2026,2026,1.,B,National Championships,7238663,worldwide
+women_HT,Stavroula KOSMIDOU,14 SEP 2001,62.98,,GRE,"Panthessaliko Stadium, Volos (GRE)",Greek Championships,26 JUL 2026,2026,2.,B,National Championships,7238663,worldwide
+women_HT,Chrysoula ANAGNOSTOPOULOU,27 AUG 1991,36.67,,GRE,"Panthessaliko Stadium, Volos (GRE)",Greek Championships,26 JUL 2026,2026,9.,B,National Championships,7238663,worldwide
+women_HT,Mayra GAVIRIA,26 MAY 1997,67.59,,COL,"Estadio Olimpico Juan Pablo Duarte, Santo Domingo (DOM)",CAC Games,03 AUG 2026,2026,1.,B,Area Regional Champs,7233796,worldwide
+women_HT,Rosa Andreina RODRÍGUEZ,02 JUL 1986,66.17,,VEN,"Estadio Olimpico Juan Pablo Duarte, Santo Domingo (DOM)",CAC Games,03 AUG 2026,2026,2.,B,Area Regional Champs,7233796,worldwide
+women_HT,Yaritza MARTÍNEZ,03 FEB 2000,65.90,,CUB,"Estadio Olimpico Juan Pablo Duarte, Santo Domingo (DOM)",CAC Games,03 AUG 2026,2026,3.,B,Area Regional Champs,7233796,worldwide
+women_HT,Silja KOSONEN,16 DEC 2002,76.28,,FIN,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,1.,GL,Area Champs,7192415,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,74.35,,ITA,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,2.,GL,Area Champs,7192415,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,72.88,,NOR,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,3.,GL,Area Champs,7192415,worldwide
+women_HT,Anita WŁODARCZYK,08 AUG 1985,72.37,,POL,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,4.,GL,Area Champs,7192415,worldwide
+women_HT,Nicola TUTHILL,22 DEC 2003,70.33,,IRL,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,5.,GL,Area Champs,7192415,worldwide
+women_HT,Charlotte PAYNE,20 MAR 2002,70.12,,GBR,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,6.,GL,Area Champs,7192415,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,69.54,,GRE,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,7.,GL,Area Champs,7192415,worldwide
+women_HT,Aleksandra ŚMIECH,02 OCT 1997,69.12,,POL,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,8.,GL,Area Champs,7192415,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,68.70,,DEN,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,9.,GL,Area Champs,7192415,worldwide
+women_HT,Aileen KUHN,27 NOV 2003,68.24,,GER,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,10.,GL,Area Champs,7192415,worldwide
+women_HT,Krista TERVO,15 NOV 1997,67.74,,FIN,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,11.,GL,Area Champs,7192415,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,67.24,,ISL,"Alexander Stadium, Birmingham (GBR)",European Athletics Championships,12 AUG 2026,2026,12.,GL,Area Champs,7192415,worldwide
+women_HT,Jiale ZHANG,22 OCT 2006,78.64,,CHN,"Sports Center, Quzhou (CHN)",Chinese Championships,16 AUG 2026,2026,1.,B,National Championships,7243221,worldwide
+women_HT,Jie ZHAO,13 OCT 2002,77.20,,CHN,"Sports Center, Quzhou (CHN)",Chinese Championships,16 AUG 2026,2026,2.,B,National Championships,7243221,worldwide
+women_HT,Jinyao GAO,30 APR 2004,73.79,,CHN,"Sports Center, Quzhou (CHN)",Chinese Championships,16 AUG 2026,2026,3.,B,National Championships,7243221,worldwide
+women_HT,Jiangyan LI,22 MAY 1999,73.28,,CHN,"Sports Center, Quzhou (CHN)",Chinese Championships,16 AUG 2026,2026,4.,B,National Championships,7243221,worldwide
+women_HT,Ling FANG,24 OCT 2005,70.99,,CHN,"Sports Center, Quzhou (CHN)",Chinese Championships,16 AUG 2026,2026,5.,B,National Championships,7243221,worldwide
+women_HT,Axi ZHANG,06 MAR 2002,70.64,,CHN,"Sports Center, Quzhou (CHN)",Chinese Championships,16 AUG 2026,2026,6.,B,National Championships,7243221,worldwide
+women_HT,Weilu HUANG,20 JUL 1999,65.21,,CHN,"Sports Center, Quzhou (CHN)",Chinese Championships,16 AUG 2026,2026,8.,B,National Championships,7243221,worldwide
+women_HT,Yiyao LIU,17 SEP 2003,62.45,,CHN,"Sports Center, Quzhou (CHN)",Chinese Championships,16 AUG 2026,2026,9.,B,National Championships,7243221,worldwide
+women_HT,Patricia KAMGA,27 JUL 2006,69.21,,SWE,"Leppävaaran Stadion, Espoo (FIN)",Espoo Motonet GP,19 AUG 2026,2026,1.,C,Continental Tour,7235369,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,68.72,,NOR,"Leppävaaran Stadion, Espoo (FIN)",Espoo Motonet GP,19 AUG 2026,2026,2.,C,Continental Tour,7235369,worldwide
+women_HT,Iryna KLYMETS,04 OCT 1994,68.44,,UKR,"Leppävaaran Stadion, Espoo (FIN)",Espoo Motonet GP,19 AUG 2026,2026,3.,C,Continental Tour,7235369,worldwide
+women_HT,Samantha BORUTTA,07 AUG 2000,65.56,,GER,"Leppävaaran Stadion, Espoo (FIN)",Espoo Motonet GP,19 AUG 2026,2026,4.,C,Continental Tour,7235369,worldwide
+women_HT,Aada KOPPELI,19 MAY 2002,64.04,,FIN,"Leppävaaran Stadion, Espoo (FIN)",Espoo Motonet GP,19 AUG 2026,2026,5.,C,Continental Tour,7235369,worldwide
+women_HT,Zarina NOSIRJONOVA,23 MAR 2002,64.89,,UZB,"AFU Athletics Stadium, Tashkent (UZB)",Central Asian Open Championships,24 AUG 2026,2026,1.,D,Area Regional Champs,7235652,worldwide
+women_HT,Iryna KLYMETS,04 OCT 1994,70.56,,UKR,"Sugár úti Atlétikai Centrum, Szombathely (HUN)",WACT Silver Hammer Throw Competition,26 AUG 2026,2026,1.,B,Continental Tour,7237248,worldwide
+women_HT,Zsanett NÉMETH,19 DEC 2000,68.96,,HUN,"Sugár úti Atlétikai Centrum, Szombathely (HUN)",WACT Silver Hammer Throw Competition,26 AUG 2026,2026,2.,B,Continental Tour,7237248,worldwide
+women_HT,Réka GYURÁTZ,31 MAY 1996,67.60,,HUN,"Sugár úti Atlétikai Centrum, Szombathely (HUN)",WACT Silver Hammer Throw Competition,26 AUG 2026,2026,3.,B,Continental Tour,7237248,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,65.05,,SVK,"Sugár úti Atlétikai Centrum, Szombathely (HUN)",WACT Silver Hammer Throw Competition,26 AUG 2026,2026,6.,B,Continental Tour,7237248,worldwide
+women_HT,Krista TERVO,15 NOV 1997,72.41,,FIN,"Olympiastadion, Helsinki (FIN)",Finnkampen,29 AUG 2026,2026,1.,D,Traditional International,7237754,worldwide
+women_HT,Silja KOSONEN,16 DEC 2002,71.80,,FIN,"Olympiastadion, Helsinki (FIN)",Finnkampen,29 AUG 2026,2026,2.,D,Traditional International,7237754,worldwide
+women_HT,Grete AHLBERG,29 MAY 1998,66.63,,SWE,"Olympiastadion, Helsinki (FIN)",Finnkampen,29 AUG 2026,2026,3.,D,Traditional International,7237754,worldwide
+women_HT,Rebecka HALLERTH,04 JAN 1996,66.55,,SWE,"Olympiastadion, Helsinki (FIN)",Finnkampen,29 AUG 2026,2026,4.,D,Traditional International,7237754,worldwide
+women_HT,Suvi NIIRANEN,24 APR 1997,65.41,,FIN,"Olympiastadion, Helsinki (FIN)",Finnkampen,29 AUG 2026,2026,5.,D,Traditional International,7237754,worldwide
+women_HT,Sara FORSSELL,19 NOV 2000,61.67,,SWE,"Olympiastadion, Helsinki (FIN)",Finnkampen,29 AUG 2026,2026,6.,D,Traditional International,7237754,worldwide
+women_HT,DeAnna PRICE,08 JUN 1993,74.50,,USA,"Centro Gabre Gabric, Brescia (ITA)",Grand Prix Brescia,30 AUG 2026,2026,1.,B,Continental Tour,7234691,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,74.30,,ITA,"Centro Gabre Gabric, Brescia (ITA)",Grand Prix Brescia,30 AUG 2026,2026,2.,B,Continental Tour,7234691,worldwide
+women_HT,Katrine Koch JACOBSEN,24 JUN 1999,72.68,,DEN,"Centro Gabre Gabric, Brescia (ITA)",Grand Prix Brescia,30 AUG 2026,2026,3.,B,Continental Tour,7234691,worldwide
+women_HT,Rose LOGA,27 JUL 2002,72.19,,FRA,"Centro Gabre Gabric, Brescia (ITA)",Grand Prix Brescia,30 AUG 2026,2026,4.,B,Continental Tour,7234691,worldwide
+women_HT,Guðrún Karítas HALLGRÍMSDÓTTIR,07 JUL 2002,70.52,,ISL,"Centro Gabre Gabric, Brescia (ITA)",Grand Prix Brescia,30 AUG 2026,2026,5.,B,Continental Tour,7234691,worldwide
+women_HT,Iryna KLYMETS,04 OCT 1994,68.36,,UKR,"Centro Gabre Gabric, Brescia (ITA)",Grand Prix Brescia,30 AUG 2026,2026,6.,B,Continental Tour,7234691,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,66.69,,NOR,"Centro Gabre Gabric, Brescia (ITA)",Grand Prix Brescia,30 AUG 2026,2026,7.,B,Continental Tour,7234691,worldwide
+women_HT,Jillian WEIR,09 FEB 1993,65.37,,CAN,"Centro Gabre Gabric, Brescia (ITA)",Grand Prix Brescia,30 AUG 2026,2026,8.,B,Continental Tour,7234691,worldwide
+women_HT,Sara FANTINI,16 SEP 1997,73.03,,ITA,"Stadio Giuseppe Valente, Taranto (ITA)",XX Mediterranean Games,02 SEP 2026,2026,1.,C,Area Regional Champs,7233421,worldwide
+women_HT,Laura REDONDO,03 JUL 1988,67.82,,ESP,"Stadio Giuseppe Valente, Taranto (ITA)",XX Mediterranean Games,02 SEP 2026,2026,2.,C,Area Regional Champs,7233421,worldwide
+women_HT,Zahra TATAR,10 NOV 1992,66.88,,ALG,"Stadio Giuseppe Valente, Taranto (ITA)",XX Mediterranean Games,02 SEP 2026,2026,3.,C,Area Regional Champs,7233421,worldwide
+women_HT,Stamatia Alexandra SCARVELIS,17 AUG 1995,66.27,,GRE,"Stadio Giuseppe Valente, Taranto (ITA)",XX Mediterranean Games,02 SEP 2026,2026,4.,C,Area Regional Champs,7233421,worldwide
+women_HT,Florella FREYCHE,13 DEC 2004,66.20,,FRA,"Stadio Giuseppe Valente, Taranto (ITA)",XX Mediterranean Games,02 SEP 2026,2026,5.,C,Area Regional Champs,7233421,worldwide
+women_HT,Yipsi MORENO,19 NOV 1980,65.99,,ALB,"Stadio Giuseppe Valente, Taranto (ITA)",XX Mediterranean Games,02 SEP 2026,2026,6.,C,Area Regional Champs,7233421,worldwide
+women_HT,Rachele MORI,29 MAR 2003,61.23,,ITA,"Stadio Giuseppe Valente, Taranto (ITA)",XX Mediterranean Games,02 SEP 2026,2026,8.,C,Area Regional Champs,7233421,worldwide
+women_HT,Marie ROUGETET,07 JAN 2006,60.54,,FRA,"Stadio Giuseppe Valente, Taranto (ITA)",XX Mediterranean Games,02 SEP 2026,2026,9.,C,Area Regional Champs,7233421,worldwide
+women_HT,Jillian WEIR,09 FEB 1993,68.99,,CAN,"Sultan Qaboos Sports Complex, Muscat (OMA)",Oman Athletics Grand Prix,05 SEP 2026,2026,1.,C,Continental Tour,7234124,worldwide
+women_HT,Zsanett NÉMETH,19 DEC 2000,66.55,,HUN,"Sports Park Mladost, Zagreb (CRO)",Dinamo Zrinjevac - International Athletics Meeting,08 SEP 2026,2026,1.,D,Continental Tour,7234840,worldwide
+women_HT,Réka GYURÁTZ,31 MAY 1996,66.02,,HUN,"Sports Park Mladost, Zagreb (CRO)",Dinamo Zrinjevac - International Athletics Meeting,08 SEP 2026,2026,2.,D,Continental Tour,7234840,worldwide
+women_HT,Veronika KAŇUCHOVÁ,19 APR 1993,NM,,SVK,"Sports Park Mladost, Zagreb (CRO)",Dinamo Zrinjevac - International Athletics Meeting,08 SEP 2026,2026,,D,Continental Tour,7234840,worldwide
+women_HT,Ximena ZORRILLA,02 NOV 2000,62.48,,PER,"Estadio Atlético de la VIDENA, Lima (PER)",Continental Tour Challenger “Pedro Galvez Velarde”,11 SEP 2026,2026,1.,D,Continental Tour,7245567,worldwide
+women_HT,Ximena ZORRILLA,02 NOV 2000,64.64,,PER,"Estadio Atlético de la VIDENA, Lima (PER)",Continental Tour Challenger “Maria Letts Colmenares”,12 SEP 2026,2026,1.,D,Continental Tour,7245568,worldwide
+women_HT,Aleksandra ŚMIECH,02 OCT 1997,69.64,,POL,"Stadion Śląski, Chorzów (POL)",72. ORLEN Janusz Kusocinski Memorial,18 SEP 2026,2026,1.,B,Continental Tour,7235127,worldwide
+women_HT,Beatrice Nedberge LLANO,14 DEC 1997,68.38,,NOR,"Stadion Śląski, Chorzów (POL)",72. ORLEN Janusz Kusocinski Memorial,18 SEP 2026,2026,2.,B,Continental Tour,7235127,worldwide
+women_HT,Katarzyna FURMANEK,19 FEB 1996,66.13,,POL,"Stadion Śląski, Chorzów (POL)",72. ORLEN Janusz Kusocinski Memorial,18 SEP 2026,2026,3.,B,Continental Tour,7235127,worldwide
+women_HT,Ewa RÓŻAŃSKA,22 DEC 2000,63.91,,POL,"Stadion Śląski, Chorzów (POL)",72. ORLEN Janusz Kusocinski Memorial,18 SEP 2026,2026,4.,B,Continental Tour,7235127,worldwide

@@ -13,6 +13,7 @@ titles with national ones, NCAA titles and World U20 golds indiscriminately
 Getting the tiers wrong would not look like a bug, it would look like a
 claim.
 """
+import json
 import os
 import sys
 
@@ -171,3 +172,23 @@ def test_indoor_personal_bests_are_flagged():
 
 def test_unknown_athlete_has_no_career_block():
     assert ac.build_career("Nobody At All") is None
+
+
+# ---- finding the profile ----
+
+def test_the_career_block_is_found_by_world_athletics_id_when_names_differ(tmp_path, monkeypatch):
+    """The 10,000m toplist has Albert ROP where World Athletics' own page for
+    the same id says Albert KIPTOO. By name alone he had a cached profile and
+    no career block, one of 69 such pages (2026-09-21)."""
+    (tmp_path / "_index.json").write_text(json.dumps({"123": {"name": "Albert KIPTOO"}}), encoding="utf-8")
+    profile = _profile(bests=[{"discipline": "10,000 Metres", "mark": "26:49.99",
+                               "venue": "Hengelo (NED)", "date": "01 JUN 2026"}])
+    (tmp_path / "123.json").write_text(json.dumps({"id": "123", "profile": profile}), encoding="utf-8")
+    monkeypatch.setattr(ac, "PROFILE_DIR", str(tmp_path))
+    monkeypatch.setattr(ac, "INDEX_PATH", str(tmp_path / "_index.json"))
+    ac._cache.clear()
+
+    assert ac.build_career("Albert ROP") is None
+    assert ac.build_career("Albert ROP", "123")["personalBests"][0]["mark"] == "26:49.99"
+    # An id with no file falls back to the name.
+    assert ac.build_career("Albert KIPTOO", "999") is not None

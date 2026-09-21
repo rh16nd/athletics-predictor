@@ -25,11 +25,12 @@ NOT snapshotted (genuinely dynamic, still served by Render):
 
 Snapshotted per athlete rather than as one payload, but no less static:
   /api/athlete/...        -- the ~240 projected finalists, full profiles
-  /api/athlete-status/... -- everyone else search can reach, down to
-                             --profile-depth in each discipline's ranking
+  /api/athlete-status/... -- everyone else the site links: every ranked
+                             athlete by default, or down to --profile-depth
+                             in each discipline's ranking
 
 Usage:
-    python src/build_static_api.py [output_dir] [--profile-depth N] [--core-only]
+    python src/build_static_api.py [output_dir] [--profile-depth N|all] [--core-only]
 Default output: ../track-insights-main/public/data
 Run it after any data refresh, then commit BOTH repos (see HANDOFF).
 """
@@ -149,16 +150,20 @@ def athlete_pairs(client):
 #     top 100 2843 new files  34.4 MB   60.7 min   80%
 #     all     3643 new files  44.1 MB   77.7 min  100%
 #
-# 50 is the default because it covers the results a search actually puts in
-# front of someone -- the list is sorted by world rank, so the visible rows are
-# the ranked ones -- without doubling the length of a refresh. Raise it with
-# --profile-depth if a deeper tail matters more than the build time.
-DEFAULT_PROFILE_DEPTH = 50
+# 50 was the default until 2026-09-21, covering the results a search puts in
+# front of someone. It left 2,627 of the 4,837 ranked athletes without a file,
+# and the country pages link every one of them, so each of those pages waited
+# on Render. The user chose every athlete: the full build pays the extra hour,
+# and the results refresh during a championship does not, since it runs
+# --core-only. None means every ranked athlete, and the unranked ones search
+# lists too.
+DEFAULT_PROFILE_DEPTH = None
 
 
 def status_pairs(client, depth, already):
     """(discipline key, athlete name) for the ranked athletes who do NOT have a
-    full profile, down to `depth` in each discipline's world ranking.
+    full profile, down to `depth` in each discipline's world ranking, or all of
+    them when `depth` is None.
 
     Read from the search index rather than the toplist CSVs, so the set can
     never be wider than what search can actually reach."""
@@ -168,12 +173,33 @@ def status_pairs(client, depth, already):
     pairs = []
     seen = set()
     for name, disc_key, _mark, rank in (res.get_json() or {}).get("athletes") or []:
-        if rank is None or rank > depth:
+        if depth is not None and (rank is None or rank > depth):
             continue
         if (disc_key, name) in already or (disc_key, name) in seen:
             continue
         seen.add((disc_key, name))
         pairs.append((disc_key, name))
+    return pairs
+
+
+def ranking_pairs(client, already):
+    """(discipline key, athlete name) for every athlete on the Track and Field
+    top-20 lists, both orderings, who has no file yet. Those lists are the most
+    clicked names on the site, and they are not the search index's: the model's
+    list reads athletes the season toplist ranks well below 50 (2026-09-21:
+    149 of their 720 names had no file)."""
+    res = client.get("/api/world-rankings")
+    if res.status_code != 200:
+        return []
+    pairs, seen = [], set()
+    for key, lists in (res.get_json() or {}).items():
+        for order in ("points", "model"):
+            for row in (lists or {}).get(order) or []:
+                pair = (key, row.get("name"))
+                if not pair[1] or pair in already or pair in seen:
+                    continue
+                seen.add(pair)
+                pairs.append(pair)
     return pairs
 
 
@@ -299,8 +325,10 @@ def write_core(client, out_dir):
     return written, skipped, total
 
 
-def build(out_dir, depth=DEFAULT_PROFILE_DEPTH):
-    client = api.app.test_client()
+def build(out_dir, depth=DEFAULT_PROFILE_DEPTH, client=None):
+    # `client` is for the tests, which pass a fake one: the real app would
+    # build every page for real, World Athletics calls and all.
+    client = client or api.app.test_client()
     profiles = [0]
     countries = [0]
     statuses = [0]
@@ -336,16 +364,24 @@ def build(out_dir, depth=DEFAULT_PROFILE_DEPTH):
     written, skipped, total = written + w, skipped + s, total + t
     profiles[0] = w
     pruned[0] += prune_stale(out_dir, "athlete", kept)
+    # Only the profiles actually written. The near misses and the Final's
+    # finishers are asked for a profile and refused one (they are not in the
+    # projected field), and skipping everyone *asked for* left Noah Lyles, Josh
+    # Kerr and Faith Kipyegon with no file of either kind (2026-09-21).
+    profiled = {(k, n) for k, n in pairs
+                if os.path.normpath(os.path.join(out_dir, "athlete", k,
+                                                 athlete_slug(n) + ".json")) in kept}
 
     # The other 3,700. Search reaches every ranked athlete, but only the
     # projected finalists above have a profile -- everyone else 404s there and
     # the page asks /api/athlete-status why they are not in the field. That
     # follow-up was the last click on the site that could still wait out
     # Render's cold start, so it is snapshotted too, down to `depth`.
-    wanted = status_pairs(client, depth, set(pairs))
+    wanted = status_pairs(client, depth, profiled)
+    wanted += ranking_pairs(client, profiled | set(wanted))
     # The current championship's entrants: its page links every one of them,
-    # and the depth above stops at world rank, which most of them do not have.
-    wanted += championship_pairs(client, set(pairs) | set(wanted))
+    # and most of them have no world rank for the depth above to reach.
+    wanted += championship_pairs(client, profiled | set(wanted))
     w, s, t, kept = write_snapshots(client, out_dir, "athlete-status", wanted, "status pages")
     written, skipped, total = written + w, skipped + s, total + t
     statuses[0] = w
@@ -362,7 +398,7 @@ if __name__ == "__main__":
     depth = DEFAULT_PROFILE_DEPTH
     if "--profile-depth" in args:
         i = args.index("--profile-depth")
-        depth = int(args[i + 1])
+        depth = None if args[i + 1] == "all" else int(args[i + 1])
         del args[i:i + 2]
     core_only = "--core-only" in args
     if core_only:
@@ -375,7 +411,8 @@ if __name__ == "__main__":
         print(f"\n  core only: {written} files written, {skipped} skipped, "
               f"{total/1024:.0f} KB total (uncompressed)")
         sys.exit(0)
-    print(f"  status pages down to world rank {depth} per discipline")
+    print("  status pages for every ranked athlete" if depth is None
+          else f"  status pages down to world rank {depth} per discipline")
     written, skipped, total, profiles, countries, statuses, pruned = build(out_dir, depth)
     print(f"\n  {written} files written ({profiles} athlete profiles, {statuses} status pages, "
           f"{countries} countries), {skipped} skipped, {pruned} pruned, "

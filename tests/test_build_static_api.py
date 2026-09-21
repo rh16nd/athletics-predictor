@@ -224,3 +224,51 @@ def test_write_core_writes_each_page_level_response(tmp_path, monkeypatch):
 def test_the_full_build_is_still_there_beside_the_core_pass():
     assert callable(b.build)
     assert callable(b.write_core)
+
+
+def test_every_ranked_athlete_gets_a_status_page_without_a_depth():
+    """The user's choice on 2026-09-21: the country pages link every ranked
+    athlete, and 2,627 of them had no file."""
+    client = _Client(_index(
+        ("Ranked FIRST", "men_100m", "9.9", 1),
+        ("Ranked DEEP", "men_100m", "10.6", 400),
+        ("No RANK", "men_100m", "10.9", None),
+    ))
+    names = [n for _k, n in b.status_pairs(client, None, set())]
+    assert names == ["Ranked FIRST", "Ranked DEEP", "No RANK"]
+
+
+def test_both_top_20_lists_get_files():
+    rankings = {"men_100m": {
+        "points": [{"name": "Fast MARK"}, {"name": "Both LISTS"}],
+        "model": [{"name": "Both LISTS"}, {"name": "Model ONLY"}, {"name": "Has PROFILE"}],
+    }}
+    client = _Client(per_path={"/api/world-rankings": _Res(rankings)})
+    already = {("men_100m", "Has PROFILE")}
+    assert b.ranking_pairs(client, already) == [
+        ("men_100m", "Fast MARK"), ("men_100m", "Both LISTS"), ("men_100m", "Model ONLY")]
+    assert b.ranking_pairs(_Client(), set()) == []
+
+
+def test_an_athlete_refused_a_profile_still_gets_a_status_page(tmp_path):
+    """Near misses and the Final's finishers are asked for a full profile, and
+    the API refuses them one, since they are not in the projected field. The
+    status pass used to skip everyone *asked for*, which left Noah Lyles, Josh
+    Kerr and Faith Kipyegon with no file of either kind."""
+    predictions = {"trackDisciplines": [{
+        "id": "men_100m",
+        "athletes": [{"name": "In FIELD"}],
+        "nearMiss": [{"name": "Near MISS"}],
+    }], "fieldDisciplines": []}
+    client = _Client(
+        _index(("In FIELD", "men_100m", "9.8", 1), ("Near MISS", "men_100m", "9.79", 2)),
+        per_path={
+            "/api/predictions": _Res(predictions),
+            "/api/athlete/men_100m/In%20FIELD": _Res({"name": "In FIELD"}),
+            "/api/athlete-status/men_100m/Near%20MISS": _Res({"name": "Near MISS"}),
+        },
+    )
+    b.build(str(tmp_path), depth=None, client=client)
+    assert (tmp_path / "athlete" / "men_100m" / "in-field.json").exists()
+    assert (tmp_path / "athlete-status" / "men_100m" / "near-miss.json").exists()
+    assert not (tmp_path / "athlete-status" / "men_100m" / "in-field.json").exists()
