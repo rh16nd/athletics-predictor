@@ -1,6 +1,6 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here first: re-theming the whole site in the landing's Terra style (started 2026-09-21)
+## Start here first: re-theming the whole site in the landing's Terra style (2026-09-21, BUILT on branch redesign/terra, not shipped)
 
 After seeing the finished Terra landing, the user said going from it to the dashboard "looks very different", and asked for the whole site to be re-themed in the landing's style. Not just recoloured: the glass menu, a short photo header with a serif title, dark glass panels, gold, the landing's buttons, footer and motion. What each page contains stays the same, and so do the athlete photo cards. The full plan is `C:\Users\rayen\.claude\plans\continue-with-handoff-crispy-rivest.md` (phases 0 to 8).
 
@@ -14,9 +14,21 @@ What the user decided on 2026-09-21:
 - The intro video is re-recorded last, after the redesign ships.
 - Dark only. Every championship keeps its own identity.
 
-Progress:
-- Phase 0 is done. The Terra landing moved off the live repo onto the branch (commit `0da929e`), and `track-insights-main` is clean on main with nothing staged. That mattered: its index held two staged deletions (`podium.tsx`, `track-circuit.tsx`) while the committed landing still imports them, and `refresh_results.py` used a plain `git commit`, which takes the whole index, so the first Games refresh would have pushed a broken build. `refresh_results.py` now commits only its own files (`commit_command`, backend `36512393`, with `tests/test_refresh_results.py`; local, it goes out with the next results push). The worktree has its own `npm ci` and a `terra-dev` launch config on port 8081. Baseline screenshots of 15 pages at 1280 and 360 are in the session scratchpad (`baseline/`).
-- Next: Phase 1 (dark tokens in `:root`, the shared glass utilities, the page-photo script and credits module).
+Progress (branch `redesign/terra`, all committed there, nothing pushed):
+- Phase 0: done. The Terra landing moved off the live repo onto the branch (`0da929e`), and `track-insights-main` is clean on main with nothing staged. That mattered because its index held two staged deletions (`podium.tsx`, `track-circuit.tsx`) while the committed landing still imports them, and `refresh_results.py` used a plain `git commit`, which takes the whole index, so the first Games refresh would have pushed a broken build. `refresh_results.py` now commits only its own files (`commit_command`, backend `36512393`, tested in `tests/test_refresh_results.py`; local, it goes out with the next results push).
+- Phase 1, the foundation (`040500c`): `:root` is the landing's dark palette, following the convention of `box()` (light "-strong" text, light fills, dark `--primary-foreground`). New tokens `--scrim`, `--chart-1..4`, `--chart-neutral` and `--terracotta-ink`. `card-shadow` and `card-surface` are dark glass. New utilities `surface-raised` and `page-title` (Playfair 400), and `.glass` alongside `.hero-glass`. Browser theme colour `#140e0b`. DESIGN.md carries a note that its dark ban is lifted.
+- Phase 2, the frame: Shell has a short photo header (the landing's tint and scrim, fading into `--page-ground`), a serif title, serif figures, the credit in the corner, and the landing's three-column footer (`site-footer.tsx`, also used by the landing). TopNav is the landing's floating glass pill; links sit inline from xl (French fits at 1280 with 175px to spare), and below that a menu button (with the search on phones), `useDismiss`, and `aria-current`. `PageGround` gained `surface`.
+- The header photos went through four rounds with the user: stock scenes, then action, then newer, then closer. They chose athletics seen from above (`301e420`): drone shots from Unsplash (free Unsplash licence, photographers credited) and high-angle Paris 2024 race photos from Commons (CC BY 4.0). `scripts/page-photos.py` fetches, crops and writes `public/photos/` and `src/lib/page-photo-credits.ts`. The switch is `PHOTO_HEADERS` in `src/lib/page-photos.ts`. Phones get an evenly heavier wash. Every header title and label measured 5.3:1 or better, over every photo, at 1280 and 360.
+- Phases 3 to 5 (`301e420`, `d875b3e`): the shared components are recoloured (flag rings, avatars, chart series, head-to-head losses, the schedule badge, modals, skeletons). The Asian Games page opens on Nagoya's stadium with its panels in the Games' green; country pages dress their panels in the nation's band colour; the 404 and error screens take the landing's look.
+- Phase 6, the podium (`a102418`): back on the landing after the favourites strip, with gold, silver and bronze blocks, glass plaques and serif percentages. It plays when it comes into view, and its copy is restored in both languages (the French footnote had repeated "discipline", now fixed).
+- Phase 7, the coverage map (`6a566ad`): on the dashboard between Favourites and Disagreements. `scripts/make-world-map.py` builds `public/geo/world-110m.v1.json` (Natural Earth 1:110m, public domain, SHA-256 pinned in `scripts/make-world-map.sha256`, Equal Earth, 174 shapes and 42 dots, 85 KB) and fails if a covered nation cannot be drawn. The refugee team (ART) is listed only. 158 countries and 4,837 ranked athletes. Countries are lit in five gold steps (the faintest 3.28:1 against uncovered land), with the list beside the map. A mouse opens the country's page; a tap shows a card with an Open button.
+- Checked on the branch: `tsc`, eslint (no errors; the two warnings in shell.tsx were there before), 943 EN/FR keys with the same set, `npm run build`, `smoke-routes.py http://localhost:8081` 20 of 20, no sideways scroll on any page at 1280 or 360, and the phone menu and the map by keyboard and touch.
+
+Next:
+1. Show the user the finished re-theme and ask whether it ships.
+2. Phase 8: rewrite DESIGN.md for the Terra system and refresh the light-canvas contrast comments in `styles.css`.
+3. Merge main into `redesign/terra` (the Games results will have moved `public/data`), verify again, then on the user's word merge to main and push, and check www.podiumcall.cc.
+4. Re-record the intro video last.
 
 Traps:
 - The Games results refresh (`refresh-results.cmd`) needs `track-insights-main` on main and pushes main. Keep all redesign work in the worktree.
