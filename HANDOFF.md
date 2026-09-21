@@ -1,5 +1,94 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## Start here first: make the Asian Games page its own place, "Night in Nagoya" (planned 2026-09-21, NOT STARTED)
+
+The user hit the chat limit and asked to save everything before restarting. This section is the very next job. The section below it ("re-theming the whole site") is the state of the redesign it builds on.
+
+**Where things stand**
+- The whole-site Terra re-theme is built and checked on branch `redesign/terra`, in the separate worktree `C:\Users\rayen\track-insights-terra`. The branch is pushed (`6a566ad`) and matches GitHub.
+- Vercel preview (sign-in to the user's Vercel account needed): https://podiumcall-git-redesign-terra-rayenhamed65-6274s-projects.vercel.app . The live site (www.podiumcall.cc) is unchanged, and the live checkout `track-insights-main` is clean on main.
+- Run the redesign locally with the `terra-dev` launch config (port 8081) plus `predictor-api`. Check it with `python scripts/smoke-routes.py http://localhost:8081`.
+- The backend repo is 4 commits ahead of GitHub, unpushed: `36512393` (`refresh_results.py` commits only its own files, with `tests/test_refresh_results.py`) and three HANDOFF notes. They go out with the next results push, which is fine.
+- Nothing of the Nagoya page is written yet. The worktree is clean at `6a566ad`.
+
+**Why**
+Having seen the preview, the user said the Asian Games page "looks weird", "does not feel really special", and "I don't really want it to look like the other pages". Visiting a championship should feel like going to a different place, with its own hero and animation. Today it has the same short photo header as every page (the Nagoya stadium) plus the old boxed green hero inside `asian-games-body.tsx`. This is now a standing rule for every championship (memory: feedback-championship-themes-tradition).
+
+**What the user chose (do not reopen)**
+- A short arrival animation on every visit.
+- A hero called "Sun over Nagoya".
+- The whole page as "Night in Nagoya": deep green, full-width sections, no glass panels, the emblem's purple, gold and green line as dividers, huge numbers, the red sun as the motif. It should read like a stadium at night, not a dashboard.
+- The call shown both ways: a tile per event for a quick scan, and the full table below for every entrant.
+- Not taken: a Japanese title ("愛知・名古屋") behind the English one, an abstract version with no photo, a light "daylight poster" page, and a black "stadium scoreboard" page.
+- The site's glass menu and footer stay shared, so navigation works the same everywhere. Everything between them is the page's own. Content is unchanged: how events are called, the call, and the events not called.
+
+**Page structure, top to bottom**
+1. **Arrival.** For about 1.1s on every visit, the emblem's three bands sweep across the screen and the red sun swells, then everything clears. It is pure CSS keyframes ending invisible (`forwards`), so it clears itself even before JavaScript runs, and React removes it after about 1.3s. It is `pointer-events-none`, so clicks pass through, and it is hidden under reduced motion.
+2. **Cover, "Sun over Nagoya", full screen (`100dvh`).**
+   - The `nagoya` page photo (`pagePhoto()` in `src/lib/page-photos.ts`) drifts slowly (the landing's `.hero-photo`) under a green wash that fades into the ground `#002912`.
+   - The emblem line (`ASIAN_GAMES_STRIPE` in `src/lib/championship-themes.ts`) draws from the left into the sun: `scaleX` 0 to 1 from the left, 1.1s, starting at 0.5s.
+   - The red sun (`ASIAN_GAMES_SUN`, about `clamp(180px, 28vw, 380px)`) rises onto the line: `translateY(55%)` to 0 over 1.6s, with a halo breathing every 7s. Where supported, `animation-timeline: view()` lets it sink a little on scroll.
+   - Text: an eyebrow in the Games' gold (`{name} · {dates}`, via `dateRange()` in `src/lib/championship-dates.ts`); a serif h1 from `ev.shortName` on two lines ("Aichi–Nagoya" / "2026", with a real en dash) revealed with `.hero-reveal`; `asianGames.hero.headline` ("Asia's best, in Nagoya."); `asianGames.hero.body`.
+   - A live countdown (DD d HH h MM m SS s, serif figures) to `startDate` 00:00 in `ev.timezone` (Asia/Tokyo), via a small zone-offset helper built on `Intl.DateTimeFormat`. It renders only after mount, holding its space, so there is no hydration mismatch. During the Games (`phaseOf()`) it shows "Day N of 7" with the live chip; afterwards, "The Games are over".
+   - At the cover's foot, the split bar (36 by the model / 14 not called), moved from the old boxed hero. The photo credit sits bottom-right.
+   - Until `ev` loads, the cover renders from the championship summary (name, dates, city, venue, short name); the countdown falls back to the browser's timezone.
+3. **The emblem line as a divider** between sections, drawing itself in on view (`useInView`).
+4. **How the call is made.** A big serif heading on the left; the existing steps (`asianGames.how.*`, including the test line built in `asian-games-body.tsx`) on the right, with huge gold serif numerals.
+5. **The call at a glance.** A tile per called event, grouped Track then Field in the site's order (`compareEvents`).
+   - Each tile shows the event, the favourite with their flag, their podium chance as a big gold serif figure, a small red sun whose arc fills to that chance (an SVG circle with `stroke-dasharray`), and the next two names.
+   - Events called on points show the leader and "ranked on points" instead.
+   - Tiles stagger in on view. Clicking one selects that event in the full table and scrolls there.
+6. **The full field.** The existing picker and table (`UltimateProjections`) without its panel frame, in the page's colours.
+7. **Not called.** The events with no call, grouped by why (relay / no data / nobody entered) in full-width columns, with the existing copy.
+8. **The page's foot.** The sun setting on the line, with "Every final is graded on the Results page" and a link to Results, then the site footer.
+
+**Build (all in the worktree)**
+- **`src/components/dl/shell.tsx`:**
+  - New `cover?: ReactNode`, which replaces the standard `page-head` `<section>` entirely.
+  - New `layout?: "default" | "bleed"`: in "bleed", `<main>` loses `max-w-[1600px]`, the padding and the `-mt-[34px]` overlap, so sections run edge to edge. The header markup is at about lines 228–337.
+  - Keep the breadcrumb JSON-LD, the skip link, TopNav and SiteFooter.
+- **New folder `src/components/dl/nagoya/`:**
+  - `nagoya-cover.tsx`: the cover and its countdown.
+  - `nagoya-page.tsx`: the sections, plus the NotCalled logic moved in from `asian-games-body.tsx` (`REASONS`, `EVENT_CODES`, `eventLabel`, the `asianGames.how` list with its test-method branches).
+  - `nagoya-tiles.tsx`: the tile grid and its sun arc.
+  - `emblem-line.tsx`: the line, drawn on view.
+- **New `src/components/dl/championship-arrival.tsx`.** Its colours come from a new `arrival` field on the `asianGames` entry of `CHAMPIONSHIP_THEMES`, so the next championship can bring its own.
+- **`src/components/dl/ultimate-projections.tsx`:** add `bare` (render without `Panel`) and a controlled `active` / `onActiveChange` (today the picker state is internal, `useState` at about line 52), so the tiles can drive it. Without the props it behaves as now (the Ultimate page).
+- **`src/routes/championship.tsx`:**
+  - For the `asianGames` theme: `<Shell cover={<NagoyaCover/>} layout="bleed" theme={ground}>`, mount `<ChampionshipArrival/>`, render `<NagoyaPage/>`. Drop `photo="nagoya"` there.
+  - A map keyed by theme id for covers and pages. Other championships keep today's frame and `UltimateBody`.
+  - Delete `src/components/dl/asian-games-body.tsx` once its content has moved.
+- **Colours.** The page wrapper sets the Games' `box()` tokens, already on the page's `<main>` through `PageGround.surface` (measured for this green), so the table, picker and footer take them. Tiles sit on `--secondary` (`#0f3924`) with the `--border` hairline; gold figures in `--gold-strong` (`#f8ca65`); text in `--foreground` / `--muted-foreground`.
+- **`src/styles.css`:** keyframes for the sun rising, the line drawing, the halo breathing, the band sweep, the arrival sun and the tile stagger, plus the scroll-driven sun sink inside `@supports (animation-timeline: view())`. Transform and opacity only. Under reduced motion everything is static and complete.
+- **Copy, EN and FR**, by key, written with `design:ux-copy`:
+  - `nagoya.countdown.{days,hours,minutes,seconds,startsIn,dayOf,over}`
+  - `nagoya.glance.{title,lede,onPoints,next,openTable}`
+  - `nagoya.field.{title,lede}`
+  - `nagoya.foot.{title,cta}`
+  - Reuse `asianGames.how.*`, `asianGames.hero.*`, `asianGames.split.*`, `asianGames.notCalled.*` and `championship.projection.*`.
+  - French values carry a no-break space before `:`, `?` and `%`.
+
+**Verification**
+- Code checks: tsc; eslint on the changed files (read the `✖ N problems` line); EN/FR key parity; `npm run build`; smoke-routes on :8081, 20 of 20.
+- Screenshots with playwright-cli at 1280 and 360 (`-s=desk` with `resize 1280 800`, `-s=mob open --mobile`), EN and FR: the arrival mid-sweep at about 0.3s and 0.7s, the settled cover at about 3s, and every section. Record a short video with `video-start`/`video-stop` to send the user.
+- Interaction: a tile selects its event in the table and scrolls there; the menu is clickable during the arrival; reduced-motion emulation shows no overlay and static sections.
+- Contrast: hide the text and measure (the scratchpad scripts `measure_head.js` and `contrast.py` did this; rewrite them if the scratchpad is gone). Body text needs 4.5:1; large text and the sun arc need 3:1.
+- Layout: no sideways scroll at 360 (test `scrollX` after `scrollTo(9999, …)`); no hydration warning; the Ultimate path still compiles and renders.
+- Then commit on the branch, push it (the preview updates, live stays untouched), send the user screenshots and the video, and update this section and the memory note.
+
+**After this**
+The user reviews the preview. On their word, merge main into `redesign/terra` (the Games results will have moved `public/data` from the 23rd), verify again, merge to main, push, and check www.podiumcall.cc. Still to do before shipping: rewrite DESIGN.md for the Terra system and refresh the old light-canvas contrast comments in `styles.css`. Re-record the intro video last.
+
+**Traps worth knowing**
+- The user's free-text notes on AskUserQuestion options never reach the tool result. Ask with concrete options (multi-select works), or tell them to type into "Other".
+- Never do redesign work in `track-insights-main`. The Games results refresh (`refresh-results.cmd`) needs it clean on main.
+- Vercel previews are behind Vercel sign-in, so they can't be checked from a script. Check locally on :8081.
+- Bash heredocs mangle backslashes in Python patch scripts (a CSS `\2192` became a control character). Write scripts to a file, and write non-ASCII characters directly.
+- Vite hot reload leaves stale "useT must be used inside <I18nProvider>" errors after edits. Check the console in a freshly opened playwright session.
+
+---
+
+
 ## Start here first: re-theming the whole site in the landing's Terra style (2026-09-21, BUILT on branch redesign/terra, not shipped)
 
 After seeing the finished Terra landing, the user said going from it to the dashboard "looks very different", and asked for the whole site to be re-themed in the landing's style. Not just recoloured: the glass menu, a short photo header with a serif title, dark glass panels, gold, the landing's buttons, footer and motion. What each page contains stays the same, and so do the athlete photo cards. The full plan is `C:\Users\rayen\.claude\plans\continue-with-handoff-crispy-rivest.md` (phases 0 to 8).
