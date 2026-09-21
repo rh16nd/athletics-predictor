@@ -1,15 +1,22 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here first: make the Asian Games page its own place, "Night in Nagoya" (planned 2026-09-21, NOT STARTED)
+## Start here first: the Asian Games page as its own place, "Night in Nagoya" (BUILT 2026-09-21 on redesign/terra, pushed, waiting for the user's review)
 
-The user hit the chat limit and asked to save everything before restarting. This section is the very next job. The section below it ("re-theming the whole site") is the state of the redesign it builds on.
+**Built (2026-09-21, commit `6b19fb1` on `redesign/terra`, pushed, preview updated, live site untouched)**
+- Everything in the plan below is built: the arrival, the full-screen cover with the countdown, the emblem-line dividers, the "how" steps, one tile per called event that opens it in the full table, the full field, the events without a call, and the sunset at the foot. Files: `src/components/dl/championship-arrival.tsx`, `src/components/dl/nagoya/` (cover, page, tiles, emblem line), `Shell`'s new `cover` and `layout="bleed"`, the `PLACES` map in `src/routes/championship.tsx`, the `arrival` colours on each theme in `championship-themes.ts`, `zonedMidnight()` in `championship-dates.ts`, and the keyframes at the end of `styles.css`. `asian-games-body.tsx` is deleted.
+- Changes from the plan, found by measuring: the title is 44 to 124px so "Aichi–Nagoya" stays on one line; from lg the countdown sits right of the title, so the cover fits 1280×800 on one screen; the horizon lies over the cover's foot; the countdown is a four-column grid with sentence-case labels so it fits 320px in French; the eyebrow is a copy key (`nagoya.cover.edition`, "20th Asian Games" / "20es Jeux asiatiques") because the API's name is English only; the arrival disc is gone by 0.8s so it never shows beside the cover's sun; the bands are slanted.
+- Fixed on the way: the championship table's podium-chance bars divided by 100 twice (`ProbabilityBar` already takes 0 to 100), so they showed almost empty ever since the Ultimate. The live site still has this until the redesign ships.
+- The countdown is `role="timer"`, and `scripts/smoke-routes.py` now leaves timer text out of its "has the page settled" check. Without that, the page never settled and failed at 45s.
+- Checked: tsc; eslint on the changed files (only the two old shell.tsx warnings; the 20 prettier errors in athlete-analytics, athlete-card, athlete-career, field-analysis, head-to-head-chart and page-photo-credits were already on the branch); 962 EN/FR keys, same set; `npm run build`; smoke-routes 20 of 20; no sideways scroll at 360; every text line on the cover and in every section 5.5:1 or better at 1280 and 360 (EN and FR), after deepening the cover's wash on the right; reduced motion shows no overlay and everything static; the menu works during the arrival; a tile selects its event, scrolls to it and moves focus there; the Ultimate path still renders in the site's frame (tested by serving `ultimate.json` in the browser).
+- Screenshots and a video tour went to the user. Next: their verdict on the page, then the "After this" steps below.
+- A limit found, not fixed: `useApi` (hooks/useChampionship.ts) has no cache, so going Back to any data page renders the loading layout first and the browser's scroll restore is cut short (1717px came back as 953px here). Every data page has it; a fix is a data cache, separate work.
 
-**Where things stand**
+**Where things stood before the build**
 - The whole-site Terra re-theme is built and checked on branch `redesign/terra`, in the separate worktree `C:\Users\rayen\track-insights-terra`. The branch is pushed (`4b55f8c`, which adds the QA helpers in `scripts/qa/`) and matches GitHub.
 - Vercel preview (sign-in to the user's Vercel account needed): https://podiumcall-git-redesign-terra-rayenhamed65-6274s-projects.vercel.app . The live site (www.podiumcall.cc) is unchanged, and the live checkout `track-insights-main` is clean on main.
 - Run the redesign locally with the `terra-dev` launch config (port 8081) plus `predictor-api`. Check it with `python scripts/smoke-routes.py http://localhost:8081`.
 - The backend repo is 4 commits ahead of GitHub, unpushed: `36512393` (`refresh_results.py` commits only its own files, with `tests/test_refresh_results.py`) and three HANDOFF notes. They go out with the next results push, which is fine.
-- Nothing of the Nagoya page is written yet. The worktree is clean at `4b55f8c`.
+- Before this build nothing of the Nagoya page was written; the worktree was clean at `4b55f8c`.
 
 **Why**
 Having seen the preview, the user said the Asian Games page "looks weird", "does not feel really special", and "I don't really want it to look like the other pages". Visiting a championship should feel like going to a different place, with its own hero and animation. Today it has the same short photo header as every page (the Nagoya stadium) plus the old boxed green hero inside `asian-games-body.tsx`. This is now a standing rule for every championship (memory: feedback-championship-themes-tradition).
