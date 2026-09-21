@@ -24,8 +24,10 @@ Progress (branch `redesign/terra`, all committed there, nothing pushed):
 - Phase 7, the coverage map (`6a566ad`): on the dashboard between Favourites and Disagreements. `scripts/make-world-map.py` builds `public/geo/world-110m.v1.json` (Natural Earth 1:110m, public domain, SHA-256 pinned in `scripts/make-world-map.sha256`, Equal Earth, 174 shapes and 42 dots, 85 KB) and fails if a covered nation cannot be drawn. The refugee team (ART) is listed only. 158 countries and 4,837 ranked athletes. Countries are lit in five gold steps (the faintest 3.28:1 against uncovered land), with the list beside the map. A mouse opens the country's page; a tap shows a card with an Open button.
 - Checked on the branch: `tsc`, eslint (no errors; the two warnings in shell.tsx were there before), 943 EN/FR keys with the same set, `npm run build`, `smoke-routes.py http://localhost:8081` 20 of 20, no sideways scroll on any page at 1280 or 360, and the phone menu and the map by keyboard and touch.
 
+Preview: at the user's choice, `redesign/terra` is pushed to GitHub (`6a566ad`) and Vercel built a preview. Its branch URL updates with every push: https://podiumcall-git-redesign-terra-rayenhamed65-6274s-projects.vercel.app . Vercel protects previews, so it opens only for someone signed in to the user's Vercel account; it answered 302 to Vercel's sign-in for an outside request. The live site is unchanged.
+
 Next:
-1. Show the user the finished re-theme and ask whether it ships.
+1. Wait for the user's verdict on the preview. Ship only on their word.
 2. Phase 8: rewrite DESIGN.md for the Terra system and refresh the light-canvas contrast comments in `styles.css`.
 3. Merge main into `redesign/terra` (the Games results will have moved `public/data`), verify again, then on the user's word merge to main and push, and check www.podiumcall.cc.
 4. Re-record the intro video last.
