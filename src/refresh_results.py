@@ -45,6 +45,14 @@ def step(title, cmd, cwd=ROOT):
         sys.exit(f"\nStopped: {title[0].lower() + title[1:]} failed. Nothing was pushed.")
 
 
+def commit_command(message, files):
+    """Commit exactly these files, whatever else is staged. A plain commit takes
+    the whole index: on 2026-09-21 the frontend's index held two staged
+    deletions from unfinished work, which the next refresh would have pushed,
+    breaking the live build."""
+    return ["git", "commit", "-q", "-m", message, "--", *files]
+
+
 def events_with_results():
     try:
         with open(EVENT_PATH, encoding="utf-8") as f:
@@ -122,7 +130,7 @@ def main():
             continue
         name = os.path.basename(repo)
         step(f"Staging {name}", ["git", "add", "--", *files], cwd=repo)
-        step(f"Committing {name}", ["git", "commit", "-q", "-m", message], cwd=repo)
+        step(f"Committing {name}", commit_command(message, files), cwd=repo)
         step(f"Pushing {name}", ["git", "push", "-q", "origin", "main"], cwd=repo)
     print("\nDone. The site shows the new results within a couple of minutes.")
 
