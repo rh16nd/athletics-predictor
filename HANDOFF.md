@@ -1,8 +1,33 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here first: the landing page redesign after Terra (2026-09-21, IN PROGRESS, nothing committed)
+## Start here first: re-theming the whole site in the landing's Terra style (started 2026-09-21)
 
-The user hit the chat limit mid-build on 2026-09-21 and asked to save everything here. This section is the state of play; the sections below still hold (the championship-model switch is live).
+After seeing the finished Terra landing, the user said going from it to the dashboard "looks very different", and asked for the whole site to be re-themed in the landing's style. Not just recoloured: the glass menu, a short photo header with a serif title, dark glass panels, gold, the landing's buttons, footer and motion. What each page contains stays the same, and so do the athlete photo cards. The full plan is `C:\Users\rayen\.claude\plans\continue-with-handoff-crispy-rivest.md` (phases 0 to 8).
+
+What the user decided on 2026-09-21:
+- The new landing is held back and ships together with the re-themed site, all at once.
+- The work happens in a separate worktree, `C:\Users\rayen\track-insights-terra` on branch `redesign/terra`, so the live site and the Games results refresh are untouched during the Asian Games (23 to 29 September). The branch never edits `public/data`, and main is merged into it before shipping.
+- Page titles use the serif; panel titles stay small-caps labels.
+- Photo headers are a trial. They are chosen photos, one per page subject, scenes rather than recognisable athletes. The first three re-themed pages (dashboard, Track, an athlete page) are shown with and without the photo before the rest is built, and one switch turns them off.
+- The old landing's podium (three plaques with model ratings on 2-1-3 blocks) comes back on the new landing, in Terra.
+- A coverage map goes on the dashboard only: a world map with every covered country lit in gold by athlete count, the totals, and a link to each country's page.
+- The intro video is re-recorded last, after the redesign ships.
+- Dark only. Every championship keeps its own identity.
+
+Progress:
+- Phase 0 is done. The Terra landing moved off the live repo onto the branch (commit `0da929e`), and `track-insights-main` is clean on main with nothing staged. That mattered: its index held two staged deletions (`podium.tsx`, `track-circuit.tsx`) while the committed landing still imports them, and `refresh_results.py` used a plain `git commit`, which takes the whole index, so the first Games refresh would have pushed a broken build. `refresh_results.py` now commits only its own files (`commit_command`, backend `36512393`, with `tests/test_refresh_results.py`; local, it goes out with the next results push). The worktree has its own `npm ci` and a `terra-dev` launch config on port 8081. Baseline screenshots of 15 pages at 1280 and 360 are in the session scratchpad (`baseline/`).
+- Next: Phase 1 (dark tokens in `:root`, the shared glass utilities, the page-photo script and credits module).
+
+Traps:
+- The Games results refresh (`refresh-results.cmd`) needs `track-insights-main` on main and pushes main. Keep all redesign work in the worktree.
+- Run the redesign's dev server with `terra-dev` (8081), and `smoke-routes.py http://localhost:8081`.
+
+---
+
+
+## Start here first: the landing page redesign after Terra (2026-09-21, BUILT AND CHECKED, waiting for the user's word to commit and push)
+
+The user hit the chat limit mid-build on 2026-09-21 and asked to save everything here. The next chat, the same day, checked it in a browser, took the user's review (below, "The user's changes after seeing it"), built those changes and checked them. Nothing is committed yet: the user has screenshots and decides whether it ships. The sections below still hold (the championship-model switch is live).
 
 **Why.** People told the user the landing page looks bland and empty at the top and does not look good on phones. Checked on the live site: the top was a flat terracotta field with a thin drawn track outline, and on a phone that outline's straight lines ran through the countdown badge and the first line of text like a strikethrough, under a band of empty colour. The user asked to switch to something like v0's **Terra** template (https://v0.app/templates/terra-landing-page-5WwO2eLeSCl): a full-screen photo or video, a large two-line serif headline whose second line rotates, a floating glass pill menu, glass buttons; then a dark page with serif headings and one accent-coloured word, a logo strip, big serif numbers, a feature list beside a picture, an FAQ, a closing photo band and a column footer.
 
@@ -13,23 +38,30 @@ The user hit the chat limit mid-build on 2026-09-21 and asked to save everything
 - Background: first built as a slideshow of the favourites' photos; the user did not like athlete photos going by and chose a **stadium photo** instead. The headline's second line still rotates through events, as Terra's word does.
 - Standing rule still applies: "podium chance" only for a real competition; the landing's percentages are the "model rating".
 
-**What is built (track-insights-main, uncommitted)**
+**The user's changes after seeing it (2026-09-21, afternoon, all built)**
+- "The whole season, read by the model" no longer shows screenshots of the site, which clashed with the dark page. Each of its five items has an athletics photo from Wikimedia Commons, tinted like the hero, with a glass card of that page's live numbers on it: the three highest model ratings (dashboard), the men's 100m top three (Track and Field), the championship's stadium, dates and days to go, in the championship's own colours (championship), the men's 400m hurdles favourite with season best, world rank and model rating (athlete pages; the item opens that athlete), and the graded record, 110 of 172 podium places, read from `/api/results` only when that item is picked (Results). The photos are scenes, never athletes, so no face sits above a name it isn't: a floodlit London 2012 stadium (cdephotos, CC BY 2.0), hurdles wheeled across lanes (Marie-Lan Nguyen, CC BY 3.0), Nagoya's Mizuho stadium at night (Kanko3131, CC BY-SA 3.0), starting blocks (Jamain, CC BY-SA 3.0) and a 1950s 100m finish (Harry Pot / Anefo, CC0), in `public/landing/feature-{key}-{800,1600}.webp`, each credited on the photo. `scripts/landing-screenshots.py` and the ten screenshots are deleted.
+- The menu stays on the landing: Dashboard, Asian Games and How it works scroll to the features, the new championship section and the numbers, and move focus there. It is fixed at the top like Terra's (`src/components/dl/landing-nav.tsx`, outside the hero so later sections cannot paint over it). On a phone the links sit behind a menu button that closes on a pick, a click outside or Escape.
+- The two buttons ("View live predictions", "Browse all 36 events") left the hero for the closing band.
+- The hero's favourite stayed bottom-left but is larger: name 20px, event and "model rating" 16px with the rating in gold, the rating on its own line on phones so nothing is cut off, and the photo credit on its own line. It is no longer a live region, since it changes every few seconds.
+- New section, `src/components/dl/landing-call.tsx`: the current championship's call in that championship's colours, with the page turning from its dark ground to the Asian Games green and back (a gradient over 170px at each end, 110px on phones, with the padding deeper than that so no text sits on the blend), the Games' blooms, the emblem's three-colour line and the red sun. It shows the favourite and podium chance in the men's and women's 100m and 400m from the live call (`/api/championship`, fetched only once the section nears the screen) and a link to the full call. Text uses the colours measured for the Games' Results box and measured again here: 7.8:1 or better at the brightest point of the ground. The user asked for this on 2026-09-21 and it now belongs to the championship-themes tradition in memory.
+- The rest of the site keeps its current look for now. The user wants it restyled to match the landing, as a separate job after the Games.
+
+**What was built before the review (track-insights-main, uncommitted)**
 - `src/components/dl/landing-hero.tsx` (new): full-screen hero. Photo `public/landing/hero-start-line-{1200,2400}.webp` (a start line with lane numbers, CC0 on Wikimedia Commons from Unsplash, credited "Photo: Kolleen Gladden, CC0" with a link) with a slow drift, a warm tint and a dark scrim. Glass pill menu (logo, Dashboard, championship, How it works) plus a dark `LanguageSwitcher` (new `tone="dark"` prop). Countdown pill, serif h1 "We call / the pole vault." (FR "Le pronostic / du saut à la perche."), the second line cycling every 3.8 s through the eight events whose favourites rate highest (one per event type), a caption naming that event's favourite with their model rating, a pause button (WCAG 2.2.2), everything still under reduced motion. Screen readers get a fixed sr-only title.
 - `src/routes/index.tsx` (rewritten): dark page (`landing-terra` tokens), then the favourites strip (the old marquee, restyled), big serif numbers (65.3% hit rate from `callTest`, finals tested, events rated, marks ranked), a "New to PodiumCall?" block with the existing `IntroVideo`, a feature list (Dashboard, Track and Field, the championship call, athlete pages, Results) that swaps in a real screenshot of each page on click/hover/focus (no auto-advance, on purpose), an FAQ of seven questions in native `<details>` (model rating, podium chance, accuracy read from `callTest`, data, injuries, free, not affiliated) with a link to How it works, a closing band on `public/landing/closing-stadium-{1200,2400}.webp` (Jāņa Daliņa stadium, Valmiera, CC BY-SA 4.0, credited "KristersHC") with the main button, and a three-column footer.
 - Removed, so it can be asked for back: the fixed cream header, the terracotta/cream bands, the drawn track outline, the three podium cards (`components/dl/podium.tsx` deleted), `components/dl/track-circuit.tsx` (deleted), the "raw signal to ranked field" demo, the five-step list and the dashboard preview. 54 landing/podium locale keys that nothing uses were deleted; new keys under `landing.hero.*`, `landing.numbers.*`, `landing.walkthrough.*`, `landing.features.*`, `landing.faq.*`, `landing.closing.*`, `landing.footer.*` (EN and FR, 898 keys each, same set, every key the code asks for present).
 - `src/styles.css`: `--font-serif-display`, `.landing-terra` colour tokens (warm near-blacks, gold accent), `.hero-glass`, `.hero-nav-link`, `.hero-serif`, `.hero-scrim`, `.hero-photo` drift, `.hero-word` focus-pull, `.closing-scrim`, reduced-motion and reduced-transparency fallbacks. `src/routes/__root.tsx`: Playfair Display added to the Google Fonts link.
 - `scripts/landing-screenshots.py` (new): takes the five feature screenshots from the live site in EN and FR into `public/landing/{dashboard,track,championship,athlete,results}-{en,fr}.webp` (22 to 58 KB each). Re-run it whenever those pages change.
 
-**Checked so far**: `npx tsc --noEmit` and eslint on the changed files are clean; locale parity as above. **Not yet checked**: the page in a browser. The last screenshot, taken in the browser pane at an emulated 1280px, came out tiny and dark, and the hero photo was not visibly there; it may just be the pane scaling or the image still loading, so open it properly before judging.
+**Checked on 2026-09-21**: `npx tsc --noEmit`; eslint on every changed file (no problems); EN and FR 919 keys each, the same set, every key the code asks for present; `npm run build`; `scripts/smoke-routes.py` 20 of 20 in EN and FR; playwright-cli at 1280px and on the 360px phone, in both languages: photos load, the menu links scroll to their sections and take focus, the phone menu opens and closes on Escape, no sideways scroll, no console errors in a fresh browser. Contrast measured on screenshots: the glass cards 10.8:1 or better over every photo, the championship section 7.8:1 or better. The "tiny and dark" screenshot from the first chat was the browser pane scaling an emulated 1280px down; the photo was there. The "useT must be used inside <I18nProvider>" errors seen while editing are Vite hot reload, as before; a fresh browser has none.
 
 **Next steps, in order**
-1. Look at `/` locally (`track-insights-dev` plus `predictor-api`) at 1280px and 360px, in EN and FR: the photo loads and is visible under the scrim, the serif loads, the headline rotates and pauses, no line wraps oddly (the longest event lines are "du lancer du marteau." and "the 400m hurdles."), nothing scrolls sideways, and headings, muted text and the gold stay readable on the dark page. Tune the scrim and the headline size if needed.
-2. `npm run build`, `scripts/smoke-routes.py` (20 of 20; it expects an h1 on `/`, which the hero has), a playwright-cli pass at both widths.
-3. Show the user screenshots. Commit and push only when they say so. Then the sitemap is unaffected (same routes).
+1. Commit and push track-insights-main only when the user says so (the backend repo has nothing from this work). The routes are the same, so the sitemap is unchanged. After the push, check www.podiumcall.cc once Vercel serves the new assets (it can 404 fresh assets for a short while).
+2. After the Games (23 to 29 September): restyle the rest of the site to match the landing, which the user asked for on 2026-09-21. Then retrain the championship model with the Asian Games finals, as planned.
 
 **Also found, not fixed**
 - The French athlete page still shows two English strings in its hero: "← Retour to dashboard" and "Athlete dossier · Men's 400m Hurdles" (`src/routes/athlete.$discKey.$name.tsx`).
-- The intro video's poster and video still show the Ultimate Championship dashboard (`public/video/intro-{en,fr}.*`).
+- The intro video's poster and video still show the Ultimate Championship dashboard (`public/video/intro-{en,fr}.*`). It sits on the landing under "New to PodiumCall?", in the old cream look.
 - athletics-predictor has uncommitted data changes that did not come from the landing work: `data/raw/{men_100m,men_3000sc,men_800m,men_JT,men_PV,women_400m,women_HJ,women_SP}_2026.csv`, `data/injury_flags.json`, `data/standings_detail.json`, `outputs/predictions_latest.csv` (likely a refresh run). Look at them before committing anything in that repo.
 - Earlier on 2026-09-21: a photo audit found six dashboard cards showing initials after the model switch; fixed and pushed (backend `e5b52d76`, frontend `82439f2`), with a test that fails when a favourite has never had its photo looked up.
 
@@ -38,6 +70,9 @@ The user hit the chat limit mid-build on 2026-09-21 and asked to save everything
 - `landing.video.*` keys belong to `IntroVideo`; the landing's own block uses `landing.walkthrough.*`.
 - Commons rate-limits the API (it answers with a non-JSON page); retry with back-off, and fetch thumbnails about 1.5 s apart.
 - v0 template previews ask for a Vercel sign-in when opened directly; view them inside the template page.
+- A CSS escape such as `\2192` written through a Python string in a heredoc came out as a control character (`\21` read as octal). Write the character itself.
+- The feature list changes on hover, so a scripted element screenshot that scrolls the page under a still mouse can pick another item. Move the mouse away before screenshotting.
+- The browser pane emulating 1280px scales the page down to fit the pane. Use playwright-cli (`-s=desk` with `resize 1280 800`, `-s=mob open --mobile`) for real-size screenshots.
 
 ---
 
