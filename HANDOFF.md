@@ -5,11 +5,11 @@
 The user hit the chat limit and asked to save everything before restarting. This section is the very next job. The section below it ("re-theming the whole site") is the state of the redesign it builds on.
 
 **Where things stand**
-- The whole-site Terra re-theme is built and checked on branch `redesign/terra`, in the separate worktree `C:\Users\rayen\track-insights-terra`. The branch is pushed (`6a566ad`) and matches GitHub.
+- The whole-site Terra re-theme is built and checked on branch `redesign/terra`, in the separate worktree `C:\Users\rayen\track-insights-terra`. The branch is pushed (`4b55f8c`, which adds the QA helpers in `scripts/qa/`) and matches GitHub.
 - Vercel preview (sign-in to the user's Vercel account needed): https://podiumcall-git-redesign-terra-rayenhamed65-6274s-projects.vercel.app . The live site (www.podiumcall.cc) is unchanged, and the live checkout `track-insights-main` is clean on main.
 - Run the redesign locally with the `terra-dev` launch config (port 8081) plus `predictor-api`. Check it with `python scripts/smoke-routes.py http://localhost:8081`.
 - The backend repo is 4 commits ahead of GitHub, unpushed: `36512393` (`refresh_results.py` commits only its own files, with `tests/test_refresh_results.py`) and three HANDOFF notes. They go out with the next results push, which is fine.
-- Nothing of the Nagoya page is written yet. The worktree is clean at `6a566ad`.
+- Nothing of the Nagoya page is written yet. The worktree is clean at `4b55f8c`.
 
 **Why**
 Having seen the preview, the user said the Asian Games page "looks weird", "does not feel really special", and "I don't really want it to look like the other pages". Visiting a championship should feel like going to a different place, with its own hero and animation. Today it has the same short photo header as every page (the Nagoya stadium) plus the old boxed green hero inside `asian-games-body.tsx`. This is now a standing rule for every championship (memory: feedback-championship-themes-tradition).
@@ -72,7 +72,7 @@ Having seen the preview, the user said the Asian Games page "looks weird", "does
 - Code checks: tsc; eslint on the changed files (read the `✖ N problems` line); EN/FR key parity; `npm run build`; smoke-routes on :8081, 20 of 20.
 - Screenshots with playwright-cli at 1280 and 360 (`-s=desk` with `resize 1280 800`, `-s=mob open --mobile`), EN and FR: the arrival mid-sweep at about 0.3s and 0.7s, the settled cover at about 3s, and every section. Record a short video with `video-start`/`video-stop` to send the user.
 - Interaction: a tile selects its event in the table and scrolls there; the menu is clickable during the arrival; reduced-motion emulation shows no overlay and static sections.
-- Contrast: hide the text and measure (the scratchpad scripts `measure_head.js` and `contrast.py` did this; rewrite them if the scratchpad is gone). Body text needs 4.5:1; large text and the sun arc need 3:1.
+- Contrast: hide the text and measure with `scripts/qa/measure-headers.js` and `scripts/qa/contrast.py` on the branch (see `scripts/qa/README.md`; run from a scratch folder). Body text needs 4.5:1; large text and the sun arc need 3:1.
 - Layout: no sideways scroll at 360 (test `scrollX` after `scrollTo(9999, …)`); no hydration warning; the Ultimate path still compiles and renders.
 - Then commit on the branch, push it (the preview updates, live stays untouched), send the user screenshots and the video, and update this section and the memory note.
 
