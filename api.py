@@ -462,46 +462,9 @@ def load_full_season_history(disc_key, athlete_name, profile_url=None):
     Returns (history, year, condensed, total). `condensed` is True when the
     season was long enough that only each month's best is shown, so the page
     can say so rather than quietly dropping races."""
-    profile = _cached_wa_profile(disc_key, athlete_name, profile_url)
-    if profile is None:
+    unique, year = wa_season_results(disc_key, athlete_name, profile_url)
+    if not unique:
         return [], None, False, 0
-
-    by_event = ((profile.get("resultsByYear") or {}).get("resultsByEvent")) or []
-    rows = []
-    for ev in by_event:
-        if not _profile_event_matches(ev.get("discipline"), disc_key):
-            continue
-        for r in ev.get("results") or []:
-            when = pd.to_datetime(r.get("date"), format="%d %b %Y", errors="coerce")
-            if pd.isna(when):
-                continue
-            try:
-                value = parse_mark(str(r.get("mark", "")))
-            except Exception:
-                continue          # DNF/DQ/NM carry no mark to plot
-            rows.append({
-                "_when": when,
-                "date": r.get("date"),
-                "mark": format_mark(value, disc_key),
-                "markValue": value,
-                "venue": r.get("venue") or r.get("competition"),
-                "resultsScore": None,
-            })
-    if not rows:
-        return [], None, False, 0
-
-    rows.sort(key=lambda x: x["_when"])
-    year = int(rows[-1]["_when"].year)
-    # One season only: an athlete's WA page can carry a stray earlier date.
-    rows = [r for r in rows if int(r["_when"].year) == year]
-    # The same race can appear twice under differently-formatted venues.
-    seen, unique = set(), []
-    for r in rows:
-        key = (r["date"], r["mark"])
-        if key in seen:
-            continue
-        seen.add(key)
-        unique.append(r)
     total = len(unique)
 
     condensed = total > FULL_SEASON_MAX
@@ -518,9 +481,72 @@ def load_full_season_history(disc_key, athlete_name, profile_url=None):
                 best_by_month[key] = r
         unique = sorted(best_by_month.values(), key=lambda x: x["_when"])
 
-    for r in unique:
-        r.pop("_when", None)
-    return unique, year, condensed, total
+    return [{k: v for k, v in r.items() if not k.startswith("_")} for r in unique], year, condensed, total
+
+
+# Above this following wind a mark is wind-aided: a real race, but not a
+# mark that counts as a best.
+LEGAL_WIND = 2.0
+
+
+def _wind_reading(text):
+    """World Athletics' wind reading ("+2.1", "-0.3") as a number, or None
+    where there is none (distance races, throws, a missing gauge)."""
+    try:
+        return float(str(text).replace("+", "").strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def wa_season_results(disc_key, athlete_name, profile_url=None):
+    """(every marked result this season in this discipline on the athlete's
+    World Athletics page, oldest first, one per race; the season's year), or
+    ([], None). Each row keeps its date as `_when` and its wind as `_wind`
+    for the callers that need them. The season chart
+    (load_full_season_history) and the event page's field comparison
+    (field_analysis) both read it."""
+    profile = _cached_wa_profile(disc_key, athlete_name, profile_url)
+    if profile is None:
+        return [], None
+
+    by_event = ((profile.get("resultsByYear") or {}).get("resultsByEvent")) or []
+    rows = []
+    for ev in by_event:
+        if not _profile_event_matches(ev.get("discipline"), disc_key):
+            continue
+        for r in ev.get("results") or []:
+            when = pd.to_datetime(r.get("date"), format="%d %b %Y", errors="coerce")
+            if pd.isna(when):
+                continue
+            try:
+                value = parse_mark(str(r.get("mark", "")))
+            except Exception:
+                continue          # DNF/DQ/NM carry no mark to plot
+            rows.append({
+                "_when": when,
+                "_wind": _wind_reading(r.get("wind")),
+                "date": r.get("date"),
+                "mark": format_mark(value, disc_key),
+                "markValue": value,
+                "venue": r.get("venue") or r.get("competition"),
+                "resultsScore": None,
+            })
+    if not rows:
+        return [], None
+
+    rows.sort(key=lambda x: x["_when"])
+    year = int(rows[-1]["_when"].year)
+    # One season only: an athlete's WA page can carry a stray earlier date.
+    rows = [r for r in rows if int(r["_when"].year) == year]
+    # The same race can appear twice under differently-formatted venues.
+    seen, unique = set(), []
+    for r in rows:
+        key = (r["date"], r["mark"])
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(r)
+    return unique, year
 
 
 def _cached_wa_profile(disc_key, athlete_name, profile_url=None):
@@ -587,6 +613,58 @@ def season_activity(disc_key, athlete_name, season_rows, history_year, history_r
         last = wa_last
     days = int((pd.Timestamp(date.today()) - last).days) if last is not None else None
     return races, last, days
+
+
+def field_analysis(disc_key, names):
+    """athlete_analytics.build_field_analysis, with each contender's season
+    figures read the way their own page reads them.
+
+    The comparison table ("What separates them") counted this season's races
+    and took its top-3 average, steadiness and best month from the race log
+    alone, while the athlete page reads World Athletics' season as well
+    (season_activity). Josh Kerr read "0 races this season" and no top-3
+    average on the 1500m page beside a 3:27.62 in London on his own page, and
+    85 of the 100 rows checked on 2026-09-22 disagreed with the athlete's
+    page. Now the race count is the athlete page's own, and when World
+    Athletics holds more of this season's marks than the log, the season
+    figures are computed from those, with the same formulas. A wind-aided
+    mark still counts as a race but not towards them: Noah Lyles' 9.76 at
+    the US Championships had +2.1 behind it."""
+    is_field = disc_key in FIELD_EVENTS
+    analysis = athlete_analytics.build_field_analysis(disc_key, names, is_field)
+    if not analysis:
+        return analysis
+    log = athlete_analytics.load_race_log(disc_key)
+    for row in analysis.get("comparison") or []:
+        name = row["name"]
+        log_rows = athlete_analytics.athlete_rows(log, name)
+        season_rows = log_rows[log_rows["year"] == MEETS_YEAR] if not log_rows.empty else log_rows
+        _history, history_year, _condensed, history_races = load_athlete_history(disc_key, name)
+        races, _last, _days = season_activity(
+            disc_key, name, season_rows, history_year, history_races,
+        )
+        # All-time is this season plus earlier ones, so it can never read
+        # below this season's count.
+        row["races"] = int(row.get("races") or 0) + max(0, races - int(len(season_rows)))
+        logged_marks = row.get("seasonRaces") or 0
+        row["seasonRaces"] = races
+
+        wa_rows, wa_year = wa_season_results(disc_key, name)
+        wa_rows = [r for r in wa_rows if r["_wind"] is None or r["_wind"] <= LEGAL_WIND]
+        if wa_year != MEETS_YEAR or len(wa_rows) <= logged_marks:
+            continue
+        season = pd.DataFrame({
+            "value": [r["markValue"] for r in wa_rows],
+            "date":  [r["_when"] for r in wa_rows],
+            "year":  MEETS_YEAR,
+        })
+        form = athlete_analytics.form_by_season(season, is_field)
+        shape = athlete_analytics.season_shape(season, MEETS_YEAR, is_field)
+        current = form[0] if form else None
+        row["top3Average"] = current["top3Average"] if current else None
+        row["consistency"] = current["consistency"] if current else None
+        row["bestMonth"] = shape["bestMonth"] if shape else None
+    return analysis
 
 
 def load_athlete_history(disc_key, athlete_name, profile_url=None):
@@ -2975,9 +3053,7 @@ def projections_detail(disc_key):
         # Viable because the pairs genuinely exist: measured across all 32
         # 2026 fields, the median discipline has raced 100% of its possible
         # pairings and the worst is 82%.
-        "fieldAnalysis": athlete_analytics.build_field_analysis(
-            disc_key, names, disc_key in FIELD_EVENTS,
-        ),
+        "fieldAnalysis": field_analysis(disc_key, names),
     })
 
 
@@ -3574,9 +3650,7 @@ def ranking_only_report(disc_key):
         "scores":      scored,
         "trajectories": build_discipline_trajectories(disc_key, formed),
         "storylines":  [],
-        "fieldAnalysis": athlete_analytics.build_field_analysis(
-            disc_key, names, disc_key in FIELD_EVENTS,
-        ),
+        "fieldAnalysis": field_analysis(disc_key, names),
     }
 
 
