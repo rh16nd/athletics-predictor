@@ -1,8 +1,8 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here (2026-09-22, afternoon): both jobs below are done and committed locally; nothing is pushed
+## Start here (2026-09-22, afternoon): everything below is done and committed locally; the next step is a full site scan, then push live if it is clean
 
-**1. Athlete-page data rebuild: done, committed, NOT pushed.** The user answered "Don't push yet"; ask again before pushing.
+**1. Athlete-page data rebuild: done, committed, NOT pushed.** The user first said "Don't push yet", then (later on the 22nd) to push everything live once a full site scan comes back clean; see "Next" below.
 - The rebuild that died with the old chat was rerun on the committed 16 September data and finished at 04:16: 4,603 status pages, 234 profiles, 158 countries.
 - The athlete audit went from 1,606 of 4,837 linked pages clean to 4,833. The last four correctly show no chart: Mosisa Siyoum and Sadie Sigfstead raced indoors only, Chunhui Li's only 800m is a DNF, and Noreen Hussain's only vault is a no-mark.
 - track-insights-main is 2 ahead of origin:
@@ -20,7 +20,17 @@
 - The user moved to a second Higgsfield account: 10 credits, 4.6 left after the recording. The Higgsfield CLI and its 8 skills are installed (`npm i -g @higgsfield/cli`, `npx skills add higgsfield-ai/skills`, now in `~/.claude/skills`). The CLI is signed in to the new account, while the claude.ai Higgsfield connector is still on the old one.
 - Free voices were tried first and turned down: Piper's and Kokoro's French voices, and Chatterbox. Don't offer them again. `~/.venvs/chatterbox` and its 3 GB model can go, with the user's word.
 
-**Next:** the user watches the new video. Then ship the redesign on their word: push `redesign/terra`, merge it to main, and push both repos, which the user must approve.
+**3. Later the same afternoon, on `redesign/terra` (7 ahead of origin, not pushed):**
+- `7163720`: the Asian Games "call at a glance" became two sideways rows, Track then Field, of the same tiles, like the dashboard's favourites. The user chose to keep today's tiles rather than photo cards: 21 of the 36 Games favourites have a photo. The paging and arrows are shared with the dashboard (`src/hooks/useSideStrip.ts`, `src/components/dl/side-strip.tsx`).
+- `3644b18`: tables fit a phone. On a 360px phone ten tables were 440 to 726px wide and ran off the screen. Below sm, each now keeps the athlete and its key number and folds the rest under the name:
+  - the Asian Games call, the top 20, Results, the athlete page's three tables, the country list, the event page's "What separates them" and Qualification;
+  - the head-to-head grid still scrolls, with surnames pinned;
+  - the Schedule's "23–29 September 2026" wraps;
+  - the last header of each table has `pr-1.5`, because the InfoTip button's `-m-1.5` poked 6px past the edge and made even a fitting table drag sideways.
+  - Measured on 16 pages at 360 and 390px, in EN and FR: nothing past the screen. Desktop columns are unchanged, and `npm run build` passes.
+- The QA scripts from that work are in the session scratchpad, not the repo: the overflow audit, the sideways-scroller finder and the phone screenshots. They're worth keeping in `scripts/qa/` if the check is wanted again.
+
+**Next (the user, 2026-09-22):** run a whole scan of the website. If everything is good, ping the user, then push to the live version: fast-forward track-insights `main` to `redesign/terra`, push `main` and `redesign/terra`, and push athletics-predictor `main`. Then check www.podiumcall.cc after Vercel deploys.
 
 ## Earlier (2026-09-22, morning): finish the athlete-page data rebuild, then make a new animated intro video that looks like the new site
 
