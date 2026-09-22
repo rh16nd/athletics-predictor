@@ -1,5 +1,28 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
+## Start here (2026-09-22, evening): the redesign is live
+
+The user said "push" after the site scan and its fixes. track-insights `main` was fast-forwarded to `redesign/terra` (7e37433) and both branches pushed; athletics-predictor `main` is pushed at 2ad6c8e8. Checked on www.podiumcall.cc after Vercel deployed: the new look, the fixes below, and the intro video playing.
+
+**What the scan covered.** Type-check, lint (0 errors), `npm run build`, 716 backend tests, the athlete audit (4,833 of 4,837 clean; the other four correctly show no chart), and a crawl of 1,644 desktop pages (every route, event, country, top-20 athlete and Games entrant) plus every route in French and at phone width and 234 athlete pages at phone width. No page failed, none scrolled sideways and none had old wording; the only console message is the API wake-up ping, refused locally because no API runs.
+
+**What it found, now fixed:**
+- Event pages' "What separates them" read the race log only, so 85 of the 100 rows that could be checked disagreed with the athlete's own page (Kerr: "0 races" and no top-3 average beside his 3:27.62 in London). `api.field_analysis` now counts races as the athlete page does and, when World Athletics holds more of this season's legal marks, takes the top-3 average, steadiness and best month from them. A wind-aided mark (over +2.0) counts as a race but not in the averages (Lyles' 9.76 had +2.1). Tests: `tests/test_field_analysis_season.py`.
+- The 36 event files were rewritten alone, from committed data: the 06:00 refresh stashed, the files written through the API's test client with the build's own serialisation, the stash popped. Only the comparison rows' season fields changed.
+- 13 championship entrants' pages showed a "Season stats" heading over nothing; 105 pages said "this season" above a chart of 2025 or earlier (it now names the year).
+- Country pages showed entrants as "— —", counted them as ranked, and could put them in the season's best three.
+- Two notes still spoke of the Diamond League Final ("the eight who line up in Brussels", "the eight finalists").
+- Three files' prettier line-wrapping.
+
+The full crawl re-run after the fixes was cut off when the chat ended; the fixed pages were checked one by one, locally and on the live site.
+
+**Still open:**
+- The 06:00 refresh of 22 September (27 files) is uncommitted in this repo, and `stash@{0}` (the partial refresh of the 21st) is still there. Committing or dropping either is the user's call. Neither must be pushed by accident.
+- The dashboard's "4,837 ranked athletes", the map and search results still count the 70 championship entrants with no mark as ranked (the country page itself is fixed).
+- Federico Riva and Josh Hoey set their 2026 bests indoors and their cached World Athletics profiles stop at 2025, so both their pages read 0 races this season.
+- The redesign is merged, so work now happens on `main`; `redesign/terra` and its worktree can be retired when the user wants.
+- `.claude/launch.json` has `terra-static`: the redesign's dev server on :8082 reading the static snapshot, as the live site does.
+
 ## Start here (2026-09-22, afternoon): everything below is done and committed locally; the next step is a full site scan, then push live if it is clean
 
 **1. Athlete-page data rebuild: done, committed, NOT pushed.** The user first said "Don't push yet", then (later on the 22nd) to push everything live once a full site scan comes back clean; see "Next" below.
