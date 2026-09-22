@@ -2,6 +2,9 @@
 
 ## Start here (2026-09-22, evening): the redesign is live
 
+**After the push, the user found a bug on a phone:** "in the mobile version they dont show the whole table, there should be a way to slide the table to see all the info". The morning's fix had hidden the narrower columns below sm and folded a few under the athlete's name, which put the rest out of reach. Every table now keeps all its columns and slides sideways instead: `src/components/dl/table-scroll.tsx` holds the box (`min-w-0`, which is what the old page-wide sideways scroll was really about), pins the athlete and the place where there is one, fades the ground at whichever edge has more behind it, and says the table slides until the reader slides it. The pinned columns paint their ground only while the table is held to one side, and that ground is `bg-page-ground` — `--background` plus the 5% white the fixed glow-and-grain layer adds, measured, because the token alone was a visibly darker block. Checked on 14 pages at 375px and 1280px in both languages: nothing scrolls the page, no table sits outside a scroller, and no table scrolls at desktop width.
+
+
 The user said "push" after the site scan and its fixes. track-insights `main` was fast-forwarded to `redesign/terra` (7e37433) and both branches pushed; athletics-predictor `main` is pushed at 2ad6c8e8. Checked on www.podiumcall.cc after Vercel deployed: the new look, the fixes below, and the intro video playing.
 
 **What the scan covered.** Type-check, lint (0 errors), `npm run build`, 716 backend tests, the athlete audit (4,833 of 4,837 clean; the other four correctly show no chart), and a crawl of 1,644 desktop pages (every route, event, country, top-20 athlete and Games entrant) plus every route in French and at phone width and 234 athlete pages at phone width. No page failed, none scrolled sideways and none had old wording; the only console message is the API wake-up ping, refused locally because no API runs.
