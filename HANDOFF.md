@@ -1,6 +1,28 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here first (2026-09-22): finish the athlete-page data rebuild, then make a new animated intro video that looks like the new site
+## Start here (2026-09-22, afternoon): both jobs below are done and committed locally; nothing is pushed
+
+**1. Athlete-page data rebuild: done, committed, NOT pushed.** The user answered "Don't push yet"; ask again before pushing.
+- The rebuild that died with the old chat was rerun on the committed 16 September data and finished at 04:16: 4,603 status pages, 234 profiles, 158 countries.
+- The athlete audit went from 1,606 of 4,837 linked pages clean to 4,833. The last four correctly show no chart: Mosisa Siyoum and Sadie Sigfstead raced indoors only, Chunhui Li's only 800m is a DNF, and Noreen Hussain's only vault is a no-mark.
+- track-insights-main is 2 ahead of origin:
+  - `af21217` keeps the live site's event chart to four lines. The snapshot now carries eight, for the redesign's eight colours; the first four are the same four as before, checked on all 36 event files.
+  - `5de5386` is the snapshot.
+- athletics-predictor is 10 ahead (`24f26056` is the photo caches).
+- **The stash was not popped.** The scheduled "DL Predictor Daily Refresh" (run.py, 06:00) ran after the build and left a newer uncommitted refresh of the same eleven files, plus more toplists. Popping `stash@{0}` would put older data over newer. The stash is still there. Dropping it, and whether to commit the 06:00 refresh, are the user's calls.
+
+**2. New intro video: done on `redesign/terra` (`bc4b5c6`), not shipped.**
+- Main was merged into the branch first (`b53bb19`, `186bf3d`), so it has the new snapshot. The branch is 5 ahead of origin.
+- The video is motion graphics driven over the real redesigned pages, narrated by Alexey in a new recording of the newer script: English 57 s, French 60 s. It went in `public/video/intro-{en,fr}.{mp4,jpg}`, which is all the landing reads.
+- The poster is the athletes' own photos under "Real results from World Athletics".
+- The script speaks of championships in general ("Follow the championship that's on now, and the ones still to come"), the user's rule: never describe the championship on right now.
+- The pipeline, the paid takes and the traps are in `track-insights-terra/design/intro-video-v2/README.md`.
+- The user moved to a second Higgsfield account: 10 credits, 4.6 left after the recording. The Higgsfield CLI and its 8 skills are installed (`npm i -g @higgsfield/cli`, `npx skills add higgsfield-ai/skills`, now in `~/.claude/skills`). The CLI is signed in to the new account, while the claude.ai Higgsfield connector is still on the old one.
+- Free voices were tried first and turned down: Piper's and Kokoro's French voices, and Chatterbox. Don't offer them again. `~/.venvs/chatterbox` and its 3 GB model can go, with the user's word.
+
+**Next:** the user watches the new video. Then ship the redesign on their word: push `redesign/terra`, merge it to main, and push both repos, which the user must approve.
+
+## Earlier (2026-09-22, morning): finish the athlete-page data rebuild, then make a new animated intro video that looks like the new site
 
 The user closed this chat to continue in a new one and asked for everything to be saved here. There are two jobs, in this order.
 
