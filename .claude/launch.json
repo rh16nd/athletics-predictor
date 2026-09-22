@@ -46,6 +46,16 @@
       ],
       "port": 8081,
       "autoPort": false
+    },
+    {
+      "name": "terra-static",
+      "runtimeExecutable": "cmd.exe",
+      "runtimeArgs": [
+        "/c",
+        "set VITE_STATIC_API=1&& npm --prefix C:\\Users\\rayen\\track-insights-terra run dev -- --port 8082 --strictPort"
+      ],
+      "port": 8082,
+      "autoPort": false
     }
   ]
 }
