@@ -16,7 +16,7 @@
  "federationsWithoutIds": [],
  "lookupFailures": 0,
  "fieldPublished": true,
- "resultsAvailable": false,
+ "resultsAvailable": true,
  "field": [
   {
    "evKey": "M.100M--------------",
@@ -8841,5 +8841,280 @@
    "entrants": 119
   }
  ],
- "results": []
+ "results": [
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Abuduaini TUERGONG",
+   "place": "1",
+   "mark": "64.26",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Nanjun WU",
+   "place": "2",
+   "mark": "61.58",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Sadegh SAMIMISHALAMZARI",
+   "place": "3",
+   "mark": "60.32",
+   "nationality": "IRI"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Yuji TSUTSUMI",
+   "place": "4",
+   "mark": "59.82",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Moaaz Mohamed IBRAHIM",
+   "place": "5",
+   "mark": "59.39",
+   "nationality": "QAT"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Masateru YUGAMI",
+   "place": "6",
+   "mark": "58.53",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Aziz NURILLAEV",
+   "place": "7",
+   "mark": "58.19",
+   "nationality": "UZB"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Abdullah Mohammad AL ZANKAWI",
+   "place": "8",
+   "mark": "56.87",
+   "nationality": "KUW"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Essa Mohamed AL ZENKAWI",
+   "place": "9",
+   "mark": "56.45",
+   "nationality": "KUW"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Muhammad Irfan SHAMSUDDIN",
+   "place": "10",
+   "mark": "56.37",
+   "nationality": "MAS"
+  },
+  {
+   "discipline": "men_DT",
+   "athlete_name": "Mustafa AL SAAMAH",
+   "place": "11",
+   "mark": "54.16",
+   "nationality": "IRQ"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Winfred YAVI",
+   "place": "1",
+   "mark": "32:39.18",
+   "nationality": "BRN"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Nozomi TANAKA",
+   "place": "2",
+   "mark": "32:41.54",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": " SEEMA",
+   "place": "3",
+   "mark": "32:50.05",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Daisy JEPKEMEI",
+   "place": "4",
+   "mark": "33:03.21",
+   "nationality": "KAZ"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Ruth JEBET",
+   "place": "5",
+   "mark": "33:22.21",
+   "nationality": "BRN"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Thi Oanh NGUYEN",
+   "place": "6",
+   "mark": "33:44.92",
+   "nationality": "VIE"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Mariya KOROBITSKAYA",
+   "place": "7",
+   "mark": "33:54.47",
+   "nationality": "KGZ"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Harim JO",
+   "place": "8",
+   "mark": "34:34.66",
+   "nationality": "KOR"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Nomin-Erdene BAYARTOGTOKH",
+   "place": "9",
+   "mark": "35:54.33",
+   "nationality": "MGL"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Vanessa Ying Zhuang LEE",
+   "place": "10",
+   "mark": "36:00.95",
+   "nationality": "SGP"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Shantoshi SHRESTHA",
+   "place": "11",
+   "mark": "36:20.84",
+   "nationality": "NEP"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Nicole LOW",
+   "place": "12",
+   "mark": "36:48.31",
+   "nationality": "SGP"
+  },
+  {
+   "discipline": "women_10000m",
+   "athlete_name": "Thi Tuyet LE",
+   "place": "13",
+   "mark": "38:00.87",
+   "nationality": "VIE"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Sharifa DAVRONOVA",
+   "place": "1",
+   "mark": "14.35",
+   "nationality": "UZB"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Yingying HUANG",
+   "place": "2",
+   "mark": "14.12",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Yi LI",
+   "place": "3",
+   "mark": "13.83",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "I. ASHA",
+   "place": "4",
+   "mark": "13.83",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Maria Natalia LONDA",
+   "place": "5",
+   "mark": "13.50",
+   "nationality": "INA"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Akari FUNADA",
+   "place": "6",
+   "mark": "13.42",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Mariya YEFREMOVA",
+   "place": "7",
+   "mark": "13.34",
+   "nationality": "KAZ"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Madushani HERATH",
+   "place": "8",
+   "mark": "13.20",
+   "nationality": "SRI"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Thi Ngoc Ha VU",
+   "place": "9",
+   "mark": "13.13",
+   "nationality": "VIE"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Niharika VASHISHT",
+   "place": "10",
+   "mark": "13.00",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Tia Louise ROZARIO",
+   "place": "11",
+   "mark": "12.95",
+   "nationality": "SGP"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Parinya CHUAIMAROENG",
+   "place": "12",
+   "mark": "12.91",
+   "nationality": "THA"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Maryam KAZEMI",
+   "place": "13",
+   "mark": "12.68",
+   "nationality": "IRI"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Enkhbat OYUNDARI",
+   "place": "14",
+   "mark": "12.39",
+   "nationality": "MGL"
+  },
+  {
+   "discipline": "women_TJ",
+   "athlete_name": "Thi Huong NGUYEN",
+   "place": "",
+   "mark": "NM",
+   "nationality": "VIE"
+  }
+ ],
+ "resultsFetchedAt": "2026-09-24T18:41:01Z"
 }
