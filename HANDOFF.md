@@ -1,13 +1,17 @@
 # PodiumCall (2026 Diamond League Predictor) — Handoff
 
-## Start here (2026-09-23): the Games begin today, and everything below is live
+## Start here (2026-09-24): the Games are running, and day one's results are scraped but NOT pushed
 
-The Asian Games athletics runs 23–29 September and the call for all 36 events was frozen on 16 September. The redesign, the phone-table fix and the data fixes from the 22nd are all live on www.podiumcall.cc. Nothing is mid-flight in the code.
+The Asian Games athletics runs 23–29 September on the call frozen on 16 September. The redesign, the phone-table fix and the data fixes from the 22nd are all live on www.podiumcall.cc.
+
+**The one thing waiting:** day one's results are on this machine and not on the site. A run on the 24th picked up three finals (men's discus, women's 10,000m, women's triple jump; 39 result rows) into `data/asian_games_2026/event.json`, and `--core-only` rebuilt nine files in `track-insights-main/public/data`. The push prompt was answered no, because pushing goes straight to live. To ship them: double-click `refresh-results.cmd` and answer `y`, or commit and push exactly those files in both repos.
+
+**The daily command, and the trap that broke it.** `refresh-results.cmd` in this repo's root is the once-a-day button for a championship: it fetches that day's results (`--results-only`, so it does not re-read the entry list and 32 toplists), rebuilds the page-level JSON, prints which events are new, lists the files it would commit, and asks before pushing. `--yes` skips the question. It stops if either repo is off `main` or behind GitHub, refuses a scrape that lost results the saved file already had, commits only the files it changed, and forces the question if fewer events have results than before.
+- On the 23rd an edit to its comment header rewrote the file with Unix line endings, which `cmd.exe` cannot parse, so double-clicking it did nothing while the Python underneath was fine. Fixed on the 24th (`a7e179df`), and `.gitattributes` now pins `*.cmd` and `*.bat` to CRLF so no editor can repeat it. **Never save a batch file with LF endings.**
 
 **Open, and the user's call:**
-- The 06:00 refresh of the 22nd (27 files) is still uncommitted in this repo, and `stash@{0}` (the partial refresh of the 21st) is still there. Committing, dropping or discarding either is the user's decision; neither should ever be pushed by accident.
-- This repo is 3 commits ahead of GitHub, all of them HANDOFF notes. Pushing redeploys the API on Render for a docs-only change, so it was left alone.
-- The Games refresh runs `refresh_results.py` (`--core-only`), which now also picks up the event-table fix from the 22nd.
+- The 06:00 refresh of the 22nd is still uncommitted in this repo, and `stash@{0}` (the partial refresh of the 21st) is still there. Committing, dropping or discarding either is the user's decision; neither should ever be pushed by accident. Note that each `refresh-results` run rebuilds the site's JSON from whatever is in `data/raw` at that moment, so those toplists ride along with the first push.
+- This repo is 5 commits ahead of GitHub: the HANDOFF notes plus the command fix. Pushing redeploys the API on Render, which is why it has been left alone.
 
 **Search Console, 22 September.** The user asked why nothing shows on Google. Checked from the server's side and everything is correct: robots.txt allows every crawler and declares the sitemap; `sitemap.xml` returns 200 as `application/xml`, parses cleanly, 1,115 URLs, all on `https://www.podiumcall.cc`; every page returns 200 with title, description, canonical, Open Graph and JSON-LD, server-rendered before any JavaScript; no `noindex` anywhere; the bare domain and `podiumcall.vercel.app` both 308 to www, deep links included. The homepage is **indexed** ("URL is on Google").
 - The sitemap entry in Search Console read "Couldn't fetch", then "Sitemap could not be read". The cause is almost certainly the address on file: it was submitted as `/sitemap.xml` into a box that already ends in a slash, making `https://www.podiumcall.cc//sitemap.xml`, which 308-redirects, and Google treats a redirected sitemap as unreadable. It was resubmitted as `sitemap.xml` with no leading slash on the 22nd; check the row a day or two later. robots.txt already points at the correct URL regardless.
