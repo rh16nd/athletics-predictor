@@ -41,3 +41,6 @@ data/field/races_2026/
 # and the Track and Field top 20s' for the field model's view (world_rankings.py).
 data/asian_games_2026/races/
 data/field/current/
+
+# Logs from scheduled-refresh.cmd. Regenerable, and one file per day.
+logs/

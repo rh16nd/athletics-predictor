@@ -43,6 +43,46 @@ venv\Scripts\python.exe src\injury_checker.py
 Both of these act on whichever championship is current in `src/championships.py`.
 Today that is the Asian Games.
 
+## The automatic end-of-day refresh
+
+Set up 25 September. A Windows scheduled task called **PodiumCall results refresh**
+runs `scheduled-refresh.cmd` at 19:00 local time every day, which is 01:00 the next
+morning in Nagoya and so after the last session. It fetches, rebuilds and pushes
+without asking. It stops after 29 September, the last day of the Games, and deletes
+itself two days later so it cannot follow the site on to the next championship
+unattended.
+
+It logs every run to `logs\refresh-<date>.log`, which is gitignored. The log opens
+with the local commits a push would carry, so you can see exactly what went out.
+
+Three things are worth knowing about it.
+
+It runs only while you are logged in, because that avoids storing your password in
+Task Scheduler. It is set to wake the computer from sleep, and to run as soon as it
+can if it missed its slot, so a machine that was asleep still catches up. A machine
+that is switched off all evening does not.
+
+It pushes every local commit on `main`, not only the files it changed. That is how
+`refresh_results.py` has always worked. So do not leave work committed locally on
+`main` overnight during a championship unless you want it published.
+
+It commits even on a day with no new finals, because `resultsFetchedAt`,
+`lastUpdated` and `daysToFinal` change on every run. The commit message will still
+say how many events have results, which on a quiet day is yesterday's number.
+
+To rehearse it without pushing anything:
+
+```powershell
+C:\Users\rayen\athletics-predictor\scheduled-refresh.cmd rehearse
+```
+
+To check when it next runs, or to stop it early:
+
+```powershell
+Get-ScheduledTaskInfo -TaskName "PodiumCall results refresh"
+Unregister-ScheduledTask -TaskName "PodiumCall results refresh" -Confirm:$false
+```
+
 ## Refresh the data
 
 `run.py` on its own is not a full refresh. It updates the toplists, standings,
