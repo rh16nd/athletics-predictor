@@ -12,8 +12,8 @@ step that fails, and pushes nothing unless every step before the push worked:
      event.json. It refuses to save a run that lost data the saved file already
      has, which is what a failed fetch looks like.
   2. src/build_static_api.py --core-only rewrites the page-level JSON the site
-     reads (results, the championship, predictions) in seconds, without the long
-     athlete-profile pass.
+     reads -- results, the championship, predictions, and a page for each of
+     the 36 events -- in seconds, without the long athlete-profile pass.
   3. It shows how many events have results and which files changed, then
      commits exactly those files in both repos and pushes main. Vercel and
      Render redeploy on their own.
@@ -62,14 +62,43 @@ def events_with_results():
     return sorted({r.get("discipline") for r in rows if r.get("discipline")})
 
 
-def changed(repo, path, top_level_only=False):
+def core_dirs():
+    """The folders under public/data that `build_static_api.py --core-only`
+    writes, asked of that script instead of assumed here.
+
+    write_core() writes every snapshot_paths() entry, and that is the top-level
+    pages *and* one page per discipline: 47 files on 2026-09-24, only 11 of
+    them top level. The rule this replaced kept one-segment paths and claimed
+    in its comment that core-only never wrote a folder, which was wrong, so
+    every refresh held back all 36 event pages and the live site's event pages
+    ran a refresh behind the results they were built from.
+
+    Imported inside the function because it pulls in the whole Flask app, a
+    second this script has no reason to spend before it knows a refresh even
+    changed anything. By the time this runs, the --core-only step has already
+    imported the same module in a subprocess and come back clean.
+    """
+    import build_static_api
+    return {os.path.dirname(name).replace("\\", "/")
+            for _, name in build_static_api.snapshot_paths()}
+
+
+def changed(repo, path, core_only=False):
     files = []
+    dirs = core_dirs() if core_only else None
     for line in git(repo, "status", "--porcelain", "--", path).stdout.splitlines():
         name = line[3:].strip()
-        # --core-only writes public/data/*.json and never the athlete or country
-        # folders, so anything changed down there is not this run's to commit.
-        if name and (not top_level_only or name.count("/") == path.count("/") + 1):
-            files.append(name)
+        if not name:
+            continue
+        if dirs is not None:
+            # A --core-only run rewrote the top-level pages and the discipline
+            # folder. It does not touch athlete, athlete-status or country --
+            # those come from a full build, so a change down there belongs to
+            # some other run and is not this one's to commit.
+            rel = name[len(path) + 1:] if name.startswith(path + "/") else name
+            if os.path.dirname(rel).replace("\\", "/") not in dirs:
+                continue
+        files.append(name)
     return files
 
 
@@ -105,7 +134,7 @@ def main():
 
     event_rel = "/".join([*CHAMP["dataDir"].replace("\\", "/").split("/"), "event.json"])
     backend = changed(ROOT, event_rel)
-    frontend = changed(FRONTEND, "public/data", top_level_only=True)
+    frontend = changed(FRONTEND, "public/data", core_only=True)
     if not backend and not frontend:
         print("\nNothing changed, so there is nothing to push.")
         return
