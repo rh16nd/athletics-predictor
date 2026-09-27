@@ -1,0 +1,128 @@
+{
+ "what": "Whether third place is separable, before the race, from the places below it. Model-free: everything is computed inside a final.",
+ "finals": 925,
+ "finalists": 12162,
+ "medallistsWithNoSeasonScore": 0.2,
+ "byPlace": {
+  "1": {
+   "pairwiseWinRateVsOffPodium": {
+    "sb_score": {
+     "winRate": 87.5,
+     "comparisons": 7232
+    },
+    "form_score": {
+     "winRate": 88.9,
+     "comparisons": 6642
+    },
+    "recent_score": {
+     "winRate": 88.0,
+     "comparisons": 4985
+    }
+   },
+   "byBand": {
+    "vsNextOne": {
+     "winRate": 66.7,
+     "comparisons": 924
+    },
+    "vsNextThree": {
+     "winRate": 73.8,
+     "comparisons": 2770
+    },
+    "vsOffPodium": {
+     "winRate": 87.5,
+     "comparisons": 7232
+    }
+   },
+   "preRaceRank": {
+    "sb_score": {
+     "finals": 913,
+     "medianPreRaceRank": 2.0,
+     "inPreRaceTop3": 80.3,
+     "inPreRaceTop6": 93.4,
+     "randomTop3": 27.5,
+     "randomTop6": 54.9
+    }
+   }
+  },
+  "2": {
+   "pairwiseWinRateVsOffPodium": {
+    "sb_score": {
+     "winRate": 79.8,
+     "comparisons": 7162
+    },
+    "form_score": {
+     "winRate": 81.1,
+     "comparisons": 6541
+    },
+    "recent_score": {
+     "winRate": 80.4,
+     "comparisons": 4844
+    }
+   },
+   "byBand": {
+    "vsNextOne": {
+     "winRate": 60.9,
+     "comparisons": 928
+    },
+    "vsNextThree": {
+     "winRate": 67.9,
+     "comparisons": 2746
+    },
+    "vsOffPodium": {
+     "winRate": 79.8,
+     "comparisons": 7162
+    }
+   },
+   "preRaceRank": {
+    "sb_score": {
+     "finals": 906,
+     "medianPreRaceRank": 3.0,
+     "inPreRaceTop3": 63.4,
+     "inPreRaceTop6": 87.6,
+     "randomTop3": 27.5,
+     "randomTop6": 55.0
+    }
+   }
+  },
+  "3": {
+   "pairwiseWinRateVsOffPodium": {
+    "sb_score": {
+     "winRate": 75.4,
+     "comparisons": 7072
+    },
+    "form_score": {
+     "winRate": 75.2,
+     "comparisons": 6610
+    },
+    "recent_score": {
+     "winRate": 74.8,
+     "comparisons": 4766
+    }
+   },
+   "byBand": {
+    "vsNextOne": {
+     "winRate": 59.9,
+     "comparisons": 915
+    },
+    "vsNextThree": {
+     "winRate": 66.4,
+     "comparisons": 2707
+    },
+    "vsOffPodium": {
+     "winRate": 75.4,
+     "comparisons": 7072
+    }
+   },
+   "preRaceRank": {
+    "sb_score": {
+     "finals": 895,
+     "medianPreRaceRank": 4.0,
+     "inPreRaceTop3": 48.3,
+     "inPreRaceTop6": 83.8,
+     "randomTop3": 27.6,
+     "randomTop6": 55.1
+    }
+   }
+  }
+ }
+}
