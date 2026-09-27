@@ -1,0 +1,430 @@
+{
+ "what": "Within-athlete effect of temperature on World Athletics score, per discipline. No model involved. Run before deciding whether a per-discipline weather adjustment is worth building.",
+ "method": {
+  "estimate": "athlete-centred least squares, points of WA score per degree C",
+  "minMarksPerAthlete": 3,
+  "minRowsPerDiscipline": 200,
+  "control": "20 permutations of temperature within each discipline",
+  "seed": 42
+ },
+ "rows": 20098,
+ "disciplines": 28,
+ "pairedSignCheck": {
+  "what": "Men's against women's version of the same event, season-controlled. A real temperature effect has to share a sign across the pair.",
+  "pairs": [
+   {
+    "event": "DT",
+    "men": -0.6452,
+    "women": -0.6487,
+    "sameSign": true
+   },
+   {
+    "event": "400m",
+    "men": 1.0401,
+    "women": 0.0746,
+    "sameSign": true
+   },
+   {
+    "event": "TJ",
+    "men": 0.5764,
+    "women": 0.52,
+    "sameSign": true
+   },
+   {
+    "event": "1500m",
+    "men": 0.8407,
+    "women": 0.5696,
+    "sameSign": true
+   },
+   {
+    "event": "5000m",
+    "men": 0.5481,
+    "women": -0.7132,
+    "sameSign": false
+   },
+   {
+    "event": "800m",
+    "men": 0.5722,
+    "women": -0.3171,
+    "sameSign": false
+   },
+   {
+    "event": "3000sc",
+    "men": 0.6208,
+    "women": 0.58,
+    "sameSign": true
+   },
+   {
+    "event": "400h",
+    "men": 0.3366,
+    "women": 0.5051,
+    "sameSign": true
+   },
+   {
+    "event": "JT",
+    "men": 0.2764,
+    "women": -0.2029,
+    "sameSign": false
+   },
+   {
+    "event": "LJ",
+    "men": 0.2375,
+    "women": 0.6576,
+    "sameSign": true
+   },
+   {
+    "event": "200m",
+    "men": -0.0769,
+    "women": -0.1054,
+    "sameSign": true
+   },
+   {
+    "event": "100m",
+    "men": 0.0972,
+    "women": -0.4442,
+    "sameSign": false
+   }
+  ],
+  "agreeing": 8,
+  "of": 12,
+  "chance": "a coin flip gives half"
+ },
+ "results": [
+  {
+   "discipline": "men_DT",
+   "pointsPerDegree": -1.3442,
+   "se": 0.5254,
+   "tStat": -2.56,
+   "rows": 333,
+   "athletes": 78,
+   "pointsPerDegreeSeasonControlled": -0.6452,
+   "tStatSeasonControlled": -1.05,
+   "shuffledSd": 0.5222,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "women_HT",
+   "pointsPerDegree": 1.3404,
+   "se": 0.5344,
+   "tStat": 2.51,
+   "rows": 244,
+   "athletes": 57,
+   "pointsPerDegreeSeasonControlled": 1.4193,
+   "tStatSeasonControlled": 2.35,
+   "shuffledSd": 0.3624,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "men_400m",
+   "pointsPerDegree": 1.0594,
+   "se": 0.4154,
+   "tStat": 2.55,
+   "rows": 383,
+   "athletes": 96,
+   "pointsPerDegreeSeasonControlled": 1.0401,
+   "tStatSeasonControlled": 2.36,
+   "shuffledSd": 0.427,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "women_TJ",
+   "pointsPerDegree": 0.9081,
+   "se": 0.4263,
+   "tStat": 2.13,
+   "rows": 270,
+   "athletes": 63,
+   "pointsPerDegreeSeasonControlled": 0.52,
+   "tStatSeasonControlled": 1.15,
+   "shuffledSd": 0.4013,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "men_TJ",
+   "pointsPerDegree": 0.8286,
+   "se": 0.4301,
+   "tStat": 1.93,
+   "rows": 240,
+   "athletes": 54,
+   "pointsPerDegreeSeasonControlled": 0.5764,
+   "tStatSeasonControlled": 1.27,
+   "shuffledSd": 0.4212,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_1500m",
+   "pointsPerDegree": 0.7924,
+   "se": 0.3419,
+   "tStat": 2.32,
+   "rows": 437,
+   "athletes": 102,
+   "pointsPerDegreeSeasonControlled": 0.8407,
+   "tStatSeasonControlled": 2.29,
+   "shuffledSd": 0.4832,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_5000m",
+   "pointsPerDegree": 0.7083,
+   "se": 0.5088,
+   "tStat": 1.39,
+   "rows": 291,
+   "athletes": 71,
+   "pointsPerDegreeSeasonControlled": 0.5481,
+   "tStatSeasonControlled": 1.08,
+   "shuffledSd": 0.3869,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_1500m",
+   "pointsPerDegree": 0.6872,
+   "se": 0.2538,
+   "tStat": 2.71,
+   "rows": 438,
+   "athletes": 102,
+   "pointsPerDegreeSeasonControlled": 0.5696,
+   "tStatSeasonControlled": 2.07,
+   "shuffledSd": 0.3141,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "women_3000sc",
+   "pointsPerDegree": 0.6718,
+   "se": 0.3095,
+   "tStat": 2.17,
+   "rows": 502,
+   "athletes": 116,
+   "pointsPerDegreeSeasonControlled": 0.58,
+   "tStatSeasonControlled": 1.92,
+   "shuffledSd": 0.3263,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "men_800m",
+   "pointsPerDegree": 0.6127,
+   "se": 0.3351,
+   "tStat": 1.83,
+   "rows": 431,
+   "athletes": 98,
+   "pointsPerDegreeSeasonControlled": 0.5722,
+   "tStatSeasonControlled": 1.69,
+   "shuffledSd": 0.2095,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "women_LJ",
+   "pointsPerDegree": 0.595,
+   "se": 0.4939,
+   "tStat": 1.2,
+   "rows": 241,
+   "athletes": 62,
+   "pointsPerDegreeSeasonControlled": 0.6576,
+   "tStatSeasonControlled": 1.27,
+   "shuffledSd": 0.272,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "women_100m",
+   "pointsPerDegree": -0.5355,
+   "se": 0.3238,
+   "tStat": -1.65,
+   "rows": 472,
+   "athletes": 105,
+   "pointsPerDegreeSeasonControlled": -0.4442,
+   "tStatSeasonControlled": -1.4,
+   "shuffledSd": 0.3941,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_3000sc",
+   "pointsPerDegree": 0.5014,
+   "se": 0.3168,
+   "tStat": 1.58,
+   "rows": 489,
+   "athletes": 108,
+   "pointsPerDegreeSeasonControlled": 0.6208,
+   "tStatSeasonControlled": 1.88,
+   "shuffledSd": 0.2754,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_100h",
+   "pointsPerDegree": 0.4634,
+   "se": 0.2794,
+   "tStat": 1.66,
+   "rows": 457,
+   "athletes": 102,
+   "pointsPerDegreeSeasonControlled": 0.2812,
+   "tStatSeasonControlled": 1.0,
+   "shuffledSd": 0.2161,
+   "beatsShuffled": true
+  },
+  {
+   "discipline": "women_400h",
+   "pointsPerDegree": 0.4408,
+   "se": 0.3294,
+   "tStat": 1.34,
+   "rows": 430,
+   "athletes": 97,
+   "pointsPerDegreeSeasonControlled": 0.5051,
+   "tStatSeasonControlled": 1.54,
+   "shuffledSd": 0.3269,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_400h",
+   "pointsPerDegree": 0.3995,
+   "se": 0.3695,
+   "tStat": 1.08,
+   "rows": 426,
+   "athletes": 99,
+   "pointsPerDegreeSeasonControlled": 0.3366,
+   "tStatSeasonControlled": 0.91,
+   "shuffledSd": 0.3171,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_5000m",
+   "pointsPerDegree": -0.2984,
+   "se": 0.3855,
+   "tStat": -0.77,
+   "rows": 349,
+   "athletes": 86,
+   "pointsPerDegreeSeasonControlled": -0.7132,
+   "tStatSeasonControlled": -1.74,
+   "shuffledSd": 0.356,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_JT",
+   "pointsPerDegree": 0.2286,
+   "se": 0.4448,
+   "tStat": 0.51,
+   "rows": 337,
+   "athletes": 76,
+   "pointsPerDegreeSeasonControlled": 0.2764,
+   "tStatSeasonControlled": 0.59,
+   "shuffledSd": 0.4043,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_LJ",
+   "pointsPerDegree": 0.2272,
+   "se": 0.4359,
+   "tStat": 0.52,
+   "rows": 229,
+   "athletes": 54,
+   "pointsPerDegreeSeasonControlled": 0.2375,
+   "tStatSeasonControlled": 0.53,
+   "shuffledSd": 0.3815,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_400m",
+   "pointsPerDegree": 0.1743,
+   "se": 0.3184,
+   "tStat": 0.55,
+   "rows": 424,
+   "athletes": 107,
+   "pointsPerDegreeSeasonControlled": 0.0746,
+   "tStatSeasonControlled": 0.22,
+   "shuffledSd": 0.2522,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_DT",
+   "pointsPerDegree": -0.1554,
+   "se": 0.5086,
+   "tStat": -0.31,
+   "rows": 364,
+   "athletes": 78,
+   "pointsPerDegreeSeasonControlled": -0.6487,
+   "tStatSeasonControlled": -1.08,
+   "shuffledSd": 0.4027,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_110h",
+   "pointsPerDegree": -0.1382,
+   "se": 0.3155,
+   "tStat": -0.44,
+   "rows": 446,
+   "athletes": 97,
+   "pointsPerDegreeSeasonControlled": -0.2504,
+   "tStatSeasonControlled": -0.79,
+   "shuffledSd": 0.2593,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_800m",
+   "pointsPerDegree": -0.1163,
+   "se": 0.2818,
+   "tStat": -0.41,
+   "rows": 383,
+   "athletes": 91,
+   "pointsPerDegreeSeasonControlled": -0.3171,
+   "tStatSeasonControlled": -1.07,
+   "shuffledSd": 0.2417,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_JT",
+   "pointsPerDegree": 0.0968,
+   "se": 0.5292,
+   "tStat": 0.18,
+   "rows": 348,
+   "athletes": 85,
+   "pointsPerDegreeSeasonControlled": -0.2029,
+   "tStatSeasonControlled": -0.34,
+   "shuffledSd": 0.4482,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_SP",
+   "pointsPerDegree": 0.091,
+   "se": 0.5259,
+   "tStat": 0.17,
+   "rows": 256,
+   "athletes": 64,
+   "pointsPerDegreeSeasonControlled": -0.0219,
+   "tStatSeasonControlled": -0.04,
+   "shuffledSd": 0.3577,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_200m",
+   "pointsPerDegree": -0.089,
+   "se": 0.4185,
+   "tStat": -0.21,
+   "rows": 340,
+   "athletes": 82,
+   "pointsPerDegreeSeasonControlled": -0.0769,
+   "tStatSeasonControlled": -0.18,
+   "shuffledSd": 0.4795,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "men_100m",
+   "pointsPerDegree": 0.0752,
+   "se": 0.4123,
+   "tStat": 0.18,
+   "rows": 382,
+   "athletes": 90,
+   "pointsPerDegreeSeasonControlled": 0.0972,
+   "tStatSeasonControlled": 0.23,
+   "shuffledSd": 0.3273,
+   "beatsShuffled": false
+  },
+  {
+   "discipline": "women_200m",
+   "pointsPerDegree": 0.0219,
+   "se": 0.3974,
+   "tStat": 0.06,
+   "rows": 343,
+   "athletes": 80,
+   "pointsPerDegreeSeasonControlled": -0.1054,
+   "tStatSeasonControlled": -0.27,
+   "shuffledSd": 0.3392,
+   "beatsShuffled": false
+  }
+ ]
+}
