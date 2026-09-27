@@ -1,0 +1,74 @@
+{
+ "what": "Pre-registration for grading the 2026 Asian Games as an out-of-sample test of the championship field model. Written and committed BEFORE the last final is run, so the pass condition cannot be chosen after seeing the number.",
+ "writtenAt": "2026-09-27T11:09:52Z",
+ "whyItIsAHoldout": {
+  "modelFitAt": "2026-09-16T06:21:04Z",
+  "modelFitOnFinals": 1155,
+  "callFrozenAt": "2026-09-16T19:15:06Z",
+  "firstSession": "2026-09-23",
+  "note": "The model was fitted, and the call frozen and published, a week before the first session. No 2026 Asian Games final is in the training data, and the call has not been regenerated since. These are the first finals this model has never seen.",
+  "modelFitExperiment": "old_marks"
+ },
+ "scope": {
+  "eventsCalled": 36,
+  "eventsNotCalled": 14,
+  "method": "All 36 called events use the field model; none falls back to points. Verified from data/asian_games_2026/event.json, where no event carries a method override.",
+  "countsTowardTheTest": "Every called event that is run and graded. An event that is cancelled, or that World Athletics does not publish, is excluded and the exclusion is reported with its reason.",
+  "withdrawals": "Scored only on athletes who reached the start line, the same convention as every other test on this project."
+ },
+ "ruler": {
+  "primary": "Medallists named: podium places the call's top three got right, out of 3 per final. The same metric as the 65.3% backtest.",
+  "secondary": "Winners named first.",
+  "computedBy": "src/field_model.py::_block, the same function that produced field_model_all_seasons.json and field_model_holdout.json. The Asian Games must not get its own scoring code.",
+  "notPodiumPlaces": "The /results page counts podium places against the frozen call and currently reads 64.3%. That is a different ruler from the 65.3% backtest and the two must not be compared."
+ },
+ "baseline": {
+  "what": "World Athletics ranking points, scored on the same finals by the same function, in the same run.",
+  "why": "The criticism worth answering is that a simple ranking does just as well. Comparing the model against zero answers nothing."
+ },
+ "theInconvenientPrior": {
+  "servedSetting": "last35_per30_cap75",
+  "asianFinalsHistorical": {
+   "finals": 180,
+   "model": 64.1,
+   "points": 65.6
+  },
+  "overallForComparison": {
+   "finals": 1063,
+   "model": 65.3,
+   "points": 62.8
+  },
+  "note": "On the 180 historical Asian finals in field_model_old_marks.json, the SERVED setting scores 64.1% against 65.6% for points. The model is 1.5 points BEHIND a ranking table on Asian finals, while being 2.5 points ahead of it overall. So this championship is the part of the map where the baseline has been the stronger of the two, and the model losing here would be foreseeable rather than a surprise. Recorded now so it cannot be produced afterwards as an excuse, and so a win here is read as the stronger result it would be."
+ },
+ "whatThisTestCanAndCannotShow": {
+  "cannot": "With roughly 36 finals, about 108 podium places, the standard error on the percentage is near 4.6 points, so a 95% interval spans about 18 points. One championship cannot confirm or refute the 65.3% backtest, and no claim of that kind will be made from it.",
+  "can": "The model and points are scored on the SAME finals, so that comparison is paired and is the part of this test worth reading."
+ },
+ "passConditions": [
+  {
+   "id": "beatsPoints",
+   "condition": "Model names more medallists than points on the same finals",
+   "meaning": "The model earned its place at this championship. Report the margin and the finals count alongside it, never the margin alone."
+  },
+  {
+   "id": "tiesOrLosesToPoints",
+   "condition": "Model names the same or fewer medallists than points",
+   "meaning": "Report it plainly as the model not beating a ranking table here, and note it matches the historical Asian split above. Do not reach for conditions, weather, withdrawals or a subset of events to rescue it."
+  },
+  {
+   "id": "broken",
+   "condition": "Model scores below a random pick from the same fields",
+   "meaning": "Something is wrong with the pipeline, not with the model's skill. Investigate before publishing anything."
+  }
+ ],
+ "randomBaseline": {
+  "method": "Expected medallists from picking three at random in each graded final, sum of 9/n over finals where n is that final's field size, divided by 3 per final. Computed from the graded results, not assumed.",
+  "note": "Across the 66 finals graded on this project before these Games, the same calculation gives 38.5%."
+ },
+ "commitments": [
+  "The result is written to outputs/field_model_asian_games_2026.json and published whatever it says.",
+  "No event is dropped after seeing its result.",
+  "The frozen call is not regenerated while the Games are being graded.",
+  "If the model loses to points, that goes on the site in the same words as if it won."
+ ]
+}
