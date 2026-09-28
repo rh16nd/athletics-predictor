@@ -9998,6 +9998,90 @@
    "nationality": "HKG"
   },
   {
+   "discipline": "men_1500m",
+   "athlete_name": "Kazuto IIZAWA",
+   "place": "1",
+   "mark": "3:36.35",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Gulveer SINGH",
+   "place": "2",
+   "mark": "3:36.72",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Nagiya MORI",
+   "place": "3",
+   "mark": "3:37.92",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Dezhu LIU",
+   "place": "4",
+   "mark": "3:38.03",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Ibrahim Abass M CHUOT",
+   "place": "5",
+   "mark": "3:38.60",
+   "nationality": "QAT"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Tzu-Chieh CHIEN",
+   "place": "6",
+   "mark": "3:39.00",
+   "nationality": "TPE"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Jaeung LEE",
+   "place": "7",
+   "mark": "3:40.11",
+   "nationality": "KOR"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Mohamed Wahid TORECH",
+   "place": "8",
+   "mark": "3:40.19",
+   "nationality": "QAT"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Yoonus SHAH",
+   "place": "9",
+   "mark": "3:43.88",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Jonghak PARK",
+   "place": "10",
+   "mark": "3:46.87",
+   "nationality": "KOR"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Bader ALSWEED",
+   "place": "11",
+   "mark": "3:48.92",
+   "nationality": "KUW"
+  },
+  {
+   "discipline": "men_1500m",
+   "athlete_name": "Xiaoheng XI",
+   "place": "12",
+   "mark": "4:50.83",
+   "nationality": "CHN"
+  },
+  {
    "discipline": "men_110h",
    "athlete_name": "Yuanjiang CHEN",
    "place": "1",
@@ -10404,6 +10488,202 @@
    "nationality": "IND"
   },
   {
+   "discipline": "men_LJ",
+   "athlete_name": "Yuhao SHI",
+   "place": "1",
+   "mark": "8.17",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": " SREESHANKAR",
+   "place": "2",
+   "mark": "8.07",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Anvar ANVAROV",
+   "place": "3",
+   "mark": "8.06",
+   "nationality": "UZB"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Yu-Tang LIN",
+   "place": "4",
+   "mark": "8.05",
+   "nationality": "TPE"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Riku ITO",
+   "place": "5",
+   "mark": "7.97",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Yuki HASHIOKA",
+   "place": "6",
+   "mark": "7.94",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "David PATTURAJ SOLOMON",
+   "place": "7",
+   "mark": "7.70",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Mingfu LIN",
+   "place": "8",
+   "mark": "7.55",
+   "nationality": "HKG"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Chenlong YUAN",
+   "place": "9",
+   "mark": "7.50",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Ildar AKHMADIEV",
+   "place": "10",
+   "mark": "7.40",
+   "nationality": "TJK"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Janry UBAS",
+   "place": "11",
+   "mark": "7.39",
+   "nationality": "PHI"
+  },
+  {
+   "discipline": "men_LJ",
+   "athlete_name": "Ansar ABBAS",
+   "place": "12",
+   "mark": "7.09",
+   "nationality": "PAK"
+  },
+  {
+   "discipline": "men_400h",
+   "athlete_name": "Bassem HEMEIDA",
+   "place": "1",
+   "mark": "47.82",
+   "nationality": "QAT"
+  },
+  {
+   "discipline": "men_400h",
+   "athlete_name": "Taiju GOTO",
+   "place": "2",
+   "mark": "47.93",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_400h",
+   "athlete_name": "Chung-Wei LIN",
+   "place": "3",
+   "mark": "48.74",
+   "nationality": "TPE"
+  },
+  {
+   "discipline": "men_400h",
+   "athlete_name": "Jian-Rong CHEN",
+   "place": "4",
+   "mark": "49.25",
+   "nationality": "TPE"
+  },
+  {
+   "discipline": "men_400h",
+   "athlete_name": "Ayomal Akalanka KUDA LIYANAGE",
+   "place": "5",
+   "mark": "49.37",
+   "nationality": "SRI"
+  },
+  {
+   "discipline": "men_400h",
+   "athlete_name": "Kazuki KUROKAWA",
+   "place": "6",
+   "mark": "49.41",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_400h",
+   "athlete_name": "Santhosh Kumar TAMILARASAN",
+   "place": "7",
+   "mark": "49.95",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "men_400h",
+   "athlete_name": "Vyacheslav ZEMS",
+   "place": "8",
+   "mark": "51.17",
+   "nationality": "KAZ"
+  },
+  {
+   "discipline": "women_400h",
+   "athlete_name": "Mariam KAREEM",
+   "place": "1",
+   "mark": "54.31",
+   "nationality": "UAE"
+  },
+  {
+   "discipline": "women_400h",
+   "athlete_name": "Adelina ZEMS",
+   "place": "2",
+   "mark": "54.58",
+   "nationality": "KAZ"
+  },
+  {
+   "discipline": "women_400h",
+   "athlete_name": "Vithya RAMRAJ",
+   "place": "3",
+   "mark": "54.75",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "women_400h",
+   "athlete_name": "Yingying KONG",
+   "place": "4",
+   "mark": "55.78",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "women_400h",
+   "athlete_name": "Anu RAGHAVAN",
+   "place": "5",
+   "mark": "55.88",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "women_400h",
+   "athlete_name": "Honoka AOKI",
+   "place": "6",
+   "mark": "56.24",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "women_400h",
+   "athlete_name": "Hsin-Ju CHUNG",
+   "place": "7",
+   "mark": "56.65",
+   "nationality": "TPE"
+  },
+  {
+   "discipline": "women_400h",
+   "athlete_name": "Satsuki UMEHARA",
+   "place": "8",
+   "mark": "57.90",
+   "nationality": "JPN"
+  },
+  {
    "discipline": "women_3000sc",
    "athlete_name": "Winfred YAVI",
    "place": "1",
@@ -10458,7 +10738,294 @@
    "place": "8",
    "mark": "10:26.06",
    "nationality": "KOR"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Rumesh Tharanga PATHIRAGE",
+   "place": "1",
+   "mark": "88.55",
+   "nationality": "SRI"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Yash Vir SINGH",
+   "place": "2",
+   "mark": "85.72",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Rohit YADAV",
+   "place": "3",
+   "mark": "84.35",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Arshad NADEEM",
+   "place": "4",
+   "mark": "80.29",
+   "nationality": "PAK"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Yuta SAKIYAMA",
+   "place": "5",
+   "mark": "78.74",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Sumedha RANASINGHE",
+   "place": "6",
+   "mark": "78.08",
+   "nationality": "SRI"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Sarvar ISMOILOV",
+   "place": "7",
+   "mark": "75.80",
+   "nationality": "UZB"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Taepoong NAM",
+   "place": "8",
+   "mark": "75.10",
+   "nationality": "KOR"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Muhammad YASIR",
+   "place": "9",
+   "mark": "73.50",
+   "nationality": "PAK"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Rin SUZUKI",
+   "place": "10",
+   "mark": "71.73",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Alexey KHLYSTOV",
+   "place": "11",
+   "mark": "70.87",
+   "nationality": "KAZ"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Abdul HAFIZ",
+   "place": "12",
+   "mark": "70.67",
+   "nationality": "INA"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Abdulrahman AL AZEMI",
+   "place": "13",
+   "mark": "63.76",
+   "nationality": "KUW"
+  },
+  {
+   "discipline": "men_JT",
+   "athlete_name": "Sifanus NDIKEN",
+   "place": "",
+   "mark": "NM",
+   "nationality": "INA"
+  },
+  {
+   "discipline": "men_3000sc",
+   "athlete_name": "Ryuji MIURA",
+   "place": "1",
+   "mark": "8:17.36",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_3000sc",
+   "athlete_name": "Ryoma AOKI",
+   "place": "2",
+   "mark": "8:17.60",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "men_3000sc",
+   "athlete_name": "Zakaria EL AHLAAMI",
+   "place": "3",
+   "mark": "8:18.13",
+   "nationality": "QAT"
+  },
+  {
+   "discipline": "men_3000sc",
+   "athlete_name": "Avinash Mukund SABLE",
+   "place": "4",
+   "mark": "8:21.67",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "men_3000sc",
+   "athlete_name": "Wonbeen PARK",
+   "place": "5",
+   "mark": "8:48.30",
+   "nationality": "KOR"
+  },
+  {
+   "discipline": "men_3000sc",
+   "athlete_name": "Trung Cuong NGUYEN",
+   "place": "6",
+   "mark": "8:57.71",
+   "nationality": "VIE"
+  },
+  {
+   "discipline": "men_3000sc",
+   "athlete_name": "Pandu SUKARYA",
+   "place": "7",
+   "mark": "9:18.89",
+   "nationality": "INA"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Winfred YAVI",
+   "place": "1",
+   "mark": "15:10.18",
+   "nationality": "BRN"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Nozomi TANAKA",
+   "place": "2",
+   "mark": "15:11.65",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Parul CHAUDHARY",
+   "place": "3",
+   "mark": "15:14.61",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Yuma YAMAMOTO",
+   "place": "4",
+   "mark": "15:17.84",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Norah JERUTO",
+   "place": "5",
+   "mark": "15:18.21",
+   "nationality": "KAZ"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": " SEEMA",
+   "place": "6",
+   "mark": "15:35.06",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Daisy JEPKEMEI",
+   "place": "7",
+   "mark": "15:37.89",
+   "nationality": "KAZ"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Mariya KOROBITSKAYA",
+   "place": "8",
+   "mark": "16:04.93",
+   "nationality": "KGZ"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Ruth JEBET",
+   "place": "9",
+   "mark": "16:09.10",
+   "nationality": "BRN"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Yujin KIM",
+   "place": "10",
+   "mark": "16:09.60",
+   "nationality": "KOR"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Puma LAXMI",
+   "place": "11",
+   "mark": "17:00.60",
+   "nationality": "NEP"
+  },
+  {
+   "discipline": "women_5000m",
+   "athlete_name": "Shantoshi SHRESTHA",
+   "place": "12",
+   "mark": "17:53.17",
+   "nationality": "NEP"
+  },
+  {
+   "discipline": "women_DT",
+   "athlete_name": "Bin FENG",
+   "place": "1",
+   "mark": "63.83",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "women_DT",
+   "athlete_name": "Zhichao JIANG",
+   "place": "2",
+   "mark": "62.25",
+   "nationality": "CHN"
+  },
+  {
+   "discipline": "women_DT",
+   "athlete_name": "Subenrat INSAENG",
+   "place": "3",
+   "mark": "61.43",
+   "nationality": "THA"
+  },
+  {
+   "discipline": "women_DT",
+   "athlete_name": ". SEEMA",
+   "place": "4",
+   "mark": "59.88",
+   "nationality": "IND"
+  },
+  {
+   "discipline": "women_DT",
+   "athlete_name": "Nanaka KORI",
+   "place": "5",
+   "mark": "56.22",
+   "nationality": "JPN"
+  },
+  {
+   "discipline": "women_DT",
+   "athlete_name": "Yelim JEONG",
+   "place": "6",
+   "mark": "55.28",
+   "nationality": "KOR"
+  },
+  {
+   "discipline": "women_DT",
+   "athlete_name": "Yujin SHIN",
+   "place": "7",
+   "mark": "52.02",
+   "nationality": "KOR"
+  },
+  {
+   "discipline": "women_DT",
+   "athlete_name": "Sanya YADAV",
+   "place": "8",
+   "mark": "49.90",
+   "nationality": "IND"
   }
  ],
- "resultsFetchedAt": "2026-09-28T10:12:05Z"
+ "resultsFetchedAt": "2026-09-28T16:00:15Z"
 }
